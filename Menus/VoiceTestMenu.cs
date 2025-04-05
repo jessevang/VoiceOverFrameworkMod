@@ -240,7 +240,7 @@ namespace VoiceOverFrameworkMod.Menus
         {
             base.receiveLeftClick(x, y, playSound); // Handle close button first
 
-            
+
 
             if (CurrentState == MenuState.DialogueList)
             {
@@ -388,7 +388,7 @@ namespace VoiceOverFrameworkMod.Menus
                        "Town", // Default map (doesn't really matter here)
                        0, // Facing direction
                        character, // Name
-                       false, 
+                       false,
                        portrait // Portrait texture
                                 // eventActor defaults to false
                    );
