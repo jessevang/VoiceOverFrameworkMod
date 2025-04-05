@@ -5,7 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text.RegularExpressions;
+using HarmonyLib;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content; 
@@ -104,6 +106,7 @@ namespace VoiceOverFrameworkMod
             "en", "es-ES", "zh-CN", "ja-JP", "pt-BR", "fr-FR", "ko-KR", "it-IT", "de-DE", "hu-HU", "ru-RU", "tr-TR"
         };
 
+ 
         // --- Mod Entry Point ---
         public override void Entry(IModHelper helper)
         {
@@ -116,6 +119,9 @@ namespace VoiceOverFrameworkMod
 
             LoadVoicePacks();
 
+            // *** ADDED: Apply Harmony Patches ***
+            ApplyHarmonyPatches();
+
             helper.Events.GameLoop.UpdateTicked += OnUpdateTicked;
             helper.Events.Input.ButtonPressed += OnButtonPressed;
             helper.Events.GameLoop.GameLaunched += OnGameLaunched;
@@ -124,6 +130,24 @@ namespace VoiceOverFrameworkMod
 
             Monitor.Log("Voice Over Framework initialized.", LogLevel.Info);
         }
+
+        // --- Harmony Setup ---
+        private void ApplyHarmonyPatches()
+        {
+            var harmony = new Harmony(this.ModManifest.UniqueID);
+            try
+            {
+                this.Monitor.Log("Applying Harmony patches...", LogLevel.Debug);
+                harmony.PatchAll(Assembly.GetExecutingAssembly());
+                this.Monitor.Log("Harmony patches applied successfully.", LogLevel.Debug);
+            }
+            catch (Exception ex)
+            {
+                this.Monitor.Log($"ERROR applying Harmony patches: {ex.Message}", LogLevel.Error);
+                this.Monitor.Log(ex.ToString(), LogLevel.Trace);
+            }
+        }
+       
 
         // --- Event Handlers ---
         private void OnGameLaunched(object sender, GameLaunchedEventArgs e) { /* For GMCM */ }
@@ -184,33 +208,159 @@ namespace VoiceOverFrameworkMod
         private void OnButtonPressed(object sender, ButtonPressedEventArgs e) { /* ... as before ... */ }
 
         // --- Core Voice Playback Logic ---
+        // Inside ModEntry class
+
         public void TryPlayVoice(string characterName, string dialogueKey)
         {
-            // *** FIXED: Check Config and SelectedVoicePacks before accessing members ***
             if (Config == null || SelectedVoicePacks == null)
             {
                 Monitor.LogOnce("Config or SelectedVoicePacks is null in TryPlayVoice. Cannot proceed.", LogLevel.Warn);
                 return;
             }
 
-            Monitor.Log($"[Voice] Attempting voice: Char='{characterName}', Key='{dialogueKey}'", LogLevel.Trace);
-            if (!SelectedVoicePacks.TryGetValue(characterName, out string selectedVoicePackId) || string.IsNullOrEmpty(selectedVoicePackId)) return;
-            if (!VoicePacksByCharacter.TryGetValue(characterName, out var availablePacks)) return;
+            // Log the initial attempt with more context
+            Monitor.Log($"[TryPlayVoice] Attempting voice lookup: Char='{characterName}', Key='{dialogueKey}'", LogLevel.Trace);
 
-            // *** FIXED: Use Config.DefaultLanguage ***
-            string language = Config.DefaultLanguage ?? "en";
-            var selectedPack = availablePacks.FirstOrDefault(p => p.VoicePackId == selectedVoicePackId && p.Language == language);
-
-            // *** FIXED: Use Config.FallbackToDefaultIfMissing ***
-            if (selectedPack == null && Config.FallbackToDefaultIfMissing && language != "en")
+            if (!SelectedVoicePacks.TryGetValue(characterName, out string selectedVoicePackId) || string.IsNullOrEmpty(selectedVoicePackId))
             {
-                selectedPack = availablePacks.FirstOrDefault(p => p.VoicePackId == selectedVoicePackId && p.Language == "en");
+                Monitor.Log($"[TryPlayVoice] No voice pack configured for '{characterName}' in config.json.", LogLevel.Trace);
+                return; // No pack selected for this character
+            }
+            Monitor.Log($"[TryPlayVoice] Configured VoicePackId for '{characterName}': '{selectedVoicePackId}'", LogLevel.Trace);
+
+
+            if (!VoicePacksByCharacter.TryGetValue(characterName, out var availablePacks) || !availablePacks.Any())
+            {
+                Monitor.Log($"[TryPlayVoice] No loaded voice packs found matching character name '{characterName}'.", LogLevel.Trace);
+                return; // No packs loaded at all for this character
             }
 
-            if (selectedPack == null) { Monitor.Log($"Selected voice pack ID='{selectedVoicePackId}' (Lang='{language}') not found among loaded packs for {characterName}.", LogLevel.Warn); return; }
-            if (selectedPack.Entries.TryGetValue(dialogueKey, out string audioPath)) { Monitor.Log($"Found audio for key '{dialogueKey}' in pack '{selectedPack.VoicePackName}': {audioPath}", LogLevel.Trace); PlayVoiceFromFile(audioPath); }
+            string targetLanguage = Config.DefaultLanguage ?? "en"; // Assuming GetValidatedLanguageCode happens elsewhere if needed
+            string fallbackLanguage = "en";
+
+            VoicePack selectedPack = availablePacks.FirstOrDefault(p =>
+                p.VoicePackId.Equals(selectedVoicePackId, StringComparison.OrdinalIgnoreCase) &&
+                p.Language.Equals(targetLanguage, StringComparison.OrdinalIgnoreCase));
+
+            // Try fallback language if configured and needed
+            bool usedFallback = false;
+            if (selectedPack == null && Config.FallbackToDefaultIfMissing && !targetLanguage.Equals(fallbackLanguage, StringComparison.OrdinalIgnoreCase))
+            {
+                Monitor.Log($"[TryPlayVoice] Pack '{selectedVoicePackId}' not found for primary language '{targetLanguage}', trying fallback '{fallbackLanguage}'.", LogLevel.Trace);
+                selectedPack = availablePacks.FirstOrDefault(p =>
+                    p.VoicePackId.Equals(selectedVoicePackId, StringComparison.OrdinalIgnoreCase) &&
+                    p.Language.Equals(fallbackLanguage, StringComparison.OrdinalIgnoreCase));
+                if (selectedPack != null) usedFallback = true;
+            }
+
+            if (selectedPack == null)
+            {
+                Monitor.Log($"[TryPlayVoice] Failed to find loaded voice pack matching ID='{selectedVoicePackId}' for character '{characterName}' (Lang='{targetLanguage}', Fallback attempted: {Config.FallbackToDefaultIfMissing && !targetLanguage.Equals(fallbackLanguage, StringComparison.OrdinalIgnoreCase)}).", LogLevel.Warn);
+                return; // No suitable pack found
+            }
+            Monitor.Log($"[TryPlayVoice] Found matching loaded pack: '{selectedPack.VoicePackName}' (ID: '{selectedPack.VoicePackId}', Lang: '{selectedPack.Language}', Used Fallback: {usedFallback})", LogLevel.Debug);
+
+
+            // *** THE KEY LOOKUP ***
+            if (selectedPack.Entries.TryGetValue(dialogueKey, out string audioPath))
+            {
+                // *** LOG SUCCESSFUL LOOKUP ***
+                Monitor.Log($"[TryPlayVoice] SUCCESS: Found path for key '{dialogueKey}' in pack '{selectedPack.VoicePackName}'. Path: '{audioPath}'", LogLevel.Debug);
+                PlayVoiceFromFile(audioPath); // Call the playback method
+            }
+            else
+            {
+                // *** LOG FAILED LOOKUP ***
+                Monitor.Log($"[TryPlayVoice] FAILED: Dialogue key '{dialogueKey}' not found within the 'Entries' of selected pack '{selectedPack.VoicePackName}' (Lang: '{selectedPack.Language}').", LogLevel.Debug); // Changed to Debug as this might be common/expected
+            }
         }
-        private void PlayVoiceFromFile(string audioFilePath) { /* ... as before ... */ }
+
+
+
+        // Inside ModEntry class
+
+        private void PlayVoiceFromFile(string audioFilePath)
+        {
+            if (string.IsNullOrWhiteSpace(audioFilePath))
+            {
+                Monitor.Log($"[PlayVoiceFromFile] Attempted to play null or empty audio file path. Aborting.", LogLevel.Warn);
+                return;
+            }
+
+            // *** LOG 1: Entry and Path ***
+            Monitor.Log($"[PlayVoiceFromFile] Received request to play: '{audioFilePath}'", LogLevel.Debug);
+
+            try
+            {
+                // *** LOG 2: Check File Existence ***
+                if (!File.Exists(audioFilePath))
+                {
+                    Monitor.Log($"[PlayVoiceFromFile] ERROR: File.Exists returned FALSE for path: {audioFilePath}", LogLevel.Error);
+                    return; // Exit if file doesn't exist
+                }
+                Monitor.Log($"[PlayVoiceFromFile] File.Exists returned TRUE for path: {audioFilePath}", LogLevel.Trace);
+
+
+                // Stop and dispose previous instance *cleanly*
+                if (currentVoiceInstance != null)
+                {
+                    Monitor.Log($"[PlayVoiceFromFile] Previous instance exists. State: {currentVoiceInstance.State}. IsDisposed: {currentVoiceInstance.IsDisposed}", LogLevel.Trace);
+                    if (!currentVoiceInstance.IsDisposed)
+                    {
+                        currentVoiceInstance.Stop(true); // Immediate stop
+                        currentVoiceInstance.Dispose();
+                        Monitor.Log($"[PlayVoiceFromFile] Stopped and disposed previous instance.", LogLevel.Trace);
+                    }
+                    currentVoiceInstance = null; // Clear reference
+                }
+
+                // Load and play the new sound
+                SoundEffect sound;
+                Monitor.Log($"[PlayVoiceFromFile] Attempting to create FileStream for: {audioFilePath}", LogLevel.Trace);
+                using (var stream = new FileStream(audioFilePath, FileMode.Open, FileAccess.Read, FileShare.Read))
+                {
+                    Monitor.Log($"[PlayVoiceFromFile] FileStream created. Attempting SoundEffect.FromStream...", LogLevel.Trace);
+                    sound = SoundEffect.FromStream(stream);
+                    Monitor.Log($"[PlayVoiceFromFile] SoundEffect.FromStream succeeded.", LogLevel.Trace);
+                } // Stream is disposed here
+
+                Monitor.Log($"[PlayVoiceFromFile] Attempting sound.CreateInstance()...", LogLevel.Trace);
+                currentVoiceInstance = sound.CreateInstance();
+                Monitor.Log($"[PlayVoiceFromFile] SoundEffectInstance created.", LogLevel.Trace);
+
+                // Optional: Log volume before playing
+                // Monitor.Log($"[PlayVoiceFromFile] Game Sound Volume: {Game1.options.soundVolumeLevel}", LogLevel.Trace);
+                // currentVoiceInstance.Volume = Game1.options.soundVolumeLevel; // Apply game volume
+
+                Monitor.Log($"[PlayVoiceFromFile] Calling currentVoiceInstance.Play()...", LogLevel.Debug);
+                currentVoiceInstance.Play();
+                Monitor.Log($"[PlayVoiceFromFile] Play() called successfully for: {Path.GetFileName(audioFilePath)}", LogLevel.Debug);
+
+
+                // Simplified cleanup for now: Let the instance handle its lifecycle mostly.
+                // We primarily need to ensure we stop the *previous* one correctly.
+                // Excessive manual disposal here might interfere if not perfectly timed.
+                // The main risk is overlapping sounds if dialogue changes extremely fast.
+                // Consider adding back StateChanged disposal if needed later for resource management.
+
+            }
+            // Catch specific exceptions first
+            catch (NoAudioHardwareException) { Monitor.LogOnce("[PlayVoiceFromFile] No audio hardware detected.", LogLevel.Warn); }
+            catch (FileNotFoundException fnfEx) { Monitor.Log($"[PlayVoiceFromFile] ERROR (FileNotFoundException): {audioFilePath}. Message: {fnfEx.Message}", LogLevel.Error); }
+            catch (IOException ioEx) { Monitor.Log($"[PlayVoiceFromFile] ERROR (IOException): {audioFilePath}. Message: {ioEx.Message}", LogLevel.Error); Monitor.Log(ioEx.ToString(), LogLevel.Trace); }
+            catch (InvalidOperationException opEx) { Monitor.Log($"[PlayVoiceFromFile] ERROR (InvalidOperationException likely during FromStream/Play): {audioFilePath}. Message: {opEx.Message}", LogLevel.Error); Monitor.Log(opEx.ToString(), LogLevel.Trace); } // Often indicates bad WAV format
+            catch (Exception ex) // Catch-all for unexpected issues
+            {
+                Monitor.Log($"[PlayVoiceFromFile] FAILED ({ex.GetType().Name}): {audioFilePath}. Message: {ex.Message}", LogLevel.Error);
+                Monitor.Log(ex.ToString(), LogLevel.Trace);
+            }
+            finally // Ensure instance is cleared if exception occurred before Play() but after creation
+            {
+                // If an exception happened *during* play setup, currentVoiceInstance might be non-null but unusable.
+                // However, clearing it here might interfere with intended playback if the exception was minor.
+                // Let's rely on the start of the method to clear the previous one.
+            }
+        }
 
         // --- Console Command Setup & Implementation ---
         private void SetupConsoleCommands(ICommandHelper commands)
