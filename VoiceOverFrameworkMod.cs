@@ -1,10 +1,6 @@
 ﻿// VoiceOverFrameworkMod.cs
 
 // --- Required using statements ---
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using HarmonyLib;
@@ -17,7 +13,6 @@ using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewModdingAPI.Utilities;
 using StardewValley;
-using StardewValley.BellsAndWhistles;
 using StardewValley.Menus;
 
 namespace VoiceOverFrameworkMod
@@ -30,6 +25,7 @@ namespace VoiceOverFrameworkMod
         public bool FallbackToDefaultIfMissing { get; set; } = true;
         // *** Ensure this property exists and is public ***
         public Dictionary<string, string> SelectedVoicePacks { get; set; } = new();
+        public bool turnoffdialoguetypingsound = true;
     }
 
     public class VoicePackWrapper
@@ -49,7 +45,7 @@ namespace VoiceOverFrameworkMod
 
     public class VoiceEntry
     {
-        public string DialogueKey { get; set; }
+        public string DialogueText { get; set; }
         public string AudioPath { get; set; }
     }
 
@@ -83,7 +79,6 @@ namespace VoiceOverFrameworkMod
     {
         // *** Ensure these properties exist and are public ***
         public string DialogueFrom { get; set; }
-        public string DialogueKey { get; set; }
         public string DialogueText { get; set; }
         public string AudioPath { get; set; }
     }
@@ -92,9 +87,9 @@ namespace VoiceOverFrameworkMod
     // --- Main Mod Class ---
     public partial class ModEntry : Mod
     {
-        public static ModEntry Instance;
-
-        private ModConfig Config;
+        public static ModEntry Instance { get; private set; }
+        private bool wasDialogueUpLastTick = false;
+        public ModConfig Config { get; private set; }
         private Dictionary<string, string> SelectedVoicePacks;
         private Dictionary<string, List<VoicePack>> VoicePacksByCharacter = new();
 
@@ -102,17 +97,24 @@ namespace VoiceOverFrameworkMod
         private string lastDialogueText = null;
         private string lastSpeakerName = null;
 
+
+        //Different Languages
         private readonly List<string> KnownStardewLanguages = new List<string> {
             "en", "es-ES", "zh-CN", "ja-JP", "pt-BR", "fr-FR", "ko-KR", "it-IT", "de-DE", "hu-HU", "ru-RU", "tr-TR"
         };
 
- 
+        internal NPC CurrentDialogueSpeaker = null;
+        internal string CurrentDialogueOriginalKey = null;
+        internal int CurrentDialogueTotalPages = 1; // Assume 1 page unless set otherwise
+        internal int CurrentDialoguePage { get; set; } = 0; // Current page index (0-based)
+        internal bool IsMultiPageDialogueActive { get; set; } = false;
+
         // --- Mod Entry Point ---
         public override void Entry(IModHelper helper)
         {
-            Instance = this;
+            
             this.Monitor.Log("ModEntry.Entry() called.", LogLevel.Debug);
-
+            Instance = this;
             Config = helper.ReadConfig<ModConfig>();
             // *** FIXED: Ensure SelectedVoicePacks is assigned even if Config itself was null (though ReadConfig usually returns a default) ***
             SelectedVoicePacks = Config?.SelectedVoicePacks ?? new Dictionary<string, string>();
@@ -121,6 +123,8 @@ namespace VoiceOverFrameworkMod
 
             // *** ADDED: Apply Harmony Patches ***
             ApplyHarmonyPatches();
+
+ 
 
             helper.Events.GameLoop.UpdateTicked += OnUpdateTicked;
             helper.Events.Input.ButtonPressed += OnButtonPressed;
@@ -131,22 +135,34 @@ namespace VoiceOverFrameworkMod
             Monitor.Log("Voice Over Framework initialized.", LogLevel.Info);
         }
 
-        // --- Harmony Setup ---
+        // --- Method to Reset Dialogue State ---
+        public void ResetDialogueState()
+        {
+            // Optional: Log when state is reset for debugging
+            // this.Monitor?.Log("[ResetDialogueState] Clearing dialogue context.", LogLevel.Trace);
+
+            this.CurrentDialogueSpeaker = null;
+            this.CurrentDialogueOriginalKey = null;
+            this.CurrentDialogueTotalPages = 1;
+            this.CurrentDialoguePage = 0;
+            this.IsMultiPageDialogueActive = false;
+        }
+
+        // Make sure ApplyHarmonyPatches is called in your Entry method
         private void ApplyHarmonyPatches()
         {
             var harmony = new Harmony(this.ModManifest.UniqueID);
-            try
-            {
+
                 this.Monitor.Log("Applying Harmony patches...", LogLevel.Debug);
+                // This will patch all classes/methods tagged with Harmony attributes in your assembly
                 harmony.PatchAll(Assembly.GetExecutingAssembly());
                 this.Monitor.Log("Harmony patches applied successfully.", LogLevel.Debug);
-            }
-            catch (Exception ex)
-            {
-                this.Monitor.Log($"ERROR applying Harmony patches: {ex.Message}", LogLevel.Error);
-                this.Monitor.Log(ex.ToString(), LogLevel.Trace);
-            }
+
+
+            MuteTypingSoundPatch.ApplyPatch(harmony);
+
         }
+
        
 
         // --- Event Handlers ---
@@ -171,8 +187,8 @@ namespace VoiceOverFrameworkMod
 
                         // Use PathUtilities for safety
                         var entriesDict = metadata.Entries
-                                        .Where(e => !string.IsNullOrWhiteSpace(e?.DialogueKey) && !string.IsNullOrWhiteSpace(e?.AudioPath)) // Filter bad entries
-                                        .ToDictionary(e => e.DialogueKey, e => PathUtilities.NormalizePath(Path.Combine(pack.DirectoryPath, e.AudioPath)));
+                                        .Where(e => !string.IsNullOrWhiteSpace(e?.DialogueText) && !string.IsNullOrWhiteSpace(e?.AudioPath)) // Filter bad entries
+                                        .ToDictionary(e => e.DialogueText, e => PathUtilities.NormalizePath(Path.Combine(pack.DirectoryPath, e.AudioPath)));
 
 
                         var voicePack = new VoicePack
@@ -204,13 +220,72 @@ namespace VoiceOverFrameworkMod
             Monitor.Log($"Finished loading voice packs. Found packs for {VoicePacksByCharacter.Count} unique characters.", LogLevel.Debug);
         }
 
-        private void OnUpdateTicked(object sender, UpdateTickedEventArgs e) { /* ... as before ... */ }
+        private void OnUpdateTicked(object sender, UpdateTickedEventArgs e) 
+        {
+
+
+            if (!e.IsMultipleOf(1))
+                return;
+
+            CheckForDialogue();
+
+
+            // --- Logic to detect dialogue closure using Game1.dialogueUp ---
+            try
+            {
+                bool isDialogueUpNow = Game1.dialogueUp;
+
+                // Check if the dialogue was up last tick but isn't up now
+                if (this.wasDialogueUpLastTick && !isDialogueUpNow)
+                {
+                    this.Monitor?.Log("[UpdateTicked] Detected Game1.dialogueUp is now false. Resetting framework state.", LogLevel.Debug);
+                    this.ResetDialogueState(); // Call your existing reset method
+
+                }
+
+                // Update the tracker for the next tick
+                this.wasDialogueUpLastTick = isDialogueUpNow;
+            }
+            catch (Exception ex)
+            {
+                this.Monitor?.Log($"Error in OnUpdateTicked: {ex.Message}", LogLevel.Error);
+            }
+
+
+
+        }
+
+        private void CheckForDialogue()
+        {
+            if (Game1.activeClickableMenu is DialogueBox dialogueBox)
+            {
+                string current = dialogueBox.getCurrentString();
+                if (!string.IsNullOrWhiteSpace(current) && current != lastDialogueText)
+                {
+                    lastDialogueText = current;
+
+                    NPC speaker = Game1.currentSpeaker;
+                    if (speaker != null)
+                    {
+                        Monitor.Log($"[Voice] {speaker.Name} says: {current}", LogLevel.Debug);
+                        TryToPlayVoice(speaker.Name, SanitizeDialogueText(current));
+                    }
+                }
+            }
+            else
+            {
+                lastDialogueText = null; // Reset when no dialogue
+            }
+        }
+
+
+
         private void OnButtonPressed(object sender, ButtonPressedEventArgs e) { /* ... as before ... */ }
 
         // --- Core Voice Playback Logic ---
         // Inside ModEntry class
 
-        public void TryPlayVoice(string characterName, string dialogueKey)
+        public void TryToPlayVoice(string characterName, string dialogueText)
         {
             if (Config == null || SelectedVoicePacks == null)
             {
@@ -219,7 +294,7 @@ namespace VoiceOverFrameworkMod
             }
 
             // Log the initial attempt with more context
-            Monitor.Log($"[TryPlayVoice] Attempting voice lookup: Char='{characterName}', Key='{dialogueKey}'", LogLevel.Trace);
+            Monitor.Log($"[TryPlayVoice] Attempting voice lookup: Char='{characterName}', Text='{dialogueText}'", LogLevel.Trace);
 
             if (!SelectedVoicePacks.TryGetValue(characterName, out string selectedVoicePackId) || string.IsNullOrEmpty(selectedVoicePackId))
             {
@@ -253,6 +328,8 @@ namespace VoiceOverFrameworkMod
                 if (selectedPack != null) usedFallback = true;
             }
 
+            
+
             if (selectedPack == null)
             {
                 Monitor.Log($"[TryPlayVoice] Failed to find loaded voice pack matching ID='{selectedVoicePackId}' for character '{characterName}' (Lang='{targetLanguage}', Fallback attempted: {Config.FallbackToDefaultIfMissing && !targetLanguage.Equals(fallbackLanguage, StringComparison.OrdinalIgnoreCase)}).", LogLevel.Warn);
@@ -262,16 +339,17 @@ namespace VoiceOverFrameworkMod
 
 
             // *** THE KEY LOOKUP ***
-            if (selectedPack.Entries.TryGetValue(dialogueKey, out string audioPath))
+            if (selectedPack.Entries.TryGetValue(dialogueText, out string audioPath))
             {
+                Monitor.Log($"[TryPlayVoice] SUCCESS: Found path: '{audioPath}'", LogLevel.Debug);
                 // *** LOG SUCCESSFUL LOOKUP ***
-                Monitor.Log($"[TryPlayVoice] SUCCESS: Found path for key '{dialogueKey}' in pack '{selectedPack.VoicePackName}'. Path: '{audioPath}'", LogLevel.Debug);
+                Monitor.Log($"[TryPlayVoice] SUCCESS: Found path for dialogue text '{dialogueText}' in pack '{selectedPack.VoicePackName}'. Path: '{audioPath}'", LogLevel.Debug);
                 PlayVoiceFromFile(audioPath); // Call the playback method
             }
             else
             {
                 // *** LOG FAILED LOOKUP ***
-                Monitor.Log($"[TryPlayVoice] FAILED: Dialogue key '{dialogueKey}' not found within the 'Entries' of selected pack '{selectedPack.VoicePackName}' (Lang: '{selectedPack.Language}').", LogLevel.Debug); // Changed to Debug as this might be common/expected
+                Monitor.Log($"[TryPlayVoice] FAILED: Dialogue text '{dialogueText}' not found within the 'Entries' of selected pack '{selectedPack.VoicePackName}' (Lang: '{selectedPack.Language}').", LogLevel.Debug); // Changed to Debug as this might be common/expected
             }
         }
 
@@ -513,11 +591,11 @@ namespace VoiceOverFrameworkMod
                             }
 
                             // *** Format the filename WITHOUT padding (e.g., "1_Mon") ***
-                            string numberedFileName = $"{entryNumber}_{sanitizedKey}.wav";
+                            string numberedFileName = $"{entryNumber}.wav";
 
                             characterManifest.Entries.Add(new VoiceEntryTemplate
                             {
-                                DialogueKey = kvp.Key,
+                               // DialogueKey = kvp.Key,
                                 DialogueText = SanitizeDialogueText(kvp.Value),
                                 DialogueFrom = sourceTracking.TryGetValue(kvp.Key, out var source) ? source : "Unknown",
                                 // *** Use the numbered filename in the path ***
@@ -712,12 +790,12 @@ namespace VoiceOverFrameworkMod
 
                     manifest.Entries.Add(new VoiceEntryTemplate
                     {
-                        DialogueKey = kvp.Key,
+                        //DialogueKey = kvp.Key,
                         DialogueText = SanitizeDialogueText(kvp.Value),
                         DialogueFrom = sourceTracking.TryGetValue(kvp.Key, out var source) ? source : "Unknown", // Added source here too
                                                                                                                  // *** Use the numbered filename in the path ***
                                                                                                                  // Asset path structure within this INDIVIDUAL template's context
-                        AudioPath = PathUtilities.NormalizePath($"assets/{characterName}/{numberedFileName}") // Simpler path for individual pack
+                        AudioPath = PathUtilities.NormalizePath($"assets/{languageCode}/{characterName}/{numberedFileName}") // Simpler path for individual pack
                     });
 
                     // *** Increment counter ***
@@ -780,7 +858,11 @@ namespace VoiceOverFrameworkMod
 
 
         // --- List Characters Command Handler ---
-        private void ListCharactersCommand(string command, string[] args) { /* ... as before, using IsKnownVanillaVillager ... */ }
+        private void ListCharactersCommand(string command, string[] args) { 
+        
+        
+        
+        }
 
 
         // --- Utility Helpers ---

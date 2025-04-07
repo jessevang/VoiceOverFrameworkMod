@@ -421,7 +421,7 @@ namespace VoiceOverFrameworkMod.Menus
             Game1.dialogueUp = true;
             Game1.player.CanMove = false;
 
-            ModEntry.Instance.TryPlayVoice(character, dialogueKey);
+            //ModEntry.Instance.TryPlayVoice(character, dialogueKey);
 
             exitThisMenu(false);
         }
