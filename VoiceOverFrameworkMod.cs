@@ -452,6 +452,7 @@ namespace VoiceOverFrameworkMod
 
 
         // --- Generate Combined Template Command Handler ---
+        // --- Generate Combined Template Command Handler ---
         private void GenerateCombinedTemplateCommand(string command, string[] args)
         {
             this.Monitor.Log($"'{command}' command invoked.", LogLevel.Debug);
@@ -470,18 +471,18 @@ namespace VoiceOverFrameworkMod
             List<string> languagesToProcess = new List<string>();
             if (targetLanguageArg.Equals("all", StringComparison.OrdinalIgnoreCase) || targetLanguageArg == "*")
             {
-                languagesToProcess.AddRange(this.KnownStardewLanguages);
+                languagesToProcess.AddRange(this.KnownStardewLanguages); // Assumes KnownStardewLanguages exists
                 this.Monitor.Log($"Processing combined template for ALL {languagesToProcess.Count} known languages.", LogLevel.Info);
             }
             else
             {
-                string validatedLang = GetValidatedLanguageCode(targetLanguageArg);
+                string validatedLang = GetValidatedLanguageCode(targetLanguageArg); // Assumes GetValidatedLanguageCode exists
                 languagesToProcess.Add(validatedLang);
                 this.Monitor.Log($"Processing combined template for language: {validatedLang}", LogLevel.Info);
             }
             if (!languagesToProcess.Any())
             {
-                this.Monitor.Log("No languages determined for processing. Aborting.", LogLevel.Error);
+                this.Monitor.Log("No valid languages determined for processing. Aborting.", LogLevel.Error);
                 return;
             }
 
@@ -493,7 +494,7 @@ namespace VoiceOverFrameworkMod
                 if (Game1.characterData != null && Game1.characterData.Any())
                 {
                     charactersToProcess = Game1.characterData.Keys
-                                            .Where(name => !string.IsNullOrWhiteSpace(name) && IsKnownVanillaVillager(name))
+                                            .Where(name => !string.IsNullOrWhiteSpace(name) && IsKnownVanillaVillager(name)) // Assumes IsKnownVanillaVillager exists
                                             .OrderBy(name => name)
                                             .ToList();
                     this.Monitor.Log($"Found {charactersToProcess.Count} characters to potentially include based on filter.", LogLevel.Info);
@@ -519,131 +520,213 @@ namespace VoiceOverFrameworkMod
 
             // --- Loop through LANGUAGES ---
             int totalFilesGenerated = 0;
-            string baseOutputDir = PathUtilities.NormalizePath(Path.Combine(this.Helper.DirectoryPath, "GeneratedTemplates", "Combined"));
+            string baseOutputDir = PathUtilities.NormalizePath(Path.Combine(this.Helper.DirectoryPath, "GeneratedTemplates", "Combined")); // Assumes PathUtilities exists
             this.Monitor.Log($"Base output directory: {baseOutputDir}", LogLevel.Trace);
 
             foreach (string languageCode in languagesToProcess)
             {
                 this.Monitor.Log($"--- Processing Language: {languageCode} ---", LogLevel.Info);
-                var languageWrapper = new VoicePackWrapperTemplate();
+                var languageWrapper = new VoicePackWrapperTemplate(); // Assumes VoicePackWrapperTemplate class exists
                 int charactersAddedToThisFile = 0;
-                var assetFoldersToCreate = new HashSet<string>();
+                var assetFoldersToCreate = new HashSet<string>(); // Collect asset folder paths to create later
 
                 // --- Loop through CHARACTERS for this language ---
                 foreach (string characterName in charactersToProcess)
                 {
                     this.Monitor.Log($"Gathering data for '{characterName}' ({languageCode})...", LogLevel.Trace);
                     var discoveredKeyTextPairs = new Dictionary<string, string>();
-                    var sourceTracking = new Dictionary<string, string>();
+                    var sourceTracking = new Dictionary<string, string>(); // Track where each KEY came from
 
-                    try
+                    try // Try block for processing a single character
                     {
                         // --- Load dialogue sources ---
-                        // Individual Dialogue File
-                        string dialogueAssetKeyBase = $"Characters/Dialogue/{characterName}";
                         string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
-                        string specificDialogueAssetKey = dialogueAssetKeyBase + langSuffix;
+
+                        // 1. Individual Dialogue File (Primary source)
+                        string specificDialogueAssetKey = $"Characters/Dialogue/{characterName}{langSuffix}";
                         try
                         {
                             var dialogueData = this.Helper.GameContent.Load<Dictionary<string, string>>(specificDialogueAssetKey);
                             if (dialogueData != null)
                             {
-                                foreach (var kvp in dialogueData) { if (!string.IsNullOrWhiteSpace(kvp.Key) && !string.IsNullOrWhiteSpace(kvp.Value)) { discoveredKeyTextPairs[kvp.Key] = kvp.Value; sourceTracking[kvp.Key] = "Dialogue"; } }
+                                foreach (var kvp in dialogueData)
+                                {
+                                    if (!string.IsNullOrWhiteSpace(kvp.Key) && !string.IsNullOrWhiteSpace(kvp.Value))
+                                    {
+                                        if (!discoveredKeyTextPairs.ContainsKey(kvp.Key))
+                                        {
+                                            discoveredKeyTextPairs[kvp.Key] = kvp.Value;
+                                            sourceTracking[kvp.Key] = "Dialogue";
+                                        }
+                                    }
+                                }
                                 this.Monitor.Log($"Loaded {dialogueData.Count} entries from '{specificDialogueAssetKey}'.", LogLevel.Trace);
                             }
                         }
-                        catch (ContentLoadException) { this.Monitor.Log($"Asset '{specificDialogueAssetKey}' not found.", LogLevel.Trace); }
+                        catch (ContentLoadException) { this.Monitor.Log($"Asset '{specificDialogueAssetKey}' not found or invalid.", LogLevel.Trace); }
                         catch (Exception ex) { this.Monitor.Log($" Error loading '{specificDialogueAssetKey}': {ex.Message}", LogLevel.Warn); }
 
-                        // Strings/Characters
-                        var stringCharData = GetVanillaCharacterStringKeys(characterName, languageCode, this.Helper.GameContent);
-                        this.Monitor.Log($"Found {stringCharData.Count} entries from Strings/Characters for {characterName}.", LogLevel.Trace);
-                        foreach (var kvp in stringCharData) { if (!string.IsNullOrWhiteSpace(kvp.Key) && !string.IsNullOrWhiteSpace(kvp.Value)) { discoveredKeyTextPairs[kvp.Key] = kvp.Value; sourceTracking[kvp.Key] = "Strings/Characters"; } }
+                        // 2. Strings/Characters (Secondary source)
+                        var stringCharData = GetVanillaCharacterStringKeys(characterName, languageCode, this.Helper.GameContent); // Assumes helper exists
+                        this.Monitor.Log($"Found {stringCharData.Count} potential entries from Strings/Characters for {characterName}.", LogLevel.Trace);
+                        foreach (var kvp in stringCharData)
+                        {
+                            if (!string.IsNullOrWhiteSpace(kvp.Key) && !string.IsNullOrWhiteSpace(kvp.Value))
+                            {
+                                if (!discoveredKeyTextPairs.ContainsKey(kvp.Key))
+                                {
+                                    discoveredKeyTextPairs[kvp.Key] = kvp.Value;
+                                    sourceTracking[kvp.Key] = "Strings/Characters";
+                                }
+                            }
+                        }
 
                         // --- TODO: Add Mail/Quest/Event parsing here ---
 
                         if (!discoveredKeyTextPairs.Any())
                         {
-                            this.Monitor.Log($" No keys found for '{characterName}' in {languageCode} after checking sources. Skipping.", LogLevel.Trace);
-                            continue;
+                            this.Monitor.Log($" No keys found for '{characterName}' in {languageCode}. Skipping character.", LogLevel.Trace);
+                            continue; // Skip to the next character
                         }
-                        this.Monitor.Log($"Found {discoveredKeyTextPairs.Count} total keys for '{characterName}' in {languageCode}.", LogLevel.Debug);
+                        this.Monitor.Log($"Found {discoveredKeyTextPairs.Count} total unique keys for '{characterName}' in {languageCode}.", LogLevel.Debug);
 
                         // --- Create Manifest FOR THIS CHARACTER ---
-                        var characterManifest = new VoicePackManifestTemplate
+                        var characterManifest = new VoicePackManifestTemplate // Assumes class exists
                         {
-                            VoicePackId = $"YourModID.Vanilla_{characterName}_{languageCode}", // Remind user to change this!
+                            VoicePackId = $"YourModID.Vanilla_{characterName}_{languageCode}", // Change YourModID!
                             VoicePackName = $"{characterName} - Vanilla ({languageCode})",
                             Character = characterName,
                             Language = languageCode
                         };
 
-                        // *** Initialize counter for this character ***
-                        int entryNumber = 1;
+                        int entryNumber = 1; // Initialize counter for this character's audio files
 
-                        foreach (var kvp in discoveredKeyTextPairs.OrderBy(p => p.Key)) // Order by key for consistent numbering
+                        // --- Process and Split Dialogue Lines ---
+                        this.Monitor.Log($"Processing keys for {characterName} ({languageCode})...", LogLevel.Trace);
+                        foreach (var kvp in discoveredKeyTextPairs.OrderBy(p => p.Key)) // Order for consistency
                         {
-                            string sanitizedKey = SanitizeKeyForFileName(kvp.Key);
-                            if (string.IsNullOrWhiteSpace(sanitizedKey) || sanitizedKey == "invalid_key")
+                            string originalKey = kvp.Key;
+                            string originalValue = kvp.Value;
+                            string source = sourceTracking.TryGetValue(originalKey, out var src) ? src : "Unknown";
+
+                            // --- DEBUG LOGGING: Before Split ---
+                            this.Monitor.Log($"[DEBUG] Key: '{originalKey}', Original Value: \"{originalValue}\"", LogLevel.Trace);
+
+                            // *** SPLITTING LOGIC ***
+                            string[] splitSegments = originalValue.Split(new[] { "#$b#" }, StringSplitOptions.RemoveEmptyEntries);
+
+                            // --- DEBUG LOGGING: After Split ---
+                            this.Monitor.Log($"[DEBUG] Key: '{originalKey}', Split Count: {splitSegments.Length}", LogLevel.Trace);
+                            if (splitSegments.Length == 0 && originalValue.Contains("#$b#"))
                             {
-                                this.Monitor.Log($"Skipping entry with invalid sanitized key (Original: '{kvp.Key}') for {characterName}.", LogLevel.Warn);
-                                continue;
+                                // Log if #$b# was present but resulted in zero non-empty segments
+                                this.Monitor.Log($"[DEBUG] Key: '{originalKey}' contained #$b# but resulted in 0 non-empty segments.", LogLevel.Warn);
                             }
 
-                            // *** Format the filename WITHOUT padding (e.g., "1_Mon") ***
-                            string numberedFileName = $"{entryNumber}.wav";
-
-                            characterManifest.Entries.Add(new VoiceEntryTemplate
+                            // Process each resulting segment
+                            if (splitSegments.Length > 0) // Only loop if there are segments
                             {
-                               // DialogueKey = kvp.Key,
-                                DialogueText = SanitizeDialogueText(kvp.Value),
-                                DialogueFrom = sourceTracking.TryGetValue(kvp.Key, out var source) ? source : "Unknown",
-                                // *** Use the numbered filename in the path ***
-                                AudioPath = PathUtilities.NormalizePath($"assets/{languageCode}/{characterName}/{numberedFileName}")
-                            });
+                                for (int i = 0; i < splitSegments.Length; i++) // Use index for clearer logging
+                                {
+                                    string part = splitSegments[i];
 
-                            // *** Increment counter for the next entry ***
-                            entryNumber++;
+                                    // --- DEBUG LOGGING: Inside Part Loop ---
+                                    this.Monitor.Log($"[DEBUG] Key: '{originalKey}', Processing Part {i + 1}/{splitSegments.Length}: \"{part}\"", LogLevel.Trace);
+
+                                    string cleanedPart = SanitizeDialogueText(part); // Assumes SanitizeDialogueText exists
+
+                                    if (string.IsNullOrWhiteSpace(cleanedPart))
+                                    {
+                                        this.Monitor.Log($"[DEBUG] Key: '{originalKey}', Part {i + 1} was empty after cleaning. Skipping.", LogLevel.Trace);
+                                        continue; // Skip this specific empty part
+                                    }
+
+                                    string numberedFileName = $"{entryNumber}.wav";
+                                    string relativeAudioPath = Path.Combine("assets", languageCode, characterName, numberedFileName).Replace("\\", "/");
+
+                                    // Add a VoiceEntryTemplate for THIS segment
+                                    var newEntry = new VoiceEntryTemplate // Assumes class exists
+                                    {
+                                        DialogueText = cleanedPart,
+                                        DialogueFrom = source,
+                                        AudioPath = relativeAudioPath
+                                    };
+                                    characterManifest.Entries.Add(newEntry);
+
+                                    // --- DEBUG LOGGING: Entry Added ---
+                                    this.Monitor.Log($"[DEBUG] Key: '{originalKey}', Added Entry {entryNumber}: Path='{newEntry.AudioPath}', Text='{newEntry.DialogueText}'", LogLevel.Trace);
+
+                                    // Increment the counter for the NEXT audio file
+                                    entryNumber++;
+                                } // --- End loop through split parts ---
+                            }
+                            else if (!string.IsNullOrWhiteSpace(originalValue)) // Handle case where split results in zero segments but original wasn't empty
+                            {
+                                this.Monitor.Log($"[DEBUG] Key: '{originalKey}', Original value was not empty but resulted in 0 split segments. No entries added for this key.", LogLevel.Trace);
+                            }
+                            else // Handle case where original value was empty/whitespace
+                            {
+                                this.Monitor.Log($"[DEBUG] Key: '{originalKey}', Original value was empty or whitespace. No entries added.", LogLevel.Trace);
+                            }
+
+                        } // --- End loop through discovered keys (kvp) for this character ---
+
+                        // Add character manifest to wrapper if it has entries
+                        if (characterManifest.Entries.Any())
+                        {
+                            languageWrapper.VoicePacks.Add(characterManifest);
+                            charactersAddedToThisFile++;
+                            string assetsCharacterPath = PathUtilities.NormalizePath(Path.Combine(baseOutputDir, "assets", languageCode, characterName));
+                            assetFoldersToCreate.Add(assetsCharacterPath);
+                            this.Monitor.Log($"Added manifest for {characterName} ({languageCode}) with {characterManifest.Entries.Count} entries.", LogLevel.Trace);
+                        }
+                        else
+                        {
+                            this.Monitor.Log($"No valid dialogue entries generated for '{characterName}' ({languageCode}). Not adding manifest.", LogLevel.Debug);
                         }
 
-                        languageWrapper.VoicePacks.Add(characterManifest);
-                        charactersAddedToThisFile++;
-                        string assetsCharacterPath = PathUtilities.NormalizePath(Path.Combine(baseOutputDir, "assets", languageCode, characterName));
-                        assetFoldersToCreate.Add(assetsCharacterPath);
-
-                    }
+                    } // End try block for processing a single character
                     catch (Exception ex)
                     {
+                        // Catch errors during processing for a specific character and log
                         this.Monitor.Log($"Failed during data processing for {characterName} ({languageCode}): {ex.Message}", LogLevel.Error);
                         this.Monitor.Log(ex.ToString(), LogLevel.Trace);
+                        // Continue to the next character even if one fails
                     }
                 } // --- End Character Loop ---
 
                 // --- Save the COMBINED File for this Language ---
-                this.Monitor.Log($"Finished processing characters for {languageCode}. Found dialogue for {charactersAddedToThisFile} characters.", LogLevel.Debug);
-                if (charactersAddedToThisFile > 0)
+                this.Monitor.Log($"Finished processing characters for {languageCode}. Adding manifests for {charactersAddedToThisFile} characters to the combined file.", LogLevel.Debug);
+                if (charactersAddedToThisFile > 0 && languageWrapper.VoicePacks.Any())
                 {
-                    try
+                    try // Try block for saving the combined file
                     {
                         this.Monitor.Log($"Ensuring base output directory exists: {baseOutputDir}", LogLevel.Trace);
-                        Directory.CreateDirectory(baseOutputDir); // Create base dir if needed
+                        Directory.CreateDirectory(baseOutputDir); // Create base output dir if needed
 
-                        string jsonOutput = JsonConvert.SerializeObject(languageWrapper, Formatting.Indented);
-                        string outputPath = PathUtilities.NormalizePath(Path.Combine(baseOutputDir, $"all_characters_{languageCode}_template.json"));
+                        // Serialize the entire wrapper
+                        string jsonOutput = JsonConvert.SerializeObject(languageWrapper, Formatting.Indented, new JsonSerializerSettings
+                        {
+                            NullValueHandling = NullValueHandling.Ignore // Cleaner JSON
+                        });
+                        string outputFilename = $"all_characters_{languageCode}_template.json";
+                        string outputPath = PathUtilities.NormalizePath(Path.Combine(baseOutputDir, outputFilename));
 
                         this.Monitor.Log($"Attempting to write COMBINED template JSON for {languageCode} to: {outputPath}", LogLevel.Info);
                         File.WriteAllText(outputPath, jsonOutput);
 
+                        // Verify file exists
                         bool fileExists = File.Exists(outputPath);
                         if (fileExists)
                         {
                             this.Monitor.Log($"Successfully generated COMBINED template for {languageCode}.", LogLevel.Info);
                             totalFilesGenerated++;
 
-                            // --- Create ALL asset folders for this language file ---
+                            // --- Create ALL necessary asset folders ---
                             this.Monitor.Log($"Creating required asset folder structures ({assetFoldersToCreate.Count} needed)...", LogLevel.Debug);
                             int foldersCreated = 0;
-                            foreach (string assetPath in assetFoldersToCreate)
+                            string languageAssetBasePath = PathUtilities.NormalizePath(Path.Combine(baseOutputDir, "assets", languageCode));
+                            foreach (string assetPath in assetFoldersToCreate) // Iterate collected paths
                             {
                                 try
                                 {
@@ -653,186 +736,280 @@ namespace VoiceOverFrameworkMod
                                 catch (Exception dirEx)
                                 { this.Monitor.Log($" Error creating asset directory '{assetPath}': {dirEx.Message}", LogLevel.Error); }
                             }
-                            this.Monitor.Log($"Created {foldersCreated} asset folder structures under '{PathUtilities.NormalizePath(Path.Combine(baseOutputDir, "assets", languageCode))}'.", LogLevel.Info);
+                            this.Monitor.Log($"Created {foldersCreated} asset folder structures under '{languageAssetBasePath}'.", LogLevel.Info);
                         }
                         else
-                        { this.Monitor.Log($"Write operation for JSON {languageCode} completed BUT File.Exists returned false! Check permissions/path: {outputPath}", LogLevel.Error); }
-                    }
+                        {
+                            this.Monitor.Log($"Write operation for JSON {languageCode} completed BUT File.Exists returned false! Check permissions/path: {outputPath}", LogLevel.Error);
+                        }
+                    } // End try block for saving
+                      // Specific exception handling for file operations
                     catch (UnauthorizedAccessException ex) { this.Monitor.Log($"PERMISSION ERROR saving combined template for {languageCode}: {ex.Message}. Check folder permissions for '{baseOutputDir}'.", LogLevel.Error); this.Monitor.Log(ex.ToString(), LogLevel.Trace); }
                     catch (IOException ex) { this.Monitor.Log($"IO ERROR saving combined template for {languageCode}: {ex.Message}. Is the file open or path invalid?", LogLevel.Error); this.Monitor.Log(ex.ToString(), LogLevel.Trace); }
-                    catch (Exception ex)
+                    catch (JsonException ex) { this.Monitor.Log($"JSON SERIALIZATION ERROR for {languageCode}: {ex.Message}", LogLevel.Error); this.Monitor.Log(ex.ToString(), LogLevel.Trace); }
+                    catch (Exception ex) // Catch-all for unexpected errors during save
                     {
                         this.Monitor.Log($"Failed to save combined template for {languageCode}: {ex.GetType().Name} - {ex.Message}", LogLevel.Error);
                         this.Monitor.Log(ex.ToString(), LogLevel.Error);
                     }
                 }
-                else
-                { this.Monitor.Log($"Skipping combined file generation for {languageCode} as no characters had dialogue.", LogLevel.Warn); }
+                else // Case where no characters had processable dialogue for this language
+                {
+                    this.Monitor.Log($"Skipping combined file generation for {languageCode} as no characters had processable dialogue entries.", LogLevel.Warn);
+                }
 
             } // --- End Language Loop ---
 
+            // --- Final Summary ---
             this.Monitor.Log($"--- Overall Combined Template Generation Complete ---", LogLevel.Info);
             this.Monitor.Log($"Total COMBINED files generated: {totalFilesGenerated}", LogLevel.Info);
-        }
 
+        } // --- End GenerateCombinedTemplateCommand ---
 
         // --- Generate Individual Templates Command Handler ---
         private void GenerateTemplateCommand(string command, string[] args)
         {
             if (args.Length < 1)
-            { this.Monitor.Log("Please provide a character name or 'all', and optionally a language code or 'all'.", LogLevel.Error); this.Monitor.Log("Usage: voice_create_template <CharacterName|all> [LanguageCode|all]", LogLevel.Info); return; }
+            {
+                this.Monitor.Log("Please provide a character name or 'all', and optionally a language code or 'all'.", LogLevel.Error);
+                this.Monitor.Log("Usage: voice_create_template <CharacterName|all> [LanguageCode|all]", LogLevel.Info);
+                return;
+            }
             if (!Context.IsWorldReady)
-            { this.Monitor.Log("Please load a save file before running this command.", LogLevel.Warn); return; }
+            {
+                this.Monitor.Log("Please load a save file before running this command.", LogLevel.Warn);
+                return;
+            }
 
             string targetCharacterArg = args[0];
-            string targetLanguageArg = (args.Length > 1) ? args[1] : (Config.DefaultLanguage ?? "en");
+            // Use configured default language or 'en' if not specified or config is null
+            string targetLanguageArg = (args.Length > 1) ? args[1] : (Config?.DefaultLanguage ?? "en");
 
             List<string> languagesToProcess = new List<string>();
             List<string> charactersToProcess = new List<string>();
 
             // Determine Languages
             if (targetLanguageArg.Equals("all", StringComparison.OrdinalIgnoreCase) || targetLanguageArg == "*")
-            { languagesToProcess.AddRange(this.KnownStardewLanguages); this.Monitor.Log($"Processing for all {languagesToProcess.Count} known languages.", LogLevel.Info); }
+            {
+                languagesToProcess.AddRange(this.KnownStardewLanguages); // Assumes KnownStardewLanguages exists
+                this.Monitor.Log($"Processing for all {languagesToProcess.Count} known languages.", LogLevel.Info);
+            }
             else
-            { languagesToProcess.Add(GetValidatedLanguageCode(targetLanguageArg)); this.Monitor.Log($"Processing for language: {languagesToProcess[0]}", LogLevel.Info); }
+            {
+                languagesToProcess.Add(GetValidatedLanguageCode(targetLanguageArg)); // Assumes GetValidatedLanguageCode exists
+                this.Monitor.Log($"Processing for language: {languagesToProcess[0]}", LogLevel.Info);
+            }
+            // Add check if languagesToProcess is empty after validation (e.g., if GetValidatedLanguageCode could return null/empty)
+            if (!languagesToProcess.Any() || languagesToProcess.Any(string.IsNullOrWhiteSpace))
+            {
+                this.Monitor.Log("No valid languages specified or determined.", LogLevel.Error);
+                return;
+            }
+
 
             // Determine Characters
             if (targetCharacterArg.Equals("all", StringComparison.OrdinalIgnoreCase) || targetCharacterArg == "*")
             {
-                this.Monitor.Log("Gathering list of all characters from Game1.characterData...", LogLevel.Info);
+                this.Monitor.Log("Gathering list of known vanilla villagers...", LogLevel.Info); // Changed log msg slightly
                 try
                 {
                     if (Game1.characterData != null && Game1.characterData.Any())
                     {
-                        charactersToProcess = Game1.characterData.Keys.Where(name => !string.IsNullOrWhiteSpace(name) && IsKnownVanillaVillager(name)).OrderBy(name => name).ToList();
-                        this.Monitor.Log($"Found {charactersToProcess.Count} characters to process.", LogLevel.Info);
+                        // Use the IsKnownVanillaVillager filter here (assumes method exists)
+                        charactersToProcess = Game1.characterData.Keys
+                                                .Where(name => !string.IsNullOrWhiteSpace(name) && IsKnownVanillaVillager(name))
+                                                .OrderBy(name => name)
+                                                .ToList();
+                        this.Monitor.Log($"Found {charactersToProcess.Count} known characters to process.", LogLevel.Info);
                     }
-                    else { this.Monitor.Log("Game1.characterData is null or empty. Cannot process 'all'.", LogLevel.Error); return; }
+                    else
+                    {
+                        this.Monitor.Log("Game1.characterData is null or empty. Cannot process 'all'.", LogLevel.Error);
+                        return;
+                    }
                 }
-                catch (Exception ex) { this.Monitor.Log($"Error retrieving character list: {ex.Message}", LogLevel.Error); this.Monitor.Log(ex.ToString(), LogLevel.Trace); return; }
+                catch (Exception ex)
+                {
+                    this.Monitor.Log($"Error retrieving character list: {ex.Message}", LogLevel.Error);
+                    this.Monitor.Log(ex.ToString(), LogLevel.Trace);
+                    return;
+                }
             }
-            else { charactersToProcess.Add(targetCharacterArg); }
+            else
+            {
+                // Allow processing even if not in the IsKnownVanillaVillager list when specified directly
+                charactersToProcess.Add(targetCharacterArg);
+                this.Monitor.Log($"Processing for specified character: {targetCharacterArg}", LogLevel.Info);
+            }
+            // Add check if charactersToProcess is empty
+            if (!charactersToProcess.Any() || charactersToProcess.Any(string.IsNullOrWhiteSpace))
+            {
+                this.Monitor.Log("No characters specified or found to process.", LogLevel.Error);
+                return;
+            }
 
-            // Loop through languages and characters
-            int totalSuccessCount = 0; int totalFailCount = 0;
-            string baseTemplateDir = Path.Combine(this.Helper.DirectoryPath, "GeneratedTemplates");
+
+            // --- Execution Loop ---
+            int totalSuccessCount = 0;
+            int totalFailCount = 0;
+            // Base directory for *all* generated templates
+            string baseTemplateDir = PathUtilities.NormalizePath(Path.Combine(this.Helper.DirectoryPath, "GeneratedTemplates"));
+            // Subdirectory specifically for individual templates (where GenerateSingleTemplate will save)
+            string individualTemplateDir = PathUtilities.NormalizePath(Path.Combine(baseTemplateDir, "Individual"));
+
+            this.Monitor.Log($"Output directory for individual templates: {individualTemplateDir}", LogLevel.Debug);
 
             foreach (string languageCode in languagesToProcess)
             {
                 this.Monitor.Log($"--- Processing Language: {languageCode} ---", LogLevel.Info);
-                int langSuccessCount = 0; int langFailCount = 0;
+                int langSuccessCount = 0;
+                int langFailCount = 0;
                 foreach (string characterName in charactersToProcess)
                 {
-                    if (GenerateSingleTemplate(characterName, languageCode, baseTemplateDir)) { langSuccessCount++; } else { langFailCount++; }
+                    // --- Call the function that DOES the real work (including splitting) ---
+                    // Pass the specific subdirectory for individual templates
+                    // GenerateSingleTemplate MUST contain the '##' splitting logic
+                    if (GenerateSingleTemplate(characterName, languageCode, individualTemplateDir)) // Assumes GenerateSingleTemplate exists and returns bool
+                    {
+                        langSuccessCount++;
+                    }
+                    else
+                    {
+                        langFailCount++;
+                    }
+                    // --- End of call to the worker function ---
                 }
-                this.Monitor.Log($"Language {languageCode} Summary - Generated: {langSuccessCount}, Failed/Skipped: {langFailCount}", LogLevel.Info);
-                totalSuccessCount += langSuccessCount; totalFailCount += langFailCount;
+                // Log language summary with appropriate level based on failures
+                this.Monitor.Log($"Language {languageCode} Summary - Generated: {langSuccessCount}, Failed/Skipped: {langFailCount}", langFailCount > 0 ? LogLevel.Warn : LogLevel.Info);
+                totalSuccessCount += langSuccessCount;
+                totalFailCount += langFailCount;
             }
 
-            this.Monitor.Log($"--- Overall Template Generation Complete ---", LogLevel.Info);
+            // --- Final Summary ---
+            this.Monitor.Log($"--- Overall Individual Template Generation Complete ---", LogLevel.Info); // Specify "Individual"
             this.Monitor.Log($"Total Successfully generated: {totalSuccessCount}", LogLevel.Info);
-            this.Monitor.Log($"Total Failed/Skipped: {totalFailCount}", LogLevel.Info);
+            // Only log failures if there were any
+            if (totalFailCount > 0)
+                this.Monitor.Log($"Total Failed/Skipped: {totalFailCount}", LogLevel.Warn);
         }
-
-
-
 
         // --- Generate Single Template File (Helper) ---
         private bool GenerateSingleTemplate(string characterName, string languageCode, string baseOutputDir)
-        // NOTE: baseOutputDir for this method is expected to be ".../GeneratedTemplates",
-        // it will create the "/Individual/<lang>" structure inside.
         {
-            if (string.IsNullOrWhiteSpace(characterName)) return false;
-            bool success = false;
+            this.Monitor.Log($"Generating template for '{characterName}' ({languageCode}).", LogLevel.Trace); // Normal log level
+
+            var discoveredKeyTextPairs = new Dictionary<string, string>();
+            var sourceTracking = new Dictionary<string, string>();
+
             try
             {
-                var discoveredKeyTextPairs = new Dictionary<string, string>();
-                var sourceTracking = new Dictionary<string, string>(); // Optional source tracking
-
-                // --- Load dialogue sources ---
-                string dialogueAssetKeyBase = $"Characters/Dialogue/{characterName}";
+                // --- Load Dialogue Sources ---
                 string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
-                string specificDialogueAssetKey = dialogueAssetKeyBase + langSuffix;
+                string specificDialogueAssetKey = $"Characters/Dialogue/{characterName}{langSuffix}";
                 try
                 {
                     var dialogueData = this.Helper.GameContent.Load<Dictionary<string, string>>(specificDialogueAssetKey);
-                    if (dialogueData != null) { foreach (var kvp in dialogueData) { if (!string.IsNullOrWhiteSpace(kvp.Key) && !string.IsNullOrWhiteSpace(kvp.Value)) { discoveredKeyTextPairs[kvp.Key] = kvp.Value; sourceTracking[kvp.Key] = "Dialogue"; } } }
+                    if (dialogueData != null) { foreach (var kvp in dialogueData) if (!string.IsNullOrWhiteSpace(kvp.Key) && !string.IsNullOrWhiteSpace(kvp.Value) && !discoveredKeyTextPairs.ContainsKey(kvp.Key)) { discoveredKeyTextPairs[kvp.Key] = kvp.Value; sourceTracking[kvp.Key] = "Dialogue"; } }
+                    this.Monitor.Log($"Loaded {dialogueData?.Count ?? 0} entries from '{specificDialogueAssetKey}'.", LogLevel.Trace);
                 }
-                catch (ContentLoadException) { /* Ignore */ }
-                catch (Exception ex) { Monitor.Log($"Error loading '{specificDialogueAssetKey}': {ex.Message}", LogLevel.Warn); }
+                catch (ContentLoadException) { this.Monitor.Log($"Asset '{specificDialogueAssetKey}' not found.", LogLevel.Trace); }
+                catch (Exception ex) { this.Monitor.Log($" Error loading '{specificDialogueAssetKey}': {ex.Message}", LogLevel.Warn); }
+                var stringCharData = GetVanillaCharacterStringKeys(characterName, languageCode, this.Helper.GameContent); // Assumes helper exists
+                this.Monitor.Log($"Found {stringCharData.Count} potential entries from Strings/Characters.", LogLevel.Trace);
+                foreach (var kvp in stringCharData) if (!string.IsNullOrWhiteSpace(kvp.Key) && !string.IsNullOrWhiteSpace(kvp.Value) && !discoveredKeyTextPairs.ContainsKey(kvp.Key)) { discoveredKeyTextPairs[kvp.Key] = kvp.Value; sourceTracking[kvp.Key] = "Strings/Characters"; }
 
-                var stringCharData = GetVanillaCharacterStringKeys(characterName, languageCode, this.Helper.GameContent);
-                foreach (var kvp in stringCharData) { if (!string.IsNullOrWhiteSpace(kvp.Key) && !string.IsNullOrWhiteSpace(kvp.Value)) { discoveredKeyTextPairs[kvp.Key] = kvp.Value; sourceTracking[kvp.Key] = "Strings/Characters"; } }
-                // TODO: Add other sources if needed
+                if (!discoveredKeyTextPairs.Any()) { this.Monitor.Log("No keys found. Skipping.", LogLevel.Debug); return false; }
+                this.Monitor.Log($"Processing {discoveredKeyTextPairs.Count} unique keys for '{characterName}' ({languageCode}).", LogLevel.Trace);
 
-                if (!discoveredKeyTextPairs.Any()) { Monitor.Log($"No keys found for '{characterName}' in '{languageCode}'. Skipping template.", LogLevel.Warn); return false; }
+                // --- Create Manifest ---
+                var characterManifest = new VoicePackManifestTemplate { /* ... Set properties ... */ };
+                characterManifest.VoicePackId = $"YourModID.Vanilla_{characterName}_{languageCode}_Template"; // Change YourModID!
+                characterManifest.VoicePackName = $"{characterName} - Vanilla Template ({languageCode})";
+                characterManifest.Character = characterName;
+                characterManifest.Language = languageCode;
+                // Optional: Add Format field if used
+                // characterManifest.Format = "1.0.0";
 
-                // --- Create Manifest Structure ---
-                var wrapper = new VoicePackWrapperTemplate();
-                var manifest = new VoicePackManifestTemplate
-                {
-                    VoicePackId = $"Vanilla_{characterName}_{languageCode}_Template", // Keep distinct from combined if desired
-                    VoicePackName = $"{characterName} - Vanilla Template ({languageCode})",
-                    Character = characterName,
-                    Language = languageCode
-                };
-
-                // *** Initialize counter for this character ***
                 int entryNumber = 1;
 
-                foreach (var kvp in discoveredKeyTextPairs.OrderBy(p => p.Key)) // Order for consistent numbering
+                // --- Loop, SPLIT, create entries ---
+                foreach (var kvp in discoveredKeyTextPairs.OrderBy(p => p.Key))
                 {
-                    string sanitizedKey = SanitizeKeyForFileName(kvp.Key);
-                    if (string.IsNullOrWhiteSpace(sanitizedKey) || sanitizedKey == "invalid_key") { continue; } // Skip bad keys
+                    string originalKey = kvp.Key;
+                    string originalValue = kvp.Value;
+                    string source = sourceTracking.TryGetValue(originalKey, out var src) ? src : "Unknown";
 
-                    // *** Format the filename WITHOUT padding ***
-                    string numberedFileName = $"{entryNumber}_{sanitizedKey}.wav";
+                    this.Monitor.Log($"Processing Key: '{originalKey}', Value: \"{originalValue}\"", LogLevel.Trace);
 
-                    manifest.Entries.Add(new VoiceEntryTemplate
+                    // *** CORRECTED SPLITTING LOGIC: Use the actual game separator ***
+                    string[] splitSegments = originalValue.Split(new[] { "#$b#" }, StringSplitOptions.RemoveEmptyEntries); // <--- CHANGE IS HERE
+
+                    this.Monitor.Log($" -> Split into {splitSegments.Length} segment(s) using '#$b#'.", LogLevel.Trace);
+
+
+                    for (int i = 0; i < splitSegments.Length; i++)
                     {
-                        //DialogueKey = kvp.Key,
-                        DialogueText = SanitizeDialogueText(kvp.Value),
-                        DialogueFrom = sourceTracking.TryGetValue(kvp.Key, out var source) ? source : "Unknown", // Added source here too
-                                                                                                                 // *** Use the numbered filename in the path ***
-                                                                                                                 // Asset path structure within this INDIVIDUAL template's context
-                        AudioPath = PathUtilities.NormalizePath($"assets/{languageCode}/{characterName}/{numberedFileName}") // Simpler path for individual pack
-                    });
+                        string part = splitSegments[i];
+                        this.Monitor.Log($"   -> Raw Part {i + 1}: \"{part}\"", LogLevel.Trace);
 
-                    // *** Increment counter ***
-                    entryNumber++;
-                }
+                        // *** Restore SanitizeDialogueText (assuming it mainly trims/cleans codes) ***
+                        // If issues persist, this function is the next suspect.
+                        string cleanedPart = SanitizeDialogueText(part);
+                        this.Monitor.Log($"   -> Part {i + 1} after Sanitize: \"{cleanedPart}\"", LogLevel.Trace);
 
-                wrapper.VoicePacks.Add(manifest);
-                string jsonOutput = JsonConvert.SerializeObject(wrapper, Formatting.Indented);
 
-                // --- Define Output Paths for INDIVIDUAL template ---
-                string individualOutputDir = PathUtilities.NormalizePath(Path.Combine(baseOutputDir, "Individual")); // Specific subfolder
-                string langSpecificDir = PathUtilities.NormalizePath(Path.Combine(individualOutputDir, languageCode));
-                string templateJsonPath = PathUtilities.NormalizePath(Path.Combine(langSpecificDir, $"{characterName}_VoicePack_Template.json"));
-                // Asset path relative to the individual template's JSON file location
-                string assetsPath = PathUtilities.NormalizePath(Path.Combine(langSpecificDir, "assets", characterName));
+                        if (string.IsNullOrWhiteSpace(cleanedPart))
+                        {
+                            this.Monitor.Log($"      -> Skipping empty part {i + 1}.", LogLevel.Trace);
+                            continue;
+                        }
 
-                // --- Save JSON File & Create Folders ---
-                Directory.CreateDirectory(langSpecificDir); // Ensure .../Individual/<lang>/ exists
-                Directory.CreateDirectory(assetsPath); // Ensure .../Individual/<lang>/assets/<charname>/ exists
-                File.WriteAllText(templateJsonPath, jsonOutput);
+                        string numberedFileName = $"{entryNumber}.wav";
+                        string relativeAudioPath = Path.Combine("assets", languageCode, characterName, numberedFileName).Replace("\\", "/");
 
-                Monitor.Log($"Successfully generated INDIVIDUAL template for {characterName} ({languageCode})!", LogLevel.Info);
-                Monitor.Log($"Saved JSON to: {templateJsonPath}", LogLevel.Info);
-                Monitor.Log($"Created asset folder structure at: {assetsPath}", LogLevel.Info);
-                success = true;
+                        // Add entry for THIS part
+                        var newEntry = new VoiceEntryTemplate { DialogueText = cleanedPart, DialogueFrom = source, AudioPath = relativeAudioPath };
+                        characterManifest.Entries.Add(newEntry);
+                        this.Monitor.Log($"      -> Added Entry {entryNumber}. Text: \"{newEntry.DialogueText}\"", LogLevel.Trace);
+
+                        entryNumber++;
+                    }
+                } // --- End loop through keys ---
+
+                if (!characterManifest.Entries.Any()) { this.Monitor.Log($"No entries generated for {characterName}.", LogLevel.Debug); return false; }
+
+                // --- Save the INDIVIDUAL Manifest File ---
+                string languageSubDir = PathUtilities.NormalizePath(Path.Combine(baseOutputDir, languageCode));
+                Directory.CreateDirectory(languageSubDir);
+                string sanitizedCharName = (SanitizeKeyForFileName(characterName) ?? characterName.Replace(" ", "_")); // Assumes helper exists
+                string filename = $"{sanitizedCharName}_{languageCode}_template.json";
+                string outputPath = PathUtilities.NormalizePath(Path.Combine(languageSubDir, filename));
+
+                this.Monitor.Log($"Attempting to save JSON to: {outputPath}", LogLevel.Debug);
+                string jsonOutput = JsonConvert.SerializeObject(characterManifest, Formatting.Indented, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+                File.WriteAllText(outputPath, jsonOutput);
+
+                if (!File.Exists(outputPath)) { this.Monitor.Log($"Failed to verify save: {outputPath}", LogLevel.Error); return false; }
+                this.Monitor.Log($"Success! Saved JSON to: {outputPath}", LogLevel.Info);
+
+
+                // --- Create Asset Folder ---
+                string assetsCharacterPath = PathUtilities.NormalizePath(Path.Combine(baseOutputDir, "assets", languageCode, characterName));
+                Directory.CreateDirectory(assetsCharacterPath);
+                this.Monitor.Log($"Created asset folder at: {assetsCharacterPath}", LogLevel.Debug);
+
+                return true; // Success
             }
             catch (Exception ex)
             {
-                Monitor.Log($"Failed to generate template for {characterName} ({languageCode}): {ex.Message}", LogLevel.Error);
-                Monitor.Log(ex.ToString(), LogLevel.Error);
-                success = false;
+                this.Monitor.Log($"ERROR in GenerateSingleTemplate for {characterName} ({languageCode}): {ex.Message}", LogLevel.Error);
+                this.Monitor.Log($"Stack Trace: {ex.StackTrace}", LogLevel.Trace);
+                return false; // Failure
             }
-            return success;
         }
 
 
-        // --- Get Vanilla Character Strings Helper ---
+
         // *** FIXED: Add default return path ***
         private Dictionary<string, string> GetVanillaCharacterStringKeys(string characterName, string languageCode, IGameContentHelper gameContent)
         {
