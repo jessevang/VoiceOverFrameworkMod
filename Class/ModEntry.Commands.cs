@@ -74,7 +74,12 @@ namespace VoiceOverFrameworkMod
             if (targetLanguageArg.Equals("all", StringComparison.OrdinalIgnoreCase) || targetLanguageArg == "*")
             {
                 languagesToProcess.AddRange(this.KnownStardewLanguages); // Assumes KnownStardewLanguages exists in ModEntry.cs (Core)
-                this.Monitor.Log($"Processing for all {languagesToProcess.Count} known languages.", LogLevel.Info);
+
+                if (Config.developerModeOn)
+                {
+                    this.Monitor.Log($"Processing for all {languagesToProcess.Count} known languages.", LogLevel.Info);
+                }
+
             }
             else
             {
@@ -82,13 +87,21 @@ namespace VoiceOverFrameworkMod
                 if (!string.IsNullOrWhiteSpace(validatedLang))
                 {
                     languagesToProcess.Add(validatedLang);
-                    this.Monitor.Log($"Processing for validated language: {validatedLang} (requested: '{targetLanguageArg}')", LogLevel.Info);
+                    if (Config.developerModeOn)
+                    {
+                        this.Monitor.Log($"Processing for validated language: {validatedLang} (requested: '{targetLanguageArg}')", LogLevel.Info);
+                    }
+                   
                 }
             }
 
             if (!languagesToProcess.Any())
             {
-                this.Monitor.Log($"No valid languages determined from input '{targetLanguageArg}'. Known languages: {string.Join(", ", KnownStardewLanguages)}", LogLevel.Error);
+                if (Config.developerModeOn)
+                {
+                    this.Monitor.Log($"No valid languages determined from input '{targetLanguageArg}'. Known languages: {string.Join(", ", KnownStardewLanguages)}", LogLevel.Error);
+                }
+               
                 return;
             }
 
@@ -108,18 +121,31 @@ namespace VoiceOverFrameworkMod
                                                 .Where(name => !string.IsNullOrWhiteSpace(name) && IsKnownVanillaVillager(name)) // Use utility
                                                 .OrderBy(name => name)
                                                 .ToList();
+                        if (Config.developerModeOn)
+                        {
                         this.Monitor.Log($"Found {charactersToProcess.Count} known vanilla characters to process: {string.Join(", ", charactersToProcess)}", LogLevel.Info);
+                        }
+
                     }
                     else
                     {
+                        if (Config.developerModeOn)
+                        {
                         this.Monitor.Log("Game1.characterData is null or empty even though save is loaded. Cannot process 'all'.", LogLevel.Error);
+                        }
+
                         return;
                     }
                 }
                 catch (Exception ex)
                 {
-                    this.Monitor.Log($"Error retrieving character list from Game1.characterData: {ex.Message}", LogLevel.Error);
-                    this.Monitor.Log(ex.ToString(), LogLevel.Trace);
+                    if (Config.developerModeOn)
+                    {
+
+
+                        this.Monitor.Log($"Error retrieving character list from Game1.characterData: {ex.Message}", LogLevel.Error);
+                        this.Monitor.Log(ex.ToString(), LogLevel.Trace);
+                    }
                     return;
                 }
             }
@@ -127,12 +153,20 @@ namespace VoiceOverFrameworkMod
             {
                 // Allow processing any specified name (might be mod character)
                 charactersToProcess.Add(targetCharacterArg);
-                this.Monitor.Log($"Processing for specified character: {targetCharacterArg}", LogLevel.Info);
+                if (Config.developerModeOn)
+                {
+                    this.Monitor.Log($"Processing for specified character: {targetCharacterArg}", LogLevel.Info);
+                }
+
             }
 
             if (!charactersToProcess.Any() || charactersToProcess.Any(string.IsNullOrWhiteSpace))
             {
-                this.Monitor.Log("No valid characters specified or found to process.", LogLevel.Error);
+                if (Config.developerModeOn)
+                {
+                    this.Monitor.Log("No valid characters specified or found to process.", LogLevel.Error);
+                }
+             
                 return;
             }
 
@@ -143,6 +177,7 @@ namespace VoiceOverFrameworkMod
             string outputBaseDir = PathUtilities.NormalizePath(Path.Combine(this.Helper.DirectoryPath, $"{sanitizedPackName}_Templates"));
             Directory.CreateDirectory(outputBaseDir); // Ensure base output dir exists
 
+
             this.Monitor.Log($"Template files will be generated in: {outputBaseDir}", LogLevel.Info);
 
 
@@ -152,7 +187,11 @@ namespace VoiceOverFrameworkMod
 
             foreach (string languageCode in languagesToProcess)
             {
-                this.Monitor.Log($"--- Processing Language: {languageCode} ---", LogLevel.Info);
+                if (Config.developerModeOn)
+                {
+                    this.Monitor.Log($"--- Processing Language: {languageCode} ---", LogLevel.Info);
+                }
+              
                 int langSuccessCount = 0;
                 int langFailCount = 0;
                 foreach (string characterName in charactersToProcess)
@@ -171,7 +210,11 @@ namespace VoiceOverFrameworkMod
                         langFailCount++;
                     }
                 }
-                this.Monitor.Log($"Language {languageCode} Summary - Generated: {langSuccessCount}, Failed/Skipped: {langFailCount}", langFailCount > 0 ? LogLevel.Warn : LogLevel.Info);
+                if (Config.developerModeOn)
+                {
+                    this.Monitor.Log($"Language {languageCode} Summary - Generated: {langSuccessCount}, Failed/Skipped: {langFailCount}", langFailCount > 0 ? LogLevel.Warn : LogLevel.Info);
+                }
+
                 totalSuccessCount += langSuccessCount;
                 totalFailCount += langFailCount;
             }
@@ -189,7 +232,11 @@ namespace VoiceOverFrameworkMod
         // Generates and saves a single JSON template file for one character/language combination.
         private bool GenerateSingleTemplate(string characterName, string languageCode, string outputBaseDir, string voicePackId, string voicePackName)
         {
-            this.Monitor.Log($"Generating template for '{characterName}' ({languageCode}). ID: '{voicePackId}', Name: '{voicePackName}'", LogLevel.Debug);
+            if (Config.developerModeOn)
+            {
+                 this.Monitor.Log($"Generating template for '{characterName}' ({languageCode}). ID: '{voicePackId}', Name: '{voicePackName}'", LogLevel.Debug);
+            }
+        
 
             // Key: Unique Dialogue Key (e.g., Dialogue Key, String Key, or Sanitized Event Text)
             // Value: Raw/Original Text corresponding to the key (used for splitting)
@@ -216,7 +263,11 @@ namespace VoiceOverFrameworkMod
                                 sourceTracking[kvp.Key] = "Dialogue"; // Track source by Key
                             }
                         }
-                        Monitor.Log($"Loaded {dialogueData.Count} entries from '{specificDialogueAssetKey}'.", LogLevel.Trace);
+                        if (Config.developerModeOn)
+                        {
+                            Monitor.Log($"Loaded {dialogueData.Count} entries from '{specificDialogueAssetKey}'.", LogLevel.Trace);
+                        }
+                       
                     }
                     // else { Monitor.Log($"Asset '{specificDialogueAssetKey}' loaded as null.", LogLevel.Trace); }
                 }
@@ -226,7 +277,11 @@ namespace VoiceOverFrameworkMod
 
                 // --- 2. Load Dialogue from Strings/Characters/... ---
                 var stringCharData = GetVanillaCharacterStringKeys(characterName, languageCode, this.Helper.GameContent); // Method in Utilities.cs
-                Monitor.Log($"Found {stringCharData.Count} potential entries from Strings/Characters for '{characterName}' ({languageCode}).", LogLevel.Trace);
+                if (Config.developerModeOn)
+                {
+                    Monitor.Log($"Found {stringCharData.Count} potential entries from Strings/Characters for '{characterName}' ({languageCode}).", LogLevel.Trace);
+                }
+               
                 foreach (var kvp in stringCharData)
                 {
                     if (!string.IsNullOrWhiteSpace(kvp.Key) && !string.IsNullOrWhiteSpace(kvp.Value) && !discoveredKeyTextPairs.ContainsKey(kvp.Key))
@@ -241,7 +296,11 @@ namespace VoiceOverFrameworkMod
                 // --- 3. Load Dialogue from Events ---
                 // Call the helper method from ModEntry.Utilities.cs
                 var eventDialogue = GetEventDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
-                Monitor.Log($"Merging {eventDialogue.Count} unique dialogue lines found in events.", LogLevel.Trace);
+                if (Config.developerModeOn)
+                {
+                     Monitor.Log($"Merging {eventDialogue.Count} unique dialogue lines found in events.", LogLevel.Trace);
+                }
+
 
                 // Keep track of sanitized texts added from events to avoid internal duplicates
                 var uniqueSanitizedEventTextsAdded = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
@@ -273,10 +332,19 @@ namespace VoiceOverFrameworkMod
                 // --- 4. Process and Generate Entries ---
                 if (!discoveredKeyTextPairs.Any())
                 {
-                    Monitor.Log($"No dialogue keys/texts found from any source for '{characterName}' ({languageCode}). Skipping JSON generation.", LogLevel.Warn);
+                    if (Config.developerModeOn)
+                    {
+                         Monitor.Log($"No dialogue keys/texts found from any source for '{characterName}' ({languageCode}). Skipping JSON generation.", LogLevel.Warn);
+                    }
+                  
                     return false;
                 }
-                Monitor.Log($"Processing {discoveredKeyTextPairs.Count} unique dialogue keys/texts for '{characterName}' ({languageCode}).", LogLevel.Trace);
+
+                if (Config.developerModeOn)
+                {
+                    Monitor.Log($"Processing {discoveredKeyTextPairs.Count} unique dialogue keys/texts for '{characterName}' ({languageCode}).", LogLevel.Trace);
+                }
+
 
                 var characterManifest = new VoicePackManifestTemplate
                 {
@@ -353,7 +421,11 @@ namespace VoiceOverFrameworkMod
                 // --- 5. Save JSON File ---
                 if (!characterManifest.Entries.Any())
                 {
-                    Monitor.Log($"No valid entries generated after processing for {characterName} ({languageCode}). Skipping JSON file.", LogLevel.Debug);
+                    if (Config.developerModeOn)
+                    {
+                        Monitor.Log($"No valid entries generated after processing for {characterName} ({languageCode}). Skipping JSON file.", LogLevel.Debug);
+                    }
+                   
                     return false;
                 }
 
@@ -362,7 +434,11 @@ namespace VoiceOverFrameworkMod
                 string filename = $"{sanitizedCharName}_{languageCode}.json";
                 string outputPath = PathUtilities.NormalizePath(Path.Combine(outputBaseDir, filename));
 
-                Monitor.Log($"Attempting to serialize and save JSON to: {outputPath}", LogLevel.Debug);
+                if (Config.developerModeOn)
+                {
+                     Monitor.Log($"Attempting to serialize and save JSON to: {outputPath}", LogLevel.Debug);
+                }
+
                 // Serialize with indentation for readability
                 string jsonOutput = JsonConvert.SerializeObject(characterManifest, Formatting.Indented,
                                                                new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore }); // Ignore null values
@@ -373,10 +449,17 @@ namespace VoiceOverFrameworkMod
                 // Verify save (optional but good practice)
                 if (!File.Exists(outputPath))
                 {
-                    Monitor.Log($"Failed to verify JSON file save at: {outputPath}", LogLevel.Error);
+                    if (Config.developerModeOn)
+                    {
+                        Monitor.Log($"Failed to verify JSON file save at: {outputPath}", LogLevel.Error);
+                    }
+
                     return false;
                 }
-                Monitor.Log($"Success! Saved template JSON ({characterManifest.Entries.Count} entries) to: {outputPath}", LogLevel.Info);
+             
+                    Monitor.Log($"Success! Saved template JSON ({characterManifest.Entries.Count} entries) to: {outputPath}", LogLevel.Info);
+                
+              
 
 
                 // --- 6. Create Asset Folder Structure ---

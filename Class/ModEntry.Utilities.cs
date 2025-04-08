@@ -75,14 +75,22 @@ namespace VoiceOverFrameworkMod
             const int MaxLength = 80; // Increased length slightly
             if (key.Length > MaxLength)
             {
-                Monitor.Log($"Sanitized key exceeded max length ({MaxLength}). Truncating original: '{originalKey}' -> '{key.Substring(0, MaxLength)}'", LogLevel.Trace);
+                if (Config.developerModeOn)
+                {
+                    Monitor.Log($"Sanitized key exceeded max length ({MaxLength}). Truncating original: '{originalKey}' -> '{key.Substring(0, MaxLength)}'", LogLevel.Trace);
+                }
+                
                 key = key.Substring(0, MaxLength);
             }
 
             // Ensure the key is not empty after sanitization
             if (string.IsNullOrWhiteSpace(key))
             {
-                Monitor.Log($"Sanitization resulted in empty string for key: '{originalKey}'. Using fallback 'sanitized_key'.", LogLevel.Warn);
+                if (Config.developerModeOn)
+                {
+                    Monitor.Log($"Sanitization resulted in empty string for key: '{originalKey}'. Using fallback 'sanitized_key'.", LogLevel.Warn);
+                }
+                
                 key = "sanitized_key"; // Provide a fallback name
             }
 
@@ -110,7 +118,11 @@ namespace VoiceOverFrameworkMod
             };
 
             bool isKnown = knownVanilla.Contains(name);
-            Monitor.Log($"Checking if '{name}' is known vanilla: {isKnown}", LogLevel.Trace);
+            if (Config.developerModeOn)
+            {
+                Monitor.Log($"Checking if '{name}' is known vanilla: {isKnown}", LogLevel.Trace);
+            }
+           
             return isKnown;
         }
 
@@ -139,7 +151,11 @@ namespace VoiceOverFrameworkMod
 
             if (langMap.TryGetValue(requestedLang.Trim(), out string stardewCode))
             {
-                Monitor.Log($"Validated language '{requestedLang}' -> '{stardewCode}'", LogLevel.Trace);
+                if (Config.developerModeOn)
+                {
+                    Monitor.Log($"Validated language '{requestedLang}' -> '{stardewCode}'", LogLevel.Trace);
+                }
+                
                 return stardewCode;
             }
 
@@ -147,12 +163,19 @@ namespace VoiceOverFrameworkMod
             // Check against our known list.
             if (KnownStardewLanguages.Contains(requestedLang.Trim(), StringComparer.OrdinalIgnoreCase))
             {
-                Monitor.Log($"Language code '{requestedLang}' not in map but found in KnownStardewLanguages. Using directly.", LogLevel.Trace);
+                if (Config.developerModeOn)
+                {
+                    Monitor.Log($"Language code '{requestedLang}' not in map but found in KnownStardewLanguages. Using directly.", LogLevel.Trace);
+                }
+                
                 return requestedLang.Trim(); // Return the validated known code
             }
 
-
-            Monitor.Log($"Language code '{requestedLang}' not recognized or mapped to a known Stardew language code. Cannot validate.", LogLevel.Warn);
+            if (Config.developerModeOn)
+            {
+                Monitor.Log($"Language code '{requestedLang}' not recognized or mapped to a known Stardew language code. Cannot validate.", LogLevel.Warn);
+            }
+            
             // Return null or original? Returning null is safer to prevent unexpected asset load attempts.
             return null;
         }
@@ -193,7 +216,11 @@ namespace VoiceOverFrameworkMod
 
             if (text != originalText)
             {
-                Monitor.Log($"Sanitized Text: \"{originalText}\" -> \"{text}\"", LogLevel.Trace);
+                if (Config.developerModeOn)
+                {
+                    Monitor.Log($"Sanitized Text: \"{originalText}\" -> \"{text}\"", LogLevel.Trace);
+                }
+                
             }
 
             return text;

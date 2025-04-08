@@ -9,7 +9,7 @@ namespace VoiceOverFrameworkMod
         public string DefaultLanguage { get; set; } = "en";
         public float MasterVolume { get; set; } = 1.0f;
         public bool turnoffdialoguetypingsound = true;
-        public bool FallbackToDefaultIfMissing { get; set; } = true;
+        public bool FallbackToDefaultIfMissing { get; set; } = false;
         public Dictionary<string, string> SelectedVoicePacks { get; set; } = new();
         public bool developerModeOn = true;
     }

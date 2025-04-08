@@ -166,9 +166,23 @@ namespace VoiceOverFrameworkMod
             } // End foreach eventFileNameBase
 
             if (foundInEventsCount > 0)
-                this.Monitor.Log($"Found {foundInEventsCount} potential event dialogue lines for '{targetCharacterName}' ({languageCode}).", LogLevel.Debug);
+            {
+                if (Config.developerModeOn)
+                {
+                    this.Monitor.Log($"Found {foundInEventsCount} potential event dialogue lines for '{targetCharacterName}' ({languageCode}).", LogLevel.Debug);
+                }
+       
+            }
+
             else
-                Monitor.Log($"No event dialogue lines found for '{targetCharacterName}' ({languageCode}) in common event files.", LogLevel.Trace);
+            {
+                if (Config.developerModeOn)
+                {
+                    Monitor.Log($"No event dialogue lines found for '{targetCharacterName}' ({languageCode}) in common event files.", LogLevel.Trace);
+                }
+
+            }
+              
 
 
             return eventDialogue;
@@ -292,23 +306,6 @@ namespace VoiceOverFrameworkMod
                  max: 1.0f,
                  interval: 0.05f, // Volume steps
                  formatValue: value => $"{Math.Round(value * 100)}%" // Display as percentage
-            );
-
-            // Language settings (Example - simple text box for now)
-            gmcm.AddSectionTitle(mod: this.ModManifest, text: () => "Language Settings");
-            gmcm.AddTextOption(
-                 mod: this.ModManifest,
-                 name: () => "Default Language Code",
-                 tooltip: () => "Enter the preferred language code (e.g., en, es-ES, zh-CN) for voices.",
-                 getValue: () => this.Config.DefaultLanguage,
-                 setValue: value => this.Config.DefaultLanguage = value
-             );
-            gmcm.AddBoolOption(
-                mod: this.ModManifest,
-                name: () => "Use English if Default Missing",
-                tooltip: () => "If a voice line isn't found for the Default Language, try loading the English version instead.",
-                getValue: () => this.Config.FallbackToDefaultIfMissing, // Assuming 'en' is the ultimate fallback
-                setValue: value => this.Config.FallbackToDefaultIfMissing = value
             );
 
 

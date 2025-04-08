@@ -28,18 +28,31 @@ namespace VoiceOverFrameworkMod
 
             if (!VoicePacksByCharacter.TryGetValue(characterName, out var availablePacks) || !availablePacks.Any())
             {
-                // Monitor.Log($"[GetAudioPath] No loaded voice packs found for character '{characterName}'.", LogLevel.Trace);
+                if (Config.developerModeOn)
+                {
+                    Monitor.Log($"[GetAudioPath] No loaded voice packs found for character '{characterName}'.", LogLevel.Trace);
+                }
+                
                 return null; // No packs loaded for this character
             }
 
             // Determine the desired VoicePackId from config
             if (!SelectedVoicePacks.TryGetValue(characterName, out string selectedVoicePackId) || string.IsNullOrEmpty(selectedVoicePackId) || selectedVoicePackId.Equals("None", StringComparison.OrdinalIgnoreCase))
             {
-                // Monitor.Log($"[GetAudioPath] No voice pack selected (or set to 'None') for '{characterName}' in config.", LogLevel.Trace);
+                if (Config.developerModeOn)
+                {
+                    Monitor.Log($"[GetAudioPath] No voice pack selected (or set to 'None') for '{characterName}' in config.", LogLevel.Trace);
+                }
+               
                 return null; // No pack selected or explicitly disabled
             }
 
-            // Monitor.Log($"[GetAudioPath] Trying to use configured VoicePackId '{selectedVoicePackId}' for '{characterName}'.", LogLevel.Trace);
+            if (Config.developerModeOn)
+            {
+                Monitor.Log($"[GetAudioPath] Trying to use configured VoicePackId '{selectedVoicePackId}' for '{characterName}'.", LogLevel.Trace);
+            }
+
+            
 
 
             // Determine target language(s)
@@ -66,23 +79,40 @@ namespace VoiceOverFrameworkMod
 
             if (packToUse == null)
             {
-                // Monitor.Log($"[GetAudioPath] Failed to find a loaded voice pack matching ID='{selectedVoicePackId}' for character '{characterName}' (Target Lang='{targetLanguage}', Fallback Tried: {tryFallback}).", LogLevel.Warn);
+
+                if (Config.developerModeOn)
+                {
+                    Monitor.Log($"[GetAudioPath] Failed to find a loaded voice pack matching ID='{selectedVoicePackId}' for character '{characterName}' (Target Lang='{targetLanguage}', Fallback Tried: {tryFallback}).", LogLevel.Warn);
+                }
+                
                 return null;
             }
 
-            // Monitor.Log($"[GetAudioPath] Using pack: '{packToUse.VoicePackName}' (ID: {packToUse.VoicePackId}, Lang: {packToUse.Language}, Fallback Used: {usedFallbackLanguage})", LogLevel.Trace);
+            if (Config.developerModeOn)
+            {
+                Monitor.Log($"[GetAudioPath] Using pack: '{packToUse.VoicePackName}' (ID: {packToUse.VoicePackId}, Lang: {packToUse.Language}, Fallback Used: {usedFallbackLanguage})", LogLevel.Trace);
+            }
+            
 
 
             // *** THE KEY LOOKUP ***
             if (packToUse.Entries.TryGetValue(sanitizedDialogueText, out string relativeAudioPath))
             {
-                // Monitor.Log($"[GetAudioPath] SUCCESS: Found relative path '{relativeAudioPath}' for text '{sanitizedDialogueText}' in pack '{packToUse.VoicePackName}'.", LogLevel.Debug);
+                if (Config.developerModeOn)
+                {
+                    Monitor.Log($"[GetAudioPath] SUCCESS: Found relative path '{relativeAudioPath}' for text '{sanitizedDialogueText}' in pack '{packToUse.VoicePackName}'.", LogLevel.Debug);
+                }
+               
                 // Return the ABSOLUTE path by combining BaseAssetPath and relative path
                 return PathUtilities.NormalizePath(Path.Combine(packToUse.BaseAssetPath, relativeAudioPath));
             }
             else
             {
-                // Monitor.Log($"[GetAudioPath] FAILED: Sanitized text '{sanitizedDialogueText}' not found within the 'Entries' of selected pack '{packToUse.VoicePackName}' (Lang: '{packToUse.Language}').", LogLevel.Trace);
+                if (Config.developerModeOn)
+                {
+                    Monitor.Log($"[GetAudioPath] FAILED: Sanitized text '{sanitizedDialogueText}' not found within the 'Entries' of selected pack '{packToUse.VoicePackName}' (Lang: '{packToUse.Language}').", LogLevel.Trace);
+                }
+                
                 return null;
             }
         }
@@ -91,18 +121,30 @@ namespace VoiceOverFrameworkMod
         // Takes the character and *sanitized* text, finds the path, and plays it.
         public void TryToPlayVoice(string characterName, string sanitizedDialogueText)
         {
-            // Monitor.Log($"[TryPlayVoice] Attempting lookup: Char='{characterName}', SanitizedText='{sanitizedDialogueText}'", LogLevel.Trace);
+            if (Config.developerModeOn)
+            {
+                Monitor.Log($"[TryPlayVoice] Attempting lookup: Char='{characterName}', SanitizedText='{sanitizedDialogueText}'", LogLevel.Trace);
+            }
+            
 
             string fullAudioPath = GetAudioPathToPlay(characterName, sanitizedDialogueText);
 
             if (!string.IsNullOrWhiteSpace(fullAudioPath))
             {
-                // Monitor.Log($"[TryPlayVoice] Full path resolved: '{fullAudioPath}'. Calling PlayVoiceFromFile.", LogLevel.Debug);
+                if (Config.developerModeOn)
+                {
+                    Monitor.Log($"[TryPlayVoice] Full path resolved: '{fullAudioPath}'. Calling PlayVoiceFromFile.", LogLevel.Debug);
+                }
+                
                 PlayVoiceFromFile(fullAudioPath);
             }
             else
             {
-                // Monitor.Log($"[TryPlayVoice] No audio path found for Char='{characterName}', SanitizedText='{sanitizedDialogueText}'. Playback aborted.", LogLevel.Trace);
+                if (Config.developerModeOn)
+                {
+                Monitor.Log($"[TryPlayVoice] No audio path found for Char='{characterName}', SanitizedText='{sanitizedDialogueText}'. Playback aborted.", LogLevel.Trace);
+                }
+
             }
         }
 
@@ -112,20 +154,36 @@ namespace VoiceOverFrameworkMod
         {
             if (string.IsNullOrWhiteSpace(absoluteAudioFilePath))
             {
+                if (Config.developerModeOn)
+                {
                 Monitor.Log($"[PlayVoiceFromFile] Attempted to play null or empty audio file path. Aborting.", LogLevel.Warn);
+
+                }
                 return;
             }
 
-            Monitor.Log($"[PlayVoiceFromFile] Request received for: '{absoluteAudioFilePath}'", LogLevel.Debug);
+            if (Config.developerModeOn)
+            {
+                Monitor.Log($"[PlayVoiceFromFile] Request received for: '{absoluteAudioFilePath}'", LogLevel.Debug);
+            }
+  
 
             try
             {
                 if (!File.Exists(absoluteAudioFilePath))
                 {
-                    Monitor.Log($"[PlayVoiceFromFile] ERROR: File not found at path: {absoluteAudioFilePath}", LogLevel.Error);
+                    if (Config.developerModeOn)
+                    {
+                        Monitor.Log($"[PlayVoiceFromFile] ERROR: File not found at path: {absoluteAudioFilePath}", LogLevel.Error);
+                    }
+
                     return;
                 }
-                // Monitor.Log($"[PlayVoiceFromFile] File exists. Proceeding with load for: {absoluteAudioFilePath}", LogLevel.Trace);
+                if (Config.developerModeOn)
+                {
+                    Monitor.Log($"[PlayVoiceFromFile] File exists. Proceeding with load for: {absoluteAudioFilePath}", LogLevel.Trace);
+                }
+
 
 
                 // --- Stop and Dispose Previous Instance ---
@@ -134,7 +192,7 @@ namespace VoiceOverFrameworkMod
 
                 if (previousInstance != null)
                 {
-                    // Monitor.Log($"[PlayVoiceFromFile] Checking previous instance. State: {previousInstance.State}, IsDisposed: {previousInstance.IsDisposed}", LogLevel.Trace);
+                  
                     // Also remove the previous instance from the tracking list
                     lock (listLock)
                     {
@@ -147,7 +205,7 @@ namespace VoiceOverFrameworkMod
                         {
                             previousInstance.Stop(true); // Immediate stop
                             previousInstance.Dispose();
-                            // Monitor.Log($"[PlayVoiceFromFile] Stopped and disposed previous instance.", LogLevel.Trace);
+                           
                         }
                         catch (ObjectDisposedException) { /* Ignore */ }
                         catch (Exception ex) { Monitor.Log($"[PlayVoiceFromFile] Error stopping/disposing previous instance: {ex.Message}", LogLevel.Warn); }
@@ -157,7 +215,11 @@ namespace VoiceOverFrameworkMod
 
                 // --- Load and Play New Sound ---
                 SoundEffect sound;
-                // Monitor.Log($"[PlayVoiceFromFile] Creating FileStream for: {absoluteAudioFilePath}", LogLevel.Trace);
+                if (Config.developerModeOn)
+                {
+                     Monitor.Log($"[PlayVoiceFromFile] Creating FileStream for: {absoluteAudioFilePath}", LogLevel.Trace);
+                }
+               
                 using (var stream = new FileStream(absoluteAudioFilePath, FileMode.Open, FileAccess.Read, FileShare.Read))
                 {
                     // Monitor.Log($"[PlayVoiceFromFile] FileStream opened. Calling SoundEffect.FromStream...", LogLevel.Trace);
@@ -176,9 +238,19 @@ namespace VoiceOverFrameworkMod
                 // Monitor.Log($"[PlayVoiceFromFile] Setting volume. GameVol={gameVolume:F2}, MasterVol={masterVolume:F2}, Applied={newInstance.Volume:F2}", LogLevel.Trace);
 
                 // Play the sound
-                // Monitor.Log($"[PlayVoiceFromFile] Calling Play() for {Path.GetFileName(absoluteAudioFilePath)}...", LogLevel.Debug);
+
+                if (Config.developerModeOn)
+                {
+                    Monitor.Log($"[PlayVoiceFromFile] Calling Play() for {Path.GetFileName(absoluteAudioFilePath)}...", LogLevel.Debug);
+                }
+               
                 newInstance.Play();
-                Monitor.Log($"[PlayVoiceFromFile] Play() called successfully for '{Path.GetFileName(absoluteAudioFilePath)}'.", LogLevel.Debug);
+
+                if (Config.developerModeOn)
+                {
+                    Monitor.Log($"[PlayVoiceFromFile] Play() called successfully for '{Path.GetFileName(absoluteAudioFilePath)}'.", LogLevel.Debug);
+                }
+
 
                 // Assign to currentVoiceInstance AFTER successful play
                 currentVoiceInstance = newInstance;
@@ -198,6 +270,7 @@ namespace VoiceOverFrameworkMod
             catch (InvalidOperationException opEx) { Monitor.Log($"[PlayVoiceFromFile] ERROR (InvalidOperationException - often bad WAV/XNA issue): {absoluteAudioFilePath}. Message: {opEx.Message}", LogLevel.Error); Monitor.Log(opEx.ToString(), LogLevel.Trace); }
             catch (Exception ex) // Catch-all
             {
+
                 Monitor.Log($"[PlayVoiceFromFile] FAILED ({ex.GetType().Name}): {absoluteAudioFilePath}. Message: {ex.Message}", LogLevel.Error);
                 Monitor.Log(ex.ToString(), LogLevel.Trace);
             }
@@ -229,7 +302,11 @@ namespace VoiceOverFrameworkMod
                         }
                         catch (Exception ex)
                         {
-                            Monitor.Log($"[Cleanup] Error disposing instance: {ex.Message}", LogLevel.Warn);
+                            if (Config.developerModeOn)
+                            {
+                                Monitor.Log($"[Cleanup] Error disposing instance: {ex.Message}", LogLevel.Warn);
+                            }
+                            
                         }
                         activeVoiceInstances.RemoveAt(i); // Remove from list
                     }
@@ -246,13 +323,7 @@ namespace VoiceOverFrameworkMod
             // if (disposedCount > 0) Monitor.Log($"[Cleanup] Disposed {disposedCount} instances. Time: {sw.ElapsedMilliseconds}ms. Remaining active: {activeVoiceInstances.Count}", LogLevel.Trace);
         }
 
-        // Marked as deprecated, recommend using TryToPlayVoice flow instead.
-        public string DEPRECATED_GetAudioPath_ResolvesOnlyRelative(string characterName, string dialogueText, string languageCode, string desiredVoicePackId = null)
-        {
-            this.Monitor.Log("DEPRECATED_GetAudioPath_ResolvesOnlyRelative called. Consider using TryToPlayVoice.", LogLevel.Warn);
-            // Original logic is now part of GetAudioPathToPlay. This just simulates a call.
-            return GetAudioPathToPlay(characterName, SanitizeDialogueText(dialogueText));
-        }
+
 
     }
 }
