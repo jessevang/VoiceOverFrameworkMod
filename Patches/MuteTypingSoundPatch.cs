@@ -5,7 +5,7 @@ namespace VoiceOverFrameworkMod
 {
     public static class MuteTypingSoundPatch
     {
-        public static void ApplyPatch(Harmony harmony)
+        public static void ApplyPatch(Harmony harmony, StardewModdingAPI.IMonitor monitor)
         {
             harmony.Patch(
                 original: AccessTools.Method(typeof(Game1), nameof(Game1.playSound), new[] { typeof(string), typeof(int) }),
