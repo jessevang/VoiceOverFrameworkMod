@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text.RegularExpressions; // For Regex used in GenerateSingleTemplate
+using System.Text.RegularExpressions; 
 using Microsoft.Xna.Framework.Content;
 using Newtonsoft.Json;
 using StardewModdingAPI;
-using StardewModdingAPI.Utilities; // For PathUtilities
-using StardewValley; // For Game1 access in command
+using StardewModdingAPI.Utilities; 
+using StardewValley; 
 
 namespace VoiceOverFrameworkMod
 {
@@ -31,7 +31,7 @@ namespace VoiceOverFrameworkMod
                 callback: this.GenerateTemplateCommand
             );
 
-            // Add other commands here...
+   
 
             this.Monitor.Log("Console commands registered.", LogLevel.Debug);
         }
@@ -39,27 +39,28 @@ namespace VoiceOverFrameworkMod
 
         private void GenerateTemplateCommand(string command, string[] args)
         {
-            // --- Argument Parsing ---
-            if (args.Length < 4)
+
+            if (args.Length < 5)
             {
                 this.Monitor.Log("Invalid arguments. Use 'help vf_create_template' for details.", LogLevel.Error);
-                // Log the help text directly for convenience
-                this.Monitor.Log("Usage: vf_create_template <CharacterName|all> <LanguageCode|all> <YourPackID> <YourPackName>", LogLevel.Info);
+
+                this.Monitor.Log("Usage: create_template <CharacterName|all> <LanguageCode|all> <YourPackID> <YourPackName> <AudioPathNumber.Wav-StartsAtThisNumber>", LogLevel.Info);
                 return;
             }
 
-            // Basic validation - Check if world is ready (needed for 'all' characters)
+
             if (args[0].Equals("all", StringComparison.OrdinalIgnoreCase) && !Context.IsWorldReady)
             {
                 this.Monitor.Log("Please load a save file before using 'all' characters to access game data.", LogLevel.Warn);
                 return;
             }
 
-
+            
             string targetCharacterArg = args[0];
             string targetLanguageArg = args[1];
-            string baseUniqueModID = args[2].Trim(); // Base ID provided by user
-            string baseVoicePackName = args[3].Trim(); // Base Name provided by user
+            string baseUniqueModID = args[2].Trim(); 
+            string baseVoicePackName = args[3].Trim(); 
+            int startsAtThisNumber = Convert.ToInt32(args[4]);
 
             // Validate base ID and Name aren't empty
             if (string.IsNullOrWhiteSpace(baseUniqueModID) || string.IsNullOrWhiteSpace(baseVoicePackName))
@@ -201,7 +202,7 @@ namespace VoiceOverFrameworkMod
                     string instancePackName = $"{baseVoicePackName} ({characterName} - {languageCode})";
 
                     // Call the worker function. It handles saving to the correct subpath.
-                    if (GenerateSingleTemplate(characterName, languageCode, outputBaseDir, instancePackId, instancePackName))
+                    if (GenerateSingleTemplate(characterName, languageCode, outputBaseDir, instancePackId, instancePackName, startsAtThisNumber))
                     {
                         langSuccessCount++;
                     }
@@ -228,258 +229,239 @@ namespace VoiceOverFrameworkMod
         }
 
 
-        // Generates and saves a single JSON template file for one character/language combination.
-        // Generates and saves a single JSON template file for one character/language combination.
-        private bool GenerateSingleTemplate(string characterName, string languageCode, string outputBaseDir, string voicePackId, string voicePackName)
+        /// <summary>
+        /// Generates a single voice pack template JSON file for a specific character and language,
+        /// pulling dialogue from Dialogue files, Strings files, Events, and Festivals.
+        /// </summary>
+        private bool GenerateSingleTemplate(string characterName, string languageCode, string outputBaseDir, string voicePackId, string voicePackName, int startAtThisNumber)
         {
-            if (Config.developerModeOn)
+            // Basic Logging
+            // **CHECK:** Does 'Config' exist and have 'developerModeOn'? Is it initialized?
+            if (this.Config.developerModeOn) // Using 'this.' for clarity
             {
-                 this.Monitor.Log($"Generating template for '{characterName}' ({languageCode}). ID: '{voicePackId}', Name: '{voicePackName}'", LogLevel.Debug);
+                this.Monitor.Log($"Generating template for '{characterName}' ({languageCode}). ID: '{voicePackId}', Name: '{voicePackName}' AudioFileStartsAt: {startAtThisNumber}", LogLevel.Debug);
             }
-        
 
-            // Key: Unique Dialogue Key (e.g., Dialogue Key, String Key, or Sanitized Event Text)
-            // Value: Raw/Original Text corresponding to the key (used for splitting)
+            // Data Structures
             var discoveredKeyTextPairs = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-            // Key: Unique Dialogue Key (matching above)
-            // Value: Source information string (e.g., "Dialogue", "Strings/Characters", "Event:Town/123")
             var sourceTracking = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
 
-            try
+            try // Master try-catch for the whole process
             {
-                // --- 1. Load Dialogue from Characters/Dialogue/... ---
+                // 1. Load Dialogue from Characters/Dialogue/...
                 string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
                 string specificDialogueAssetKey = $"Characters/Dialogue/{characterName}{langSuffix}";
-                try
+                try // try-catch for specific asset load
                 {
-                    var dialogueData = this.Helper.GameContent.Load<Dictionary<string, string>>(specificDialogueAssetKey);
+                    IAssetName dialogueAssetName = this.Helper.GameContent.ParseAssetName(specificDialogueAssetKey); // Use IAssetName
+                    var dialogueData = this.Helper.GameContent.Load<Dictionary<string, string>>(dialogueAssetName); // Use IAssetName
+
                     if (dialogueData != null)
                     {
                         foreach (var kvp in dialogueData)
                         {
                             if (!string.IsNullOrWhiteSpace(kvp.Key) && !string.IsNullOrWhiteSpace(kvp.Value) && !discoveredKeyTextPairs.ContainsKey(kvp.Key))
                             {
-                                discoveredKeyTextPairs[kvp.Key] = kvp.Value; // Store Key -> Raw Value
-                                sourceTracking[kvp.Key] = "Dialogue"; // Track source by Key
+                                discoveredKeyTextPairs[kvp.Key] = kvp.Value;
+                                sourceTracking[kvp.Key] = "Dialogue";
                             }
                         }
-                        if (Config.developerModeOn)
-                        {
-                            Monitor.Log($"Loaded {dialogueData.Count} entries from '{specificDialogueAssetKey}'.", LogLevel.Trace);
-                        }
-                       
+                        if (this.Config.developerModeOn) { this.Monitor.Log($"Loaded {dialogueData.Count} entries from '{specificDialogueAssetKey}'.", LogLevel.Trace); }
                     }
-                    // else { Monitor.Log($"Asset '{specificDialogueAssetKey}' loaded as null.", LogLevel.Trace); }
                 }
-                catch (ContentLoadException) { Monitor.Log($"Asset '{specificDialogueAssetKey}' not found.", LogLevel.Trace); }
-                catch (Exception ex) { Monitor.Log($"Error loading '{specificDialogueAssetKey}': {ex.Message}", LogLevel.Warn); Monitor.Log(ex.ToString(), LogLevel.Trace); }
-
-
-                // --- 2. Load Dialogue from Strings/Characters/... ---
-                var stringCharData = GetVanillaCharacterStringKeys(characterName, languageCode, this.Helper.GameContent); // Method in Utilities.cs
-                if (Config.developerModeOn)
+                catch (ContentLoadException)
                 {
-                    Monitor.Log($"Found {stringCharData.Count} potential entries from Strings/Characters for '{characterName}' ({languageCode}).", LogLevel.Trace);
+                    this.Monitor.Log($"Asset '{specificDialogueAssetKey}' not found.", LogLevel.Trace); // Log asset not found
                 }
-               
-                foreach (var kvp in stringCharData)
+                catch (Exception ex) // Catch other potential errors during loading/processing this asset
+                {
+                    this.Monitor.Log($"Error loading/processing '{specificDialogueAssetKey}': {ex.Message}", LogLevel.Warn);
+                    this.Monitor.Log(ex.ToString(), LogLevel.Trace); // Log stack trace for debugging
+                }
+
+                // 2. Load Dialogue from Strings/Characters/...
+                // **CHECK:** Does GetVanillaCharacterStringKeys exist with the correct signature and handle errors?
+                var stringCharData = this.GetVanillaCharacterStringKeys(characterName, languageCode, this.Helper.GameContent); // Using 'this.'
+                if (this.Config.developerModeOn) { this.Monitor.Log($"Found {stringCharData.Count} potential entries from Strings/Characters for '{characterName}' ({languageCode}).", LogLevel.Trace); }
+                foreach (var kvp in stringCharData) // Assuming stringCharData is never null (method should return empty dict if error)
                 {
                     if (!string.IsNullOrWhiteSpace(kvp.Key) && !string.IsNullOrWhiteSpace(kvp.Value) && !discoveredKeyTextPairs.ContainsKey(kvp.Key))
                     {
-                        discoveredKeyTextPairs[kvp.Key] = kvp.Value; // Store Key -> Raw Value
-                        sourceTracking[kvp.Key] = "Strings/Characters"; // Track source by Key
+                        discoveredKeyTextPairs[kvp.Key] = kvp.Value;
+                        sourceTracking[kvp.Key] = "Strings/Characters";
                     }
-                    // else if (discoveredKeyTextPairs.ContainsKey(kvp.Key)) { Monitor.Log($"Key '{kvp.Key}' from Strings/Characters already present. Skipping.", LogLevel.Trace); }
                 }
 
+                // 3. Load Dialogue from Events
+                // **CHECK:** Does GetEventDialogueForCharacter exist with the correct signature and handle errors?
+                var eventDialogue = this.GetEventDialogueForCharacter(characterName, languageCode, this.Helper.GameContent); // Using 'this.'
+                if (this.Config.developerModeOn) { this.Monitor.Log($"Merging {eventDialogue.Count} unique dialogue lines found in events.", LogLevel.Trace); }
 
-                // --- 3. Load Dialogue from Events ---
-                // Call the helper method from ModEntry.Utilities.cs
-                var eventDialogue = GetEventDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
-                if (Config.developerModeOn)
-                {
-                     Monitor.Log($"Merging {eventDialogue.Count} unique dialogue lines found in events.", LogLevel.Trace);
-                }
-
-
-                // Keep track of sanitized texts added from events to avoid internal duplicates
                 var uniqueSanitizedEventTextsAdded = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
-
-                foreach (var kvp in eventDialogue) // Key: Sanitized Text, Value: Source Info
+                foreach (var kvp in eventDialogue) // Assuming eventDialogue is never null
                 {
                     string sanitizedEventText = kvp.Key;
                     string eventSourceInfo = kvp.Value;
 
-                    // Check if this *sanitized text* already exists from Dialogue/Strings sources
+                    // **CHECK:** Does SanitizeDialogueText exist?
                     bool alreadyExistsInStandardDialogue = discoveredKeyTextPairs
-                        .Where(pair => !sourceTracking[pair.Key].StartsWith("Event:")) // Only check non-event sources
-                        .Any(pair => SanitizeDialogueText(pair.Value).Equals(sanitizedEventText, StringComparison.OrdinalIgnoreCase));
+                        .Where(pair => !sourceTracking[pair.Key].StartsWith("Event:", StringComparison.OrdinalIgnoreCase))
+                        .Any(pair => this.SanitizeDialogueText(pair.Value).Equals(sanitizedEventText, StringComparison.OrdinalIgnoreCase)); // Using 'this.'
 
-                    // Also check if this exact sanitized text was already added from another event line
-                    if (!alreadyExistsInStandardDialogue && !uniqueSanitizedEventTextsAdded.Contains(sanitizedEventText))
+                    if (!alreadyExistsInStandardDialogue && uniqueSanitizedEventTextsAdded.Add(sanitizedEventText))
                     {
-                        // Add the sanitized text as a key. Use the sanitized text itself as the value
-                        // since event lines aren't typically split further. Source tracking uses this key too.
                         discoveredKeyTextPairs[sanitizedEventText] = sanitizedEventText;
                         sourceTracking[sanitizedEventText] = eventSourceInfo;
-                        uniqueSanitizedEventTextsAdded.Add(sanitizedEventText); // Track that we added this event line
-                        // Monitor.Log($"Added event text to processing list: '{sanitizedEventText}' from {eventSourceInfo}", LogLevel.Trace);
                     }
-                    // else { Monitor.Log($"Event text '{sanitizedEventText}' skipped (already present from other source or duplicate event line).", LogLevel.Trace); }
                 }
 
-
-                // --- 4. Process and Generate Entries ---
-                if (!discoveredKeyTextPairs.Any())
-                {
-                    if (Config.developerModeOn)
-                    {
-                         Monitor.Log($"No dialogue keys/texts found from any source for '{characterName}' ({languageCode}). Skipping JSON generation.", LogLevel.Warn);
-                    }
-                  
-                    return false;
-                }
-
-                if (Config.developerModeOn)
-                {
-                    Monitor.Log($"Processing {discoveredKeyTextPairs.Count} unique dialogue keys/texts for '{characterName}' ({languageCode}).", LogLevel.Trace);
-                }
-
-
+                // 4. Prepare Manifest, Entry Counter, and Duplicate Tracking
+                // **CHECK:** Does VoicePackManifestTemplate exist and have these properties?
                 var characterManifest = new VoicePackManifestTemplate
                 {
-                    Format = "1.0.0",
+                    Format = "1.0.0", // Ensure this matches your template format version
                     VoicePackId = voicePackId,
                     VoicePackName = voicePackName,
                     Character = characterName,
                     Language = languageCode,
-                    Entries = new List<VoiceEntryTemplate>()
+                    Entries = new List<VoiceEntryTemplate>() // **CHECK:** Does VoiceEntryTemplate exist?
                 };
 
-                int entryNumber = 1;
+                int entryNumber = startAtThisNumber;
+                var addedSanitizedTexts = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
-                // Process sorted keys/texts for consistent output
-                foreach (var kvp in discoveredKeyTextPairs.OrderBy(p => p.Key))
+                // 5. Process Dialogue, Strings, and Unique Event Lines from discoveredKeyTextPairs
+                if (this.Config.developerModeOn) { this.Monitor.Log($"Processing {discoveredKeyTextPairs.Count} unique keys/texts from Dialogue/Strings/Events.", LogLevel.Trace); }
+
+                foreach (var kvp in discoveredKeyTextPairs.OrderBy(p => p.Key)) // OrderBy requires System.Linq
                 {
-                    string processingKey = kvp.Key; // Dialogue Key, String Key, or Sanitized Event Text
-                    string rawValueToProcess = kvp.Value; // Raw Dialogue/String text, or Sanitized Event text
-                    string source = sourceTracking.TryGetValue(processingKey, out var src) ? src : "Unknown";
+                    string processingKey = kvp.Key;
+                    string rawValueToProcess = kvp.Value;
+                    string source = sourceTracking.TryGetValue(processingKey, out var src) ? src : "Unknown"; // C# 7.0+ feature (out var)
 
-                    // Monitor.Log($"-- Processing Key/Text: '{processingKey}', Source: '{source}', ValueToProcess: \"{rawValueToProcess}\"", LogLevel.Trace);
-
-                    // Split dialogue *only if* it came from Dialogue or Strings. Event text is treated as single segment.
                     string[] splitSegments;
                     if (source.StartsWith("Event:", StringComparison.OrdinalIgnoreCase))
                     {
-                        // Use the value directly (which is already the sanitized text in this case)
                         splitSegments = new[] { rawValueToProcess };
-                        // Monitor.Log($"   -> Treating as single segment (from Event).", LogLevel.Trace);
                     }
                     else
                     {
-                        // Split standard dialogue using known delimiters
+                        // Regex.Split requires System.Text.RegularExpressions
                         splitSegments = Regex.Split(rawValueToProcess, @"(?:##|#\$e#|#\$b#)");
-                        // Monitor.Log($"   -> Split into {splitSegments.Length} segment(s).", LogLevel.Trace);
                     }
-
 
                     for (int i = 0; i < splitSegments.Length; i++)
                     {
                         string rawPart = splitSegments[i];
-                        // Monitor.Log($"     -> Raw Segment {i + 1}: \"{rawPart}\"", LogLevel.Trace);
+                        // **CHECK:** Does SanitizeDialogueText exist?
+                        string cleanedPart = this.SanitizeDialogueText(rawPart); // Using 'this.'
 
-                        // Sanitize the segment (critical step!)
-                        string cleanedPart = SanitizeDialogueText(rawPart);
-                        // Monitor.Log($"     -> Sanitized Segment {i + 1}: \"{cleanedPart}\"", LogLevel.Trace);
-
-                        // Skip if the cleaned part is empty or just whitespace
-                        if (string.IsNullOrWhiteSpace(cleanedPart))
+                        if (!string.IsNullOrWhiteSpace(cleanedPart))
                         {
-                            // Monitor.Log($"        -> Skipping empty/whitespace segment {i + 1}.", LogLevel.Trace);
-                            continue;
+                            if (addedSanitizedTexts.Add(cleanedPart)) // HashSet.Add requires System.Collections.Generic
+                            {
+                                string numberedFileName = $"{entryNumber}.wav";
+                                // Path.Combine requires System.IO
+                                string relativeAudioPath = Path.Combine("assets", languageCode, characterName, numberedFileName).Replace('\\', '/'); // Normalize path separators
+
+                                // **CHECK:** Does VoiceEntryTemplate exist with these properties?
+                                var newEntry = new VoiceEntryTemplate
+                                {
+                                    DialogueFrom = source,
+                                    DialogueText = cleanedPart,
+                                    AudioPath = relativeAudioPath
+                                };
+                                characterManifest.Entries.Add(newEntry);
+                                entryNumber++;
+                            }
                         }
-
-                        // Generate relative audio path
-                        string numberedFileName = $"{entryNumber}.wav";
-                        string relativeAudioPath = Path.Combine("assets", languageCode, characterName, numberedFileName).Replace('\\', '/');
-
-                        // Create the entry for the JSON
-                        var newEntry = new VoiceEntryTemplate
-                        {
-                            DialogueFrom = source, // Store where the text came from
-                            DialogueText = cleanedPart, // Store the *cleaned* text - THIS IS THE LOOKUP KEY LATER
-                            AudioPath = relativeAudioPath
-                        };
-
-                        characterManifest.Entries.Add(newEntry);
-                        // Monitor.Log($"        -> Added Entry #{entryNumber}. Text: \"{newEntry.DialogueText}\", Path: \"{newEntry.AudioPath}\"", LogLevel.Trace);
-
-                        entryNumber++; // Increment for the next unique file name
                     }
-                } // End foreach key-value pair
+                }
 
-                // --- 5. Save JSON File ---
-                if (!characterManifest.Entries.Any())
+                // 6. Load and Process Festival Dialogue
+                // **CHECK:** Does GetFestivalDialogueForCharacter exist with the correct signature and handle errors?
+                var festivalDialogue = this.GetFestivalDialogueForCharacter(characterName, languageCode, this.Helper.GameContent); // Using 'this.'
+                if (this.Config.developerModeOn) { this.Monitor.Log($"Processing {festivalDialogue.Count} potential dialogue lines found in Festivals.", LogLevel.Trace); }
+
+                foreach (var kvp in festivalDialogue.OrderBy(p => p.Key)) // Assuming festivalDialogue is never null
                 {
-                    if (Config.developerModeOn)
+                    string rawFestivalText = kvp.Value.RawText; // Requires C# 7.0+ for tuple access kvp.Value.RawText
+                    string festivalSourceInfo = kvp.Value.SourceInfo;
+
+                    string[] splitSegments = Regex.Split(rawFestivalText, @"(?:##|#\$e#|#\$b#)");
+
+                    for (int i = 0; i < splitSegments.Length; i++)
                     {
-                        Monitor.Log($"No valid entries generated after processing for {characterName} ({languageCode}). Skipping JSON file.", LogLevel.Debug);
+                        string rawPart = splitSegments[i];
+                        // **CHECK:** Does SanitizeDialogueText exist?
+                        string cleanedPart = this.SanitizeDialogueText(rawPart); // Using 'this.'
+
+                        if (!string.IsNullOrWhiteSpace(cleanedPart))
+                        {
+                            if (addedSanitizedTexts.Add(cleanedPart))
+                            {
+                                string numberedFileName = $"{entryNumber}.wav";
+                                string relativeAudioPath = Path.Combine("assets", languageCode, characterName, numberedFileName).Replace('\\', '/');
+                                var newEntry = new VoiceEntryTemplate
+                                {
+                                    DialogueFrom = festivalSourceInfo,
+                                    DialogueText = cleanedPart,
+                                    AudioPath = relativeAudioPath
+                                };
+                                characterManifest.Entries.Add(newEntry);
+                                entryNumber++;
+                            }
+                        }
                     }
-                   
+                }
+
+                // 7. Save JSON File
+                if (!characterManifest.Entries.Any()) // .Any() requires System.Linq
+                {
+                    if (this.Config.developerModeOn) { this.Monitor.Log($"No valid, unique entries generated after processing all sources for {characterName} ({languageCode}). Skipping JSON file.", LogLevel.Debug); }
                     return false;
                 }
 
-                // Construct the output file path
-                string sanitizedCharName = SanitizeKeyForFileName(characterName) ?? characterName.Replace(" ", "_");
+                // **CHECK:** Does SanitizeKeyForFileName exist?
+                // PathUtilities requires StardewModdingAPI.Utilities
+                string sanitizedCharName = this.SanitizeKeyForFileName(characterName) ?? characterName.Replace(" ", "_"); // Using 'this.'
                 string filename = $"{sanitizedCharName}_{languageCode}.json";
                 string outputPath = PathUtilities.NormalizePath(Path.Combine(outputBaseDir, filename));
 
-                if (Config.developerModeOn)
-                {
-                     Monitor.Log($"Attempting to serialize and save JSON to: {outputPath}", LogLevel.Debug);
-                }
+                if (this.Config.developerModeOn) { this.Monitor.Log($"Attempting to serialize and save JSON ({characterManifest.Entries.Count} total unique entries) to: {outputPath}", LogLevel.Debug); }
 
-                // Serialize with indentation for readability
+                // JsonConvert requires Newtonsoft.Json
                 string jsonOutput = JsonConvert.SerializeObject(characterManifest, Formatting.Indented,
-                                                               new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore }); // Ignore null values
+                                                               new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
 
-                // Write the JSON file
+                // File.WriteAllText requires System.IO
                 File.WriteAllText(outputPath, jsonOutput);
 
-                // Verify save (optional but good practice)
+                // File.Exists requires System.IO
                 if (!File.Exists(outputPath))
                 {
-                    if (Config.developerModeOn)
-                    {
-                        Monitor.Log($"Failed to verify JSON file save at: {outputPath}", LogLevel.Error);
-                    }
-
+                    if (this.Config.developerModeOn) { this.Monitor.Log($"Failed to verify JSON file save at: {outputPath}", LogLevel.Error); }
                     return false;
                 }
-             
-                    Monitor.Log($"Success! Saved template JSON ({characterManifest.Entries.Count} entries) to: {outputPath}", LogLevel.Info);
-                
-              
 
+                this.Monitor.Log($"Success! Saved template JSON ({characterManifest.Entries.Count} entries from all sources) to: {outputPath}", LogLevel.Info);
 
-                // --- 6. Create Asset Folder Structure ---
-                // Create the expected asset folder structure within the template directory
+                // 8. Create Asset Folder Structure
+                // PathUtilities requires StardewModdingAPI.Utilities
                 string assetsCharacterPath = PathUtilities.NormalizePath(Path.Combine(outputBaseDir, "assets", languageCode, characterName));
+                // Directory.CreateDirectory requires System.IO
                 Directory.CreateDirectory(assetsCharacterPath);
-                // Monitor.Log($"Created/verified asset folder structure at: {assetsCharacterPath}", LogLevel.Debug);
 
-
-                return true; // Success
+                return true; // Indicate success
             }
-            catch (Exception ex)
+            catch (Exception ex) // Catch-all for the entire method's execution
             {
-                this.Monitor.Log($"ERROR during GenerateSingleTemplate for {characterName} ({languageCode}): {ex.Message}", LogLevel.Error);
-                this.Monitor.Log($"Stack Trace: {ex.StackTrace}", LogLevel.Trace); // Log stack trace for debugging
+                // Log the top-level error that occurred during generation
+                this.Monitor.Log($"FATAL ERROR during GenerateSingleTemplate for {characterName} ({languageCode}): {ex.Message}", LogLevel.Error);
+                this.Monitor.Log($"Stack Trace: {ex.StackTrace}", LogLevel.Trace); // Log detailed stack trace
                 return false; // Indicate failure
             }
-        }
-
-
+        } // End of GenerateSingleTemplate method
 
 
     }

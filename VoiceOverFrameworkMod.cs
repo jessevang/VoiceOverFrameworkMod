@@ -235,12 +235,83 @@ namespace VoiceOverFrameworkMod
             this.Monitor.Log("Harmony patching process completed.", LogLevel.Debug);
         }
 
+       //gets Dialogue from Festivals for output
+        private Dictionary<string, (string RawText, string SourceInfo)> GetFestivalDialogueForCharacter(string characterName, string languageCode, IGameContentHelper contentHelper)
+        {
+            var festivalDialogue = new Dictionary<string, (string RawText, string SourceInfo)>(StringComparer.OrdinalIgnoreCase);
+            string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
+
+            var festivalNames = new List<string>
+            {
+                "spring13", "spring24",
+                "summer11", "summer28",
+                "fall16", "fall27",
+                "winter8", "winter25"
+                // Add more vanilla festival keys if needed
+            };
+
+            // Define the prefix pattern we're looking for (e.g., "Abigail_")
+            string characterPrefixWithUnderscore = $"{characterName}_";
+
+            foreach (string festivalName in festivalNames)
+            {
+                string assetKeyString = $"Data/Festivals/{festivalName}{langSuffix}";
+                string sourceInfo = $"Festival/{festivalName}";
+
+                try
+                {
+                    IAssetName festivalAssetName = contentHelper.ParseAssetName(assetKeyString);
+                    var festivalData = contentHelper.Load<Dictionary<string, string>>(festivalAssetName);
+
+                    if (festivalData != null)
+                    {
+                        foreach (var kvp in festivalData)
+                        {
+                            string dialogueKey = kvp.Key;
+                            string rawDialogueText = kvp.Value;
+
+                            // --- MODIFIED CHECK ---
+
+                            if (dialogueKey.Equals(characterName, StringComparison.OrdinalIgnoreCase) ||
+                                dialogueKey.StartsWith(characterPrefixWithUnderscore, StringComparison.OrdinalIgnoreCase))
+                            {
+                                // This dialogue belongs to the target character (base or variant)
+                                if (!string.IsNullOrWhiteSpace(rawDialogueText))
+                                {
+                                    string uniqueLineKey = $"{sourceInfo}:{dialogueKey}"; // Keep original key for uniqueness
+                                    if (!festivalDialogue.ContainsKey(uniqueLineKey))
+                                    {
+                                        festivalDialogue[uniqueLineKey] = (rawDialogueText, sourceInfo);
+                                        // Optional Trace logging:
+                                        // this.Monitor.Log($"    -> Found Festival line for '{characterName}' (Key: {dialogueKey}) in {assetKeyString}: \"{rawDialogueText}\"", LogLevel.Trace);
+                                    }
+                                }
+                            }
+                            // --- END MODIFIED CHECK ---
+                        }
+                    }
+                }
+                catch (ContentLoadException)
+                {
+                    // this.Monitor.Log($"Festival asset '{assetKeyString}' not found. Skipping.", LogLevel.Trace);
+                }
+                catch (Exception ex)
+                {
+                    this.Monitor.Log($"Error loading or processing festival asset '{assetKeyString}': {ex.Message}", LogLevel.Warn);
+                    this.Monitor.Log(ex.ToString(), LogLevel.Trace);
+                }
+            }
+
+            return festivalDialogue;
+        }
+
+
         // --- Event Handlers (Core/Config related) ---
 
         // Ran once when SMAPI is ready (good for GMCM setup)
         private void OnGameLaunched(object sender, GameLaunchedEventArgs e)
         {
-            this.Monitor.Log("GameLaunched event: Setting up GMCM integration...", LogLevel.Debug);
+            //this.Monitor.Log("GameLaunched event: Setting up GMCM integration...", LogLevel.Debug);
             SetupGMCM(); // Call GMCM setup method (to be implemented)
         }
 
