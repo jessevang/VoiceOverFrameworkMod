@@ -1,0 +1,21 @@
+{
+  // GMCM Konfigurációs Képernyő
+  "config.section.general.name": "Általános beállítások",
+  "config.mute-typing.name": "Párbeszéd Gépelési Hang Némítása",
+  "config.mute-typing.tooltip": "Ha be van jelölve, letiltja az alapértelmezett 'kattogó' hangot, amikor párbeszéd jelenik meg.",
+  "config.master-volume.name": "Fő Hangerő",
+  "config.master-volume.tooltip": "Beállítja a hangsorok általános hangerejét (szorozva a játék hangerejével).",
+  "config.section.voice-packs.name": "Hangcsomag Kiválasztása",
+  "config.voice-packs.description": "Válassza ki, melyik hangcsomagot használja az egyes karakterekhez. Betöltött hangcsomagok szükségesek.",
+  "config.voice-packs.none-loaded": "Nincsenek hangcsomagok betöltve. Először telepítsen hangcsomagokat.",
+  // Megjegyzés: {{characterName}} egy helyőrző, amelyet a kód tölt ki.
+  "config.character-voice.name": "{{characterName}} Hangja",
+  "config.character-voice.tooltip": "Válassza ki {{characterName}} hangcsomagját.",
+  "config.character-voice.none-option": "Nincs",
+  "config.section.developer.name": "Fejlesztői Beállítások",
+  "config.developer-mode.name": "Fejlesztői Mód",
+  "config.developer-mode.tooltip": "Engedélyezi a további naplózást és potenciális hibakeresési funkciókat. Befolyásolhatja a teljesítményt.",
+  "config.dev-tool-keybind.name": "Fejlesztői Eszköz Menü Billentyűparancs",
+  "config.dev-tool-keybind.tooltip": "Az a billentyű, amellyel megnyitható a hangtesztelő fejlesztői menü. Csak akkor működik, ha a Fejlesztői Mód be van kapcsolva.",
+  "config.dev-options.create-template-info": "Használja a SMAPI konzolparancsot: 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber' egy hangcsomag JSON sablon generálásához. Példa: create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (Győződjön meg róla, hogy a Hangcsomag Neve idézőjelben van, ha szóközöket tartalmaz)."
+}

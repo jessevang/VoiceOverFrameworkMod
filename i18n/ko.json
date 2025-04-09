@@ -1,0 +1,21 @@
+{
+  // GMCM 설정 화면
+  "config.section.general.name": "일반 설정",
+  "config.mute-typing.name": "대화 타이핑 소리 음소거",
+  "config.mute-typing.tooltip": "체크하면 대화가 나타날 때 기본 '틱' 소리를 비활성화합니다.",
+  "config.master-volume.name": "마스터 볼륨",
+  "config.master-volume.tooltip": "음성 라인의 전체 볼륨을 조절합니다 (게임 사운드 볼륨과 곱해짐).",
+  "config.section.voice-packs.name": "보이스 팩 선택",
+  "config.voice-packs.description": "각 캐릭터에 사용할 보이스 팩을 선택합니다. 로드된 보이스 팩이 필요합니다.",
+  "config.voice-packs.none-loaded": "로드된 보이스 팩이 없습니다. 먼저 보이스 콘텐츠 팩을 설치하세요.",
+  // 참고: {{characterName}}은(는) 코드로 채워질 플레이스홀더입니다.
+  "config.character-voice.name": "{{characterName}} 보이스",
+  "config.character-voice.tooltip": "{{characterName}}의 보이스 팩을 선택하세요.",
+  "config.character-voice.none-option": "없음",
+  "config.section.developer.name": "개발자 옵션",
+  "config.developer-mode.name": "개발자 모드",
+  "config.developer-mode.tooltip": "추가 로깅 및 잠재적인 디버그 기능을 활성화합니다. 성능에 영향을 줄 수 있습니다.",
+  "config.dev-tool-keybind.name": "개발자 도구 메뉴 키 바인딩",
+  "config.dev-tool-keybind.tooltip": "오디오 테스트 개발자 메뉴를 여는 키입니다. 개발자 모드가 켜져 있을 때만 작동합니다.",
+  "config.dev-options.create-template-info": "SMAPI 콘솔 명령어 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber'를 사용하여 보이스 팩 JSON 템플릿을 생성하세요. 예시: create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (보이스 팩 이름에 공백이 있는 경우 따옴표로 묶으세요)."
+}

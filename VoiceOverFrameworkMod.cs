@@ -579,6 +579,7 @@ namespace VoiceOverFrameworkMod
                 setValue: value => this.Config.developerModeOn = value
             );
 
+            /*
             gmcm.AddKeybind(
                 mod: this.ModManifest,
                 name: () => this.Helper.Translation.Get("config.dev-tool-keybind.name"),       // i18n
@@ -586,6 +587,7 @@ namespace VoiceOverFrameworkMod
                 getValue: () => this.Config.devToolMenu, // Get value from config
                 setValue: value => this.Config.devToolMenu = value  // Set value in config
             );
+            */
 
 
 

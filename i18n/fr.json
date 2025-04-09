@@ -1,0 +1,21 @@
+{
+  // Écran de configuration GMCM
+  "config.section.general.name": "Paramètres généraux",
+  "config.mute-typing.name": "Couper le son de frappe des dialogues",
+  "config.mute-typing.tooltip": "Si coché, désactive le son 'tic' par défaut lorsque le dialogue apparaît.",
+  "config.master-volume.name": "Volume principal",
+  "config.master-volume.tooltip": "Ajuste le volume global des lignes vocales (multiplié par le volume sonore du jeu).",
+  "config.section.voice-packs.name": "Sélection du pack de voix",
+  "config.voice-packs.description": "Sélectionnez le pack de voix à utiliser pour chaque personnage. Nécessite des packs de voix chargés.",
+  "config.voice-packs.none-loaded": "Aucun pack de voix chargé. Installez d'abord les packs de contenu vocal.",
+  // Note : {{characterName}} est un espace réservé qui sera rempli par le code.
+  "config.character-voice.name": "Voix de {{characterName}}",
+  "config.character-voice.tooltip": "Sélectionnez le pack de voix pour {{characterName}}.",
+  "config.character-voice.none-option": "Aucun",
+  "config.section.developer.name": "Options développeur",
+  "config.developer-mode.name": "Mode développeur",
+  "config.developer-mode.tooltip": "Active la journalisation supplémentaire et potentiellement des fonctionnalités de débogage. Peut affecter les performances.",
+  "config.dev-tool-keybind.name": "Raccourci clavier du menu Outil développeur",
+  "config.dev-tool-keybind.tooltip": "La touche à presser pour ouvrir le menu développeur de test audio. Fonctionne uniquement si le mode développeur est activé.",
+  "config.dev-options.create-template-info": "Utilisez la commande console SMAPI 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber' pour générer un modèle JSON de pack de voix. Exemple : create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (Assurez-vous que le nom du pack de voix est entre guillemets s'il contient des espaces)."
+}

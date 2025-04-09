@@ -1,0 +1,21 @@
+{
+  // GMCM Yapılandırma Ekranı
+  "config.section.general.name": "Genel Ayarlar",
+  "config.mute-typing.name": "Diyalog Yazma Sesini Kapat",
+  "config.mute-typing.tooltip": "İşaretlenirse, diyalog göründüğünde varsayılan 'tık' sesini devre dışı bırakır.",
+  "config.master-volume.name": "Ana Ses Seviyesi",
+  "config.master-volume.tooltip": "Seslendirme hatlarının genel ses seviyesini ayarlar (oyun ses seviyesi ile çarpılır).",
+  "config.section.voice-packs.name": "Ses Paketi Seçimi",
+  "config.voice-packs.description": "Her karakter için hangi ses paketinin kullanılacağını seçin. Yüklü ses paketleri gerektirir.",
+  "config.voice-packs.none-loaded": "Yüklü ses paketi yok. Önce ses içerik paketlerini yükleyin.",
+  // Not: {{characterName}}, kod tarafından doldurulacak bir yer tutucudur.
+  "config.character-voice.name": "{{characterName}} Sesi",
+  "config.character-voice.tooltip": "{{characterName}} için ses paketini seçin.",
+  "config.character-voice.none-option": "Yok",
+  "config.section.developer.name": "Geliştirici Seçenekleri",
+  "config.developer-mode.name": "Geliştirici Modu",
+  "config.developer-mode.tooltip": "Ekstra günlük kaydını ve potansiyel hata ayıklama özelliklerini etkinleştirir. Performansı etkileyebilir.",
+  "config.dev-tool-keybind.name": "Geliştirici Aracı Menüsü Kısayol Tuşu",
+  "config.dev-tool-keybind.tooltip": "Ses testi geliştirici menüsünü açmak için basılacak tuş. Yalnızca Geliştirici Modu açıksa çalışır.",
+  "config.dev-options.create-template-info": "Bir ses paketi JSON şablonu oluşturmak için SMAPI konsol komutunu kullanın: 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber'. Örnek: create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (Ses Paketi Adı boşluk içeriyorsa tırnak içinde olduğundan emin olun)."
+}

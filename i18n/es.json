@@ -1,0 +1,21 @@
+{
+  // Pantalla de configuración GMCM
+  "config.section.general.name": "Configuración General",
+  "config.mute-typing.name": "Silenciar Sonido de Escritura del Diálogo",
+  "config.mute-typing.tooltip": "Si está marcado, deshabilita el sonido predeterminado de 'tick' cuando aparece el diálogo.",
+  "config.master-volume.name": "Volumen Maestro",
+  "config.master-volume.tooltip": "Ajusta el volumen general de las líneas de voz (multiplicado por el volumen de sonido del juego).",
+  "config.section.voice-packs.name": "Selección de Paquete de Voz",
+  "config.voice-packs.description": "Selecciona qué paquete de voz usar para cada personaje. Requiere paquetes de voz cargados.",
+  "config.voice-packs.none-loaded": "No hay paquetes de voz cargados. Instala primero los paquetes de contenido de voz.",
+  // Nota: {{characterName}} es un marcador de posición que será rellenado por el código.
+  "config.character-voice.name": "Voz de {{characterName}}",
+  "config.character-voice.tooltip": "Selecciona el paquete de voz para {{characterName}}.",
+  "config.character-voice.none-option": "Ninguno",
+  "config.section.developer.name": "Opciones de Desarrollador",
+  "config.developer-mode.name": "Modo Desarrollador",
+  "config.developer-mode.tooltip": "Habilita registro adicional y potencialmente funciones de depuración. Puede afectar el rendimiento.",
+  "config.dev-tool-keybind.name": "Atajo de Teclado del Menú de Herramientas de Desarrollador",
+  "config.dev-tool-keybind.tooltip": "La tecla a presionar para abrir el menú de desarrollador de prueba de audio. Solo funciona si el Modo Desarrollador está activado.",
+  "config.dev-options.create-template-info": "Usa el comando de consola SMAPI 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber' para generar una plantilla JSON de paquete de voz. Ejemplo: create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (Asegúrate de que el Nombre del Paquete de Voz esté entre comillas si tiene espacios)."
+}

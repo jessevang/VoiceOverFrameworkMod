@@ -1,0 +1,21 @@
+{
+  // Экран настроек GMCM
+  "config.section.general.name": "Общие настройки",
+  "config.mute-typing.name": "Отключить звук набора текста диалога",
+  "config.mute-typing.tooltip": "Если отмечено, отключает стандартный звук «тиканья» при появлении диалога.",
+  "config.master-volume.name": "Общая громкость",
+  "config.master-volume.tooltip": "Регулирует общую громкость голосовых реплик (умножается на громкость звука в игре).",
+  "config.section.voice-packs.name": "Выбор голосового пакета",
+  "config.voice-packs.description": "Выберите, какой голосовой пакет использовать для каждого персонажа. Требуются загруженные голосовые пакеты.",
+  "config.voice-packs.none-loaded": "Голосовые пакеты не загружены. Сначала установите пакеты голосового контента.",
+  // Примечание: {{characterName}} — это заполнитель, который будет заполнен кодом.
+  "config.character-voice.name": "Голос {{characterName}}",
+  "config.character-voice.tooltip": "Выберите голосовой пакет для {{characterName}}.",
+  "config.character-voice.none-option": "Нет",
+  "config.section.developer.name": "Параметры разработчика",
+  "config.developer-mode.name": "Режим разработчика",
+  "config.developer-mode.tooltip": "Включает дополнительное ведение журнала и потенциальные функции отладки. Может повлиять на производительность.",
+  "config.dev-tool-keybind.name": "Горячая клавиша меню инструментов разработчика",
+  "config.dev-tool-keybind.tooltip": "Клавиша для открытия меню разработчика для тестирования звука. Работает только при включенном режиме разработчика.",
+  "config.dev-options.create-template-info": "Используйте команду консоли SMAPI 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber', чтобы сгенерировать JSON-шаблон голосового пакета. Пример: create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (Убедитесь, что имя голосового пакета заключено в кавычки, если оно содержит пробелы)."
+}

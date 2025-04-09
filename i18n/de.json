@@ -1,0 +1,21 @@
+{
+  // GMCM-Konfigurationsbildschirm
+  "config.section.general.name": "Allgemeine Einstellungen",
+  "config.mute-typing.name": "Dialog-Tippgeräusch stummschalten",
+  "config.mute-typing.tooltip": "Wenn aktiviert, wird das standardmäßige 'Tick'-Geräusch beim Erscheinen von Dialogen deaktiviert.",
+  "config.master-volume.name": "Hauptlautstärke",
+  "config.master-volume.tooltip": "Passt die Gesamtlautstärke für Sprachzeilen an (multipliziert mit der Spiellautstärke).",
+  "config.section.voice-packs.name": "Stimmenpaket-Auswahl",
+  "config.voice-packs.description": "Wählen Sie aus, welches Stimmenpaket für jeden Charakter verwendet werden soll. Erfordert geladene Stimmenpakete.",
+  "config.voice-packs.none-loaded": "Keine Stimmenpakete geladen. Installieren Sie zuerst Stimmen-Inhaltspakete.",
+  // Hinweis: {{characterName}} ist ein Platzhalter, der vom Code ausgefüllt wird.
+  "config.character-voice.name": "{{characterName}} Stimme",
+  "config.character-voice.tooltip": "Wählen Sie das Stimmenpaket für {{characterName}}.",
+  "config.character-voice.none-option": "Keine",
+  "config.section.developer.name": "Entwickleroptionen",
+  "config.developer-mode.name": "Entwicklermodus",
+  "config.developer-mode.tooltip": "Aktiviert zusätzliche Protokollierung und potenziell Debug-Funktionen. Kann die Leistung beeinträchtigen.",
+  "config.dev-tool-keybind.name": "Tastenbelegung Entwicklerwerkzeug-Menü",
+  "config.dev-tool-keybind.tooltip": "Die Taste zum Öffnen des Entwicklermenüs für Audiotests. Funktioniert nur, wenn der Entwicklermodus aktiviert ist.",
+  "config.dev-options.create-template-info": "Verwenden Sie den SMAPI-Konsolenbefehl 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber', um eine JSON-Vorlage für ein Stimmenpaket zu generieren. Beispiel: create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (Stellen Sie sicher, dass der Stimmenpaketname in Anführungszeichen steht, wenn er Leerzeichen enthält)."
+}

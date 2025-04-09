@@ -1,0 +1,21 @@
+{
+  // GMCM 設定画面
+  "config.section.general.name": "一般設定",
+  "config.mute-typing.name": "会話タイプ音をミュート",
+  "config.mute-typing.tooltip": "チェックすると、会話表示時のデフォルトの「カチッ」という音を無効にします。",
+  "config.master-volume.name": "マスター音量",
+  "config.master-volume.tooltip": "ボイスライン全体の音量を調整します（ゲームの音量と乗算されます）。",
+  "config.section.voice-packs.name": "ボイスパック選択",
+  "config.voice-packs.description": "各キャラクターに使用するボイスパックを選択します。ロードされたボイスパックが必要です。",
+  "config.voice-packs.none-loaded": "ボイスパックがロードされていません。最初にボイスコンテンツパックをインストールしてください。",
+  // 注：{{characterName}} はコードによって入力されるプレースホルダーです。
+  "config.character-voice.name": "{{characterName}} のボイス",
+  "config.character-voice.tooltip": "{{characterName}} のボイスパックを選択します。",
+  "config.character-voice.none-option": "なし",
+  "config.section.developer.name": "開発者向けオプション",
+  "config.developer-mode.name": "開発者モード",
+  "config.developer-mode.tooltip": "追加のログ記録と潜在的なデバッグ機能を有効にします。パフォーマンスに影響する可能性があります。",
+  "config.dev-tool-keybind.name": "開発者ツールメニューキーバインド",
+  "config.dev-tool-keybind.tooltip": "オーディオテスト用開発者メニューを開くためのキー。開発者モードがオンの場合にのみ機能します。",
+  "config.dev-options.create-template-info": "SMAPI コンソールコマンド 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber' を使用して、ボイスパックの JSON テンプレートを生成します。例：create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 （ボイスパック名にスペースが含まれる場合は、引用符で囲んでください）。"
+}

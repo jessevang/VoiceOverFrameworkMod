@@ -2,11 +2,17 @@
   "Name": "VoiceOverFrameworkMod",
   "Author": "Darkmushu1",
   "Version": "1.0.0",
-  "Description": "Framework to add voice to dialog",
+  "Description": "Framework to add voice to dialogs in various languages",
   "UniqueID": "Darkmushu1.VoiceOverFrameworkMod",
   "EntryDll": "VoiceOverFrameworkMod.dll",
   "MinimumApiVersion": "4.0.0",
-  "UpdateKeys": []
+  "UpdateKeys": [],
+  "Dependencies": [
+    {
+      "UniqueID": "spacechase0.GenericModConfigMenu",
+      "IsRequired": false
+    }
+  ]
 
 }
 
