@@ -2,7 +2,9 @@
 using StardewModdingAPI.Events;
 using StardewValley;
 using StardewValley.Menus;
-using Microsoft.Xna.Framework.Audio; // Needed for SoundState check in ResetDialogueState
+using Microsoft.Xna.Framework.Audio;
+using System.Text.RegularExpressions;
+
 
 namespace VoiceOverFrameworkMod
 {
@@ -46,44 +48,72 @@ namespace VoiceOverFrameworkMod
 
             bool isDialogueBoxVisible = Game1.activeClickableMenu is DialogueBox;
             NPC currentSpeaker = Game1.currentSpeaker;
-            string currentDialogueString = null;
+            string currentDisplayedString = null; // Renamed for clarity
 
             if (isDialogueBoxVisible)
             {
                 DialogueBox dialogueBox = Game1.activeClickableMenu as DialogueBox;
-                currentDialogueString = dialogueBox?.getCurrentString();
+                // getCurrentString() returns the currently visible page/segment AFTER @ replacement
+                currentDisplayedString = dialogueBox?.getCurrentString();
             }
-            // else { /* Check other menu types like LetterViewerMenu if needed */ }
+            // else { /* Check other menu types if needed */ }
 
 
             // --- State Change Detection ---
 
-            // Case 1: Dialogue just appeared or the text changed
-            if (!string.IsNullOrWhiteSpace(currentDialogueString) && currentDialogueString != lastDialogueText)
+            // Case 1: Dialogue just appeared or the text/page changed
+            // Use the DISPLAYED string for change detection ONLY
+            if (!string.IsNullOrWhiteSpace(currentDisplayedString) && currentDisplayedString != lastDialogueText)
             {
-                // Monitor.Log($"Dialogue changed/appeared. Speaker: '{currentSpeaker?.Name ?? "None"}'. Text: '{currentDialogueString}'", LogLevel.Trace);
-                lastDialogueText = currentDialogueString;
+                // Monitor.Log($"Dialogue changed/appeared. Speaker: '{currentSpeaker?.Name ?? "None"}'. Displayed Text: '{currentDisplayedString}'", LogLevel.Trace);
+                lastDialogueText = currentDisplayedString; // Store the *displayed* text to detect next change
                 lastSpeakerName = currentSpeaker?.Name;
                 wasDialogueUpLastTick = true;
 
                 if (currentSpeaker != null)
                 {
-                    // Sanitize the text *before* passing it to the playback logic
-                    string sanitizedText = SanitizeDialogueText(currentDialogueString); // Use the utility method
+                    // --- Construct the Lookup Key ---
 
-                    if (!string.IsNullOrWhiteSpace(sanitizedText))
+                    // Get the current farmer's name
+                    string farmerName = Game1.player.Name;
+
+                    // Step 1: Reverse the farmer name substitution to recreate the original '@' format
+                    // IMPORTANT: Only do this if the farmer's name is actually present!
+                    string potentialOriginalText = currentDisplayedString;
+                    if (!string.IsNullOrEmpty(farmerName) && potentialOriginalText.Contains(farmerName))
                     {
-                        Monitor.Log($"Attempting voice for '{currentSpeaker.Name}'. Sanitized: '{sanitizedText}'", LogLevel.Debug);
-                        TryToPlayVoice(currentSpeaker.Name, sanitizedText); // Call playback logic (in ModEntry.Playback.cs)
+                        potentialOriginalText = potentialOriginalText.Replace(farmerName, "@");
+                        // Optional: Add logging here if you want to see the reversal in action
+                        // Monitor.Log($"Reversed farmer name. Key candidate: '{potentialOriginalText}'", LogLevel.Trace);
+                    }
+                    // Now 'potentialOriginalText' should resemble the text with '@' IF the name was present.
+                    // If the name wasn't present, it remains unchanged.
+
+                    // Step 2: Apply sanitization pipeline to the RECONSTRUCTED text
+                    // Use the text potentially containing '@' for sanitization matching your audio file keys/naming convention.
+                    string sanitizedStep1 = SanitizeDialogueText(potentialOriginalText); // Apply main sanitizer
+                    string finalLookupKey = Regex.Replace(sanitizedStep1, @"#.+?#", "").Trim(); // Apply #tag# removal
+
+                    // Use the FINAL reconstructed and cleaned key for lookup
+                    if (!string.IsNullOrWhiteSpace(finalLookupKey))
+                    {
+                        if (Config.developerModeOn)
+                        {
+                            // Log the key being used for lookup
+                            Monitor.Log($"Attempting voice for '{currentSpeaker.Name}'. Lookup Key: '{finalLookupKey}' (Derived from Displayed: '{currentDisplayedString}')", LogLevel.Debug);
+                        }
+
+                        // Pass the RECONSTRUCTED and sanitized key to the playback logic
+                        TryToPlayVoice(currentSpeaker.Name, finalLookupKey);
                     }
                     else
                     {
-                        // Monitor.Log($"Dialogue for '{currentSpeaker.Name}' sanitized to empty. Original: '{currentDialogueString}'. Skipping.", LogLevel.Trace);
+                        // Monitor.Log($"Dialogue for '{currentSpeaker.Name}' resulted in empty lookup key after reconstruction/sanitization. Original Displayed: '{currentDisplayedString}'. Skipping.", LogLevel.Trace);
                     }
                 }
                 else
                 {
-                    // Monitor.Log($"Dialogue detected but speaker is null. Text: '{currentDialogueString}'. Skipping.", LogLevel.Trace);
+                    // Monitor.Log($"Dialogue detected but speaker is null. Text: '{currentDisplayedString}'. Skipping.", LogLevel.Trace);
                 }
             }
             // Case 2: Dialogue just closed

@@ -7,6 +7,7 @@ using HarmonyLib; // Keep for ApplyHarmonyPatches if it stays here
 using Microsoft.Xna.Framework.Content;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
+using StardewValley;
 
 
 namespace VoiceOverFrameworkMod
@@ -40,7 +41,7 @@ namespace VoiceOverFrameworkMod
             // Add more known event file names if necessary
         };
 
-
+ 
         // --- Mod Entry Point ---
         public override void Entry(IModHelper helper)
         {
@@ -61,6 +62,7 @@ namespace VoiceOverFrameworkMod
             ApplyHarmonyPatches();
 
             // Register event listeners
+        
             helper.Events.GameLoop.UpdateTicked += this.OnUpdateTicked; // Handler in ModEntry.Dialogue.cs
             helper.Events.GameLoop.GameLaunched += this.OnGameLaunched; // Handler below (for GMCM)
             // Add other necessary event listeners (e.g., SaveLoaded if config needs reload, Content Events if needed)
@@ -75,6 +77,7 @@ namespace VoiceOverFrameworkMod
         }
 
 
+
         /// <summary>
         /// Extracts dialogue lines spoken by a specific character from common event files for a given language.
         /// </summary>
@@ -84,19 +87,16 @@ namespace VoiceOverFrameworkMod
         /// <returns>A dictionary where the key is the sanitized dialogue text and the value identifies the source event.</returns>
         private Dictionary<string, string> GetEventDialogueForCharacter(string targetCharacterName, string languageCode, IGameContentHelper gameContent)
         {
+            // *** CHANGE: Dictionary now maps SourceInfo -> SanitizedText ***
             var eventDialogue = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+
             string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
             string eventsBasePath = "Data/Events/";
-
-            // Regex to capture: speak CharacterName "Dialogue Text"
-            // - Group 1: Character Name (\w+) - Assumes single-word names for simplicity in basic events
-            // - Group 2: Dialogue Text ([^"]*) - Captures everything inside the quotes
-            // Updated Regex to better handle potential leading/trailing spaces around name/quotes
             var speakCommandRegex = new Regex(@"^speak\s+(\w+)\s+""([^""]*)""", RegexOptions.Compiled);
 
-
-            this.Monitor.Log($"Searching events for '{targetCharacterName}' dialogue ({languageCode})...", LogLevel.Trace);
-            int foundInEventsCount = 0;
+            // Log Trace level might be too verbose unless debugging event loading itself
+            // this.Monitor.Log($"Searching events for '{targetCharacterName}' dialogue ({languageCode})...", LogLevel.Trace);
+            int foundInEventsCount = 0; // Count unique event sources found
 
             foreach (string eventFileNameBase in CommonEventFileNames)
             {
@@ -105,26 +105,27 @@ namespace VoiceOverFrameworkMod
 
                 try
                 {
+                    // Consider using TryLoad if available/appropriate for cleaner non-existent file handling
                     eventData = gameContent.Load<Dictionary<string, string>>(assetKey);
                 }
                 catch (ContentLoadException)
                 {
-                    // Monitor.Log($"Event asset not found: {assetKey}", LogLevel.Trace); // Log only if debugging asset loading
-                    continue; // Skip if file doesn't exist for this language
+                    // Monitor.Log($"Event asset not found, skipping: {assetKey}", LogLevel.Trace);
+                    continue;
                 }
                 catch (Exception ex)
                 {
                     Monitor.Log($"Error loading event asset '{assetKey}': {ex.Message}", LogLevel.Warn);
-                    continue; // Skip on other loading errors
+                    Monitor.Log($"Stack Trace: {ex.StackTrace}", LogLevel.Trace); // Add stack trace for debugging
+                    continue;
                 }
 
-                if (eventData == null) continue; // Skip if loaded data is null
+                if (eventData == null) continue;
 
-                foreach (var eventEntry in eventData) // eventEntry.Key = Event ID, eventEntry.Value = Event Script String
+                foreach (var eventEntry in eventData)
                 {
                     string eventId = eventEntry.Key;
                     string eventScript = eventEntry.Value;
-
                     if (string.IsNullOrWhiteSpace(eventScript)) continue;
 
                     string[] commands = eventScript.Split('/');
@@ -138,72 +139,87 @@ namespace VoiceOverFrameworkMod
                             if (match.Success)
                             {
                                 string speakerName = match.Groups[1].Value;
-                                string dialogueText = match.Groups[2].Value;
+                                // *** Get the RAW dialogue text from the event ***
+                                string rawDialogueText = match.Groups[2].Value;
 
-                                // *** Check if the speaker matches the target character ***
                                 if (speakerName.Equals(targetCharacterName, StringComparison.OrdinalIgnoreCase))
                                 {
-                                    string sanitizedText = SanitizeDialogueText(dialogueText);
+                                    // *** Sanitize using the updated SanitizeDialogueText function ***
+                                    // This removes codes like $q, $1, %adj% etc. but SHOULD NOT split by ##
+                                    string sanitizedText = SanitizeDialogueText(rawDialogueText); // Ensure this function is updated!
 
                                     if (!string.IsNullOrWhiteSpace(sanitizedText))
                                     {
-                                        // Use sanitized text as key to avoid duplicates across sources
-                                        if (!eventDialogue.ContainsKey(sanitizedText))
+                                        // *** CHANGE: Use the event source as the key ***
+                                        string eventSourceInfo = $"Event:{eventFileNameBase}/{eventId}";
+                                        string uniqueEventKey = eventSourceInfo;
+                                        int collisionCounter = 1;
+
+                                        // Handle rare case where one event entry might have multiple 'speak' commands
+                                        // by the same person (e.g., separated by other commands). Append a counter.
+                                        while (eventDialogue.ContainsKey(uniqueEventKey))
                                         {
-                                            // Store where it came from (File/EventID)
-                                            eventDialogue[sanitizedText] = $"Event:{eventFileNameBase}/{eventId}";
-                                            foundInEventsCount++;
-                                            // Monitor.Log($"    Found event dialogue for {targetCharacterName}: '{sanitizedText}' (Source: {eventFileNameBase}/{eventId})", LogLevel.Trace);
+                                            uniqueEventKey = $"{eventSourceInfo}_{collisionCounter++}";
+                                            if (Config.developerModeOn) Monitor.Log($"Collision detected for event key '{eventSourceInfo}'. Using '{uniqueEventKey}'.", LogLevel.Trace);
                                         }
-                                        // else { Monitor.Log($"    Duplicate event dialogue text found and skipped: '{sanitizedText}'", LogLevel.Trace); }
+
+                                        // *** Store: Key = EventSourceInfo, Value = Sanitized Text ***
+                                        eventDialogue[uniqueEventKey] = sanitizedText;
+                                        foundInEventsCount++; // Increment count for each line found
+
+                                        // Optional Trace logging showing the stored key and value
+                                        // if (Config.developerModeOn) Monitor.Log($"    Stored event dialogue: Key='{uniqueEventKey}', Value='{sanitizedText}' (Raw='{rawDialogueText}')", LogLevel.Trace);
+
                                     }
+                                    // else if (Config.developerModeOn) Monitor.Log($"    Event text became empty after sanitizing: Raw='{rawDialogueText}'", LogLevel.Trace);
+
                                 }
                             }
-                            // else { Monitor.Log($"    Regex failed to parse speak command: '{trimmedCommand}'", LogLevel.Trace); } // Log parsing failures if needed
+                            // else if (Config.developerModeOn) Monitor.Log($"    Regex failed to parse speak command: '{trimmedCommand}'", LogLevel.Trace);
                         }
                     }
                 }
             } // End foreach eventFileNameBase
 
+            // Log based on the number of unique event dialogue lines found
             if (foundInEventsCount > 0)
             {
                 if (Config.developerModeOn)
                 {
-                    this.Monitor.Log($"Found {foundInEventsCount} potential event dialogue lines for '{targetCharacterName}' ({languageCode}).", LogLevel.Debug);
+                    this.Monitor.Log($"Found {foundInEventsCount} potential event dialogue lines (sources) for '{targetCharacterName}' ({languageCode}).", LogLevel.Debug);
                 }
-       
             }
-
             else
             {
+                // Log Trace level might be better here unless DevMode is on
                 if (Config.developerModeOn)
                 {
                     Monitor.Log($"No event dialogue lines found for '{targetCharacterName}' ({languageCode}) in common event files.", LogLevel.Trace);
                 }
-
             }
-              
-
 
             return eventDialogue;
         }
 
+
+
+
         // Existing methods (SanitizeDialogueText, GetVanillaCharacterStringKeys, etc.) below...
         // Make sure the using statements at the top of the file include System.Text.RegularExpressions
-    
+
 
         // --- Harmony Patching ---
         private void ApplyHarmonyPatches()
         {
             var harmony = new Harmony(this.ModManifest.UniqueID);
 
-            this.Monitor.Log("Applying Harmony patches...", LogLevel.Debug);
+            //this.Monitor.Log("Applying Harmony patches...", LogLevel.Debug);
 
             // Apply patches defined using Harmony attributes within this assembly
             try
             {
                 harmony.PatchAll(Assembly.GetExecutingAssembly());
-                this.Monitor.Log("Harmony attribu-based patches applied successfully.", LogLevel.Debug);
+                //this.Monitor.Log("Harmony attribu-based patches applied successfully.", LogLevel.Debug);
             }
             catch (Exception ex)
             {
@@ -211,18 +227,19 @@ namespace VoiceOverFrameworkMod
                 this.Monitor.Log(ex.ToString(), LogLevel.Trace);
             }
 
-
+            
+          
             // Apply manual patches if needed (example shown, ensure MuteTypingSoundPatch exists)
             try
             {
                 if (this.Config.turnoffdialoguetypingsound) // Check config before applying
                 {
                     MuteTypingSoundPatch.ApplyPatch(harmony, this.Monitor); // Pass Monitor for logging
-                    this.Monitor.Log("Manual patch for MuteTypingSound applied.", LogLevel.Debug);
+                    //this.Monitor.Log("Manual patch for MuteTypingSound applied.", LogLevel.Debug);
                 }
                 else
                 {
-                    this.Monitor.Log("Skipping manual patch for MuteTypingSound (disabled in config).", LogLevel.Debug);
+                    //this.Monitor.Log("Skipping manual patch for MuteTypingSound (disabled in config).", LogLevel.Debug);
                 }
             }
             catch (Exception ex)
@@ -232,7 +249,7 @@ namespace VoiceOverFrameworkMod
             }
 
 
-            this.Monitor.Log("Harmony patching process completed.", LogLevel.Debug);
+            //this.Monitor.Log("Harmony patching process completed.", LogLevel.Debug);
         }
 
        //gets Dialogue from Festivals for output
@@ -306,6 +323,180 @@ namespace VoiceOverFrameworkMod
         }
 
 
+
+
+        /// <summary>
+        /// Gets dialogue from Data/NPCGiftTastes.json for a character.
+        /// Extracts dialogue text appearing between /.../ code blocks.
+        /// </summary>
+        private List<(string RawText, string SourceInfo)> GetGiftTasteDialogueForCharacter(string characterName, string languageCode, IGameContentHelper contentHelper)
+        {
+            var dialogueList = new List<(string RawText, string SourceInfo)>();
+            string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
+            string assetKeyString = $"Data/NPCGiftTastes{langSuffix}";
+            const string sourceInfo = "NPCGiftTastes"; // Constant source info
+
+            try
+            {
+                IAssetName assetName = contentHelper.ParseAssetName(assetKeyString);
+                var giftTasteData = contentHelper.Load<Dictionary<string, string>>(assetName);
+
+                if (giftTasteData != null && giftTasteData.TryGetValue(characterName, out string combinedReactions))
+                {
+                    if (!string.IsNullOrWhiteSpace(combinedReactions))
+                    {
+                        // Split the string by the '/' delimiter
+                        string[] segments = combinedReactions.Split('/');
+                        int dialogueCount = 0;
+
+                        // Iterate through the segments using an index
+                        for (int i = 0; i < segments.Length; i++)
+                        {
+                            // Keep segments at EVEN indices (0, 2, 4, ...) as these are the dialogue parts
+                            if (i % 2 == 0)
+                            {
+                                string potentialDialogue = segments[i].Trim();
+                                // Add the segment if it's not empty after trimming
+                                if (!string.IsNullOrWhiteSpace(potentialDialogue))
+                                {
+                                    dialogueList.Add((potentialDialogue, sourceInfo));
+                                    dialogueCount++;
+                                }
+                            }
+                            // Ignore segments at ODD indices (1, 3, 5, ...) as they contain codes/IDs
+                        }
+
+                        if (this.Config.developerModeOn)
+                        {
+                            this.Monitor.Log($"    -> Extracted {dialogueCount} gift taste dialogue segments for '{characterName}' from {assetKeyString}.", LogLevel.Trace);
+                        }
+                    }
+                }
+            }
+            catch (ContentLoadException) { /*this.Monitor.Log($"Asset '{assetKeyString}' not found.", LogLevel.Trace);*/ }
+            catch (Exception ex)
+            {
+                this.Monitor.Log($"Error loading/processing '{assetKeyString}': {ex.Message}", LogLevel.Warn);
+                this.Monitor.Log(ex.ToString(), LogLevel.Trace);
+            }
+            return dialogueList;
+        }
+
+        /// <summary>
+        /// Gets dialogue from Data/EngagementDialogue.json for a character.
+        /// Matches keys starting with the character's name (e.g., "Abigail0").
+        /// </summary>
+        private List<(string RawText, string SourceInfo)> GetEngagementDialogueForCharacter(string characterName, string languageCode, IGameContentHelper contentHelper)
+        {
+            var dialogueList = new List<(string RawText, string SourceInfo)>();
+            string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
+            string assetKeyString = $"Data/EngagementDialogue{langSuffix}";
+            const string sourceInfo = "EngagementDialogue"; // Constant source info
+
+            try
+            {
+                IAssetName assetName = contentHelper.ParseAssetName(assetKeyString);
+                var engagementData = contentHelper.Load<Dictionary<string, string>>(assetName);
+
+                if (engagementData != null)
+                {
+                    // Find all keys that start with the character's name (case-insensitive)
+                    foreach (var kvp in engagementData)
+                    {
+                        if (kvp.Key.StartsWith(characterName, StringComparison.OrdinalIgnoreCase))
+                        {
+                            if (!string.IsNullOrWhiteSpace(kvp.Value))
+                            {
+                                dialogueList.Add((kvp.Value, sourceInfo));
+                                // Monitor.Log($"    -> Found Engagement line for '{characterName}' (Key: {kvp.Key}) in {assetKeyString}: \"{kvp.Value}\"", LogLevel.Trace);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (ContentLoadException) { /*this.Monitor.Log($"Asset '{assetKeyString}' not found.", LogLevel.Trace);*/ }
+            catch (Exception ex)
+            {
+                this.Monitor.Log($"Error loading/processing '{assetKeyString}': {ex.Message}", LogLevel.Warn);
+                this.Monitor.Log(ex.ToString(), LogLevel.Trace);
+            }
+            return dialogueList;
+        }
+
+        /// <summary>
+        /// Gets dialogue from Data/ExtraDialogue.json for a character.
+        /// Matches keys based on various patterns containing the character's name.
+        /// </summary>
+        private List<(string RawText, string SourceInfo)> GetExtraDialogueForCharacter(string characterName, string languageCode, IGameContentHelper contentHelper)
+        {
+            var dialogueList = new List<(string RawText, string SourceInfo)>();
+            string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
+            string assetKeyString = $"Data/ExtraDialogue{langSuffix}";
+            const string sourceInfo = "ExtraDialogue"; // Constant source info
+
+            // Pre-calculate patterns for matching
+            string prefixPattern = $"{characterName}_";
+            string infixPattern = $"_{characterName}_";
+            string suffixPattern = $"_{characterName}";
+
+            try
+            {
+                IAssetName assetName = contentHelper.ParseAssetName(assetKeyString);
+                var extraData = contentHelper.Load<Dictionary<string, string>>(assetName);
+
+                if (extraData != null)
+                {
+                    foreach (var kvp in extraData)
+                    {
+                        string key = kvp.Key;
+                        // Check if the key relates to the character using multiple patterns (case-insensitive)
+                        bool isMatch = key.Equals(characterName, StringComparison.OrdinalIgnoreCase) ||
+                                       key.StartsWith(prefixPattern, StringComparison.OrdinalIgnoreCase) ||
+                                       key.EndsWith(suffixPattern, StringComparison.OrdinalIgnoreCase) ||
+                                       key.IndexOf(infixPattern, StringComparison.OrdinalIgnoreCase) >= 0; // IndexOf is often faster than Contains for specific substrings
+
+                        if (isMatch)
+                        {
+                            if (!string.IsNullOrWhiteSpace(kvp.Value))
+                            {
+                                dialogueList.Add((kvp.Value, sourceInfo));
+                                // Monitor.Log($"    -> Found ExtraDialogue line potentially for '{characterName}' (Key: {kvp.Key}) in {assetKeyString}: \"{kvp.Value}\"", LogLevel.Trace);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (ContentLoadException) { /* this.Monitor.Log($"Asset '{assetKeyString}' not found.", LogLevel.Trace); */ }
+            catch (Exception ex)
+            {
+                this.Monitor.Log($"Error loading/processing '{assetKeyString}': {ex.Message}", LogLevel.Warn);
+                this.Monitor.Log(ex.ToString(), LogLevel.Trace);
+            }
+            return dialogueList;
+        }
+
+
+        /// <summary>
+        /// Splits dialogue text using standard delimiters like #$b#, trims results, and removes empty entries.
+        /// </summary>
+        /// <param name="rawText">The raw dialogue text potentially containing delimiters.</param>
+        /// <returns>An enumerable collection of non-empty dialogue segments.</returns>
+        private IEnumerable<string> SplitStandardDialogueSegments(string rawText)
+        {
+            // Return empty collection if input is null or whitespace to avoid errors later
+            if (string.IsNullOrWhiteSpace(rawText))
+                return Enumerable.Empty<string>(); // Requires System.Linq
+
+            // Split by common delimiters, trim results, remove empty ones
+            return Regex.Split(rawText, @"(?:##|#\$e#|#\$b#)") // Requires System.Text.RegularExpressions
+                        .Select(s => s.Trim()) // Requires System.Linq
+                        .Where(s => !string.IsNullOrEmpty(s)); // Requires System.Linq
+        }
+
+
+
+
+
         // --- Event Handlers (Core/Config related) ---
 
         // Ran once when SMAPI is ready (good for GMCM setup)
@@ -332,142 +523,71 @@ namespace VoiceOverFrameworkMod
             var gmcm = this.Helper.ModRegistry.GetApi<IGenericModConfigMenuApi>("spacechase0.GenericModConfigMenu");
             if (gmcm == null)
             {
-                this.Monitor.Log("Generic Mod Config Menu API not found. Skipping GMCM setup.", LogLevel.Debug);
                 return;
             }
-
-            this.Monitor.Log("Registering Mod for GMCM...", LogLevel.Trace);
-
-            // Register this mod with GMCM
-            gmcm.Register(
-                mod: this.ModManifest,
-                reset: () => {
-                    this.Config = new ModConfig(); // Reset config to defaults
-                    this.SelectedVoicePacks = this.Config.SelectedVoicePacks; // Update internal dict
-                },
-                save: () => {
-                    this.Helper.WriteConfig(this.Config); // Save current config
-                                                          // Optional: Maybe reload voice packs or update something immediately after save?
-                    this.Monitor.Log("Configuration saved via GMCM.", LogLevel.Debug);
-                    // Example: Apply volume change immediately? (Requires more logic)
-                },
-                 titleScreenOnly: false // Allow config access in-game
-            );
-
             this.Monitor.Log("Adding GMCM options...", LogLevel.Trace);
+            gmcm.Register(ModManifest, () => Config = new ModConfig(), () => Helper.WriteConfig(Config));
 
-            // Add basic options
-            gmcm.AddSectionTitle(mod: this.ModManifest, text: () => "General Settings");
+            // === General Settings ===
+            // ... (Section Title, Mute Typing, Master Volume as before, using i18n) ...
+            gmcm.AddSectionTitle(mod: this.ModManifest, text: () => this.Helper.Translation.Get("config.section.general.name"));
+            gmcm.AddBoolOption(mod: this.ModManifest, name: () => this.Helper.Translation.Get("config.mute-typing.name"), tooltip: () => this.Helper.Translation.Get("config.mute-typing.tooltip"), getValue: () => this.Config.turnoffdialoguetypingsound, setValue: value => this.Config.turnoffdialoguetypingsound = value);
+            gmcm.AddNumberOption(mod: this.ModManifest, name: () => this.Helper.Translation.Get("config.master-volume.name"), tooltip: () => this.Helper.Translation.Get("config.master-volume.tooltip"), getValue: () => this.Config.MasterVolume, setValue: value => this.Config.MasterVolume = value, min: 0.0f, max: 1.0f, interval: 0.05f, formatValue: value => $"{Math.Round(value * 100)}%");
 
-            gmcm.AddBoolOption(
-                mod: this.ModManifest,
-                name: () => "Mute Dialogue Typing Sound",
-                tooltip: () => "If checked, disables the default 'tick' sound when dialogue appears.",
-                getValue: () => this.Config.turnoffdialoguetypingsound,
-                setValue: value => this.Config.turnoffdialoguetypingsound = value
-            );
-
-            gmcm.AddNumberOption(
-                 mod: this.ModManifest,
-                 name: () => "Master Volume",
-                 tooltip: () => "Adjusts the overall volume for voice lines (multiplied by game sound volume).",
-                 getValue: () => this.Config.MasterVolume,
-                 setValue: value => this.Config.MasterVolume = value,
-                 min: 0.0f,
-                 max: 1.0f,
-                 interval: 0.05f, // Volume steps
-                 formatValue: value => $"{Math.Round(value * 100)}%" // Display as percentage
-            );
-
-
-            // --- Dynamic Voice Pack Selection ---
-            gmcm.AddSectionTitle(mod: this.ModManifest, text: () => "Voice Pack Selection");
-            gmcm.AddParagraph(mod: this.ModManifest, text: () => "Select which voice pack to use for each character. Requires loaded voice packs.");
-
-            // Get unique character names that HAVE loaded voice packs
+            // === Dynamic Voice Pack Selection ===
+            // ... (Section Title, Paragraph, Character dropdowns as before, using i18n) ...
+            gmcm.AddSectionTitle(mod: this.ModManifest, text: () => this.Helper.Translation.Get("config.section.voice-packs.name"));
+            gmcm.AddParagraph(mod: this.ModManifest, text: () => this.Helper.Translation.Get("config.voice-packs.description"));
             var charactersWithPacks = VoicePacksByCharacter.Keys.OrderBy(name => name).ToList();
-
             if (!charactersWithPacks.Any())
             {
-                gmcm.AddParagraph(mod: this.ModManifest, text: () => "No voice packs loaded. Install voice content packs first.");
+                gmcm.AddParagraph(mod: this.ModManifest, text: () => this.Helper.Translation.Get("config.voice-packs.none-loaded"));
             }
             else
             {
-                // Create a dropdown for each character
                 foreach (string characterName in charactersWithPacks)
                 {
-                    // Get available packs for *this* character (needed for dropdown options)
-                    // Filter by language? For now, list all pack IDs for the character.
-                    // A better approach might group by language first if packs exist in multiple languages.
-                    // Let's list unique VoicePack IDs available for this character across all loaded languages.
-                    var packsForChar = VoicePacksByCharacter[characterName];
-                    var availablePackChoices = packsForChar
-                                               .Select(p => p.VoicePackId) // Get the IDs
-                                               .Distinct(StringComparer.OrdinalIgnoreCase) // Ensure uniqueness
-                                               .OrderBy(id => id) // Sort IDs
-                                               .ToList();
-
-                    // Add "None" option to disable voice for this character
-                    var displayChoices = new List<string> { "None" };
-                    // Add display names for the available packs (ID is used for saving)
-                    // Try to get a nice name, fall back to ID if needed
-                    displayChoices.AddRange(availablePackChoices.Select(id =>
-                            packsForChar.FirstOrDefault(p => p.VoicePackId.Equals(id, StringComparison.OrdinalIgnoreCase))?.VoicePackName ?? id
-                        ));
-
-
-                    gmcm.AddTextOption(
-                        mod: this.ModManifest,
-                        name: () => $"{characterName} Voice", // Dropdown label
-                        tooltip: () => $"Select the voice pack for {characterName}.",
-                        getValue: () => {
-                            // Read the currently selected ID from our config dictionary
-                            SelectedVoicePacks.TryGetValue(characterName, out string selectedId);
-                            // Find the corresponding display name, default to "None" if not found or null/empty
-                            string displayName = packsForChar.FirstOrDefault(p => p.VoicePackId.Equals(selectedId, StringComparison.OrdinalIgnoreCase))?.VoicePackName ?? selectedId;
-                            return string.IsNullOrWhiteSpace(displayName) ? "None" : displayName;
-                        },
-                        setValue: displayValue => {
-                            // Find the VoicePackId corresponding to the selected display name
-                            string selectedId = "None"; // Default to "None"
-                            if (displayValue != "None")
-                            {
-                                selectedId = packsForChar.FirstOrDefault(p => (p.VoicePackName ?? p.VoicePackId).Equals(displayValue, StringComparison.OrdinalIgnoreCase))?.VoicePackId ?? displayValue; // Fallback to displayValue if name lookup fails? Risky. Better stick to known IDs.
-
-                                // More robust: Find ID from the known available choices based on display name
-                                selectedId = availablePackChoices.FirstOrDefault(id =>
-                                    (packsForChar.FirstOrDefault(p => p.VoicePackId.Equals(id, StringComparison.OrdinalIgnoreCase))?.VoicePackName ?? id).Equals(displayValue, StringComparison.OrdinalIgnoreCase)
-                                    ) ?? "None"; // Ensure we save a known ID or "None"
-                            }
-
-                            // Update the config dictionary
-                            if (selectedId == "None")
-                            {
-                                SelectedVoicePacks.Remove(characterName); // Or set SelectedVoicePacks[characterName] = null/empty string if preferred
-                                this.Monitor.Log($"GMCM: Set {characterName} voice to None.", LogLevel.Trace);
-                            }
-                            else
-                            {
-                                SelectedVoicePacks[characterName] = selectedId;
-                                this.Monitor.Log($"GMCM: Set {characterName} voice to Pack ID: {selectedId} (Selected: '{displayValue}')", LogLevel.Trace);
-                            }
-                            // Config dictionary is updated, save() will write it to file later.
-                        },
-                        allowedValues: displayChoices.ToArray() // Provide the list of display names
-                    );
+                    // ... (character dropdown logic using i18n as updated previously) ...
+                    string currentCharacterName = characterName; // Local capture
+                    var packsForChar = VoicePacksByCharacter[currentCharacterName];
+                    var availablePackChoices = packsForChar.Select(p => p.VoicePackId).Distinct(StringComparer.OrdinalIgnoreCase).OrderBy(id => id).ToList();
+                    string noneOptionText = this.Helper.Translation.Get("config.character-voice.none-option");
+                    var displayChoices = new List<string> { noneOptionText };
+                    displayChoices.AddRange(availablePackChoices.Select(id => packsForChar.FirstOrDefault(p => p.VoicePackId.Equals(id, StringComparison.OrdinalIgnoreCase))?.VoicePackName ?? id));
+                    gmcm.AddTextOption(mod: this.ModManifest, name: () => this.Helper.Translation.Get("config.character-voice.name", new { characterName = currentCharacterName }), tooltip: () => this.Helper.Translation.Get("config.character-voice.tooltip", new { characterName = currentCharacterName }), getValue: () => { SelectedVoicePacks.TryGetValue(currentCharacterName, out string selectedId); string displayName = packsForChar.FirstOrDefault(p => p.VoicePackId.Equals(selectedId, StringComparison.OrdinalIgnoreCase))?.VoicePackName ?? selectedId; return string.IsNullOrWhiteSpace(displayName) ? noneOptionText : displayName; }, setValue: displayValue => { string selectedId = noneOptionText; if (displayValue != noneOptionText) { selectedId = availablePackChoices.FirstOrDefault(id => (packsForChar.FirstOrDefault(p => p.VoicePackId.Equals(id, StringComparison.OrdinalIgnoreCase))?.VoicePackName ?? id).Equals(displayValue, StringComparison.OrdinalIgnoreCase)) ?? noneOptionText; } if (selectedId == noneOptionText || string.IsNullOrEmpty(selectedId)) { SelectedVoicePacks.Remove(currentCharacterName); this.Monitor.Log($"GMCM: Set {currentCharacterName} voice to None.", LogLevel.Trace); } else { SelectedVoicePacks[currentCharacterName] = selectedId; this.Monitor.Log($"GMCM: Set {currentCharacterName} voice to Pack ID: {selectedId} (Selected: '{displayValue}')", LogLevel.Trace); } }, allowedValues: displayChoices.ToArray());
                 }
             }
 
 
-            // Developer Options
-            gmcm.AddSectionTitle(mod: this.ModManifest, text: () => "Developer Options");
+            // === Developer Options ===
+            gmcm.AddSectionTitle(
+                mod: this.ModManifest,
+                text: () => this.Helper.Translation.Get("config.section.developer.name") // i18n
+            );
+
+            gmcm.AddParagraph(
+                mod: this.ModManifest,
+                text: () => this.Helper.Translation.Get("config.dev-options.create-template-info") // i18n
+            );
+
+
             gmcm.AddBoolOption(
                 mod: this.ModManifest,
-                name: () => "Developer Mode",
-                tooltip: () => "Enables extra logging and potentially debug features. May impact performance.",
+                name: () => this.Helper.Translation.Get("config.developer-mode.name"),       // i18n
+                tooltip: () => this.Helper.Translation.Get("config.developer-mode.tooltip"), // i18n
                 getValue: () => this.Config.developerModeOn,
                 setValue: value => this.Config.developerModeOn = value
             );
+
+            gmcm.AddKeybind(
+                mod: this.ModManifest,
+                name: () => this.Helper.Translation.Get("config.dev-tool-keybind.name"),       // i18n
+                tooltip: () => this.Helper.Translation.Get("config.dev-tool-keybind.tooltip"), // i18n
+                getValue: () => this.Config.devToolMenu, // Get value from config
+                setValue: value => this.Config.devToolMenu = value  // Set value in config
+            );
+
+
 
             this.Monitor.Log("GMCM setup complete.", LogLevel.Debug);
         }

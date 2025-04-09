@@ -5,6 +5,7 @@ using System.Text.RegularExpressions;
 using Microsoft.Xna.Framework.Content; // For IGameContentHelper
 using StardewModdingAPI;
 
+
 namespace VoiceOverFrameworkMod
 {
     public partial class ModEntry : Mod
@@ -182,48 +183,69 @@ namespace VoiceOverFrameworkMod
 
         // Cleans dialogue text by removing game-specific codes and extra whitespace.
         // CRITICAL: Ensure this matches the cleaning done before lookup in TryToPlayVoice/GetRelativeAudioPath!
+        // Make sure you have this at the top of the file:
+
+
+        // Place this method inside your ModEntry class (ModEntry.Utilities.cs or wherever it belongs)
         private string SanitizeDialogueText(string text)
         {
             if (string.IsNullOrWhiteSpace(text))
                 return ""; // Return empty for null/whitespace input
 
             string originalText = text; // Keep for logging if needed
+            string sanitized = text; // Work on a copy
 
-            // 1. Remove specific Stardew codes ($h, $s, $q, $a, $l, $u, $p, $k, $b, $c[color], $t, $r[emote#], etc.)
-            //    More robust regex to handle single letter codes and codes with parameters like $c[color] or $r[num]
-            text = Regex.Replace(text, @"\$[a-zA-Z](\[[^\]]+\])?", ""); // Removes $X and $X[parameter]
+            // --- ORDER OF OPERATIONS IS CRUCIAL ---
+            // Remove complex blocks with '#' delimiters FIRST.
 
-            // 2. Remove SMAPI-style tokens (like %adj%, %noun%, etc.) - Adjascent check removed for simplicity
-            text = Regex.Replace(text, @"%[a-zA-Z0-9_]+%", ""); // Match %token%
+            // 1. Remove speaker prefix (e.g., "^Abigail ")
+            sanitized = Regex.Replace(sanitized, @"^\^.+?\s+", "");
 
-            // 3. Remove player name token (@) - Replace with space? Or remove? Removing for now.
-            text = text.Replace("@", ""); // Remove player name token
+            // 2. *** UPDATED: Remove $q blocks, including potential starting '#' and ending '#' ***
+            // Matches optional '#', $q, optional space(s), parameters (non-# chars), mandatory '#'
+            sanitized = Regex.Replace(sanitized, @"#?\$q\s*[^#]+?#", "");
 
-            // 4. Remove page/expression markers (#$e#, #$b#) - Done by splitting usually, but remove here too for safety
-            text = Regex.Replace(text, @"#\$[eb]#", "");
+            // 3. *** NEW/UPDATED: Remove $r blocks (dialogue choices), including '#' delimiters ***
+            // Matches optional '#', $r, space(s), digit(s), space(s), optional '-' + digit(s), space(s), key (non-space chars), mandatory '#'
+            sanitized = Regex.Replace(sanitized, @"#?\$r\s+\d+\s+-?\d+\s+\S+#", "");
 
-            // 5. Remove simple formatting characters (^ < > \)
-            text = Regex.Replace(text, @"[\^<>\\]", "");
+            // 4. Remove specific Stardew codes ($h, $s, $a, $l, $u, $p, $k, $b, $c[color], $t etc.)
+            // This covers $letter and $letter[parameter].
+            // Run this *after* the more complex $q/$r to avoid partial matches.
+            sanitized = Regex.Replace(sanitized, @"\$[a-zA-Z](\[[^\]]+\])?", "");
 
-            // 6. Replace specific character sequences resulting from codes (e.g., "..." from pauses) if desired
-            // text = text.Replace("...", " "); // Example: Replace ellipses with space
+            // 5. Remove $number pause codes (e.g., $1, $8)
+            sanitized = Regex.Replace(sanitized, @"\$\d+", "");
 
-            // 7. Collapse multiple whitespace characters (spaces, tabs, newlines) into a single space
-            text = Regex.Replace(text, @"\s+", " ").Trim();
+            // 6. Remove SMAPI-style tokens (like %adj%, %noun%, etc.)
+            sanitized = Regex.Replace(sanitized, @"%[a-zA-Z0-9_]+%", ""); // Match %token%
 
-            // 8. Optional: Remove leading/trailing punctuation? (e.g., leading '-')
-            text = text.TrimStart('-', ' ');
+            // 7. Remove player name token (@) - Replace with space might be better for flow? Test needed.
+            // sanitized = sanitized.Replace("@", " "); // Option: Replace with space
+            sanitized = sanitized.Replace("@", "");    // Option: Remove completely
 
-            if (text != originalText)
+            // 8. Remove page/expression markers (#$e#, #$b#) - Often handled by splitting, but keep for safety.
+            //    The optional starting '#' in rules 2 & 3 might catch some, but this is explicit.
+            sanitized = Regex.Replace(sanitized, @"#\$[eb]#", "");
+
+            // 9. Remove simple formatting characters (^ < > \) - ^ at start handled earlier.
+            sanitized = Regex.Replace(sanitized, @"[\^<>\\]", "");
+
+            // 10. Collapse multiple whitespace characters into a single space.
+            sanitized = Regex.Replace(sanitized, @"\s+", " ");
+
+            // 11. Final Trim: Remove leading/trailing whitespace.
+            sanitized = sanitized.Trim();
+
+            // Developer Logging
+            if (sanitized != originalText && Config.developerModeOn)
             {
-                if (Config.developerModeOn)
-                {
-                    Monitor.Log($"Sanitized Text: \"{originalText}\" -> \"{text}\"", LogLevel.Trace);
-                }
-                
+                // Use Verbose level for potentially spammy sanitization logs
+                Monitor.Log($"Sanitized Text: \"{originalText}\" -> \"{sanitized}\"", LogLevel.Trace);
             }
 
-            return text;
+            return sanitized;
         }
+
     }
 }

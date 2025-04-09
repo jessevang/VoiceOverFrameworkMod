@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic; // Added for Dictionary/List
+﻿using Newtonsoft.Json;
+using StardewModdingAPI;
+using StardewValley;
+using System.Collections.Generic; // Added for Dictionary/List
 
 namespace VoiceOverFrameworkMod
 {
@@ -11,7 +14,8 @@ namespace VoiceOverFrameworkMod
         public bool turnoffdialoguetypingsound = true;
         public bool FallbackToDefaultIfMissing { get; set; } = false;
         public Dictionary<string, string> SelectedVoicePacks { get; set; } = new();
-        public bool developerModeOn = true;
+        public bool developerModeOn {get; set; } = true;
+        public SButton devToolMenu { get; set; } = SButton.F12;
     }
 
     // Note: Removed VoicePackWrapper as it wasn't used in the provided ModEntry code.
@@ -30,6 +34,8 @@ namespace VoiceOverFrameworkMod
         public string Character { get; set; }
         public string Language { get; set; }
         public List<VoiceEntry> Entries { get; set; }
+
+        
     }
 
     public class VoiceEntry
@@ -51,6 +57,13 @@ namespace VoiceOverFrameworkMod
         public string ContentPackId { get; set; }   // Unique ID of the *containing* content pack
         public string ContentPackName { get; set; } // Name of the *containing* content pack
         public string BaseAssetPath { get; set; }   // Absolute base path of the *containing* content pack directory
+    }
+
+    // Represents the top-level structure of the output JSON file
+    public class VoicePackFile
+    {
+        [JsonProperty("VoicePacks")] // Use JsonProperty for exact naming if needed
+        public List<VoicePackManifestTemplate> VoicePacks { get; set; } = new List<VoicePackManifestTemplate>();
     }
 
     // Template class for deserializing the voice pack JSON files

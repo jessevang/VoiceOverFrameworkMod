@@ -1,4 +1,21 @@
 ﻿{
-
-
+  // GMCM Configuration Screen
+  "config.section.general.name": "General Settings",
+  "config.mute-typing.name": "Mute Dialogue Typing Sound",
+  "config.mute-typing.tooltip": "If checked, disables the default 'tick' sound when dialogue appears.",
+  "config.master-volume.name": "Master Volume",
+  "config.master-volume.tooltip": "Adjusts the overall volume for voice lines (multiplied by game sound volume).",
+  "config.section.voice-packs.name": "Voice Pack Selection",
+  "config.voice-packs.description": "Select which voice pack to use for each character. Requires loaded voice packs.",
+  "config.voice-packs.none-loaded": "No voice packs loaded. Install voice content packs first.",
+  // Note: {{characterName}} is a placeholder that will be filled in by the code.
+  "config.character-voice.name": "{{characterName}} Voice",
+  "config.character-voice.tooltip": "Select the voice pack for {{characterName}}.",
+  "config.character-voice.none-option": "None", // Can be translated if desired, or kept as "None".
+  "config.section.developer.name": "Developer Options",
+  "config.developer-mode.name": "Developer Mode",
+  "config.developer-mode.tooltip": "Enables extra logging and potentially debug features. May impact performance.",
+  "config.dev-tool-keybind.name": "Developer Tool Menu Keybind",
+  "config.dev-tool-keybind.tooltip": "The key to press to open the audio testing developer menu. Only works if Developer Mode is on",
+  "config.dev-options.create-template-info": "Use the SMAPI console command 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber' to generate a voice pack JSON template. Example: create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (Ensure Voice Pack Name is in quotes if it has spaces)."
 }
