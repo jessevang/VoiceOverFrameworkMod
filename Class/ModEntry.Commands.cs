@@ -350,40 +350,90 @@ namespace VoiceOverFrameworkMod
                 // Order by source type then key for consistent output order
                 foreach (var kvp in initialSources.OrderBy(p => sourceTracking.GetValueOrDefault(p.Key, "zzz_Unknown")).ThenBy(p => p.Key))
                 {
-                    string processingKey = kvp.Key; // The unique key (DialogueKey, EventSourceInfo, etc.)
-                    string textToProcess = kvp.Value; // Raw text OR pre-sanitized event text
-                    string sourceType = sourceTracking.GetValueOrDefault(processingKey, "Unknown"); // Get the tracked source type
+                    string processingKey = kvp.Key;
+                    // *** CRITICAL ASSUMPTION: kvp.Value contains RAW text, including '^' if present ***
+                    // *** If GetEventDialogueForCharacter pre-sanitizes and removes '^', this won't work! ***
+                    string rawTextFromSource = kvp.Value;
+                    string sourceType = sourceTracking.GetValueOrDefault(processingKey, "Unknown");
 
-                    // Step 6.1: Split by ##, #$b#, #$e#
-                    IEnumerable<string> segments = this.SplitStandardDialogueSegments(textToProcess);
+                    if (this.Config.developerModeOn) Monitor.Log($"Processing Key: '{processingKey}', Raw: '{rawTextFromSource}'", LogLevel.Trace);
 
-                    foreach (string segment in segments)
+                    // Step 6.1: Split by STANDARD delimiters (##, #$b#, #$e#) FIRST
+                    IEnumerable<string> standardSegments = this.SplitStandardDialogueSegments(rawTextFromSource);
+
+                    foreach (string segment in standardSegments)
                     {
-                        // Step 6.2: Sanitize standard game codes (%adj, $q, $1, etc.)
-                        // Apply the updated SanitizeDialogueText to ensure all codes are removed,
-                        // even if events were partially sanitized before.
-                        string sanitizedSegment = this.SanitizeDialogueText(segment);
+                        // Step 6.2: Sanitize standard game codes (NOW PRESERVING '^')
+                        string sanitizedSegment = this.SanitizeDialogueText(segment); // Uses modified sanitizer
 
                         // Step 6.3: Remove text between single # symbols (non-greedy)
-                        string finalCleanedPart = Regex.Replace(sanitizedSegment, @"#.+?#", "").Trim();
+                        string cleanedSegment = Regex.Replace(sanitizedSegment, @"#.+?#", "").Trim();
 
-                        // Step 6.4: Add if valid and not already added
-                        if (!string.IsNullOrWhiteSpace(finalCleanedPart) && addedSanitizedTexts.Add(finalCleanedPart))
+                        // Step 6.4: *** NEW: Split the cleaned segment by '^' ***
+                        var finalPartsData = new List<(string text, string genderSuffix)>();
+
+                        if (cleanedSegment.Contains("^"))
                         {
-                            string numberedFileName = $"{entryNumber}.wav";
-                            string relativeAudioPath = Path.Combine("assets", languageCode, characterName, numberedFileName).Replace('\\', '/');
-                            var newEntry = new VoiceEntryTemplate
+                            var genderParts = cleanedSegment.Split('^'); // Split on all occurrences
+                            if (genderParts.Length >= 2) // Check if split actually occurred meaningfully
                             {
-                                DialogueFrom = sourceType, // Use the tracked source type
-                                DialogueText = finalCleanedPart,
-                                AudioPath = relativeAudioPath
-                            };
-                            characterManifest.Entries.Add(newEntry);
-                            entryNumber++;
+                                // Assume first part is male, second is female for standard SV format
+                                // We only take the first two parts if more splits occurred strangely.
+                                string malePart = genderParts[0].Trim();
+                                string femalePart = genderParts[1].Trim();
+
+                                if (!string.IsNullOrEmpty(malePart))
+                                    finalPartsData.Add((text: malePart, genderSuffix: "_male"));
+                                if (!string.IsNullOrEmpty(femalePart))
+                                    finalPartsData.Add((text: femalePart, genderSuffix: "_female"));
+
+                                if (this.Config.developerModeOn) Monitor.Log($"Split segment by '^': M='{malePart}', F='{femalePart}' (From Cleaned: '{cleanedSegment}')", LogLevel.Trace);
+                            }
+                            else
+                            {
+                                // '^' present but split failed (e.g., "^Text", "Text^") - treat as single line
+                                string singlePart = cleanedSegment.Replace("^", "").Trim(); // Remove the caret just in case
+                                if (!string.IsNullOrEmpty(singlePart))
+                                    finalPartsData.Add((text: singlePart, genderSuffix: ""));
+                                if (this.Config.developerModeOn) Monitor.Log($"Contained '^' but split failed or resulted in <2 parts. Treating as single: '{singlePart}' (From Cleaned: '{cleanedSegment}')", LogLevel.Trace);
+                            }
                         }
-                        // else: Optional logging for skipped/empty lines
-                        // else if (!string.IsNullOrWhiteSpace(finalCleanedPart) && Config.developerModeOn) { Monitor.Log($"Skipped duplicate: '{finalCleanedPart}' (Source: {sourceType}, Key: {processingKey})", LogLevel.Trace); }
-                        // else if (!string.IsNullOrWhiteSpace(segment) && Config.developerModeOn) { Monitor.Log($"Text became empty after sanitizing: '{segment}' (Source: {sourceType}, Key: {processingKey})", LogLevel.Trace); }
+                        else
+                        {
+                            // No caret found, add the cleaned segment as is
+                            if (!string.IsNullOrEmpty(cleanedSegment))
+                                finalPartsData.Add((text: cleanedSegment, genderSuffix: ""));
+                        }
+
+
+                        // Step 6.5: Add each final part to the manifest if valid and unique
+                        foreach (var partData in finalPartsData)
+                        {
+                            string finalCleanedPart = partData.text; // This is the final text for the JSON entry
+                            string genderSuffix = partData.genderSuffix;
+
+                            // Check uniqueness based on the FINAL text string
+                            if (!string.IsNullOrWhiteSpace(finalCleanedPart) && addedSanitizedTexts.Add(finalCleanedPart))
+                            {
+                                // Construct filename WITH gender suffix if applicable
+                                string numberedFileName = $"{entryNumber}{genderSuffix}.wav"; // e.g., "65_male.wav", "66_female.wav", "67.wav"
+                                string relativeAudioPath = Path.Combine("assets", languageCode, characterName, numberedFileName).Replace('\\', '/');
+
+                                var newEntry = new VoiceEntryTemplate
+                                {
+                                    DialogueFrom = processingKey, // Link back to the original source key
+                                    DialogueText = finalCleanedPart, // The final, unique text for this specific entry (male/female/neutral)
+                                    AudioPath = relativeAudioPath
+                                };
+                                characterManifest.Entries.Add(newEntry);
+                                if (this.Config.developerModeOn) Monitor.Log($"ADDED Entry - Text: '{newEntry.DialogueText}', Path: '{newEntry.AudioPath}', SourceKey: '{processingKey}'", LogLevel.Debug);
+                                entryNumber++; // Increment for EACH valid file/entry
+                            }
+                            else if (!string.IsNullOrWhiteSpace(finalCleanedPart) && this.Config.developerModeOn)
+                            {
+                                Monitor.Log($"Skipped duplicate final text: '{finalCleanedPart}' (SourceKey: {processingKey}, Suffix: {genderSuffix})", LogLevel.Trace);
+                            }
+                        }
                     }
                 }
 

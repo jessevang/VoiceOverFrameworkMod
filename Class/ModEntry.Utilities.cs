@@ -196,56 +196,58 @@ namespace VoiceOverFrameworkMod
             string sanitized = text; // Work on a copy
 
             // --- ORDER OF OPERATIONS IS CRUCIAL ---
-            // Remove complex blocks with '#' delimiters FIRST.
 
             // 1. Remove speaker prefix (e.g., "^Abigail ")
-            sanitized = Regex.Replace(sanitized, @"^\^.+?\s+", "");
+            sanitized = Regex.Replace(sanitized, @"^\^.+?\s+", ""); // This ^ is for speaker prefix
 
-            // 2. *** UPDATED: Remove $q blocks, including potential starting '#' and ending '#' ***
-            // Matches optional '#', $q, optional space(s), parameters (non-# chars), mandatory '#'
+            // *** NEW RULE (1.5): Remove descriptive prefixes like '%George is ...' ***
+            // Matches '%' at the START of the string, followed by non-whitespace chars, then a space.
+            // Ensures it only catches these specific prefix patterns.
+            sanitized = Regex.Replace(sanitized, @"^%\S+\s+", "");
+
+            // 2. Remove $q blocks
             sanitized = Regex.Replace(sanitized, @"#?\$q\s*[^#]+?#", "");
 
-            // 3. *** NEW/UPDATED: Remove $r blocks (dialogue choices), including '#' delimiters ***
-            // Matches optional '#', $r, space(s), digit(s), space(s), optional '-' + digit(s), space(s), key (non-space chars), mandatory '#'
+            // 3. Remove $r blocks
             sanitized = Regex.Replace(sanitized, @"#?\$r\s+\d+\s+-?\d+\s+\S+#", "");
 
-            // 4. Remove specific Stardew codes ($h, $s, $a, $l, $u, $p, $k, $b, $c[color], $t etc.)
-            // This covers $letter and $letter[parameter].
-            // Run this *after* the more complex $q/$r to avoid partial matches.
+            // 4. Remove specific Stardew codes ($h, $s, $a, etc.)
             sanitized = Regex.Replace(sanitized, @"\$[a-zA-Z](\[[^\]]+\])?", "");
 
-            // 5. Remove $number pause codes (e.g., $1, $8)
+            // 5. Remove $number pause codes
             sanitized = Regex.Replace(sanitized, @"\$\d+", "");
 
-            // 6. Remove SMAPI-style tokens (like %adj%, %noun%, etc.)
-            sanitized = Regex.Replace(sanitized, @"%[a-zA-Z0-9_]+%", ""); // Match %token%
+            // 6. *** MODIFIED: Remove SMAPI-style tokens (%adj%, %noun%, %noturn, etc.) ***
+            // Matches '%' followed by letters/numbers/underscore, THEN an OPTIONAL closing '%'.
+            // This catches both %token% and %token formats.
+            sanitized = Regex.Replace(sanitized, @"%[a-zA-Z0-9_]+%?", ""); // Added '?' to make closing % optional
 
-            // 7. Remove player name token (@) - Replace with space might be better for flow? Test needed.
-            // sanitized = sanitized.Replace("@", " "); // Option: Replace with space
-            sanitized = sanitized.Replace("@", "");    // Option: Remove completely
+            // 7. Remove player name token (@)
+            sanitized = sanitized.Replace("@", "");
 
-            // 8. Remove page/expression markers (#$e#, #$b#) - Often handled by splitting, but keep for safety.
-            //    The optional starting '#' in rules 2 & 3 might catch some, but this is explicit.
+            // 8. Remove page/expression markers (#$e#, #$b#)
             sanitized = Regex.Replace(sanitized, @"#\$[eb]#", "");
 
-            // 9. Remove simple formatting characters (^ < > \) - ^ at start handled earlier.
-            sanitized = Regex.Replace(sanitized, @"[\^<>\\]", "");
+            // 9. Remove simple formatting characters (< > \) BUT KEEP ^
+            sanitized = Regex.Replace(sanitized, @"[<>\\]", "");
 
-            // 10. Collapse multiple whitespace characters into a single space.
+            // 10. Collapse multiple whitespace characters
             sanitized = Regex.Replace(sanitized, @"\s+", " ");
 
-            // 11. Final Trim: Remove leading/trailing whitespace.
+            // 11. Final Trim
             sanitized = sanitized.Trim();
 
             // Developer Logging
             if (sanitized != originalText && Config.developerModeOn)
             {
-                // Use Verbose level for potentially spammy sanitization logs
-                Monitor.Log($"Sanitized Text: \"{originalText}\" -> \"{sanitized}\"", LogLevel.Trace);
+                Monitor.Log($"Sanitized Text (Improved %): \"{originalText}\" -> \"{sanitized}\"", LogLevel.Trace);
             }
 
             return sanitized;
         }
+
+
+
 
     }
 }
