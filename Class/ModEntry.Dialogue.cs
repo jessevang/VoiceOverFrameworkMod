@@ -94,6 +94,19 @@ namespace VoiceOverFrameworkMod
                     string sanitizedStep1 = SanitizeDialogueText(potentialOriginalText); // Apply main sanitizer
                     string finalLookupKey = Regex.Replace(sanitizedStep1, @"#.+?#", "").Trim(); // Apply #tag# removal
 
+                    //get current language
+                    LocalizedContentManager.LanguageCode currentLanguageCode = LocalizedContentManager.CurrentLanguageCode;
+                    if (currentLanguageCode == LocalizedContentManager.LanguageCode.zh)
+                    {
+                        // The game is set to Chinese
+                        Monitor.Log("Game language is Chinese (zh).", LogLevel.Debug);
+                        // ... your Chinese-specific logic ...
+                    }
+                    else
+                    {
+                        // The game is set to a different language
+                        Monitor.Log($"Game language is not Chinese. It is: {currentLanguageCode}", LogLevel.Debug);
+                    }
                     // Use the FINAL reconstructed and cleaned key for lookup
                     if (!string.IsNullOrWhiteSpace(finalLookupKey))
                     {
@@ -104,7 +117,7 @@ namespace VoiceOverFrameworkMod
                         }
 
                         // Pass the RECONSTRUCTED and sanitized key to the playback logic
-                        TryToPlayVoice(currentSpeaker.Name, finalLookupKey);
+                        TryToPlayVoice(currentSpeaker.Name, finalLookupKey, currentLanguageCode); // Pass the enum code
                     }
                     else
                     {

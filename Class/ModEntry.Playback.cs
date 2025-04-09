@@ -22,112 +22,122 @@ namespace VoiceOverFrameworkMod
 
         // Finds the relative audio path for a given character/text based on config.
         // Returns the *absolute* path if found, otherwise null.
-        private string GetAudioPathToPlay(string characterName, string sanitizedDialogueText)
-        {
-            if (Config == null || SelectedVoicePacks == null) return null; // Config not loaded
 
+        private string GetAudioPathToPlay(string characterName, string sanitizedDialogueText, LocalizedContentManager.LanguageCode languageCode)
+        {
+            if (Config == null || SelectedVoicePacks == null || VoicePacksByCharacter == null)
+            {
+                // Monitor?.Log potentially if Config is null but others aren't? Or just fail silently.
+                return null;
+            }
+
+            // Get all loaded packs for this character
             if (!VoicePacksByCharacter.TryGetValue(characterName, out var availablePacks) || !availablePacks.Any())
             {
-                if (Config.developerModeOn)
-                {
-                    Monitor.Log($"[GetAudioPath] No loaded voice packs found for character '{characterName}'.", LogLevel.Trace);
-                }
-                
+                if (Config.developerModeOn) Monitor?.Log($"[GetAudioPath] No loaded voice packs found for character '{characterName}'.", LogLevel.Trace);
                 return null; // No packs loaded for this character
             }
 
             // Determine the desired VoicePackId from config
             if (!SelectedVoicePacks.TryGetValue(characterName, out string selectedVoicePackId) || string.IsNullOrEmpty(selectedVoicePackId) || selectedVoicePackId.Equals("None", StringComparison.OrdinalIgnoreCase))
             {
-                if (Config.developerModeOn)
-                {
-                    Monitor.Log($"[GetAudioPath] No voice pack selected (or set to 'None') for '{characterName}' in config.", LogLevel.Trace);
-                }
-               
+                if (Config.developerModeOn) Monitor?.Log($"[GetAudioPath] No voice pack selected (or set to 'None') for '{characterName}' in config.", LogLevel.Trace);
                 return null; // No pack selected or explicitly disabled
             }
 
-            if (Config.developerModeOn)
-            {
-                Monitor.Log($"[GetAudioPath] Trying to use configured VoicePackId '{selectedVoicePackId}' for '{characterName}'.", LogLevel.Trace);
-            }
+            // --- Language Selection Logic ---
+            // 1. Primary target is the actual game language passed in
+            string primaryLangStr = languageCode.ToString().ToLowerInvariant(); // e.g., "en", "zh"
 
-            
+            // 2. Secondary target is the user's configured default (might be the same as primary)
+            string configDefaultLangStr = (Config.DefaultLanguage ?? "en").ToLowerInvariant();
 
+            // 3. Final fallback is English (if configured)
+            string hardcodedFallbackLangStr = "en";
+            bool allowFallbackToEnglish = Config.FallbackToDefaultIfMissing;
 
-            // Determine target language(s)
-            string targetLanguage = Config.DefaultLanguage ?? "en"; // Use configured default
-            string fallbackLanguage = "en"; // Hardcoded fallback
-            bool tryFallback = Config.FallbackToDefaultIfMissing && !targetLanguage.Equals(fallbackLanguage, StringComparison.OrdinalIgnoreCase);
+            VoicePack packToUse = null;
+            string languageUsed = ""; // Keep track of which language succeeded
 
-            // 1. Try finding the selected pack in the target language
-            VoicePack packToUse = availablePacks.FirstOrDefault(p =>
+            // --- Attempt 1: Find pack matching Selected ID and Primary Game Language ---
+            if (Config.developerModeOn) Monitor?.Log($"[GetAudioPath] Attempt 1: Searching for ID '{selectedVoicePackId}' in Primary Lang '{primaryLangStr}' for '{characterName}'.", LogLevel.Trace);
+            packToUse = availablePacks.FirstOrDefault(p =>
                 p.VoicePackId.Equals(selectedVoicePackId, StringComparison.OrdinalIgnoreCase) &&
-                p.Language.Equals(targetLanguage, StringComparison.OrdinalIgnoreCase));
+                p.Language.ToLowerInvariant().StartsWith(primaryLangStr, StringComparison.OrdinalIgnoreCase));
 
-            bool usedFallbackLanguage = false;
+            if (packToUse != null) languageUsed = primaryLangStr;
 
-            // 2. Try finding the selected pack in the fallback language (if applicable)
-            if (packToUse == null && tryFallback)
+            // --- Attempt 2: Find pack matching Selected ID and Configured Default Language (if different from primary) ---
+            if (packToUse == null && primaryLangStr != configDefaultLangStr)
             {
-                // Monitor.Log($"[GetAudioPath] Pack '{selectedVoicePackId}' not found for primary language '{targetLanguage}', trying fallback '{fallbackLanguage}'.", LogLevel.Trace);
+                if (Config.developerModeOn) Monitor?.Log($"[GetAudioPath] Attempt 2: Searching for ID '{selectedVoicePackId}' in Config Default Lang '{configDefaultLangStr}' for '{characterName}'.", LogLevel.Trace);
                 packToUse = availablePacks.FirstOrDefault(p =>
                     p.VoicePackId.Equals(selectedVoicePackId, StringComparison.OrdinalIgnoreCase) &&
-                    p.Language.Equals(fallbackLanguage, StringComparison.OrdinalIgnoreCase));
-                if (packToUse != null) usedFallbackLanguage = true;
+                    p.Language.ToLowerInvariant().StartsWith(configDefaultLangStr, StringComparison.OrdinalIgnoreCase));
+                if (packToUse != null) languageUsed = configDefaultLangStr;
             }
 
+            // --- Attempt 3: Find pack matching Selected ID and Hardcoded English Fallback (if enabled and needed) ---
+            // Only try English fallback if:
+            // - Fallback is enabled in config
+            // - We haven't found a pack yet
+            // - Neither the primary language NOR the config default language was English (avoid re-checking)
+            if (packToUse == null && allowFallbackToEnglish && primaryLangStr != hardcodedFallbackLangStr && configDefaultLangStr != hardcodedFallbackLangStr)
+            {
+                if (Config.developerModeOn) Monitor?.Log($"[GetAudioPath] Attempt 3: Searching for ID '{selectedVoicePackId}' in Hardcoded Fallback Lang '{hardcodedFallbackLangStr}' for '{characterName}'.", LogLevel.Trace);
+                packToUse = availablePacks.FirstOrDefault(p =>
+                    p.VoicePackId.Equals(selectedVoicePackId, StringComparison.OrdinalIgnoreCase) &&
+                    p.Language.ToLowerInvariant().StartsWith(hardcodedFallbackLangStr, StringComparison.OrdinalIgnoreCase));
+                if (packToUse != null) languageUsed = hardcodedFallbackLangStr;
+            }
+
+            // --- Check if a pack was found ---
             if (packToUse == null)
             {
-
-                if (Config.developerModeOn)
-                {
-                    Monitor.Log($"[GetAudioPath] Failed to find a loaded voice pack matching ID='{selectedVoicePackId}' for character '{characterName}' (Target Lang='{targetLanguage}', Fallback Tried: {tryFallback}).", LogLevel.Warn);
-                }
-                
+                if (Config.developerModeOn) Monitor?.Log($"[GetAudioPath] FAILURE: Could not find suitable pack for ID='{selectedVoicePackId}', Char='{characterName}'. Tried Langs: Primary='{primaryLangStr}', ConfigDefault='{configDefaultLangStr}', EnglishFallbackEnabled='{allowFallbackToEnglish}'.", LogLevel.Warn);
                 return null;
             }
 
-            if (Config.developerModeOn)
-            {
-                Monitor.Log($"[GetAudioPath] Using pack: '{packToUse.VoicePackName}' (ID: {packToUse.VoicePackId}, Lang: {packToUse.Language}, Fallback Used: {usedFallbackLanguage})", LogLevel.Trace);
-            }
-            
+            if (Config.developerModeOn) Monitor?.Log($"[GetAudioPath] Using pack: '{packToUse.VoicePackName}' (ID: {packToUse.VoicePackId}, Lang: {packToUse.Language}) - Found using language '{languageUsed}'.", LogLevel.Debug);
 
-
-            // *** THE KEY LOOKUP ***
-            if (packToUse.Entries.TryGetValue(sanitizedDialogueText, out string relativeAudioPath))
+            // --- THE KEY LOOKUP (using the found pack) ---
+            if (packToUse.Entries != null && packToUse.Entries.TryGetValue(sanitizedDialogueText, out string relativeAudioPath))
             {
-                if (Config.developerModeOn)
+                if (Config.developerModeOn) Monitor?.Log($"[GetAudioPath] SUCCESS: Found relative path '{relativeAudioPath}' for text '{sanitizedDialogueText}' in pack '{packToUse.VoicePackName}'.", LogLevel.Debug);
+
+                // Ensure BaseAssetPath is valid before combining
+                if (string.IsNullOrEmpty(packToUse.BaseAssetPath))
                 {
-                    Monitor.Log($"[GetAudioPath] SUCCESS: Found relative path '{relativeAudioPath}' for text '{sanitizedDialogueText}' in pack '{packToUse.VoicePackName}'.", LogLevel.Debug);
+                    Monitor?.Log($"[GetAudioPath] ERROR: BaseAssetPath is null or empty for pack '{packToUse.VoicePackName}'. Cannot resolve full path.", LogLevel.Error);
+                    return null;
                 }
-               
                 // Return the ABSOLUTE path by combining BaseAssetPath and relative path
+                // Assuming BaseAssetPath is the directory containing the 'assets' folder for that pack
                 return PathUtilities.NormalizePath(Path.Combine(packToUse.BaseAssetPath, relativeAudioPath));
             }
             else
             {
-                if (Config.developerModeOn)
-                {
-                    Monitor.Log($"[GetAudioPath] FAILED: Sanitized text '{sanitizedDialogueText}' not found within the 'Entries' of selected pack '{packToUse.VoicePackName}' (Lang: '{packToUse.Language}').", LogLevel.Trace);
-                }
-                
+                if (Config.developerModeOn) Monitor?.Log($"[GetAudioPath] FAILED LOOKUP: Sanitized text '{sanitizedDialogueText}' not found within the 'Entries' of selected pack '{packToUse.VoicePackName}' (Lang: '{packToUse.Language}').", LogLevel.Trace);
+                // Optional: Could try a fallback lookup within the *same* pack if keys differ slightly, but stick to exact match for now.
                 return null;
             }
         }
 
 
+
+
         // Takes the character and *sanitized* text, finds the path, and plays it.
-        public void TryToPlayVoice(string characterName, string sanitizedDialogueText)
+        // Takes the character and *sanitized* text, finds the path, and plays it.
+        public void TryToPlayVoice(string characterName, string sanitizedDialogueText, LocalizedContentManager.LanguageCode languageCode)
         {
             if (Config.developerModeOn)
             {
-                Monitor.Log($"[TryPlayVoice] Attempting lookup: Char='{characterName}', SanitizedText='{sanitizedDialogueText}'", LogLevel.Trace);
+                Monitor.Log($"[TryPlayVoice] Attempting lookup: Lang='{languageCode}', Char='{characterName}', SanitizedText='{sanitizedDialogueText}'", LogLevel.Trace); // Added Lang to log
             }
-            
 
-            string fullAudioPath = GetAudioPathToPlay(characterName, sanitizedDialogueText);
+
+            // *** PASS languageCode DOWN to GetAudioPathToPlay ***
+            string fullAudioPath = GetAudioPathToPlay(characterName, sanitizedDialogueText, languageCode);
 
             if (!string.IsNullOrWhiteSpace(fullAudioPath))
             {
@@ -135,16 +145,15 @@ namespace VoiceOverFrameworkMod
                 {
                     Monitor.Log($"[TryPlayVoice] Full path resolved: '{fullAudioPath}'. Calling PlayVoiceFromFile.", LogLevel.Debug);
                 }
-                
+
                 PlayVoiceFromFile(fullAudioPath);
             }
             else
             {
                 if (Config.developerModeOn)
                 {
-                Monitor.Log($"[TryPlayVoice] No audio path found for Char='{characterName}', SanitizedText='{sanitizedDialogueText}'. Playback aborted.", LogLevel.Trace);
+                    Monitor.Log($"[TryPlayVoice] No audio path found for Lang='{languageCode}', Char='{characterName}', SanitizedText='{sanitizedDialogueText}'. Playback aborted.", LogLevel.Trace); // Added Lang to log
                 }
-
             }
         }
 
