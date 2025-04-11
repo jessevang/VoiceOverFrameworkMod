@@ -15,7 +15,7 @@ namespace VoiceOverFrameworkMod
     {
         private void SetupConsoleCommands(ICommandHelper commands)
         {
-            //this.Monitor.Log("Setting up console commands...", LogLevel.Debug);
+
 
             commands.Add(
                 name: "create_template",
@@ -41,21 +41,18 @@ namespace VoiceOverFrameworkMod
 
    
 
-            //this.Monitor.Log("Console commands registered.", LogLevel.Debug);
+
         }
 
 
         private void GenerateTemplateCommand(string command, string[] args)
         {
-
             if (args.Length < 5)
             {
                 this.Monitor.Log("Invalid arguments. Use 'help vf_create_template' for details.", LogLevel.Error);
-
                 this.Monitor.Log("Usage: create_template <CharacterName|all> <LanguageCode|all> <YourPackID> <YourPackName> <AudioPathNumber.Wav-StartsAtThisNumber>", LogLevel.Info);
                 return;
             }
-
 
             if (args[0].Equals("all", StringComparison.OrdinalIgnoreCase) && !Context.IsWorldReady)
             {
@@ -63,166 +60,130 @@ namespace VoiceOverFrameworkMod
                 return;
             }
 
-            
             string targetCharacterArg = args[0];
             string targetLanguageArg = args[1];
-            string baseUniqueModID = args[2].Trim(); 
-            string baseVoicePackName = args[3].Trim(); 
+            string baseUniqueModID = args[2].Trim();
+            string baseVoicePackName = args[3].Trim();
             int startsAtThisNumber = Convert.ToInt32(args[4]);
 
-            // Validate base ID and Name aren't empty
+
             if (string.IsNullOrWhiteSpace(baseUniqueModID) || string.IsNullOrWhiteSpace(baseVoicePackName))
             {
                 this.Monitor.Log("YourPackID and YourPackName cannot be empty.", LogLevel.Error);
                 return;
             }
 
-
             // --- Determine Languages ---
-            List<string> languagesToProcess = new List<string>();
+            List<string> languagesToProcess = new();
             if (targetLanguageArg.Equals("all", StringComparison.OrdinalIgnoreCase) || targetLanguageArg == "*")
             {
-                languagesToProcess.AddRange(this.KnownStardewLanguages); // Assumes KnownStardewLanguages exists in ModEntry.cs (Core)
-
+                languagesToProcess.AddRange(this.KnownStardewLanguages);
                 if (Config.developerModeOn)
-                {
                     this.Monitor.Log($"Processing for all {languagesToProcess.Count} known languages.", LogLevel.Info);
-                }
-
             }
             else
             {
-                string validatedLang = GetValidatedLanguageCode(targetLanguageArg); // Use utility method
+                string validatedLang = GetValidatedLanguageCode(targetLanguageArg);
                 if (!string.IsNullOrWhiteSpace(validatedLang))
                 {
                     languagesToProcess.Add(validatedLang);
                     if (Config.developerModeOn)
-                    {
-                        this.Monitor.Log($"Processing for validated language: {validatedLang} (requested: '{targetLanguageArg}')", LogLevel.Info);
-                    }
-                   
+                        this.Monitor.Log($"Processing for validated language: {validatedLang}", LogLevel.Info);
                 }
             }
 
             if (!languagesToProcess.Any())
             {
-                if (Config.developerModeOn)
-                {
-                    this.Monitor.Log($"No valid languages determined from input '{targetLanguageArg}'. Known languages: {string.Join(", ", KnownStardewLanguages)}", LogLevel.Error);
-                }
-               
+                this.Monitor.Log($"No valid languages found from '{targetLanguageArg}'.", LogLevel.Error);
                 return;
             }
 
+
+
+
             // --- Determine Characters ---
-            List<string> charactersToProcess = new List<string>();
+            List<string> charactersToProcess = new();
             if (targetCharacterArg.Equals("all", StringComparison.OrdinalIgnoreCase) || targetCharacterArg == "*")
             {
-                // Ensure world is ready checked earlier
-                this.Monitor.Log("Gathering list of known vanilla villagers from Game1.characterData...", LogLevel.Info);
                 try
                 {
-                    // Use Game1.characterData for a more dynamic list if available
-                    if (Game1.characterData != null && Game1.characterData.Any())
-                    {
-                        // Filter using IsKnownVanillaVillager utility method for consistency, but could be expanded
-                        charactersToProcess = Game1.characterData.Keys
-                                                .Where(name => !string.IsNullOrWhiteSpace(name) && IsKnownVanillaVillager(name)) // Use utility
-                                                .OrderBy(name => name)
-                                                .ToList();
-                        if (Config.developerModeOn)
-                        {
-                        this.Monitor.Log($"Found {charactersToProcess.Count} known vanilla characters to process: {string.Join(", ", charactersToProcess)}", LogLevel.Info);
-                        }
-
-                    }
-                    else
-                    {
-                        if (Config.developerModeOn)
-                        {
-                        this.Monitor.Log("Game1.characterData is null or empty even though save is loaded. Cannot process 'all'.", LogLevel.Error);
-                        }
-
-                        return;
-                    }
+                    charactersToProcess = GetAllKnownCharacterNames();
+                    if (Config.developerModeOn)
+                        this.Monitor.Log($"[create_template] Found {charactersToProcess.Count} total characters (vanilla + modded).", LogLevel.Info);
                 }
                 catch (Exception ex)
                 {
-                    if (Config.developerModeOn)
-                    {
-
-
-                        this.Monitor.Log($"Error retrieving character list from Game1.characterData: {ex.Message}", LogLevel.Error);
-                        this.Monitor.Log(ex.ToString(), LogLevel.Trace);
-                    }
+                    this.Monitor.Log($"Error getting character list: {ex.Message}", LogLevel.Error);
+                    this.Monitor.Log(ex.ToString(), LogLevel.Trace);
                     return;
                 }
             }
             else
             {
-                // Allow processing any specified name (might be mod character)
                 charactersToProcess.Add(targetCharacterArg);
                 if (Config.developerModeOn)
-                {
-                    this.Monitor.Log($"Processing for specified character: {targetCharacterArg}", LogLevel.Info);
-                }
-
+                    this.Monitor.Log($"[create_template] Processing only specified character: {targetCharacterArg}", LogLevel.Info);
             }
 
             if (!charactersToProcess.Any() || charactersToProcess.Any(string.IsNullOrWhiteSpace))
             {
-                if (Config.developerModeOn)
-                {
-                    this.Monitor.Log("No valid characters specified or found to process.", LogLevel.Error);
-                }
-             
+                this.Monitor.Log("[create_template] No valid characters specified or found to process.", LogLevel.Error);
                 return;
             }
 
-            // --- Setup Output Directory ---
-            // Create a subdirectory based on the provided Pack Name to avoid clutter
-            string sanitizedPackName = SanitizeKeyForFileName(baseVoicePackName); // Use utility
+
+            //Determines if modded character has language set to game language due modded dialoge using i18n
+            string currentGameLang = LocalizedContentManager.CurrentLanguageCode.ToString();
+            bool includesModdedCharacters = charactersToProcess
+                .Any(name => !IsKnownVanillaVillager(name));
+
+            // Compare each target language against current game language
+            foreach (string lang in languagesToProcess)
+            {
+                if (!lang.Equals(currentGameLang, StringComparison.OrdinalIgnoreCase) && includesModdedCharacters)
+                {
+                    this.Monitor.Log("⚠️  Language Mismatch Warning", LogLevel.Warn);
+                    this.Monitor.Log($"    Game Language: {currentGameLang} | Target Language: {lang}", LogLevel.Warn);
+                    this.Monitor.Log("    Some modded dialogue may rely on i18n tokens and resolve using the *current game language*.", LogLevel.Warn);
+                    this.Monitor.Log("    To ensure correct results, please switch your game language to match your target language before generating templates.", LogLevel.Warn);
+                    break; 
+                }
+            }
+
+
+            // --- Output Directory ---
+            string sanitizedPackName = SanitizeKeyForFileName(baseVoicePackName);
             if (string.IsNullOrWhiteSpace(sanitizedPackName)) sanitizedPackName = "UntitledVoicePack";
             string outputBaseDir = PathUtilities.NormalizePath(Path.Combine(this.Helper.DirectoryPath, $"{sanitizedPackName}_Templates"));
-            Directory.CreateDirectory(outputBaseDir); // Ensure base output dir exists
-
+            Directory.CreateDirectory(outputBaseDir);
 
             this.Monitor.Log($"Template files will be generated in: {outputBaseDir}", LogLevel.Info);
 
-
-            // --- Execution Loop ---
+            // --- Run per Language ---
             int totalSuccessCount = 0;
             int totalFailCount = 0;
 
             foreach (string languageCode in languagesToProcess)
             {
                 if (Config.developerModeOn)
-                {
                     this.Monitor.Log($"--- Processing Language: {languageCode} ---", LogLevel.Info);
-                }
-              
+
                 int langSuccessCount = 0;
                 int langFailCount = 0;
+
                 foreach (string characterName in charactersToProcess)
                 {
-                    // Generate names and IDs specific to this character/language instance
                     string instancePackId = $"{baseUniqueModID}.{characterName}.{languageCode}";
                     string instancePackName = $"{baseVoicePackName} ({characterName} - {languageCode})";
 
-                    // Call the worker function. It handles saving to the correct subpath.
                     if (GenerateSingleTemplate(characterName, languageCode, outputBaseDir, instancePackId, instancePackName, startsAtThisNumber))
-                    {
                         langSuccessCount++;
-                    }
                     else
-                    {
                         langFailCount++;
-                    }
                 }
+
                 if (Config.developerModeOn)
-                {
                     this.Monitor.Log($"Language {languageCode} Summary - Generated: {langSuccessCount}, Failed/Skipped: {langFailCount}", langFailCount > 0 ? LogLevel.Warn : LogLevel.Info);
-                }
 
                 totalSuccessCount += langSuccessCount;
                 totalFailCount += langFailCount;
@@ -235,6 +196,7 @@ namespace VoiceOverFrameworkMod
                 this.Monitor.Log($"Total Failed/Skipped: {totalFailCount}", LogLevel.Warn);
             this.Monitor.Log($"Output location: {outputBaseDir}", LogLevel.Info);
         }
+
 
 
 

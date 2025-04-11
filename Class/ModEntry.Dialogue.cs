@@ -114,6 +114,11 @@ namespace VoiceOverFrameworkMod
                         {
                             // Log the key being used for lookup
                             Monitor.Log($"Attempting voice for '{currentSpeaker.Name}'. Lookup Key: '{finalLookupKey}' (Derived from Displayed: '{currentDisplayedString}')", LogLevel.Debug);
+                            Monitor.Log($"🔍 [VOICE DEBUG]", LogLevel.Debug);
+                            Monitor.Log($"    📢 Displayed:    \"{currentDisplayedString}\"", LogLevel.Debug);
+                            Monitor.Log($"    🔁 Reversed:     \"{potentialOriginalText}\"", LogLevel.Debug);
+                            Monitor.Log($"    🧼 Sanitized:    \"{sanitizedStep1}\"", LogLevel.Debug);
+                            Monitor.Log($"    🧹 Final Lookup: \"{finalLookupKey}\"", LogLevel.Debug);
                         }
 
                         // Pass the RECONSTRUCTED and sanitized key to the playback logic

@@ -143,6 +143,41 @@ namespace VoiceOverFrameworkMod
 
 
 
+        //gets list of NCP from Vanilla and Modded used in  Create_template
+        private List<string> GetAllKnownCharacterNames()
+        {
+            var result = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+            // Hardcoded vanilla list
+            string[] vanillaList = new[]
+                    {
+                "Abigail", "Alex", "Caroline", "Clint", "Demetrius", "Dwarf", "Elliott", "Emily", "Evelyn", "George",
+                "Gil", "Gus", "Haley", "Harvey", "Jas", "Jodi", "Kent", "Krobus", "Leah", "Leo", "LeoMainland",
+                "Lewis", "Linus", "Marnie", "Maru", "Mister Qi", "Pam", "Penny", "Pierre", "Robin", "Sam", "Sandy",
+                "Sebastian", "Shane", "Vincent", "Willy", "Wizard", "Birdie", "Gunther", "Marlon", "Morris",
+                "Governor", "Grandpa", "MrQi", "Henchman", "Bouncer", "Professor Snail"
+            };
+
+            foreach (string name in vanillaList)
+                result.Add(name);
+
+            foreach (NPC npc in Utility.getAllCharacters())
+                if (!string.IsNullOrWhiteSpace(npc?.Name))
+                    result.Add(npc.Name);
+
+            if (Game1.characterData != null)
+            {
+                foreach (string name in Game1.characterData.Keys)
+                    if (!string.IsNullOrWhiteSpace(name))
+                        result.Add(name);
+            }
+
+            return result.OrderBy(name => name).ToList();
+        }
+
+
+
+
 
         // --- Mod Entry Point ---
         public override void Entry(IModHelper helper)
