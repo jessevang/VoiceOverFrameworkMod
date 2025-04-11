@@ -14,8 +14,8 @@ namespace VoiceOverFrameworkMod
         public bool turnoffdialoguetypingsound = true;
         public bool FallbackToDefaultIfMissing { get; set; } = false;
         public Dictionary<string, string> SelectedVoicePacks { get; set; } = new();
-        public bool developerModeOn {get; set; } = true;
-        public SButton devToolMenu { get; set; } = SButton.F12;
+        public bool developerModeOn {get; set; } = false;
+
     }
 
     // Note: Removed VoicePackWrapper as it wasn't used in the provided ModEntry code.

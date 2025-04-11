@@ -41,7 +41,109 @@ namespace VoiceOverFrameworkMod
             // Add more known event file names if necessary
         };
 
- 
+
+
+
+        private void ListAllNPCCharacterData(string command, string[] args)
+        {
+            var printed = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+            this.Monitor.Log("Listing all NPCs with known character data and dialogue...", LogLevel.Info);
+
+            // 1. Hardcoded vanilla characters (always included)
+            string[] vanillaNames = new[]
+            {
+        "Abigail", "Alex", "Caroline", "Clint", "Demetrius", "Dwarf", "Elliott", "Emily", "Evelyn", "George",
+        "Gil", "Gus", "Haley", "Harvey", "Jas", "Jodi", "Kent", "Krobus", "Leah", "Leo", "LeoMainland",
+        "Lewis", "Linus", "Marnie", "Maru", "Mister Qi", "Pam", "Penny", "Pierre", "Robin",
+        "Sam", "Sandy", "Sebastian", "Shane", "Vincent", "Willy", "Wizard", "Birdie", "Gunther",
+        "Marlon", "Morris", "Henchman", "Bouncer", "Grandpa", "Governor", "Professor Snail"
+    };
+
+            foreach (string name in vanillaNames)
+            {
+                var assetKey = $"Characters/Dialogue/{name}";
+                bool hasDialogue = false;
+
+                try
+                {
+                    var parsed = this.Helper.GameContent.ParseAssetName(assetKey);
+                    hasDialogue = this.Helper.GameContent.DoesAssetExist<Dictionary<string, string>>(parsed);
+                }
+                catch { }
+
+                this.Monitor.Log($"Vanilla: {name}" + (hasDialogue ? "" : " (no dialogue)"), LogLevel.Info);
+                printed.Add(name);
+            }
+
+            // 2. All currently loaded characters (modded + some vanilla)
+            foreach (NPC npc in Utility.getAllCharacters())
+            {
+                string name = npc.Name;
+                if (printed.Contains(name) || IsSharedOrSystemDialogueFile(name))
+                    continue;
+
+                var data = npc.GetData();
+                string displayName = data?.DisplayName ?? name;
+
+                var assetKey = $"Characters/Dialogue/{name}";
+                bool hasDialogue = false;
+
+                try
+                {
+                    var parsed = this.Helper.GameContent.ParseAssetName(assetKey);
+                    hasDialogue = this.Helper.GameContent.DoesAssetExist<Dictionary<string, string>>(parsed);
+                }
+                catch { }
+
+                string label = IsKnownVanillaVillager(name) ? "Vanilla" : "Modded";
+                this.Monitor.Log($"{label}: {name} ({displayName})" + (hasDialogue ? "" : " (no dialogue)"), LogLevel.Info);
+                printed.Add(name);
+            }
+
+            // 3. Mod folder fallback (scan all Characters/Dialogue/*.json)
+            string modsDir = Path.Combine(Directory.GetCurrentDirectory(), "Mods");
+            if (Directory.Exists(modsDir))
+            {
+                foreach (string modFolder in Directory.EnumerateDirectories(modsDir))
+                {
+                    foreach (string file in Directory.EnumerateFiles(modFolder, "*.json", SearchOption.AllDirectories))
+                    {
+                        if (!file.Contains(Path.Combine("Characters", "Dialogue")))
+                            continue;
+
+                        string name = Path.GetFileNameWithoutExtension(file).Split('.')[0];
+                        if (printed.Contains(name) || IsSharedOrSystemDialogueFile(name))
+                            continue;
+
+                        string displayName = name;
+
+                        var npc = Game1.getCharacterFromName(name, false);
+                        if (npc?.GetData() != null)
+                            displayName = npc.GetData().DisplayName;
+
+                        this.Monitor.Log($"Modded: {name} ({displayName})", LogLevel.Info);
+                        printed.Add(name);
+                    }
+                }
+            }
+        }
+
+
+        private bool IsSharedOrSystemDialogueFile(string name)
+        {
+            return name.Equals("MarriageDialogue", StringComparison.OrdinalIgnoreCase)
+                || name.StartsWith("MarriageDialogue", StringComparison.OrdinalIgnoreCase)
+                || name.Equals("adoption", StringComparison.OrdinalIgnoreCase)
+                || name.Equals("boatTunnel", StringComparison.OrdinalIgnoreCase)
+                || name.Equals("returnBoat", StringComparison.OrdinalIgnoreCase)
+                || name.Equals("customFestival", StringComparison.OrdinalIgnoreCase)
+                || name.Equals("eventQuestionResponses", StringComparison.OrdinalIgnoreCase);
+        }
+
+
+
+
+
         // --- Mod Entry Point ---
         public override void Entry(IModHelper helper)
         {

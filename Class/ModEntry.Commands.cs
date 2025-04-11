@@ -20,7 +20,7 @@ namespace VoiceOverFrameworkMod
             commands.Add(
                 name: "create_template",
                 documentation: "Generates template JSON voice files for characters.\n\n" +
-                               "Usage: create <CharacterName|all> <LanguageCode|all> <YourPackID> <YourPackName>\n" +
+                               "Usage: create <CharacterName|all> <LanguageCode|all> <YourPackID> <YourPackName> <StartingAudioFileNumber>\n" +
                                "  - CharacterName: Specific NPC name (e.g., Abigail) or 'all'.\n" +
                                "  - LanguageCode: Specific code (en, es-ES, etc.) or 'all'.\n" +
                                "  - YourPackID: Base unique ID for your pack (e.g., YourName.FancyVoices).\n" +
@@ -29,6 +29,14 @@ namespace VoiceOverFrameworkMod
                                "Example: create_template all en MyName.AllVanillaVoices All Vanilla (EN)\n" +
                                "Output files will be in 'Mods/VoiceOverFrameworkMod/YourPackName_Templates'.",
                 callback: this.GenerateTemplateCommand
+                );
+
+            commands.Add(
+                name: "list_characters",
+                documentation: "Lists all loaded characters and shows whether they are vanilla or modded.\n\n" +
+                                "Usage: list_characters",
+                callback: this.ListAllNPCCharacterData
+
             );
 
    

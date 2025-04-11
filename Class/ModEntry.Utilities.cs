@@ -105,27 +105,29 @@ namespace VoiceOverFrameworkMod
         private bool IsKnownVanillaVillager(string name)
         {
             // Using a HashSet for efficient lookups (case-insensitive)
-            // Expanded list based on common villagers/NPCs involved in dialogue. Adjust as needed.
-            var knownVanilla = new HashSet<string>(StringComparer.OrdinalIgnoreCase) {
-                // Marriage Candidates
-                "Abigail", "Alex", "Elliott", "Emily", "Haley", "Harvey", "Leah", "Maru", "Penny", "Sam", "Sebastian", "Shane",
-                // Villagers
-                "Caroline", "Clint", "Demetrius", "Evelyn", "George", "Gus", "Jas", "Jodi", "Kent", "Lewis", "Linus", "Marnie",
-                "Pam", "Pierre", "Robin", "Vincent", "Willy",
-                // Other Key NPCs
-                "Wizard", "Krobus", "Dwarf", "Sandy", "Leo", "Gunther", "Marlon", "Morris", // Added Gunther, Marlon, Morris
-                "Governor", "Grandpa", "MrQi", "Birdie" // Added others sometimes involved
-                // Potentially add festival-specific NPCs if needed? (e.g., Gil)
-            };
+            var knownVanilla = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+    {
+        // Marriage Candidates
+        "Abigail", "Alex", "Elliott", "Emily", "Haley", "Harvey", "Leah", "Maru", "Penny", "Sam", "Sebastian", "Shane",
+
+        // Villagers
+        "Caroline", "Clint", "Demetrius", "Evelyn", "George", "Gus", "Jas", "Jodi", "Kent", "Lewis", "Linus", "Marnie",
+        "Pam", "Pierre", "Robin", "Vincent", "Willy",
+
+        // Key NPCs / Special Characters
+        "Wizard", "Krobus", "Dwarf", "Sandy", "Leo", "LeoMainland", "Gunther", "Marlon", "Gil", "Morris",
+        "Governor", "Grandpa", "Mister Qi", "Birdie", "Bouncer", "Henchman", "Professor Snail"
+    };
 
             bool isKnown = knownVanilla.Contains(name);
             if (Config.developerModeOn)
             {
                 Monitor.Log($"Checking if '{name}' is known vanilla: {isKnown}", LogLevel.Trace);
             }
-           
+
             return isKnown;
         }
+
 
 
         // Validates and canonicalizes language codes.

@@ -99,13 +99,13 @@ namespace VoiceOverFrameworkMod
                     if (currentLanguageCode == LocalizedContentManager.LanguageCode.zh)
                     {
                         // The game is set to Chinese
-                        Monitor.Log("Game language is Chinese (zh).", LogLevel.Debug);
+                       // Monitor.Log("Game language is Chinese (zh).", LogLevel.Debug);
                         // ... your Chinese-specific logic ...
                     }
                     else
                     {
                         // The game is set to a different language
-                        Monitor.Log($"Game language is not Chinese. It is: {currentLanguageCode}", LogLevel.Debug);
+                       // Monitor.Log($"Game language is not Chinese. It is: {currentLanguageCode}", LogLevel.Debug);
                     }
                     // Use the FINAL reconstructed and cleaned key for lookup
                     if (!string.IsNullOrWhiteSpace(finalLookupKey))
