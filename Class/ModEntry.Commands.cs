@@ -49,7 +49,7 @@ namespace VoiceOverFrameworkMod
         {
             if (args.Length < 5)
             {
-                this.Monitor.Log("Invalid arguments. Use 'help vf_create_template' for details.", LogLevel.Error);
+                this.Monitor.Log("Invalid arguments. Use 'help create_template' for details.", LogLevel.Error);
                 this.Monitor.Log("Usage: create_template <CharacterName|all> <LanguageCode|all> <YourPackID> <YourPackName> <AudioPathNumber.Wav-StartsAtThisNumber>", LogLevel.Info);
                 return;
             }

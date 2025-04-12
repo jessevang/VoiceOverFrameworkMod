@@ -215,13 +215,8 @@ namespace VoiceOverFrameworkMod
 
 
 
-        /// <summary>
-        /// Extracts dialogue lines spoken by a specific character from common event files for a given language.
-        /// </summary>
-        /// <param name="targetCharacterName">The name of the character whose dialogue to extract.</param>
-        /// <param name="languageCode">The language code (e.g., "en", "es-ES").</param>
-        /// <param name="gameContent">The game content helper.</param>
-        /// <returns>A dictionary where the key is the sanitized dialogue text and the value identifies the source event.</returns>
+    
+        //get Event Dialogues
         private Dictionary<string, string> GetEventDialogueForCharacter(string targetCharacterName, string languageCode, IGameContentHelper gameContent)
         {
             // *** CHANGE: Dictionary now maps SourceInfo -> SanitizedText ***
@@ -389,23 +384,22 @@ namespace VoiceOverFrameworkMod
             //this.Monitor.Log("Harmony patching process completed.", LogLevel.Debug);
         }
 
-       //gets Dialogue from Festivals for output
-        private Dictionary<string, (string RawText, string SourceInfo)> GetFestivalDialogueForCharacter(string characterName, string languageCode, IGameContentHelper contentHelper)
+        private Dictionary<string, (string RawText, string SourceInfo)> GetFestivalDialogueForCharacter(
+    string characterName,
+    string languageCode,
+    IGameContentHelper contentHelper)
         {
-            var festivalDialogue = new Dictionary<string, (string RawText, string SourceInfo)>(StringComparer.OrdinalIgnoreCase);
+            var result = new Dictionary<string, (string RawText, string SourceInfo)>(StringComparer.OrdinalIgnoreCase);
             string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
 
+            //ENHANCEMENT WILL need to get dynamic Festival Names Later to support modded festivals
             var festivalNames = new List<string>
-            {
-                "spring13", "spring24",
-                "summer11", "summer28",
-                "fall16", "fall27",
-                "winter8", "winter25"
-                // Add more vanilla festival keys if needed
-            };
-
-            // Define the prefix pattern we're looking for (e.g., "Abigail_")
-            string characterPrefixWithUnderscore = $"{characterName}_";
+                {
+                    "spring13", "spring24",
+                    "summer11", "summer28",
+                    "fall16", "fall27",
+                    "winter8", "winter25"
+                };
 
             foreach (string festivalName in festivalNames)
             {
@@ -414,50 +408,70 @@ namespace VoiceOverFrameworkMod
 
                 try
                 {
-                    IAssetName festivalAssetName = contentHelper.ParseAssetName(assetKeyString);
-                    var festivalData = contentHelper.Load<Dictionary<string, string>>(festivalAssetName);
+                    var festivalData = contentHelper.Load<Dictionary<string, string>>(assetKeyString);
+                    if (festivalData == null)
+                        continue;
 
-                    if (festivalData != null)
+                    foreach (var kvp in festivalData)
                     {
-                        foreach (var kvp in festivalData)
+                        string key = kvp.Key;
+                        string value = kvp.Value;
+
+                        // --- Case 1: Key matches or contains character name (excluding script blocks)
+                        if (key.StartsWith(characterName, StringComparison.OrdinalIgnoreCase) ||
+                            key.IndexOf(characterName, StringComparison.OrdinalIgnoreCase) >= 0)
                         {
-                            string dialogueKey = kvp.Key;
-                            string rawDialogueText = kvp.Value;
-
-                            // --- MODIFIED CHECK ---
-
-                            if (dialogueKey.Equals(characterName, StringComparison.OrdinalIgnoreCase) ||
-                                dialogueKey.StartsWith(characterPrefixWithUnderscore, StringComparison.OrdinalIgnoreCase))
+                            if (!string.IsNullOrWhiteSpace(value) && !value.Contains("speak "))
                             {
-                                // This dialogue belongs to the target character (base or variant)
-                                if (!string.IsNullOrWhiteSpace(rawDialogueText))
-                                {
-                                    string uniqueLineKey = $"{sourceInfo}:{dialogueKey}"; // Keep original key for uniqueness
-                                    if (!festivalDialogue.ContainsKey(uniqueLineKey))
-                                    {
-                                        festivalDialogue[uniqueLineKey] = (rawDialogueText, sourceInfo);
-                                        // Optional Trace logging:
-                                        // this.Monitor.Log($"    -> Found Festival line for '{characterName}' (Key: {dialogueKey}) in {assetKeyString}: \"{rawDialogueText}\"", LogLevel.Trace);
-                                    }
-                                }
+                                string sanitized = SanitizeDialogueText(value);
+                                string uniqueKey = $"{sourceInfo}:{key}";
+                                if (!result.ContainsKey(uniqueKey))
+                                    result[uniqueKey] = (sanitized, sourceInfo);
                             }
-                            // --- END MODIFIED CHECK ---
+                        }
+
+                        // --- Case 2: Embedded 'speak CharacterName "..."' in scripts
+                        foreach (Match match in Regex.Matches(value, $@"speak\s+{Regex.Escape(characterName)}\s+""([^""]+)"""))
+                        {
+                            string embeddedText = match.Groups[1].Value;
+                            string sanitized = SanitizeDialogueText(embeddedText);
+                            if (!string.IsNullOrWhiteSpace(sanitized))
+                            {
+                                string uniqueKey = $"{sourceInfo}:{key}:speak:{match.Index}";
+                                if (!result.ContainsKey(uniqueKey))
+                                    result[uniqueKey] = (sanitized, sourceInfo);
+                            }
+                        }
+
+                        // --- Case 3: Exact match of character name as key
+                        if (key.Equals(characterName, StringComparison.OrdinalIgnoreCase))
+                        {
+                            string sanitized = SanitizeDialogueText(value);
+                            string uniqueKey = $"{sourceInfo}:{key}";
+                            if (!result.ContainsKey(uniqueKey))
+                                result[uniqueKey] = (sanitized, sourceInfo);
                         }
                     }
                 }
                 catch (ContentLoadException)
                 {
-                    // this.Monitor.Log($"Festival asset '{assetKeyString}' not found. Skipping.", LogLevel.Trace);
+                    // Skip missing assets
                 }
                 catch (Exception ex)
                 {
-                    this.Monitor.Log($"Error loading or processing festival asset '{assetKeyString}': {ex.Message}", LogLevel.Warn);
+                    this.Monitor.Log($"Error reading festival data from '{assetKeyString}': {ex.Message}", LogLevel.Warn);
                     this.Monitor.Log(ex.ToString(), LogLevel.Trace);
                 }
             }
 
-            return festivalDialogue;
+            return result;
         }
+
+
+
+
+
+
 
 
 
