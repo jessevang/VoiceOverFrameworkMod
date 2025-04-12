@@ -7,7 +7,10 @@ using Microsoft.Xna.Framework.Content;
 using Newtonsoft.Json;
 using StardewModdingAPI;
 using StardewModdingAPI.Utilities; 
-using StardewValley; 
+using StardewValley;
+using System.Reflection;
+using StardewValley.Util;
+
 
 namespace VoiceOverFrameworkMod
 {
@@ -15,34 +18,71 @@ namespace VoiceOverFrameworkMod
     {
         private void SetupConsoleCommands(ICommandHelper commands)
         {
-
-
             commands.Add(
                 name: "create_template",
                 documentation: "Generates template JSON voice files for characters.\n\n" +
-                               "Usage: create <CharacterName|all> <LanguageCode|all> <YourPackID> <YourPackName> <StartingAudioFileNumber>\n" +
-                               "  - CharacterName: Specific NPC name (e.g., Abigail) or 'all'.\n" +
+                               "Usage: create <CharacterName|all|*match*|!*exclude*> <LanguageCode|all> <YourPackID> <YourPackName> <StartingAudioFileNumber>\n" +
+                               "  - CharacterName: Specific NPC name (e.g., Abigail), 'all', wildcard '*text', or negate with '!*text'.\n" +
                                "  - LanguageCode: Specific code (en, es-ES, etc.) or 'all'.\n" +
                                "  - YourPackID: Base unique ID for your pack (e.g., YourName.FancyVoices).\n" +
                                "  - YourPackName: Display name for your pack (e.g., Fancy Voices).\n\n" +
                                "Example: create_template Abigail en MyName.AbigailVoice Abigail English Voice\n" +
                                "Example: create_template all en MyName.AllVanillaVoices All Vanilla (EN)\n" +
+                               "Example: create_template *Goblin* en My.GoblinPack Goblin Voices\n" +
                                "Output files will be in 'Mods/VoiceOverFrameworkMod/YourPackName_Templates'.",
                 callback: this.GenerateTemplateCommand
-                );
+            );
 
             commands.Add(
                 name: "list_characters",
                 documentation: "Lists all loaded characters and shows whether they are vanilla or modded.\n\n" +
                                 "Usage: list_characters",
                 callback: this.ListAllNPCCharacterData
-
             );
 
-   
+            
 
 
         }
+
+        
+
+
+        private List<(string location, string eventId)> GetAllEventsForCharacter(string characterName)
+        {
+            var result = new List<(string location, string eventId)>();
+            var speakRegex = new Regex($@"speak\s+{Regex.Escape(characterName)}\s+""", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+
+            foreach (string eventFile in CommonEventFileNames) // Your known files list
+            {
+                try
+                {
+                    var events = this.Helper.GameContent.Load<Dictionary<string, string>>($"Data/Events/{eventFile}");
+
+                    foreach (var kvp in events)
+                    {
+                        string id = kvp.Key;
+                        string script = kvp.Value;
+
+                        if (!string.IsNullOrWhiteSpace(script) && speakRegex.IsMatch(script))
+                        {
+                            result.Add((eventFile, id));
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Monitor.Log($"[GetAllEventsForCharacter] Error loading from {eventFile}: {ex.Message}", LogLevel.Warn);
+                }
+            }
+
+            return result;
+        }
+
+
+
+
+
 
 
         private void GenerateTemplateCommand(string command, string[] args)
@@ -50,13 +90,13 @@ namespace VoiceOverFrameworkMod
             if (args.Length < 5)
             {
                 this.Monitor.Log("Invalid arguments. Use 'help create_template' for details.", LogLevel.Error);
-                this.Monitor.Log("Usage: create_template <CharacterName|all> <LanguageCode|all> <YourPackID> <YourPackName> <AudioPathNumber.Wav-StartsAtThisNumber>", LogLevel.Info);
+                this.Monitor.Log("Usage: create_template <CharacterName|all|*match|!*exclude> <LanguageCode|all> <YourPackID> <YourPackName> <AudioPathNumber.Wav-StartsAtThisNumber>", LogLevel.Info);
                 return;
             }
 
-            if (args[0].Equals("all", StringComparison.OrdinalIgnoreCase) && !Context.IsWorldReady)
+            if ((args[0].Equals("all", StringComparison.OrdinalIgnoreCase) || args[0].Contains("*")) && !Context.IsWorldReady)
             {
-                this.Monitor.Log("Please load a save file before using 'all' characters to access game data.", LogLevel.Warn);
+                this.Monitor.Log("Please load a save file before using wildcard or 'all' to access game data.", LogLevel.Warn);
                 return;
             }
 
@@ -65,7 +105,6 @@ namespace VoiceOverFrameworkMod
             string baseUniqueModID = args[2].Trim();
             string baseVoicePackName = args[3].Trim();
             int startsAtThisNumber = Convert.ToInt32(args[4]);
-
 
             if (string.IsNullOrWhiteSpace(baseUniqueModID) || string.IsNullOrWhiteSpace(baseVoicePackName))
             {
@@ -98,31 +137,43 @@ namespace VoiceOverFrameworkMod
                 return;
             }
 
-
-
-
             // --- Determine Characters ---
-            List<string> charactersToProcess = new();
-            if (targetCharacterArg.Equals("all", StringComparison.OrdinalIgnoreCase) || targetCharacterArg == "*")
+            List<string> charactersToProcess;
+            try
             {
-                try
+                var allCharacters = GetAllKnownCharacterNames();
+
+                if (targetCharacterArg.Equals("all", StringComparison.OrdinalIgnoreCase) || targetCharacterArg == "*")
                 {
-                    charactersToProcess = GetAllKnownCharacterNames();
-                    if (Config.developerModeOn)
-                        this.Monitor.Log($"[create_template] Found {charactersToProcess.Count} total characters (vanilla + modded).", LogLevel.Info);
+                    charactersToProcess = allCharacters;
                 }
-                catch (Exception ex)
+                else if (targetCharacterArg.StartsWith("!*"))
                 {
-                    this.Monitor.Log($"Error getting character list: {ex.Message}", LogLevel.Error);
-                    this.Monitor.Log(ex.ToString(), LogLevel.Trace);
-                    return;
+                    string exclude = targetCharacterArg.Substring(2);
+                    charactersToProcess = allCharacters
+                        .Where(name => !name.Contains(exclude, StringComparison.OrdinalIgnoreCase))
+                        .ToList();
                 }
-            }
-            else
-            {
-                charactersToProcess.Add(targetCharacterArg);
+                else if (targetCharacterArg.StartsWith("*"))
+                {
+                    string include = targetCharacterArg.Substring(1);
+                    charactersToProcess = allCharacters
+                        .Where(name => name.Contains(include, StringComparison.OrdinalIgnoreCase))
+                        .ToList();
+                }
+                else
+                {
+                    charactersToProcess = new List<string> { targetCharacterArg };
+                }
+
                 if (Config.developerModeOn)
-                    this.Monitor.Log($"[create_template] Processing only specified character: {targetCharacterArg}", LogLevel.Info);
+                    this.Monitor.Log($"[create_template] Found {charactersToProcess.Count} character(s) after filtering.", LogLevel.Info);
+            }
+            catch (Exception ex)
+            {
+                this.Monitor.Log($"Error getting filtered character list: {ex.Message}", LogLevel.Error);
+                this.Monitor.Log(ex.ToString(), LogLevel.Trace);
+                return;
             }
 
             if (!charactersToProcess.Any() || charactersToProcess.Any(string.IsNullOrWhiteSpace))

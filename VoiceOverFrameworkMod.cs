@@ -1,5 +1,6 @@
 ﻿using System; // Added for StringComparer
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using GenericModConfigMenu;
@@ -8,6 +9,7 @@ using Microsoft.Xna.Framework.Content;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewValley;
+using StardewValley.Internal;
 
 
 namespace VoiceOverFrameworkMod
@@ -42,6 +44,8 @@ namespace VoiceOverFrameworkMod
         };
 
 
+       
+
 
 
         private void ListAllNPCCharacterData(string command, string[] args)
@@ -75,6 +79,7 @@ namespace VoiceOverFrameworkMod
                 printed.Add(name);
             }
 
+            
             // 2. All currently loaded characters (modded + some vanilla)
             foreach (NPC npc in Utility.getAllCharacters())
             {
@@ -87,6 +92,8 @@ namespace VoiceOverFrameworkMod
 
                 var assetKey = $"Characters/Dialogue/{name}";
                 bool hasDialogue = false;
+
+                
 
                 try
                 {
@@ -127,6 +134,7 @@ namespace VoiceOverFrameworkMod
                 }
             }
         }
+
 
 
         private bool IsSharedOrSystemDialogueFile(string name)
@@ -215,50 +223,31 @@ namespace VoiceOverFrameworkMod
 
 
 
-    
-        //get Event Dialogues
+
+ 
+
+  
+        //get Event Dialogues dynamically so that modded events are also included
         private Dictionary<string, string> GetEventDialogueForCharacter(string targetCharacterName, string languageCode, IGameContentHelper gameContent)
         {
-            // *** CHANGE: Dictionary now maps SourceInfo -> SanitizedText ***
             var eventDialogue = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-
-            string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
-            string eventsBasePath = "Data/Events/";
             var speakCommandRegex = new Regex(@"^speak\s+(\w+)\s+""([^""]*)""", RegexOptions.Compiled);
+            int foundInEventsCount = 0;
 
-            // Log Trace level might be too verbose unless debugging event loading itself
-            // this.Monitor.Log($"Searching events for '{targetCharacterName}' dialogue ({languageCode})...", LogLevel.Trace);
-            int foundInEventsCount = 0; // Count unique event sources found
-
-            foreach (string eventFileNameBase in CommonEventFileNames)
+            foreach (var location in Game1.locations)
             {
-                string assetKey = $"{eventsBasePath}{eventFileNameBase}{langSuffix}";
-                Dictionary<string, string> eventData = null;
-
-                try
-                {
-                    // Consider using TryLoad if available/appropriate for cleaner non-existent file handling
-                    eventData = gameContent.Load<Dictionary<string, string>>(assetKey);
-                }
-                catch (ContentLoadException)
-                {
-                    // Monitor.Log($"Event asset not found, skipping: {assetKey}", LogLevel.Trace);
+                if (!location.TryGetLocationEvents(out string assetName, out Dictionary<string, string> eventData))
                     continue;
-                }
-                catch (Exception ex)
-                {
-                    Monitor.Log($"Error loading event asset '{assetKey}': {ex.Message}", LogLevel.Warn);
-                    Monitor.Log($"Stack Trace: {ex.StackTrace}", LogLevel.Trace); // Add stack trace for debugging
-                    continue;
-                }
 
-                if (eventData == null) continue;
+                if (eventData == null || eventData.Count == 0)
+                    continue;
 
                 foreach (var eventEntry in eventData)
                 {
                     string eventId = eventEntry.Key;
                     string eventScript = eventEntry.Value;
-                    if (string.IsNullOrWhiteSpace(eventScript)) continue;
+                    if (string.IsNullOrWhiteSpace(eventScript))
+                        continue;
 
                     string[] commands = eventScript.Split('/');
 
@@ -271,67 +260,44 @@ namespace VoiceOverFrameworkMod
                             if (match.Success)
                             {
                                 string speakerName = match.Groups[1].Value;
-                                // *** Get the RAW dialogue text from the event ***
                                 string rawDialogueText = match.Groups[2].Value;
 
                                 if (speakerName.Equals(targetCharacterName, StringComparison.OrdinalIgnoreCase))
                                 {
-                                    // *** Sanitize using the updated SanitizeDialogueText function ***
-                                    // This removes codes like $q, $1, %adj% etc. but SHOULD NOT split by ##
-                                    string sanitizedText = SanitizeDialogueText(rawDialogueText); // Ensure this function is updated!
+                                    string sanitizedText = SanitizeDialogueText(rawDialogueText);
 
                                     if (!string.IsNullOrWhiteSpace(sanitizedText))
                                     {
-                                        // *** CHANGE: Use the event source as the key ***
-                                        string eventSourceInfo = $"Event:{eventFileNameBase}/{eventId}";
-                                        string uniqueEventKey = eventSourceInfo;
-                                        int collisionCounter = 1;
+                                        string baseKey = $"Event:{location.NameOrUniqueName}/{eventId}";
+                                        string uniqueKey = baseKey;
+                                        int counter = 1;
 
-                                        // Handle rare case where one event entry might have multiple 'speak' commands
-                                        // by the same person (e.g., separated by other commands). Append a counter.
-                                        while (eventDialogue.ContainsKey(uniqueEventKey))
-                                        {
-                                            uniqueEventKey = $"{eventSourceInfo}_{collisionCounter++}";
-                                            if (Config.developerModeOn) Monitor.Log($"Collision detected for event key '{eventSourceInfo}'. Using '{uniqueEventKey}'.", LogLevel.Trace);
-                                        }
+                                        while (eventDialogue.ContainsKey(uniqueKey))
+                                            uniqueKey = $"{baseKey}_{counter++}";
 
-                                        // *** Store: Key = EventSourceInfo, Value = Sanitized Text ***
-                                        eventDialogue[uniqueEventKey] = sanitizedText;
-                                        foundInEventsCount++; // Increment count for each line found
-
-                                        // Optional Trace logging showing the stored key and value
-                                        // if (Config.developerModeOn) Monitor.Log($"    Stored event dialogue: Key='{uniqueEventKey}', Value='{sanitizedText}' (Raw='{rawDialogueText}')", LogLevel.Trace);
-
+                                        eventDialogue[uniqueKey] = sanitizedText;
+                                        foundInEventsCount++;
                                     }
-                                    // else if (Config.developerModeOn) Monitor.Log($"    Event text became empty after sanitizing: Raw='{rawDialogueText}'", LogLevel.Trace);
-
                                 }
                             }
-                            // else if (Config.developerModeOn) Monitor.Log($"    Regex failed to parse speak command: '{trimmedCommand}'", LogLevel.Trace);
                         }
                     }
                 }
-            } // End foreach eventFileNameBase
-
-            // Log based on the number of unique event dialogue lines found
-            if (foundInEventsCount > 0)
-            {
-                if (Config.developerModeOn)
-                {
-                    this.Monitor.Log($"Found {foundInEventsCount} potential event dialogue lines (sources) for '{targetCharacterName}' ({languageCode}).", LogLevel.Debug);
-                }
             }
-            else
+
+            if (Config.developerModeOn)
             {
-                // Log Trace level might be better here unless DevMode is on
-                if (Config.developerModeOn)
-                {
-                    Monitor.Log($"No event dialogue lines found for '{targetCharacterName}' ({languageCode}) in common event files.", LogLevel.Trace);
-                }
+                if (foundInEventsCount > 0)
+                    this.Monitor.Log($"Found {foundInEventsCount} potential event dialogue lines for '{targetCharacterName}'.", LogLevel.Debug);
+                else
+                    this.Monitor.Log($"No event dialogue lines found for '{targetCharacterName}'.", LogLevel.Trace);
             }
 
             return eventDialogue;
         }
+
+
+
 
 
 
@@ -384,27 +350,27 @@ namespace VoiceOverFrameworkMod
             //this.Monitor.Log("Harmony patching process completed.", LogLevel.Debug);
         }
 
+
+        //Gets Festival Data
         private Dictionary<string, (string RawText, string SourceInfo)> GetFestivalDialogueForCharacter(
-    string characterName,
-    string languageCode,
-    IGameContentHelper contentHelper)
+     string characterName,
+     string languageCode,
+     IGameContentHelper contentHelper)
         {
             var result = new Dictionary<string, (string RawText, string SourceInfo)>(StringComparer.OrdinalIgnoreCase);
             string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
 
-            //ENHANCEMENT WILL need to get dynamic Festival Names Later to support modded festivals
-            var festivalNames = new List<string>
-                {
-                    "spring13", "spring24",
-                    "summer11", "summer28",
-                    "fall16", "fall27",
-                    "winter8", "winter25"
-                };
+            // Dynamically get festival keys
+            var activeFestivalKeys = DataLoader.Festivals_FestivalDates(Game1.content).Keys;
+            var passiveFestivalKeys = DataLoader.PassiveFestivals(Game1.content).Keys;
 
-            foreach (string festivalName in festivalNames)
+            // Combine and deduplicate
+            var allFestivalKeys = activeFestivalKeys.Concat(passiveFestivalKeys).Distinct();
+
+            foreach (string festivalKey in allFestivalKeys)
             {
-                string assetKeyString = $"Data/Festivals/{festivalName}{langSuffix}";
-                string sourceInfo = $"Festival/{festivalName}";
+                string assetKeyString = $"Data/Festivals/{festivalKey}{langSuffix}";
+                string sourceInfo = $"Festival/{festivalKey}";
 
                 try
                 {
@@ -417,7 +383,7 @@ namespace VoiceOverFrameworkMod
                         string key = kvp.Key;
                         string value = kvp.Value;
 
-                        // --- Case 1: Key matches or contains character name (excluding script blocks)
+                        // Match by key or embedded speaker
                         if (key.StartsWith(characterName, StringComparison.OrdinalIgnoreCase) ||
                             key.IndexOf(characterName, StringComparison.OrdinalIgnoreCase) >= 0)
                         {
@@ -430,7 +396,6 @@ namespace VoiceOverFrameworkMod
                             }
                         }
 
-                        // --- Case 2: Embedded 'speak CharacterName "..."' in scripts
                         foreach (Match match in Regex.Matches(value, $@"speak\s+{Regex.Escape(characterName)}\s+""([^""]+)"""))
                         {
                             string embeddedText = match.Groups[1].Value;
@@ -443,7 +408,6 @@ namespace VoiceOverFrameworkMod
                             }
                         }
 
-                        // --- Case 3: Exact match of character name as key
                         if (key.Equals(characterName, StringComparison.OrdinalIgnoreCase))
                         {
                             string sanitized = SanitizeDialogueText(value);
@@ -466,6 +430,7 @@ namespace VoiceOverFrameworkMod
 
             return result;
         }
+
 
 
 

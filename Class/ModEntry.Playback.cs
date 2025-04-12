@@ -326,6 +326,7 @@ namespace VoiceOverFrameworkMod
                         activeVoiceInstances.RemoveAt(i);
                     }
                 }
+                
             }
 
             // sw.Stop(); // Optional: Timing
