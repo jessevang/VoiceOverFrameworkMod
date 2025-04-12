@@ -224,14 +224,17 @@ namespace VoiceOverFrameworkMod
 
 
 
- 
 
-  
+
+
         //get Event Dialogues dynamically so that modded events are also included
         private Dictionary<string, string> GetEventDialogueForCharacter(string targetCharacterName, string languageCode, IGameContentHelper gameContent)
         {
             var eventDialogue = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
             var speakCommandRegex = new Regex(@"^speak\s+(\w+)\s+""([^""]*)""", RegexOptions.Compiled);
+            var fallbackQuoteRegex = new Regex($@"(?:textAboveHead|drawDialogue|message|showText)\s+(?:{Regex.Escape(targetCharacterName)}\w*)?\s*""([^""]+)""", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+            var looseQuoteRegex = new Regex($@"{Regex.Escape(targetCharacterName)}\w*\s+.*?""([^""]+)""", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+
             int foundInEventsCount = 0;
 
             foreach (var location in Game1.locations)
@@ -250,10 +253,13 @@ namespace VoiceOverFrameworkMod
                         continue;
 
                     string[] commands = eventScript.Split('/');
+                    string lastSpeaker = null;
 
                     foreach (string command in commands)
                     {
                         string trimmedCommand = command.Trim();
+
+                        // --- Case 1: Standard speak command ---
                         if (trimmedCommand.StartsWith("speak ", StringComparison.OrdinalIgnoreCase))
                         {
                             Match match = speakCommandRegex.Match(trimmedCommand);
@@ -262,23 +268,38 @@ namespace VoiceOverFrameworkMod
                                 string speakerName = match.Groups[1].Value;
                                 string rawDialogueText = match.Groups[2].Value;
 
-                                if (speakerName.Equals(targetCharacterName, StringComparison.OrdinalIgnoreCase))
+                                lastSpeaker = speakerName;
+
+                                if (IsCharacterMatch(speakerName, targetCharacterName))
                                 {
                                     string sanitizedText = SanitizeDialogueText(rawDialogueText);
-
-                                    if (!string.IsNullOrWhiteSpace(sanitizedText))
-                                    {
-                                        string baseKey = $"Event:{location.NameOrUniqueName}/{eventId}";
-                                        string uniqueKey = baseKey;
-                                        int counter = 1;
-
-                                        while (eventDialogue.ContainsKey(uniqueKey))
-                                            uniqueKey = $"{baseKey}_{counter++}";
-
-                                        eventDialogue[uniqueKey] = sanitizedText;
-                                        foundInEventsCount++;
-                                    }
+                                    AddEventDialogue(eventDialogue, location, eventId, sanitizedText, ref foundInEventsCount);
                                 }
+                            }
+                        }
+
+                        // --- Case 2: Named message/drawDialogue/showText/textAboveHead ---
+                        Match fallbackMatch = fallbackQuoteRegex.Match(trimmedCommand);
+                        if (fallbackMatch.Success)
+                        {
+                            string rawDialogueText = fallbackMatch.Groups[1].Value;
+                            string sanitizedText = SanitizeDialogueText(rawDialogueText);
+
+                            if (!string.IsNullOrWhiteSpace(sanitizedText) && IsCharacterMatch(lastSpeaker, targetCharacterName))
+                            {
+                                AddEventDialogue(eventDialogue, location, eventId, sanitizedText, ref foundInEventsCount, suffix: "_alt");
+                            }
+                        }
+
+                        // --- Case 3: Loose fallback match (Abigail "something" / Abigail_spouse "something") ---
+                        if (trimmedCommand.Contains(targetCharacterName, StringComparison.OrdinalIgnoreCase))
+                        {
+                            Match looseQuoteMatch = looseQuoteRegex.Match(trimmedCommand);
+                            if (looseQuoteMatch.Success)
+                            {
+                                string rawDialogueText = looseQuoteMatch.Groups[1].Value;
+                                string sanitizedText = SanitizeDialogueText(rawDialogueText);
+                                AddEventDialogue(eventDialogue, location, eventId, sanitizedText, ref foundInEventsCount, suffix: "_loose");
                             }
                         }
                     }
@@ -295,6 +316,33 @@ namespace VoiceOverFrameworkMod
 
             return eventDialogue;
         }
+
+        // Helper method to add and deduplicate dialogue
+        private void AddEventDialogue(Dictionary<string, string> dict, GameLocation location, string eventId, string sanitizedText, ref int counter, string suffix = "")
+        {
+            if (string.IsNullOrWhiteSpace(sanitizedText))
+                return;
+
+            string baseKey = $"Event:{location.NameOrUniqueName}/{eventId}{suffix}";
+            string uniqueKey = baseKey;
+            int index = 1;
+
+            while (dict.ContainsKey(uniqueKey))
+                uniqueKey = $"{baseKey}_{index++}";
+
+            dict[uniqueKey] = sanitizedText;
+            counter++;
+        }
+
+        // Helper method for fuzzy speaker name matching
+        private bool IsCharacterMatch(string nameToTest, string targetName)
+        {
+            if (string.IsNullOrWhiteSpace(nameToTest))
+                return false;
+
+            return nameToTest.StartsWith(targetName, StringComparison.OrdinalIgnoreCase);
+        }
+
 
 
 
