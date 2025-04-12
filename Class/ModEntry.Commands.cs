@@ -10,6 +10,7 @@ using StardewModdingAPI.Utilities;
 using StardewValley;
 using System.Reflection;
 using StardewValley.Util;
+using static StardewValley.LocalizedContentManager;
 
 
 namespace VoiceOverFrameworkMod
@@ -40,46 +41,15 @@ namespace VoiceOverFrameworkMod
                 callback: this.ListAllNPCCharacterData
             );
 
-            
+            commands.Add(
+                "update_template",
+                "Checks and appends any missing dialogue entries to the template.\n\nUsage: update_template <TemplateFolderName>",
+                this.UpdateTemplateCommand
+            );
+
 
 
         }
-
-        
-
-
-        private List<(string location, string eventId)> GetAllEventsForCharacter(string characterName)
-        {
-            var result = new List<(string location, string eventId)>();
-            var speakRegex = new Regex($@"speak\s+{Regex.Escape(characterName)}\s+""", RegexOptions.IgnoreCase | RegexOptions.Compiled);
-
-            foreach (string eventFile in CommonEventFileNames) // Your known files list
-            {
-                try
-                {
-                    var events = this.Helper.GameContent.Load<Dictionary<string, string>>($"Data/Events/{eventFile}");
-
-                    foreach (var kvp in events)
-                    {
-                        string id = kvp.Key;
-                        string script = kvp.Value;
-
-                        if (!string.IsNullOrWhiteSpace(script) && speakRegex.IsMatch(script))
-                        {
-                            result.Add((eventFile, id));
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Monitor.Log($"[GetAllEventsForCharacter] Error loading from {eventFile}: {ex.Message}", LogLevel.Warn);
-                }
-            }
-
-            return result;
-        }
-
-
 
 
 
@@ -510,6 +480,161 @@ namespace VoiceOverFrameworkMod
                 return false; // Failure
             }
         }
+
+
+
+        // Adds new dialogue entries to an existing character_language.json template
+        // Adds new dialogue entries to an existing character_language.json template
+        private void UpdateTemplateCommand(string command, string[] args)
+        {
+            if (args.Length < 1)
+            {
+                this.Monitor.Log("Usage: update_template <TemplateFolderName>", LogLevel.Info);
+                return;
+            }
+
+            string folderName = args[0];
+            string templateFolderPath = Path.Combine(this.Helper.DirectoryPath, folderName);
+
+            if (!Directory.Exists(templateFolderPath))
+            {
+                this.Monitor.Log($"Directory not found: {templateFolderPath}", LogLevel.Error);
+                return;
+            }
+
+            var jsonFiles = Directory.GetFiles(templateFolderPath, "*.json", SearchOption.TopDirectoryOnly);
+            foreach (var jsonFilePath in jsonFiles)
+            {
+                VoicePackFile existingPack = null;
+                try
+                {
+                    string json = File.ReadAllText(jsonFilePath);
+                    existingPack = JsonConvert.DeserializeObject<VoicePackFile>(json);
+                }
+                catch (Exception ex)
+                {
+                    this.Monitor.Log($"Failed to load existing template: {jsonFilePath}: {ex.Message}", LogLevel.Warn);
+                    continue;
+                }
+
+                if (existingPack?.VoicePacks == null || !existingPack.VoicePacks.Any())
+                    continue;
+
+                var voiceManifest = existingPack.VoicePacks.First();
+                string character = voiceManifest.Character;
+                string language = voiceManifest.Language;
+
+                var existingEntries = new HashSet<string>(voiceManifest.Entries.Select(e => e.DialogueText), StringComparer.OrdinalIgnoreCase);
+                int nextAudioNumber = voiceManifest.Entries
+                    .Select(e => Path.GetFileNameWithoutExtension(e.AudioPath))
+                    .Where(name => int.TryParse(name.Split('_')[0], out _))
+                    .Select(name => int.Parse(name.Split('_')[0]))
+                    .DefaultIfEmpty(0)
+                    .Max() + 1;
+
+                var initialSources = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+                var sourceTracking = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+
+                // Collect dialogue from the same sources as GenerateSingleTemplate
+                string langSuffix = language.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{language}";
+                string specificDialogueAssetKey = $"Characters/Dialogue/{character}{langSuffix}";
+                try
+                {
+                    var dialogueData = this.Helper.GameContent.Load<Dictionary<string, string>>(specificDialogueAssetKey);
+                    foreach (var kvp in dialogueData)
+                    {
+                        if (!initialSources.ContainsKey(kvp.Key))
+                        {
+                            initialSources[kvp.Key] = kvp.Value;
+                            sourceTracking[kvp.Key] = "Dialogue";
+                        }
+                    }
+                }
+                catch { }
+
+                var stringCharData = this.GetVanillaCharacterStringKeys(character, language, this.Helper.GameContent);
+                foreach (var kvp in stringCharData)
+                {
+                    if (!initialSources.ContainsKey(kvp.Key))
+                    {
+                        initialSources[kvp.Key] = kvp.Value;
+                        sourceTracking[kvp.Key] = "Strings/Characters";
+                    }
+                }
+
+                var eventData = this.GetEventDialogueForCharacter(character, language, this.Helper.GameContent);
+                foreach (var kvp in eventData)
+                {
+                    if (!initialSources.ContainsKey(kvp.Key))
+                    {
+                        initialSources[kvp.Key] = kvp.Value;
+                        sourceTracking[kvp.Key] = kvp.Key;
+                    }
+                }
+
+                void AddExtraData(List<(string RawText, string SourceInfo)> sourceList)
+                {
+                    for (int i = 0; i < sourceList.Count; i++)
+                    {
+                        string key = $"{sourceList[i].SourceInfo}:{i}";
+                        if (!initialSources.ContainsKey(key))
+                        {
+                            initialSources[key] = sourceList[i].RawText;
+                            sourceTracking[key] = sourceList[i].SourceInfo;
+                        }
+                    }
+                }
+
+                AddExtraData(GetFestivalDialogueForCharacter(character, language, this.Helper.GameContent).Values.ToList());
+                AddExtraData(GetGiftTasteDialogueForCharacter(character, language, this.Helper.GameContent));
+                AddExtraData(GetEngagementDialogueForCharacter(character, language, this.Helper.GameContent));
+                AddExtraData(GetExtraDialogueForCharacter(character, language, this.Helper.GameContent));
+
+                int addedCount = 0;
+
+                foreach (var kvp in initialSources.OrderBy(p => sourceTracking.GetValueOrDefault(p.Key, "zzz_Unknown")).ThenBy(p => p.Key))
+                {
+                    IEnumerable<string> segments = SplitStandardDialogueSegments(kvp.Value);
+                    foreach (string seg in segments)
+                    {
+                        string sanitized = SanitizeDialogueText(seg);
+                        string cleaned = Regex.Replace(sanitized, "#.+?#", "").Trim();
+                        var parts = cleaned.Contains("^") ? cleaned.Split('^') : new[] { cleaned };
+
+                        foreach (var (text, suffix) in parts.Length == 2
+                            ? new[] { (parts[0].Trim(), "_male"), (parts[1].Trim(), "_female") }
+                            : new[] { (parts[0].Trim(), "") })
+                        {
+                            if (string.IsNullOrWhiteSpace(text) || existingEntries.Contains(text))
+                                continue;
+
+                            string audioPath = Path.Combine("assets", language, character, $"{nextAudioNumber}{suffix}.wav").Replace('\\', '/');
+                            voiceManifest.Entries.Add(new VoiceEntryTemplate
+                            {
+                                DialogueFrom = kvp.Key,
+                                DialogueText = text,
+                                AudioPath = audioPath
+                            });
+
+                            existingEntries.Add(text);
+                            nextAudioNumber++;
+                            addedCount++;
+                        }
+                    }
+                }
+
+                if (addedCount > 0)
+                {
+                    File.WriteAllText(jsonFilePath, JsonConvert.SerializeObject(existingPack, Formatting.Indented));
+                    this.Monitor.Log($"Updated '{Path.GetFileName(jsonFilePath)}' with {addedCount} new lines.", LogLevel.Info);
+                }
+                else
+                {
+                    this.Monitor.Log($"No new lines found for '{Path.GetFileName(jsonFilePath)}'.", LogLevel.Debug);
+                }
+            }
+        }
+
 
     }
 }
