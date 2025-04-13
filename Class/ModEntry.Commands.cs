@@ -22,8 +22,8 @@ namespace VoiceOverFrameworkMod
             commands.Add(
                 name: "create_template",
                 documentation: "Generates template JSON voice files for characters.\n\n" +
-                               "Usage: create <CharacterName|all|*match*|!*exclude*> <LanguageCode|all> <YourPackID> <YourPackName> <StartingAudioFileNumber>\n" +
-                               "  - CharacterName: Specific NPC name (e.g., Abigail), 'all', wildcard '*text', or negate with '!*text'.\n" +
+                               "Usage: create_template <CharacterName|all|modded|*match*|!*exclude*> <LanguageCode|all> <YourPackID> <YourPackName> <StartingAudioFileNumber>\n" +
+                               "  - CharacterName: Specific NPC name (e.g., Abigail), 'all', 'modded', wildcard '*text', or negate with '!*text'.\n" +
                                "  - LanguageCode: Specific code (en, es-ES, etc.) or 'all'.\n" +
                                "  - YourPackID: Base unique ID for your pack (e.g., YourName.FancyVoices).\n" +
                                "  - YourPackName: Display name for your pack (e.g., Fancy Voices).\n\n" +
@@ -117,6 +117,12 @@ namespace VoiceOverFrameworkMod
                 {
                     charactersToProcess = allCharacters;
                 }
+                else if (targetCharacterArg.Equals("modded", StringComparison.OrdinalIgnoreCase))
+                {
+                    charactersToProcess = allCharacters
+                        .Where(name => !IsKnownVanillaVillager(name))
+                        .ToList();
+                }
                 else if (targetCharacterArg.StartsWith("!*"))
                 {
                     string exclude = targetCharacterArg.Substring(2);
@@ -135,6 +141,7 @@ namespace VoiceOverFrameworkMod
                 {
                     charactersToProcess = new List<string> { targetCharacterArg };
                 }
+
 
                 if (Config.developerModeOn)
                     this.Monitor.Log($"[create_template] Found {charactersToProcess.Count} character(s) after filtering.", LogLevel.Info);
