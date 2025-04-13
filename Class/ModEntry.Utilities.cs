@@ -202,9 +202,7 @@ namespace VoiceOverFrameworkMod
             // 1. Remove speaker prefix (e.g., "^Abigail ")
             sanitized = Regex.Replace(sanitized, @"^\^.+?\s+", ""); // This ^ is for speaker prefix
 
-            // *** NEW RULE (1.5): Remove descriptive prefixes like '%George is ...' ***
-            // Matches '%' at the START of the string, followed by non-whitespace chars, then a space.
-            // Ensures it only catches these specific prefix patterns.
+            // 1.5  NEW RULE (1.5): Remove descriptive prefixes like '%George is ...' ***
             sanitized = Regex.Replace(sanitized, @"^%\S+\s+", "");
 
             // 2. Remove $q blocks
@@ -232,6 +230,13 @@ namespace VoiceOverFrameworkMod
 
             // 9. Remove simple formatting characters (< > \) BUT KEEP ^
             sanitized = Regex.Replace(sanitized, @"[<>\\]", "");
+
+            // 9.5 Remove #emotes#
+            sanitized = Regex.Replace(sanitized, @"#.*?#", "");
+
+            // 9.6 Remove mod metadata like [(O)mod.id]
+            string beforeBrackets = sanitized;
+            sanitized = Regex.Replace(sanitized, @"\[[^\]]+\]", ""); // 🔥 This is the working version
 
             // 10. Collapse multiple whitespace characters
             sanitized = Regex.Replace(sanitized, @"\s+", " ");
