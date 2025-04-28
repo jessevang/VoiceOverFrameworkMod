@@ -22,14 +22,17 @@ namespace VoiceOverFrameworkMod
             commands.Add(
                 name: "create_template",
                 documentation: "Generates template JSON voice files for characters.\n\n" +
-                               "Usage: create_template <CharacterName|all|modded|*match*|!*exclude*> <LanguageCode|all> <YourPackID> <YourPackName> <StartingAudioFileNumber>\n" +
+                               "Usage: create_template <CharacterName|all|modded|*match*|!*exclude*> <LanguageCode|all> <YourPackID> <YourPackName> <StartingAudioFileNumber> [wav|ogg]\n" +
                                "  - CharacterName: Specific NPC name (e.g., Abigail), 'all', 'modded', wildcard '*text', or negate with '!*text'.\n" +
                                "  - LanguageCode: Specific code (en, es-ES, etc.) or 'all'.\n" +
                                "  - YourPackID: Base unique ID for your pack (e.g., YourName.FancyVoices).\n" +
-                               "  - YourPackName: Display name for your pack (e.g., Fancy Voices).\n\n" +
-                               "Example: create_template Abigail en MyName.AbigailVoice Abigail English Voice\n" +
-                               "Example: create_template all en MyName.AllVanillaVoices All Vanilla (EN)\n" +
-                               "Example: create_template *Goblin* en My.GoblinPack Goblin Voices\n" +
+                               "  - YourPackName: Display name for your pack (e.g., Fancy Voices).\n" +
+                               "  - StartingAudioFileNumber: The starting number to use for generated audio paths (e.g., 1).\n" +
+                               "  - [Optional] AudioFormat: 'wav' or 'ogg' (defaults to 'wav' if not specified).\n\n" +
+                               "Examples:\n" +
+                               "  create_template Abigail en MyName.AbigailVoice AbigailVoice 1\n" +
+                               "  create_template all en MyName.AllVanillaVoices AllVanillaVoices 1\n" +
+                               "  create_template *moddedContentName* en My.ModdedContentPack ModdedVoices 1 ogg\n\n" +
                                "Output files will be in 'Mods/VoiceOverFrameworkMod/YourPackName_Templates'.",
                 callback: this.GenerateTemplateCommand
             );
@@ -75,6 +78,17 @@ namespace VoiceOverFrameworkMod
             string baseUniqueModID = args[2].Trim();
             string baseVoicePackName = args[3].Trim();
             int startsAtThisNumber = Convert.ToInt32(args[4]);
+            string desiredExtension = "wav"; // default
+
+            if (args.Length >= 6)
+            {
+                string extArg = args[5].Trim().ToLower();
+                if (extArg == "ogg" || extArg == "wav")
+                    desiredExtension = extArg;
+                else
+                    this.Monitor.Log($"[create_template] Unknown extension '{extArg}', defaulting to wav.", LogLevel.Warn);
+            }
+
 
             if (string.IsNullOrWhiteSpace(baseUniqueModID) || string.IsNullOrWhiteSpace(baseVoicePackName))
             {
@@ -204,7 +218,7 @@ namespace VoiceOverFrameworkMod
                     string instancePackId = $"{baseUniqueModID}.{characterName}.{languageCode}";
                     string instancePackName = $"{baseVoicePackName} ({characterName} - {languageCode})";
 
-                    if (GenerateSingleTemplate(characterName, languageCode, outputBaseDir, instancePackId, instancePackName, startsAtThisNumber))
+                    if (GenerateSingleTemplate(characterName, languageCode, outputBaseDir, instancePackId, instancePackName, startsAtThisNumber, desiredExtension))
                         langSuccessCount++;
                     else
                         langFailCount++;
@@ -229,7 +243,7 @@ namespace VoiceOverFrameworkMod
 
 
 
-        private bool GenerateSingleTemplate(string characterName, string languageCode, string outputBaseDir, string voicePackId, string voicePackName, int startAtThisNumber)
+        private bool GenerateSingleTemplate(string characterName, string languageCode, string outputBaseDir, string voicePackId, string voicePackName, int startAtThisNumber, string desiredExtension)
         {
             // --- PRE-CHECKS ---
             if (this.Helper == null || this.Monitor == null || this.Config == null)
@@ -251,8 +265,10 @@ namespace VoiceOverFrameworkMod
             // Tracks unique FINAL cleaned text segments added to prevent duplicates in the output.
             var addedSanitizedTexts = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
+
             try
             {
+                
                 // --- 1. Load Dialogue (Characters/Dialogue/{Name}) ---
                 string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
                 string specificDialogueAssetKey = $"Characters/Dialogue/{characterName}{langSuffix}";
@@ -275,6 +291,7 @@ namespace VoiceOverFrameworkMod
                 catch (ContentLoadException) { if (this.Config.developerModeOn) this.Monitor.Log($"Asset '{specificDialogueAssetKey}' not found or failed to load.", LogLevel.Trace); }
                 catch (Exception ex) { this.Monitor.Log($"Error processing '{specificDialogueAssetKey}': {ex.Message}", LogLevel.Warn); this.Monitor.Log(ex.ToString(), LogLevel.Trace); }
 
+                
                 // --- 2. Load Strings (Strings/Characters) ---
                 var stringCharData = this.GetVanillaCharacterStringKeys(characterName, languageCode, this.Helper.GameContent);
                 if (this.Config.developerModeOn) { this.Monitor.Log($"Found {stringCharData?.Count ?? 0} potential entries from Strings/Characters.", LogLevel.Trace); }
@@ -289,7 +306,7 @@ namespace VoiceOverFrameworkMod
                         }
                     }
                 }
-
+                
                 // --- 3. Load Event Dialogue (Using updated GetEventDialogueForCharacter) ---
                 // This getter should return Dictionary<EventSourceInfo, SanitizedText>
                 var eventDataSanitized = this.GetEventDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
@@ -414,7 +431,7 @@ namespace VoiceOverFrameworkMod
                             if (!string.IsNullOrWhiteSpace(finalCleanedPart) && addedSanitizedTexts.Add(finalCleanedPart))
                             {
                                 // Construct filename WITH gender suffix if applicable
-                                string numberedFileName = $"{entryNumber}{genderSuffix}.wav"; // e.g., "65_male.wav", "66_female.wav", "67.wav"
+                                string numberedFileName = $"{entryNumber}{genderSuffix}.{desiredExtension}"; // e.g., "65_male.wav", "66_female.wav", "67.wav" or now 55.ogg
                                 string relativeAudioPath = Path.Combine("assets", languageCode, characterName, numberedFileName).Replace('\\', '/');
 
                                 var newEntry = new VoiceEntryTemplate

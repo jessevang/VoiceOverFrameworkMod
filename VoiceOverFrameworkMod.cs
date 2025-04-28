@@ -1,15 +1,12 @@
-﻿using System; // Added for StringComparer
-using System.Collections.Generic;
-using System.Linq;
+﻿
 using System.Reflection;
 using System.Text.RegularExpressions;
 using GenericModConfigMenu;
-using HarmonyLib; // Keep for ApplyHarmonyPatches if it stays here
+using HarmonyLib; 
 using Microsoft.Xna.Framework.Content;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewValley;
-using StardewValley.Internal;
 
 
 namespace VoiceOverFrameworkMod
@@ -739,8 +736,8 @@ namespace VoiceOverFrameworkMod
             {
                 foreach (string characterName in charactersWithPacks)
                 {
-                    // ... (character dropdown logic using i18n as updated previously) ...
-                    string currentCharacterName = characterName; // Local capture
+            
+                    string currentCharacterName = characterName; 
                     var packsForChar = VoicePacksByCharacter[currentCharacterName];
                     var availablePackChoices = packsForChar.Select(p => p.VoicePackId).Distinct(StringComparer.OrdinalIgnoreCase).OrderBy(id => id).ToList();
                     string noneOptionText = this.Helper.Translation.Get("config.character-voice.none-option");
@@ -754,32 +751,24 @@ namespace VoiceOverFrameworkMod
             // === Developer Options ===
             gmcm.AddSectionTitle(
                 mod: this.ModManifest,
-                text: () => this.Helper.Translation.Get("config.section.developer.name") // i18n
+                text: () => this.Helper.Translation.Get("config.section.developer.name") 
             );
 
             gmcm.AddParagraph(
                 mod: this.ModManifest,
-                text: () => this.Helper.Translation.Get("config.dev-options.create-template-info") // i18n
+                text: () => this.Helper.Translation.Get("config.dev-options.create-template-info") 
             );
 
 
             gmcm.AddBoolOption(
                 mod: this.ModManifest,
-                name: () => this.Helper.Translation.Get("config.developer-mode.name"),       // i18n
-                tooltip: () => this.Helper.Translation.Get("config.developer-mode.tooltip"), // i18n
+                name: () => this.Helper.Translation.Get("config.developer-mode.name"),       
+                tooltip: () => this.Helper.Translation.Get("config.developer-mode.tooltip"), 
                 getValue: () => this.Config.developerModeOn,
                 setValue: value => this.Config.developerModeOn = value
             );
 
-            /*
-            gmcm.AddKeybind(
-                mod: this.ModManifest,
-                name: () => this.Helper.Translation.Get("config.dev-tool-keybind.name"),       // i18n
-                tooltip: () => this.Helper.Translation.Get("config.dev-tool-keybind.tooltip"), // i18n
-                getValue: () => this.Config.devToolMenu, // Get value from config
-                setValue: value => this.Config.devToolMenu = value  // Set value in config
-            );
-            */
+
 
 
 

@@ -158,132 +158,129 @@ namespace VoiceOverFrameworkMod
         }
 
 
-        // Loads and plays an audio file from the specified absolute path.
+        // Loads and plays an audio file from the specified absolute path. Updated to Support wav and ogg
         private void PlayVoiceFromFile(string absoluteAudioFilePath)
         {
             if (string.IsNullOrWhiteSpace(absoluteAudioFilePath))
             {
-                if (Config.developerModeOn)
-                {
-                Monitor.Log($"[PlayVoiceFromFile] Attempted to play null or empty audio file path. Aborting.", LogLevel.Warn);
-
-                }
+                Monitor?.Log($"[PlayVoiceFromFile] Attempted to play null or empty audio file path. Aborting.", LogLevel.Warn);
                 return;
             }
-
-            if (Config.developerModeOn)
-            {
-                Monitor.Log($"[PlayVoiceFromFile] Request received for: '{absoluteAudioFilePath}'", LogLevel.Debug);
-            }
-  
 
             try
             {
                 if (!File.Exists(absoluteAudioFilePath))
                 {
-                    if (Config.developerModeOn)
-                    {
-                        Monitor.Log($"[PlayVoiceFromFile] ERROR: File not found at path: {absoluteAudioFilePath}", LogLevel.Error);
-                    }
-
+                    Monitor?.Log($"[PlayVoiceFromFile] ERROR: File not found at path: {absoluteAudioFilePath}", LogLevel.Error);
                     return;
                 }
-                if (Config.developerModeOn)
-                {
-                    Monitor.Log($"[PlayVoiceFromFile] File exists. Proceeding with load for: {absoluteAudioFilePath}", LogLevel.Trace);
-                }
 
-
-
-                // --- Stop and Dispose Previous Instance ---
-                SoundEffectInstance previousInstance = currentVoiceInstance; // Hold reference temporarily
-                currentVoiceInstance = null; // Clear the main reference immediately
+                // Stop and dispose previous instance
+                SoundEffectInstance previousInstance = currentVoiceInstance;
+                currentVoiceInstance = null;
 
                 if (previousInstance != null)
                 {
-                  
-                    // Also remove the previous instance from the tracking list
                     lock (listLock)
                     {
                         activeVoiceInstances.Remove(previousInstance);
                     }
-
                     if (!previousInstance.IsDisposed)
                     {
                         try
                         {
-                            previousInstance.Stop(true); // Immediate stop
+                            previousInstance.Stop(true);
                             previousInstance.Dispose();
-                           
                         }
-                        catch (ObjectDisposedException) { /* Ignore */ }
-                        catch (Exception ex) { Monitor.Log($"[PlayVoiceFromFile] Error stopping/disposing previous instance: {ex.Message}", LogLevel.Warn); }
+                        catch (ObjectDisposedException) { }
+                        catch (Exception ex) { Monitor.Log($"[PlayVoiceFromFile] Error disposing previous instance: {ex.Message}", LogLevel.Warn); }
                     }
                 }
 
+                string extension = Path.GetExtension(absoluteAudioFilePath).ToLowerInvariant();
+                SoundEffect sound = null;
 
-                // --- Load and Play New Sound ---
-                SoundEffect sound;
-                if (Config.developerModeOn)
+                if (extension == ".wav")
                 {
-                     Monitor.Log($"[PlayVoiceFromFile] Creating FileStream for: {absoluteAudioFilePath}", LogLevel.Trace);
+                    // Normal WAV loading
+                    using (var stream = new FileStream(absoluteAudioFilePath, FileMode.Open, FileAccess.Read, FileShare.Read))
+                    {
+                        sound = SoundEffect.FromStream(stream);
+                    }
                 }
-               
-                using (var stream = new FileStream(absoluteAudioFilePath, FileMode.Open, FileAccess.Read, FileShare.Read))
+                else if (extension == ".ogg")
                 {
-                    // Monitor.Log($"[PlayVoiceFromFile] FileStream opened. Calling SoundEffect.FromStream...", LogLevel.Trace);
-                    sound = SoundEffect.FromStream(stream);
-                    // Monitor.Log($"[PlayVoiceFromFile] SoundEffect created from stream.", LogLevel.Trace);
+                    // OGG loading
+                    sound = LoadOggSoundEffect(absoluteAudioFilePath);
+                }
+                else
+                {
+                    Monitor.Log($"[PlayVoiceFromFile] Unsupported audio format '{extension}'. Only '.wav' and '.ogg' are supported.", LogLevel.Error);
+                    return;
                 }
 
-                // Monitor.Log($"[PlayVoiceFromFile] Creating SoundEffectInstance...", LogLevel.Trace);
+                if (sound == null)
+                {
+                    Monitor.Log($"[PlayVoiceFromFile] Failed to create SoundEffect from file '{absoluteAudioFilePath}'.", LogLevel.Error);
+                    return;
+                }
+
                 var newInstance = sound.CreateInstance();
-                // Monitor.Log($"[PlayVoiceFromFile] SoundEffectInstance created.", LogLevel.Trace);
 
-                // Apply volume
                 float gameVolume = Game1.options.soundVolumeLevel;
                 float masterVolume = Config?.MasterVolume ?? 1.0f;
                 newInstance.Volume = Math.Clamp(gameVolume * masterVolume, 0.0f, 1.0f);
-                // Monitor.Log($"[PlayVoiceFromFile] Setting volume. GameVol={gameVolume:F2}, MasterVol={masterVolume:F2}, Applied={newInstance.Volume:F2}", LogLevel.Trace);
 
-                // Play the sound
-
-                if (Config.developerModeOn)
-                {
-                    Monitor.Log($"[PlayVoiceFromFile] Calling Play() for {Path.GetFileName(absoluteAudioFilePath)}...", LogLevel.Debug);
-                }
-               
                 newInstance.Play();
 
-                if (Config.developerModeOn)
-                {
-                    Monitor.Log($"[PlayVoiceFromFile] Play() called successfully for '{Path.GetFileName(absoluteAudioFilePath)}'.", LogLevel.Debug);
-                }
-
-
-                // Assign to currentVoiceInstance AFTER successful play
                 currentVoiceInstance = newInstance;
 
-                // ADD the new instance to the tracking list for cleanup later
                 lock (listLock)
                 {
                     activeVoiceInstances.Add(currentVoiceInstance);
-                    // Monitor.Log($"[PlayVoiceFromFile] Added new instance to active tracking list (Count: {activeVoiceInstances.Count}).", LogLevel.Trace);
                 }
             }
-            // Specific exceptions first
-            catch (NoAudioHardwareException) { Monitor.LogOnce("[PlayVoiceFromFile] No audio hardware detected.", LogLevel.Warn); }
-            catch (FileNotFoundException) { Monitor.Log($"[PlayVoiceFromFile] ERROR: File not found (FileNotFoundException caught) at path: {absoluteAudioFilePath}", LogLevel.Error); }
-            catch (DirectoryNotFoundException) { Monitor.Log($"[PlayVoiceFromFile] ERROR: Directory not found for path: {absoluteAudioFilePath}", LogLevel.Error); }
-            catch (IOException ioEx) { Monitor.Log($"[PlayVoiceFromFile] ERROR (IOException, e.g., file access): {absoluteAudioFilePath}. Message: {ioEx.Message}", LogLevel.Error); Monitor.Log(ioEx.ToString(), LogLevel.Trace); }
-            catch (InvalidOperationException opEx) { Monitor.Log($"[PlayVoiceFromFile] ERROR (InvalidOperationException - often bad WAV/XNA issue): {absoluteAudioFilePath}. Message: {opEx.Message}", LogLevel.Error); Monitor.Log(opEx.ToString(), LogLevel.Trace); }
-            catch (Exception ex) // Catch-all
+            catch (Exception ex)
             {
-
-                Monitor.Log($"[PlayVoiceFromFile] FAILED ({ex.GetType().Name}): {absoluteAudioFilePath}. Message: {ex.Message}", LogLevel.Error);
+                Monitor.Log($"[PlayVoiceFromFile] Exception: {ex.Message}", LogLevel.Error);
                 Monitor.Log(ex.ToString(), LogLevel.Trace);
             }
         }
+
+
+        //Used to support .ogg files
+        private SoundEffect LoadOggSoundEffect(string path)
+        {
+            try
+            {
+                using var vorbis = new NVorbis.VorbisReader(path);
+
+                int sampleRate = vorbis.SampleRate;
+                int channels = vorbis.Channels;
+
+                // Read all samples
+                float[] floatBuffer = new float[vorbis.TotalSamples * channels];
+                int samplesRead = vorbis.ReadSamples(floatBuffer, 0, floatBuffer.Length);
+
+                // Convert float samples to 16-bit PCM
+                byte[] byteBuffer = new byte[samplesRead * sizeof(short)];
+                for (int i = 0; i < samplesRead; i++)
+                {
+                    short pcmSample = (short)Math.Clamp(floatBuffer[i] * short.MaxValue, short.MinValue, short.MaxValue);
+                    byteBuffer[i * 2] = (byte)(pcmSample & 0xFF);
+                    byteBuffer[i * 2 + 1] = (byte)((pcmSample >> 8) & 0xFF);
+                }
+
+                return new SoundEffect(byteBuffer, sampleRate, (AudioChannels)channels);
+            }
+            catch (Exception ex)
+            {
+                Monitor.Log($"[LoadOggSoundEffect] Failed to load OGG '{path}': {ex.Message}", LogLevel.Error);
+                Monitor.Log(ex.ToString(), LogLevel.Trace);
+                return null;
+            }
+        }
+
 
 
         // Called periodically (e.g., from UpdateTicked) to dispose instances that have finished playing.

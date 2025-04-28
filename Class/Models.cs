@@ -1,7 +1,5 @@
 ﻿using Newtonsoft.Json;
-using StardewModdingAPI;
-using StardewValley;
-using System.Collections.Generic; // Added for Dictionary/List
+
 
 namespace VoiceOverFrameworkMod
 {
