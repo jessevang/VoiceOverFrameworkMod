@@ -193,7 +193,11 @@ namespace VoiceOverFrameworkMod
             this.Config = helper.ReadConfig<ModConfig>();
             // Initialize SelectedVoicePacks from loaded config, ensuring it's not null
             this.SelectedVoicePacks = this.Config?.SelectedVoicePacks ?? new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-            this.Monitor.Log("Configuration loaded.", LogLevel.Debug);
+            if (Config.developerModeOn)
+            {
+                this.Monitor.Log("Configuration loaded.", LogLevel.Debug);
+            }
+            
 
             // Load voice pack definitions from content packs
             // This method is defined in ModEntry.Loading.cs
@@ -771,8 +775,11 @@ namespace VoiceOverFrameworkMod
 
 
 
-
-            this.Monitor.Log("GMCM setup complete.", LogLevel.Debug);
+            if (Config.developerModeOn)
+            {
+                this.Monitor.Log("GMCM setup complete.", LogLevel.Debug);
+            }
+                
         }
 
 

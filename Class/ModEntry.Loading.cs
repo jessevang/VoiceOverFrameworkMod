@@ -16,7 +16,11 @@ namespace VoiceOverFrameworkMod
 
         private void LoadVoicePacks()
         {
-            this.Monitor.Log("Scanning Content Packs for voice data definitions...", LogLevel.Debug);
+            if (Config.developerModeOn)
+            {
+                this.Monitor.Log("Scanning Content Packs for voice data definitions...", LogLevel.Debug);
+            }
+            
             VoicePacksByCharacter.Clear(); // Clear previous data
 
             var ownedContentPacks = this.Helper.ContentPacks.GetOwned();
@@ -132,11 +136,18 @@ namespace VoiceOverFrameworkMod
                                     list.Add(voicePack);
                                     totalDefinitionsProcessed++; // Increment for each successfully processed definition
                                     foundAnyValidDefinitionInPack = true; // Mark that this pack contributed something
-                                    this.Monitor.Log($"---> Loaded definition '{voicePack.VoicePackName}' ({voicePack.VoicePackId}) for {voicePack.Character} [{voicePack.Language}] ({entriesDict.Count} entries) from {relativePathForLog}", LogLevel.Debug);
+                                    if (Config.developerModeOn)
+                                    {
+                                        this.Monitor.Log($"---> Loaded definition '{voicePack.VoicePackName}' ({voicePack.VoicePackId}) for {voicePack.Character} [{voicePack.Language}] ({entriesDict.Count} entries) from {relativePathForLog}", LogLevel.Debug);
+                                    }
+                                    
                                 }
                                 else
                                 {
-                                    this.Monitor.Log($"---> Skipping duplicate VoicePackId '{voicePack.VoicePackId}' for {voicePack.Character} [{voicePack.Language}] found within file '{relativePathForLog}'. A pack with this ID for this character/language is already loaded.", LogLevel.Trace);
+                                    if (Config.developerModeOn)
+                                    {
+                                        this.Monitor.Log($"---> Skipping duplicate VoicePackId '{voicePack.VoicePackId}' for {voicePack.Character} [{voicePack.Language}] found within file '{relativePathForLog}'. A pack with this ID for this character/language is already loaded.", LogLevel.Trace);
+                                    }
                                 }
 
                             } // End foreach manifestData in voicePackFileData.VoicePacks
