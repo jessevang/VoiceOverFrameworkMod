@@ -1,10 +1,6 @@
-﻿using System; // Added for StringComparison, StringComparer, Exception
-using System.Collections.Generic;
-using System.IO;            // Added for Directory, File, Path, SearchOption, DirectoryNotFoundException
-using System.Linq;          // Added for .Count(), .Any(), .Select(), .Equals() etc.
-using Newtonsoft.Json;    // Added for JsonConvert, JsonException
+﻿using Newtonsoft.Json;   
 using StardewModdingAPI;
-using StardewModdingAPI.Utilities; // Added for PathUtilities
+using StardewModdingAPI.Utilities; 
 
 namespace VoiceOverFrameworkMod
 {

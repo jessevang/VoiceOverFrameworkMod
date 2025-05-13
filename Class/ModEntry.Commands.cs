@@ -46,9 +46,11 @@ namespace VoiceOverFrameworkMod
 
             commands.Add(
                 "update_template",
-                "Checks and appends any missing dialogue entries to the template.\n\nUsage: update_template <TemplateFolderName>",
+                "Checks and appends any missing dialogue entries to the template.\n\n" +
+                "Usage: update_template <TemplateFolderName> [wav|ogg]",
                 this.UpdateTemplateCommand
             );
+
 
 
 
@@ -518,6 +520,18 @@ namespace VoiceOverFrameworkMod
             }
 
             string folderName = args[0];
+            string desiredExtension = "wav"; // default
+
+
+            if (args.Length >= 2)
+            {
+                string extArg = args[1].Trim().ToLower();
+                if (extArg == "ogg" || extArg == "wav")
+                    desiredExtension = extArg;
+                else
+                    this.Monitor.Log($"[update_template] Unknown extension '{extArg}', defaulting to wav.", LogLevel.Warn);
+            }
+
             string templateFolderPath = Path.Combine(this.Helper.DirectoryPath, folderName);
 
             if (!Directory.Exists(templateFolderPath))
@@ -632,7 +646,9 @@ namespace VoiceOverFrameworkMod
                             if (string.IsNullOrWhiteSpace(text) || existingEntries.Contains(text))
                                 continue;
 
-                            string audioPath = Path.Combine("assets", language, character, $"{nextAudioNumber}{suffix}.wav").Replace('\\', '/');
+                            //string audioPath = Path.Combine("assets", language, character, $"{nextAudioNumber}{suffix}.wav").Replace('\\', '/');
+                            string audioPath = Path.Combine("assets", language, character, $"{nextAudioNumber}{suffix}.{desiredExtension}").Replace('\\', '/');
+
                             voiceManifest.Entries.Add(new VoiceEntryTemplate
                             {
                                 DialogueFrom = kvp.Key,

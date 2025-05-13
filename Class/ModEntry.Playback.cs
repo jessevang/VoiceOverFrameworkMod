@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic; // Needed for List
-using System.Diagnostics; // Optional: For logging timing
-using System.IO;
-using System.Linq;
-using Microsoft.Xna.Framework.Audio;
+﻿using Microsoft.Xna.Framework.Audio;
 using StardewModdingAPI;
-using StardewModdingAPI.Utilities; // For PathUtilities
-using StardewValley; // For Game1 access
+using StardewModdingAPI.Utilities;
+using StardewValley;
 
 namespace VoiceOverFrameworkMod
 {
@@ -78,10 +73,6 @@ namespace VoiceOverFrameworkMod
             }
 
             // --- Attempt 3: Find pack matching Selected ID and Hardcoded English Fallback (if enabled and needed) ---
-            // Only try English fallback if:
-            // - Fallback is enabled in config
-            // - We haven't found a pack yet
-            // - Neither the primary language NOR the config default language was English (avoid re-checking)
             if (packToUse == null && allowFallbackToEnglish && primaryLangStr != hardcodedFallbackLangStr && configDefaultLangStr != hardcodedFallbackLangStr)
             {
                 if (Config.developerModeOn) Monitor?.Log($"[GetAudioPath] Attempt 3: Searching for ID '{selectedVoicePackId}' in Hardcoded Fallback Lang '{hardcodedFallbackLangStr}' for '{characterName}'.", LogLevel.Trace);
@@ -91,7 +82,7 @@ namespace VoiceOverFrameworkMod
                 if (packToUse != null) languageUsed = hardcodedFallbackLangStr;
             }
 
-            // --- Check if a pack was found ---
+
             if (packToUse == null)
             {
                 if (Config.developerModeOn) Monitor?.Log($"[GetAudioPath] FAILURE: Could not find suitable pack for ID='{selectedVoicePackId}', Char='{characterName}'. Tried Langs: Primary='{primaryLangStr}', ConfigDefault='{configDefaultLangStr}', EnglishFallbackEnabled='{allowFallbackToEnglish}'.", LogLevel.Warn);
@@ -105,20 +96,18 @@ namespace VoiceOverFrameworkMod
             {
                 if (Config.developerModeOn) Monitor?.Log($"[GetAudioPath] SUCCESS: Found relative path '{relativeAudioPath}' for text '{sanitizedDialogueText}' in pack '{packToUse.VoicePackName}'.", LogLevel.Debug);
 
-                // Ensure BaseAssetPath is valid before combining
+
                 if (string.IsNullOrEmpty(packToUse.BaseAssetPath))
                 {
                     Monitor?.Log($"[GetAudioPath] ERROR: BaseAssetPath is null or empty for pack '{packToUse.VoicePackName}'. Cannot resolve full path.", LogLevel.Error);
                     return null;
                 }
-                // Return the ABSOLUTE path by combining BaseAssetPath and relative path
-                // Assuming BaseAssetPath is the directory containing the 'assets' folder for that pack
+ 
                 return PathUtilities.NormalizePath(Path.Combine(packToUse.BaseAssetPath, relativeAudioPath));
             }
             else
             {
                 if (Config.developerModeOn) Monitor?.Log($"[GetAudioPath] FAILED LOOKUP: Sanitized text '{sanitizedDialogueText}' not found within the 'Entries' of selected pack '{packToUse.VoicePackName}' (Lang: '{packToUse.Language}').", LogLevel.Trace);
-                // Optional: Could try a fallback lookup within the *same* pack if keys differ slightly, but stick to exact match for now.
                 return null;
             }
         }
@@ -126,7 +115,6 @@ namespace VoiceOverFrameworkMod
 
 
 
-        // Takes the character and *sanitized* text, finds the path, and plays it.
         // Takes the character and *sanitized* text, finds the path, and plays it.
         public void TryToPlayVoice(string characterName, string sanitizedDialogueText, LocalizedContentManager.LanguageCode languageCode)
         {
@@ -286,21 +274,21 @@ namespace VoiceOverFrameworkMod
         // Called periodically (e.g., from UpdateTicked) to dispose instances that have finished playing.
         internal void CleanupStoppedVoiceInstances()
         {
-            if (!activeVoiceInstances.Any()) return; // Quick exit if nothing to check
+            if (!activeVoiceInstances.Any()) return; 
 
-            // Stopwatch sw = Stopwatch.StartNew(); // Optional: Timing
+
             int disposedCount = 0;
 
             lock (listLock)
             {
-                // Iterate backwards to safely remove items while iterating
+              
                 for (int i = activeVoiceInstances.Count - 1; i >= 0; i--)
                 {
                     var instance = activeVoiceInstances[i];
 
                     if (instance != null && !instance.IsDisposed && instance.State == SoundState.Stopped)
                     {
-                        // Monitor.Log($"[Cleanup] Found stopped instance (Index: {i}). Disposing.", LogLevel.Trace);
+                        
                         try
                         {
                             instance.Dispose();
@@ -314,20 +302,18 @@ namespace VoiceOverFrameworkMod
                             }
                             
                         }
-                        activeVoiceInstances.RemoveAt(i); // Remove from list
+                        activeVoiceInstances.RemoveAt(i); 
                     }
                     else if (instance == null || instance.IsDisposed)
                     {
-                        // Clean up entries that somehow became null or were disposed elsewhere
-                        // Monitor.Log($"[Cleanup] Removing null or already disposed instance entry (Index: {i}).", LogLevel.Trace);
+
                         activeVoiceInstances.RemoveAt(i);
                     }
                 }
                 
             }
 
-            // sw.Stop(); // Optional: Timing
-            // if (disposedCount > 0) Monitor.Log($"[Cleanup] Disposed {disposedCount} instances. Time: {sw.ElapsedMilliseconds}ms. Remaining active: {activeVoiceInstances.Count}", LogLevel.Trace);
+           
         }
 
 

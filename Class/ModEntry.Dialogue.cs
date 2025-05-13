@@ -24,22 +24,21 @@ namespace VoiceOverFrameworkMod
         // Main dialogue check loop called every tick (or less often if adjusted).
         private void OnUpdateTicked(object sender, UpdateTickedEventArgs e)
         {
-            // --- Call Cleanup First ---
-            // Check and dispose of any SoundEffectInstances that finished playing.
-            // Run less often if performance is a concern, but every few ticks is usually fine.
+           
+
             if (e.IsMultipleOf(2)) // Check every other tick
             {
-                CleanupStoppedVoiceInstances(); // This method is defined in ModEntry.Playback.cs
+                CleanupStoppedVoiceInstances();
             }
 
-            // --- Then Check for New Dialogue ---
+            
             CheckForDialogue();
         }
 
         // Checks the current game state for active dialogue boxes and triggers voice playback.
         private void CheckForDialogue()
         {
-            // Ensure context is valid
+            
             if (!Context.IsWorldReady || Game1.currentLocation == null || Game1.player == null)
             {
                 if (lastDialogueText != null) ResetDialogueState(); // Clear state if we exit world context
@@ -53,60 +52,42 @@ namespace VoiceOverFrameworkMod
             if (isDialogueBoxVisible)
             {
                 DialogueBox dialogueBox = Game1.activeClickableMenu as DialogueBox;
-                // getCurrentString() returns the currently visible page/segment AFTER @ replacement
+
                 currentDisplayedString = dialogueBox?.getCurrentString();
             }
-            // else { /* Check other menu types if needed */ }
 
-
-            // --- State Change Detection ---
 
             // Case 1: Dialogue just appeared or the text/page changed
-            // Use the DISPLAYED string for change detection ONLY
             if (!string.IsNullOrWhiteSpace(currentDisplayedString) && currentDisplayedString != lastDialogueText)
             {
-                // Monitor.Log($"Dialogue changed/appeared. Speaker: '{currentSpeaker?.Name ?? "None"}'. Displayed Text: '{currentDisplayedString}'", LogLevel.Trace);
-                lastDialogueText = currentDisplayedString; // Store the *displayed* text to detect next change
+
+                lastDialogueText = currentDisplayedString; 
                 lastSpeakerName = currentSpeaker?.Name;
                 wasDialogueUpLastTick = true;
 
                 if (currentSpeaker != null)
                 {
-                    // --- Construct the Lookup Key ---
 
-                    // Get the current farmer's name
                     string farmerName = Game1.player.Name;
 
                     // Step 1: Reverse the farmer name substitution to recreate the original '@' format
-                    // IMPORTANT: Only do this if the farmer's name is actually present!
+
                     string potentialOriginalText = currentDisplayedString;
                     if (!string.IsNullOrEmpty(farmerName) && potentialOriginalText.Contains(farmerName))
                     {
                         potentialOriginalText = potentialOriginalText.Replace(farmerName, "@");
-                        // Optional: Add logging here if you want to see the reversal in action
-                        // Monitor.Log($"Reversed farmer name. Key candidate: '{potentialOriginalText}'", LogLevel.Trace);
+
                     }
-                    // Now 'potentialOriginalText' should resemble the text with '@' IF the name was present.
-                    // If the name wasn't present, it remains unchanged.
+
 
                     // Step 2: Apply sanitization pipeline to the RECONSTRUCTED text
-                    // Use the text potentially containing '@' for sanitization matching your audio file keys/naming convention.
+
                     string sanitizedStep1 = SanitizeDialogueText(potentialOriginalText); // Apply main sanitizer
                     string finalLookupKey = Regex.Replace(sanitizedStep1, @"#.+?#", "").Trim(); // Apply #tag# removal
 
                     //get current language
                     LocalizedContentManager.LanguageCode currentLanguageCode = LocalizedContentManager.CurrentLanguageCode;
-                    if (currentLanguageCode == LocalizedContentManager.LanguageCode.zh)
-                    {
-                        // The game is set to Chinese
-                       // Monitor.Log("Game language is Chinese (zh).", LogLevel.Debug);
-                        // ... your Chinese-specific logic ...
-                    }
-                    else
-                    {
-                        // The game is set to a different language
-                       // Monitor.Log($"Game language is not Chinese. It is: {currentLanguageCode}", LogLevel.Debug);
-                    }
+                  
                     // Use the FINAL reconstructed and cleaned key for lookup
                     if (!string.IsNullOrWhiteSpace(finalLookupKey))
                     {
@@ -114,11 +95,11 @@ namespace VoiceOverFrameworkMod
                         {
                             // Log the key being used for lookup
                             Monitor.Log($"Attempting voice for '{currentSpeaker.Name}'. Lookup Key: '{finalLookupKey}' (Derived from Displayed: '{currentDisplayedString}')", LogLevel.Debug);
-                            Monitor.Log($"🔍 [VOICE DEBUG]", LogLevel.Debug);
-                            Monitor.Log($"    📢 Displayed:    \"{currentDisplayedString}\"", LogLevel.Debug);
-                            Monitor.Log($"    🔁 Reversed:     \"{potentialOriginalText}\"", LogLevel.Debug);
-                            Monitor.Log($"    🧼 Sanitized:    \"{sanitizedStep1}\"", LogLevel.Debug);
-                            Monitor.Log($"    🧹 Final Lookup: \"{finalLookupKey}\"", LogLevel.Debug);
+                            Monitor.Log($" [VOICE DEBUG]", LogLevel.Debug);
+                            Monitor.Log($"     Displayed:    \"{currentDisplayedString}\"", LogLevel.Debug);
+                            Monitor.Log($"     Reversed:     \"{potentialOriginalText}\"", LogLevel.Debug);
+                            Monitor.Log($"     Sanitized:    \"{sanitizedStep1}\"", LogLevel.Debug);
+                            Monitor.Log($"     Final Lookup: \"{finalLookupKey}\"", LogLevel.Debug);
                         }
 
                         // Pass the RECONSTRUCTED and sanitized key to the playback logic
@@ -126,39 +107,37 @@ namespace VoiceOverFrameworkMod
                     }
                     else
                     {
-                        // Monitor.Log($"Dialogue for '{currentSpeaker.Name}' resulted in empty lookup key after reconstruction/sanitization. Original Displayed: '{currentDisplayedString}'. Skipping.", LogLevel.Trace);
+                        
                     }
                 }
                 else
                 {
-                    // Monitor.Log($"Dialogue detected but speaker is null. Text: '{currentDisplayedString}'. Skipping.", LogLevel.Trace);
+                   
                 }
             }
             // Case 2: Dialogue just closed
             else if (!isDialogueBoxVisible && wasDialogueUpLastTick)
             {
-                // Monitor.Log($"Dialogue box closed.", LogLevel.Trace);
-                ResetDialogueState(); // Clear state and stop sound
+
+                ResetDialogueState(); 
             }
-            // Case 3: Dialogue still open, text unchanged (do nothing unless handling page turns)
+
         }
 
-        // Resets dialogue tracking state and stops any currently playing voice line.
+
         private void ResetDialogueState()
         {
             lastDialogueText = null;
             lastSpeakerName = null;
             wasDialogueUpLastTick = false;
 
-            // Stop the currently playing voice instance immediately if dialogue closes
+  
             if (currentVoiceInstance != null && !currentVoiceInstance.IsDisposed && currentVoiceInstance.State == SoundState.Playing)
             {
                 try
                 {
-                    currentVoiceInstance.Stop(true); // Immediate stop
-                                                     // Monitor.Log($"Stopped voice playback as dialogue closed/reset.", LogLevel.Trace);
-                                                     // Dispose might happen via cleanup, but stopping is important here.
-                                                     // We don't remove from activeVoiceInstances here; cleanup handles that based on Stopped state.
+                    currentVoiceInstance.Stop(true); 
+                                                     
                 }
                 catch (Exception ex)
                 {
@@ -166,7 +145,7 @@ namespace VoiceOverFrameworkMod
                 }
             }
 
-            // Reset multi-page tracking if implemented
+
             CurrentDialogueSpeaker = null;
             CurrentDialogueOriginalKey = null;
             CurrentDialoguePage = 0;

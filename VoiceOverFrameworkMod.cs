@@ -379,21 +379,18 @@ namespace VoiceOverFrameworkMod
 
 
         // Existing methods (SanitizeDialogueText, GetVanillaCharacterStringKeys, etc.) below...
-        // Make sure the using statements at the top of the file include System.Text.RegularExpressions
-
 
         // --- Harmony Patching ---
         private void ApplyHarmonyPatches()
         {
             var harmony = new Harmony(this.ModManifest.UniqueID);
 
-            //this.Monitor.Log("Applying Harmony patches...", LogLevel.Debug);
 
-            // Apply patches defined using Harmony attributes within this assembly
+
             try
             {
                 harmony.PatchAll(Assembly.GetExecutingAssembly());
-                //this.Monitor.Log("Harmony attribu-based patches applied successfully.", LogLevel.Debug);
+               
             }
             catch (Exception ex)
             {
@@ -403,17 +400,17 @@ namespace VoiceOverFrameworkMod
 
             
           
-            // Apply manual patches if needed (example shown, ensure MuteTypingSoundPatch exists)
+       
             try
             {
-                if (this.Config.turnoffdialoguetypingsound) // Check config before applying
+                if (this.Config.turnoffdialoguetypingsound) 
                 {
-                    MuteTypingSoundPatch.ApplyPatch(harmony, this.Monitor); // Pass Monitor for logging
-                    //this.Monitor.Log("Manual patch for MuteTypingSound applied.", LogLevel.Debug);
+                    MuteTypingSoundPatch.ApplyPatch(harmony, this.Monitor);
+                   
                 }
                 else
                 {
-                    //this.Monitor.Log("Skipping manual patch for MuteTypingSound (disabled in config).", LogLevel.Debug);
+                   
                 }
             }
             catch (Exception ex)
@@ -423,16 +420,13 @@ namespace VoiceOverFrameworkMod
             }
 
 
-            //this.Monitor.Log("Harmony patching process completed.", LogLevel.Debug);
+          
         }
 
 
        
         //Get Festival Data
-        private Dictionary<string, (string RawText, string SourceInfo)> GetFestivalDialogueForCharacter(
-     string characterName,
-     string languageCode,
-     IGameContentHelper contentHelper)
+        private Dictionary<string, (string RawText, string SourceInfo)> GetFestivalDialogueForCharacter(string characterName,string languageCode,IGameContentHelper contentHelper)
         {
             var result = new Dictionary<string, (string RawText, string SourceInfo)>(StringComparer.OrdinalIgnoreCase);
             string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
@@ -507,14 +501,6 @@ namespace VoiceOverFrameworkMod
 
             return result;
         }
-
-
-
-
-
-
-
-
 
 
 
