@@ -91,7 +91,52 @@ namespace VoiceOverFrameworkMod
 
             if (Config.developerModeOn) Monitor?.Log($"[GetAudioPath] Using pack: '{packToUse.VoicePackName}' (ID: {packToUse.VoicePackId}, Lang: {packToUse.Language}) - Found using language '{languageUsed}'.", LogLevel.Debug);
 
-            // --- THE KEY LOOKUP (using the found pack) ---
+
+            //Extra logging to determine if dialogue is found in voice pack file, or partial match
+            if (Config.developerModeOn)
+            {
+                bool exactMatch = packToUse.Entries.ContainsKey(sanitizedDialogueText);
+
+                string fuzzyMatchKey = packToUse.Entries.Keys
+                    .FirstOrDefault(k => SanitizeDialogueText(k).Equals(sanitizedDialogueText, StringComparison.OrdinalIgnoreCase));
+
+                var partialMatches = packToUse.Entries.Keys
+                    .Where(k =>
+                        SanitizeDialogueText(k).Contains(sanitizedDialogueText, StringComparison.OrdinalIgnoreCase) ||
+                        sanitizedDialogueText.Contains(SanitizeDialogueText(k), StringComparison.OrdinalIgnoreCase))
+                    .Take(5)
+                    .ToList();
+
+                Monitor.Log($"[DEV CHECK]  Voice pack: '{packToUse.VoicePackName}' ({packToUse.Entries.Count} entries)", LogLevel.Debug);
+                Monitor.Log($"[DEV CHECK]  Sanitized target: \"{sanitizedDialogueText}\"", LogLevel.Debug);
+
+                if (exactMatch)
+                {
+                    Monitor.Log($"[DEV CHECK]  Exact match found in Entries.", LogLevel.Debug);
+                }
+                else if (fuzzyMatchKey != null)
+                {
+                    Monitor.Log($"[DEV CHECK]  No exact match, but found fuzzy match key:", LogLevel.Debug);
+                    Monitor.Log($"             \"{fuzzyMatchKey}\" (sanitized as \"{SanitizeDialogueText(fuzzyMatchKey)}\")", LogLevel.Debug);
+                }
+                else
+                {
+                    Monitor.Log($"[DEV CHECK]  No exact or sanitized match found.", LogLevel.Warn);
+                }
+
+                if (partialMatches.Count > 0)
+                {
+                    Monitor.Log($"[DEV CHECK]  Partial matches (up to 5):", LogLevel.Debug);
+                    foreach (var match in partialMatches)
+                    {
+                        Monitor.Log($"             \"{match}\" → Sanitized: \"{SanitizeDialogueText(match)}\"", LogLevel.Debug);
+                    }
+                }
+            }
+
+
+
+
             if (packToUse.Entries != null && packToUse.Entries.TryGetValue(sanitizedDialogueText, out string relativeAudioPath))
             {
                 if (Config.developerModeOn) Monitor?.Log($"[GetAudioPath] SUCCESS: Found relative path '{relativeAudioPath}' for text '{sanitizedDialogueText}' in pack '{packToUse.VoicePackName}'.", LogLevel.Debug);
