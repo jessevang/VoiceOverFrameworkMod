@@ -2,6 +2,8 @@
 using StardewModdingAPI;
 using StardewModdingAPI.Utilities;
 using StardewValley;
+using VoiceOverFrameworkMod.Lib.NVorbis;
+
 
 namespace VoiceOverFrameworkMod
 {
