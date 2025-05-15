@@ -38,7 +38,9 @@ namespace VoiceOverFrameworkMod
                         continue;
                     }
 
-                    IEnumerable<string> jsonFiles = Directory.EnumerateFiles(packDir, "*.json", SearchOption.TopDirectoryOnly);
+                    //IEnumerable<string> jsonFiles = Directory.EnumerateFiles(packDir, "*.json", SearchOption.TopDirectoryOnly);
+                    IEnumerable<string> jsonFiles = Directory.EnumerateFiles(packDir, "*.json", SearchOption.AllDirectories);
+
                     bool foundAnyValidDefinitionInPack = false;
 
                     foreach (string filePath in jsonFiles)
@@ -115,7 +117,9 @@ namespace VoiceOverFrameworkMod
                                     Entries = entriesDict,
                                     ContentPackId = contentPack.Manifest.UniqueID,
                                     ContentPackName = contentPack.Manifest.Name,
-                                    BaseAssetPath = PathUtilities.NormalizePath(packDir)
+                                    //BaseAssetPath = PathUtilities.NormalizePath(packDir)
+                                    BaseAssetPath = PathUtilities.NormalizePath(Path.GetDirectoryName(filePath))
+
                                 };
 
                                 // 8. Add to internal storage
