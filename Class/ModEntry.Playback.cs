@@ -5,6 +5,7 @@ using StardewValley;
 using VoiceOverFrameworkMod.Lib.NVorbis;
 
 
+
 namespace VoiceOverFrameworkMod
 {
     public partial class ModEntry : Mod
@@ -288,7 +289,7 @@ namespace VoiceOverFrameworkMod
         {
             try
             {
-                using var vorbis = new NVorbis.VorbisReader(path);
+                using var vorbis = new VoiceOverFrameworkMod.Lib.NVorbis.VorbisReader(path);
 
                 int sampleRate = vorbis.SampleRate;
                 int channels = vorbis.Channels;
