@@ -683,6 +683,9 @@ namespace VoiceOverFrameworkMod
         {
             //this.Monitor.Log("GameLaunched event: Setting up GMCM integration...", LogLevel.Debug);
             SetupGMCM(); // Call GMCM setup method (to be implemented)
+
+            //testing
+
         }
 
         // Ran when a save file is loaded (good for reloading config)

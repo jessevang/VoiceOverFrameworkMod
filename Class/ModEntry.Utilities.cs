@@ -181,9 +181,6 @@ namespace VoiceOverFrameworkMod
             return null;
         }
 
-        // Cleans dialogue text by removing game-specific codes and extra whitespace.
-        // CRITICAL: Ensure this matches the cleaning done before lookup in TryToPlayVoice/GetRelativeAudioPath!
-        // Make sure you have this at the top of the file:
 
 
         // Place this method inside your ModEntry class (ModEntry.Utilities.cs or wherever it belongs)

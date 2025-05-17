@@ -33,13 +33,17 @@ namespace VoiceOverFrameworkMod
 
             
             CheckForDialogue();
+     
+
         }
+
+
 
         // Checks the current game state for active dialogue boxes and triggers voice playback.
         private void CheckForDialogue()
         {
             
-            if (!Context.IsWorldReady || Game1.currentLocation == null || Game1.player == null)
+            if (Game1.currentLocation == null || Game1.player == null )//||!Context.IsWorldReady )  commentout if world is ready to see if we can test bus event.
             {
                 if (lastDialogueText != null) ResetDialogueState(); // Clear state if we exit world context
                 return;
@@ -47,13 +51,16 @@ namespace VoiceOverFrameworkMod
 
             bool isDialogueBoxVisible = Game1.activeClickableMenu is DialogueBox;
             NPC currentSpeaker = Game1.currentSpeaker;
+
+
+
             string currentDisplayedString = null; // Renamed for clarity
 
             if (isDialogueBoxVisible)
             {
                 DialogueBox dialogueBox = Game1.activeClickableMenu as DialogueBox;
-
                 currentDisplayedString = dialogueBox?.getCurrentString();
+
             }
 
 
@@ -96,6 +103,7 @@ namespace VoiceOverFrameworkMod
                             // Log the key being used for lookup
                             Monitor.Log($"Attempting voice for '{currentSpeaker.Name}'. Lookup Key: '{finalLookupKey}' (Derived from Displayed: '{currentDisplayedString}')", LogLevel.Debug);
                             Monitor.Log($" [VOICE DEBUG]", LogLevel.Debug);
+                            Monitor.Log($"     Current Speaker: {currentSpeaker.Name}", LogLevel.Info);
                             Monitor.Log($"     Displayed:    \"{currentDisplayedString}\"", LogLevel.Debug);
                             Monitor.Log($"     Reversed:     \"{potentialOriginalText}\"", LogLevel.Debug);
                             Monitor.Log($"     Sanitized:    \"{sanitizedStep1}\"", LogLevel.Debug);
