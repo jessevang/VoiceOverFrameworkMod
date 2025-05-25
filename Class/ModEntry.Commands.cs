@@ -462,6 +462,7 @@ namespace VoiceOverFrameworkMod
                     return false; // Indicate nothing was generated
                 }
 
+                GenerateTemplate_DialogueFromDeduplicated(characterManifest.Entries);
                 var finalOutputFileObject = new VoicePackFile();
                 finalOutputFileObject.VoicePacks.Add(characterManifest);
 
@@ -665,12 +666,34 @@ namespace VoiceOverFrameworkMod
 
                 if (addedCount > 0)
                 {
+                    GenerateTemplate_DialogueFromDeduplicated(voiceManifest.Entries);
                     File.WriteAllText(jsonFilePath, JsonConvert.SerializeObject(existingPack, Formatting.Indented));
                     this.Monitor.Log($"Updated '{Path.GetFileName(jsonFilePath)}' with {addedCount} new lines.", LogLevel.Info);
                 }
                 else
                 {
                     this.Monitor.Log($"No new lines found for '{Path.GetFileName(jsonFilePath)}'.", LogLevel.Debug);
+                }
+            }
+        }
+
+
+        //used to fix multidialogue page that gets split into multiple string that contains the same DialogueFrom value, and so this method will add increment value to Dialogue From Value
+        private void GenerateTemplate_DialogueFromDeduplicated(List<VoiceEntryTemplate> entries)
+        {
+            var counters = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
+            for (int i = 0; i < entries.Count; i++)
+            {
+                string baseKey = entries[i].DialogueFrom ?? "Unknown";
+                if (!counters.ContainsKey(baseKey))
+                {
+                    counters[baseKey] = 0;
+                    entries[i].DialogueFrom = baseKey;
+                }
+                else
+                {
+                    counters[baseKey]++;
+                    entries[i].DialogueFrom = $"{baseKey}_{counters[baseKey]}";
                 }
             }
         }
