@@ -19,6 +19,8 @@
   "config.dev-tool-keybind.tooltip": "Az a billentyű, amellyel megnyitható a hangtesztelő fejlesztői menü. Csak akkor működik, ha a Fejlesztői Mód be van kapcsolva.",
   "config.dev-options.create-template-info": "Használja a SMAPI konzolparancsot: 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber' egy hangcsomag JSON sablon generálásához. Példa: create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (Győződjön meg róla, hogy a Hangcsomag Neve idézőjelben van, ha szóközöket tartalmaz).",
   "config.auto-fix-dialoguefrom.name": "Duplicate DialogueFrom automatik javítása",
-  "config.auto-fix-dialoguefrom.tooltip": "Ha engedélyezve van, a betöltött hangcsomagok ismétlődő DialogueFrom kulcsai automatikusan javításra kerülnek betöltéskor (pl. 'Introduction', 'Introduction_1')."
+  "config.auto-fix-dialoguefrom.tooltip": "Ha engedélyezve van, a betöltött hangcsomagok ismétlődő DialogueFrom kulcsai automatikusan javításra kerülnek betöltéskor (pl. 'Introduction', 'Introduction_1').",
+  "config.mass-assign-voicepack.name": "Hangok tömeges hozzárendelése modazonosító szerint",
+  "config.mass-assign-voicepack.tooltip": "Válassz egy mod egyedi azonosítóját, hogy hangokat rendelj az összes támogatott karakterhez. A módosítások megtekintéséhez indítsd újra a játékot. Megjegyzés: a 'None' kiválasztása nem változtat semmin."
 
 }

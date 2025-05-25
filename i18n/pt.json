@@ -19,6 +19,8 @@
   "config.dev-tool-keybind.tooltip": "A tecla a ser pressionada para abrir o menu de desenvolvedor de teste de áudio. Só funciona se o Modo Desenvolvedor estiver ativado.",
   "config.dev-options.create-template-info": "Use o comando do console SMAPI 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber' para gerar um modelo JSON de pacote de voz. Exemplo: create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (Certifique-se de que o Nome do Pacote de Voz esteja entre aspas se tiver espaços).",
   "config.auto-fix-dialoguefrom.name": "Corrigir automaticamente DialogueFrom duplicado",
-  "config.auto-fix-dialoguefrom.tooltip": "Se ativado, qualquer pack de voz com chaves DialogueFrom duplicadas será corrigido automaticamente durante o carregamento (ex.: 'Introduction', 'Introduction_1')."
+  "config.auto-fix-dialoguefrom.tooltip": "Se ativado, qualquer pack de voz com chaves DialogueFrom duplicadas será corrigido automaticamente durante o carregamento (ex.: 'Introduction', 'Introduction_1').",
+  "config.mass-assign-voicepack.name": "Atribuir voz em massa por ID do Mod",
+  "config.mass-assign-voicepack.tooltip": "Selecione o ID único de um mod para atribuir vozes a todos os personagens suportados. Após salvar, reinicie o jogo para ver as mudanças. Nota: selecionar 'None' não altera nenhuma configuração de voz."
 
 }

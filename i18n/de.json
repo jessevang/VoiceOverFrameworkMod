@@ -19,5 +19,10 @@
   "config.dev-tool-keybind.tooltip": "Die Taste zum Öffnen des Entwicklermenüs für Audiotests. Funktioniert nur, wenn der Entwicklermodus aktiviert ist.",
   "config.dev-options.create-template-info": "Verwenden Sie den SMAPI-Konsolenbefehl 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber', um eine JSON-Vorlage für ein Stimmenpaket zu generieren. Beispiel: create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (Stellen Sie sicher, dass der Stimmenpaketname in Anführungszeichen steht, wenn er Leerzeichen enthält).",
   "config.auto-fix-dialoguefrom.name": "Duplikate bei DialogueFrom automatisch beheben",
-  "config.auto-fix-dialoguefrom.tooltip": "Wenn aktiviert, werden doppelte DialogueFrom-Einträge in geladenen Voice Packs beim Laden automatisch korrigiert (z. B. 'Introduction', 'Introduction_1')."
+  "config.auto-fix-dialoguefrom.tooltip": "Wenn aktiviert, werden doppelte DialogueFrom-Einträge in geladenen Voice Packs beim Laden automatisch korrigiert (z. B. 'Introduction', 'Introduction_1').",
+  
+    "config.mass-assign-voicepack.name": "Sprachpakete massenhaft per Mod-ID zuweisen",
+    "config.mass-assign-voicepack.tooltip": "Wähle die eindeutige ID eines Mods, um Sprachpakete für alle unterstützten Charaktere zuzuweisen. Starte das Spiel neu, um Änderungen zu sehen. Hinweis: 'None' ändert keine Einstellungen."
+  
+
 }

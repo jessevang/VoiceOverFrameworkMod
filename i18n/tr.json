@@ -19,6 +19,8 @@
   "config.dev-tool-keybind.tooltip": "Ses testi geliştirici menüsünü açmak için basılacak tuş. Yalnızca Geliştirici Modu açıksa çalışır.",
   "config.dev-options.create-template-info": "Bir ses paketi JSON şablonu oluşturmak için SMAPI konsol komutunu kullanın: 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber'. Örnek: create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (Ses Paketi Adı boşluk içeriyorsa tırnak içinde olduğundan emin olun).",
   "config.auto-fix-dialoguefrom.name": "Yinelenen DialogueFrom girişlerini otomatik düzelt",
-  "config.auto-fix-dialoguefrom.tooltip": "Etkinleştirildiğinde, yüklenen ses paketlerinde yinelenen DialogueFrom anahtarları yükleme sırasında otomatik olarak düzeltilir (ör. 'Introduction', 'Introduction_1')."
+  "config.auto-fix-dialoguefrom.tooltip": "Etkinleştirildiğinde, yüklenen ses paketlerinde yinelenen DialogueFrom anahtarları yükleme sırasında otomatik olarak düzeltilir (ör. 'Introduction', 'Introduction_1').",
+  "config.mass-assign-voicepack.name": "Mod Kimliği ile Toplu Ses Ataması",
+  "config.mass-assign-voicepack.tooltip": "Bir modun benzersiz kimliğini seçerek desteklenen tüm karakterlere ses atayın. Değişiklikleri görmek için oyunu yeniden başlatın. Not: 'None' seçilirse hiçbir ses ayarı değiştirilmez."
 
 }

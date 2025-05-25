@@ -19,7 +19,11 @@
   "config.dev-tool-keybind.tooltip": "La touche à presser pour ouvrir le menu développeur de test audio. Fonctionne uniquement si le mode développeur est activé.",
   "config.dev-options.create-template-info": "Utilisez la commande console SMAPI 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber' pour générer un modèle JSON de pack de voix. Exemple : create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (Assurez-vous que le nom du pack de voix est entre guillemets s'il contient des espaces).",
   "config.auto-fix-dialoguefrom.name": "Correction auto des doublons DialogueFrom",
-  "config.auto-fix-dialoguefrom.tooltip": "Si activé, tout pack vocal chargé contenant des doublons dans DialogueFrom sera automatiquement corrigé au chargement (ex. : 'Introduction', 'Introduction_1')."
+  "config.auto-fix-dialoguefrom.tooltip": "Si activé, tout pack vocal chargé contenant des doublons dans DialogueFrom sera automatiquement corrigé au chargement (ex. : 'Introduction', 'Introduction_1').",
+  
+  "config.mass-assign-voicepack.name": "Attribuer des voix en masse par ID de mod",
+  "config.mass-assign-voicepack.tooltip": "Sélectionnez l'ID unique d’un mod pour attribuer des voix à tous les personnages pris en charge. Après avoir enregistré, redémarrez le jeu pour voir les changements. Remarque : sélectionner 'None' ne modifiera aucune voix."
+  
 
 
 }

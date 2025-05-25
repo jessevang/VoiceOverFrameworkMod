@@ -697,6 +697,65 @@ namespace VoiceOverFrameworkMod
                 setValue: value => this.Config.AutoFixDialogueFromOnLoad = value
             );
 
+
+            // Collect distinct content pack IDs
+            var availablePackSources = VoicePacksByCharacter
+                .SelectMany(kvp => kvp.Value.Select(vp => vp.ContentPackId))
+                .Distinct(StringComparer.OrdinalIgnoreCase)
+                .OrderBy(id => id)
+                .ToList();
+
+            // Add blank option for "do nothing"
+            availablePackSources.Insert(0, "<None>");
+
+            gmcm.AddTextOption(
+                mod: this.ModManifest,
+                name: () => this.Helper.Translation.Get("config.mass-assign-voicepack.name"),
+                tooltip: () => this.Helper.Translation.Get("config.mass-assign-voicepack.tooltip"),
+                getValue: () => "<None>",
+                setValue: selectedModId =>
+                {
+                    if (string.IsNullOrWhiteSpace(selectedModId) || selectedModId == "<None>")
+                    {
+                        Monitor.Log("[GMCM] Mass assignment skipped (user selected '<None>').", LogLevel.Debug);
+                        return;
+                    }
+
+                    var newAssignments = new Dictionary<string, string>();
+                    foreach (var (character, packs) in VoicePacksByCharacter)
+                    {
+                        var pack = packs.FirstOrDefault(p =>
+                            p.ContentPackId.Equals(selectedModId, StringComparison.OrdinalIgnoreCase));
+
+                        if (pack != null)
+                            newAssignments[character] = pack.VoicePackId;
+                    }
+
+                    if (newAssignments.Count == 0)
+                    {
+                        Monitor.Log($"[GMCM] No voice packs found in '{selectedModId}' to assign.", LogLevel.Warn);
+                        return;
+                    }
+
+
+                    var updated = new Dictionary<string, string>(Config.SelectedVoicePacks);
+                    foreach (var kvp in newAssignments)
+                        updated[kvp.Key] = kvp.Value;
+
+                    Config.SelectedVoicePacks = updated;
+                    Helper.WriteConfig(Config);
+
+                    Monitor.Log($"[GMCM] Mass assigned {newAssignments.Count} voice packs from '{selectedModId}' to matching characters.", LogLevel.Info);
+                    Monitor.Log("[GMCM] You must restart the game to see updated selections reflected in this menu.", LogLevel.Info);
+                },
+                allowedValues: availablePackSources.ToArray()
+            );
+
+
+
+
+
+
             gmcm.AddSectionTitle(mod: this.ModManifest, text: () => this.Helper.Translation.Get("config.section.voice-packs.name"));
             gmcm.AddParagraph(mod: this.ModManifest, text: () => this.Helper.Translation.Get("config.voice-packs.description"));
             var charactersWithPacks = VoicePacksByCharacter.Keys.OrderBy(name => name).ToList();

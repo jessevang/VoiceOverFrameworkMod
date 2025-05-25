@@ -19,6 +19,9 @@
   "config.dev-tool-keybind.tooltip": "Клавиша для открытия меню разработчика для тестирования звука. Работает только при включенном режиме разработчика.",
   "config.dev-options.create-template-info": "Используйте команду консоли SMAPI 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber', чтобы сгенерировать JSON-шаблон голосового пакета. Пример: create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (Убедитесь, что имя голосового пакета заключено в кавычки, если оно содержит пробелы).",
   "config.auto-fix-dialoguefrom.name": "Автоисправление повторов DialogueFrom",
-  "config.auto-fix-dialoguefrom.tooltip": "Если включено, все загруженные голосовые пакеты с повторяющимися ключами DialogueFrom будут автоматически исправлены при загрузке (например, 'Introduction', 'Introduction_1')."
+  "config.auto-fix-dialoguefrom.tooltip": "Если включено, все загруженные голосовые пакеты с повторяющимися ключами DialogueFrom будут автоматически исправлены при загрузке (например, 'Introduction', 'Introduction_1').",
+  "config.mass-assign-voicepack.name": "Массовое назначение голосов по ID мода",
+  "config.mass-assign-voicepack.tooltip": "Выберите уникальный ID мода, чтобы назначить голосовые пакеты для всех поддерживаемых персонажей. После сохранения перезапустите игру, чтобы увидеть изменения. Примечание: выбор 'None' не изменяет настройки."
+  
 
 }

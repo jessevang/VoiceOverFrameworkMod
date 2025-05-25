@@ -19,6 +19,7 @@
   "config.dev-tool-keybind.tooltip": "오디오 테스트 개발자 메뉴를 여는 키입니다. 개발자 모드가 켜져 있을 때만 작동합니다.",
   "config.dev-options.create-template-info": "SMAPI 콘솔 명령어 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber'를 사용하여 보이스 팩 JSON 템플릿을 생성하세요. 예시: create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (보이스 팩 이름에 공백이 있는 경우 따옴표로 묶으세요).",
   "config.auto-fix-dialoguefrom.name": "DialogueFrom 중복 자동 수정",
-  "config.auto-fix-dialoguefrom.tooltip": "활성화 시, 로드된 보이스 팩에서 중복된 DialogueFrom 키를 자동으로 수정합니다 (예: 'Introduction', 'Introduction_1')."
-
+  "config.auto-fix-dialoguefrom.tooltip": "활성화 시, 로드된 보이스 팩에서 중복된 DialogueFrom 키를 자동으로 수정합니다 (예: 'Introduction', 'Introduction_1').",
+  "config.mass-assign-voicepack.name": "모드 ID로 음성팩 일괄 지정",
+  "config.mass-assign-voicepack.tooltip": "모드의 고유 ID를 선택하여 해당 모드가 지원하는 모든 캐릭터에 음성팩을 자동으로 지정합니다. 저장 후 변경 사항을 반영하려면 게임을 재시작해야 합니다. 참고: 'None'을 선택하면 아무 것도 변경되지 않습니다."
 }

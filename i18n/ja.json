@@ -19,6 +19,8 @@
   "config.dev-tool-keybind.tooltip": "オーディオテスト用開発者メニューを開くためのキー。開発者モードがオンの場合にのみ機能します。",
   "config.dev-options.create-template-info": "SMAPI コンソールコマンド 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber' を使用して、ボイスパックの JSON テンプレートを生成します。例：create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 （ボイスパック名にスペースが含まれる場合は、引用符で囲んでください）。",
   "config.auto-fix-dialoguefrom.name": "DialogueFromの重複を自動修正",
-  "config.auto-fix-dialoguefrom.tooltip": "有効にすると、読み込まれたボイスパック内の重複するDialogueFromキーが自動的に修正されます（例：'Introduction'、'Introduction_1'など）。"
+  "config.auto-fix-dialoguefrom.tooltip": "有効にすると、読み込まれたボイスパック内の重複するDialogueFromキーが自動的に修正されます（例：'Introduction'、'Introduction_1'など）。",
+  "config.mass-assign-voicepack.name": "Mod IDによる音声一括割り当て",
+  "config.mass-assign-voicepack.tooltip": "指定したModのIDを使って、すべての対応キャラに音声を割り当てます。変更を確認するにはゲームを再起動してください。注意：「None」を選択しても何も変更されません。"
 
 }

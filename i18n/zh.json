@@ -19,6 +19,9 @@
   "config.dev-tool-keybind.tooltip": "按下此键可打开音频测试开发者菜单。仅在开发者模式开启时有效。",
   "config.dev-options.create-template-info": "使用 SMAPI 控制台命令 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber' 生成语音包 JSON 模板。示例：create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1（如果语音包名称包含空格，请确保将其放在引号中）。",
   "config.auto-fix-dialoguefrom.name": "自动修复重复的 DialogueFrom",
-  "config.auto-fix-dialoguefrom.tooltip": "启用后，加载的语音包中重复的 DialogueFrom 键将会在加载时自动修复（例如：'Introduction'，'Introduction_1'）。"
+  "config.auto-fix-dialoguefrom.tooltip": "启用后，加载的语音包中重复的 DialogueFrom 键将会在加载时自动修复（例如：'Introduction'，'Introduction_1'）。",
+  "config.mass-assign-voicepack.name": "通过Mod ID批量分配语音包",
+  "config.mass-assign-voicepack.tooltip": "选择一个Mod的唯一ID，为其支持的所有角色分配语音包。保存设置后需重启游戏以查看更改。注意：选择“None”不会更改任何语音设置。"
+  
 
 }
