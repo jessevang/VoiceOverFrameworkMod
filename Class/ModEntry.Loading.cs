@@ -68,7 +68,7 @@ namespace VoiceOverFrameworkMod
                                 continue;
                             }
 
-                            // *** STEP 3: Loop through each definition IN THE LIST ***
+                            // *** STEP 3: Loop through each definition IN THE LIST *** 
                             foreach (var manifestData in voicePackFileData.VoicePacks)
                             {
                                 // *** STEP 4: Move Validation and Processing INSIDE the loop ***
@@ -85,6 +85,13 @@ namespace VoiceOverFrameworkMod
                                     this.Monitor.Log($"---> Skipping invalid voice definition (ID: '{manifestData.VoicePackId ?? "N/A"}') within '{relativePathForLog}': Missing required fields (VoicePackId, VoicePackName, Character, Language, Entries).", LogLevel.Warn);
                                     continue; // Skip this specific definition, continue to next in list
                                 }
+
+                                // --- Auto-fix duplicate DialogueFrom entries if enabled ---
+                                if (this.Config.AutoFixDialogueFromOnLoad)
+                                {
+                                    GenerateTemplate_DialogueFromDeduplicated(manifestData.Entries);
+                                }
+
 
                                 // 6. Process entries into a dictionary
                                 var entriesDict = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
@@ -124,10 +131,7 @@ namespace VoiceOverFrameworkMod
 
 
 
-                                if (Config.developerModeOn)
-                                {
-                                    Monitor.Log($"[DEBUG] DialogueFrom keys for {manifestData.Character}: {string.Join(", ", entriesByFrom.Keys)}", LogLevel.Debug);
-                                }
+    
 
                                 if (!entriesDict.Any()) { this.Monitor.Log($"---> Skipping definition '{manifestData.VoicePackName}' from '{relativePathForLog}': No valid entries found within it.", LogLevel.Debug); continue; }
 

@@ -17,5 +17,9 @@
   "config.developer-mode.tooltip": "Enables extra logging and potentially debug features. May impact performance.",
   "config.dev-tool-keybind.name": "Developer Tool Menu Keybind",
   "config.dev-tool-keybind.tooltip": "The key to press to open the audio testing developer menu. Only works if Developer Mode is on",
-  "config.dev-options.create-template-info": "Use the SMAPI console command 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber' to generate a voice pack JSON template. Example: create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (Ensure Voice Pack Name is in quotes if it has spaces)."
+  "config.dev-options.create-template-info": "Use the SMAPI console command 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber' to generate a voice pack JSON template. Example: create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (Ensure Voice Pack Name is in quotes if it has spaces).",
+  "config.auto-fix-dialoguefrom.name": "Auto-fix duplicate DialogueFrom entries",
+  "config.auto-fix-dialoguefrom.tooltip": "If enabled, any loaded voice pack with duplicate DialogueFrom keys will be automatically fixed during load (e.g., 'Introduction', 'Introduction_1')."
+
+
 }

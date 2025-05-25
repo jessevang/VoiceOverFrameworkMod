@@ -10,6 +10,8 @@ namespace VoiceOverFrameworkMod
         public bool FallbackToDefaultIfMissing { get; set; } = false;
         public Dictionary<string, string> SelectedVoicePacks { get; set; } = new();
         public bool developerModeOn { get; set; } = false;
+        public bool AutoFixDialogueFromOnLoad { get; set; } = true;
+
     }
 
     public class VoicePackManifest

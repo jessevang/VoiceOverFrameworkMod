@@ -17,5 +17,8 @@
   "config.developer-mode.tooltip": "追加のログ記録と潜在的なデバッグ機能を有効にします。パフォーマンスに影響する可能性があります。",
   "config.dev-tool-keybind.name": "開発者ツールメニューキーバインド",
   "config.dev-tool-keybind.tooltip": "オーディオテスト用開発者メニューを開くためのキー。開発者モードがオンの場合にのみ機能します。",
-  "config.dev-options.create-template-info": "SMAPI コンソールコマンド 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber' を使用して、ボイスパックの JSON テンプレートを生成します。例：create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 （ボイスパック名にスペースが含まれる場合は、引用符で囲んでください）。"
+  "config.dev-options.create-template-info": "SMAPI コンソールコマンド 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber' を使用して、ボイスパックの JSON テンプレートを生成します。例：create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 （ボイスパック名にスペースが含まれる場合は、引用符で囲んでください）。",
+  "config.auto-fix-dialoguefrom.name": "DialogueFromの重複を自動修正",
+  "config.auto-fix-dialoguefrom.tooltip": "有効にすると、読み込まれたボイスパック内の重複するDialogueFromキーが自動的に修正されます（例：'Introduction'、'Introduction_1'など）。"
+
 }

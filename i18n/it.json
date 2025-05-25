@@ -17,5 +17,8 @@
   "config.developer-mode.tooltip": "Abilita la registrazione extra e potenzialmente funzionalità di debug. Potrebbe influire sulle prestazioni.",
   "config.dev-tool-keybind.name": "Tasto menu strumento sviluppatore",
   "config.dev-tool-keybind.tooltip": "Il tasto da premere per aprire il menu sviluppatore per il test audio. Funziona solo se la Modalità sviluppatore è attiva.",
-  "config.dev-options.create-template-info": "Usa il comando console SMAPI 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber' per generare un modello JSON del pacchetto voci. Esempio: create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (Assicurati che il nome del pacchetto voci sia tra virgolette se contiene spazi)."
+  "config.dev-options.create-template-info": "Usa il comando console SMAPI 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber' per generare un modello JSON del pacchetto voci. Esempio: create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (Assicurati che il nome del pacchetto voci sia tra virgolette se contiene spazi).",
+  "config.auto-fix-dialoguefrom.name": "Correggi automaticamente i duplicati di DialogueFrom",
+  "config.auto-fix-dialoguefrom.tooltip": "Se abilitato, eventuali chiavi duplicate di DialogueFrom nei voice pack verranno corrette automaticamente durante il caricamento (es. 'Introduction', 'Introduction_1')."
+
 }

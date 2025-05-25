@@ -17,5 +17,8 @@
   "config.developer-mode.tooltip": "Включает дополнительное ведение журнала и потенциальные функции отладки. Может повлиять на производительность.",
   "config.dev-tool-keybind.name": "Горячая клавиша меню инструментов разработчика",
   "config.dev-tool-keybind.tooltip": "Клавиша для открытия меню разработчика для тестирования звука. Работает только при включенном режиме разработчика.",
-  "config.dev-options.create-template-info": "Используйте команду консоли SMAPI 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber', чтобы сгенерировать JSON-шаблон голосового пакета. Пример: create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (Убедитесь, что имя голосового пакета заключено в кавычки, если оно содержит пробелы)."
+  "config.dev-options.create-template-info": "Используйте команду консоли SMAPI 'create_template Character Language VoicePackID \"<Voice Pack Name>\" StartNumber', чтобы сгенерировать JSON-шаблон голосового пакета. Пример: create_template Abigail en MyMod.Abigail.VP \"MyMod Voice Pack\" 1 (Убедитесь, что имя голосового пакета заключено в кавычки, если оно содержит пробелы).",
+  "config.auto-fix-dialoguefrom.name": "Автоисправление повторов DialogueFrom",
+  "config.auto-fix-dialoguefrom.tooltip": "Если включено, все загруженные голосовые пакеты с повторяющимися ключами DialogueFrom будут автоматически исправлены при загрузке (например, 'Introduction', 'Introduction_1')."
+
 }
