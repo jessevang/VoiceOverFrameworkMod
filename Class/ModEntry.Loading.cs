@@ -10,6 +10,7 @@ namespace VoiceOverFrameworkMod
         // Value is a list of packs (for different languages or multiple packs for the same char/lang)
         private readonly Dictionary<string, List<VoicePack>> VoicePacksByCharacter = new(StringComparer.OrdinalIgnoreCase);
 
+
         private void LoadVoicePacks()
         {
             if (Config.developerModeOn)
@@ -87,22 +88,45 @@ namespace VoiceOverFrameworkMod
 
                                 // 6. Process entries into a dictionary
                                 var entriesDict = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+                                var entriesByFrom = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+                                var dialogueFromCounters = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
+
+   
                                 foreach (var entry in manifestData.Entries)
                                 {
-                                    if (entry != null && !string.IsNullOrWhiteSpace(entry.DialogueText) && !string.IsNullOrWhiteSpace(entry.AudioPath))
+                                    if (entry != null && !string.IsNullOrWhiteSpace(entry.AudioPath))
                                     {
-                                        string dialogueKey = entry.DialogueText; // Assuming JSON text is the lookup key
-                                        string relativeAudioPath = PathUtilities.NormalizePath(entry.AudioPath);
+                                        string audioPath = PathUtilities.NormalizePath(entry.AudioPath);
 
-                                        if (!entriesDict.ContainsKey(dialogueKey))
+                    
+                                        if (!string.IsNullOrWhiteSpace(entry.DialogueText) && !entriesDict.ContainsKey(entry.DialogueText))
+                                            entriesDict[entry.DialogueText] = audioPath;
+
+                                   
+                                        if (!string.IsNullOrWhiteSpace(entry.DialogueFrom))
                                         {
-                                            entriesDict[dialogueKey] = relativeAudioPath;
-                                        }
-                                        else
-                                        {
-                                            this.Monitor.Log($"---> Duplicate dialogue text key found for definition '{manifestData.VoicePackId}' in '{relativePathForLog}': '{dialogueKey}'. Using first encountered audio path.", LogLevel.Trace);
+                                            string baseKey = entry.DialogueFrom;
+
+                                           
+                                            if (!dialogueFromCounters.ContainsKey(baseKey))
+                                                dialogueFromCounters[baseKey] = 0;
+
+                                            int index = dialogueFromCounters[baseKey];
+                                            dialogueFromCounters[baseKey]++;
+
+                                            string finalKey = index == 0 ? baseKey : $"{baseKey}_{index}";
+                                            entriesByFrom[finalKey] = audioPath;
                                         }
                                     }
+                                }
+
+
+
+
+
+                                if (Config.developerModeOn)
+                                {
+                                    Monitor.Log($"[DEBUG] DialogueFrom keys for {manifestData.Character}: {string.Join(", ", entriesByFrom.Keys)}", LogLevel.Debug);
                                 }
 
                                 if (!entriesDict.Any()) { this.Monitor.Log($"---> Skipping definition '{manifestData.VoicePackName}' from '{relativePathForLog}': No valid entries found within it.", LogLevel.Debug); continue; }
@@ -115,12 +139,15 @@ namespace VoiceOverFrameworkMod
                                     Language = manifestData.Language,
                                     Character = manifestData.Character,
                                     Entries = entriesDict,
+
                                     ContentPackId = contentPack.Manifest.UniqueID,
                                     ContentPackName = contentPack.Manifest.Name,
                                     //BaseAssetPath = PathUtilities.NormalizePath(packDir)
                                     BaseAssetPath = PathUtilities.NormalizePath(Path.GetDirectoryName(filePath))
 
                                 };
+
+                                voicePack.EntriesByFrom = entriesByFrom;
 
                                 // 8. Add to internal storage
                                 if (!VoicePacksByCharacter.TryGetValue(voicePack.Character, out var list))
@@ -176,5 +203,26 @@ namespace VoiceOverFrameworkMod
             // Update final log message to reflect definitions processed
             this.Monitor.Log($"Finished loading. Processed {totalDefinitionsProcessed} voice definitions for {VoicePacksByCharacter.Count} unique characters from {ownedContentPacks.Count()} content packs.", LogLevel.Info);
         }
+
+
+
+        private VoicePack GetSelectedVoicePack(string characterName)
+        {
+            if (Config.SelectedVoicePacks.TryGetValue(characterName, out string selectedId) &&
+                VoicePacksByCharacter.TryGetValue(characterName, out var list))
+            {
+                return list.FirstOrDefault(p => p.VoicePackId.Equals(selectedId, StringComparison.OrdinalIgnoreCase));
+            }
+
+            return null;
+        }
+
+        private string GetVoicePackLanguageForCharacter(string characterName)
+        {
+            return GetSelectedVoicePack(characterName)?.Language ?? Config.DefaultLanguage;
+        }
+
+
+
     }
 }

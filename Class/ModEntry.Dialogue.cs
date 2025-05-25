@@ -13,12 +13,14 @@ namespace VoiceOverFrameworkMod
         // Dialogue State Tracking
         private bool wasDialogueUpLastTick = false;
         private string lastDialogueText = null;
+        private int lastDialoguePage = -1;
         private string lastSpeakerName = null;
+        private MultilingualDictionary Multilingual;
+
 
         internal NPC CurrentDialogueSpeaker = null;
         internal string CurrentDialogueOriginalKey = null;
-        internal int CurrentDialogueTotalPages { get; set; } = 1;
-        internal int CurrentDialoguePage { get; set; } = 0;
+
         internal bool IsMultiPageDialogueActive { get; set; } = false;
 
         // Main dialogue check loop called every tick (or less often if adjusted).
@@ -65,64 +67,103 @@ namespace VoiceOverFrameworkMod
 
 
             // Case 1: Dialogue just appeared or the text/page changed
-            if (!string.IsNullOrWhiteSpace(currentDisplayedString) && currentDisplayedString != lastDialogueText)
+            if (!string.IsNullOrWhiteSpace(currentDisplayedString)
+    && (currentDisplayedString != lastDialogueText ))
             {
+                lastDialogueText = currentDisplayedString;
 
-                lastDialogueText = currentDisplayedString; 
                 lastSpeakerName = currentSpeaker?.Name;
                 wasDialogueUpLastTick = true;
 
-                if (currentSpeaker != null)
+                if (currentDisplayedString != lastDialogueText)
                 {
+                   // Increment only when text changes
 
-                    string farmerName = Game1.player.Name;
-
-                    // Step 1: Reverse the farmer name substitution to recreate the original '@' format
-
-                    string potentialOriginalText = currentDisplayedString;
-                    if (!string.IsNullOrEmpty(farmerName) && potentialOriginalText.Contains(farmerName))
+                    if (Game1.activeClickableMenu is DialogueBox db)
                     {
-                        potentialOriginalText = potentialOriginalText.Replace(farmerName, "@");
-
-                    }
-
-
-                    // Step 2: Apply sanitization pipeline to the RECONSTRUCTED text
-
-                    string sanitizedStep1 = SanitizeDialogueText(potentialOriginalText); // Apply main sanitizer
-                    string finalLookupKey = Regex.Replace(sanitizedStep1, @"#.+?#", "").Trim(); // Apply #tag# removal
-
-                    //get current language
-                    LocalizedContentManager.LanguageCode currentLanguageCode = LocalizedContentManager.CurrentLanguageCode;
-                  
-                    // Use the FINAL reconstructed and cleaned key for lookup
-                    if (!string.IsNullOrWhiteSpace(finalLookupKey))
-                    {
-                        if (Config.developerModeOn)
-                        {
-                            // Log the key being used for lookup
-                            Monitor.Log($"Attempting voice for '{currentSpeaker.Name}'. Lookup Key: '{finalLookupKey}' (Derived from Displayed: '{currentDisplayedString}')", LogLevel.Debug);
-                            Monitor.Log($" [VOICE DEBUG]", LogLevel.Debug);
-                            Monitor.Log($"     Current Speaker: {currentSpeaker.Name}", LogLevel.Info);
-                            Monitor.Log($"     Displayed:    \"{currentDisplayedString}\"", LogLevel.Debug);
-                            Monitor.Log($"     Reversed:     \"{potentialOriginalText}\"", LogLevel.Debug);
-                            Monitor.Log($"     Sanitized:    \"{sanitizedStep1}\"", LogLevel.Debug);
-                            Monitor.Log($"     Final Lookup: \"{finalLookupKey}\"", LogLevel.Debug);
-                        }
-
-                        // Pass the RECONSTRUCTED and sanitized key to the playback logic
-                        TryToPlayVoice(currentSpeaker.Name, finalLookupKey, currentLanguageCode); // Pass the enum code
+                        var field = typeof(DialogueBox).GetField("dialogues", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                        if (field?.GetValue(db) is List<string> dialoguePages)
+                           ;
+                       
+                          
                     }
                     else
                     {
                         
                     }
                 }
-                else
+
+                if (currentSpeaker != null)
                 {
-                   
+                    string farmerName = Game1.player.Name;
+                    string potentialOriginalText = currentDisplayedString;
+
+                    if (!string.IsNullOrEmpty(farmerName) && potentialOriginalText.Contains(farmerName))
+                        potentialOriginalText = potentialOriginalText.Replace(farmerName, "@");
+
+                    string sanitizedStep1 = SanitizeDialogueText(potentialOriginalText);
+                    string finalLookupKey = Regex.Replace(sanitizedStep1, @"#.+?#", "").Trim();
+
+                    LocalizedContentManager.LanguageCode currentLanguageCode = LocalizedContentManager.CurrentLanguageCode;
+                    string gameLanguage = currentLanguageCode.ToString();
+                    string characterName = currentSpeaker.Name;
+                    string voicePackLanguage = GetVoicePackLanguageForCharacter(characterName);
+
+                    if (!string.IsNullOrWhiteSpace(finalLookupKey))
+                    {
+                        if (gameLanguage == voicePackLanguage)
+                        {
+                            if (Config.developerModeOn)
+                            {
+                                Monitor.Log($"[VOICE] Game and voice pack language are the same ({gameLanguage}). Using sanitized key directly.", LogLevel.Trace);
+                                Monitor.Log($"Attempting voice for '{characterName}'. Lookup Key: '{finalLookupKey}' (From Displayed: '{currentDisplayedString}')", LogLevel.Debug);
+                            }
+
+                            TryToPlayVoice(characterName, finalLookupKey, currentLanguageCode);
+                        }
+                        else
+                        {
+                            if (Config.developerModeOn)
+                            {
+                                Monitor.Log($"[ERROR] Null detected in GetDialogueFrom inputs:", LogLevel.Error);
+                                Monitor.Log($"  Multilingual: {(Multilingual == null ? "null" : "OK")}", LogLevel.Error);
+                                Monitor.Log($"  characterName: {(characterName ?? "null")}", LogLevel.Error);
+                                Monitor.Log($"  gameLanguage: {(gameLanguage ?? "null")}", LogLevel.Error);
+                                Monitor.Log($"  voicePackLanguage: {(voicePackLanguage ?? "null")}", LogLevel.Error);
+                                Monitor.Log($"  currentDisplayedString: {(currentDisplayedString ?? "null")}", LogLevel.Error);
+                            }
+
+                            string resolvedFrom = Multilingual.GetDialogueFrom(characterName, gameLanguage, voicePackLanguage, currentDisplayedString);
+
+                            if (Config.developerModeOn)
+                            {
+                                Monitor.Log($"[VOICE - MULTILINGUAL]", LogLevel.Info);
+                                Monitor.Log($"Character: {characterName}", LogLevel.Info);
+                                Monitor.Log($"Game Language: {gameLanguage}", LogLevel.Info);
+                                Monitor.Log($"Voice Pack Language: {voicePackLanguage}", LogLevel.Info);
+                                Monitor.Log($"Original Game Dialogue: \"{currentDisplayedString}\"", LogLevel.Info);
+                                Monitor.Log($"Sanitized Game Dialogue: \"{Regex.Replace(SanitizeDialogueText(currentDisplayedString?.Replace(farmerName, "@")), @"#.+?#", "").Trim()}\"", LogLevel.Info);
+                                if (resolvedFrom != null)
+                                    Monitor.Log($"Dictionary Match Found:  DialogueFrom = \"{resolvedFrom}\"", LogLevel.Info);
+                            }
+
+                            if (!string.IsNullOrEmpty(resolvedFrom))
+                            {
+                                var pack = GetSelectedVoicePack(characterName);
+
+                                string finalKey = resolvedFrom;
+
+                                if (Config.developerModeOn)
+                                    Monitor.Log($"[VOICE - MULTILINGUAL] Adjusted key with page (capped): {finalKey}", LogLevel.Debug);
+
+                                TryToPlayVoiceFromDialogueKey(characterName, finalKey, currentLanguageCode);
+                            }
+                        }
+                    }
                 }
             }
+
+
             // Case 2: Dialogue just closed
             else if (!isDialogueBoxVisible && wasDialogueUpLastTick)
             {
@@ -132,32 +173,27 @@ namespace VoiceOverFrameworkMod
 
         }
 
-
         private void ResetDialogueState()
         {
             lastDialogueText = null;
             lastSpeakerName = null;
             wasDialogueUpLastTick = false;
 
-  
+
+
             if (currentVoiceInstance != null && !currentVoiceInstance.IsDisposed && currentVoiceInstance.State == SoundState.Playing)
             {
-                try
-                {
-                    currentVoiceInstance.Stop(true); 
-                                                     
-                }
-                catch (Exception ex)
-                {
-                    Monitor.Log($"Error stopping voice instance during dialogue reset: {ex.Message}", LogLevel.Warn);
-                }
+                try { currentVoiceInstance.Stop(true); }
+                catch (Exception ex) { Monitor.Log($"Error stopping voice instance during dialogue reset: {ex.Message}", LogLevel.Warn); }
             }
-
 
             CurrentDialogueSpeaker = null;
             CurrentDialogueOriginalKey = null;
-            CurrentDialoguePage = 0;
             IsMultiPageDialogueActive = false;
         }
+
+
+
+
     }
 }

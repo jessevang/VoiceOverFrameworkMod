@@ -184,7 +184,7 @@ namespace VoiceOverFrameworkMod
 
 
         // Place this method inside your ModEntry class (ModEntry.Utilities.cs or wherever it belongs)
-        private string SanitizeDialogueText(string text)
+        public string SanitizeDialogueText(string text)
         {
             if (string.IsNullOrWhiteSpace(text))
                 return ""; // Return empty for null/whitespace input

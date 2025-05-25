@@ -80,7 +80,7 @@ namespace VoiceOverFrameworkMod
             string baseUniqueModID = args[2].Trim();
             string baseVoicePackName = args[3].Trim();
             int startsAtThisNumber = Convert.ToInt32(args[4]);
-            string desiredExtension = "wav"; // default
+            string desiredExtension = "wav"; 
 
             if (args.Length >= 6)
             {
@@ -381,7 +381,7 @@ namespace VoiceOverFrameworkMod
                     foreach (string segment in standardSegments)
                     {
                         // Step 6.2: Sanitize standard game codes (NOW PRESERVING '^')
-                        string sanitizedSegment = this.SanitizeDialogueText(segment); // Uses modified sanitizer
+                        string sanitizedSegment = SanitizeDialogueText(segment); // Uses modified sanitizer
 
                         // Step 6.3: Remove text between single # symbols (non-greedy)
                         string cleanedSegment = Regex.Replace(sanitizedSegment, @"#.+?#", "").Trim();

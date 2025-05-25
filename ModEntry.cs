@@ -20,12 +20,11 @@ namespace VoiceOverFrameworkMod
     // - Models.cs: Contains data structure definitions (ModConfig, VoicePack, etc.).
     public partial class ModEntry : Mod
     {
-        // --- Core Properties ---
         public static ModEntry Instance { get; private set; }
         public ModConfig Config { get; private set; }
 
-        // Stores the user's selection (Character Name -> Selected VoicePackId) from config/GMCM
         private Dictionary<string, string> SelectedVoicePacks = new(StringComparer.OrdinalIgnoreCase);
+
 
         //Events List
         private readonly List<string> CommonEventFileNames = new List<string> {
@@ -184,14 +183,12 @@ namespace VoiceOverFrameworkMod
 
 
 
-        // --- Mod Entry Point ---
+
         public override void Entry(IModHelper helper)
         {
-            Instance = this; // Set static instance for easy access
-
-            // Load configuration
+            this.Multilingual = new MultilingualDictionary(this, this.Monitor, this.Helper.DirectoryPath);
+            Instance = this; 
             this.Config = helper.ReadConfig<ModConfig>();
-            // Initialize SelectedVoicePacks from loaded config, ensuring it's not null
             this.SelectedVoicePacks = this.Config?.SelectedVoicePacks ?? new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
             if (Config.developerModeOn)
             {
@@ -199,23 +196,16 @@ namespace VoiceOverFrameworkMod
             }
             
 
-            // Load voice pack definitions from content packs
-            // This method is defined in ModEntry.Loading.cs
             LoadVoicePacks();
 
-            // Apply Harmony patches
-            // This method is defined below (or could be moved to ModEntry.Harmony.cs)
             ApplyHarmonyPatches();
 
-            // Register event listeners
         
-            helper.Events.GameLoop.UpdateTicked += this.OnUpdateTicked; // Handler in ModEntry.Dialogue.cs
-            helper.Events.GameLoop.GameLaunched += this.OnGameLaunched; // Handler below (for GMCM)
-            // Add other necessary event listeners (e.g., SaveLoaded if config needs reload, Content Events if needed)
-            helper.Events.GameLoop.SaveLoaded += this.OnSaveLoaded; // Example: Reload config per save
+            helper.Events.GameLoop.UpdateTicked += this.OnUpdateTicked; 
+            helper.Events.GameLoop.GameLaunched += this.OnGameLaunched; 
 
-            // Setup Console Commands
-            // This method is defined in ModEntry.Commands.cs
+            helper.Events.GameLoop.SaveLoaded += this.OnSaveLoaded; 
+
             SetupConsoleCommands(helper.ConsoleCommands);
 
 
@@ -346,10 +336,8 @@ namespace VoiceOverFrameworkMod
 
 
 
-        /// <summary>
-        /// Splits complex dialogue into separate lines, removing tags like $h, $b, $4, etc.
-        /// used in get event
-        /// </summary>
+
+        // Splits complex dialogue into separate lines, removing tags like $h, $b, $4, etc. (used in get event)
         private List<string> ExtractVoiceLinesFromDialogue(string rawText)
         {
             var results = new List<string>();
@@ -357,10 +345,10 @@ namespace VoiceOverFrameworkMod
             if (string.IsNullOrWhiteSpace(rawText))
                 return results;
 
-            // Remove embedded dialogue tags ($h, $b, $4, etc.)
+
             string sanitized = Regex.Replace(rawText, @"\$[a-zA-Z0-9]+", "").Trim();
 
-            // Split by new dialogue box markers
+    
             string[] parts = sanitized.Split(new[] { "#$b#", "#$b", "$b#", "$b" }, StringSplitOptions.None);
             foreach (var part in parts)
             {
@@ -375,12 +363,7 @@ namespace VoiceOverFrameworkMod
 
 
 
-
-
-
-        // Existing methods (SanitizeDialogueText, GetVanillaCharacterStringKeys, etc.) below...
-
-        // --- Harmony Patching ---
+        // Harmony Patching to remove that typing sound
         private void ApplyHarmonyPatches()
         {
             var harmony = new Harmony(this.ModManifest.UniqueID);
@@ -431,11 +414,11 @@ namespace VoiceOverFrameworkMod
             var result = new Dictionary<string, (string RawText, string SourceInfo)>(StringComparer.OrdinalIgnoreCase);
             string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
 
-            // Dynamically get festival keys
+            
             var activeFestivalKeys = DataLoader.Festivals_FestivalDates(Game1.content).Keys;
             var passiveFestivalKeys = DataLoader.PassiveFestivals(Game1.content).Keys;
 
-            // Combine and deduplicate
+            
             var allFestivalKeys = activeFestivalKeys.Concat(passiveFestivalKeys).Distinct();
 
             foreach (string festivalKey in allFestivalKeys)
@@ -454,7 +437,7 @@ namespace VoiceOverFrameworkMod
                         string key = kvp.Key;
                         string value = kvp.Value;
 
-                        // Match by key or embedded speaker
+                        
                         if (key.StartsWith(characterName, StringComparison.OrdinalIgnoreCase) ||
                             key.IndexOf(characterName, StringComparison.OrdinalIgnoreCase) >= 0)
                         {
@@ -504,16 +487,13 @@ namespace VoiceOverFrameworkMod
 
 
 
-        /// <summary>
-        /// Gets dialogue from Data/NPCGiftTastes.json for a character.
-        /// Extracts dialogue text appearing between /.../ code blocks.
-        /// </summary>
+        // Gets dialogue from Data/NPCGiftTastes.json for a character.
         private List<(string RawText, string SourceInfo)> GetGiftTasteDialogueForCharacter(string characterName, string languageCode, IGameContentHelper contentHelper)
         {
             var dialogueList = new List<(string RawText, string SourceInfo)>();
             string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
             string assetKeyString = $"Data/NPCGiftTastes{langSuffix}";
-            const string sourceInfo = "NPCGiftTastes"; // Constant source info
+            const string sourceInfo = "NPCGiftTastes"; 
 
             try
             {
@@ -528,21 +508,21 @@ namespace VoiceOverFrameworkMod
                         string[] segments = combinedReactions.Split('/');
                         int dialogueCount = 0;
 
-                        // Iterate through the segments using an index
+                       
                         for (int i = 0; i < segments.Length; i++)
                         {
-                            // Keep segments at EVEN indices (0, 2, 4, ...) as these are the dialogue parts
+                           
                             if (i % 2 == 0)
                             {
                                 string potentialDialogue = segments[i].Trim();
-                                // Add the segment if it's not empty after trimming
+                              
                                 if (!string.IsNullOrWhiteSpace(potentialDialogue))
                                 {
                                     dialogueList.Add((potentialDialogue, sourceInfo));
                                     dialogueCount++;
                                 }
                             }
-                            // Ignore segments at ODD indices (1, 3, 5, ...) as they contain codes/IDs
+                          
                         }
 
                         if (this.Config.developerModeOn)
@@ -561,10 +541,8 @@ namespace VoiceOverFrameworkMod
             return dialogueList;
         }
 
-        /// <summary>
-        /// Gets dialogue from Data/EngagementDialogue.json for a character.
-        /// Matches keys starting with the character's name (e.g., "Abigail0").
-        /// </summary>
+        
+        // Gets dialogue from Data/EngagementDialogue.json for a character.
         private List<(string RawText, string SourceInfo)> GetEngagementDialogueForCharacter(string characterName, string languageCode, IGameContentHelper contentHelper)
         {
             var dialogueList = new List<(string RawText, string SourceInfo)>();
@@ -579,7 +557,7 @@ namespace VoiceOverFrameworkMod
 
                 if (engagementData != null)
                 {
-                    // Find all keys that start with the character's name (case-insensitive)
+                 
                     foreach (var kvp in engagementData)
                     {
                         if (kvp.Key.StartsWith(characterName, StringComparison.OrdinalIgnoreCase))
@@ -587,7 +565,7 @@ namespace VoiceOverFrameworkMod
                             if (!string.IsNullOrWhiteSpace(kvp.Value))
                             {
                                 dialogueList.Add((kvp.Value, sourceInfo));
-                                // Monitor.Log($"    -> Found Engagement line for '{characterName}' (Key: {kvp.Key}) in {assetKeyString}: \"{kvp.Value}\"", LogLevel.Trace);
+                              
                             }
                         }
                     }
@@ -602,16 +580,14 @@ namespace VoiceOverFrameworkMod
             return dialogueList;
         }
 
-        /// <summary>
-        /// Gets dialogue from Data/ExtraDialogue.json for a character.
-        /// Matches keys based on various patterns containing the character's name.
-        /// </summary>
+
+        // Gets dialogue from Data/ExtraDialogue.json for a character.
         private List<(string RawText, string SourceInfo)> GetExtraDialogueForCharacter(string characterName, string languageCode, IGameContentHelper contentHelper)
         {
             var dialogueList = new List<(string RawText, string SourceInfo)>();
             string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
             string assetKeyString = $"Data/ExtraDialogue{langSuffix}";
-            const string sourceInfo = "ExtraDialogue"; // Constant source info
+            const string sourceInfo = "ExtraDialogue";
 
             // Pre-calculate patterns for matching
             string prefixPattern = $"{characterName}_";
@@ -632,14 +608,14 @@ namespace VoiceOverFrameworkMod
                         bool isMatch = key.Equals(characterName, StringComparison.OrdinalIgnoreCase) ||
                                        key.StartsWith(prefixPattern, StringComparison.OrdinalIgnoreCase) ||
                                        key.EndsWith(suffixPattern, StringComparison.OrdinalIgnoreCase) ||
-                                       key.IndexOf(infixPattern, StringComparison.OrdinalIgnoreCase) >= 0; // IndexOf is often faster than Contains for specific substrings
+                                       key.IndexOf(infixPattern, StringComparison.OrdinalIgnoreCase) >= 0; 
 
                         if (isMatch)
                         {
                             if (!string.IsNullOrWhiteSpace(kvp.Value))
                             {
                                 dialogueList.Add((kvp.Value, sourceInfo));
-                                // Monitor.Log($"    -> Found ExtraDialogue line potentially for '{characterName}' (Key: {kvp.Key}) in {assetKeyString}: \"{kvp.Value}\"", LogLevel.Trace);
+                               
                             }
                         }
                     }
@@ -655,51 +631,50 @@ namespace VoiceOverFrameworkMod
         }
 
 
-        /// <summary>
-        /// Splits dialogue text using standard delimiters like #$b#, trims results, and removes empty entries.
-        /// </summary>
-        /// <param name="rawText">The raw dialogue text potentially containing delimiters.</param>
-        /// <returns>An enumerable collection of non-empty dialogue segments.</returns>
+
+        // Splits dialogue text using standard delimiters like #$b#, trims results, and removes empty entries.
         private IEnumerable<string> SplitStandardDialogueSegments(string rawText)
         {
-            // Return empty collection if input is null or whitespace to avoid errors later
+ 
             if (string.IsNullOrWhiteSpace(rawText))
-                return Enumerable.Empty<string>(); // Requires System.Linq
+                return Enumerable.Empty<string>(); 
 
-            // Split by common delimiters, trim results, remove empty ones
-            return Regex.Split(rawText, @"(?:##|#\$e#|#\$b#)") // Requires System.Text.RegularExpressions
-                        .Select(s => s.Trim()) // Requires System.Linq
-                        .Where(s => !string.IsNullOrEmpty(s)); // Requires System.Linq
+
+            return Regex.Split(rawText, @"(?:##|#\$e#|#\$b#)") 
+                        .Select(s => s.Trim()) 
+                        .Where(s => !string.IsNullOrEmpty(s)); 
         }
 
 
 
 
 
-        // --- Event Handlers (Core/Config related) ---
-
-        // Ran once when SMAPI is ready (good for GMCM setup)
         private void OnGameLaunched(object sender, GameLaunchedEventArgs e)
         {
-            //this.Monitor.Log("GameLaunched event: Setting up GMCM integration...", LogLevel.Debug);
-            SetupGMCM(); // Call GMCM setup method (to be implemented)
 
-            //testing
+            SetupGMCM();
+
+
 
         }
 
-        // Ran when a save file is loaded (good for reloading config)
+
         private void OnSaveLoaded(object sender, SaveLoadedEventArgs e)
         {
             this.Monitor.Log("SaveLoaded event: Reloading config...", LogLevel.Debug);
-            // Reload config in case it changed via GMCM while not in-game, or for per-save settings if added later
+
             this.Config = this.Helper.ReadConfig<ModConfig>();
             this.SelectedVoicePacks = this.Config?.SelectedVoicePacks ?? new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-            // Maybe trigger a refresh of GMCM if needed? Usually GMCM handles live updates via its API.
+
+            foreach (var character in VoicePacksByCharacter.Keys)
+            {
+                this.Multilingual.LoadAllForCharacter(character);
+            }
+
         }
 
 
-        // --- GMCM Setup (Placeholder) ---
+
         private void SetupGMCM()
         {
             var gmcm = this.Helper.ModRegistry.GetApi<IGenericModConfigMenuApi>("spacechase0.GenericModConfigMenu");
@@ -710,14 +685,11 @@ namespace VoiceOverFrameworkMod
             this.Monitor.Log("Adding GMCM options...", LogLevel.Trace);
             gmcm.Register(ModManifest, () => Config = new ModConfig(), () => Helper.WriteConfig(Config));
 
-            // === General Settings ===
-            // ... (Section Title, Mute Typing, Master Volume as before, using i18n) ...
             gmcm.AddSectionTitle(mod: this.ModManifest, text: () => this.Helper.Translation.Get("config.section.general.name"));
             gmcm.AddBoolOption(mod: this.ModManifest, name: () => this.Helper.Translation.Get("config.mute-typing.name"), tooltip: () => this.Helper.Translation.Get("config.mute-typing.tooltip"), getValue: () => this.Config.turnoffdialoguetypingsound, setValue: value => this.Config.turnoffdialoguetypingsound = value);
             gmcm.AddNumberOption(mod: this.ModManifest, name: () => this.Helper.Translation.Get("config.master-volume.name"), tooltip: () => this.Helper.Translation.Get("config.master-volume.tooltip"), getValue: () => this.Config.MasterVolume, setValue: value => this.Config.MasterVolume = value, min: 0.0f, max: 1.0f, interval: 0.05f, formatValue: value => $"{Math.Round(value * 100)}%");
 
-            // === Dynamic Voice Pack Selection ===
-            // ... (Section Title, Paragraph, Character dropdowns as before, using i18n) ...
+
             gmcm.AddSectionTitle(mod: this.ModManifest, text: () => this.Helper.Translation.Get("config.section.voice-packs.name"));
             gmcm.AddParagraph(mod: this.ModManifest, text: () => this.Helper.Translation.Get("config.voice-packs.description"));
             var charactersWithPacks = VoicePacksByCharacter.Keys.OrderBy(name => name).ToList();
@@ -741,7 +713,7 @@ namespace VoiceOverFrameworkMod
             }
 
 
-            // === Developer Options ===
+
             gmcm.AddSectionTitle(
                 mod: this.ModManifest,
                 text: () => this.Helper.Translation.Get("config.section.developer.name") 
@@ -772,5 +744,5 @@ namespace VoiceOverFrameworkMod
         }
 
 
-    } // End of partial class ModEntry
-} // End of namespace
+    } 
+} 

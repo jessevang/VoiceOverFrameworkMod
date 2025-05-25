@@ -10,11 +10,9 @@ namespace VoiceOverFrameworkMod
 {
     public partial class ModEntry : Mod
     {
-        // The currently playing voice instance (or the last one started)
+
         private SoundEffectInstance currentVoiceInstance;
-        // List to track instances that need disposal check after they stop
         private readonly List<SoundEffectInstance> activeVoiceInstances = new();
-        // Lock object for safe modification of the list (optional if only accessed from main thread)
         private readonly object listLock = new object();
 
 
@@ -192,6 +190,50 @@ namespace VoiceOverFrameworkMod
                 }
             }
         }
+
+
+        //Used to try to find voice pack for different game language than voice pack
+        public void TryToPlayVoiceFromDialogueKey(string characterName, string dialogueFromKey, LocalizedContentManager.LanguageCode languageCode)
+        {
+            if (Config == null || SelectedVoicePacks == null || VoicePacksByCharacter == null)
+                return;
+
+            if (!SelectedVoicePacks.TryGetValue(characterName, out string selectedVoicePackId))
+                return;
+
+            if (!VoicePacksByCharacter.TryGetValue(characterName, out var voicePacks))
+                return;
+
+            var voicePack = voicePacks.FirstOrDefault(p =>
+                p.VoicePackId.Equals(selectedVoicePackId, StringComparison.OrdinalIgnoreCase) &&
+                p.Language.Equals(GetVoicePackLanguageForCharacter(characterName), StringComparison.OrdinalIgnoreCase));
+
+            if (voicePack == null)
+            {
+                if (Config.developerModeOn)
+                    Monitor.Log($"[TryPlayVoiceFromDialogueKey] No matching voice pack or entries found for '{characterName}' and key '{dialogueFromKey}'", LogLevel.Warn);
+                return;
+            }
+
+            if (voicePack.EntriesByFrom != null && voicePack.EntriesByFrom.TryGetValue(dialogueFromKey, out string relativePath))
+            {
+                string fullPath = Path.Combine(voicePack.BaseAssetPath, relativePath);
+                if (Config.developerModeOn)
+                {
+                    Monitor.Log($"[TryPlayVoiceFromDialogueKey] Found entry by DialogueFrom: Char={characterName}, Key={dialogueFromKey}, Path={relativePath}", LogLevel.Debug);
+                }
+                PlayVoiceFromFile(fullPath);
+            }
+            else
+            {
+                if (Config.developerModeOn)
+                {
+                    var keys = voicePack.EntriesByFrom?.Keys?.ToList() ?? new();
+                    Monitor.Log($"[TryPlayVoiceFromDialogueKey] Voice pack does not contain key '{dialogueFromKey}' for '{characterName}'. Available keys: {string.Join(", ", keys)}", LogLevel.Debug);
+                }
+            }
+        }
+
 
 
         // Loads and plays an audio file from the specified absolute path. Updated to Support wav and ogg
