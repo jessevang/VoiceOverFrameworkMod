@@ -51,13 +51,84 @@ namespace VoiceOverFrameworkMod
                 this.UpdateTemplateCommand
             );
 
-
+            //used to fix current voice packs to add increments to duplicate Dialogue From
+            this.Helper.ConsoleCommands.Add(
+                 "fix_duplicate_dialoguefrom",
+                 "Fix duplicate DialogueFrom keys in all JSON voice packs within the specified folder."
+                 + "\nUsage: fix_duplicate_dialoguefrom <FolderName>\n",
+                 FixDuplicateDialogueFromCommand);
 
 
         }
 
+        private void FixDuplicateDialogueFromCommand(string command, string[] args)
+        {
+            if (args.Length < 1)
+            {
+                Monitor.Log("Usage: fix_duplicate_dialoguefrom <FolderName>", StardewModdingAPI.LogLevel.Info);
+                return;
+            }
 
+            string folderName = args[0];
+            string folderPath = Path.Combine(Helper.DirectoryPath, folderName);
+            if (!Directory.Exists(folderPath))
+            {
+                Monitor.Log($"Folder not found: {folderPath}", StardewModdingAPI.LogLevel.Error);
+                return;
+            }
 
+            var jsonFiles = Directory.GetFiles(folderPath, "*.json", SearchOption.AllDirectories);
+            foreach (var file in jsonFiles)
+            {
+                try
+                {
+                    string json = File.ReadAllText(file);
+                    var packFile = JsonConvert.DeserializeObject<VoicePackFile>(json);
+                    bool changed = false;
+
+                    foreach (var pack in packFile?.VoicePacks ?? new List<VoicePackManifestTemplate>())
+                    {
+                        var seen = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
+                        for (int i = 0; i < pack.Entries.Count; i++)
+                        {
+                            var entry = pack.Entries[i];
+                            if (string.IsNullOrWhiteSpace(entry.DialogueFrom))
+                                continue;
+
+                            string baseKey = entry.DialogueFrom;
+                            if (!seen.ContainsKey(baseKey))
+                            {
+                                seen[baseKey] = 0;
+                            }
+                            else
+                            {
+                                seen[baseKey]++;
+                                entry.DialogueFrom = $"{baseKey}_{seen[baseKey]}";
+                                changed = true;
+                            }
+                        }
+                    }
+
+                    if (changed)
+                    {
+                        string updatedJson = JsonConvert.SerializeObject(packFile, Formatting.Indented);
+                        File.WriteAllText(file, updatedJson);
+                        Monitor.Log($"Updated: {file}", StardewModdingAPI.LogLevel.Info);
+                    }
+                    else
+                    {
+                        Monitor.Log($"No duplicates found in: {file}", StardewModdingAPI.LogLevel.Trace);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Monitor.Log($"Failed to process {file}: {ex.Message}", StardewModdingAPI.LogLevel.Warn);
+                }
+            }
+
+            Monitor.Log("Duplicate DialogueFrom fix completed.", StardewModdingAPI.LogLevel.Info);
+        }
+    
 
 
         private void GenerateTemplateCommand(string command, string[] args)
