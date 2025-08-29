@@ -1,6 +1,8 @@
 ﻿using Newtonsoft.Json;   
 using StardewModdingAPI;
-using StardewModdingAPI.Utilities; 
+using StardewModdingAPI.Utilities;
+using System.Linq;
+
 
 namespace VoiceOverFrameworkMod
 {
@@ -10,6 +12,40 @@ namespace VoiceOverFrameworkMod
         // Value is a list of packs (for different languages or multiple packs for the same char/lang)
         private readonly Dictionary<string, List<VoicePack>> VoicePacksByCharacter = new(StringComparer.OrdinalIgnoreCase);
 
+        
+        static bool IsV2(string? s)
+        {
+            if (string.IsNullOrWhiteSpace(s)) return false;
+            var core = s.Split('-', 2)[0]; // ignore pre-release
+            var parts = core.Split('.');
+            if (parts.Length == 0) return false;
+            return int.TryParse(parts[0], out var major) && major >= 2;
+        }
+
+        private void AddVoicePackToStore(VoicePack vp, ref int totalDefinitionsProcessed, ref bool foundInPack)
+        {
+            if (!VoicePacksByCharacter.TryGetValue(vp.Character, out var list))
+                VoicePacksByCharacter[vp.Character] = list = new List<VoicePack>();
+
+            if (!list.Any(p => p.Language.Equals(vp.Language, StringComparison.OrdinalIgnoreCase)
+                            && p.VoicePackId.Equals(vp.VoicePackId, StringComparison.OrdinalIgnoreCase)))
+            {
+                list.Add(vp);
+                totalDefinitionsProcessed++;
+                foundInPack = true;
+                if (Config.developerModeOn)
+                    Monitor.Log($"---> Loaded definition '{vp.VoicePackName}' ({vp.VoicePackId}) for {vp.Character} [{vp.Language}] ({vp.Entries.Count} entries)", LogLevel.Debug);
+            }
+        }
+
+
+        private static int GetFormatMajor(string? fmt)
+        {
+            if (string.IsNullOrWhiteSpace(fmt)) return 1;
+            var core = fmt.Split('-', 2)[0];
+            var first = core.Split('.')[0];
+            return int.TryParse(first, out var m) ? m : 1;
+        }
 
         private void LoadVoicePacks()
         {
@@ -17,10 +53,11 @@ namespace VoiceOverFrameworkMod
             {
                 this.Monitor.Log("Scanning Content Packs for voice data definitions...", LogLevel.Debug);
             }
-            
+
             VoicePacksByCharacter.Clear(); // Clear previous data
 
             var ownedContentPacks = this.Helper.ContentPacks.GetOwned();
+            
             this.Monitor.Log($"Found {ownedContentPacks.Count()} potential voice content packs.", LogLevel.Debug);
 
             int totalFilesLoaded = 0;
@@ -68,6 +105,9 @@ namespace VoiceOverFrameworkMod
                                 continue;
                             }
 
+                            // resolve file-level default format (can be null if old file)
+                            string? fileLevelFormat = voicePackFileData.Format;
+
                             // *** STEP 3: Loop through each definition IN THE LIST *** 
                             foreach (var manifestData in voicePackFileData.VoicePacks)
                             {
@@ -86,35 +126,35 @@ namespace VoiceOverFrameworkMod
                                     continue; // Skip this specific definition, continue to next in list
                                 }
 
+                                // --- NEW: resolve effective Format (pack -> file -> default) & compute major ---
+                                var fmt = manifestData.Format ?? fileLevelFormat ?? "1.0.0";
+                                var formatMajor = GetFormatMajor(fmt);
+
+
                                 // --- Auto-fix duplicate DialogueFrom entries if enabled ---
                                 if (this.Config.AutoFixDialogueFromOnLoad)
                                 {
                                     GenerateTemplate_DialogueFromDeduplicated(manifestData.Entries);
                                 }
 
-
                                 // 6. Process entries into a dictionary
                                 var entriesDict = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
                                 var entriesByFrom = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
                                 var dialogueFromCounters = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
 
-   
                                 foreach (var entry in manifestData.Entries)
                                 {
                                     if (entry != null && !string.IsNullOrWhiteSpace(entry.AudioPath))
                                     {
                                         string audioPath = PathUtilities.NormalizePath(entry.AudioPath);
 
-                    
                                         if (!string.IsNullOrWhiteSpace(entry.DialogueText) && !entriesDict.ContainsKey(entry.DialogueText))
                                             entriesDict[entry.DialogueText] = audioPath;
 
-                                   
                                         if (!string.IsNullOrWhiteSpace(entry.DialogueFrom))
                                         {
                                             string baseKey = entry.DialogueFrom;
 
-                                           
                                             if (!dialogueFromCounters.ContainsKey(baseKey))
                                                 dialogueFromCounters[baseKey] = 0;
 
@@ -127,13 +167,11 @@ namespace VoiceOverFrameworkMod
                                     }
                                 }
 
-
-
-
-
-    
-
-                                if (!entriesDict.Any()) { this.Monitor.Log($"---> Skipping definition '{manifestData.VoicePackName}' from '{relativePathForLog}': No valid entries found within it.", LogLevel.Debug); continue; }
+                                if (!entriesDict.Any())
+                                {
+                                    this.Monitor.Log($"---> Skipping definition '{manifestData.VoicePackName}' from '{relativePathForLog}': No valid entries found within it.", LogLevel.Debug);
+                                    continue;
+                                }
 
                                 // 7. Create the internal VoicePack object
                                 var voicePack = new VoicePack
@@ -147,39 +185,25 @@ namespace VoiceOverFrameworkMod
                                     ContentPackId = contentPack.Manifest.UniqueID,
                                     ContentPackName = contentPack.Manifest.Name,
                                     //BaseAssetPath = PathUtilities.NormalizePath(packDir)
-                                    BaseAssetPath = PathUtilities.NormalizePath(Path.GetDirectoryName(filePath))
+                                    BaseAssetPath = PathUtilities.NormalizePath(Path.GetDirectoryName(filePath)),
 
+                                    FormatMajor = formatMajor
                                 };
 
                                 voicePack.EntriesByFrom = entriesByFrom;
 
-                                // 8. Add to internal storage
-                                if (!VoicePacksByCharacter.TryGetValue(voicePack.Character, out var list))
+                                if (Config.developerModeOn)
                                 {
-                                    list = new List<VoicePack>();
-                                    VoicePacksByCharacter[voicePack.Character] = list;
+                                    Monitor.Log(
+                                        $"[Load] '{voicePack.VoicePackName}' ({voicePack.VoicePackId}) " +
+                                        $"char={voicePack.Character} lang={voicePack.Language} " +
+                                        $"format='{fmt}' major={voicePack.FormatMajor} entries={voicePack.Entries.Count}",
+                                        LogLevel.Trace
+                                    );
                                 }
 
-                                // Check for duplicates based on VoicePackId WITHIN Character+Language
-                                if (!list.Any(p => p.Language.Equals(voicePack.Language, StringComparison.OrdinalIgnoreCase) &&
-                                                     p.VoicePackId.Equals(voicePack.VoicePackId, StringComparison.OrdinalIgnoreCase)))
-                                {
-                                    list.Add(voicePack);
-                                    totalDefinitionsProcessed++; // Increment for each successfully processed definition
-                                    foundAnyValidDefinitionInPack = true; // Mark that this pack contributed something
-                                    if (Config.developerModeOn)
-                                    {
-                                        this.Monitor.Log($"---> Loaded definition '{voicePack.VoicePackName}' ({voicePack.VoicePackId}) for {voicePack.Character} [{voicePack.Language}] ({entriesDict.Count} entries) from {relativePathForLog}", LogLevel.Debug);
-                                    }
-                                    
-                                }
-                                else
-                                {
-                                    if (Config.developerModeOn)
-                                    {
-                                        this.Monitor.Log($"---> Skipping duplicate VoicePackId '{voicePack.VoicePackId}' for {voicePack.Character} [{voicePack.Language}] found within file '{relativePathForLog}'. A pack with this ID for this character/language is already loaded.", LogLevel.Trace);
-                                    }
-                                }
+                                // 8. Add to internal storage
+                                AddVoicePackToStore(voicePack, ref totalDefinitionsProcessed, ref foundAnyValidDefinitionInPack);
 
                             } // End foreach manifestData in voicePackFileData.VoicePacks
 
@@ -208,8 +232,6 @@ namespace VoiceOverFrameworkMod
             this.Monitor.Log($"Finished loading. Processed {totalDefinitionsProcessed} voice definitions for {VoicePacksByCharacter.Count} unique characters from {ownedContentPacks.Count()} content packs.", LogLevel.Info);
         }
 
-
-
         private VoicePack GetSelectedVoicePack(string characterName)
         {
             if (Config.SelectedVoicePacks.TryGetValue(characterName, out string selectedId) &&
@@ -225,6 +247,7 @@ namespace VoiceOverFrameworkMod
         {
             return GetSelectedVoicePack(characterName)?.Language ?? Config.DefaultLanguage;
         }
+
 
 
 

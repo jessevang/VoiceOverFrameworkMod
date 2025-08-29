@@ -20,7 +20,7 @@ namespace VoiceOverFrameworkMod
     // - Models.cs: Contains data structure definitions (ModConfig, VoicePack, etc.).
     public partial class ModEntry : Mod
     {
-        public static ModEntry Instance { get; private set; }
+        internal static ModEntry Instance { get; private set; }
         public ModConfig Config { get; private set; }
 
         private Dictionary<string, string> SelectedVoicePacks = new(StringComparer.OrdinalIgnoreCase);
@@ -688,6 +688,18 @@ namespace VoiceOverFrameworkMod
             gmcm.AddSectionTitle(mod: this.ModManifest, text: () => this.Helper.Translation.Get("config.section.general.name"));
             gmcm.AddBoolOption(mod: this.ModManifest, name: () => this.Helper.Translation.Get("config.mute-typing.name"), tooltip: () => this.Helper.Translation.Get("config.mute-typing.tooltip"), getValue: () => this.Config.turnoffdialoguetypingsound, setValue: value => this.Config.turnoffdialoguetypingsound = value);
             gmcm.AddNumberOption(mod: this.ModManifest, name: () => this.Helper.Translation.Get("config.master-volume.name"), tooltip: () => this.Helper.Translation.Get("config.master-volume.tooltip"), getValue: () => this.Config.MasterVolume, setValue: value => this.Config.MasterVolume = value, min: 0.0f, max: 1.0f, interval: 0.05f, formatValue: value => $"{Math.Round(value * 100)}%");
+
+
+            gmcm.AddNumberOption(
+                   mod: this.ModManifest,
+                   name: () => "Audio Start Speed",
+                   tooltip: () => "Adjusting this will make the Audio play sooner or later when dialogue starts to appear. Too low and 2nd dialogue gets play partially on first dialogue box. Too high and there is a noticeable delay before voice plays when dialogue appears ",
+                   getValue: () => this.Config.TextStabilizeTicks,
+                   setValue: v => this.Config.TextStabilizeTicks = Math.Clamp(v, 0, 60),
+                   min: 0,
+                   max: 60,
+                   interval: 1
+            );
 
             gmcm.AddBoolOption(
                 mod: this.ModManifest,

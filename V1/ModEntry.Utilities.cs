@@ -183,6 +183,11 @@ namespace VoiceOverFrameworkMod
 
 
 
+
+
+
+
+
         // Place this method inside your ModEntry class (ModEntry.Utilities.cs or wherever it belongs)
         public string SanitizeDialogueText(string text)
         {
@@ -247,6 +252,68 @@ namespace VoiceOverFrameworkMod
 
             return sanitized;
         }
+
+
+
+
+        // V2 sanitizer
+        private string SanitizeDialogueTextV2(string text)
+        {
+            if (string.IsNullOrWhiteSpace(text))
+                return ""; // Return empty for null/whitespace input
+
+            // NOTE: at the call site we already replace farmer name with '@' (same as V1 flow).
+            string originalText = text;
+            string sanitized = text;
+
+            // --- ORDER OF OPERATIONS (V2 baseline) ---
+
+            // 1. Remove speaker prefix (e.g., "^Abigail ")
+            sanitized = Regex.Replace(sanitized, @"^\^.+?\s+", "");
+
+            // 2. Remove $q blocks
+            sanitized = Regex.Replace(sanitized, @"#?\$q\s*[^#]+?#", "");
+
+            // 3. Remove $r blocks
+            sanitized = Regex.Replace(sanitized, @"#?\$r\s+\d+\s+-?\d+\s+\S+#", "");
+
+            // 4. Remove specific Stardew codes ($h, $s, $a, etc.)
+            sanitized = Regex.Replace(sanitized, @"\$[a-zA-Z](\[[^\]]+\])?", "");
+
+            // 5. Remove $number pause codes
+            sanitized = Regex.Replace(sanitized, @"\$\d+", "");
+
+            // 6. Variable tokens (%adj%, %noun%, %kid%, etc.)
+            //    V2 default: normalize to a stable placeholder so keys are robust.
+            sanitized = Regex.Replace(sanitized, @"%[a-zA-Z0-9_]+%?", "{VAR}");
+
+            // 7. Keep '@' (player name token) for now; if you want to drop it later:
+            // sanitized = sanitized.Replace("@", "");
+
+            // 8. Remove page/expression markers (#$e#, #$b#)
+            sanitized = Regex.Replace(sanitized, @"#\$[eb]#", "");
+
+            // 9. Remove simple formatting characters (< > \) BUT KEEP ^
+            sanitized = Regex.Replace(sanitized, @"[<>\\]", "");
+
+            // 9.5 Remove #emotes#
+            sanitized = Regex.Replace(sanitized, @"#.*?#", "");
+
+            // 9.6 Remove mod metadata like [(O)mod.id]
+            sanitized = Regex.Replace(sanitized, @"\[[^\]]+\]", "");
+
+            // 10. Collapse multiple whitespace characters
+            sanitized = Regex.Replace(sanitized, @"\s+", " ");
+
+            // 11. Final Trim
+            sanitized = sanitized.Trim();
+
+            if (sanitized != originalText && Config.developerModeOn)
+                Monitor.Log($"[V2] Sanitized: \"{originalText}\" -> \"{sanitized}\"", LogLevel.Trace);
+
+            return sanitized;
+        }
+
 
 
 

@@ -12,6 +12,8 @@ namespace VoiceOverFrameworkMod
         public bool developerModeOn { get; set; } = false;
         public bool AutoFixDialogueFromOnLoad { get; set; } = true;
 
+        public int TextStabilizeTicks { set; get; } = 8;
+
     }
 
     public class VoicePackManifest
@@ -44,10 +46,15 @@ namespace VoiceOverFrameworkMod
         public string ContentPackId { get; set; }
         public string ContentPackName { get; set; }
         public string BaseAssetPath { get; set; }
+
+        public int FormatMajor { get; set; } = 1;
+
     }
 
     public class VoicePackFile
     {
+
+        public string? Format { get; set; }
         [JsonProperty("VoicePacks")]
         public List<VoicePackManifestTemplate> VoicePacks { get; set; } = new();
     }

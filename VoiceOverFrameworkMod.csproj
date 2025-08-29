@@ -6,20 +6,18 @@
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
 
-  <ItemGroup>
-    <!-- Main mod file -->
-    <Compile Include="ModEntry.cs" />
-
-    <!-- All C# files in subfolders -->
-    <Compile Include="Class\**\*.cs" />
-    <Compile Include="i18n\**\*.cs" />
-    <Compile Include="Libs\NVorbis\**\*.cs" />
-    
-    <Compile Include="Menus\**\*.cs" />
-    <Compile Include="Patches\**\*.cs" />
+	<ItemGroup>
+		<Compile Include="ModEntry.cs" />
+		<Compile Include="V1\**\*.cs" />
+		<Compile Include="V2\**\*.cs" />
+		<Compile Include="Menus\**\*.cs" />
+		<Compile Include="Patches\**\*.cs" />
+		<Compile Include="Libs\NVorbis\**\*.cs" />
+	</ItemGroup>
 
 
-  </ItemGroup>
+
+
 
   <ItemGroup>
     <None Include="Dictionary\**\*.*">
@@ -44,5 +42,9 @@
     <PackageReference Include="Lib.Harmony" Version="2.3.3" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="V2\" />
   </ItemGroup>
 </Project>

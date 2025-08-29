@@ -19,6 +19,8 @@ namespace VoiceOverFrameworkMod
     {
         private void SetupConsoleCommands(ICommandHelper commands)
         {
+
+            
             commands.Add(
                 name: "create_template",
                 documentation: "Generates template JSON voice files for characters.\n\n" +
@@ -37,6 +39,8 @@ namespace VoiceOverFrameworkMod
                 callback: this.GenerateTemplateCommand
             );
 
+            
+
             commands.Add(
                 name: "list_characters",
                 documentation: "Lists all loaded characters and shows whether they are vanilla or modded.\n\n" +
@@ -44,6 +48,7 @@ namespace VoiceOverFrameworkMod
                 callback: this.ListAllNPCCharacterData
             );
 
+            /*
             commands.Add(
                 "update_template",
                 "Checks and appends any missing dialogue entries to the template.\n\n" +
@@ -51,6 +56,9 @@ namespace VoiceOverFrameworkMod
                 this.UpdateTemplateCommand
             );
 
+            /*/
+
+            /*
             //used to fix current voice packs to add increments to duplicate Dialogue From
             this.Helper.ConsoleCommands.Add(
                  "fix_duplicate_dialoguefrom",
@@ -58,9 +66,12 @@ namespace VoiceOverFrameworkMod
                  + "\nUsage: fix_duplicate_dialoguefrom <FolderName>\n",
                  FixDuplicateDialogueFromCommand);
 
+            */
 
         }
 
+
+        
         private void FixDuplicateDialogueFromCommand(string command, string[] args)
         {
             if (args.Length < 1)
@@ -128,7 +139,7 @@ namespace VoiceOverFrameworkMod
 
             Monitor.Log("Duplicate DialogueFrom fix completed.", StardewModdingAPI.LogLevel.Info);
         }
-    
+        
 
 
         private void GenerateTemplateCommand(string command, string[] args)
@@ -311,11 +322,11 @@ namespace VoiceOverFrameworkMod
                 this.Monitor.Log($"Total Failed/Skipped: {totalFailCount}", LogLevel.Warn);
             this.Monitor.Log($"Output location: {outputBaseDir}", LogLevel.Info);
         }
+        
 
+        
 
-
-
-
+        
         private bool GenerateSingleTemplate(string characterName, string languageCode, string outputBaseDir, string voicePackId, string voicePackName, int startAtThisNumber, string desiredExtension)
         {
             // --- PRE-CHECKS ---
@@ -452,7 +463,8 @@ namespace VoiceOverFrameworkMod
                     foreach (string segment in standardSegments)
                     {
                         // Step 6.2: Sanitize standard game codes (NOW PRESERVING '^')
-                        string sanitizedSegment = SanitizeDialogueText(segment); // Uses modified sanitizer
+                        //string sanitizedSegment = SanitizeDialogueText(segment); // Uses modified sanitizer was for V1
+                        string sanitizedSegment = SanitizeDialogueTextV2(segment);     // NEW (V2)
 
                         // Step 6.3: Remove text between single # symbols (non-greedy)
                         string cleanedSegment = Regex.Replace(sanitizedSegment, @"#.+?#", "").Trim();
@@ -535,6 +547,7 @@ namespace VoiceOverFrameworkMod
 
                 GenerateTemplate_DialogueFromDeduplicated(characterManifest.Entries);
                 var finalOutputFileObject = new VoicePackFile();
+                finalOutputFileObject.Format = "2.0.0";
                 finalOutputFileObject.VoicePacks.Add(characterManifest);
 
                 string sanitizedCharName = this.SanitizeKeyForFileName(characterName) ?? characterName.Replace(" ", "_");
@@ -581,7 +594,10 @@ namespace VoiceOverFrameworkMod
 
 
 
-        // Adds new dialogue entries to an existing character_language.json template
+
+
+
+        /* Removing method as we'll start fresh with V2
         // Adds new dialogue entries to an existing character_language.json template
         private void UpdateTemplateCommand(string command, string[] args)
         {
@@ -747,7 +763,7 @@ namespace VoiceOverFrameworkMod
                 }
             }
         }
-
+        */
 
         //used to fix multidialogue page that gets split into multiple string that contains the same DialogueFrom value, and so this method will add increment value to Dialogue From Value
         private void GenerateTemplate_DialogueFromDeduplicated(List<VoiceEntryTemplate> entries)
@@ -769,6 +785,9 @@ namespace VoiceOverFrameworkMod
             }
         }
 
+        
+
 
     }
+
 }
