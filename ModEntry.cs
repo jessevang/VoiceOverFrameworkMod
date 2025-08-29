@@ -405,8 +405,8 @@ namespace VoiceOverFrameworkMod
         }
 
 
-       
-        //Get Festival Data
+       /*
+        //Get Festival Data V1
         private Dictionary<string, (string RawText, string SourceInfo)> GetFestivalDialogueForCharacter(string characterName,string languageCode,IGameContentHelper contentHelper)
         {
             var result = new Dictionary<string, (string RawText, string SourceInfo)>(StringComparer.OrdinalIgnoreCase);
@@ -483,6 +483,7 @@ namespace VoiceOverFrameworkMod
             return result;
         }
 
+        */
 
 
         // Gets dialogue from Data/NPCGiftTastes.json for a character.

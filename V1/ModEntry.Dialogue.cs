@@ -399,5 +399,208 @@ namespace VoiceOverFrameworkMod
             CurrentDialogueOriginalKey = null;
             IsMultiPageDialogueActive = false;
         }
+
+
+        /// <summary>
+        /// Resolve the best VoiceEntryTemplate (V2) for the currently shown dialogue.
+        /// Call this right before you choose the audio file to play.
+        /// </summary>
+        /// <param name="speaker">The NPC speaking (same one passed into Dialogue/drawDialogue).</param>
+        /// <param name="rawText">The raw dialogue text as shown to the player for this bubble (NOT sanitized).</param>
+        /// <param name="dialogueTranslationKey">Dialogue.TranslationKey if the game supplied one; may be null.</param>
+        /// <param name="entries">All loaded entries for this character & language (from the active voice pack).</param>
+        /// <returns>The best-matching entry or null.</returns>
+        private VoiceEntryTemplate ResolveVoiceEntryV2(NPC speaker, string rawText, string dialogueTranslationKey, List<VoiceEntryTemplate> entries)
+        {
+            if (speaker == null || string.IsNullOrWhiteSpace(rawText) || entries == null || entries.Count == 0)
+                return null;
+
+            // Normalize the currently-displayed line to our stable pattern
+            string pattern = SanitizeDialogueTextV2(rawText);
+            if (string.IsNullOrWhiteSpace(pattern))
+                return null;
+
+            // Preferred gender (for ${m^f(^n)?} splits)
+            string preferredGender = Game1.player?.IsMale == true ? "male" : "female";
+
+            // 1) If we have a vanilla translation key (Characters/Dialogue/...), try exact TK + pattern first
+            if (!string.IsNullOrWhiteSpace(dialogueTranslationKey) &&
+                dialogueTranslationKey.StartsWith("Characters/Dialogue/", StringComparison.OrdinalIgnoreCase))
+            {
+                var pick = PickBestByTkPatternGender(entries, dialogueTranslationKey, pattern, preferredGender);
+                if (pick != null)
+                    return pick;
+            }
+
+            // 2) If we're in a non-festival Event, synthesize our event key and match it
+            var ev = GetCurrentEvent();
+            if (ev != null && !IsFestivalEvent(ev))
+            {
+                var eventBase = BuildEventBaseKeyForCurrent(ev); // e.g. "Events/Backwoods:6963327"
+                if (!string.IsNullOrWhiteSpace(eventBase))
+                {
+                    // Count speak & splitSpeak up to current command to reproduce s{index}
+                    int? speakIndex = ComputeSpeakIndexForCurrent(ev, speaker?.Name);
+                    if (speakIndex.HasValue)
+                    {
+                        string prefix = $"{eventBase}:s{speakIndex.Value}";
+                        // Try any branch (split{n}) by TK prefix + DisplayPattern + Gender
+                        var pick = PickBestByTkPrefixPatternGender(entries, prefix, pattern, preferredGender);
+                        if (pick != null)
+                            return pick;
+                    }
+
+                    // Fallback: no index (some odd cases) – try any entry for this event base key
+                    var anyEventPick = PickBestByTkPrefixPatternGender(entries, eventBase, pattern, preferredGender);
+                    if (anyEventPick != null)
+                        return anyEventPick;
+                }
+            }
+
+            // 3) If this is a festival line with a TK, just try TK + pattern
+            if (!string.IsNullOrWhiteSpace(dialogueTranslationKey) &&
+                (dialogueTranslationKey.StartsWith("Data/Festivals/", StringComparison.OrdinalIgnoreCase) ||
+                 dialogueTranslationKey.StartsWith("Strings/", StringComparison.OrdinalIgnoreCase)))
+            {
+                var pick = PickBestByTkPatternGender(entries, dialogueTranslationKey, pattern, preferredGender);
+                if (pick != null)
+                    return pick;
+            }
+
+            // 4) Last resort: match by DisplayPattern only (gender-preferred), regardless of TK.
+            var loose = entries
+                .Where(e => string.Equals(e.DisplayPattern, pattern, StringComparison.Ordinal))
+                .OrderByDescending(e => RankGender(e.GenderVariant, preferredGender))
+                .ThenBy(e => e.TranslationKey ?? "~") // stabilize
+                .FirstOrDefault();
+            return loose;
+        }
+
+        private Event GetCurrentEvent()
+        {
+            // Try both; different SDV versions expose one or the other
+            var ev = Game1.CurrentEvent;
+            if (ev == null)
+                ev = Game1.currentLocation?.currentEvent;
+            return ev;
+        }
+
+        private bool IsFestivalEvent(Event ev)
+        {
+            try { return ev?.isFestival == true || (ev?.id?.StartsWith("festival_", StringComparison.OrdinalIgnoreCase) ?? false); }
+            catch { return false; }
+        }
+
+        /// <summary>
+        /// Build "Events/{Map}:{NumericId}" from the active event.
+        /// </summary>
+        private string BuildEventBaseKeyForCurrent(Event ev)
+        {
+            try
+            {
+                string map = Game1.currentLocation?.Name ?? "Unknown";
+                // ev.id for regular events is like "6963327/f Abigail 3500/O Abigail/t 610 1700"
+                // extract the leading number
+                string id = ev?.id;
+                if (string.IsNullOrWhiteSpace(id))
+                    return null;
+
+                var m = System.Text.RegularExpressions.Regex.Match(id, @"^(?<num>\d+)");
+                if (!m.Success)
+                    return null;
+
+                string num = m.Groups["num"].Value;
+                return $"Events/{map}:{num}";
+            }
+            catch { return null; }
+        }
+
+        /// <summary>
+        /// Count how many speak-ish commands for this speaker occur up to and including the current command.
+        /// This reproduces the s{index} we assigned at template time without Harmony.
+        /// </summary>
+        private int? ComputeSpeakIndexForCurrent(Event ev, string speakerName)
+        {
+            if (ev?.eventCommands == null || ev.eventCommands.Length == 0 || string.IsNullOrWhiteSpace(speakerName))
+                return null;
+
+            int current = ev.CurrentCommand; // public property
+            if (current < 0) current = 0;
+            if (current >= ev.eventCommands.Length) current = ev.eventCommands.Length - 1;
+
+            int count = 0;
+            for (int i = 0; i <= current; i++)
+            {
+                string line = ev.eventCommands[i];
+                if (string.IsNullOrWhiteSpace(line))
+                    continue;
+
+                // commands look like: "speak Abigail \"...\"" or "splitSpeak Abigail \"a~b\""
+                bool isSpeak = line.StartsWith("speak ", StringComparison.OrdinalIgnoreCase);
+                bool isSplit = line.StartsWith("splitSpeak ", StringComparison.OrdinalIgnoreCase);
+
+                if (!isSpeak && !isSplit)
+                    continue;
+
+                // extract actor token (2nd token)
+                string actor = null;
+                var parts = line.Split(new[] { ' ' }, 3, StringSplitOptions.RemoveEmptyEntries);
+                if (parts.Length >= 2)
+                {
+                    actor = parts[1].Trim().Trim('"').TrimEnd('?'); // optional-NPC markers can appear with '?' suffix
+                }
+
+                if (actor != null && actor.Equals(speakerName, StringComparison.OrdinalIgnoreCase))
+                {
+                    // this occurrence contributes to the index
+                    // by the time the dialogue shows, ev.CurrentCommand is still on this command,
+                    // so including i==current gives the correct 0-based index.
+                    count++;
+                }
+            }
+
+            return count > 0 ? count - 1 : (int?)0; // if the first match is the current one, its index is 0
+        }
+
+        /// <summary>
+        /// Pick entry where TranslationKey == key and DisplayPattern matches; prefer matching gender.
+        /// </summary>
+        private VoiceEntryTemplate PickBestByTkPatternGender(List<VoiceEntryTemplate> entries, string key, string pattern, string preferredGender)
+        {
+            return entries
+                .Where(e =>
+                    string.Equals(e.TranslationKey, key, StringComparison.OrdinalIgnoreCase) &&
+                    string.Equals(e.DisplayPattern, pattern, StringComparison.Ordinal))
+                .OrderByDescending(e => RankGender(e.GenderVariant, preferredGender))
+                .FirstOrDefault();
+        }
+
+        /// <summary>
+        /// Pick entry where TranslationKey starts with prefix (for Events ...:sN[:splitK]) and DisplayPattern matches; prefer matching gender.
+        /// </summary>
+        private VoiceEntryTemplate PickBestByTkPrefixPatternGender(List<VoiceEntryTemplate> entries, string prefix, string pattern, string preferredGender)
+        {
+            return entries
+                .Where(e =>
+                    !string.IsNullOrWhiteSpace(e.TranslationKey) &&
+                    e.TranslationKey.StartsWith(prefix, StringComparison.OrdinalIgnoreCase) &&
+                    string.Equals(e.DisplayPattern, pattern, StringComparison.Ordinal))
+                .OrderByDescending(e => RankGender(e.GenderVariant, preferredGender))
+                .FirstOrDefault();
+        }
+
+        /// <summary>
+        /// Gender scoring: exact match = 2, null/neutral = 1, mismatch = 0
+        /// </summary>
+        private int RankGender(string candidate, string preferred)
+        {
+            if (string.IsNullOrWhiteSpace(candidate)) return 1;
+            if (preferred != null && candidate.Equals(preferred, StringComparison.OrdinalIgnoreCase)) return 2;
+            return 0;
+        }
+
+
+
+
     }
 }
