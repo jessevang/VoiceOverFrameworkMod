@@ -416,14 +416,13 @@ namespace VoiceOverFrameworkMod
                 }
 
                 // --- 4. Load Other Data Files (Festivals, Gifts, etc.) ---
-
                 // Festivals (Dictionary<string,(RawText,SourceInfo,TranslationKey)>)
                 try
                 {
                     var fest = this.GetFestivalDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
                     if (fest != null)
                     {
-                        foreach (var kvp in fest) // kvp.Value = (RawText, SourceInfo, TranslationKey)
+                        foreach (var kvp in fest)
                         {
                             string key = kvp.Value.SourceInfo ?? $"Festival/{kvp.Key}/{characterName}";
                             string baseKey = key;
@@ -457,7 +456,7 @@ namespace VoiceOverFrameworkMod
                             initialSources[key] = item.RawText;
                             sourceTracking[key] = item.SourceInfo ?? "NPCGiftTastes";
                             if (!string.IsNullOrWhiteSpace(item.TranslationKey))
-                                translationKeyTracking[key] = item.TranslationKey; // "Data/NPCGiftTastes:{Name}:sN"
+                                translationKeyTracking[key] = item.TranslationKey;
                         }
                     }
                 }
@@ -479,7 +478,7 @@ namespace VoiceOverFrameworkMod
                             initialSources[key] = item.RawText;
                             sourceTracking[key] = item.SourceInfo ?? "EngagementDialogue";
                             if (!string.IsNullOrWhiteSpace(item.TranslationKey))
-                                translationKeyTracking[key] = item.TranslationKey; // "Data/EngagementDialogue:{jsonKey}"
+                                translationKeyTracking[key] = item.TranslationKey;
                         }
                     }
                 }
@@ -501,7 +500,7 @@ namespace VoiceOverFrameworkMod
                             initialSources[key] = item.RawText;
                             sourceTracking[key] = item.SourceInfo ?? "ExtraDialogue";
                             if (!string.IsNullOrWhiteSpace(item.TranslationKey))
-                                translationKeyTracking[key] = item.TranslationKey; // "Data/ExtraDialogue:{jsonKey}"
+                                translationKeyTracking[key] = item.TranslationKey;
                         }
                     }
                 }
@@ -513,16 +512,16 @@ namespace VoiceOverFrameworkMod
                     var marriage = this.GetMarriageDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
                     if (marriage != null)
                     {
-                        foreach (var item in marriage) // item = (RawText, SourceInfo, TranslationKey)
+                        foreach (var item in marriage)
                         {
-                            // Use SourceInfo as the processing key base; ensure uniqueness if collisions happen
+                            
                             string key = item.SourceInfo ?? $"Marriage/{characterName}:{Guid.NewGuid()}";
                             string baseKey = key;
                             int collision = 1;
                             while (initialSources.ContainsKey(key))
                                 key = $"{baseKey}_{collision++}";
 
-                            initialSources[key] = item.RawText;                 // RAW (unsanitized)
+                            initialSources[key] = item.RawText;
                             sourceTracking[key] = item.SourceInfo ?? "Marriage";
                             if (!string.IsNullOrWhiteSpace(item.TranslationKey))
                                 translationKeyTracking[key] = item.TranslationKey; // e.g., Characters/Dialogue/MarriageDialogueAbigail:Rainy_Day_0
@@ -533,6 +532,62 @@ namespace VoiceOverFrameworkMod
                 {
                     this.Monitor.Log($"Error loading Marriage dialogue for {characterName}: {ex.Message}", LogLevel.Trace);
                 }
+
+
+                // --- Movie Reactions (Strings/MovieReactions) ---
+                // Returns Dictionary<string,(RawText,SourceInfo,TranslationKey)>
+                try
+                {
+                    var movieReactions = this.GetMovieReactionsForCharacter(characterName, languageCode, this.Helper.GameContent);
+                    if (movieReactions != null)
+                    {
+                        foreach (var kvp in movieReactions)
+                        {
+                            
+                            string key = kvp.Value.SourceInfo ?? $"MovieReactions/{characterName}:{Guid.NewGuid()}";
+                            string baseKey = key;
+                            int collision = 1;
+                            while (initialSources.ContainsKey(key))
+                                key = $"{baseKey}_{collision++}";
+
+                            initialSources[key] = kvp.Value.RawText;
+                            sourceTracking[key] = kvp.Value.SourceInfo ?? "MovieReactions";
+                            if (!string.IsNullOrWhiteSpace(kvp.Value.TranslationKey))
+                                translationKeyTracking[key] = kvp.Value.TranslationKey;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    this.Monitor.Log($"Error loading MovieReactions for {characterName}: {ex.Message}", LogLevel.Trace);
+                }
+
+                // --- Mail (Data/Mail) ---
+                try
+                {
+                    var mails = this.GetMailDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
+                    if (mails != null)
+                    {
+                        foreach (var item in mails)
+                        {
+                            string key = item.SourceInfo ?? $"Mail/{characterName}:{Guid.NewGuid()}";
+                            string baseKey = key;
+                            int collision = 1;
+                            while (initialSources.ContainsKey(key))
+                                key = $"{baseKey}_{collision++}";
+
+                            initialSources[key] = item.RawText;
+                            sourceTracking[key] = item.SourceInfo ?? "Mail";
+                            if (!string.IsNullOrWhiteSpace(item.TranslationKey))
+                                translationKeyTracking[key] = item.TranslationKey;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    this.Monitor.Log($"Error loading Mail data for {characterName}: {ex.Message}", LogLevel.Trace);
+                }
+
 
 
                 // --- 5. Prepare Manifest Object ---

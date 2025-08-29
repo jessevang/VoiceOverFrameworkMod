@@ -246,6 +246,316 @@ namespace VoiceOverFrameworkMod
             return results;
         }
 
+
+        /// <summary>
+        /// Load "Strings/MovieReactions" for a specific character (language-aware) V2.
+        /// Emits a stable TranslationKey per JSON key:
+        ///   Strings/MovieReactions:{JsonKey}
+        /// Returns: InnerId -> (RawText, SourceInfo, TranslationKey)
+        ///   - InnerId is just a unique handle inside this method (not used elsewhere)
+        ///   - SourceInfo becomes your DialogueFrom base, e.g. "MovieReactions/Penny_*_BeforeMovie"
+        /// Notes:
+        ///   - We include all lines for the NPC (including "*", per-movie, and stage directions like "DuringMovie_2").
+        ///   - Placeholders like {0} {2} are preserved as-is; your sanitizer will handle them later.
+        /// </summary>
+        private Dictionary<string, (string RawText, string SourceInfo, string TranslationKey)>
+            GetMovieReactionsForCharacter(string characterName, string languageCode, IGameContentHelper gameContent)
+        {
+            var results = new Dictionary<string, (string, string, string)>(StringComparer.OrdinalIgnoreCase);
+
+            bool isEnglish = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase);
+            string langSuffix = isEnglish ? "" : $".{languageCode}";
+
+            // Try localized first, then English fallback
+            Dictionary<string, string> dict = null;
+            string assetLang = $"Strings/MovieReactions{langSuffix}";
+            string assetEn = "Strings/MovieReactions";
+
+            try
+            {
+                dict = gameContent.Load<Dictionary<string, string>>(assetLang);
+            }
+            catch (ContentLoadException)
+            {
+                try { dict = gameContent.Load<Dictionary<string, string>>(assetEn); }
+                catch (ContentLoadException) { /* ignore */ }
+                catch (Exception ex2) { Monitor?.Log($"Error loading '{assetEn}': {ex2.Message}", LogLevel.Trace); }
+            }
+            catch (Exception ex)
+            {
+                Monitor?.Log($"Error loading '{assetLang}': {ex.Message}", LogLevel.Trace);
+                return results;
+            }
+
+            if (dict == null || dict.Count == 0)
+                return results;
+
+            string prefix = characterName + "_";
+            foreach (var kvp in dict)
+            {
+                string jsonKey = kvp.Key ?? "";
+                if (!jsonKey.StartsWith(prefix, StringComparison.OrdinalIgnoreCase))
+                    continue;
+
+                string raw = kvp.Value ?? "";
+                if (string.IsNullOrWhiteSpace(raw))
+                    continue;
+
+                // Stable identifiers
+                string innerId = $"MovieReactions:{jsonKey}";
+                string sourceInfo = $"MovieReactions/{jsonKey}";
+                string translationKey = $"Strings/MovieReactions:{jsonKey}";
+
+                results[innerId] = (raw, sourceInfo, translationKey);
+            }
+
+            if (Config?.developerModeOn == true)
+                Monitor?.Log($"[MovieReactions] {characterName}: found {results.Count} entries.", LogLevel.Trace);
+
+            return results;
+        }
+
+
+        /// <summary>
+        /// Load 'Data/Mail' lines authored by a specific character (language-aware) V2.
+        /// Uses the JSON key when possible (e.g., "Robin", "EmilyCooking", "quest10")
+        /// and/or parses the trailing signature in the body (e.g., "^-Lewis", "-M. Rasmodius, Wizard").
+        /// Emits a real TranslationKey: "Data/Mail:{JsonKey}" and a readable DialogueFrom: "Mail/{JsonKey}".
+        /// Returns List of (RawText, SourceInfo, TranslationKey).
+        /// </summary>
+        private List<(string RawText, string SourceInfo, string TranslationKey)>
+    GetMailDialogueForCharacter(string characterName, string languageCode, IGameContentHelper gameContent, bool keepSignature = true)
+        {
+            var results = new List<(string, string, string)>();
+            bool isEnglish = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase);
+            string langSuffix = isEnglish ? "" : $".{languageCode}";
+
+            Dictionary<string, string> dict = null;
+            try { dict = gameContent.Load<Dictionary<string, string>>($"Data/Mail{langSuffix}"); }
+            catch (ContentLoadException)
+            {
+                try { dict = gameContent.Load<Dictionary<string, string>>("Data/Mail"); }
+                catch (ContentLoadException) { /* ignore */ }
+                catch (Exception ex2) { Monitor?.Log($"Error loading 'Data/Mail' fallback: {ex2.Message}", LogLevel.Trace); }
+            }
+            catch (Exception ex) { Monitor?.Log($"Error loading 'Data/Mail{langSuffix}': {ex.Message}", LogLevel.Trace); }
+
+            if (dict == null || dict.Count == 0) return results;
+
+            foreach (var kvp in dict)
+            {
+                string jsonKey = kvp.Key ?? "";
+                string raw = kvp.Value ?? "";
+                if (string.IsNullOrWhiteSpace(raw)) continue;
+
+                // detect the author (uses signature first, then key prefix)
+                string author = TryDetectMailAuthor(jsonKey, raw);
+                if (!author.Equals(characterName, StringComparison.OrdinalIgnoreCase))
+                    continue;
+
+                // keep only the readable body (before % or [ meta)
+                string body = raw;
+                int metaCut = IndexOfAny(body, new[] { '%', '[' });
+                if (metaCut >= 0) body = body.Substring(0, metaCut);
+
+                body = body.Trim();
+
+                // >>> changed: optionally keep or strip the trailing "-Name" signature <<<
+                if (!keepSignature)
+                    body = StripTrailingSignature(body);
+
+                // convert caret line breaks
+                body = NormalizeMailBreaks(body);
+
+                if (string.IsNullOrWhiteSpace(body)) continue;
+
+                string sourceInfo = $"Mail/{jsonKey}";
+                string tk = $"Data/Mail:{jsonKey}";
+                results.Add((body, sourceInfo, tk));
+            }
+
+            return results;
+
+            // ------- helpers for getting dialogue for mail -------
+            static int IndexOfAny(string s, char[] any)
+            {
+                if (string.IsNullOrEmpty(s)) return -1;
+                int best = -1;
+                foreach (var c in any)
+                {
+                    int i = s.IndexOf(c);
+                    if (i >= 0 && (best < 0 || i < best)) best = i;
+                }
+                return best;
+            }
+
+            static string NormalizeMailBreaks(string body)
+            {
+                body = body.Replace("^^", "#$e#");
+                body = body.Replace("^", "#$b#");
+                return body.Trim();
+            }
+
+            static string StripTrailingSignature(string body)
+            {
+                var sigRegex = new System.Text.RegularExpressions.Regex(
+                    @"(\^|\s|^)-\s*[^\^%\[\r\n]+$",
+                    System.Text.RegularExpressions.RegexOptions.CultureInvariant);
+
+                string trimmed = body.TrimEnd();
+                var m = sigRegex.Match(trimmed);
+                if (m.Success && m.Index >= 0)
+                {
+                    trimmed = trimmed.Substring(0, m.Index).TrimEnd();
+                    while (trimmed.EndsWith("^", StringComparison.Ordinal)) // clean dangling carets
+                        trimmed = trimmed.Substring(0, trimmed.Length - 1).TrimEnd();
+                }
+                return trimmed;
+            }
+
+            // --- Replace TryDetectMailAuthor(...) with this ---
+            string TryDetectMailAuthor(string jsonKey, string raw)
+            {
+                // 1) try explicit trailing signature first
+                string body = raw;
+                int metaCut = IndexOfAny(body, new[] { '%', '[' });
+                if (metaCut >= 0) body = body.Substring(0, metaCut);
+
+                var sigRegex = new System.Text.RegularExpressions.Regex(
+                    @"-\s*([^\^%\[\r\n]+)$",
+                    System.Text.RegularExpressions.RegexOptions.CultureInvariant | System.Text.RegularExpressions.RegexOptions.Multiline);
+
+                string sigName = null;
+                var m = sigRegex.Match(body.TrimEnd());
+                if (m.Success) sigName = m.Groups[1].Value.Trim();
+
+                string normSig = NormalizeSignatureToNpcName(sigName);
+                if (!string.IsNullOrEmpty(normSig))
+                    return normSig;
+
+                // 2) fall back to the JSON key: split into words (handles camelCase, underscores, digits)
+                foreach (var token in SplitKeyWords(jsonKey))
+                {
+                    string mapped = NormalizeSignatureToNpcName(token);
+                    if (!string.IsNullOrEmpty(mapped))
+                        return mapped;
+                }
+
+                // 3) last resort: prefix letters (old behavior)
+                string fromKeyPrefix = null;
+                {
+                    var sb = new System.Text.StringBuilder();
+                    foreach (char ch in jsonKey) { if (char.IsLetter(ch)) sb.Append(ch); else break; }
+                    fromKeyPrefix = sb.ToString();
+                }
+
+                string normPrefix = NormalizeSignatureToNpcName(fromKeyPrefix);
+                return normPrefix ?? "";
+            }
+
+            // --- Replace NormalizeSignatureToNpcName(...) with this ---
+            static string NormalizeSignatureToNpcName(string rawName)
+            {
+                if (string.IsNullOrWhiteSpace(rawName)) return "";
+
+                // canonical alias map (add more here if you encounter them)
+                // keys are compared case-insensitively
+                var alias = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+                {
+                    // nicknames / variants
+                    ["abby"] = "Abigail",
+                    ["m. rasmodius"] = "Wizard",
+                    ["rasmodius"] = "Wizard",
+                    ["wizard"] = "Wizard",
+                    ["mr. qi"] = "Qi",
+                    ["qi"] = "Qi",
+                    ["granny evelyn"] = "Evelyn",
+                    ["granny"] = "Evelyn",
+                    ["mayor lewis"] = "Lewis",
+                    ["hat mouse"] = "Hat Mouse",
+
+                    // common “sign-off” phrases that shouldn’t be taken as names
+                    ["love"] = "",
+                    ["your friend"] = "",
+                    ["your"] = "",
+                    ["friend"] = "",
+                    ["the mayor"] = "Lewis"
+                };
+
+                // scrub punctuation/honorifics, normalize spaces
+                string s = rawName.Trim();
+                int comma = s.IndexOf(','); if (comma >= 0) s = s.Substring(0, comma).Trim();
+
+                // remove leading honorifics/titles
+                string[] drop = { "Mr.", "Mr", "Mrs.", "Mrs", "Ms.", "Ms", "Dr.", "Dr", "Doctor", "Mayor", "Sir", "Madam", "Professor", "Granny" };
+                foreach (var d in drop)
+                    if (s.StartsWith(d + " ", StringComparison.OrdinalIgnoreCase)) { s = s.Substring(d.Length).TrimStart(); break; }
+
+                if (alias.TryGetValue(s, out var mappedFull)) return mappedFull;
+
+                var tokens = s.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                if (tokens.Length == 0) return "";
+
+                if (alias.TryGetValue(tokens[0], out var mappedFirst) && !string.IsNullOrEmpty(mappedFirst)) return mappedFirst;
+                if (alias.TryGetValue(tokens[^1], out var mappedLast) && !string.IsNullOrEmpty(mappedLast)) return mappedLast;
+
+                // heuristic: if there are multiple capitalized tokens, prefer the last (e.g., "Mayor Lewis" → "Lewis")
+                if (tokens.Length >= 2 && char.IsUpper(tokens[^1][0]))
+                    return tokens[^1];
+
+                // single token: keep it only if it matches a known NPC-ish token (avoid returning things like "afterSamShow")
+                if (LooksLikeNpcName(tokens[0]))
+                    return tokens[0];
+
+                return "";
+            }
+
+            // --- Add these two small helpers somewhere in the same class ---
+
+            static IEnumerable<string> SplitKeyWords(string key)
+            {
+                if (string.IsNullOrWhiteSpace(key)) yield break;
+
+                // split on non-letters/underscores first
+                foreach (var chunk in System.Text.RegularExpressions.Regex.Split(key, @"[^A-Za-z]+"))
+                {
+                    if (string.IsNullOrEmpty(chunk)) continue;
+
+                    // further split camelCase into parts: abbySpiritBoard -> abby, Spirit, Board
+                    var parts = System.Text.RegularExpressions.Regex
+                        .Matches(chunk, @"([A-Z]?[a-z]+|[A-Z]+(?![a-z]))")
+                        .Cast<System.Text.RegularExpressions.Match>()
+                        .Select(m => m.Value);
+
+                    foreach (var p in parts)
+                        if (!string.IsNullOrEmpty(p))
+                            yield return p;
+                }
+            }
+
+            static bool LooksLikeNpcName(string token)
+            {
+                if (string.IsNullOrWhiteSpace(token)) return false;
+                // quick allow-list to guard false positives; extend as needed
+                string[] npc =
+                {
+                    "Abigail","Alex","Caroline","Clint","Demetrius","Dwarf","Elliott","Emily","Evelyn",
+                    "George","Gus","Haley","Harvey","Jas","Jodi","Kent","Krobus","Leah","Leo","Lewis",
+                    "Linus","Marnie","Maru","Pam","Penny","Pierre","Robin","Sam","Sandy","Sebastian",
+                    "Shane","Vincent","Willy","Wizard","Morris","Gunther","Marlon","Qi","Hat","Mouse"
+                };
+
+                // plus “Abby” special-case already handled
+                return npc.Any(n => n.Equals(token, StringComparison.OrdinalIgnoreCase));
+            }
+
+
+
+        }
+
+
+
+
         /// <summary>
         /// Load festival dialogue lines for a specific character (language-aware) V2.
         /// Emits real TranslationKeys for sheet keys like:
