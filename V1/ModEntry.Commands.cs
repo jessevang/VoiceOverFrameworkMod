@@ -589,6 +589,34 @@ namespace VoiceOverFrameworkMod
                 }
 
 
+                //Loads strings from Strings/1_6_Strings
+                try
+                {
+                    var oneSix = this.GetOneSixStringsDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
+                    if (oneSix != null)
+                    {
+                        foreach (var item in oneSix)
+                        {
+                            // Use SourceInfo (which already includes the unique key) as the processing key
+                            string key = item.SourceInfo ?? $"Strings/1_6_Strings/{characterName}:{Guid.NewGuid()}";
+                            string baseKey = key;
+                            int collision = 1;
+                            while (initialSources.ContainsKey(key))
+                                key = $"{baseKey}_{collision++}";
+
+                            initialSources[key] = item.RawText;
+                            sourceTracking[key] = "Strings/1_6_Strings";
+                            if (!string.IsNullOrWhiteSpace(item.TranslationKey))
+                                translationKeyTracking[key] = item.TranslationKey;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    this.Monitor?.Log($"Error loading Strings/1_6_Strings for {characterName}: {ex.Message}", LogLevel.Trace);
+                }
+
+
 
                 // --- 5. Prepare Manifest Object ---
                 var characterManifest = new VoicePackManifestTemplate
