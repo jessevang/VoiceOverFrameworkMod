@@ -405,133 +405,131 @@ namespace VoiceOverFrameworkMod
         }
 
 
-       /*
-        //Get Festival Data V1
-        private Dictionary<string, (string RawText, string SourceInfo)> GetFestivalDialogueForCharacter(string characterName,string languageCode,IGameContentHelper contentHelper)
-        {
-            var result = new Dictionary<string, (string RawText, string SourceInfo)>(StringComparer.OrdinalIgnoreCase);
-            string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
+        /*
+         //Get Festival Data V1
+         private Dictionary<string, (string RawText, string SourceInfo)> GetFestivalDialogueForCharacter(string characterName,string languageCode,IGameContentHelper contentHelper)
+         {
+             var result = new Dictionary<string, (string RawText, string SourceInfo)>(StringComparer.OrdinalIgnoreCase);
+             string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
 
-            
-            var activeFestivalKeys = DataLoader.Festivals_FestivalDates(Game1.content).Keys;
-            var passiveFestivalKeys = DataLoader.PassiveFestivals(Game1.content).Keys;
 
-            
-            var allFestivalKeys = activeFestivalKeys.Concat(passiveFestivalKeys).Distinct();
+             var activeFestivalKeys = DataLoader.Festivals_FestivalDates(Game1.content).Keys;
+             var passiveFestivalKeys = DataLoader.PassiveFestivals(Game1.content).Keys;
 
-            foreach (string festivalKey in allFestivalKeys)
-            {
-                string assetKeyString = $"Data/Festivals/{festivalKey}{langSuffix}";
-                string sourceInfo = $"Festival/{festivalKey}";
 
-                try
-                {
-                    var festivalData = contentHelper.Load<Dictionary<string, string>>(assetKeyString);
-                    if (festivalData == null)
-                        continue;
+             var allFestivalKeys = activeFestivalKeys.Concat(passiveFestivalKeys).Distinct();
 
-                    foreach (var kvp in festivalData)
-                    {
-                        string key = kvp.Key;
-                        string value = kvp.Value;
+             foreach (string festivalKey in allFestivalKeys)
+             {
+                 string assetKeyString = $"Data/Festivals/{festivalKey}{langSuffix}";
+                 string sourceInfo = $"Festival/{festivalKey}";
 
-                        
-                        if (key.StartsWith(characterName, StringComparison.OrdinalIgnoreCase) ||
-                            key.IndexOf(characterName, StringComparison.OrdinalIgnoreCase) >= 0)
-                        {
-                            if (!string.IsNullOrWhiteSpace(value) && !value.Contains("speak "))
-                            {
-                                string sanitized = SanitizeDialogueText(value);
-                                string uniqueKey = $"{sourceInfo}:{key}";
-                                if (!result.ContainsKey(uniqueKey))
-                                    result[uniqueKey] = (sanitized, sourceInfo);
-                            }
-                        }
+                 try
+                 {
+                     var festivalData = contentHelper.Load<Dictionary<string, string>>(assetKeyString);
+                     if (festivalData == null)
+                         continue;
 
-                        foreach (Match match in Regex.Matches(value, $@"speak\s+{Regex.Escape(characterName)}\s+""([^""]+)"""))
-                        {
-                            string embeddedText = match.Groups[1].Value;
-                            string sanitized = SanitizeDialogueText(embeddedText);
-                            if (!string.IsNullOrWhiteSpace(sanitized))
-                            {
-                                string uniqueKey = $"{sourceInfo}:{key}:speak:{match.Index}";
-                                if (!result.ContainsKey(uniqueKey))
-                                    result[uniqueKey] = (sanitized, sourceInfo);
-                            }
-                        }
+                     foreach (var kvp in festivalData)
+                     {
+                         string key = kvp.Key;
+                         string value = kvp.Value;
 
-                        if (key.Equals(characterName, StringComparison.OrdinalIgnoreCase))
-                        {
-                            string sanitized = SanitizeDialogueText(value);
-                            string uniqueKey = $"{sourceInfo}:{key}";
-                            if (!result.ContainsKey(uniqueKey))
-                                result[uniqueKey] = (sanitized, sourceInfo);
-                        }
-                    }
-                }
-                catch (ContentLoadException)
-                {
-                    // Skip missing assets
-                }
-                catch (Exception ex)
-                {
-                    this.Monitor.Log($"Error reading festival data from '{assetKeyString}': {ex.Message}", LogLevel.Warn);
-                    this.Monitor.Log(ex.ToString(), LogLevel.Trace);
-                }
-            }
 
-            return result;
-        }
+                         if (key.StartsWith(characterName, StringComparison.OrdinalIgnoreCase) ||
+                             key.IndexOf(characterName, StringComparison.OrdinalIgnoreCase) >= 0)
+                         {
+                             if (!string.IsNullOrWhiteSpace(value) && !value.Contains("speak "))
+                             {
+                                 string sanitized = SanitizeDialogueText(value);
+                                 string uniqueKey = $"{sourceInfo}:{key}";
+                                 if (!result.ContainsKey(uniqueKey))
+                                     result[uniqueKey] = (sanitized, sourceInfo);
+                             }
+                         }
 
-        */
+                         foreach (Match match in Regex.Matches(value, $@"speak\s+{Regex.Escape(characterName)}\s+""([^""]+)"""))
+                         {
+                             string embeddedText = match.Groups[1].Value;
+                             string sanitized = SanitizeDialogueText(embeddedText);
+                             if (!string.IsNullOrWhiteSpace(sanitized))
+                             {
+                                 string uniqueKey = $"{sourceInfo}:{key}:speak:{match.Index}";
+                                 if (!result.ContainsKey(uniqueKey))
+                                     result[uniqueKey] = (sanitized, sourceInfo);
+                             }
+                         }
+
+                         if (key.Equals(characterName, StringComparison.OrdinalIgnoreCase))
+                         {
+                             string sanitized = SanitizeDialogueText(value);
+                             string uniqueKey = $"{sourceInfo}:{key}";
+                             if (!result.ContainsKey(uniqueKey))
+                                 result[uniqueKey] = (sanitized, sourceInfo);
+                         }
+                     }
+                 }
+                 catch (ContentLoadException)
+                 {
+                     // Skip missing assets
+                 }
+                 catch (Exception ex)
+                 {
+                     this.Monitor.Log($"Error reading festival data from '{assetKeyString}': {ex.Message}", LogLevel.Warn);
+                     this.Monitor.Log(ex.ToString(), LogLevel.Trace);
+                 }
+             }
+
+             return result;
+         }
+
+         */
 
 
         // Gets dialogue from Data/NPCGiftTastes.json for a character.
-        private List<(string RawText, string SourceInfo)> GetGiftTasteDialogueForCharacter(string characterName, string languageCode, IGameContentHelper contentHelper)
+        // V2: attaches synthetic segment keys:
+        //   TranslationKey = "Data/NPCGiftTastes:{Character}:s{n}"
+        //   SourceInfo     = "NPCGiftTastes/{Character}:s{n}"
+        // We pull every EVEN segment (text) from the slash-separated value payload.
+        private List<(string RawText, string SourceInfo, string TranslationKey)>
+            GetGiftTasteDialogueForCharacter(string characterName, string languageCode, IGameContentHelper contentHelper)
         {
-            var dialogueList = new List<(string RawText, string SourceInfo)>();
+            var dialogueList = new List<(string RawText, string SourceInfo, string TranslationKey)>();
             string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
             string assetKeyString = $"Data/NPCGiftTastes{langSuffix}";
-            const string sourceInfo = "NPCGiftTastes"; 
+            const string sourceRoot = "NPCGiftTastes";
 
             try
             {
                 IAssetName assetName = contentHelper.ParseAssetName(assetKeyString);
                 var giftTasteData = contentHelper.Load<Dictionary<string, string>>(assetName);
 
-                if (giftTasteData != null && giftTasteData.TryGetValue(characterName, out string combinedReactions))
+                if (giftTasteData != null && giftTasteData.TryGetValue(characterName, out string combined))
                 {
-                    if (!string.IsNullOrWhiteSpace(combinedReactions))
+                    if (!string.IsNullOrWhiteSpace(combined))
                     {
-                        // Split the string by the '/' delimiter
-                        string[] segments = combinedReactions.Split('/');
-                        int dialogueCount = 0;
+                        string[] segments = combined.Split('/');
+                        int outIndex = 0; // count only text segments (even indices)
 
-                       
                         for (int i = 0; i < segments.Length; i++)
                         {
-                           
-                            if (i % 2 == 0)
-                            {
-                                string potentialDialogue = segments[i].Trim();
-                              
-                                if (!string.IsNullOrWhiteSpace(potentialDialogue))
-                                {
-                                    dialogueList.Add((potentialDialogue, sourceInfo));
-                                    dialogueCount++;
-                                }
-                            }
-                          
+                            if (i % 2 != 0) continue; // only even => text
+                            string text = (segments[i] ?? "").Trim();
+                            if (string.IsNullOrWhiteSpace(text)) continue;
+
+                            string segId = $"s{outIndex}";
+                            string sourceInfo = $"{sourceRoot}/{characterName}:{segId}";
+                            string tk = $"Data/NPCGiftTastes:{characterName}:{segId}";
+                            dialogueList.Add((text, sourceInfo, tk));
+                            outIndex++;
                         }
 
                         if (this.Config.developerModeOn)
-                        {
-                            this.Monitor.Log($"    -> Extracted {dialogueCount} gift taste dialogue segments for '{characterName}' from {assetKeyString}.", LogLevel.Trace);
-                        }
+                            this.Monitor.Log($"    -> Extracted {outIndex} gift taste dialogue segments for '{characterName}' from {assetKeyString}.", LogLevel.Trace);
                     }
                 }
             }
-            catch (ContentLoadException) { /*this.Monitor.Log($"Asset '{assetKeyString}' not found.", LogLevel.Trace);*/ }
+            catch (ContentLoadException) { /* skip missing */ }
             catch (Exception ex)
             {
                 this.Monitor.Log($"Error loading/processing '{assetKeyString}': {ex.Message}", LogLevel.Warn);
@@ -540,14 +538,18 @@ namespace VoiceOverFrameworkMod
             return dialogueList;
         }
 
-        
+
+
         // Gets dialogue from Data/EngagementDialogue.json for a character.
-        private List<(string RawText, string SourceInfo)> GetEngagementDialogueForCharacter(string characterName, string languageCode, IGameContentHelper contentHelper)
+        // V2: returns (RawText, SourceInfo, TranslationKey) per matching key:
+        //   TK = "Data/EngagementDialogue:{jsonKey}"
+        //   SourceInfo = "EngagementDialogue/{jsonKey}"
+        private List<(string RawText, string SourceInfo, string TranslationKey)>
+            GetEngagementDialogueForCharacter(string characterName, string languageCode, IGameContentHelper contentHelper)
         {
-            var dialogueList = new List<(string RawText, string SourceInfo)>();
+            var dialogueList = new List<(string RawText, string SourceInfo, string TranslationKey)>();
             string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
             string assetKeyString = $"Data/EngagementDialogue{langSuffix}";
-            const string sourceInfo = "EngagementDialogue"; // Constant source info
 
             try
             {
@@ -556,21 +558,23 @@ namespace VoiceOverFrameworkMod
 
                 if (engagementData != null)
                 {
-                 
                     foreach (var kvp in engagementData)
                     {
-                        if (kvp.Key.StartsWith(characterName, StringComparison.OrdinalIgnoreCase))
-                        {
-                            if (!string.IsNullOrWhiteSpace(kvp.Value))
-                            {
-                                dialogueList.Add((kvp.Value, sourceInfo));
-                              
-                            }
-                        }
+                        string jsonKey = kvp.Key ?? "";
+                        string val = kvp.Value ?? "";
+                        if (string.IsNullOrWhiteSpace(val))
+                            continue;
+
+                        if (!jsonKey.StartsWith(characterName, StringComparison.OrdinalIgnoreCase))
+                            continue;
+
+                        string sourceInfo = $"EngagementDialogue/{jsonKey}";
+                        string tk = $"Data/EngagementDialogue:{jsonKey}";
+                        dialogueList.Add((val, sourceInfo, tk));
                     }
                 }
             }
-            catch (ContentLoadException) { /*this.Monitor.Log($"Asset '{assetKeyString}' not found.", LogLevel.Trace);*/ }
+            catch (ContentLoadException) { /* skip missing */ }
             catch (Exception ex)
             {
                 this.Monitor.Log($"Error loading/processing '{assetKeyString}': {ex.Message}", LogLevel.Warn);
@@ -580,15 +584,18 @@ namespace VoiceOverFrameworkMod
         }
 
 
+
+
         // Gets dialogue from Data/ExtraDialogue.json for a character.
-        private List<(string RawText, string SourceInfo)> GetExtraDialogueForCharacter(string characterName, string languageCode, IGameContentHelper contentHelper)
+        // V2: now returns (RawText, SourceInfo, TranslationKey) where TK = "Data/ExtraDialogue:{jsonKey}".
+        private List<(string RawText, string SourceInfo, string TranslationKey)>
+            GetExtraDialogueForCharacter(string characterName, string languageCode, IGameContentHelper contentHelper)
         {
-            var dialogueList = new List<(string RawText, string SourceInfo)>();
+            var dialogueList = new List<(string RawText, string SourceInfo, string TranslationKey)>();
             string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
             string assetKeyString = $"Data/ExtraDialogue{langSuffix}";
-            const string sourceInfo = "ExtraDialogue";
 
-            // Pre-calculate patterns for matching
+            // Pre-calc patterns for matching
             string prefixPattern = $"{characterName}_";
             string infixPattern = $"_{characterName}_";
             string suffixPattern = $"_{characterName}";
@@ -602,32 +609,37 @@ namespace VoiceOverFrameworkMod
                 {
                     foreach (var kvp in extraData)
                     {
-                        string key = kvp.Key;
-                        // Check if the key relates to the character using multiple patterns (case-insensitive)
-                        bool isMatch = key.Equals(characterName, StringComparison.OrdinalIgnoreCase) ||
-                                       key.StartsWith(prefixPattern, StringComparison.OrdinalIgnoreCase) ||
-                                       key.EndsWith(suffixPattern, StringComparison.OrdinalIgnoreCase) ||
-                                       key.IndexOf(infixPattern, StringComparison.OrdinalIgnoreCase) >= 0; 
+                        string key = kvp.Key ?? "";
+                        string val = kvp.Value ?? "";
+                        if (string.IsNullOrWhiteSpace(val))
+                            continue;
 
-                        if (isMatch)
-                        {
-                            if (!string.IsNullOrWhiteSpace(kvp.Value))
-                            {
-                                dialogueList.Add((kvp.Value, sourceInfo));
-                               
-                            }
-                        }
+                        // Match by exact / prefix / suffix / infix (case-insensitive)
+                        bool isMatch =
+                            key.Equals(characterName, StringComparison.OrdinalIgnoreCase) ||
+                            key.StartsWith(prefixPattern, StringComparison.OrdinalIgnoreCase) ||
+                            key.EndsWith(suffixPattern, StringComparison.OrdinalIgnoreCase) ||
+                            key.IndexOf(infixPattern, StringComparison.OrdinalIgnoreCase) >= 0;
+
+                        if (!isMatch)
+                            continue;
+
+                        string sourceInfo = $"ExtraDialogue/{key}";
+                        string tk = $"Data/ExtraDialogue:{key}";
+                        dialogueList.Add((val, sourceInfo, tk));
                     }
                 }
             }
-            catch (ContentLoadException) { /* this.Monitor.Log($"Asset '{assetKeyString}' not found.", LogLevel.Trace); */ }
+            catch (ContentLoadException) { /* skip missing */ }
             catch (Exception ex)
             {
                 this.Monitor.Log($"Error loading/processing '{assetKeyString}': {ex.Message}", LogLevel.Warn);
                 this.Monitor.Log(ex.ToString(), LogLevel.Trace);
             }
+
             return dialogueList;
         }
+
 
 
 

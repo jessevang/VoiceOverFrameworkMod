@@ -343,7 +343,7 @@ namespace VoiceOverFrameworkMod
             var initialSources = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
             // Tracks the type of source for each key above (e.g., "Dialogue", "Event:Town/123" or "Festival/spring13/Abigail")
             var sourceTracking = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-            // NEW: For sources that already have a stable translation key (Festivals), track it by processingKey
+            // NEW: For sources that already have a stable translation key (Festivals / Extra / Gifts / Engagement), track it by processingKey
             var translationKeyTracking = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
             // Tracks uniqueness using a composite key (pattern + page + gender + (event split if any) + source)
             var addedCompositeKeys = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
@@ -416,7 +416,9 @@ namespace VoiceOverFrameworkMod
                 }
 
                 // --- 4. Load Other Data Files (Festivals, Gifts, etc.) ---
-                // Festivals now provide a stable TranslationKey per line. We preserve that here.
+                // Festivals now provide a stable TranslationKey per line. We preserve that here, and do the same for Extra/Gifts/Engagement.
+
+                // Festivals (Dictionary<string,(RawText,SourceInfo,TranslationKey)>)
                 try
                 {
                     var fest = this.GetFestivalDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
@@ -439,23 +441,72 @@ namespace VoiceOverFrameworkMod
                 }
                 catch (Exception ex) { this.Monitor.Log($"Error loading Festival data for {characterName}: {ex.Message}", LogLevel.Trace); }
 
-                var additionalDialogueSources = new List<(string RawText, string SourceInfo)>();
-                try { additionalDialogueSources.AddRange(this.GetGiftTasteDialogueForCharacter(characterName, languageCode, this.Helper.GameContent) ?? Enumerable.Empty<(string, string)>()); } catch (Exception ex) { this.Monitor.Log($"Error loading GiftTaste data for {characterName}: {ex.Message}", LogLevel.Trace); }
-                try { additionalDialogueSources.AddRange(this.GetEngagementDialogueForCharacter(characterName, languageCode, this.Helper.GameContent) ?? Enumerable.Empty<(string, string)>()); } catch (Exception ex) { this.Monitor.Log($"Error loading Engagement data for {characterName}: {ex.Message}", LogLevel.Trace); }
-                try { additionalDialogueSources.AddRange(this.GetExtraDialogueForCharacter(characterName, languageCode, this.Helper.GameContent) ?? Enumerable.Empty<(string, string)>()); } catch (Exception ex) { this.Monitor.Log($"Error loading Extra data for {characterName}: {ex.Message}", LogLevel.Trace); }
-
-                foreach (var item in additionalDialogueSources)
+                // Gifts / Engagement / Extra now return List<(RawText, SourceInfo, TranslationKey)>
+                try
                 {
-                    string key = item.SourceInfo ?? $"UnknownData_{Guid.NewGuid()}";
-                    string baseKey = key;
-                    int collision = 1;
-                    while (initialSources.ContainsKey(key))
-                        key = $"{baseKey}_{collision++}";
+                    var gifts = this.GetGiftTasteDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
+                    if (gifts != null)
+                    {
+                        foreach (var item in gifts)
+                        {
+                            string key = item.SourceInfo ?? $"NPCGiftTastes/{characterName}:{Guid.NewGuid()}";
+                            string baseKey = key;
+                            int collision = 1;
+                            while (initialSources.ContainsKey(key))
+                                key = $"{baseKey}_{collision++}";
 
-                    initialSources[key] = item.RawText;
-                    sourceTracking[key] = item.SourceInfo ?? "UnknownDataFile";
-                    // no translationKeyTracking for these sources (fallback to DisplayPattern)
+                            initialSources[key] = item.RawText;
+                            sourceTracking[key] = item.SourceInfo ?? "NPCGiftTastes";
+                            if (!string.IsNullOrWhiteSpace(item.TranslationKey))
+                                translationKeyTracking[key] = item.TranslationKey; // "Data/NPCGiftTastes:{Name}:sN"
+                        }
+                    }
                 }
+                catch (Exception ex) { this.Monitor.Log($"Error loading GiftTaste data for {characterName}: {ex.Message}", LogLevel.Trace); }
+
+                try
+                {
+                    var engage = this.GetEngagementDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
+                    if (engage != null)
+                    {
+                        foreach (var item in engage)
+                        {
+                            string key = item.SourceInfo ?? $"EngagementDialogue/{characterName}:{Guid.NewGuid()}";
+                            string baseKey = key;
+                            int collision = 1;
+                            while (initialSources.ContainsKey(key))
+                                key = $"{baseKey}_{collision++}";
+
+                            initialSources[key] = item.RawText;
+                            sourceTracking[key] = item.SourceInfo ?? "EngagementDialogue";
+                            if (!string.IsNullOrWhiteSpace(item.TranslationKey))
+                                translationKeyTracking[key] = item.TranslationKey; // "Data/EngagementDialogue:{jsonKey}"
+                        }
+                    }
+                }
+                catch (Exception ex) { this.Monitor.Log($"Error loading Engagement data for {characterName}: {ex.Message}", LogLevel.Trace); }
+
+                try
+                {
+                    var extra = this.GetExtraDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
+                    if (extra != null)
+                    {
+                        foreach (var item in extra)
+                        {
+                            string key = item.SourceInfo ?? $"ExtraDialogue/{characterName}:{Guid.NewGuid()}";
+                            string baseKey = key;
+                            int collision = 1;
+                            while (initialSources.ContainsKey(key))
+                                key = $"{baseKey}_{collision++}";
+
+                            initialSources[key] = item.RawText;
+                            sourceTracking[key] = item.SourceInfo ?? "ExtraDialogue";
+                            if (!string.IsNullOrWhiteSpace(item.TranslationKey))
+                                translationKeyTracking[key] = item.TranslationKey; // "Data/ExtraDialogue:{jsonKey}"
+                        }
+                    }
+                }
+                catch (Exception ex) { this.Monitor.Log($"Error loading Extra data for {characterName}: {ex.Message}", LogLevel.Trace); }
 
                 // --- 5. Prepare Manifest Object ---
                 var characterManifest = new VoicePackManifestTemplate
@@ -563,7 +614,7 @@ namespace VoiceOverFrameworkMod
                                     continue;
 
                                 // 6.4 Compose uniqueness key (avoid dupes across sources/pages/genders/branches)
-                                string uniqueKey = $"{processingKey}|branch{branchIndex?.ToString() ?? "x"}|p{pageIdx}|g{gender ?? ""}|{pattern}";
+                                string uniqueKey = $"{processingKey}|branch{(branchIndex?.ToString() ?? "x")}|p{pageIdx}|g{(gender ?? "")}|{pattern}";
                                 if (!addedCompositeKeys.Add(uniqueKey))
                                 {
                                     if (this.Config.developerModeOn)
@@ -587,12 +638,12 @@ namespace VoiceOverFrameworkMod
                                     if (branchIndex.HasValue)
                                         translationKey += $":split{branchIndex.Value}";
                                 }
-                                else if (processingKey.StartsWith("Festival/", StringComparison.OrdinalIgnoreCase))
+
+                                // NEW: if still null, use any provided TK we captured from Festivals / Gifts / Engagement / Extra
+                                if (translationKey == null && translationKeyTracking.TryGetValue(processingKey, out var tkProvided))
                                 {
-                                    // Use the real festival translation key we captured earlier
-                                    translationKey = translationKeyTracking.GetValueOrDefault(processingKey);
+                                    translationKey = tkProvided;
                                 }
-                                // (Other sources may remain null — they’ll still work via DisplayPattern fallback.)
 
                                 // 6.6 Build audio path; add gender suffix if present
                                 string genderSuffix = string.IsNullOrEmpty(gender) ? "" : $"_{gender}";
@@ -617,7 +668,7 @@ namespace VoiceOverFrameworkMod
 
                                 characterManifest.Entries.Add(newEntry);
                                 if (this.Config.developerModeOn)
-                                    Monitor.Log($"ADDED Entry - TK='{translationKey ?? "null"}' Pg={pageIdx} G={gender ?? "na"} Branch={(branchIndex?.ToString() ?? "na")} Text: '{pattern}' Path: '{relativeAudioPath}' From: '{processingKey}'", LogLevel.Debug);
+                                    Monitor.Log($"ADDED Entry - TK='{translationKey ?? "null"}' Pg={pageIdx} G={(gender ?? "na")} Branch={(branchIndex?.ToString() ?? "na")} Text: '{pattern}' Path: '{relativeAudioPath}' From: '{processingKey}'", LogLevel.Debug);
 
                                 entryNumber++; // increment per entry created
                             }
@@ -689,8 +740,6 @@ namespace VoiceOverFrameworkMod
                 return false;
             }
         }
-
-
 
 
 
