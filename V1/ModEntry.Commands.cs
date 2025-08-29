@@ -343,7 +343,7 @@ namespace VoiceOverFrameworkMod
             var initialSources = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
             // Tracks the type of source for each key above (e.g., "Dialogue", "Event:Town/123" or "Festival/spring13/Abigail")
             var sourceTracking = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-            // NEW: For sources that already have a stable translation key (Festivals / Extra / Gifts / Engagement), track it by processingKey
+            // For sources that already have a stable translation key (Festivals / Extra / Gifts / Engagement), track it by processingKey
             var translationKeyTracking = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
             // Tracks uniqueness using a composite key (pattern + page + gender + (event split if any) + source)
             var addedCompositeKeys = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
@@ -362,8 +362,8 @@ namespace VoiceOverFrameworkMod
                         {
                             if (!string.IsNullOrWhiteSpace(kvp.Key) && !string.IsNullOrWhiteSpace(kvp.Value) && !initialSources.ContainsKey(kvp.Key))
                             {
-                                initialSources[kvp.Key] = kvp.Value;                 // RAW text
-                                sourceTracking[kvp.Key] = "Dialogue";                // mark source type
+                                initialSources[kvp.Key] = kvp.Value;// RAW text
+                                sourceTracking[kvp.Key] = "Dialogue";// mark source type
                             }
                         }
                         if (this.Config.developerModeOn)
@@ -416,7 +416,6 @@ namespace VoiceOverFrameworkMod
                 }
 
                 // --- 4. Load Other Data Files (Festivals, Gifts, etc.) ---
-                // Festivals now provide a stable TranslationKey per line. We preserve that here, and do the same for Extra/Gifts/Engagement.
 
                 // Festivals (Dictionary<string,(RawText,SourceInfo,TranslationKey)>)
                 try
@@ -507,6 +506,34 @@ namespace VoiceOverFrameworkMod
                     }
                 }
                 catch (Exception ex) { this.Monitor.Log($"Error loading Extra data for {characterName}: {ex.Message}", LogLevel.Trace); }
+                
+                // --- Marriage Dialogue (generic + per-spouse) ---
+                try
+                {
+                    var marriage = this.GetMarriageDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
+                    if (marriage != null)
+                    {
+                        foreach (var item in marriage) // item = (RawText, SourceInfo, TranslationKey)
+                        {
+                            // Use SourceInfo as the processing key base; ensure uniqueness if collisions happen
+                            string key = item.SourceInfo ?? $"Marriage/{characterName}:{Guid.NewGuid()}";
+                            string baseKey = key;
+                            int collision = 1;
+                            while (initialSources.ContainsKey(key))
+                                key = $"{baseKey}_{collision++}";
+
+                            initialSources[key] = item.RawText;                 // RAW (unsanitized)
+                            sourceTracking[key] = item.SourceInfo ?? "Marriage";
+                            if (!string.IsNullOrWhiteSpace(item.TranslationKey))
+                                translationKeyTracking[key] = item.TranslationKey; // e.g., Characters/Dialogue/MarriageDialogueAbigail:Rainy_Day_0
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    this.Monitor.Log($"Error loading Marriage dialogue for {characterName}: {ex.Message}", LogLevel.Trace);
+                }
+
 
                 // --- 5. Prepare Manifest Object ---
                 var characterManifest = new VoicePackManifestTemplate
