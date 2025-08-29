@@ -104,18 +104,18 @@ namespace VoiceOverFrameworkMod
         {
             // Using a HashSet for efficient lookups (case-insensitive)
             var knownVanilla = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
-    {
-        // Marriage Candidates
-        "Abigail", "Alex", "Elliott", "Emily", "Haley", "Harvey", "Leah", "Maru", "Penny", "Sam", "Sebastian", "Shane",
+            {
+                // Marriage Candidates
+                "Abigail", "Alex", "Elliott", "Emily", "Haley", "Harvey", "Leah", "Maru", "Penny", "Sam", "Sebastian", "Shane",
 
-        // Villagers
-        "Caroline", "Clint", "Demetrius", "Evelyn", "George", "Gus", "Jas", "Jodi", "Kent", "Lewis", "Linus", "Marnie",
-        "Pam", "Pierre", "Robin", "Vincent", "Willy",
+                // Villagers
+                "Caroline", "Clint", "Demetrius", "Evelyn", "George", "Gus", "Jas", "Jodi", "Kent", "Lewis", "Linus", "Marnie",
+                "Pam", "Pierre", "Robin", "Vincent", "Willy",
 
-        // Key NPCs / Special Characters
-        "Wizard", "Krobus", "Dwarf", "Sandy", "Leo", "LeoMainland", "Gunther", "Marlon", "Gil", "Morris",
-        "Governor", "Grandpa", "Mister Qi", "Birdie", "Bouncer", "Henchman", "Professor Snail"
-    };
+                // Key NPCs / Special Characters
+                "Wizard", "Krobus", "Dwarf", "Sandy", "Leo", "LeoMainland", "Gunther", "Marlon", "Gil", "Morris",
+                "Governor", "Grandpa", "Mister Qi", "Birdie", "Bouncer", "Henchman", "Professor Snail"
+            };
 
             bool isKnown = knownVanilla.Contains(name);
             if (Config.developerModeOn)

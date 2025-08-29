@@ -368,12 +368,11 @@ namespace VoiceOverFrameworkMod
         {
             var harmony = new Harmony(this.ModManifest.UniqueID);
 
-
-
             try
             {
                 harmony.PatchAll(Assembly.GetExecutingAssembly());
-               
+
+
             }
             catch (Exception ex)
             {
@@ -381,8 +380,6 @@ namespace VoiceOverFrameworkMod
                 this.Monitor.Log(ex.ToString(), LogLevel.Trace);
             }
 
-            
-          
        
             try
             {
@@ -402,8 +399,9 @@ namespace VoiceOverFrameworkMod
                 this.Monitor.Log(ex.ToString(), LogLevel.Trace);
             }
 
+    
 
-          
+
         }
 
 
@@ -701,13 +699,7 @@ namespace VoiceOverFrameworkMod
                    interval: 1
             );
 
-            gmcm.AddBoolOption(
-                mod: this.ModManifest,
-                name: () => this.Helper.Translation.Get("config.auto-fix-dialoguefrom.name"),
-                tooltip: () => this.Helper.Translation.Get("config.auto-fix-dialoguefrom.tooltip"),
-                getValue: () => this.Config.AutoFixDialogueFromOnLoad,
-                setValue: value => this.Config.AutoFixDialogueFromOnLoad = value
-            );
+
 
 
             // Collect distinct content pack IDs

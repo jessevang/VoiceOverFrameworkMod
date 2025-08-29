@@ -144,28 +144,39 @@ namespace VoiceOverFrameworkMod
 
                                 foreach (var entry in manifestData.Entries)
                                 {
-                                    if (entry != null && !string.IsNullOrWhiteSpace(entry.AudioPath))
+                                    if (entry == null || string.IsNullOrWhiteSpace(entry.AudioPath))
+                                        continue;
+
+                                    string audioPath = PathUtilities.NormalizePath(entry.AudioPath);
+
+                                    // --- Lookup key for runtime matching ---
+                                    // V2 packs: prefer DisplayPattern (placeholder-aware); fall back to DialogueText if missing.
+                                    // V1 packs: use DialogueText (legacy behavior).
+                                    string keyForLookup;
+                                    if (formatMajor >= 2)
+                                        keyForLookup = !string.IsNullOrWhiteSpace(entry.DisplayPattern) ? entry.DisplayPattern : entry.DialogueText;
+                                    else
+                                        keyForLookup = entry.DialogueText;
+
+                                    if (!string.IsNullOrWhiteSpace(keyForLookup) && !entriesDict.ContainsKey(keyForLookup))
+                                        entriesDict[keyForLookup] = audioPath;
+
+                                    // --- Keep existing "EntriesByFrom" behavior for multilingual path / debugging ---
+                                    if (!string.IsNullOrWhiteSpace(entry.DialogueFrom))
                                     {
-                                        string audioPath = PathUtilities.NormalizePath(entry.AudioPath);
+                                        string baseKey = entry.DialogueFrom;
 
-                                        if (!string.IsNullOrWhiteSpace(entry.DialogueText) && !entriesDict.ContainsKey(entry.DialogueText))
-                                            entriesDict[entry.DialogueText] = audioPath;
+                                        if (!dialogueFromCounters.ContainsKey(baseKey))
+                                            dialogueFromCounters[baseKey] = 0;
 
-                                        if (!string.IsNullOrWhiteSpace(entry.DialogueFrom))
-                                        {
-                                            string baseKey = entry.DialogueFrom;
+                                        int index = dialogueFromCounters[baseKey];
+                                        dialogueFromCounters[baseKey]++;
 
-                                            if (!dialogueFromCounters.ContainsKey(baseKey))
-                                                dialogueFromCounters[baseKey] = 0;
-
-                                            int index = dialogueFromCounters[baseKey];
-                                            dialogueFromCounters[baseKey]++;
-
-                                            string finalKey = index == 0 ? baseKey : $"{baseKey}_{index}";
-                                            entriesByFrom[finalKey] = audioPath;
-                                        }
+                                        string finalKey = index == 0 ? baseKey : $"{baseKey}_{index}";
+                                        entriesByFrom[finalKey] = audioPath;
                                     }
                                 }
+
 
                                 if (!entriesDict.Any())
                                 {
@@ -198,7 +209,7 @@ namespace VoiceOverFrameworkMod
                                         $"[Load] '{voicePack.VoicePackName}' ({voicePack.VoicePackId}) " +
                                         $"char={voicePack.Character} lang={voicePack.Language} " +
                                         $"format='{fmt}' major={voicePack.FormatMajor} entries={voicePack.Entries.Count}",
-                                        LogLevel.Trace
+                                        LogLevel.Debug
                                     );
                                 }
 

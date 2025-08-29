@@ -1,8 +1,9 @@
-﻿using StardewModdingAPI;
+﻿using Microsoft.Xna.Framework.Audio;
+using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewValley;
 using StardewValley.Menus;
-using Microsoft.Xna.Framework.Audio;
+using System.Reflection;
 using System.Text.RegularExpressions;
 
 namespace VoiceOverFrameworkMod
@@ -208,7 +209,7 @@ namespace VoiceOverFrameworkMod
         }
 
 
-
+       
 
 
 
@@ -243,11 +244,34 @@ namespace VoiceOverFrameworkMod
                 _dialogueNotVisibleTicks = 0; // visible again
             }
 
+
+
             string currentDisplayedString = null; // Renamed for clarity
             if (isDialogueBoxVisible)
             {
+
                 DialogueBox dialogueBox = Game1.activeClickableMenu as DialogueBox;
+                
                 currentDisplayedString = dialogueBox?.getCurrentString();
+                var db = dialogueBox;                               // already cast above
+                var d = db?.characterDialogue;                     // may be null during transitions
+
+                // what file the NPC loaded (e.g. "Characters/Dialogue/Abigail")
+                string loadedSheet = currentSpeaker?.LoadedDialogueKey;
+
+                // the full translation key chosen by the game (best signal!)
+                string translationKey = d?.TranslationKey;          // e.g. "Characters\\Dialogue\\Abigail:danceRejection"
+
+                // if you applied the Harmony postfix, this will also be set:
+                string tempKey = d?.temporaryDialogueKey;           // e.g. "Characters/Dialogue/Abigail:danceRejection"
+
+                // only spam logs when the visible text actually changes
+
+                Monitor.Log(
+                    $"[DialogueDBG] text='{currentDisplayedString}' | TranslationKey='{translationKey ?? "null"}' | tempKey='{tempKey ?? "null"}' | loadedSheet='{loadedSheet ?? "null"}'",
+                    LogLevel.Debug
+                );
+                
             }
 
             // --- Text stabilization ---
@@ -259,6 +283,8 @@ namespace VoiceOverFrameworkMod
                 }
                 else
                 {
+
+                    
                     // new text/page detected
                     lastDialogueText = currentDisplayedString;
                     lastSpeakerName = currentSpeaker?.Name;

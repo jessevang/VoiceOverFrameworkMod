@@ -595,8 +595,6 @@ namespace VoiceOverFrameworkMod
 
 
 
-
-
         /* Removing method as we'll start fresh with V2
         // Adds new dialogue entries to an existing character_language.json template
         private void UpdateTemplateCommand(string command, string[] args)

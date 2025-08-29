@@ -71,8 +71,21 @@ namespace VoiceOverFrameworkMod
 
     public class VoiceEntryTemplate
     {
+
+        //V1 Fields
         public string DialogueFrom { get; set; }
         public string DialogueText { get; set; }
         public string AudioPath { get; set; }
+
+
+        //V2 additional Fields
+        // V2 additions (all optional)
+        public string? TranslationKey { get; set; }  // e.g. "Characters/Dialogue/Abigail:danceRejection"
+        public int? PageIndex { get; set; }          // 0-based page within that key usually used when dialogue breaks
+        public string? DisplayPattern { get; set; }  // V2-sanitized text with placeholders
+        public string? GenderVariant { get; set; }   // "male" | "female" | "neutral" (optional) - recall some dialogue responses are different based on the farmer's gender, while many dialogue will stay the say regardless.
+
+        public string? BranchId { get; set; }
     }
+
 }
