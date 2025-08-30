@@ -353,12 +353,13 @@ namespace VoiceOverFrameworkMod
                 int entryNumber = startAtThisNumber;
 
                 //  Reactored all dialogue  sanitizer rules
-                characterManifest.Entries.AddRange(BuildFromCharacterDialogue(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                //characterManifest.Entries.AddRange(BuildFromCharacterDialogue(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                characterManifest.Entries.AddRange(BuildFromEngagement(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
                 //characterManifest.Entries.AddRange(BuildFromFestivals(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
                 //characterManifest.Entries.AddRange(BuildFromGiftTastes(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
-                //characterManifest.Entries.AddRange(BuildFromEngagement(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+
                 //characterManifest.Entries.AddRange(BuildFromExtraDialogue(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
-               // characterManifest.Entries.AddRange(BuildFromMarriageDialogue(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                // characterManifest.Entries.AddRange(BuildFromMarriageDialogue(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
                 //characterManifest.Entries.AddRange(BuildFromMovieReactions(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
                 //characterManifest.Entries.AddRange(BuildFromMail(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
                 //characterManifest.Entries.AddRange(BuildFromOneSixStrings(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));

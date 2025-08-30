@@ -204,15 +204,13 @@ namespace VoiceOverFrameworkMod
             helper.Events.GameLoop.UpdateTicked += this.OnUpdateTicked; 
             helper.Events.GameLoop.GameLaunched += this.OnGameLaunched; 
 
-            helper.Events.GameLoop.SaveLoaded += this.OnSaveLoaded; 
-
+            helper.Events.GameLoop.SaveLoaded += this.OnSaveLoaded;
             SetupConsoleCommands(helper.ConsoleCommands);
 
 
             Monitor.Log($"{this.ModManifest.Name} {this.ModManifest.Version} initialized.", LogLevel.Info);
         }
-
-
+  
 
         // Returns logical *pages* (each page can have 1–3 gender variants) and whether to reserve a follow-up serial for $q.
         private List<EventPage> ExtractVoicePagesFromDialogue(string rawText)

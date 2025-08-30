@@ -1,48 +1,59 @@
-﻿/*
-using StardewModdingAPI;
-using VoiceOverFrameworkMod;
+﻿using StardewModdingAPI;
+using System.Collections.Generic;
+using System.IO;
 
 namespace VoiceOverFrameworkMod
 {
     public partial class ModEntry
     {
         private IEnumerable<VoiceEntryTemplate> BuildFromEngagement(
-            string characterName, string languageCode, IGameContentHelper content,
-            ref int entryNumber, string ext)
+            string characterName,
+            string languageCode,
+            IGameContentHelper content,
+            ref int entryNumber,
+            string ext)
         {
             var outList = new List<VoiceEntryTemplate>();
+
             var engage = this.GetEngagementDialogueForCharacter(characterName, languageCode, content);
-            if (engage == null || engage.Count == 0) return outList;
+            if (engage == null || engage.Count == 0)
+                return outList;
 
             foreach (var item in engage)
             {
                 string processingKey = item.SourceInfo ?? $"EngagementDialogue/{characterName}";
-                string raw = item.RawText ?? "";
-                if (string.IsNullOrWhiteSpace(raw)) continue;
+                string raw = item.RawText ?? string.Empty;
+                if (string.IsNullOrWhiteSpace(raw))
+                    continue;
 
-                var pages = DialogueSplitAndSanitize(raw);
+                var pages = DialogueUtil.SplitAndSanitize(raw);
 
                 foreach (var p in pages)
                 {
                     string genderTail = string.IsNullOrEmpty(p.Gender) ? "" : "_" + p.Gender;
                     string file = $"{entryNumber}{genderTail}.{ext}";
-                    string path = System.IO.Path.Combine("assets", languageCode, characterName, file).Replace('\\', '/');
+                    string path = Path.Combine("assets", languageCode, characterName, file).Replace('\\', '/');
 
-                    string tk = !string.IsNullOrWhiteSpace(item.TranslationKey) ? item.TranslationKey : processingKey;
+                    string tk = !string.IsNullOrWhiteSpace(item.TranslationKey)
+                        ? item.TranslationKey
+                        : processingKey;
 
                     outList.Add(new VoiceEntryTemplate
                     {
                         DialogueFrom = processingKey,
-                        DialogueText = p.Text,
+                        DialogueText = p.Actor,
                         AudioPath = path,
                         TranslationKey = tk,
                         PageIndex = p.PageIndex,
-                        DisplayPattern = p.Text,
+                        DisplayPattern = p.Display,
                         GenderVariant = p.Gender
                     });
 
                     if (this.Config?.developerModeOn == true)
-                        this.Monitor?.Log($"[ENGAGE] + {processingKey} (tk={tk}) p{p.PageIndex} g={p.Gender ?? "na"} -> {path}", LogLevel.Trace);
+                        this.Monitor?.Log(
+                            $"[ENGAGE] + {processingKey} (tk={tk}) p{p.PageIndex} g={p.Gender ?? "na"} -> {path}",
+                            LogLevel.Trace
+                        );
 
                     entryNumber++;
                 }
@@ -52,4 +63,3 @@ namespace VoiceOverFrameworkMod
         }
     }
 }
-*/
