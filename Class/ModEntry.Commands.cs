@@ -325,7 +325,7 @@ namespace VoiceOverFrameworkMod
 
 
 
-        private bool GenerateSingleTemplate(string characterName,string languageCode,string outputBaseDir,string voicePackId,string voicePackName,int startAtThisNumber,string desiredExtension)
+        private bool GenerateSingleTemplate(string characterName, string languageCode, string outputBaseDir, string voicePackId, string voicePackName, int startAtThisNumber, string desiredExtension)
         {
             // --- PRE-CHECKS (unchanged) ---
             if (this.Helper == null || this.Monitor == null || this.Config == null)
@@ -353,18 +353,17 @@ namespace VoiceOverFrameworkMod
                 int entryNumber = startAtThisNumber;
 
                 //  Reactored all dialogue  sanitizer rules
-                //characterManifest.Entries.AddRange(BuildFromCharacterDialogue(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                characterManifest.Entries.AddRange(BuildFromCharacterDialogue(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
                 characterManifest.Entries.AddRange(BuildFromEngagement(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
-                //characterManifest.Entries.AddRange(BuildFromFestivals(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
-                //characterManifest.Entries.AddRange(BuildFromGiftTastes(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                characterManifest.Entries.AddRange(BuildFromMarriageDialogue(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                //characterManifest.Entries.AddRange(BuildFromFestivals(...));
+                //characterManifest.Entries.AddRange(BuildFromGiftTastes(...));
+                //characterManifest.Entries.AddRange(BuildFromExtraDialogue(...));
+                //characterManifest.Entries.AddRange(BuildFromMovieReactions(...));
+                //characterManifest.Entries.AddRange(BuildFromMail(...));
+                //characterManifest.Entries.AddRange(BuildFromOneSixStrings(...));
 
-                //characterManifest.Entries.AddRange(BuildFromExtraDialogue(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
-                // characterManifest.Entries.AddRange(BuildFromMarriageDialogue(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
-                //characterManifest.Entries.AddRange(BuildFromMovieReactions(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
-                //characterManifest.Entries.AddRange(BuildFromMail(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
-                //characterManifest.Entries.AddRange(BuildFromOneSixStrings(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
-
-                // --- WRITE / SAVE (your existing block, unchanged) ---
+                // --- WRITE / SAVE (unchanged except for renumber) ---
                 if (!characterManifest.Entries.Any())
                 {
                     if (this.Config.developerModeOn)
@@ -373,6 +372,9 @@ namespace VoiceOverFrameworkMod
                 }
 
                 GenerateTemplate_DialogueFromDeduplicated(characterManifest.Entries);
+
+                // NEW: ensure PageIndex is unique and contiguous per TranslationKey
+                RenumberPageIndicesPerKey(characterManifest.Entries);
 
                 var finalOutputFileObject = new VoicePackFile
                 {
@@ -427,6 +429,28 @@ namespace VoiceOverFrameworkMod
                 return false;
             }
         }
+
+
+
+        // Renumber page indices so each TranslationKey has 0..N-1, in a stable order.
+        private static void RenumberPageIndicesPerKey(List<VoiceEntryTemplate> entries)
+        {
+            if (entries == null || entries.Count == 0) return;
+
+            foreach (var group in entries.GroupBy(e => e.TranslationKey ?? string.Empty))
+            {
+                int i = 0;
+                foreach (var e in group
+                    .OrderBy(e => e.PageIndex)                 // keep original page order first
+                    .ThenBy(e => e.GenderVariant ?? string.Empty)
+                    .ThenBy(e => e.AudioPath ?? string.Empty))
+                {
+                    e.PageIndex = i++;
+                }
+            }
+        }
+
+
 
 
 

@@ -37,6 +37,7 @@ namespace VoiceOverFrameworkMod
             private static readonly Regex RxCmdOther = new(@"#\$(?:action|k|t|v)\b[^#]*", RegexOptions.Compiled | RegexOptions.Singleline | RegexOptions.IgnoreCase);
             private static readonly Regex RxOnceOnlyLine = new(@"^\s*\$1\s+\S+#(?<first>.*?)(?:#\$e#.*)?$", RegexOptions.Compiled | RegexOptions.Singleline);
             private static readonly Regex PortraitRegex = new(@"\$(?:h|s|u|l|a|\d+)\b", RegexOptions.Compiled);
+            private static readonly Regex RxCmdChancePrefix =new(@"#?\$c\s*[0-9.]+\s*#", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
             private static readonly Dictionary<string, string> VarMap = new(StringComparer.OrdinalIgnoreCase)
             {
@@ -74,6 +75,10 @@ namespace VoiceOverFrameworkMod
                     normalizedPages.Add((chunk ?? "").Replace("#$b#", "\n"));
 
                 var pages = new List<PageSeg>();
+
+                // NEW: ensure page indexes are unique and sequential across all emitted segments
+                int nextIndex = 0;
+
                 for (int i = 0; i < normalizedPages.Count; i++)
                 {
                     string text = normalizedPages[i]?.Trim();
@@ -82,42 +87,43 @@ namespace VoiceOverFrameworkMod
                     // 1) Top-level random choice: "$c 0.5#A#B"
                     if (TrySplitRandomChoice(text, out var cA, out var cB))
                     {
-                        AddPageIfNotEmpty(pages, cA, i, null);
-                        AddPageIfNotEmpty(pages, cB, i, null);
+                        AddPageIfNotEmpty(pages, cA, nextIndex++, null);
+                        AddPageIfNotEmpty(pages, cB, nextIndex++, null);
                         continue;
                     }
 
                     // 2) Conditional choice: "$d FLAG#A|B"
                     if (TrySplitConditionalChoice(text, out var dA, out var dB))
                     {
-                        AddPageIfNotEmpty(pages, dA, i, null);
-                        AddPageIfNotEmpty(pages, dB, i, null);
+                        AddPageIfNotEmpty(pages, dA, nextIndex++, null);
+                        AddPageIfNotEmpty(pages, dB, nextIndex++, null);
                         continue;
                     }
 
                     // 3) Caret gender split: "Ugh...^Why?"
                     if (TryTopLevelCaretGender(text, out var cgMale, out var cgFemale))
                     {
-                        AddPageIfNotEmpty(pages, cgMale, i, "male");
-                        AddPageIfNotEmpty(pages, cgFemale, i, "female");
+                        AddPageIfNotEmpty(pages, cgMale, nextIndex++, "male");
+                        AddPageIfNotEmpty(pages, cgFemale, nextIndex++, "female");
                         continue;
                     }
 
                     // 4) ${m^f(^n)} gender variant
                     if (TryTopLevelGender(text, out var male, out var female, out var nb))
                     {
-                        if (!string.IsNullOrEmpty(male)) AddPageIfNotEmpty(pages, male, i, "male");
-                        if (!string.IsNullOrEmpty(female)) AddPageIfNotEmpty(pages, female, i, "female");
-                        if (!string.IsNullOrEmpty(nb)) AddPageIfNotEmpty(pages, nb, i, "nonbinary");
+                        if (!string.IsNullOrEmpty(male)) AddPageIfNotEmpty(pages, male, nextIndex++, "male");
+                        if (!string.IsNullOrEmpty(female)) AddPageIfNotEmpty(pages, female, nextIndex++, "female");
+                        if (!string.IsNullOrEmpty(nb)) AddPageIfNotEmpty(pages, nb, nextIndex++, "nonbinary");
                     }
                     else
                     {
-                        AddPageIfNotEmpty(pages, text, i, null);
+                        AddPageIfNotEmpty(pages, text, nextIndex++, null);
                     }
                 }
 
                 return pages;
             }
+
 
             // ── Helpers ─────────────────────────────────────────────
             private static void AddPageIfNotEmpty(List<PageSeg> pages, string body, int pageIndex, string gender)
@@ -148,9 +154,17 @@ namespace VoiceOverFrameworkMod
                 s = RxInlineFlag1.Replace(s, "");
                 s = RxStrayNumber.Replace(s, "");
                 s = RxLeadingNarr.Replace(s, "");
+
+                // Keep $q question, drop $r answers
                 s = RxCmdQuestion.Replace(s, m => " " + m.Groups["q"].Value);
                 s = RxCmdResponse.Replace(s, "");
+
+                // remove chance prefix BEFORE generic '#' cleanup ***
+                s = RxCmdChancePrefix.Replace(s, "");
+
+                // Clean remaining stray '#'
                 s = Regex.Replace(s, @"\s*#(?!\$)\s*", " ");
+
                 s = RxCmdQuick.Replace(s, m =>
                 {
                     string payload = m.Groups["p"].Value ?? "";
@@ -160,6 +174,7 @@ namespace VoiceOverFrameworkMod
                         pairs.Add($"{bits[k]}: {bits[k + 1]}");
                     return pairs.Count > 0 ? string.Join(" | ", pairs) : "";
                 });
+
                 s = RxCmdOther.Replace(s, "");
                 s = RxTrailingDollar.Replace(s, "");
                 s = RxAtToken.Replace(s, "{Farmer's Name}");
@@ -168,9 +183,11 @@ namespace VoiceOverFrameworkMod
                     var key = m.Value.Substring(1);
                     return VarMap.TryGetValue(key, out var desc) ? "{" + desc + "}" : m.Value;
                 });
+
                 s = RxCollapseWS.Replace(s, " ").Trim();
                 return s;
             }
+
 
             private static string SanitizeForActor(string s)
             {
@@ -201,10 +218,15 @@ namespace VoiceOverFrameworkMod
             }
 
             // split helpers
-            private static bool TrySplitRandomChoice(string text, out string a, out string b) =>
-                Regex.Match(text ?? "", @"^\s*\$c\s*[0-9.]+\s*#(.+?)#(.+)$", RegexOptions.Singleline) is Match m && m.Success
-                    ? (a = m.Groups[1].Value, b = m.Groups[2].Value, true).Item3
-                    : (a = b = null, false).Item2;
+            // split helpers
+            private static bool TrySplitRandomChoice(string text, out string a, out string b)
+            {
+                var m = Regex.Match(text ?? "", @"^\s*#?\$c\s*[0-9.]+\s*#(.+?)#(.+)$",
+                                    RegexOptions.Singleline | RegexOptions.IgnoreCase);
+                if (m.Success) { a = m.Groups[1].Value; b = m.Groups[2].Value; return true; }
+                a = b = null; return false;
+            }
+
 
             private static bool TrySplitConditionalChoice(string text, out string a, out string b) =>
                 Regex.Match(text ?? "", @"^\s*#?\$(?:d|query|p)\b[^#]*#(.+?)\|(.+)$", RegexOptions.Singleline | RegexOptions.IgnoreCase) is Match m && m.Success
