@@ -8,7 +8,7 @@
 
 	<ItemGroup>
 		<Compile Include="ModEntry.cs" />
-		<Compile Include="V1\**\*.cs" />
+		<Compile Include="Class\**\*.cs" />
 		<Compile Include="Menus\**\*.cs" />
 		<Compile Include="Patches\**\*.cs" />
 		<Compile Include="Libs\NVorbis\**\*.cs" />
@@ -23,6 +23,16 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+
+
+
+
+
+
+
+
+
+
   
   <ItemGroup>
     <!-- Third Party License -->

@@ -325,9 +325,9 @@ namespace VoiceOverFrameworkMod
 
 
 
-        private bool GenerateSingleTemplate(string characterName, string languageCode, string outputBaseDir, string voicePackId, string voicePackName, int startAtThisNumber, string desiredExtension)
+        private bool GenerateSingleTemplate(string characterName,string languageCode,string outputBaseDir,string voicePackId,string voicePackName,int startAtThisNumber,string desiredExtension)
         {
-            // --- PRE-CHECKS ---
+            // --- PRE-CHECKS (unchanged) ---
             if (this.Helper == null || this.Monitor == null || this.Config == null)
             {
                 this.Monitor?.Log("GenerateSingleTemplate cannot run: Helper, Monitor, or Config is null.", LogLevel.Error);
@@ -337,289 +337,9 @@ namespace VoiceOverFrameworkMod
             if (this.Config.developerModeOn)
                 this.Monitor.Log($"Generating template for '{characterName}' ({languageCode}). ID: '{voicePackId}', Name: '{voicePackName}' AudioFileStartsAt: {startAtThisNumber}", LogLevel.Debug);
 
-            // Stores DialogueKey -> RawText or EventSourceKey -> Raw (we’ll sanitize later)
-            var initialSources = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-            // Tracks the type of source for each key above (e.g., "Dialogue", "Event:Town/123" or "Festival/spring13/Abigail")
-            var sourceTracking = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-            // For sources that already have a stable translation key (Festivals / Extra / Gifts / Engagement), track it by processingKey
-            var translationKeyTracking = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-            // Tracks uniqueness using a composite key (pattern + page + gender + (event split if any) + source)
-            var addedCompositeKeys = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
-
             try
             {
-                // --- 1. Load Dialogue (Characters/Dialogue/{Name}) ---
-                string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
-                string specificDialogueAssetKey = $"Characters/Dialogue/{characterName}{langSuffix}";
-                try
-                {
-                    var dialogueData = this.Helper.GameContent.Load<Dictionary<string, string>>(specificDialogueAssetKey);
-                    if (dialogueData != null)
-                    {
-                        foreach (var kvp in dialogueData)
-                        {
-                            if (!string.IsNullOrWhiteSpace(kvp.Key) && !string.IsNullOrWhiteSpace(kvp.Value) && !initialSources.ContainsKey(kvp.Key))
-                            {
-                                initialSources[kvp.Key] = kvp.Value;
-                                sourceTracking[kvp.Key] = "Dialogue";
-                            }
-                        }
-                        if (this.Config.developerModeOn)
-                            this.Monitor.Log($"Loaded {dialogueData.Count} entries from '{specificDialogueAssetKey}'.", LogLevel.Trace);
-                    }
-                }
-                catch (ContentLoadException)
-                {
-                    if (this.Config.developerModeOn)
-                        this.Monitor.Log($"Asset '{specificDialogueAssetKey}' not found or failed to load.", LogLevel.Trace);
-                }
-                catch (Exception ex)
-                {
-                    this.Monitor.Log($"Error processing '{specificDialogueAssetKey}': {ex.Message}", LogLevel.Warn);
-                    this.Monitor.Log(ex.ToString(), LogLevel.Trace);
-                }
-
-                // --- 2. Load Strings (Strings/Characters) ---
-                var stringCharData = this.GetVanillaCharacterStringKeys(characterName, languageCode, this.Helper.GameContent);
-                if (this.Config.developerModeOn)
-                    this.Monitor.Log($"Found {stringCharData?.Count ?? 0} potential entries from Strings/Characters.", LogLevel.Trace);
-
-                if (stringCharData != null)
-                {
-                    foreach (var kvp in stringCharData)
-                    {
-                        if (!string.IsNullOrWhiteSpace(kvp.Key) && !string.IsNullOrWhiteSpace(kvp.Value) && !initialSources.ContainsKey(kvp.Key))
-                        {
-                            initialSources[kvp.Key] = kvp.Value;
-                            sourceTracking[kvp.Key] = "Strings/Characters";
-                        }
-                    }
-                }
-
-                // --- 3. Load Event Dialogue ---
-                var eventDataRaw = this.GetEventDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
-                if (this.Config.developerModeOn)
-                    this.Monitor.Log($"Retrieved {eventDataRaw?.Count ?? 0} potential event dialogue lines.", LogLevel.Trace);
-
-                if (eventDataRaw != null)
-                {
-                    foreach (var kvp in eventDataRaw) // Key=SourceInfo ("Event:Backwoods/6963327/..."), Value=raw text
-                    {
-                        if (!initialSources.ContainsKey(kvp.Key))
-                        {
-                            initialSources[kvp.Key] = kvp.Value;
-                            sourceTracking[kvp.Key] = kvp.Key; // keep the full "Event:..." string as the source tag
-                        }
-                    }
-                }
-
-                // --- 4. Load Other Data Files (Festivals, Gifts, etc.) ---
-                // Festivals (Dictionary<string,(RawText,SourceInfo,TranslationKey)>)
-                try
-                {
-                    var fest = this.GetFestivalDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
-                    if (fest != null)
-                    {
-                        foreach (var kvp in fest)
-                        {
-                            string key = kvp.Value.SourceInfo ?? $"Festival/{kvp.Key}/{characterName}";
-                            string baseKey = key;
-                            int collision = 1;
-                            while (initialSources.ContainsKey(key))
-                                key = $"{baseKey}_{collision++}";
-
-                            initialSources[key] = kvp.Value.RawText;
-                            sourceTracking[key] = key; // e.g., "Festival/fall16/Abigail_spouse"
-                            if (!string.IsNullOrWhiteSpace(kvp.Value.TranslationKey))
-                                translationKeyTracking[key] = kvp.Value.TranslationKey; // e.g., "Data/Festivals/fall16:Abigail_spouse"
-                        }
-                    }
-                }
-                catch (Exception ex) { this.Monitor.Log($"Error loading Festival data for {characterName}: {ex.Message}", LogLevel.Trace); }
-
-                
-                // Gets Dialogue from Gifts / Engagement / Extra 
-                try
-                {
-                    var gifts = this.GetGiftTasteDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
-                    if (gifts != null)
-                    {
-                        foreach (var item in gifts)
-                        {
-                            string key = item.SourceInfo ?? $"NPCGiftTastes/{characterName}:{Guid.NewGuid()}";
-                            string baseKey = key;
-                            int collision = 1;
-                            while (initialSources.ContainsKey(key))
-                                key = $"{baseKey}_{collision++}";
-
-                            initialSources[key] = item.RawText;
-                            sourceTracking[key] = item.SourceInfo ?? "NPCGiftTastes";
-                            if (!string.IsNullOrWhiteSpace(item.TranslationKey))
-                                translationKeyTracking[key] = item.TranslationKey;
-                        }
-                    }
-                }
-                catch (Exception ex) { this.Monitor.Log($"Error loading GiftTaste data for {characterName}: {ex.Message}", LogLevel.Trace); }
-
-                try
-                {
-                    var engage = this.GetEngagementDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
-                    if (engage != null)
-                    {
-                        foreach (var item in engage)
-                        {
-                            string key = item.SourceInfo ?? $"EngagementDialogue/{characterName}:{Guid.NewGuid()}";
-                            string baseKey = key;
-                            int collision = 1;
-                            while (initialSources.ContainsKey(key))
-                                key = $"{baseKey}_{collision++}";
-
-                            initialSources[key] = item.RawText;
-                            sourceTracking[key] = item.SourceInfo ?? "EngagementDialogue";
-                            if (!string.IsNullOrWhiteSpace(item.TranslationKey))
-                                translationKeyTracking[key] = item.TranslationKey;
-                        }
-                    }
-                }
-                catch (Exception ex) { this.Monitor.Log($"Error loading Engagement data for {characterName}: {ex.Message}", LogLevel.Trace); }
-
-
-                // --- Get Extra Dialogue ---
-                try
-                {
-                    var extra = this.GetExtraDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
-                    if (extra != null)
-                    {
-                        foreach (var item in extra)
-                        {
-                            string key = item.SourceInfo ?? $"ExtraDialogue/{characterName}:{Guid.NewGuid()}";
-                            string baseKey = key;
-                            int collision = 1;
-                            while (initialSources.ContainsKey(key))
-                                key = $"{baseKey}_{collision++}";
-
-                            initialSources[key] = item.RawText;
-                            sourceTracking[key] = item.SourceInfo ?? "ExtraDialogue";
-                            if (!string.IsNullOrWhiteSpace(item.TranslationKey))
-                                translationKeyTracking[key] = item.TranslationKey;
-                        }
-                    }
-                }
-                catch (Exception ex) { this.Monitor.Log($"Error loading Extra data for {characterName}: {ex.Message}", LogLevel.Trace); }
-
-                // --- Marriage Dialogue (generic + per-spouse) ---
-                try
-                {
-                    var marriage = this.GetMarriageDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
-                    if (marriage != null)
-                    {
-                        foreach (var item in marriage)
-                        {
-
-                            string key = item.SourceInfo ?? $"Marriage/{characterName}:{Guid.NewGuid()}";
-                            string baseKey = key;
-                            int collision = 1;
-                            while (initialSources.ContainsKey(key))
-                                key = $"{baseKey}_{collision++}";
-
-                            initialSources[key] = item.RawText;
-                            sourceTracking[key] = item.SourceInfo ?? "Marriage";
-                            if (!string.IsNullOrWhiteSpace(item.TranslationKey))
-                                translationKeyTracking[key] = item.TranslationKey; // e.g., Characters/Dialogue/MarriageDialogueAbigail:Rainy_Day_0
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    this.Monitor.Log($"Error loading Marriage dialogue for {characterName}: {ex.Message}", LogLevel.Trace);
-                }
-
-
-                // --- Movie Reactions (Strings/MovieReactions) ---
-                // Returns Dictionary<string,(RawText,SourceInfo,TranslationKey)>
-                try
-                {
-                    var movieReactions = this.GetMovieReactionsForCharacter(characterName, languageCode, this.Helper.GameContent);
-                    if (movieReactions != null)
-                    {
-                        foreach (var kvp in movieReactions)
-                        {
-
-                            string key = kvp.Value.SourceInfo ?? $"MovieReactions/{characterName}:{Guid.NewGuid()}";
-                            string baseKey = key;
-                            int collision = 1;
-                            while (initialSources.ContainsKey(key))
-                                key = $"{baseKey}_{collision++}";
-
-                            initialSources[key] = kvp.Value.RawText;
-                            sourceTracking[key] = kvp.Value.SourceInfo ?? "MovieReactions";
-                            if (!string.IsNullOrWhiteSpace(kvp.Value.TranslationKey))
-                                translationKeyTracking[key] = kvp.Value.TranslationKey;
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    this.Monitor.Log($"Error loading MovieReactions for {characterName}: {ex.Message}", LogLevel.Trace);
-                }
-
-                // --- Mail (Data/Mail) ---
-                try
-                {
-                    var mails = this.GetMailDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
-                    if (mails != null)
-                    {
-                        foreach (var item in mails)
-                        {
-                            string key = item.SourceInfo ?? $"Mail/{characterName}:{Guid.NewGuid()}";
-                            string baseKey = key;
-                            int collision = 1;
-                            while (initialSources.ContainsKey(key))
-                                key = $"{baseKey}_{collision++}";
-
-                            initialSources[key] = item.RawText;
-                            sourceTracking[key] = item.SourceInfo ?? "Mail";
-                            if (!string.IsNullOrWhiteSpace(item.TranslationKey))
-                                translationKeyTracking[key] = item.TranslationKey;
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    this.Monitor.Log($"Error loading Mail data for {characterName}: {ex.Message}", LogLevel.Trace);
-                }
-
-
-                //Loads strings from Strings/1_6_Strings
-                try
-                {
-                    var oneSix = this.GetOneSixStringsDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
-                    if (oneSix != null)
-                    {
-                        foreach (var item in oneSix)
-                        {
-                            // Use SourceInfo (which already includes the unique key) as the processing key
-                            string key = item.SourceInfo ?? $"Strings/1_6_Strings/{characterName}:{Guid.NewGuid()}";
-                            string baseKey = key;
-                            int collision = 1;
-                            while (initialSources.ContainsKey(key))
-                                key = $"{baseKey}_{collision++}";
-
-                            initialSources[key] = item.RawText;
-                            sourceTracking[key] = "Strings/1_6_Strings";
-                            if (!string.IsNullOrWhiteSpace(item.TranslationKey))
-                                translationKeyTracking[key] = item.TranslationKey;
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    this.Monitor?.Log($"Error loading Strings/1_6_Strings for {characterName}: {ex.Message}", LogLevel.Trace);
-                }
-
-
-
-                // --- 5. Prepare Manifest Object ---
+                // --- Manifest (unchanged) ---
                 var characterManifest = new VoicePackManifestTemplate
                 {
                     Format = "1.0.0",
@@ -632,182 +352,18 @@ namespace VoiceOverFrameworkMod
 
                 int entryNumber = startAtThisNumber;
 
-                // --- Speak index tracking for events ---
-                // Key = "Events/{Map}:{EventId}" -> next speak index to assign
-                var eventSpeakCounters = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
-                // Key = "Events/{Map}:{EventId}" + "|" + processingKey -> assigned speak index
-                var eventSpeakAssigned = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
+                //  Reactored all dialogue  sanitizer rules
+                characterManifest.Entries.AddRange(BuildFromCharacterDialogue(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                //characterManifest.Entries.AddRange(BuildFromFestivals(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                //characterManifest.Entries.AddRange(BuildFromGiftTastes(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                //characterManifest.Entries.AddRange(BuildFromEngagement(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                //characterManifest.Entries.AddRange(BuildFromExtraDialogue(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+               // characterManifest.Entries.AddRange(BuildFromMarriageDialogue(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                //characterManifest.Entries.AddRange(BuildFromMovieReactions(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                //characterManifest.Entries.AddRange(BuildFromMail(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                //characterManifest.Entries.AddRange(BuildFromOneSixStrings(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
 
-                // Helper to parse Event:... into "Events/{Map}:{Id}"
-                string TryGetEventBaseKey(string sourceTag)
-                {
-                    // Expected forms like: "Event:Backwoods/6963327/..." or "Event:Town/1234/..."
-                    var m = System.Text.RegularExpressions.Regex.Match(sourceTag ?? "", @"^Event:(?<map>[^/]+)/(?<id>\d+)", RegexOptions.CultureInvariant);
-                    if (!m.Success) return null;
-                    string map = m.Groups["map"].Value.Trim();
-                    string id = m.Groups["id"].Value.Trim();
-                    return $"Events/{map}:{id}";
-                }
-
-                // ***strip a trailing gender tag so variants share the same :sN ***
-                string StripGenderTag(string key)
-                {
-                    if (string.IsNullOrEmpty(key)) return key;
-                    int i = key.IndexOf("|g=", StringComparison.Ordinal);
-                    return i >= 0 ? key.Substring(0, i) : key;
-                }
-
-                // Helper to get a stable speak index per event *source line* (per processingKey)
-                int GetEventSpeakIndex(string baseKey, string processingKey)
-                {
-                    string assignKey = $"{baseKey}|{processingKey}";
-                    if (eventSpeakAssigned.TryGetValue(assignKey, out int idx))
-                        return idx;
-
-                    int next = eventSpeakCounters.TryGetValue(baseKey, out int cur) ? cur : 0;
-                    eventSpeakCounters[baseKey] = next + 1;
-                    eventSpeakAssigned[assignKey] = next;
-                    return next;
-                }
-
-                // --- 6. Central Processing Loop (V2) ---
-                if (this.Config.developerModeOn)
-                    this.Monitor.Log($"Processing {initialSources.Count} collected sources...", LogLevel.Trace);
-
-                foreach (var kvp in initialSources
-                         .OrderBy(p => sourceTracking.GetValueOrDefault(p.Key, "zzz_Unknown"))
-                         .ThenBy(p => p.Key))
-                {
-                    string processingKey = kvp.Key;              // e.g., "Introduction" or "Event:Backwoods/6963327/f Abigail ... " or "Festival/fall16/Abigail"
-                    string rawTextFromSource = kvp.Value;        // RAW (unsanitized) source text
-                    string sourceType = sourceTracking.GetValueOrDefault(processingKey, "Unknown");
-
-                    if (this.Config.developerModeOn)
-                        Monitor.Log($"Processing Key: '{processingKey}', Raw: '{rawTextFromSource}'", LogLevel.Trace);
-
-                    // 6.0 Handle SplitSpeak branches for events ( '~' delimited )
-                    var branchSegments = new List<(string BranchText, int? BranchIndex)>();
-                    bool isEventLike = (sourceType?.StartsWith("Event:", StringComparison.OrdinalIgnoreCase) ?? false)
-                                       || (processingKey?.StartsWith("Event:", StringComparison.OrdinalIgnoreCase) ?? false);
-                    if (isEventLike && !string.IsNullOrEmpty(rawTextFromSource) && rawTextFromSource.Contains("~"))
-                    {
-                        var parts = rawTextFromSource.Split('~');
-                        for (int b = 0; b < parts.Length; b++)
-                            branchSegments.Add((parts[b], b));
-                    }
-                    else
-                    {
-                        branchSegments.Add((rawTextFromSource, (int?)null));
-                    }
-
-                    // Event base key (if applicable), e.g., "Events/Backwoods:6963327"
-                    string eventBaseKey = isEventLike ? TryGetEventBaseKey(processingKey) : null;
-                    int? eventSpeakIndexForThisProcessingKey = null;
-                    if (eventBaseKey != null)
-                    {
-                        // *** CHANGED: assign speak index ONCE per processingKey, but with gender stripped ***
-                        string genderlessProcessingKey = StripGenderTag(processingKey);
-                        eventSpeakIndexForThisProcessingKey = GetEventSpeakIndex(eventBaseKey, genderlessProcessingKey);
-                    }
-
-                    foreach (var (branchRaw, branchIndex) in branchSegments)
-                    {
-                        // 6.1 Split into pages first (handles '#$b#' as intra-page newline)
-                        var pages = SplitStandardDialogueSegmentsV2(branchRaw);
-
-                        for (int pageIdx = 0; pageIdx < pages.Count; pageIdx++)
-                        {
-                            string page = pages[pageIdx];
-
-                            // 6.2 Gender variants (official ${m^f(^n)?} or fallback m^f)
-                            List<(string text, string gender)> variants;
-                            if (!TrySplitGenderVariants(page, out variants))
-                            {
-                                variants = new List<(string, string)> { (page, null) }; // single neutral variant
-                            }
-
-                            foreach (var (variantText, gender) in variants)
-                            {
-                                // 6.3 V2 sanitize to a stable DisplayPattern (keeps placeholders)
-                                string pattern = SanitizeDialogueTextV2(variantText);
-                                if (string.IsNullOrWhiteSpace(pattern))
-                                    continue;
-
-                                // 6.4 Compose uniqueness key (avoid dupes across sources/pages/genders/branches)
-                                string uniqueKey = $"{processingKey}|branch{(branchIndex?.ToString() ?? "x")}|p{pageIdx}|g{(gender ?? "")}|{pattern}";
-                                if (!addedCompositeKeys.Add(uniqueKey))
-                                {
-                                    if (this.Config.developerModeOn)
-                                        Monitor.Log($"Skipped duplicate composite: {uniqueKey}", LogLevel.Trace);
-                                    continue;
-                                }
-
-                                // 6.5 Compute translation key
-                                string translationKey = null;
-
-                                if (string.Equals(sourceType, "Dialogue", StringComparison.OrdinalIgnoreCase))
-                                {
-                                    // Full key: "Characters/Dialogue/Abigail:Introduction"
-                                    translationKey = $"Characters/Dialogue/{characterName}:{processingKey}";
-                                }
-                                else if (eventBaseKey != null && eventSpeakIndexForThisProcessingKey.HasValue)
-                                {
-                                    // Synthetic key for event Speak/SplitSpeak:
-                                    //   Events/{Map}:{EventId}:s{SpeakIndex}[:split{Branch}]
-                                    translationKey = $"{eventBaseKey}:s{eventSpeakIndexForThisProcessingKey.Value}";
-                                    if (branchIndex.HasValue)
-                                        translationKey += $":split{branchIndex.Value}";
-                                }
-
-                                //if still null, use any provided TK we captured from Festivals / Gifts / Engagement / Extra
-                                if (translationKey == null && translationKeyTracking.TryGetValue(processingKey, out var tkProvided))
-                                {
-                                    translationKey = tkProvided;
-                                }
-
-                                // 6.6 Build audio path; add gender suffix if present
-                                // infer gender from processing key if TrySplitGenderVariants didn't find one
-                                string effectiveGender = gender;
-                                if (string.IsNullOrEmpty(effectiveGender))
-                                {
-                                    var gm = System.Text.RegularExpressions.Regex.Match(
-                                        processingKey,
-                                        @"\|g=(male|female|nonbinary)",
-                                        RegexOptions.IgnoreCase
-                                    );
-                                    if (gm.Success)
-                                        effectiveGender = gm.Groups[1].Value.ToLowerInvariant();
-                                }
-
-                                string genderSuffix = string.IsNullOrEmpty(effectiveGender) ? "" : $"_{effectiveGender}";
-                                string numberedFileName = $"{entryNumber}{genderSuffix}.{desiredExtension}";
-                                string relativeAudioPath = Path.Combine("assets", languageCode, characterName, numberedFileName)
-                                    .Replace('\\', '/');
-
-                                // 6.7 Add entry
-                                var newEntry = new VoiceEntryTemplate
-                                {
-                                    DialogueFrom = processingKey,   // keep raw provenance
-                                    DialogueText = pattern,
-                                    AudioPath = relativeAudioPath,
-                                    TranslationKey = translationKey,
-                                    PageIndex = pageIdx,         // only for '#$e#' page breaks
-                                    DisplayPattern = pattern,
-                                    GenderVariant = string.IsNullOrEmpty(effectiveGender) ? null : effectiveGender
-                                };
-
-
-                                characterManifest.Entries.Add(newEntry);
-                                if (this.Config.developerModeOn)
-                                    Monitor.Log($"ADDED Entry - TK='{translationKey ?? "null"}' Pg={pageIdx} G={(gender ?? "na")} Branch={(branchIndex?.ToString() ?? "na")} Text: '{pattern}' Path: '{relativeAudioPath}' From: '{processingKey}'", LogLevel.Debug);
-
-                                entryNumber++; // increment per entry created
-                            }
-                        }
-                    }
-                }
-
-                // --- 7. Save JSON file ---
+                // --- WRITE / SAVE (your existing block, unchanged) ---
                 if (!characterManifest.Entries.Any())
                 {
                     if (this.Config.developerModeOn)
@@ -815,7 +371,6 @@ namespace VoiceOverFrameworkMod
                     return false;
                 }
 
-                // Keep DialogueFrom untouched (this now only logs in dev mode)
                 GenerateTemplate_DialogueFromDeduplicated(characterManifest.Entries);
 
                 var finalOutputFileObject = new VoicePackFile
@@ -849,7 +404,7 @@ namespace VoiceOverFrameworkMod
                 catch (UnauthorizedAccessException uaEx) { this.Monitor.Log($"ACCESS DENIED saving JSON to {outputPath}: {uaEx.Message}. Check permissions.", LogLevel.Error); return false; }
                 catch (Exception ex) { this.Monitor.Log($"UNEXPECTED ERROR saving JSON to {outputPath}: {ex.GetType().Name} - {ex.Message}", LogLevel.Error); this.Monitor.Log(ex.ToString(), LogLevel.Trace); return false; }
 
-                // --- 8. Ensure asset folder exists ---
+                // ensure asset folder exists (unchanged)
                 try
                 {
                     string assetsCharacterPath = PathUtilities.NormalizePath(Path.Combine(outputBaseDir, "assets", languageCode, characterName));
@@ -864,9 +419,7 @@ namespace VoiceOverFrameworkMod
 
                 return true;
             }
-
-
-            catch (Exception ex) // Master catch
+            catch (Exception ex)
             {
                 this.Monitor.Log($"FATAL ERROR during GenerateSingleTemplate for {characterName} ({languageCode}): {ex.Message}", LogLevel.Error);
                 this.Monitor.Log($"Stack Trace: {ex.StackTrace}", LogLevel.Trace);
