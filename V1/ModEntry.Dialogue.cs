@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Content;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
+using StardewModdingAPI.Utilities;
 using StardewValley;
 using StardewValley.Menus;
 using System.Reflection;
@@ -34,6 +35,12 @@ namespace VoiceOverFrameworkMod
         private int _sameLineStableTicks = 0;       // count consecutive ticks the same text is shown
         private string _lastPlayedLookupKey = null; // last key actually played for this page
 
+        // --- V2 event serial state (per-event, per-speaker, increments once per displayed page) ---
+        private string _v2_lastEventBase = null;
+        private string _v2_lastEventPageFingerprint = null; // eventBase|speaker|sanitizedText
+        private readonly Dictionary<string, int> _v2_eventSerialBySpeaker = new(StringComparer.OrdinalIgnoreCase);
+
+
 
 
         // Chooses the right sanitizer based on the loaded pack's FormatMajor
@@ -42,26 +49,39 @@ namespace VoiceOverFrameworkMod
 
 
 
+
+
+
+
         // Main dialogue check loop called every tick (or less often if adjusted).
         private void OnUpdateTicked(object sender, UpdateTickedEventArgs e)
         {
-            if (e.IsMultipleOf(2)) // keep your existing cadence
+            if (e.IsMultipleOf(2))
                 CleanupStoppedVoiceInstances();
 
-            // ---- Pick exactly ONE pipeline per tick to avoid duplicate playback ----
             var speaker = Game1.currentSpeaker;
             if (speaker != null)
             {
                 var pack = GetSelectedVoicePack(speaker.Name);
+                if (Config.developerModeOn)
+                    Monitor.Log($"[Tick] Speaker={speaker.Name} Pack={(pack?.VoicePackName ?? "null")} FormatMajor={(pack?.FormatMajor ?? -1)}", LogLevel.Trace);
+
                 if (pack != null && pack.FormatMajor >= 2)
                 {
+                    if (Config.developerModeOn)
+                        Monitor.Log("[Tick] Using V2 pipeline", LogLevel.Trace);
+
                     CheckForDialogueV2();
-                    return; // prevent V1 from also handling the same line
+                    return;
                 }
             }
 
+            if (Config.developerModeOn)
+                Monitor.Log("[Tick] Using V1 pipeline", LogLevel.Trace);
+
             CheckForDialogue();
         }
+
 
 
 
@@ -73,6 +93,8 @@ namespace VoiceOverFrameworkMod
             if (Game1.currentLocation == null || Game1.player == null)
             {
                 if (lastDialogueText != null) ResetDialogueState(); // reuse V1 reset
+                                                                    // also clear event-serial state
+                _v2_eventSerialBySpeaker.Clear(); _v2_lastEventBase = null; _v2_lastEventPageFingerprint = null;
                 return;
             }
 
@@ -88,6 +110,8 @@ namespace VoiceOverFrameworkMod
                 {
                     // Not a V2 speaker/pack — let your existing V1 pipeline handle it
                     if (wasDialogueUpLastTick) ResetDialogueState();
+                    // clear event-serial state
+                    _v2_eventSerialBySpeaker.Clear(); _v2_lastEventBase = null; _v2_lastEventPageFingerprint = null;
                     return;
                 }
             }
@@ -102,6 +126,8 @@ namespace VoiceOverFrameworkMod
                     {
                         ResetDialogueState();
                         _dialogueNotVisibleTicks = 0;
+                        // clear event-serial state
+                        _v2_eventSerialBySpeaker.Clear(); _v2_lastEventBase = null; _v2_lastEventPageFingerprint = null;
                     }
                 }
                 return; // nothing to do this tick
@@ -119,6 +145,7 @@ namespace VoiceOverFrameworkMod
             }
 
             // --- Text stabilization ---
+            bool newPageDetectedThisTick = false;
             if (!string.IsNullOrWhiteSpace(currentDisplayedString))
             {
                 if (currentDisplayedString == lastDialogueText)
@@ -133,6 +160,7 @@ namespace VoiceOverFrameworkMod
                     wasDialogueUpLastTick = true;               // reuse V1 state
                     _sameLineStableTicks = 0;
                     _lastPlayedLookupKey = null;                // allow one play for this page
+                    newPageDetectedThisTick = true;
                 }
 
                 if (_sameLineStableTicks < Config.TextStabilizeTicks) // wait more ticks for stability
@@ -147,7 +175,7 @@ namespace VoiceOverFrameworkMod
                     if (!string.IsNullOrEmpty(farmerName) && potentialOriginalText.Contains(farmerName))
                         potentialOriginalText = potentialOriginalText.Replace(farmerName, "@");
 
-                    // --- V2 sanitizer for the lookup key ---
+                    // --- V2 sanitizer for the fallback text key ---
                     string sanitizedStep1 = SanitizeDialogueTextV2(potentialOriginalText);
 
                     // Remove inline #...# emote/meta after sanitization
@@ -168,41 +196,142 @@ namespace VoiceOverFrameworkMod
                             return;
                         }
 
-                        if (gameLanguage == voicePackLanguage)
+                        // Build context for TK candidates & fallback
+                        var dialogueBox = Game1.activeClickableMenu as DialogueBox;
+                        var d = dialogueBox?.characterDialogue;
+
+                        // Prefer the vanilla translation key (often "Characters/Dialogue/NPC:key"), fallback to temp if present
+                        var tk = d?.TranslationKey ?? d?.temporaryDialogueKey;
+                        string sourceKey = (tk != null && tk.StartsWith("Characters/Dialogue/", StringComparison.OrdinalIgnoreCase)) ? tk : null;
+
+                        // Festival key if the TK points at 1.6 strings (or other Strings/* we decided to key)
+                        string festKey = (tk != null && tk.StartsWith("Strings/1_6_Strings", StringComparison.OrdinalIgnoreCase)) ? tk : null;
+
+                        // Event key (base) if we’re in an event
+                        var ev = GetCurrentEvent();
+                        string eventBase = ev != null && !IsFestivalEvent(ev) ? BuildEventBaseKeyForCurrent(ev) : null;
+
+                        // Page (Dialogue.currentDialogueIndex is 0-based)
+                        int pageZero = Math.Max(0, (d?.currentDialogueIndex ?? 0));
+
+                        // --- Maintain per-event, per-speaker serial that increments once per displayed page ---
+                        int? eventSerial = null;
+                        if (!string.IsNullOrWhiteSpace(eventBase))
                         {
-                            if (Config.developerModeOn)
+                            // reset serial map when event changes
+                            if (!string.Equals(_v2_lastEventBase, eventBase, StringComparison.Ordinal))
                             {
-                                Monitor.Log($"[VOICE V2] Same language ({gameLanguage}). Using sanitized key.", LogLevel.Trace);
-                                Monitor.Log($"Attempting V2 voice for '{characterName}'. Lookup Key: '{finalLookupKey}' (From Displayed: '{currentDisplayedString}')", LogLevel.Debug);
+                                _v2_eventSerialBySpeaker.Clear();
+                                _v2_lastEventBase = eventBase;
+                                _v2_lastEventPageFingerprint = null;
                             }
-                            TryToPlayVoice(characterName, finalLookupKey, currentLanguageCode);
-                            _lastPlayedLookupKey = finalLookupKey; // mark as played
+
+                            string pageFingerprint = $"{eventBase}|{characterName}|{finalLookupKey}";
+                            if (!string.Equals(_v2_lastEventPageFingerprint, pageFingerprint, StringComparison.Ordinal))
+                            {
+                                // first time we see this specific page → bump serial for this speaker
+                                string k = characterName;
+                                if (!_v2_eventSerialBySpeaker.TryGetValue(k, out int cur))
+                                    cur = -1;
+                                cur++;
+                                _v2_eventSerialBySpeaker[k] = cur;
+                                _v2_lastEventPageFingerprint = pageFingerprint;
+                            }
+
+                            eventSerial = _v2_eventSerialBySpeaker[characterName];
                         }
                         else
                         {
-                            // multilingual path (reuse your dictionary)
-                            if (Config.developerModeOn)
-                                Monitor.Log($"[VOICE V2 - MULTILINGUAL] Resolving cross-lang mapping...", LogLevel.Info);
-
-                            string resolvedFrom = Multilingual?.GetDialogueFrom(characterName, gameLanguage, voicePackLanguage, currentDisplayedString);
-
-                            if (Config.developerModeOn)
+                            // leaving event scope → clear serial bookkeeping
+                            if (_v2_eventSerialBySpeaker.Count > 0)
                             {
-                                Monitor.Log($"Character: {characterName}", LogLevel.Info);
-                                Monitor.Log($"Game Language: {gameLanguage}", LogLevel.Info);
-                                Monitor.Log($"Voice Pack Language: {voicePackLanguage}", LogLevel.Info);
-                                Monitor.Log($"Original Game Dialogue: \"{currentDisplayedString}\"", LogLevel.Info);
-                                Monitor.Log($"Sanitized (V2): \"{finalLookupKey}\"", LogLevel.Info);
-                                if (!string.IsNullOrEmpty(resolvedFrom))
-                                    Monitor.Log($"Dictionary Match Found: DialogueFrom = \"{resolvedFrom}\"", LogLevel.Info);
-                            }
-
-                            if (!string.IsNullOrEmpty(resolvedFrom))
-                            {
-                                TryToPlayVoiceFromDialogueKey(characterName, resolvedFrom, currentLanguageCode);
-                                _lastPlayedLookupKey = finalLookupKey; // mark as played
+                                _v2_eventSerialBySpeaker.Clear();
+                                _v2_lastEventBase = null;
+                                _v2_lastEventPageFingerprint = null;
                             }
                         }
+
+                        // --- Compose TK candidates (Events: prefer game's exact key; then our :sN; no :pN) ---
+                        var tkCandidates = new List<string>(8);
+
+                        // 0) If the game provided an Events/* key (temporaryDialogueKey), try it *first*
+                        string eventTk = (tk != null && tk.StartsWith("Events/", StringComparison.OrdinalIgnoreCase)) ? tk : null;
+                        if (!string.IsNullOrWhiteSpace(eventTk))
+                        {
+                            tkCandidates.Add(eventTk);
+
+                            // also try without any trailing ":pN" just in case (normalization)
+                            string noPage = Regex.Replace(eventTk, @":p\d+\b", "", RegexOptions.CultureInvariant);
+                            if (!string.Equals(noPage, eventTk, StringComparison.Ordinal))
+                                tkCandidates.Add(noPage);
+                        }
+
+                        // Characters/Dialogue TK
+                        if (!string.IsNullOrWhiteSpace(sourceKey))
+                        {
+                            tkCandidates.Add($"{sourceKey}:p{pageZero}");
+                            tkCandidates.Add(sourceKey);
+                        }
+
+                        // Event TK via our running serial (fallback path)
+                        if (!string.IsNullOrWhiteSpace(eventBase) && eventSerial.HasValue)
+                        {
+                            tkCandidates.Add($"{eventBase}:s{eventSerial.Value}");
+                            // Also try raw eventBase (ultra-fallback)
+                            tkCandidates.Add(eventBase);
+                        }
+
+                        // Festival / Strings TK
+                        if (!string.IsNullOrWhiteSpace(festKey))
+                        {
+                            tkCandidates.Add($"{festKey}:p{pageZero}");
+                            tkCandidates.Add(festKey);
+                        }
+
+                        // --- Fast path: try selected pack's TK map directly ---
+                        if (gameLanguage == voicePackLanguage && selectedPack != null && selectedPack.FormatMajor >= 2)
+                        {
+                            // log lookup intent (show the first/primary candidate)
+                            if (Config.developerModeOn)
+                            {
+                                string primaryKey = tkCandidates.FirstOrDefault() ?? "(none)";
+                                Monitor.Log($"[V2-LOOKUP] char='{characterName}' selPack='{selectedPack.VoicePackId}' text='{currentDisplayedString}' | key='{primaryKey}'", LogLevel.Info);
+                            }
+
+                            string resolvedRel = null;
+                            foreach (var cand in tkCandidates)
+                            {
+                                if (selectedPack.EntriesByTranslationKey.TryGetValue(cand, out resolvedRel))
+                                {
+                                    string fullPath = PathUtilities.NormalizePath(Path.Combine(selectedPack.BaseAssetPath, resolvedRel));
+
+                                    if (Config.developerModeOn)
+                                        Monitor.Log($"[V2-RESULT] char='{characterName}' pack='{selectedPack.VoicePackName}' format={selectedPack.FormatMajor} match=Yes key='{cand}' path='{fullPath}'", LogLevel.Info);
+
+                                    PlayVoiceFromFile(fullPath);
+                                    _lastPlayedLookupKey = finalLookupKey; // mark as played for debounce
+                                    return;
+                                }
+                            }
+
+                            if (Config.developerModeOn)
+                                Monitor.Log($"[V2-RESULT] char='{characterName}' pack='{selectedPack.VoicePackName}' format={selectedPack.FormatMajor} match=No → fallback to V2/V1 text", LogLevel.Info);
+                        }
+
+                        // --- Build V2 context then try full V2 fallback (templated keys), then V1 text ---
+                        var ctx = new VoiceLineContext
+                        {
+                            Speaker = characterName,
+                            SourceKey = sourceKey,     // e.g. Characters/Dialogue/Abigail:Mon
+                            FestivalKey = festKey,     // e.g. Strings/1_6_Strings:DesertFestival_Abigail
+                            EventKey = eventBase,      // e.g. Events/SeedShop:1
+                                                       // IMPORTANT: do NOT set Page for Events; keep it only for Characters/Dialogue and Strings
+                            Page = string.IsNullOrWhiteSpace(eventBase) ? (pageZero + 1) : (int?)null,
+                            Gender = Game1.player?.IsMale == true ? "M" : "F",
+                        };
+
+                        TryToPlayVoiceV2(characterName, ctx, currentLanguageCode, finalLookupKey);
+                        _lastPlayedLookupKey = finalLookupKey; // mark as played for debounce
                     }
                 }
             }
@@ -210,7 +339,116 @@ namespace VoiceOverFrameworkMod
         }
 
 
-       
+
+
+
+        /// <summary>
+        /// Try to play by raw TranslationKey(s) (e.g., "Characters/Dialogue/Abigail:Mon", "Events/SeedShop:1:s0").
+        /// Returns true if playback started. Falls back to V1 if provided.
+        /// </summary>
+        public bool TryToPlayVoiceByTranslationKeys(
+            string characterName,
+            IEnumerable<string> tkCandidates,
+            LocalizedContentManager.LanguageCode languageCode,
+            string? sanitizedDialogueTextForV1Fallback = null)
+        {
+            var candidates = tkCandidates?.Where(k => !string.IsNullOrWhiteSpace(k)).Distinct(StringComparer.OrdinalIgnoreCase).ToList() ?? new();
+            if (candidates.Count == 0)
+                return false;
+
+            // Resolve V2-capable pack for this character
+            var fullPath = GetAudioPathByTranslationKeys(characterName, candidates, languageCode, out VoicePack? packUsed, out string? matchedKey);
+
+            if (!string.IsNullOrWhiteSpace(fullPath))
+            {
+                if (Config?.developerModeOn == true)
+                    Monitor.Log($"[V2-RESULT] char='{characterName}' pack='{packUsed?.VoicePackName}' format={(packUsed?.FormatMajor.ToString() ?? "?")} match=Yes key='{matchedKey}' path='{fullPath}'", LogLevel.Info);
+
+                PlayVoiceFromFile(fullPath!);
+                return true;
+            }
+
+            if (Config?.developerModeOn == true)
+                Monitor.Log($"[V2-RESULT] char='{characterName}' pack='{packUsed?.VoicePackName ?? "(none)"}' format={(packUsed?.FormatMajor.ToString() ?? "?")} match=No → fallback to V1 text", LogLevel.Info);
+
+            // Optional fallback to V1 sanitized text
+            if (!string.IsNullOrWhiteSpace(sanitizedDialogueTextForV1Fallback))
+                TryToPlayVoice(characterName, sanitizedDialogueTextForV1Fallback!, languageCode);
+
+            return false;
+        }
+
+        /// <summary>
+        /// Resolve a V2 pack and try raw TK candidates against EntriesByTranslationKey. Returns absolute path if found.
+        /// </summary>
+        private string? GetAudioPathByTranslationKeys(
+            string characterName,
+            IEnumerable<string> tkCandidates,
+            LocalizedContentManager.LanguageCode languageCode,
+            out VoicePack? packUsed,
+            out string? matchedKey)
+        {
+            packUsed = null;
+            matchedKey = null;
+
+            if (!VoicePacksByCharacter.TryGetValue(characterName, out var availablePacks) || !availablePacks.Any())
+                return null;
+
+            if (!SelectedVoicePacks.TryGetValue(characterName, out string selectedVoicePackId) ||
+                string.IsNullOrEmpty(selectedVoicePackId) ||
+                selectedVoicePackId.Equals("None", StringComparison.OrdinalIgnoreCase))
+                return null;
+
+            // language selection (same as V1)
+            string primaryLangStr = languageCode.ToString().ToLowerInvariant();
+            string configDefaultLangStr = (Config?.DefaultLanguage ?? "en").ToLowerInvariant();
+            const string hardcodedFallbackLangStr = "en";
+            bool allowFallbackToEnglish = Config?.FallbackToDefaultIfMissing ?? true;
+
+            // Pick a V2-capable pack
+            VoicePack? pack = availablePacks.FirstOrDefault(p =>
+                p.FormatMajor >= 2 &&
+                p.VoicePackId.Equals(selectedVoicePackId, StringComparison.OrdinalIgnoreCase) &&
+                p.Language.StartsWith(primaryLangStr, StringComparison.OrdinalIgnoreCase));
+
+            if (pack == null && primaryLangStr != configDefaultLangStr)
+            {
+                pack = availablePacks.FirstOrDefault(p =>
+                    p.FormatMajor >= 2 &&
+                    p.VoicePackId.Equals(selectedVoicePackId, StringComparison.OrdinalIgnoreCase) &&
+                    p.Language.StartsWith(configDefaultLangStr, StringComparison.OrdinalIgnoreCase));
+            }
+
+            if (pack == null && allowFallbackToEnglish && primaryLangStr != hardcodedFallbackLangStr && configDefaultLangStr != hardcodedFallbackLangStr)
+            {
+                pack = availablePacks.FirstOrDefault(p =>
+                    p.FormatMajor >= 2 &&
+                    p.VoicePackId.Equals(selectedVoicePackId, StringComparison.OrdinalIgnoreCase) &&
+                    p.Language.StartsWith(hardcodedFallbackLangStr, StringComparison.OrdinalIgnoreCase));
+            }
+
+            // No V2 or no TK map? bail
+            if (pack == null || pack.EntriesByTranslationKey == null || pack.EntriesByTranslationKey.Count == 0)
+                return null;
+
+            packUsed = pack;
+
+            // Try exact TK match
+            foreach (var tk in tkCandidates)
+            {
+                if (pack.EntriesByTranslationKey.TryGetValue(tk, out var rel))
+                {
+                    matchedKey = tk;
+                    return PathUtilities.NormalizePath(Path.Combine(pack.BaseAssetPath, rel));
+                }
+            }
+
+            // (Optional) If your packs keep templated TKs with {Vars} (rare), you can render here.
+            // Not doing that by default because TKs are usually literal.
+
+            return null;
+        }
+
 
 
 
@@ -254,24 +492,8 @@ namespace VoiceOverFrameworkMod
                 DialogueBox dialogueBox = Game1.activeClickableMenu as DialogueBox;
                 
                 currentDisplayedString = dialogueBox?.getCurrentString();
-                var db = dialogueBox;                               // already cast above
-                var d = db?.characterDialogue;                     // may be null during transitions
 
-                // what file the NPC loaded (e.g. "Characters/Dialogue/Abigail")
-                string loadedSheet = currentSpeaker?.LoadedDialogueKey;
 
-                // the full translation key chosen by the game (best signal!)
-                string translationKey = d?.TranslationKey;          // e.g. "Characters\\Dialogue\\Abigail:danceRejection"
-
-                // if you applied the Harmony postfix, this will also be set:
-                string tempKey = d?.temporaryDialogueKey;           // e.g. "Characters/Dialogue/Abigail:danceRejection"
-
-                // only spam logs when the visible text actually changes
-
-                Monitor.Log(
-                    $"[DialogueDBG] text='{currentDisplayedString}' | TranslationKey='{translationKey ?? "null"}' | tempKey='{tempKey ?? "null"}' | loadedSheet='{loadedSheet ?? "null"}'",
-                    LogLevel.Debug
-                );
                 
             }
 
@@ -589,81 +811,6 @@ namespace VoiceOverFrameworkMod
         }
 
 
-
-        /// <summary>
-        /// Resolve the best VoiceEntryTemplate (V2) for the currently shown dialogue.
-        /// Call this right before you choose the audio file to play.
-        /// </summary>
-        /// <param name="speaker">The NPC speaking (same one passed into Dialogue/drawDialogue).</param>
-        /// <param name="rawText">The raw dialogue text as shown to the player for this bubble (NOT sanitized).</param>
-        /// <param name="dialogueTranslationKey">Dialogue.TranslationKey if the game supplied one; may be null.</param>
-        /// <param name="entries">All loaded entries for this character & language (from the active voice pack).</param>
-        /// <returns>The best-matching entry or null.</returns>
-        private VoiceEntryTemplate ResolveVoiceEntryV2(NPC speaker, string rawText, string dialogueTranslationKey, List<VoiceEntryTemplate> entries)
-        {
-            if (speaker == null || string.IsNullOrWhiteSpace(rawText) || entries == null || entries.Count == 0)
-                return null;
-
-            // Normalize the currently-displayed line to our stable pattern
-            string pattern = SanitizeDialogueTextV2(rawText);
-            if (string.IsNullOrWhiteSpace(pattern))
-                return null;
-
-            // Preferred gender (for ${m^f(^n)?} splits)
-            string preferredGender = Game1.player?.IsMale == true ? "male" : "female";
-
-            // 1) If we have a vanilla translation key (Characters/Dialogue/...), try exact TK + pattern first
-            if (!string.IsNullOrWhiteSpace(dialogueTranslationKey) &&
-                dialogueTranslationKey.StartsWith("Characters/Dialogue/", StringComparison.OrdinalIgnoreCase))
-            {
-                var pick = PickBestByTkPatternGender(entries, dialogueTranslationKey, pattern, preferredGender);
-                if (pick != null)
-                    return pick;
-            }
-
-            // 2) If we're in a non-festival Event, synthesize our event key and match it
-            var ev = GetCurrentEvent();
-            if (ev != null && !IsFestivalEvent(ev))
-            {
-                var eventBase = BuildEventBaseKeyForCurrent(ev); // e.g. "Events/Backwoods:6963327"
-                if (!string.IsNullOrWhiteSpace(eventBase))
-                {
-                    // Count speak & splitSpeak up to current command to reproduce s{index}
-                    int? speakIndex = ComputeSpeakIndexForCurrent(ev, speaker?.Name);
-                    if (speakIndex.HasValue)
-                    {
-                        string prefix = $"{eventBase}:s{speakIndex.Value}";
-                        // Try any branch (split{n}) by TK prefix + DisplayPattern + Gender
-                        var pick = PickBestByTkPrefixPatternGender(entries, prefix, pattern, preferredGender);
-                        if (pick != null)
-                            return pick;
-                    }
-
-                    // Fallback: no index (some odd cases) – try any entry for this event base key
-                    var anyEventPick = PickBestByTkPrefixPatternGender(entries, eventBase, pattern, preferredGender);
-                    if (anyEventPick != null)
-                        return anyEventPick;
-                }
-            }
-
-            // 3) If this is a festival line with a TK, just try TK + pattern
-            if (!string.IsNullOrWhiteSpace(dialogueTranslationKey) &&
-                (dialogueTranslationKey.StartsWith("Data/Festivals/", StringComparison.OrdinalIgnoreCase) ||
-                 dialogueTranslationKey.StartsWith("Strings/", StringComparison.OrdinalIgnoreCase)))
-            {
-                var pick = PickBestByTkPatternGender(entries, dialogueTranslationKey, pattern, preferredGender);
-                if (pick != null)
-                    return pick;
-            }
-
-            // 4) Last resort: match by DisplayPattern only (gender-preferred), regardless of TK.
-            var loose = entries
-                .Where(e => string.Equals(e.DisplayPattern, pattern, StringComparison.Ordinal))
-                .OrderByDescending(e => RankGender(e.GenderVariant, preferredGender))
-                .ThenBy(e => e.TranslationKey ?? "~") // stabilize
-                .FirstOrDefault();
-            return loose;
-        }
 
         private Event GetCurrentEvent()
         {

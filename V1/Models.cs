@@ -43,6 +43,8 @@ namespace VoiceOverFrameworkMod
         public string Character { get; set; }
         public Dictionary<string, string> Entries { get; set; }
         public Dictionary<string, string> EntriesByFrom { get; set; } = new(StringComparer.OrdinalIgnoreCase);
+        public Dictionary<string, string> EntriesByTranslationKey { get; set; } = new(StringComparer.OrdinalIgnoreCase);
+
         public string ContentPackId { get; set; }
         public string ContentPackName { get; set; }
         public string BaseAssetPath { get; set; }
@@ -61,7 +63,7 @@ namespace VoiceOverFrameworkMod
 
     public class VoicePackManifestTemplate
     {
-        public string Format { get; set; } = "1.0.0";
+        public string Format { get; set; } = "2.0.0";
         public string VoicePackId { get; set; }
         public string VoicePackName { get; set; }
         public string Character { get; set; }

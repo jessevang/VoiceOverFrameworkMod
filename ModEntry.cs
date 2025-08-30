@@ -214,16 +214,225 @@ namespace VoiceOverFrameworkMod
 
 
 
+        // Returns logical *pages* (each page can have 1–3 gender variants) and whether to reserve a follow-up serial for $q.
+        private List<EventPage> ExtractVoicePagesFromDialogue(string rawText)
+        {
+            var pages = new List<EventPage>();
+            if (string.IsNullOrWhiteSpace(rawText))
+                return pages;
+
+            string s = rawText;
+
+            // --- A) If this is a $q branching block, keep only the spoken prompt text (before any '#$r' choices),
+            //         and mark ReserveNextSerial so the caller emits a {CHOICE_REPLY} page after it.
+            bool hasBranch = s.IndexOf("$q", StringComparison.OrdinalIgnoreCase) >= 0;
+            if (hasBranch)
+            {
+                int header = s.IndexOf("$q", StringComparison.OrdinalIgnoreCase);
+                int firstHash = (header >= 0) ? s.IndexOf('#', header) : -1;
+                if (firstHash >= 0)
+                {
+                    string afterHeader = s.Substring(firstHash + 1);
+                    int nextChoice = afterHeader.IndexOf("#$r", StringComparison.Ordinal);
+                    s = (nextChoice >= 0) ? afterHeader.Substring(0, nextChoice) : afterHeader;
+                }
+                else
+                {
+                    // malformed header: strip it and continue
+                    s = Regex.Replace(s, @"#?\$q\s*[^#]*#", "", RegexOptions.CultureInvariant);
+                }
+            }
+
+            // --- B) Drop any residual $r … choice blocks just in case
+            s = Regex.Replace(
+                s,
+                @"#?\$r\s+\d+\s+-?\d+\s+\S+#.*?(?=(#?\$r\s+\d+\s+-?\d+\s+\S+#)|$)",
+                "",
+                RegexOptions.Singleline | RegexOptions.CultureInvariant
+            );
+
+            // --- C) Normalize page-breaks to '\n' (handles "#$b#", "#$b", "$b#", "$b", "##")
+            s = Regex.Replace(s, @"#\s*\$b\s*#|#\s*\$b|\$b\s*#|\$b|#\s*#", "\n", RegexOptions.CultureInvariant);
+
+            // Split into candidate pages
+            var rawPages = s.Split('\n');
+
+            foreach (var rawPage in rawPages)
+            {
+                string text = rawPage?.Trim();
+                if (string.IsNullOrEmpty(text))
+                    continue;
+
+                // --- D) Expand gender *token* form: ${male^female(^non-binary)}
+                // We'll replace each token with its variant to build distinct page variants.
+                List<string> expandedByToken = ExpandGenderTokens(text);
+
+                // Now for each token-expanded variant, check the *caret* form used in event strings:
+                // "malePage$textTags^femalePage"
+                foreach (var tokenVariant in expandedByToken)
+                {
+                    // strip mood/pause tags AFTER we detect caret split, because caret can be adjacent to a $l
+                    string caretSource = tokenVariant;
+
+                    // Top-level caret split (2 or 3 parts). We consider it only if it splits the whole page,
+                    // not inside a ${...} (already handled above).
+                    string[] caretParts = caretSource.Split('^');
+                    if (caretParts.Length >= 2 && caretParts.Length <= 3)
+                    {
+                        // Heuristic: treat as caret gender split when the split is "clean" (no stray quotes etc.)
+                        // Clean & strip tags per-part
+                        var variants = new List<string>();
+                        foreach (var part in caretParts)
+                        {
+                            var stripped = StripTags(part);
+                            if (!string.IsNullOrWhiteSpace(stripped))
+                                variants.Add(stripped);
+                        }
+                        if (variants.Count >= 2)
+                        {
+                            pages.Add(new EventPage
+                            {
+                                Variants = variants,
+                                ReserveNextSerial = hasBranch // carries from the original line
+                            });
+                            continue;
+                        }
+                    }
+
+                    // No caret split → single-variant page
+                    string single = StripTags(tokenVariant).Trim();
+                    if (!string.IsNullOrEmpty(single))
+                    {
+                        pages.Add(new EventPage
+                        {
+                            Variants = new List<string> { single },
+                            ReserveNextSerial = hasBranch
+                        });
+                    }
+                }
+            }
+
+            return pages;
+        }
+
+        // Replace ${a^b(^c)} tokens with concrete variants. Used to set the gender to dialogue 
+        private List<string> ExpandGenderTokens(string input)
+        {
+            // quickly check if any token exists
+            if (input.IndexOf("${", StringComparison.Ordinal) < 0)
+                return new List<string> { input };
+
+            var tokenRegex = new Regex(@"\$\{([^}]+)\}", RegexOptions.CultureInvariant);
+            var queue = new Queue<string>();
+            queue.Enqueue(input);
+
+            var results = new List<string>();
+
+            while (queue.Count > 0)
+            {
+                var cur = queue.Dequeue();
+                var m = tokenRegex.Match(cur);
+                if (!m.Success)
+                {
+                    results.Add(cur);
+                    continue;
+                }
+
+                string before = cur.Substring(0, m.Index);
+                string inside = m.Groups[1].Value; // e.g., "male^female" or "m^f^nb"
+                string after = cur.Substring(m.Index + m.Length);
+
+                var options = inside.Split('^');
+                foreach (var opt in options)
+                {
+                    queue.Enqueue(before + opt + after);
+                }
+            }
+            
+
+            return results;
+        }
+
+        // Remove mood/pause tags: $h,$s,$a,$l,$x[...], numeric $10, etc.
+        private string StripTags(string s)
+        {
+            if (string.IsNullOrEmpty(s))
+                return s ?? "";
+
+            string t = s;
+            t = Regex.Replace(t, @"\$[a-zA-Z](\[[^\]]+\])?", "", RegexOptions.CultureInvariant); // $h, $l, $x[...]
+            t = Regex.Replace(t, @"\$\d+", "", RegexOptions.CultureInvariant);                   // $10
+            return t.Trim();
+        }
+
+        // Overload to support (out male, out female, out nonBinary)
+        private bool TrySplitTopLevelGender(string raw, out string male, out string female, out string nonBinary)
+        {
+            male = female = nonBinary = null;
+            if (string.IsNullOrWhiteSpace(raw))
+                return false;
+
+            // --- 1) Full-line caret split: "<male version> ^ <female version>"
+            // Heuristic: treat as gender split if there's a single top-level '^'
+            // (good enough for event lines like "...$l^I didn't know I felt this way...")
+            int caret = raw.IndexOf('^');
+            if (caret > 0)
+            {
+                string left = raw.Substring(0, caret);
+                string right = raw.Substring(caret + 1);
+
+                male = CleanSingleLine(left);
+                female = CleanSingleLine(right);
+                // nonBinary remains null here (rare in vanilla for full-line caret form)
+                return !string.IsNullOrEmpty(male) || !string.IsNullOrEmpty(female);
+            }
+
+            // --- 2) Token form: "${male^female}" or "${male^female^non-binary}"
+            // Only treat it as a top-level split if the ENTIRE line is the token.
+            if (raw.StartsWith("${") && raw.EndsWith("}"))
+            {
+                string inner = raw.Substring(2, raw.Length - 3);
+                var parts = inner.Split('^');
+                if (parts.Length == 2 || parts.Length == 3)
+                {
+                    male = CleanSingleLine(parts[0]);
+                    female = CleanSingleLine(parts[1]);
+                    if (parts.Length == 3)
+                        nonBinary = CleanSingleLine(parts[2]);
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        // If you already have this helper somewhere, keep yours and remove this one.
+        private string CleanSingleLine(string s)
+        {
+            if (string.IsNullOrWhiteSpace(s))
+                return s;
+
+            // strip mood/pause tokens like $l, $h, $s, $a, $x[...]
+            s = Regex.Replace(s, @"\$[a-zA-Z](\[[^\]]+\])?", "", RegexOptions.CultureInvariant);
+            // strip numeric pauses like $10
+            s = Regex.Replace(s, @"\$\d+", "", RegexOptions.CultureInvariant);
+
+            return s.Trim();
+        }
+
 
 
 
 
         //get Event Dialogues dynamically so that modded events are also included
+
         private Dictionary<string, string> GetEventDialogueForCharacter(string targetCharacterName, string languageCode, IGameContentHelper gameContent)
         {
-            Monitor.Log($"[VoiceFramework] Scanning for event dialogue for '{targetCharacterName}'...", LogLevel.Info);
+            Monitor.Log($"[EV_GEN] Scanning for event dialogue for '{targetCharacterName}'...", LogLevel.Info);
 
             var eventDialogue = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+
+            // existing regexes
             var speakCommandRegex = new Regex(@"^speak\s+(\w+)\s+""([^""]*)""", RegexOptions.Compiled);
             var namedQuoteRegex = new Regex($@"(?:textAboveHead|drawDialogue|message|showText)\s+(\w*)\s*""([^""]+)""", RegexOptions.IgnoreCase | RegexOptions.Compiled);
             var genericQuoteRegex = new Regex(@"""([^""]{4,})""", RegexOptions.Compiled);
@@ -240,14 +449,23 @@ namespace VoiceOverFrameworkMod
                     if (string.IsNullOrWhiteSpace(eventScript))
                         continue;
 
+                    if (Config.developerModeOn)
+                        Monitor.Log($"[EV_GEN] ▶ Location='{location.NameOrUniqueName}' Event='{eventId}'", LogLevel.Trace);
+
                     string[] commands = eventScript.Split('/');
                     string lastSpeaker = null;
 
-                    foreach (string rawCommand in commands)
-                    {
-                        string command = rawCommand.Trim();
+                    // EVENTS: no :pN, we emit :sN pages.
+                    int speakSerialForTarget = -1;
 
-                        // --- Case 1: speak command ---
+                    int cmdIndex = -1;
+                    foreach (string raw in commands)
+                    {
+                        cmdIndex++;
+                        string command = raw.Trim();
+                        if (command.Length == 0) continue;
+
+                        // --------------- Case 1: speak <NPC> "..." ---------------
                         var speakMatch = speakCommandRegex.Match(command);
                         if (speakMatch.Success)
                         {
@@ -255,16 +473,66 @@ namespace VoiceOverFrameworkMod
                             string dialogueText = speakMatch.Groups[2].Value;
                             lastSpeaker = speaker;
 
+                            if (Config.developerModeOn)
+                                Monitor.Log($"[EV_GEN]   [cmd#{cmdIndex}] speak {speaker}: \"{Trunc(dialogueText)}\"", LogLevel.Trace);
+
                             if (IsCharacterMatch(speaker, targetCharacterName))
                             {
+                                bool hasBranch = dialogueText.IndexOf("$q", StringComparison.OrdinalIgnoreCase) >= 0;
+
+                                // Top-level gender fast-path: one page, multiple variants → SAME :sN
+                                if (TrySplitTopLevelGender(dialogueText, out string maleRaw, out string femaleRaw, out string nbRaw))
+                                {
+                                    string maleLine = CleanSingleLine(maleRaw);
+                                    string femaleLine = CleanSingleLine(femaleRaw);
+                                    string nbLine = CleanSingleLine(nbRaw);
+
+                                    if (!string.IsNullOrEmpty(maleLine) || !string.IsNullOrEmpty(femaleLine) || !string.IsNullOrEmpty(nbLine))
+                                    {
+                                        speakSerialForTarget++; // bump ONCE for the page
+                                        string suffix = $":s{speakSerialForTarget}";
+
+                                        if (!string.IsNullOrEmpty(maleLine))
+                                            AddEventDialogue(eventDialogue, location, eventId, maleLine, ref foundInEventsCount, suffix, genderTag: "male");
+                                        if (!string.IsNullOrEmpty(femaleLine))
+                                            AddEventDialogue(eventDialogue, location, eventId, femaleLine, ref foundInEventsCount, suffix, genderTag: "female");
+                                        if (!string.IsNullOrEmpty(nbLine))
+                                            AddEventDialogue(eventDialogue, location, eventId, nbLine, ref foundInEventsCount, suffix, genderTag: "nonbinary");
+
+                                        if (Config.developerModeOn)
+                                            Monitor.Log($"[EV_GEN]     gender split (speak) → {suffix} (m/f/nb where present)", LogLevel.Trace);
+                                    }
+
+                                    // done with this speak command
+                                    continue;
+                                }
+
+                                // No gender split → split into spoken pages
                                 var lines = ExtractVoiceLinesFromDialogue(dialogueText);
+                                if (Config.developerModeOn)
+                                    Monitor.Log($"[EV_GEN]     gender=NO, $q={hasBranch}, pages={lines.Count}", LogLevel.Trace);
+
                                 foreach (var line in lines)
-                                    AddEventDialogue(eventDialogue, location, eventId, line, ref foundInEventsCount);
+                                {
+                                    speakSerialForTarget++;
+                                    string suffix = $":s{speakSerialForTarget}";
+                                    LogAdd(eventDialogue, location, eventId, suffix, line, ref foundInEventsCount);
+                                }
+
+                                if (hasBranch)
+                                {
+                                    // one extra page for the immediate post-choice reply
+                                    speakSerialForTarget++;
+                                    string suffix = $":s{speakSerialForTarget}";
+                                    if (Config.developerModeOn)
+                                        Monitor.Log($"[EV_GEN]     reserve reply {suffix}", LogLevel.Trace);
+                                    LogAdd(eventDialogue, location, eventId, suffix, "{CHOICE_REPLY}", ref foundInEventsCount);
+                                }
                             }
                             continue;
                         }
 
-                        // --- Case 2: drawDialogue/message/etc ---
+                        // --------------- Case 2: drawDialogue/message/showText "..." ---------------
                         var namedMatch = namedQuoteRegex.Match(command);
                         if (namedMatch.Success)
                         {
@@ -274,54 +542,296 @@ namespace VoiceOverFrameworkMod
                             if (!string.IsNullOrWhiteSpace(possibleSpeaker))
                                 lastSpeaker = possibleSpeaker;
 
+                            if (Config.developerModeOn)
+                                Monitor.Log($"[EV_GEN]   [cmd#{cmdIndex}] {possibleSpeaker}*: \"{Trunc(dialogueText)}\"", LogLevel.Trace);
+
                             if (IsCharacterMatch(lastSpeaker, targetCharacterName))
                             {
-                                var lines = ExtractVoiceLinesFromDialogue(dialogueText);
-                                foreach (var line in lines)
-                                    AddEventDialogue(eventDialogue, location, eventId, line, ref foundInEventsCount, suffix: "_alt");
+                                // Gender fast-path first (single page with m^f[^nb])
+                                if (TrySplitTopLevelGender(dialogueText, out string maleRaw, out string femaleRaw, out string nbRaw))
+                                {
+                                    string maleLine = CleanSingleLine(maleRaw);
+                                    string femaleLine = CleanSingleLine(femaleRaw);
+                                    string nbLine = CleanSingleLine(nbRaw);
+
+                                    if (!string.IsNullOrEmpty(maleLine) || !string.IsNullOrEmpty(femaleLine) || !string.IsNullOrEmpty(nbLine))
+                                    {
+                                        speakSerialForTarget++;
+                                        string suffix = $":s{speakSerialForTarget}";
+
+                                        if (!string.IsNullOrEmpty(maleLine))
+                                            AddEventDialogue(eventDialogue, location, eventId, maleLine, ref foundInEventsCount, suffix, genderTag: "male");
+                                        if (!string.IsNullOrEmpty(femaleLine))
+                                            AddEventDialogue(eventDialogue, location, eventId, femaleLine, ref foundInEventsCount, suffix, genderTag: "female");
+                                        if (!string.IsNullOrEmpty(nbLine))
+                                            AddEventDialogue(eventDialogue, location, eventId, nbLine, ref foundInEventsCount, suffix, genderTag: "nonbinary");
+
+                                        if (Config.developerModeOn)
+                                            Monitor.Log($"[EV_GEN]     gender split (named) → {suffix} (m/f/nb where present)", LogLevel.Trace);
+
+                                        continue;
+                                    }
+                                }
+
+                                // Otherwise, extract pages (may include multiple pages)
+                                var pages = ExtractVoicePagesFromDialogue(dialogueText);
+
+                                if (Config.developerModeOn)
+                                    Monitor.Log($"[EV_GEN]     pages={pages.Count}", LogLevel.Trace);
+
+                                foreach (var page in pages)
+                                {
+                                    speakSerialForTarget++;
+                                    string suffix = $":s{speakSerialForTarget}";
+
+                                    // Each page can have 1..3 variants (gender) *if* your extractor returns them.
+                                    // Since variants here aren't labeled, we store without explicit genderTag.
+                                    for (int i = 0; i < page.Variants.Count; i++)
+                                    {
+                                        string v = page.Variants[i];
+                                        if (Config.developerModeOn)
+                                            Monitor.Log($"[EV_GEN]       variant[{i}] -> {suffix}: \"{Trunc(v)}\"", LogLevel.Trace);
+                                        LogAdd(eventDialogue, location, eventId, suffix, v, ref foundInEventsCount);
+                                    }
+
+                                    if (page.ReserveNextSerial)
+                                    {
+                                        speakSerialForTarget++;
+                                        string replyKey = $":s{speakSerialForTarget}";
+                                        if (Config.developerModeOn)
+                                            Monitor.Log($"[EV_GEN]       reserve reply {replyKey}", LogLevel.Trace);
+                                        LogAdd(eventDialogue, location, eventId, replyKey, "{CHOICE_REPLY}", ref foundInEventsCount);
+                                    }
+                                }
                             }
                             continue;
                         }
 
-                        // --- Case 3: Generic quoted text (contextual speaker match) ---
+                        // --------------- Case 3: Generic quoted text under lastSpeaker ---------------
                         if (!string.IsNullOrEmpty(lastSpeaker) && IsCharacterMatch(lastSpeaker, targetCharacterName))
                         {
                             var genericMatches = genericQuoteRegex.Matches(command);
-                            foreach (Match match in genericMatches)
+                            if (genericMatches.Count > 0 && Config.developerModeOn)
+                                Monitor.Log($"[EV_GEN]   [cmd#{cmdIndex}] generic under '{lastSpeaker}': found {genericMatches.Count} quoted blocks", LogLevel.Trace);
+
+                            foreach (Match m in genericMatches)
                             {
-                                string line = match.Groups[1].Value.Trim();
-                                if (line.Length > 3 && !line.StartsWith("..."))
+                                string chunk = m.Groups[1].Value.Trim();
+                                if (chunk.Length <= 3) continue;
+
+                                // Gender fast-path if the whole chunk is a single page with ^ split
+                                if (TrySplitTopLevelGender(chunk, out string maleRaw, out string femaleRaw, out string nbRaw))
                                 {
-                                    var splitLines = ExtractVoiceLinesFromDialogue(line);
-                                    foreach (var l in splitLines)
-                                        AddEventDialogue(eventDialogue, location, eventId, l, ref foundInEventsCount, suffix: "_implied");
+                                    string maleLine = CleanSingleLine(maleRaw);
+                                    string femaleLine = CleanSingleLine(femaleRaw);
+                                    string nbLine = CleanSingleLine(nbRaw);
+
+                                    if (!string.IsNullOrEmpty(maleLine) || !string.IsNullOrEmpty(femaleLine) || !string.IsNullOrEmpty(nbLine))
+                                    {
+                                        speakSerialForTarget++;
+                                        string suffix = $":s{speakSerialForTarget}";
+
+                                        if (!string.IsNullOrEmpty(maleLine))
+                                            AddEventDialogue(eventDialogue, location, eventId, maleLine, ref foundInEventsCount, suffix, genderTag: "male");
+                                        if (!string.IsNullOrEmpty(femaleLine))
+                                            AddEventDialogue(eventDialogue, location, eventId, femaleLine, ref foundInEventsCount, suffix, genderTag: "female");
+                                        if (!string.IsNullOrEmpty(nbLine))
+                                            AddEventDialogue(eventDialogue, location, eventId, nbLine, ref foundInEventsCount, suffix, genderTag: "nonbinary");
+
+                                        if (Config.developerModeOn)
+                                            Monitor.Log($"[EV_GEN]     gender split (generic) → {suffix} (m/f/nb where present)", LogLevel.Trace);
+
+                                        continue;
+                                    }
+                                }
+
+                                // Otherwise, page-extract within the chunk
+                                var pages = ExtractVoicePagesFromDialogue(chunk);
+
+                                if (Config.developerModeOn)
+                                    Monitor.Log($"[EV_GEN]     generic pages={pages.Count}", LogLevel.Trace);
+
+                                foreach (var page in pages)
+                                {
+                                    speakSerialForTarget++;
+                                    string suffix = $":s{speakSerialForTarget}";
+
+                                    for (int i = 0; i < page.Variants.Count; i++)
+                                    {
+                                        string v = page.Variants[i];
+                                        if (Config.developerModeOn)
+                                            Monitor.Log($"[EV_GEN]       variant[{i}] -> {suffix}: \"{Trunc(v)}\"", LogLevel.Trace);
+                                        LogAdd(eventDialogue, location, eventId, suffix, v, ref foundInEventsCount);
+                                    }
+
+                                    if (page.ReserveNextSerial)
+                                    {
+                                        speakSerialForTarget++;
+                                        string replyKey = $":s{speakSerialForTarget}";
+                                        if (Config.developerModeOn)
+                                            Monitor.Log($"[EV_GEN]       reserve reply {replyKey}", LogLevel.Trace);
+                                        LogAdd(eventDialogue, location, eventId, replyKey, "{CHOICE_REPLY}", ref foundInEventsCount);
+                                    }
                                 }
                             }
                         }
-                    }
-                }
-            }
+                    } // foreach command
+                } // foreach event
+            } // foreach location
 
-            Monitor.Log($"[VoiceFramework] Found {foundInEventsCount} event dialogue lines for '{targetCharacterName}'.", LogLevel.Info);
+            Monitor.Log($"[EV_GEN] Done. Found {foundInEventsCount} event dialogue lines for '{targetCharacterName}'.", LogLevel.Info);
             return eventDialogue;
+
+            // ---- local helpers used by this method ----
+
+            void LogAdd(Dictionary<string, string> dict, GameLocation loc, string evId, string suff, string text, ref int ctr)
+            {
+                AddEventDialogue(dict, loc, evId, text, ref ctr, suff, genderTag: null);
+                if (Config.developerModeOn)
+                    Monitor.Log($"[EV_GEN]       add {loc.NameOrUniqueName}/{evId}{suff} → \"{Trunc(text)}\"", LogLevel.Trace);
+            }
         }
 
 
 
+        // ------- tiny helpers for logging GetEventDialogueForCharacter()-------
+
+        private string Trunc(string s, int max = 140)
+        {
+            if (string.IsNullOrEmpty(s)) return s;
+            s = s.Replace("\n", "\\n");
+            return (s.Length <= max) ? s : (s.Substring(0, max) + "…");
+        }
+
+        private void LogAdd(Dictionary<string, string> dict, GameLocation location, string eventId, string suffix, string text, ref int counter)
+        {
+            if (string.IsNullOrWhiteSpace(text)) return;
+
+            string baseKey = $"Event:{location.NameOrUniqueName}/{eventId}{suffix}";
+            string uniqueKey = baseKey;
+            int idx = 1;
+            while (dict.ContainsKey(uniqueKey))
+                uniqueKey = $"{baseKey}_{idx++}";
+
+            dict[uniqueKey] = text;
+            counter++;
+
+            if (Config.developerModeOn)
+                Monitor.Log($"[EV_GEN]         ADD {uniqueKey}  ←  \"{Trunc(text)}\"", LogLevel.Trace);
+        }
+
+
+
+
+
+
+
+        // Splits complex dialogue into separate lines, preserving event page breaks. Fixed issue with Events not splitting properly M and F lines
+        private List<string> ExtractVoiceLinesFromDialogue(string rawText)
+        {
+            var results = new List<string>();
+            if (string.IsNullOrWhiteSpace(rawText))
+                return results;
+
+            string s = rawText;
+
+            // 1) If this is a $q branching block, keep only the spoken prompt text (before any '#$r' choices)
+            int qIdx = s.IndexOf("$q", StringComparison.OrdinalIgnoreCase);
+            if (qIdx >= 0)
+            {
+                int firstHash = s.IndexOf('#', qIdx);
+                if (firstHash >= 0)
+                {
+                    string afterHeader = s.Substring(firstHash + 1); // prompt + rest
+                    int nextChoice = afterHeader.IndexOf("#$r", StringComparison.Ordinal);
+                    s = nextChoice >= 0 ? afterHeader.Substring(0, nextChoice) : afterHeader;
+                }
+                else
+                {
+                    // malformed $q: strip header if present
+                    s = Regex.Replace(s, @"#?\$q\s*[^#]*#", "", RegexOptions.CultureInvariant);
+                }
+            }
+
+            // 2) Drop any residual $r choice blocks if they remain (safety)
+            s = Regex.Replace(
+                s,
+                @"#?\$r\s+\d+\s+-?\d+\s+\S+#.*?(?=(#?\$r\s+\d+\s+-?\d+\s+\S+#)|$)",
+                "",
+                RegexOptions.Singleline | RegexOptions.CultureInvariant
+            );
+
+            // 3) Normalize page-break markers to newlines
+            s = Regex.Replace(
+                s,
+                @"#\s*\$b\s*#|#\s*\$b|\$b\s*#|\$b|#\s*#",
+                "\n",
+                RegexOptions.CultureInvariant
+            );
+
+            // 4) Strip mood/pause tokens and numeric pauses
+            s = Regex.Replace(s, @"\$[a-zA-Z](\[[^\]]+\])?", "", RegexOptions.CultureInvariant);
+            s = Regex.Replace(s, @"\$\d+", "", RegexOptions.CultureInvariant);
+
+            // 5) Split into lines; if a line contains '^', emit both gender variants (same serial)
+            foreach (var part in s.Split('\n'))
+            {
+                string line = part.Trim();
+                if (string.IsNullOrEmpty(line))
+                    continue;
+
+                int caret = line.IndexOf('^');
+                if (caret >= 0)
+                {
+                    string male = line.Substring(0, caret).Trim();
+                    string female = line.Substring(caret + 1).Trim();
+
+                    if (!string.IsNullOrEmpty(male)) results.Add(male);    // will get :sN
+                    if (!string.IsNullOrEmpty(female)) results.Add(female);  // will also get :sN (duplicate DialogueFrom => will dedupe with _1)
+                }
+                else
+                {
+                    results.Add(line);
+                }
+            }
+
+            return results;
+        }
+
+
+
+        private sealed class EventPage
+        {
+            public List<string> Variants = new List<string>(); // one page, 1–3 variants (male/female/nb)
+            public bool ReserveNextSerial;                     // true if this page is a $q prompt; we emit a follow-up {CHOICE_REPLY}
+        }
+
+
+
+
+
         // Helper method to add and deduplicate dialogue
-        private void AddEventDialogue(Dictionary<string, string> dict, GameLocation location, string eventId, string sanitizedText, ref int counter, string suffix = "")
+
+        private void AddEventDialogue(
+            Dictionary<string, string> dict,
+            GameLocation location,
+            string eventId,
+            string sanitizedText,
+            ref int counter,
+            string suffix = "",
+            string genderTag = null // "male" | "female" | "nonbinary" | null
+        )
         {
             if (string.IsNullOrWhiteSpace(sanitizedText))
                 return;
 
+            // Public TK stays "Event:<loc>/<id>:sN"
             string baseKey = $"Event:{location.NameOrUniqueName}/{eventId}{suffix}";
-            string uniqueKey = baseKey;
-            int index = 1;
 
-            while (dict.ContainsKey(uniqueKey))
-                uniqueKey = $"{baseKey}_{index++}";
+            // Internal storage key is unique per gender variant, so we don't create :sN_1
+            string storageKey = genderTag is null ? baseKey : $"{baseKey}|g={genderTag}";
 
-            dict[uniqueKey] = sanitizedText;
+            dict[storageKey] = sanitizedText;
             counter++;
         }
 
@@ -335,30 +845,7 @@ namespace VoiceOverFrameworkMod
         }
 
 
-
-
-        // Splits complex dialogue into separate lines, removing tags like $h, $b, $4, etc. (used in get event)
-        private List<string> ExtractVoiceLinesFromDialogue(string rawText)
-        {
-            var results = new List<string>();
-
-            if (string.IsNullOrWhiteSpace(rawText))
-                return results;
-
-
-            string sanitized = Regex.Replace(rawText, @"\$[a-zA-Z0-9]+", "").Trim();
-
-    
-            string[] parts = sanitized.Split(new[] { "#$b#", "#$b", "$b#", "$b" }, StringSplitOptions.None);
-            foreach (var part in parts)
-            {
-                string trimmed = part.Trim();
-                if (!string.IsNullOrEmpty(trimmed))
-                    results.Add(trimmed);
-            }
-
-            return results;
-        }
+       
 
 
 

@@ -325,8 +325,6 @@ namespace VoiceOverFrameworkMod
 
 
 
-
-
         private bool GenerateSingleTemplate(string characterName, string languageCode, string outputBaseDir, string voicePackId, string voicePackName, int startAtThisNumber, string desiredExtension)
         {
             // --- PRE-CHECKS ---
@@ -362,8 +360,8 @@ namespace VoiceOverFrameworkMod
                         {
                             if (!string.IsNullOrWhiteSpace(kvp.Key) && !string.IsNullOrWhiteSpace(kvp.Value) && !initialSources.ContainsKey(kvp.Key))
                             {
-                                initialSources[kvp.Key] = kvp.Value;// RAW text
-                                sourceTracking[kvp.Key] = "Dialogue";// mark source type
+                                initialSources[kvp.Key] = kvp.Value;
+                                sourceTracking[kvp.Key] = "Dialogue";
                             }
                         }
                         if (this.Config.developerModeOn)
@@ -392,8 +390,8 @@ namespace VoiceOverFrameworkMod
                     {
                         if (!string.IsNullOrWhiteSpace(kvp.Key) && !string.IsNullOrWhiteSpace(kvp.Value) && !initialSources.ContainsKey(kvp.Key))
                         {
-                            initialSources[kvp.Key] = kvp.Value;                 // RAW text
-                            sourceTracking[kvp.Key] = "Strings/Characters";      // mark source type
+                            initialSources[kvp.Key] = kvp.Value;
+                            sourceTracking[kvp.Key] = "Strings/Characters";
                         }
                     }
                 }
@@ -439,7 +437,8 @@ namespace VoiceOverFrameworkMod
                 }
                 catch (Exception ex) { this.Monitor.Log($"Error loading Festival data for {characterName}: {ex.Message}", LogLevel.Trace); }
 
-                // Gifts / Engagement / Extra now return List<(RawText, SourceInfo, TranslationKey)>
+                
+                // Gets Dialogue from Gifts / Engagement / Extra 
                 try
                 {
                     var gifts = this.GetGiftTasteDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
@@ -484,6 +483,8 @@ namespace VoiceOverFrameworkMod
                 }
                 catch (Exception ex) { this.Monitor.Log($"Error loading Engagement data for {characterName}: {ex.Message}", LogLevel.Trace); }
 
+
+                // --- Get Extra Dialogue ---
                 try
                 {
                     var extra = this.GetExtraDialogueForCharacter(characterName, languageCode, this.Helper.GameContent);
@@ -505,7 +506,7 @@ namespace VoiceOverFrameworkMod
                     }
                 }
                 catch (Exception ex) { this.Monitor.Log($"Error loading Extra data for {characterName}: {ex.Message}", LogLevel.Trace); }
-                
+
                 // --- Marriage Dialogue (generic + per-spouse) ---
                 try
                 {
@@ -514,7 +515,7 @@ namespace VoiceOverFrameworkMod
                     {
                         foreach (var item in marriage)
                         {
-                            
+
                             string key = item.SourceInfo ?? $"Marriage/{characterName}:{Guid.NewGuid()}";
                             string baseKey = key;
                             int collision = 1;
@@ -543,7 +544,7 @@ namespace VoiceOverFrameworkMod
                     {
                         foreach (var kvp in movieReactions)
                         {
-                            
+
                             string key = kvp.Value.SourceInfo ?? $"MovieReactions/{characterName}:{Guid.NewGuid()}";
                             string baseKey = key;
                             int collision = 1;
@@ -648,6 +649,14 @@ namespace VoiceOverFrameworkMod
                     return $"Events/{map}:{id}";
                 }
 
+                // ***strip a trailing gender tag so variants share the same :sN ***
+                string StripGenderTag(string key)
+                {
+                    if (string.IsNullOrEmpty(key)) return key;
+                    int i = key.IndexOf("|g=", StringComparison.Ordinal);
+                    return i >= 0 ? key.Substring(0, i) : key;
+                }
+
                 // Helper to get a stable speak index per event *source line* (per processingKey)
                 int GetEventSpeakIndex(string baseKey, string processingKey)
                 {
@@ -696,8 +705,9 @@ namespace VoiceOverFrameworkMod
                     int? eventSpeakIndexForThisProcessingKey = null;
                     if (eventBaseKey != null)
                     {
-                        // Assign speak index ONCE per processingKey (not per page/variant)
-                        eventSpeakIndexForThisProcessingKey = GetEventSpeakIndex(eventBaseKey, processingKey);
+                        // *** CHANGED: assign speak index ONCE per processingKey, but with gender stripped ***
+                        string genderlessProcessingKey = StripGenderTag(processingKey);
+                        eventSpeakIndexForThisProcessingKey = GetEventSpeakIndex(eventBaseKey, genderlessProcessingKey);
                     }
 
                     foreach (var (branchRaw, branchIndex) in branchSegments)
@@ -749,32 +759,43 @@ namespace VoiceOverFrameworkMod
                                         translationKey += $":split{branchIndex.Value}";
                                 }
 
-                                // NEW: if still null, use any provided TK we captured from Festivals / Gifts / Engagement / Extra
+                                //if still null, use any provided TK we captured from Festivals / Gifts / Engagement / Extra
                                 if (translationKey == null && translationKeyTracking.TryGetValue(processingKey, out var tkProvided))
                                 {
                                     translationKey = tkProvided;
                                 }
 
                                 // 6.6 Build audio path; add gender suffix if present
-                                string genderSuffix = string.IsNullOrEmpty(gender) ? "" : $"_{gender}";
+                                // infer gender from processing key if TrySplitGenderVariants didn't find one
+                                string effectiveGender = gender;
+                                if (string.IsNullOrEmpty(effectiveGender))
+                                {
+                                    var gm = System.Text.RegularExpressions.Regex.Match(
+                                        processingKey,
+                                        @"\|g=(male|female|nonbinary)",
+                                        RegexOptions.IgnoreCase
+                                    );
+                                    if (gm.Success)
+                                        effectiveGender = gm.Groups[1].Value.ToLowerInvariant();
+                                }
+
+                                string genderSuffix = string.IsNullOrEmpty(effectiveGender) ? "" : $"_{effectiveGender}";
                                 string numberedFileName = $"{entryNumber}{genderSuffix}.{desiredExtension}";
-                                string relativeAudioPath = Path.Combine("assets", languageCode, characterName, numberedFileName).Replace('\\', '/');
+                                string relativeAudioPath = Path.Combine("assets", languageCode, characterName, numberedFileName)
+                                    .Replace('\\', '/');
 
                                 // 6.7 Add entry
                                 var newEntry = new VoiceEntryTemplate
                                 {
-                                    // V1 legacy
-                                    DialogueFrom = processingKey,   // keep raw provenance, never suffixed
+                                    DialogueFrom = processingKey,   // keep raw provenance
                                     DialogueText = pattern,
-
                                     AudioPath = relativeAudioPath,
-
-                                    // V2 fields
-                                    TranslationKey = translationKey, // real/synthetic key or null
-                                    PageIndex = pageIdx,             // reserved ONLY for '#$e#' page breaks
+                                    TranslationKey = translationKey,
+                                    PageIndex = pageIdx,         // only for '#$e#' page breaks
                                     DisplayPattern = pattern,
-                                    GenderVariant = gender           // "male" | "female" | "neutral"/null
+                                    GenderVariant = string.IsNullOrEmpty(effectiveGender) ? null : effectiveGender
                                 };
+
 
                                 characterManifest.Entries.Add(newEntry);
                                 if (this.Config.developerModeOn)
@@ -843,6 +864,8 @@ namespace VoiceOverFrameworkMod
 
                 return true;
             }
+
+
             catch (Exception ex) // Master catch
             {
                 this.Monitor.Log($"FATAL ERROR during GenerateSingleTemplate for {characterName} ({languageCode}): {ex.Message}", LogLevel.Error);
@@ -850,6 +873,7 @@ namespace VoiceOverFrameworkMod
                 return false;
             }
         }
+
 
 
 

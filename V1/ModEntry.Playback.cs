@@ -108,26 +108,26 @@ namespace VoiceOverFrameworkMod
                     .Take(5)
                     .ToList();
 
-                Monitor.Log($"[DEV CHECK]  Voice pack: '{packToUse.VoicePackName}' ({packToUse.Entries.Count} entries)", LogLevel.Debug);
-                Monitor.Log($"[DEV CHECK]  Sanitized target: \"{sanitizedDialogueText}\"", LogLevel.Debug);
+                //Monitor.Log($"[DEV CHECK]  Voice pack: '{packToUse.VoicePackName}' ({packToUse.Entries.Count} entries)", LogLevel.Debug);
+               // Monitor.Log($"[DEV CHECK]  Sanitized target: \"{sanitizedDialogueText}\"", LogLevel.Debug);
 
                 if (exactMatch)
                 {
-                    Monitor.Log($"[DEV CHECK]  Exact match found in Entries.", LogLevel.Debug);
+                    //Monitor.Log($"[DEV CHECK]  Exact match found in Entries.", LogLevel.Debug);
                 }
                 else if (fuzzyMatchKey != null)
                 {
-                    Monitor.Log($"[DEV CHECK]  No exact match, but found fuzzy match key:", LogLevel.Debug);
-                    Monitor.Log($"             \"{fuzzyMatchKey}\" (sanitized as \"{SanitizeDialogueText(fuzzyMatchKey)}\")", LogLevel.Debug);
+                    //Monitor.Log($"[DEV CHECK]  No exact match, but found fuzzy match key:", LogLevel.Debug);
+                   // Monitor.Log($"             \"{fuzzyMatchKey}\" (sanitized as \"{SanitizeDialogueText(fuzzyMatchKey)}\")", LogLevel.Debug);
                 }
                 else
                 {
-                    Monitor.Log($"[DEV CHECK]  No exact or sanitized match found.", LogLevel.Warn);
+                    //Monitor.Log($"[DEV CHECK]  No exact or sanitized match found.", LogLevel.Warn);
                 }
 
                 if (partialMatches.Count > 0)
                 {
-                    Monitor.Log($"[DEV CHECK]  Partial matches (up to 5):", LogLevel.Debug);
+                    //Monitor.Log($"[DEV CHECK]  Partial matches (up to 5):", LogLevel.Debug);
                     foreach (var match in partialMatches)
                     {
                         Monitor.Log($"             \"{match}\" → Sanitized: \"{SanitizeDialogueText(match)}\"", LogLevel.Debug);
@@ -406,6 +406,277 @@ namespace VoiceOverFrameworkMod
            
         }
 
+
+
+
+        // ---- V2 helpers ----------------------------------------------------------
+
+        /// <summary>
+        /// Context for a single spoken line at runtime, used to compose V2 lookup keys.
+        /// Supply what you know; null/empty properties are simply ignored by key builder.
+        /// </summary>
+        public sealed class VoiceLineContext
+        {
+            // who is speaking (normalized game name, e.g. "Abigail")
+            public string Speaker { get; set; } = "";
+
+            // --- DialogueFrom-style source key if available: "Characters/Dialogue/Abigail:Mon", or "Strings/schedules/Abigail:winter_15.000", or "Mail:quest10", etc.
+            public string? SourceKey { get; set; } // e.g. "Characters/Dialogue/Abigail:Mon"
+
+            // --- Event / Festival identity if relevant
+            public string? EventKey { get; set; }   // e.g. "Event:Forest/8c9b2f"
+            public string? FestivalKey { get; set; } // e.g. "Strings/1_6_Strings:DesertFestival_Abigail"
+
+            // Which "page" of the multi-page dialogue is currently showing (1-based). If unknown, leave null.
+            public int? Page { get; set; }
+
+            // Selected gender branch for ^-split dialogues: "M" or "F" (if applicable)
+            public string? Gender { get; set; } // "M" | "F"
+
+            // Generic slots (some packs use these as additional switches; leave null if unused)
+            public string? S1 { get; set; }
+            public string? S2 { get; set; }
+            public string? S3 { get; set; }
+            public string? S4 { get; set; }
+
+            // Optional: if the pack uses variable substitution in DisplayPattern ("{Page}", "{Gender}", etc.)
+            public Dictionary<string, string>? Variables { get; set; }
+        }
+
+        /// <summary>
+        /// Build canonical V2 candidate keys (strongest to weakest) based on what we know about this line.
+        /// These are just strings; they must match what content packs use as DisplayPattern keys in Format >= 2.
+        /// </summary>
+        private static IEnumerable<string> BuildV2CandidateKeys(VoiceLineContext ctx)
+        {
+            // Common format conventions (keep short & filename-safe):
+            //  - Dialogue lines (from dialogue assets):   D|{SourceKey}|p={Page}|g={Gender}|s1=..|s2=..|...
+            //  - Events (cutscenes):                      E|{EventKey}|spk={Speaker}|p={Page}
+            //  - Festival / 1_6_Strings / Mail, etc.:     S|{FestivalKey}|p=...   or   M|{SourceKey}
+            // Note: We'll generate a few fallbacks with omitted trailing qualifiers, in order.
+
+            var list = new List<string>(8);
+
+            bool hasPage = ctx.Page.HasValue;
+            bool hasGender = !string.IsNullOrWhiteSpace(ctx.Gender);
+
+            // Helper to append optional S1..S4
+            string Ssuffix()
+            {
+                var sb = new System.Text.StringBuilder();
+                if (!string.IsNullOrEmpty(ctx.S1)) sb.Append($"|s1={ctx.S1}");
+                if (!string.IsNullOrEmpty(ctx.S2)) sb.Append($"|s2={ctx.S2}");
+                if (!string.IsNullOrEmpty(ctx.S3)) sb.Append($"|s3={ctx.S3}");
+                if (!string.IsNullOrEmpty(ctx.S4)) sb.Append($"|s4={ctx.S4}");
+                return sb.ToString();
+            }
+
+            // 1) DialogueFrom style (most common)
+            if (!string.IsNullOrWhiteSpace(ctx.SourceKey))
+            {
+                var baseK = $"D|{ctx.SourceKey}";
+                if (hasPage && hasGender) list.Add($"{baseK}|p={ctx.Page.Value}|g={ctx.Gender}{Ssuffix()}");
+                if (hasPage) list.Add($"{baseK}|p={ctx.Page.Value}{Ssuffix()}");
+                if (hasGender) list.Add($"{baseK}|g={ctx.Gender}{Ssuffix()}");
+                list.Add($"{baseK}{Ssuffix()}");
+                list.Add(baseK); // bare
+            }
+
+            // 2) Event bubble / event dialogue key
+            if (!string.IsNullOrWhiteSpace(ctx.EventKey))
+            {
+                var baseK = $"E|{ctx.EventKey}";
+                if (!string.IsNullOrWhiteSpace(ctx.Speaker))
+                    list.Add($"{baseK}|spk={ctx.Speaker}|p={(ctx.Page ?? 1)}");
+                list.Add($"{baseK}|p={(ctx.Page ?? 1)}");
+                list.Add(baseK);
+            }
+
+            // 3) Festival / 1_6_Strings, Mail, etc.
+            if (!string.IsNullOrWhiteSpace(ctx.FestivalKey))
+            {
+                var baseK = $"S|{ctx.FestivalKey}";
+                if (hasPage) list.Add($"{baseK}|p={ctx.Page.Value}");
+                list.Add(baseK);
+            }
+
+            // 4) Loose mail (if someone keys Mail directly as SourceKey, the D| path above already covers it).
+            return list.Distinct(StringComparer.OrdinalIgnoreCase);
+        }
+
+        /// <summary>
+        /// Simple "{Var}" replacer for DisplayPattern templates in packs that kept placeholders.
+        /// Unknown vars become empty, braces preserved if not matched.
+        /// </summary>
+        private static string ResolvePattern(string pattern, VoiceLineContext ctx)
+        {
+            if (string.IsNullOrEmpty(pattern)) return pattern;
+
+            // Build a flat variable map
+            var map = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+            {
+                ["Speaker"] = ctx.Speaker ?? "",
+                ["SourceKey"] = ctx.SourceKey ?? "",
+                ["EventKey"] = ctx.EventKey ?? "",
+                ["FestivalKey"] = ctx.FestivalKey ?? "",
+                ["Page"] = ctx.Page?.ToString() ?? "",
+                ["Gender"] = ctx.Gender ?? "",
+                ["S1"] = ctx.S1 ?? "",
+                ["S2"] = ctx.S2 ?? "",
+                ["S3"] = ctx.S3 ?? "",
+                ["S4"] = ctx.S4 ?? ""
+            };
+            if (ctx.Variables != null)
+            {
+                foreach (var kv in ctx.Variables)
+                    map[kv.Key] = kv.Value ?? "";
+            }
+
+            // naive replacer is fine (patterns are short, counts are small)
+            foreach (var kv in map)
+                pattern = pattern.Replace("{" + kv.Key + "}", kv.Value);
+
+            return pattern;
+        }
+
+
+
+
+        // ---- V2 playback ----------------------------------------------------------
+
+        /// <summary>
+        /// V2: Takes a VoiceLineContext (with DialogueFrom/Event/Festival identity), builds canonical keys, 
+        /// and tries to play using Format >= 2 packs for the character. Falls back to V1 sanitized-text path if needed.
+        /// </summary>
+        public void TryToPlayVoiceV2(
+    string characterName,
+    VoiceLineContext ctx,
+    LocalizedContentManager.LanguageCode languageCode,
+    string? sanitizedDialogueTextForV1Fallback = null)
+        {
+            // Build candidate keys for V2
+            var candidates = BuildV2CandidateKeys(ctx).ToList();
+
+            // Resolve V2 audio path
+            var fullPath = GetAudioPathByV2Keys(characterName, candidates, languageCode, ctx,
+                                                out VoicePack? packUsed, out string? matchedKey);
+
+            if (!string.IsNullOrWhiteSpace(fullPath))
+            {
+                if (Config?.developerModeOn == true)
+                {
+                    Monitor.Log($"[V2-RESULT] format={packUsed?.FormatMajor} match=Yes key='{matchedKey}' path='{fullPath}'", LogLevel.Info);
+                }
+                PlayVoiceFromFile(fullPath!);
+                return;
+            }
+
+            // No V2 hit → fallback to V1 text (if available)
+            if (!string.IsNullOrWhiteSpace(sanitizedDialogueTextForV1Fallback))
+            {
+                if (Config?.developerModeOn == true)
+                    Monitor.Log($"[V2-RESULT] format={packUsed?.FormatMajor} match=No → fallback to V1 text", LogLevel.Info);
+
+                TryToPlayVoice(characterName, sanitizedDialogueTextForV1Fallback!, languageCode);
+            }
+            else if (Config?.developerModeOn == true)
+            {
+                Monitor.Log($"[V2-RESULT] format={packUsed?.FormatMajor} match=No (no fallback text)", LogLevel.Info);
+            }
+        }
+
+        /// <summary>
+        /// Resolve a pack (with language fallbacks) and try candidate V2 keys against it.
+        /// Also supports packs that stored DisplayPattern templates with {Vars} — we render and test equality.
+        /// </summary>
+        /// <summary>
+        /// Resolve a pack (with language fallbacks) and try candidate V2 keys against it.
+        /// Returns the absolute audio path if found. Also returns which pack was used and which key matched.
+        /// </summary>
+        private string? GetAudioPathByV2Keys(
+            string characterName,
+            IEnumerable<string> candidateKeys,
+            LocalizedContentManager.LanguageCode languageCode,
+            VoiceLineContext ctx,
+            out VoicePack? packUsed,
+            out string? matchedKey)
+        {
+            packUsed = null;
+            matchedKey = null;
+
+            if (!VoicePacksByCharacter.TryGetValue(characterName, out var availablePacks) || !availablePacks.Any())
+                return null;
+
+            if (!SelectedVoicePacks.TryGetValue(characterName, out string selectedVoicePackId) ||
+                string.IsNullOrEmpty(selectedVoicePackId) ||
+                selectedVoicePackId.Equals("None", StringComparison.OrdinalIgnoreCase))
+                return null;
+
+            // language chain (same as V1)
+            string primaryLangStr = languageCode.ToString().ToLowerInvariant();
+            string configDefaultLangStr = (Config?.DefaultLanguage ?? "en").ToLowerInvariant();
+            const string hardcodedFallbackLangStr = "en";
+            bool allowFallbackToEnglish = Config?.FallbackToDefaultIfMissing ?? true;
+
+            // Pick a V2-capable pack
+            VoicePack? pack = availablePacks.FirstOrDefault(p =>
+                p.FormatMajor >= 2 &&
+                p.VoicePackId.Equals(selectedVoicePackId, StringComparison.OrdinalIgnoreCase) &&
+                p.Language.StartsWith(primaryLangStr, StringComparison.OrdinalIgnoreCase));
+
+            if (pack == null && primaryLangStr != configDefaultLangStr)
+            {
+                pack = availablePacks.FirstOrDefault(p =>
+                    p.FormatMajor >= 2 &&
+                    p.VoicePackId.Equals(selectedVoicePackId, StringComparison.OrdinalIgnoreCase) &&
+                    p.Language.StartsWith(configDefaultLangStr, StringComparison.OrdinalIgnoreCase));
+            }
+
+            if (pack == null && allowFallbackToEnglish && primaryLangStr != hardcodedFallbackLangStr && configDefaultLangStr != hardcodedFallbackLangStr)
+            {
+                pack = availablePacks.FirstOrDefault(p =>
+                    p.FormatMajor >= 2 &&
+                    p.VoicePackId.Equals(selectedVoicePackId, StringComparison.OrdinalIgnoreCase) &&
+                    p.Language.StartsWith(hardcodedFallbackLangStr, StringComparison.OrdinalIgnoreCase));
+            }
+
+            if (pack == null || pack.EntriesByTranslationKey == null || pack.EntriesByTranslationKey.Count == 0)
+                return null;
+
+            packUsed = pack;
+
+            // Minimal: show which format we ended up with (helps confirm 2.x is chosen)
+            if (Config?.developerModeOn == true)
+                Monitor.Log($"[V2-PACK] using='{pack.VoicePackName}' lang='{pack.Language}' fmtMajor={pack.FormatMajor}", LogLevel.Trace);
+
+            // 1) Exact key match on EntriesByTranslationKey
+            foreach (var key in candidateKeys)
+            {
+                if (pack.EntriesByTranslationKey.TryGetValue(key, out var rel))
+                {
+                    matchedKey = key;
+                    return PathUtilities.NormalizePath(Path.Combine(pack.BaseAssetPath, rel));
+                }
+            }
+
+            // 2) Templated keys that contain {Vars}: render and compare to candidates
+            var templatedKeys = pack.EntriesByTranslationKey.Keys.Where(k => k.IndexOf('{') >= 0).ToList();
+            if (templatedKeys.Count > 0)
+            {
+                var candidateSet = new HashSet<string>(candidateKeys, StringComparer.OrdinalIgnoreCase);
+                foreach (var templated in templatedKeys)
+                {
+                    var rendered = ResolvePattern(templated, ctx);
+                    if (candidateSet.Contains(rendered) && pack.EntriesByTranslationKey.TryGetValue(templated, out var rel2))
+                    {
+                        matchedKey = rendered;
+                        return PathUtilities.NormalizePath(Path.Combine(pack.BaseAssetPath, rel2));
+                    }
+                }
+            }
+
+            return null;
+        }
 
 
     }

@@ -40,7 +40,7 @@ namespace VoiceOverFrameworkMod
                             keyTextPairs[kvp.Key] = kvp.Value;
                         }
                     }
-                    Monitor.Log($"Loaded {keyTextPairs.Count} matching keys from '{assetKey}' for character '{characterName}'.", LogLevel.Trace);
+                    //Monitor.Log($"Loaded {keyTextPairs.Count} matching keys from '{assetKey}' for character '{characterName}'.", LogLevel.Trace);
                 }
                 else
                 {
@@ -176,6 +176,7 @@ namespace VoiceOverFrameworkMod
             catch (ContentLoadException) { /* ignore */ }
             catch (Exception ex) { Monitor.Log($"Error reading MarriageDialogue{langSuffix}: {ex.Message}", LogLevel.Trace); }
 
+
             // 2) Load per-spouse sheet (MarriageDialogue{Name})
             Dictionary<string, string> perSpouse = null;
             try
@@ -192,8 +193,10 @@ namespace VoiceOverFrameworkMod
             catch (ContentLoadException) { /* ignore */ }
             catch (Exception ex) { Monitor.Log($"Error reading MarriageDialogue{characterName}{langSuffix}: {ex.Message}", LogLevel.Trace); }
 
+
             // 3) Build merged set (key -> tuple), so per-spouse can override
             var merged = new Dictionary<string, (string Raw, string SourceInfo, string TK)>(StringComparer.OrdinalIgnoreCase);
+
 
             // 3a) From generic sheet:
             if (generic != null && generic.Count > 0)
@@ -220,6 +223,7 @@ namespace VoiceOverFrameworkMod
                 }
             }
 
+
             // 3b) Overlay with per-spouse sheet (wins on conflicts)
             if (perSpouse != null && perSpouse.Count > 0)
             {
@@ -235,6 +239,7 @@ namespace VoiceOverFrameworkMod
                     merged[key] = (raw, src, tk); // override/add
                 }
             }
+
 
             // 4) Emit
             foreach (var kvp in merged.OrderBy(k => k.Key))
