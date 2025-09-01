@@ -374,11 +374,11 @@ namespace VoiceOverFrameworkMod
 
 
                 
-                /*
+                
                 string forced = $"1.{desiredExtension}"; //TEST 1.ogg disable to let dialogue audotio path build
                 foreach (var e in characterManifest.Entries)  //TEST disable to let dialogue audotio path build
                     e.AudioPath = forced;
-                */
+                
 
                 // --- WRITE / SAVE (unchanged except for renumber) ---
                 if (!characterManifest.Entries.Any())

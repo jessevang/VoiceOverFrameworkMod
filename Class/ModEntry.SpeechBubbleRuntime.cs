@@ -70,9 +70,44 @@ namespace VoiceOverFrameworkMod
 
         private string SanitizeBubbleText(string displayed)
         {
-            var cap = BuildBubbleCapture();
-            string stripped = DialogueSanitizerV2.StripChosenWords(displayed ?? "", cap);
+            if (string.IsNullOrWhiteSpace(displayed))
+                return string.Empty;
+
+            // 1) Re-insert placeholders for the two common bubble args:
+            //    {0} → farmer name, {1} → farm name
+            var s = displayed;
+
+            var farmer = Game1.player;
+            if (farmer != null)
+            {
+                // Filter to match vanilla display form
+                string farmerName = Utility.FilterUserName(farmer.Name) ?? "";
+                string farmName = Utility.FilterUserName(farmer.farmName.Value) ?? "";
+
+                if (!string.IsNullOrEmpty(farmerName))
+                {
+                    // Replace exact farmer name with {0}
+                    s = System.Text.RegularExpressions.Regex.Replace(
+                            s, System.Text.RegularExpressions.Regex.Escape(farmerName),
+                            "{0}", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+                }
+
+                if (!string.IsNullOrEmpty(farmName))
+                {
+                    // Replace exact farm name with {1}
+                    s = System.Text.RegularExpressions.Regex.Replace(
+                            s, System.Text.RegularExpressions.Regex.Escape(farmName),
+                            "{1}", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+                }
+            }
+
+            // 2) Strip the *rest* of the player/family names so they don’t block matching.
+            var cap = BuildBubbleCapture(); // contains player/family words etc
+            string stripped = DialogueSanitizerV2.StripChosenWords(s, cap);
+
+            // 3) Canonicalize spacing/punctuation
             return CanonDisplay(stripped);
         }
+
     }
 }

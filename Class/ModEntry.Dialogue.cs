@@ -54,41 +54,33 @@ namespace VoiceOverFrameworkMod
         // Main dialogue check loop called every tick (or less often if adjusted).
         private void OnUpdateTicked(object sender, UpdateTickedEventArgs e)
         {
-            // periodically dispose finished SFX
             if (e.IsMultipleOf(2))
                 CleanupStoppedVoiceInstances();
 
-            // prefer the DialogueBox's speaker; fall back to Game1.currentSpeaker
             var dlgBox = Game1.activeClickableMenu as DialogueBox;
-            var speakerName =
-                dlgBox?.characterDialogue?.speaker?.Name
-                ?? Game1.currentSpeaker?.Name;
+            var speakerName = dlgBox?.characterDialogue?.speaker?.Name ?? Game1.currentSpeaker?.Name;
 
             VoicePack pack = null;
             if (!string.IsNullOrEmpty(speakerName))
                 pack = GetSelectedVoicePack(speakerName);
 
-            // reduce log spam: trace only every ~15 ticks
             bool logThisTick = Config.developerModeOn && e.IsMultipleOf(15);
-
             if (logThisTick)
                 Monitor.Log($"[Tick] Speaker={speakerName ?? "null"} Pack={(pack?.VoicePackName ?? "null")} FormatMajor={(pack?.FormatMajor ?? -1)}", LogLevel.Trace);
 
-            // if we have a V2-capable pack selected for this speaker, use V2 path
             if (pack != null && pack.FormatMajor >= 2)
             {
-                if (logThisTick)
-                    Monitor.Log("[Tick] Using V2 pipeline", LogLevel.Trace);
-
+                if (logThisTick) Monitor.Log("[Tick] Using V2 pipeline", LogLevel.Trace);
                 CheckForDialogueV2();
-                return;
+            }
+            else
+            {
+                if (logThisTick) Monitor.Log("[Tick] Using V1 pipeline", LogLevel.Trace);
+                CheckForDialogue();
             }
 
-            // else: use legacy V1 path (also covers cases with no speaker/pack)
-            if (logThisTick)
-                Monitor.Log("[Tick] Using V1 pipeline", LogLevel.Trace);
-
-            CheckForDialogue();
+            // Always check bubbles after dialogue handling
+            CheckForSpeechBubblesLevel1();
         }
 
 
