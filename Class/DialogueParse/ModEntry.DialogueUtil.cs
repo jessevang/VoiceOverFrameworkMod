@@ -130,7 +130,7 @@ namespace VoiceOverFrameworkMod
                         AddPageIfNotEmpty(pages, text, nextIndex++, null);
                     }
                 }
-
+      
                 return pages;
             }
 

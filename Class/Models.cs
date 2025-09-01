@@ -82,12 +82,12 @@ namespace VoiceOverFrameworkMod
         public string AudioPath { get; set; }
 
 
-        //V2 additional Fields
         // V2 additions (all optional)
         public string? TranslationKey { get; set; }  // e.g. "Characters/Dialogue/Abigail:danceRejection"
         public int? PageIndex { get; set; }          // 0-based page within that key usually used when dialogue breaks
-        public string? DisplayPattern { get; set; }  // V2-sanitized text with placeholders
-        public string? GenderVariant { get; set; }   // "male" | "female" | "neutral" (optional) - recall some dialogue responses are different based on the farmer's gender, while many dialogue will stay the say regardless.
+                                                     // (ended up not needing it since was failing with there are tree forks in dialogue questions and responses that wasn't consistent)
+        public string? DisplayPattern { get; set; }  // V2-sanitized text with placeholders used for V2 Dialogue Lookup for match
+        public string? GenderVariant { get; set; }   // "male" | "female" | "neutral" (optional) - Though this shows up now, it's really not needed since the final V2 dialogue match algorithm was drastically altered, and the key + gender is only used as a 2nd layer match in case first layer fails
 
         public string? BranchId { get; set; }
     }

@@ -367,12 +367,18 @@ namespace VoiceOverFrameworkMod
                 characterManifest.Entries.AddRange(BuildFromGiftTastes(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
                 characterManifest.Entries.AddRange(BuildFromExtraDialogue(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
                 characterManifest.Entries.AddRange(BuildFromMovieReactions(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                //Did not include mail code yet because Don't have code read mail yet.
                 //characterManifest.Entries.AddRange(BuildFromMail(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
                 characterManifest.Entries.AddRange(BuildFromOneSixStrings(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                characterManifest.Entries.AddRange(BuildSpeechBubbleEntries(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
 
-                string forced = $"1.{desiredExtension}"; //TEST disable to let dialogue audotio path build
+
+                
+                /*
+                string forced = $"1.{desiredExtension}"; //TEST 1.ogg disable to let dialogue audotio path build
                 foreach (var e in characterManifest.Entries)  //TEST disable to let dialogue audotio path build
                     e.AudioPath = forced;
+                */
 
                 // --- WRITE / SAVE (unchanged except for renumber) ---
                 if (!characterManifest.Entries.Any())

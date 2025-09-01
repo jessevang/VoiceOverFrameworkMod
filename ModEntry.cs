@@ -450,7 +450,7 @@ namespace VoiceOverFrameworkMod
         private void ApplyHarmonyPatches()
         {
             var harmony = new Harmony(this.ModManifest.UniqueID);
-            InstallRawDialogueProbe(harmony);
+
             try
             {
                 harmony.PatchAll(Assembly.GetExecutingAssembly());

@@ -38,7 +38,7 @@ namespace VoiceOverFrameworkMod
                 }
                 catch
                 {
-                    // ignore and try next
+                    
                 }
             }
 
