@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StardewValley;
+using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
@@ -6,20 +7,26 @@ namespace VoiceOverFrameworkMod
 {
     public partial class ModEntry
     {
-        /// <summary>
-        /// Shared page segment representation.
-        /// </summary>
+        /// <summary>Shared page segment representation.</summary>
         private sealed class PageSeg
         {
             public string Actor;
-            public string Display;
+            public string Display;     // <- This is now pre-sanitized for DisplayPattern matching
             public int PageIndex;
             public string Gender;
         }
 
-        /// <summary>
-        /// Shared helpers for splitting & sanitizing Stardew Valley dialogue.
-        /// </summary>
+        private static readonly HashSet<string> VanillaMarriables =
+            new(StringComparer.OrdinalIgnoreCase)
+            {
+                "Abigail","Alex","Elliott","Emily","Haley","Harvey",
+                "Leah","Maru","Penny","Sam","Sebastian","Shane"
+            };
+
+        private bool IsMarriableCharacter(string name) =>
+            !string.IsNullOrWhiteSpace(name) && VanillaMarriables.Contains(name);
+
+        /// <summary>Shared helpers for splitting & sanitizing Stardew Valley dialogue.</summary>
         private static class DialogueUtil
         {
             // ── Command/Token Regexes ────────────────────────────────────────────────
@@ -28,8 +35,7 @@ namespace VoiceOverFrameworkMod
             private static readonly Regex RxStrayNumber = new(@"^\s*0?\.?\d+\s*", RegexOptions.Compiled);
             private static readonly Regex RxTrailingDollar = new(@"\$(?=[\s,\.!\?\)]|$)", RegexOptions.Compiled);
             private static readonly Regex RxCollapseWS = new(@"[ \t]+", RegexOptions.Compiled);
-            private static readonly Regex RxVarToken = new(@"%[A-Za-z]+", RegexOptions.Compiled);
-            private static readonly Regex RxAtToken = new(@"@", RegexOptions.Compiled);
+
             private static readonly Regex RxLeadingNarr = new(@"^\s*%+", RegexOptions.Compiled);
             private static readonly Regex RxCmdQuestion = new(@"#?\$q\s+[^#]*#(?<q>[^#]*)", RegexOptions.Compiled | RegexOptions.Singleline | RegexOptions.IgnoreCase);
             private static readonly Regex RxCmdResponse = new(@"#?\$r\s+[^#]*#[^#]*#?", RegexOptions.Compiled | RegexOptions.Singleline | RegexOptions.IgnoreCase);
@@ -37,29 +43,21 @@ namespace VoiceOverFrameworkMod
             private static readonly Regex RxCmdOther = new(@"#\$(?:action|k|t|v)\b[^#]*", RegexOptions.Compiled | RegexOptions.Singleline | RegexOptions.IgnoreCase);
             private static readonly Regex RxOnceOnlyLine = new(@"^\s*\$1\s+\S+#(?<first>.*?)(?:#\$e#.*)?$", RegexOptions.Compiled | RegexOptions.Singleline);
             private static readonly Regex PortraitRegex = new(@"\$(?:h|s|u|l|a|\d+)\b", RegexOptions.Compiled);
-            private static readonly Regex RxCmdChancePrefix =new(@"#?\$c\s*[0-9.]+\s*#", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            private static readonly Regex RxCmdChancePrefix = new(@"#?\$c\s*[0-9.]+\s*#", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
-            private static readonly Dictionary<string, string> VarMap = new(StringComparer.OrdinalIgnoreCase)
-            {
-                ["adj"] = "Random Adjective",
-                ["noun"] = "Random Noun",
-                ["place"] = "Random Place Name",
-                ["spouse"] = "Spouse's Name",
-                ["name"] = "Randomly Generated Name",
-                ["firstnameletter"] = "First Letter of Farmer's Name",
-                ["time"] = "Current Time",
-                ["band"] = "Sam and Sebastian's Band Name",
-                ["book"] = "Elliott's Book Title",
-                ["pet"] = "Pet's Name",
-                ["farm"] = "Farm Name",
-                ["favorite"] = "Favorite Thing",
-                ["kid1"] = "First Child's Name",
-                ["kid2"] = "Second Child's Name",
-                ["season"] = "Season",
-            };
+            // tokens to REMOVE for DisplayPattern (random + player-specific + time/season/etc)
+            private static readonly Regex RxRemovePercentTokens = new(
+                @"%(?:adj|noun|place|name|spouse|farm|favorite|kid1|kid2|pet|firstnameletter|band|book|season|time)\b",
+                RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
+            // remove farmer name token '@'
+            private static readonly Regex RxAtToken = new(@"@", RegexOptions.Compiled);
+
+            // item grants like [O] or registry IDs in brackets
+            private static readonly Regex RxSquareBracketGrant = new(@"\[[^\]]+\]", RegexOptions.Compiled);
 
             // ── Public API ─────────────────────────────────────────────
-            public static List<PageSeg> SplitAndSanitize(string raw)
+            public static List<PageSeg> SplitAndSanitize(string raw, bool splitBAsPage = false)
             {
                 if (raw == null) raw = string.Empty;
 
@@ -68,15 +66,27 @@ namespace VoiceOverFrameworkMod
                 if (weeklyIdx >= 0)
                     raw = raw[..weeklyIdx];
 
-                // split pages by "#$e#", and convert "#$b#" to newlines
-                var pageChunks = raw.Split(new[] { "#$e#" }, StringSplitOptions.None);
-                var normalizedPages = new List<string>(pageChunks.Length);
-                foreach (var chunk in pageChunks)
-                    normalizedPages.Add((chunk ?? "").Replace("#$b#", "\n"));
+                // Base split by "#$e#"
+                var firstLevel = raw.Split(new[] { "#$e#" }, StringSplitOptions.None);
+
+                // If splitBAsPage=true (events), also split "#$b#" into separate pages
+                var normalizedPages = new List<string>();
+                foreach (var chunk in firstLevel)
+                {
+                    string c = chunk ?? "";
+                    if (splitBAsPage)
+                    {
+                        var bs = c.Split(new[] { "#$b#" }, StringSplitOptions.None);
+                        foreach (var b in bs)
+                            normalizedPages.Add(b ?? "");
+                    }
+                    else
+                    {
+                        normalizedPages.Add(c.Replace("#$b#", "\n"));
+                    }
+                }
 
                 var pages = new List<PageSeg>();
-
-                // NEW: ensure page indexes are unique and sequential across all emitted segments
                 int nextIndex = 0;
 
                 for (int i = 0; i < normalizedPages.Count; i++)
@@ -92,7 +102,7 @@ namespace VoiceOverFrameworkMod
                         continue;
                     }
 
-                    // 2) Conditional choice: "$d FLAG#A|B"
+                    // 2) Conditional choice: "$d FLAG#A|B" or $query/$p
                     if (TrySplitConditionalChoice(text, out var dA, out var dB))
                     {
                         AddPageIfNotEmpty(pages, dA, nextIndex++, null);
@@ -124,15 +134,16 @@ namespace VoiceOverFrameworkMod
                 return pages;
             }
 
-
             // ── Helpers ─────────────────────────────────────────────
             private static void AddPageIfNotEmpty(List<PageSeg> pages, string body, int pageIndex, string gender)
             {
                 if (string.IsNullOrWhiteSpace(body)) return;
 
+                // Actor text: readable with portrait tags expanded
                 string actor = SanitizeForActor(body);
-                string display = SanitizeForDisplay(body);
-                if (string.IsNullOrWhiteSpace(display) && string.IsNullOrWhiteSpace(actor)) return;
+
+                // DisplayPattern: STRIPPED of random/player values & control codes
+                string display = SanitizeForDisplayPattern(body);
 
                 pages.Add(new PageSeg
                 {
@@ -141,6 +152,67 @@ namespace VoiceOverFrameworkMod
                     PageIndex = pageIndex,
                     Gender = gender
                 });
+            }
+
+            /// <summary>
+            /// Build a DisplayPattern suitable for matching against the in-game sanitized text.
+            /// Removes variable/random tokens and names so it’s stable across saves/replays.
+            /// </summary>
+            private static string SanitizeForDisplayPattern(string s)
+            {
+                if (string.IsNullOrWhiteSpace(s))
+                    return string.Empty;
+
+                // $1 once-only line → keep the first branch
+                if (RxOnceOnlyLine.IsMatch(s))
+                    s = RxOnceOnlyLine.Replace(s, m => m.Groups["first"].Value);
+
+                // strip some leading gates/strays/narration
+                s = RxLeadingGate.Replace(s, "");
+                s = RxInlineFlag1.Replace(s, "");
+                s = RxStrayNumber.Replace(s, "");
+                s = RxLeadingNarr.Replace(s, "");
+
+                // Keep only the $q prompt, drop $r answers
+                s = RxCmdQuestion.Replace(s, m => " " + (m.Groups["q"].Value ?? ""));
+                s = RxCmdResponse.Replace(s, "");
+
+                // remove chance prefix BEFORE generic '#' cleanup
+                s = RxCmdChancePrefix.Replace(s, "");
+
+                // generic hash cleanup (not followed by $)
+                s = Regex.Replace(s, @"\s*#(?!\$)\s*", " ");
+
+                // Expand $y into readable choices (optional, harmless if absent)
+                s = RxCmdQuick.Replace(s, m =>
+                {
+                    string payload = m.Groups["p"].Value ?? "";
+                    var bits = payload.Split('_');
+                    var pairs = new List<string>();
+                    for (int k = 0; k + 1 < bits.Length; k += 2)
+                        pairs.Add($"{bits[k]}: {bits[k + 1]}");
+                    return pairs.Count > 0 ? string.Join(" | ", pairs) : "";
+                });
+
+                // drop other $action/$t/$v etc
+                s = RxCmdOther.Replace(s, "");
+                s = RxTrailingDollar.Replace(s, "");
+
+                // remove item grants in [ ... ]
+                s = RxSquareBracketGrant.Replace(s, "");
+
+                // *** CRITICAL FOR DISPLAYPATTERN ***
+                // Remove player/random tokens entirely (we’ll also remove them from the live text)
+                s = RxRemovePercentTokens.Replace(s, "");
+                s = RxAtToken.Replace(s, ""); // remove '@' farmer token
+
+                // drop portrait/emote codes
+                s = PortraitRegex.Replace(s, "");
+
+                // collapse whitespace
+                s = RxCollapseWS.Replace(s, " ");
+                s = Regex.Replace(s, @"\s{2,}", " ").Trim();
+                return s;
             }
 
             private static string StripControlTokensKeepPortraits(string s)
@@ -155,14 +227,10 @@ namespace VoiceOverFrameworkMod
                 s = RxStrayNumber.Replace(s, "");
                 s = RxLeadingNarr.Replace(s, "");
 
-                // Keep $q question, drop $r answers
                 s = RxCmdQuestion.Replace(s, m => " " + m.Groups["q"].Value);
                 s = RxCmdResponse.Replace(s, "");
 
-                // remove chance prefix BEFORE generic '#' cleanup ***
                 s = RxCmdChancePrefix.Replace(s, "");
-
-                // Clean remaining stray '#'
                 s = Regex.Replace(s, @"\s*#(?!\$)\s*", " ");
 
                 s = RxCmdQuick.Replace(s, m =>
@@ -177,21 +245,13 @@ namespace VoiceOverFrameworkMod
 
                 s = RxCmdOther.Replace(s, "");
                 s = RxTrailingDollar.Replace(s, "");
-                s = RxAtToken.Replace(s, "{Farmer's Name}");
-                s = RxVarToken.Replace(s, m =>
-                {
-                    var key = m.Value.Substring(1);
-                    return VarMap.TryGetValue(key, out var desc) ? "{" + desc + "}" : m.Value;
-                });
-
-                s = RxCollapseWS.Replace(s, " ").Trim();
-                return s;
+                return RxCollapseWS.Replace(s, " ").Trim();
             }
-
 
             private static string SanitizeForActor(string s)
             {
                 s = StripControlTokensKeepPortraits(s);
+                s = RxAtToken.Replace(s, "{Farmer_Name}");
                 s = PortraitRegex.Replace(s, m =>
                 {
                     string code = m.Value.Substring(1);
@@ -210,14 +270,6 @@ namespace VoiceOverFrameworkMod
                 return Regex.Replace(s, @"\s{2,}", " ").Trim();
             }
 
-            private static string SanitizeForDisplay(string s)
-            {
-                s = StripControlTokensKeepPortraits(s);
-                s = PortraitRegex.Replace(s, "");
-                return Regex.Replace(s, @"\s{2,}", " ").Trim();
-            }
-
-            // split helpers
             // split helpers
             private static bool TrySplitRandomChoice(string text, out string a, out string b)
             {
@@ -226,7 +278,6 @@ namespace VoiceOverFrameworkMod
                 if (m.Success) { a = m.Groups[1].Value; b = m.Groups[2].Value; return true; }
                 a = b = null; return false;
             }
-
 
             private static bool TrySplitConditionalChoice(string text, out string a, out string b) =>
                 Regex.Match(text ?? "", @"^\s*#?\$(?:d|query|p)\b[^#]*#(.+?)\|(.+)$", RegexOptions.Singleline | RegexOptions.IgnoreCase) is Match m && m.Success

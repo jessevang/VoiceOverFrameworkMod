@@ -1,70 +1,77 @@
-﻿/*
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text.RegularExpressions;
 using Microsoft.Xna.Framework.Content;
 using StardewModdingAPI;
-using System.Text.RegularExpressions;
-using VoiceOverFrameworkMod;
 
 namespace VoiceOverFrameworkMod
 {
     public partial class ModEntry : Mod
     {
+        /// <summary>
+        /// Build entries from Data/Festivals/* using DialogueUtil for consistent sanitation/splitting.
+        /// </summary>
         private IEnumerable<VoiceEntryTemplate> BuildFromFestivals(
-        string characterName, string languageCode, IGameContentHelper content,
-        ref int entryNumber, string ext)
-    {
-        var outList = new List<VoiceEntryTemplate>();
-        var fest = this.GetFestivalDialogueForCharacter(characterName, languageCode, content);
-        if (fest == null || fest.Count == 0) return outList;
-
-        foreach (var kv in fest)
+            string characterName,
+            string languageCode,
+            IGameContentHelper content,
+            ref int entryNumber,
+            string ext)
         {
-            // kv.Key is usually the festival id (e.g., "fall16")
-            var item = kv.Value;
-            string processingKey = item.SourceInfo ?? $"Festival/{kv.Key}/{characterName}";
-            string raw = item.RawText ?? "";
-            if (string.IsNullOrWhiteSpace(raw)) continue;
+            var outList = new List<VoiceEntryTemplate>();
 
-            // split & sanitize with the same rules as Dialogue (supports #$e#, #$b#, ${m^f(^n)})
-            var pages = DialogueSplitAndSanitize(raw);
+            var fest = this.GetFestivalDialogueForCharacter(characterName, languageCode, content);
+            if (fest == null || fest.Count == 0)
+                return outList;
 
-            foreach (var p in pages)
+            foreach (var kv in fest)
             {
-                string genderTail = string.IsNullOrEmpty(p.Gender) ? "" : "_" + p.Gender;
-                string file = $"{entryNumber}{genderTail}.{ext}";
-                string path = System.IO.Path.Combine("assets", languageCode, characterName, file).Replace('\\', '/');
+                // kv.Key is an internal handle; kv.Value holds the payload
+                var item = kv.Value;
+                string processingKey = item.SourceInfo ?? $"Festival/{kv.Key}/{characterName}";
+                string raw = item.RawText ?? string.Empty;
+                if (string.IsNullOrWhiteSpace(raw))
+                    continue;
 
-                string tk = item.TranslationKey;
-                if (string.IsNullOrWhiteSpace(tk))
+                // Split & sanitize using the shared rules (portraits kept in Actor; removed in Display)
+                var segs = DialogueUtil.SplitAndSanitize(raw);
+                if (segs == null || segs.Count == 0)
+                    continue;
+
+                // Prefer explicit TK if provided, else use the one we computed in GetFestivalDialogueForCharacter
+                string tkBase = !string.IsNullOrWhiteSpace(item.TranslationKey) ? item.TranslationKey : processingKey;
+
+                foreach (var seg in segs) // seg: Actor, Display, PageIndex, Gender
                 {
-                    // fallback: Data/Festivals/{festivalKey}:{character or source suffix}
-                    // if SourceInfo already encodes the final suffix (e.g., _spouse), prefer that.
-                    tk = $"Data/Festivals/{kv.Key}:{characterName}";
+                    string genderTail = string.IsNullOrEmpty(seg.Gender) ? "" : "_" + seg.Gender;
+                    string file = $"{entryNumber}{genderTail}.{ext}";
+                    string path = Path.Combine("assets", languageCode, characterName, file).Replace('\\', '/');
+
+                    outList.Add(new VoiceEntryTemplate
+                    {
+                        DialogueFrom = processingKey,
+                        DialogueText = seg.Actor,     // includes {Portrait:...}
+                        AudioPath = path,
+                        TranslationKey = tkBase,
+                        PageIndex = seg.PageIndex,
+                        DisplayPattern = seg.Display,   // portraits removed
+                        GenderVariant = seg.Gender
+                    });
+
+                    if (this.Config?.developerModeOn == true)
+                        this.Monitor?.Log($"[FEST] + {processingKey} (tk={tkBase}) p{seg.PageIndex} g={seg.Gender ?? "na"} -> {path}", LogLevel.Trace);
+
+                    entryNumber++;
                 }
-
-                outList.Add(new VoiceEntryTemplate
-                {
-                    DialogueFrom = processingKey,
-                    DialogueText = p.Text,
-                    AudioPath = path,
-                    TranslationKey = tk,
-                    PageIndex = p.PageIndex,
-                    DisplayPattern = p.Text,
-                    GenderVariant = p.Gender
-                });
-
-                if (this.Config?.developerModeOn == true)
-                    this.Monitor?.Log($"[FEST] + {processingKey} (tk={tk}) p{p.PageIndex} g={p.Gender ?? "na"} -> {path}", LogLevel.Trace);
-
-                entryNumber++;
             }
+
+            return outList;
         }
 
-        return outList;
-    }
-
-
         /// <summary>
-        /// Load festival dialogue lines for a specific character (language-aware) V2.
+        /// Load festival dialogue lines for a specific character (language-aware).
         /// Emits real TranslationKeys for sheet keys like:
         ///   Data/Festivals/{festId}:{Character}[_spouse][_y2][_spouse_y2]
         /// Also scans embedded script lines like:
@@ -72,8 +79,6 @@ namespace VoiceOverFrameworkMod
         /// and assigns a synthetic TranslationKey:
         ///   Festivals/{festId}:{Character}:s{index}
         /// Returns: InnerId -> (RawText, SourceInfo, TranslationKey)
-        ///   - InnerId is just a unique handle inside this method (not used elsewhere).
-        ///   - SourceInfo is a readable DialogueFrom base, e.g. "Festival/fall16/Abigail_spouse"
         /// </summary>
         private Dictionary<string, (string RawText, string SourceInfo, string TranslationKey)>
             GetFestivalDialogueForCharacter(string characterName, string languageCode, IGameContentHelper gameContent)
@@ -83,7 +88,7 @@ namespace VoiceOverFrameworkMod
             bool isEnglish = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase);
             string langSuffix = isEnglish ? "" : $".{languageCode}";
 
-            // 1) Discover festival IDs from FestivalDates (try target language, then English fallback)
+            // 1) Discover festival IDs from FestivalDates (language first, then fallback to English)
             var festivalIds = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
             Dictionary<string, string> dates = null;
@@ -91,8 +96,8 @@ namespace VoiceOverFrameworkMod
             {
                 dates = gameContent.Load<Dictionary<string, string>>($"Data/Festivals/FestivalDates{langSuffix}");
             }
-            catch (ContentLoadException) {  }
-            catch (Exception ex) { Monitor.Log($"Error loading FestivalDates{langSuffix}: {ex.Message}", LogLevel.Trace); }
+            catch (ContentLoadException) { /* ignore */ }
+            catch (Exception ex) { this.Monitor.Log($"Error loading FestivalDates{langSuffix}: {ex.Message}", LogLevel.Trace); }
 
             if (dates == null)
             {
@@ -100,8 +105,8 @@ namespace VoiceOverFrameworkMod
                 {
                     dates = gameContent.Load<Dictionary<string, string>>("Data/Festivals/FestivalDates");
                 }
-                catch (ContentLoadException) {  }
-                catch (Exception ex) { Monitor.Log($"Error loading FestivalDates (fallback): {ex.Message}", LogLevel.Trace); }
+                catch (ContentLoadException) { /* ignore */ }
+                catch (Exception ex) { this.Monitor.Log($"Error loading FestivalDates (fallback): {ex.Message}", LogLevel.Trace); }
             }
 
             if (dates != null)
@@ -110,7 +115,7 @@ namespace VoiceOverFrameworkMod
                     festivalIds.Add(k);
             }
 
-            // Vanilla fallback if nothing was discovered
+            // Vanilla fallback if nothing was discovered (covers base game festivals)
             if (festivalIds.Count == 0)
             {
                 foreach (var k in new[] { "spring13", "spring24", "summer11", "summer28", "fall16", "fall27", "winter8", "winter25" })
@@ -136,12 +141,12 @@ namespace VoiceOverFrameworkMod
                 catch (ContentLoadException)
                 {
                     try { dict = gameContent.Load<Dictionary<string, string>>(assetEn); }
-                    catch (ContentLoadException) { }
-                    catch (Exception ex2) { Monitor.Log($"Error loading '{assetEn}': {ex2.Message}", LogLevel.Trace); }
+                    catch (ContentLoadException) { /* ignore */ }
+                    catch (Exception ex2) { this.Monitor.Log($"Error loading '{assetEn}': {ex2.Message}", LogLevel.Trace); }
                 }
                 catch (Exception ex)
                 {
-                    Monitor.Log($"Error loading '{assetLang}': {ex.Message}", LogLevel.Trace);
+                    this.Monitor.Log($"Error loading '{assetLang}': {ex.Message}", LogLevel.Trace);
                     continue;
                 }
 
@@ -156,14 +161,13 @@ namespace VoiceOverFrameworkMod
                         continue;
 
                     string innerId = $"{festId}:{fullKey}";
-                    string sourceInfo = $"Festival/{festId}/{fullKey}";
+                    string source = $"Festival/{festId}/{fullKey}";
                     string tk = $"Data/Festivals/{festId}:{fullKey}";
 
-                    // keep RAW text; V2 sanitizer runs later
-                    results[innerId] = (raw, sourceInfo, tk);
+                    results[innerId] = (raw, source, tk); // keep raw; sanitation happens in BuildFromFestivals
                 }
 
-                // 2b) Embedded 'speak Character "..."' lines inside any festival field (e.g., set-up scripts)
+                // 2b) Embedded 'speak Character "..."' lines inside any festival field (e.g., setup scripts)
                 int speakIndex = 0;
                 foreach (var kvp in dict)
                 {
@@ -176,31 +180,25 @@ namespace VoiceOverFrameworkMod
                         if (string.IsNullOrWhiteSpace(raw))
                             continue;
 
-                        // Unique inner id per match
                         string innerId = $"{festId}:{characterName}:speak:{speakIndex}";
-                        string sourceInfo = $"Festival/{festId}/{characterName}:speak:{speakIndex}";
-                        // Synthetic translation key (not a real content key, but stable & searchable)
+                        string source = $"Festival/{festId}/{characterName}:speak:{speakIndex}";
+                        // Synthetic key (stable & searchable; not a vanilla sheet key)
                         string tk = $"Festivals/{festId}:{characterName}:s{speakIndex}";
 
-                        results[innerId] = (raw, sourceInfo, tk);
+                        results[innerId] = (raw, source, tk);
                         speakIndex++;
                     }
                 }
 
-                if (Config.developerModeOn)
+                if (this.Config?.developerModeOn == true)
                 {
                     int realCount = suffixes.Count(s => dict.ContainsKey(characterName + s));
                     int speakCount = dict.Values.Sum(v => speakRegex.Matches(v).Count);
-                    Monitor.Log($"[Festival] {characterName}: '{festId}' -> {realCount} keyed + {speakCount} speak lines.", LogLevel.Trace);
+                    this.Monitor.Log($"[Festival] {characterName}: '{festId}' -> {realCount} keyed + {speakCount} speak lines.", LogLevel.Trace);
                 }
             }
 
             return results;
         }
-
-
-
     }
 }
-
-*/

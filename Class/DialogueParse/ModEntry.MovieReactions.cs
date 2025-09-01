@@ -1,47 +1,59 @@
-﻿/*
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text.RegularExpressions;
 using Microsoft.Xna.Framework.Content;
 using StardewModdingAPI;
-using VoiceOverFrameworkMod;
-
 
 namespace VoiceOverFrameworkMod
 {
     public partial class ModEntry : Mod
     {
+        // ──────────────────────────────────────────────────────────────────────────
+        // Movie Reactions → manifest entries
+        // ──────────────────────────────────────────────────────────────────────────
         private IEnumerable<VoiceEntryTemplate> BuildFromMovieReactions(
-        string characterName, string languageCode, IGameContentHelper content,
-        ref int entryNumber, string ext)
+            string characterName,
+            string languageCode,
+            IGameContentHelper content,
+            ref int entryNumber,
+            string ext)
         {
             var outList = new List<VoiceEntryTemplate>();
             var reactions = this.GetMovieReactionsForCharacter(characterName, languageCode, content);
-            if (reactions == null || reactions.Count == 0) return outList;
+            if (reactions == null || reactions.Count == 0)
+                return outList;
 
             foreach (var kv in reactions)
             {
                 var item = kv.Value;
                 string processingKey = item.SourceInfo ?? $"MovieReactions/{characterName}";
-                string raw = item.RawText ?? "";
-                if (string.IsNullOrWhiteSpace(raw)) continue;
+                string raw = item.RawText ?? string.Empty;
+                if (string.IsNullOrWhiteSpace(raw))
+                    continue;
 
-                // generally one-liners; still normalize
-                var pages = DialogueSplitAndSanitize(raw);
+                // Use the shared DialogueUtil to split & sanitize consistently
+                var pages = DialogueUtil.SplitAndSanitize(raw);
 
                 foreach (var p in pages)
                 {
                     string genderTail = string.IsNullOrEmpty(p.Gender) ? "" : "_" + p.Gender;
                     string file = $"{entryNumber}{genderTail}.{ext}";
-                    string path = System.IO.Path.Combine("assets", languageCode, characterName, file).Replace('\\', '/');
+                    string path = Path.Combine("assets", languageCode, characterName, file).Replace('\\', '/');
 
-                    string tk = !string.IsNullOrWhiteSpace(item.TranslationKey) ? item.TranslationKey : processingKey;
+                    // Prefer the computed TranslationKey; fall back to processingKey (shouldn't happen)
+                    string tk = !string.IsNullOrWhiteSpace(item.TranslationKey)
+                        ? item.TranslationKey
+                        : processingKey;
 
                     outList.Add(new VoiceEntryTemplate
                     {
                         DialogueFrom = processingKey,
-                        DialogueText = p.Text,
+                        DialogueText = p.Actor,     // actor-facing (keeps {Portrait:*})
                         AudioPath = path,
-                        TranslationKey = tk,
+                        TranslationKey = tk,        // Strings/MovieReactions:{JsonKey}
                         PageIndex = p.PageIndex,
-                        DisplayPattern = p.Text,
+                        DisplayPattern = p.Display, // clean player-visible text
                         GenderVariant = p.Gender
                     });
 
@@ -55,17 +67,13 @@ namespace VoiceOverFrameworkMod
             return outList;
         }
 
-
         /// <summary>
-        /// Load "Strings/MovieReactions" for a specific character (language-aware) V2.
-        /// Emits a stable TranslationKey per JSON key:
+        /// Load "Strings/MovieReactions" for a specific character (language-aware).
+        /// Emits stable TranslationKeys for JSON keys:
         ///   Strings/MovieReactions:{JsonKey}
         /// Returns: InnerId -> (RawText, SourceInfo, TranslationKey)
-        ///   - InnerId is just a unique handle inside this method (not used elsewhere)
-        ///   - SourceInfo becomes your DialogueFrom base, e.g. "MovieReactions/Penny_*_BeforeMovie"
-        /// Notes:
-        ///   - We include all lines for the NPC (including "*", per-movie, and stage directions like "DuringMovie_2").
-        ///   - Placeholders like {0} {2} are preserved as-is; your sanitizer will handle them later.
+        ///   - InnerId: unique within this loader.
+        ///   - SourceInfo: DialogueFrom base (e.g., "MovieReactions/Abigail_*_BeforeMovie").
         /// </summary>
         private Dictionary<string, (string RawText, string SourceInfo, string TranslationKey)>
             GetMovieReactionsForCharacter(string characterName, string languageCode, IGameContentHelper gameContent)
@@ -75,7 +83,7 @@ namespace VoiceOverFrameworkMod
             bool isEnglish = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase);
             string langSuffix = isEnglish ? "" : $".{languageCode}";
 
-            // Try localized first, then English fallback
+            // Try localized asset first, then English fallback
             Dictionary<string, string> dict = null;
             string assetLang = $"Strings/MovieReactions{langSuffix}";
             string assetEn = "Strings/MovieReactions";
@@ -86,20 +94,25 @@ namespace VoiceOverFrameworkMod
             }
             catch (ContentLoadException)
             {
-                try { dict = gameContent.Load<Dictionary<string, string>>(assetEn); }
-                catch (ContentLoadException) {  }
-                catch (Exception ex2) { Monitor?.Log($"Error loading '{assetEn}': {ex2.Message}", LogLevel.Trace); }
+                try
+                {
+                    dict = gameContent.Load<Dictionary<string, string>>(assetEn);
+                }
+                catch (ContentLoadException) { /* ignore */ }
+                catch (Exception ex2)
+                {
+                    Monitor?.Log($"Error loading '{assetEn}': {ex2.Message}", LogLevel.Trace);
+                }
             }
             catch (Exception ex)
             {
                 Monitor?.Log($"Error loading '{assetLang}': {ex.Message}", LogLevel.Trace);
-                return results;
             }
 
             if (dict == null || dict.Count == 0)
                 return results;
 
-            string prefix = characterName + "_";
+            string prefix = characterName + "_"; // e.g., "Abigail_"
             foreach (var kvp in dict)
             {
                 string jsonKey = kvp.Key ?? "";
@@ -123,8 +136,5 @@ namespace VoiceOverFrameworkMod
 
             return results;
         }
-
-
     }
 }
-*/

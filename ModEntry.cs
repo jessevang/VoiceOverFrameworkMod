@@ -184,6 +184,8 @@ namespace VoiceOverFrameworkMod
 
 
 
+
+
         public override void Entry(IModHelper helper)
         {
             this.Multilingual = new MultilingualDictionary(this, this.Monitor, this.Helper.DirectoryPath);
@@ -200,7 +202,8 @@ namespace VoiceOverFrameworkMod
 
             ApplyHarmonyPatches();
 
-        
+
+
             helper.Events.GameLoop.UpdateTicked += this.OnUpdateTicked; 
             helper.Events.GameLoop.GameLaunched += this.OnGameLaunched; 
 
@@ -447,7 +450,7 @@ namespace VoiceOverFrameworkMod
         private void ApplyHarmonyPatches()
         {
             var harmony = new Harmony(this.ModManifest.UniqueID);
-
+            InstallRawDialogueProbe(harmony);
             try
             {
                 harmony.PatchAll(Assembly.GetExecutingAssembly());

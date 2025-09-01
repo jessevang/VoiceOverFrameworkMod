@@ -1,11 +1,9 @@
 ﻿using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewModdingAPI.Utilities;
 using StardewValley;
 using StardewValley.Menus;
-using System.Reflection;
 using System.Text.RegularExpressions;
 
 namespace VoiceOverFrameworkMod
@@ -85,8 +83,8 @@ namespace VoiceOverFrameworkMod
 
 
 
-
-        // V2-only dialogue checker that reuses V1 state fields (lastDialogueText, wasDialogueUpLastTick, etc.)
+        
+        
         private void CheckForDialogueV2()
         {
             // Do nothing if no location/player
@@ -214,6 +212,29 @@ namespace VoiceOverFrameworkMod
                         // Page (Dialogue.currentDialogueIndex is 0-based)
                         int pageZero = Math.Max(0, (d?.currentDialogueIndex ?? 0));
 
+                        // ===== NEW: try probe-derived sheet key if the game didn't give us one =====
+                        if (string.IsNullOrWhiteSpace(sourceKey) && string.IsNullOrWhiteSpace(festKey))
+                        {
+                            if (TryGetRecentSheetKey(characterName, out var recentKey))
+                            {
+                                if (recentKey.StartsWith("Characters/Dialogue/", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    sourceKey = recentKey;
+                                    bool gameAlreadyHasKey = !string.IsNullOrWhiteSpace(d?.TranslationKey) || !string.IsNullOrWhiteSpace(d?.temporaryDialogueKey);
+                                    if (!gameAlreadyHasKey)
+                                        Monitor.Log($"[V2-LOOKUP] Using probe-derived Characters/Dialogue key: '{recentKey}'", LogLevel.Info);
+
+                                }
+                                else if (recentKey.StartsWith("Strings/StringsFromCSFiles:", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    festKey = recentKey; // handled similarly to other Strings.* keys with :pN
+                                    if (Config.developerModeOn)
+                                        Monitor.Log($"[V2-LOOKUP] Using probe-derived StringsFromCSFiles key: '{recentKey}'", LogLevel.Info);
+                                }
+                            }
+                        }
+                        // ==========================================================================
+
                         // --- Maintain per-event, per-speaker serial that increments once per displayed page ---
                         int? eventSerial = null;
                         if (!string.IsNullOrWhiteSpace(eventBase))
@@ -266,7 +287,7 @@ namespace VoiceOverFrameworkMod
                                 tkCandidates.Add(noPage);
                         }
 
-                        // Characters/Dialogue TK
+                        // Characters/Dialogue TK (game or probe)
                         if (!string.IsNullOrWhiteSpace(sourceKey))
                         {
                             tkCandidates.Add($"{sourceKey}:p{pageZero}");
@@ -276,12 +297,20 @@ namespace VoiceOverFrameworkMod
                         // Event TK via our running serial (fallback path)
                         if (!string.IsNullOrWhiteSpace(eventBase) && eventSerial.HasValue)
                         {
-                            tkCandidates.Add($"{eventBase}:s{eventSerial.Value}");
-                            // Also try raw eventBase (ultra-fallback)
+                            int s = eventSerial.Value;
+
+                            // primary
+                            tkCandidates.Add($"{eventBase}:s{s}");
+
+                            // neighbors (cover off-by-one caused by old/new split rules)
+                            tkCandidates.Add($"{eventBase}:s{Math.Max(0, s - 1)}");
+                            tkCandidates.Add($"{eventBase}:s{s + 1}");
+
+                            // ultra-fallback
                             tkCandidates.Add(eventBase);
                         }
 
-                        // Festival / Strings TK
+                        // Festival / Strings TK (game or probe)
                         if (!string.IsNullOrWhiteSpace(festKey))
                         {
                             tkCandidates.Add($"{festKey}:p{pageZero}");
@@ -295,7 +324,25 @@ namespace VoiceOverFrameworkMod
                             if (Config.developerModeOn)
                             {
                                 string primaryKey = tkCandidates.FirstOrDefault() ?? "(none)";
-                                Monitor.Log($"[V2-LOOKUP] char='{characterName}' selPack='{selectedPack.VoicePackId}' text='{currentDisplayedString}' | key='{primaryKey}'", LogLevel.Info);
+
+                                // determine origin tag
+                                string origin =
+                                    (d?.TranslationKey ?? d?.temporaryDialogueKey) is string gameTk && !string.IsNullOrWhiteSpace(gameTk)
+                                        ? "(game)"
+                                        : (!string.IsNullOrWhiteSpace(sourceKey) || !string.IsNullOrWhiteSpace(festKey))
+                                            ? "(probe)"
+                                            : "(none)";
+
+                                // also include what the game reported, for clarity
+                                string gameReported = (d?.TranslationKey ?? d?.temporaryDialogueKey) ?? "(null)";
+                                if (!string.IsNullOrEmpty(gameReported))
+                                    gameReported = gameReported.Replace('\\', '/');
+
+
+                                Monitor.Log(
+                                    $"[V2-LOOKUP] char='{characterName}' selPack='{selectedPack.VoicePackId}' text='{currentDisplayedString}' | key='{primaryKey}' {origin} | gameTK='{gameReported}'",
+                                    LogLevel.Info
+                                );
                             }
 
                             string resolvedRel = null;
@@ -322,8 +369,8 @@ namespace VoiceOverFrameworkMod
                         var ctx = new VoiceLineContext
                         {
                             Speaker = characterName,
-                            SourceKey = sourceKey,     // e.g. Characters/Dialogue/Abigail:Mon
-                            FestivalKey = festKey,     // e.g. Strings/1_6_Strings:DesertFestival_Abigail
+                            SourceKey = sourceKey,     // e.g. Characters/Dialogue/Abigail:Mon (may come from probe)
+                            FestivalKey = festKey,     // e.g. Strings/1_6_Strings:..., or probe StringsFromCSFiles:...
                             EventKey = eventBase,      // e.g. Events/SeedShop:1
                                                        // IMPORTANT: do NOT set Page for Events; keep it only for Characters/Dialogue and Strings
                             Page = string.IsNullOrWhiteSpace(eventBase) ? (pageZero + 1) : (int?)null,
@@ -339,6 +386,7 @@ namespace VoiceOverFrameworkMod
         }
 
 
+        
 
 
 

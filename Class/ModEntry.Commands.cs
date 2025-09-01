@@ -327,7 +327,7 @@ namespace VoiceOverFrameworkMod
 
         private bool GenerateSingleTemplate(string characterName, string languageCode, string outputBaseDir, string voicePackId, string voicePackName, int startAtThisNumber, string desiredExtension)
         {
-            // --- PRE-CHECKS (unchanged) ---
+
             if (this.Helper == null || this.Monitor == null || this.Config == null)
             {
                 this.Monitor?.Log("GenerateSingleTemplate cannot run: Helper, Monitor, or Config is null.", LogLevel.Error);
@@ -339,10 +339,10 @@ namespace VoiceOverFrameworkMod
 
             try
             {
-                // --- Manifest (unchanged) ---
+
                 var characterManifest = new VoicePackManifestTemplate
                 {
-                    Format = "1.0.0",
+                    Format = "2.0.0",
                     VoicePackId = voicePackId,
                     VoicePackName = voicePackName,
                     Character = characterName,
@@ -354,14 +354,25 @@ namespace VoiceOverFrameworkMod
 
                 //  Reactored all dialogue  sanitizer rules
                 characterManifest.Entries.AddRange(BuildFromCharacterDialogue(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
-                characterManifest.Entries.AddRange(BuildFromEngagement(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
-                characterManifest.Entries.AddRange(BuildFromMarriageDialogue(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
-                //characterManifest.Entries.AddRange(BuildFromFestivals(...));
-                //characterManifest.Entries.AddRange(BuildFromGiftTastes(...));
-                //characterManifest.Entries.AddRange(BuildFromExtraDialogue(...));
-                //characterManifest.Entries.AddRange(BuildFromMovieReactions(...));
-                //characterManifest.Entries.AddRange(BuildFromMail(...));
-                //characterManifest.Entries.AddRange(BuildFromOneSixStrings(...));
+
+                if (IsMarriableCharacter(characterName))
+                {
+                    characterManifest.Entries.AddRange(BuildFromEngagement(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                    characterManifest.Entries.AddRange(BuildFromMarriageDialogue(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                }
+                
+                characterManifest.Entries.AddRange(BuildFromEvents(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+
+                characterManifest.Entries.AddRange(BuildFromFestivals(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                characterManifest.Entries.AddRange(BuildFromGiftTastes(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                characterManifest.Entries.AddRange(BuildFromExtraDialogue(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                characterManifest.Entries.AddRange(BuildFromMovieReactions(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                //characterManifest.Entries.AddRange(BuildFromMail(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+                characterManifest.Entries.AddRange(BuildFromOneSixStrings(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
+
+                string forced = $"1.{desiredExtension}"; //TEST disable to let dialogue audotio path build
+                foreach (var e in characterManifest.Entries)  //TEST disable to let dialogue audotio path build
+                    e.AudioPath = forced;
 
                 // --- WRITE / SAVE (unchanged except for renumber) ---
                 if (!characterManifest.Entries.Any())
@@ -373,7 +384,7 @@ namespace VoiceOverFrameworkMod
 
                 GenerateTemplate_DialogueFromDeduplicated(characterManifest.Entries);
 
-                // NEW: ensure PageIndex is unique and contiguous per TranslationKey
+
                 RenumberPageIndicesPerKey(characterManifest.Entries);
 
                 var finalOutputFileObject = new VoicePackFile
@@ -384,7 +395,10 @@ namespace VoiceOverFrameworkMod
 
                 string sanitizedCharName = this.SanitizeKeyForFileName(characterName) ?? characterName.Replace(" ", "_");
                 string filename = $"{sanitizedCharName}_{languageCode}.json";
-                string outputPath = PathUtilities.NormalizePath(Path.Combine(outputBaseDir, filename));
+                string outputPath = PathUtilities.NormalizePath(Path.Combine(outputBaseDir, filename));  //Original
+
+                
+
 
                 if (this.Config.developerModeOn)
                     this.Monitor.Log($"Saving JSON ({characterManifest.Entries.Count} entries for {characterName}) to: {outputPath}", LogLevel.Debug);
@@ -431,7 +445,6 @@ namespace VoiceOverFrameworkMod
         }
 
 
-
         // Renumber page indices so each TranslationKey has 0..N-1, in a stable order.
         private static void RenumberPageIndicesPerKey(List<VoiceEntryTemplate> entries)
         {
@@ -449,180 +462,6 @@ namespace VoiceOverFrameworkMod
                 }
             }
         }
-
-
-
-
-
-
-
-        /* Removing method as we'll start fresh with V2
-        // Adds new dialogue entries to an existing character_language.json template
-        private void UpdateTemplateCommand(string command, string[] args)
-        {
-            if (args.Length < 1)
-            {
-                this.Monitor.Log("Usage: update_template <TemplateFolderName>", LogLevel.Info);
-                return;
-            }
-
-            string folderName = args[0];
-            string desiredExtension = "wav"; // default
-
-
-            if (args.Length >= 2)
-            {
-                string extArg = args[1].Trim().ToLower();
-                if (extArg == "ogg" || extArg == "wav")
-                    desiredExtension = extArg;
-                else
-                    this.Monitor.Log($"[update_template] Unknown extension '{extArg}', defaulting to wav.", LogLevel.Warn);
-            }
-
-            string templateFolderPath = Path.Combine(this.Helper.DirectoryPath, folderName);
-
-            if (!Directory.Exists(templateFolderPath))
-            {
-                this.Monitor.Log($"Directory not found: {templateFolderPath}", LogLevel.Error);
-                return;
-            }
-
-            var jsonFiles = Directory.GetFiles(templateFolderPath, "*.json", SearchOption.TopDirectoryOnly);
-            foreach (var jsonFilePath in jsonFiles)
-            {
-                VoicePackFile existingPack = null;
-                try
-                {
-                    string json = File.ReadAllText(jsonFilePath);
-                    existingPack = JsonConvert.DeserializeObject<VoicePackFile>(json);
-                }
-                catch (Exception ex)
-                {
-                    this.Monitor.Log($"Failed to load existing template: {jsonFilePath}: {ex.Message}", LogLevel.Warn);
-                    continue;
-                }
-
-                if (existingPack?.VoicePacks == null || !existingPack.VoicePacks.Any())
-                    continue;
-
-                var voiceManifest = existingPack.VoicePacks.First();
-                string character = voiceManifest.Character;
-                string language = voiceManifest.Language;
-
-                var existingEntries = new HashSet<string>(voiceManifest.Entries.Select(e => e.DialogueText), StringComparer.OrdinalIgnoreCase);
-                int nextAudioNumber = voiceManifest.Entries
-                    .Select(e => Path.GetFileNameWithoutExtension(e.AudioPath))
-                    .Where(name => int.TryParse(name.Split('_')[0], out _))
-                    .Select(name => int.Parse(name.Split('_')[0]))
-                    .DefaultIfEmpty(0)
-                    .Max() + 1;
-
-                var initialSources = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-                var sourceTracking = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-
-                // Collect dialogue from the same sources as GenerateSingleTemplate
-                string langSuffix = language.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{language}";
-                string specificDialogueAssetKey = $"Characters/Dialogue/{character}{langSuffix}";
-                try
-                {
-                    var dialogueData = this.Helper.GameContent.Load<Dictionary<string, string>>(specificDialogueAssetKey);
-                    foreach (var kvp in dialogueData)
-                    {
-                        if (!initialSources.ContainsKey(kvp.Key))
-                        {
-                            initialSources[kvp.Key] = kvp.Value;
-                            sourceTracking[kvp.Key] = "Dialogue";
-                        }
-                    }
-                }
-                catch { }
-
-                var stringCharData = this.GetVanillaCharacterStringKeys(character, language, this.Helper.GameContent);
-                foreach (var kvp in stringCharData)
-                {
-                    if (!initialSources.ContainsKey(kvp.Key))
-                    {
-                        initialSources[kvp.Key] = kvp.Value;
-                        sourceTracking[kvp.Key] = "Strings/Characters";
-                    }
-                }
-
-                var eventData = this.GetEventDialogueForCharacter(character, language, this.Helper.GameContent);
-                foreach (var kvp in eventData)
-                {
-                    if (!initialSources.ContainsKey(kvp.Key))
-                    {
-                        initialSources[kvp.Key] = kvp.Value;
-                        sourceTracking[kvp.Key] = kvp.Key;
-                    }
-                }
-
-                void AddExtraData(List<(string RawText, string SourceInfo)> sourceList)
-                {
-                    for (int i = 0; i < sourceList.Count; i++)
-                    {
-                        string key = $"{sourceList[i].SourceInfo}:{i}";
-                        if (!initialSources.ContainsKey(key))
-                        {
-                            initialSources[key] = sourceList[i].RawText;
-                            sourceTracking[key] = sourceList[i].SourceInfo;
-                        }
-                    }
-                }
-
-                AddExtraData(GetFestivalDialogueForCharacter(character, language, this.Helper.GameContent).Values.ToList());
-                AddExtraData(GetGiftTasteDialogueForCharacter(character, language, this.Helper.GameContent));
-                AddExtraData(GetEngagementDialogueForCharacter(character, language, this.Helper.GameContent));
-                AddExtraData(GetExtraDialogueForCharacter(character, language, this.Helper.GameContent));
-
-                int addedCount = 0;
-
-                foreach (var kvp in initialSources.OrderBy(p => sourceTracking.GetValueOrDefault(p.Key, "zzz_Unknown")).ThenBy(p => p.Key))
-                {
-                    IEnumerable<string> segments = SplitStandardDialogueSegments(kvp.Value);
-                    foreach (string seg in segments)
-                    {
-                        string sanitized = SanitizeDialogueText(seg);
-                        string cleaned = Regex.Replace(sanitized, "#.+?#", "").Trim();
-                        var parts = cleaned.Contains("^") ? cleaned.Split('^') : new[] { cleaned };
-
-                        foreach (var (text, suffix) in parts.Length == 2
-                            ? new[] { (parts[0].Trim(), "_male"), (parts[1].Trim(), "_female") }
-                            : new[] { (parts[0].Trim(), "") })
-                        {
-                            if (string.IsNullOrWhiteSpace(text) || existingEntries.Contains(text))
-                                continue;
-
-                            //string audioPath = Path.Combine("assets", language, character, $"{nextAudioNumber}{suffix}.wav").Replace('\\', '/');
-                            string audioPath = Path.Combine("assets", language, character, $"{nextAudioNumber}{suffix}.{desiredExtension}").Replace('\\', '/');
-
-                            voiceManifest.Entries.Add(new VoiceEntryTemplate
-                            {
-                                DialogueFrom = kvp.Key,
-                                DialogueText = text,
-                                AudioPath = audioPath
-                            });
-
-                            existingEntries.Add(text);
-                            nextAudioNumber++;
-                            addedCount++;
-                        }
-                    }
-                }
-
-                if (addedCount > 0)
-                {
-                    GenerateTemplate_DialogueFromDeduplicated(voiceManifest.Entries);
-                    File.WriteAllText(jsonFilePath, JsonConvert.SerializeObject(existingPack, Formatting.Indented));
-                    this.Monitor.Log($"Updated '{Path.GetFileName(jsonFilePath)}' with {addedCount} new lines.", LogLevel.Info);
-                }
-                else
-                {
-                    this.Monitor.Log($"No new lines found for '{Path.GetFileName(jsonFilePath)}'.", LogLevel.Debug);
-                }
-            }
-        }
-        */
 
 
         //used to fix multi-dialogue page that used to force suffixes for duplicate DialogueFrom.

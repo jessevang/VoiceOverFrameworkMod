@@ -18,11 +18,12 @@
 
 
 
-  <ItemGroup>
-    <None Include="Dictionary\**\*.*">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
+
+	<ItemGroup>
+		<None Include="Dictionary\**\*.*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
 
 
 
@@ -33,8 +34,7 @@
 
 
 
-  
-  <ItemGroup>
+	<ItemGroup>
     <!-- Third Party License -->
     <None Include="thirdparty\NVorbis_LICENSE.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
