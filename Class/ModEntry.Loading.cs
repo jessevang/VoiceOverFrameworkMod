@@ -2,25 +2,30 @@
 using StardewModdingAPI;
 using StardewModdingAPI.Utilities;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 
 namespace VoiceOverFrameworkMod
 {
     public partial class ModEntry : Mod
     {
-        // Dictionary to hold loaded voice packs, keyed by character name
-        // Value is a list of packs (for different languages or multiple packs for the same char/lang)
+
         private readonly Dictionary<string, List<VoicePack>> VoicePacksByCharacter = new(StringComparer.OrdinalIgnoreCase);
 
 
-        static bool IsV2(string? s)
+
+        //helper used by loader and CheckForDialogueV2 to canonicalize DisplayPattern text
+        static string CanonDisplay(string s)
         {
-            if (string.IsNullOrWhiteSpace(s)) return false;
-            var core = s.Split('-', 2)[0]; // ignore pre-release
-            var parts = core.Split('.');
-            if (parts.Length == 0) return false;
-            return int.TryParse(parts[0], out var major) && major >= 2;
+            if (string.IsNullOrWhiteSpace(s)) return string.Empty;
+            // normalize line endings & collapse whitespace; keep punctuation as-is
+            s = s.Replace("\r\n", "\n").Replace("\r", "\n");
+            s = Regex.Replace(s, @"[ ]{2,}", " ");
+            s = Regex.Replace(s, @"\s+", " ").Trim();
+            return s;
         }
+
+
 
         private void AddVoicePackToStore(VoicePack vp, ref int totalDefinitionsProcessed, ref bool foundInPack)
         {
@@ -133,10 +138,13 @@ namespace VoiceOverFrameworkMod
                                     formatMajor = Math.Max(formatMajor, 2);
 
                                 // STEP 6: Process entries into maps
-                                var entriesDict = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase); // V1/V2 text (DisplayPattern or DialogueText)
-                                var entriesByFrom = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase); // DialogueFrom (debug/multilingual)
-                                var entriesByTk = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);   // V2 TranslationKey (with optional :pN)
+                                var entriesDict = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);         // V1/V2 text (DisplayPattern or DialogueText)
+                                var entriesByFrom = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);        // DialogueFrom (debug/multilingual)
+                                var entriesByTk = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);           // V2 TranslationKey (with optional :pN)
                                 var dialogueFromCounters = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
+
+                                // NEW: V2 DisplayPattern index (stripped/canonical)
+                                var entriesByDisplayPattern = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
 
                                 foreach (var entry in manifestData.Entries)
                                 {
@@ -188,10 +196,18 @@ namespace VoiceOverFrameworkMod
                                             Monitor.Log($"[Load] Duplicate TranslationKey '{tkKey}' in '{relativePathForLog}'. Keeping first occurrence.", LogLevel.Trace);
                                         }
                                     }
+
+                                    // NEW: V2 DisplayPattern index (canonical form)
+                                    if (formatMajor >= 2 && !string.IsNullOrWhiteSpace(entry.DisplayPattern))
+                                    {
+                                        var dpKey = CanonDisplay(entry.DisplayPattern);
+                                        if (!entriesByDisplayPattern.ContainsKey(dpKey))
+                                            entriesByDisplayPattern[dpKey] = audioPath;
+                                    }
                                 }
 
                                 // If *all* maps are empty, skip; otherwise allow (supports pure-TK packs)
-                                if (!entriesDict.Any() && !entriesByTk.Any() && !entriesByFrom.Any())
+                                if (!entriesDict.Any() && !entriesByTk.Any() && !entriesByFrom.Any() && !entriesByDisplayPattern.Any()) // NEW include pattern map
                                 {
                                     this.Monitor.Log($"---> Skipping definition '{manifestData.VoicePackName}' from '{relativePathForLog}': No valid entries found within it.", LogLevel.Debug);
                                     continue;
@@ -211,6 +227,9 @@ namespace VoiceOverFrameworkMod
                                     // V2 TranslationKey map
                                     EntriesByTranslationKey = entriesByTk,
 
+                                    // NEW: V2 DisplayPattern map
+                                    EntriesByDisplayPattern = entriesByDisplayPattern,
+
                                     ContentPackId = contentPack.Manifest.UniqueID,
                                     ContentPackName = contentPack.Manifest.Name,
                                     BaseAssetPath = PathUtilities.NormalizePath(Path.GetDirectoryName(filePath)),
@@ -226,7 +245,7 @@ namespace VoiceOverFrameworkMod
                                         $"[Load] '{voicePack.VoicePackName}' ({voicePack.VoicePackId}) " +
                                         $"char={voicePack.Character} lang={voicePack.Language} " +
                                         $"format='{fmt}' major={voicePack.FormatMajor} " +
-                                        $"entries(Text)={voicePack.Entries.Count} entries(TK)={voicePack.EntriesByTranslationKey.Count} entries(From)={voicePack.EntriesByFrom.Count}",
+                                        $"entries(Text)={voicePack.Entries.Count} entries(TK)={voicePack.EntriesByTranslationKey.Count} entries(Display)={voicePack.EntriesByDisplayPattern.Count} entries(From)={voicePack.EntriesByFrom.Count}",
                                         LogLevel.Debug
                                     );
                                 }
@@ -288,6 +307,10 @@ namespace VoiceOverFrameworkMod
         {
             return GetSelectedVoicePack(characterName)?.Language ?? Config.DefaultLanguage;
         }
+
+
+      
+
 
 
 

@@ -54,27 +54,38 @@ namespace VoiceOverFrameworkMod
         // Main dialogue check loop called every tick (or less often if adjusted).
         private void OnUpdateTicked(object sender, UpdateTickedEventArgs e)
         {
+            // periodically dispose finished SFX
             if (e.IsMultipleOf(2))
                 CleanupStoppedVoiceInstances();
 
-            var speaker = Game1.currentSpeaker;
-            if (speaker != null)
+            // prefer the DialogueBox's speaker; fall back to Game1.currentSpeaker
+            var dlgBox = Game1.activeClickableMenu as DialogueBox;
+            var speakerName =
+                dlgBox?.characterDialogue?.speaker?.Name
+                ?? Game1.currentSpeaker?.Name;
+
+            VoicePack pack = null;
+            if (!string.IsNullOrEmpty(speakerName))
+                pack = GetSelectedVoicePack(speakerName);
+
+            // reduce log spam: trace only every ~15 ticks
+            bool logThisTick = Config.developerModeOn && e.IsMultipleOf(15);
+
+            if (logThisTick)
+                Monitor.Log($"[Tick] Speaker={speakerName ?? "null"} Pack={(pack?.VoicePackName ?? "null")} FormatMajor={(pack?.FormatMajor ?? -1)}", LogLevel.Trace);
+
+            // if we have a V2-capable pack selected for this speaker, use V2 path
+            if (pack != null && pack.FormatMajor >= 2)
             {
-                var pack = GetSelectedVoicePack(speaker.Name);
-                if (Config.developerModeOn)
-                    Monitor.Log($"[Tick] Speaker={speaker.Name} Pack={(pack?.VoicePackName ?? "null")} FormatMajor={(pack?.FormatMajor ?? -1)}", LogLevel.Trace);
+                if (logThisTick)
+                    Monitor.Log("[Tick] Using V2 pipeline", LogLevel.Trace);
 
-                if (pack != null && pack.FormatMajor >= 2)
-                {
-                    if (Config.developerModeOn)
-                        Monitor.Log("[Tick] Using V2 pipeline", LogLevel.Trace);
-
-                    CheckForDialogueV2();
-                    return;
-                }
+                CheckForDialogueV2();
+                return;
             }
 
-            if (Config.developerModeOn)
+            // else: use legacy V1 path (also covers cases with no speaker/pack)
+            if (logThisTick)
                 Monitor.Log("[Tick] Using V1 pipeline", LogLevel.Trace);
 
             CheckForDialogue();
@@ -83,8 +94,10 @@ namespace VoiceOverFrameworkMod
 
 
 
-        
-        
+
+
+        //first iteration V2 
+        /*
         private void CheckForDialogueV2()
         {
             // Do nothing if no location/player
@@ -386,7 +399,7 @@ namespace VoiceOverFrameworkMod
         }
 
 
-        
+        */
 
 
 
@@ -760,47 +773,8 @@ namespace VoiceOverFrameworkMod
             return count > 0 ? count - 1 : (int?)0; // if the first match is the current one, its index is 0
         }
 
-        /// <summary>
-        /// Pick entry where TranslationKey == key and DisplayPattern matches; prefer matching gender.
-        /// </summary>
-        private VoiceEntryTemplate PickBestByTkPatternGender(List<VoiceEntryTemplate> entries, string key, string pattern, string preferredGender)
-        {
-            return entries
-                .Where(e =>
-                    string.Equals(e.TranslationKey, key, StringComparison.OrdinalIgnoreCase) &&
-                    string.Equals(e.DisplayPattern, pattern, StringComparison.Ordinal))
-                .OrderByDescending(e => RankGender(e.GenderVariant, preferredGender))
-                .FirstOrDefault();
-        }
 
-        /// <summary>
-        /// Pick entry where TranslationKey starts with prefix (for Events ...:sN[:splitK]) and DisplayPattern matches; prefer matching gender.
-        /// </summary>
-        private VoiceEntryTemplate PickBestByTkPrefixPatternGender(List<VoiceEntryTemplate> entries, string prefix, string pattern, string preferredGender)
-        {
-            return entries
-                .Where(e =>
-                    !string.IsNullOrWhiteSpace(e.TranslationKey) &&
-                    e.TranslationKey.StartsWith(prefix, StringComparison.OrdinalIgnoreCase) &&
-                    string.Equals(e.DisplayPattern, pattern, StringComparison.Ordinal))
-                .OrderByDescending(e => RankGender(e.GenderVariant, preferredGender))
-                .FirstOrDefault();
-        }
-
-        /// <summary>
-        /// Gender scoring: exact match = 2, null/neutral = 1, mismatch = 0
-        /// </summary>
-        private int RankGender(string candidate, string preferred)
-        {
-            if (string.IsNullOrWhiteSpace(candidate)) return 1;
-            if (preferred != null && candidate.Equals(preferred, StringComparison.OrdinalIgnoreCase)) return 2;
-            return 0;
-        }
-
-
-
-        // Events
-        
+      
 
 
 

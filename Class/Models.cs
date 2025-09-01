@@ -45,6 +45,8 @@ namespace VoiceOverFrameworkMod
         public Dictionary<string, string> EntriesByFrom { get; set; } = new(StringComparer.OrdinalIgnoreCase);
         public Dictionary<string, string> EntriesByTranslationKey { get; set; } = new(StringComparer.OrdinalIgnoreCase);
 
+        public Dictionary<string, string> EntriesByDisplayPattern { get; set; } = new(StringComparer.OrdinalIgnoreCase);
+
         public string ContentPackId { get; set; }
         public string ContentPackName { get; set; }
         public string BaseAssetPath { get; set; }

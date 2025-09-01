@@ -1,11 +1,18 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework.Content;
+using StardewModdingAPI;
+using StardewModdingAPI.Utilities;
+using StardewValley;
+using StardewValley.Menus;
+using System;
 using System.Collections.Generic;
 using System.IO;
-using StardewModdingAPI;
-using Microsoft.Xna.Framework.Content;
+using System.Text.RegularExpressions;
 
 namespace VoiceOverFrameworkMod
 {
+
+
+
     public partial class ModEntry : Mod
     {
         private IEnumerable<VoiceEntryTemplate> BuildFromCharacterDialogue(
