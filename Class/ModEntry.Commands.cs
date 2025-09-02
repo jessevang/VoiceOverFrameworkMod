@@ -58,6 +58,9 @@ namespace VoiceOverFrameworkMod
                 callback: this.ListAllNPCCharacterData
             );
 
+            DialogueTester(commands);
+
+            
             /*
             commands.Add(
                 "update_template",
@@ -172,7 +175,7 @@ namespace VoiceOverFrameworkMod
             string baseUniqueModID = args[2].Trim();
             string baseVoicePackName = args[3].Trim();
             int startsAtThisNumber = Convert.ToInt32(args[4]);
-            string desiredExtension = "wav"; 
+            string desiredExtension = "ogg"; 
 
             if (args.Length >= 6)
             {

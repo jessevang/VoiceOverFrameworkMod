@@ -110,7 +110,7 @@ namespace VoiceOverFrameworkMod
                 string packName = $"Auto Baseline ({Char} - {Lang})";
                 try
                 {
-                    GenerateSingleTemplate(Char, Lang, baselineFolder, packId, packName, 1, "wav");
+                    GenerateSingleTemplate(Char, Lang, baselineFolder, packId, packName, 1, audioFormat);
                 }
                 catch (Exception ex)
                 {
@@ -264,7 +264,7 @@ namespace VoiceOverFrameworkMod
                     var outObj = new VoicePackFile { Format = "2.0.0", VoicePacks = outPacks };
 
                     // Copy mapped audio & rename to Ported_*.<ext>, update JSON AudioPath
-                    int copied = CopyMappedAudioAndRename(v1Folder, outFolder, outObj, audioFormat);
+                    int copied = CopyMappedAudioAndRename(v1Folder, outFolder, outObj);
                     grandAudioCopied += copied;
                     if (copied > 0)
                         Monitor.Log($"Copied {copied} audio file(s) for {Path.GetFileName(v1Path)}", LogLevel.Info);
@@ -470,15 +470,14 @@ namespace VoiceOverFrameworkMod
 
         /// <summary>
         /// Copy mapped audio from the V1 pack folder into the V2 output folder,
-        /// renaming with "Ported_" prefix and applying chosen format (ogg/wav).
+        /// renaming to Ported_<originalName> but **keeping the source file extension**.
         /// Updates the V2 entry's AudioPath to the new renamed file.
         /// Assumes the entry.AudioPath currently points to the V1 source path (set during mapping).
         /// </summary>
         private int CopyMappedAudioAndRename(
             string v1Root,            // e.g., "...\Mods\[VOFM] DM_Voicepack_En"
             string outRoot,           // e.g., "...\Mods\[VOFM] DM_Voicepack_En_output"
-            VoicePackFile outFileObj, // the V2 file object being written
-            string audioFormat        // "ogg" or "wav"
+            VoicePackFile outFileObj  // the V2 file object being written
         )
         {
             int copied = 0;
@@ -498,6 +497,7 @@ namespace VoiceOverFrameworkMod
                     // Resolve source (V1) file from whatever we staged into AudioPath during mapping.
                     string srcRel = NormalizeSlashes(e.AudioPath);
                     string srcFull = Path.IsPathRooted(srcRel) ? srcRel : Path.Combine(v1Root, srcRel);
+
                     if (!File.Exists(srcFull))
                     {
                         // Try a common fallback under assets/<lang>/<char>/
@@ -505,30 +505,30 @@ namespace VoiceOverFrameworkMod
                         if (File.Exists(tryAlt))
                             srcFull = tryAlt;
                         else
-                            continue; // source missing → skip copy (the mapping loop already logs NeedsReview for unmatched)
+                            continue; // source missing → skip
                     }
 
-                    // Destination: assets/<lang>/<charSafe>/Ported_<originalNoExt>.<audioFormat>
                     string destDir = Path.Combine(outRoot, "assets", lang, charSafe);
                     Directory.CreateDirectory(destDir);
 
                     string origNoExt = Path.GetFileNameWithoutExtension(srcFull) ?? "audio";
-                    string destExt = audioFormat.Equals("wav", StringComparison.OrdinalIgnoreCase) ? ".wav" : ".ogg";
-                    string destName = $"Ported_{origNoExt}{destExt}";
+                    string srcExt = Path.GetExtension(srcFull); // keep original extension exactly
+                    string safeExt = string.IsNullOrWhiteSpace(srcExt) ? "" : srcExt.ToLowerInvariant();
+
+                    string destName = $"Ported_{origNoExt}{safeExt}";
                     string destFull = Path.Combine(destDir, destName);
 
                     // ensure uniqueness (don’t overwrite different content)
                     int n = 1;
                     while (File.Exists(destFull))
                     {
-                        destName = $"Ported_{origNoExt}_{n}{destExt}";
+                        destName = $"Ported_{origNoExt}_{n}{safeExt}";
                         destFull = Path.Combine(destDir, destName);
                         n++;
                     }
 
                     try
                     {
-                        // NOTE: we are not transcoding. We keep bytes as-is, only the filename extension changes if requested.
                         File.Copy(srcFull, destFull, overwrite: false);
 
                         // Update JSON path to the new Ported_* file
@@ -546,6 +546,7 @@ namespace VoiceOverFrameworkMod
 
             return copied;
         }
+
 
 
 
