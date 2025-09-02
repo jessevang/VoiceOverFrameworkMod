@@ -47,7 +47,7 @@ namespace VoiceOverFrameworkMod
 
             // tokens to REMOVE for DisplayPattern (random + player-specific + time/season/etc)
             private static readonly Regex RxRemovePercentTokens = new(
-                @"%(?:adj|noun|place|name|spouse|farm|favorite|kid1|kid2|pet|firstnameletter|band|book|season|time)\b",
+                @"%(?:adj|noun|place|name|spouse|firstnameletter|farm|favorite|kid1|kid2|pet|firstnameletter|band|book|season|time)\b",
                 RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
             // remove farmer name token '@'

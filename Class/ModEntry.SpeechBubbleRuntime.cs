@@ -54,19 +54,16 @@ namespace VoiceOverFrameworkMod
                 {
                     var spouseId = farmer.team?.GetSpouse(farmer.UniqueMultiplayerID);
                     if (spouseId.HasValue)
-                    {
-                        var spouseFarmer = Game1.GetPlayer(spouseId.Value);
-                        if (spouseFarmer != null) cap.Add(spouseFarmer.Name);
-                    }
+                        cap.Add(Game1.GetPlayer(spouseId.Value)?.Name);
                 }
 
                 var kids = farmer.getChildren();
                 if (kids.Count > 0) cap.Add(kids[0]?.displayName);
                 if (kids.Count > 1) cap.Add(kids[1]?.displayName);
             }
-
             return cap;
         }
+
 
         private string SanitizeBubbleText(string displayed)
         {
