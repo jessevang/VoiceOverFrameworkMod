@@ -24,7 +24,6 @@ namespace VoiceOverFrameworkMod
         private void CheckForSpeechBubblesLevel1()
         {
 
-            NPC test = new NPC();
           
             // Don’t compete with DialogueBox VO.
             if (Game1.activeClickableMenu is StardewValley.Menus.DialogueBox)

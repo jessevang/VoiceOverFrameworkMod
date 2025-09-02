@@ -66,26 +66,46 @@ namespace VoiceOverFrameworkMod
                 if (weeklyIdx >= 0)
                     raw = raw[..weeklyIdx];
 
-                // Base split by "#$e#"
+                // 1) First split by "#$e#" (explicit 'end page' in SDV)
                 var firstLevel = raw.Split(new[] { "#$e#" }, StringSplitOptions.None);
 
-                // If splitBAsPage=true (events), also split "#$b#" into separate pages
+                // 2) Expand into normalized "pages":
+                //    - If splitBAsPage==true (events), split "#$b#" as separate pages
+                //    - Otherwise, keep "#$b#" as line breaks initially
+                //    - In BOTH cases, also split on actual newlines (\r?\n) into separate pages
                 var normalizedPages = new List<string>();
                 foreach (var chunk in firstLevel)
                 {
                     string c = chunk ?? "";
+
+                    IEnumerable<string> stage2;
                     if (splitBAsPage)
                     {
-                        var bs = c.Split(new[] { "#$b#" }, StringSplitOptions.None);
-                        foreach (var b in bs)
-                            normalizedPages.Add(b ?? "");
+                        // treat "#$b#" as separate pages
+                        stage2 = c.Split(new[] { "#$b#" }, StringSplitOptions.None);
                     }
                     else
                     {
-                        normalizedPages.Add(c.Replace("#$b#", "\n"));
+                        // keep "#$b#" as visible linebreaks first; we'll split on real newlines next
+                        stage2 = new[] { c.Replace("#$b#", "\n") };
+                    }
+
+                    foreach (var part in stage2)
+                    {
+                        // NOW: split on actual newline characters as distinct pages (menus / separate audio lines)
+                        // Handles both \n and \r\n
+                        var byNewline = Regex.Split(part ?? "", @"\r?\n");
+
+                        foreach (var leaf in byNewline)
+                        {
+                            // keep empty lines out; we'll trim later anyway
+                            if (!string.IsNullOrWhiteSpace(leaf))
+                                normalizedPages.Add(leaf);
+                        }
                     }
                 }
 
+                // 3) Build PageSegs, applying sanitizers & variant expansion
                 var pages = new List<PageSeg>();
                 int nextIndex = 0;
 
@@ -94,7 +114,7 @@ namespace VoiceOverFrameworkMod
                     string text = normalizedPages[i]?.Trim();
                     if (string.IsNullOrEmpty(text)) continue;
 
-                    // 1) Top-level random choice: "$c 0.5#A#B"
+                    // Top-level random choice: "$c 0.5#A#B"
                     if (TrySplitRandomChoice(text, out var cA, out var cB))
                     {
                         AddPageIfNotEmpty(pages, cA, nextIndex++, null);
@@ -102,7 +122,7 @@ namespace VoiceOverFrameworkMod
                         continue;
                     }
 
-                    // 2) Conditional choice: "$d FLAG#A|B" or $query/$p
+                    // Conditional choice: "$d FLAG#A|B" or $query/$p
                     if (TrySplitConditionalChoice(text, out var dA, out var dB))
                     {
                         AddPageIfNotEmpty(pages, dA, nextIndex++, null);
@@ -110,7 +130,7 @@ namespace VoiceOverFrameworkMod
                         continue;
                     }
 
-                    // 3) Caret gender split: "Ugh...^Why?"
+                    // Caret gender split: "Ugh...^Why?"
                     if (TryTopLevelCaretGender(text, out var cgMale, out var cgFemale))
                     {
                         AddPageIfNotEmpty(pages, cgMale, nextIndex++, "male");
@@ -118,7 +138,7 @@ namespace VoiceOverFrameworkMod
                         continue;
                     }
 
-                    // 4) ${m^f(^n)} gender variant
+                    // ${m^f(^n)} gender variant
                     if (TryTopLevelGender(text, out var male, out var female, out var nb))
                     {
                         if (!string.IsNullOrEmpty(male)) AddPageIfNotEmpty(pages, male, nextIndex++, "male");
@@ -130,9 +150,10 @@ namespace VoiceOverFrameworkMod
                         AddPageIfNotEmpty(pages, text, nextIndex++, null);
                     }
                 }
-      
+
                 return pages;
             }
+
 
             // ── Helpers ─────────────────────────────────────────────
             private static void AddPageIfNotEmpty(List<PageSeg> pages, string body, int pageIndex, string gender)

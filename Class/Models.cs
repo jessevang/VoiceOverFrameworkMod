@@ -90,6 +90,7 @@ namespace VoiceOverFrameworkMod
         public string? GenderVariant { get; set; }   // "male" | "female" | "neutral" (optional) - Though this shows up now, it's really not needed since the final V2 dialogue match algorithm was drastically altered, and the key + gender is only used as a 2nd layer match in case first layer fails
 
         public string? BranchId { get; set; }
+        public string? DialogueTextPortedFromV1 { get; set; }  //Used for Dialogue conversions from V1 to V2 used as referenced so user can manually check and revalidated manually if needed.
     }
 
 }
