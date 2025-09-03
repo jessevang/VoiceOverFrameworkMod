@@ -1,4 +1,4 @@
-﻿// VoiceOverFrameworkMod: force %noun → "dragon", capture/strip it, keep adj/place + fixed handling.
+﻿// VoiceOverFrameworkMod: force %noun → "dragon"; capture/strip adj/place + fixed tokens; add %season capture.
 
 using HarmonyLib;
 using StardewModdingAPI;
@@ -17,7 +17,6 @@ namespace VoiceOverFrameworkMod
 {
     public partial class ModEntry : Mod
     {
-        // Replace Dialogue.nouns with a single-item pool ("Dragon").
         public static class ForceDragonNoun
         {
             public static readonly string[] Value = new[] { "Dragon" };
@@ -160,7 +159,6 @@ namespace VoiceOverFrameworkMod
             return;
         }
 
-        // Capture adj/place via pools; capture forced noun by matching "dragon" on the displayed text.
         private static void AugmentWithDetectedLegacyTokens(string displayed, Capture cap)
         {
             if (string.IsNullOrWhiteSpace(displayed) || cap == null) return;
@@ -244,7 +242,6 @@ namespace VoiceOverFrameworkMod
         }
     }
 
-    // Per-page capture container.
     public sealed class Capture
     {
         public readonly HashSet<string> Words = new(StringComparer.OrdinalIgnoreCase);
@@ -270,6 +267,7 @@ namespace VoiceOverFrameworkMod
         public bool HasFirstHalf;
 
         public bool HasTime;
+        public bool HasSeason; // NEW
 
         public void Add(params string[] xs)
         {
@@ -291,10 +289,9 @@ namespace VoiceOverFrameworkMod
 
         public bool AnyFixedTokenPresent() =>
             HasAtName || HasFarm || HasFavorite || HasPet || HasSpouse ||
-            HasKid1 || HasKid2 || HasBook || HasBand || HasName || HasFirstHalf;
+            HasKid1 || HasKid2 || HasBook || HasBand || HasName || HasFirstHalf || HasSeason || HasTime;
     }
 
-    // Store Capture per Dialogue+page.
     public static class TokenCaptureStore
     {
         private static readonly ConditionalWeakTable<Dialogue, Dictionary<int, Capture>> _map = new();
@@ -316,7 +313,6 @@ namespace VoiceOverFrameworkMod
         }
     }
 
-    // Prime flags and fixed values per page; also force the noun pool each page.
     [HarmonyPatch(typeof(Dialogue), nameof(Dialogue.prepareCurrentDialogueForDisplay))]
     static class Patch_PrepareCurrentDialogueForDisplay_Min
     {
@@ -337,12 +333,22 @@ namespace VoiceOverFrameworkMod
             cap.HasAdjToken |= raw.IndexOf("%adj", StringComparison.OrdinalIgnoreCase) >= 0;
             cap.HasNounToken |= raw.IndexOf("%noun", StringComparison.OrdinalIgnoreCase) >= 0;
             cap.HasPlaceToken |= raw.IndexOf("%place", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasSeason |= raw.IndexOf("%season", StringComparison.OrdinalIgnoreCase) >= 0; // NEW
 
             if (cap.HasTime)
             {
                 string timeStr = Game1.getTimeOfDayString(Game1.timeOfDay);
                 if (!string.IsNullOrWhiteSpace(timeStr))
                     cap.AddFixed(timeStr);
+            }
+
+            if (cap.HasSeason) // NEW
+            {
+                string seasonDisplay = !string.IsNullOrWhiteSpace(Game1.CurrentSeasonDisplayName)
+                    ? Game1.CurrentSeasonDisplayName
+                    : (Game1.currentSeason ?? "");
+                if (!string.IsNullOrWhiteSpace(seasonDisplay))
+                    cap.AddFixed(seasonDisplay);
             }
 
             cap.HasAtName |= raw.Contains("@", StringComparison.Ordinal);
@@ -388,8 +394,23 @@ namespace VoiceOverFrameworkMod
                 if (cap.HasKid1 || cap.HasKid2)
                 {
                     var kids = farmer.getChildren();
-                    if (cap.HasKid1) cap.AddFixed((kids.Count > 0 ? kids[0]?.displayName : null) ?? "baby");
-                    if (cap.HasKid2) cap.AddFixed((kids.Count > 1 ? kids[1]?.displayName : null) ?? "second baby");
+                    if (cap.HasKid1)
+                    {
+                        var k1 = (kids.Count > 0 ? kids[0]?.displayName : null);
+                        if (string.IsNullOrWhiteSpace(k1))
+                            cap.AddFixed("the baby", "baby");
+                        else
+                            cap.AddFixed(k1);
+                    }
+
+                    if (cap.HasKid2)
+                    {
+                        var k2 = (kids.Count > 1 ? kids[1]?.displayName : null);
+                        if (string.IsNullOrWhiteSpace(k2))
+                            cap.AddFixed("the second baby", "second baby");
+                        else
+                            cap.AddFixed(k2);
+                    }
                 }
             }
 
@@ -409,7 +430,6 @@ namespace VoiceOverFrameworkMod
         }
     }
 
-    // Thread-static context for replace phase (used only for fixed %name capture).
     static class V2DialogueContext
     {
         [ThreadStatic] public static Dialogue CurrentDialogue;
@@ -419,7 +439,6 @@ namespace VoiceOverFrameworkMod
         public static void Pop() { CurrentDialogue = null; CurrentPage = -1; }
     }
 
-    // Provide context for %name capture during ReplacePlayerEnteredStrings.
     [HarmonyPatch(typeof(Dialogue), nameof(Dialogue.ReplacePlayerEnteredStrings))]
     static class Patch_Dialogue_Replace_Context
     {
@@ -438,6 +457,7 @@ namespace VoiceOverFrameworkMod
             cap.HasAdjToken |= s.IndexOf("%adj", StringComparison.OrdinalIgnoreCase) >= 0;
             cap.HasNounToken |= s.IndexOf("%noun", StringComparison.OrdinalIgnoreCase) >= 0;
             cap.HasPlaceToken |= s.IndexOf("%place", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasSeason |= s.IndexOf("%season", StringComparison.OrdinalIgnoreCase) >= 0; // NEW
 
             cap.HasAtName |= s.Contains("@");
             cap.HasFarm |= s.IndexOf("%farm", StringComparison.OrdinalIgnoreCase) >= 0;
@@ -458,7 +478,6 @@ namespace VoiceOverFrameworkMod
         static void Postfix() => V2DialogueContext.Pop();
     }
 
-    // Capture the resolved %name value so it can be stripped.
     [HarmonyPatch(typeof(Dialogue), nameof(Dialogue.randomName))]
     static class Patch_Dialogue_randomName_Post
     {
@@ -472,7 +491,6 @@ namespace VoiceOverFrameworkMod
         }
     }
 
-    // Compute removable words and produce the stripped key.
     public static class DialogueSanitizerV2
     {
         public static IEnumerable<string> GetRemovableWords(Capture cap)
@@ -538,11 +556,16 @@ namespace VoiceOverFrameworkMod
             {
                 var fixedPattern =
                     $@"(?ix)
-               (?: ^ | (?<=\s) )
-               (?: (?:the|a|an)\s+ )?
-               (?: {string.Join("|", fixedParts)} )\b
-             ";
-                s = Regex.Replace(s, fixedPattern, " ", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant | RegexOptions.IgnorePatternWhitespace);
+                       (?: ^ | (?<=\s) )          # start or preceded by whitespace
+                       (?: {string.Join("|", fixedParts)} )\b
+                     ";
+
+                s = Regex.Replace(
+                    s,
+                    fixedPattern,
+                    " ",
+                    RegexOptions.IgnoreCase | RegexOptions.CultureInvariant | RegexOptions.IgnorePatternWhitespace
+                );
             }
 
             if (poolParts.Length > 0)
@@ -565,7 +588,6 @@ namespace VoiceOverFrameworkMod
         }
     }
 
-    // Track which parse segment we’re on (for flagging).
     static class V2ParseContext
     {
         [ThreadStatic] public static Dialogue Current;
@@ -576,7 +598,6 @@ namespace VoiceOverFrameworkMod
         public static void Pop() { Current = null; NextIndex = 0; }
     }
 
-    // Open/close parse context so we can tag page flags reliably.
     [HarmonyPatch(typeof(Dialogue), "parseDialogueString")]
     static class Patch_Dialogue_parseDialogueString_Context
     {
@@ -584,7 +605,6 @@ namespace VoiceOverFrameworkMod
         static void Postfix() => V2ParseContext.Pop();
     }
 
-    // Read raw token presence per segment (pre-replacement) for adj/place/name, etc.
     [HarmonyPatch(typeof(Dialogue), nameof(Dialogue.checkForSpecialCharacters))]
     static class Patch_Dialogue_checkForSpecialCharacters_Flags
     {
@@ -602,6 +622,7 @@ namespace VoiceOverFrameworkMod
             cap.HasAdjToken |= s.IndexOf("%adj", StringComparison.OrdinalIgnoreCase) >= 0;
             cap.HasNounToken |= s.IndexOf("%noun", StringComparison.OrdinalIgnoreCase) >= 0;
             cap.HasPlaceToken |= s.IndexOf("%place", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasSeason |= s.IndexOf("%season", StringComparison.OrdinalIgnoreCase) >= 0; // NEW
 
             cap.HasAtName |= s.Contains("@");
             cap.HasFarm |= s.IndexOf("%farm", StringComparison.OrdinalIgnoreCase) >= 0;
@@ -614,9 +635,6 @@ namespace VoiceOverFrameworkMod
             cap.HasBand |= s.IndexOf("%band", StringComparison.OrdinalIgnoreCase) >= 0;
             cap.HasFirstHalf |= s.IndexOf("%firstnameletter", StringComparison.OrdinalIgnoreCase) >= 0;
             cap.HasName |= s.IndexOf("%name", StringComparison.OrdinalIgnoreCase) >= 0;
-
-           // if (ModEntry.Instance?.Config?.developerModeOn == true)
-               // ModEntry.Instance.Monitor.Log($"[V2-PARSE] page={page} flags adj={cap.HasAdjToken} noun={cap.HasNounToken} place={cap.HasPlaceToken} raw='{s}'", LogLevel.Debug);
         }
 
         static void Postfix() => V2ParseContext.Advance();
