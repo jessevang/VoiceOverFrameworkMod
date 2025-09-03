@@ -7,10 +7,10 @@
   </PropertyGroup>
 
 	<ItemGroup>
+		<Compile Include="Patches\*.cs" />
 		<Compile Include="ModEntry.cs" />
 		<Compile Include="Class\**\*.cs" />
 		<Compile Include="Menus\**\*.cs" />
-		<Compile Include="Patches\**\*.cs" />
 		<Compile Include="Libs\NVorbis\**\*.cs" />
 	</ItemGroup>
 

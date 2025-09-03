@@ -1,4 +1,6 @@
-﻿using HarmonyLib;
+﻿// VoiceOverFrameworkMod: force %noun → "dragon", capture/strip it, keep adj/place + fixed handling.
+
+using HarmonyLib;
 using StardewModdingAPI;
 using StardewModdingAPI.Utilities;
 using StardewValley;
@@ -15,6 +17,13 @@ namespace VoiceOverFrameworkMod
 {
     public partial class ModEntry : Mod
     {
+        // Replace Dialogue.nouns with a single-item pool ("Dragon").
+        public static class ForceDragonNoun
+        {
+            public static readonly string[] Value = new[] { "Dragon" };
+            public static void Apply() => StardewValley.Dialogue.nouns = Value;
+        }
+
         private void CheckForDialogueV2()
         {
             if (Game1.currentLocation == null || Game1.player == null)
@@ -65,119 +74,134 @@ namespace VoiceOverFrameworkMod
                 currentDisplayedString = dialogueBox?.getCurrentString();
             }
 
-            if (!string.IsNullOrWhiteSpace(currentDisplayedString))
+            if (string.IsNullOrWhiteSpace(currentDisplayedString))
+                return;
+
+            if (currentDisplayedString == lastDialogueText)
             {
-                if (currentDisplayedString == lastDialogueText)
-                {
-                    _sameLineStableTicks++;
-                }
-                else
-                {
-                    lastDialogueText = currentDisplayedString;
-                    lastSpeakerName = currentSpeaker?.Name;
-                    wasDialogueUpLastTick = true;
-                    _sameLineStableTicks = 0;
-                    _lastPlayedLookupKey = null;
-                }
-
-                if (_sameLineStableTicks < Config.TextStabilizeTicks)
-                    return;
-
-                if (currentSpeaker != null)
-                {
-                    string farmerName = Game1.player.Name;
-                    string potentialOriginalText = currentDisplayedString;
-
-                    if (!string.IsNullOrEmpty(farmerName) && potentialOriginalText.Contains(farmerName))
-                        potentialOriginalText = potentialOriginalText.Replace(farmerName, "@");
-
-                    string sanitizedStep1 = SanitizeDialogueTextV2(potentialOriginalText);
-                    string finalLookupKey = Regex.Replace(sanitizedStep1, @"#.+?#", "").Trim();
-
-                    if (!string.IsNullOrWhiteSpace(finalLookupKey))
-                    {
-                        if (string.Equals(finalLookupKey, _lastPlayedLookupKey, StringComparison.Ordinal))
-                        {
-                            if (Config.developerModeOn)
-                                Monitor.Log($"[VOICE V2] Debounced repeat key on same page: '{finalLookupKey}'", LogLevel.Trace);
-                            return;
-                        }
-
-                        var dialogueBox = Game1.activeClickableMenu as DialogueBox;
-                        var d = dialogueBox?.characterDialogue;
-                        int pageZero = Math.Max(0, (d?.currentDialogueIndex ?? 0));
-
-                        var cap = TokenCaptureStore.Get(d, pageZero, create: true);
-                        AugmentWithDetectedLegacyTokens(currentDisplayedString, cap);
-
-                        string strippedForMatch = DialogueSanitizerV2.StripChosenWords(currentDisplayedString ?? "", cap);
-                        string patternKey = CanonDisplay(strippedForMatch);
-
-                        if (Config.developerModeOn)
-                        {
-                            var captured = (cap?.Words != null && cap.Words.Count > 0)
-                                ? string.Join(", ", cap.Words.OrderBy(s => s, StringComparer.OrdinalIgnoreCase))
-                                : "(none)";
-                            Monitor.Log($"[V2-DISPLAY] Dialogue Text:    \"{currentDisplayedString}\"", LogLevel.Info);
-                            Monitor.Log($"[V2-DISPLAY] Capture Words:   [{captured}]", LogLevel.Info);
-                            Monitor.Log($"[V2-DISPLAY] Stripped Text:    \"{patternKey}\"", LogLevel.Info);
-                        }
-
-                        if (selectedPack != null &&
-                            selectedPack.FormatMajor >= 2 &&
-                            selectedPack.Entries != null &&
-                            selectedPack.Entries.TryGetValue(patternKey, out var relAudioFromPattern) &&
-                            !string.IsNullOrWhiteSpace(relAudioFromPattern))
-                        {
-                            var fullPatternPath = PathUtilities.NormalizePath(System.IO.Path.Combine(selectedPack.BaseAssetPath, relAudioFromPattern));
-                            if (Config.developerModeOn)
-                                Monitor.Log($"[V2-DISPLAY] MATCH → playing '{relAudioFromPattern}'", LogLevel.Info);
-
-                            PlayVoiceFromFile(fullPatternPath);
-                            _lastPlayedLookupKey = finalLookupKey;
-                            return;
-                        }
-
-                        if (Config.developerModeOn)
-                            Monitor.Log("[V2-RESULT] match=No (display-only lookup; no fallback). Not playing.", LogLevel.Info);
-
-                        _lastPlayedLookupKey = finalLookupKey;
-                        return;
-                    }
-                }
+                _sameLineStableTicks++;
             }
+            else
+            {
+                lastDialogueText = currentDisplayedString;
+                lastSpeakerName = currentSpeaker?.Name;
+                wasDialogueUpLastTick = true;
+                _sameLineStableTicks = 0;
+                _lastPlayedLookupKey = null;
+            }
+
+            if (_sameLineStableTicks < Config.TextStabilizeTicks)
+                return;
+            if (currentSpeaker == null)
+                return;
+
+            string farmerName = Game1.player.Name;
+            string potentialOriginalText = currentDisplayedString;
+            if (!string.IsNullOrEmpty(farmerName) && potentialOriginalText.Contains(farmerName))
+                potentialOriginalText = potentialOriginalText.Replace(farmerName, "@");
+
+            string sanitizedStep1 = SanitizeDialogueTextV2(potentialOriginalText);
+            string finalLookupKey = Regex.Replace(sanitizedStep1, @"#.+?#", "").Trim();
+            if (string.IsNullOrWhiteSpace(finalLookupKey))
+                return;
+
+            if (string.Equals(finalLookupKey, _lastPlayedLookupKey, StringComparison.Ordinal))
+            {
+                if (Config.developerModeOn)
+                    Monitor.Log($"[VOICE V2] Debounced repeat key on same page: '{finalLookupKey}'", LogLevel.Trace);
+                return;
+            }
+
+            var dialogueBox2 = Game1.activeClickableMenu as DialogueBox;
+            var d = dialogueBox2?.characterDialogue;
+            int pageZero = Math.Max(0, (d?.currentDialogueIndex ?? 0));
+            var cap = TokenCaptureStore.Get(d, pageZero, create: true);
+
+            AugmentWithDetectedLegacyTokens(currentDisplayedString, cap);
+
+            var removable = DialogueSanitizerV2.GetRemovableWords(cap).ToList();
+            string strippedForMatch = DialogueSanitizerV2.StripChosenWords(currentDisplayedString ?? "", cap);
+            string patternKey = CanonDisplay(strippedForMatch);
+
+            if (Config.developerModeOn)
+            {
+                var captured = (cap?.Words != null && cap.Words.Count > 0)
+                    ? string.Join(", ", cap.Words.OrderBy(s => s, StringComparer.OrdinalIgnoreCase))
+                    : "(none)";
+                var removableStr = (removable.Count > 0)
+                    ? string.Join(", ", removable.OrderBy(s => s, StringComparer.OrdinalIgnoreCase))
+                    : "(none)";
+                Monitor.Log($"[V2-DISPLAY] Dialogue Text:       \"{currentDisplayedString}\"", LogLevel.Info);
+                Monitor.Log($"[V2-DISPLAY] Token Flags:         adj={cap?.HasAdjToken} noun={cap?.HasNounToken} place={cap?.HasPlaceToken}", LogLevel.Info);
+                Monitor.Log($"[V2-DISPLAY] Capture Words (all): [{captured}]", LogLevel.Info);
+                Monitor.Log($"[V2-DISPLAY] Removable subset:    [{removableStr}]", LogLevel.Info);
+                Monitor.Log($"[V2-DISPLAY] Stripped Text:       \"{patternKey}\"", LogLevel.Info);
+            }
+
+            if (selectedPack != null &&
+                selectedPack.FormatMajor >= 2 &&
+                selectedPack.Entries != null &&
+                selectedPack.Entries.TryGetValue(patternKey, out var relAudioFromPattern) &&
+                !string.IsNullOrWhiteSpace(relAudioFromPattern))
+            {
+                var fullPatternPath = PathUtilities.NormalizePath(System.IO.Path.Combine(selectedPack.BaseAssetPath, relAudioFromPattern));
+                if (Config.developerModeOn)
+                    Monitor.Log($"[V2-DISPLAY] MATCH → playing '{relAudioFromPattern}'", LogLevel.Info);
+
+                PlayVoiceFromFile(fullPatternPath);
+                _lastPlayedLookupKey = finalLookupKey;
+                return;
+            }
+
+            if (Config.developerModeOn)
+                Monitor.Log("[V2-RESULT] match=No (display-only lookup; no fallback). Not playing.", LogLevel.Error);
+
+            _lastPlayedLookupKey = finalLookupKey;
+            return;
         }
 
-        // Augment capture set from the displayed text by recognizing legacy token outputs
-        // Also handles glued %firstnameletter + %name like "JeFilbert", and resolved %book/%band if present.
+        // Capture adj/place via pools; capture forced noun by matching "dragon" on the displayed text.
         private static void AugmentWithDetectedLegacyTokens(string displayed, Capture cap)
         {
             if (string.IsNullOrWhiteSpace(displayed) || cap == null) return;
 
-            // 1) nouns/places from pools (case-insensitive)
-            var nouns = Dialogue.nouns != null ? new HashSet<string>(Dialogue.nouns.Select(s => s.ToLowerInvariant())) : null;
-            var places = Dialogue.places != null ? new HashSet<string>(Dialogue.places.Select(s => s.ToLowerInvariant())) : null;
+            static HashSet<string> ToSet(string[] arr)
+                => arr != null && arr.Length > 0
+                    ? new HashSet<string>(arr.Select(s => s?.Trim().ToLowerInvariant())
+                                              .Where(s => !string.IsNullOrEmpty(s)))
+                    : null;
 
-            if ((nouns != null && nouns.Count > 0) || (places != null && places.Count > 0))
+            bool dev = ModEntry.Instance?.Config?.developerModeOn == true;
+            var adjSet = ToSet(StardewValley.Dialogue.adjectives);
+            var placeSet = ToSet(StardewValley.Dialogue.places);
+
+            var words = Regex.Matches(displayed, @"\b[\p{L}\p{M}A-Za-z'-]+\b")
+                             .Cast<Match>()
+                             .Select(m => new { raw = m.Value, low = m.Value.ToLowerInvariant() })
+                             .ToList();
+
+            foreach (var w in words)
             {
-                foreach (Match m in Regex.Matches(displayed.ToLowerInvariant(), @"\b[\w'-]+\b"))
-                {
-                    var w = m.Value;
-                    if ((nouns?.Contains(w) ?? false) || (places?.Contains(w) ?? false))
-                        cap.Add(w);
-                }
+                if (cap.HasAdjToken && adjSet?.Contains(w.low) == true) cap.Add(w.raw);
+                if (cap.HasPlaceToken && placeSet?.Contains(w.low) == true) cap.Add(w.raw);
             }
 
-            // 2) resolved %book / %band (belt-and-suspenders; also added pre-Replace in Prefix when token detected)
-            if (!string.IsNullOrWhiteSpace(Game1.elliottBookName) &&
+            var mDragon = Regex.Match(displayed, @"\bdragon\b", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
+            if (mDragon.Success)
+            {
+                cap.HasNounToken = true;
+                cap.AddFixed(mDragon.Value);
+                if (dev) ModEntry.Instance.Monitor.Log($"[V2-DEBUG][Augment] +noun(forced) '{mDragon.Value}'", LogLevel.Debug);
+            }
+
+            if (cap.HasBook && !string.IsNullOrWhiteSpace(Game1.elliottBookName) &&
                 displayed.IndexOf(Game1.elliottBookName, StringComparison.OrdinalIgnoreCase) >= 0)
-                cap.Add(Game1.elliottBookName);
+                cap.AddFixed(Game1.elliottBookName);
 
-            if (!string.IsNullOrWhiteSpace(Game1.samBandName) &&
+            if (cap.HasBand && !string.IsNullOrWhiteSpace(Game1.samBandName) &&
                 displayed.IndexOf(Game1.samBandName, StringComparison.OrdinalIgnoreCase) >= 0)
-                cap.Add(Game1.samBandName);
+                cap.AddFixed(Game1.samBandName);
 
-            // 3) glued %firstnameletter + %name
             if (cap.ExpectFirstHalfPlusName && !string.IsNullOrWhiteSpace(cap.FarmerHalf))
             {
                 string halfEsc = Regex.Escape(cap.FarmerHalf);
@@ -189,19 +213,14 @@ namespace VoiceOverFrameworkMod
                     string whole = m.Value;
                     if (!string.IsNullOrWhiteSpace(whole))
                     {
-                        cap.Add(whole); // e.g., "JeFilbert"
+                        cap.AddFixed(whole);
                         if (whole.Length > cap.FarmerHalf.Length)
-                        {
-                            string suffix = whole.Substring(cap.FarmerHalf.Length);
-                            if (!string.IsNullOrWhiteSpace(suffix))
-                                cap.Add(suffix); // "Filbert"
-                        }
+                            cap.AddFixed(whole.Substring(cap.FarmerHalf.Length));
                     }
                 }
             }
             else
             {
-                // Fallback: even if the hint wasn't set, try stripping FarmerHalf + letters once
                 var nm = Utility.FilterUserName(Game1.player?.Name) ?? string.Empty;
                 int halfLen = Math.Max(0, nm.Length / 2);
                 if (halfLen > 0)
@@ -212,21 +231,45 @@ namespace VoiceOverFrameworkMod
                     foreach (Match m in rxAny.Matches(displayed))
                     {
                         string whole = m.Value;
-                        cap.Add(whole);
-                        if (whole.Length > half.Length) cap.Add(whole.Substring(half.Length));
+                        cap.AddFixed(whole);
+                        if (whole.Length > half.Length) cap.AddFixed(whole.Substring(half.Length));
                     }
                 }
             }
+
+            if (!cap.HasAdjToken && adjSet != null)
+                cap.Words.RemoveWhere(w => adjSet.Contains((w ?? "").Trim().ToLowerInvariant()));
+            if (!cap.HasPlaceToken && placeSet != null)
+                cap.Words.RemoveWhere(w => placeSet.Contains((w ?? "").Trim().ToLowerInvariant()));
         }
     }
 
-    // 0) Per-page capture ------------------------------------------------------
+    // Per-page capture container.
     public sealed class Capture
     {
         public readonly HashSet<string> Words = new(StringComparer.OrdinalIgnoreCase);
+        public readonly HashSet<string> FixedTokenWords = new(StringComparer.OrdinalIgnoreCase);
 
         public bool ExpectFirstHalfPlusName;
         public string FarmerHalf;
+
+        public bool HasAdjToken;
+        public bool HasNounToken;
+        public bool HasPlaceToken;
+
+        public bool HasAtName;
+        public bool HasFarm;
+        public bool HasFavorite;
+        public bool HasPet;
+        public bool HasSpouse;
+        public bool HasKid1;
+        public bool HasKid2;
+        public bool HasBook;
+        public bool HasBand;
+        public bool HasName;
+        public bool HasFirstHalf;
+
+        public bool HasTime;
 
         public void Add(params string[] xs)
         {
@@ -234,8 +277,24 @@ namespace VoiceOverFrameworkMod
                 if (!string.IsNullOrWhiteSpace(x))
                     Words.Add(x.Trim());
         }
+
+        public void AddFixed(params string[] xs)
+        {
+            foreach (var x in xs)
+                if (!string.IsNullOrWhiteSpace(x))
+                {
+                    var v = x.Trim();
+                    Words.Add(v);
+                    FixedTokenWords.Add(v);
+                }
+        }
+
+        public bool AnyFixedTokenPresent() =>
+            HasAtName || HasFarm || HasFavorite || HasPet || HasSpouse ||
+            HasKid1 || HasKid2 || HasBook || HasBand || HasName || HasFirstHalf;
     }
 
+    // Store Capture per Dialogue+page.
     public static class TokenCaptureStore
     {
         private static readonly ConditionalWeakTable<Dialogue, Dictionary<int, Capture>> _map = new();
@@ -243,7 +302,8 @@ namespace VoiceOverFrameworkMod
         public static void Reset(Dialogue dlg, int pageIndex)
         {
             var dict = _map.GetOrCreateValue(dlg);
-            dict[pageIndex] = new Capture();
+            if (!dict.TryGetValue(pageIndex, out var _))
+                dict[pageIndex] = new Capture();
         }
 
         public static Capture Get(Dialogue dlg, int pageIndex, bool create = true)
@@ -256,78 +316,84 @@ namespace VoiceOverFrameworkMod
         }
     }
 
-    // 1)  Harmony: reset + add canonical tokens + player strings --------
+    // Prime flags and fixed values per page; also force the noun pool each page.
     [HarmonyPatch(typeof(Dialogue), nameof(Dialogue.prepareCurrentDialogueForDisplay))]
     static class Patch_PrepareCurrentDialogueForDisplay_Min
     {
         static void Prefix(Dialogue __instance)
         {
-            // Prefer the live dialogue used by the UI to ensure read/write consistency
+            ForceDragonNoun.Apply();
+
             var box = Game1.activeClickableMenu as DialogueBox;
             var live = box?.characterDialogue ?? __instance;
-
             int page = Math.Max(0, live.currentDialogueIndex);
+
             TokenCaptureStore.Reset(live, page);
             var cap = TokenCaptureStore.Get(live, page);
             if (cap == null) return;
 
             string raw = (page < live.dialogues.Count ? live.dialogues[page].Text : null) ?? string.Empty;
 
-            // add full pools for tokens present on this page
-            void AddPool(string[] arr)
+            cap.HasAdjToken |= raw.IndexOf("%adj", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasNounToken |= raw.IndexOf("%noun", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasPlaceToken |= raw.IndexOf("%place", StringComparison.OrdinalIgnoreCase) >= 0;
+
+            if (cap.HasTime)
             {
-                if (arr == null) return;
-                foreach (var s in arr)
-                    if (!string.IsNullOrWhiteSpace(s))
-                        cap.Add(s);
+                string timeStr = Game1.getTimeOfDayString(Game1.timeOfDay);
+                if (!string.IsNullOrWhiteSpace(timeStr))
+                    cap.AddFixed(timeStr);
             }
 
-            if (raw.Contains("%adj", StringComparison.Ordinal)) AddPool(Dialogue.adjectives);
-            if (raw.Contains("%noun", StringComparison.Ordinal)) AddPool(Dialogue.nouns);
-            if (raw.Contains("%place", StringComparison.Ordinal)) AddPool(Dialogue.places);
+            cap.HasAtName |= raw.Contains("@", StringComparison.Ordinal);
+            cap.HasFarm |= raw.IndexOf("%farm", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasFavorite |= raw.IndexOf("%favorite", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasPet |= raw.IndexOf("%pet", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasSpouse |= raw.IndexOf("%spouse", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasKid1 |= raw.IndexOf("%kid1", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasKid2 |= raw.IndexOf("%kid2", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasBook |= raw.IndexOf("%book", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasBand |= raw.IndexOf("%band", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasFirstHalf |= raw.IndexOf("%firstnameletter", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasName |= raw.IndexOf("%name", StringComparison.OrdinalIgnoreCase) >= 0;
 
-            if (raw.Contains("%book", StringComparison.Ordinal) && !string.IsNullOrWhiteSpace(Game1.elliottBookName))
-                cap.Add(Game1.elliottBookName);
-
-            if (raw.Contains("%band", StringComparison.Ordinal) && !string.IsNullOrWhiteSpace(Game1.samBandName))
-                cap.Add(Game1.samBandName);
-
-            // Player-dependent values
             var farmer = live.farmer ?? Game1.player;
             if (farmer != null)
             {
-                cap.Add(
-                    Utility.FilterUserName(farmer.Name),
-                    Utility.FilterUserName(farmer.farmName.Value),
-                    Utility.FilterUserName(farmer.favoriteThing.Value),
-                    farmer.getPetDisplayName()
-                );
-
-                if (!string.IsNullOrWhiteSpace(farmer.spouse))
+                if (cap.HasAtName) cap.AddFixed(Utility.FilterUserName(farmer.Name));
+                if (cap.HasFarm) cap.AddFixed(Utility.FilterUserName(farmer.farmName.Value));
+                if (cap.HasFavorite) cap.AddFixed(Utility.FilterUserName(farmer.favoriteThing.Value));
+                if (cap.HasPet)
                 {
-                    cap.Add(NPC.GetDisplayName(farmer.spouse));
+                    var petName = farmer.getPetDisplayName();
+                    if (!string.IsNullOrWhiteSpace(petName)) cap.AddFixed(petName);
                 }
-                else
+
+                if (cap.HasSpouse)
                 {
-                    var spouseId = farmer.team?.GetSpouse(farmer.UniqueMultiplayerID);
-                    if (spouseId.HasValue)
+                    if (!string.IsNullOrWhiteSpace(farmer.spouse))
+                        cap.AddFixed(NPC.GetDisplayName(farmer.spouse));
+                    else
                     {
-                        var spouseFarmer = Game1.GetPlayer(spouseId.Value);
-                        if (spouseFarmer != null)
-                            cap.Add(spouseFarmer.Name);
+                        var spouseId = farmer.team?.GetSpouse(farmer.UniqueMultiplayerID);
+                        if (spouseId.HasValue)
+                        {
+                            var spouseFarmer = Game1.GetPlayer(spouseId.Value);
+                            if (spouseFarmer != null)
+                                cap.AddFixed(spouseFarmer.Name);
+                        }
                     }
                 }
 
-                var kids = farmer.getChildren();
-                if (kids.Count > 0) cap.Add(kids[0]?.displayName);
-                if (kids.Count > 1) cap.Add(kids[1]?.displayName);
+                if (cap.HasKid1 || cap.HasKid2)
+                {
+                    var kids = farmer.getChildren();
+                    if (cap.HasKid1) cap.AddFixed((kids.Count > 0 ? kids[0]?.displayName : null) ?? "baby");
+                    if (cap.HasKid2) cap.AddFixed((kids.Count > 1 ? kids[1]?.displayName : null) ?? "second baby");
+                }
             }
 
-            // detect %firstnameletter + %name for glued removal (e.g., "JeFilbert")
-            bool hasFirstHalf = raw.IndexOf("%firstnameletter", StringComparison.OrdinalIgnoreCase) >= 0;
-            bool hasRandName = raw.IndexOf("%name", StringComparison.OrdinalIgnoreCase) >= 0;
-
-            if (hasFirstHalf && hasRandName && farmer != null)
+            if (cap.HasFirstHalf && farmer != null)
             {
                 string nm = Utility.FilterUserName(farmer.Name) ?? string.Empty;
                 int halfLen = Math.Max(0, nm.Length / 2);
@@ -337,13 +403,13 @@ namespace VoiceOverFrameworkMod
                 {
                     cap.ExpectFirstHalfPlusName = true;
                     cap.FarmerHalf = half;
-                    cap.Add(half);
+                    cap.AddFixed(half);
                 }
             }
         }
     }
 
-    // === replacement context & hooks ==========================================
+    // Thread-static context for replace phase (used only for fixed %name capture).
     static class V2DialogueContext
     {
         [ThreadStatic] public static Dialogue CurrentDialogue;
@@ -353,23 +419,46 @@ namespace VoiceOverFrameworkMod
         public static void Pop() { CurrentDialogue = null; CurrentPage = -1; }
     }
 
+    // Provide context for %name capture during ReplacePlayerEnteredStrings.
     [HarmonyPatch(typeof(Dialogue), nameof(Dialogue.ReplacePlayerEnteredStrings))]
     static class Patch_Dialogue_Replace_Context
     {
-        static void Prefix(Dialogue __instance)
+        static void Prefix(ref string str)
         {
             var box = Game1.activeClickableMenu as DialogueBox;
-            var live = box?.characterDialogue ?? __instance;
+            var live = box?.characterDialogue;
+            if (live == null) return;
+
             int page = Math.Max(0, live.currentDialogueIndex);
             V2DialogueContext.Push(live, page);
+
+            var cap = TokenCaptureStore.Get(live, page, create: true);
+            string s = str ?? string.Empty;
+
+            cap.HasAdjToken |= s.IndexOf("%adj", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasNounToken |= s.IndexOf("%noun", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasPlaceToken |= s.IndexOf("%place", StringComparison.OrdinalIgnoreCase) >= 0;
+
+            cap.HasAtName |= s.Contains("@");
+            cap.HasFarm |= s.IndexOf("%farm", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasFavorite |= s.IndexOf("%favorite", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasPet |= s.IndexOf("%pet", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasSpouse |= s.IndexOf("%spouse", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasKid1 |= s.IndexOf("%kid1", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasKid2 |= s.IndexOf("%kid2", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasBook |= s.IndexOf("%book", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasBand |= s.IndexOf("%band", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasFirstHalf |= s.IndexOf("%firstnameletter", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasName |= s.IndexOf("%name", StringComparison.OrdinalIgnoreCase) >= 0;
+
+            if (ModEntry.Instance?.Config?.developerModeOn == true)
+                ModEntry.Instance.Monitor.Log($"[V2-DEBUG][Replace.Prefix] raw='{s}'", LogLevel.Debug);
         }
 
-        static void Postfix()
-        {
-            V2DialogueContext.Pop();
-        }
+        static void Postfix() => V2DialogueContext.Pop();
     }
 
+    // Capture the resolved %name value so it can be stripped.
     [HarmonyPatch(typeof(Dialogue), nameof(Dialogue.randomName))]
     static class Patch_Dialogue_randomName_Post
     {
@@ -379,41 +468,157 @@ namespace VoiceOverFrameworkMod
             if (dlg == null) return;
 
             var cap = TokenCaptureStore.Get(dlg, Math.Max(0, V2DialogueContext.CurrentPage), create: true);
-            cap?.Add(__result);
+            cap?.AddFixed(__result);
         }
     }
 
-    // 2) Sanitizer used for comparison -----------------------------------------
+    // Compute removable words and produce the stripped key.
     public static class DialogueSanitizerV2
     {
+        public static IEnumerable<string> GetRemovableWords(Capture cap)
+        {
+            if (cap == null || cap.Words.Count == 0)
+                return Enumerable.Empty<string>();
+
+            static HashSet<string> ToSet(string[] arr)
+                => arr != null && arr.Length > 0
+                    ? new HashSet<string>(arr.Select(s => s?.Trim().ToLowerInvariant())
+                                              .Where(s => !string.IsNullOrEmpty(s)))
+                    : null;
+
+            var adjSet = ToSet(Dialogue.adjectives);
+            var placeSet = ToSet(Dialogue.places);
+
+            var removable = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+            foreach (var w in cap.Words)
+            {
+                if (string.IsNullOrWhiteSpace(w)) continue;
+                var lw = w.Trim().ToLowerInvariant();
+
+                if (cap.HasAdjToken && adjSet?.Contains(lw) == true) removable.Add(w);
+                if (cap.HasPlaceToken && placeSet?.Contains(lw) == true) removable.Add(w);
+            }
+
+            if (cap.FixedTokenWords.Count > 0)
+            {
+                foreach (var w in cap.FixedTokenWords)
+                    if (!string.IsNullOrWhiteSpace(w))
+                        removable.Add(w);
+            }
+
+            return removable;
+        }
+
         public static string StripChosenWords(string displayed, Capture cap)
         {
             if (string.IsNullOrWhiteSpace(displayed))
                 return string.Empty;
 
-            if (cap == null || cap.Words.Count == 0)
+            var removable = GetRemovableWords(cap).ToList();
+            if (removable.Count == 0)
                 return Normalize(displayed);
 
-            var parts = cap.Words
-                .Select(Regex.Escape)
-                .Where(s => !string.IsNullOrEmpty(s))
-                .Distinct(StringComparer.OrdinalIgnoreCase)
-                .ToArray();
+            var fixedSet = new HashSet<string>(cap?.FixedTokenWords ?? Enumerable.Empty<string>(),
+                                               StringComparer.OrdinalIgnoreCase);
 
-            if (parts.Length == 0)
-                return Normalize(displayed);
+            var fixedParts = removable.Where(w => fixedSet.Contains(w))
+                                      .Select(Regex.Escape)
+                                      .Distinct(StringComparer.OrdinalIgnoreCase)
+                                      .ToArray();
 
-            var pattern = $@"\b(?:{string.Join("|", parts)})\b";
-            var stripped = Regex.Replace(displayed, pattern, "", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
+            var poolParts = removable.Where(w => !fixedSet.Contains(w))
+                                      .Select(Regex.Escape)
+                                      .Distinct(StringComparer.OrdinalIgnoreCase)
+                                      .ToArray();
 
-            return Normalize(stripped);
+            string s = displayed;
+
+            if (fixedParts.Length > 0)
+            {
+                var fixedPattern =
+                    $@"(?ix)
+               (?: ^ | (?<=\s) )
+               (?: (?:the|a|an)\s+ )?
+               (?: {string.Join("|", fixedParts)} )\b
+             ";
+                s = Regex.Replace(s, fixedPattern, " ", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant | RegexOptions.IgnorePatternWhitespace);
+            }
+
+            if (poolParts.Length > 0)
+            {
+                var poolPattern = $@"\b(?:{string.Join("|", poolParts)})\b";
+                s = Regex.Replace(s, poolPattern, "", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
+            }
+
+            s = Regex.Replace(s, @"[ ]{2,}", " ");
+            s = Regex.Replace(s, @"\s{2,}", " ");
+
+            return s.Trim();
         }
 
         private static string Normalize(string s)
         {
             s = Regex.Replace(s, @"[ ]{2,}", " ");
-            s = Regex.Replace(s, @"\s+", " ").Trim();
-            return s;
+            s = Regex.Replace(s, @"\s{2,}", " ");
+            return s.Trim();
         }
+    }
+
+    // Track which parse segment we’re on (for flagging).
+    static class V2ParseContext
+    {
+        [ThreadStatic] public static Dialogue Current;
+        [ThreadStatic] public static int NextIndex;
+
+        public static void Push(Dialogue dlg) { Current = dlg; NextIndex = 0; }
+        public static void Advance() { if (Current != null) NextIndex++; }
+        public static void Pop() { Current = null; NextIndex = 0; }
+    }
+
+    // Open/close parse context so we can tag page flags reliably.
+    [HarmonyPatch(typeof(Dialogue), "parseDialogueString")]
+    static class Patch_Dialogue_parseDialogueString_Context
+    {
+        static void Prefix(Dialogue __instance) => V2ParseContext.Push(__instance);
+        static void Postfix() => V2ParseContext.Pop();
+    }
+
+    // Read raw token presence per segment (pre-replacement) for adj/place/name, etc.
+    [HarmonyPatch(typeof(Dialogue), nameof(Dialogue.checkForSpecialCharacters))]
+    static class Patch_Dialogue_checkForSpecialCharacters_Flags
+    {
+        static void Prefix(Dialogue __instance, string str)
+        {
+            var dlg = V2ParseContext.Current ?? __instance;
+            if (dlg == null) return;
+
+            int page = Math.Max(0, V2ParseContext.NextIndex);
+            var cap = TokenCaptureStore.Get(dlg, page, create: true);
+            if (cap == null) return;
+
+            string s = str ?? string.Empty;
+
+            cap.HasAdjToken |= s.IndexOf("%adj", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasNounToken |= s.IndexOf("%noun", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasPlaceToken |= s.IndexOf("%place", StringComparison.OrdinalIgnoreCase) >= 0;
+
+            cap.HasAtName |= s.Contains("@");
+            cap.HasFarm |= s.IndexOf("%farm", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasFavorite |= s.IndexOf("%favorite", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasPet |= s.IndexOf("%pet", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasSpouse |= s.IndexOf("%spouse", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasKid1 |= s.IndexOf("%kid1", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasKid2 |= s.IndexOf("%kid2", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasBook |= s.IndexOf("%book", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasBand |= s.IndexOf("%band", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasFirstHalf |= s.IndexOf("%firstnameletter", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasName |= s.IndexOf("%name", StringComparison.OrdinalIgnoreCase) >= 0;
+
+           // if (ModEntry.Instance?.Config?.developerModeOn == true)
+               // ModEntry.Instance.Monitor.Log($"[V2-PARSE] page={page} flags adj={cap.HasAdjToken} noun={cap.HasNounToken} place={cap.HasPlaceToken} raw='{s}'", LogLevel.Debug);
+        }
+
+        static void Postfix() => V2ParseContext.Advance();
     }
 }

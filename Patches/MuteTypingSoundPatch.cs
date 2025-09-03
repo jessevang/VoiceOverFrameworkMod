@@ -15,8 +15,7 @@ namespace VoiceOverFrameworkMod
 
         public static bool PlaySound_Prefix(string cueName)
         {
-            if (ModEntry.Instance?.Config?.turnoffdialoguetypingsound == true &&
-                cueName == "dialogueCharacter")
+            if (ModEntry.Instance?.Config?.turnoffdialoguetypingsound == true && cueName == "dialogueCharacter")
             {
                 return false; // block the typing sound
             }

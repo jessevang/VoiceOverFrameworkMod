@@ -249,7 +249,7 @@ namespace VoiceOverFrameworkMod
             {
                 if (!File.Exists(absoluteAudioFilePath))
                 {
-                    Monitor?.Log($"[PlayVoiceFromFile] ERROR: File not found at path: {absoluteAudioFilePath}", LogLevel.Error);
+                    Monitor?.Log($"[PlayVoiceFromFile] ERROR: File not found at path: {absoluteAudioFilePath}", LogLevel.Warn);
                     return;
                 }
 

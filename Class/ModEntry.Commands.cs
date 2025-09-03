@@ -51,6 +51,7 @@ namespace VoiceOverFrameworkMod
 
 
 
+
             commands.Add(
                 name: "list_characters",
                 documentation: "Lists all loaded characters and shows whether they are vanilla or modded.\n\n" +
