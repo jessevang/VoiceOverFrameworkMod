@@ -50,29 +50,21 @@ namespace VoiceOverFrameworkMod
                 @"%(?:adj|noun|place|name|spouse|firstnameletter|farm|favorite|kid1|kid2|pet|firstnameletter|band|book|season|time)\b",
                 RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
-            // remove farmer name token '@'
             private static readonly Regex RxAtToken = new(@"@", RegexOptions.Compiled);
-
-            // item grants like [O] or registry IDs in brackets
             private static readonly Regex RxSquareBracketGrant = new(@"\[[^\]]+\]", RegexOptions.Compiled);
 
-            // ── Public API ─────────────────────────────────────────────
             public static List<PageSeg> SplitAndSanitize(string raw, bool splitBAsPage = false)
             {
                 if (raw == null) raw = string.Empty;
 
-                // 0) Weekly rotation: take the first variant before "||"
+                // 0) weekly rotation
                 int weeklyIdx = raw.IndexOf("||", StringComparison.Ordinal);
                 if (weeklyIdx >= 0)
                     raw = raw[..weeklyIdx];
 
-                // 1) First split by "#$e#" (explicit 'end page' in SDV)
+                // 1) split on explicit page end
                 var firstLevel = raw.Split(new[] { "#$e#" }, StringSplitOptions.None);
 
-                // 2) Expand into normalized "pages":
-                //    - If splitBAsPage==true (events), split "#$b#" as separate pages
-                //    - Otherwise, keep "#$b#" as line breaks initially
-                //    - In BOTH cases, also split on actual newlines (\r?\n) into separate pages
                 var normalizedPages = new List<string>();
                 foreach (var chunk in firstLevel)
                 {
@@ -80,32 +72,19 @@ namespace VoiceOverFrameworkMod
 
                     IEnumerable<string> stage2;
                     if (splitBAsPage)
-                    {
-                        // treat "#$b#" as separate pages
                         stage2 = c.Split(new[] { "#$b#" }, StringSplitOptions.None);
-                    }
                     else
-                    {
-                        // keep "#$b#" as visible linebreaks first; we'll split on real newlines next
                         stage2 = new[] { c.Replace("#$b#", "\n") };
-                    }
 
                     foreach (var part in stage2)
                     {
-                        // NOW: split on actual newline characters as distinct pages (menus / separate audio lines)
-                        // Handles both \n and \r\n
                         var byNewline = Regex.Split(part ?? "", @"\r?\n");
-
                         foreach (var leaf in byNewline)
-                        {
-                            // keep empty lines out; we'll trim later anyway
                             if (!string.IsNullOrWhiteSpace(leaf))
                                 normalizedPages.Add(leaf);
-                        }
                     }
                 }
 
-                // 3) Build PageSegs, applying sanitizers & variant expansion
                 var pages = new List<PageSeg>();
                 int nextIndex = 0;
 
@@ -113,6 +92,14 @@ namespace VoiceOverFrameworkMod
                 {
                     string text = normalizedPages[i]?.Trim();
                     if (string.IsNullOrEmpty(text)) continue;
+
+                    // NEW: expand interactive sequences into prompt + NPC follow-ups (same order as the game)
+                    if (TryExpandInteractive(text, out var expanded))
+                    {
+                        foreach (var body in expanded)
+                            AddPageIfNotEmpty(pages, body, nextIndex++, null);
+                        continue;
+                    }
 
                     // Top-level random choice: "$c 0.5#A#B"
                     if (TrySplitRandomChoice(text, out var cA, out var cB))
@@ -154,16 +141,116 @@ namespace VoiceOverFrameworkMod
                 return pages;
             }
 
+            // Expand $y 'prompt_opt1_resp1_opt2_resp2' into: [prompt, resp1, resp2, ...]
+            // Expand $q .. # <prompt> # $r .. # <resp1> # $r .. # <resp2> ... into same shape.
 
-            // ── Helpers ─────────────────────────────────────────────
+            // Expand $y 'prompt_opt1_resp1_opt2_resp2' into: [prompt, resp1, resp2, ...]
+            // Expand $q .. # <prompt> # $r .. # <resp1> # $r .. # <resp2> ... into same shape.
+            private static bool TryExpandInteractive(string text, out List<string> outputs)
+            {
+                outputs = null;
+                if (string.IsNullOrWhiteSpace(text)) return false;
+
+                // ---- Robust $y parsing (allow inner apostrophes like you'll) ----
+                // Find $y, then take the first quote after it as the wrapper,
+                // and capture up to the LAST occurrence of that same quote.
+                int yIdx = text.IndexOf("$y", StringComparison.OrdinalIgnoreCase);
+                if (yIdx >= 0)
+                {
+                    int qStart = -1;
+                    for (int i = yIdx + 2; i < text.Length; i++)
+                    {
+                        char ch = text[i];
+                        if (ch == '\'' || ch == '"') { qStart = i; break; }
+                        if (!char.IsWhiteSpace(ch)) break; // something else after $y → not a quoted payload
+                    }
+
+                    if (qStart >= 0)
+                    {
+                        char quote = text[qStart];
+                        int qEnd = text.LastIndexOf(quote);
+                        if (qEnd > qStart)
+                        {
+                            string payload = text.Substring(qStart + 1, qEnd - (qStart + 1));
+
+                            // normalize like the game: "*" -> linebreak/page break
+                            payload = payload.Replace("**", "<<<<asterisk>>>>")
+                                             .Replace("*", "#$b#")
+                                             .Replace("<<<<asterisk>>>>", "*");
+
+                            var bits = payload.Split('_');
+                            var tmp = new List<string>();
+                            if (bits.Length > 0)
+                            {
+                                // 0 = prompt
+                                var prompt = bits[0];
+                                if (!string.IsNullOrWhiteSpace(prompt))
+                                    tmp.Add(prompt.Trim());
+
+                                // pairs: [choice, reply]
+                                for (int k = 1; k + 1 < bits.Length; k += 2)
+                                {
+                                    var reply = bits[k + 1] ?? "";
+                                    foreach (var seg in reply.Split(new[] { "#$b#" }, StringSplitOptions.None))
+                                        if (!string.IsNullOrWhiteSpace(seg))
+                                            tmp.Add(seg.Trim());
+                                }
+                            }
+
+                            if (tmp.Count > 0)
+                            {
+                                outputs = tmp;
+                                return true;
+                            }
+                        }
+                    }
+                }
+
+                // ---- $q / $r expansion ----
+                if (text.IndexOf("$q", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    text.IndexOf("$r", StringComparison.OrdinalIgnoreCase) >= 0)
+                {
+                    var segs = text.Split('#');
+                    var tmp = new List<string>();
+                    for (int i = 0; i < segs.Length; i++)
+                    {
+                        var seg = segs[i]?.Trim() ?? "";
+                        if (seg.Length == 0) continue;
+
+                        if (seg.StartsWith("$q", StringComparison.OrdinalIgnoreCase))
+                        {
+                            if (i + 1 < segs.Length && !string.IsNullOrWhiteSpace(segs[i + 1]))
+                                tmp.Add(segs[i + 1].Trim());
+                        }
+                        else if (seg.StartsWith("$r", StringComparison.OrdinalIgnoreCase))
+                        {
+                            if (i + 1 < segs.Length && !string.IsNullOrWhiteSpace(segs[i + 1]))
+                            {
+                                var reply = segs[i + 1];
+                                foreach (var rseg in reply.Split(new[] { "#$b#" }, StringSplitOptions.None))
+                                    if (!string.IsNullOrWhiteSpace(rseg))
+                                        tmp.Add(rseg.Trim());
+                            }
+                        }
+                    }
+
+                    if (tmp.Count > 0)
+                    {
+                        outputs = tmp;
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+
+
+
             private static void AddPageIfNotEmpty(List<PageSeg> pages, string body, int pageIndex, string gender)
             {
                 if (string.IsNullOrWhiteSpace(body)) return;
 
-                // Actor text: readable with portrait tags expanded
                 string actor = SanitizeForActor(body);
-
-                // DisplayPattern: STRIPPED of random/player values & control codes
                 string display = SanitizeForDisplayPattern(body);
 
                 pages.Add(new PageSeg
@@ -175,66 +262,57 @@ namespace VoiceOverFrameworkMod
                 });
             }
 
-            /// <summary>
-            /// Build a DisplayPattern suitable for matching against the in-game sanitized text.
-            /// Removes variable/random tokens and names so it’s stable across saves/replays.
-            /// </summary>
+
+
+
             private static string SanitizeForDisplayPattern(string s)
             {
                 if (string.IsNullOrWhiteSpace(s))
                     return string.Empty;
 
-                // $1 once-only line → keep the first branch
+                // If it's a once-only line with an $e fallback, keep only the first-time text.
                 if (RxOnceOnlyLine.IsMatch(s))
                     s = RxOnceOnlyLine.Replace(s, m => m.Groups["first"].Value);
 
-                // strip some leading gates/strays/narration
                 s = RxLeadingGate.Replace(s, "");
                 s = RxInlineFlag1.Replace(s, "");
                 s = RxStrayNumber.Replace(s, "");
                 s = RxLeadingNarr.Replace(s, "");
 
-                // Keep only the $q prompt, drop $r answers
+                // keep only $q prompt, drop $r tokens (the replies themselves were expanded above)
                 s = RxCmdQuestion.Replace(s, m => " " + (m.Groups["q"].Value ?? ""));
                 s = RxCmdResponse.Replace(s, "");
 
-                // remove chance prefix BEFORE generic '#' cleanup
                 s = RxCmdChancePrefix.Replace(s, "");
-
-                // generic hash cleanup (not followed by $)
                 s = Regex.Replace(s, @"\s*#(?!\$)\s*", " ");
 
-                // Expand $y into readable choices (optional, harmless if absent)
-                s = RxCmdQuick.Replace(s, m =>
-                {
-                    string payload = m.Groups["p"].Value ?? "";
-                    var bits = payload.Split('_');
-                    var pairs = new List<string>();
-                    for (int k = 0; k + 1 < bits.Length; k += 2)
-                        pairs.Add($"{bits[k]}: {bits[k + 1]}");
-                    return pairs.Count > 0 ? string.Join(" | ", pairs) : "";
-                });
-
-                // drop other $action/$t/$v etc
+                // IMPORTANT: don't render $y here; TryExpandInteractive removed it already
                 s = RxCmdOther.Replace(s, "");
                 s = RxTrailingDollar.Replace(s, "");
 
-                // remove item grants in [ ... ]
                 s = RxSquareBracketGrant.Replace(s, "");
 
-                // *** CRITICAL FOR DISPLAYPATTERN ***
-                // Remove player/random tokens entirely (we’ll also remove them from the live text)
+                // --- Gameplay-only tokens that should never appear on-screen ---
+                // strip inline %fork* commands (they don’t render any text)
+                s = Regex.Replace(s, @"%fork\d*\b", "", RegexOptions.IgnoreCase);
+                // strip %noturn flag (dialogue engine hint, not visible)
+                s = Regex.Replace(s, @"%noturn\b", "", RegexOptions.IgnoreCase);
+                // strip bare $k (close/cancel) even when not preceded by '#'
+                s = Regex.Replace(s, @"\s*\$k\b", "", RegexOptions.IgnoreCase);
+                // NEW: strip a dangling "$d <flag>" prefix that some packs accidentally kept
+                s = Regex.Replace(s, @"^\s*#?\$d\b[^#\s]*#?", "", RegexOptions.IgnoreCase);
+
+                // Remove variable %tokens (name/farm/etc) and '@'
                 s = RxRemovePercentTokens.Replace(s, "");
-                s = RxAtToken.Replace(s, ""); // remove '@' farmer token
+                s = RxAtToken.Replace(s, "");
 
-                // drop portrait/emote codes
+                // Drop portrait codes and tidy whitespace
                 s = PortraitRegex.Replace(s, "");
-
-                // collapse whitespace
                 s = RxCollapseWS.Replace(s, " ");
                 s = Regex.Replace(s, @"\s{2,}", " ").Trim();
                 return s;
             }
+
 
             private static string StripControlTokensKeepPortraits(string s)
             {
@@ -254,20 +332,23 @@ namespace VoiceOverFrameworkMod
                 s = RxCmdChancePrefix.Replace(s, "");
                 s = Regex.Replace(s, @"\s*#(?!\$)\s*", " ");
 
-                s = RxCmdQuick.Replace(s, m =>
-                {
-                    string payload = m.Groups["p"].Value ?? "";
-                    var bits = payload.Split('_');
-                    var pairs = new List<string>();
-                    for (int k = 0; k + 1 < bits.Length; k += 2)
-                        pairs.Add($"{bits[k]}: {bits[k + 1]}");
-                    return pairs.Count > 0 ? string.Join(" | ", pairs) : "";
-                });
+                // Drop any residual $y payload from this line entirely.
+                s = Regex.Replace(s, @"\s*\$y\b.*$", "", RegexOptions.Singleline | RegexOptions.IgnoreCase);
+
+                // Explicitly remove %fork control code (it's not rendered to the player).
+                s = Regex.Replace(s, @"%fork\b", "", RegexOptions.IgnoreCase);
 
                 s = RxCmdOther.Replace(s, "");
                 s = RxTrailingDollar.Replace(s, "");
+
+                // NOTE: We intentionally KEEP portrait tokens here (handled elsewhere),
+                // so don't strip PortraitRegex in this method.
+
                 return RxCollapseWS.Replace(s, " ").Trim();
             }
+
+
+
 
             private static string SanitizeForActor(string s)
             {
@@ -291,7 +372,7 @@ namespace VoiceOverFrameworkMod
                 return Regex.Replace(s, @"\s{2,}", " ").Trim();
             }
 
-            // split helpers
+            // unchanged helpers below …
             private static bool TrySplitRandomChoice(string text, out string a, out string b)
             {
                 var m = Regex.Match(text ?? "", @"^\s*#?\$c\s*[0-9.]+\s*#(.+?)#(.+)$",
@@ -347,5 +428,6 @@ namespace VoiceOverFrameworkMod
                 return true;
             }
         }
+
     }
 }

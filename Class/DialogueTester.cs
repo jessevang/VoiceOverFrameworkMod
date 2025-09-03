@@ -56,6 +56,9 @@ namespace VoiceOverFrameworkMod
                     "Play one entry by sheet label + key. (labels shown in list_dialogue)",
                 callback: this.PlayDialogueByKey
             );
+
+            commands.Add("vof.summary", "Print summary of unmatched V2 lines (and clear).", (c, a) => PrintV2FailureReport());
+
         }
 
         // ===================== Commands =====================
@@ -64,15 +67,33 @@ namespace VoiceOverFrameworkMod
         {
             if (args.Length == 0)
             {
-                this.Monitor.Log("You must specify an NPC name. Example: test_dialogue Abigail 1000", LogLevel.Info);
+                this.Monitor.Log("Usage: test_dialogue <NPCName|all> [delayMs] [filter] [includeChoices]", LogLevel.Info);
                 return;
             }
 
-            string npcName = args[0];
-            int delay = (args.Length > 1 && int.TryParse(args[1], out var d)) ? Math.Max(150, d) : 1200;
+            string target = args[0];
+            int delay = (args.Length > 1 && int.TryParse(args[1], out var d)) ? Math.Max(1, d) : 1200;
             string filter = args.Length > 2 ? args[2] : null;
             bool includeChoices = args.Length > 3 && args[3].Equals("includeChoices", StringComparison.OrdinalIgnoreCase);
 
+            if (string.Equals(target, "all", StringComparison.OrdinalIgnoreCase))
+            {
+                _collectV2Failures = true;
+                try
+                {
+                    await TestDialogueAll(delay, filter, includeChoices);
+                }
+                finally
+                {
+
+                    _collectV2Failures = false;
+                    PrintV2FailureReport();
+
+                }
+                return;
+            }
+
+            string npcName = target;
             var npc = Game1.getCharacterFromName(npcName, true);
             if (npc == null)
             {
@@ -100,9 +121,108 @@ namespace VoiceOverFrameworkMod
             AppendRunLog(npcName, $"TEST keys start (0..{list.Count - 1}) delay={delay} filter='{filter ?? "(none)"}' includeChoices={includeChoices}");
             this.Monitor.Log($"Auto-playing {list.Count} KEYS for {npcName} (delay={delay}ms).", LogLevel.Info);
 
-            await PlayKeyListRange(npc, list, startIndex: 0, delayMs: delay);
+            _collectV2Failures = true;
+            try
+            {
+                await PlayKeyListRange(npc, list, startIndex: 0, delayMs: delay);
+            }
+            finally
+            {
+                PrintV2FailureReport();
+                _collectV2Failures = false;
+            }
+
             this.Monitor.Log("Finished.", LogLevel.Info);
         }
+
+
+
+        // Run all NPCs that have dialogue sheets (base or marriage), one after another.
+        private async Task TestDialogueAll(int delay, string filter, bool includeChoices)
+        {
+            // fresh summary per “all” run
+            _v2Fails.Clear();
+
+            var names = GetAllNpcNames();
+            if (names == null || names.Count == 0)
+            {
+                this.Monitor.Log("No NPC names found (Data/NPCDispositions).", LogLevel.Warn);
+                return;
+            }
+
+            int npcRan = 0, totalKeys = 0;
+
+            this.Monitor.Log($"[ALL] Starting dialogue test for {names.Count} NPC entries… (delay={delay}ms, filter='{filter ?? "(none)"}', includeChoices={includeChoices})", LogLevel.Info);
+
+            foreach (var npcName in names)
+            {
+                var sheets = LoadAllNpcDialogueSheets(npcName);
+                if (sheets.Count == 0)
+                    continue; // no dialogue sheet for this NPC
+
+                var list = BuildKeyList(sheets, filter, includeChoices);
+                if (list.Count == 0)
+                    continue;
+
+                var npc = Game1.getCharacterFromName(npcName, true);
+                if (npc == null)
+                {
+                    this.Monitor.Log($"[ALL] Skipping '{npcName}': NPC instance not found.", LogLevel.Trace);
+                    continue;
+                }
+
+                _lastListByNpc[npcName] = list;
+                SaveListCache(npcName, list);
+
+                AppendRunLog(npcName, $"ALL_RUN keys start (0..{list.Count - 1}) delay={delay} filter='{filter ?? "(none)"}' includeChoices={includeChoices}");
+                this.Monitor.Log($"[ALL] {npcName}: {list.Count} keys…", LogLevel.Info);
+
+                await PlayKeyListRange(npc, list, startIndex: 0, delayMs: delay);
+                Game1.exitActiveMenu();
+
+                npcRan++;
+                totalKeys += list.Count;
+            }
+
+            this.Monitor.Log($"[ALL] Completed. NPCs run: {npcRan}, total keys: {totalKeys}.", LogLevel.Info);
+
+        }
+
+
+        private List<string> GetAllNpcNames()
+        {
+
+            try
+            {
+                var dispo = this.Helper.GameContent.Load<Dictionary<string, string>>("Data/NPCDispositions");
+                if (dispo != null && dispo.Count > 0)
+                {
+                    return dispo.Keys
+                                .Where(k => !string.IsNullOrWhiteSpace(k))
+                                .OrderBy(k => k, StringComparer.OrdinalIgnoreCase)
+                                .ToList();
+                }
+                else
+                {
+                    this.Monitor.Log("[ALL] Data/NPCDispositions returned empty; falling back to vanilla list.", LogLevel.Trace);
+                }
+            }
+            catch (Exception ex)
+            {
+                this.Monitor.Log($"[ALL] Could not load Data/NPCDispositions (modded list). Falling back to vanilla. Details: {ex.Message}", LogLevel.Trace);
+            }
+
+            var vanilla = new[]
+            {
+                "Abigail","Alex","Caroline","Clint","Demetrius","Dwarf","Elliott","Emily","Evelyn","George",
+                "Gus","Haley","Harvey","Jas","Jodi","Kent","Krobus","Leah","Leo","Lewis","Linus","Marnie",
+                "Maru","Pam","Penny","Pierre","Robin","Sam","Sandy","Sebastian","Shane","Vincent","Willy","Wizard"
+            };
+
+            return vanilla.OrderBy(k => k, StringComparer.OrdinalIgnoreCase).ToList();
+        }
+
+
 
         private async void TestDialogueFrom(string cmd, string[] args)
         {
@@ -119,7 +239,7 @@ namespace VoiceOverFrameworkMod
                 return;
             }
 
-            int delay = (args.Length > 2 && int.TryParse(args[2], out var d)) ? Math.Max(150, d) : 1200;
+            int delay = (args.Length > 2 && int.TryParse(args[2], out var d)) ? Math.Max(1, d) : 1200;
             string filter = args.Length > 3 ? args[3] : null;
             bool includeChoices = args.Length > 4 && args[4].Equals("includeChoices", StringComparison.OrdinalIgnoreCase);
 
@@ -130,7 +250,6 @@ namespace VoiceOverFrameworkMod
                 return;
             }
 
-            // Prefer cached list, rebuild if needed (and save)
             var list = GetOrRebuildKeyList(npcName, filter, includeChoices);
             if (list == null || list.Count == 0)
             {
@@ -146,9 +265,22 @@ namespace VoiceOverFrameworkMod
             AppendRunLog(npcName, $"TEST_FROM keys start={startIndex} (..{list.Count - 1}) delay={delay} filter='{filter ?? "(none)"}' includeChoices={includeChoices}");
             this.Monitor.Log($"Resuming at index {startIndex} of {list.Count} KEYS for {npcName} (delay={delay}ms).", LogLevel.Info);
 
-            await PlayKeyListRange(npc, list, startIndex, delay);
+            _collectV2Failures = true;
+            try
+            {
+                await PlayKeyListRange(npc, list, startIndex, delay);
+            }
+            finally
+            {
+                _collectV2Failures = false;
+            }
+
             this.Monitor.Log("Finished.", LogLevel.Info);
         }
+
+
+
+
 
         private void ListDialogue(string cmd, string[] args)
         {
@@ -461,5 +593,87 @@ namespace VoiceOverFrameworkMod
                 Key = key;
             }
         }
+
+
+        // Collects unmatched lines for a one-shot summary.
+        private sealed class V2Fail
+        {
+            public string Speaker;
+            public string Dialogue;
+            public List<string> Removables;
+            public string Stripped;
+            public string Key;
+            public bool Matched;
+            public bool MissingAudio;
+        }
+
+
+        private readonly List<V2Fail> _v2Fails = new();
+        private bool _collectV2Failures = false;
+
+        private void V2AddFailure(string speaker,string dialogue,IEnumerable<string> removables,string stripped,string key, bool matched,bool missingAudio)
+        {
+            _v2Fails.Add(new V2Fail
+            {
+                Speaker = speaker ?? "(unknown)",
+                Dialogue = dialogue ?? "",
+                Removables = removables?.ToList() ?? new List<string>(),
+                Stripped = stripped ?? "",
+                Key = key ?? "",
+                Matched = matched,
+                MissingAudio = missingAudio
+            });
+        }
+
+
+        /// <summary>Print and clear a compact summary of unmatched/missing-audio lines.</summary>
+        private void PrintV2FailureReport()
+        {
+            if (_v2Fails.Count == 0)
+            {
+                Monitor.Log("V2 summary: no unmatched/missing-audio lines.", LogLevel.Info);
+                return;
+            }
+
+            int unmatched = _v2Fails.Count(f => !f.Matched);
+            int missingAudio = _v2Fails.Count(f => f.Matched && f.MissingAudio);
+
+            Monitor.Log($"V2 summary: total={_v2Fails.Count}, unmatched={unmatched}, missing-audio={missingAudio}", LogLevel.Info);
+
+            if (unmatched > 0)
+            {
+                Monitor.Log("--- UNMATCHED (no DisplayPattern found) ---", LogLevel.Warn);
+                int i = 1;
+                foreach (var f in _v2Fails.Where(f => !f.Matched))
+                {
+                    Monitor.Log($"[{i++}] Speaker   : {f.Speaker}", LogLevel.Info);
+                    Monitor.Log($"      Dialogue  : \"{f.Dialogue}\"", LogLevel.Info);
+                    Monitor.Log($"      Removables: {(f.Removables.Count > 0 ? string.Join(", ", f.Removables) : "(none)")}", LogLevel.Info);
+                    Monitor.Log($"      Stripped  : \"{f.Stripped}\"", LogLevel.Info);
+                    Monitor.Log($"      DisplayKey: \"{f.Key}\"", LogLevel.Info);
+                }
+            }
+
+            if (missingAudio > 0)
+            {
+                Monitor.Log("--- MISSING AUDIO (pattern matched, file missing) ---", LogLevel.Warn);
+                int i = 1;
+                foreach (var f in _v2Fails.Where(f => f.Matched && f.MissingAudio))
+                {
+                    Monitor.Log($"[{i++}] Speaker   : {f.Speaker}", LogLevel.Info);
+                    Monitor.Log($"      Dialogue  : \"{f.Dialogue}\"", LogLevel.Info);
+                    Monitor.Log($"      Removables: {(f.Removables.Count > 0 ? string.Join(", ", f.Removables) : "(none)")}", LogLevel.Info);
+                    Monitor.Log($"      Stripped  : \"{f.Stripped}\"", LogLevel.Info);
+                    Monitor.Log($"      DisplayKey: \"{f.Key}\"", LogLevel.Info);
+                }
+            }
+
+            _v2Fails.Clear();
+        }
+
+
+
+
+
     }
 }

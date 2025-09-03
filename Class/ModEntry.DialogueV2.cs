@@ -23,6 +23,7 @@ namespace VoiceOverFrameworkMod
             public static void Apply() => StardewValley.Dialogue.nouns = Value;
         }
 
+
         private void CheckForDialogueV2()
         {
             if (Game1.currentLocation == null || Game1.player == null)
@@ -105,11 +106,7 @@ namespace VoiceOverFrameworkMod
                 return;
 
             if (string.Equals(finalLookupKey, _lastPlayedLookupKey, StringComparison.Ordinal))
-            {
-                if (Config.developerModeOn)
-                    Monitor.Log($"[VOICE V2] Debounced repeat key on same page: '{finalLookupKey}'", LogLevel.Trace);
                 return;
-            }
 
             var dialogueBox2 = Game1.activeClickableMenu as DialogueBox;
             var d = dialogueBox2?.characterDialogue;
@@ -122,21 +119,6 @@ namespace VoiceOverFrameworkMod
             string strippedForMatch = DialogueSanitizerV2.StripChosenWords(currentDisplayedString ?? "", cap);
             string patternKey = CanonDisplay(strippedForMatch);
 
-            if (Config.developerModeOn)
-            {
-                var captured = (cap?.Words != null && cap.Words.Count > 0)
-                    ? string.Join(", ", cap.Words.OrderBy(s => s, StringComparer.OrdinalIgnoreCase))
-                    : "(none)";
-                var removableStr = (removable.Count > 0)
-                    ? string.Join(", ", removable.OrderBy(s => s, StringComparer.OrdinalIgnoreCase))
-                    : "(none)";
-                Monitor.Log($"[V2-DISPLAY] Dialogue Text:       \"{currentDisplayedString}\"", LogLevel.Info);
-                Monitor.Log($"[V2-DISPLAY] Token Flags:         adj={cap?.HasAdjToken} noun={cap?.HasNounToken} place={cap?.HasPlaceToken}", LogLevel.Info);
-                Monitor.Log($"[V2-DISPLAY] Capture Words (all): [{captured}]", LogLevel.Info);
-                Monitor.Log($"[V2-DISPLAY] Removable subset:    [{removableStr}]", LogLevel.Info);
-                Monitor.Log($"[V2-DISPLAY] Stripped Text:       \"{patternKey}\"", LogLevel.Info);
-            }
-
             if (selectedPack != null &&
                 selectedPack.FormatMajor >= 2 &&
                 selectedPack.Entries != null &&
@@ -144,20 +126,46 @@ namespace VoiceOverFrameworkMod
                 !string.IsNullOrWhiteSpace(relAudioFromPattern))
             {
                 var fullPatternPath = PathUtilities.NormalizePath(System.IO.Path.Combine(selectedPack.BaseAssetPath, relAudioFromPattern));
-                if (Config.developerModeOn)
-                    Monitor.Log($"[V2-DISPLAY] MATCH → playing '{relAudioFromPattern}'", LogLevel.Info);
 
-                PlayVoiceFromFile(fullPatternPath);
+                bool missingAudio = !System.IO.File.Exists(fullPatternPath);
+                if (_collectV2Failures && missingAudio)
+                {
+                    V2AddFailure(
+                        currentSpeaker?.Name,
+                        currentDisplayedString,
+                        removable,
+                        patternKey,
+                        patternKey,
+                        matched: true,
+                        missingAudio: true
+                    );
+                }
+
+                if (!missingAudio)
+                    PlayVoiceFromFile(fullPatternPath);
+
                 _lastPlayedLookupKey = finalLookupKey;
                 return;
             }
 
-            if (Config.developerModeOn)
-                Monitor.Log("[V2-RESULT] match=No (display-only lookup; no fallback). Not playing.", LogLevel.Error);
+            if (_collectV2Failures)
+            {
+                V2AddFailure(
+                    currentSpeaker?.Name,
+                    currentDisplayedString,
+                    removable,
+                    patternKey,
+                    patternKey,
+                    matched: false,
+                    missingAudio: false
+                );
+            }
 
             _lastPlayedLookupKey = finalLookupKey;
-            return;
         }
+
+
+
 
         private static void AugmentWithDetectedLegacyTokens(string displayed, Capture cap)
         {
