@@ -465,7 +465,14 @@ namespace VoiceOverFrameworkMod
             cap.HasAdjToken |= s.IndexOf("%adj", StringComparison.OrdinalIgnoreCase) >= 0;
             cap.HasNounToken |= s.IndexOf("%noun", StringComparison.OrdinalIgnoreCase) >= 0;
             cap.HasPlaceToken |= s.IndexOf("%place", StringComparison.OrdinalIgnoreCase) >= 0;
-            cap.HasSeason |= s.IndexOf("%season", StringComparison.OrdinalIgnoreCase) >= 0; // NEW
+            cap.HasSeason |= s.IndexOf("%season", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasTime |= s.IndexOf("%time", StringComparison.OrdinalIgnoreCase) >= 0;
+            if (cap.HasTime)
+            {
+                var t = Game1.getTimeOfDayString(Game1.timeOfDay);
+                if (!string.IsNullOrWhiteSpace(t))
+                    cap.AddFixed(t);
+            }
 
             cap.HasAtName |= s.Contains("@");
             cap.HasFarm |= s.IndexOf("%farm", StringComparison.OrdinalIgnoreCase) >= 0;
@@ -540,7 +547,7 @@ namespace VoiceOverFrameworkMod
         {
             if (string.IsNullOrWhiteSpace(displayed))
                 return string.Empty;
-
+            
             var removable = GetRemovableWords(cap).ToList();
             if (removable.Count == 0)
                 return Normalize(displayed);
@@ -548,25 +555,57 @@ namespace VoiceOverFrameworkMod
             var fixedSet = new HashSet<string>(cap?.FixedTokenWords ?? Enumerable.Empty<string>(),
                                                StringComparer.OrdinalIgnoreCase);
 
-            var fixedParts = removable.Where(w => fixedSet.Contains(w))
-                                      .Select(Regex.Escape)
-                                      .Distinct(StringComparer.OrdinalIgnoreCase)
-                                      .ToArray();
+            // Work with RAW tokens first (unescaped), so we can selectively exclude later
+            var fixedTokensRaw = removable.Where(w => fixedSet.Contains(w))
+                                          .Distinct(StringComparer.OrdinalIgnoreCase)
+                                          .ToList();
 
-            var poolParts = removable.Where(w => !fixedSet.Contains(w))
-                                      .Select(Regex.Escape)
-                                      .Distinct(StringComparer.OrdinalIgnoreCase)
-                                      .ToArray();
+            var poolTokensRaw = removable.Where(w => !fixedSet.Contains(w))
+                                          .Distinct(StringComparer.OrdinalIgnoreCase)
+                                          .ToList();
 
             string s = displayed;
 
-            if (fixedParts.Length > 0)
+            // --- SPECIAL CASE: %farm ---
+            // If this page had %farm, only strip the farm name when it occurs right before " Farm".
+            // This preserves legitimate uses of the same word elsewhere (e.g., "really great").
+            if (cap?.HasFarm == true && fixedTokensRaw.Count > 0)
             {
+                // Find any fixed token that actually appears immediately before " Farm"
+                string farmWord = null;
+                foreach (var tok in fixedTokensRaw)
+                {
+                    if (string.IsNullOrWhiteSpace(tok)) continue;
+                    var rx = new Regex($@"(?<!\S){Regex.Escape(tok)}(?=\s+Farm\b)",
+                                       RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
+                    if (rx.IsMatch(s))
+                    {
+                        farmWord = tok;
+                        // Replace ONLY in the "X Farm" pair → drop X, keep "Farm"
+                        s = rx.Replace(s, "");
+                        break;
+                    }
+                }
+
+                // If we identified a farm-word, exclude it from the generic removal that follows
+                if (!string.IsNullOrWhiteSpace(farmWord))
+                {
+                    fixedTokensRaw.RemoveAll(t => t.Equals(farmWord, StringComparison.OrdinalIgnoreCase));
+                    poolTokensRaw.RemoveAll(t => t.Equals(farmWord, StringComparison.OrdinalIgnoreCase));
+                }
+            }
+
+            // Proceed with normal removal:
+            // - fixedTokensRaw: things we *know* were concrete replacements (names, etc.)
+            // - poolTokensRaw: adjectives/places captured opportunistically
+            if (fixedTokensRaw.Count > 0)
+            {
+                // Guard against stripping parts of hyphenated words (e.g., "baby-mint")
                 var fixedPattern =
                     $@"(?ix)
-                       (?: ^ | (?<=\s) )          # start or preceded by whitespace
-                       (?: {string.Join("|", fixedParts)} )\b
-                     ";
+               (?: ^ | (?<=\s) )
+               (?: {string.Join("|", fixedTokensRaw.Select(Regex.Escape))} )(?!-) \b
+             ";
 
                 s = Regex.Replace(
                     s,
@@ -576,17 +615,29 @@ namespace VoiceOverFrameworkMod
                 );
             }
 
-            if (poolParts.Length > 0)
+            if (poolTokensRaw.Count > 0)
             {
-                var poolPattern = $@"\b(?:{string.Join("|", poolParts)})\b";
+                var poolPattern = $@"\b(?:{string.Join("|", poolTokensRaw.Select(Regex.Escape))})(?!-)\b";
                 s = Regex.Replace(s, poolPattern, "", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
             }
 
+            // Also scrub any unresolved %tokens left on screen (covers %spouse, %kid1, etc.)
+            s = Regex.Replace(
+                s,
+                @"%(?:adj|noun|place|name|spouse|firstnameletter|farm|favorite|kid1|kid2|pet|band|book|season|time)\b",
+                "",
+                RegexOptions.IgnoreCase | RegexOptions.CultureInvariant
+            );
+
+            // Tidy spaces
             s = Regex.Replace(s, @"[ ]{2,}", " ");
             s = Regex.Replace(s, @"\s{2,}", " ");
 
             return s.Trim();
         }
+
+
+
 
         private static string Normalize(string s)
         {
@@ -630,7 +681,9 @@ namespace VoiceOverFrameworkMod
             cap.HasAdjToken |= s.IndexOf("%adj", StringComparison.OrdinalIgnoreCase) >= 0;
             cap.HasNounToken |= s.IndexOf("%noun", StringComparison.OrdinalIgnoreCase) >= 0;
             cap.HasPlaceToken |= s.IndexOf("%place", StringComparison.OrdinalIgnoreCase) >= 0;
-            cap.HasSeason |= s.IndexOf("%season", StringComparison.OrdinalIgnoreCase) >= 0; // NEW
+            cap.HasSeason |= s.IndexOf("%season", StringComparison.OrdinalIgnoreCase) >= 0;
+            cap.HasTime |= s.IndexOf("%time", StringComparison.OrdinalIgnoreCase) >= 0;
+
 
             cap.HasAtName |= s.Contains("@");
             cap.HasFarm |= s.IndexOf("%farm", StringComparison.OrdinalIgnoreCase) >= 0;

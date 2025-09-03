@@ -293,14 +293,13 @@ namespace VoiceOverFrameworkMod
                 s = RxSquareBracketGrant.Replace(s, "");
 
                 // --- Gameplay-only tokens that should never appear on-screen ---
-                // strip inline %fork* commands (they don’t render any text)
-                s = Regex.Replace(s, @"%fork\d*\b", "", RegexOptions.IgnoreCase);
-                // strip %noturn flag (dialogue engine hint, not visible)
-                s = Regex.Replace(s, @"%noturn\b", "", RegexOptions.IgnoreCase);
-                // strip bare $k (close/cancel) even when not preceded by '#'
-                s = Regex.Replace(s, @"\s*\$k\b", "", RegexOptions.IgnoreCase);
+                s = Regex.Replace(s, @"%fork\d*\b", "", RegexOptions.IgnoreCase); // strip %fork*
+                s = Regex.Replace(s, @"%noturn\b", "", RegexOptions.IgnoreCase);  // strip %noturn
+                s = Regex.Replace(s, @"\s*\$k\b", "", RegexOptions.IgnoreCase);   // strip bare $k
+
                 // NEW: strip a dangling "$d <flag>" prefix that some packs accidentally kept
-                s = Regex.Replace(s, @"^\s*#?\$d\b[^#\s]*#?", "", RegexOptions.IgnoreCase);
+                //      (covers "$d bus", optional leading '#', optional trailing '#', and trims any trailing space)
+                s = Regex.Replace(s, @"^\s*#?\$d(?:\s+[^\s#]+)?#?\s*", "", RegexOptions.IgnoreCase);
 
                 // Remove variable %tokens (name/farm/etc) and '@'
                 s = RxRemovePercentTokens.Replace(s, "");
@@ -312,6 +311,8 @@ namespace VoiceOverFrameworkMod
                 s = Regex.Replace(s, @"\s{2,}", " ").Trim();
                 return s;
             }
+
+
 
 
             private static string StripControlTokensKeepPortraits(string s)
@@ -338,6 +339,9 @@ namespace VoiceOverFrameworkMod
                 // Explicitly remove %fork control code (it's not rendered to the player).
                 s = Regex.Replace(s, @"%fork\b", "", RegexOptions.IgnoreCase);
 
+                // ✅ NEW: also strip a dangling "$d <flag>" prefix here (covers "$d bus", with/without '#' and trims space)
+                s = Regex.Replace(s, @"^\s*#?\$d(?:\s+[^\s#]+)?#?\s*", "", RegexOptions.IgnoreCase);
+
                 s = RxCmdOther.Replace(s, "");
                 s = RxTrailingDollar.Replace(s, "");
 
@@ -346,6 +350,7 @@ namespace VoiceOverFrameworkMod
 
                 return RxCollapseWS.Replace(s, " ").Trim();
             }
+
 
 
 
