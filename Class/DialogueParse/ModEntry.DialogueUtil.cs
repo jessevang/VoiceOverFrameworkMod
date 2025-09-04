@@ -58,42 +58,81 @@ namespace VoiceOverFrameworkMod
             {
                 if (raw == null) raw = string.Empty;
 
-                // 0) weekly rotation
-                int weeklyIdx = raw.IndexOf("||", StringComparison.Ordinal);
-                if (weeklyIdx >= 0)
-                    raw = raw[..weeklyIdx];
+                // --- 0) Expand weekly rotation FIRST (A||B||C -> [A, B, C]) ---
+                if (raw.Contains("||"))
+                {
+                    var variants = raw.Split(new[] { "||" }, StringSplitOptions.None);
+                    var merged = new List<PageSeg>();
+                    int idx = 0;
+                    foreach (var v in variants)
+                    {
+                        var segs = SplitAndSanitize(v, splitBAsPage);
+                        foreach (var p in segs)
+                        {
+                            p.PageIndex = idx++;
+                            merged.Add(p);
+                        }
+                    }
+                    return merged;
+                }
 
-                // --- EXPAND BEFORE ANY SPLITTING ---
-                // Do $c first (random), then $p (prereq), then generic conditional ($d/$query/$p-at-start).
+                // --- 0b) If there's a naked '|' (not part of $d/$p/$query), split those too ---
+                // This catches cases like older/ported packs that literally stored "A|B" without the command prefix.
+                if (raw.Contains("|") && !Regex.IsMatch(raw, @"\$(?:d|p|query)\b", RegexOptions.IgnoreCase))
+                {
+                    var barParts = raw.Split(new[] { '|' }, StringSplitOptions.None);
+                    var merged = new List<PageSeg>();
+                    int idx = 0;
+                    foreach (var part in barParts)
+                    {
+                        var segs = SplitAndSanitize(part, splitBAsPage);
+                        foreach (var p in segs)
+                        {
+                            p.PageIndex = idx++;
+                            merged.Add(p);
+                        }
+                    }
+                    return merged;
+                }
+
+                // --- 1) Expand command-driven splits BEFORE any page splitting ---
+                // $c random A#B
                 if (TrySplitRandomChoice(raw, out var rcA, out var rcB))
                 {
                     var left = SplitAndSanitize(rcA, splitBAsPage);
                     var right = SplitAndSanitize(rcB, splitBAsPage);
                     var merged = new List<PageSeg>(left.Count + right.Count);
-                    int idx = 0; foreach (var p in left) { p.PageIndex = idx++; merged.Add(p); }
+                    int idx = 0;
+                    foreach (var p in left) { p.PageIndex = idx++; merged.Add(p); }
                     foreach (var p in right) { p.PageIndex = idx++; merged.Add(p); }
                     return merged;
                 }
+
+                // $p prereq A|B  (B may contain further commands; recursion handles them)
                 if (TrySplitPrereq(raw, out var rpA, out var rpB))
                 {
                     var left = SplitAndSanitize(rpA, splitBAsPage);
                     var right = SplitAndSanitize(rpB, splitBAsPage);
                     var merged = new List<PageSeg>(left.Count + right.Count);
-                    int idx = 0; foreach (var p in left) { p.PageIndex = idx++; merged.Add(p); }
+                    int idx = 0;
+                    foreach (var p in left) { p.PageIndex = idx++; merged.Add(p); }
                     foreach (var p in right) { p.PageIndex = idx++; merged.Add(p); }
                     return merged;
                 }
+
+                // $d / $query conditional A|B
                 if (TrySplitConditionalChoice(raw, out var rdA, out var rdB))
                 {
                     var left = SplitAndSanitize(rdA, splitBAsPage);
                     var right = SplitAndSanitize(rdB, splitBAsPage);
                     var merged = new List<PageSeg>(left.Count + right.Count);
-                    int idx = 0; foreach (var p in left) { p.PageIndex = idx++; merged.Add(p); }
+                    int idx = 0;
+                    foreach (var p in left) { p.PageIndex = idx++; merged.Add(p); }
                     foreach (var p in right) { p.PageIndex = idx++; merged.Add(p); }
                     return merged;
                 }
 
-                // 1) split on explicit page end
+                // --- 2) Now split into pages and lines ---
                 var firstLevel = raw.Split(new[] { "#$e#" }, StringSplitOptions.None);
 
                 var normalizedPages = new List<string>();
@@ -101,10 +140,9 @@ namespace VoiceOverFrameworkMod
                 {
                     string c = chunk ?? "";
 
-                    // split #$b# as page or as newline depending on flag
                     IEnumerable<string> stage2 = splitBAsPage
-                        ? c.Split(new[] { "#$b#" }, StringSplitOptions.None)
-                        : new[] { c.Replace("#$b#", "\n") };
+                        ? c.Split(new[] { "#$b#" }, StringSplitOptions.None)      // treat $b as page
+                        : new[] { c.Replace("#$b#", "\n") };                      // or as newline
 
                     foreach (var part in stage2)
                     {
@@ -115,11 +153,12 @@ namespace VoiceOverFrameworkMod
                             var byNewline = Regex.Split(piece ?? "", @"\r?\n");
                             foreach (var leaf in byNewline)
                                 if (!string.IsNullOrWhiteSpace(leaf))
-                                    normalizedPages.Add(leaf);
+                                    normalizedPages.Add(leaf.Trim());
                         }
                     }
                 }
 
+                // --- 3) Build PageSegs, expanding $y / $q/$r and gender variants per leaf ---
                 var pages = new List<PageSeg>();
                 int nextIndex = 0;
 
@@ -159,6 +198,7 @@ namespace VoiceOverFrameworkMod
 
                 return pages;
             }
+
 
             // Expand $p prerequisite anywhere in the string.
             // Syntax examples:

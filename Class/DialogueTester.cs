@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using StardewModdingAPI;
@@ -13,6 +14,37 @@ namespace VoiceOverFrameworkMod
     {
         private readonly Dictionary<string, List<DialogueRef>> _lastListByNpc =
             new Dictionary<string, List<DialogueRef>>(StringComparer.OrdinalIgnoreCase);
+
+        // cache for generic string sheets
+        private readonly Dictionary<string, List<SheetEntry>> _lastSheetEntriesByAsset =
+            new(StringComparer.OrdinalIgnoreCase);
+
+        // cache for parsed event lines per location asset (e.g., "Town", "Beach")
+        private readonly Dictionary<string, List<EventLine>> _lastEventLinesByLocation =
+            new(StringComparer.OrdinalIgnoreCase);
+
+        // A curated default set of generic string sheets to iterate when user runs: test_sheet all <delay>
+        private static readonly string[] DefaultSheetAssets = new[]
+        {
+            "Strings/SpeechBubbles",
+            "Data/ExtraDialogue",
+            "Strings/StringsFromCSFiles",
+            // Add more if you want them included by default
+        };
+
+        private const string InlineDialogueKey = "Strings\\Characters:VOFInline";
+
+        // A curated list of standard event location asset names (Data/Events/<Name>)
+        private static readonly string[] DefaultEventLocations = new[]
+        {
+            "AbandonedJojaMart","AnimalShop","ArchaeologyHouse","Backwoods","BathHouse_Pool",
+            "Beach","BoatTunnel","BusStop","CommunityCenter","DesertFestival","ElliottHouse",
+            "Farm","FarmHouse","FishShop","Forest","HaleyHouse","HarveyRoom","Hospital",
+            "IslandFarmHouse","IslandHut","IslandNorth","IslandSouth","IslandWest","JoshHouse",
+            "LeahHouse","ManorHouse","Mine","Mountain","QiNutRoom","Railroad","Saloon",
+            "SamHouse","SandyHouse","ScienceHouse","SebastianRoom","SeedShop","Sewer","Sunroom",
+            "Temp","Tent","Town","Trailer","Trailer_Big","WizardHouse","Woods"
+        };
 
         // ============== Command Registration ==============
         private void DialogueTester(ICommandHelper commands)
@@ -59,6 +91,57 @@ namespace VoiceOverFrameworkMod
 
             commands.Add("vof.summary", "Print summary of unmatched V2 lines (and clear).", (c, a) => PrintV2FailureReport());
 
+            // ===== Generic string sheet testing (Data/* or Strings/*) =====
+            commands.Add(
+                name: "list_sheet",
+                documentation:
+                    "Usage: list_sheet <assetPath> [filter]\n" +
+                    "List keys from a generic string sheet (e.g., Data/ExtraDialogue, Strings/SpeechBubbles).",
+                callback: this.ListSheet
+            );
+
+            commands.Add(
+                name: "test_sheet",
+                documentation:
+                    "Usage: test_sheet <assetPath|all> [delayMs] [filter]\n" +
+                    "Auto-plays strings from one sheet or a default set (when 'all').",
+                callback: this.TestSheet
+            );
+
+            commands.Add(
+                name: "play_sheet_key",
+                documentation:
+                    "Usage: play_sheet_key <assetPath> <key>\n" +
+                    "Play one string value from a generic string sheet (portrait window).",
+                callback: this.PlaySheetByKey
+            );
+
+            // ===== Event string testing (Data/Events/<Location>) =====
+            commands.Add(
+                name: "list_events",
+                documentation:
+                    "Usage: list_events <locationAssetName> [filter]\n" +
+                    "List extracted 'speak' and bubble lines from an events sheet, e.g., Data/Events/Beach -> 'Beach'.",
+                callback: this.ListEvents
+            );
+
+            commands.Add(
+                name: "test_events",
+                documentation:
+                    "Usage: test_events <locationAssetName|all|characterName> [delayMs] [filter]\n" +
+                    "• all         → test all standard event locations\n" +
+                    "• Town        → test that one location\n" +
+                    "• Abigail     → test *all* locations but only lines where speaker is 'Abigail'",
+                callback: this.TestEvents
+            );
+
+            commands.Add(
+                name: "play_event_line",
+                documentation:
+                    "Usage: play_event_line <locationAssetName> <index>\n" +
+                    "Play one extracted event line by index (use list_events first).",
+                callback: this.PlayEventLineByIndex
+            );
         }
 
         // ===================== Commands =====================
@@ -85,10 +168,8 @@ namespace VoiceOverFrameworkMod
                 }
                 finally
                 {
-
                     _collectV2Failures = false;
                     PrintV2FailureReport();
-
                 }
                 return;
             }
@@ -135,12 +216,9 @@ namespace VoiceOverFrameworkMod
             this.Monitor.Log("Finished.", LogLevel.Info);
         }
 
-
-
         // Run all NPCs that have dialogue sheets (base or marriage), one after another.
         private async Task TestDialogueAll(int delay, string filter, bool includeChoices)
         {
-            // fresh summary per “all” run
             _v2Fails.Clear();
 
             var names = GetAllNpcNames();
@@ -158,7 +236,7 @@ namespace VoiceOverFrameworkMod
             {
                 var sheets = LoadAllNpcDialogueSheets(npcName);
                 if (sheets.Count == 0)
-                    continue; // no dialogue sheet for this NPC
+                    continue;
 
                 var list = BuildKeyList(sheets, filter, includeChoices);
                 if (list.Count == 0)
@@ -185,13 +263,10 @@ namespace VoiceOverFrameworkMod
             }
 
             this.Monitor.Log($"[ALL] Completed. NPCs run: {npcRan}, total keys: {totalKeys}.", LogLevel.Info);
-
         }
-
 
         private List<string> GetAllNpcNames()
         {
-
             try
             {
                 var dispo = this.Helper.GameContent.Load<Dictionary<string, string>>("Data/NPCDispositions");
@@ -221,8 +296,6 @@ namespace VoiceOverFrameworkMod
 
             return vanilla.OrderBy(k => k, StringComparer.OrdinalIgnoreCase).ToList();
         }
-
-
 
         private async void TestDialogueFrom(string cmd, string[] args)
         {
@@ -277,10 +350,6 @@ namespace VoiceOverFrameworkMod
 
             this.Monitor.Log("Finished.", LogLevel.Info);
         }
-
-
-
-
 
         private void ListDialogue(string cmd, string[] args)
         {
@@ -387,20 +456,15 @@ namespace VoiceOverFrameworkMod
 
         private void PlayByKey(NPC npc, string sheetLabel, string key)
         {
-            // Build an explicit translation key path (works for base AND marriage):
-            //   Characters\Dialogue\Abigail:Mon
-            //   Characters\Dialogue\MarriageDialogueAbigail:Rainy
             string keyPath = $"Characters\\Dialogue\\{sheetLabel}:{key}";
-
             try
             {
-                var dlg = new Dialogue(npc, keyPath);   // 1.6: constructor that takes a translation key path
+                var dlg = new Dialogue(npc, keyPath);
                 npc.setNewDialogue(dlg);
                 Game1.drawDialogue(npc);
             }
             catch (Exception ex)
             {
-                // If a specific key is missing, show a HUD note and log the failure but continue.
                 Game1.addHUDMessage(new HUDMessage($"Missing key: ({sheetLabel}:{key})", 3));
                 this.Monitor.Log($"Missing or invalid key '{sheetLabel}:{key}': {ex}", LogLevel.Warn);
             }
@@ -441,7 +505,7 @@ namespace VoiceOverFrameworkMod
             {
                 var baseSheet = this.Helper.GameContent.Load<Dictionary<string, string>>($"Characters/Dialogue/{npcName}");
                 if (baseSheet != null && baseSheet.Count > 0)
-                    results.Add((npcName, baseSheet)); // label "Abigail"
+                    results.Add((npcName, baseSheet));
             }
             catch { }
 
@@ -479,7 +543,6 @@ namespace VoiceOverFrameworkMod
 
                     string raw = kvp.Value ?? "";
 
-                    // Optional: skip choice/response trees unless explicitly included
                     if (!includeChoices && (raw.Contains("$q", StringComparison.Ordinal) || raw.Contains("$r", StringComparison.Ordinal)))
                         continue;
 
@@ -582,9 +645,9 @@ namespace VoiceOverFrameworkMod
 
         private sealed class DialogueRef
         {
-            public int PrimaryId { get; set; }          // stable index for this list
-            public string SheetLabel { get; set; }      // e.g., "Abigail" or "MarriageDialogueAbigail"
-            public string Key { get; set; }             // the dialogue key (Mon, Rainy, Introduction, ...)
+            public int PrimaryId { get; set; }
+            public string SheetLabel { get; set; }
+            public string Key { get; set; }
 
             public DialogueRef() { }
             public DialogueRef(string sheetLabel, string key)
@@ -593,7 +656,6 @@ namespace VoiceOverFrameworkMod
                 Key = key;
             }
         }
-
 
         private sealed class V2Fail
         {
@@ -615,19 +677,19 @@ namespace VoiceOverFrameworkMod
         private bool _collectV2Failures = false;
 
         private void V2AddFailure(
-    string speaker,
-    string dialogue,
-    IEnumerable<string> removables,
-    string stripped,
-    string key,
-    bool matched,
-    bool missingAudio,
-    bool fuzzyAttempted = false,
-    double fuzzyBestScore = 0.0,
-    string fuzzyBestKey = null,
-    bool fuzzyChosen = false,
-    string audioPath = null
-)
+            string speaker,
+            string dialogue,
+            IEnumerable<string> removables,
+            string stripped,
+            string key,
+            bool matched,
+            bool missingAudio,
+            bool fuzzyAttempted = false,
+            double fuzzyBestScore = 0.0,
+            string fuzzyBestKey = null,
+            bool fuzzyChosen = false,
+            string audioPath = null
+        )
         {
             _v2Fails.Add(new V2Fail
             {
@@ -646,8 +708,6 @@ namespace VoiceOverFrameworkMod
             });
         }
 
-
-
         /// <summary>Print and clear a compact summary of unmatched/missing-audio lines, with fuzzy details.</summary>
         private void PrintV2FailureReport()
         {
@@ -663,7 +723,6 @@ namespace VoiceOverFrameworkMod
 
             Monitor.Log($"V2 summary: total={_v2Fails.Count}, unmatched={unmatched}, fuzzy-chosen={fuzzyChosen}, missing-audio={missingAudio}", LogLevel.Info);
 
-            // UNMATCHED (after fuzzy)
             var unmatchedList = _v2Fails.Where(f => !f.Matched).ToList();
             if (unmatchedList.Count > 0)
             {
@@ -679,7 +738,6 @@ namespace VoiceOverFrameworkMod
                 }
             }
 
-            // FUZZY MATCHED (played)
             var fuzzyHitList = _v2Fails.Where(f => f.FuzzyChosen && f.Matched && !f.MissingAudio).ToList();
             if (fuzzyHitList.Count > 0)
             {
@@ -697,7 +755,6 @@ namespace VoiceOverFrameworkMod
                 }
             }
 
-            // MISSING AUDIO
             var missingList = _v2Fails.Where(f => f.Matched && f.MissingAudio).ToList();
             if (missingList.Count > 0)
             {
@@ -718,10 +775,507 @@ namespace VoiceOverFrameworkMod
             _v2Fails.Clear();
         }
 
+        // ===================== SHEETS: list / play / test =====================
+
+        private void ListSheet(string cmd, string[] args)
+        {
+            if (args.Length == 0)
+            {
+                this.Monitor.Log("Usage: list_sheet <assetPath> [filter]", LogLevel.Info);
+                return;
+            }
+
+            string asset = args[0];
+            string filter = args.Length > 1 ? args[1] : null;
+
+            var entries = LoadStringSheet(asset, filter);
+            if (entries.Count == 0)
+            {
+                this.Monitor.Log($"No entries found in '{asset}' (filter='{filter ?? "(none)"}').", LogLevel.Info);
+                return;
+            }
+
+            _lastSheetEntriesByAsset[asset] = entries;
+
+            this.Monitor.Log($"--- Sheet keys for {asset} (total {entries.Count}) ---", LogLevel.Info);
+            for (int i = 0; i < entries.Count; i++)
+                this.Monitor.Log($"{i,4}: {entries[i].Key}", LogLevel.Info);
+        }
+
+        private async void TestSheet(string cmd, string[] args)
+        {
+            if (args.Length == 0)
+            {
+                this.Monitor.Log("Usage: test_sheet <assetPath|all> [delayMs] [filter]", LogLevel.Info);
+                return;
+            }
+
+            string target = args[0];
+            int delay = (args.Length > 1 && int.TryParse(args[1], out var d)) ? Math.Max(1, d) : 1200;
+            string filter = args.Length > 2 ? args[2] : null;
+
+            _collectV2Failures = true;
+            try
+            {
+                if (target.Equals("all", StringComparison.OrdinalIgnoreCase))
+                {
+                    int total = 0;
+                    foreach (var asset in DefaultSheetAssets)
+                    {
+                        var entries = LoadStringSheet(asset, filter);
+                        if (entries.Count == 0) continue;
+
+                        _lastSheetEntriesByAsset[asset] = entries;
+
+                        this.Monitor.Log($"[SHEET] {asset}: {entries.Count} strings…", LogLevel.Info);
+                        foreach (var e in entries)
+                        {
+                            // Bubble for SpeechBubbles, otherwise portrait window
+                            bool asBubble = asset.IndexOf("SpeechBubbles", StringComparison.OrdinalIgnoreCase) >= 0;
+                            var speaker = DefaultSpeaker() ?? Game1.getCharacterFromName("Lewis", true);
+                            if (speaker == null) continue;
+
+                            if (asBubble)
+                                EmitBubbleWithVOF(speaker, e.Value);
+                            else
+                                EmitPortraitDialogue(speaker, e.Value);
+
+                            await Task.Delay(delay);
+                            Game1.exitActiveMenu();
+                            total++;
+                        }
+                    }
+                    this.Monitor.Log($"[SHEET] Completed. Total lines: {total}.", LogLevel.Info);
+                }
+                else
+                {
+                    string asset = target;
+                    var entries = LoadStringSheet(asset, filter);
+                    if (entries.Count == 0)
+                    {
+                        this.Monitor.Log($"No entries found in '{asset}' (filter='{filter ?? "(none)"}').", LogLevel.Info);
+                        return;
+                    }
+
+                    _lastSheetEntriesByAsset[asset] = entries;
+
+                    this.Monitor.Log($"[SHEET] {asset}: {entries.Count} strings…", LogLevel.Info);
+                    foreach (var e in entries)
+                    {
+                        bool asBubble = asset.IndexOf("SpeechBubbles", StringComparison.OrdinalIgnoreCase) >= 0;
+                        var speaker = DefaultSpeaker() ?? Game1.getCharacterFromName("Lewis", true);
+                        if (speaker == null) continue;
+
+                        if (asBubble)
+                            EmitBubbleWithVOF(speaker, e.Value);
+                        else
+                            EmitPortraitDialogue(speaker, e.Value);
+
+                        await Task.Delay(delay);
+                        Game1.exitActiveMenu();
+                    }
+                }
+            }
+            finally
+            {
+                PrintV2FailureReport();
+                _collectV2Failures = false;
+            }
+        }
+
+        private void PlaySheetByKey(string cmd, string[] args)
+        {
+            if (args.Length < 2)
+            {
+                this.Monitor.Log("Usage: play_sheet_key <assetPath> <key>", LogLevel.Info);
+                return;
+            }
+
+            string asset = args[0];
+            string key = args[1];
+
+            try
+            {
+                var dict = this.Helper.GameContent.Load<Dictionary<string, string>>(asset);
+                if (dict == null || !dict.TryGetValue(key, out var raw) || string.IsNullOrWhiteSpace(raw))
+                {
+                    this.Monitor.Log($"Key '{key}' not found in '{asset}'.", LogLevel.Warn);
+                    return;
+                }
+
+                bool asBubble = asset.IndexOf("SpeechBubbles", StringComparison.OrdinalIgnoreCase) >= 0;
+                var speaker = DefaultSpeaker() ?? Game1.getCharacterFromName("Lewis", true);
+                if (speaker == null)
+                {
+                    this.Monitor.Log("No available NPC to speak this line.", LogLevel.Warn);
+                    return;
+                }
+
+                if (asBubble)
+                    EmitBubbleWithVOF(speaker, raw);
+                else
+                    EmitPortraitDialogue(speaker, raw);
+
+                Game1.addHUDMessage(new HUDMessage($"({asset}:{key})"));
+            }
+            catch (Exception ex)
+            {
+                this.Monitor.Log($"Failed to load '{asset}': {ex.Message}", LogLevel.Warn);
+            }
+        }
+
+        private List<SheetEntry> LoadStringSheet(string assetPath, string filter)
+        {
+            var results = new List<SheetEntry>();
+            try
+            {
+                var dict = this.Helper.GameContent.Load<Dictionary<string, string>>(assetPath);
+                if (dict == null || dict.Count == 0) return results;
+
+                IEnumerable<KeyValuePair<string, string>> q = dict;
+                if (!string.IsNullOrWhiteSpace(filter))
+                    q = q.Where(kv => (kv.Key?.IndexOf(filter, StringComparison.OrdinalIgnoreCase) ?? -1) >= 0 ||
+                                      (kv.Value?.IndexOf(filter, StringComparison.OrdinalIgnoreCase) ?? -1) >= 0);
+
+                int i = 0;
+                foreach (var kv in q.OrderBy(k => k.Key, StringComparer.OrdinalIgnoreCase))
+                    results.Add(new SheetEntry { Index = i++, Key = kv.Key, Value = kv.Value ?? "" });
+            }
+            catch (Exception ex)
+            {
+                this.Monitor.Log($"Failed to read string sheet '{assetPath}': {ex.Message}", LogLevel.Trace);
+            }
+            return results;
+        }
+
+        // ===================== EVENTS: list / play / test =====================
+
+        private void ListEvents(string cmd, string[] args)
+        {
+            if (args.Length == 0)
+            {
+                this.Monitor.Log("Usage: list_events <locationAssetName> [filter]   e.g., list_events Town", LogLevel.Info);
+                return;
+            }
+
+            string location = args[0];
+            string filter = args.Length > 1 ? args[1] : null;
+
+            var lines = ParseEventLocation(location, filter);
+            if (lines.Count == 0)
+            {
+                this.Monitor.Log($"No speak/bubble lines found in Data/Events/{location} (filter='{filter ?? "(none)"}').", LogLevel.Info);
+                return;
+            }
+
+            _lastEventLinesByLocation[location] = lines;
+
+            this.Monitor.Log($"--- Event lines for {location} (total {lines.Count}) ---", LogLevel.Info);
+            for (int i = 0; i < lines.Count; i++)
+            {
+                var l = lines[i];
+                string mode = l.IsBubble ? "bubble" : "speak";
+                this.Monitor.Log($"{i,4}: [{mode}] {l.SpeakerName}: \"{Trunc(l.Text, 70)}\"", LogLevel.Info);
+            }
+        }
+
+        private async void TestEvents(string cmd, string[] args)
+        {
+            if (args.Length == 0)
+            {
+                this.Monitor.Log("Usage: test_events <locationAssetName|all|characterName> [delayMs] [filter]", LogLevel.Info);
+                return;
+            }
+
+            string target = args[0];
+            int delay = (args.Length > 1 && int.TryParse(args[1], out var d)) ? Math.Max(1, d) : 1200;
+            string filter = args.Length > 2 ? args[2] : null;
+
+            _collectV2Failures = true;
+            try
+            {
+                if (target.Equals("all", StringComparison.OrdinalIgnoreCase))
+                {
+                    int total = 0;
+                    foreach (var loc in DefaultEventLocations)
+                    {
+                        var lines = ParseEventLocation(loc, filter);
+                        if (lines.Count == 0) continue;
+
+                        _lastEventLinesByLocation[loc] = lines;
+                        this.Monitor.Log($"[EVENT] {loc}: {lines.Count} lines…", LogLevel.Info);
+
+                        foreach (var line in lines)
+                        {
+                            var npc = Game1.getCharacterFromName(line.SpeakerName, true) ?? DefaultSpeaker();
+                            if (npc == null) continue;
+
+                            if (line.IsBubble)
+                                EmitBubbleWithVOF(npc, line.Text);
+                            else
+                                EmitPortraitDialogue(npc, line.Text);
+
+                            await Task.Delay(delay);
+                            Game1.exitActiveMenu();
+                            total++;
+                        }
+                    }
+                    this.Monitor.Log($"[EVENT] Completed. Total lines: {total}.", LogLevel.Info);
+                }
+                else
+                {
+                    // If target matches a location asset, test that location; otherwise assume it's a character filter over all locations.
+                    bool isLocation = DefaultEventLocations.Any(n => n.Equals(target, StringComparison.OrdinalIgnoreCase));
+                    if (isLocation)
+                    {
+                        string loc = target;
+                        var lines = ParseEventLocation(loc, filter);
+                        if (lines.Count == 0)
+                        {
+                            this.Monitor.Log($"No lines found in Data/Events/{loc} (filter='{filter ?? "(none)"}').", LogLevel.Info);
+                            return;
+                        }
+
+                        _lastEventLinesByLocation[loc] = lines;
+                        this.Monitor.Log($"[EVENT] {loc}: {lines.Count} lines…", LogLevel.Info);
+
+                        foreach (var line in lines)
+                        {
+                            var npc = Game1.getCharacterFromName(line.SpeakerName, true) ?? DefaultSpeaker();
+                            if (npc == null) continue;
+
+                            if (line.IsBubble)
+                                EmitBubbleWithVOF(npc, line.Text);
+                            else
+                                EmitPortraitDialogue(npc, line.Text);
+
+                            await Task.Delay(delay);
+                            Game1.exitActiveMenu();
+                        }
+                    }
+                    else
+                    {
+                        // treat as character name across ALL locations
+                        string speakerFilter = target;
+                        int total = 0;
+
+                        foreach (var loc in DefaultEventLocations)
+                        {
+                            var lines = ParseEventLocation(loc, filter);
+                            if (lines.Count == 0) continue;
+
+                            var bySpeaker = lines.Where(l => l.SpeakerName.Equals(speakerFilter, StringComparison.OrdinalIgnoreCase)).ToList();
+                            if (bySpeaker.Count == 0) continue;
+
+                            _lastEventLinesByLocation[loc] = bySpeaker;
+                            this.Monitor.Log($"[EVENT] {loc} (speaker={speakerFilter}): {bySpeaker.Count} lines…", LogLevel.Info);
+
+                            var npc = Game1.getCharacterFromName(speakerFilter, true) ?? DefaultSpeaker();
+                            foreach (var line in bySpeaker)
+                            {
+                                if (npc == null) break;
+
+                                if (line.IsBubble)
+                                    EmitBubbleWithVOF(npc, line.Text);
+                                else
+                                    EmitPortraitDialogue(npc, line.Text);
+
+                                await Task.Delay(delay);
+                                Game1.exitActiveMenu();
+                                total++;
+                            }
+                        }
+
+                        if (total == 0)
+                            this.Monitor.Log($"[EVENT] No lines found for speaker '{speakerFilter}' across default event locations.", LogLevel.Info);
+                        else
+                            this.Monitor.Log($"[EVENT] Completed for speaker '{speakerFilter}'. Total lines: {total}.", LogLevel.Info);
+                    }
+                }
+            }
+            finally
+            {
+                PrintV2FailureReport();
+                _collectV2Failures = false;
+            }
+        }
+
+        private void PlayEventLineByIndex(string cmd, string[] args)
+        {
+            if (args.Length < 2)
+            {
+                this.Monitor.Log("Usage: play_event_line <locationAssetName> <index>", LogLevel.Info);
+                return;
+            }
+
+            string loc = args[0];
+            if (!int.TryParse(args[1], out int index) || index < 0)
+            {
+                this.Monitor.Log("Index must be a non-negative integer.", LogLevel.Warn);
+                return;
+            }
+
+            if (!_lastEventLinesByLocation.TryGetValue(loc, out var lines) || lines == null || lines.Count == 0)
+            {
+                this.Monitor.Log($"No cached event lines for '{loc}'. Run 'list_events {loc}' first.", LogLevel.Warn);
+                return;
+            }
+
+            if (index >= lines.Count)
+            {
+                this.Monitor.Log($"Invalid index. Must be 0..{lines.Count - 1}.", LogLevel.Warn);
+                return;
+            }
+
+            var line = lines[index];
+            var npc = Game1.getCharacterFromName(line.SpeakerName, true) ?? DefaultSpeaker();
+            if (npc == null)
+            {
+                this.Monitor.Log($"Speaker '{line.SpeakerName}' not found.", LogLevel.Warn);
+                return;
+            }
+
+            if (line.IsBubble)
+                EmitBubbleWithVOF(npc, line.Text);
+            else
+                EmitPortraitDialogue(npc, line.Text);
+
+            this.Monitor.Log($"Played [{(line.IsBubble ? "bubble" : "speak")}] {line.SpeakerName}: \"{Trunc(line.Text, 70)}\"", LogLevel.Info);
+        }
+
+        private List<EventLine> ParseEventLocation(string locationAssetName, string filter)
+        {
+            var results = new List<EventLine>();
+
+            try
+            {
+                var dict = this.Helper.GameContent.Load<Dictionary<string, string>>($"Data/Events/{locationAssetName}");
+                if (dict == null || dict.Count == 0) return results;
+
+                // Extract speak "<NPC>" "text"
+                var rxSpeak = new Regex(@"\bspeak\s+([A-Za-z_]+)\s+""([^""]*)""", RegexOptions.IgnoreCase);
+                // Extract showTextAboveHead/textAboveHead "<NPC>" "text"
+                var rxBubble = new Regex(@"\b(?:showTextAboveHead|textAboveHead)\s+([A-Za-z_]+)\s+""([^""]*)""", RegexOptions.IgnoreCase);
+
+                foreach (var kv in dict)
+                {
+                    string script = kv.Value ?? "";
+                    foreach (Match m in rxSpeak.Matches(script))
+                    {
+                        var name = m.Groups[1].Value;
+                        var text = m.Groups[2].Value;
+                        if (!string.IsNullOrWhiteSpace(filter) &&
+                            text.IndexOf(filter, StringComparison.OrdinalIgnoreCase) < 0 &&
+                            name.IndexOf(filter, StringComparison.OrdinalIgnoreCase) < 0)
+                            continue;
+
+                        results.Add(new EventLine { SpeakerName = name, Text = text, IsBubble = false });
+                    }
+                    foreach (Match m in rxBubble.Matches(script))
+                    {
+                        var name = m.Groups[1].Value;
+                        var text = m.Groups[2].Value;
+                        if (!string.IsNullOrWhiteSpace(filter) &&
+                            text.IndexOf(filter, StringComparison.OrdinalIgnoreCase) < 0 &&
+                            name.IndexOf(filter, StringComparison.OrdinalIgnoreCase) < 0)
+                            continue;
+
+                        results.Add(new EventLine { SpeakerName = name, Text = text, IsBubble = true });
+                    }
+                }
+
+                // stable order
+                int i = 0;
+                foreach (var r in results)
+                    r.Index = i++;
+            }
+            catch (Exception ex)
+            {
+                this.Monitor.Log($"Failed to parse Data/Events/{locationAssetName}: {ex.Message}", LogLevel.Trace);
+            }
+
+            return results;
+        }
+
+        // ===================== Low-level emitters =====================
+
+        /// <summary>Show a portrait dialogue window that routes through the normal Dialogue UI → VOF pipeline.</summary>
+        // Show a portrait dialogue window from raw text (literal), routed through the normal Dialogue UI.
+        private void EmitPortraitDialogue(NPC speaker, string rawText)
+        {
+            try
+            {
+                if (speaker == null || string.IsNullOrWhiteSpace(rawText))
+                    return;
+
+                // 1.6 signature: (NPC speaker, string translationKey, string dialogueText)
+                var dlg = new Dialogue(speaker, InlineDialogueKey, rawText);
+                speaker.setNewDialogue(dlg);
+                Game1.drawDialogue(speaker);
+            }
+            catch (Exception ex)
+            {
+                this.Monitor.Log($"EmitPortraitDialogue failed: {ex}", LogLevel.Trace);
+            }
+        }
+
+        // Show a speech bubble AND also open a portrait dialogue with the same line so VOF still triggers.
+        private void EmitBubbleWithVOF(NPC speaker, string rawText)
+        {
+            try
+            {
+                if (speaker == null || string.IsNullOrWhiteSpace(rawText))
+                    return;
+
+                speaker.showTextAboveHead(rawText);
+
+                // Mirror into the Dialogue UI so your voice matching runs the same as NPC dialogue.
+                var dlg = new Dialogue(speaker, InlineDialogueKey, rawText);
+                speaker.setNewDialogue(dlg);
+                Game1.drawDialogue(speaker);
+            }
+            catch (Exception ex)
+            {
+                this.Monitor.Log($"EmitBubbleWithVOF failed: {ex}", LogLevel.Trace);
+            }
+        }
 
 
+        private NPC DefaultSpeaker()
+        {
+            // Prefer Lewis as a safe, always-present NPC; fall back to any loaded NPC if needed.
+            var lewis = Game1.getCharacterFromName("Lewis", true);
+            if (lewis != null) return lewis;
 
+            foreach (var loc in Game1.locations)
+            {
+                var any = loc?.characters?.FirstOrDefault();
+                if (any != null) return any;
+            }
+            return null;
+        }
 
+        private static string Trunc(string s, int n)
+        {
+            if (string.IsNullOrEmpty(s) || s.Length <= n) return s;
+            return s.Substring(0, Math.Max(0, n - 1)) + "…";
+        }
 
+        // ===================== DTOs for sheets/events =====================
+
+        private sealed class SheetEntry
+        {
+            public int Index { get; set; }
+            public string Key { get; set; }
+            public string Value { get; set; }
+        }
+
+        private sealed class EventLine
+        {
+            public int Index { get; set; }
+            public string SpeakerName { get; set; }
+            public string Text { get; set; }
+            public bool IsBubble { get; set; }
+        }
     }
 }

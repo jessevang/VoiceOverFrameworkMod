@@ -24,14 +24,14 @@ namespace VoiceOverFrameworkMod
 
 
         // --- Tunables ---
-        private const int DialogueCloseDebounceTicks = 0; // how many consecutive "not visible" ticks before we treat it as a real close
-        //private const int TextStabilizeTicks = 8;         // how many consecutive "same text" ticks before we play audio
+        private const int DialogueCloseDebounceTicks = 0; // how many consecutive "not visible" ticks before we treat it as a real close 8 was magical number but set to 0 for testing.
+      
 
 
         // --- Dialogue debounce / replay guards ---
-        private int _dialogueNotVisibleTicks = 0;   // count consecutive ticks the dialogue box is not visible
-        private int _sameLineStableTicks = 0;       // count consecutive ticks the same text is shown
-        private string _lastPlayedLookupKey = null; // last key actually played for this page
+        private int _dialogueNotVisibleTicks = 0;   
+        private int _sameLineStableTicks = 0; 
+        private string _lastPlayedLookupKey = null;
 
         // --- V2 event serial state (per-event, per-speaker, increments once per displayed page) ---
         private string _v2_lastEventBase = null;
@@ -44,11 +44,6 @@ namespace VoiceOverFrameworkMod
         // Chooses the right sanitizer based on the loaded pack's FormatMajor
         private string SanitizeForPack(string raw, VoicePack pack)
             => (pack?.FormatMajor ?? 1) >= 2 ? SanitizeDialogueTextV2(raw) : SanitizeDialogueText(raw);
-
-
-
-
-
 
 
         // Main dialogue check loop called every tick (or less often if adjusted).
@@ -82,8 +77,6 @@ namespace VoiceOverFrameworkMod
             // Always check bubbles after dialogue handling
             CheckForSpeechBubblesLevel1();
         }
-
-
 
 
 

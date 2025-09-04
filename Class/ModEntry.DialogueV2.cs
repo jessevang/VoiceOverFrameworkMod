@@ -1,6 +1,4 @@
-﻿// VoiceOverFrameworkMod: force %noun → "dragon"; capture/strip adj/place + fixed tokens; add %season capture.
-
-using HarmonyLib;
+﻿using HarmonyLib;
 using StardewModdingAPI;
 using StardewModdingAPI.Utilities;
 using StardewValley;
@@ -270,8 +268,8 @@ namespace VoiceOverFrameworkMod
                                 fuzzyChosen: false
                             );
                         }
-                        _lastPlayedLookupKey = finalLookupKey; // debounce
-                        return; // IMPORTANT: do not fall through to generic unmatched → avoids double entry
+                        _lastPlayedLookupKey = finalLookupKey; 
+                        return; //  do not fall through to generic unmatched → avoids double entry
                     }
                 }
                 // else (not attempted): we fall through to generic unmatched once
@@ -315,7 +313,7 @@ namespace VoiceOverFrameworkMod
             return s;
         }
 
-        // Classic Levenshtein distance
+        // Classic Levenshtein distance approach- used to measure distance and similiarity between 2 strings. Used to match strings
         private static int Levenshtein(string a, string b)
         {
             if (a == null) a = string.Empty;
