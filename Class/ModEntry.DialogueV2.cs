@@ -23,9 +23,12 @@ namespace VoiceOverFrameworkMod
             public static void Apply() => StardewValley.Dialogue.nouns = Value;
         }
 
-
         private void CheckForDialogueV2()
         {
+            const bool ENABLE_FUZZY = true;
+            const double FUZZY_THRESHOLD = 0.90;
+            const int MIN_LEN_FOR_FUZZY = 12;
+
             if (Game1.currentLocation == null || Game1.player == null)
             {
                 if (lastDialogueText != null) ResetDialogueState();
@@ -119,6 +122,7 @@ namespace VoiceOverFrameworkMod
             string strippedForMatch = DialogueSanitizerV2.StripChosenWords(currentDisplayedString ?? "", cap);
             string patternKey = CanonDisplay(strippedForMatch);
 
+            // ── 1) Exact match
             if (selectedPack != null &&
                 selectedPack.FormatMajor >= 2 &&
                 selectedPack.Entries != null &&
@@ -126,8 +130,8 @@ namespace VoiceOverFrameworkMod
                 !string.IsNullOrWhiteSpace(relAudioFromPattern))
             {
                 var fullPatternPath = PathUtilities.NormalizePath(System.IO.Path.Combine(selectedPack.BaseAssetPath, relAudioFromPattern));
-
                 bool missingAudio = !System.IO.File.Exists(fullPatternPath);
+
                 if (_collectV2Failures && missingAudio)
                 {
                     V2AddFailure(
@@ -137,7 +141,8 @@ namespace VoiceOverFrameworkMod
                         patternKey,
                         patternKey,
                         matched: true,
-                        missingAudio: true
+                        missingAudio: true,
+                        fuzzyAttempted: false
                     );
                 }
 
@@ -148,6 +153,131 @@ namespace VoiceOverFrameworkMod
                 return;
             }
 
+            // ── 2) Full-page fallback (strip full page display with same capture context)
+            if (selectedPack != null && selectedPack.FormatMajor >= 2 && selectedPack.Entries != null)
+            {
+                string rawPage = (d != null && pageZero < (d.dialogues?.Count ?? 0)) ? d.dialogues[pageZero].Text : null;
+                if (!string.IsNullOrWhiteSpace(rawPage))
+                {
+                    var segs = DialogueUtil.SplitAndSanitize(rawPage, splitBAsPage: false);
+                    if (segs != null && segs.Count > 0)
+                    {
+                        string fullDisplay = segs[0].Display ?? string.Empty;
+
+                        string strippedFull = DialogueSanitizerV2.StripChosenWords(fullDisplay, cap);
+                        string patternKeyFull = CanonDisplay(strippedFull);
+
+                        if (selectedPack.Entries.TryGetValue(patternKeyFull, out var relAudioFull) &&
+                            !string.IsNullOrWhiteSpace(relAudioFull))
+                        {
+                            var fullPath = PathUtilities.NormalizePath(System.IO.Path.Combine(selectedPack.BaseAssetPath, relAudioFull));
+                            bool missingAudio2 = !System.IO.File.Exists(fullPath);
+
+                            if (_collectV2Failures && missingAudio2)
+                            {
+                                V2AddFailure(
+                                    currentSpeaker?.Name,
+                                    fullDisplay,
+                                    removable,
+                                    patternKeyFull,
+                                    patternKeyFull,
+                                    matched: true,
+                                    missingAudio: true,
+                                    fuzzyAttempted: false
+                                );
+                            }
+
+                            if (!missingAudio2)
+                                PlayVoiceFromFile(fullPath);
+
+                            _lastPlayedLookupKey = finalLookupKey; // debounce on the visible-line key
+                            return;
+                        }
+                    }
+                }
+            }
+
+            // ── 3) FUZZY FALLBACK — ONLY if exact + full-page failed
+            if (ENABLE_FUZZY && selectedPack != null && selectedPack.FormatMajor >= 2 && selectedPack.Entries != null)
+            {
+                string liveKey = strippedForMatch; // already stripped
+                string bestKey = null;
+                string bestRelPath = null;
+                double bestScore = 0.0;
+
+                bool attempted = (liveKey?.Length ?? 0) >= MIN_LEN_FOR_FUZZY;
+                if (attempted)
+                {
+                    foreach (var kvp in selectedPack.Entries)
+                    {
+                        string packKey = kvp.Key;
+                        if (string.IsNullOrWhiteSpace(packKey)) continue;
+
+                        double score = SimilarityRatio(liveKey, packKey);
+                        if (score > bestScore)
+                        {
+                            bestScore = score;
+                            bestKey = packKey;
+                            bestRelPath = kvp.Value;
+                        }
+                    }
+
+                    if (!string.IsNullOrWhiteSpace(bestRelPath) && bestScore >= FUZZY_THRESHOLD)
+                    {
+                        var fullPath = PathUtilities.NormalizePath(System.IO.Path.Combine(selectedPack.BaseAssetPath, bestRelPath));
+                        bool missing = !System.IO.File.Exists(fullPath);
+
+                        if (_collectV2Failures)
+                        {
+                            V2AddFailure(
+                                currentSpeaker?.Name,
+                                currentDisplayedString,
+                                removable,
+                                CanonDisplay(liveKey),
+                                bestKey,
+                                matched: true,
+                                missingAudio: missing,
+                                fuzzyAttempted: true,
+                                fuzzyBestScore: bestScore,
+                                fuzzyBestKey: bestKey,
+                                fuzzyChosen: true,
+                                audioPath: fullPath
+                            );
+                        }
+
+                        if (!missing)
+                            PlayVoiceFromFile(fullPath);
+
+                        _lastPlayedLookupKey = finalLookupKey;
+                        return;
+                    }
+                    else
+                    {
+                        // ⇒ FUZZY attempted but below threshold: LOG ONCE and EXIT (no double-log)
+                        if (_collectV2Failures)
+                        {
+                            V2AddFailure(
+                                currentSpeaker?.Name,
+                                currentDisplayedString,
+                                removable,
+                                CanonDisplay(liveKey),
+                                CanonDisplay(liveKey),
+                                matched: false,
+                                missingAudio: false,
+                                fuzzyAttempted: true,
+                                fuzzyBestScore: bestScore,
+                                fuzzyBestKey: bestKey,
+                                fuzzyChosen: false
+                            );
+                        }
+                        _lastPlayedLookupKey = finalLookupKey; // debounce
+                        return; // IMPORTANT: do not fall through to generic unmatched → avoids double entry
+                    }
+                }
+                // else (not attempted): we fall through to generic unmatched once
+            }
+
+            // ── 4) Generic unmatched (no fuzzy or fuzzy disabled/too short)
             if (_collectV2Failures)
             {
                 V2AddFailure(
@@ -157,12 +287,76 @@ namespace VoiceOverFrameworkMod
                     patternKey,
                     patternKey,
                     matched: false,
-                    missingAudio: false
+                    missingAudio: false,
+                    fuzzyAttempted: false
                 );
             }
 
-            _lastPlayedLookupKey = finalLookupKey;
+            _lastPlayedLookupKey = finalLookupKey; // debounce
         }
+
+
+        //Use aglorith for the maining unmatched cases for 90% higher match rate with more  than a certain amount of words to count as a match
+        private static string CanonForFuzzy(string s)
+        {
+            if (string.IsNullOrWhiteSpace(s)) return string.Empty;
+
+            // Reuse your NormalizeVisible idea
+            s = s.Replace('\u2018', '\'').Replace('\u2019', '\'').Replace('\u201B', '\'')
+                 .Replace('\u201C', '\"').Replace('\u201D', '\"').Replace('\u201E', '\"')
+                 .Replace('\u2013', '-').Replace('\u2014', '-').Replace("\u2026", "...");
+            s = Regex.Replace(s, @"\.{4,}", "...");
+
+            // Remove most punctuation for fuzzy comparison
+            s = Regex.Replace(s, @"[^\p{L}\p{M}\p{Nd}\s]", ""); // keep letters, marks, digits, spaces
+
+            // Collapse whitespace, lowercase
+            s = Regex.Replace(s, @"\s+", " ").Trim().ToLowerInvariant();
+            return s;
+        }
+
+        // Classic Levenshtein distance
+        private static int Levenshtein(string a, string b)
+        {
+            if (a == null) a = string.Empty;
+            if (b == null) b = string.Empty;
+            int n = a.Length, m = b.Length;
+            if (n == 0) return m;
+            if (m == 0) return n;
+
+            var prev = new int[m + 1];
+            var curr = new int[m + 1];
+            for (int j = 0; j <= m; j++) prev[j] = j;
+
+            for (int i = 1; i <= n; i++)
+            {
+                curr[0] = i;
+                char ca = a[i - 1];
+                for (int j = 1; j <= m; j++)
+                {
+                    int cost = (ca == b[j - 1]) ? 0 : 1;
+                    curr[j] = Math.Min(
+                        Math.Min(curr[j - 1] + 1, prev[j] + 1),
+                        prev[j - 1] + cost
+                    );
+                }
+     
+                var tmp = prev; prev = curr; curr = tmp;
+            }
+            return prev[m];
+        }
+
+        private static double SimilarityRatio(string a, string b)
+        {
+            if (string.IsNullOrWhiteSpace(a) && string.IsNullOrWhiteSpace(b)) return 1.0;
+            var A = CanonForFuzzy(a);
+            var B = CanonForFuzzy(b);
+            if (A.Length == 0 && B.Length == 0) return 1.0;
+            int dist = Levenshtein(A, B);
+            int denom = Math.Max(A.Length, B.Length);
+            return denom == 0 ? 0.0 : 1.0 - (double)dist / denom;
+        }
+
 
 
 

@@ -595,7 +595,6 @@ namespace VoiceOverFrameworkMod
         }
 
 
-        // Collects unmatched lines for a one-shot summary.
         private sealed class V2Fail
         {
             public string Speaker;
@@ -605,13 +604,30 @@ namespace VoiceOverFrameworkMod
             public string Key;
             public bool Matched;
             public bool MissingAudio;
+            public bool FuzzyAttempted;
+            public double FuzzyBestScore;
+            public string FuzzyBestKey;
+            public bool FuzzyChosen;
+            public string AudioPath;
         }
-
 
         private readonly List<V2Fail> _v2Fails = new();
         private bool _collectV2Failures = false;
 
-        private void V2AddFailure(string speaker,string dialogue,IEnumerable<string> removables,string stripped,string key, bool matched,bool missingAudio)
+        private void V2AddFailure(
+    string speaker,
+    string dialogue,
+    IEnumerable<string> removables,
+    string stripped,
+    string key,
+    bool matched,
+    bool missingAudio,
+    bool fuzzyAttempted = false,
+    double fuzzyBestScore = 0.0,
+    string fuzzyBestKey = null,
+    bool fuzzyChosen = false,
+    string audioPath = null
+)
         {
             _v2Fails.Add(new V2Fail
             {
@@ -621,12 +637,18 @@ namespace VoiceOverFrameworkMod
                 Stripped = stripped ?? "",
                 Key = key ?? "",
                 Matched = matched,
-                MissingAudio = missingAudio
+                MissingAudio = missingAudio,
+                FuzzyAttempted = fuzzyAttempted,
+                FuzzyBestScore = fuzzyBestScore,
+                FuzzyBestKey = fuzzyBestKey,
+                FuzzyChosen = fuzzyChosen,
+                AudioPath = audioPath ?? ""
             });
         }
 
 
-        /// <summary>Print and clear a compact summary of unmatched/missing-audio lines.</summary>
+
+        /// <summary>Print and clear a compact summary of unmatched/missing-audio lines, with fuzzy details.</summary>
         private void PrintV2FailureReport()
         {
             if (_v2Fails.Count == 0)
@@ -637,39 +659,65 @@ namespace VoiceOverFrameworkMod
 
             int unmatched = _v2Fails.Count(f => !f.Matched);
             int missingAudio = _v2Fails.Count(f => f.Matched && f.MissingAudio);
+            int fuzzyChosen = _v2Fails.Count(f => f.FuzzyChosen && f.Matched && !f.MissingAudio);
 
-            Monitor.Log($"V2 summary: total={_v2Fails.Count}, unmatched={unmatched}, missing-audio={missingAudio}", LogLevel.Info);
+            Monitor.Log($"V2 summary: total={_v2Fails.Count}, unmatched={unmatched}, fuzzy-chosen={fuzzyChosen}, missing-audio={missingAudio}", LogLevel.Info);
 
-            if (unmatched > 0)
+            // UNMATCHED (after fuzzy)
+            var unmatchedList = _v2Fails.Where(f => !f.Matched).ToList();
+            if (unmatchedList.Count > 0)
             {
-                Monitor.Log("--- UNMATCHED (no DisplayPattern found) ---", LogLevel.Warn);
+                Monitor.Log("--- UNMATCHED (after fuzzy) ---", LogLevel.Warn);
                 int i = 1;
-                foreach (var f in _v2Fails.Where(f => !f.Matched))
+                foreach (var f in unmatchedList)
                 {
                     Monitor.Log($"[{i++}] Speaker   : {f.Speaker}", LogLevel.Info);
                     Monitor.Log($"      Dialogue  : \"{f.Dialogue}\"", LogLevel.Info);
                     Monitor.Log($"      Removables: {(f.Removables.Count > 0 ? string.Join(", ", f.Removables) : "(none)")}", LogLevel.Info);
                     Monitor.Log($"      Stripped  : \"{f.Stripped}\"", LogLevel.Info);
-                    Monitor.Log($"      DisplayKey: \"{f.Key}\"", LogLevel.Info);
+                    Monitor.Log($"      DisplayKey: \"{f.Key}\"  {(f.FuzzyAttempted ? $"(fuzzy tried: best={(f.FuzzyBestScore * 100):0.0}% (needed ≥ 90.0%))" : "(fuzzy not attempted)")} ", LogLevel.Info);
                 }
             }
 
-            if (missingAudio > 0)
+            // FUZZY MATCHED (played)
+            var fuzzyHitList = _v2Fails.Where(f => f.FuzzyChosen && f.Matched && !f.MissingAudio).ToList();
+            if (fuzzyHitList.Count > 0)
+            {
+                Monitor.Log("--- FUZZY MATCHED ---", LogLevel.Info);
+                int i = 1;
+                foreach (var f in fuzzyHitList)
+                {
+                    Monitor.Log($"[{i++}] Speaker   : {f.Speaker}", LogLevel.Info);
+                    Monitor.Log($"      Dialogue  : \"{f.Dialogue}\"", LogLevel.Info);
+                    Monitor.Log($"      Stripped  : \"{f.Stripped}\"", LogLevel.Info);
+                    Monitor.Log($"      Fuzzy     : score={(f.FuzzyBestScore * 100):0.1}% (needed ≥ 90.0%) → CHOSEN", LogLevel.Info);
+                    Monitor.Log($"      ChosenKey : \"{f.FuzzyBestKey}\"", LogLevel.Info);
+                    if (!string.IsNullOrWhiteSpace(f.AudioPath))
+                        Monitor.Log($"      AudioPath : {f.AudioPath}", LogLevel.Info);
+                }
+            }
+
+            // MISSING AUDIO
+            var missingList = _v2Fails.Where(f => f.Matched && f.MissingAudio).ToList();
+            if (missingList.Count > 0)
             {
                 Monitor.Log("--- MISSING AUDIO (pattern matched, file missing) ---", LogLevel.Warn);
                 int i = 1;
-                foreach (var f in _v2Fails.Where(f => f.Matched && f.MissingAudio))
+                foreach (var f in missingList)
                 {
                     Monitor.Log($"[{i++}] Speaker   : {f.Speaker}", LogLevel.Info);
                     Monitor.Log($"      Dialogue  : \"{f.Dialogue}\"", LogLevel.Info);
                     Monitor.Log($"      Removables: {(f.Removables.Count > 0 ? string.Join(", ", f.Removables) : "(none)")}", LogLevel.Info);
                     Monitor.Log($"      Stripped  : \"{f.Stripped}\"", LogLevel.Info);
                     Monitor.Log($"      DisplayKey: \"{f.Key}\"", LogLevel.Info);
+                    if (!string.IsNullOrWhiteSpace(f.AudioPath))
+                        Monitor.Log($"      AudioPath : {f.AudioPath}", LogLevel.Info);
                 }
             }
 
             _v2Fails.Clear();
         }
+
 
 
 

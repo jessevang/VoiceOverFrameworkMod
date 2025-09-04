@@ -20,7 +20,7 @@ namespace VoiceOverFrameworkMod
             new(StringComparer.OrdinalIgnoreCase)
             {
                 "Abigail","Alex","Elliott","Emily","Haley","Harvey",
-                "Leah","Maru","Penny","Sam","Sebastian","Shane"
+                "Leah","Maru","Penny","Sam","Sebastian","Shane", "Krobus" //Note Krubus isn't a marrialge but is added so marriage dialgoue for roomate can be pulled
             };
 
         private bool IsMarriableCharacter(string name) =>
@@ -42,7 +42,7 @@ namespace VoiceOverFrameworkMod
             private static readonly Regex RxCmdQuick = new(@"\$y\s+(['""])(?<p>.*?)\1", RegexOptions.Compiled | RegexOptions.Singleline | RegexOptions.IgnoreCase);
             private static readonly Regex RxCmdOther = new(@"#\$(?:action|k|t|v)\b[^#]*", RegexOptions.Compiled | RegexOptions.Singleline | RegexOptions.IgnoreCase);
             private static readonly Regex RxOnceOnlyLine = new(@"^\s*\$1\s+\S+#(?<first>.*?)(?:#\$e#.*)?$", RegexOptions.Compiled | RegexOptions.Singleline);
-            private static readonly Regex PortraitRegex = new(@"\$(?:h|s|u|l|a|\d+)\b", RegexOptions.Compiled);
+            private static readonly Regex PortraitRegex = new(@"\$(?:h|s|u|l|a|\d+)", RegexOptions.Compiled);
             private static readonly Regex RxCmdChancePrefix = new(@"#?\$c\s*[0-9.]+\s*#", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
             // tokens to REMOVE for DisplayPattern (random + player-specific + time/season/etc)
@@ -53,6 +53,7 @@ namespace VoiceOverFrameworkMod
             private static readonly Regex RxAtToken = new(@"@", RegexOptions.Compiled);
             private static readonly Regex RxSquareBracketGrant = new(@"\[[^\]]+\]", RegexOptions.Compiled);
 
+
             public static List<PageSeg> SplitAndSanitize(string raw, bool splitBAsPage = false)
             {
                 if (raw == null) raw = string.Empty;
@@ -62,6 +63,36 @@ namespace VoiceOverFrameworkMod
                 if (weeklyIdx >= 0)
                     raw = raw[..weeklyIdx];
 
+                // --- EXPAND BEFORE ANY SPLITTING ---
+                // Do $c first (random), then $p (prereq), then generic conditional ($d/$query/$p-at-start).
+                if (TrySplitRandomChoice(raw, out var rcA, out var rcB))
+                {
+                    var left = SplitAndSanitize(rcA, splitBAsPage);
+                    var right = SplitAndSanitize(rcB, splitBAsPage);
+                    var merged = new List<PageSeg>(left.Count + right.Count);
+                    int idx = 0; foreach (var p in left) { p.PageIndex = idx++; merged.Add(p); }
+                    foreach (var p in right) { p.PageIndex = idx++; merged.Add(p); }
+                    return merged;
+                }
+                if (TrySplitPrereq(raw, out var rpA, out var rpB))
+                {
+                    var left = SplitAndSanitize(rpA, splitBAsPage);
+                    var right = SplitAndSanitize(rpB, splitBAsPage);
+                    var merged = new List<PageSeg>(left.Count + right.Count);
+                    int idx = 0; foreach (var p in left) { p.PageIndex = idx++; merged.Add(p); }
+                    foreach (var p in right) { p.PageIndex = idx++; merged.Add(p); }
+                    return merged;
+                }
+                if (TrySplitConditionalChoice(raw, out var rdA, out var rdB))
+                {
+                    var left = SplitAndSanitize(rdA, splitBAsPage);
+                    var right = SplitAndSanitize(rdB, splitBAsPage);
+                    var merged = new List<PageSeg>(left.Count + right.Count);
+                    int idx = 0; foreach (var p in left) { p.PageIndex = idx++; merged.Add(p); }
+                    foreach (var p in right) { p.PageIndex = idx++; merged.Add(p); }
+                    return merged;
+                }
+
                 // 1) split on explicit page end
                 var firstLevel = raw.Split(new[] { "#$e#" }, StringSplitOptions.None);
 
@@ -70,18 +101,22 @@ namespace VoiceOverFrameworkMod
                 {
                     string c = chunk ?? "";
 
-                    IEnumerable<string> stage2;
-                    if (splitBAsPage)
-                        stage2 = c.Split(new[] { "#$b#" }, StringSplitOptions.None);
-                    else
-                        stage2 = new[] { c.Replace("#$b#", "\n") };
+                    // split #$b# as page or as newline depending on flag
+                    IEnumerable<string> stage2 = splitBAsPage
+                        ? c.Split(new[] { "#$b#" }, StringSplitOptions.None)
+                        : new[] { c.Replace("#$b#", "\n") };
 
                     foreach (var part in stage2)
                     {
-                        var byNewline = Regex.Split(part ?? "", @"\r?\n");
-                        foreach (var leaf in byNewline)
-                            if (!string.IsNullOrWhiteSpace(leaf))
-                                normalizedPages.Add(leaf);
+                        // Split on a plain '#' that is NOT a command (i.e., not followed by '$')
+                        var pieces = Regex.Split(part ?? "", @"#(?!\$)");
+                        foreach (var piece in pieces)
+                        {
+                            var byNewline = Regex.Split(piece ?? "", @"\r?\n");
+                            foreach (var leaf in byNewline)
+                                if (!string.IsNullOrWhiteSpace(leaf))
+                                    normalizedPages.Add(leaf);
+                        }
                     }
                 }
 
@@ -93,7 +128,7 @@ namespace VoiceOverFrameworkMod
                     string text = normalizedPages[i]?.Trim();
                     if (string.IsNullOrEmpty(text)) continue;
 
-                    // NEW: expand interactive sequences into prompt + NPC follow-ups (same order as the game)
+                    // expand $y and $q/$r into prompt + replies
                     if (TryExpandInteractive(text, out var expanded))
                     {
                         foreach (var body in expanded)
@@ -101,23 +136,7 @@ namespace VoiceOverFrameworkMod
                         continue;
                     }
 
-                    // Top-level random choice: "$c 0.5#A#B"
-                    if (TrySplitRandomChoice(text, out var cA, out var cB))
-                    {
-                        AddPageIfNotEmpty(pages, cA, nextIndex++, null);
-                        AddPageIfNotEmpty(pages, cB, nextIndex++, null);
-                        continue;
-                    }
-
-                    // Conditional choice: "$d FLAG#A|B" or $query/$p
-                    if (TrySplitConditionalChoice(text, out var dA, out var dB))
-                    {
-                        AddPageIfNotEmpty(pages, dA, nextIndex++, null);
-                        AddPageIfNotEmpty(pages, dB, nextIndex++, null);
-                        continue;
-                    }
-
-                    // Caret gender split: "Ugh...^Why?"
+                    // caret gender split
                     if (TryTopLevelCaretGender(text, out var cgMale, out var cgFemale))
                     {
                         AddPageIfNotEmpty(pages, cgMale, nextIndex++, "male");
@@ -131,15 +150,49 @@ namespace VoiceOverFrameworkMod
                         if (!string.IsNullOrEmpty(male)) AddPageIfNotEmpty(pages, male, nextIndex++, "male");
                         if (!string.IsNullOrEmpty(female)) AddPageIfNotEmpty(pages, female, nextIndex++, "female");
                         if (!string.IsNullOrEmpty(nb)) AddPageIfNotEmpty(pages, nb, nextIndex++, "nonbinary");
+                        continue;
                     }
-                    else
-                    {
-                        AddPageIfNotEmpty(pages, text, nextIndex++, null);
-                    }
+
+                    // default
+                    AddPageIfNotEmpty(pages, text, nextIndex++, null);
                 }
 
                 return pages;
             }
+
+            // Expand $p prerequisite anywhere in the string.
+            // Syntax examples:
+            //   "$p 3#A|B"
+            //   "#$p 17|18|Apple#A|B"
+            //   "prefix text#$p 9#A|B"
+            // Only B (no-match) is allowed to contain further commands; we recurse after splitting.
+            private static bool TrySplitPrereq(string text, out string a, out string b)
+            {
+                a = b = null;
+                if (string.IsNullOrWhiteSpace(text))
+                    return false;
+
+                var m = Regex.Match(
+                    text,
+                    @"^\s*(?<pre>.*?)(?:#?\$p\b[^#]*#)(?<a>.+?)\|(?<b>.+)$",
+                    RegexOptions.Singleline | RegexOptions.IgnoreCase
+                );
+
+                if (!m.Success)
+                    return false;
+
+                string pre = m.Groups["pre"].Value;
+                string optA = m.Groups["a"].Value;
+                string optB = m.Groups["b"].Value;
+
+                a = pre + optA;
+                b = pre + optB;
+                return true;
+            }
+
+
+
+
 
             // Expand $y 'prompt_opt1_resp1_opt2_resp2' into: [prompt, resp1, resp2, ...]
             // Expand $q .. # <prompt> # $r .. # <resp1> # $r .. # <resp2> ... into same shape.
@@ -283,34 +336,37 @@ namespace VoiceOverFrameworkMod
                 s = RxCmdQuestion.Replace(s, m => " " + (m.Groups["q"].Value ?? ""));
                 s = RxCmdResponse.Replace(s, "");
 
+                // remove '$c p#' prefix if present (we already expanded $c earlier)
                 s = RxCmdChancePrefix.Replace(s, "");
+
+                // turn plain '#' separators (not commands) into spaces
                 s = Regex.Replace(s, @"\s*#(?!\$)\s*", " ");
 
-                // IMPORTANT: don't render $y here; TryExpandInteractive removed it already
+                // don't render $y here; TryExpandInteractive already handled it
                 s = RxCmdOther.Replace(s, "");
                 s = RxTrailingDollar.Replace(s, "");
 
+                // strip bracketed grant tags like [Happy2]
                 s = RxSquareBracketGrant.Replace(s, "");
 
-                // --- Gameplay-only tokens that should never appear on-screen ---
+                // gameplay-only tokens that should never appear on-screen
                 s = Regex.Replace(s, @"%fork\d*\b", "", RegexOptions.IgnoreCase); // strip %fork*
                 s = Regex.Replace(s, @"%noturn\b", "", RegexOptions.IgnoreCase);  // strip %noturn
                 s = Regex.Replace(s, @"\s*\$k\b", "", RegexOptions.IgnoreCase);   // strip bare $k
 
-                // NEW: strip a dangling "$d <flag>" prefix that some packs accidentally kept
-                //      (covers "$d bus", optional leading '#', optional trailing '#', and trims any trailing space)
-                s = Regex.Replace(s, @"^\s*#?\$d(?:\s+[^\s#]+)?#?\s*", "", RegexOptions.IgnoreCase);
+                // NOTE: no special "$d <flag>" stripping here in the reverted version
 
-                // Remove variable %tokens (name/farm/etc) and '@'
+                // remove variable %tokens (name/farm/etc) and '@'
                 s = RxRemovePercentTokens.Replace(s, "");
                 s = RxAtToken.Replace(s, "");
 
-                // Drop portrait codes and tidy whitespace
+                // drop portrait codes and tidy whitespace
                 s = PortraitRegex.Replace(s, "");
                 s = RxCollapseWS.Replace(s, " ");
                 s = Regex.Replace(s, @"\s{2,}", " ").Trim();
                 return s;
             }
+
 
 
 
@@ -330,26 +386,27 @@ namespace VoiceOverFrameworkMod
                 s = RxCmdQuestion.Replace(s, m => " " + m.Groups["q"].Value);
                 s = RxCmdResponse.Replace(s, "");
 
+                // remove '$c p#' prefix if present (we already expanded $c earlier)
                 s = RxCmdChancePrefix.Replace(s, "");
+
+                // convert plain '#' to spaces
                 s = Regex.Replace(s, @"\s*#(?!\$)\s*", " ");
 
                 // Drop any residual $y payload from this line entirely.
                 s = Regex.Replace(s, @"\s*\$y\b.*$", "", RegexOptions.Singleline | RegexOptions.IgnoreCase);
 
-                // Explicitly remove %fork control code (it's not rendered to the player).
+                // Explicitly remove %fork (not rendered to the player).
                 s = Regex.Replace(s, @"%fork\b", "", RegexOptions.IgnoreCase);
 
-                // ✅ NEW: also strip a dangling "$d <flag>" prefix here (covers "$d bus", with/without '#' and trims space)
-                s = Regex.Replace(s, @"^\s*#?\$d(?:\s+[^\s#]+)?#?\s*", "", RegexOptions.IgnoreCase);
+                // NOTE: no special "$d <flag>" stripping here in the reverted version
 
                 s = RxCmdOther.Replace(s, "");
                 s = RxTrailingDollar.Replace(s, "");
 
-                // NOTE: We intentionally KEEP portrait tokens here (handled elsewhere),
-                // so don't strip PortraitRegex in this method.
-
+                // IMPORTANT: We KEEP portrait tokens here; they’re mapped in SanitizeForActor.
                 return RxCollapseWS.Replace(s, " ").Trim();
             }
+
 
 
 
@@ -380,11 +437,28 @@ namespace VoiceOverFrameworkMod
             // unchanged helpers below …
             private static bool TrySplitRandomChoice(string text, out string a, out string b)
             {
-                var m = Regex.Match(text ?? "", @"^\s*#?\$c\s*[0-9.]+\s*#(.+?)#(.+)$",
-                                    RegexOptions.Singleline | RegexOptions.IgnoreCase);
-                if (m.Success) { a = m.Groups[1].Value; b = m.Groups[2].Value; return true; }
-                a = b = null; return false;
+                a = b = null;
+                if (string.IsNullOrWhiteSpace(text))
+                    return false;
+
+                var m = Regex.Match(
+                    text,
+                    @"^\s*(?<pre>.*?)(?:#?\$c\s*[0-9.]+\s*#)(?<a>.+?)#(?<b>.+)$",
+                    RegexOptions.Singleline | RegexOptions.IgnoreCase
+                );
+
+                if (!m.Success)
+                    return false;
+
+                string pre = m.Groups["pre"].Value;
+                string optA = m.Groups["a"].Value;
+                string optB = m.Groups["b"].Value;
+
+                a = pre + optA;
+                b = pre + optB;
+                return true;
             }
+
 
             private static bool TrySplitConditionalChoice(string text, out string a, out string b) =>
                 Regex.Match(text ?? "", @"^\s*#?\$(?:d|query|p)\b[^#]*#(.+?)\|(.+)$", RegexOptions.Singleline | RegexOptions.IgnoreCase) is Match m && m.Success

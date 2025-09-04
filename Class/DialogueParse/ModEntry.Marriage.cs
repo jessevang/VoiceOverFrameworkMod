@@ -61,7 +61,7 @@ namespace VoiceOverFrameworkMod
 
             return outList;
         }
-
+        
         private static readonly string[] SpouseNames = new[]
         {
             "Abigail","Alex","Elliott","Emily","Haley","Harvey","Leah",
