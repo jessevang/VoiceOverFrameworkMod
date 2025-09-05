@@ -265,6 +265,9 @@ namespace VoiceOverFrameworkMod
                 return;
             }
 
+           
+            charactersToProcess = charactersToProcess.Where(n => !ShouldSkipCharacterForTemplates(n)).Distinct(StringComparer.OrdinalIgnoreCase).ToList();
+
             if (!charactersToProcess.Any() || charactersToProcess.Any(string.IsNullOrWhiteSpace))
             {
                 this.Monitor.Log("[create_template] No valid characters specified or found to process.", LogLevel.Error);
@@ -341,6 +344,11 @@ namespace VoiceOverFrameworkMod
 
         private bool GenerateSingleTemplate(string characterName, string languageCode, string outputBaseDir, string voicePackId, string voicePackName, int startAtThisNumber, string desiredExtension)
         {
+            if (ShouldSkipCharacterForTemplates(characterName))
+            {
+                this.Monitor.Log($"Skipping '{characterName}': placeholder/invalid for template generation.", LogLevel.Info);
+                return false;
+            }
 
             if (this.Helper == null || this.Monitor == null || this.Config == null)
             {
@@ -413,11 +421,19 @@ namespace VoiceOverFrameworkMod
                     VoicePacks = { characterManifest }
                 };
 
-                string sanitizedCharName = this.SanitizeKeyForFileName(characterName) ?? characterName.Replace(" ", "_");
-                string filename = $"{sanitizedCharName}_{languageCode}.json";
-                string outputPath = PathUtilities.NormalizePath(Path.Combine(outputBaseDir, filename));  //Original
+                var sanitizedCharName = this.SanitizeKeyForFileName(characterName);
+                if (string.IsNullOrWhiteSpace(sanitizedCharName)
+                    || sanitizedCharName.Equals("sanitized_key", StringComparison.OrdinalIgnoreCase)
+                    || sanitizedCharName.Equals("invalid_or_empty_key", StringComparison.OrdinalIgnoreCase))
+                {
+                    this.Monitor.Log($"Skipping save for '{characterName}': invalid/unsafe filename after sanitization.", LogLevel.Warn);
+                    return false;
+                }
 
-                
+                string filename = $"{sanitizedCharName}_{languageCode}.json";
+                string outputPath = PathUtilities.NormalizePath(Path.Combine(outputBaseDir, filename));
+
+
 
 
                 if (this.Config.developerModeOn)

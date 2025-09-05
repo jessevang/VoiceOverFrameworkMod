@@ -15,6 +15,22 @@ namespace VoiceOverFrameworkMod
             // Add others if supported/needed
         };
 
+        private static readonly HashSet<string> DisallowedCharacterNames = new(StringComparer.OrdinalIgnoreCase) { "???", };
+        private bool ShouldSkipCharacterForTemplates(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+                return true;
+
+            if (DisallowedCharacterNames.Contains(name.Trim()))
+                return true;
+
+            // if the sanitized name is unusable, skip
+            var s = SanitizeKeyForFileName(name);
+            return string.IsNullOrWhiteSpace(s)
+                   || s.Equals("sanitized_key", StringComparison.OrdinalIgnoreCase)
+                   || s.Equals("invalid_or_empty_key", StringComparison.OrdinalIgnoreCase);
+        }
+
         // Fetches dialogue keys/text pairs from Strings/Characters asset for a specific character/language
         private Dictionary<string, string> GetVanillaCharacterStringKeys(string characterName, string languageCode, IGameContentHelper gameContent)
         {

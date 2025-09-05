@@ -38,8 +38,8 @@ namespace VoiceOverFrameworkMod
             }
             catch (ContentLoadException)
             {
-                if (Config.developerModeOn)
-                    Monitor.Log($"[BUBBLES] No SpeechBubbles asset for '{languageCode}' at {asset}.", LogLevel.Trace);
+                //if (Config.developerModeOn)
+                    //Monitor.Log($"[BUBBLES] No SpeechBubbles asset for '{languageCode}' at {asset}.", LogLevel.Trace);
             }
 
             if (sheet == null || sheet.Count == 0)
