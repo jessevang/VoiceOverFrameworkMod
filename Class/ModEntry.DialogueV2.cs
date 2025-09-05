@@ -15,12 +15,39 @@ namespace VoiceOverFrameworkMod
 {
     public partial class ModEntry : Mod
     {
+
+
+        //Replaces %noun (random noun) with the word Dragon
         public static class ForceDragonNoun
         {
-            public static readonly string[] Value = new[] { "Dragon" };
+
+            public static readonly string[] Value = new[] { Game1.content.LoadString("Strings\\StringsFromCSFiles:Dialogue.cs.699") }; //Dragon
             public static void Apply() => StardewValley.Dialogue.nouns = Value;
         }
 
+        //Replaces %adj (random adjective) with the world Purple
+        public static class ForceAdjective
+        {
+            public static readonly string[] Value = new[] { Game1.content.LoadString("Strings\\StringsFromCSFiles:Dialogue.cs.679") };  //Purple
+            public static void Apply() => StardewValley.Dialogue.adjectives = Value;
+        }
+
+        //Replaces %place (random place) with the world "Castle Village"
+        public static class ForcePlace  //"Castle Village"
+        {
+            public static readonly string[] Value = new[] { Game1.content.LoadString("Strings\\StringsFromCSFiles:Dialogue.cs.748") };
+            public static void Apply() => StardewValley.Dialogue.places = Value;
+        }
+
+
+        private void CheckForLineV2()
+        {
+            bool isEvent = Game1.currentLocation?.currentEvent != null;
+            if (isEvent)
+                CheckForEventV2();
+            else
+                CheckForDialogueV2();
+        }
         private void CheckForDialogueV2()
         {
             const bool ENABLE_FUZZY = true;
@@ -117,7 +144,9 @@ namespace VoiceOverFrameworkMod
             AugmentWithDetectedLegacyTokens(currentDisplayedString, cap);
 
             var removable = DialogueSanitizerV2.GetRemovableWords(cap).ToList();
-            string strippedForMatch = DialogueSanitizerV2.StripChosenWords(currentDisplayedString ?? "", cap);
+            string strippedForMatch = DialogueSanitizerV2.StripForDialogue(currentDisplayedString, cap);
+
+
             string patternKey = CanonDisplay(strippedForMatch);
 
             // ── 1) Exact match
@@ -291,6 +320,199 @@ namespace VoiceOverFrameworkMod
             }
 
             _lastPlayedLookupKey = finalLookupKey; // debounce
+        }
+
+
+        private void CheckForEventV2()
+        {
+            const bool ENABLE_FUZZY = true;
+            const double FUZZY_THRESHOLD = 0.86; // looser than dialogue
+            const int MIN_LEN_FOR_FUZZY = 12;
+
+            if (Game1.currentLocation == null || Game1.player == null)
+            {
+                if (lastDialogueText != null) ResetDialogueState();
+                _v2_eventSerialBySpeaker.Clear(); _v2_lastEventBase = null; _v2_lastEventPageFingerprint = null;
+                return;
+            }
+
+            bool isDialogueBoxVisible = Game1.activeClickableMenu is DialogueBox;
+            NPC currentSpeaker = Game1.currentSpeaker;
+
+            if (!isDialogueBoxVisible)
+            {
+                if (wasDialogueUpLastTick)
+                {
+                    _dialogueNotVisibleTicks++;
+                    if (_dialogueNotVisibleTicks >= DialogueCloseDebounceTicks)
+                    {
+                        ResetDialogueState();
+                        _dialogueNotVisibleTicks = 0;
+                        _v2_eventSerialBySpeaker.Clear(); _v2_lastEventBase = null; _v2_lastEventPageFingerprint = null;
+                    }
+                }
+                return;
+            }
+            else
+            {
+                _dialogueNotVisibleTicks = 0;
+            }
+
+            var dialogueBox = Game1.activeClickableMenu as DialogueBox;
+            string currentDisplayedString = dialogueBox?.getCurrentString();
+            if (string.IsNullOrWhiteSpace(currentDisplayedString))
+                return;
+
+            if (currentDisplayedString == lastDialogueText)
+                _sameLineStableTicks++;
+            else
+            {
+                lastDialogueText = currentDisplayedString;
+                lastSpeakerName = currentSpeaker?.Name;
+                wasDialogueUpLastTick = true;
+                _sameLineStableTicks = 0;
+                _lastPlayedLookupKey = null;
+            }
+
+            if (_sameLineStableTicks < Config.TextStabilizeTicks)
+                return;
+
+            // Option: skip non-speak (no speaker) to avoid false unmatcheds
+            if (currentSpeaker == null)
+            {
+                // If you want Narrator support later, branch here instead of returning.
+                return;
+            }
+
+            // Event-side normalization: turn the visible farmer name back into '@' BEFORE stripping
+            string displayForMatch = currentDisplayedString ?? string.Empty;
+            var farmerName = Utility.FilterUserName(Game1.player?.Name) ?? string.Empty;
+            if (!string.IsNullOrEmpty(farmerName))
+                displayForMatch = displayForMatch.Replace(farmerName, "@");
+
+            var dialogueBox2 = Game1.activeClickableMenu as DialogueBox;
+            var d = dialogueBox2?.characterDialogue;
+            int pageZero = Math.Max(0, (d?.currentDialogueIndex ?? 0));
+            var cap = TokenCaptureStore.Get(d, pageZero, create: true);
+
+            // Make sure farmer name is always added as a fixed token for events
+            if (!string.IsNullOrEmpty(farmerName))
+                cap?.AddFixed(farmerName);
+
+            AugmentWithDetectedLegacyTokens(currentDisplayedString, cap);
+
+            var removable = DialogueSanitizerV2.GetRemovableWords(cap).ToList();
+            string strippedForMatch = DialogueSanitizerV2.StripForEvent(displayForMatch, cap);
+            string patternKey = CanonDisplay(strippedForMatch);
+
+            if (string.IsNullOrWhiteSpace(patternKey))
+                return;
+            if (string.Equals(patternKey, _lastPlayedLookupKey, StringComparison.Ordinal))
+                return;
+
+            VoicePack selectedPack = null;
+            if (currentSpeaker != null)
+            {
+                selectedPack = GetSelectedVoicePack(currentSpeaker.Name);
+                if (selectedPack == null || selectedPack.FormatMajor < 2)
+                {
+                    _lastPlayedLookupKey = patternKey;
+                    return;
+                }
+            }
+
+            // 1) Exact
+            if (selectedPack.Entries != null &&
+                selectedPack.Entries.TryGetValue(patternKey, out var relAudioFromPattern) &&
+                !string.IsNullOrWhiteSpace(relAudioFromPattern))
+            {
+                var fullPatternPath = PathUtilities.NormalizePath(System.IO.Path.Combine(selectedPack.BaseAssetPath, relAudioFromPattern));
+                if (System.IO.File.Exists(fullPatternPath))
+                    PlayVoiceFromFile(fullPatternPath);
+
+                _lastPlayedLookupKey = patternKey;
+                return;
+            }
+
+            // 2) Full-page fallback (same as dialogue)
+            if (selectedPack != null && selectedPack.FormatMajor >= 2 && selectedPack.Entries != null)
+            {
+                string rawPage = (d != null && pageZero < (d.dialogues?.Count ?? 0)) ? d.dialogues[pageZero].Text : null;
+                if (!string.IsNullOrWhiteSpace(rawPage))
+                {
+                    var segs = DialogueUtil.SplitAndSanitize(rawPage, splitBAsPage: false);
+                    if (segs != null && segs.Count > 0)
+                    {
+                        string fullDisplay = segs[0].Display ?? string.Empty;
+                        // normalize farmer name here too
+                        if (!string.IsNullOrEmpty(farmerName))
+                            fullDisplay = fullDisplay.Replace(farmerName, "@");
+
+                        string strippedFull = DialogueSanitizerV2.StripForEvent(fullDisplay, cap);
+                        string patternKeyFull = CanonDisplay(strippedFull);
+
+                        if (selectedPack.Entries.TryGetValue(patternKeyFull, out var relAudioFull) &&
+                            !string.IsNullOrWhiteSpace(relAudioFull))
+                        {
+                            var fullPath = PathUtilities.NormalizePath(System.IO.Path.Combine(selectedPack.BaseAssetPath, relAudioFull));
+                            if (System.IO.File.Exists(fullPath))
+                                PlayVoiceFromFile(fullPath);
+
+                            _lastPlayedLookupKey = patternKey;
+                            return;
+                        }
+                    }
+                }
+            }
+
+            // 3) Fuzzy (looser)
+            if (ENABLE_FUZZY && selectedPack?.Entries != null)
+            {
+                string liveKey = strippedForMatch;
+                if ((liveKey?.Length ?? 0) >= MIN_LEN_FOR_FUZZY)
+                {
+                    string bestKey = null, bestRelPath = null;
+                    double bestScore = 0.0;
+
+                    foreach (var kvp in selectedPack.Entries)
+                    {
+                        var score = SimilarityRatio(liveKey, kvp.Key);
+                        if (score > bestScore)
+                        {
+                            bestScore = score;
+                            bestKey = kvp.Key;
+                            bestRelPath = kvp.Value;
+                        }
+                    }
+
+                    if (!string.IsNullOrWhiteSpace(bestRelPath) && bestScore >= FUZZY_THRESHOLD)
+                    {
+                        var fullPath = PathUtilities.NormalizePath(System.IO.Path.Combine(selectedPack.BaseAssetPath, bestRelPath));
+                        if (System.IO.File.Exists(fullPath))
+                            PlayVoiceFromFile(fullPath);
+
+                        _lastPlayedLookupKey = patternKey;
+                        return;
+                    }
+                }
+            }
+
+            // 4) Unmatched (events)
+            if (_collectV2Failures)
+            {
+                V2AddFailure(
+                    currentSpeaker?.Name,
+                    currentDisplayedString,
+                    removable,
+                    patternKey,
+                    patternKey,
+                    matched: false,
+                    missingAudio: false,
+                    fuzzyAttempted: true
+                );
+            }
+
+            _lastPlayedLookupKey = patternKey;
         }
 
 
@@ -734,6 +956,99 @@ namespace VoiceOverFrameworkMod
 
             return removable;
         }
+        public static string StripForDialogue(string displayed, Capture cap)
+        {
+            // Dialogue already goes through normal token replacement; no @ normalization needed.
+            return StripChosenWordsCore(displayed ?? string.Empty, cap);
+        }
+
+        public static string StripForEvent(string displayed, Capture cap)
+        {
+            // Events often show the *visible* farmer name; normalize it back to '@' before stripping.
+            string s = displayed ?? string.Empty;
+            var farmerName = Utility.FilterUserName(Game1.player?.Name) ?? string.Empty;
+            if (!string.IsNullOrWhiteSpace(farmerName))
+                s = s.Replace(farmerName, "@");
+
+            return StripChosenWordsCore(s, cap);
+        }
+
+
+        private static string StripChosenWordsCore(string displayed, Capture cap)
+        {
+            if (string.IsNullOrWhiteSpace(displayed))
+                return string.Empty;
+
+            var removable = GetRemovableWords(cap).ToList();
+            if (removable.Count == 0)
+                return Normalize(displayed);
+
+            var fixedSet = new HashSet<string>(cap?.FixedTokenWords ?? Enumerable.Empty<string>(), StringComparer.OrdinalIgnoreCase);
+
+            var fixedTokensRaw = removable.Where(w => fixedSet.Contains(w)).Distinct(StringComparer.OrdinalIgnoreCase).ToList();
+            var poolTokensRaw = removable.Where(w => !fixedSet.Contains(w)).Distinct(StringComparer.OrdinalIgnoreCase).ToList();
+
+            string s = displayed;
+
+            // %farm special-case retained
+            if (cap?.HasFarm == true && fixedTokensRaw.Count > 0)
+            {
+                string farmWord = null;
+                foreach (var tok in fixedTokensRaw)
+                {
+                    if (string.IsNullOrWhiteSpace(tok)) continue;
+                    var rx = new Regex($@"(?<!\S){Regex.Escape(tok)}(?=\s+Farm\b)", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
+                    if (rx.IsMatch(s))
+                    {
+                        farmWord = tok;
+                        s = rx.Replace(s, "");
+                        break;
+                    }
+                }
+                if (!string.IsNullOrWhiteSpace(farmWord))
+                {
+                    fixedTokensRaw.RemoveAll(t => t.Equals(farmWord, StringComparison.OrdinalIgnoreCase));
+                    poolTokensRaw.RemoveAll(t => t.Equals(farmWord, StringComparison.OrdinalIgnoreCase));
+                }
+            }
+
+            // >>> Strong fixed-token removal: sort by length + relaxed left boundary
+            if (fixedTokensRaw.Count > 0)
+            {
+                fixedTokensRaw = fixedTokensRaw.OrderByDescending(t => t?.Length ?? 0).ToList();
+
+                var fixedPattern =
+                    $@"(?ix)
+            (?: ^ | (?<![\p{{L}}\p{{M}}\p{{Nd}}]) )
+            (?: {string.Join("|", fixedTokensRaw.Select(Regex.Escape))} )
+            (?!-) \b
+            ";
+
+                s = Regex.Replace(
+                    s,
+                    fixedPattern,
+                    " ",
+                    RegexOptions.IgnoreCase | RegexOptions.CultureInvariant | RegexOptions.IgnorePatternWhitespace
+                );
+            }
+
+            if (poolTokensRaw.Count > 0)
+            {
+                var poolPattern = $@"\b(?:{string.Join("|", poolTokensRaw.Select(Regex.Escape))})(?!-)\b";
+                s = Regex.Replace(s, poolPattern, "", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
+            }
+
+            s = Regex.Replace(
+                s,
+                @"%(?:adj|noun|place|name|spouse|firstnameletter|farm|favorite|kid1|kid2|pet|band|book|season|time)\b",
+                "",
+                RegexOptions.IgnoreCase | RegexOptions.CultureInvariant
+            );
+
+            s = Regex.Replace(s, @"[ ]{2,}", " ");
+            s = Regex.Replace(s, @"\s{2,}", " ");
+            return s.Trim();
+        }
 
         public static string StripChosenWords(string displayed, Capture cap)
         {
@@ -757,7 +1072,7 @@ namespace VoiceOverFrameworkMod
                                           .ToList();
 
             string s = displayed;
-
+            
             // --- SPECIAL CASE: %farm ---
             // If this page had %farm, only strip the farm name when it occurs right before " Farm".
             // This preserves legitimate uses of the same word elsewhere (e.g., "really great").
@@ -787,17 +1102,21 @@ namespace VoiceOverFrameworkMod
                 }
             }
 
-            // Proceed with normal removal:
-            // - fixedTokensRaw: things we *know* were concrete replacements (names, etc.)
-            // - poolTokensRaw: adjectives/places captured opportunistically
+
+
             if (fixedTokensRaw.Count > 0)
             {
-                // Guard against stripping parts of hyphenated words (e.g., "baby-mint")
+
+                fixedTokensRaw = fixedTokensRaw
+                    .OrderByDescending(t => t?.Length ?? 0)
+                    .ToList();
+
                 var fixedPattern =
-                    $@"(?ix)
-               (?: ^ | (?<=\s) )
-               (?: {string.Join("|", fixedTokensRaw.Select(Regex.Escape))} )(?!-) \b
-             ";
+                            $@"(?ix)
+                (?: ^ | (?<![\p{{L}}\p{{M}}\p{{Nd}}]) )
+                (?: {string.Join("|", fixedTokensRaw.Select(Regex.Escape))} )
+                (?!-) \b
+                ";
 
                 s = Regex.Replace(
                     s,

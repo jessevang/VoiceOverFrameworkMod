@@ -200,6 +200,7 @@ namespace VoiceOverFrameworkMod
 
             LoadVoicePacks();
 
+
             ApplyHarmonyPatches();
 
 

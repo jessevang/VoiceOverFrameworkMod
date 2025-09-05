@@ -31,7 +31,7 @@ namespace VoiceOverFrameworkMod
         // --- Dialogue debounce / replay guards ---
         private int _dialogueNotVisibleTicks = 0;   
         private int _sameLineStableTicks = 0; 
-        private string _lastPlayedLookupKey = null;
+        private string _lastPlayedLookupKey = null; // last key actually played for this page
 
         // --- V2 event serial state (per-event, per-speaker, increments once per displayed page) ---
         private string _v2_lastEventBase = null;
@@ -46,14 +46,21 @@ namespace VoiceOverFrameworkMod
             => (pack?.FormatMajor ?? 1) >= 2 ? SanitizeDialogueTextV2(raw) : SanitizeDialogueText(raw);
 
 
+
+
+
+
+
         // Main dialogue check loop called every tick (or less often if adjusted).
         private void OnUpdateTicked(object sender, UpdateTickedEventArgs e)
         {
             if (e.IsMultipleOf(2))
                 CleanupStoppedVoiceInstances();
 
+            bool eventActive = Game1.currentLocation?.currentEvent != null;
+
             var dlgBox = Game1.activeClickableMenu as DialogueBox;
-            var speakerName = dlgBox?.characterDialogue?.speaker?.Name ?? Game1.currentSpeaker?.Name;
+            string speakerName = dlgBox?.characterDialogue?.speaker?.Name ?? Game1.currentSpeaker?.Name;
 
             VoicePack pack = null;
             if (!string.IsNullOrEmpty(speakerName))
@@ -61,22 +68,30 @@ namespace VoiceOverFrameworkMod
 
             bool logThisTick = Config.developerModeOn && e.IsMultipleOf(15);
             if (logThisTick)
-                Monitor.Log($"[Tick] Speaker={speakerName ?? "null"} Pack={(pack?.VoicePackName ?? "null")} FormatMajor={(pack?.FormatMajor ?? -1)}", LogLevel.Trace);
+                Monitor.Log($"[Tick] EventActive={(eventActive ? "Y" : "N")} Speaker={speakerName ?? "null"} Pack={(pack?.VoicePackName ?? "null")} FormatMajor={(pack?.FormatMajor ?? -1)}", LogLevel.Trace);
 
-            if (pack != null && pack.FormatMajor >= 2)
+            if (eventActive)
             {
-                if (logThisTick) Monitor.Log("[Tick] Using V2 pipeline", LogLevel.Trace);
-                CheckForDialogueV2();
+                if (logThisTick) Monitor.Log("[Tick] Using V2 *event* pipeline", LogLevel.Trace);
+                CheckForEventV2();           // <- your new event-specific parser
+            }
+            else if (pack != null && pack.FormatMajor >= 2)
+            {
+                if (logThisTick) Monitor.Log("[Tick] Using V2 *dialogue* pipeline", LogLevel.Trace);
+                CheckForDialogueV2();        // <- your existing dialogue V2 parser
             }
             else
             {
                 if (logThisTick) Monitor.Log("[Tick] Using V1 pipeline", LogLevel.Trace);
-                CheckForDialogue();
+                CheckForDialogue();          // <- legacy pipeline
             }
 
-            // Always check bubbles after dialogue handling
+            // Bubbles after line handling
             CheckForSpeechBubblesLevel1();
         }
+
+
+
 
 
 

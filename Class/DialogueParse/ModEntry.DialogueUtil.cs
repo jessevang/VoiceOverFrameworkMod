@@ -108,7 +108,7 @@ namespace VoiceOverFrameworkMod
                     return merged;
                 }
 
-                // $p prereq A|B  (B may contain further commands; recursion handles them)
+                // $p prereq A|B  (B may contain further commands; we recurse after splitting).
                 if (TrySplitPrereq(raw, out var rpA, out var rpB))
                 {
                     var left = SplitAndSanitize(rpA, splitBAsPage);
@@ -146,8 +146,22 @@ namespace VoiceOverFrameworkMod
 
                     foreach (var part in stage2)
                     {
-                        // Split on a plain '#' that is NOT a command (i.e., not followed by '$')
-                        var pieces = Regex.Split(part ?? "", @"#(?!\$)");
+                        string p = part ?? "";
+
+                        // >>> IMPORTANT FIX <<< 
+                        // If this chunk contains interactive tokens, DON'T split on bare '#'
+                        // yet — we need TryExpandInteractive to see the full $q/$r/$y structure.
+                        if (p.IndexOf("$q", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                            p.IndexOf("$r", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                            p.IndexOf("$y", StringComparison.OrdinalIgnoreCase) >= 0)
+                        {
+                            if (!string.IsNullOrWhiteSpace(p))
+                                normalizedPages.Add(p.Trim());
+                            continue;
+                        }
+
+                        // Otherwise, split on a plain '#' that is NOT a command (i.e., not followed by '$')
+                        var pieces = Regex.Split(p, @"#(?!\$)");
                         foreach (var piece in pieces)
                         {
                             var byNewline = Regex.Split(piece ?? "", @"\r?\n");
@@ -198,6 +212,7 @@ namespace VoiceOverFrameworkMod
 
                 return pages;
             }
+
 
 
             // Expand $p prerequisite anywhere in the string.

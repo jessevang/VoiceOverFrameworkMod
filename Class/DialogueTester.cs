@@ -1007,7 +1007,7 @@ namespace VoiceOverFrameworkMod
 
                         foreach (var line in lines)
                         {
-                            var npc = Game1.getCharacterFromName(line.SpeakerName, true) ?? DefaultSpeaker();
+                            var npc = Game1.getCharacterFromName(line.SpeakerName);
                             if (npc == null) continue;
 
                             if (line.IsBubble)
@@ -1041,7 +1041,7 @@ namespace VoiceOverFrameworkMod
 
                         foreach (var line in lines)
                         {
-                            var npc = Game1.getCharacterFromName(line.SpeakerName, true) ?? DefaultSpeaker();
+                            var npc = Game1.getCharacterFromName(line.SpeakerName);
                             if (npc == null) continue;
 
                             if (line.IsBubble)
@@ -1128,17 +1128,20 @@ namespace VoiceOverFrameworkMod
             }
 
             var line = lines[index];
-            var npc = Game1.getCharacterFromName(line.SpeakerName, true) ?? DefaultSpeaker();
-            if (npc == null)
-            {
-                this.Monitor.Log($"Speaker '{line.SpeakerName}' not found.", LogLevel.Warn);
-                return;
-            }
+            var npc = ResolveNpcForSpeaker(line.SpeakerName);
 
-            if (line.IsBubble)
-                EmitBubbleWithVOF(npc, line.Text);
+            if (npc != null)
+            {
+                if (line.IsBubble)
+                    EmitBubbleWithVOF(npc, line.Text);
+                else
+                    EmitPortraitDialogue(npc, line.Text);
+            }
             else
-                EmitPortraitDialogue(npc, line.Text);
+            {
+         
+                Game1.drawObjectDialogue(line.Text);
+            }
 
             this.Monitor.Log($"Played [{(line.IsBubble ? "bubble" : "speak")}] {line.SpeakerName}: \"{Trunc(line.Text, 70)}\"", LogLevel.Info);
         }
@@ -1237,6 +1240,50 @@ namespace VoiceOverFrameworkMod
             catch (Exception ex)
             {
                 this.Monitor.Log($"EmitBubbleWithVOF failed: {ex}", LogLevel.Trace);
+            }
+        }
+
+
+        private NPC ResolveNpcForSpeaker(string speakerName)
+        {
+            if (string.IsNullOrWhiteSpace(speakerName)) return null;
+            var name = speakerName.Trim();
+            if (name.Equals("MrQi", StringComparison.OrdinalIgnoreCase) || name.Equals("Qi", StringComparison.OrdinalIgnoreCase))
+                name = "Qi";
+            try { return Game1.getCharacterFromName(name, true); } catch { return null; }
+        }
+
+
+
+        private void PlayEventLineSafely(dynamic entry)
+        {
+
+            string speakerName = entry.Speaker as string;
+            string translationKey = entry.TranslationKey as string ?? "Strings\\Characters:FallbackDialogueForError";
+            string text = entry.RawText as string ?? "";
+
+            try
+            {
+                var npc = ResolveNpcForSpeaker(speakerName);
+
+                if (npc != null)
+                {
+                    // Correct constructor order: (NPC speaker, string translationKey, string dialogueText)
+                    var dlg = new Dialogue(npc, translationKey, text);
+                    npc.setNewDialogue(dlg);
+                    Game1.drawDialogue(npc);
+                }
+                else
+                {
+                    // No instantiated NPC? Still show the text so audio + vof summary flow continues.
+                    Game1.drawObjectDialogue(text);
+                }
+            }
+            catch (Exception ex)
+            {
+                this.Monitor.Log($"[EVENT TEST] Failed to play line for speaker '{speakerName}' (key: {translationKey}). {ex}", LogLevel.Warn);
+              
+                try { Game1.drawObjectDialogue(text); } catch {  }
             }
         }
 
