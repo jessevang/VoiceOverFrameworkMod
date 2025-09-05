@@ -326,8 +326,8 @@ namespace VoiceOverFrameworkMod
         private void CheckForEventV2()
         {
             const bool ENABLE_FUZZY = true;
-            const double FUZZY_THRESHOLD = 0.86; // looser than dialogue
-            const int MIN_LEN_FOR_FUZZY = 12;
+            const double FUZZY_THRESHOLD = 0.80; // looser than dialogue
+            const int MIN_LEN_FOR_FUZZY = 6;
 
             if (Game1.currentLocation == null || Game1.player == null)
             {

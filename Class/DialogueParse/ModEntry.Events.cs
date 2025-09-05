@@ -66,21 +66,15 @@ namespace VoiceOverFrameworkMod
         private IEnumerable<VoiceEntryTemplate> BuildFromEvents(string characterName, string languageCode, IGameContentHelper content, ref int entryNumber, string ext)
         {
             var outList = new List<VoiceEntryTemplate>();
-            int totalFound = 0;
-
             int en = entryNumber;
 
-            // Event command regexes
             var speakCommandRegex = new Regex(@"^speak\s+(\w+)\s+""([^""]*)""", RegexOptions.Compiled | RegexOptions.IgnoreCase);
             var namedQuoteRegex = new Regex(@"(?:textAboveHead|drawDialogue|message|showText)\s+(\w*)\s*""([^""]+)""", RegexOptions.IgnoreCase | RegexOptions.Compiled);
             var genericQuoteRegex = new Regex(@"""([^""]{4,})""", RegexOptions.Compiled);
             var quickQuestionPrefixRx = new Regex(@"^\s*quickQuestion\b", RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
-            foreach (var location in Game1.locations)
+            foreach (var (mapName, eventData) in EnumerateEventSources())
             {
-                if (!TryGetLocationEvents(location, out string assetName, out Dictionary<string, string> eventData))
-                    continue;
-
                 foreach (var (eventIdRaw, eventScript) in eventData)
                 {
                     if (string.IsNullOrWhiteSpace(eventScript))
@@ -88,32 +82,27 @@ namespace VoiceOverFrameworkMod
 
                     string[] commands = eventScript.Split('/');
                     string lastSpeaker = null;
-
-                    // We emit :sN per *spoken page* for the target NPC
                     int speakSerialForTarget = -1;
 
-                    // Local helper to emit one quoted text (already attributed to the right speaker by the caller)
-                    void EmitFromOneEventText(string rawText, string mapName, string evIdRawLocal, string lang, string charName)
+                    void EmitFromOneEventText(string rawText, string evIdRawLocal)
                     {
                         if (string.IsNullOrWhiteSpace(rawText))
                             return;
 
-                        // IMPORTANT: For events, split '#$b#' into SEPARATE PAGES
+                        // split $b as pages for events
                         var segs = DialogueUtil.SplitAndSanitize(rawText, splitBAsPage: true);
-
                         string cleanId = CleanEventId(evIdRawLocal);
 
                         foreach (var seg in segs)
                         {
                             speakSerialForTarget++;
-
                             string tk = BuildEventsTranslationKey(mapName, cleanId, speakSerialForTarget);
 
                             string fileName = string.IsNullOrEmpty(seg.Gender)
                                 ? $"{en}.{ext}"
                                 : $"{en}_{seg.Gender}.{ext}";
 
-                            string audioPath = Path.Combine("assets", lang, charName, fileName).Replace('\\', '/');
+                            string audioPath = Path.Combine("assets", languageCode, characterName, fileName).Replace('\\', '/');
 
                             outList.Add(new VoiceEntryTemplate
                             {
@@ -127,39 +116,26 @@ namespace VoiceOverFrameworkMod
                             });
 
                             en++;
-                            totalFound++;
                         }
                     }
 
-                    // Process a single event command or a list of subcommands (normalized to '/')
-                    void ProcessOneCommand(string cmd, string mapName)
+                    void ProcessOneCommand(string cmd)
                     {
                         string command = (cmd ?? "").Trim();
-                        if (command.Length == 0)
-                            return;
+                        if (command.Length == 0) return;
 
-                        // ---- Case 0: quickQuestion … (break) … ----
-                        // Branch bodies are inside the *same* command and use backslashes to separate inner commands.
                         if (quickQuestionPrefixRx.IsMatch(command) && command.IndexOf("(break)", StringComparison.OrdinalIgnoreCase) >= 0)
                         {
-                            // pieces[0] is the choices (e.g., "#A#B"), following pieces are per-branch command lists
                             var pieces = command.Split(new[] { "(break)" }, StringSplitOptions.None);
-
                             for (int i = 1; i < pieces.Length; i++)
                             {
-                                // Normalize inner branch commands: the JSON uses '\' between them, convert to '/'
                                 string normalized = pieces[i].Replace('\\', '/');
-
                                 foreach (var sub in normalized.Split('/'))
-                                {
-                                    // recurse the same single-command logic on subcommands
-                                    ProcessOneCommand(sub, mapName);
-                                }
+                                    ProcessOneCommand(sub);
                             }
                             return;
                         }
 
-                        // ---- Case 1: speak <NPC> "..." -------------------------------------------
                         var speakMatch = speakCommandRegex.Match(command);
                         if (speakMatch.Success)
                         {
@@ -168,11 +144,10 @@ namespace VoiceOverFrameworkMod
                             lastSpeaker = speaker;
 
                             if (IsCharacterMatch_Event(speaker, characterName))
-                                EmitFromOneEventText(dialogueText, location.NameOrUniqueName, eventIdRaw, languageCode, characterName);
+                                EmitFromOneEventText(dialogueText, eventIdRaw);
                             return;
                         }
 
-                        // ---- Case 2: drawDialogue/message/showText "..." ------------------------
                         var namedMatch = namedQuoteRegex.Match(command);
                         if (namedMatch.Success)
                         {
@@ -183,11 +158,10 @@ namespace VoiceOverFrameworkMod
                                 lastSpeaker = possibleSpeaker;
 
                             if (IsCharacterMatch_Event(lastSpeaker, characterName))
-                                EmitFromOneEventText(dialogueText, location.NameOrUniqueName, eventIdRaw, languageCode, characterName);
+                                EmitFromOneEventText(dialogueText, eventIdRaw);
                             return;
                         }
 
-                        // ---- Case 3: generic quoted text under lastSpeaker ----------------------
                         if (!string.IsNullOrEmpty(lastSpeaker) && IsCharacterMatch_Event(lastSpeaker, characterName))
                         {
                             var genericMatches = genericQuoteRegex.Matches(command);
@@ -195,21 +169,55 @@ namespace VoiceOverFrameworkMod
                             {
                                 string chunk = gm.Groups[1].Value.Trim();
                                 if (chunk.Length > 3)
-                                    EmitFromOneEventText(chunk, location.NameOrUniqueName, eventIdRaw, languageCode, characterName);
+                                    EmitFromOneEventText(chunk, eventIdRaw);
                             }
                         }
                     }
 
-                    // Main pass across the event’s '/'-separated commands
                     foreach (string raw in commands)
-                        ProcessOneCommand(raw, location.NameOrUniqueName);
+                        ProcessOneCommand(raw);
                 }
             }
 
-            // write back the incremented local counter to the ref parameter
             entryNumber = en;
-
             return outList;
         }
+
+
+
+
+
+        private IEnumerable<(string MapName, Dictionary<string, string> Dict)> EnumerateEventSources()
+        {
+            // per-location assets
+            foreach (var loc in Game1.locations)
+            {
+                if (TryGetLocationEvents(loc, out _, out var eventData) && eventData != null)
+                    yield return (loc.NameOrUniqueName ?? loc.Name, eventData);
+            }
+
+            // special “locationless” events (Data/Events/Temp)
+            Dictionary<string, string> tempDict = null;
+            try
+            {
+                tempDict = Game1.content.Load<Dictionary<string, string>>("Data/Events/Temp");
+            }
+            catch
+            {
+
+            }
+
+            if (tempDict != null && tempDict.Count > 0)
+                yield return ("Temp", tempDict);
+        }
+
+
+
+
+
+
     }
+
+
+
 }

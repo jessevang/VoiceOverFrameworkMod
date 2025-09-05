@@ -181,33 +181,28 @@ namespace VoiceOverFrameworkMod
                     string text = normalizedPages[i]?.Trim();
                     if (string.IsNullOrEmpty(text)) continue;
 
-                    // expand $y and $q/$r into prompt + replies
+                    // First expand interactive ($y / $q/$r)
+                    List<string> bodies;
                     if (TryExpandInteractive(text, out var expanded))
+                        bodies = expanded;
+                    else
+                        bodies = new List<string> { text };
+
+                    // For each interactive body, expand gender in the requested order:
+                    // ${m^f} → ${m^f^nb} → caret ^
+                    foreach (var body in bodies)
                     {
-                        foreach (var body in expanded)
+                        var variants = ExpandGenderVariantsOrdered(body);
+                        if (variants == null || variants.Count == 0)
+                        {
                             AddPageIfNotEmpty(pages, body, nextIndex++, null);
-                        continue;
+                            continue;
+                        }
+
+                        foreach (var (gender, genderedText) in variants)
+                            AddPageIfNotEmpty(pages, genderedText, nextIndex++, gender);
                     }
 
-                    // caret gender split
-                    if (TryTopLevelCaretGender(text, out var cgMale, out var cgFemale))
-                    {
-                        AddPageIfNotEmpty(pages, cgMale, nextIndex++, "male");
-                        AddPageIfNotEmpty(pages, cgFemale, nextIndex++, "female");
-                        continue;
-                    }
-
-                    // ${m^f(^n)} gender variant
-                    if (TryTopLevelGender(text, out var male, out var female, out var nb))
-                    {
-                        if (!string.IsNullOrEmpty(male)) AddPageIfNotEmpty(pages, male, nextIndex++, "male");
-                        if (!string.IsNullOrEmpty(female)) AddPageIfNotEmpty(pages, female, nextIndex++, "female");
-                        if (!string.IsNullOrEmpty(nb)) AddPageIfNotEmpty(pages, nb, nextIndex++, "nonbinary");
-                        continue;
-                    }
-
-                    // default
-                    AddPageIfNotEmpty(pages, text, nextIndex++, null);
                 }
 
                 return pages;
@@ -561,6 +556,102 @@ namespace VoiceOverFrameworkMod
                 if (parts.Length >= 3) nb = before + parts[2] + after;
                 return true;
             }
+
+            private static List<(string gender, string text)> ExpandGenderVariantsOrdered(string input)
+            {
+                var outList = new List<(string gender, string text)>();
+                if (string.IsNullOrWhiteSpace(input))
+                {
+                    outList.Add((null, input ?? string.Empty));
+                    return outList;
+                }
+
+                // Start with a single seed
+                var current = new List<(string gender, string text)> { (null, input) };
+
+                // ── Phase 1: expand all ${male^female} (two-part) tokens first ──
+                while (true)
+                {
+                    bool changed = false;
+                    var next = new List<(string gender, string text)>();
+
+                    foreach (var (g, s) in current)
+                    {
+                        var m = Regex.Match(s ?? "", @"\$\{([^{}]+)\}");
+                        if (m.Success)
+                        {
+                            var inner = m.Groups[1].Value;
+                            var parts = Regex.Split(inner, @"\^|¦"); // ^ or ¦
+                            if (parts.Length == 2)
+                            {
+                                string before = s.Substring(0, m.Index);
+                                string after = s.Substring(m.Index + m.Length);
+
+                                next.Add((g ?? "male", before + parts[0] + after));
+                                next.Add((g ?? "female", before + parts[1] + after));
+                                changed = true;
+                                continue;
+                            }
+                        }
+                        next.Add((g, s));
+                    }
+
+                    current = next;
+                    if (!changed) break;
+                }
+
+                // ── Phase 2: then expand all ${male^female^non-binary} (three-part) tokens ──
+                while (true)
+                {
+                    bool changed = false;
+                    var next = new List<(string gender, string text)>();
+
+                    foreach (var (g, s) in current)
+                    {
+                        var m = Regex.Match(s ?? "", @"\$\{([^{}]+)\}");
+                        if (m.Success)
+                        {
+                            var inner = m.Groups[1].Value;
+                            var parts = Regex.Split(inner, @"\^|¦");
+                            if (parts.Length >= 3)
+                            {
+                                string before = s.Substring(0, m.Index);
+                                string after = s.Substring(m.Index + m.Length);
+
+                                next.Add((g ?? "male", before + parts[0] + after));
+                                next.Add((g ?? "female", before + parts[1] + after));
+                                next.Add((g ?? "nonbinary", before + parts[2] + after));
+                                changed = true;
+                                continue;
+                            }
+                        }
+                        next.Add((g, s));
+                    }
+
+                    current = next;
+                    if (!changed) break;
+                }
+
+                // ── Phase 3: finally apply whole-line caret split: maleText ^ femaleText ──
+                var final = new List<(string gender, string text)>();
+                foreach (var (g, s) in current)
+                {
+                    if (TryTopLevelCaretGender(s, out var male, out var female))
+                    {
+                        final.Add((g ?? "male", male?.Trim()));
+                        final.Add((g ?? "female", female?.Trim()));
+                    }
+                    else
+                    {
+                        final.Add((g, s));
+                    }
+                }
+
+                // Done
+                outList.AddRange(final);
+                return outList;
+            }
+
         }
 
     }
