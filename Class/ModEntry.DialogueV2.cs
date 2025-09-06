@@ -323,6 +323,24 @@ namespace VoiceOverFrameworkMod
         }
 
 
+
+
+        // --- BEGIN: ExtraDialogue placeholder fix helpers ---
+        private static readonly Regex RxFmtPlural = new(@"\{(\d+)\}s\b", RegexOptions.Compiled);
+        private static readonly Regex RxFmt = new(@"\{(\d+)\}", RegexOptions.Compiled);
+
+        /// <summary>Remove numeric {n} placeholders (and trailing plural 's') so lines don't render as "s you sold...".</summary>
+        private static string RemoveNumberPlaceholders(string s)
+        {
+            if (string.IsNullOrWhiteSpace(s)) return s;
+            s = RxFmtPlural.Replace(s, "");            // drop {n}s
+            s = RxFmt.Replace(s, "");                  // drop {n}
+            s = Regex.Replace(s, @"\s{2,}", " ");      // tidy spaces
+            return s.Trim();
+        }
+        // --- END: ExtraDialogue placeholder fix helpers ---
+
+
         private void CheckForEventV2()
         {
             const bool ENABLE_FUZZY = true;
@@ -1207,6 +1225,8 @@ namespace VoiceOverFrameworkMod
             cap.HasBand |= s.IndexOf("%band", StringComparison.OrdinalIgnoreCase) >= 0;
             cap.HasFirstHalf |= s.IndexOf("%firstnameletter", StringComparison.OrdinalIgnoreCase) >= 0;
             cap.HasName |= s.IndexOf("%name", StringComparison.OrdinalIgnoreCase) >= 0;
+
+            
         }
 
         static void Postfix() => V2ParseContext.Advance();

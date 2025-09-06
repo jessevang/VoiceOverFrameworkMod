@@ -382,7 +382,7 @@ namespace VoiceOverFrameworkMod
                     characterManifest.Entries.AddRange(BuildFromEngagement(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
                     characterManifest.Entries.AddRange(BuildFromMarriageDialogue(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
                 }
-                
+                characterManifest.Entries.AddRange(BuildFromRainyDialogueForCharacter(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
                 characterManifest.Entries.AddRange(BuildFromEvents(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
 
                 characterManifest.Entries.AddRange(BuildFromFestivals(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
@@ -393,14 +393,16 @@ namespace VoiceOverFrameworkMod
                 //characterManifest.Entries.AddRange(BuildFromMail(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
                 characterManifest.Entries.AddRange(BuildFromOneSixStrings(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
                 characterManifest.Entries.AddRange(BuildSpeechBubbleEntries(characterName, languageCode, this.Helper.GameContent, ref entryNumber, desiredExtension));
-
+             
 
                 
-                
+
+
+
                 //string forced = $"1.{desiredExtension}"; //TEST 1.ogg disable to let dialogue audotio path build
-               // foreach (var e in characterManifest.Entries)  //TEST disable to let dialogue audotio path build
+                // foreach (var e in characterManifest.Entries)  //TEST disable to let dialogue audotio path build
                 //    e.AudioPath = forced;
-                
+
 
                 // --- WRITE / SAVE (unchanged except for renumber) ---
                 if (!characterManifest.Entries.Any())

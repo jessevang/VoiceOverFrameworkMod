@@ -8,6 +8,8 @@
 
 	<ItemGroup>
 		<Compile Include="Patches\*.cs" />
+		<Compile Include="DialogueTest\DialogueTester.cs" />
+		<Compile Include="DialogueTest\LoadDialogueForTest.cs" />
 		<Compile Include="ModEntry.cs" />
 		<Compile Include="Class\**\*.cs" />
 		<Compile Include="Menus\**\*.cs" />

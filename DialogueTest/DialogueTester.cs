@@ -150,6 +150,10 @@ namespace VoiceOverFrameworkMod
                 callback: this.PlayEventLineByIndex
             );
         }
+
+
+
+
         //================Test Bubbles=======================
        
 
@@ -726,6 +730,8 @@ namespace VoiceOverFrameworkMod
             this.Monitor.Log($"Use: play_dialogue {npcName} <index>   or   test_dialogue_from {npcName} <startIndex>", LogLevel.Info);
         }
 
+        
+
         private void PlayDialogueByIndex(string cmd, string[] args)
         {
             if (args.Length < 2)
@@ -795,9 +801,36 @@ namespace VoiceOverFrameworkMod
 
         private void PlayByKey(NPC npc, string sheetLabel, string key)
         {
-            string keyPath = $"Characters\\Dialogue\\{sheetLabel}:{key}";
             try
             {
+                if (string.Equals(sheetLabel, "EngagementDialogue", StringComparison.OrdinalIgnoreCase))
+                {
+                    var dict = this.Helper.GameContent.Load<Dictionary<string, string>>("Data/EngagementDialogue");
+                    if (dict != null && dict.TryGetValue(key, out var raw) && !string.IsNullOrWhiteSpace(raw))
+                    {
+                        EmitPortraitDialogue(npc, raw);
+                        return;
+                    }
+                    Game1.addHUDMessage(new HUDMessage($"Missing key: (EngagementDialogue:{key})", 3));
+                    this.Monitor.Log($"Missing EngagementDialogue key '{key}'.", LogLevel.Warn);
+                    return;
+                }
+
+                if (string.Equals(sheetLabel, "ExtraDialogue", StringComparison.OrdinalIgnoreCase))
+                {
+                    var dict = this.Helper.GameContent.Load<Dictionary<string, string>>("Data/ExtraDialogue");
+                    if (dict != null && dict.TryGetValue(key, out var raw) && !string.IsNullOrWhiteSpace(raw))
+                    {
+                        EmitPortraitDialogue(npc, raw);
+                        return;
+                    }
+                    Game1.addHUDMessage(new HUDMessage($"Missing key: (ExtraDialogue:{key})", 3));
+                    this.Monitor.Log($"Missing ExtraDialogue key '{key}'.", LogLevel.Warn);
+                    return;
+                }
+
+                // default: Characters/Dialogue/<sheetLabel>:<key>
+                string keyPath = $"Characters\\Dialogue\\{sheetLabel}:{key}";
                 var dlg = new Dialogue(npc, keyPath);
                 npc.setNewDialogue(dlg);
                 Game1.drawDialogue(npc);
@@ -808,6 +841,8 @@ namespace VoiceOverFrameworkMod
                 this.Monitor.Log($"Missing or invalid key '{sheetLabel}:{key}': {ex}", LogLevel.Warn);
             }
         }
+
+
 
         private async Task PlayKeyListRange(NPC npc, List<DialogueRef> list, int startIndex, int delayMs)
         {
@@ -848,6 +883,15 @@ namespace VoiceOverFrameworkMod
             }
             catch { }
 
+            // Rainy (localized)
+            try
+            {
+                var rainyOne = LoadRainyForNpc(npcName);
+                if (rainyOne != null)
+                    results.Add(("rainy", rainyOne));
+            }
+            catch { }
+
             // Marriage
             try
             {
@@ -857,8 +901,31 @@ namespace VoiceOverFrameworkMod
             }
             catch { }
 
+            // Engagement
+            try
+            {
+                var engaged = LoadEngagementForNpc(npcName);
+                if (engaged != null)
+                    results.Add(("EngagementDialogue", engaged));
+            }
+            catch { }
+
+            // ExtraDialogue (NEW)
+            try
+            {
+                var extra = LoadExtraDialogueForNpc(npcName);
+                if (extra != null)
+                    results.Add(("ExtraDialogue", extra));
+
+              
+            }
+            catch { }
+
             return results;
         }
+
+
+
 
         private List<DialogueRef> BuildKeyList(
             List<(string SheetLabel, Dictionary<string, string> Sheet)> sheets,
@@ -1380,8 +1447,20 @@ namespace VoiceOverFrameworkMod
                 if (speaker == null || string.IsNullOrWhiteSpace(rawText))
                     return;
 
+                // strip numeric format placeholders like "{2}" and "{2}s" that can leak into visible text
+                static string Clean(string s)
+                {
+                    if (string.IsNullOrWhiteSpace(s)) return s;
+                    s = Regex.Replace(s, @"\{(\d+)\}s\b", ""); // drop {n}s
+                    s = Regex.Replace(s, @"\{(\d+)\}", ""); // drop {n}
+                    s = Regex.Replace(s, @"\s{2,}", " ");      // tidy spaces
+                    return s.Trim();
+                }
+
+                string text = Clean(rawText);
+
                 // 1.6 signature: (NPC speaker, string translationKey, string dialogueText)
-                var dlg = new Dialogue(speaker, InlineDialogueKey, rawText);
+                var dlg = new Dialogue(speaker, InlineDialogueKey, text);
                 speaker.setNewDialogue(dlg);
                 Game1.drawDialogue(speaker);
             }
@@ -1509,10 +1588,23 @@ namespace VoiceOverFrameworkMod
                 if (speaker == null || string.IsNullOrWhiteSpace(rawText))
                     return;
 
-                speaker.showTextAboveHead(rawText);
+                // strip numeric format placeholders like "{2}" and "{2}s" that can leak into visible text
+                static string Clean(string s)
+                {
+                    if (string.IsNullOrWhiteSpace(s)) return s;
+                    s = Regex.Replace(s, @"\{(\d+)\}s\b", ""); // drop {n}s
+                    s = Regex.Replace(s, @"\{(\d+)\}", ""); // drop {n}
+                    s = Regex.Replace(s, @"\s{2,}", " ");      // tidy spaces
+                    return s.Trim();
+                }
+
+                string text = Clean(rawText);
+
+                // bubble text (no UI yet)
+                speaker.showTextAboveHead(text);
 
                 // Mirror into the Dialogue UI so your voice matching runs the same as NPC dialogue.
-                var dlg = new Dialogue(speaker, InlineDialogueKey, rawText);
+                var dlg = new Dialogue(speaker, InlineDialogueKey, text);
                 speaker.setNewDialogue(dlg);
                 Game1.drawDialogue(speaker);
             }
@@ -1521,6 +1613,7 @@ namespace VoiceOverFrameworkMod
                 this.Monitor.Log($"EmitBubbleWithVOF failed: {ex}", LogLevel.Trace);
             }
         }
+
 
 
         private NPC ResolveNpcForSpeaker(string speakerName)

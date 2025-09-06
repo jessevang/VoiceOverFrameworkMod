@@ -54,18 +54,9 @@ namespace VoiceOverFrameworkMod
             private static readonly Regex RxSquareBracketGrant = new(@"\[[^\]]+\]", RegexOptions.Compiled);
 
 
-            public static List<PageSeg> SplitAndSanitize(string raw, bool splitBAsPage = false, bool skipSplitting = false)
+            public static List<PageSeg> SplitAndSanitize(string raw, bool splitBAsPage = false)
             {
                 if (raw == null) raw = string.Empty;
-
-                // === GUARD: when true, do NOT split/expand anything. Return exactly one page. ===
-                if (skipSplitting)
-                {
-                    var single = new List<PageSeg>();
-                    // Let your existing helper do the canonicalization work.
-                    AddPageIfNotEmpty(single, raw, 0, null);
-                    return single;
-                }
 
                 // --- 0) Expand weekly rotation FIRST (A||B||C -> [A, B, C]) ---
                 if (raw.Contains("||"))
@@ -75,7 +66,7 @@ namespace VoiceOverFrameworkMod
                     int idx = 0;
                     foreach (var v in variants)
                     {
-                        var segs = SplitAndSanitize(v, splitBAsPage, skipSplitting); // propagate flag
+                        var segs = SplitAndSanitize(v, splitBAsPage);
                         foreach (var p in segs)
                         {
                             p.PageIndex = idx++;
@@ -93,7 +84,7 @@ namespace VoiceOverFrameworkMod
                     int idx = 0;
                     foreach (var part in barParts)
                     {
-                        var segs = SplitAndSanitize(part, splitBAsPage, skipSplitting); // propagate flag
+                        var segs = SplitAndSanitize(part, splitBAsPage);
                         foreach (var p in segs)
                         {
                             p.PageIndex = idx++;
@@ -103,12 +94,11 @@ namespace VoiceOverFrameworkMod
                     return merged;
                 }
 
-                // --- 1) Expand command-driven splits BEFORE any page splitting ---
                 // $c random A#B
                 if (TrySplitRandomChoice(raw, out var rcA, out var rcB))
                 {
-                    var left = SplitAndSanitize(rcA, splitBAsPage, skipSplitting);
-                    var right = SplitAndSanitize(rcB, splitBAsPage, skipSplitting);
+                    var left = SplitAndSanitize(rcA, splitBAsPage);
+                    var right = SplitAndSanitize(rcB, splitBAsPage);
                     var merged = new List<PageSeg>(left.Count + right.Count);
                     int idx = 0;
                     foreach (var p in left) { p.PageIndex = idx++; merged.Add(p); }
@@ -119,8 +109,8 @@ namespace VoiceOverFrameworkMod
                 // $p prereq A|B
                 if (TrySplitPrereq(raw, out var rpA, out var rpB))
                 {
-                    var left = SplitAndSanitize(rpA, splitBAsPage, skipSplitting);
-                    var right = SplitAndSanitize(rpB, splitBAsPage, skipSplitting);
+                    var left = SplitAndSanitize(rpA, splitBAsPage);
+                    var right = SplitAndSanitize(rpB, splitBAsPage);
                     var merged = new List<PageSeg>(left.Count + right.Count);
                     int idx = 0;
                     foreach (var p in left) { p.PageIndex = idx++; merged.Add(p); }
@@ -131,8 +121,8 @@ namespace VoiceOverFrameworkMod
                 // $d / $query conditional A|B
                 if (TrySplitConditionalChoice(raw, out var rdA, out var rdB))
                 {
-                    var left = SplitAndSanitize(rdA, splitBAsPage, skipSplitting);
-                    var right = SplitAndSanitize(rdB, splitBAsPage, skipSplitting);
+                    var left = SplitAndSanitize(rdA, splitBAsPage);
+                    var right = SplitAndSanitize(rdB, splitBAsPage);
                     var merged = new List<PageSeg>(left.Count + right.Count);
                     int idx = 0;
                     foreach (var p in left) { p.PageIndex = idx++; merged.Add(p); }

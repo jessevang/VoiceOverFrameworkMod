@@ -497,7 +497,7 @@ namespace VoiceOverFrameworkMod
             if (string.IsNullOrWhiteSpace(v1Text)) return string.Empty;
 
             //We want to skip spiltting as it'll break V1 text to multipleline with 1 audio making it incorrect when matching with V2.
-            var pages = DialogueUtil.SplitAndSanitize(v1Text, splitBAsPage: false, skipSplitting: true);  
+            var pages = DialogueUtil.SplitAndSanitize(v1Text, splitBAsPage: false);  
             string display = pages.Count > 0 ? pages[0].Display : CanonDisplay(v1Text);
             return CanonDisplay(display);
         }
