@@ -23,8 +23,6 @@ namespace VoiceOverFrameworkMod
         /// <summary>Poll NPC speech bubbles and play audio once per bubble instance.</summary>
         private void CheckForSpeechBubblesLevel1()
         {
-
-          
             // Don’t compete with DialogueBox VO.
             if (Game1.activeClickableMenu is StardewValley.Menus.DialogueBox)
                 return;
@@ -41,44 +39,58 @@ namespace VoiceOverFrameworkMod
                 int pre = NPC_textAboveHeadPreTimer(npc);
                 float alpha = NPC_textAboveHeadAlpha(npc);
 
+                // Bubble gone → reset state
                 if (string.IsNullOrWhiteSpace(text) || timer <= 0)
                 {
-                    if (_bubbleStates.TryGetValue(npc, out var st))
+                    if (_bubbleStates.TryGetValue(npc, out var gone))
                     {
-                        st.LastText = null; st.LastTimer = -1; st.StableTicks = 0; st.Played = false;
+                        gone.LastText = null;
+                        gone.LastTimer = -1;
+                        gone.Played = false;
                     }
                     continue;
                 }
 
-                // Wait until the bubble is actually visible.
+                // Must be actually visible
                 if (pre > 0 || alpha <= 0f)
                     continue;
 
                 var state = _bubbleStates.GetOrCreateValue(npc);
 
-                if (!string.Equals(text, state.LastText, StringComparison.Ordinal))
+                // Detect new bubble instance
+                bool isNewInstance =
+                    state.LastText == null
+                    || !string.Equals(text, state.LastText, StringComparison.Ordinal)
+                    || timer > state.LastTimer + 5; // timer reset/jump = new bubble
+
+                if (isNewInstance)
                 {
                     state.LastText = text;
                     state.LastTimer = timer;
-                    state.StableTicks = 0;
                     state.Played = false;
                 }
                 else
                 {
-                    state.StableTicks++;
+                    state.LastTimer = timer;
                 }
 
-                if (state.StableTicks < Config.TextStabilizeTicks || state.Played)
+                if (state.Played)
                     continue;
 
                 string characterName = npc.Name;
                 var pack = GetSelectedVoicePack(characterName);
                 if (pack == null)
+                {
+                    state.Played = true;
                     continue;
+                }
 
                 string patternKey = SanitizeBubbleText(text);
                 if (string.IsNullOrWhiteSpace(patternKey))
+                {
+                    state.Played = true;
                     continue;
+                }
 
                 string fullPath = null;
 
@@ -108,14 +120,49 @@ namespace VoiceOverFrameworkMod
                     if (Config.developerModeOn)
                         Monitor.Log($"[Bubble] {characterName}: \"{text}\" → \"{patternKey}\"", LogLevel.Info);
 
-                    PlayVoiceFromFile(fullPath);
-                    state.Played = true;
+                    if (File.Exists(fullPath))
+                    {
+                        PlayVoiceFromFile(fullPath);
+                        state.Played = true;
+                    }
+                    else
+                    {
+                        if (_collectV2Failures)
+                            V2AddFailure(
+                                speaker: characterName,
+                                dialogue: text,
+                                removables: Enumerable.Empty<string>(),
+                                stripped: SanitizeBubbleText(text),
+                                key: patternKey,
+                                matched: true,
+                                missingAudio: true,
+                                audioPath: fullPath
+                            );
+                        state.Played = true;
+                    }
                 }
-                else if (Config.developerModeOn)
+                else
                 {
-                    Monitor.Log($"[Bubble] No pack match for {characterName} pattern \"{patternKey}\".", LogLevel.Trace);
+                    if (_collectV2Failures)
+                        V2AddFailure(
+                            speaker: characterName,
+                            dialogue: text,
+                            removables: Enumerable.Empty<string>(),
+                            stripped: SanitizeBubbleText(text),
+                            key: patternKey,
+                            matched: false,
+                            missingAudio: false
+                        );
+
+                    if (Config.developerModeOn)
+                        Monitor.Log($"[Bubble] No pack match for {characterName} pattern \"{patternKey}\".", LogLevel.Trace);
+
+                    state.Played = true;
                 }
             }
         }
+
+
+
     }
 }

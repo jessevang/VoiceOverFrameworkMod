@@ -11,7 +11,6 @@ namespace VoiceOverFrameworkMod
         {
             public string LastText = null;
             public int LastTimer = -1;
-            public int StableTicks = 0;
             public bool Played = false;
         }
 

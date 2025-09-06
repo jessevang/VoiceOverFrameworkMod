@@ -1,9 +1,13 @@
 ﻿// ModEntry.PortV1ToV2.cs — one-arg auto port: vof_port <V1 folder>
 // - Generates V2 baseline templates automatically
-// - Maps V1 -> V2 by DisplayPattern
+// - Maps V1 -> V2 by DisplayPattern (with strict DP equality check)
 // - Writes out V2 packs (same filenames) to "<V1>_output"
 // - Writes per-character NeedsReview with ONLY V1 rows that failed to map
 // - Copies audio from V1 -> V2; resolves conflicts with "-conflict-N" and updates JSON
+//
+// Added:
+//  • Strict DP equality verification before attaching audio
+//  • Report reuse of the same V1 filename across different DPs (suspicious)
 
 using System;
 using System.IO;
@@ -61,7 +65,30 @@ namespace VoiceOverFrameworkMod
                 Monitor.Log($"V1 folder not found: {v1Folder}", LogLevel.Error);
                 return;
             }
+
+            //copies Manifesto file over
             Directory.CreateDirectory(outFolder);
+
+            {
+                string v1Manifest = Path.Combine(v1Folder, "manifest.json");
+                if (File.Exists(v1Manifest))
+                {
+                    string outManifest = Path.Combine(outFolder, "manifest.json");
+                    try
+                    {
+                        File.Copy(v1Manifest, outManifest, overwrite: true);
+                        Monitor.Log("Copied manifest.json to output (unchanged).", LogLevel.Info);
+                    }
+                    catch (Exception ex)
+                    {
+                        Monitor.Log($"Failed to copy manifest.json: {ex.Message}", LogLevel.Warn);
+                    }
+                }
+                else
+                {
+                    Monitor.Log("No manifest.json found in V1 folder; skipping manifest copy.", LogLevel.Trace);
+                }
+            }
 
             // DO NOT bulk-copy assets; only copy mapped audio we know about.
             // V1V2_CopyAssetsIfPresent(v1Folder, outFolder);
@@ -173,19 +200,29 @@ namespace VoiceOverFrameworkMod
                                 !string.Equals(basePack.Language, language, StringComparison.OrdinalIgnoreCase))
                                 continue;
 
-                            // Start with a copy of the baseline entries
+                            // Start with a copy of the baseline entries, but preserve V1 Id/Name if present
                             var outPack = new VoicePackManifestTemplate
                             {
                                 Format = "2.0.0",
-                                VoicePackId = basePack.VoicePackId,
-                                VoicePackName = basePack.VoicePackName,
+
+                                // Prefer V1 values; fall back to baseline if V1 is missing them
+                                VoicePackId = string.IsNullOrWhiteSpace(v1pack.VoicePackId)
+                                              ? basePack.VoicePackId
+                                              : v1pack.VoicePackId,
+
+                                VoicePackName = string.IsNullOrWhiteSpace(v1pack.VoicePackName)
+                                                ? basePack.VoicePackName
+                                                : v1pack.VoicePackName,
+
+                                // Character/Language must match the baseline we’re mapping onto
                                 Character = basePack.Character,
                                 Language = basePack.Language,
+
                                 Entries = basePack.Entries.Select(e => new VoiceEntryTemplate
                                 {
                                     DialogueFrom = e.DialogueFrom,
                                     DialogueText = e.DialogueText,
-                                    AudioPath = e.AudioPath, // will be overwritten when mapped
+                                    AudioPath = e.AudioPath,
                                     TranslationKey = e.TranslationKey,
                                     PageIndex = e.PageIndex,
                                     DisplayPattern = e.DisplayPattern,
@@ -209,6 +246,9 @@ namespace VoiceOverFrameworkMod
                             // Per-pack report bucket
                             var pr = V1V2_GetOrCreatePackReport(perPackReports, character, language, v1Path);
 
+                            // Track V1 filename → DPs (to flag suspicious reuse)
+                            var v1FileToDps = new Dictionary<string, HashSet<string>>(StringComparer.OrdinalIgnoreCase);
+
                             // Try to map each V1 entry to a baseline DP
                             foreach (var v1e in v1pack.Entries ?? Enumerable.Empty<VoiceEntryTemplate>())
                             {
@@ -219,7 +259,16 @@ namespace VoiceOverFrameworkMod
 
                                 pr.Summary.EntriesV1++;
 
+                                // Build V1 display pattern using the same canonicalizer used by runtime
                                 string v1DP = V1V2_BuildDisplayPatternFromV1(v1Text);
+
+                                // record filename reuse (by stem)
+                                string v1FileStem = Path.GetFileNameWithoutExtension(v1Audio) ?? v1Audio;
+                                if (!v1FileToDps.TryGetValue(v1FileStem, out var set))
+                                    v1FileToDps[v1FileStem] = set = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+                                if (!string.IsNullOrWhiteSpace(v1DP))
+                                    set.Add(v1DP);
+
                                 if (string.IsNullOrWhiteSpace(v1DP) || !dpToIndices.TryGetValue(v1DP, out var indices) || indices.Count == 0)
                                 {
                                     // NOT MAPPED → NeedsReview (V1-only information)
@@ -245,13 +294,66 @@ namespace VoiceOverFrameworkMod
                                 }
                                 if (chosen < 0) chosen = indices[0]; // all claimed → reuse first
 
-                                // Stage 1: set the outPack entry’s AudioPath to the V1 source so the copier knows where to copy from
                                 var target = outPack.Entries[chosen];
-                                target.AudioPath = v1Audio;
-                                target.DialogueTextPortedFromV1 = v1Text;
 
-                                claimed.Add(chosen);
-                                pr.Summary.Mapped++;
+                                // --- SAFETY: verify target.DisplayPattern equals v1DP before mapping audio ---
+                                if (!string.Equals(target.DisplayPattern ?? "", v1DP ?? "", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    pr.Summary.NeedsReview++;
+                                    pr.NeedsReview.Add(new V1V2_NeedsReviewRow
+                                    {
+                                        File = v1Path,
+                                        Character = character,
+                                        Language = language,
+                                        DialogueTextV1 = v1Text,
+                                        DisplayPatternV1 = v1DP,
+                                        AudioPathV1 = v1Audio,
+                                        Error = $"DP mismatch: baseline=\"{target.DisplayPattern ?? ""}\" vs v1=\"{v1DP}\""
+                                    });
+                                    continue; // don’t attach audio to the wrong line
+                                }
+
+                                // OK: copy the audio NOW and set the final path
+                                string copiedRel = CopyOneMappedAudioNow(v1Folder, outFolder, language, character, v1Audio);
+                                if (!string.IsNullOrWhiteSpace(copiedRel))
+                                {
+                                    target.AudioPath = copiedRel;                 // final V2-relative path (assets/...)
+                                    target.DialogueTextPortedFromV1 = v1Text;     // useful for QA
+                                    claimed.Add(chosen);
+                                    pr.Summary.Mapped++;
+                                    copiedForThisFile++;                           // keep your per-file count if you like
+                                }
+                                else
+                                {
+                                    // Source missing; flag for review rather than attaching a stale path
+                                    pr.Summary.NeedsReview++;
+                                    pr.NeedsReview.Add(new V1V2_NeedsReviewRow
+                                    {
+                                        File = v1Path,
+                                        Character = character,
+                                        Language = language,
+                                        DialogueTextV1 = v1Text,
+                                        DisplayPatternV1 = v1DP,
+                                        AudioPathV1 = v1Audio,
+                                        Error = "Audio source not found or failed to copy at mapping time"
+                                    });
+                                }
+                            }
+
+                            // Flag suspicious reuse: same V1 filename used for different DPs
+                            foreach (var kvp in v1FileToDps.Where(k => k.Value.Count > 1))
+                            {
+                                pr.Summary.NeedsReview++;
+                                pr.NeedsReview.Add(new V1V2_NeedsReviewRow
+                                {
+                                    File = v1Path,
+                                    Character = character,
+                                    Language = language,
+                                    DialogueTextV1 = string.Join(" || ", kvp.Value.Take(4)) + (kvp.Value.Count > 4 ? " ..." : ""),
+                                    DisplayPatternV1 = "(multiple)",
+                                    AudioPathV1 = kvp.Key,
+                                    Error = "Same V1 file name reused for multiple different display patterns"
+                                });
                             }
 
                             pr.Summary.EntriesV2 += outPack.Entries.Count;
@@ -263,11 +365,7 @@ namespace VoiceOverFrameworkMod
                     string outPath = Path.Combine(outFolder, Path.GetFileName(v1Path));
                     var outObj = new VoicePackFile { Format = "2.0.0", VoicePacks = outPacks };
 
-                    // Copy mapped audio & rename to Ported_*.<ext>, update JSON AudioPath
-                    int copied = CopyMappedAudioAndRename(v1Folder, outFolder, outObj);
-                    grandAudioCopied += copied;
-                    if (copied > 0)
-                        Monitor.Log($"Copied {copied} audio file(s) for {Path.GetFileName(v1Path)}", LogLevel.Info);
+  
 
                     // Now serialize the JSON (paths updated)
                     string jsonOut = JsonConvert.SerializeObject(outObj, Formatting.Indented,
@@ -304,9 +402,6 @@ namespace VoiceOverFrameworkMod
             Monitor.Log($"  Elapsed       : {sw.Elapsed:mm\\:ss}", LogLevel.Info);
             Monitor.Log("===========================================", LogLevel.Info);
         }
-
-
-
 
         // ------------------------------------------------------------------------------------
         // Helpers (unique names to avoid collisions)
@@ -400,7 +495,9 @@ namespace VoiceOverFrameworkMod
         private string V1V2_BuildDisplayPatternFromV1(string v1Text)
         {
             if (string.IsNullOrWhiteSpace(v1Text)) return string.Empty;
-            var pages = DialogueUtil.SplitAndSanitize(v1Text, splitBAsPage: false);
+
+            //We want to skip spiltting as it'll break V1 text to multipleline with 1 audio making it incorrect when matching with V2.
+            var pages = DialogueUtil.SplitAndSanitize(v1Text, splitBAsPage: false, skipSplitting: true);  
             string display = pages.Count > 0 ? pages[0].Display : CanonDisplay(v1Text);
             return CanonDisplay(display);
         }
@@ -547,8 +644,112 @@ namespace VoiceOverFrameworkMod
             return copied;
         }
 
+        /// <summary>
+        /// Immediately copy ONE mapped audio from V1 → V2 and return the new relative path.
+        /// If the suggested destination name already exists:
+        ///  • If contents are identical (sha1), reuse it.
+        ///  • If contents differ, suffix with _conflict-N.
+        /// Returns null if source couldn't be found/copied.
+        /// </summary>
+        private string CopyOneMappedAudioNow(
+            string v1Root,     // e.g. ...\Mods\[VOFM] DM_Voicepack_En
+            string outRoot,    // e.g. ...\Mods\[VOFM] DM_Voicepack_En_output
+            string language,   // e.g. "en"
+            string character,  // e.g. "Abigail"
+            string v1AudioRelOrAbs // as found in V1 entry (can be relative or absolute)
+        )
+        {
+            if (string.IsNullOrWhiteSpace(v1AudioRelOrAbs))
+                return null;
+
+            // resolve source
+            string charSafe = SanitizeKeyForFileName(character) ?? character ?? "Unknown";
+            string srcRel = NormalizeSlashes(v1AudioRelOrAbs);
+            string srcFull = Path.IsPathRooted(srcRel) ? srcRel : Path.Combine(v1Root, srcRel);
+
+            if (!File.Exists(srcFull))
+            {
+                // try fallback under assets/<lang>/<char>/
+                string tryAlt = Path.Combine(v1Root, "assets", language, charSafe, Path.GetFileName(srcRel) ?? "");
+                if (File.Exists(tryAlt))
+                    srcFull = tryAlt;
+                else
+                {
+                    Monitor.Log($"Audio source missing: {srcRel}", LogLevel.Trace);
+                    return null;
+                }
+            }
+
+            // destination
+            string destDir = Path.Combine(outRoot, "assets", language, charSafe);
+            Directory.CreateDirectory(destDir);
+
+            string origNoExt = Path.GetFileNameWithoutExtension(srcFull) ?? "audio";
+            string srcExt = Path.GetExtension(srcFull);
+            string safeExt = string.IsNullOrWhiteSpace(srcExt) ? "" : srcExt.ToLowerInvariant();
+
+            string baseName = $"Ported_{origNoExt}";
+            string destName = $"{baseName}{safeExt}";
+            string destFull = Path.Combine(destDir, destName);
+
+            // if exists, check content; else make conflict suffix
+            if (File.Exists(destFull))
+            {
+                try
+                {
+                    string srcSha = ComputeSha1(srcFull);
+                    string dstSha = ComputeSha1(destFull);
+                    if (!string.Equals(srcSha, dstSha, StringComparison.OrdinalIgnoreCase))
+                    {
+                        int n = 1;
+                        do
+                        {
+                            destName = $"{baseName}_conflict-{n}{safeExt}";
+                            destFull = Path.Combine(destDir, destName);
+                            n++;
+                        } while (File.Exists(destFull));
+                    }
+                    else
+                    {
+                        // identical → reuse
+                        string destRelExisting = $"assets/{language}/{charSafe}/{Path.GetFileName(destFull)}".Replace('\\', '/');
+                        return destRelExisting;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Monitor.Log($"SHA check failed, will attempt unique copy: {ex.Message}", LogLevel.Trace);
+                    int n = 1;
+                    do
+                    {
+                        destName = $"{baseName}_conflict-{n}{safeExt}";
+                        destFull = Path.Combine(destDir, destName);
+                        n++;
+                    } while (File.Exists(destFull));
+                }
+            }
+
+            try
+            {
+                File.Copy(srcFull, destFull, overwrite: false);
+                string destRel = $"assets/{language}/{charSafe}/{destName}".Replace('\\', '/');
+                return destRel;
+            }
+            catch (Exception ex)
+            {
+                Monitor.Log($"Failed to copy audio {srcFull} → {destFull}: {ex.Message}", LogLevel.Warn);
+                return null;
+            }
+        }
+
+
+
+
+
 
 
 
     }
+
+
 }

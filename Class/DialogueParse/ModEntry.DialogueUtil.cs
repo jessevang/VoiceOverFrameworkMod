@@ -54,9 +54,18 @@ namespace VoiceOverFrameworkMod
             private static readonly Regex RxSquareBracketGrant = new(@"\[[^\]]+\]", RegexOptions.Compiled);
 
 
-            public static List<PageSeg> SplitAndSanitize(string raw, bool splitBAsPage = false)
+            public static List<PageSeg> SplitAndSanitize(string raw, bool splitBAsPage = false, bool skipSplitting = false)
             {
                 if (raw == null) raw = string.Empty;
+
+                // === GUARD: when true, do NOT split/expand anything. Return exactly one page. ===
+                if (skipSplitting)
+                {
+                    var single = new List<PageSeg>();
+                    // Let your existing helper do the canonicalization work.
+                    AddPageIfNotEmpty(single, raw, 0, null);
+                    return single;
+                }
 
                 // --- 0) Expand weekly rotation FIRST (A||B||C -> [A, B, C]) ---
                 if (raw.Contains("||"))
@@ -66,7 +75,7 @@ namespace VoiceOverFrameworkMod
                     int idx = 0;
                     foreach (var v in variants)
                     {
-                        var segs = SplitAndSanitize(v, splitBAsPage);
+                        var segs = SplitAndSanitize(v, splitBAsPage, skipSplitting); // propagate flag
                         foreach (var p in segs)
                         {
                             p.PageIndex = idx++;
@@ -77,7 +86,6 @@ namespace VoiceOverFrameworkMod
                 }
 
                 // --- 0b) If there's a naked '|' (not part of $d/$p/$query), split those too ---
-                // This catches cases like older/ported packs that literally stored "A|B" without the command prefix.
                 if (raw.Contains("|") && !Regex.IsMatch(raw, @"\$(?:d|p|query)\b", RegexOptions.IgnoreCase))
                 {
                     var barParts = raw.Split(new[] { '|' }, StringSplitOptions.None);
@@ -85,7 +93,7 @@ namespace VoiceOverFrameworkMod
                     int idx = 0;
                     foreach (var part in barParts)
                     {
-                        var segs = SplitAndSanitize(part, splitBAsPage);
+                        var segs = SplitAndSanitize(part, splitBAsPage, skipSplitting); // propagate flag
                         foreach (var p in segs)
                         {
                             p.PageIndex = idx++;
@@ -99,8 +107,8 @@ namespace VoiceOverFrameworkMod
                 // $c random A#B
                 if (TrySplitRandomChoice(raw, out var rcA, out var rcB))
                 {
-                    var left = SplitAndSanitize(rcA, splitBAsPage);
-                    var right = SplitAndSanitize(rcB, splitBAsPage);
+                    var left = SplitAndSanitize(rcA, splitBAsPage, skipSplitting);
+                    var right = SplitAndSanitize(rcB, splitBAsPage, skipSplitting);
                     var merged = new List<PageSeg>(left.Count + right.Count);
                     int idx = 0;
                     foreach (var p in left) { p.PageIndex = idx++; merged.Add(p); }
@@ -108,11 +116,11 @@ namespace VoiceOverFrameworkMod
                     return merged;
                 }
 
-                // $p prereq A|B  (B may contain further commands; we recurse after splitting).
+                // $p prereq A|B
                 if (TrySplitPrereq(raw, out var rpA, out var rpB))
                 {
-                    var left = SplitAndSanitize(rpA, splitBAsPage);
-                    var right = SplitAndSanitize(rpB, splitBAsPage);
+                    var left = SplitAndSanitize(rpA, splitBAsPage, skipSplitting);
+                    var right = SplitAndSanitize(rpB, splitBAsPage, skipSplitting);
                     var merged = new List<PageSeg>(left.Count + right.Count);
                     int idx = 0;
                     foreach (var p in left) { p.PageIndex = idx++; merged.Add(p); }
@@ -123,8 +131,8 @@ namespace VoiceOverFrameworkMod
                 // $d / $query conditional A|B
                 if (TrySplitConditionalChoice(raw, out var rdA, out var rdB))
                 {
-                    var left = SplitAndSanitize(rdA, splitBAsPage);
-                    var right = SplitAndSanitize(rdB, splitBAsPage);
+                    var left = SplitAndSanitize(rdA, splitBAsPage, skipSplitting);
+                    var right = SplitAndSanitize(rdB, splitBAsPage, skipSplitting);
                     var merged = new List<PageSeg>(left.Count + right.Count);
                     int idx = 0;
                     foreach (var p in left) { p.PageIndex = idx++; merged.Add(p); }
@@ -148,9 +156,7 @@ namespace VoiceOverFrameworkMod
                     {
                         string p = part ?? "";
 
-                        // >>> IMPORTANT FIX <<< 
                         // If this chunk contains interactive tokens, DON'T split on bare '#'
-                        // yet — we need TryExpandInteractive to see the full $q/$r/$y structure.
                         if (p.IndexOf("$q", StringComparison.OrdinalIgnoreCase) >= 0 ||
                             p.IndexOf("$r", StringComparison.OrdinalIgnoreCase) >= 0 ||
                             p.IndexOf("$y", StringComparison.OrdinalIgnoreCase) >= 0)
@@ -188,8 +194,7 @@ namespace VoiceOverFrameworkMod
                     else
                         bodies = new List<string> { text };
 
-                    // For each interactive body, expand gender in the requested order:
-                    // ${m^f} → ${m^f^nb} → caret ^
+                    // For each interactive body, expand gender in the requested order
                     foreach (var body in bodies)
                     {
                         var variants = ExpandGenderVariantsOrdered(body);
@@ -202,11 +207,12 @@ namespace VoiceOverFrameworkMod
                         foreach (var (gender, genderedText) in variants)
                             AddPageIfNotEmpty(pages, genderedText, nextIndex++, gender);
                     }
-
                 }
 
                 return pages;
             }
+
+
 
 
 

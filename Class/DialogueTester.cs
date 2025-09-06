@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Microsoft.Xna.Framework;
 using Newtonsoft.Json;
 using StardewModdingAPI;
 using StardewValley;
@@ -91,30 +92,36 @@ namespace VoiceOverFrameworkMod
 
             commands.Add("vof.summary", "Print summary of unmatched V2 lines (and clear).", (c, a) => PrintV2FailureReport());
 
-            // ===== Generic string sheet testing (Data/* or Strings/*) =====
+            // ===== BUBBLES: list / test / play (bubble-only) =====
             commands.Add(
-                name: "list_sheet",
+                name: "list_bubbles",
                 documentation:
-                    "Usage: list_sheet <assetPath> [filter]\n" +
-                    "List keys from a generic string sheet (e.g., Data/ExtraDialogue, Strings/SpeechBubbles).",
-                callback: this.ListSheet
+                    "Usage: list_bubbles [filter]\n" +
+                    "List keys from the vanilla 'Strings/SpeechBubbles' sheet.",
+                callback: this.ListBubbles
             );
 
             commands.Add(
-                name: "test_sheet",
+                name: "test_bubbles",
                 documentation:
-                    "Usage: test_sheet <assetPath|all> [delayMs] [filter]\n" +
-                    "Auto-plays strings from one sheet or a default set (when 'all').",
-                callback: this.TestSheet
+                    "Usage: test_bubbles <all|filter> [delayMs]\n" +
+                    "• all         → play ALL 'Strings/SpeechBubbles' entries as speech bubbles only\n" +
+                    "• <filter>    → plays only entries whose key OR text contains the filter\n" +
+                    "Examples:\n" +
+                    "  test_bubbles all 100    (play everything with 100ms gap)\n" +
+                    "  test_bubbles hello 800  (only entries matching 'hello', 800ms gap)",
+                callback: this.TestBubbles
             );
 
             commands.Add(
-                name: "play_sheet_key",
+                name: "play_bubble_key",
                 documentation:
-                    "Usage: play_sheet_key <assetPath> <key>\n" +
-                    "Play one string value from a generic string sheet (portrait window).",
-                callback: this.PlaySheetByKey
+                    "Usage: play_bubble_key <key>\n" +
+                    "Play a single bubble line by key from 'Strings/SpeechBubbles' (bubble only, no dialogue window).",
+                callback: this.PlayBubbleByKey
             );
+
+
 
             // ===== Event string testing (Data/Events/<Location>) =====
             commands.Add(
@@ -143,6 +150,338 @@ namespace VoiceOverFrameworkMod
                 callback: this.PlayEventLineByIndex
             );
         }
+        //================Test Bubbles=======================
+       
+
+        private void ListBubbles(string cmd, string[] args)
+        {
+            string filter = args.Length > 0 ? args[0] : null;
+
+            var entries = LoadSpeechBubbles(filter);
+            if (entries.Count == 0)
+            {
+                this.Monitor.Log($"No entries found in 'Strings/SpeechBubbles' (filter='{filter ?? "(none)"}').", LogLevel.Info);
+                return;
+            }
+
+            _lastSheetEntriesByAsset["Strings/SpeechBubbles"] = entries;
+
+            this.Monitor.Log($"--- SpeechBubbles keys (total {entries.Count}) ---", LogLevel.Info);
+            for (int i = 0; i < entries.Count; i++)
+                this.Monitor.Log($"{i,4}: {entries[i].Key}", LogLevel.Info);
+        }
+
+        private async void TestBubbles(string cmd, string[] args)
+        {
+            // Parse args
+            string filterArg = args.Length > 0 ? args[0] : "all";
+            int delay = (args.Length > 1 && int.TryParse(args[1], out var d)) ? Math.Max(1, d) : 1000;
+            string filter = filterArg.Equals("all", StringComparison.OrdinalIgnoreCase) ? null : filterArg;
+
+            // Load bubble lines from Strings/SpeechBubbles
+            var entries = LoadSpeechBubbles(filter);
+            if (entries == null || entries.Count == 0)
+            {
+                Monitor.Log($"[BUBBLES] No lines found in Strings/SpeechBubbles (filter='{filter ?? "(none)"}').", LogLevel.Info);
+                return;
+            }
+
+            var loc = Game1.player.currentLocation;
+            if (loc == null)
+            {
+                Monitor.Log("[BUBBLES] No current location.", LogLevel.Warn);
+                return;
+            }
+
+            bool didWarp = false;
+            bool spawnedTemp = false;
+            NPC tempLewis = null;
+
+            // Make sure we have visible villagers near the player.
+            List<NPC> villagersHere = loc.characters?
+                .OfType<NPC>()
+                .Where(n => n.IsVillager && !n.IsMonster)
+                .ToList() ?? new List<NPC>();
+
+            if (villagersHere.Count == 0)
+            {
+                // Try warping everyone TO the player
+                WarpAllVillagersToPlayer();
+                didWarp = true;
+
+                villagersHere = Game1.player.currentLocation.characters?
+                    .OfType<NPC>()
+                    .Where(n => n.IsVillager && !n.IsMonster)
+                    .ToList() ?? new List<NPC>();
+            }
+
+            if (villagersHere.Count == 0)
+            {
+                // Still nobody? Spawn a temp Lewis
+                tempLewis = Game1.getCharacterFromName("Lewis", true);
+                if (tempLewis != null)
+                {
+                    tempLewis.currentLocation = loc;
+                    if (!loc.characters.Contains(tempLewis))
+                        loc.addCharacter(tempLewis);
+
+                    int px = Game1.player.TilePoint.X;
+                    int py = Game1.player.TilePoint.Y;
+                    tempLewis.setTileLocation(new Vector2(px + 1, py));
+                    villagersHere.Add(tempLewis);
+                    spawnedTemp = true;
+                }
+            }
+
+            if (villagersHere.Count == 0)
+            {
+                Monitor.Log("[BUBBLES] Couldn’t stage any NPC in the current area.", LogLevel.Warn);
+                if (didWarp) RestoreWarpedVillagers();
+                return;
+            }
+            _collectV2Failures = true;
+           var _bubbleSummarySeen = new HashSet<string>(StringComparer.Ordinal); 
+            try
+            {
+                Monitor.Log($"[BUBBLES] Playing {entries.Count} bubble(s) targeted to their NPC (delay={delay}ms, filter='{filter ?? "all"}')…", LogLevel.Info);
+
+                foreach (var e in entries)
+                {
+                    // figure out who should speak this line from the key
+                    var npcName = ParseNpcFromBubbleKey(e.Key);
+                    if (string.IsNullOrWhiteSpace(npcName))
+                    {
+                        Monitor.Log($"[BUBBLES] Couldn’t parse NPC from key '{e.Key}', skipping.", LogLevel.Trace);
+                        continue;
+                    }
+
+                    var speaker = GetOrStageNpcForTest(npcName);
+                    if (speaker == null)
+                    {
+                        Monitor.Log($"[BUBBLES] Couldn’t stage NPC '{npcName}' for key '{e.Key}', skipping.", LogLevel.Trace);
+                        continue;
+                    }
+
+                    // bubble only; no DialogueBox
+                    EmitBubbleOnly(speaker, e.Value);
+
+                    await Task.Delay(delay);
+                }
+            }
+            finally
+            {
+                PrintV2FailureReport();
+                _collectV2Failures = false;
+                _bubbleSummarySeen = null;
+
+                // put everyone back
+                CleanupStagedNpcs();
+            }
+
+
+
+
+
+            Monitor.Log("[BUBBLES] Done.", LogLevel.Info);
+        }
+
+        private List<SheetEntry> LoadSpeechBubbles(string filter)
+        {
+            return LoadStringSheet("Strings/SpeechBubbles", filter);
+        }
+
+        private List<SheetEntry> LoadStringSheet(string assetPath, string filter)
+        {
+            var results = new List<SheetEntry>();
+            try
+            {
+                var dict = this.Helper.GameContent.Load<Dictionary<string, string>>(assetPath);
+                if (dict == null || dict.Count == 0)
+                    return results;
+
+                IEnumerable<KeyValuePair<string, string>> q = dict;
+                if (!string.IsNullOrWhiteSpace(filter))
+                    q = q.Where(kv =>
+                        (kv.Key?.IndexOf(filter, StringComparison.OrdinalIgnoreCase) ?? -1) >= 0 ||
+                        (kv.Value?.IndexOf(filter, StringComparison.OrdinalIgnoreCase) ?? -1) >= 0);
+
+                int i = 0;
+                foreach (var kv in q.OrderBy(k => k.Key, StringComparer.OrdinalIgnoreCase))
+                    results.Add(new SheetEntry { Index = i++, Key = kv.Key, Value = kv.Value ?? "" });
+            }
+            catch (Exception ex)
+            {
+                this.Monitor.Log($"Failed to read string sheet '{assetPath}': {ex.Message}", LogLevel.Trace);
+            }
+            return results;
+        }
+
+        private readonly List<(NPC Npc, GameLocation Location, Vector2 Tile)> _warpBackup = new();
+
+        private void WarpAllVillagersToPlayer(int columns = 6, int rowSpacing = 1)
+        {
+            _warpBackup.Clear();
+
+            var targetLoc = Game1.player.currentLocation;
+            if (targetLoc == null)
+                return;
+
+            // collect all villagers from all locations
+            var villagers = new List<NPC>();
+            foreach (var loc in Game1.locations)
+            {
+                if (loc?.characters == null) continue;
+                foreach (var c in loc.characters)
+                {
+                    if (c is NPC n && n.IsVillager && !n.IsMonster)
+                        villagers.Add(n);
+                }
+            }
+
+            if (villagers.Count == 0)
+                return;
+
+            int px = Game1.player.TilePoint.X;
+            int py = Game1.player.TilePoint.Y;
+
+            int col = 0, row = 0;
+
+            foreach (var npc in villagers)
+            {
+                try
+                {
+                    var originalLoc = npc.currentLocation;
+                    var originalTile = npc.Tile;
+
+                    // remember where they were
+                    _warpBackup.Add((npc, originalLoc, originalTile));
+
+                    // ensure they are in the player's location list
+                    if (originalLoc != targetLoc)
+                    {
+                        try { originalLoc?.characters?.Remove(npc); } catch { }
+                        npc.currentLocation = targetLoc;
+                        if (!targetLoc.characters.Contains(npc))
+                            targetLoc.addCharacter(npc);
+                    }
+
+                    // place on a grid around the player
+                    int tx = px + 2 + col;          // start a little to the right of player
+                    int ty = py + row * rowSpacing; // rows beneath/above as needed
+
+                    npc.setTileLocation(new Vector2(tx, ty));
+                    npc.faceTowardFarmerForPeriod(1, 1, false, Game1.player);
+
+                    col++;
+                    if (col >= columns)
+                    {
+                        col = 0;
+                        row++;
+                    }
+                }
+                catch { /* keep going */ }
+            }
+        }
+
+        private void RestoreWarpedVillagers()
+        {
+            // put everyone back where they came from
+            foreach (var (npc, originalLoc, originalTile) in _warpBackup)
+            {
+                try
+                {
+                    var currentLoc = npc.currentLocation;
+                    if (currentLoc != null && currentLoc != originalLoc)
+                    {
+                        try { currentLoc.characters?.Remove(npc); } catch { }
+                    }
+
+                    npc.currentLocation = originalLoc;
+                    if (originalLoc != null && !originalLoc.characters.Contains(npc))
+                        originalLoc.addCharacter(npc);
+
+                    npc.setTileLocation(originalTile);
+                }
+                catch { /* best effort */ }
+            }
+
+            _warpBackup.Clear();
+        }
+
+
+        private void PlayBubbleByKey(string cmd, string[] args)
+        {
+            if (args.Length < 1)
+            {
+                this.Monitor.Log("Usage: play_bubble_key <key>", LogLevel.Info);
+                return;
+            }
+
+            string key = args[0];
+
+            try
+            {
+                var dict = this.Helper.GameContent.Load<Dictionary<string, string>>("Strings/SpeechBubbles");
+                if (dict == null || !dict.TryGetValue(key, out var raw) || string.IsNullOrWhiteSpace(raw))
+                {
+                    this.Monitor.Log($"Key '{key}' not found in 'Strings/SpeechBubbles'.", LogLevel.Warn);
+                    return;
+                }
+
+                var speaker = DefaultSpeaker() ?? Game1.getCharacterFromName("Lewis", true);
+                if (speaker == null)
+                {
+                    this.Monitor.Log("No available NPC to speak this bubble.", LogLevel.Warn);
+                    return;
+                }
+
+                EmitBubbleOnly(speaker, raw);
+                Game1.addHUDMessage(new HUDMessage($"(Strings/SpeechBubbles:{key})"));
+            }
+            catch (Exception ex)
+            {
+                this.Monitor.Log($"Failed to load 'Strings/SpeechBubbles': {ex.Message}", LogLevel.Warn);
+            }
+        }
+
+        private void EmitBubbleOnly(NPC speaker, string rawText, int durationMs = 1800)
+        {
+            try
+            {
+                if (speaker == null || string.IsNullOrWhiteSpace(rawText))
+                    return;
+
+                // format placeholders the same way vanilla code would
+                // {0} => farmer name, {1} => farm name
+                string farmerName = Utility.FilterUserName(Game1.player?.Name) ?? "";
+                string farmName = Utility.FilterUserName(Game1.player?.farmName?.Value) ?? "";
+
+                string formatted = rawText;
+                try
+                {
+                    // string.Format will leave it unchanged if no placeholders exist
+                    formatted = string.Format(rawText, farmerName, farmName);
+                }
+                catch
+                {
+                    // if malformed placeholders slip in, fall back to raw text
+                    formatted = rawText;
+                }
+
+                // bubble only; do NOT open Dialogue UI
+                speaker.showTextAboveHead(text: formatted, spriteTextColor: null, duration: durationMs);
+            }
+            catch (Exception ex)
+            {
+                this.Monitor.Log($"EmitBubbleOnly failed: {ex}", LogLevel.Trace);
+            }
+        }
+
+
+
+
+
+
 
         // ===================== Commands =====================
 
@@ -775,178 +1114,8 @@ namespace VoiceOverFrameworkMod
             _v2Fails.Clear();
         }
 
-        // ===================== SHEETS: list / play / test =====================
 
-        private void ListSheet(string cmd, string[] args)
-        {
-            if (args.Length == 0)
-            {
-                this.Monitor.Log("Usage: list_sheet <assetPath> [filter]", LogLevel.Info);
-                return;
-            }
 
-            string asset = args[0];
-            string filter = args.Length > 1 ? args[1] : null;
-
-            var entries = LoadStringSheet(asset, filter);
-            if (entries.Count == 0)
-            {
-                this.Monitor.Log($"No entries found in '{asset}' (filter='{filter ?? "(none)"}').", LogLevel.Info);
-                return;
-            }
-
-            _lastSheetEntriesByAsset[asset] = entries;
-
-            this.Monitor.Log($"--- Sheet keys for {asset} (total {entries.Count}) ---", LogLevel.Info);
-            for (int i = 0; i < entries.Count; i++)
-                this.Monitor.Log($"{i,4}: {entries[i].Key}", LogLevel.Info);
-        }
-
-        private async void TestSheet(string cmd, string[] args)
-        {
-            if (args.Length == 0)
-            {
-                this.Monitor.Log("Usage: test_sheet <assetPath|all> [delayMs] [filter]", LogLevel.Info);
-                return;
-            }
-
-            string target = args[0];
-            int delay = (args.Length > 1 && int.TryParse(args[1], out var d)) ? Math.Max(1, d) : 1200;
-            string filter = args.Length > 2 ? args[2] : null;
-
-            _collectV2Failures = true;
-            try
-            {
-                if (target.Equals("all", StringComparison.OrdinalIgnoreCase))
-                {
-                    int total = 0;
-                    foreach (var asset in DefaultSheetAssets)
-                    {
-                        var entries = LoadStringSheet(asset, filter);
-                        if (entries.Count == 0) continue;
-
-                        _lastSheetEntriesByAsset[asset] = entries;
-
-                        this.Monitor.Log($"[SHEET] {asset}: {entries.Count} strings…", LogLevel.Info);
-                        foreach (var e in entries)
-                        {
-                            // Bubble for SpeechBubbles, otherwise portrait window
-                            bool asBubble = asset.IndexOf("SpeechBubbles", StringComparison.OrdinalIgnoreCase) >= 0;
-                            var speaker = DefaultSpeaker() ?? Game1.getCharacterFromName("Lewis", true);
-                            if (speaker == null) continue;
-
-                            if (asBubble)
-                                EmitBubbleWithVOF(speaker, e.Value);
-                            else
-                                EmitPortraitDialogue(speaker, e.Value);
-
-                            await Task.Delay(delay);
-                            Game1.exitActiveMenu();
-                            total++;
-                        }
-                    }
-                    this.Monitor.Log($"[SHEET] Completed. Total lines: {total}.", LogLevel.Info);
-                }
-                else
-                {
-                    string asset = target;
-                    var entries = LoadStringSheet(asset, filter);
-                    if (entries.Count == 0)
-                    {
-                        this.Monitor.Log($"No entries found in '{asset}' (filter='{filter ?? "(none)"}').", LogLevel.Info);
-                        return;
-                    }
-
-                    _lastSheetEntriesByAsset[asset] = entries;
-
-                    this.Monitor.Log($"[SHEET] {asset}: {entries.Count} strings…", LogLevel.Info);
-                    foreach (var e in entries)
-                    {
-                        bool asBubble = asset.IndexOf("SpeechBubbles", StringComparison.OrdinalIgnoreCase) >= 0;
-                        var speaker = DefaultSpeaker() ?? Game1.getCharacterFromName("Lewis", true);
-                        if (speaker == null) continue;
-
-                        if (asBubble)
-                            EmitBubbleWithVOF(speaker, e.Value);
-                        else
-                            EmitPortraitDialogue(speaker, e.Value);
-
-                        await Task.Delay(delay);
-                        Game1.exitActiveMenu();
-                    }
-                }
-            }
-            finally
-            {
-                PrintV2FailureReport();
-                _collectV2Failures = false;
-            }
-        }
-
-        private void PlaySheetByKey(string cmd, string[] args)
-        {
-            if (args.Length < 2)
-            {
-                this.Monitor.Log("Usage: play_sheet_key <assetPath> <key>", LogLevel.Info);
-                return;
-            }
-
-            string asset = args[0];
-            string key = args[1];
-
-            try
-            {
-                var dict = this.Helper.GameContent.Load<Dictionary<string, string>>(asset);
-                if (dict == null || !dict.TryGetValue(key, out var raw) || string.IsNullOrWhiteSpace(raw))
-                {
-                    this.Monitor.Log($"Key '{key}' not found in '{asset}'.", LogLevel.Warn);
-                    return;
-                }
-
-                bool asBubble = asset.IndexOf("SpeechBubbles", StringComparison.OrdinalIgnoreCase) >= 0;
-                var speaker = DefaultSpeaker() ?? Game1.getCharacterFromName("Lewis", true);
-                if (speaker == null)
-                {
-                    this.Monitor.Log("No available NPC to speak this line.", LogLevel.Warn);
-                    return;
-                }
-
-                if (asBubble)
-                    EmitBubbleWithVOF(speaker, raw);
-                else
-                    EmitPortraitDialogue(speaker, raw);
-
-                Game1.addHUDMessage(new HUDMessage($"({asset}:{key})"));
-            }
-            catch (Exception ex)
-            {
-                this.Monitor.Log($"Failed to load '{asset}': {ex.Message}", LogLevel.Warn);
-            }
-        }
-
-        private List<SheetEntry> LoadStringSheet(string assetPath, string filter)
-        {
-            var results = new List<SheetEntry>();
-            try
-            {
-                var dict = this.Helper.GameContent.Load<Dictionary<string, string>>(assetPath);
-                if (dict == null || dict.Count == 0) return results;
-
-                IEnumerable<KeyValuePair<string, string>> q = dict;
-                if (!string.IsNullOrWhiteSpace(filter))
-                    q = q.Where(kv => (kv.Key?.IndexOf(filter, StringComparison.OrdinalIgnoreCase) ?? -1) >= 0 ||
-                                      (kv.Value?.IndexOf(filter, StringComparison.OrdinalIgnoreCase) ?? -1) >= 0);
-
-                int i = 0;
-                foreach (var kv in q.OrderBy(k => k.Key, StringComparer.OrdinalIgnoreCase))
-                    results.Add(new SheetEntry { Index = i++, Key = kv.Key, Value = kv.Value ?? "" });
-            }
-            catch (Exception ex)
-            {
-                this.Monitor.Log($"Failed to read string sheet '{assetPath}': {ex.Message}", LogLevel.Trace);
-            }
-            return results;
-        }
 
         // ===================== EVENTS: list / play / test =====================
 
@@ -1222,7 +1391,117 @@ namespace VoiceOverFrameworkMod
             }
         }
 
-        // Show a speech bubble AND also open a portrait dialogue with the same line so VOF still triggers.
+        // Extracts the NPC's (display) name from a SpeechBubbles key like
+        //  "SeedShop_Pierre_NotSummer" → "Pierre"
+        private string ParseNpcFromBubbleKey(string key)
+        {
+            if (string.IsNullOrWhiteSpace(key))
+                return null;
+
+            // Keys are generally <Location>_<NPC>_<rest>
+            var parts = key.Split('_');
+            if (parts.Length < 2)
+                return null;
+
+            var npcToken = parts[1];
+
+            // Normalize a few special cases if needed
+            switch (npcToken)
+            {
+                case "MrQi":
+                    return "Qi";
+                default:
+                    return npcToken;
+            }
+        }
+        private sealed class _TempNpcRecord
+        {
+            public NPC Npc;
+            public bool WasAdded;                 // we added to characters list
+            public GameLocation OriginalLoc;
+            public Microsoft.Xna.Framework.Vector2 OriginalTile;
+        }
+
+        private readonly List<_TempNpcRecord> _tempNpcs = new();
+
+        private NPC GetOrStageNpcForTest(string npcName)
+        {
+            if (string.IsNullOrWhiteSpace(npcName))
+                return null;
+
+            var targetLoc = Game1.player?.currentLocation;
+            if (targetLoc == null)
+                return null;
+
+            // Try get a concrete NPC instance (this can create it if not loaded)
+            var npc = Game1.getCharacterFromName(npcName, true);
+            if (npc == null)
+                return null;
+
+            // If already present & in our location, just position near player
+            if (npc.currentLocation == targetLoc && targetLoc.characters?.Contains(npc) == true)
+                return PlaceNpcNearPlayer(npc);
+
+            // Otherwise, remember where it was (best effort), move into our location, and record cleanup
+            var rec = new _TempNpcRecord
+            {
+                Npc = npc,
+                OriginalLoc = npc.currentLocation,
+                OriginalTile = npc.Tile
+            };
+
+            try { rec.WasAdded = !targetLoc.characters.Contains(npc); } catch { rec.WasAdded = true; }
+
+            try
+            {
+                // detach from old location if needed
+                if (npc.currentLocation != null && npc.currentLocation != targetLoc)
+                    npc.currentLocation.characters?.Remove(npc);
+            }
+            catch { /* ignore */ }
+
+            npc.currentLocation = targetLoc;
+            try { if (!targetLoc.characters.Contains(npc)) targetLoc.addCharacter(npc); } catch { }
+
+            _tempNpcs.Add(rec);
+            return PlaceNpcNearPlayer(npc);
+        }
+
+        private NPC PlaceNpcNearPlayer(NPC npc)
+        {
+            if (npc == null) return null;
+            var px = Game1.player.TilePoint.X;
+            var py = Game1.player.TilePoint.Y;
+            npc.setTileLocation(new Microsoft.Xna.Framework.Vector2(px + 1, py));
+            try { npc.faceTowardFarmerForPeriod(1, 1, false, Game1.player); } catch { }
+            return npc;
+        }
+
+        private void CleanupStagedNpcs()
+        {
+            foreach (var rec in _tempNpcs)
+            {
+                try
+                {
+                    var npc = rec.Npc;
+                    var cur = npc?.currentLocation;
+
+                    // remove from current location if we added it
+                    if (cur != null && rec.WasAdded)
+                        cur.characters?.Remove(npc);
+
+                    // put back
+                    npc.currentLocation = rec.OriginalLoc;
+                    if (rec.OriginalLoc != null && !rec.OriginalLoc.characters.Contains(npc))
+                        rec.OriginalLoc.addCharacter(npc);
+
+                    npc.setTileLocation(rec.OriginalTile);
+                }
+                catch { /* best effort */ }
+            }
+            _tempNpcs.Clear();
+        }
+
         private void EmitBubbleWithVOF(NPC speaker, string rawText)
         {
             try
