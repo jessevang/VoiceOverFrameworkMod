@@ -1,6 +1,7 @@
 ﻿using StardewValley;
 using System;
 using System.Collections.Generic;
+using System.Text;
 using System.Text.RegularExpressions;
 
 namespace VoiceOverFrameworkMod
@@ -11,7 +12,7 @@ namespace VoiceOverFrameworkMod
         private sealed class PageSeg
         {
             public string Actor;
-            public string Display;     // <- This is now pre-sanitized for DisplayPattern matching
+            public string Display; 
             public int PageIndex;
             public string Gender;
         }
@@ -20,7 +21,7 @@ namespace VoiceOverFrameworkMod
             new(StringComparer.OrdinalIgnoreCase)
             {
                 "Abigail","Alex","Elliott","Emily","Haley","Harvey",
-                "Leah","Maru","Penny","Sam","Sebastian","Shane", "Krobus" //Note Krubus isn't a marrialge but is added so marriage dialgoue for roomate can be pulled
+                "Leah","Maru","Penny","Sam","Sebastian","Shane", "Krobus"
             };
 
         private bool IsMarriableCharacter(string name) =>
@@ -45,14 +46,27 @@ namespace VoiceOverFrameworkMod
             private static readonly Regex PortraitRegex = new(@"\$(?:h|s|u|l|a|\d+)", RegexOptions.Compiled);
             private static readonly Regex RxCmdChancePrefix = new(@"#?\$c\s*[0-9.]+\s*#", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
-            // tokens to REMOVE for DisplayPattern (random + player-specific + time/season/etc)
-            private static readonly Regex RxRemovePercentTokens = new(
-                @"%(?:adj|noun|place|name|spouse|firstnameletter|farm|favorite|kid1|kid2|pet|firstnameletter|band|book|season|time)\b",
-                RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            // NOTE: Replaced the old boundary-based remover with a robust, locale-agnostic one. Used to fix language token not getting removed
+            // - Optional percent `%` or full-width `％` (we also normalize to `%` beforehand)
+            // - No \b boundaries (CJK adjacency can break those)
+            private static readonly Regex RxStripTokens = new(
+                @"(?i)(?:%?(?:adj|noun|place|name|spouse|firstnameletter|farm|favorite|kid1|kid2|pet|band|book|season|time))",
+                RegexOptions.Compiled
+            );
 
             private static readonly Regex RxAtToken = new(@"@", RegexOptions.Compiled);
             private static readonly Regex RxSquareBracketGrant = new(@"\[[^\]]+\]", RegexOptions.Compiled);
 
+            // ---------- NEW: normalization helper (handles width variants like ％ and general form) ----------
+            private static string PreNormalize(string s)
+            {
+                if (string.IsNullOrEmpty(s)) return s;
+                // Normalize to NFKC so width-variant symbols collapse to ASCII where possible
+                s = s.Normalize(NormalizationForm.FormKC);
+                // Extra safety: if any full-width percent remains for some reason, convert
+                s = s.Replace('％', '%');
+                return s;
+            }
 
             public static List<PageSeg> SplitAndSanitize(string raw, bool splitBAsPage = false)
             {
@@ -202,16 +216,7 @@ namespace VoiceOverFrameworkMod
                 return pages;
             }
 
-
-
-
-
             // Expand $p prerequisite anywhere in the string.
-            // Syntax examples:
-            //   "$p 3#A|B"
-            //   "#$p 17|18|Apple#A|B"
-            //   "prefix text#$p 9#A|B"
-            // Only B (no-match) is allowed to contain further commands; we recurse after splitting.
             private static bool TrySplitPrereq(string text, out string a, out string b)
             {
                 a = b = null;
@@ -236,23 +241,13 @@ namespace VoiceOverFrameworkMod
                 return true;
             }
 
-
-
-
-
             // Expand $y 'prompt_opt1_resp1_opt2_resp2' into: [prompt, resp1, resp2, ...]
-            // Expand $q .. # <prompt> # $r .. # <resp1> # $r .. # <resp2> ... into same shape.
-
-            // Expand $y 'prompt_opt1_resp1_opt2_resp2' into: [prompt, resp1, resp2, ...]
-            // Expand $q .. # <prompt> # $r .. # <resp1> # $r .. # <resp2> ... into same shape.
             private static bool TryExpandInteractive(string text, out List<string> outputs)
             {
                 outputs = null;
                 if (string.IsNullOrWhiteSpace(text)) return false;
 
                 // ---- Robust $y parsing (allow inner apostrophes like you'll) ----
-                // Find $y, then take the first quote after it as the wrapper,
-                // and capture up to the LAST occurrence of that same quote.
                 int yIdx = text.IndexOf("$y", StringComparison.OrdinalIgnoreCase);
                 if (yIdx >= 0)
                 {
@@ -261,7 +256,7 @@ namespace VoiceOverFrameworkMod
                     {
                         char ch = text[i];
                         if (ch == '\'' || ch == '"') { qStart = i; break; }
-                        if (!char.IsWhiteSpace(ch)) break; // something else after $y → not a quoted payload
+                        if (!char.IsWhiteSpace(ch)) break;
                     }
 
                     if (qStart >= 0)
@@ -343,8 +338,6 @@ namespace VoiceOverFrameworkMod
                 return false;
             }
 
-
-
             private static void AddPageIfNotEmpty(List<PageSeg> pages, string body, int pageIndex, string gender)
             {
                 if (string.IsNullOrWhiteSpace(body)) return;
@@ -361,13 +354,13 @@ namespace VoiceOverFrameworkMod
                 });
             }
 
-
-
-
             private static string SanitizeForDisplayPattern(string s)
             {
                 if (string.IsNullOrWhiteSpace(s))
                     return string.Empty;
+
+                // --- NEW: normalize width & form first (handles ％ vs % etc) ---
+                s = PreNormalize(s);
 
                 // If it's a once-only line with an $e fallback, keep only the first-time text.
                 if (RxOnceOnlyLine.IsMatch(s))
@@ -400,10 +393,11 @@ namespace VoiceOverFrameworkMod
                 s = Regex.Replace(s, @"%noturn\b", "", RegexOptions.IgnoreCase);  // strip %noturn
                 s = Regex.Replace(s, @"\s*\$k\b", "", RegexOptions.IgnoreCase);   // strip bare $k
 
-                // NOTE: no special "$d <flag>" stripping here in the reverted version
+                // --- CRITICAL CHANGE: remove variable %tokens robustly (ASCII or full-width or bare) ---
+                // we pre-normalized, but this also handles bare kid1/kid2 cases
+                s = RxStripTokens.Replace(s, "");
 
-                // remove variable %tokens (name/farm/etc) and '@'
-                s = RxRemovePercentTokens.Replace(s, "");
+                // remove '@' (player name placeholder)
                 s = RxAtToken.Replace(s, "");
 
                 // drop portrait codes and tidy whitespace
@@ -412,10 +406,6 @@ namespace VoiceOverFrameworkMod
                 s = Regex.Replace(s, @"\s{2,}", " ").Trim();
                 return s;
             }
-
-
-
-
 
             private static string StripControlTokensKeepPortraits(string s)
             {
@@ -444,19 +434,11 @@ namespace VoiceOverFrameworkMod
                 // Explicitly remove %fork (not rendered to the player).
                 s = Regex.Replace(s, @"%fork\b", "", RegexOptions.IgnoreCase);
 
-                // NOTE: no special "$d <flag>" stripping here in the reverted version
-
                 s = RxCmdOther.Replace(s, "");
                 s = RxTrailingDollar.Replace(s, "");
 
-                // IMPORTANT: We KEEP portrait tokens here; they’re mapped in SanitizeForActor.
                 return RxCollapseWS.Replace(s, " ").Trim();
             }
-
-
-
-
-
 
             private static string SanitizeForActor(string s)
             {
@@ -504,7 +486,6 @@ namespace VoiceOverFrameworkMod
                 b = pre + optB;
                 return true;
             }
-
 
             private static bool TrySplitConditionalChoice(string text, out string a, out string b) =>
                 Regex.Match(text ?? "", @"^\s*#?\$(?:d|query|p)\b[^#]*#(.+?)\|(.+)$", RegexOptions.Singleline | RegexOptions.IgnoreCase) is Match m && m.Success
@@ -647,8 +628,6 @@ namespace VoiceOverFrameworkMod
                 outList.AddRange(final);
                 return outList;
             }
-
         }
-
     }
 }

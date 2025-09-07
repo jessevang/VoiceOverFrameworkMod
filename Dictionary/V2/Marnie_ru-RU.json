@@ -4,7 +4,7 @@
     {
       "Format": "2.0.0",
       "VoicePackId": "DictionaryV2.Marnie.ru-RU",
-      "VoicePackName": "DictionarV2 (Marnie - ru-RU)",
+      "VoicePackName": "DictionaryV2 (Marnie - ru-RU)",
       "Character": "Marnie",
       "Language": "ru-RU",
       "Entries": [
@@ -549,49 +549,9 @@
           "DisplayPattern": "Привет, . Бедняжечка, вымокнуть вот так, до нитки!"
         },
         {
-          "DialogueFrom": "Event:Farm/1590166:s0",
-          "DialogueText": "Hello {Farmer_Name}! {Portrait:Happy}",
-          "AudioPath": "assets/ru-RU/Marnie/68.ogg",
-          "TranslationKey": "Events/Farm:1590166:s0",
-          "PageIndex": 0,
-          "DisplayPattern": "Hello !"
-        },
-        {
-          "DialogueFrom": "Event:Farm/1590166:s1",
-          "DialogueText": "You see this cat here?",
-          "AudioPath": "assets/ru-RU/Marnie/69.ogg",
-          "TranslationKey": "Events/Farm:1590166:s1",
-          "PageIndex": 0,
-          "DisplayPattern": "You see this cat here?"
-        },
-        {
-          "DialogueFrom": "Event:Farm/1590166:s2",
-          "DialogueText": "I found it sitting outside the entrance to your farm! I think it's a stray... poor little thing. {Portrait:Sad}",
-          "AudioPath": "assets/ru-RU/Marnie/70.ogg",
-          "TranslationKey": "Events/Farm:1590166:s2",
-          "PageIndex": 0,
-          "DisplayPattern": "I found it sitting outside the entrance to your farm! I think it's a stray... poor little thing."
-        },
-        {
-          "DialogueFrom": "Event:Farm/1590166:s3",
-          "DialogueText": "I think it likes this place! Hey, um.... Don't you think this farm could use a good cat? {Portrait:Happy}",
-          "AudioPath": "assets/ru-RU/Marnie/71.ogg",
-          "TranslationKey": "Events/Farm:1590166:s3",
-          "PageIndex": 0,
-          "DisplayPattern": "I think it likes this place! Hey, um.... Don't you think this farm could use a good cat?"
-        },
-        {
-          "DialogueFrom": "Event:Farm/1590166:s4",
-          "DialogueText": "Well, little %pet... You be a good kitty now... okay?",
-          "AudioPath": "assets/ru-RU/Marnie/72.ogg",
-          "TranslationKey": "Events/Farm:1590166:s4",
-          "PageIndex": 0,
-          "DisplayPattern": "Well, little ... You be a good kitty now... okay?"
-        },
-        {
           "DialogueFrom": "Event:Farm/897405:s0",
           "DialogueText": "Hello {Farmer_Name}! {Portrait:Happy}",
-          "AudioPath": "assets/ru-RU/Marnie/73.ogg",
+          "AudioPath": "assets/ru-RU/Marnie/68.ogg",
           "TranslationKey": "Events/Farm:897405:s0",
           "PageIndex": 0,
           "DisplayPattern": "Hello !"
@@ -599,7 +559,7 @@
         {
           "DialogueFrom": "Event:Farm/897405:s1",
           "DialogueText": "You see this dog here?",
-          "AudioPath": "assets/ru-RU/Marnie/74.ogg",
+          "AudioPath": "assets/ru-RU/Marnie/69.ogg",
           "TranslationKey": "Events/Farm:897405:s1",
           "PageIndex": 0,
           "DisplayPattern": "You see this dog here?"
@@ -607,23 +567,23 @@
         {
           "DialogueFrom": "Event:Farm/897405:s2",
           "DialogueText": "I found it sitting outside the entrance to your farm! I think it's a stray... poor thing. {Portrait:Sad}",
-          "AudioPath": "assets/ru-RU/Marnie/75.ogg",
+          "AudioPath": "assets/ru-RU/Marnie/70.ogg",
           "TranslationKey": "Events/Farm:897405:s2",
           "PageIndex": 0,
-          "DisplayPattern": "I found it sitting outside the entrance to your farm! I think it's a stray... poor thing."
+          "DisplayPattern": "I found it sitting outside the entrance to your ! I think it's a stray... poor thing."
         },
         {
           "DialogueFrom": "Event:Farm/897405:s3",
           "DialogueText": "Hey, it seems to like this place! Hey, um.... Don't you think this farm could use a good dog? {Portrait:Happy}",
-          "AudioPath": "assets/ru-RU/Marnie/76.ogg",
+          "AudioPath": "assets/ru-RU/Marnie/71.ogg",
           "TranslationKey": "Events/Farm:897405:s3",
           "PageIndex": 0,
-          "DisplayPattern": "Hey, it seems to like this place! Hey, um.... Don't you think this farm could use a good dog?"
+          "DisplayPattern": "Hey, it seems to like this ! Hey, um.... Don't you think this could use a good dog?"
         },
         {
           "DialogueFrom": "Event:Farm/897405:s4",
           "DialogueText": "Well, %pet... You be a good pooch now... okay?",
-          "AudioPath": "assets/ru-RU/Marnie/77.ogg",
+          "AudioPath": "assets/ru-RU/Marnie/72.ogg",
           "TranslationKey": "Events/Farm:897405:s4",
           "PageIndex": 0,
           "DisplayPattern": "Well, ... You be a good pooch now... okay?"
@@ -631,7 +591,7 @@
         {
           "DialogueFrom": "Event:Farm/91:s0|g=male",
           "DialogueText": "Good morning, Mr. {Farmer_Name}! {Portrait:Happy}",
-          "AudioPath": "assets/ru-RU/Marnie/78_male.ogg",
+          "AudioPath": "assets/ru-RU/Marnie/73_male.ogg",
           "TranslationKey": "Events/Farm:91:s0",
           "PageIndex": 0,
           "DisplayPattern": "Good morning, Mr. !",
@@ -640,7 +600,7 @@
         {
           "DialogueFrom": "Event:Farm/91:s1|g=female",
           "DialogueText": "Good morning, Ms. {Farmer_Name}! {Portrait:Happy}",
-          "AudioPath": "assets/ru-RU/Marnie/79_female.ogg",
+          "AudioPath": "assets/ru-RU/Marnie/74_female.ogg",
           "TranslationKey": "Events/Farm:91:s1",
           "PageIndex": 0,
           "DisplayPattern": "Good morning, Ms. !",
@@ -649,7 +609,7 @@
         {
           "DialogueFrom": "Event:Farm/91:s2",
           "DialogueText": "I came by to ask you a favor, since you're such a kind neighbor.",
-          "AudioPath": "assets/ru-RU/Marnie/80.ogg",
+          "AudioPath": "assets/ru-RU/Marnie/75.ogg",
           "TranslationKey": "Events/Farm:91:s2",
           "PageIndex": 0,
           "DisplayPattern": "I came by to ask you a favor, since you're such a kind neighbor."
@@ -657,15 +617,15 @@
         {
           "DialogueFrom": "Event:Farm/91:s3",
           "DialogueText": "You see, I'm trying to train my goats to say 'hello'... but they simply won't pay attention to me unless I have their favorite treat, cave carrots! {Portrait:Unique}",
-          "AudioPath": "assets/ru-RU/Marnie/81.ogg",
+          "AudioPath": "assets/ru-RU/Marnie/76.ogg",
           "TranslationKey": "Events/Farm:91:s3",
           "PageIndex": 0,
-          "DisplayPattern": "You see, I'm trying to train my goats to say 'hello'... but they simply won't pay attention to me unless I have their favorite treat, cave carrots!"
+          "DisplayPattern": "You see, I'm trying to train my goats to say 'hello'... but they simply won't pay attention to me unless I have their treat, cave carrots!"
         },
         {
           "DialogueFrom": "Event:Farm/91:s4",
           "DialogueText": "So... since I'm scared of the mines... I thought, well, maybe you would bring me a cave carrot when you have the chance?",
-          "AudioPath": "assets/ru-RU/Marnie/82.ogg",
+          "AudioPath": "assets/ru-RU/Marnie/77.ogg",
           "TranslationKey": "Events/Farm:91:s4",
           "PageIndex": 0,
           "DisplayPattern": "So... since I'm scared of the mines... I thought, well, maybe you would bring me a cave carrot when you have the chance?"
@@ -673,7 +633,7 @@
         {
           "DialogueFrom": "Event:Farm/91:s5",
           "DialogueText": "There's no pressure... but if you want to, just swing by my house between 9:00 AM and 5:00 PM with a cave carrot. You'll make an old girl very happy. Bye.",
-          "AudioPath": "assets/ru-RU/Marnie/83.ogg",
+          "AudioPath": "assets/ru-RU/Marnie/78.ogg",
           "TranslationKey": "Events/Farm:91:s5",
           "PageIndex": 0,
           "DisplayPattern": "There's no pressure... but if you want to, just swing by my house between 9:00 AM and 5:00 PM with a cave carrot. You'll make an old girl very happy. Bye."
@@ -681,10 +641,50 @@
         {
           "DialogueFrom": "Event:Farm/91:s6",
           "DialogueText": "My goats go wild over cave carrot... I can't imagine why.",
-          "AudioPath": "assets/ru-RU/Marnie/84.ogg",
+          "AudioPath": "assets/ru-RU/Marnie/79.ogg",
           "TranslationKey": "Events/Farm:91:s6",
           "PageIndex": 0,
           "DisplayPattern": "My goats go wild over cave carrot... I can't imagine why."
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s0",
+          "DialogueText": "Hello {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/80.ogg",
+          "TranslationKey": "Events/Farm:1590166:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hello !"
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s1",
+          "DialogueText": "You see this cat here?",
+          "AudioPath": "assets/ru-RU/Marnie/81.ogg",
+          "TranslationKey": "Events/Farm:1590166:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "You see this cat here?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s2",
+          "DialogueText": "I found it sitting outside the entrance to your farm! I think it's a stray... poor little thing. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/82.ogg",
+          "TranslationKey": "Events/Farm:1590166:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I found it sitting outside the entrance to your ! I think it's a stray... poor little thing."
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s3",
+          "DialogueText": "I think it likes this place! Hey, um.... Don't you think this farm could use a good cat? {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/83.ogg",
+          "TranslationKey": "Events/Farm:1590166:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I think it likes this ! Hey, um.... Don't you think this could use a good cat?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s4",
+          "DialogueText": "Well, little %pet... You be a good kitty now... okay?",
+          "AudioPath": "assets/ru-RU/Marnie/84.ogg",
+          "TranslationKey": "Events/Farm:1590166:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, little ... You be a good kitty now... okay?"
         },
         {
           "DialogueFrom": "Event:Town/639373:s0",
@@ -732,7 +732,7 @@
           "AudioPath": "assets/ru-RU/Marnie/90.ogg",
           "TranslationKey": "Events/Town:3917584:s1",
           "PageIndex": 0,
-          "DisplayPattern": "? You'd better keep your eye on him... next time you catch him coming out of the Saloon, you should say something..."
+          "DisplayPattern": "? You'd better keep your eye on him... next you catch him coming out of the Saloon, you should say something..."
         },
         {
           "DialogueFrom": "Event:Town/3917584:s2",
