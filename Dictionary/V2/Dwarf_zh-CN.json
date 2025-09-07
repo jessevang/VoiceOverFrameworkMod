@@ -1,0 +1,566 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Dwarf.zh-CN",
+      "VoicePackName": "DictionarV2 (Dwarf - zh-CN)",
+      "Character": "Dwarf",
+      "Language": "zh-CN",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "嘿，你身为一个人类，还真是擅长采矿啊。",
+          "AudioPath": "assets/zh-CN/Dwarf/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，你身为一个人类，还真是擅长采矿啊。"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "啊！我在书上看到过这个传统……这个是“生日礼物”吧？唔，很有意思……",
+          "AudioPath": "assets/zh-CN/Dwarf/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "啊！我在书上看到过这个传统……这个是“生日礼物”吧？唔，很有意思……"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "啊！我在书上看到过这个传统……这个是“生日礼物”吧？",
+          "AudioPath": "assets/zh-CN/Dwarf/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "啊！我在书上看到过这个传统……这个是“生日礼物”吧？"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "所以送别人垃圾也是一个传统？",
+          "AudioPath": "assets/zh-CN/Dwarf/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:AcceptBirthdayGift_Negative",
+          "PageIndex": 1,
+          "DisplayPattern": "所以送别人垃圾也是一个传统？"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "我不太能分辨出绿色。",
+          "AudioPath": "assets/zh-CN/Dwarf/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "我不太能分辨出绿色。"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "可能是因为在地下待久了。",
+          "AudioPath": "assets/zh-CN/Dwarf/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:GreenRain",
+          "PageIndex": 1,
+          "DisplayPattern": "可能是因为在地下待久了。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "（闻了一下）……这是牛奶吗？（喝了一口）……唔……挺好喝。",
+          "AudioPath": "assets/zh-CN/Dwarf/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "（闻了一下）……这是牛奶吗？（喝了一口）……唔……挺好喝。"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "这些东西都是地上捡的。就是晚上从你们那里拿来的。",
+          "AudioPath": "assets/zh-CN/Dwarf/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "这些东西都是地上捡的。就是晚上从你们那里拿来的。"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "嗯？你说的\"私人财产\"是什么？",
+          "AudioPath": "assets/zh-CN/Dwarf/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "嗯？你说的\"私人财产\"是什么？"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Neutral_milk_item",
+          "DialogueText": "啊，是“牛奶”……（哧溜）……真有趣。我又忘了……这个饮料是从哪里来的？",
+          "AudioPath": "assets/zh-CN/Dwarf/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:AcceptGift_Neutral_milk_item",
+          "PageIndex": 0,
+          "DisplayPattern": "啊，是“牛奶”……（哧溜）……真有趣。我又忘了……这个饮料是从哪里来的？"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Neutral_milk_item",
+          "DialogueText": "……！！！（稀里哗啦）",
+          "AudioPath": "assets/zh-CN/Dwarf/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:AcceptGift_Neutral_milk_item",
+          "PageIndex": 1,
+          "DisplayPattern": "……！！！（稀里哗啦）"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "啊……煮山洞萝卜、烤山洞萝卜、山洞萝卜汤还有焗山洞萝卜。",
+          "AudioPath": "assets/zh-CN/Dwarf/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "啊……煮山洞萝卜、烤山洞萝卜、山洞萝卜汤还有焗山洞萝卜。"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "……还有让夜晚变得甜蜜的山洞萝卜布丁蛋糕",
+          "AudioPath": "assets/zh-CN/Dwarf/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "……还有让夜晚变得甜蜜的山洞萝卜布丁蛋糕"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "什么？",
+          "AudioPath": "assets/zh-CN/Dwarf/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:Tue",
+          "PageIndex": 2,
+          "DisplayPattern": "什么？"
+        },
+        {
+          "DialogueFrom": "firstVisit_IslandNorth",
+          "DialogueText": "如果你进入姜岛上的火山，可能会遇到我们族的人，不用惊慌！我们对人类很友好。",
+          "AudioPath": "assets/zh-CN/Dwarf/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:firstVisit_IslandNorth",
+          "PageIndex": 0,
+          "DisplayPattern": "如果你进入姜岛上的火山，可能会遇到我们族的人，不用惊慌！我们对人类很友好。"
+        },
+        {
+          "DialogueFrom": "mineArea_121",
+          "DialogueText": "我跟你说，你作为一个人类，采矿技术已经很强了。",
+          "AudioPath": "assets/zh-CN/Dwarf/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:mineArea_121",
+          "PageIndex": 0,
+          "DisplayPattern": "我跟你说，你作为一个人类，采矿技术已经很强了。"
+        },
+        {
+          "DialogueFrom": "fishCaught_158",
+          "DialogueText": "哦？你钓到了石头鱼了？我很熟悉的，我们有时候会把它们当宠物养。",
+          "AudioPath": "assets/zh-CN/Dwarf/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:fishCaught_158",
+          "PageIndex": 0,
+          "DisplayPattern": "哦？你钓到了石头鱼了？我很熟悉的，我们有时候会把它们当宠物养。"
+        },
+        {
+          "DialogueFrom": "fishCaught_161",
+          "DialogueText": "哦？你钓到冰柱鱼了？这种小鱼生活在严寒的环境，但很有活力。我们族是不会去那种地方的……太冷了！",
+          "AudioPath": "assets/zh-CN/Dwarf/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:fishCaught_161",
+          "PageIndex": 0,
+          "DisplayPattern": "哦？你钓到冰柱鱼了？这种小鱼生活在严寒的环境，但很有活力。我们族是不会去那种地方的……太冷了！"
+        },
+        {
+          "DialogueFrom": "fishCaught_162",
+          "DialogueText": "哦？你钓到岩浆鳗鱼了？很好啊！我们族也有钓岩浆鳗鱼的传统，这种鱼很好吃！",
+          "AudioPath": "assets/zh-CN/Dwarf/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:fishCaught_162",
+          "PageIndex": 0,
+          "DisplayPattern": "哦？你钓到岩浆鳗鱼了？很好啊！我们族也有钓岩浆鳗鱼的传统，这种鱼很好吃！"
+        },
+        {
+          "DialogueFrom": "firstVisit_Caldera",
+          "DialogueText": "你找到传说中的矮人锻造台了？太牛了……我自己都没见过。",
+          "AudioPath": "assets/zh-CN/Dwarf/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:firstVisit_Caldera",
+          "PageIndex": 0,
+          "DisplayPattern": "你找到传说中的矮人锻造台了？太牛了……我自己都没见过。"
+        },
+        {
+          "DialogueFrom": "firstVisit_Caldera",
+          "DialogueText": "那个机器太古老了，我们族已经没有人能理解它的原理了，不过能确定是矮人的技术。",
+          "AudioPath": "assets/zh-CN/Dwarf/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:firstVisit_Caldera",
+          "PageIndex": 1,
+          "DisplayPattern": "那个机器太古老了，我们族已经没有人能理解它的原理了，不过能确定是矮人的技术。"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "嘿，要买点什么吗？",
+          "AudioPath": "assets/zh-CN/Dwarf/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，要买点什么吗？"
+        },
+        {
+          "DialogueFrom": "Wed_6",
+          "DialogueText": "很久以前，人们就知道了先进技术的秘密。考古学上的证据可以证明这一点。",
+          "AudioPath": "assets/zh-CN/Dwarf/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:Wed_6",
+          "PageIndex": 0,
+          "DisplayPattern": "很久以前，人们就知道了先进技术的秘密。考古学上的证据可以证明这一点。"
+        },
+        {
+          "DialogueFrom": "Wed_6",
+          "DialogueText": "可是我搞不懂这些知识人们都是从何处得来的？又产生了什么成果？我觉得有些问题可能永远没有答案……",
+          "AudioPath": "assets/zh-CN/Dwarf/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:Wed_6",
+          "PageIndex": 1,
+          "DisplayPattern": "可是我搞不懂这些知识人们都是从何处得来的？又产生了什么成果？我觉得有些问题可能永远没有答案……"
+        },
+        {
+          "DialogueFrom": "Thu_4",
+          "DialogueText": "在地下感觉最舒服了。",
+          "AudioPath": "assets/zh-CN/Dwarf/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:Thu_4",
+          "PageIndex": 0,
+          "DisplayPattern": "在地下感觉最舒服了。"
+        },
+        {
+          "DialogueFrom": "Thu_4",
+          "DialogueText": "越深越好啊。",
+          "AudioPath": "assets/zh-CN/Dwarf/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:Thu_4",
+          "PageIndex": 1,
+          "DisplayPattern": "越深越好啊。"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "你以前没见过矮子吗？",
+          "AudioPath": "assets/zh-CN/Dwarf/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "你以前没见过矮子吗？"
+        },
+        {
+          "DialogueFrom": "Sat_8",
+          "DialogueText": "矿井可是个危险的地方。小心啊，朋友。",
+          "AudioPath": "assets/zh-CN/Dwarf/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:Sat_8",
+          "PageIndex": 0,
+          "DisplayPattern": "矿井可是个危险的地方。小心啊，朋友。"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "矿井里很危险啊。不如在我的店里买点东西确保安全吧？",
+          "AudioPath": "assets/zh-CN/Dwarf/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "矿井里很危险啊。不如在我的店里买点东西确保安全吧？"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "有机会你得告诉我这个被你称为“牛奶”的饮料的一切啊。",
+          "AudioPath": "assets/zh-CN/Dwarf/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "有机会你得告诉我这个被你称为“牛奶”的饮料的一切啊。"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "你不会是暗影人派来的间谍吧？",
+          "AudioPath": "assets/zh-CN/Dwarf/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "你不会是暗影人派来的间谍吧？"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "我可盯着你呢。",
+          "AudioPath": "assets/zh-CN/Dwarf/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "我可盯着你呢。"
+        },
+        {
+          "DialogueFrom": "Fri_2",
+          "DialogueText": "人们都对未知的事物感到恐惧……那就是为什么我要把店藏在这里。",
+          "AudioPath": "assets/zh-CN/Dwarf/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:Fri_2",
+          "PageIndex": 0,
+          "DisplayPattern": "人们都对未知的事物感到恐惧……那就是为什么我要把店藏在这里。"
+        },
+        {
+          "DialogueFrom": "Fri_2",
+          "DialogueText": "你的开采技巧已经证明你值得我的信任了。",
+          "AudioPath": "assets/zh-CN/Dwarf/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Dwarf:Fri_2",
+          "PageIndex": 1,
+          "DisplayPattern": "你的开采技巧已经证明你值得我的信任了。"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "雨……对我们来说就像神话故事一样。我们矮人一族有的人一辈子都没见过下雨。",
+          "AudioPath": "assets/zh-CN/Dwarf/35.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Dwarf",
+          "PageIndex": 0,
+          "DisplayPattern": "雨……对我们来说就像神话故事一样。我们矮人一族有的人一辈子都没见过下雨。"
+        },
+        {
+          "DialogueFrom": "Event:Sewer/691039:s0",
+          "DialogueText": "A Shadow Person, above ground? This is outrageous!",
+          "AudioPath": "assets/zh-CN/Dwarf/36.ogg",
+          "TranslationKey": "Events/Sewer:691039:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "A Shadow Person, above ground? This is outrageous!"
+        },
+        {
+          "DialogueFrom": "Event:Sewer/691039:s1",
+          "DialogueText": "Your people were responsible for the death of my entire family.",
+          "AudioPath": "assets/zh-CN/Dwarf/37.ogg",
+          "TranslationKey": "Events/Sewer:691039:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Your people were responsible for the death of my entire family."
+        },
+        {
+          "DialogueFrom": "Event:Sewer/691039:s2",
+          "DialogueText": "'Sorry' isn't going to cut it.",
+          "AudioPath": "assets/zh-CN/Dwarf/38.ogg",
+          "TranslationKey": "Events/Sewer:691039:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "'Sorry' isn't going to cut it."
+        },
+        {
+          "DialogueFrom": "Event:Sewer/691039:s3",
+          "DialogueText": "Let me at him! He's despicable.",
+          "AudioPath": "assets/zh-CN/Dwarf/39.ogg",
+          "TranslationKey": "Events/Sewer:691039:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Let me at him! He's despicable."
+        },
+        {
+          "DialogueFrom": "Event:Sewer/691039:s4",
+          "DialogueText": "Very well. I'll stay away from the sewer from now on.",
+          "AudioPath": "assets/zh-CN/Dwarf/40.ogg",
+          "TranslationKey": "Events/Sewer:691039:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Very well. I'll stay away from the sewer from now on."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Dwarf",
+          "DialogueText": "地面上下雨了？*喘气*",
+          "AudioPath": "assets/zh-CN/Dwarf/41.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Dwarf",
+          "PageIndex": 0,
+          "DisplayPattern": "地面上下雨了？*喘气*"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Dwarf",
+          "DialogueText": "下雨……这是个很陌生的概念。我们大部分人一辈子都没经历过下雨。",
+          "AudioPath": "assets/zh-CN/Dwarf/42.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Dwarf",
+          "PageIndex": 1,
+          "DisplayPattern": "下雨……这是个很陌生的概念。我们大部分人一辈子都没经历过下雨。"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Dwarf_y2",
+          "DialogueText": "我对人类集会有点好奇…… {Portrait:Neutral}",
+          "AudioPath": "assets/zh-CN/Dwarf/43.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Dwarf_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "我对人类集会有点好奇……"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Dwarf_y2",
+          "DialogueText": "请不要跟别人说，我想隐藏身份…… {Portrait:Neutral}",
+          "AudioPath": "assets/zh-CN/Dwarf/44.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Dwarf_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "请不要跟别人说，我想隐藏身份……"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Dwarf",
+          "DialogueText": "地面上下雨了？*喘气*",
+          "AudioPath": "assets/zh-CN/Dwarf/45.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Dwarf",
+          "PageIndex": 0,
+          "DisplayPattern": "地面上下雨了？*喘气*"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Dwarf",
+          "DialogueText": "下雨……这是个很陌生的概念。我们大部分人一辈子都没经历过下雨。",
+          "AudioPath": "assets/zh-CN/Dwarf/46.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Dwarf",
+          "PageIndex": 1,
+          "DisplayPattern": "下雨……这是个很陌生的概念。我们大部分人一辈子都没经历过下雨。"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Dwarf_y2",
+          "DialogueText": "这个地方好奇怪…… {Portrait:Neutral}",
+          "AudioPath": "assets/zh-CN/Dwarf/47.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Dwarf_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "这个地方好奇怪……"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Dwarf",
+          "DialogueText": "地面上下雨了？*喘气*",
+          "AudioPath": "assets/zh-CN/Dwarf/48.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Dwarf",
+          "PageIndex": 0,
+          "DisplayPattern": "地面上下雨了？*喘气*"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Dwarf",
+          "DialogueText": "下雨……这是个很陌生的概念。我们大部分人一辈子都没经历过下雨。",
+          "AudioPath": "assets/zh-CN/Dwarf/49.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Dwarf",
+          "PageIndex": 1,
+          "DisplayPattern": "下雨……这是个很陌生的概念。我们大部分人一辈子都没经历过下雨。"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Dwarf",
+          "DialogueText": "地面上下雨了？*喘气*",
+          "AudioPath": "assets/zh-CN/Dwarf/50.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Dwarf",
+          "PageIndex": 0,
+          "DisplayPattern": "地面上下雨了？*喘气*"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Dwarf",
+          "DialogueText": "下雨……这是个很陌生的概念。我们大部分人一辈子都没经历过下雨。",
+          "AudioPath": "assets/zh-CN/Dwarf/51.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Dwarf",
+          "PageIndex": 1,
+          "DisplayPattern": "下雨……这是个很陌生的概念。我们大部分人一辈子都没经历过下雨。"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Dwarf_y2",
+          "DialogueText": "You say it's raining up above?",
+          "AudioPath": "assets/zh-CN/Dwarf/52.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Dwarf_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "You say it's raining up above?"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Dwarf_y2",
+          "DialogueText": "Rain... It's almost mythical to us. Some of us live our entire lives without ever experiencing it.",
+          "AudioPath": "assets/zh-CN/Dwarf/53.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Dwarf_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Rain... It's almost mythical to us. Some of us live our entire lives without ever experiencing it."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Dwarf",
+          "DialogueText": "地面上下雨了？*喘气*",
+          "AudioPath": "assets/zh-CN/Dwarf/54.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Dwarf",
+          "PageIndex": 0,
+          "DisplayPattern": "地面上下雨了？*喘气*"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Dwarf",
+          "DialogueText": "下雨……这是个很陌生的概念。我们大部分人一辈子都没经历过下雨。",
+          "AudioPath": "assets/zh-CN/Dwarf/55.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Dwarf",
+          "PageIndex": 1,
+          "DisplayPattern": "下雨……这是个很陌生的概念。我们大部分人一辈子都没经历过下雨。"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Dwarf_y2",
+          "DialogueText": "You say it's raining up above? *gasp*",
+          "AudioPath": "assets/zh-CN/Dwarf/56.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Dwarf_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "You say it's raining up above? *gasp*"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Dwarf_y2",
+          "DialogueText": "Rain... It's almost mythical to us. Some of us live our entire lives without ever experiencing it.",
+          "AudioPath": "assets/zh-CN/Dwarf/57.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Dwarf_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Rain... It's almost mythical to us. Some of us live our entire lives without ever experiencing it."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Dwarf",
+          "DialogueText": "地面上下雨了？*喘气*",
+          "AudioPath": "assets/zh-CN/Dwarf/58.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Dwarf",
+          "PageIndex": 0,
+          "DisplayPattern": "地面上下雨了？*喘气*"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Dwarf",
+          "DialogueText": "下雨……这是个很陌生的概念。我们大部分人一辈子都没经历过下雨。",
+          "AudioPath": "assets/zh-CN/Dwarf/59.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Dwarf",
+          "PageIndex": 1,
+          "DisplayPattern": "下雨……这是个很陌生的概念。我们大部分人一辈子都没经历过下雨。"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Dwarf_y2",
+          "DialogueText": "You say it's raining up above? *gasp*",
+          "AudioPath": "assets/zh-CN/Dwarf/60.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Dwarf_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "You say it's raining up above? *gasp*"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Dwarf_y2",
+          "DialogueText": "Rain... It's almost mythical to us. Some of us live our entire lives without ever experiencing it.",
+          "AudioPath": "assets/zh-CN/Dwarf/61.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Dwarf_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Rain... It's almost mythical to us. Some of us live our entire lives without ever experiencing it."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Dwarf:s0",
+          "DialogueText": "嘿，我太喜欢这个了。你可以在矿洞里找到好东西。",
+          "AudioPath": "assets/zh-CN/Dwarf/62.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Dwarf:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，我太喜欢这个了。你可以在矿洞里找到好东西。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Dwarf:s1",
+          "DialogueText": "啊，这让我想起了家。",
+          "AudioPath": "assets/zh-CN/Dwarf/63.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Dwarf:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "啊，这让我想起了家。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Dwarf:s2",
+          "DialogueText": "唔……这就是人类喜欢的东西吗？",
+          "AudioPath": "assets/zh-CN/Dwarf/64.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Dwarf:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "唔……这就是人类喜欢的东西吗？"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Dwarf:s3",
+          "DialogueText": "我才不在乎你是什么物种。这就是一文不值的垃圾。",
+          "AudioPath": "assets/zh-CN/Dwarf/65.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Dwarf:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "我才不在乎你是什么物种。这就是一文不值的垃圾。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Dwarf:s4",
+          "DialogueText": "礼物！谢谢。",
+          "AudioPath": "assets/zh-CN/Dwarf/66.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Dwarf:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "礼物！谢谢。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Dwarf_love_BeforeMovie",
+          "DialogueText": "哇！专为娱乐而建造的宫殿！",
+          "AudioPath": "assets/zh-CN/Dwarf/67.ogg",
+          "TranslationKey": "Strings/MovieReactions:Dwarf_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "哇！专为娱乐而建造的宫殿！"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Dwarf_love_DuringMovie",
+          "DialogueText": "矮人似乎完全入迷了……",
+          "AudioPath": "assets/zh-CN/Dwarf/68.ogg",
+          "TranslationKey": "Strings/MovieReactions:Dwarf_love_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "矮人似乎完全入迷了……"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Dwarf_love_AfterMovie",
+          "DialogueText": "我什么也没看懂，但闪烁的灯光令我着迷！",
+          "AudioPath": "assets/zh-CN/Dwarf/69.ogg",
+          "TranslationKey": "Strings/MovieReactions:Dwarf_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "我什么也没看懂，但闪烁的灯光令我着迷！"
+        }
+      ]
+    }
+  ]
+}

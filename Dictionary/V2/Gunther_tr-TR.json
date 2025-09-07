@@ -1,0 +1,296 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Gunther.tr-TR",
+      "VoicePackName": "DictionarV2 (Gunther - tr-TR)",
+      "Character": "Gunther",
+      "Language": "tr-TR",
+      "Entries": [
+        {
+          "DialogueFrom": "Event:Farm/66:s0|g=male",
+          "DialogueText": "Oh, good morning Mr. {Farmer_Name}!",
+          "AudioPath": "assets/tr-TR/Gunther/1_male.ogg",
+          "TranslationKey": "Events/Farm:66:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, good morning Mr. !",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Farm/66:s1|g=female",
+          "DialogueText": "Oh, good morning Ms. {Farmer_Name}!",
+          "AudioPath": "assets/tr-TR/Gunther/2_female.ogg",
+          "TranslationKey": "Events/Farm:66:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, good morning Ms. !",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Farm/66:s2",
+          "DialogueText": "I hope it's not too early... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Gunther/3.ogg",
+          "TranslationKey": "Events/Farm:66:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I hope it's not too early..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/66:s3",
+          "DialogueText": "Well, I just wanted to stop by and thank you in person for all the wonderful artifacts and minerals you've discovered... you've done so much for one person! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gunther/4.ogg",
+          "TranslationKey": "Events/Farm:66:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I just wanted to stop by and thank you in person for all the wonderful artifacts and minerals you've discovered... you've done so much for one person!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/66:s4",
+          "DialogueText": "In fact, I've just received a letter from the office of the regional secretary of artifacts... We're being honored with the coveted 'golden shovel' award for our significant contributions to the field!",
+          "AudioPath": "assets/tr-TR/Gunther/5.ogg",
+          "TranslationKey": "Events/Farm:66:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "In fact, I've just received a letter from the office of the regional secretary of artifacts... We're being honored with the coveted 'golden shovel' award for our significant contributions to the field!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/66:s5",
+          "DialogueText": "And it's all thanks to you! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gunther/6.ogg",
+          "TranslationKey": "Events/Farm:66:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "And it's all thanks to you!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/66:s6",
+          "DialogueText": "Well, I should let you get back to your work...",
+          "AudioPath": "assets/tr-TR/Gunther/7.ogg",
+          "TranslationKey": "Events/Farm:66:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I should let you get back to your work..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/66:s7",
+          "DialogueText": "Oh! I almost forgot!",
+          "AudioPath": "assets/tr-TR/Gunther/8.ogg",
+          "TranslationKey": "Events/Farm:66:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! I almost forgot!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/66:s8",
+          "DialogueText": "I have a gift for you... It's an old key that's been sealed in the museum vault for at least 100 years. It's a little rusty, but still beautiful. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gunther/9.ogg",
+          "TranslationKey": "Events/Farm:66:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I have a gift for you... It's an old key that's been sealed in the museum vault for at least 100 years. It's a little rusty, but still beautiful."
+        },
+        {
+          "DialogueFrom": "Event:Farm/66:s9",
+          "DialogueText": "You got the 'Rusty Key'! It's been added to your wallet.",
+          "AudioPath": "assets/tr-TR/Gunther/10.ogg",
+          "TranslationKey": "Events/Farm:66:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "You got the 'Rusty Key'! It's been added to your wallet."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s0",
+          "DialogueText": "It's about time!",
+          "AudioPath": "assets/tr-TR/Gunther/11.ogg",
+          "TranslationKey": "Events/Town:191393:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "It's about time!"
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s0",
+          "DialogueText": "Abysmal...",
+          "AudioPath": "assets/tr-TR/Gunther/12.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Abysmal..."
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s1",
+          "DialogueText": "Not a single piece in the entire collection.",
+          "AudioPath": "assets/tr-TR/Gunther/13.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Not a single piece in the entire collection."
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s2",
+          "DialogueText": "What's this? You found something? Let me see it!",
+          "AudioPath": "assets/tr-TR/Gunther/14.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "What's this? You found something? Let me see it!"
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s3",
+          "DialogueText": "Remarkable!",
+          "AudioPath": "assets/tr-TR/Gunther/15.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Remarkable!"
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s4",
+          "DialogueText": "It's very old.",
+          "AudioPath": "assets/tr-TR/Gunther/16.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "It's very old."
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s5",
+          "DialogueText": "I'd love to study this in greater detail... But it is yours.",
+          "AudioPath": "assets/tr-TR/Gunther/17.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "I'd love to study this in greater detail... But it is yours."
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s6",
+          "DialogueText": "Hmmm...",
+          "AudioPath": "assets/tr-TR/Gunther/18.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmmm..."
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s7",
+          "DialogueText": "I've got a favor to ask you.",
+          "AudioPath": "assets/tr-TR/Gunther/19.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I've got a favor to ask you."
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s8",
+          "DialogueText": "Would you consider donating any new artifacts or minerals that you find?",
+          "AudioPath": "assets/tr-TR/Gunther/20.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Would you consider donating any new artifacts or minerals that you find?"
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s9",
+          "DialogueText": "We could make a groundbreaking discovery together!",
+          "AudioPath": "assets/tr-TR/Gunther/21.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "We could make a groundbreaking discovery together!"
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s10",
+          "DialogueText": "Oh, and who knows... If you keep donating I might come across some interesting items to send your way.",
+          "AudioPath": "assets/tr-TR/Gunther/22.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, and who knows... If you keep donating I might come across some interesting items to send your way."
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s11",
+          "DialogueText": "Think about it, will you?",
+          "AudioPath": "assets/tr-TR/Gunther/23.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Think about it, will you?"
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s12",
+          "DialogueText": "If you decide to donate, just bring the objects to the front desk.",
+          "AudioPath": "assets/tr-TR/Gunther/24.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "If you decide to donate, just bring the objects to the front desk."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/Gunther_MuseumComplete",
+          "DialogueText": "Müze harika görünüyor! Yardımın için teşekkürler.",
+          "AudioPath": "assets/tr-TR/Gunther/25.ogg",
+          "TranslationKey": "Data/ExtraDialogue:Gunther_MuseumComplete",
+          "PageIndex": 0,
+          "DisplayPattern": "Müze harika görünüyor! Yardımın için teşekkürler."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/Gunther_NothingToDonate",
+          "DialogueText": "Görünüşe göre müzeye bağışlayabileceğin bir şeyin yok. En iyisi çıkıp biraz hazine aramak, ne dersin?",
+          "AudioPath": "assets/tr-TR/Gunther/26.ogg",
+          "TranslationKey": "Data/ExtraDialogue:Gunther_NothingToDonate",
+          "PageIndex": 0,
+          "DisplayPattern": "Görünüşe göre müzeye bağışlayabileceğin bir şeyin yok. En iyisi çıkıp biraz hazine aramak, ne dersin?"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/Gunther_NoArtifactsFound",
+          "DialogueText": "Merhaba! Yıldızçiyi Arkeoloji Ofisi'ne hoş geldin.",
+          "AudioPath": "assets/tr-TR/Gunther/27.ogg",
+          "TranslationKey": "Data/ExtraDialogue:Gunther_NoArtifactsFound",
+          "PageIndex": 0,
+          "DisplayPattern": "Merhaba! Yıldızçiyi Arkeoloji Ofisi'ne hoş geldin."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/Gunther_NoArtifactsFound",
+          "DialogueText": "Şey... Biraz utanç verici ama bir önceki müze müdürü bütün koleksiyon ile beraber kaçmış. Sergileyebileceğimiz hiçbir eser bırakmamış.",
+          "AudioPath": "assets/tr-TR/Gunther/28.ogg",
+          "TranslationKey": "Data/ExtraDialogue:Gunther_NoArtifactsFound",
+          "PageIndex": 1,
+          "DisplayPattern": "Şey... Biraz utanç verici ama bir önceki müze müdürü bütün koleksiyon ile beraber kaçmış. Sergileyebileceğimiz hiçbir eser bırakmamış."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/Gunther_NoArtifactsFound",
+          "DialogueText": "Ama yakında buna bir çözüm bulacağım! Hey, eğer dışarıda bir yerde birkaç eser bulursan... bana haber verir misin?",
+          "AudioPath": "assets/tr-TR/Gunther/29.ogg",
+          "TranslationKey": "Data/ExtraDialogue:Gunther_NoArtifactsFound",
+          "PageIndex": 2,
+          "DisplayPattern": "Ama yakında buna bir çözüm bulacağım! Hey, eğer dışarıda bir yerde birkaç eser bulursan... bana haber verir misin?"
+        },
+        {
+          "DialogueFrom": "ArchaeologyHouse_Gunther_Greeting1",
+          "DialogueText": "Yeni bir şey bulabildin mi?",
+          "AudioPath": "assets/tr-TR/Gunther/30.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:ArchaeologyHouse_Gunther_Greeting1",
+          "PageIndex": 0,
+          "DisplayPattern": "Yeni bir şey bulabildin mi?"
+        },
+        {
+          "DialogueFrom": "ArchaeologyHouse_Gunther_Greeting2",
+          "DialogueText": "Yeni bir şeyler kazabildin mi?",
+          "AudioPath": "assets/tr-TR/Gunther/31.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:ArchaeologyHouse_Gunther_Greeting2",
+          "PageIndex": 0,
+          "DisplayPattern": "Yeni bir şeyler kazabildin mi?"
+        },
+        {
+          "DialogueFrom": "ArchaeologyHouse_Gunther_Greeting3",
+          "DialogueText": "Yardımım mı lazımdı?",
+          "AudioPath": "assets/tr-TR/Gunther/32.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:ArchaeologyHouse_Gunther_Greeting3",
+          "PageIndex": 0,
+          "DisplayPattern": "Yardımım mı lazımdı?"
+        },
+        {
+          "DialogueFrom": "ArchaeologyHouse_Gunther_Greeting4",
+          "DialogueText": "Selamlar.",
+          "AudioPath": "assets/tr-TR/Gunther/33.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:ArchaeologyHouse_Gunther_Greeting4",
+          "PageIndex": 0,
+          "DisplayPattern": "Selamlar."
+        },
+        {
+          "DialogueFrom": "ArchaeologyHouse_Gunther_Greeting5",
+          "DialogueText": "Bana bir şey mi getirdin?",
+          "AudioPath": "assets/tr-TR/Gunther/34.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:ArchaeologyHouse_Gunther_Greeting5",
+          "PageIndex": 0,
+          "DisplayPattern": "Bana bir şey mi getirdin?"
+        },
+        {
+          "DialogueFrom": "ArchaeologyHouse_Gunther_RareGreeting",
+          "DialogueText": "Toprak kokuyorsun... Çok güzel!",
+          "AudioPath": "assets/tr-TR/Gunther/35.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:ArchaeologyHouse_Gunther_RareGreeting",
+          "PageIndex": 0,
+          "DisplayPattern": "Toprak kokuyorsun... Çok güzel!"
+        }
+      ]
+    }
+  ]
+}

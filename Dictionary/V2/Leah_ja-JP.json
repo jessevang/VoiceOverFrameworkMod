@@ -1,0 +1,4240 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Leah.ja-JP",
+      "VoicePackName": "DictionarV2 (Leah - ja-JP)",
+      "Character": "Leah",
+      "Language": "ja-JP",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "こんにちは、会えてうれしいわ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、会えてうれしいわ。"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "ちょうど いい時期に 引っ越せたわね。春は ステキな 季節よ。",
+          "AudioPath": "assets/ja-JP/Leah/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "ちょうど いい時期に 引っ越せたわね。春は ステキな 季節よ。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "まあ…子供の頃にひとくちだけ飲んだことがあるわ。今でもこの味を覚えてる。",
+          "AudioPath": "assets/ja-JP/Leah/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "まあ…子供の頃にひとくちだけ飲んだことがあるわ。今でもこの味を覚えてる。"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "{Farmer_Name}、本当にありがとう！特別な誕生日になったわ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "、本当にありがとう！特別な誕生日になったわ"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "私とダンスを踊りたいの？もちろんイエスよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:FlowerDance_Accept",
+          "PageIndex": 0,
+          "DisplayPattern": "私とダンスを踊りたいの？もちろんイエスよ！"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "さそってほしいなって思ってたの… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:FlowerDance_Accept",
+          "PageIndex": 1,
+          "DisplayPattern": "さそってほしいなって思ってたの…"
+        },
+        {
+          "DialogueFrom": "dating_Leah",
+          "DialogueText": "そう言ってくれる気がしてたんだ… {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:dating_Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "そう言ってくれる気がしてたんだ…"
+        },
+        {
+          "DialogueFrom": "married_Elliott",
+          "DialogueText": "エリオットは本当にロマンチックよ…きっと毎日が詩に書かれたような日々になるわ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:married_Elliott",
+          "PageIndex": 0,
+          "DisplayPattern": "エリオットは本当にロマンチックよ…きっと毎日が詩に書かれたような日々になるわ！"
+        },
+        {
+          "DialogueFrom": "married_Shane",
+          "DialogueText": "シェーンがしあわせそうでうれしいわ。あんなに笑った彼を見たのは初めてよ！",
+          "AudioPath": "assets/ja-JP/Leah/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:married_Shane",
+          "PageIndex": 0,
+          "DisplayPattern": "シェーンがしあわせそうでうれしいわ。あんなに笑った彼を見たのは初めてよ！"
+        },
+        {
+          "DialogueFrom": "married_Shane",
+          "DialogueText": "彼はニワトリが大好きだから、%farmにもすぐになじめるはずよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:married_Shane",
+          "PageIndex": 1,
+          "DisplayPattern": "彼はニワトリが大好きだから、%farmにもすぐになじめるはずよ！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)169",
+          "DialogueText": "まあ！ありがとう！とても興味深い造形だわ… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:AcceptGift_(O)169",
+          "PageIndex": 0,
+          "DisplayPattern": "まあ！ありがとう！とても興味深い造形だわ…"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)430",
+          "DialogueText": "ねえ、これをどこで見つけたの？ （クンクン）…うーん…スライスして生パスタにのせたらカンペキね。ありがとう！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:AcceptGift_(O)430",
+          "PageIndex": 0,
+          "DisplayPattern": "ねえ、これをどこで見つけたの？ （クンクン）…うーん…スライスして生パスタにのせたらカンペキね。ありがとう！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)200",
+          "DialogueText": "うーん…もし街にいたら、野菜をこんなに新鮮に感じることはなかったでしょうね。すごく気に入ったわ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:AcceptGift_(O)200",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん…もし街にいたら、野菜をこんなに新鮮に感じることはなかったでしょうね。すごく気に入ったわ！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)196",
+          "DialogueText": "とってもおいしそうね…ありがとう！やっぱり新鮮な野草のサラダが一番よね！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:AcceptGift_(O)196",
+          "PageIndex": 0,
+          "DisplayPattern": "とってもおいしそうね…ありがとう！やっぱり新鮮な野草のサラダが一番よね！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)196",
+          "DialogueText": "わあ、{Farmer_Name}！これよ！ これが欲しかったの！どうしてわかったの？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:AcceptGift_(O)196",
+          "PageIndex": 1,
+          "DisplayPattern": "わあ、！これよ！ これが欲しかったの！どうしてわかったの？"
+        },
+        {
+          "DialogueFrom": "dating_Leah_memory_oneday",
+          "DialogueText": "付き合ってるからって、いつも一緒にいなきゃいけないなんて思わないでね…あなたは忙しいって知ってるから。",
+          "AudioPath": "assets/ja-JP/Leah/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:dating_Leah_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "付き合ってるからって、いつも一緒にいなきゃいけないなんて思わないでね…あなたは忙しいって知ってるから。"
+        },
+        {
+          "DialogueFrom": "eventSeen_53_memory_oneday",
+          "DialogueText": "あの展覧会で、1年間暮らせるだけの作品が売れたわ… 私はそれだけでしあわなの！",
+          "AudioPath": "assets/ja-JP/Leah/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:eventSeen_53_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "あの展覧会で、1年間暮らせるだけの作品が売れたわ… 私はそれだけでしあわなの！"
+        },
+        {
+          "DialogueFrom": "eventSeen_54_memory_oneday",
+          "DialogueText": "あのピクニックのことは忘れられないわ… 本当に変な人！ {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Leah/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:eventSeen_54_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "あのピクニックのことは忘れられないわ… 本当に変な人！"
+        },
+        {
+          "DialogueFrom": "eventSeen_54_memory_oneday",
+          "DialogueText": "あの人の話はしないことにしましょう… もう二度と。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:eventSeen_54_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "あの人の話はしないことにしましょう… もう二度と。"
+        },
+        {
+          "DialogueFrom": "eventSeen_584059_memory_oneday",
+          "DialogueText": "もし私の作品がオンラインショップで売れ続けたら、私もずっと作品を作り続けていられるわ。それが私の夢だったの。",
+          "AudioPath": "assets/ja-JP/Leah/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:eventSeen_584059_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "もし私の作品がオンラインショップで売れ続けたら、私もずっと作品を作り続けていられるわ。それが私の夢だったの。"
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "誰にも言わないでね、ウィリーがちょっとだけボートを操縦させてくれたの。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "誰にも言わないでね、ウィリーがちょっとだけボートを操縦させてくれたの。"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "ああ、本当にリラックスできたわ。",
+          "AudioPath": "assets/ja-JP/Leah/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、本当にリラックスできたわ。"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "スターデューバレーの気候は大好きよ。でも時々違った気候を体験することで、物事を大きな視野でとらえられるようになるの。",
+          "AudioPath": "assets/ja-JP/Leah/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "スターデューバレーの気候は大好きよ。でも時々違った気候を体験することで、物事を大きな視野でとらえられるようになるの。"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "ここの波の造形に感動しているの。",
+          "AudioPath": "assets/ja-JP/Leah/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "ここの波の造形に感動しているの。"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "形がない物を、私は彫刻で表現することができるのかしら。",
+          "AudioPath": "assets/ja-JP/Leah/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Resort_Shore",
+          "PageIndex": 1,
+          "DisplayPattern": "形がない物を、私は彫刻で表現することができるのかしら。"
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "まったく動かずにいれば、この暑さも悪くないわね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "まったく動かずにいれば、この暑さも悪くないわね。"
+        },
+        {
+          "DialogueFrom": "Resort_Wander",
+          "DialogueText": "うーん、このあたりの木を使えば、きっと豊かな表現ができると思うの。",
+          "AudioPath": "assets/ja-JP/Leah/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Resort_Wander",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん、このあたりの木を使えば、きっと豊かな表現ができると思うの。"
+        },
+        {
+          "DialogueFrom": "Resort_Wander",
+          "DialogueText": "でも私が船に丸太を運び込んだら、ウィリーはきっと嫌な顔をするわね！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Resort_Wander",
+          "PageIndex": 1,
+          "DisplayPattern": "でも私が船に丸太を運び込んだら、ウィリーはきっと嫌な顔をするわね！"
+        },
+        {
+          "DialogueFrom": "Resort_Wander_2",
+          "DialogueText": "ここではどんなものが採れるのかしら。",
+          "AudioPath": "assets/ja-JP/Leah/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Resort_Wander_2",
+          "PageIndex": 0,
+          "DisplayPattern": "ここではどんなものが採れるのかしら。"
+        },
+        {
+          "DialogueFrom": "Resort_Wander_2",
+          "DialogueText": "近くの林に、おいしそうなクルミがあったわ。",
+          "AudioPath": "assets/ja-JP/Leah/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Resort_Wander_2",
+          "PageIndex": 1,
+          "DisplayPattern": "近くの林に、おいしそうなクルミがあったわ。"
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "ピニャコラーダを飲んだことがある？これは2杯目なの…へへへ。",
+          "AudioPath": "assets/ja-JP/Leah/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "ピニャコラーダを飲んだことがある？これは2杯目なの…へへへ。"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept_Spouse",
+          "DialogueText": "やっときたのね！ 他の誰かと 踊るんじゃないかと 心配しはじめた ところだったのよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:FlowerDance_Accept_Spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "やっときたのね！ 他の誰かと 踊るんじゃないかと 心配しはじめた ところだったのよ！"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Decline",
+          "DialogueText": "正直、君とは 踊りたくない かな。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Leah/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:FlowerDance_Decline",
+          "PageIndex": 0,
+          "DisplayPattern": "正直、君とは 踊りたくない かな。"
+        },
+        {
+          "DialogueFrom": "divorced",
+          "DialogueText": "やっとわかったよ。わたし、ひとりでいたほうが幸せなんだ。だから、もうわたしに近づかないで。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Leah/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:divorced",
+          "PageIndex": 0,
+          "DisplayPattern": "やっとわかったよ。わたし、ひとりでいたほうが幸せなんだ。だから、もうわたしに近づかないで。"
+        },
+        {
+          "DialogueFrom": "breakUp",
+          "DialogueText": "おぉぉ...分かった。はぁ...こんなことになるなんて私は本当に運がない... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:breakUp",
+          "PageIndex": 0,
+          "DisplayPattern": "おぉぉ...分かった。はぁ...こんなことになるなんて私は本当に運がない..."
+        },
+        {
+          "DialogueFrom": "dumped_Girls",
+          "DialogueText": "しばらく 顔も 見たくない… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:dumped_Girls",
+          "PageIndex": 0,
+          "DisplayPattern": "しばらく 顔も 見たくない…"
+        },
+        {
+          "DialogueFrom": "secondChance_Girls",
+          "DialogueText": "あなたの 行いには ひどく 苦しめられた…それでも、過去を 水に流す 決心が ついたの。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:secondChance_Girls",
+          "PageIndex": 0,
+          "DisplayPattern": "あなたの 行いには ひどく 苦しめられた…それでも、過去を 水に流す 決心が ついたの。"
+        },
+        {
+          "DialogueFrom": "Beach",
+          "DialogueText": "海の音を 聞きに 来たのよ。美しい音色 だと思わない？",
+          "AudioPath": "assets/ja-JP/Leah/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Beach",
+          "PageIndex": 0,
+          "DisplayPattern": "海の音を 聞きに 来たのよ。美しい音色 だと思わない？"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "それで、 君は どうして 牧場主になったの？",
+          "AudioPath": "assets/ja-JP/Leah/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "それで、 君は どうして 牧場主になったの？"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "お金を たくさん 稼ぎたいから。",
+          "AudioPath": "assets/ja-JP/Leah/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "お金を たくさん 稼ぎたいから。"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "都会 暮らしより 「現実的」 だから。",
+          "AudioPath": "assets/ja-JP/Leah/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Mon",
+          "PageIndex": 2,
+          "DisplayPattern": "都会 暮らしより 「現実的」 だから。"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "祖父の 跡を継ぐ ため。",
+          "AudioPath": "assets/ja-JP/Leah/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Mon",
+          "PageIndex": 3,
+          "DisplayPattern": "祖父の 跡を継ぐ ため。"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "昔の 生活から 抜け出したかった。",
+          "AudioPath": "assets/ja-JP/Leah/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Mon",
+          "PageIndex": 4,
+          "DisplayPattern": "昔の 生活から 抜け出したかった。"
+        },
+        {
+          "DialogueFrom": "Mon_old",
+          "DialogueText": "それじゃあ、 思うように 稼げているのかしら？",
+          "AudioPath": "assets/ja-JP/Leah/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Mon_old",
+          "PageIndex": 0,
+          "DisplayPattern": "それじゃあ、 思うように 稼げているのかしら？"
+        },
+        {
+          "DialogueFrom": "Mon_old",
+          "DialogueText": "自然の中で 暮らすのって ステキだよね。",
+          "AudioPath": "assets/ja-JP/Leah/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Mon_old",
+          "PageIndex": 1,
+          "DisplayPattern": "自然の中で 暮らすのって ステキだよね。"
+        },
+        {
+          "DialogueFrom": "Mon_21",
+          "DialogueText": "ふーん。それはちょっと 浅はかな 感じがするわ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Mon_21",
+          "PageIndex": 0,
+          "DisplayPattern": "ふーん。それはちょっと 浅はかな 感じがするわ。"
+        },
+        {
+          "DialogueFrom": "Mon_22",
+          "DialogueText": "それって… 私がここに来た理由とほとんど一緒ね！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Mon_22",
+          "PageIndex": 0,
+          "DisplayPattern": "それって… 私がここに来た理由とほとんど一緒ね！"
+        },
+        {
+          "DialogueFrom": "Mon_22",
+          "DialogueText": "私はもっと自然とふれ合いたかったんだ…",
+          "AudioPath": "assets/ja-JP/Leah/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Mon_22",
+          "PageIndex": 1,
+          "DisplayPattern": "私はもっと自然とふれ合いたかったんだ…"
+        },
+        {
+          "DialogueFrom": "Mon_211132",
+          "DialogueText": "そうやって 祖父のことを 誇りに 思うのって 良いことね。",
+          "AudioPath": "assets/ja-JP/Leah/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Mon_211132",
+          "PageIndex": 0,
+          "DisplayPattern": "そうやって 祖父のことを 誇りに 思うのって 良いことね。"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "この植物はどこから来たのかしら？驚いたけど、いやな感じはしないわ…",
+          "AudioPath": "assets/ja-JP/Leah/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "この植物はどこから来たのかしら？驚いたけど、いやな感じはしないわ…"
+        },
+        {
+          "DialogueFrom": "GreenRainFinished",
+          "DialogueText": "町のみんなは、あの雨をこわがっていたのかしら？うまく言えないけど…とにかく信じられない出来事だったわ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:GreenRainFinished",
+          "PageIndex": 0,
+          "DisplayPattern": "町のみんなは、あの雨をこわがっていたのかしら？うまく言えないけど…とにかく信じられない出来事だったわ！"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "この雨が夏の間ずっと続いたら…谷じゅうがこの植物におおわれてしまうでしょうね！",
+          "AudioPath": "assets/ja-JP/Leah/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "この雨が夏の間ずっと続いたら…谷じゅうがこの植物におおわれてしまうでしょうね！"
+        },
+        {
+          "DialogueFrom": "Tue4",
+          "DialogueText": "よお。あら、 お話したいの？",
+          "AudioPath": "assets/ja-JP/Leah/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "よお。あら、 お話したいの？"
+        },
+        {
+          "DialogueFrom": "Tue4",
+          "DialogueText": "ここの 風景って、 色々な アイデアを くれるの。まるで、 彫刻みたいな 地形を してるから。",
+          "AudioPath": "assets/ja-JP/Leah/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Tue4",
+          "PageIndex": 1,
+          "DisplayPattern": "ここの 風景って、 色々な アイデアを くれるの。まるで、 彫刻みたいな 地形を してるから。"
+        },
+        {
+          "DialogueFrom": "Tue4",
+          "DialogueText": "でも お金のために 芸術を やってないわ。駆り立てられるままに やってるだけ。",
+          "AudioPath": "assets/ja-JP/Leah/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Tue4",
+          "PageIndex": 2,
+          "DisplayPattern": "でも お金のために 芸術を やってないわ。駆り立てられるままに やってるだけ。"
+        },
+        {
+          "DialogueFrom": "Tue4",
+          "DialogueText": "農業って かなり やりがいのある 仕事みたいね。だって、 みんなに おいしい 食べ物を 作って上げられるから！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Tue4",
+          "PageIndex": 3,
+          "DisplayPattern": "農業って かなり やりがいのある 仕事みたいね。だって、 みんなに おいしい 食べ物を 作って上げられるから！"
+        },
+        {
+          "DialogueFrom": "Tue4",
+          "DialogueText": "君、 忙しそうね。ごめんね。",
+          "AudioPath": "assets/ja-JP/Leah/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Tue4",
+          "PageIndex": 4,
+          "DisplayPattern": "君、 忙しそうね。ごめんね。"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "こんにちは、 お隣さん。",
+          "AudioPath": "assets/ja-JP/Leah/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、 お隣さん。"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "私達、 町の郊外に 住んでるのよね。これって 何か 意味が あるのかしら？",
+          "AudioPath": "assets/ja-JP/Leah/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "私達、 町の郊外に 住んでるのよね。これって 何か 意味が あるのかしら？"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "# {Portrait:Happy} LeahBug",
+          "AudioPath": "assets/ja-JP/Leah/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "# LeahBug"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "今朝、 誤って 虫を 踏んじゃったわ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "今朝、 誤って 虫を 踏んじゃったわ。"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "何らかの形で 自然を破壊せず 生きることは、 不可能だなって 時々 思うのよ。",
+          "AudioPath": "assets/ja-JP/Leah/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "何らかの形で 自然を破壊せず 生きることは、 不可能だなって 時々 思うのよ。"
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "動物と 一緒にいるのは 好きよ。純真な 生き物 だからね。",
+          "AudioPath": "assets/ja-JP/Leah/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "動物と 一緒にいるのは 好きよ。純真な 生き物 だからね。"
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "それに 牧場の 動物は　ステキだし。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Wed6",
+          "PageIndex": 1,
+          "DisplayPattern": "それに 牧場の 動物は　ステキだし。"
+        },
+        {
+          "DialogueFrom": "Wed8",
+          "DialogueText": "畑いっぱいの作物を収穫するのは、すごく達成感があるんでしょうね。だって、何もなかったところから食べ物を育て上げているんだもの！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Wed8",
+          "PageIndex": 0,
+          "DisplayPattern": "畑いっぱいの作物を収穫するのは、すごく達成感があるんでしょうね。だって、何もなかったところから食べ物を育て上げているんだもの！"
+        },
+        {
+          "DialogueFrom": "Wed8",
+          "DialogueText": "あら、{Farmer_Name}！ちょうど、 君と 牧場について 考えていたの。",
+          "AudioPath": "assets/ja-JP/Leah/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Wed8",
+          "PageIndex": 1,
+          "DisplayPattern": "あら、！ちょうど、 君と 牧場について 考えていたの。"
+        },
+        {
+          "DialogueFrom": "Wed8",
+          "DialogueText": "あんな 沢山の 作物を 収穫する時、 どんな 気分に なるかなって。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Wed8",
+          "PageIndex": 2,
+          "DisplayPattern": "あんな 沢山の 作物を 収穫する時、 どんな 気分に なるかなって。"
+        },
+        {
+          "DialogueFrom": "Wed8",
+          "DialogueText": "でも、 誰かの手を 借りたくなる とは思わない？ {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Wed8",
+          "PageIndex": 3,
+          "DisplayPattern": "でも、 誰かの手を 借りたくなる とは思わない？"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "ちゃんと 探せば、 この辺には 野生の 食べ物が 沢山 見つかるわ。",
+          "AudioPath": "assets/ja-JP/Leah/69.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "ちゃんと 探せば、 この辺には 野生の 食べ物が 沢山 見つかるわ。"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "それで 新鮮な サラダを ほぼ毎日 作ってるの。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/70.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "それで 新鮮な サラダを ほぼ毎日 作ってるの。"
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "採取は 大得意よ。いつか 君にも サラダを 作ってあげる。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/71.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "採取は 大得意よ。いつか 君にも サラダを 作ってあげる。"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "友達になるなら 木のほうが ずっと 簡単よね。だって 口数が 多くないから。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/72.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "友達になるなら 木のほうが ずっと 簡単よね。だって 口数が 多くないから。"
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "自然の恵み なしじゃ、 私達は 生きていけないわ。そのことを 覚えておいてね。",
+          "AudioPath": "assets/ja-JP/Leah/73.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Fri2",
+          "PageIndex": 0,
+          "DisplayPattern": "自然の恵み なしじゃ、 私達は 生きていけないわ。そのことを 覚えておいてね。"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "おや、{Farmer_Name}か。今日は 良い日ね。",
+          "AudioPath": "assets/ja-JP/Leah/74.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "おや、か。今日は 良い日ね。"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "誰かと お話 したくなったら、 私の 家に 来てね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Fri4",
+          "PageIndex": 1,
+          "DisplayPattern": "誰かと お話 したくなったら、 私の 家に 来てね。"
+        },
+        {
+          "DialogueFrom": "Fri6",
+          "DialogueText": "時々不思議な感覚におそわれることがあるの。頭の中がからっぽになって… とても幸せで落ち着いた気分になるのよ。",
+          "AudioPath": "assets/ja-JP/Leah/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "時々不思議な感覚におそわれることがあるの。頭の中がからっぽになって… とても幸せで落ち着いた気分になるのよ。"
+        },
+        {
+          "DialogueFrom": "Fri6",
+          "DialogueText": "でもね！それとワインを飲むことはまったく別の話だわ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "でもね！それとワインを飲むことはまったく別の話だわ！"
+        },
+        {
+          "DialogueFrom": "Fri8",
+          "DialogueText": "もし自分が別の人間になったらって考えたことはある？",
+          "AudioPath": "assets/ja-JP/Leah/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Fri8",
+          "PageIndex": 0,
+          "DisplayPattern": "もし自分が別の人間になったらって考えたことはある？"
+        },
+        {
+          "DialogueFrom": "Fri8",
+          "DialogueText": "今の自分と同じように考えて行動するのかしら？ それともまったく違うことをするのかしら？",
+          "AudioPath": "assets/ja-JP/Leah/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Fri8",
+          "PageIndex": 1,
+          "DisplayPattern": "今の自分と同じように考えて行動するのかしら？ それともまったく違うことをするのかしら？"
+        },
+        {
+          "DialogueFrom": "Fri8",
+          "DialogueText": "気にしないで、私はときどき変なことを考えちゃうの… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Fri8",
+          "PageIndex": 2,
+          "DisplayPattern": "気にしないで、私はときどき変なことを考えちゃうの…"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "季節ごとに 飾りを 変えるのが 好きなの。",
+          "AudioPath": "assets/ja-JP/Leah/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "季節ごとに 飾りを 変えるのが 好きなの。"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "作物を育ててみたい気持ちもあるけど、そのためにたくさんの野草を刈り取らなきゃいけないと思うと、気が引けちゃうな…",
+          "AudioPath": "assets/ja-JP/Leah/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "作物を育ててみたい気持ちもあるけど、そのためにたくさんの野草を刈り取らなきゃいけないと思うと、気が引けちゃうな…"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "農業って すごく 楽しそう。いつか 私も やりたいな。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "農業って すごく 楽しそう。いつか 私も やりたいな。"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "私の家で 何か 叩く音が 聞こえたら、 それは 私が 彫刻に 取り掛かってる 時の 音だわ。",
+          "AudioPath": "assets/ja-JP/Leah/84.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "私の家で 何か 叩く音が 聞こえたら、 それは 私が 彫刻に 取り掛かってる 時の 音だわ。"
+        },
+        {
+          "DialogueFrom": "Sun8",
+          "DialogueText": "もし 面白い形の 流木を 見つけたら、 私に ちょうだい。",
+          "AudioPath": "assets/ja-JP/Leah/85.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Sun8",
+          "PageIndex": 0,
+          "DisplayPattern": "もし 面白い形の 流木を 見つけたら、 私に ちょうだい。"
+        },
+        {
+          "DialogueFrom": "Sun8",
+          "DialogueText": "これを 私に くれたのって 何か 特別な 感じがするわ。",
+          "AudioPath": "assets/ja-JP/Leah/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:Sun8",
+          "PageIndex": 1,
+          "DisplayPattern": "これを 私に くれたのって 何か 特別な 感じがするわ。"
+        },
+        {
+          "DialogueFrom": "event_sculpt1",
+          "DialogueText": "…なに？ {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Leah/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:event_sculpt1",
+          "PageIndex": 0,
+          "DisplayPattern": "…なに？"
+        },
+        {
+          "DialogueFrom": "event_sculpt1",
+          "DialogueText": "ああ！うん、 そのとおりよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:event_sculpt1",
+          "PageIndex": 1,
+          "DisplayPattern": "ああ！うん、 そのとおりよ！"
+        },
+        {
+          "DialogueFrom": "event_sculpt2",
+          "DialogueText": "それも 悪くは ないわね…誰の手にも かかっていない 自然の中に、 「美」があると 思うの！",
+          "AudioPath": "assets/ja-JP/Leah/89.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:event_sculpt2",
+          "PageIndex": 0,
+          "DisplayPattern": "それも 悪くは ないわね…誰の手にも かかっていない 自然の中に、 「美」があると 思うの！"
+        },
+        {
+          "DialogueFrom": "event_sculpt2",
+          "DialogueText": "でも 人間として、 身の回りに あるものから 何かを 作って 人々に 伝えたいって 思ってる…ようするに、私は 「芸術」に 興味を 持ってるってことかしら。",
+          "AudioPath": "assets/ja-JP/Leah/90.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:event_sculpt2",
+          "PageIndex": 1,
+          "DisplayPattern": "でも 人間として、 身の回りに あるものから 何かを 作って 人々に 伝えたいって 思ってる…ようするに、私は 「芸術」に 興味を 持ってるってことかしら。"
+        },
+        {
+          "DialogueFrom": "event_sculpt3",
+          "DialogueText": "なに考えてるのよ！ {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Leah/91_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:event_sculpt3",
+          "PageIndex": 0,
+          "DisplayPattern": "なに考えてるのよ！",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "event_sculpt3",
+          "DialogueText": "えっ？そうなの…？私もよ。 {Portrait:Custom:6}",
+          "AudioPath": "assets/ja-JP/Leah/92_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:event_sculpt3",
+          "PageIndex": 1,
+          "DisplayPattern": "えっ？そうなの…？私もよ。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "event_sculpt3",
+          "DialogueText": "出て行って！ {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Leah/93_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:event_sculpt3",
+          "PageIndex": 2,
+          "DisplayPattern": "出て行って！",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "event_sculpt3",
+          "DialogueText": "なるほどね。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/94_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:event_sculpt3",
+          "PageIndex": 3,
+          "DisplayPattern": "なるほどね。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "event_parents1",
+          "DialogueText": "君の 言うとおりね…あのままじゃ 幸せに なれなかったのかも。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Leah/95.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:event_parents1",
+          "PageIndex": 0,
+          "DisplayPattern": "君の 言うとおりね…あのままじゃ 幸せに なれなかったのかも。"
+        },
+        {
+          "DialogueFrom": "event_parents1",
+          "DialogueText": "若くて 自由の きくうちに 不安定な 関係を 終わらせたほうが… お互いの ために なるのよね。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Leah/96.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:event_parents1",
+          "PageIndex": 1,
+          "DisplayPattern": "若くて 自由の きくうちに 不安定な 関係を 終わらせたほうが… お互いの ために なるのよね。"
+        },
+        {
+          "DialogueFrom": "event_parents2",
+          "DialogueText": "少し キツい 言い方 だけど… そうね。私達の 価値観は 違ってたわ。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Leah/97.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:event_parents2",
+          "PageIndex": 0,
+          "DisplayPattern": "少し キツい 言い方 だけど… そうね。私達の 価値観は 違ってたわ。"
+        },
+        {
+          "DialogueFrom": "event_parents3",
+          "DialogueText": "あらそう？でも結局 町から 出てたかもね！ {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Leah/98.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:event_parents3",
+          "PageIndex": 0,
+          "DisplayPattern": "あらそう？でも結局 町から 出てたかもね！"
+        },
+        {
+          "DialogueFrom": "event_parents4",
+          "DialogueText": "はぁ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/99.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:event_parents4",
+          "PageIndex": 0,
+          "DisplayPattern": "はぁ…"
+        },
+        {
+          "DialogueFrom": "event_parents4",
+          "DialogueText": "君の言うとおり… ちょっと 自分勝手だったかも。でも、 幸せを つかもうとして 何が 悪いの？うーん…私には 分からないわ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/100.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:event_parents4",
+          "PageIndex": 1,
+          "DisplayPattern": "君の言うとおり… ちょっと 自分勝手だったかも。でも、 幸せを つかもうとして 何が 悪いの？うーん…私には 分からないわ…"
+        },
+        {
+          "DialogueFrom": "event_parents5",
+          "DialogueText": "はぁ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/101.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:event_parents5",
+          "PageIndex": 0,
+          "DisplayPattern": "はぁ…"
+        },
+        {
+          "DialogueFrom": "event_parents5",
+          "DialogueText": "そのとおりかも…人間って みんな 自分勝手だよね。私には 理解 できない。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/102.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:event_parents5",
+          "PageIndex": 1,
+          "DisplayPattern": "そのとおりかも…人間って みんな 自分勝手だよね。私には 理解 できない。"
+        },
+        {
+          "DialogueFrom": "event_parents5",
+          "DialogueText": "たぶん、 このことに こだわるべき じゃないかもね。みんな、 何度も 難しい選択を 迫られることに なるから。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/103.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:event_parents5",
+          "PageIndex": 2,
+          "DisplayPattern": "たぶん、 このことに こだわるべき じゃないかもね。みんな、 何度も 難しい選択を 迫られることに なるから。"
+        },
+        {
+          "DialogueFrom": "summer_1",
+          "DialogueText": "風に乗って 運ばれる この甘い香りが 夏の到来を 教えてくれてるわね！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/104.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_1",
+          "PageIndex": 0,
+          "DisplayPattern": "風に乗って 運ばれる この甘い香りが 夏の到来を 教えてくれてるわね！"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "今朝、野生の くだものを 見つけたの！",
+          "AudioPath": "assets/ja-JP/Leah/105.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "今朝、野生の くだものを 見つけたの！"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "ごめんなさい、 もう残ってないの。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/106.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "ごめんなさい、 もう残ってないの。"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "探し続けてたら、 何か 見つかるはずよ。",
+          "AudioPath": "assets/ja-JP/Leah/107.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Mon",
+          "PageIndex": 2,
+          "DisplayPattern": "探し続けてたら、 何か 見つかるはずよ。"
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "牧場の 動物の 鳴き声って 良くない？",
+          "AudioPath": "assets/ja-JP/Leah/108.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "牧場の 動物の 鳴き声って 良くない？"
+        },
+        {
+          "DialogueFrom": "summer_Tue4",
+          "DialogueText": "人生は シンプルに 過ごすのが 一番よね。 夏の暖かい 空気、 キレイな空、 そして ジョッキに注がれた スターデューバレー・レッドビール。",
+          "AudioPath": "assets/ja-JP/Leah/109.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "人生は シンプルに 過ごすのが 一番よね。 夏の暖かい 空気、 キレイな空、 そして ジョッキに注がれた スターデューバレー・レッドビール。"
+        },
+        {
+          "DialogueFrom": "summer_Thu6",
+          "DialogueText": "野生のくだものを 探すのは 得意よ。いつか 君にも フルーツサラダを 作ってあげる。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/110.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "野生のくだものを 探すのは 得意よ。いつか 君にも フルーツサラダを 作ってあげる。"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "樹液採集器を 使えば 木から シロップや 他の便利な 液体を 採集 できるわ。",
+          "AudioPath": "assets/ja-JP/Leah/111.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "樹液採集器を 使えば 木から シロップや 他の便利な 液体を 採集 できるわ。"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "時間が かかるけど、 それだけの 価値はあるわよ。",
+          "AudioPath": "assets/ja-JP/Leah/112.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "時間が かかるけど、 それだけの 価値はあるわよ。"
+        },
+        {
+          "DialogueFrom": "summer_Fri2",
+          "DialogueText": "ハッキリ言って、 私達が 自然を 大切に しないと、 次の世代が 苦しい目に 会うわ。",
+          "AudioPath": "assets/ja-JP/Leah/113.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Fri2",
+          "PageIndex": 0,
+          "DisplayPattern": "ハッキリ言って、 私達が 自然を 大切に しないと、 次の世代が 苦しい目に 会うわ。"
+        },
+        {
+          "DialogueFrom": "summer_Fri2",
+          "DialogueText": "そう 思わない？",
+          "AudioPath": "assets/ja-JP/Leah/114.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Fri2",
+          "PageIndex": 1,
+          "DisplayPattern": "そう 思わない？"
+        },
+        {
+          "DialogueFrom": "summer_Fri4",
+          "DialogueText": "森の中を歩いたことはある？立ち止まって…ただ自然の美しさを感じるの。",
+          "AudioPath": "assets/ja-JP/Leah/115.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "森の中を歩いたことはある？立ち止まって…ただ自然の美しさを感じるの。"
+        },
+        {
+          "DialogueFrom": "summer_Fri4",
+          "DialogueText": "この世界がどれほどすばらしいものなのか、忘れてはいけないわ…",
+          "AudioPath": "assets/ja-JP/Leah/116.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Fri4",
+          "PageIndex": 1,
+          "DisplayPattern": "この世界がどれほどすばらしいものなのか、忘れてはいけないわ…"
+        },
+        {
+          "DialogueFrom": "summer_Fri6",
+          "DialogueText": "おや、{Farmer_Name}か。大きな牧場で 一人きりって さびしくない？",
+          "AudioPath": "assets/ja-JP/Leah/117.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "おや、か。大きな牧場で 一人きりって さびしくない？"
+        },
+        {
+          "DialogueFrom": "summer_Fri6",
+          "DialogueText": "誰かと お話 したくなったら、 私の 家に 来てね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/118.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "誰かと お話 したくなったら、 私の 家に 来てね。"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "近くの小川の おかげで、 夏でも 家の周りは 少しだけ 涼しいのよ。",
+          "AudioPath": "assets/ja-JP/Leah/119.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "近くの小川の おかげで、 夏でも 家の周りは 少しだけ 涼しいのよ。"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "私、 あんまり 暑いのは 苦手なの。",
+          "AudioPath": "assets/ja-JP/Leah/120.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "私、 あんまり 暑いのは 苦手なの。"
+        },
+        {
+          "DialogueFrom": "summer_Sat4",
+          "DialogueText": "いつの夏だったか、暑くて寝付けなかったから、夜中にベッドから飛び起きて川に飛び込んだの！",
+          "AudioPath": "assets/ja-JP/Leah/121.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Sat4",
+          "PageIndex": 0,
+          "DisplayPattern": "いつの夏だったか、暑くて寝付けなかったから、夜中にベッドから飛び起きて川に飛び込んだの！"
+        },
+        {
+          "DialogueFrom": "summer_Sat4",
+          "DialogueText": "きっと誰も見てなかったはずよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/122.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Sat4",
+          "PageIndex": 1,
+          "DisplayPattern": "きっと誰も見てなかったはずよ！"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "こんな 暖かくて、 やる気の出ない日は 何をしようかしら？ はぁ…",
+          "AudioPath": "assets/ja-JP/Leah/123.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "こんな 暖かくて、 やる気の出ない日は 何をしようかしら？ はぁ…"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "何かある？",
+          "AudioPath": "assets/ja-JP/Leah/124.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:summer_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "何かある？"
+        },
+        {
+          "DialogueFrom": "fall_1",
+          "DialogueText": "季節が 変わるのって すごく 速いのね！",
+          "AudioPath": "assets/ja-JP/Leah/125.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_1",
+          "PageIndex": 0,
+          "DisplayPattern": "季節が 変わるのって すごく 速いのね！"
+        },
+        {
+          "DialogueFrom": "fall_1",
+          "DialogueText": "驚きだわ。",
+          "AudioPath": "assets/ja-JP/Leah/126.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_1",
+          "PageIndex": 1,
+          "DisplayPattern": "驚きだわ。"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "週末に 野生のキノコを 見つけたの！",
+          "AudioPath": "assets/ja-JP/Leah/127.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "週末に 野生のキノコを 見つけたの！"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "$e",
+          "AudioPath": "assets/ja-JP/Leah/128.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "今日の 朝食は お皿いっぱいのキノコと 目玉焼きを 食べたわ…今でもまだ 満腹よ。",
+          "AudioPath": "assets/ja-JP/Leah/129.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_Mon",
+          "PageIndex": 2,
+          "DisplayPattern": "今日の 朝食は お皿いっぱいのキノコと 目玉焼きを 食べたわ…今でもまだ 満腹よ。"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "地面に鼻を近づけて、 よく調べれば 君も キノコを 見つけられるかもね…間違いないわ。",
+          "AudioPath": "assets/ja-JP/Leah/130.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_Mon",
+          "PageIndex": 3,
+          "DisplayPattern": "地面に鼻を近づけて、 よく調べれば 君も キノコを 見つけられるかもね…間違いないわ。"
+        },
+        {
+          "DialogueFrom": "fall_Tue",
+          "DialogueText": "枯れ葉で コラージュ作品を 作れたり しないかな。",
+          "AudioPath": "assets/ja-JP/Leah/131.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "枯れ葉で コラージュ作品を 作れたり しないかな。"
+        },
+        {
+          "DialogueFrom": "fall_Tue",
+          "DialogueText": "色とりどり だから…芸術意欲を かきたてられてしまうのよね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/132.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "色とりどり だから…芸術意欲を かきたてられてしまうのよね。"
+        },
+        {
+          "DialogueFrom": "fall_Tue4",
+          "DialogueText": "人はみんな、 それぞれ 個性的な 見方や 信条を 持っているのよ。君も そう思うでしょ？",
+          "AudioPath": "assets/ja-JP/Leah/133.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "人はみんな、 それぞれ 個性的な 見方や 信条を 持っているのよ。君も そう思うでしょ？"
+        },
+        {
+          "DialogueFrom": "fall_Tue4",
+          "DialogueText": "でも、 尊重できないような 意見も あるかな。",
+          "AudioPath": "assets/ja-JP/Leah/134.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_Tue4",
+          "PageIndex": 1,
+          "DisplayPattern": "でも、 尊重できないような 意見も あるかな。"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "川の そばでの 生活は 快適よ。",
+          "AudioPath": "assets/ja-JP/Leah/135.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "川の そばでの 生活は 快適よ。"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "毎晩、 心地よい 水音が 流れるから 眠りに つきやすいの。",
+          "AudioPath": "assets/ja-JP/Leah/136.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "毎晩、 心地よい 水音が 流れるから 眠りに つきやすいの。"
+        },
+        {
+          "DialogueFrom": "fall_Thu6",
+          "DialogueText": "近いうちに、 野生キノコの 炒め物を つくってあげるわね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/137.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "近いうちに、 野生キノコの 炒め物を つくってあげるわね。"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "君の家には もう キッチンは ある？",
+          "AudioPath": "assets/ja-JP/Leah/138.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "君の家には もう キッチンは ある？"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "キッチンで、 おいしい料理を 作ることが できるわよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/139.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "キッチンで、 おいしい料理を 作ることが できるわよ。"
+        },
+        {
+          "DialogueFrom": "fall_Fri6",
+          "DialogueText": "誰かと お話 したくなったら、 私の 家に 来てね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/140.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "誰かと お話 したくなったら、 私の 家に 来てね。"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "飾りつけって、 季節感が あるのよね。価値のある 伝統だと 思うわ。",
+          "AudioPath": "assets/ja-JP/Leah/141.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "飾りつけって、 季節感が あるのよね。価値のある 伝統だと 思うわ。"
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "この辺りは 散歩に 良い 場所で いっぱいね。",
+          "AudioPath": "assets/ja-JP/Leah/142.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "この辺りは 散歩に 良い 場所で いっぱいね。"
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "足の 運動にも 良いかな。",
+          "AudioPath": "assets/ja-JP/Leah/143.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "足の 運動にも 良いかな。"
+        },
+        {
+          "DialogueFrom": "fall_Sun4",
+          "DialogueText": "この場所にある、きれいな滝は私のお気に入りなの。",
+          "AudioPath": "assets/ja-JP/Leah/144.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_Sun4",
+          "PageIndex": 0,
+          "DisplayPattern": "この場所にある、きれいな滝は私のお気に入りなの。"
+        },
+        {
+          "DialogueFrom": "fall_Sun4",
+          "DialogueText": "滝を見つめて過ごすことはある？とても落ち着くのよ…",
+          "AudioPath": "assets/ja-JP/Leah/145.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:fall_Sun4",
+          "PageIndex": 1,
+          "DisplayPattern": "滝を見つめて過ごすことはある？とても落ち着くのよ…"
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "雪が 積もったばかりの 光景って 本当に ステキ。",
+          "AudioPath": "assets/ja-JP/Leah/146.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:winter_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "雪が 積もったばかりの 光景って 本当に ステキ。"
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "私の家、 冬場は 結構 寒くなるのよ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/147.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:winter_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "私の家、 冬場は 結構 寒くなるのよ。"
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "大きな 毛布に くるまれば、 大丈夫だけど。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/148.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:winter_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "大きな 毛布に くるまれば、 大丈夫だけど。"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "今朝早くに、 雪ウサギを見たの！結構 珍しい ことだよね？",
+          "AudioPath": "assets/ja-JP/Leah/149.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:winter_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "今朝早くに、 雪ウサギを見たの！結構 珍しい ことだよね？"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "新鮮な 食べ物が なかなか 見つからないわ。",
+          "AudioPath": "assets/ja-JP/Leah/150.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:winter_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "新鮮な 食べ物が なかなか 見つからないわ。"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "最近は パンばかり 食べてる。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/151.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:winter_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "最近は パンばかり 食べてる。"
+        },
+        {
+          "DialogueFrom": "winter_Thu6",
+          "DialogueText": "はぁ… 冬は 新鮮な 食べ物が 手に入りづらいわ。",
+          "AudioPath": "assets/ja-JP/Leah/152.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:winter_Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "はぁ… 冬は 新鮮な 食べ物が 手に入りづらいわ。"
+        },
+        {
+          "DialogueFrom": "winter_Thu6",
+          "DialogueText": "君の 牧場の 備蓄は 十分かしら？",
+          "AudioPath": "assets/ja-JP/Leah/153.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:winter_Thu6",
+          "PageIndex": 1,
+          "DisplayPattern": "君の 牧場の 備蓄は 十分かしら？"
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "ここでは、 時の流れが 遅く感じるの。",
+          "AudioPath": "assets/ja-JP/Leah/154.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:winter_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "ここでは、 時の流れが 遅く感じるの。"
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "都会に いた頃は、 年月なんて あっという間に 過ぎたわ。",
+          "AudioPath": "assets/ja-JP/Leah/155.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:winter_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "都会に いた頃は、 年月なんて あっという間に 過ぎたわ。"
+        },
+        {
+          "DialogueFrom": "winter_Fri6",
+          "DialogueText": "君の家は 冷え込んだりするのかしら？",
+          "AudioPath": "assets/ja-JP/Leah/156.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:winter_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "君の家は 冷え込んだりするのかしら？"
+        },
+        {
+          "DialogueFrom": "winter_Fri6",
+          "DialogueText": "もし 毛布に くるまって、 サイダーを 飲みたいって 気分なら 私の家に来てね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/157.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:winter_Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "もし 毛布に くるまって、 サイダーを 飲みたいって 気分なら 私の家に来てね。"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "こんにちは。何か用かしら？",
+          "AudioPath": "assets/ja-JP/Leah/158.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:winter_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは。何か用かしら？"
+        },
+        {
+          "DialogueFrom": "winter_Sat2",
+          "DialogueText": "おや、{Farmer_Name}か。何か　お話したいことでも あるのかしら？",
+          "AudioPath": "assets/ja-JP/Leah/159.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:winter_Sat2",
+          "PageIndex": 0,
+          "DisplayPattern": "おや、か。何か　お話したいことでも あるのかしら？"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "丸一日 休みを とることって ある？",
+          "AudioPath": "assets/ja-JP/Leah/160.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:winter_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "丸一日 休みを とることって ある？"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "リフレッシュ できるわよ。",
+          "AudioPath": "assets/ja-JP/Leah/161.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:winter_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "リフレッシュ できるわよ。"
+        },
+        {
+          "DialogueFrom": "winter_Sun4",
+          "DialogueText": "たまには丸一日休んだ方がいいよ。",
+          "AudioPath": "assets/ja-JP/Leah/162.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:winter_Sun4",
+          "PageIndex": 0,
+          "DisplayPattern": "たまには丸一日休んだ方がいいよ。"
+        },
+        {
+          "DialogueFrom": "winter_Sun4",
+          "DialogueText": "気持ちが軽くなるだけじゃなくて、長い目で見れば生産性も上がるの。",
+          "AudioPath": "assets/ja-JP/Leah/163.ogg",
+          "TranslationKey": "Characters/Dialogue/Leah:winter_Sun4",
+          "PageIndex": 1,
+          "DisplayPattern": "気持ちが軽くなるだけじゃなくて、長い目で見れば生産性も上がるの。"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Leah0",
+          "DialogueText": "… {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/164.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Leah0",
+          "PageIndex": 0,
+          "DisplayPattern": "…"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Leah0",
+          "DialogueText": "ちょっと不安だけど、でもしあわせだよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/165.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Leah0",
+          "PageIndex": 1,
+          "DisplayPattern": "ちょっと不安だけど、でもしあわせだよ。"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Leah1",
+          "DialogueText": "ずっと、牧場で暮らすのが夢だったんだ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/166.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Leah1",
+          "PageIndex": 0,
+          "DisplayPattern": "ずっと、牧場で暮らすのが夢だったんだ。"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Leah1",
+          "DialogueText": "きっとたのしく暮らせるね。",
+          "AudioPath": "assets/ja-JP/Leah/167.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Leah1",
+          "PageIndex": 1,
+          "DisplayPattern": "きっとたのしく暮らせるね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Bad_0",
+          "DialogueText": "… まだ 愛してくれてる？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/168.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Bad_0",
+          "PageIndex": 0,
+          "DisplayPattern": "… まだ 愛してくれてる？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Bad_1",
+          "DialogueText": "はぁ… たぶん、 結婚するには 早すぎた かも。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/169.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Bad_1",
+          "PageIndex": 0,
+          "DisplayPattern": "はぁ… たぶん、 結婚するには 早すぎた かも。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Bad_2",
+          "DialogueText": "私と 一緒で まだ 楽しめてる？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/170.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Bad_2",
+          "PageIndex": 0,
+          "DisplayPattern": "私と 一緒で まだ 楽しめてる？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Bad_3",
+          "DialogueText": "何か 悪いことを した？最近 様子が おかしいよ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/171.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Bad_3",
+          "PageIndex": 0,
+          "DisplayPattern": "何か 悪いことを した？最近 様子が おかしいよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Bad_4",
+          "DialogueText": "外の世界に 何が あるか 考えたことは ある？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/172.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Bad_4",
+          "PageIndex": 0,
+          "DisplayPattern": "外の世界に 何が あるか 考えたことは ある？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Bad_5",
+          "DialogueText": "前は もっと ロマンチックだったのに… どうしたの？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/173.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Bad_5",
+          "PageIndex": 0,
+          "DisplayPattern": "前は もっと ロマンチックだったのに… どうしたの？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Bad_5",
+          "DialogueText": "今の自分は あの時ほど 若くないけど… そのために結婚したのかな？ {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Leah/174.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Bad_5",
+          "PageIndex": 1,
+          "DisplayPattern": "今の自分は あの時ほど 若くないけど… そのために結婚したのかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Bad_6",
+          "DialogueText": "人生は 短いし 一回きりだけど… このままで 本当に いいの？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/175.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Bad_6",
+          "PageIndex": 0,
+          "DisplayPattern": "人生は 短いし 一回きりだけど… このままで 本当に いいの？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Bad_7",
+          "DialogueText": "以前は やさしかったけど… 今は 私が暖かい 夕食を 作ってる時だけ 我慢 してるように 見える。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/176.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Bad_7",
+          "PageIndex": 0,
+          "DisplayPattern": "以前は やさしかったけど… 今は 私が暖かい 夕食を 作ってる時だけ 我慢 してるように 見える。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Bad_8",
+          "DialogueText": "最近、 私に対して 冷たくない？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/177.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Bad_8",
+          "PageIndex": 0,
+          "DisplayPattern": "最近、 私に対して 冷たくない？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Bad_9",
+          "DialogueText": "もう少し あなたの ために 何か できたらなぁ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/178.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Bad_9",
+          "PageIndex": 0,
+          "DisplayPattern": "もう少し あなたの ために 何か できたらなぁ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/fall_1",
+          "DialogueText": "秋は キノコ狩りの 機会が あるから 大好きよ。あっという間に 終わっちゃうけど。",
+          "AudioPath": "assets/ja-JP/Leah/179.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:fall_1",
+          "PageIndex": 0,
+          "DisplayPattern": "秋は キノコ狩りの 機会が あるから 大好きよ。あっという間に 終わっちゃうけど。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/fall_15",
+          "DialogueText": "明日は どんなものを 出品するか、 君は 決めてあるかな？",
+          "AudioPath": "assets/ja-JP/Leah/180.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_15",
+          "PageIndex": 0,
+          "DisplayPattern": "明日は どんなものを 出品するか、 君は 決めてあるかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/fall_2",
+          "DialogueText": "収穫の 季節は 忙しく なりそうね。私も できるだけ あなたを 手伝うわ。",
+          "AudioPath": "assets/ja-JP/Leah/181.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:fall_2",
+          "PageIndex": 0,
+          "DisplayPattern": "収穫の 季節は 忙しく なりそうね。私も できるだけ あなたを 手伝うわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/fall_20",
+          "DialogueText": "冬は どんな 予定を 立ててるの？わらの 備蓄を 用意しておくと いいわよ。",
+          "AudioPath": "assets/ja-JP/Leah/182.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:fall_20",
+          "PageIndex": 0,
+          "DisplayPattern": "冬は どんな 予定を 立ててるの？わらの 備蓄を 用意しておくと いいわよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/fall_26",
+          "DialogueText": "明日の夜、 スピリットイブへ 一緒に 行かない？",
+          "AudioPath": "assets/ja-JP/Leah/183.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_26",
+          "PageIndex": 0,
+          "DisplayPattern": "明日の夜、 スピリットイブへ 一緒に 行かない？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/fall_8",
+          "DialogueText": "もうすぐ 冬だね。暖房を ちゃんと チェックして、 水道の 蛇口を 閉めて、 家に スキマが ないか 確認 しないと。",
+          "AudioPath": "assets/ja-JP/Leah/184.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 0,
+          "DisplayPattern": "もうすぐ 冬だね。暖房を ちゃんと チェックして、 水道の 蛇口を 閉めて、 家に スキマが ないか 確認 しないと。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/fall_8",
+          "DialogueText": "大丈夫、 全部 やってあげるから。",
+          "AudioPath": "assets/ja-JP/Leah/185.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 1,
+          "DisplayPattern": "大丈夫、 全部 やってあげるから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/fall_Leah",
+          "DialogueText": "深く吸ってみて… 匂いが 分かるかしら？今が キノコの 季節だってこと。",
+          "AudioPath": "assets/ja-JP/Leah/186.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "深く吸ってみて… 匂いが 分かるかしら？今が キノコの 季節だってこと。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/funLeave_Leah",
+          "DialogueText": "今日は 自然を 散歩しようと 思うの。家の外へ 出て 歩かなきゃね。",
+          "AudioPath": "assets/ja-JP/Leah/187.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:funLeave_Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 自然を 散歩しようと 思うの。家の外へ 出て 歩かなきゃね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/funReturn_Leah",
+          "DialogueText": "今日は 落ち着いた、 良い 一日だったわ。あなたの 一日は どうだった？",
+          "AudioPath": "assets/ja-JP/Leah/188.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:funReturn_Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 落ち着いた、 良い 一日だったわ。あなたの 一日は どうだった？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Good_0",
+          "DialogueText": "ここで 住んでいると、 まるで 大きな 山の てっぺんに いるような 気分だわ。",
+          "AudioPath": "assets/ja-JP/Leah/189.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Good_0",
+          "PageIndex": 0,
+          "DisplayPattern": "ここで 住んでいると、 まるで 大きな 山の てっぺんに いるような 気分だわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Good_1",
+          "DialogueText": "前に言ったかしら… あなたと 初めて 会った時、 いつか 私達は 結ばれると 思ってたって。",
+          "AudioPath": "assets/ja-JP/Leah/190.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Good_1",
+          "PageIndex": 0,
+          "DisplayPattern": "前に言ったかしら… あなたと 初めて 会った時、 いつか 私達は 結ばれると 思ってたって。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Good_2",
+          "DialogueText": "運命を 信じないように することって 難しい 時も あるわ… ここへ 引っ越すことを 決めたから、 あなたと 会えた。",
+          "AudioPath": "assets/ja-JP/Leah/191.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Good_2",
+          "PageIndex": 0,
+          "DisplayPattern": "運命を 信じないように することって 難しい 時も あるわ… ここへ 引っ越すことを 決めたから、 あなたと 会えた。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Good_2",
+          "DialogueText": "どこかで まったく 違う 結果にも なり得たのよね。",
+          "AudioPath": "assets/ja-JP/Leah/192.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Good_2",
+          "PageIndex": 1,
+          "DisplayPattern": "どこかで まったく 違う 結果にも なり得たのよね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Good_3",
+          "DialogueText": "今日は とても 元気が あふれてるみたいね！ {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/193_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Good_3",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は とても 元気が あふれてるみたいね！",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Good_3",
+          "DialogueText": "今日は とても 美しいわね。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/194_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Good_3",
+          "PageIndex": 1,
+          "DisplayPattern": "今日は とても 美しいわね。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Good_4",
+          "DialogueText": "ん…今日の あなた、 いい匂いね。",
+          "AudioPath": "assets/ja-JP/Leah/195.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Good_4",
+          "PageIndex": 0,
+          "DisplayPattern": "ん…今日の あなた、 いい匂いね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Good_5",
+          "DialogueText": "結婚式に もらった 首飾りが 美しいね…これからも ずっと この 宝物を 大切にするわ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/196.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Good_5",
+          "PageIndex": 0,
+          "DisplayPattern": "結婚式に もらった 首飾りが 美しいね…これからも ずっと この 宝物を 大切にするわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Good_6",
+          "DialogueText": "外では 気をつけるんだよ！時々、 鉱山で ケガしないかと 心配に なるんだ。",
+          "AudioPath": "assets/ja-JP/Leah/197.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Good_6",
+          "PageIndex": 0,
+          "DisplayPattern": "外では 気をつけるんだよ！時々、 鉱山で ケガしないかと 心配に なるんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Good_7",
+          "DialogueText": "{Farmer_Name}さんか。君が 家のために 尽くしてくれていることに、 本当に 感謝したいんだ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/198.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Good_7",
+          "PageIndex": 0,
+          "DisplayPattern": "さんか。君が 家のために 尽くしてくれていることに、 本当に 感謝したいんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Good_8",
+          "DialogueText": "自分のことは 心配しないで…あなたは 家の外で いろんな 責任を 負ってるから。だから こっちは 大丈夫さ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/199.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Good_8",
+          "PageIndex": 0,
+          "DisplayPattern": "自分のことは 心配しないで…あなたは 家の外で いろんな 責任を 負ってるから。だから こっちは 大丈夫さ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Good_9",
+          "DialogueText": "全く 飽きてもいないよ…ここにある もので 十分 楽しめてる。",
+          "AudioPath": "assets/ja-JP/Leah/200.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Good_9",
+          "PageIndex": 0,
+          "DisplayPattern": "全く 飽きてもいないよ…ここにある もので 十分 楽しめてる。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Good_9",
+          "DialogueText": "シンプルな 生活だけど 好きだよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/201.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Good_9",
+          "PageIndex": 1,
+          "DisplayPattern": "シンプルな 生活だけど 好きだよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Indoor_Day_0",
+          "DialogueText": "私が 昔 住んでいた ところより ずっと いい家ね！あの場所に 未練は ないわ。",
+          "AudioPath": "assets/ja-JP/Leah/202.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Indoor_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "私が 昔 住んでいた ところより ずっと いい家ね！あの場所に 未練は ないわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Indoor_Day_1",
+          "DialogueText": "おはよう、{Farmer_Name}。外で これを 鉢に 植えてみたの…[16 18 20 22 90 259 396 402]",
+          "AudioPath": "assets/ja-JP/Leah/203.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Indoor_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "おはよう、。外で これを 鉢に 植えてみたの…"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Indoor_Day_1",
+          "DialogueText": "私が 丹精こめて 育てたのよ。楽しんでね。",
+          "AudioPath": "assets/ja-JP/Leah/204.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Indoor_Day_1",
+          "PageIndex": 1,
+          "DisplayPattern": "私が 丹精こめて 育てたのよ。楽しんでね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Indoor_Day_2",
+          "DialogueText": "いつも 目を こらして、 野生の 植物を 探してみてね！そこらじゅうに あるから。",
+          "AudioPath": "assets/ja-JP/Leah/205.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Indoor_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "いつも 目を こらして、 野生の 植物を 探してみてね！そこらじゅうに あるから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Indoor_Day_3",
+          "DialogueText": "こう 思ったの… 不健康な 食事を しようにも 人は短命 すぎるって。でも、 私達は 新鮮な 野菜が とれる 最高の場所に 住んでるのよね！",
+          "AudioPath": "assets/ja-JP/Leah/206.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Indoor_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "こう 思ったの… 不健康な 食事を しようにも 人は短命 すぎるって。でも、 私達は 新鮮な 野菜が とれる 最高の場所に 住んでるのよね！"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Indoor_Day_3",
+          "DialogueText": "ほら、 ヘルシーな サラダを 作ったわ。[196]",
+          "AudioPath": "assets/ja-JP/Leah/207.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Indoor_Day_3",
+          "PageIndex": 1,
+          "DisplayPattern": "ほら、 ヘルシーな サラダを 作ったわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Indoor_Day_3",
+          "DialogueText": "まだ 私の サラダに 飽きていないだなんて 驚きだわ！",
+          "AudioPath": "assets/ja-JP/Leah/208.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Indoor_Day_3",
+          "PageIndex": 2,
+          "DisplayPattern": "まだ 私の サラダに 飽きていないだなんて 驚きだわ！"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Indoor_Day_4",
+          "DialogueText": "おはよう、{Farmer_Name}！コーヒーを 作ったわよ。[395] {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/209.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Indoor_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "おはよう、！コーヒーを 作ったわよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Indoor_Day_4",
+          "DialogueText": "温かい コーヒーを 一杯 飲まないと、 カンペキな 朝とは 言えないわね。",
+          "AudioPath": "assets/ja-JP/Leah/210.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Indoor_Day_4",
+          "PageIndex": 1,
+          "DisplayPattern": "温かい コーヒーを 一杯 飲まないと、 カンペキな 朝とは 言えないわね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Indoor_Day_Leah",
+          "DialogueText": "この辺りの 木工品に ちょっと手を加えても いいかしら？何か 作りたくて 手が うずいてるの！",
+          "AudioPath": "assets/ja-JP/Leah/211.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Day_Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "この辺りの 木工品に ちょっと手を加えても いいかしら？何か 作りたくて 手が うずいてるの！"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Indoor_Night_0",
+          "DialogueText": "夜の この時間帯って、 なんだか 喉が かわくの。",
+          "AudioPath": "assets/ja-JP/Leah/212.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Indoor_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "夜の この時間帯って、 なんだか 喉が かわくの。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Indoor_Night_1",
+          "DialogueText": "時間の流れは とても 微細で… どれだけ 小さな 選択でも 未来を 変えてしまうのよ。",
+          "AudioPath": "assets/ja-JP/Leah/213.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Indoor_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "時間の流れは とても 微細で… どれだけ 小さな 選択でも 未来を 変えてしまうのよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Indoor_Night_2",
+          "DialogueText": "ここでの 夜は、 都会の ギラギラした 夜景よりも ずっと 良いわね。",
+          "AudioPath": "assets/ja-JP/Leah/214.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Indoor_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "ここでの 夜は、 都会の ギラギラした 夜景よりも ずっと 良いわね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Indoor_Night_2",
+          "DialogueText": "何もかも、 私にとって カンペキな 感じよ。ほんと、 私は 運がいいわ。",
+          "AudioPath": "assets/ja-JP/Leah/215.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Indoor_Night_2",
+          "PageIndex": 1,
+          "DisplayPattern": "何もかも、 私にとって カンペキな 感じよ。ほんと、 私は 運がいいわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Indoor_Night_3",
+          "DialogueText": "この町へ 引っ越して こんなに 早く、 人魚の ペンダントを 受け取るなんて 思わなかったわ！受け取ったのは うれしいけど。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/216.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Indoor_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "この町へ 引っ越して こんなに 早く、 人魚の ペンダントを 受け取るなんて 思わなかったわ！受け取ったのは うれしいけど。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Indoor_Night_4",
+          "DialogueText": "今日は　野生の ウサギを 見たの。いつか 一匹 飼いたいわ。だって あの フワフワがね…",
+          "AudioPath": "assets/ja-JP/Leah/217.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Indoor_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は　野生の ウサギを 見たの。いつか 一匹 飼いたいわ。だって あの フワフワがね…"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Indoor_Night_Leah",
+          "DialogueText": "今夜は とても 静かで 平和ね。生活の 悩みに なるものは 何も ないから。",
+          "AudioPath": "assets/ja-JP/Leah/218.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "今夜は とても 静かで 平和ね。生活の 悩みに なるものは 何も ないから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Neutral_0",
+          "DialogueText": "あなたが 年を取っても、 ずっと 好きで いてくれるよね。",
+          "AudioPath": "assets/ja-JP/Leah/219.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Neutral_0",
+          "PageIndex": 0,
+          "DisplayPattern": "あなたが 年を取っても、 ずっと 好きで いてくれるよね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Neutral_1",
+          "DialogueText": "私達の前には、 だれが ここに 住んでたのかしらね。",
+          "AudioPath": "assets/ja-JP/Leah/220.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Neutral_1",
+          "PageIndex": 0,
+          "DisplayPattern": "私達の前には、 だれが ここに 住んでたのかしらね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Neutral_2",
+          "DialogueText": "あなた、 今日は やることが あるかしら？",
+          "AudioPath": "assets/ja-JP/Leah/221.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Neutral_2",
+          "PageIndex": 0,
+          "DisplayPattern": "あなた、 今日は やることが あるかしら？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Neutral_3",
+          "DialogueText": "もし 町へ 行ったら、 私の 代わりに みんなと あいさつ してくれるかな。",
+          "AudioPath": "assets/ja-JP/Leah/222.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Neutral_3",
+          "PageIndex": 0,
+          "DisplayPattern": "もし 町へ 行ったら、 私の 代わりに みんなと あいさつ してくれるかな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Neutral_4",
+          "DialogueText": "明日、 あなたが 起きる前に 洗濯を するわね… そうすれば 効率が いいから。",
+          "AudioPath": "assets/ja-JP/Leah/223.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Neutral_4",
+          "PageIndex": 0,
+          "DisplayPattern": "明日、 あなたが 起きる前に 洗濯を するわね… そうすれば 効率が いいから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Neutral_5",
+          "DialogueText": "{Farmer_Name}、お金には 困ってない？",
+          "AudioPath": "assets/ja-JP/Leah/224.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Neutral_5",
+          "PageIndex": 0,
+          "DisplayPattern": "、お金には 困ってない？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Neutral_6",
+          "DialogueText": "町の みんなは 今日 何を してるのかな。",
+          "AudioPath": "assets/ja-JP/Leah/225.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Neutral_6",
+          "PageIndex": 0,
+          "DisplayPattern": "町の みんなは 今日 何を してるのかな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Neutral_7",
+          "DialogueText": "今日は 本当に 何もしたくない 気分だわ。",
+          "AudioPath": "assets/ja-JP/Leah/226.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Neutral_7",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 本当に 何もしたくない 気分だわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Neutral_8",
+          "DialogueText": "どれだけ がんばって キレイにしても、 家が すぐに 汚れちゃう。",
+          "AudioPath": "assets/ja-JP/Leah/227.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Neutral_8",
+          "PageIndex": 0,
+          "DisplayPattern": "どれだけ がんばって キレイにしても、 家が すぐに 汚れちゃう。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Neutral_8",
+          "DialogueText": "牧場って そういうものかな。",
+          "AudioPath": "assets/ja-JP/Leah/228.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Neutral_8",
+          "PageIndex": 1,
+          "DisplayPattern": "牧場って そういうものかな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Neutral_9",
+          "DialogueText": "ずっと このまま ここで 暮らせるかな？",
+          "AudioPath": "assets/ja-JP/Leah/229.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Neutral_9",
+          "PageIndex": 0,
+          "DisplayPattern": "ずっと このまま ここで 暮らせるかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/NoBed_0",
+          "DialogueText": "どこで寝たらいいの…？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/230.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_0",
+          "PageIndex": 0,
+          "DisplayPattern": "どこで寝たらいいの…？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/NoBed_1",
+          "DialogueText": "昨日はぜんぜん眠れなかったよ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/231.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_1",
+          "PageIndex": 0,
+          "DisplayPattern": "昨日はぜんぜん眠れなかったよ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/NoBed_2",
+          "DialogueText": "昨日は床の上で寝たよ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/232.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_2",
+          "PageIndex": 0,
+          "DisplayPattern": "昨日は床の上で寝たよ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/NoBed_3",
+          "DialogueText": "ベッドに何かしたの…？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/233.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_3",
+          "PageIndex": 0,
+          "DisplayPattern": "ベッドに何かしたの…？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/OneKid_0",
+          "DialogueText": "今日は %kid1と 一緒に いられた？",
+          "AudioPath": "assets/ja-JP/Leah/234.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:OneKid_0",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は %kid1と 一緒に いられた？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/OneKid_1",
+          "DialogueText": "kid1は 成長したら、 あなた みたいな 大人に なるのかな？",
+          "AudioPath": "assets/ja-JP/Leah/235.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:OneKid_1",
+          "PageIndex": 0,
+          "DisplayPattern": "kid1は 成長したら、 あなた みたいな 大人に なるのかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/OneKid_2",
+          "DialogueText": "大丈夫、 %kid1の 面倒は 見るから。君は 牧場運営に 集中しても いいよ。",
+          "AudioPath": "assets/ja-JP/Leah/236.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:OneKid_2",
+          "PageIndex": 0,
+          "DisplayPattern": "大丈夫、 %kid1の 面倒は 見るから。君は 牧場運営に 集中しても いいよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/OneKid_3",
+          "DialogueText": "親に なるのって 楽しいわね。%kid1 が 自然を 愛する子に なるよう、 しっかり 育てたいわ。",
+          "AudioPath": "assets/ja-JP/Leah/237.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:OneKid_3",
+          "PageIndex": 0,
+          "DisplayPattern": "親に なるのって 楽しいわね。 が 自然を 愛する子に なるよう、 しっかり 育てたいわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Outdoor_0",
+          "DialogueText": "風が 涼しくて 気持ちいい。川の そばでの 生活を 思い出すわ。",
+          "AudioPath": "assets/ja-JP/Leah/238.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Outdoor_0",
+          "PageIndex": 0,
+          "DisplayPattern": "風が 涼しくて 気持ちいい。川の そばでの 生活を 思い出すわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Outdoor_1",
+          "DialogueText": "うーん…ちょうど この辺を 整備しようと してたの。時々、 何かを ハンマーで 打ちたくなる衝動が あってね。",
+          "AudioPath": "assets/ja-JP/Leah/239.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Outdoor_1",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん…ちょうど この辺を 整備しようと してたの。時々、 何かを ハンマーで 打ちたくなる衝動が あってね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Outdoor_2",
+          "DialogueText": "今日は 特別な日に なりそうね。 そう 感じるわ。",
+          "AudioPath": "assets/ja-JP/Leah/240.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Outdoor_2",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 特別な日に なりそうね。 そう 感じるわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Outdoor_3",
+          "DialogueText": "ああ… 新鮮な 土の匂い。すごく いい 匂いだわ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/241.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Outdoor_3",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ… 新鮮な 土の匂い。すごく いい 匂いだわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Outdoor_3",
+          "DialogueText": "ここの 空気は すごく キレイで… 体に いい 感じが するわね。",
+          "AudioPath": "assets/ja-JP/Leah/242.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Outdoor_3",
+          "PageIndex": 1,
+          "DisplayPattern": "ここの 空気は すごく キレイで… 体に いい 感じが するわね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Outdoor_4",
+          "DialogueText": "あまり 働きすぎないでね。",
+          "AudioPath": "assets/ja-JP/Leah/243.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Outdoor_4",
+          "PageIndex": 0,
+          "DisplayPattern": "あまり 働きすぎないでね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Outdoor_4",
+          "DialogueText": "ちゃんと、 定期的な 休息や 食事を 取るように するんだよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/244.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Outdoor_4",
+          "PageIndex": 1,
+          "DisplayPattern": "ちゃんと、 定期的な 休息や 食事を 取るように するんだよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Outdoor_Leah",
+          "DialogueText": "うーん、 いい日だわ！牧場生活って 本当に 楽しいわね、{Farmer_Name}。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/245.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Outdoor_Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん、 いい日だわ！牧場生活って 本当に 楽しいわね、。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Outdoor_Leah",
+          "DialogueText": "こんな 人生を ずっと 夢見ていたのよ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/246.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Outdoor_Leah",
+          "PageIndex": 1,
+          "DisplayPattern": "こんな 人生を ずっと 夢見ていたのよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/patio_Leah",
+          "DialogueText": "そんなジロジロ見ないでよ、まだ制作のとちゅうなんだ。",
+          "AudioPath": "assets/ja-JP/Leah/247.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:patio_Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "そんなジロジロ見ないでよ、まだ制作のとちゅうなんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Rainy_Day_0",
+          "DialogueText": "時々、 思いがけない場所から 着想を 得られるのよ。",
+          "AudioPath": "assets/ja-JP/Leah/248.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Rainy_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "時々、 思いがけない場所から 着想を 得られるのよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Rainy_Day_1",
+          "DialogueText": "都会に 住んでいた 頃、 雨は 気が 重くなるって 思ってたの。でも スターデュー バレーじゃ、 雨が 美しく 見えるわ。",
+          "AudioPath": "assets/ja-JP/Leah/249.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Rainy_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "都会に 住んでいた 頃、 雨は 気が 重くなるって 思ってたの。でも スターデュー バレーじゃ、 雨が 美しく 見えるわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Rainy_Day_2",
+          "DialogueText": "おはよう！早くに 起きて、 キノコ狩りを してたわ。ほら、 ひとつ あげる。[281 404 420 257]",
+          "AudioPath": "assets/ja-JP/Leah/250.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Rainy_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "おはよう！早くに 起きて、 キノコ狩りを してたわ。ほら、 ひとつ あげる。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Rainy_Day_2",
+          "DialogueText": "キノコ狩りって、 まるで 宝探しみたいな ものね。すごく 楽しいわよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/251.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Rainy_Day_2",
+          "PageIndex": 1,
+          "DisplayPattern": "キノコ狩りって、 まるで 宝探しみたいな ものね。すごく 楽しいわよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Rainy_Day_3",
+          "DialogueText": "こういう 日は 作業用 ブーツを 履いてて 良かったって 思う。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/252.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Rainy_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "こういう 日は 作業用 ブーツを 履いてて 良かったって 思う。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Rainy_Day_4",
+          "DialogueText": "木々も この 雨を ほしがってたんでしょうね…私も うれしく 感じるわ。",
+          "AudioPath": "assets/ja-JP/Leah/253.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Rainy_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "木々も この 雨を ほしがってたんでしょうね…私も うれしく 感じるわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Rainy_Day_Leah",
+          "DialogueText": "今日は 釣りか 採掘にでも 出かける予定？",
+          "AudioPath": "assets/ja-JP/Leah/254.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Day_Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 釣りか 採掘にでも 出かける予定？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Rainy_Night_0",
+          "DialogueText": "あなたの 一日は どうだった？外で どんな 動物を 見てきたの？",
+          "AudioPath": "assets/ja-JP/Leah/255.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Rainy_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "あなたの 一日は どうだった？外で どんな 動物を 見てきたの？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Rainy_Night_1",
+          "DialogueText": "普段は サラダを 食べるけど… こういう 濡れた 夜は 暖かい スープが ほしくなるわ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/256.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Rainy_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "普段は サラダを 食べるけど… こういう 濡れた 夜は 暖かい スープが ほしくなるわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Rainy_Night_2",
+          "DialogueText": "こんな夜は 落ち着いて 眠りに つけそうね… {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/257.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Rainy_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "こんな夜は 落ち着いて 眠りに つけそうね…"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Rainy_Night_3",
+          "DialogueText": "今日は 少し 木彫りを やってみたけど、 出来が ひどかったから 燃やしたわ。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Leah/258.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Rainy_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 少し 木彫りを やってみたけど、 出来が ひどかったから 燃やしたわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Rainy_Night_3",
+          "DialogueText": "偉大な 芸術家に なるには、 自分の 作品にも 厳しく 評価しないと。",
+          "AudioPath": "assets/ja-JP/Leah/259.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Rainy_Night_3",
+          "PageIndex": 1,
+          "DisplayPattern": "偉大な 芸術家に なるには、 自分の 作品にも 厳しく 評価しないと。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Rainy_Night_4",
+          "DialogueText": "家に いてくれて うれしい…屋内で しっかり体を 暖めるには 良い夜 ね。",
+          "AudioPath": "assets/ja-JP/Leah/260.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Rainy_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "家に いてくれて うれしい…屋内で しっかり体を 暖めるには 良い夜 ね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Rainy_Night_5",
+          "DialogueText": "家に いてくれて うれしい…家の中で 過ごすには 良い夜 だね。",
+          "AudioPath": "assets/ja-JP/Leah/261.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Night_5",
+          "PageIndex": 0,
+          "DisplayPattern": "家に いてくれて うれしい…家の中で 過ごすには 良い夜 だね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/Rainy_Night_Leah",
+          "DialogueText": "今日は どうだったかしら？あんまり よくなかった？",
+          "AudioPath": "assets/ja-JP/Leah/262.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:Rainy_Night_Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は どうだったかしら？あんまり よくなかった？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/spouseRoom_Leah",
+          "DialogueText": "近いうちに、 あなたの 肖像画も 描きたいな。",
+          "AudioPath": "assets/ja-JP/Leah/263.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "近いうちに、 あなたの 肖像画も 描きたいな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/spouseRoom_Leah",
+          "DialogueText": "$e",
+          "AudioPath": "assets/ja-JP/Leah/264.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Leah",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/spouseRoom_Leah",
+          "DialogueText": "窓から見える この 風景、 感動的だわ。 そう思わない？",
+          "AudioPath": "assets/ja-JP/Leah/265.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Leah",
+          "PageIndex": 2,
+          "DisplayPattern": "窓から見える この 風景、 感動的だわ。 そう思わない？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/spring_1",
+          "DialogueText": "何とか 大晦日を 終えて、 新年を 迎えられたわね… {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/266.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:spring_1",
+          "PageIndex": 0,
+          "DisplayPattern": "何とか 大晦日を 終えて、 新年を 迎えられたわね…"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/spring_15",
+          "DialogueText": "はぁ… また 「春の大掃除」の 季節が やってきたわ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/267.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:spring_15",
+          "PageIndex": 0,
+          "DisplayPattern": "はぁ… また 「春の大掃除」の 季節が やってきたわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/spring_2",
+          "DialogueText": "この 季節は 何を 植えるの？",
+          "AudioPath": "assets/ja-JP/Leah/268.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:spring_2",
+          "PageIndex": 0,
+          "DisplayPattern": "この 季節は 何を 植えるの？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/spring_23",
+          "DialogueText": "ダンスの 練習は ちゃんと してくれたかな… 明日は フラワーダンスだからね！",
+          "AudioPath": "assets/ja-JP/Leah/269.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_23",
+          "PageIndex": 0,
+          "DisplayPattern": "ダンスの 練習は ちゃんと してくれたかな… 明日は フラワーダンスだからね！"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/spring_8",
+          "DialogueText": "冬が ようやく 終わって、 これからの 天気に 期待できるように なった。",
+          "AudioPath": "assets/ja-JP/Leah/270.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_8",
+          "PageIndex": 0,
+          "DisplayPattern": "冬が ようやく 終わって、 これからの 天気に 期待できるように なった。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/spring_Leah",
+          "DialogueText": "外へ 出るなら、 セイヨウワサビ、 ポロねぎと タンポポを 探すのを 忘れないでね！",
+          "AudioPath": "assets/ja-JP/Leah/271.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "外へ 出るなら、 セイヨウワサビ、 ポロねぎと タンポポを 探すのを 忘れないでね！"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/summer_1",
+          "DialogueText": "ああ、夏ね…もう スパイスベリーの 匂いが するわね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/272.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:summer_1",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、夏ね…もう スパイスベリーの 匂いが するわね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/summer_15",
+          "DialogueText": "夏… ハエが 出てくる季節ってことだね。",
+          "AudioPath": "assets/ja-JP/Leah/273.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 0,
+          "DisplayPattern": "夏… ハエが 出てくる季節ってことだね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/summer_15",
+          "DialogueText": "大丈夫、 退治してあげるから。",
+          "AudioPath": "assets/ja-JP/Leah/274.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 1,
+          "DisplayPattern": "大丈夫、 退治してあげるから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/summer_2",
+          "DialogueText": "夏… ハエが 出てくる季節ってことだね。",
+          "AudioPath": "assets/ja-JP/Leah/275.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:summer_2",
+          "PageIndex": 0,
+          "DisplayPattern": "夏… ハエが 出てくる季節ってことだね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/summer_2",
+          "DialogueText": "大丈夫、 退治してあげるから。",
+          "AudioPath": "assets/ja-JP/Leah/276.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:summer_2",
+          "PageIndex": 1,
+          "DisplayPattern": "大丈夫、 退治してあげるから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/summer_8",
+          "DialogueText": "臭ったら ごめん…暑くて 汗 かきっぱなし だったからさ。",
+          "AudioPath": "assets/ja-JP/Leah/277.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_8",
+          "PageIndex": 0,
+          "DisplayPattern": "臭ったら ごめん…暑くて 汗 かきっぱなし だったからさ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/summer_9",
+          "DialogueText": "もし ベトベトだったら ごめんね…暑くて 汗 かきっぱなし だったからさ。",
+          "AudioPath": "assets/ja-JP/Leah/278.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:summer_9",
+          "PageIndex": 0,
+          "DisplayPattern": "もし ベトベトだったら ごめんね…暑くて 汗 かきっぱなし だったからさ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/summer_Leah",
+          "DialogueText": "夏には 甘くて ステキなワインが 一番ね。そう 思うでしょ？",
+          "AudioPath": "assets/ja-JP/Leah/279.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "夏には 甘くて ステキなワインが 一番ね。そう 思うでしょ？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/TwoKids_0",
+          "DialogueText": "kid1と%kid2には もう 朝ごはんを 食べさせたよ。おなか すいてたからね！",
+          "AudioPath": "assets/ja-JP/Leah/280.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:TwoKids_0",
+          "PageIndex": 0,
+          "DisplayPattern": "kid1と%kid2には もう 朝ごはんを 食べさせたよ。おなか すいてたからね！"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/TwoKids_1",
+          "DialogueText": "二人目の子ができたから、 %kid2だけでなく %kid1にも ちゃんと かまってあげよう。子ども達の 間で 嫉妬が 起こらない ようにね。",
+          "AudioPath": "assets/ja-JP/Leah/281.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:TwoKids_1",
+          "PageIndex": 0,
+          "DisplayPattern": "二人目の子ができたから、 %kid2だけでなく %kid1にも ちゃんと かまってあげよう。子ども達の 間で 嫉妬が 起こらない ようにね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/TwoKids_2",
+          "DialogueText": "ねぇ、%kid2の鼻って あなたに 似てる。",
+          "AudioPath": "assets/ja-JP/Leah/282.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:TwoKids_2",
+          "PageIndex": 0,
+          "DisplayPattern": "ねぇ、%kid2の鼻って あなたに 似てる。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/TwoKids_3",
+          "DialogueText": "すばらしい 牧場と 完全な 家族。私達の 新生活も、 いい感じに なったよね？",
+          "AudioPath": "assets/ja-JP/Leah/283.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:TwoKids_3",
+          "PageIndex": 0,
+          "DisplayPattern": "すばらしい 牧場と 完全な 家族。私達の 新生活も、 いい感じに なったよね？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/winter_1",
+          "DialogueText": "冬が きたわね。 クリスタルフルーツの シーズンでも あるのよ。クリスタルフルーツの 味は ユニークだと 思わない？",
+          "AudioPath": "assets/ja-JP/Leah/284.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:winter_1",
+          "PageIndex": 0,
+          "DisplayPattern": "冬が きたわね。 クリスタルフルーツの シーズンでも あるのよ。クリスタルフルーツの 味は ユニークだと 思わない？"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/winter_28",
+          "DialogueText": "来年の %farm 牧場も すばらしい 年に なることを 祈って 乾杯！今夜は 楽しみましょう！[348] {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/285.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:winter_28",
+          "PageIndex": 0,
+          "DisplayPattern": "来年の 牧場も すばらしい 年に なることを 祈って 乾杯！今夜は 楽しみましょう！"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/winter_28",
+          "DialogueText": "来年は 良い年になるわ。 間違いない。",
+          "AudioPath": "assets/ja-JP/Leah/286.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:winter_28",
+          "PageIndex": 1,
+          "DisplayPattern": "来年は 良い年になるわ。 間違いない。"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/winter_7",
+          "DialogueText": "明日の 氷細工に すごく 期待してるわ。年に1回しか できないけど、 すごく 楽しいから！",
+          "AudioPath": "assets/ja-JP/Leah/287.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueLeah:winter_7",
+          "PageIndex": 0,
+          "DisplayPattern": "明日の 氷細工に すごく 期待してるわ。年に1回しか できないけど、 すごく 楽しいから！"
+        },
+        {
+          "DialogueFrom": "Marriage/Leah/winter_Leah",
+          "DialogueText": "冬は いつも サラダが 食べたくなるのよね…不便なのは 分かってる。",
+          "AudioPath": "assets/ja-JP/Leah/288.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:winter_Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "冬は いつも サラダが 食べたくなるのよね…不便なのは 分かってる。"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "今日は 何か 新しい 料理に 挑戦 してみようかしら。スパイシーな やつをね。",
+          "AudioPath": "assets/ja-JP/Leah/289.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 何か 新しい 料理に 挑戦 してみようかしら。スパイシーな やつをね。"
+        },
+        {
+          "DialogueFrom": "Event:Farm/55:s0",
+          "DialogueText": "Hi {Farmer_Name}! Are you free this afternoon?",
+          "AudioPath": "assets/ja-JP/Leah/290.ogg",
+          "TranslationKey": "Events/Farm:55:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi ! Are you free this afternoon?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/55:s1",
+          "DialogueText": "I finally got my act together and I'm doing my art show tonight in the town square! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/291.ogg",
+          "TranslationKey": "Events/Farm:55:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I finally got my act together and I'm doing my art show tonight in the town square!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/55:s2",
+          "DialogueText": "Come into town between 3:00 and 5:00 pm if you want to be there!",
+          "AudioPath": "assets/ja-JP/Leah/292.ogg",
+          "TranslationKey": "Events/Farm:55:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Come into town between 3:00 and 5:00 pm if you want to be there!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/55:s3",
+          "DialogueText": "I'm nervous... {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/293.ogg",
+          "TranslationKey": "Events/Farm:55:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm nervous..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/992253:s0",
+          "DialogueText": "Hi, {Farmer_Name}. Beautiful day, isn't it?",
+          "AudioPath": "assets/ja-JP/Leah/294.ogg",
+          "TranslationKey": "Events/Farm:992253:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi, . Beautiful day, isn't it?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/992253:s1",
+          "DialogueText": "I brought you a gift.",
+          "AudioPath": "assets/ja-JP/Leah/295.ogg",
+          "TranslationKey": "Events/Farm:992253:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I brought you a gift."
+        },
+        {
+          "DialogueFrom": "Event:Farm/992253:s2",
+          "DialogueText": "It's a sculpture I've been working on, just for you.",
+          "AudioPath": "assets/ja-JP/Leah/296.ogg",
+          "TranslationKey": "Events/Farm:992253:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a sculpture I've been working on, just for you."
+        },
+        {
+          "DialogueFrom": "Event:Farm/992253:s3",
+          "DialogueText": "It's called... 'How I Feel About {Farmer_Name}'. I hope you like it.",
+          "AudioPath": "assets/ja-JP/Leah/297.ogg",
+          "TranslationKey": "Events/Farm:992253:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "It's called... 'How I Feel About '. I hope you like it."
+        },
+        {
+          "DialogueFrom": "Event:Farm/3911124:s0",
+          "DialogueText": "Hey, {Farmer_Name}. I have an idea...",
+          "AudioPath": "assets/ja-JP/Leah/298.ogg",
+          "TranslationKey": "Events/Farm:3911124:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, . I have an idea..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/3911124:s1",
+          "DialogueText": "I want you to meet me in Cindersap Forest tomorrow, at noon.",
+          "AudioPath": "assets/ja-JP/Leah/299.ogg",
+          "TranslationKey": "Events/Farm:3911124:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I want you to meet me in Cindersap Forest tomorrow, at noon."
+        },
+        {
+          "DialogueFrom": "Event:Farm/3911124:s2",
+          "DialogueText": "I'm gonna teach you how to paint! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/300.ogg",
+          "TranslationKey": "Events/Farm:3911124:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm gonna teach you how to paint!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3911124:s3",
+          "DialogueText": "If the weather's bad, we'll do it the next day. Okay?",
+          "AudioPath": "assets/ja-JP/Leah/301.ogg",
+          "TranslationKey": "Events/Farm:3911124:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "If the weather's bad, we'll do it the next day. Okay?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3911124:s4",
+          "DialogueText": "It'll be nice to explore your creative side a bit more, don't you think?",
+          "AudioPath": "assets/ja-JP/Leah/302.ogg",
+          "TranslationKey": "Events/Farm:3911124:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "It'll be nice to explore your creative side a bit more, don't you think?"
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s0",
+          "DialogueText": "{Farmer_Name}! You're here! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/303.ogg",
+          "TranslationKey": "Events/Town:53:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "! You're here!"
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s1",
+          "DialogueText": "Okay... I guess I'd better introduce my pieces. Wish me luck! {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/304.ogg",
+          "TranslationKey": "Events/Town:53:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay... I guess I'd better introduce my pieces. Wish me luck!"
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s2",
+          "DialogueText": "Umm... Okay everyone!",
+          "AudioPath": "assets/ja-JP/Leah/305.ogg",
+          "TranslationKey": "Events/Town:53:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Umm... Okay everyone!"
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s3",
+          "DialogueText": "Thanks for coming to my art show. {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/306.ogg",
+          "TranslationKey": "Events/Town:53:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks for coming to my art show."
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s4",
+          "DialogueText": "As some of you know, I came to this town because I wanted to draw inspiration from the beautiful surroundings.",
+          "AudioPath": "assets/ja-JP/Leah/307.ogg",
+          "TranslationKey": "Events/Town:53:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "As some of you know, I came to this town because I wanted to draw inspiration from the beautiful surroundings."
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s5",
+          "DialogueText": "This place really feels like home now. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/308.ogg",
+          "TranslationKey": "Events/Town:53:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "This place really feels like home now."
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s6",
+          "DialogueText": "Okay. I'm going to introduce my sculptures now.",
+          "AudioPath": "assets/ja-JP/Leah/309.ogg",
+          "TranslationKey": "Events/Town:53:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay. I'm going to introduce my sculptures now."
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s7",
+          "DialogueText": "I haven't named this one, yet. She started out as an exercise in human anatomy, but I ended up seeing her through to completion.",
+          "AudioPath": "assets/ja-JP/Leah/310.ogg",
+          "TranslationKey": "Events/Town:53:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I haven't named this one, yet. She started out as an exercise in human anatomy, but I ended up seeing her through to completion."
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s8",
+          "DialogueText": "Her expression is intentionally unclear... is she embarrassed, amused, pained? I'll leave that for you to decide.",
+          "AudioPath": "assets/ja-JP/Leah/311.ogg",
+          "TranslationKey": "Events/Town:53:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Her expression is intentionally unclear... is she embarrassed, amused, pained? I'll leave that for you to decide."
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s9",
+          "DialogueText": "This one's called 'Post-Dimensional Nullspace'. It represents the boundary of human imagination. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Leah/312.ogg",
+          "TranslationKey": "Events/Town:53:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "This one's called 'Post-Dimensional Nullspace'. It represents the boundary of human imagination."
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s10",
+          "DialogueText": "The shape and color came to me vividly when I was in a 'trance state'.",
+          "AudioPath": "assets/ja-JP/Leah/313.ogg",
+          "TranslationKey": "Events/Town:53:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "The shape and color came to me vividly when I was in a 'trance state'."
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s11",
+          "DialogueText": "I've been calling this one 'Egg Heads'. I wanted to create an animatronic humanoid statue to toy with the viewer's ability to properly attribute personhood to a physical entity.",
+          "AudioPath": "assets/ja-JP/Leah/314.ogg",
+          "TranslationKey": "Events/Town:53:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been calling this one 'Egg Heads'. I wanted to create an animatronic humanoid statue to toy with the viewer's ability to properly attribute personhood to a physical entity."
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s12",
+          "DialogueText": "And the last one is called 'Wood Sculpture 3'. It's a celebration of my favorite sculpting material... wood.",
+          "AudioPath": "assets/ja-JP/Leah/315.ogg",
+          "TranslationKey": "Events/Town:53:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "And the last one is called 'Wood Sculpture 3'. It's a celebration of my favorite sculpting material... wood."
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s13",
+          "DialogueText": "Well, those are my sculptures! {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/316.ogg",
+          "TranslationKey": "Events/Town:53:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, those are my sculptures!"
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s14",
+          "DialogueText": "Oh! One last thing.",
+          "AudioPath": "assets/ja-JP/Leah/317.ogg",
+          "TranslationKey": "Events/Town:53:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! One last thing."
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s15",
+          "DialogueText": "I'd like to say thanks to my special friend, {Farmer_Name}.",
+          "AudioPath": "assets/ja-JP/Leah/318.ogg",
+          "TranslationKey": "Events/Town:53:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "I'd like to say thanks to my special friend, ."
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s16|g=male",
+          "DialogueText": "He gave me the idea for this show and the courage to go through with it. I know that sounds cheesy, but it's true.",
+          "AudioPath": "assets/ja-JP/Leah/319_male.ogg",
+          "TranslationKey": "Events/Town:53:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "He gave me the idea for this show and the courage to go through with it. I know that sounds cheesy, but it's true.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s17|g=female",
+          "DialogueText": "She gave me the idea for this show and the courage to go through with it. I know that sounds cheesy, but it's true.",
+          "AudioPath": "assets/ja-JP/Leah/320_female.ogg",
+          "TranslationKey": "Events/Town:53:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "She gave me the idea for this show and the courage to go through with it. I know that sounds cheesy, but it's true.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s18",
+          "DialogueText": "Thanks, everyone! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/321.ogg",
+          "TranslationKey": "Events/Town:53:s18",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks, everyone!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195019:s0",
+          "DialogueText": "Look who it is!",
+          "AudioPath": "assets/ja-JP/Leah/322.ogg",
+          "TranslationKey": "Events/HaleyHouse:195019:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Look who it is!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195012:s0",
+          "DialogueText": "Stop!",
+          "AudioPath": "assets/ja-JP/Leah/323.ogg",
+          "TranslationKey": "Events/HaleyHouse:195012:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Stop!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195012:s1|g=male",
+          "DialogueText": "I... I thought you were different than other men... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/324_male.ogg",
+          "TranslationKey": "Events/HaleyHouse:195012:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I... I thought you were different than other men...",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195012:s2|g=female",
+          "DialogueText": "You tricked all of us into thinking we loved you... You're horrible... {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Leah/325_female.ogg",
+          "TranslationKey": "Events/HaleyHouse:195012:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "You tricked all of us into thinking we loved you... You're horrible...",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195012:s3",
+          "DialogueText": "That's right!",
+          "AudioPath": "assets/ja-JP/Leah/326.ogg",
+          "TranslationKey": "Events/HaleyHouse:195012:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "That's right!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195012:s4",
+          "DialogueText": "Absolutely. {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Leah/327.ogg",
+          "TranslationKey": "Events/HaleyHouse:195012:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Absolutely."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/choseToExplain:s0",
+          "DialogueText": "Absolutely. {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Leah/328.ogg",
+          "TranslationKey": "Events/HaleyHouse:choseToExplain:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Absolutely."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/lifestyleChoice:s0",
+          "DialogueText": "Absolutely. {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Leah/329.ogg",
+          "TranslationKey": "Events/HaleyHouse:lifestyleChoice:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Absolutely."
+        },
+        {
+          "DialogueFrom": "Event:Forest/52:s0",
+          "DialogueText": "Oh! {Farmer_Name}! You scared me. {Portrait:Custom:6}",
+          "AudioPath": "assets/ja-JP/Leah/330.ogg",
+          "TranslationKey": "Events/Forest:52:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! ! You scared me."
+        },
+        {
+          "DialogueFrom": "Event:Forest/52:s1",
+          "DialogueText": "See that fruit up there? It looks delicious, doesn't it?",
+          "AudioPath": "assets/ja-JP/Leah/331.ogg",
+          "TranslationKey": "Events/Forest:52:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "See that fruit up there? It looks delicious, doesn't it?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/52:s2",
+          "DialogueText": "But I can't reach it. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/332.ogg",
+          "TranslationKey": "Events/Forest:52:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "But I can't reach it."
+        },
+        {
+          "DialogueFrom": "Event:Forest/52:s3",
+          "DialogueText": "Aghh! {Portrait:Custom:6}",
+          "AudioPath": "assets/ja-JP/Leah/333.ogg",
+          "TranslationKey": "Events/Forest:52:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Aghh!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/52:s4",
+          "DialogueText": "Hehe...Thanks. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/334.ogg",
+          "TranslationKey": "Events/Forest:52:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Hehe...Thanks."
+        },
+        {
+          "DialogueFrom": "Event:Forest/52:s5",
+          "DialogueText": "Okay... got it!",
+          "AudioPath": "assets/ja-JP/Leah/335.ogg",
+          "TranslationKey": "Events/Forest:52:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay... got it!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/52:s6",
+          "DialogueText": "You're stronger than you look! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/336.ogg",
+          "TranslationKey": "Events/Forest:52:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "You're stronger than you look!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/52:s7",
+          "DialogueText": "Here, try a piece...",
+          "AudioPath": "assets/ja-JP/Leah/337.ogg",
+          "TranslationKey": "Events/Forest:52:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Here, try a piece..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/52:s8",
+          "DialogueText": "You know, I just realized something.",
+          "AudioPath": "assets/ja-JP/Leah/338.ogg",
+          "TranslationKey": "Events/Forest:52:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "You know, I just realized something."
+        },
+        {
+          "DialogueFrom": "Event:Forest/52:s9",
+          "DialogueText": "Even if my art career is a flop, I'll always have a friend to catch me on the way down. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/339.ogg",
+          "TranslationKey": "Events/Forest:52:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Even if my art career is a flop, I'll always have a friend to catch me on the way down."
+        },
+        {
+          "DialogueFrom": "Event:Forest/52:s10",
+          "DialogueText": "Thanks for helping me earlier... {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/340.ogg",
+          "TranslationKey": "Events/Forest:52:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks for helping me earlier..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s0",
+          "DialogueText": "Hi {Farmer_Name}. I knew you'd be passing through here today.",
+          "AudioPath": "assets/ja-JP/Leah/341.ogg",
+          "TranslationKey": "Events/Forest:54:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi . I knew you'd be passing through here today."
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s1",
+          "DialogueText": "...So I put together a surprise... {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/342.ogg",
+          "TranslationKey": "Events/Forest:54:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "...So I put together a surprise..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s2",
+          "DialogueText": "It's a little picnic for us! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/343.ogg",
+          "TranslationKey": "Events/Forest:54:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a little picnic for us!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s3",
+          "DialogueText": "This is a vegetable medley, with my 'special' spice blend.",
+          "AudioPath": "assets/ja-JP/Leah/344.ogg",
+          "TranslationKey": "Events/Forest:54:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "This is a vegetable medley, with my 'special' spice blend."
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s4",
+          "DialogueText": "...and this is a fresh salad, made from greens that I foraged right here in the forest! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/345.ogg",
+          "TranslationKey": "Events/Forest:54:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "...and this is a fresh salad, made from greens that I foraged right here in the forest!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s5",
+          "DialogueText": "{Farmer_Name}, um... {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/346.ogg",
+          "TranslationKey": "Events/Forest:54:s5",
+          "PageIndex": 0,
+          "DisplayPattern": ", um..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s6",
+          "DialogueText": "I just want to say thank you... for helping me get one step closer to becoming a real artist. {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/347.ogg",
+          "TranslationKey": "Events/Forest:54:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I just want to say thank you... for helping me get one step closer to becoming a real artist."
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s7",
+          "DialogueText": "DISTANT VOICE: Well, well, well... What have we here?",
+          "AudioPath": "assets/ja-JP/Leah/348.ogg",
+          "TranslationKey": "Events/Forest:54:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "DISTANT VOICE: Well, well, well... What have we here?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s8",
+          "DialogueText": "Kel?? {Portrait:Custom:6}",
+          "AudioPath": "assets/ja-JP/Leah/349.ogg",
+          "TranslationKey": "Events/Forest:54:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Kel??"
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s9",
+          "DialogueText": "What the heck are you doing here? {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Leah/350.ogg",
+          "TranslationKey": "Events/Forest:54:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "What the heck are you doing here?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s10",
+          "DialogueText": "KEL: Didn't you see me at the art show? I came all the way from Zuzu City to see your sculptures.",
+          "AudioPath": "assets/ja-JP/Leah/351.ogg",
+          "TranslationKey": "Events/Forest:54:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "KEL: Didn't you see me at the art show? I came all the way from Zuzu City to see your sculptures."
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s11",
+          "DialogueText": "KEL: And to get you to come back with me.",
+          "AudioPath": "assets/ja-JP/Leah/352.ogg",
+          "TranslationKey": "Events/Forest:54:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "KEL: And to get you to come back with me."
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s12",
+          "DialogueText": "KEL: I want things to go back to the way they were... I miss you, babe.",
+          "AudioPath": "assets/ja-JP/Leah/353.ogg",
+          "TranslationKey": "Events/Forest:54:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "KEL: I want things to go back to the way they were... I miss you, babe."
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s13",
+          "DialogueText": "Yuck, don't call me that! {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Leah/354.ogg",
+          "TranslationKey": "Events/Forest:54:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Yuck, don't call me that!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s14",
+          "DialogueText": "You never supported my art before... now that I've had some success you want me back? You make me sick. {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Leah/355.ogg",
+          "TranslationKey": "Events/Forest:54:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "You never supported my art before... now that I've had some success you want me back? You make me sick."
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s15",
+          "DialogueText": "KEL: Hey! Come Here!",
+          "AudioPath": "assets/ja-JP/Leah/356.ogg",
+          "TranslationKey": "Events/Forest:54:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "KEL: Hey! Come Here!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s16",
+          "DialogueText": "Punch Kel in the face.",
+          "AudioPath": "assets/ja-JP/Leah/357.ogg",
+          "TranslationKey": "Events/Forest:54:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "Punch Kel in the face."
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s17",
+          "DialogueText": "Try reasoning with Kel.",
+          "AudioPath": "assets/ja-JP/Leah/358.ogg",
+          "TranslationKey": "Events/Forest:54:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "Try reasoning with Kel."
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s18",
+          "DialogueText": "Oh my God! {Portrait:Custom:6}",
+          "AudioPath": "assets/ja-JP/Leah/359.ogg",
+          "TranslationKey": "Events/Forest:54:s18",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh my God!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s19|g=male",
+          "DialogueText": "Well, he'll make it... but that was pretty violent, {Farmer_Name}.",
+          "AudioPath": "assets/ja-JP/Leah/360_male.ogg",
+          "TranslationKey": "Events/Forest:54:s19",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, he'll make it... but that was pretty violent, .",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s20|g=female",
+          "DialogueText": "She's fine... but that was pretty violent, {Farmer_Name}.",
+          "AudioPath": "assets/ja-JP/Leah/361_female.ogg",
+          "TranslationKey": "Events/Forest:54:s20",
+          "PageIndex": 0,
+          "DisplayPattern": "She's fine... but that was pretty violent, .",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s21",
+          "DialogueText": "Let's get out of here. I don't think Kel will be bothering us anymore.",
+          "AudioPath": "assets/ja-JP/Leah/362.ogg",
+          "TranslationKey": "Events/Forest:54:s21",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's get out of here. I don't think Kel will be bothering us anymore."
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s22",
+          "DialogueText": "Let's find a more secluded spot this time... {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/363.ogg",
+          "TranslationKey": "Events/Forest:54:s22",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's find a more secluded spot this time..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/54:s23",
+          "DialogueText": "Well, the picnic didn't pan out like I wanted it to. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/364.ogg",
+          "TranslationKey": "Events/Forest:54:s23",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, the picnic didn't pan out like I wanted it to."
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseInternet:s0",
+          "DialogueText": "You're 'Mr. K'? I... I thought it was just a rich guy who truly loved my art. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/365.ogg",
+          "TranslationKey": "Events/Forest:choseInternet:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "You're 'Mr. K'? I... I thought it was just a rich guy who truly loved my art."
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseInternet:s1",
+          "DialogueText": "KEL: Heh. Well, you were half right...",
+          "AudioPath": "assets/ja-JP/Leah/366.ogg",
+          "TranslationKey": "Events/Forest:choseInternet:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "KEL: Heh. Well, you were half right..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseInternet:s2",
+          "DialogueText": "KEL: Look, Leah. I want you back. I miss you, babe.",
+          "AudioPath": "assets/ja-JP/Leah/367.ogg",
+          "TranslationKey": "Events/Forest:choseInternet:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "KEL: Look, Leah. I want you back. I miss you, babe."
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseInternet:s3",
+          "DialogueText": "Ew, don't call me that! {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Leah/368.ogg",
+          "TranslationKey": "Events/Forest:choseInternet:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Ew, don't call me that!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseInternet:s4",
+          "DialogueText": "You never supported my art before... now that I've had some success you want me back? You make me sick. {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Leah/369.ogg",
+          "TranslationKey": "Events/Forest:choseInternet:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "You never supported my art before... now that I've had some success you want me back? You make me sick."
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseInternet:s5",
+          "DialogueText": "KEL: Hey! Come Here!",
+          "AudioPath": "assets/ja-JP/Leah/370.ogg",
+          "TranslationKey": "Events/Forest:choseInternet:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "KEL: Hey! Come Here!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseInternet:s6",
+          "DialogueText": "Punch Kel in the face.",
+          "AudioPath": "assets/ja-JP/Leah/371.ogg",
+          "TranslationKey": "Events/Forest:choseInternet:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Punch Kel in the face."
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseInternet:s7",
+          "DialogueText": "Try reasoning with Kel.",
+          "AudioPath": "assets/ja-JP/Leah/372.ogg",
+          "TranslationKey": "Events/Forest:choseInternet:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Try reasoning with Kel."
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseInternet:s8",
+          "DialogueText": "Oh my God! {Portrait:Custom:6}",
+          "AudioPath": "assets/ja-JP/Leah/373.ogg",
+          "TranslationKey": "Events/Forest:choseInternet:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh my God!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseInternet:s9|g=male",
+          "DialogueText": "Well, he's fine... but that was pretty violent, {Farmer_Name}.",
+          "AudioPath": "assets/ja-JP/Leah/374_male.ogg",
+          "TranslationKey": "Events/Forest:choseInternet:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, he's fine... but that was pretty violent, .",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseInternet:s10|g=female",
+          "DialogueText": "She's fine... but that was pretty violent, {Farmer_Name}.",
+          "AudioPath": "assets/ja-JP/Leah/375_female.ogg",
+          "TranslationKey": "Events/Forest:choseInternet:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "She's fine... but that was pretty violent, .",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseInternet:s11",
+          "DialogueText": "Let's get out of here. I don't think Kel will be bothering us anymore.",
+          "AudioPath": "assets/ja-JP/Leah/376.ogg",
+          "TranslationKey": "Events/Forest:choseInternet:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's get out of here. I don't think Kel will be bothering us anymore."
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseInternet:s12",
+          "DialogueText": "Let's find a more secluded spot this time... {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/377.ogg",
+          "TranslationKey": "Events/Forest:choseInternet:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's find a more secluded spot this time..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseInternet:s13",
+          "DialogueText": "Well, the picnic didn't pan out like I wanted it to. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/378.ogg",
+          "TranslationKey": "Events/Forest:choseInternet:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, the picnic didn't pan out like I wanted it to."
+        },
+        {
+          "DialogueFrom": "Event:Forest/noPunch:s0|g=male",
+          "DialogueText": "{Farmer_Name}'s a better man than you in every respect! {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Leah/379_male.ogg",
+          "TranslationKey": "Events/Forest:noPunch:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "'s a better man than you in every respect!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Forest/noPunch:s1|g=female",
+          "DialogueText": "{Farmer_Name}'s a better person than you in every respect! {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Leah/380_female.ogg",
+          "TranslationKey": "Events/Forest:noPunch:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "'s a better person than you in every respect!",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Forest/noPunch:s2",
+          "DialogueText": "Now get out of here and never come back! {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Leah/381.ogg",
+          "TranslationKey": "Events/Forest:noPunch:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Now get out of here and never come back!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/noPunch:s3",
+          "DialogueText": "Let's go, {Farmer_Name}. I don't think Kel will be bothering us anymore.",
+          "AudioPath": "assets/ja-JP/Leah/382.ogg",
+          "TranslationKey": "Events/Forest:noPunch:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's go, . I don't think Kel will be bothering us anymore."
+        },
+        {
+          "DialogueFrom": "Event:Forest/noPunch:s4",
+          "DialogueText": "Let's find a more secluded spot this time... {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/383.ogg",
+          "TranslationKey": "Events/Forest:noPunch:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's find a more secluded spot this time..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/noPunch:s5",
+          "DialogueText": "Well, the picnic didn't pan out like I wanted it to. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/384.ogg",
+          "TranslationKey": "Events/Forest:noPunch:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, the picnic didn't pan out like I wanted it to."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s0",
+          "DialogueText": "Just keep perfectly still, Marnie... No squirming! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/385.ogg",
+          "TranslationKey": "Events/Forest:3091462:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Just keep perfectly still, Marnie... No squirming!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s1",
+          "DialogueText": "Hey, {Farmer_Name}... what style do you think I should do? I'm up for anything...",
+          "AudioPath": "assets/ja-JP/Leah/386.ogg",
+          "TranslationKey": "Events/Forest:3091462:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, ... what style do you think I should do? I'm up for anything..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s2",
+          "DialogueText": "Stick with the classic look, huh? Yeah, I think Marnie will appreciate that.",
+          "AudioPath": "assets/ja-JP/Leah/387.ogg",
+          "TranslationKey": "Events/Forest:3091462:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Stick with the classic look, huh? Yeah, I think Marnie will appreciate that."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s3",
+          "DialogueText": "Good idea! That sounds fun... Let me get some more yellow paint on the palette...",
+          "AudioPath": "assets/ja-JP/Leah/388.ogg",
+          "TranslationKey": "Events/Forest:3091462:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Good idea! That sounds fun... Let me get some more yellow paint on the palette..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s4",
+          "DialogueText": "Hmm... not my usual style, but I'll give it a shot. I'd better switch to acrylic paint for this one...",
+          "AudioPath": "assets/ja-JP/Leah/389.ogg",
+          "TranslationKey": "Events/Forest:3091462:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmm... not my usual style, but I'll give it a shot. I'd better switch to acrylic paint for this one..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s5",
+          "DialogueText": "How's yours coming along?",
+          "AudioPath": "assets/ja-JP/Leah/390.ogg",
+          "TranslationKey": "Events/Forest:3091462:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "How's yours coming along?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s6",
+          "DialogueText": "Wow, I like your confidence! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/391.ogg",
+          "TranslationKey": "Events/Forest:3091462:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow, I like your confidence!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s7",
+          "DialogueText": "Who knows? Maybe you'll become the next Lupini! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/392.ogg",
+          "TranslationKey": "Events/Forest:3091462:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Who knows? Maybe you'll become the next Lupini!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s8",
+          "DialogueText": "...Can't wait to see it.",
+          "AudioPath": "assets/ja-JP/Leah/393.ogg",
+          "TranslationKey": "Events/Forest:3091462:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "...Can't wait to see it."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s9",
+          "DialogueText": "Hey, that's all I ask. If you keep trying your best you can't help but get better at it!",
+          "AudioPath": "assets/ja-JP/Leah/394.ogg",
+          "TranslationKey": "Events/Forest:3091462:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, that's all I ask. If you keep trying your best you can't help but get better at it!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s10",
+          "DialogueText": "Hey, that's okay! You gotta start somewhere. And you never know, one person's chicken scratch is another person's 'modern art'.",
+          "AudioPath": "assets/ja-JP/Leah/395.ogg",
+          "TranslationKey": "Events/Forest:3091462:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, that's okay! You gotta start somewhere. And you never know, one person's chicken scratch is another person's 'modern art'."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s11",
+          "DialogueText": "Shh!",
+          "AudioPath": "assets/ja-JP/Leah/396.ogg",
+          "TranslationKey": "Events/Forest:3091462:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Shh!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s12",
+          "DialogueText": "Now, don't forget the techniques I taught you... broad strokes, hold the brush like so...",
+          "AudioPath": "assets/ja-JP/Leah/397.ogg",
+          "TranslationKey": "Events/Forest:3091462:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Now, don't forget the techniques I taught you... broad strokes, hold the brush like so..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s13",
+          "DialogueText": "There!",
+          "AudioPath": "assets/ja-JP/Leah/398.ogg",
+          "TranslationKey": "Events/Forest:3091462:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "There!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s14",
+          "DialogueText": "What do you think?",
+          "AudioPath": "assets/ja-JP/Leah/399.ogg",
+          "TranslationKey": "Events/Forest:3091462:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "What do you think?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s15",
+          "DialogueText": "Now, let's see what you've got, {Farmer_Name}.",
+          "AudioPath": "assets/ja-JP/Leah/400.ogg",
+          "TranslationKey": "Events/Forest:3091462:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "Now, let's see what you've got, ."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s16",
+          "DialogueText": "Erm... It's... interesting! {Portrait:Custom:6}",
+          "AudioPath": "assets/ja-JP/Leah/401.ogg",
+          "TranslationKey": "Events/Forest:3091462:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "Erm... It's... interesting!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s17",
+          "DialogueText": "It's, uh... a different kind of approach, for sure... {Portrait:Custom:6}",
+          "AudioPath": "assets/ja-JP/Leah/402.ogg",
+          "TranslationKey": "Events/Forest:3091462:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "It's, uh... a different kind of approach, for sure..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s18",
+          "DialogueText": "Marnie, you can hang both of these in your room! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/403.ogg",
+          "TranslationKey": "Events/Forest:3091462:s18",
+          "PageIndex": 0,
+          "DisplayPattern": "Marnie, you can hang both of these in your room!"
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/50:s0",
+          "DialogueText": "Oh, hi {Farmer_Name}! Come in, come in.",
+          "AudioPath": "assets/ja-JP/Leah/404.ogg",
+          "TranslationKey": "Events/LeahHouse:50:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, hi ! Come in, come in."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/50:s1",
+          "DialogueText": "I'm just working on this sculpture here.",
+          "AudioPath": "assets/ja-JP/Leah/405.ogg",
+          "TranslationKey": "Events/LeahHouse:50:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm just working on this sculpture here."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/50:s2",
+          "DialogueText": "Come here. Watch this.",
+          "AudioPath": "assets/ja-JP/Leah/406.ogg",
+          "TranslationKey": "Events/LeahHouse:50:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Come here. Watch this."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/50:s3",
+          "DialogueText": "See that? I'm revealing the essence of the wood.",
+          "AudioPath": "assets/ja-JP/Leah/407.ogg",
+          "TranslationKey": "Events/LeahHouse:50:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "See that? I'm revealing the essence of the wood."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/50:s4",
+          "DialogueText": "Once you get past the outer layers, the true nature starts to show...",
+          "AudioPath": "assets/ja-JP/Leah/408.ogg",
+          "TranslationKey": "Events/LeahHouse:50:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Once you get past the outer layers, the true nature starts to show..."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/50:s5",
+          "DialogueText": "It's the same with people.",
+          "AudioPath": "assets/ja-JP/Leah/409.ogg",
+          "TranslationKey": "Events/LeahHouse:50:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "It's the same with people."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/50:s6",
+          "DialogueText": "I actually prefer the look of raw, unadulterated wood.",
+          "AudioPath": "assets/ja-JP/Leah/410.ogg",
+          "TranslationKey": "Events/LeahHouse:50:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I actually prefer the look of raw, unadulterated wood."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/50:s7",
+          "DialogueText": "(creepy) May I have a kiss?",
+          "AudioPath": "assets/ja-JP/Leah/411.ogg",
+          "TranslationKey": "Events/LeahHouse:50:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "(creepy) May I have a kiss?"
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/50:s8",
+          "DialogueText": "I first visited this valley as a little girl, while on vacation with my parents.",
+          "AudioPath": "assets/ja-JP/Leah/412.ogg",
+          "TranslationKey": "Events/LeahHouse:50:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I first visited this valley as a little girl, while on vacation with my parents."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/50:s9",
+          "DialogueText": "I knew I had to come back some day... This place has great artistic potential!",
+          "AudioPath": "assets/ja-JP/Leah/413.ogg",
+          "TranslationKey": "Events/LeahHouse:50:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "I knew I had to come back some day... This place has great artistic potential!"
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/50:s10",
+          "DialogueText": "Although, I have to admit... It's not easy to pay the bills as an artist. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/414.ogg",
+          "TranslationKey": "Events/LeahHouse:50:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Although, I have to admit... It's not easy to pay the bills as an artist."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/50:s11",
+          "DialogueText": "Why don't you have an art show in town?",
+          "AudioPath": "assets/ja-JP/Leah/415.ogg",
+          "TranslationKey": "Events/LeahHouse:50:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Why don't you have an art show in town?"
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/50:s12",
+          "DialogueText": "Why don't you sell your art on the internet?",
+          "AudioPath": "assets/ja-JP/Leah/416.ogg",
+          "TranslationKey": "Events/LeahHouse:50:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Why don't you sell your art on the internet?"
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/50:s13",
+          "DialogueText": "Hmmm... interesting. I guess that could set the wheels in motion to making Pelican Town a true art destination... {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Leah/417.ogg",
+          "TranslationKey": "Events/LeahHouse:50:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmmm... interesting. I guess that could set the wheels in motion to making Pelican Town a true art destination..."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/50:s14",
+          "DialogueText": "But what if no one likes my sculptures? I'd be crushed. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/418.ogg",
+          "TranslationKey": "Events/LeahHouse:50:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "But what if no one likes my sculptures? I'd be crushed."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/50:s15",
+          "DialogueText": "...I'll have to think about it. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/419.ogg",
+          "TranslationKey": "Events/LeahHouse:50:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "...I'll have to think about it."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/50:s16",
+          "DialogueText": "Well, thanks for stopping by, {Farmer_Name}.",
+          "AudioPath": "assets/ja-JP/Leah/420.ogg",
+          "TranslationKey": "Events/LeahHouse:50:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, thanks for stopping by, ."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/50:s17",
+          "DialogueText": "An art show for the whole village? That's a bold idea, {Farmer_Name}.",
+          "AudioPath": "assets/ja-JP/Leah/421.ogg",
+          "TranslationKey": "Events/LeahHouse:50:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "An art show for the whole village? That's a bold idea, ."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/internet:s0",
+          "DialogueText": "Hmm... I guess that's an idea... But I'd need a computer first. {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Leah/422.ogg",
+          "TranslationKey": "Events/LeahHouse:internet:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmm... I guess that's an idea... But I'd need a computer first."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/internet:s1",
+          "DialogueText": "And again... that's expensive. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/423.ogg",
+          "TranslationKey": "Events/LeahHouse:internet:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "And again... that's expensive."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/internet:s2",
+          "DialogueText": "Well, it was nice of you to visit...",
+          "AudioPath": "assets/ja-JP/Leah/424.ogg",
+          "TranslationKey": "Events/LeahHouse:internet:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, it was nice of you to visit..."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s0",
+          "DialogueText": "Kel...How many times do I have to tell you? I don't want to come back to the city! {Portrait:Custom:8}",
+          "AudioPath": "assets/ja-JP/Leah/425.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Kel...How many times do I have to tell you? I don't want to come back to the city!"
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s1",
+          "DialogueText": "Stop calling me... I don't want to hear from you anymore! *click* {Portrait:Custom:8}",
+          "AudioPath": "assets/ja-JP/Leah/426.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Stop calling me... I don't want to hear from you anymore! *click*"
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s2",
+          "DialogueText": "{Farmer_Name}... {Portrait:Custom:6}",
+          "AudioPath": "assets/ja-JP/Leah/427.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s3",
+          "DialogueText": "So I guess you heard me yelling on the phone? {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/428.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "So I guess you heard me yelling on the phone?"
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s4",
+          "DialogueText": "That was my ex... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/429.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "That was my ex..."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s5",
+          "DialogueText": "I guess I'd better tell you a little about it... {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Leah/430.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "I guess I'd better tell you a little about it..."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s6",
+          "DialogueText": "We had an apartment together, back in the city. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Leah/431.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "We had an apartment together, back in the city."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s7",
+          "DialogueText": "I did odd jobs during the day and spent all night working on art projects... we barely made enough to scrape by. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Leah/432.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I did odd jobs during the day and spent all night working on art projects... we barely made enough to scrape by."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s8|g=male",
+          "DialogueText": "He was always nagging me to go back to school and study business or medicine... something with a lot of money in it. {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Leah/433_male.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "He was always nagging me to go back to school and study business or medicine... something with a lot of money in it.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s9|g=female",
+          "DialogueText": "She was always nagging me to go back to school and study business or medicine... something with a lot of money in it. {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Leah/434_female.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "She was always nagging me to go back to school and study business or medicine... something with a lot of money in it.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s10",
+          "DialogueText": "I guess the idea was to save up for a normal life. You know... a house in the suburbs, kids, PTA meetings... that sort of thing. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Leah/435.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "I guess the idea was to save up for a normal life. You know... a house in the suburbs, kids, PTA meetings... that sort of thing."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s11",
+          "DialogueText": "I wasn't ready for that kind of life, {Farmer_Name}... I had to leave. So I came here to pursue my dream of being an artist.",
+          "AudioPath": "assets/ja-JP/Leah/436.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "I wasn't ready for that kind of life, ... I had to leave. So I came here to pursue my dream of being an artist."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s12",
+          "DialogueText": "Was that selfish of me, {Farmer_Name}? {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/437.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Was that selfish of me, ?"
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s13",
+          "DialogueText": "No, it had to be done.",
+          "AudioPath": "assets/ja-JP/Leah/438.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "No, it had to be done."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s14",
+          "DialogueText": "No, and your ex sounds like an idiot.",
+          "AudioPath": "assets/ja-JP/Leah/439.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "No, and your ex sounds like an idiot."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s15",
+          "DialogueText": "No, but you would've been better off staying in the city.",
+          "AudioPath": "assets/ja-JP/Leah/440.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "No, but you would've been better off staying in the city."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s16",
+          "DialogueText": "Yeah, a little.",
+          "AudioPath": "assets/ja-JP/Leah/441.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "Yeah, a little."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s17",
+          "DialogueText": "Yeah, but it's natural to care about yourself first.",
+          "AudioPath": "assets/ja-JP/Leah/442.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "Yeah, but it's natural to care about yourself first."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s18",
+          "DialogueText": "Well, thanks for listening to me. It's good to have a friend.",
+          "AudioPath": "assets/ja-JP/Leah/443.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s18",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, thanks for listening to me. It's good to have a friend."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/51:s19",
+          "DialogueText": "Hey, thanks for listening to me so patiently earlier.",
+          "AudioPath": "assets/ja-JP/Leah/444.ogg",
+          "TranslationKey": "Events/LeahHouse:51:s19",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, thanks for listening to me so patiently earlier."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/584059:s0",
+          "DialogueText": "Hey! Come check this out.",
+          "AudioPath": "assets/ja-JP/Leah/445.ogg",
+          "TranslationKey": "Events/LeahHouse:584059:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey! Come check this out."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/584059:s1",
+          "DialogueText": "I bought a laptop and set up an online art shop... like you suggested.",
+          "AudioPath": "assets/ja-JP/Leah/446.ogg",
+          "TranslationKey": "Events/LeahHouse:584059:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I bought a laptop and set up an online art shop... like you suggested."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/584059:s2",
+          "DialogueText": "Did you hear that? That means someone just bought something from the store! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/447.ogg",
+          "TranslationKey": "Events/LeahHouse:584059:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Did you hear that? That means someone just bought something from the store!"
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/584059:s3",
+          "DialogueText": "Hmm... There's this 'Mr. K' that keeps buying all my sculptures. {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Leah/448.ogg",
+          "TranslationKey": "Events/LeahHouse:584059:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmm... There's this 'Mr. K' that keeps buying all my sculptures."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/584059:s4",
+          "DialogueText": "I guess it must be some rich guy who loves my stuff.",
+          "AudioPath": "assets/ja-JP/Leah/449.ogg",
+          "TranslationKey": "Events/LeahHouse:584059:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I guess it must be some rich guy who loves my stuff."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/584059:s5",
+          "DialogueText": "Wow! I'm not going to have to worry about my electricity bill for a while after that sale... {Portrait:Custom:6}",
+          "AudioPath": "assets/ja-JP/Leah/450.ogg",
+          "TranslationKey": "Events/LeahHouse:584059:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow! I'm not going to have to worry about my electricity bill for a while after that sale..."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/584059:s6",
+          "DialogueText": "Anyway... Thanks for giving me this idea, {Farmer_Name}. So far, it's been really successful! This is really going to give me the funding I need to keep working on art full-time. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/451.ogg",
+          "TranslationKey": "Events/LeahHouse:584059:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Anyway... Thanks for giving me this idea, . So far, it's been really successful! This is really going to give me the funding I need to keep working on art full-time."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/584059:s7",
+          "DialogueText": "Now, sorry to ignore you... but I really need to tweak these CSS sheets... {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Leah/452.ogg",
+          "TranslationKey": "Events/LeahHouse:584059:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Now, sorry to ignore you... but I really need to tweak these CSS sheets..."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/angry:s0",
+          "DialogueText": "Sorry... I shouldn't get angry. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/453.ogg",
+          "TranslationKey": "Events/LeahHouse:angry:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Sorry... I shouldn't get angry."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/angry:s1",
+          "DialogueText": "Maybe you're right... my life would've been a lot easier if I had stayed. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Leah/454.ogg",
+          "TranslationKey": "Events/LeahHouse:angry:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Maybe you're right... my life would've been a lot easier if I had stayed."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/angry:s2",
+          "DialogueText": "Maybe it's better to be practical and realistic... for all I know my art career will never pan out and I'll live my final years in squalor. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/455.ogg",
+          "TranslationKey": "Events/LeahHouse:angry:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Maybe it's better to be practical and realistic... for all I know my art career will never pan out and I'll live my final years in squalor."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/angry:s3",
+          "DialogueText": "Well, thanks for listening to me. It's good to have a friend.",
+          "AudioPath": "assets/ja-JP/Leah/456.ogg",
+          "TranslationKey": "Events/LeahHouse:angry:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, thanks for listening to me. It's good to have a friend."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/internet2:s0",
+          "DialogueText": "So I've been saving up money to buy a computer... You know, so I can try and sell my art online like you suggested.",
+          "AudioPath": "assets/ja-JP/Leah/457.ogg",
+          "TranslationKey": "Events/LeahHouse:internet2:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "So I've been saving up money to buy a computer... You know, so I can try and sell my art online like you suggested."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/internet2:s1",
+          "DialogueText": "It's good to have a friend looking out for you!",
+          "AudioPath": "assets/ja-JP/Leah/458.ogg",
+          "TranslationKey": "Events/LeahHouse:internet2:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "It's good to have a friend looking out for you!"
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/artShowSuggest:s0",
+          "DialogueText": "Anyway... I've been thinking a little more about that art show idea you had.",
+          "AudioPath": "assets/ja-JP/Leah/459.ogg",
+          "TranslationKey": "Events/LeahHouse:artShowSuggest:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Anyway... I've been thinking a little more about that art show idea you had."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/artShowSuggest:s1",
+          "DialogueText": "I'm working on some new sculptures to display at the show... I'm nervous, but the thought of getting my work out there is pretty exciting.",
+          "AudioPath": "assets/ja-JP/Leah/460.ogg",
+          "TranslationKey": "Events/LeahHouse:artShowSuggest:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm working on some new sculptures to display at the show... I'm nervous, but the thought of getting my work out there is pretty exciting."
+        },
+        {
+          "DialogueFrom": "Event:LeahHouse/artShowSuggest:s2",
+          "DialogueText": "I'm just glad you're on board with making Stardew Valley a premier art destination, {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/461.ogg",
+          "TranslationKey": "Events/LeahHouse:artShowSuggest:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm just glad you're on board with making Stardew Valley a premier art destination, !"
+        },
+        {
+          "DialogueFrom": "Event:Temp/poppy:s0",
+          "DialogueText": "That was great! It's a new honky-tonk classic!",
+          "AudioPath": "assets/ja-JP/Leah/462.ogg",
+          "TranslationKey": "Events/Temp:poppy:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "That was great! It's a new honky-tonk classic!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/poppy:s1",
+          "DialogueText": "Nice work, guys! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/463.ogg",
+          "TranslationKey": "Events/Temp:poppy:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Nice work, guys!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/heavy:s0",
+          "DialogueText": "That was great! It's a new honky-tonk classic!",
+          "AudioPath": "assets/ja-JP/Leah/464.ogg",
+          "TranslationKey": "Events/Temp:heavy:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "That was great! It's a new honky-tonk classic!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/heavy:s1",
+          "DialogueText": "Nice work, guys! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/465.ogg",
+          "TranslationKey": "Events/Temp:heavy:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Nice work, guys!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/techno:s0",
+          "DialogueText": "That was great! It's a new honky-tonk classic!",
+          "AudioPath": "assets/ja-JP/Leah/466.ogg",
+          "TranslationKey": "Events/Temp:techno:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "That was great! It's a new honky-tonk classic!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/techno:s1",
+          "DialogueText": "Nice work, guys! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/467.ogg",
+          "TranslationKey": "Events/Temp:techno:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Nice work, guys!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/honkytonk:s0",
+          "DialogueText": "Good job! It's a new honky-tonk classic!",
+          "AudioPath": "assets/ja-JP/Leah/468.ogg",
+          "TranslationKey": "Events/Temp:honkytonk:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Good job! It's a new honky-tonk classic!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/honkytonk:s1",
+          "DialogueText": "Nice work, guys! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/469.ogg",
+          "TranslationKey": "Events/Temp:honkytonk:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Nice work, guys!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Leah",
+          "DialogueText": "ロビンの腕にはいつも関心するよ。わたしも、作品をつくるときには彼女とおなじようなテクニックを　使うからさ。",
+          "AudioPath": "assets/ja-JP/Leah/470.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "ロビンの腕にはいつも関心するよ。わたしも、作品をつくるときには彼女とおなじようなテクニックを　使うからさ。"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Leah_spouse",
+          "DialogueText": "ロビンのテクニックは去年ぜんぶ盗んだつもりだったけど、彼女にはいっつも先を行かれちゃうな！",
+          "AudioPath": "assets/ja-JP/Leah/471.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Leah_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "ロビンのテクニックは去年ぜんぶ盗んだつもりだったけど、彼女にはいっつも先を行かれちゃうな！"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Leah_y2",
+          "DialogueText": "ロビンと私はいいコンビだって思わない？",
+          "AudioPath": "assets/ja-JP/Leah/472.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Leah_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "ロビンと私はいいコンビだって思わない？"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Leah_spouse_y2",
+          "DialogueText": "今年はロビンがとっておきの技を教えてくれるの。",
+          "AudioPath": "assets/ja-JP/Leah/473.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Leah_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "今年はロビンがとっておきの技を教えてくれるの。"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Leah_spouse_y2",
+          "DialogueText": "あとで見せてあげるね… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/474.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Leah_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "あとで見せてあげるね…"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Leah",
+          "DialogueText": "むぐ、ろうも！んぐっ…ごめん、ブラックベリーで口がいっぱいだったの。",
+          "AudioPath": "assets/ja-JP/Leah/475.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "むぐ、ろうも！んぐっ…ごめん、ブラックベリーで口がいっぱいだったの。"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Leah_spouse",
+          "DialogueText": "うーん、カボチャのエールを飲みすぎたかも…",
+          "AudioPath": "assets/ja-JP/Leah/476.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Leah_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん、カボチャのエールを飲みすぎたかも…"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Leah_y2",
+          "DialogueText": "こっちかな？それともこっち？ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Leah/477.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Leah_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "こっちかな？それともこっち？"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Leah_spouse_y2",
+          "DialogueText": "迷路に入る前にカボチャ酒を飲みすぎたみたい。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Leah/478.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Leah_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "迷路に入る前にカボチャ酒を飲みすぎたみたい。"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Leah_spouse_y2",
+          "DialogueText": "あなたは先に行って。あとで追いつくわ。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Leah/479.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Leah_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "あなたは先に行って。あとで追いつくわ。"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Leah",
+          "DialogueText": "う～ん…このフルーツポンチ、信じられないくらいおいしい！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/480.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "う～ん…このフルーツポンチ、信じられないくらいおいしい！"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Leah_spouse",
+          "DialogueText": "あたし、あんまり町に友だちがいないから、こういうイベントって来ても退屈なんだよね。でも、ビュッフェがあるから来ちゃうんだ。",
+          "AudioPath": "assets/ja-JP/Leah/481.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Leah_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "あたし、あんまり町に友だちがいないから、こういうイベントって来ても退屈なんだよね。でも、ビュッフェがあるから来ちゃうんだ。"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Leah_y2",
+          "DialogueText": "うーん…去年のフルーツポンチの方がおいしかったわ。何かが足りないのよ！",
+          "AudioPath": "assets/ja-JP/Leah/482.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Leah_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん…去年のフルーツポンチの方がおいしかったわ。何かが足りないのよ！"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Leah",
+          "DialogueText": "どうも、{Farmer_Name}。会えてうれしいよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/483.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "どうも、。会えてうれしいよ。"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Leah_y2",
+          "DialogueText": "町から離れると自然とのつながりを強く感じるね。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Leah/484.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Leah_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "町から離れると自然とのつながりを強く感じるね。"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Leah_spouse_y2",
+          "DialogueText": "いつかこの森でハイキングしましょう！きっとキノコがたくさん見つかるわ…",
+          "AudioPath": "assets/ja-JP/Leah/485.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Leah_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "いつかこの森でハイキングしましょう！きっとキノコがたくさん見つかるわ…"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Leah",
+          "DialogueText": "牧場のちょうしはどう？今はいそがしい時期でしょ。",
+          "AudioPath": "assets/ja-JP/Leah/486.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "牧場のちょうしはどう？今はいそがしい時期でしょ。"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Leah_spouse",
+          "DialogueText": "みんなと会うのもたまには楽しいけど、だいたいの場合は牧場にもどりたくなるんだよね。",
+          "AudioPath": "assets/ja-JP/Leah/487.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Leah_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "みんなと会うのもたまには楽しいけど、だいたいの場合は牧場にもどりたくなるんだよね。"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Leah_y2",
+          "DialogueText": "どれから食べようかしら！おいしそうなものばかりで迷っちゃうわ。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Leah/488.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Leah_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "どれから食べようかしら！おいしそうなものばかりで迷っちゃうわ。"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Leah_spouse_y2",
+          "DialogueText": "スープがなくなる前にもう一皿もらっておいた方がいいよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/489.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Leah_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "スープがなくなる前にもう一皿もらっておいた方がいいよ！"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Leah",
+          "DialogueText": "こんばんは、過ぎていく夏に敬意をあらわしてるところなの。",
+          "AudioPath": "assets/ja-JP/Leah/490.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "こんばんは、過ぎていく夏に敬意をあらわしてるところなの。"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Leah_spouse",
+          "DialogueText": "こんばんは、過ぎていく夏に敬意をあらわしてるところなの。キャンドルボートが流されたら、あなたのところに行くね。",
+          "AudioPath": "assets/ja-JP/Leah/491.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Leah_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "こんばんは、過ぎていく夏に敬意をあらわしてるところなの。キャンドルボートが流されたら、あなたのところに行くね。"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Leah_y2",
+          "DialogueText": "秋には何か楽しい予定があるの？私はそろそろ家の飾りつけをしないと。",
+          "AudioPath": "assets/ja-JP/Leah/492.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Leah_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "秋には何か楽しい予定があるの？私はそろそろ家の飾りつけをしないと。"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Leah_spouse_y2",
+          "DialogueText": "メインイベントに備えてスパークリングワインを持ってきたの…夏はまだ終わってないわ！ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Leah/493.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Leah_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "メインイベントに備えてスパークリングワインを持ってきたの…夏はまだ終わってないわ！"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Leah",
+          "DialogueText": "ガスがさっきから杖型キャンディのつくり方について話してるんだけど…ふわあ。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Leah/494.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "ガスがさっきから杖型キャンディのつくり方について話してるんだけど…ふわあ。"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Leah",
+          "DialogueText": "彼、シナモンいりエッグノックの飲みすぎじゃない？",
+          "AudioPath": "assets/ja-JP/Leah/495.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Leah",
+          "PageIndex": 1,
+          "DisplayPattern": "彼、シナモンいりエッグノックの飲みすぎじゃない？"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Leah_spouse",
+          "DialogueText": "あなたとのシンプルな牧場暮らしに感謝をささげなきゃね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/496.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Leah_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "あなたとのシンプルな牧場暮らしに感謝をささげなきゃね。"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Leah_y2",
+          "DialogueText": "パーティーに行くまえは気が進まないこともあるけど、終わったあとはいつも行ってよかったって思うんだ！",
+          "AudioPath": "assets/ja-JP/Leah/497.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Leah_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "パーティーに行くまえは気が進まないこともあるけど、終わったあとはいつも行ってよかったって思うんだ！"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Leah_spouse_y2",
+          "DialogueText": "エリオットがまた飲みすぎたみたい… {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Leah/498.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Leah_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "エリオットがまた飲みすぎたみたい…"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Leah_spouse_y2",
+          "DialogueText": "付き添いが済んだらテーブルに行くね…おなかがペコペコなの！",
+          "AudioPath": "assets/ja-JP/Leah/499.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Leah_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "付き添いが済んだらテーブルに行くね…おなかがペコペコなの！"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Leah",
+          "DialogueText": "氷…うつくしい彫刻になるけど、すぐに溶けてしまうの。",
+          "AudioPath": "assets/ja-JP/Leah/500.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "氷…うつくしい彫刻になるけど、すぐに溶けてしまうの。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Leah",
+          "DialogueText": "でも、だからこそいい作品ができるのかもね。",
+          "AudioPath": "assets/ja-JP/Leah/501.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Leah",
+          "PageIndex": 1,
+          "DisplayPattern": "でも、だからこそいい作品ができるのかもね。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Leah_y2",
+          "DialogueText": "削るまえには氷を温めるの。きれいな形をつくるには必要な作業よ。",
+          "AudioPath": "assets/ja-JP/Leah/502.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Leah_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "削るまえには氷を温めるの。きれいな形をつくるには必要な作業よ。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Leah_spouse_y2",
+          "DialogueText": "いつか氷の彫刻の作り方を教えてあげるね！とても楽しいのよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/503.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Leah_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "いつか氷の彫刻の作り方を教えてあげるね！とても楽しいのよ！"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Leah_spouse_y2",
+          "DialogueText": "あなたがどんな形を思いつくのか、すごく興味があるの。",
+          "AudioPath": "assets/ja-JP/Leah/504.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Leah_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "あなたがどんな形を思いつくのか、すごく興味があるの。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Leah:s0",
+          "DialogueText": "わあ！ちょうどこういうのが欲しかったんだ！ありがとう！",
+          "AudioPath": "assets/ja-JP/Leah/505.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Leah:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "わあ！ちょうどこういうのが欲しかったんだ！ありがとう！"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Leah:s1",
+          "DialogueText": "わあ、すっごく気に入っちゃった！ありがとう！",
+          "AudioPath": "assets/ja-JP/Leah/506.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Leah:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "わあ、すっごく気に入っちゃった！ありがとう！"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Leah:s2",
+          "DialogueText": "うーん…まあ、感性って人それぞれだよね。",
+          "AudioPath": "assets/ja-JP/Leah/507.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Leah:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん…まあ、感性って人それぞれだよね。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Leah:s3",
+          "DialogueText": "ねえ、これ、プレゼントとしては最悪じゃない？",
+          "AudioPath": "assets/ja-JP/Leah/508.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Leah:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "ねえ、これ、プレゼントとしては最悪じゃない？"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Leah:s4",
+          "DialogueText": "ありがとう。",
+          "AudioPath": "assets/ja-JP/Leah/509.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Leah:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "ありがとう。"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Leah",
+          "DialogueText": "このあいだ、ピエールのお店で{1}{2}を買ったんだ。山菜と、わたしの“特製”ビネグレットソースに合わせてみたんだけど、ほんと相性最高だったよ。",
+          "AudioPath": "assets/ja-JP/Leah/510.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "このあいだ、ピエールのお店で{1}{2}を買ったんだ。山菜と、わたしの“特製”ビネグレットソースに合わせてみたんだけど、ほんと相性最高だったよ。"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Leah",
+          "DialogueText": "この場所で、私達2人が探していたものを見つけられた気がするわ。",
+          "AudioPath": "assets/ja-JP/Leah/511.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "この場所で、私達2人が探していたものを見つけられた気がするわ。"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Leah",
+          "DialogueText": "私はどこかに行きたいわけじゃない。こうしてあなたと一緒にいたいの。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Leah/512.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Leah",
+          "PageIndex": 1,
+          "DisplayPattern": "私はどこかに行きたいわけじゃない。こうしてあなたと一緒にいたいの。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Leah_spring_movie_1_BeforeMovie",
+          "DialogueText": "本当にきれいな自然の絵があるってきいたの…本当に楽しみ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/513.ogg",
+          "TranslationKey": "Strings/MovieReactions:Leah_spring_movie_1_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "本当にきれいな自然の絵があるってきいたの…本当に楽しみ！"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Leah_spring_movie_1_AfterMovie",
+          "DialogueText": "すごく良かった。スターデューバレーの空中ショットで、わたしのキャビンを見たことだってあると確信してるの！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/514.ogg",
+          "TranslationKey": "Strings/MovieReactions:Leah_spring_movie_1_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "すごく良かった。スターデューバレーの空中ショットで、わたしのキャビンを見たことだってあると確信してるの！"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Leah_love_BeforeMovie",
+          "DialogueText": "この映画は本当に興味深いね...私は不思議な人のための吸盤。",
+          "AudioPath": "assets/ja-JP/Leah/515.ogg",
+          "TranslationKey": "Strings/MovieReactions:Leah_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "この映画は本当に興味深いね...私は不思議な人のための吸盤。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Leah_love_AfterMovie",
+          "DialogueText": "すごく良かったよ！話はすごくゆるいけど、それが頭じゃなくて感情に話すことを意図していたと思う。",
+          "AudioPath": "assets/ja-JP/Leah/516.ogg",
+          "TranslationKey": "Strings/MovieReactions:Leah_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "すごく良かったよ！話はすごくゆるいけど、それが頭じゃなくて感情に話すことを意図していたと思う。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Leah_like_BeforeMovie",
+          "DialogueText": "この映画に何を期待した方が良いか分からないけど、心を開いておくつもりだよ！",
+          "AudioPath": "assets/ja-JP/Leah/517.ogg",
+          "TranslationKey": "Strings/MovieReactions:Leah_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "この映画に何を期待した方が良いか分からないけど、心を開いておくつもりだよ！"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Leah_like_AfterMovie",
+          "DialogueText": "簡単だけど、良いね...映画の快適な食べ物のようなもの。",
+          "AudioPath": "assets/ja-JP/Leah/518.ogg",
+          "TranslationKey": "Strings/MovieReactions:Leah_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "簡単だけど、良いね...映画の快適な食べ物のようなもの。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Leah_dislike_BeforeMovie",
+          "DialogueText": "映画のポスターが、かなり安っぽく見えるね。",
+          "AudioPath": "assets/ja-JP/Leah/519.ogg",
+          "TranslationKey": "Strings/MovieReactions:Leah_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "映画のポスターが、かなり安っぽく見えるね。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Leah_dislike_AfterMovie",
+          "DialogueText": "それはちょっとしたことじゃなかったよね？",
+          "AudioPath": "assets/ja-JP/Leah/520.ogg",
+          "TranslationKey": "Strings/MovieReactions:Leah_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "それはちょっとしたことじゃなかったよね？"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Leah_marriage",
+          "DialogueText": "泳いでみたかったんだけど、水の中はサソリゴイでいっぱいらしいの！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Leah/521.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Leah_marriage",
+          "PageIndex": 0,
+          "DisplayPattern": "泳いでみたかったんだけど、水の中はサソリゴイでいっぱいらしいの！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Leah",
+          "DialogueText": "ちょっと考えたんだけど…もし私がスターデューバレーじゃなくてここに住んでいたら、私のアートもちがっていたのかな？",
+          "AudioPath": "assets/ja-JP/Leah/522.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "ちょっと考えたんだけど…もし私がスターデューバレーじゃなくてここに住んでいたら、私のアートもちがっていたのかな？"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Leah",
+          "DialogueText": "木材が余ってたから、小さな本棚を作ってみたの…",
+          "AudioPath": "assets/ja-JP/Leah/523.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Leah",
+          "PageIndex": 0,
+          "DisplayPattern": "木材が余ってたから、小さな本棚を作ってみたの…"
+        },
+        {
+          "DialogueFrom": "LeahHouse_Leah_Greeting1",
+          "DialogueText": "あら、どうも！",
+          "AudioPath": "assets/ja-JP/Leah/524.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:LeahHouse_Leah_Greeting1",
+          "PageIndex": 0,
+          "DisplayPattern": "あら、どうも！"
+        },
+        {
+          "DialogueFrom": "LeahHouse_Leah_Greeting2",
+          "DialogueText": "こんにちは。",
+          "AudioPath": "assets/ja-JP/Leah/525.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:LeahHouse_Leah_Greeting2",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは。"
+        },
+        {
+          "DialogueFrom": "LeahHouse_Leah_Greeting3",
+          "DialogueText": "こんにちは、{Farmer_Name}",
+          "AudioPath": "assets/ja-JP/Leah/526.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:LeahHouse_Leah_Greeting3",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、{0}"
+        }
+      ]
+    }
+  ]
+}

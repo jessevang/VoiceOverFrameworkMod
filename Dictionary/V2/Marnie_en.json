@@ -1,0 +1,1356 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Marnie.en",
+      "VoicePackName": "DictionarV2 (Marnie - en)",
+      "Character": "Marnie",
+      "Language": "en",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Ah, Mayor Lewis told me you just arrived. I'm Marnie!",
+          "AudioPath": "assets/en/Marnie/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah, Mayor Lewis told me you just arrived. I'm Marnie!"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "I sell livestock and animal care products at my ranch. You should swing by some time. {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "I sell livestock and animal care products at my ranch. You should swing by some time."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Wow, thanks a million, {Farmer_Name}. I won't forget this!",
+          "AudioPath": "assets/en/Marnie/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow, thanks a million, . I won't forget this!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)SkillBook_0",
+          "DialogueText": "Thanks, {Farmer_Name}. I always like to have a copy of the Almanac around. It's pretty accurate! {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:AcceptGift_(O)SkillBook_0",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks, . I always like to have a copy of the Almanac around. It's pretty accurate!"
+        },
+        {
+          "DialogueFrom": "gotPet",
+          "DialogueText": "I think you'll love having a little friend on the farm with you.",
+          "AudioPath": "assets/en/Marnie/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:gotPet",
+          "PageIndex": 0,
+          "DisplayPattern": "I think you'll love having a little friend on the farm with you."
+        },
+        {
+          "DialogueFrom": "gotPet_memory_oneday",
+          "DialogueText": "I'm sure %pet will be a little shy at first. It takes a while for an animal to get comfortable in a new setting.",
+          "AudioPath": "assets/en/Marnie/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:gotPet_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm sure will be a little shy at first. It takes a while for an animal to get comfortable in a new setting."
+        },
+        {
+          "DialogueFrom": "gotPet_memory_oneweek",
+          "DialogueText": "Has little %pet settled in yet? It's such a nice property for a pet to explore.",
+          "AudioPath": "assets/en/Marnie/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:gotPet_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "Has little settled in yet? It's such a nice property for a pet to explore."
+        },
+        {
+          "DialogueFrom": "gotPet_memory_oneyear",
+          "DialogueText": "I just remembered... it's been about a year since you adopted %pet. I bet you two have grown really close by now!",
+          "AudioPath": "assets/en/Marnie/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:gotPet_memory_oneyear",
+          "PageIndex": 0,
+          "DisplayPattern": "I just remembered... it's been about a year since you adopted . I bet you two have grown really close by now!"
+        },
+        {
+          "DialogueFrom": "structureBuilt_Stable",
+          "DialogueText": "Oh, you got a horse? That's so wonderful! Horses are amazing animals. {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:structureBuilt_Stable",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, you got a horse? That's so wonderful! Horses are amazing animals."
+        },
+        {
+          "DialogueFrom": "dating_Shane_memory_oneweek",
+          "DialogueText": "Shane seems a lot more positive and hopeful, lately.",
+          "AudioPath": "assets/en/Marnie/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:dating_Shane_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "Shane seems a lot more positive and hopeful, lately."
+        },
+        {
+          "DialogueFrom": "dating_Shane_memory_oneweek",
+          "DialogueText": "I'm so happy you moved here, and that you two get along so well! {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:dating_Shane_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "I'm so happy you moved here, and that you two get along so well!"
+        },
+        {
+          "DialogueFrom": "married_Shane",
+          "DialogueText": "I'm glad Shane's moving to your farm... he can keep the family tradition alive!",
+          "AudioPath": "assets/en/Marnie/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:married_Shane",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm glad Shane's moving to your farm... he can keep the family tradition alive!"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Hehe... finally a chance to show off all my hard work at aerobics club. {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Hehe... finally a chance to show off all my hard work at aerobics club."
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "I feel warm.",
+          "AudioPath": "assets/en/Marnie/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "I feel warm."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Hee hee... It's interesting to see everyone in their bathing suits.",
+          "AudioPath": "assets/en/Marnie/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "Hee hee... It's interesting to see everyone in their bathing suits."
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "Ew... the chair's wet.",
+          "AudioPath": "assets/en/Marnie/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "Ew... the chair's wet."
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "Phew... It's hot! {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "Phew... It's hot!"
+        },
+        {
+          "DialogueFrom": "reject_789",
+          "DialogueText": "Gah! {Portrait:Love}",
+          "AudioPath": "assets/en/Marnie/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:reject_789",
+          "PageIndex": 0,
+          "DisplayPattern": "Gah!"
+        },
+        {
+          "DialogueFrom": "reject_789",
+          "DialogueText": "...Um... What? Heh.. I don't know what that is... {Portrait:Unique}",
+          "AudioPath": "assets/en/Marnie/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:reject_789",
+          "PageIndex": 1,
+          "DisplayPattern": "...Um... What? Heh.. I don't know what that is..."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "I love animals, Mr. {Farmer_Name}. If you treat yours well I'm sure we'll become good friends!",
+          "AudioPath": "assets/en/Marnie/20_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "I love animals, Mr. . If you treat yours well I'm sure we'll become good friends!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "I just love animals, Ms. {Farmer_Name}. Treat them kindly and we'll become friends, I'm sure!",
+          "AudioPath": "assets/en/Marnie/21_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "I just love animals, Ms. . Treat them kindly and we'll become friends, I'm sure!",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Animals are so innocent, so sweet. And If I don't look after them, who will? {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "Animals are so innocent, so sweet. And If I don't look after them, who will?"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "I just hope my chickens aren't too upset when I take their eggs. {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "I just hope my chickens aren't too upset when I take their eggs."
+        },
+        {
+          "DialogueFrom": "Thu_2",
+          "DialogueText": "You've been here a while, now... how's your farm doing?",
+          "AudioPath": "assets/en/Marnie/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Thu_2",
+          "PageIndex": 0,
+          "DisplayPattern": "You've been here a while, now... how's your farm doing?"
+        },
+        {
+          "DialogueFrom": "Thu_2",
+          "DialogueText": "Taking care of animals is easy as long as you don't forget about them! {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Thu_2",
+          "PageIndex": 1,
+          "DisplayPattern": "Taking care of animals is easy as long as you don't forget about them!"
+        },
+        {
+          "DialogueFrom": "Saloon",
+          "DialogueText": "Now that I'm here I can finally relax and socialize a bit.",
+          "AudioPath": "assets/en/Marnie/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon",
+          "PageIndex": 0,
+          "DisplayPattern": "Now that I'm here I can finally relax and socialize a bit."
+        },
+        {
+          "DialogueFrom": "Saloon_Tue",
+          "DialogueText": "There aren't very many people here today... {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "There aren't very many people here today..."
+        },
+        {
+          "DialogueFrom": "Saloon_Wed",
+          "DialogueText": "# {Portrait:Happy} marnieAnimalSal",
+          "AudioPath": "assets/en/Marnie/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "# marnieAnimalSal"
+        },
+        {
+          "DialogueFrom": "Saloon_Wed",
+          "DialogueText": "I spilled a whole bucket of milk on the floor today, it was horrible. And such a waste of my poor Belinda's hard work.$k {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "I spilled a whole bucket of milk on the floor today, it was horrible. And such a waste of my poor Belinda's hard work."
+        },
+        {
+          "DialogueFrom": "Saloon_Wed",
+          "DialogueText": "It's nice of you to show up! It's a little more lively now.",
+          "AudioPath": "assets/en/Marnie/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "It's nice of you to show up! It's a little more lively now."
+        },
+        {
+          "DialogueFrom": "Saloon_Thu",
+          "DialogueText": "Phew! It sure feels good to kick back after a hard day's work.",
+          "AudioPath": "assets/en/Marnie/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Phew! It sure feels good to kick back after a hard day's work."
+        },
+        {
+          "DialogueFrom": "Saloon_Fri",
+          "DialogueText": "Marnie doesn't seem to notice that you're there...",
+          "AudioPath": "assets/en/Marnie/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Marnie doesn't seem to notice that you're there..."
+        },
+        {
+          "DialogueFrom": "Saloon_Sun",
+          "DialogueText": "*sigh*... I wasn't very productive today.",
+          "AudioPath": "assets/en/Marnie/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*... I wasn't very productive today."
+        },
+        {
+          "DialogueFrom": "Saloon_Sat",
+          "DialogueText": "I always see Clint here but he won't talk to anyone. He just glances over his shoulder now and then. {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "I always see Clint here but he won't talk to anyone. He just glances over his shoulder now and then."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Now that Shane's gone, I'm going to have to teach Jas how to care for the chickens.",
+          "AudioPath": "assets/en/Marnie/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Now that Shane's gone, I'm going to have to teach Jas how to care for the chickens."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "My nephew Shane has been staying at my place the last few months.",
+          "AudioPath": "assets/en/Marnie/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "My nephew Shane has been staying at my place the last few months."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "He helps me out with the chickens, so I'm not complaining.",
+          "AudioPath": "assets/en/Marnie/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Tue",
+          "PageIndex": 2,
+          "DisplayPattern": "He helps me out with the chickens, so I'm not complaining."
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "You're not worried about this rain? That does put me at ease a little...",
+          "AudioPath": "assets/en/Marnie/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "You're not worried about this rain? That does put me at ease a little..."
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "I just hope the cows tucked themselves in... {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:GreenRain",
+          "PageIndex": 1,
+          "DisplayPattern": "I just hope the cows tucked themselves in..."
+        },
+        {
+          "DialogueFrom": "GreenRainFinished",
+          "DialogueText": "Well, looks like we all got scared for nothing... The rain was totally harmless!",
+          "AudioPath": "assets/en/Marnie/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:GreenRainFinished",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, looks like we all got scared for nothing... The rain was totally harmless!"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "The animals seems to enjoy this rain... I think it's putting extra nutrients into the grass.",
+          "AudioPath": "assets/en/Marnie/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "The animals seems to enjoy this rain... I think it's putting extra nutrients into the grass."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "You can use a scythe to cut feed from grass.",
+          "AudioPath": "assets/en/Marnie/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "You can use a scythe to cut feed from grass."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Or you can buy it from me, of course! {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Or you can buy it from me, of course!"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "I could use the cash... {Portrait:Unique}",
+          "AudioPath": "assets/en/Marnie/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "I could use the cash..."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Adios.",
+          "AudioPath": "assets/en/Marnie/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Wed",
+          "PageIndex": 3,
+          "DisplayPattern": "Adios."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Hi. Need something?",
+          "AudioPath": "assets/en/Marnie/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi. Need something?"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "I might be getting some different kinds of animals in the future.",
+          "AudioPath": "assets/en/Marnie/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "I might be getting some different kinds of animals in the future."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Although, I'll need to make sure there's a market for them, so you'll have to prove your skill with animals first.",
+          "AudioPath": "assets/en/Marnie/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "Although, I'll need to make sure there's a market for them, so you'll have to prove your skill with animals first."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Just keep treating your animals with respect and good things will happen.",
+          "AudioPath": "assets/en/Marnie/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Thu",
+          "PageIndex": 3,
+          "DisplayPattern": "Just keep treating your animals with respect and good things will happen."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "You can catch me at the saloon most nights.",
+          "AudioPath": "assets/en/Marnie/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "You can catch me at the saloon most nights."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Animals are great company, but I need to spend time with people, too.",
+          "AudioPath": "assets/en/Marnie/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "Animals are great company, but I need to spend time with people, too."
+        },
+        {
+          "DialogueFrom": "Fri6",
+          "DialogueText": "I wonder if Mr. Lewis gets lonely in that big house of his... {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "I wonder if Mr. Lewis gets lonely in that big house of his..."
+        },
+        {
+          "DialogueFrom": "Fri6",
+          "DialogueText": "It seems so empty in there, doesn't it?",
+          "AudioPath": "assets/en/Marnie/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "It seems so empty in there, doesn't it?"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Have you been to that strange tower west of my house?",
+          "AudioPath": "assets/en/Marnie/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Have you been to that strange tower west of my house?"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "One time I heard this terrible, otherworldly noise coming from there. {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "One time I heard this terrible, otherworldly noise coming from there."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "I would avoid that place if I were you...",
+          "AudioPath": "assets/en/Marnie/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "I would avoid that place if I were you..."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Hey there, it's good to see ya!",
+          "AudioPath": "assets/en/Marnie/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey there, it's good to see ya!"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Feel free to visit us any time you please.",
+          "AudioPath": "assets/en/Marnie/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Feel free to visit us any time you please."
+        },
+        {
+          "DialogueFrom": "Sun8",
+          "DialogueText": "Hi {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sun8",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi !"
+        },
+        {
+          "DialogueFrom": "Sun8",
+          "DialogueText": "I'm glad we've become friends. I know I can trust you to take care of my dear animals.",
+          "AudioPath": "assets/en/Marnie/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sun8",
+          "PageIndex": 1,
+          "DisplayPattern": "I'm glad we've become friends. I know I can trust you to take care of my dear animals."
+        },
+        {
+          "DialogueFrom": "Fair_Judging",
+          "DialogueText": "Well, here goes nothing...",
+          "AudioPath": "assets/en/Marnie/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fair_Judging",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, here goes nothing..."
+        },
+        {
+          "DialogueFrom": "Fair_Judged",
+          "DialogueText": "Well, I didn't win... but it was still satisfying to share all my hard work!",
+          "AudioPath": "assets/en/Marnie/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fair_Judged",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I didn't win... but it was still satisfying to share all my hard work!"
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerLost_PurpleShorts",
+          "DialogueText": "That was some strange-looking purple lettuce in your grange display! {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fair_Judged_PlayerLost_PurpleShorts",
+          "PageIndex": 0,
+          "DisplayPattern": "That was some strange-looking purple lettuce in your grange display!"
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerLost_PurpleShorts",
+          "DialogueText": "I swear, it looked just like Mayor Lewis' special und... {Portrait:Unique}",
+          "AudioPath": "assets/en/Marnie/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fair_Judged_PlayerLost_PurpleShorts",
+          "PageIndex": 1,
+          "DisplayPattern": "I swear, it looked just like Mayor Lewis' special und..."
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerLost_PurpleShorts",
+          "DialogueText": "Oh!... heh... never mind! {Portrait:Love}",
+          "AudioPath": "assets/en/Marnie/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fair_Judged_PlayerLost_PurpleShorts",
+          "PageIndex": 2,
+          "DisplayPattern": "Oh!... heh... never mind!"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "Hi {Farmer_Name}. You look like you're soaked...you poor thing! {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/66.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi . You look like you're soaked...you poor thing!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s0",
+          "DialogueText": "Hello {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/67.ogg",
+          "TranslationKey": "Events/Farm:1590166:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hello !"
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s1",
+          "DialogueText": "You see this cat here?",
+          "AudioPath": "assets/en/Marnie/68.ogg",
+          "TranslationKey": "Events/Farm:1590166:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "You see this cat here?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s2",
+          "DialogueText": "I found it sitting outside the entrance to your farm! I think it's a stray... poor little thing. {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/69.ogg",
+          "TranslationKey": "Events/Farm:1590166:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I found it sitting outside the entrance to your farm! I think it's a stray... poor little thing."
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s3",
+          "DialogueText": "I think it likes this place! Hey, um.... Don't you think this farm could use a good cat? {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/70.ogg",
+          "TranslationKey": "Events/Farm:1590166:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I think it likes this place! Hey, um.... Don't you think this farm could use a good cat?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s4",
+          "DialogueText": "Well, little %pet... You be a good kitty now... okay?",
+          "AudioPath": "assets/en/Marnie/71.ogg",
+          "TranslationKey": "Events/Farm:1590166:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, little ... You be a good kitty now... okay?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/897405:s0",
+          "DialogueText": "Hello {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/72.ogg",
+          "TranslationKey": "Events/Farm:897405:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hello !"
+        },
+        {
+          "DialogueFrom": "Event:Farm/897405:s1",
+          "DialogueText": "You see this dog here?",
+          "AudioPath": "assets/en/Marnie/73.ogg",
+          "TranslationKey": "Events/Farm:897405:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "You see this dog here?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/897405:s2",
+          "DialogueText": "I found it sitting outside the entrance to your farm! I think it's a stray... poor thing. {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/74.ogg",
+          "TranslationKey": "Events/Farm:897405:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I found it sitting outside the entrance to your farm! I think it's a stray... poor thing."
+        },
+        {
+          "DialogueFrom": "Event:Farm/897405:s3",
+          "DialogueText": "Hey, it seems to like this place! Hey, um.... Don't you think this farm could use a good dog? {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/75.ogg",
+          "TranslationKey": "Events/Farm:897405:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, it seems to like this place! Hey, um.... Don't you think this farm could use a good dog?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/897405:s4",
+          "DialogueText": "Well, %pet... You be a good pooch now... okay?",
+          "AudioPath": "assets/en/Marnie/76.ogg",
+          "TranslationKey": "Events/Farm:897405:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, ... You be a good pooch now... okay?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s0|g=male",
+          "DialogueText": "Good morning, Mr. {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/77_male.ogg",
+          "TranslationKey": "Events/Farm:91:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Good morning, Mr. !",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s1|g=female",
+          "DialogueText": "Good morning, Ms. {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/78_female.ogg",
+          "TranslationKey": "Events/Farm:91:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Good morning, Ms. !",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s2",
+          "DialogueText": "I came by to ask you a favor, since you're such a kind neighbor.",
+          "AudioPath": "assets/en/Marnie/79.ogg",
+          "TranslationKey": "Events/Farm:91:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I came by to ask you a favor, since you're such a kind neighbor."
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s3",
+          "DialogueText": "You see, I'm trying to train my goats to say 'hello'... but they simply won't pay attention to me unless I have their favorite treat, cave carrots! {Portrait:Unique}",
+          "AudioPath": "assets/en/Marnie/80.ogg",
+          "TranslationKey": "Events/Farm:91:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "You see, I'm trying to train my goats to say 'hello'... but they simply won't pay attention to me unless I have their favorite treat, cave carrots!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s4",
+          "DialogueText": "So... since I'm scared of the mines... I thought, well, maybe you would bring me a cave carrot when you have the chance?",
+          "AudioPath": "assets/en/Marnie/81.ogg",
+          "TranslationKey": "Events/Farm:91:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "So... since I'm scared of the mines... I thought, well, maybe you would bring me a cave carrot when you have the chance?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s5",
+          "DialogueText": "There's no pressure... but if you want to, just swing by my house between 9:00 AM and 5:00 PM with a cave carrot. You'll make an old girl very happy. Bye.",
+          "AudioPath": "assets/en/Marnie/82.ogg",
+          "TranslationKey": "Events/Farm:91:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "There's no pressure... but if you want to, just swing by my house between 9:00 AM and 5:00 PM with a cave carrot. You'll make an old girl very happy. Bye."
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s6",
+          "DialogueText": "My goats go wild over cave carrot... I can't imagine why.",
+          "AudioPath": "assets/en/Marnie/83.ogg",
+          "TranslationKey": "Events/Farm:91:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "My goats go wild over cave carrot... I can't imagine why."
+        },
+        {
+          "DialogueFrom": "Event:Town/639373:s0",
+          "DialogueText": "You care too much about your job, Lewis. There are other things to life, you know. {Portrait:Unique}",
+          "AudioPath": "assets/en/Marnie/84.ogg",
+          "TranslationKey": "Events/Town:639373:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "You care too much about your job, Lewis. There are other things to life, you know."
+        },
+        {
+          "DialogueFrom": "Event:Town/639373:s1",
+          "DialogueText": "...but yes, I understand. I guess we'll have to keep...us...a secret. {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/85.ogg",
+          "TranslationKey": "Events/Town:639373:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "...but yes, I understand. I guess we'll have to keep...us...a secret."
+        },
+        {
+          "DialogueFrom": "Event:Town/639373:s2",
+          "DialogueText": "Gahh! {Portrait:Love}",
+          "AudioPath": "assets/en/Marnie/86.ogg",
+          "TranslationKey": "Events/Town:639373:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Gahh!"
+        },
+        {
+          "DialogueFrom": "Event:Town/639373:s3",
+          "DialogueText": "Why were you hiding there, anyway? {Portrait:Unique}",
+          "AudioPath": "assets/en/Marnie/87.ogg",
+          "TranslationKey": "Events/Town:639373:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Why were you hiding there, anyway?"
+        },
+        {
+          "DialogueFrom": "Event:Town/3917584:s0",
+          "DialogueText": "Oh no... this doesn't look good. {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/88.ogg",
+          "TranslationKey": "Events/Town:3917584:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh no... this doesn't look good."
+        },
+        {
+          "DialogueFrom": "Event:Town/3917584:s1",
+          "DialogueText": "{Farmer_Name}? You'd better keep your eye on him... next time you catch him coming out of the Saloon, you should say something... {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/89.ogg",
+          "TranslationKey": "Events/Town:3917584:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "? You'd better keep your eye on him... next time you catch him coming out of the Saloon, you should say something..."
+        },
+        {
+          "DialogueFrom": "Event:Town/3917584:s2",
+          "DialogueText": "Is everything alright, {Farmer_Name}? You seem worried...",
+          "AudioPath": "assets/en/Marnie/90.ogg",
+          "TranslationKey": "Events/Town:3917584:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Is everything alright, ? You seem worried..."
+        },
+        {
+          "DialogueFrom": "Event:Town/3917586:s0",
+          "DialogueText": "Alright... we've caught him in the act. Now let's confront him. Take a deep breath... {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/91.ogg",
+          "TranslationKey": "Events/Town:3917586:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Alright... we've caught him in the act. Now let's confront him. Take a deep breath..."
+        },
+        {
+          "DialogueFrom": "Event:Town/3917586:s1",
+          "DialogueText": "Shane... this is what you've been doing in here? {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/92.ogg",
+          "TranslationKey": "Events/Town:3917586:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Shane... this is what you've been doing in here?"
+        },
+        {
+          "DialogueFrom": "Event:Town/3917586:s2",
+          "DialogueText": "But... these cans... {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/93.ogg",
+          "TranslationKey": "Events/Town:3917586:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "But... these cans..."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s0",
+          "DialogueText": "Um... Haley? When do we stop? M... My legs... *pant* *pant* {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/94.ogg",
+          "TranslationKey": "Events/Town:6184644:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... Haley? When do we stop? M... My legs... *pant* *pant*"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s1",
+          "DialogueText": "Yep",
+          "AudioPath": "assets/en/Marnie/95.ogg",
+          "TranslationKey": "Events/Town:6184644:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Yep"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/150938:s0",
+          "DialogueText": "I do!",
+          "AudioPath": "assets/en/Marnie/96.ogg",
+          "TranslationKey": "Events/HaleyHouse:150938:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I do!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s0",
+          "DialogueText": "Mmmm... %farm eggs.",
+          "AudioPath": "assets/en/Marnie/97.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Mmmm... eggs."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s0",
+          "DialogueText": "Um... Leah? How much longer will this be? {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/98.ogg",
+          "TranslationKey": "Events/Forest:3091462:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... Leah? How much longer will this be?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s1",
+          "DialogueText": "...My knees are quivering, my thighs are whimpering, and I've lost all sensation in my foot. {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/99.ogg",
+          "TranslationKey": "Events/Forest:3091462:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "...My knees are quivering, my thighs are whimpering, and I've lost all sensation in my foot."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s2",
+          "DialogueText": "Make me look good!",
+          "AudioPath": "assets/en/Marnie/100.ogg",
+          "TranslationKey": "Events/Forest:3091462:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Make me look good!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s3",
+          "DialogueText": "Oooh!",
+          "AudioPath": "assets/en/Marnie/101.ogg",
+          "TranslationKey": "Events/Forest:3091462:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Oooh!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s4",
+          "DialogueText": "I love it! That's going up in my room... {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/102.ogg",
+          "TranslationKey": "Events/Forest:3091462:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I love it! That's going up in my room..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s5",
+          "DialogueText": "Let me see",
+          "AudioPath": "assets/en/Marnie/103.ogg",
+          "TranslationKey": "Events/Forest:3091462:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Let me see"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s6",
+          "DialogueText": "Em... {Farmer_Name}, why don't you go ahead and keep yours? It might be nice to, uh... own your first-ever painting... ya know? {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/104.ogg",
+          "TranslationKey": "Events/Forest:3091462:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Em... , why don't you go ahead and keep yours? It might be nice to, uh... own your first-ever painting... ya know?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s7",
+          "DialogueText": "Um... Honey? Where were you planning to hang that painting you did? {Portrait:Unique}",
+          "AudioPath": "assets/en/Marnie/105.ogg",
+          "TranslationKey": "Events/Forest:3091462:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... Honey? Where were you planning to hang that painting you did?"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s0|g=male",
+          "DialogueText": "Oh! You brought the cave carrot! Thank you so much, Mr. {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/106_male.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! You brought the cave carrot! Thank you so much, Mr. .",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s1|g=female",
+          "DialogueText": "Oh! You brought the cave carrot! Thank you so much, Ms. {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/107_female.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! You brought the cave carrot! Thank you so much, Ms. .",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s2",
+          "DialogueText": "This looks great... I almost want to eat it myself! {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/108.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "This looks great... I almost want to eat it myself!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s3",
+          "DialogueText": "...almost.",
+          "AudioPath": "assets/en/Marnie/109.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "...almost."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s4",
+          "DialogueText": "I hope it wasn't too much trouble... I really do appreciate it.",
+          "AudioPath": "assets/en/Marnie/110.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I hope it wasn't too much trouble... I really do appreciate it."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s5",
+          "DialogueText": "Thanks again for helping me out. {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/111.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks again for helping me out."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s6",
+          "DialogueText": "...and my goats say 'thanks' too.",
+          "AudioPath": "assets/en/Marnie/112.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "...and my goats say 'thanks' too."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s0",
+          "DialogueText": "Shane?",
+          "AudioPath": "assets/en/Marnie/113.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Shane?"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s1",
+          "DialogueText": "Oh dear...",
+          "AudioPath": "assets/en/Marnie/114.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh dear..."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s2",
+          "DialogueText": "{Farmer_Name}... Can you do something? He's out cold. {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/115.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "... Can you do something? He's out cold."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s3",
+          "DialogueText": "Shane! What's the matter with you? All you do anymore is mope around your room and drink beer! {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/116.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Shane! What's the matter with you? All you do anymore is mope around your room and drink beer!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s4",
+          "DialogueText": "I'm worried...",
+          "AudioPath": "assets/en/Marnie/117.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm worried..."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s5",
+          "DialogueText": "What's your plan? Don't you ever think about the future?",
+          "AudioPath": "assets/en/Marnie/118.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "What's your plan? Don't you ever think about the future?"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s0",
+          "DialogueText": "Hi Shane... you look unusually happy today.",
+          "AudioPath": "assets/en/Marnie/119.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi Shane... you look unusually happy today."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s1",
+          "DialogueText": "Let me guess... Gus had a clearance sale on canned beer? {Portrait:Unique}",
+          "AudioPath": "assets/en/Marnie/120.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Let me guess... Gus had a clearance sale on canned beer?"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s2",
+          "DialogueText": "He looks sharp!",
+          "AudioPath": "assets/en/Marnie/121.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "He looks sharp!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Marnie",
+          "DialogueText": "I tried my best, but my display is pretty weak compared to Pierre's. {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/122.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "I tried my best, but my display is pretty weak compared to Pierre's."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Marnie",
+          "DialogueText": "Well, maybe the judges will give me bonus points for the massive cheese wheel.",
+          "AudioPath": "assets/en/Marnie/123.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Marnie",
+          "PageIndex": 1,
+          "DisplayPattern": "Well, maybe the judges will give me bonus points for the massive cheese wheel."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Marnie_y2",
+          "DialogueText": "My animals had a successful year! I'm hoping the high-quality produce will impress the judges. {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/124.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "My animals had a successful year! I'm hoping the high-quality produce will impress the judges."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Marnie_y2",
+          "DialogueText": "How's your grange display, {Farmer_Name}? It's your moment to showcase the fruits of your labor. {Portrait:Neutral}",
+          "AudioPath": "assets/en/Marnie/125.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Marnie_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "How's your grange display, ? It's your moment to showcase the fruits of your labor."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Marnie",
+          "DialogueText": "Hi, {Farmer_Name}. Have you had a productive fall?",
+          "AudioPath": "assets/en/Marnie/126.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi, . Have you had a productive fall?"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Marnie",
+          "DialogueText": "It's starting to get quite cold... crops won't hold out for much longer.",
+          "AudioPath": "assets/en/Marnie/127.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Marnie",
+          "PageIndex": 1,
+          "DisplayPattern": "It's starting to get quite cold... crops won't hold out for much longer."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Marnie_y2",
+          "DialogueText": "I hope Jas is okay in there. {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/128.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "I hope Jas is okay in there."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Marnie_y2",
+          "DialogueText": "Did you have a successful year farming, {Farmer_Name}?",
+          "AudioPath": "assets/en/Marnie/129.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Marnie_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Did you have a successful year farming, ?"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Marnie",
+          "DialogueText": "Welcome to the Egg Festival... compliments of my wonderful brood of hens.",
+          "AudioPath": "assets/en/Marnie/130.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Welcome to the Egg Festival... compliments of my wonderful brood of hens."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Marnie_y2",
+          "DialogueText": "Hens lay the eggs, but roosters play an important role, too... they protect the hens and prevent them from fighting with each other!",
+          "AudioPath": "assets/en/Marnie/131.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hens lay the eggs, but roosters play an important role, too... they protect the hens and prevent them from fighting with each other!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Marnie_y2",
+          "DialogueText": "That means happier hens and better eggs... {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/132.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Marnie_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "That means happier hens and better eggs..."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Marnie",
+          "DialogueText": "*sigh*... Love is in the air... And I'm still single. {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/133.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*... Love is in the air... And I'm still single."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Marnie_y2",
+          "DialogueText": "This open field is perfect grazing land for livestock, wouldn't you agree? {Portrait:Neutral}",
+          "AudioPath": "assets/en/Marnie/134.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "This open field is perfect grazing land for livestock, wouldn't you agree?"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Marnie_y2",
+          "DialogueText": "Psst... I think Lewis is going to ask me to dance with him! {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/135.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Marnie_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Psst... I think Lewis is going to ask me to dance with him!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Marnie",
+          "DialogueText": "If you brought something for the soup, climb the stairs on the other side and throw it in.",
+          "AudioPath": "assets/en/Marnie/136.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "If you brought something for the soup, climb the stairs on the other side and throw it in."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Marnie_y2",
+          "DialogueText": "Hello, {Farmer_Name}! Did you bring an ingredient for the potluck? Just climb the stairs and toss it right in! {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/137.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hello, ! Did you bring an ingredient for the potluck? Just climb the stairs and toss it right in!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Marnie",
+          "DialogueText": "That's a heavy load of people for an ancient wooden dock! I'll stay over here near the beach.",
+          "AudioPath": "assets/en/Marnie/138.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "That's a heavy load of people for an ancient wooden dock! I'll stay over here near the beach."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Marnie_y2",
+          "DialogueText": "I can't go any further on the dock. The sounds of creaking wood is causing me to tremble. {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/139.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "I can't go any further on the dock. The sounds of creaking wood is causing me to tremble."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Marnie_y2",
+          "DialogueText": "When I was a little girl, I fell through a rotten dock once, and it traumatized me... {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/140.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Marnie_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "When I was a little girl, I fell through a rotten dock once, and it traumatized me..."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Marnie",
+          "DialogueText": "Welcome to the Feast of the Winter Star! {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/141.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Welcome to the Feast of the Winter Star!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Marnie_y2",
+          "DialogueText": "Happy Feasting, {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/142.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Happy Feasting, !"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Marnie",
+          "DialogueText": "I feel bad for all the poor, cold animals out there. {Portrait:Sad}",
+          "AudioPath": "assets/en/Marnie/143.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "I feel bad for all the poor, cold animals out there."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Marnie_y2",
+          "DialogueText": "Aww... That piggy looks adorable all bundled up! {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/144.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Aww... That piggy looks adorable all bundled up!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Marnie:s0",
+          "DialogueText": "This is an incredible gift! Thanks!!",
+          "AudioPath": "assets/en/Marnie/145.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Marnie:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "This is an incredible gift! Thanks!!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Marnie:s1",
+          "DialogueText": "Thank you!",
+          "AudioPath": "assets/en/Marnie/146.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Marnie:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Thank you!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Marnie:s2",
+          "DialogueText": "Oh. I guess I'll take it.",
+          "AudioPath": "assets/en/Marnie/147.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Marnie:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh. I guess I'll take it."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Marnie:s3",
+          "DialogueText": "This is worthless. I don't understand you.",
+          "AudioPath": "assets/en/Marnie/148.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Marnie:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "This is worthless. I don't understand you."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Marnie:s4",
+          "DialogueText": "Thank you! This looks nice.",
+          "AudioPath": "assets/en/Marnie/149.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Marnie:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Thank you! This looks nice."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Marnie_love_BeforeMovie",
+          "DialogueText": "I know I'm going to love this movie! It was really nice of you to invite me, {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/150.ogg",
+          "TranslationKey": "Strings/MovieReactions:Marnie_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "I know I'm going to love this movie! It was really nice of you to invite me, ."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Marnie_love_AfterMovie",
+          "DialogueText": "Oh, I'm so glad the family was alright in the end. And the cows, too! {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/151.ogg",
+          "TranslationKey": "Strings/MovieReactions:Marnie_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, I'm so glad the family was alright in the end. And the cows, too!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Marnie_like_BeforeMovie",
+          "DialogueText": "I'm pretty easy-going when it comes to movies... I like just about everything!",
+          "AudioPath": "assets/en/Marnie/152.ogg",
+          "TranslationKey": "Strings/MovieReactions:Marnie_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm pretty easy-going when it comes to movies... I like just about everything!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Marnie_like_AfterMovie",
+          "DialogueText": "I had a great time, {Farmer_Name}! Thanks for thinking of me.",
+          "AudioPath": "assets/en/Marnie/153.ogg",
+          "TranslationKey": "Strings/MovieReactions:Marnie_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "I had a great time, ! Thanks for thinking of me."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Marnie",
+          "DialogueText": "Hey, {Farmer_Name}. I was just thinking about milk.",
+          "AudioPath": "assets/en/Marnie/154.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, . I was just thinking about milk."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Marnie",
+          "DialogueText": "Would you ever try camel's milk? I've heard it's salty.",
+          "AudioPath": "assets/en/Marnie/155.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Marnie",
+          "PageIndex": 1,
+          "DisplayPattern": "Would you ever try camel's milk? I've heard it's salty."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Marnie",
+          "DialogueText": "I found an extra roll of wallpaper from my house. It's yours for 20 eggs!",
+          "AudioPath": "assets/en/Marnie/156.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "I found an extra roll of wallpaper from my house. It's yours for 20 eggs!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Marnie_Counter",
+          "DialogueText": "'I'm not around, but you can still make a purchase using the animal catalogue!' -Marnie",
+          "AudioPath": "assets/en/Marnie/157.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Marnie_Counter",
+          "PageIndex": 0,
+          "DisplayPattern": "'I'm not around, but you can still make a purchase using the animal catalogue!' -Marnie"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Marnie_Pet_Adoption",
+          "DialogueText": "These sweeties could use a good home...",
+          "AudioPath": "assets/en/Marnie/158.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Marnie_Pet_Adoption",
+          "PageIndex": 0,
+          "DisplayPattern": "These sweeties could use a good home..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:AdoptedPet_Marnie",
+          "DialogueText": "Great! I'll send little {0} to your home right away. {Portrait:Happy}",
+          "AudioPath": "assets/en/Marnie/159.ogg",
+          "TranslationKey": "Strings/1_6_Strings:AdoptedPet_Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Great! I'll send little {0} to your home right away."
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_Greeting1",
+          "DialogueText": "Hello!",
+          "AudioPath": "assets/en/Marnie/160.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_Greeting1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hello!"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_Greeting2",
+          "DialogueText": "Howdy!",
+          "AudioPath": "assets/en/Marnie/161.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_Greeting2",
+          "PageIndex": 0,
+          "DisplayPattern": "Howdy!"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_CloseFriends",
+          "DialogueText": "Hi, {Farmer_Name}",
+          "AudioPath": "assets/en/Marnie/162.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_CloseFriends",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi, {0}"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_NotCloseFriends",
+          "DialogueText": "Looking for some supplies?",
+          "AudioPath": "assets/en/Marnie/163.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_NotCloseFriends",
+          "PageIndex": 0,
+          "DisplayPattern": "Looking for some supplies?"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_Raining",
+          "DialogueText": "Wipe your feet!",
+          "AudioPath": "assets/en/Marnie/164.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_Raining",
+          "PageIndex": 0,
+          "DisplayPattern": "Wipe your feet!"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_NotRaining",
+          "DialogueText": "Hey! How's the weather?",
+          "AudioPath": "assets/en/Marnie/165.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_NotRaining",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey! How's the weather?"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_Greeting3",
+          "DialogueText": "Hey! How's {Farm_Name} Farm doin'?",
+          "AudioPath": "assets/en/Marnie/166.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_Greeting3",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey! How's {1} Farm doin'?"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_RareGreeting",
+          "DialogueText": "Lew...? Oh...",
+          "AudioPath": "assets/en/Marnie/167.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_RareGreeting",
+          "PageIndex": 0,
+          "DisplayPattern": "Lew...? Oh..."
+        }
+      ]
+    }
+  ]
+}

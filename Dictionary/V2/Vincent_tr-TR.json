@@ -1,0 +1,840 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Vincent.tr-TR",
+      "VoicePackName": "DictionarV2 (Vincent - tr-TR)",
+      "Character": "Vincent",
+      "Language": "tr-TR",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Ah, tanımadığım biri. Ben Vincent.",
+          "AudioPath": "assets/tr-TR/Vincent/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah, tanımadığım biri. Ben Vincent."
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Annem yabancılarla konuşma dedi... ama sen iyi birine benziyorsun.",
+          "AudioPath": "assets/tr-TR/Vincent/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "Annem yabancılarla konuşma dedi... ama sen iyi birine benziyorsun."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "Bu doğum günü hediyesi mi? Şimdi açabilir miyim?",
+          "AudioPath": "assets/tr-TR/Vincent/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "Bu doğum günü hediyesi mi? Şimdi açabilir miyim?"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "Vay canına! Bu tam da istediğim şey! Yaşasın! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Vincent/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptBirthdayGift_Positive",
+          "PageIndex": 1,
+          "DisplayPattern": "Vay canına! Bu tam da istediğim şey! Yaşasın!"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "Hediye mi? Ya... Bu pek de güzel değilmiş. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "Hediye mi? Ya... Bu pek de güzel değilmiş."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Vay be! Bu çok lezzetli! Of...",
+          "AudioPath": "assets/tr-TR/Vincent/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Vay be! Bu çok lezzetli! Of..."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)FrogEgg",
+          "DialogueText": "*vıcıklar* *vıcıklar* Ya! Benim olsun mu? Benim olsun mu? Oleeey! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Vincent/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptGift_(TR)FrogEgg",
+          "PageIndex": 0,
+          "DisplayPattern": "*vıcıklar* *vıcıklar* Ya! Benim olsun mu? Benim olsun mu? Oleeey!"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Anne! Dışarı çıkıp oynamak istiyorum!%noturn",
+          "AudioPath": "assets/tr-TR/Vincent/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "Anne! Dışarı çıkıp oynamak istiyorum!"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Vincent yosun ile kaplı.",
+          "AudioPath": "assets/tr-TR/Vincent/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Vincent yosun ile kaplı."
+        },
+        {
+          "DialogueFrom": "AcceptGift_Negative_alcohol_item",
+          "DialogueText": "*koklar*... Bu da ne? Çok kötü kokuyor... Annneeeeee! {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptGift_Negative_alcohol_item",
+          "PageIndex": 0,
+          "DisplayPattern": "*koklar*... Bu da ne? Çok kötü kokuyor... Annneeeeee!"
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "Yolculuk eğlenceliydi! Ben de bir gün kayıkçı olmak istiyorum!",
+          "AudioPath": "assets/tr-TR/Vincent/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "Yolculuk eğlenceliydi! Ben de bir gün kayıkçı olmak istiyorum!"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "Buraya yeniden gelmek istiyorum!",
+          "AudioPath": "assets/tr-TR/Vincent/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "Buraya yeniden gelmek istiyorum!"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Köpek balığı görmek istiyorum! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Vincent/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "Köpek balığı görmek istiyorum!"
+        },
+        {
+          "DialogueFrom": "married_Sam",
+          "DialogueText": "Sammy'mi benden alma! {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:married_Sam",
+          "PageIndex": 0,
+          "DisplayPattern": "Sammy'mi benden alma!"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Yakından bakarsan kumdan küçük böceklerin çıktığını görebilirsin. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Vincent/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Yakından bakarsan kumdan küçük böceklerin çıktığını görebilirsin."
+        },
+        {
+          "DialogueFrom": "reject_869",
+          "DialogueText": "Ah! Ne güzel bir şey bulmuşsun!",
+          "AudioPath": "assets/tr-TR/Vincent/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:reject_869",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah! Ne güzel bir şey bulmuşsun!"
+        },
+        {
+          "DialogueFrom": "reject_869",
+          "DialogueText": "Annem bunu almama izin vermez... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:reject_869",
+          "PageIndex": 1,
+          "DisplayPattern": "Annem bunu almama izin vermez..."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Büyüdüğümde abim gibi olmak istiyorum! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Vincent/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Büyüdüğümde abim gibi olmak istiyorum!"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Oldu, sonra görüşürüz!",
+          "AudioPath": "assets/tr-TR/Vincent/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "Oldu, sonra görüşürüz!"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Babamın dönmesine sevindim... artık hatırladığımdan çok daha farklı... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "Babamın dönmesine sevindim... artık hatırladığımdan çok daha farklı..."
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Babam hiç buralarda olmuyor... onunla oynamayı özledim. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "Babam hiç buralarda olmuyor... onunla oynamayı özledim."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "*iç çeker*... Annem bugün şeker almama izin vermedi... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "*iç çeker*... Annem bugün şeker almama izin vermedi..."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Bir sır tutabilir misiniz bayım?",
+          "AudioPath": "assets/tr-TR/Vincent/23_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "Bir sır tutabilir misiniz bayım?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Bir sır tutabilir misiniz, hanımefendi? {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Vincent/24_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 1,
+          "DisplayPattern": "Bir sır tutabilir misiniz, hanımefendi?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Büyüdüğümde Bayan Penny ile evlenmek istiyorum.",
+          "AudioPath": "assets/tr-TR/Vincent/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 2,
+          "DisplayPattern": "Büyüdüğümde Bayan Penny ile evlenmek istiyorum."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Ona söylemeyin, tamam mı? {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Vincent/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 3,
+          "DisplayPattern": "Ona söylemeyin, tamam mı?"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Böcek aramaya çıkmak istiyorum ama üstümü kirletince de annem kızıyor. {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Vincent/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Böcek aramaya çıkmak istiyorum ama üstümü kirletince de annem kızıyor."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Arada kaldım...",
+          "AudioPath": "assets/tr-TR/Vincent/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Arada kaldım..."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Acıktım... Annem nerde? {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Acıktım... Annem nerde?"
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "Çoğu yetişkin kadar sıkıcı değilsin!",
+          "AudioPath": "assets/tr-TR/Vincent/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Thu2",
+          "PageIndex": 0,
+          "DisplayPattern": "Çoğu yetişkin kadar sıkıcı değilsin!"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Öf, bu akşam yine kaynamış pancar var... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Öf, bu akşam yine kaynamış pancar var..."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "$e",
+          "AudioPath": "assets/tr-TR/Vincent/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Ah, aslında hayır, annem bu akşam mercimek çorbası yapacaktı. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "Ah, aslında hayır, annem bu akşam mercimek çorbası yapacaktı."
+        },
+        {
+          "DialogueFrom": "Sat_1",
+          "DialogueText": "Babam yakında dönecekmiş!",
+          "AudioPath": "assets/tr-TR/Vincent/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Babam yakında dönecekmiş!"
+        },
+        {
+          "DialogueFrom": "Sat_1",
+          "DialogueText": "Umarım bana oyuncak getirir. {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Vincent/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat_1",
+          "PageIndex": 1,
+          "DisplayPattern": "Umarım bana oyuncak getirir."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Bayan Penny her hafta bana yeni kitaplar okutuyor. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Bayan Penny her hafta bana yeni kitaplar okutuyor."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Bazen de kitabı benim seçmeme izin veriyor!",
+          "AudioPath": "assets/tr-TR/Vincent/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Bazen de kitabı benim seçmeme izin veriyor!"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Babam döndüğünden beri çok garip davranıyor. Ona ne oldu acaba? {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "Babam döndüğünden beri çok garip davranıyor. Ona ne oldu acaba?"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Artık benimle oynamak istemiyor. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "Artık benimle oynamak istemiyor."
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Acaba babam eve dönecek mi... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat8",
+          "PageIndex": 2,
+          "DisplayPattern": "Acaba babam eve dönecek mi..."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Merhaba, bayım!",
+          "AudioPath": "assets/tr-TR/Vincent/41_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Merhaba, bayım!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Merhaba, hanımefendi!",
+          "AudioPath": "assets/tr-TR/Vincent/42_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Merhaba, hanımefendi!",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "Merhaba {Farmer_Name} Amca!",
+          "AudioPath": "assets/tr-TR/Vincent/43_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun10",
+          "PageIndex": 0,
+          "DisplayPattern": "Merhaba Amca!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "Merhaba {Farmer_Name} Teyze!",
+          "AudioPath": "assets/tr-TR/Vincent/44_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun10",
+          "PageIndex": 1,
+          "DisplayPattern": "Merhaba Teyze!",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "En sevdiğim büyük sensin... Anneme söyleme ama. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Vincent/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun10",
+          "PageIndex": 2,
+          "DisplayPattern": "En sevdiğim büyük sensin... Anneme söyleme ama."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s0",
+          "DialogueText": "I'm really excited, Sam!",
+          "AudioPath": "assets/tr-TR/Vincent/46.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm really excited, Sam!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s1",
+          "DialogueText": "OK!",
+          "AudioPath": "assets/tr-TR/Vincent/47.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "OK!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s2",
+          "DialogueText": "Me too!",
+          "AudioPath": "assets/tr-TR/Vincent/48.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Me too!"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184643:s0",
+          "DialogueText": "Does this mean I don't have to do my homework? {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Vincent/49.ogg",
+          "TranslationKey": "Events/Town:6184643:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Does this mean I don't have to do my homework?"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184643:s1",
+          "DialogueText": "I've been thinking about cake a lot lately...",
+          "AudioPath": "assets/tr-TR/Vincent/50.ogg",
+          "TranslationKey": "Events/Town:6184643:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been thinking about cake a lot lately..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s0",
+          "DialogueText": "Sam...? {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Vincent/51.ogg",
+          "TranslationKey": "Events/Beach:733330:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Sam...?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s1",
+          "DialogueText": "Is Dad ever going to come home? {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/52.ogg",
+          "TranslationKey": "Events/Beach:733330:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Is Dad ever going to come home?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s2",
+          "DialogueText": "But I heard some grown-ups saying that... that all of our troops are getting shot to pieces. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/53.ogg",
+          "TranslationKey": "Events/Beach:733330:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "But I heard some grown-ups saying that... that all of our troops are getting shot to pieces."
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s3",
+          "DialogueText": "Okay!",
+          "AudioPath": "assets/tr-TR/Vincent/54.ogg",
+          "TranslationKey": "Events/Beach:733330:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s0|g=male",
+          "DialogueText": "Mr. {Farmer_Name}, are you going to marry Miss Penny? {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/55_male.ogg",
+          "TranslationKey": "Events/Forest:181928:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Mr. , are you going to marry Miss Penny?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s1|g=female",
+          "DialogueText": "Ms. {Farmer_Name}... Um, do you have a boyfriend?",
+          "AudioPath": "assets/tr-TR/Vincent/56_female.ogg",
+          "TranslationKey": "Events/Forest:181928:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ms. ... Um, do you have a boyfriend?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseFarming:s0",
+          "DialogueText": "Um, Farmer {Farmer_Name}? If I eat your veggies will I grow up strong like my big brother Sam?",
+          "AudioPath": "assets/tr-TR/Vincent/57.ogg",
+          "TranslationKey": "Events/Forest:choseFarming:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Um, Farmer ? If I eat your veggies will I grow up strong like my big brother Sam?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseFarming:s1",
+          "DialogueText": "He's so strong, I saw him lift Miss Penny clear off the ground last night when they were climbing into a tree. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Vincent/58.ogg",
+          "TranslationKey": "Events/Forest:choseFarming:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "He's so strong, I saw him lift Miss Penny clear off the ground last night when they were climbing into a tree."
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseAnimals:s0",
+          "DialogueText": "Farmer {Farmer_Name}? Can I put a saddle on one of your cows and ride it into town? I wanna be a real cowboy!",
+          "AudioPath": "assets/tr-TR/Vincent/59.ogg",
+          "TranslationKey": "Events/Forest:choseAnimals:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Farmer ? Can I put a saddle on one of your cows and ride it into town? I wanna be a real cowboy!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseMinerals:s0",
+          "DialogueText": "Farmer {Farmer_Name}? Is it true that goblins live deep in the caves... and that they like to kidnap little girls for their dinner?",
+          "AudioPath": "assets/tr-TR/Vincent/60.ogg",
+          "TranslationKey": "Events/Forest:choseMinerals:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Farmer ? Is it true that goblins live deep in the caves... and that they like to kidnap little girls for their dinner?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s0",
+          "DialogueText": "... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/61.ogg",
+          "TranslationKey": "Events/Forest:318560:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s1",
+          "DialogueText": "Why is it locked? I wanna explore the sewers! {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/62.ogg",
+          "TranslationKey": "Events/Forest:318560:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Why is it locked? I wanna explore the sewers!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s2",
+          "DialogueText": "Professor Gunther? The man who runs the museum? Why do you think he has it? {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Vincent/63.ogg",
+          "TranslationKey": "Events/Forest:318560:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Professor Gunther? The man who runs the museum? Why do you think he has it?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s0|g=male",
+          "DialogueText": "Hiya, mister {Farmer_Name}!",
+          "AudioPath": "assets/tr-TR/Vincent/64_male.ogg",
+          "TranslationKey": "Events/Forest:3910979:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hiya, mister !",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s1|g=female",
+          "DialogueText": "Hiya, miss {Farmer_Name}!",
+          "AudioPath": "assets/tr-TR/Vincent/65_female.ogg",
+          "TranslationKey": "Events/Forest:3910979:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hiya, miss !",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s2",
+          "DialogueText": "Sp..spwing onion. Mom sends me out to pick these sometimes...",
+          "AudioPath": "assets/tr-TR/Vincent/66.ogg",
+          "TranslationKey": "Events/Forest:3910979:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Sp..spwing onion. Mom sends me out to pick these sometimes..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s3",
+          "DialogueText": "You're really nice for a grown-up... so I'm going to show you a secret. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Vincent/67.ogg",
+          "TranslationKey": "Events/Forest:3910979:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "You're really nice for a grown-up... so I'm going to show you a secret."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s4",
+          "DialogueText": "When you see it like this, it looks good, right?",
+          "AudioPath": "assets/tr-TR/Vincent/68.ogg",
+          "TranslationKey": "Events/Forest:3910979:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "When you see it like this, it looks good, right?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s5",
+          "DialogueText": "But if you peel it a little bit...",
+          "AudioPath": "assets/tr-TR/Vincent/69.ogg",
+          "TranslationKey": "Events/Forest:3910979:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "But if you peel it a little bit..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s6",
+          "DialogueText": "...It's full of bugs! {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/70.ogg",
+          "TranslationKey": "Events/Forest:3910979:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "...It's full of bugs!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s7",
+          "DialogueText": "Cool, huh? {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Vincent/71.ogg",
+          "TranslationKey": "Events/Forest:3910979:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Cool, huh?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s8",
+          "DialogueText": "Usually I just squash 'em!",
+          "AudioPath": "assets/tr-TR/Vincent/72.ogg",
+          "TranslationKey": "Events/Forest:3910979:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Usually I just squash 'em!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Vincent",
+          "DialogueText": "Möööö!",
+          "AudioPath": "assets/tr-TR/Vincent/73.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Möööö!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Vincent_y2",
+          "DialogueText": "Babacığım, sapan oyununu bir daha oynayabilir miyim? {Portrait:Neutral}",
+          "AudioPath": "assets/tr-TR/Vincent/74.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Babacığım, sapan oyununu bir daha oynayabilir miyim?"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Vincent",
+          "DialogueText": "Annem beni labirente sokmuyor. *hıçkırır* {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/75.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Annem beni labirente sokmuyor. *hıçkırır*"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Vincent_y2",
+          "DialogueText": "Labirenti geçtik mi? Ödülüm nerede? {Portrait:Neutral}",
+          "AudioPath": "assets/tr-TR/Vincent/76.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Labirenti geçtik mi? Ödülüm nerede?"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Vincent",
+          "DialogueText": "Yumurta avı ne zaman başlayacak?! Çok heyecanlıyım! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Vincent/77.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Yumurta avı ne zaman başlayacak?! Çok heyecanlıyım!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Vincent_y2",
+          "DialogueText": "Kocaman bir yumurtanın içinde yaşamak istiyorum!",
+          "AudioPath": "assets/tr-TR/Vincent/78.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Kocaman bir yumurtanın içinde yaşamak istiyorum!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Vincent",
+          "DialogueText": "Adil değil... Ben neden Çiçek Kraliçesi olamıyorum?",
+          "AudioPath": "assets/tr-TR/Vincent/79.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Adil değil... Ben neden Çiçek Kraliçesi olamıyorum?"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Vincent_y2",
+          "DialogueText": "Eğer bir çiçek kraliçesi varsa... Mutlaka bir çiçek kralı da olmalı! {Portrait:Neutral}",
+          "AudioPath": "assets/tr-TR/Vincent/80.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Eğer bir çiçek kraliçesi varsa... Mutlaka bir çiçek kralı da olmalı!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Vincent",
+          "DialogueText": "Sıkıldım...",
+          "AudioPath": "assets/tr-TR/Vincent/81.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Sıkıldım..."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Vincent_y2",
+          "DialogueText": "Neden havuzun orada oynayamıyorum ki? {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/82.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Neden havuzun orada oynayamıyorum ki?"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Vincent",
+          "DialogueText": "Nadir bulunan yeşil denizanasını görmek istiyorum!",
+          "AudioPath": "assets/tr-TR/Vincent/83.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Nadir bulunan yeşil denizanasını görmek istiyorum!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Vincent_y2",
+          "DialogueText": "Daha önce bir denizanasına dokunmuştum, elimi yakmıştı. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/84.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Daha önce bir denizanasına dokunmuştum, elimi yakmıştı."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Vincent",
+          "DialogueText": "Hediyeleri açabilir miyiz?!",
+          "AudioPath": "assets/tr-TR/Vincent/85.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Hediyeleri açabilir miyiz?!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Vincent_y2",
+          "DialogueText": "İstediğim oyuncak dinozoru aldım! Bak!? {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Vincent/86.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "İstediğim oyuncak dinozoru aldım! Bak!?"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Vincent_y2",
+          "DialogueText": "İsmi şey... Ste... Stego... Stegozor! ...Sanırım. {Portrait:Neutral}",
+          "AudioPath": "assets/tr-TR/Vincent/87.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Vincent_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "İsmi şey... Ste... Stego... Stegozor! ...Sanırım."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Vincent",
+          "DialogueText": "Şurada kocaman bir balık gördüm!",
+          "AudioPath": "assets/tr-TR/Vincent/88.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Şurada kocaman bir balık gördüm!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Vincent_y2",
+          "DialogueText": "Abim kardan adam yapmama yardım ediyor! {Portrait:Neutral}",
+          "AudioPath": "assets/tr-TR/Vincent/89.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Abim kardan adam yapmama yardım ediyor!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s0",
+          "DialogueText": "Vay be, çok teşekkürler! Dehşet bir şey bu!",
+          "AudioPath": "assets/tr-TR/Vincent/90.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Vay be, çok teşekkürler! Dehşet bir şey bu!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s1",
+          "DialogueText": "Bana mı? Vay canına, teşekkürler!",
+          "AudioPath": "assets/tr-TR/Vincent/91.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Bana mı? Vay canına, teşekkürler!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s2",
+          "DialogueText": "Bu çok da hoş değil hani... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/92.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Bu çok da hoş değil hani..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s3",
+          "DialogueText": "Öğk, bu ne? {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/93.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Öğk, bu ne?"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s4",
+          "DialogueText": "Teşekkürler!",
+          "AudioPath": "assets/tr-TR/Vincent/94.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Teşekkürler!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_love_BeforeMovie",
+          "DialogueText": "Çok heyecanlıyım! Annem şeker yiyebileceğimi söyledi! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Vincent/95.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Çok heyecanlıyım! Annem şeker yiyebileceğimi söyledi!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_love_DuringMovie",
+          "DialogueText": "Vincent harika zaman geçiriyor!",
+          "AudioPath": "assets/tr-TR/Vincent/96.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_love_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Vincent harika zaman geçiriyor!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_love_AfterMovie",
+          "DialogueText": "Çok eğlenceliydi! Tekrar izlemek istiyorum! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Vincent/97.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Çok eğlenceliydi! Tekrar izlemek istiyorum!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_dislike_BeforeMovie",
+          "DialogueText": "A... Ama... Bu film yetişkinler için değil mi? {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/98.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "A... Ama... Bu film yetişkinler için değil mi?"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_dislike_DuringMovie",
+          "DialogueText": "Vincent sıkıntıdan yerinde duramıyor.",
+          "AudioPath": "assets/tr-TR/Vincent/99.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_dislike_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Vincent sıkıntıdan yerinde duramıyor."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_dislike_AfterMovie",
+          "DialogueText": "Çok sıkıcıydı... Hiçbir şey anlamadım. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Vincent/100.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Çok sıkıcıydı... Hiçbir şey anlamadım."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Vincent",
+          "DialogueText": "Anne, sıkıldım!",
+          "AudioPath": "assets/tr-TR/Vincent/101.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Anne, sıkıldım!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Vincent",
+          "DialogueText": "Selam! Ben... Birkaç şey buldum. Almak ister misin?",
+          "AudioPath": "assets/tr-TR/Vincent/102.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Selam! Ben... Birkaç şey buldum. Almak ister misin?"
+        }
+      ]
+    }
+  ]
+}

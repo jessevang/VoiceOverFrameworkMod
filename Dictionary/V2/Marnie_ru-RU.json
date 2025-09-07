@@ -1,0 +1,1366 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Marnie.ru-RU",
+      "VoicePackName": "DictionarV2 (Marnie - ru-RU)",
+      "Character": "Marnie",
+      "Language": "ru-RU",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Ах, мэр Льюис говорил мне, что вы приезжаете. Я — Марни!",
+          "AudioPath": "assets/ru-RU/Marnie/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "Ах, мэр Льюис говорил мне, что вы приезжаете. Я — Марни!"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Я торгую животными и товарами по уходу за ними. Заходите как-нибудь. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "Я торгую животными и товарами по уходу за ними. Заходите как-нибудь."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Ой, большое спасибо, {Farmer_Name}. Я этого не забуду!",
+          "AudioPath": "assets/ru-RU/Marnie/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Ой, большое спасибо, . Я этого не забуду!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)SkillBook_0",
+          "DialogueText": "Спасибо, {Farmer_Name}. Всегда хотела себе копию Альманаха. Он весьма достоверный! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:AcceptGift_(O)SkillBook_0",
+          "PageIndex": 0,
+          "DisplayPattern": "Спасибо, . Всегда хотела себе копию Альманаха. Он весьма достоверный!"
+        },
+        {
+          "DialogueFrom": "gotPet",
+          "DialogueText": "С маленьким другом тебе на ферме будет повеселее.",
+          "AudioPath": "assets/ru-RU/Marnie/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:gotPet",
+          "PageIndex": 0,
+          "DisplayPattern": "С маленьким другом тебе на ферме будет повеселее."
+        },
+        {
+          "DialogueFrom": "gotPet_memory_oneday",
+          "DialogueText": "Уверена, %pet сначала не будет идти на контакт. Животные обычно со временем привыкают к новому месту обитания.",
+          "AudioPath": "assets/ru-RU/Marnie/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:gotPet_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "Уверена, сначала не будет идти на контакт. Животные обычно со временем привыкают к новому месту обитания."
+        },
+        {
+          "DialogueFrom": "gotPet_memory_oneweek",
+          "DialogueText": "Как там поживает %pet? У тебя такая хорошая ферма, столько места для животинки.",
+          "AudioPath": "assets/ru-RU/Marnie/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:gotPet_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "Как там поживает ? У тебя такая хорошая ферма, столько места для животинки."
+        },
+        {
+          "DialogueFrom": "gotPet_memory_oneyear",
+          "DialogueText": "Я только что вспомнила... %pet же у тебя уже год. Думаю, вы там уже друзья — не разлей вода!",
+          "AudioPath": "assets/ru-RU/Marnie/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:gotPet_memory_oneyear",
+          "PageIndex": 0,
+          "DisplayPattern": "Я только что вспомнила... же у тебя уже год. Думаю, вы там уже друзья — не разлей вода!"
+        },
+        {
+          "DialogueFrom": "structureBuilt_Stable",
+          "DialogueText": "О, у тебя теперь лошадь? Это так замечательно! Лошади — прекрасные создания. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:structureBuilt_Stable",
+          "PageIndex": 0,
+          "DisplayPattern": "О, у тебя теперь лошадь? Это так замечательно! Лошади — прекрасные создания."
+        },
+        {
+          "DialogueFrom": "dating_Shane_memory_oneweek",
+          "DialogueText": "В последнее время Шейн выглядит гораздо более приободренным и полным надежд.",
+          "AudioPath": "assets/ru-RU/Marnie/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:dating_Shane_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "В последнее время Шейн выглядит гораздо более приободренным и полным надежд."
+        },
+        {
+          "DialogueFrom": "dating_Shane_memory_oneweek",
+          "DialogueText": "Я так рада, что ты поселился неподалеку и что вы двое так поладили! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/11_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:dating_Shane_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "Я так рада, что ты поселился неподалеку и что вы двое так поладили!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "dating_Shane_memory_oneweek",
+          "DialogueText": "Я так рада, что ты поселилась неподалеку и что вы двое так поладили! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/12_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:dating_Shane_memory_oneweek",
+          "PageIndex": 2,
+          "DisplayPattern": "Я так рада, что ты поселилась неподалеку и что вы двое так поладили!",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "married_Shane",
+          "DialogueText": "Я рада, что Шейн переехал к тебе на ферму... Так мы сможем сохранить семейную традицию!",
+          "AudioPath": "assets/ru-RU/Marnie/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:married_Shane",
+          "PageIndex": 0,
+          "DisplayPattern": "Я рада, что Шейн переехал к тебе на ферму... Так мы сможем сохранить семейную традицию!"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Хе-хе... Пришла пора показать всем результат моих походов на аэробику. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Хе-хе... Пришла пора показать всем результат моих походов на аэробику."
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "Мне тепло.",
+          "AudioPath": "assets/ru-RU/Marnie/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "Мне тепло."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Хе-хе... Все в купальниках, это забавно.",
+          "AudioPath": "assets/ru-RU/Marnie/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "Хе-хе... Все в купальниках, это забавно."
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "Иу... стул мокрый.",
+          "AudioPath": "assets/ru-RU/Marnie/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "Иу... стул мокрый."
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "Фух... Как же тут жарко! {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "Фух... Как же тут жарко!"
+        },
+        {
+          "DialogueFrom": "reject_789",
+          "DialogueText": "Эй! {Portrait:Love}",
+          "AudioPath": "assets/ru-RU/Marnie/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:reject_789",
+          "PageIndex": 0,
+          "DisplayPattern": "Эй!"
+        },
+        {
+          "DialogueFrom": "reject_789",
+          "DialogueText": "...Эм... Чего? Хм... Нет, я не знаю, что это такое... {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Marnie/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:reject_789",
+          "PageIndex": 1,
+          "DisplayPattern": "...Эм... Чего? Хм... Нет, я не знаю, что это такое..."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Уважаемый {Farmer_Name}, я души не чаю в животных. Я уверена, что если вы будете хорошо с ними обращаться, то мы с вами скоро подружимся!",
+          "AudioPath": "assets/ru-RU/Marnie/21_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Уважаемый , я души не чаю в животных. Я уверена, что если вы будете хорошо с ними обращаться, то мы с вами скоро подружимся!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Уважаемая {Farmer_Name}, я души не чаю в животных. Если будете хорошо с ними обращаться, то мы с вами скоро подружимся!",
+          "AudioPath": "assets/ru-RU/Marnie/22_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "Уважаемая , я души не чаю в животных. Если будете хорошо с ними обращаться, то мы с вами скоро подружимся!",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Животные такие милые и невинные. Кто позаботится о них, если не я? {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "Животные такие милые и невинные. Кто позаботится о них, если не я?"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Я надеюсь, мои курочки не слишком огорчаются, когда я забираю у них яйца. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "Я надеюсь, мои курочки не слишком огорчаются, когда я забираю у них яйца."
+        },
+        {
+          "DialogueFrom": "Thu_2",
+          "DialogueText": "Ты живешь здесь уже так давно... Как дела на ферме?",
+          "AudioPath": "assets/ru-RU/Marnie/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Thu_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ты живешь здесь уже так давно... Как дела на ферме?"
+        },
+        {
+          "DialogueFrom": "Thu_2",
+          "DialogueText": "За животными ухаживать несложно, только не забывай о них! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Thu_2",
+          "PageIndex": 1,
+          "DisplayPattern": "За животными ухаживать несложно, только не забывай о них!"
+        },
+        {
+          "DialogueFrom": "Saloon",
+          "DialogueText": "Вот я и пришла, теперь можно отдохнуть и поболтать.",
+          "AudioPath": "assets/ru-RU/Marnie/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon",
+          "PageIndex": 0,
+          "DisplayPattern": "Вот я и пришла, теперь можно отдохнуть и поболтать."
+        },
+        {
+          "DialogueFrom": "Saloon_Tue",
+          "DialogueText": "Что-то немного здесь сегодня народу... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Что-то немного здесь сегодня народу..."
+        },
+        {
+          "DialogueFrom": "Saloon_Wed",
+          "DialogueText": "# {Portrait:Happy} marnieAnimalSal",
+          "AudioPath": "assets/ru-RU/Marnie/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "# marnieAnimalSal"
+        },
+        {
+          "DialogueFrom": "Saloon_Wed",
+          "DialogueText": "Я сегодня разлила целое ведро молока, это просто ужас. Бедная моя Белинда, столько труда насмарку.$k {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Я сегодня разлила целое ведро молока, это просто ужас. Бедная моя Белинда, столько труда насмарку."
+        },
+        {
+          "DialogueFrom": "Saloon_Wed",
+          "DialogueText": "Это хорошо, что ты здесь! С тобой будет веселее.",
+          "AudioPath": "assets/ru-RU/Marnie/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "Это хорошо, что ты здесь! С тобой будет веселее."
+        },
+        {
+          "DialogueFrom": "Saloon_Thu",
+          "DialogueText": "Уф! Как же хорошо расслабиться после тяжелого дня.",
+          "AudioPath": "assets/ru-RU/Marnie/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Уф! Как же хорошо расслабиться после тяжелого дня."
+        },
+        {
+          "DialogueFrom": "Saloon_Fri",
+          "DialogueText": "Похоже, Марни вас даже не замечает...",
+          "AudioPath": "assets/ru-RU/Marnie/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Похоже, Марни вас даже не замечает..."
+        },
+        {
+          "DialogueFrom": "Saloon_Sun",
+          "DialogueText": "Эх... Немного я сегодня сделала.",
+          "AudioPath": "assets/ru-RU/Marnie/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Эх... Немного я сегодня сделала."
+        },
+        {
+          "DialogueFrom": "Saloon_Sat",
+          "DialogueText": "Я постоянно вижу здесь Клинта, но он ни с кем не разговаривает. Только оглядывается через плечо иногда. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Я постоянно вижу здесь Клинта, но он ни с кем не разговаривает. Только оглядывается через плечо иногда."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Раз Шейн переехал, теперь мне придется учить Джас за курами смотреть.",
+          "AudioPath": "assets/ru-RU/Marnie/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Раз Шейн переехал, теперь мне придется учить Джас за курами смотреть."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Мой племянник Шейн уже пару месяцев живет у меня.",
+          "AudioPath": "assets/ru-RU/Marnie/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Мой племянник Шейн уже пару месяцев живет у меня."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Он помогает мне с курами, так что я не жалуюсь.",
+          "AudioPath": "assets/ru-RU/Marnie/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Tue",
+          "PageIndex": 2,
+          "DisplayPattern": "Он помогает мне с курами, так что я не жалуюсь."
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Ты не переживаешь насчет дождя? Мне от этого немного легче...",
+          "AudioPath": "assets/ru-RU/Marnie/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "Ты не переживаешь насчет дождя? Мне от этого немного легче..."
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Просто надеюсь, что коровы зашли в хлев... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:GreenRain",
+          "PageIndex": 1,
+          "DisplayPattern": "Просто надеюсь, что коровы зашли в хлев..."
+        },
+        {
+          "DialogueFrom": "GreenRainFinished",
+          "DialogueText": "Что ж, похоже, мы все перепугались просто так... Дождь оказался вообще не опасным!",
+          "AudioPath": "assets/ru-RU/Marnie/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:GreenRainFinished",
+          "PageIndex": 0,
+          "DisplayPattern": "Что ж, похоже, мы все перепугались просто так... Дождь оказался вообще не опасным!"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Похоже, животным нравится этот дождь... Думаю, от него трава стала более питательной.",
+          "AudioPath": "assets/ru-RU/Marnie/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Похоже, животным нравится этот дождь... Думаю, от него трава стала более питательной."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Косой можно накосить сена на корм животным.",
+          "AudioPath": "assets/ru-RU/Marnie/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Косой можно накосить сена на корм животным."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Ну, или можешь купить сено у меня, конечно! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Ну, или можешь купить сено у меня, конечно!"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Деньги мне пригодятся... {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Marnie/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "Деньги мне пригодятся..."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Адиос.",
+          "AudioPath": "assets/ru-RU/Marnie/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Wed",
+          "PageIndex": 3,
+          "DisplayPattern": "Адиос."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Привет. Что-то нужно?",
+          "AudioPath": "assets/ru-RU/Marnie/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет. Что-то нужно?"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Может, в будущем я заведу новых животных.",
+          "AudioPath": "assets/ru-RU/Marnie/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Может, в будущем я заведу новых животных."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Правда, сначала нужно будет убедиться, что на них есть спрос, так что придется тебе показать, какой из тебя животновод.",
+          "AudioPath": "assets/ru-RU/Marnie/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "Правда, сначала нужно будет убедиться, что на них есть спрос, так что придется тебе показать, какой из тебя животновод."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Просто уважай животинку и будь с ней добрее, и все будет хорошо.",
+          "AudioPath": "assets/ru-RU/Marnie/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Thu",
+          "PageIndex": 3,
+          "DisplayPattern": "Просто уважай животинку и будь с ней добрее, и все будет хорошо."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "По вечерам я часто бываю в салуне.",
+          "AudioPath": "assets/ru-RU/Marnie/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "По вечерам я часто бываю в салуне."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Животные — хорошая компания, но иногда мне нужно побыть и среди людей.",
+          "AudioPath": "assets/ru-RU/Marnie/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "Животные — хорошая компания, но иногда мне нужно побыть и среди людей."
+        },
+        {
+          "DialogueFrom": "Fri6",
+          "DialogueText": "Интересно, бывает ли мистеру Льюису одиноко в его огромном доме... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "Интересно, бывает ли мистеру Льюису одиноко в его огромном доме..."
+        },
+        {
+          "DialogueFrom": "Fri6",
+          "DialogueText": "Там так пусто, правда?",
+          "AudioPath": "assets/ru-RU/Marnie/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "Там так пусто, правда?"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Тебе еще не доводилось заходить в странную башню к западу от моего дома?",
+          "AudioPath": "assets/ru-RU/Marnie/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Тебе еще не доводилось заходить в странную башню к западу от моего дома?"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Как-то я слышала оттуда какие-то жуткие, потусторонние звуки. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Как-то я слышала оттуда какие-то жуткие, потусторонние звуки."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "На твоем месте я бы избегала этой башни...",
+          "AudioPath": "assets/ru-RU/Marnie/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "На твоем месте я бы избегала этой башни..."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Приветик, рада тебя видеть!",
+          "AudioPath": "assets/ru-RU/Marnie/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Приветик, рада тебя видеть!"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Заходи к нам, если захочешь.",
+          "AudioPath": "assets/ru-RU/Marnie/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Заходи к нам, если захочешь."
+        },
+        {
+          "DialogueFrom": "Sun8",
+          "DialogueText": "Привет, {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sun8",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет, !"
+        },
+        {
+          "DialogueFrom": "Sun8",
+          "DialogueText": "Я рада, что мы теперь друзья. Уж тебе-то я могу доверить моих дорогих животных.",
+          "AudioPath": "assets/ru-RU/Marnie/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sun8",
+          "PageIndex": 1,
+          "DisplayPattern": "Я рада, что мы теперь друзья. Уж тебе-то я могу доверить моих дорогих животных."
+        },
+        {
+          "DialogueFrom": "Fair_Judging",
+          "DialogueText": "Итак...",
+          "AudioPath": "assets/ru-RU/Marnie/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fair_Judging",
+          "PageIndex": 0,
+          "DisplayPattern": "Итак..."
+        },
+        {
+          "DialogueFrom": "Fair_Judged",
+          "DialogueText": "Ну да, я не победила... Но было приятно показать всем плоды моих трудов!",
+          "AudioPath": "assets/ru-RU/Marnie/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fair_Judged",
+          "PageIndex": 0,
+          "DisplayPattern": "Ну да, я не победила... Но было приятно показать всем плоды моих трудов!"
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerLost_PurpleShorts",
+          "DialogueText": "Какой чудной у тебя был фиолетовый латук в лотке! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fair_Judged_PlayerLost_PurpleShorts",
+          "PageIndex": 0,
+          "DisplayPattern": "Какой чудной у тебя был фиолетовый латук в лотке!"
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerLost_PurpleShorts",
+          "DialogueText": "Ей-богу, чуть не перепутала — мэр наш, Льюис, по особым случаям надевает похожие подштан- {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Marnie/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fair_Judged_PlayerLost_PurpleShorts",
+          "PageIndex": 1,
+          "DisplayPattern": "Ей-богу, чуть не перепутала — мэр наш, Льюис, по особым случаям надевает похожие подштан-"
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerLost_PurpleShorts",
+          "DialogueText": "Ой!.. Хе-хе... Ладно, забудь! {Portrait:Love}",
+          "AudioPath": "assets/ru-RU/Marnie/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fair_Judged_PlayerLost_PurpleShorts",
+          "PageIndex": 2,
+          "DisplayPattern": "Ой!.. Хе-хе... Ладно, забудь!"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "Привет, {Farmer_Name}. Бедняжечка, вымокнуть вот так, до нитки! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/67.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет, . Бедняжечка, вымокнуть вот так, до нитки!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s0",
+          "DialogueText": "Hello {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/68.ogg",
+          "TranslationKey": "Events/Farm:1590166:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hello !"
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s1",
+          "DialogueText": "You see this cat here?",
+          "AudioPath": "assets/ru-RU/Marnie/69.ogg",
+          "TranslationKey": "Events/Farm:1590166:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "You see this cat here?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s2",
+          "DialogueText": "I found it sitting outside the entrance to your farm! I think it's a stray... poor little thing. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/70.ogg",
+          "TranslationKey": "Events/Farm:1590166:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I found it sitting outside the entrance to your farm! I think it's a stray... poor little thing."
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s3",
+          "DialogueText": "I think it likes this place! Hey, um.... Don't you think this farm could use a good cat? {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/71.ogg",
+          "TranslationKey": "Events/Farm:1590166:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I think it likes this place! Hey, um.... Don't you think this farm could use a good cat?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s4",
+          "DialogueText": "Well, little %pet... You be a good kitty now... okay?",
+          "AudioPath": "assets/ru-RU/Marnie/72.ogg",
+          "TranslationKey": "Events/Farm:1590166:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, little ... You be a good kitty now... okay?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/897405:s0",
+          "DialogueText": "Hello {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/73.ogg",
+          "TranslationKey": "Events/Farm:897405:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hello !"
+        },
+        {
+          "DialogueFrom": "Event:Farm/897405:s1",
+          "DialogueText": "You see this dog here?",
+          "AudioPath": "assets/ru-RU/Marnie/74.ogg",
+          "TranslationKey": "Events/Farm:897405:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "You see this dog here?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/897405:s2",
+          "DialogueText": "I found it sitting outside the entrance to your farm! I think it's a stray... poor thing. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/75.ogg",
+          "TranslationKey": "Events/Farm:897405:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I found it sitting outside the entrance to your farm! I think it's a stray... poor thing."
+        },
+        {
+          "DialogueFrom": "Event:Farm/897405:s3",
+          "DialogueText": "Hey, it seems to like this place! Hey, um.... Don't you think this farm could use a good dog? {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/76.ogg",
+          "TranslationKey": "Events/Farm:897405:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, it seems to like this place! Hey, um.... Don't you think this farm could use a good dog?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/897405:s4",
+          "DialogueText": "Well, %pet... You be a good pooch now... okay?",
+          "AudioPath": "assets/ru-RU/Marnie/77.ogg",
+          "TranslationKey": "Events/Farm:897405:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, ... You be a good pooch now... okay?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s0|g=male",
+          "DialogueText": "Good morning, Mr. {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/78_male.ogg",
+          "TranslationKey": "Events/Farm:91:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Good morning, Mr. !",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s1|g=female",
+          "DialogueText": "Good morning, Ms. {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/79_female.ogg",
+          "TranslationKey": "Events/Farm:91:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Good morning, Ms. !",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s2",
+          "DialogueText": "I came by to ask you a favor, since you're such a kind neighbor.",
+          "AudioPath": "assets/ru-RU/Marnie/80.ogg",
+          "TranslationKey": "Events/Farm:91:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I came by to ask you a favor, since you're such a kind neighbor."
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s3",
+          "DialogueText": "You see, I'm trying to train my goats to say 'hello'... but they simply won't pay attention to me unless I have their favorite treat, cave carrots! {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Marnie/81.ogg",
+          "TranslationKey": "Events/Farm:91:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "You see, I'm trying to train my goats to say 'hello'... but they simply won't pay attention to me unless I have their favorite treat, cave carrots!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s4",
+          "DialogueText": "So... since I'm scared of the mines... I thought, well, maybe you would bring me a cave carrot when you have the chance?",
+          "AudioPath": "assets/ru-RU/Marnie/82.ogg",
+          "TranslationKey": "Events/Farm:91:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "So... since I'm scared of the mines... I thought, well, maybe you would bring me a cave carrot when you have the chance?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s5",
+          "DialogueText": "There's no pressure... but if you want to, just swing by my house between 9:00 AM and 5:00 PM with a cave carrot. You'll make an old girl very happy. Bye.",
+          "AudioPath": "assets/ru-RU/Marnie/83.ogg",
+          "TranslationKey": "Events/Farm:91:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "There's no pressure... but if you want to, just swing by my house between 9:00 AM and 5:00 PM with a cave carrot. You'll make an old girl very happy. Bye."
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s6",
+          "DialogueText": "My goats go wild over cave carrot... I can't imagine why.",
+          "AudioPath": "assets/ru-RU/Marnie/84.ogg",
+          "TranslationKey": "Events/Farm:91:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "My goats go wild over cave carrot... I can't imagine why."
+        },
+        {
+          "DialogueFrom": "Event:Town/639373:s0",
+          "DialogueText": "You care too much about your job, Lewis. There are other things to life, you know. {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Marnie/85.ogg",
+          "TranslationKey": "Events/Town:639373:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "You care too much about your job, Lewis. There are other things to life, you know."
+        },
+        {
+          "DialogueFrom": "Event:Town/639373:s1",
+          "DialogueText": "...but yes, I understand. I guess we'll have to keep...us...a secret. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/86.ogg",
+          "TranslationKey": "Events/Town:639373:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "...but yes, I understand. I guess we'll have to keep...us...a secret."
+        },
+        {
+          "DialogueFrom": "Event:Town/639373:s2",
+          "DialogueText": "Gahh! {Portrait:Love}",
+          "AudioPath": "assets/ru-RU/Marnie/87.ogg",
+          "TranslationKey": "Events/Town:639373:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Gahh!"
+        },
+        {
+          "DialogueFrom": "Event:Town/639373:s3",
+          "DialogueText": "Why were you hiding there, anyway? {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Marnie/88.ogg",
+          "TranslationKey": "Events/Town:639373:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Why were you hiding there, anyway?"
+        },
+        {
+          "DialogueFrom": "Event:Town/3917584:s0",
+          "DialogueText": "Oh no... this doesn't look good. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/89.ogg",
+          "TranslationKey": "Events/Town:3917584:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh no... this doesn't look good."
+        },
+        {
+          "DialogueFrom": "Event:Town/3917584:s1",
+          "DialogueText": "{Farmer_Name}? You'd better keep your eye on him... next time you catch him coming out of the Saloon, you should say something... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/90.ogg",
+          "TranslationKey": "Events/Town:3917584:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "? You'd better keep your eye on him... next time you catch him coming out of the Saloon, you should say something..."
+        },
+        {
+          "DialogueFrom": "Event:Town/3917584:s2",
+          "DialogueText": "Is everything alright, {Farmer_Name}? You seem worried...",
+          "AudioPath": "assets/ru-RU/Marnie/91.ogg",
+          "TranslationKey": "Events/Town:3917584:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Is everything alright, ? You seem worried..."
+        },
+        {
+          "DialogueFrom": "Event:Town/3917586:s0",
+          "DialogueText": "Alright... we've caught him in the act. Now let's confront him. Take a deep breath... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/92.ogg",
+          "TranslationKey": "Events/Town:3917586:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Alright... we've caught him in the act. Now let's confront him. Take a deep breath..."
+        },
+        {
+          "DialogueFrom": "Event:Town/3917586:s1",
+          "DialogueText": "Shane... this is what you've been doing in here? {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/93.ogg",
+          "TranslationKey": "Events/Town:3917586:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Shane... this is what you've been doing in here?"
+        },
+        {
+          "DialogueFrom": "Event:Town/3917586:s2",
+          "DialogueText": "But... these cans... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/94.ogg",
+          "TranslationKey": "Events/Town:3917586:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "But... these cans..."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s0",
+          "DialogueText": "Um... Haley? When do we stop? M... My legs... *pant* *pant* {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/95.ogg",
+          "TranslationKey": "Events/Town:6184644:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... Haley? When do we stop? M... My legs... *pant* *pant*"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s1",
+          "DialogueText": "Yep",
+          "AudioPath": "assets/ru-RU/Marnie/96.ogg",
+          "TranslationKey": "Events/Town:6184644:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Yep"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/150938:s0",
+          "DialogueText": "I do!",
+          "AudioPath": "assets/ru-RU/Marnie/97.ogg",
+          "TranslationKey": "Events/HaleyHouse:150938:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I do!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s0",
+          "DialogueText": "Mmmm... %farm eggs.",
+          "AudioPath": "assets/ru-RU/Marnie/98.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Mmmm... eggs."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s0",
+          "DialogueText": "Um... Leah? How much longer will this be? {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/99.ogg",
+          "TranslationKey": "Events/Forest:3091462:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... Leah? How much longer will this be?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s1",
+          "DialogueText": "...My knees are quivering, my thighs are whimpering, and I've lost all sensation in my foot. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/100.ogg",
+          "TranslationKey": "Events/Forest:3091462:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "...My knees are quivering, my thighs are whimpering, and I've lost all sensation in my foot."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s2",
+          "DialogueText": "Make me look good!",
+          "AudioPath": "assets/ru-RU/Marnie/101.ogg",
+          "TranslationKey": "Events/Forest:3091462:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Make me look good!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s3",
+          "DialogueText": "Oooh!",
+          "AudioPath": "assets/ru-RU/Marnie/102.ogg",
+          "TranslationKey": "Events/Forest:3091462:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Oooh!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s4",
+          "DialogueText": "I love it! That's going up in my room... {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/103.ogg",
+          "TranslationKey": "Events/Forest:3091462:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I love it! That's going up in my room..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s5",
+          "DialogueText": "Let me see",
+          "AudioPath": "assets/ru-RU/Marnie/104.ogg",
+          "TranslationKey": "Events/Forest:3091462:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Let me see"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s6",
+          "DialogueText": "Em... {Farmer_Name}, why don't you go ahead and keep yours? It might be nice to, uh... own your first-ever painting... ya know? {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/105.ogg",
+          "TranslationKey": "Events/Forest:3091462:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Em... , why don't you go ahead and keep yours? It might be nice to, uh... own your first-ever painting... ya know?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s7",
+          "DialogueText": "Um... Honey? Where were you planning to hang that painting you did? {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Marnie/106.ogg",
+          "TranslationKey": "Events/Forest:3091462:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... Honey? Where were you planning to hang that painting you did?"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s0|g=male",
+          "DialogueText": "Oh! You brought the cave carrot! Thank you so much, Mr. {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/107_male.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! You brought the cave carrot! Thank you so much, Mr. .",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s1|g=female",
+          "DialogueText": "Oh! You brought the cave carrot! Thank you so much, Ms. {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/108_female.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! You brought the cave carrot! Thank you so much, Ms. .",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s2",
+          "DialogueText": "This looks great... I almost want to eat it myself! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/109.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "This looks great... I almost want to eat it myself!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s3",
+          "DialogueText": "...almost.",
+          "AudioPath": "assets/ru-RU/Marnie/110.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "...almost."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s4",
+          "DialogueText": "I hope it wasn't too much trouble... I really do appreciate it.",
+          "AudioPath": "assets/ru-RU/Marnie/111.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I hope it wasn't too much trouble... I really do appreciate it."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s5",
+          "DialogueText": "Thanks again for helping me out. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/112.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks again for helping me out."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s6",
+          "DialogueText": "...and my goats say 'thanks' too.",
+          "AudioPath": "assets/ru-RU/Marnie/113.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "...and my goats say 'thanks' too."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s0",
+          "DialogueText": "Shane?",
+          "AudioPath": "assets/ru-RU/Marnie/114.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Shane?"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s1",
+          "DialogueText": "Oh dear...",
+          "AudioPath": "assets/ru-RU/Marnie/115.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh dear..."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s2",
+          "DialogueText": "{Farmer_Name}... Can you do something? He's out cold. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/116.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "... Can you do something? He's out cold."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s3",
+          "DialogueText": "Shane! What's the matter with you? All you do anymore is mope around your room and drink beer! {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/117.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Shane! What's the matter with you? All you do anymore is mope around your room and drink beer!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s4",
+          "DialogueText": "I'm worried...",
+          "AudioPath": "assets/ru-RU/Marnie/118.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm worried..."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s5",
+          "DialogueText": "What's your plan? Don't you ever think about the future?",
+          "AudioPath": "assets/ru-RU/Marnie/119.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "What's your plan? Don't you ever think about the future?"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s0",
+          "DialogueText": "Hi Shane... you look unusually happy today.",
+          "AudioPath": "assets/ru-RU/Marnie/120.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi Shane... you look unusually happy today."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s1",
+          "DialogueText": "Let me guess... Gus had a clearance sale on canned beer? {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Marnie/121.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Let me guess... Gus had a clearance sale on canned beer?"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s2",
+          "DialogueText": "He looks sharp!",
+          "AudioPath": "assets/ru-RU/Marnie/122.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "He looks sharp!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Marnie",
+          "DialogueText": "Я старалась изо всех сил, но лоток Пьера все равно гораздо лучше. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/123.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Я старалась изо всех сил, но лоток Пьера все равно гораздо лучше."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Marnie",
+          "DialogueText": "Ну ничего, вдруг мне хотя бы за мой огромный круг сыра очков накинут!",
+          "AudioPath": "assets/ru-RU/Marnie/124.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Marnie",
+          "PageIndex": 1,
+          "DisplayPattern": "Ну ничего, вдруг мне хотя бы за мой огромный круг сыра очков накинут!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Marnie_y2",
+          "DialogueText": "У моих животных в этом году все хорошо! Надеюсь, что моя качественная продукция впечатлит судей. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/125.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "У моих животных в этом году все хорошо! Надеюсь, что моя качественная продукция впечатлит судей."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Marnie_y2",
+          "DialogueText": "Как там твой лоток, {Farmer_Name}? Самое время показать всем плоды твоих трудов за прошедший год. {Portrait:Neutral}",
+          "AudioPath": "assets/ru-RU/Marnie/126.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Marnie_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Как там твой лоток, ? Самое время показать всем плоды твоих трудов за прошедший год."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Marnie",
+          "DialogueText": "Привет, {Farmer_Name}. Продуктивная ли выдалась осень?",
+          "AudioPath": "assets/ru-RU/Marnie/127.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет, . Продуктивная ли выдалась осень?"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Marnie",
+          "DialogueText": "Сейчас холодает... Долго растения не продержатся.",
+          "AudioPath": "assets/ru-RU/Marnie/128.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Marnie",
+          "PageIndex": 1,
+          "DisplayPattern": "Сейчас холодает... Долго растения не продержатся."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Marnie_y2",
+          "DialogueText": "Надеюсь, что с Джас все хорошо. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/129.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Надеюсь, что с Джас все хорошо."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Marnie_y2",
+          "DialogueText": "Как на ферме в этом году дела, {Farmer_Name}?",
+          "AudioPath": "assets/ru-RU/Marnie/130.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Marnie_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Как на ферме в этом году дела, ?"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Marnie",
+          "DialogueText": "Добро пожаловать на Яичный фестиваль... Все благодаря нашим замечательным курочкам.",
+          "AudioPath": "assets/ru-RU/Marnie/131.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Добро пожаловать на Яичный фестиваль... Все благодаря нашим замечательным курочкам."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Marnie_y2",
+          "DialogueText": "Курицы несут яйца, но петухи тоже играют важную роль... они защищают куриц и не дают им драться друг с другом!",
+          "AudioPath": "assets/ru-RU/Marnie/132.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Курицы несут яйца, но петухи тоже играют важную роль... они защищают куриц и не дают им драться друг с другом!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Marnie_y2",
+          "DialogueText": "Чем счастливее курицы, тем вкуснее яйца... {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/133.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Marnie_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Чем счастливее курицы, тем вкуснее яйца..."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Marnie",
+          "DialogueText": "Эх... Вокруг любовь... А я до сих пор не замужем. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/134.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Эх... Вокруг любовь... А я до сих пор не замужем."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Marnie_y2",
+          "DialogueText": "Этот луг прекрасно подходит для выпаса скота, не находишь? {Portrait:Neutral}",
+          "AudioPath": "assets/ru-RU/Marnie/135.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Этот луг прекрасно подходит для выпаса скота, не находишь?"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Marnie_y2",
+          "DialogueText": "Тс-с... Мне кажется, Льюис попытается пригласить меня на танец! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/136.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Marnie_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Тс-с... Мне кажется, Льюис попытается пригласить меня на танец!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Marnie",
+          "DialogueText": "Если у тебя с собой что-то для супа, положи в котел. С другой стороны есть ступеньки.",
+          "AudioPath": "assets/ru-RU/Marnie/137.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Если у тебя с собой что-то для супа, положи в котел. С другой стороны есть ступеньки."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Marnie_y2",
+          "DialogueText": "Привет, {Farmer_Name}! А что у тебя за ингредиент для супа? Просто поднимись по лестнице и положи его в общую кучу! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/138.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет, ! А что у тебя за ингредиент для супа? Просто поднимись по лестнице и положи его в общую кучу!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Marnie",
+          "DialogueText": "Столько народу на таких древних мостках! Лучше я поближе к пляжу постою.",
+          "AudioPath": "assets/ru-RU/Marnie/139.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Столько народу на таких древних мостках! Лучше я поближе к пляжу постою."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Marnie_y2",
+          "DialogueText": "Дальше я не пойду. Доски так скрипят, что у меня внутри все сжимается. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/140.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Дальше я не пойду. Доски так скрипят, что у меня внутри все сжимается."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Marnie_y2",
+          "DialogueText": "В детстве я упала в воду из-за такой доски, теперь у меня травма... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/141.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Marnie_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "В детстве я упала в воду из-за такой доски, теперь у меня травма..."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Marnie",
+          "DialogueText": "Добро пожаловать на Пир Зимней звезды! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/142.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Добро пожаловать на Пир Зимней звезды!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Marnie_y2",
+          "DialogueText": "Счастливого Пира, {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/143.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Счастливого Пира, !"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Marnie",
+          "DialogueText": "Мне так жалко бедных зверушек, им же холодно. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Marnie/144.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Мне так жалко бедных зверушек, им же холодно."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Marnie_y2",
+          "DialogueText": "О-о-о... Эта укутанная свинка — такая милаха! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/145.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "О-о-о... Эта укутанная свинка — такая милаха!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Marnie:s0",
+          "DialogueText": "Это невероятный подарок! Спасибо!!",
+          "AudioPath": "assets/ru-RU/Marnie/146.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Marnie:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Это невероятный подарок! Спасибо!!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Marnie:s1",
+          "DialogueText": "Спасибо!",
+          "AudioPath": "assets/ru-RU/Marnie/147.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Marnie:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Спасибо!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Marnie:s2",
+          "DialogueText": "Ой. Ладно уж, возьму.",
+          "AudioPath": "assets/ru-RU/Marnie/148.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Marnie:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ой. Ладно уж, возьму."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Marnie:s3",
+          "DialogueText": "Оно же бесполезное. Не понимаю я тебя.",
+          "AudioPath": "assets/ru-RU/Marnie/149.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Marnie:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Оно же бесполезное. Не понимаю я тебя."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Marnie:s4",
+          "DialogueText": "Спасибо! Выглядит здорово.",
+          "AudioPath": "assets/ru-RU/Marnie/150.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Marnie:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Спасибо! Выглядит здорово."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Marnie_love_BeforeMovie",
+          "DialogueText": "Уверена, мне понравится этот фильм. Было очень любезно с твоей стороны пригласить меня, {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/151.ogg",
+          "TranslationKey": "Strings/MovieReactions:Marnie_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Уверена, мне понравится этот фильм. Было очень любезно с твоей стороны пригласить меня, ."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Marnie_love_AfterMovie",
+          "DialogueText": "Ах, я так рада, что в конце с семьей все было хорошо. И с коровками тоже! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/152.ogg",
+          "TranslationKey": "Strings/MovieReactions:Marnie_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ах, я так рада, что в конце с семьей все было хорошо. И с коровками тоже!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Marnie_like_BeforeMovie",
+          "DialogueText": "Когда дело касается кино, меня долго упрашивать не нужно... Я вообще все смотрю!",
+          "AudioPath": "assets/ru-RU/Marnie/153.ogg",
+          "TranslationKey": "Strings/MovieReactions:Marnie_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Когда дело касается кино, меня долго упрашивать не нужно... Я вообще все смотрю!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Marnie_like_AfterMovie",
+          "DialogueText": "Мне было очень весело, {Farmer_Name}! Спасибо за приглашение.",
+          "AudioPath": "assets/ru-RU/Marnie/154.ogg",
+          "TranslationKey": "Strings/MovieReactions:Marnie_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Мне было очень весело, ! Спасибо за приглашение."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Marnie",
+          "DialogueText": "Эй, {Farmer_Name}. Я как раз размышляла про молоко.",
+          "AudioPath": "assets/ru-RU/Marnie/155.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Эй, . Я как раз размышляла про молоко."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Marnie",
+          "DialogueText": "Всегда хотела попробовать верблюжье, а ты? Я слыхала, оно солененькое.",
+          "AudioPath": "assets/ru-RU/Marnie/156.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Marnie",
+          "PageIndex": 1,
+          "DisplayPattern": "Всегда хотела попробовать верблюжье, а ты? Я слыхала, оно солененькое."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Marnie",
+          "DialogueText": "Нашла дома старый рулон обоев. Он твой всего за 20 яиц!",
+          "AudioPath": "assets/ru-RU/Marnie/157.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Нашла дома старый рулон обоев. Он твой всего за 20 яиц!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Marnie_Counter",
+          "DialogueText": "«Я отошла, но ты все еще можешь купить что-нибудь, выбрав это в каталоге!» -Марни",
+          "AudioPath": "assets/ru-RU/Marnie/158.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Marnie_Counter",
+          "PageIndex": 0,
+          "DisplayPattern": "«Я отошла, но ты все еще можешь купить что-нибудь, выбрав это в каталоге!» -Марни"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Marnie_Pet_Adoption",
+          "DialogueText": "Эти милашки будут рады новому дому...",
+          "AudioPath": "assets/ru-RU/Marnie/159.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Marnie_Pet_Adoption",
+          "PageIndex": 0,
+          "DisplayPattern": "Эти милашки будут рады новому дому..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:AdoptedPet_Marnie",
+          "DialogueText": "Отлично! Я отправлю кроху по имени «{0}» тебе домой. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Marnie/160.ogg",
+          "TranslationKey": "Strings/1_6_Strings:AdoptedPet_Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Отлично! Я отправлю кроху по имени «{0}» тебе домой."
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_Greeting1",
+          "DialogueText": "Здравствуй!",
+          "AudioPath": "assets/ru-RU/Marnie/161.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_Greeting1",
+          "PageIndex": 0,
+          "DisplayPattern": "Здравствуй!"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_Greeting2",
+          "DialogueText": "Здорово!",
+          "AudioPath": "assets/ru-RU/Marnie/162.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_Greeting2",
+          "PageIndex": 0,
+          "DisplayPattern": "Здорово!"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_CloseFriends",
+          "DialogueText": "Привет, {Farmer_Name}",
+          "AudioPath": "assets/ru-RU/Marnie/163.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_CloseFriends",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет, {0}"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_NotCloseFriends",
+          "DialogueText": "Нужно что-то для животных?",
+          "AudioPath": "assets/ru-RU/Marnie/164.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_NotCloseFriends",
+          "PageIndex": 0,
+          "DisplayPattern": "Нужно что-то для животных?"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_Raining",
+          "DialogueText": "Вытирай ноги!",
+          "AudioPath": "assets/ru-RU/Marnie/165.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_Raining",
+          "PageIndex": 0,
+          "DisplayPattern": "Вытирай ноги!"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_NotRaining",
+          "DialogueText": "Привет! Как погодка?",
+          "AudioPath": "assets/ru-RU/Marnie/166.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_NotRaining",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет! Как погодка?"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_Greeting3",
+          "DialogueText": "Привет! Как дела на ферме {Farm_Name}?",
+          "AudioPath": "assets/ru-RU/Marnie/167.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_Greeting3",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет! Как дела на ферме {1}?"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_RareGreeting",
+          "DialogueText": "Лью-? А, это ты...",
+          "AudioPath": "assets/ru-RU/Marnie/168.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_RareGreeting",
+          "PageIndex": 0,
+          "DisplayPattern": "Лью-? А, это ты..."
+        }
+      ]
+    }
+  ]
+}

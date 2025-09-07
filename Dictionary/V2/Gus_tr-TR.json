@@ -1,0 +1,1424 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Gus.tr-TR",
+      "VoicePackName": "DictionarV2 (Gus - tr-TR)",
+      "Character": "Gus",
+      "Language": "tr-TR",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Merhabalar efenim! Ben Gus, Yıldızkaydı Salonu'nun sahibi ve şefiyim.",
+          "AudioPath": "assets/tr-TR/Gus/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "Merhabalar efenim! Ben Gus, Yıldızkaydı Salonu'nun sahibi ve şefiyim."
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "İçecek isterseniz uğrayın. Hazırda her zaman sıcak kahve ve soğuk bira bulundururum. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "İçecek isterseniz uğrayın. Hazırda her zaman sıcak kahve ve soğuk bira bulundururum."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Vay, sağ ol! Hepsini içerdim ama birazını da mekâna ayırmam gerek. Bununla sıra dışı bir kokteyl yapabileceğime eminim!",
+          "AudioPath": "assets/tr-TR/Gus/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Vay, sağ ol! Hepsini içerdim ama birazını da mekâna ayırmam gerek. Bununla sıra dışı bir kokteyl yapabileceğime eminim!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Positive_category_cooking",
+          "DialogueText": "*koklar*... Ah. Mükemmel bir yemek. Neyi seveceğimi gerçekten biliyorsun {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:AcceptGift_Positive_category_cooking",
+          "PageIndex": 0,
+          "DisplayPattern": "*koklar*... Ah. Mükemmel bir yemek. Neyi seveceğimi gerçekten biliyorsun ."
+        },
+        {
+          "DialogueFrom": "accept_865",
+          "DialogueText": "*koklar* *koklar* Bu keskin koku!",
+          "AudioPath": "assets/tr-TR/Gus/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:accept_865",
+          "PageIndex": 0,
+          "DisplayPattern": "*koklar* *koklar* Bu keskin koku!"
+        },
+        {
+          "DialogueFrom": "accept_865",
+          "DialogueText": "*höpürdetir* *höpürdetir* Leziz! Şu pütürlü dokusuna bakar mısın?",
+          "AudioPath": "assets/tr-TR/Gus/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:accept_865",
+          "PageIndex": 1,
+          "DisplayPattern": "*höpürdetir* *höpürdetir* Leziz! Şu pütürlü dokusuna bakar mısın?"
+        },
+        {
+          "DialogueFrom": "accept_865",
+          "DialogueText": "Bu olsa olsa domates tuzudur! Takas yapmayı kabul ediyorum.",
+          "AudioPath": "assets/tr-TR/Gus/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:accept_865",
+          "PageIndex": 2,
+          "DisplayPattern": "Bu olsa olsa domates tuzudur! Takas yapmayı kabul ediyorum."
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Dün akşam hava durumunu izledim. Cidden korktum! {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Gus/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "Dün akşam hava durumunu izledim. Cidden korktum!"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Dışarıda canavarlar mı var? Neler oluyor?",
+          "AudioPath": "assets/tr-TR/Gus/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:GreenRain",
+          "PageIndex": 1,
+          "DisplayPattern": "Dışarıda canavarlar mı var? Neler oluyor?"
+        },
+        {
+          "DialogueFrom": "GreenRainFinished",
+          "DialogueText": "Yağışın sona ermesinden mutluyum. Salonu işletmek yeterince stresli, hayatımda bir de egzotik bir hava durumuna gerek yok!",
+          "AudioPath": "assets/tr-TR/Gus/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:GreenRainFinished",
+          "PageIndex": 0,
+          "DisplayPattern": "Yağışın sona ermesinden mutluyum. Salonu işletmek yeterince stresli, hayatımda bir de egzotik bir hava durumuna gerek yok!"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "*koklar*... Şu yağmurun ilginç bir kokusu var. Fark ettin mi? Sanki taze kesilmiş ot kokuyor...",
+          "AudioPath": "assets/tr-TR/Gus/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "*koklar*... Şu yağmurun ilginç bir kokusu var. Fark ettin mi? Sanki taze kesilmiş ot kokuyor..."
+        },
+        {
+          "DialogueFrom": "cropMatured_256",
+          "DialogueText": "Lewis, ektiğin domateslerin olgunlaştığını söyledi. Harika!",
+          "AudioPath": "assets/tr-TR/Gus/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:cropMatured_256",
+          "PageIndex": 0,
+          "DisplayPattern": "Lewis, ektiğin domateslerin olgunlaştığını söyledi. Harika!"
+        },
+        {
+          "DialogueFrom": "cropMatured_256",
+          "DialogueText": "...Domates olmasa yemekler nasıl olurdu bir düşünsene...",
+          "AudioPath": "assets/tr-TR/Gus/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:cropMatured_256",
+          "PageIndex": 1,
+          "DisplayPattern": "...Domates olmasa yemekler nasıl olurdu bir düşünsene..."
+        },
+        {
+          "DialogueFrom": "eventSeen_502969",
+          "DialogueText": "Benim için insanların sağlıklı ve lezzetli yiyecekler yiyebilmesi önemli. Fakat maalesef günümüzde bu herkes için kolay değil.",
+          "AudioPath": "assets/tr-TR/Gus/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:eventSeen_502969",
+          "PageIndex": 0,
+          "DisplayPattern": "Benim için insanların sağlıklı ve lezzetli yiyecekler yiyebilmesi önemli. Fakat maalesef günümüzde bu herkes için kolay değil."
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "{Farmer_Name}, sen ve %spouse adına çok mutlu olduğumu söylemek istedim.",
+          "AudioPath": "assets/tr-TR/Gus/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:married",
+          "PageIndex": 0,
+          "DisplayPattern": ", sen ve adına çok mutlu olduğumu söylemek istedim."
+        },
+        {
+          "DialogueFrom": "dating_Emily_memory_oneweek",
+          "DialogueText": "Emily son zamanlarda oldukça enerjik duruyor... Acaba neden? *göz kırpar*",
+          "AudioPath": "assets/tr-TR/Gus/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:dating_Emily_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "Emily son zamanlarda oldukça enerjik duruyor... Acaba neden? *göz kırpar*"
+        },
+        {
+          "DialogueFrom": "divorced_once",
+          "DialogueText": "Ayrılığı duyduğuma üzüldüm... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Gus/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:divorced_once",
+          "PageIndex": 0,
+          "DisplayPattern": "Ayrılığı duyduğuma üzüldüm..."
+        },
+        {
+          "DialogueFrom": "divorced_once",
+          "DialogueText": "Eğer desteğe ihtiyacın olursa her zaman Salon'a beklerim.",
+          "AudioPath": "assets/tr-TR/Gus/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:divorced_once",
+          "PageIndex": 1,
+          "DisplayPattern": "Eğer desteğe ihtiyacın olursa her zaman Salon'a beklerim."
+        },
+        {
+          "DialogueFrom": "divorced_twice",
+          "DialogueText": "Yine mi boşandın? Eh, olur öyle. Sanırım seni salonda daha sık görmeye başlayacağım... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Gus/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:divorced_twice",
+          "PageIndex": 0,
+          "DisplayPattern": "Yine mi boşandın? Eh, olur öyle. Sanırım seni salonda daha sık görmeye başlayacağım..."
+        },
+        {
+          "DialogueFrom": "eventSeen_3206194",
+          "DialogueText": "Yumurtalarla gerçekten harikalar yaratmışsın. Sayende omlet harika oldu!",
+          "AudioPath": "assets/tr-TR/Gus/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:eventSeen_3206194",
+          "PageIndex": 0,
+          "DisplayPattern": "Yumurtalarla gerçekten harikalar yaratmışsın. Sayende omlet harika oldu!"
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "Selam {Farmer_Name}! Burada olmana sevindim. Barda güzel içecekler servis ediyor olacağım.",
+          "AudioPath": "assets/tr-TR/Gus/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "Selam ! Burada olmana sevindim. Barda güzel içecekler servis ediyor olacağım."
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "Evde görüşürüz {Farmer_Name}.",
+          "AudioPath": "assets/tr-TR/Gus/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "Evde görüşürüz ."
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Bir şey içmek istersen barda olacağım.",
+          "AudioPath": "assets/tr-TR/Gus/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Bir şey içmek istersen barda olacağım."
+        },
+        {
+          "DialogueFrom": "IslandSouth_14_21",
+          "DialogueText": "İçecek bir şey ister misin? Bu adaya has şeylerden yaptığım sağlam içeceklerim var. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:IslandSouth_14_21",
+          "PageIndex": 0,
+          "DisplayPattern": "İçecek bir şey ister misin? Bu adaya has şeylerden yaptığım sağlam içeceklerim var."
+        },
+        {
+          "DialogueFrom": "willyCrabs",
+          "DialogueText": "Bu yaptığım en iyi yengeçli kek olabilir...",
+          "AudioPath": "assets/tr-TR/Gus/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:willyCrabs",
+          "PageIndex": 0,
+          "DisplayPattern": "Bu yaptığım en iyi yengeçli kek olabilir..."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Selam, burada yaşayan insanlar hakkında çok şey biliyorum.",
+          "AudioPath": "assets/tr-TR/Gus/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Selam, burada yaşayan insanlar hakkında çok şey biliyorum."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Barmen olmamın en iyi yanlarından biri de bu. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "Barmen olmamın en iyi yanlarından biri de bu."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Bazen çok fazla şey duyuyorum...",
+          "AudioPath": "assets/tr-TR/Gus/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Mon",
+          "PageIndex": 2,
+          "DisplayPattern": "Bazen çok fazla şey duyuyorum..."
+        },
+        {
+          "DialogueFrom": "pamHouseUpgrade",
+          "DialogueText": "Merhaba. Pam için ne yaptığını duydum. Harikasın! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:pamHouseUpgrade",
+          "PageIndex": 0,
+          "DisplayPattern": "Merhaba. Pam için ne yaptığını duydum. Harikasın!"
+        },
+        {
+          "DialogueFrom": "pamHouseUpgrade",
+          "DialogueText": "Ne yazık ki yaptığın şey içmesini azaltmayacak...",
+          "AudioPath": "assets/tr-TR/Gus/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:pamHouseUpgrade",
+          "PageIndex": 1,
+          "DisplayPattern": "Ne yazık ki yaptığın şey içmesini azaltmayacak..."
+        },
+        {
+          "DialogueFrom": "pamHouseUpgradeAnonymous",
+          "DialogueText": "Bugün Pam'i gördüm... ağzı kulaklarına varıyordu! Birisinin ona yeni bir ev aldığını söyledi!",
+          "AudioPath": "assets/tr-TR/Gus/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:pamHouseUpgradeAnonymous",
+          "PageIndex": 0,
+          "DisplayPattern": "Bugün Pam'i gördüm... ağzı kulaklarına varıyordu! Birisinin ona yeni bir ev aldığını söyledi!"
+        },
+        {
+          "DialogueFrom": "pamHouseUpgradeAnonymous",
+          "DialogueText": "O kişi her kimse en iyisini hakediyor! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:pamHouseUpgradeAnonymous",
+          "PageIndex": 1,
+          "DisplayPattern": "O kişi her kimse en iyisini hakediyor!"
+        },
+        {
+          "DialogueFrom": "Saloon",
+          "DialogueText": "Yıldızkaydı Salonu'na hoş geldin! Sana ne vereyim?",
+          "AudioPath": "assets/tr-TR/Gus/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Saloon",
+          "PageIndex": 0,
+          "DisplayPattern": "Yıldızkaydı Salonu'na hoş geldin! Sana ne vereyim?"
+        },
+        {
+          "DialogueFrom": "Saloon4",
+          "DialogueText": "Merhaba {Farmer_Name}. Keyfine bak.",
+          "AudioPath": "assets/tr-TR/Gus/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Saloon4",
+          "PageIndex": 0,
+          "DisplayPattern": "Merhaba . Keyfine bak."
+        },
+        {
+          "DialogueFrom": "SeedShop_Entry",
+          "DialogueText": "Selam, Pierre!/Şimdii, neye ihtiyacım vaar.../Ah, çok güzel görünüyor!/Bu akşam özel sosumu yapıyorum!/Pierre, neler yeni?/Pierre! Benim için nelerin var?",
+          "AudioPath": "assets/tr-TR/Gus/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:SeedShop_Entry",
+          "PageIndex": 0,
+          "DisplayPattern": "Selam, Pierre!/Şimdii, neye ihtiyacım vaar.../Ah, çok güzel görünüyor!/Bu akşam özel sosumu yapıyorum!/Pierre, neler yeni?/Pierre! Benim için nelerin var?"
+        },
+        {
+          "DialogueFrom": "Saloon8",
+          "DialogueText": "Selam, {Farmer_Name}. Seni gördüğüme sevindim! Her gün uğramanı bekliyorum.",
+          "AudioPath": "assets/tr-TR/Gus/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Saloon8",
+          "PageIndex": 0,
+          "DisplayPattern": "Selam, . Seni gördüğüme sevindim! Her gün uğramanı bekliyorum."
+        },
+        {
+          "DialogueFrom": "Saloon_Tue",
+          "DialogueText": "Merhaba! Rahatla ve ortamın keyfini çıkar lütfen.",
+          "AudioPath": "assets/tr-TR/Gus/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Saloon_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Merhaba! Rahatla ve ortamın keyfini çıkar lütfen."
+        },
+        {
+          "DialogueFrom": "Saloon_Thu",
+          "DialogueText": "Hey, içeceğe hayır demezsin gibi.",
+          "AudioPath": "assets/tr-TR/Gus/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Saloon_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, içeceğe hayır demezsin gibi."
+        },
+        {
+          "DialogueFrom": "Saloon_Fri",
+          "DialogueText": "Bu gece işler yolunda. Seviniyorum.",
+          "AudioPath": "assets/tr-TR/Gus/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Saloon_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Bu gece işler yolunda. Seviniyorum."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Her hafta farklı yiyecekler satıyorum. Arada sırada gelip göz atmayı unutma!",
+          "AudioPath": "assets/tr-TR/Gus/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Her hafta farklı yiyecekler satıyorum. Arada sırada gelip göz atmayı unutma!"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Çok özel bir şey tadabilirsin. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Çok özel bir şey tadabilirsin."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Herhangi bir alerjin varsa bana söyle. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Gus/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Tue",
+          "PageIndex": 2,
+          "DisplayPattern": "Herhangi bir alerjin varsa bana söyle."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Oldu o zaman, görüşürüz.",
+          "AudioPath": "assets/tr-TR/Gus/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Tue",
+          "PageIndex": 3,
+          "DisplayPattern": "Oldu o zaman, görüşürüz."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Emily bir süredir burada çalışıyor. O olmasa ne yapardım bilmiyorum!",
+          "AudioPath": "assets/tr-TR/Gus/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Emily bir süredir burada çalışıyor. O olmasa ne yapardım bilmiyorum!"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Tüm tabakları kendim temizleyecek olsam tiksinirdim. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Gus/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Tüm tabakları kendim temizleyecek olsam tiksinirdim."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Pam ve Clint her akşam buraya gelir.",
+          "AudioPath": "assets/tr-TR/Gus/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Pam ve Clint her akşam buraya gelir."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Eğer gelmeyi bıraksalardı batardım sanırım. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Eğer gelmeyi bıraksalardı batardım sanırım."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Sakın onları kaçırma!",
+          "AudioPath": "assets/tr-TR/Gus/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "Sakın onları kaçırma!"
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "Clint buraya her akşam gelir ve bir başına aynı masaya oturur.",
+          "AudioPath": "assets/tr-TR/Gus/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "Clint buraya her akşam gelir ve bir başına aynı masaya oturur."
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "Bazen Emily'e gergin bir bakış atar. Hım.",
+          "AudioPath": "assets/tr-TR/Gus/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu6",
+          "PageIndex": 1,
+          "DisplayPattern": "Bazen Emily'e gergin bir bakış atar. Hım."
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "Belki de bu yüzden sürekli geliyordur. Her neyse, bu benim için daha çok iş demek.",
+          "AudioPath": "assets/tr-TR/Gus/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu6",
+          "PageIndex": 2,
+          "DisplayPattern": "Belki de bu yüzden sürekli geliyordur. Her neyse, bu benim için daha çok iş demek."
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "Pam neredeyse her akşam buraya gelip ve fazlasıyla bira içer.",
+          "AudioPath": "assets/tr-TR/Gus/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu8",
+          "PageIndex": 0,
+          "DisplayPattern": "Pam neredeyse her akşam buraya gelip ve fazlasıyla bira içer."
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "Her neyse, müşterilerimi yargılamamalıyım.",
+          "AudioPath": "assets/tr-TR/Gus/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu8",
+          "PageIndex": 1,
+          "DisplayPattern": "Her neyse, müşterilerimi yargılamamalıyım."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Merhaba, {Farmer_Name}. Susarsan salona uğra!",
+          "AudioPath": "assets/tr-TR/Gus/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Merhaba, . Susarsan salona uğra!"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "Ben çok içmem. Daha çok bunu geçimimi kazanmak için yapıyorum.",
+          "AudioPath": "assets/tr-TR/Gus/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "Ben çok içmem. Daha çok bunu geçimimi kazanmak için yapıyorum."
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "Fakat zaman zaman Yıldızçiyi bağ mahsulünden yapılma içkileri içmeyi seviyorum.",
+          "AudioPath": "assets/tr-TR/Gus/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Fri4",
+          "PageIndex": 1,
+          "DisplayPattern": "Fakat zaman zaman Yıldızçiyi bağ mahsulünden yapılma içkileri içmeyi seviyorum."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Şef misindir, {Farmer_Name}?",
+          "AudioPath": "assets/tr-TR/Gus/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Şef misindir, ?"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Eğer mutfağın ve tariflerin varsa bir şeyler pişirebilirsin.",
+          "AudioPath": "assets/tr-TR/Gus/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Eğer mutfağın ve tariflerin varsa bir şeyler pişirebilirsin."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Ev yemeklerinden güzel hediye olur.",
+          "AudioPath": "assets/tr-TR/Gus/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "Ev yemeklerinden güzel hediye olur."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Düzenli müşterilerim sayesinde işlerim yolunda gidiyor.",
+          "AudioPath": "assets/tr-TR/Gus/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Düzenli müşterilerim sayesinde işlerim yolunda gidiyor."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "Böyle bir günde bir kadeh kırmızı şarap gibisi yok.",
+          "AudioPath": "assets/tr-TR/Gus/61.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "Böyle bir günde bir kadeh kırmızı şarap gibisi yok."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "İşimi seviyorum. Hehehe.",
+          "AudioPath": "assets/tr-TR/Gus/62.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Gus",
+          "PageIndex": 1,
+          "DisplayPattern": "İşimi seviyorum. Hehehe."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s0",
+          "DialogueText": "Good morning!",
+          "AudioPath": "assets/tr-TR/Gus/63.ogg",
+          "TranslationKey": "Events/Farm:980558:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Good morning!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s1",
+          "DialogueText": "Ah... what a beautiful day, huh?",
+          "AudioPath": "assets/tr-TR/Gus/64.ogg",
+          "TranslationKey": "Events/Farm:980558:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah... what a beautiful day, huh?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s2",
+          "DialogueText": "You know, as the Saloon owner, I hear about everything that's going on in town.",
+          "AudioPath": "assets/tr-TR/Gus/65.ogg",
+          "TranslationKey": "Events/Farm:980558:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "You know, as the Saloon owner, I hear about everything that's going on in town."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s3",
+          "DialogueText": "I remember when you first moved here... everyone was a bit unsure of what to expect.",
+          "AudioPath": "assets/tr-TR/Gus/66.ogg",
+          "TranslationKey": "Events/Farm:980558:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I remember when you first moved here... everyone was a bit unsure of what to expect."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s4",
+          "DialogueText": "A stranger from the city... an unknown personality... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Gus/67.ogg",
+          "TranslationKey": "Events/Farm:980558:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "A stranger from the city... an unknown personality..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s5",
+          "DialogueText": "One sec...",
+          "AudioPath": "assets/tr-TR/Gus/68.ogg",
+          "TranslationKey": "Events/Farm:980558:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "One sec..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s6",
+          "DialogueText": "Sorry, I have to stir this pot every 5 minutes.",
+          "AudioPath": "assets/tr-TR/Gus/69.ogg",
+          "TranslationKey": "Events/Farm:980558:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Sorry, I have to stir this pot every 5 minutes."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s7",
+          "DialogueText": "Anyway, what was I saying? Oh yeah... you know, it's like when you're making a sauce...",
+          "AudioPath": "assets/tr-TR/Gus/70.ogg",
+          "TranslationKey": "Events/Farm:980558:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Anyway, what was I saying? Oh yeah... you know, it's like when you're making a sauce..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s8",
+          "DialogueText": "...If you put in a new spice you could ruin everything! {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Gus/71.ogg",
+          "TranslationKey": "Events/Farm:980558:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "...If you put in a new spice you could ruin everything!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s9",
+          "DialogueText": "...But then again, there's always a chance you'll create something new and delicious! Right? Hahahaha. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/72.ogg",
+          "TranslationKey": "Events/Farm:980558:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "...But then again, there's always a chance you'll create something new and delicious! Right? Hahahaha."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s10",
+          "DialogueText": "Er... What I'm trying to say is... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Gus/73.ogg",
+          "TranslationKey": "Events/Farm:980558:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Er... What I'm trying to say is..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s11",
+          "DialogueText": "It's been great having you in town, and I've come to think of you as one of my good friends!",
+          "AudioPath": "assets/tr-TR/Gus/74.ogg",
+          "TranslationKey": "Events/Farm:980558:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "It's been great having you in town, and I've come to think of you as one of my good friends!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s12",
+          "DialogueText": "Anyway, I came to give you something...",
+          "AudioPath": "assets/tr-TR/Gus/75.ogg",
+          "TranslationKey": "Events/Farm:980558:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Anyway, I came to give you something..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s13",
+          "DialogueText": "I was cleaning out the back room and I found this old Mini-Jukebox. I want you to have it!",
+          "AudioPath": "assets/tr-TR/Gus/76.ogg",
+          "TranslationKey": "Events/Farm:980558:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "I was cleaning out the back room and I found this old Mini-Jukebox. I want you to have it!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s14",
+          "DialogueText": "Received a 'Mini-Jukebox'",
+          "AudioPath": "assets/tr-TR/Gus/77.ogg",
+          "TranslationKey": "Events/Farm:980558:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "Received a 'Mini-Jukebox'"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s15",
+          "DialogueText": "It's actually an old Do-It-Yourself project of mine, from many years ago. They're pretty easy to make!",
+          "AudioPath": "assets/tr-TR/Gus/78.ogg",
+          "TranslationKey": "Events/Farm:980558:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "It's actually an old Do-It-Yourself project of mine, from many years ago. They're pretty easy to make!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s16",
+          "DialogueText": "So, just in case you wanted to make more, I brought the blueprints for you...",
+          "AudioPath": "assets/tr-TR/Gus/79.ogg",
+          "TranslationKey": "Events/Farm:980558:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "So, just in case you wanted to make more, I brought the blueprints for you..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s17",
+          "DialogueText": "Learned how to craft a 'Mini-Jukebox'",
+          "AudioPath": "assets/tr-TR/Gus/80.ogg",
+          "TranslationKey": "Events/Farm:980558:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "Learned how to craft a 'Mini-Jukebox'"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s18",
+          "DialogueText": "Well, I'm gonna head home. I gotta get this marinara back on the stove! Have a good one!",
+          "AudioPath": "assets/tr-TR/Gus/81.ogg",
+          "TranslationKey": "Events/Farm:980558:s18",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I'm gonna head home. I gotta get this marinara back on the stove! Have a good one!"
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s0",
+          "DialogueText": "Great stuff!",
+          "AudioPath": "assets/tr-TR/Gus/82.ogg",
+          "TranslationKey": "Events/Town:53:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Great stuff!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s0",
+          "DialogueText": "I still dream of that garlic butter.",
+          "AudioPath": "assets/tr-TR/Gus/83.ogg",
+          "TranslationKey": "Events/Town:191393:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I still dream of that garlic butter."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s1",
+          "DialogueText": "Me too!",
+          "AudioPath": "assets/tr-TR/Gus/84.ogg",
+          "TranslationKey": "Events/Town:191393:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Me too!"
+        },
+        {
+          "DialogueFrom": "Event:Town/502969:s0",
+          "DialogueText": "Wait. {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Gus/85.ogg",
+          "TranslationKey": "Events/Town:502969:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Wait."
+        },
+        {
+          "DialogueFrom": "Event:Town/502969:s1",
+          "DialogueText": "I know what you were doing, Linus. {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Gus/86.ogg",
+          "TranslationKey": "Events/Town:502969:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I know what you were doing, Linus."
+        },
+        {
+          "DialogueFrom": "Event:Town/502969:s2",
+          "DialogueText": "If you need food... just ask. I don't want anyone in Pelican Town to go hungry.",
+          "AudioPath": "assets/tr-TR/Gus/87.ogg",
+          "TranslationKey": "Events/Town:502969:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "If you need food... just ask. I don't want anyone in Pelican Town to go hungry."
+        },
+        {
+          "DialogueFrom": "Event:Town/502969:s3",
+          "DialogueText": "Here. I've got a basket of zucchini fritters for you. Just make sure you dip them in my spicy marinara! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/88.ogg",
+          "TranslationKey": "Events/Town:502969:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Here. I've got a basket of zucchini fritters for you. Just make sure you dip them in my spicy marinara!"
+        },
+        {
+          "DialogueFrom": "Event:Town/502969:s4",
+          "DialogueText": "Go on... take it.",
+          "AudioPath": "assets/tr-TR/Gus/89.ogg",
+          "TranslationKey": "Events/Town:502969:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Go on... take it."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s0",
+          "DialogueText": "Nice!",
+          "AudioPath": "assets/tr-TR/Gus/90.ogg",
+          "TranslationKey": "Events/Town:6184644:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Nice!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s0",
+          "DialogueText": "I'm all ears.",
+          "AudioPath": "assets/tr-TR/Gus/91.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm all ears."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s1",
+          "DialogueText": "That sounds pretty good! I could use some quality veggies for the saloon. How much does it cost?",
+          "AudioPath": "assets/tr-TR/Gus/92.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "That sounds pretty good! I could use some quality veggies for the saloon. How much does it cost?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s2",
+          "DialogueText": "What was that?",
+          "AudioPath": "assets/tr-TR/Gus/93.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "What was that?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s3",
+          "DialogueText": "Hahaha... for a moment there, I thought I heard, '25,000g'. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/94.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Hahaha... for a moment there, I thought I heard, '25,000g'."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s4",
+          "DialogueText": "Pierre, are you crazy? There's no way I could afford that. I'd have to sell the saloon! {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Gus/95.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Pierre, are you crazy? There's no way I could afford that. I'd have to sell the saloon!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/40:s0",
+          "DialogueText": "Hi. I'll take your order in a few moments.",
+          "AudioPath": "assets/tr-TR/Gus/96.ogg",
+          "TranslationKey": "Events/Saloon:40:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi. I'll take your order in a few moments."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/40:s1",
+          "DialogueText": "... {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Gus/97.ogg",
+          "TranslationKey": "Events/Saloon:40:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/40:s2",
+          "DialogueText": "There you go, sir. {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Gus/98.ogg",
+          "TranslationKey": "Events/Saloon:40:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "There you go, sir."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s0|g=male",
+          "DialogueText": "Oh, hello there, buddy.",
+          "AudioPath": "assets/tr-TR/Gus/99_male.ogg",
+          "TranslationKey": "Events/Saloon:96:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, hello there, buddy.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s1|g=female",
+          "DialogueText": "Hi, {Farmer_Name}.",
+          "AudioPath": "assets/tr-TR/Gus/100_female.ogg",
+          "TranslationKey": "Events/Saloon:96:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi, .",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s2",
+          "DialogueText": "*sigh*... I'm just looking over last month's earnings... and it's not looking very good, {Farmer_Name}. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Gus/101.ogg",
+          "TranslationKey": "Events/Saloon:96:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*... I'm just looking over last month's earnings... and it's not looking very good, ."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s3",
+          "DialogueText": "The worst thing... and I hate to say this because she's my friend... is Pam! She hasn't paid off her tab in weeks! {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Gus/102.ogg",
+          "TranslationKey": "Events/Saloon:96:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "The worst thing... and I hate to say this because she's my friend... is Pam! She hasn't paid off her tab in weeks!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s4",
+          "DialogueText": "...But I can't ask her to do it. I know she'll get defensive, and I don't want to hurt her feelings. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Gus/103.ogg",
+          "TranslationKey": "Events/Saloon:96:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "...But I can't ask her to do it. I know she'll get defensive, and I don't want to hurt her feelings."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s5",
+          "DialogueText": "{Farmer_Name}, you gotta help me! {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Gus/104.ogg",
+          "TranslationKey": "Events/Saloon:96:s5",
+          "PageIndex": 0,
+          "DisplayPattern": ", you gotta help me!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s6",
+          "DialogueText": "Er... Well, okay Pam. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Gus/105.ogg",
+          "TranslationKey": "Events/Saloon:96:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Er... Well, okay Pam."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s7",
+          "DialogueText": "Thanks, Pam! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/106.ogg",
+          "TranslationKey": "Events/Saloon:96:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks, Pam!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s8",
+          "DialogueText": "And thank you, {Farmer_Name}. {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Gus/107.ogg",
+          "TranslationKey": "Events/Saloon:96:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "And thank you, ."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s9",
+          "DialogueText": "Now, let's get you that drink, Pam. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/108.ogg",
+          "TranslationKey": "Events/Saloon:96:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Now, let's get you that drink, Pam."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s10",
+          "DialogueText": "Thanks for your help, {Farmer_Name}. This cash is going to be a big help to the saloon.",
+          "AudioPath": "assets/tr-TR/Gus/109.ogg",
+          "TranslationKey": "Events/Saloon:96:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks for your help, . This cash is going to be a big help to the saloon."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s0",
+          "DialogueText": "I'm having a lot of fun. And it's good for business! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/110.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm having a lot of fun. And it's good for business!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s1",
+          "DialogueText": "Though maybe not so good for Shane's liver... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Gus/111.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Though maybe not so good for Shane's liver..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s0",
+          "DialogueText": "Well, folks... once again, we're gathered for a very special occasion.",
+          "AudioPath": "assets/tr-TR/Gus/112.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, folks... once again, we're gathered for a very special occasion."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s1",
+          "DialogueText": "...A rare visit from a very dear friend...",
+          "AudioPath": "assets/tr-TR/Gus/113.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "...A rare visit from a very dear friend..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s2",
+          "DialogueText": "...My world-famous giant omelet! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/114.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "...My world-famous giant omelet!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s3",
+          "DialogueText": "Zesty bell pepper, juicy tomato, rich mushroom, and tangy cheese... all enrobed in a blanket of rich, fluffy egg. Dig in, folks.",
+          "AudioPath": "assets/tr-TR/Gus/115.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Zesty bell pepper, juicy tomato, rich mushroom, and tangy cheese... all enrobed in a blanket of rich, fluffy egg. Dig in, folks."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s4",
+          "DialogueText": "Willy? What do you think?",
+          "AudioPath": "assets/tr-TR/Gus/116.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Willy? What do you think?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s5",
+          "DialogueText": "Is that a good thing? {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Gus/117.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Is that a good thing?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s6",
+          "DialogueText": "Nope... You can thank {Farmer_Name} over at %farm Farm!",
+          "AudioPath": "assets/tr-TR/Gus/118.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Nope... You can thank over at Farm!"
+        },
+        {
+          "DialogueFrom": "Event:Beach/711130:s0",
+          "DialogueText": "Hooo~... Back at it again, huh Willy? {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/119.ogg",
+          "TranslationKey": "Events/Beach:711130:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hooo~... Back at it again, huh Willy?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/711130:s1",
+          "DialogueText": "They look fresh all right...",
+          "AudioPath": "assets/tr-TR/Gus/120.ogg",
+          "TranslationKey": "Events/Beach:711130:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "They look fresh all right..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/711130:s2",
+          "DialogueText": "I'll take the whole lot! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/121.ogg",
+          "TranslationKey": "Events/Beach:711130:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll take the whole lot!"
+        },
+        {
+          "DialogueFrom": "Event:Beach/711130:s3",
+          "DialogueText": "With a discount for the extra labor, of course...",
+          "AudioPath": "assets/tr-TR/Gus/122.ogg",
+          "TranslationKey": "Events/Beach:711130:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "With a discount for the extra labor, of course..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/711130:s4",
+          "DialogueText": "Looks like we got 'em all...",
+          "AudioPath": "assets/tr-TR/Gus/123.ogg",
+          "TranslationKey": "Events/Beach:711130:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Looks like we got 'em all..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/711130:s5",
+          "DialogueText": "Psst... {Farmer_Name}... Don't tell Willy, but I'll be doing a special on crab cakes at the saloon for the next few days...",
+          "AudioPath": "assets/tr-TR/Gus/124.ogg",
+          "TranslationKey": "Events/Beach:711130:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Psst... ... Don't tell Willy, but I'll be doing a special on crab cakes at the saloon for the next few days..."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Gus",
+          "DialogueText": "İstediğin kadar ye! Bugün beleş... Başkan Lewis ısmarlıyor. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/125.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "İstediğin kadar ye! Bugün beleş... Başkan Lewis ısmarlıyor."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Gus",
+          "DialogueText": "Ah! Şuradaki gizli sosuma bandırmayı unutma!",
+          "AudioPath": "assets/tr-TR/Gus/126.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Gus",
+          "PageIndex": 1,
+          "DisplayPattern": "Ah! Şuradaki gizli sosuma bandırmayı unutma!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Gus_y2",
+          "DialogueText": "Dört ızgarayı aynı anda çalıştırmak zor iş! Bugün doyurulması gereken büyük ve aç bir kalabalık var. {Portrait:Neutral}",
+          "AudioPath": "assets/tr-TR/Gus/127.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Dört ızgarayı aynı anda çalıştırmak zor iş! Bugün doyurulması gereken büyük ve aç bir kalabalık var."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Gus_y2",
+          "DialogueText": "Her köfteye biraz baharatlı sosumdan ekledim. *göz kırpar*",
+          "AudioPath": "assets/tr-TR/Gus/128.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Gus_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Her köfteye biraz baharatlı sosumdan ekledim. *göz kırpar*"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Gus",
+          "DialogueText": "Bal kabağı ile bir şeyler pişirmek çok eğlenceli. Çok ilginç bir sebze.",
+          "AudioPath": "assets/tr-TR/Gus/129.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "Bal kabağı ile bir şeyler pişirmek çok eğlenceli. Çok ilginç bir sebze."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Gus_y2",
+          "DialogueText": "Bal kabağı oyma konusunda yetenekliyim. Genellikle kasabadaki herkes için Cadılar Bayramı fenerlerini ben yaparım.",
+          "AudioPath": "assets/tr-TR/Gus/130.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Bal kabağı oyma konusunda yetenekliyim. Genellikle kasabadaki herkes için Cadılar Bayramı fenerlerini ben yaparım."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Gus_y2",
+          "DialogueText": "Karşılığında tek istediğim çekirdekleri saklamak... Biraz tarçın ve şeker serpip yediğinde harika bir atıştırmalık oluyorlar! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/131.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Gus_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Karşılığında tek istediğim çekirdekleri saklamak... Biraz tarçın ve şeker serpip yediğinde harika bir atıştırmalık oluyorlar!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Gus",
+          "DialogueText": "Umarım herkes yemekleri beğenmiştir... Günlerdir yemek yapıyorum.",
+          "AudioPath": "assets/tr-TR/Gus/132.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "Umarım herkes yemekleri beğenmiştir... Günlerdir yemek yapıyorum."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Gus",
+          "DialogueText": "Sahanda yumurta, haşlanmış yumurta, bohça yumurta, acılı ve baharatlı yumurta, yumurtalı gözleme, çikolatalı yumurta... Adını sen koy! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/133.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Gus",
+          "PageIndex": 1,
+          "DisplayPattern": "Sahanda yumurta, haşlanmış yumurta, bohça yumurta, acılı ve baharatlı yumurta, yumurtalı gözleme, çikolatalı yumurta... Adını sen koy!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Gus_y2",
+          "DialogueText": "Şşş... Kimseye söyleme ama bu sene farklı bir şey denedim... Vanilyayı ördek yumurtasından yaptım! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/134.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Şşş... Kimseye söyleme ama bu sene farklı bir şey denedim... Vanilyayı ördek yumurtasından yaptım!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Gus",
+          "DialogueText": "Kurbağa mevsimi gelmiş.",
+          "AudioPath": "assets/tr-TR/Gus/135.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "Kurbağa mevsimi gelmiş."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Gus_y2",
+          "DialogueText": "Karahindiba salatasını denedin mi? Az önce hazırladım! {Portrait:Neutral}",
+          "AudioPath": "assets/tr-TR/Gus/136.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Karahindiba salatasını denedin mi? Az önce hazırladım!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Gus",
+          "DialogueText": "Şu lanet olasıca kum sinekleri yemeklerin üstüne konuyor!",
+          "AudioPath": "assets/tr-TR/Gus/137.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "Şu lanet olasıca kum sinekleri yemeklerin üstüne konuyor!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Gus_y2",
+          "DialogueText": "Bir kötü malzeme bile çorbayı mahvedebilir... {Portrait:Neutral}",
+          "AudioPath": "assets/tr-TR/Gus/138.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Bir kötü malzeme bile çorbayı mahvedebilir..."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Gus",
+          "DialogueText": "'Ayışığı Denizanaları'... Acaba tatları nasıldır? {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/139.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "'Ayışığı Denizanaları'... Acaba tatları nasıldır?"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Gus",
+          "DialogueText": "Asla denemem elbette ama merak etmemek elde değil! {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Gus/140.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Gus",
+          "PageIndex": 1,
+          "DisplayPattern": "Asla denemem elbette ama merak etmemek elde değil!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Gus_y2",
+          "DialogueText": "*koklar* Ah... Okyanusun taze kokusu her daim insanı mutlu eder. {Portrait:Neutral}",
+          "AudioPath": "assets/tr-TR/Gus/141.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "*koklar* Ah... Okyanusun taze kokusu her daim insanı mutlu eder."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus",
+          "DialogueText": "Şeker kamışı yapmak güzeldir. En iyi malzemeler için ucu bucağı araman gerekir. Bugünlerde bulması hiç kolay değildir! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/142.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "Şeker kamışı yapmak güzeldir. En iyi malzemeler için ucu bucağı araman gerekir. Bugünlerde bulması hiç kolay değildir!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus",
+          "DialogueText": "Birinci kalite şeker kamışlarım için Eğrelti Otu Adaları'nda yetişen çembermeyvesini kullanıyorum. O parlak kırmızı rengi başka bir şey geçemez... Üstelik hepsi organik!",
+          "AudioPath": "assets/tr-TR/Gus/143.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus",
+          "PageIndex": 1,
+          "DisplayPattern": "Birinci kalite şeker kamışlarım için Eğrelti Otu Adaları'nda yetişen çembermeyvesini kullanıyorum. O parlak kırmızı rengi başka bir şey geçemez... Üstelik hepsi organik!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus",
+          "DialogueText": "Ah, şatafatlı ikili şeker kamışlarımın sırrını öğrenmek mi istiyorsun? Tamam ama bana tam gizlilik sözü vermelisin. *fısıldar* Beyaz şekerin içine kiraz aromasını tamamlamak için birazcık vanilya koyuyorum. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/144.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus",
+          "PageIndex": 2,
+          "DisplayPattern": "Ah, şatafatlı ikili şeker kamışlarımın sırrını öğrenmek mi istiyorsun? Tamam ama bana tam gizlilik sözü vermelisin. *fısıldar* Beyaz şekerin içine kiraz aromasını tamamlamak için birazcık vanilya koyuyorum."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus",
+          "DialogueText": "Elbette nane şekeri kamışları standardımız. Onlardan her zaman bol bol yapıyorum.",
+          "AudioPath": "assets/tr-TR/Gus/145.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus",
+          "PageIndex": 3,
+          "DisplayPattern": "Elbette nane şekeri kamışları standardımız. Onlardan her zaman bol bol yapıyorum."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus",
+          "DialogueText": "Hey, uyuyor gibisin. İyisin, değil mi? {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Gus/146.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus",
+          "PageIndex": 4,
+          "DisplayPattern": "Hey, uyuyor gibisin. İyisin, değil mi?"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus_y2",
+          "DialogueText": "Ye! Hâlâ taze ve sıcakken ye. {Portrait:Neutral}",
+          "AudioPath": "assets/tr-TR/Gus/147.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ye! Hâlâ taze ve sıcakken ye."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus_y2",
+          "DialogueText": "Yeni şeker kamışı yapma yöntemimden saatlerce bahsedebilirim... Ama bu yıl detayları sana anlatmayacağım! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/148.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Yeni şeker kamışı yapma yöntemimden saatlerce bahsedebilirim... Ama bu yıl detayları sana anlatmayacağım!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Gus",
+          "DialogueText": "Hiç yemek olmadığı için üzgünüm.",
+          "AudioPath": "assets/tr-TR/Gus/149.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "Hiç yemek olmadığı için üzgünüm."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Gus",
+          "DialogueText": "Kış Yıldızı Şöleni'ne dek beklemelisin. O vakit tıka basa doyacaksın.",
+          "AudioPath": "assets/tr-TR/Gus/150.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Gus",
+          "PageIndex": 1,
+          "DisplayPattern": "Kış Yıldızı Şöleni'ne dek beklemelisin. O vakit tıka basa doyacaksın."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Gus_y2",
+          "DialogueText": "Pek dışarı çıkmam, genelde ağtopu izlerim... Kışın serin havasında dışarıda olmak iyi geliyor.",
+          "AudioPath": "assets/tr-TR/Gus/151.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Pek dışarı çıkmam, genelde ağtopu izlerim... Kışın serin havasında dışarıda olmak iyi geliyor."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Gus:s0",
+          "DialogueText": "Bunu bana mı... veriyorsun? Nutkum tutuldu.",
+          "AudioPath": "assets/tr-TR/Gus/152.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Gus:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Bunu bana mı... veriyorsun? Nutkum tutuldu."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Gus:s1",
+          "DialogueText": "Amanın! Emin misin?",
+          "AudioPath": "assets/tr-TR/Gus/153.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Gus:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Amanın! Emin misin?"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Gus:s2",
+          "DialogueText": "Yok, yok, yok...",
+          "AudioPath": "assets/tr-TR/Gus/154.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Gus:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Yok, yok, yok..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Gus:s3",
+          "DialogueText": "Bu bildiğin çöp. Alındım doğrusu.",
+          "AudioPath": "assets/tr-TR/Gus/155.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Gus:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Bu bildiğin çöp. Alındım doğrusu."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Gus:s4",
+          "DialogueText": "Ah, çok zevklisin. Teşekkür ederim.",
+          "AudioPath": "assets/tr-TR/Gus/156.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Gus:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah, çok zevklisin. Teşekkür ederim."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_summer_movie_1_BeforeMovie",
+          "DialogueText": "Fragmanını televizyonda görmüştüm. Hoşuma gitmişti doğrusu!",
+          "AudioPath": "assets/tr-TR/Gus/157.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_summer_movie_1_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Fragmanını televizyonda görmüştüm. Hoşuma gitmişti doğrusu!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_summer_movie_1_AfterMovie",
+          "DialogueText": "İşin erbabı olarak glüten bazlı yemeklere duydukları saplantı acayip iyiydi diyebilirim. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/158.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_summer_movie_1_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "İşin erbabı olarak glüten bazlı yemeklere duydukları saplantı acayip iyiydi diyebilirim."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_winter_movie_0_BeforeMovie",
+          "DialogueText": "İnsan '{0}' filmini izlemeden henüz tatilin tadını çıkarmamıştır diyorlar!",
+          "AudioPath": "assets/tr-TR/Gus/159.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_winter_movie_0_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "İnsan '{0}' filmini izlemeden henüz tatilin tadını çıkarmamıştır diyorlar!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_winter_movie_0_AfterMovie",
+          "DialogueText": "İç açıcıydı... Efsanevi meyve çok lezzetli duruyordu. Keşke bir gün tadabilsem.",
+          "AudioPath": "assets/tr-TR/Gus/160.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_winter_movie_0_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "İç açıcıydı... Efsanevi meyve çok lezzetli duruyordu. Keşke bir gün tadabilsem."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_fall_movie_0_BeforeMovie",
+          "DialogueText": "Bunun 'alışılmadık' bir yapım olduğunu söylüyorlar... Kötü bir film mi yani? {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Gus/161.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_fall_movie_0_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Bunun 'alışılmadık' bir yapım olduğunu söylüyorlar... Kötü bir film mi yani?"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_fall_movie_0_AfterMovie",
+          "DialogueText": "Bu filmin olayı neydi ki? Anlamadım. Belki de film için fazla yaşlıyımdır. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Gus/162.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_fall_movie_0_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Bu filmin olayı neydi ki? Anlamadım. Belki de film için fazla yaşlıyımdır."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_like_BeforeMovie",
+          "DialogueText": "*burnunu çeker* *burnunu çeker* Güzel bir koku alıyorum...",
+          "AudioPath": "assets/tr-TR/Gus/163.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "*burnunu çeker* *burnunu çeker* Güzel bir koku alıyorum..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_like_AfterMovie",
+          "DialogueText": "Hiç fena değil. Geldiğime pişman olmadım!",
+          "AudioPath": "assets/tr-TR/Gus/164.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Hiç fena değil. Geldiğime pişman olmadım!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Gus",
+          "DialogueText": "Normalde şölenlerde tüm yemek işini ben hallederdim. Bu sefer değil ama! Bugün rahatlayacağım. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Gus/165.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "Normalde şölenlerde tüm yemek işini ben hallederdim. Bu sefer değil ama! Bugün rahatlayacağım."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Gus",
+          "DialogueText": "Lezzetli bir şeylere ne dersin?",
+          "AudioPath": "assets/tr-TR/Gus/166.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "Lezzetli bir şeylere ne dersin?"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_Greeting",
+          "DialogueText": "Buyur, gel!",
+          "AudioPath": "assets/tr-TR/Gus/167.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_Greeting",
+          "PageIndex": 0,
+          "DisplayPattern": "Buyur, gel!"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_Summer",
+          "DialogueText": "Soğuk bir şey ister misin?",
+          "AudioPath": "assets/tr-TR/Gus/168.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_Summer",
+          "PageIndex": 0,
+          "DisplayPattern": "Soğuk bir şey ister misin?"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_NotSummer",
+          "DialogueText": "Ne getireyim?",
+          "AudioPath": "assets/tr-TR/Gus/169.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_NotSummer",
+          "PageIndex": 0,
+          "DisplayPattern": "Ne getireyim?"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_Snowing1",
+          "DialogueText": "Dışarısı çok soğuk, kahvemiz ise sıcacık.",
+          "AudioPath": "assets/tr-TR/Gus/170.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_Snowing1",
+          "PageIndex": 0,
+          "DisplayPattern": "Dışarısı çok soğuk, kahvemiz ise sıcacık."
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_NotSnowing1",
+          "DialogueText": "Sıcak bir şey ister misin?",
+          "AudioPath": "assets/tr-TR/Gus/171.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_NotSnowing1",
+          "PageIndex": 0,
+          "DisplayPattern": "Sıcak bir şey ister misin?"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_Raining",
+          "DialogueText": "İçecek sıcak bir şey alır mısın?",
+          "AudioPath": "assets/tr-TR/Gus/172.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_Raining",
+          "PageIndex": 0,
+          "DisplayPattern": "İçecek sıcak bir şey alır mısın?"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_NotRaining",
+          "DialogueText": "İçecek bir şey alır mısın?",
+          "AudioPath": "assets/tr-TR/Gus/173.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_NotRaining",
+          "PageIndex": 0,
+          "DisplayPattern": "İçecek bir şey alır mısın?"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_Snowing2",
+          "DialogueText": "Soğukta kalma, içeri gel!",
+          "AudioPath": "assets/tr-TR/Gus/174.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_Snowing2",
+          "PageIndex": 0,
+          "DisplayPattern": "Soğukta kalma, içeri gel!"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_NotSnowing2",
+          "DialogueText": "Hoş geldin!",
+          "AudioPath": "assets/tr-TR/Gus/175.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_NotSnowing2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hoş geldin!"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_RareGreeting",
+          "DialogueText": "Sanki bir içkiye ihtiyacın var gibi.",
+          "AudioPath": "assets/tr-TR/Gus/176.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_RareGreeting",
+          "PageIndex": 0,
+          "DisplayPattern": "Sanki bir içkiye ihtiyacın var gibi."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1822 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Pierre.tr-TR",
+      "VoicePackName": "DictionarV2 (Pierre - tr-TR)",
+      "Character": "Pierre",
+      "Language": "tr-TR",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Hey, siz yeni çiftçi {Farmer_Name} Bey olmalısınız! Ben Pierre. Bölge bakkalının sahibiyim.",
+          "AudioPath": "assets/tr-TR/Pierre/1_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, siz yeni çiftçi Bey olmalısınız! Ben Pierre. Bölge bakkalının sahibiyim.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Hey, siz yeni çiftçi {Farmer_Name} Hanım olmalısınız! Ben Pierre. Bölge bakkalının sahibiyim.",
+          "AudioPath": "assets/tr-TR/Pierre/2_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "Hey, siz yeni çiftçi Hanım olmalısınız! Ben Pierre. Bölge bakkalının sahibiyim.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Tohum arıyorsanız benim dükkana uğramalısınız. Ayrıca sağlam fiyata sizden ürün de alabilirim!",
+          "AudioPath": "assets/tr-TR/Pierre/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 2,
+          "DisplayPattern": "Tohum arıyorsanız benim dükkana uğramalısınız. Ayrıca sağlam fiyata sizden ürün de alabilirim!"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Azıcık da olsa tarımla uğraşmak bölge ekonomisine can katabilir!",
+          "AudioPath": "assets/tr-TR/Pierre/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 3,
+          "DisplayPattern": "Azıcık da olsa tarımla uğraşmak bölge ekonomisine can katabilir!"
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneday",
+          "DialogueText": "Joja ile nasıl rekabet edebilirim? {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "Joja ile nasıl rekabet edebilirim?"
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneday",
+          "DialogueText": "Cepleri o kadar dolu ki zararına satış yaparak benim gibi küçük işletmeleri piyasadan silebilirler... Sonra fiyatları artırırlar! {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "Cepleri o kadar dolu ki zararına satış yaparak benim gibi küçük işletmeleri piyasadan silebilirler... Sonra fiyatları artırırlar!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Vay be, bunu bana verdiğine inanamıyorum. Sana bir servete mal olmuş olmalı! Teşekkürler!",
+          "AudioPath": "assets/tr-TR/Pierre/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Vay be, bunu bana verdiğine inanamıyorum. Sana bir servete mal olmuş olmalı! Teşekkürler!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)Book_PriceCatalogue",
+          "DialogueText": "Aman Tanrım! Ne kadar sürükleyici bir kitap! Tam bana göre! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:AcceptGift_(O)Book_PriceCatalogue",
+          "PageIndex": 0,
+          "DisplayPattern": "Aman Tanrım! Ne kadar sürükleyici bir kitap! Tam bana göre!"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Of, bir tane bile müşteri gelmedi! Bu \"yeşil\" yağmur böyle devam ederse iflas bayrağını çekeceğim! {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "Of, bir tane bile müşteri gelmedi! Bu \"yeşil\" yağmur böyle devam ederse iflas bayrağını çekeceğim!"
+        },
+        {
+          "DialogueFrom": "GreenRainFinished",
+          "DialogueText": "Eh, her şeyin normale dönmesine sevindim. Yoksa bütün o abartı boşunaymış mı? Her zaman olduğu gibi yani...",
+          "AudioPath": "assets/tr-TR/Pierre/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRainFinished",
+          "PageIndex": 0,
+          "DisplayPattern": "Eh, her şeyin normale dönmesine sevindim. Yoksa bütün o abartı boşunaymış mı? Her zaman olduğu gibi yani..."
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Seni gördüğüme sevindim {Farmer_Name}. Tohum alman gerekiyorsa asit yağmuru varmış yokmuş hiç fark etmez. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Seni gördüğüme sevindim . Tohum alman gerekiyorsa asit yağmuru varmış yokmuş hiç fark etmez."
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Dalga geçiyorum. Yağmur tamamen zararsız duruyor.",
+          "AudioPath": "assets/tr-TR/Pierre/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRain_2",
+          "PageIndex": 1,
+          "DisplayPattern": "Dalga geçiyorum. Yağmur tamamen zararsız duruyor."
+        },
+        {
+          "DialogueFrom": "eventSeen_4",
+          "DialogueText": "Abigail bu aralar çok isyankâr... Anlıyorum.",
+          "AudioPath": "assets/tr-TR/Pierre/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_4",
+          "PageIndex": 0,
+          "DisplayPattern": "Abigail bu aralar çok isyankâr... Anlıyorum."
+        },
+        {
+          "DialogueFrom": "eventSeen_4",
+          "DialogueText": "İlk kredisini ödemek zorunda kaldığında akıllanacak! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_4",
+          "PageIndex": 1,
+          "DisplayPattern": "İlk kredisini ödemek zorunda kaldığında akıllanacak!"
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneweek",
+          "DialogueText": "Dükkanımı sonuna kadar açık tutmaya kararlıyım. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "Dükkanımı sonuna kadar açık tutmaya kararlıyım."
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneweek",
+          "DialogueText": "Morris ve adamları beni tezgâhtan zorla çekip alıncaya dek pes etmeyeceğim! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "Morris ve adamları beni tezgâhtan zorla çekip alıncaya dek pes etmeyeceğim!"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Dükkanı kapatıp geldiğimden biraz para kaybetmiş oldum... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Dükkanı kapatıp geldiğimden biraz para kaybetmiş oldum..."
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Ama ne var biliyor musun? Buna değdi.",
+          "AudioPath": "assets/tr-TR/Pierre/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort",
+          "PageIndex": 1,
+          "DisplayPattern": "Ama ne var biliyor musun? Buna değdi."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Hım... denizden gelen tuz kokusu canımı saşimi çektirdi.",
+          "AudioPath": "assets/tr-TR/Pierre/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "Hım... denizden gelen tuz kokusu canımı saşimi çektirdi."
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "Çocuklar kumda oynayadursun, ben bu sandalyede oturacağım.",
+          "AudioPath": "assets/tr-TR/Pierre/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "Çocuklar kumda oynayadursun, ben bu sandalyede oturacağım."
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "İçki üzerine içki... Gus ne para kaldırıyordur var ya!",
+          "AudioPath": "assets/tr-TR/Pierre/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "İçki üzerine içki... Gus ne para kaldırıyordur var ya!"
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "Eh, şimdi iki kat gelir elde etmeye başladığına göre normalin iki katı da tohum alırsın, değil mi? {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married",
+          "PageIndex": 0,
+          "DisplayPattern": "Eh, şimdi iki kat gelir elde etmeye başladığına göre normalin iki katı da tohum alırsın, değil mi?"
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "Hehe... Şaka tabii... *öhöm*...",
+          "AudioPath": "assets/tr-TR/Pierre/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married",
+          "PageIndex": 1,
+          "DisplayPattern": "Hehe... Şaka tabii... *öhöm*..."
+        },
+        {
+          "DialogueFrom": "married_Abigail_memory_oneday",
+          "DialogueText": "Merhaba... Oğlum? {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/24_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married_Abigail_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "Merhaba... Oğlum?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "married_Abigail_memory_oneday",
+          "DialogueText": "Merhaba... Kızım? {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/25_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married_Abigail_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "Merhaba... Kızım?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "cc_Complete",
+          "DialogueText": "Bu bir rüyanın gerçek olması gibi! JojaMart'ın beni ne kadar strese soktuğunu hayal edemezsin.",
+          "AudioPath": "assets/tr-TR/Pierre/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:cc_Complete",
+          "PageIndex": 0,
+          "DisplayPattern": "Bu bir rüyanın gerçek olması gibi! JojaMart'ın beni ne kadar strese soktuğunu hayal edemezsin."
+        },
+        {
+          "DialogueFrom": "cc_Complete",
+          "DialogueText": "Burası gibi küçük bir kasabaya bir mağaza yeterli! Hele bir de insanlar, onları kazıklıyormuşum gibi baskı kuruyorlarsa.",
+          "AudioPath": "assets/tr-TR/Pierre/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:cc_Complete",
+          "PageIndex": 1,
+          "DisplayPattern": "Burası gibi küçük bir kasabaya bir mağaza yeterli! Hele bir de insanlar, onları kazıklıyormuşum gibi baskı kuruyorlarsa."
+        },
+        {
+          "DialogueFrom": "joja_Begin",
+          "DialogueText": "Bu, Pelikan Kasabası için hüzünlü bir gün... Joja güçlendikçe iflasa yaklaşıyorum. Yakında dükkanı satmam gerekebilir... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:joja_Begin",
+          "PageIndex": 0,
+          "DisplayPattern": "Bu, Pelikan Kasabası için hüzünlü bir gün... Joja güçlendikçe iflasa yaklaşıyorum. Yakında dükkanı satmam gerekebilir..."
+        },
+        {
+          "DialogueFrom": "MovieInvitation",
+          "DialogueText": "Aa, güzel fikir... Dükkandan çıkmak iyi gelecek. Orada buluşuruz!",
+          "AudioPath": "assets/tr-TR/Pierre/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:MovieInvitation",
+          "PageIndex": 0,
+          "DisplayPattern": "Aa, güzel fikir... Dükkandan çıkmak iyi gelecek. Orada buluşuruz!"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Hoş geldin! Tohum bakınıyorsan en doğru yere geldin diyebilirim!",
+          "AudioPath": "assets/tr-TR/Pierre/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Hoş geldin! Tohum bakınıyorsan en doğru yere geldin diyebilirim!"
+        },
+        {
+          "DialogueFrom": "Mon_inlaw_Abigail",
+          "DialogueText": "Merhaba, şey... oğlum. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/31_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon_inlaw_Abigail",
+          "PageIndex": 0,
+          "DisplayPattern": "Merhaba, şey... oğlum.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Mon_inlaw_Abigail",
+          "DialogueText": "Merhaba, şey... kızım. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/32_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon_inlaw_Abigail",
+          "PageIndex": 1,
+          "DisplayPattern": "Merhaba, şey... kızım.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Selam, {Farmer_Name}. Tohum ya da meyve ağacı fidanı mı lazımdı?",
+          "AudioPath": "assets/tr-TR/Pierre/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "Selam, . Tohum ya da meyve ağacı fidanı mı lazımdı?"
+        },
+        {
+          "DialogueFrom": "Mon4_inlaw_Abigail",
+          "DialogueText": "Selam, {Farmer_Name}. Abigail nasıl? Onun yokluğunda dükkanda değişen bir şey olmadı...",
+          "AudioPath": "assets/tr-TR/Pierre/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon4_inlaw_Abigail",
+          "PageIndex": 0,
+          "DisplayPattern": "Selam, . Abigail nasıl? Onun yokluğunda dükkanda değişen bir şey olmadı..."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Kimileyin stoğa yeni şeyler ekliyorum. Ara sıra uğradığından emin ol.",
+          "AudioPath": "assets/tr-TR/Pierre/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Kimileyin stoğa yeni şeyler ekliyorum. Ara sıra uğradığından emin ol."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Dükkan işletmek oldukça uğraştırıcı. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Dükkan işletmek oldukça uğraştırıcı."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Hani eskiden çok iyi bir boksördüm... Sağ kroşelerim efsane sayılırdı! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "Hani eskiden çok iyi bir boksördüm... Sağ kroşelerim efsane sayılırdı!"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Bugün çalışmıyorum.",
+          "AudioPath": "assets/tr-TR/Pierre/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Bugün çalışmıyorum."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Hım... Ne yapsam... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Hım... Ne yapsam..."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Yabani ürün bulduğun takdirde makul bir fiyata senden alabilirim.",
+          "AudioPath": "assets/tr-TR/Pierre/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "Yabani ürün bulduğun takdirde makul bir fiyata senden alabilirim."
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "# {Portrait:Happy} pierre1",
+          "AudioPath": "assets/tr-TR/Pierre/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierre1"
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "*iç çeker*... İş ne kadar iyi giderse gitsin asla edindiğim başarıdan tatmin olmuyorum. Neyim var benim? Belki de ev hayatından sıkılmışımdır. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed4",
+          "PageIndex": 1,
+          "DisplayPattern": "*iç çeker*... İş ne kadar iyi giderse gitsin asla edindiğim başarıdan tatmin olmuyorum. Neyim var benim? Belki de ev hayatından sıkılmışımdır."
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "Gençken hep yapacak ilginç bir şeyler bulurdum... Şimdi ise çalışmadığım her an boşa vakit harcamış oluyorum. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed4",
+          "PageIndex": 2,
+          "DisplayPattern": "Gençken hep yapacak ilginç bir şeyler bulurdum... Şimdi ise çalışmadığım her an boşa vakit harcamış oluyorum."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Sizden mal almaktan mutlu olurum.",
+          "AudioPath": "assets/tr-TR/Pierre/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Sizden mal almaktan mutlu olurum."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Adil bir fiyat sunacağım elbette!",
+          "AudioPath": "assets/tr-TR/Pierre/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Adil bir fiyat sunacağım elbette!"
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "İşinizi takdir ediyorum, {Farmer_Name} Bey. Doğru düzgün kâr etmek gittikçe zorlaşıyor.",
+          "AudioPath": "assets/tr-TR/Pierre/46_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu2",
+          "PageIndex": 0,
+          "DisplayPattern": "İşinizi takdir ediyorum, Bey. Doğru düzgün kâr etmek gittikçe zorlaşıyor.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "İşinizi takdir ediyorum, {Farmer_Name} Hanım. Doğru düzgün kâr etmek gittikçe zorlaşıyor.",
+          "AudioPath": "assets/tr-TR/Pierre/47_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu2",
+          "PageIndex": 1,
+          "DisplayPattern": "İşinizi takdir ediyorum, Hanım. Doğru düzgün kâr etmek gittikçe zorlaşıyor.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "# {Portrait:Happy} pierre2",
+          "AudioPath": "assets/tr-TR/Pierre/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu8",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierre2"
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "Abigail bana benziyor mu? Karıma söyleme ama bazen gerçekten babası ben miyim diye düşünüyorum.$k {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu8",
+          "PageIndex": 1,
+          "DisplayPattern": "Abigail bana benziyor mu? Karıma söyleme ama bazen gerçekten babası ben miyim diye düşünüyorum."
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "Karıma söyleme ama akşam yemeğini yapmaktan nefret ediyorum.",
+          "AudioPath": "assets/tr-TR/Pierre/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu8",
+          "PageIndex": 2,
+          "DisplayPattern": "Karıma söyleme ama akşam yemeğini yapmaktan nefret ediyorum."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "# {Portrait:Happy} pierreJoja",
+          "AudioPath": "assets/tr-TR/Pierre/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreJoja"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Joja kasabaya geldiğinden beri işler kesat. Çok ürünleri var, rekabet etmesi zor.$k {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "Joja kasabaya geldiğinden beri işler kesat. Çok ürünleri var, rekabet etmesi zor."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Merhaba. Çiftlikte işler yolunda mı?",
+          "AudioPath": "assets/tr-TR/Pierre/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "Merhaba. Çiftlikte işler yolunda mı?"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Belki benden alacağın birkaç tohum çiftliğe çekidüzen verebilir.",
+          "AudioPath": "assets/tr-TR/Pierre/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 3,
+          "DisplayPattern": "Belki benden alacağın birkaç tohum çiftliğe çekidüzen verebilir."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Yabani ürün bulduğun takdirde makul bir fiyata senden alabilirim.",
+          "AudioPath": "assets/tr-TR/Pierre/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Yabani ürün bulduğun takdirde makul bir fiyata senden alabilirim."
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Sana bir sır vereceğim. Bazı zamanlar dükkan boşken, tezgâhın arkasında opera şarkıcısı gibi şarkı söylüyorum. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "Sana bir sır vereceğim. Bazı zamanlar dükkan boşken, tezgâhın arkasında opera şarkıcısı gibi şarkı söylüyorum."
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Kimseye bundan bahsetme.",
+          "AudioPath": "assets/tr-TR/Pierre/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "Kimseye bundan bahsetme."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "# {Portrait:Happy} pierreBlue",
+          "AudioPath": "assets/tr-TR/Pierre/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreBlue"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "*iç geçirir*... Tezgâh arkası bunalımına girdim...$k {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "*iç geçirir*... Tezgâh arkası bunalımına girdim..."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Keşke yürüyüşe çıkabilsem ama dükkanı boş bırakamam.",
+          "AudioPath": "assets/tr-TR/Pierre/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 2,
+          "DisplayPattern": "Keşke yürüyüşe çıkabilsem ama dükkanı boş bırakamam."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Çiçeklerin açtığını ve havanın harika koktuğunu duydum... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 3,
+          "DisplayPattern": "Çiçeklerin açtığını ve havanın harika koktuğunu duydum..."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "Bir gün şehirde dükkan açıp voliyi vuracağım.",
+          "AudioPath": "assets/tr-TR/Pierre/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "Bir gün şehirde dükkan açıp voliyi vuracağım."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "İşler o kadar kesik ki zar zor para biriktirebiliyorum... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed6",
+          "PageIndex": 1,
+          "DisplayPattern": "İşler o kadar kesik ki zar zor para biriktirebiliyorum..."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "JojaMart kapandığından beri işler epey arttı.",
+          "AudioPath": "assets/tr-TR/Pierre/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed6",
+          "PageIndex": 2,
+          "DisplayPattern": "JojaMart kapandığından beri işler epey arttı."
+        },
+        {
+          "DialogueFrom": "Thu4",
+          "DialogueText": "Merhaba, {Farmer_Name}. Sen benim bir numaralı müşterimsin!",
+          "AudioPath": "assets/tr-TR/Pierre/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu4",
+          "PageIndex": 0,
+          "DisplayPattern": "Merhaba, . Sen benim bir numaralı müşterimsin!"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "Yaz tohumları geldi! Stok yapsan iyi olur.",
+          "AudioPath": "assets/tr-TR/Pierre/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Yaz tohumları geldi! Stok yapsan iyi olur."
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "İzin yapabildiğim için çok mutluyum.",
+          "AudioPath": "assets/tr-TR/Pierre/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "İzin yapabildiğim için çok mutluyum."
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "Artık Joja olmadığına göre dükkanı haftanın yedi günü açık tutmam gerektiğini hissediyorum. İnsanlar bakkalsız ne yapar?",
+          "AudioPath": "assets/tr-TR/Pierre/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Artık Joja olmadığına göre dükkanı haftanın yedi günü açık tutmam gerektiğini hissediyorum. İnsanlar bakkalsız ne yapar?"
+        },
+        {
+          "DialogueFrom": "summer_Wed2",
+          "DialogueText": "Dükkan, hayatımdaki en önemli şeylerden biri. Tabii bazen insana bir gün izin gerek...",
+          "AudioPath": "assets/tr-TR/Pierre/69.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed2",
+          "PageIndex": 0,
+          "DisplayPattern": "Dükkan, hayatımdaki en önemli şeylerden biri. Tabii bazen insana bir gün izin gerek..."
+        },
+        {
+          "DialogueFrom": "summer_Wed2",
+          "DialogueText": "Artık Joja olmadığına göre dükkanı haftanın yedi günü açık tutmam gerektiğini hissediyorum. İnsanlar bakkalsız ne yapar!",
+          "AudioPath": "assets/tr-TR/Pierre/70.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed2",
+          "PageIndex": 1,
+          "DisplayPattern": "Artık Joja olmadığına göre dükkanı haftanın yedi günü açık tutmam gerektiğini hissediyorum. İnsanlar bakkalsız ne yapar!"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "Herkes alışverişe çıkmak yerine havanın tadını çıkarıyor... *iç çeker*",
+          "AudioPath": "assets/tr-TR/Pierre/71.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Herkes alışverişe çıkmak yerine havanın tadını çıkarıyor... *iç çeker*"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "Ah, merhaba. Yaz tohumlarımın kalitesinden memnun musun?",
+          "AudioPath": "assets/tr-TR/Pierre/72.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah, merhaba. Yaz tohumlarımın kalitesinden memnun musun?"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "Bu mevsim canlandırıcı salatalar yemenin tam zamanı, sence de öyle değil mi?",
+          "AudioPath": "assets/tr-TR/Pierre/73.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Bu mevsim canlandırıcı salatalar yemenin tam zamanı, sence de öyle değil mi?"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "Of... Hava çok sıcak.",
+          "AudioPath": "assets/tr-TR/Pierre/74.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Of... Hava çok sıcak."
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "Kışın ürün yetiştiremiyoruz... O yüzden sana tohum veremiyorum.",
+          "AudioPath": "assets/tr-TR/Pierre/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Kışın ürün yetiştiremiyoruz... O yüzden sana tohum veremiyorum."
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "Kar miktarım bayağı azalacak.",
+          "AudioPath": "assets/tr-TR/Pierre/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "Kar miktarım bayağı azalacak."
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "Sonunda bir gün olsun rahatlayabileceğiz.",
+          "AudioPath": "assets/tr-TR/Pierre/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Sonunda bir gün olsun rahatlayabileceğiz."
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "Artık Joja olmadığına göre dükkanı haftanın yedi günü açık tutmam gerektiğini hissediyorum. İnsanlar bakkalsız ne yapar?",
+          "AudioPath": "assets/tr-TR/Pierre/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Artık Joja olmadığına göre dükkanı haftanın yedi günü açık tutmam gerektiğini hissediyorum. İnsanlar bakkalsız ne yapar?"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "# {Portrait:Happy} pierreDin",
+          "AudioPath": "assets/tr-TR/Pierre/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreDin"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "Akşam yemeği ve bir şişe Yıldızçiyi kırmızı şarabı ile Caroline'a sürpriz yapacağım. Kimseye söyleme!$k",
+          "AudioPath": "assets/tr-TR/Pierre/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Akşam yemeği ve bir şişe Yıldızçiyi kırmızı şarabı ile Caroline'a sürpriz yapacağım. Kimseye söyleme!"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "Selamlar. Alışveriş havasında mısın yoksa?",
+          "AudioPath": "assets/tr-TR/Pierre/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "Selamlar. Alışveriş havasında mısın yoksa?"
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "Esas olarak yenilebilir şeyler alır satarım. Kısacası, elinde cevher ya da odun falan varsa onları başka birine satmaya çalışmalısın.",
+          "AudioPath": "assets/tr-TR/Pierre/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Esas olarak yenilebilir şeyler alır satarım. Kısacası, elinde cevher ya da odun falan varsa onları başka birine satmaya çalışmalısın."
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "Bana mı öyle geliyor yoksa cereyan mı var?",
+          "AudioPath": "assets/tr-TR/Pierre/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Bana mı öyle geliyor yoksa cereyan mı var?"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "Dükkanı işletmem gerekmeseydi şimdi dışarıda olurdum.",
+          "AudioPath": "assets/tr-TR/Pierre/84.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Dükkanı işletmem gerekmeseydi şimdi dışarıda olurdum."
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "Kar topu savaşı yapmak güzel olurdu.",
+          "AudioPath": "assets/tr-TR/Pierre/85.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Kar topu savaşı yapmak güzel olurdu."
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "Güz tohumları geldi! Kışın mahsul yetişmediğinden bahara değin bu son fırsatın.",
+          "AudioPath": "assets/tr-TR/Pierre/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Güz tohumları geldi! Kışın mahsul yetişmediğinden bahara değin bu son fırsatın."
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "Elinden geleni yapman gerekecek, ha?",
+          "AudioPath": "assets/tr-TR/Pierre/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "Elinden geleni yapman gerekecek, ha?"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "Hava soğumaya başladı...",
+          "AudioPath": "assets/tr-TR/Pierre/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Hava soğumaya başladı..."
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "Bu da ısınmak için dükkana giren kişi sayısı artacak demek... hehe.",
+          "AudioPath": "assets/tr-TR/Pierre/89.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Bu da ısınmak için dükkana giren kişi sayısı artacak demek... hehe."
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "# {Portrait:Happy} pierreMEGA",
+          "AudioPath": "assets/tr-TR/Pierre/90.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreMEGA"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "Hayalim aşırı zengin olana dek yeni yeni dükkanlar açmak, hehe.$k",
+          "AudioPath": "assets/tr-TR/Pierre/91.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "Hayalim aşırı zengin olana dek yeni yeni dükkanlar açmak, hehe."
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "Merhaba. Çiftlikte işler yolunda mı?",
+          "AudioPath": "assets/tr-TR/Pierre/92.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "Merhaba. Çiftlikte işler yolunda mı?"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "Belki benden alacağın birkaç tohum çiftliğe çekidüzen verebilir. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/93.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 3,
+          "DisplayPattern": "Belki benden alacağın birkaç tohum çiftliğe çekidüzen verebilir."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "Çiftliğinden çıkan ne var ne yok aldığım için mutluyum.",
+          "AudioPath": "assets/tr-TR/Pierre/94.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Çiftliğinden çıkan ne var ne yok aldığım için mutluyum."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "Evet, malları kâr edecek şekilde başkalarına satıyorum... Dükkan sahibi olmanın faydalı yanı da bu.",
+          "AudioPath": "assets/tr-TR/Pierre/95.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Evet, malları kâr edecek şekilde başkalarına satıyorum... Dükkan sahibi olmanın faydalı yanı da bu."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "Düşüncelere kapılma sakın...",
+          "AudioPath": "assets/tr-TR/Pierre/96.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "Düşüncelere kapılma sakın..."
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "Dükkanı işletmem gerekmeseydi şimdi dışarıda olurdum...",
+          "AudioPath": "assets/tr-TR/Pierre/97.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Dükkanı işletmem gerekmeseydi şimdi dışarıda olurdum..."
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "Mantarlar filizleniyor. Yapraklar da harika görünüyor.",
+          "AudioPath": "assets/tr-TR/Pierre/98.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Mantarlar filizleniyor. Yapraklar da harika görünüyor."
+        },
+        {
+          "DialogueFrom": "Event_naga1",
+          "DialogueText": "Teşekkürler, davranışını takdir ediyorum. Yalnız bunu gördüğünü unut, tamam mı? {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/99.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga1",
+          "PageIndex": 0,
+          "DisplayPattern": "Teşekkürler, davranışını takdir ediyorum. Yalnız bunu gördüğünü unut, tamam mı?"
+        },
+        {
+          "DialogueFrom": "Event_naga1",
+          "DialogueText": "...Ben de senin yatak odama girip etrafa bakındığını unutacağım!",
+          "AudioPath": "assets/tr-TR/Pierre/100.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga1",
+          "PageIndex": 1,
+          "DisplayPattern": "...Ben de senin yatak odama girip etrafa bakındığını unutacağım!"
+        },
+        {
+          "DialogueFrom": "Event_naga2",
+          "DialogueText": "Bunu bana gerçekten yapmak istiyor musun? Çok kötüsün. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/101.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga2",
+          "PageIndex": 0,
+          "DisplayPattern": "Bunu bana gerçekten yapmak istiyor musun? Çok kötüsün."
+        },
+        {
+          "DialogueFrom": "Event_naga2",
+          "DialogueText": "İlkin senin yatak odama girip etrafa bakınmaman gerekiyordu! En kötü komşular rahatsız edici olanlardır. {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Pierre/102.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga2",
+          "PageIndex": 1,
+          "DisplayPattern": "İlkin senin yatak odama girip etrafa bakınmaman gerekiyordu! En kötü komşular rahatsız edici olanlardır."
+        },
+        {
+          "DialogueFrom": "Fair_Judging",
+          "DialogueText": "Hey, bol şans.",
+          "AudioPath": "assets/tr-TR/Pierre/103.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judging",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, bol şans."
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerLost",
+          "DialogueText": "Zirvede olmak harika! Hah! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/104.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judged_PlayerLost",
+          "PageIndex": 0,
+          "DisplayPattern": "Zirvede olmak harika! Hah!"
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerLost",
+          "DialogueText": "Gerçi herkes çaba gösterdi.",
+          "AudioPath": "assets/tr-TR/Pierre/105.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judged_PlayerLost",
+          "PageIndex": 1,
+          "DisplayPattern": "Gerçi herkes çaba gösterdi."
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerWon",
+          "DialogueText": "Kaybettiğime inanamıyorum... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/106.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judged_PlayerWon",
+          "PageIndex": 0,
+          "DisplayPattern": "Kaybettiğime inanamıyorum..."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "Böyle günlerde çoğu insan evde oturuyor... Zarar ediyorum... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/107.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Böyle günlerde çoğu insan evde oturuyor... Zarar ediyorum..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s0",
+          "DialogueText": "Hello there, {Farmer_Name}. So! Your first year in Stardew Valley is almost over, huh?",
+          "AudioPath": "assets/tr-TR/Pierre/108.ogg",
+          "TranslationKey": "Events/Farm:102:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hello there, . So! Your first year in Stardew Valley is almost over, huh?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s1",
+          "DialogueText": "If you keep buying seeds from me, you'll be twice as productive next year! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/109.ogg",
+          "TranslationKey": "Events/Farm:102:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "If you keep buying seeds from me, you'll be twice as productive next year!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s2",
+          "DialogueText": "And I have some exciting news...",
+          "AudioPath": "assets/tr-TR/Pierre/110.ogg",
+          "TranslationKey": "Events/Farm:102:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "And I have some exciting news..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s3",
+          "DialogueText": "I'll be selling new seed varieties in my shop next year! I should have 1 new variety per season.",
+          "AudioPath": "assets/tr-TR/Pierre/111.ogg",
+          "TranslationKey": "Events/Farm:102:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll be selling new seed varieties in my shop next year! I should have 1 new variety per season."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s4",
+          "DialogueText": "...Well, that's all I wanted to say. Have a good one.",
+          "AudioPath": "assets/tr-TR/Pierre/112.ogg",
+          "TranslationKey": "Events/Farm:102:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "...Well, that's all I wanted to say. Have a good one."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s5",
+          "DialogueText": "You know... I wouldn't even bother trying my competitor's seeds. {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Pierre/113.ogg",
+          "TranslationKey": "Events/Farm:102:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "You know... I wouldn't even bother trying my competitor's seeds."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s6",
+          "DialogueText": "Pierre's seeds are the *highest* quality seeds you'll find anywhere. That's a promise. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/114.ogg",
+          "TranslationKey": "Events/Farm:102:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Pierre's seeds are the *highest* quality seeds you'll find anywhere. That's a promise."
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s0",
+          "DialogueText": "Abigail?! {Portrait:Love}",
+          "AudioPath": "assets/tr-TR/Pierre/115.ogg",
+          "TranslationKey": "Events/Town:4:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Abigail?!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s1",
+          "DialogueText": "I've been looking all over for you! Your mother wants you to come home and help with dinner! {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Pierre/116.ogg",
+          "TranslationKey": "Events/Town:4:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been looking all over for you! Your mother wants you to come home and help with dinner!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s2",
+          "DialogueText": "What are you doing in the graveyard, anyway? This is no place for a young lady! {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Pierre/117.ogg",
+          "TranslationKey": "Events/Town:4:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "What are you doing in the graveyard, anyway? This is no place for a young lady!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s3",
+          "DialogueText": "...!",
+          "AudioPath": "assets/tr-TR/Pierre/118.ogg",
+          "TranslationKey": "Events/Town:4:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "...!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s4",
+          "DialogueText": "Come back!",
+          "AudioPath": "assets/tr-TR/Pierre/119.ogg",
+          "TranslationKey": "Events/Town:4:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Come back!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s5",
+          "DialogueText": "Okay, my dad won't find us here...",
+          "AudioPath": "assets/tr-TR/Pierre/120.ogg",
+          "TranslationKey": "Events/Town:4:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay, my dad won't find us here..."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s0",
+          "DialogueText": "How does it feel?",
+          "AudioPath": "assets/tr-TR/Pierre/121.ogg",
+          "TranslationKey": "Events/Town:191393:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "How does it feel?"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s1",
+          "DialogueText": "Let's be reasonable.",
+          "AudioPath": "assets/tr-TR/Pierre/122.ogg",
+          "TranslationKey": "Events/Town:191393:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's be reasonable."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s2",
+          "DialogueText": "Let's settle this the old-fashioned way.",
+          "AudioPath": "assets/tr-TR/Pierre/123.ogg",
+          "TranslationKey": "Events/Town:191393:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's settle this the old-fashioned way."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s3",
+          "DialogueText": "No...not this time... {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Pierre/124.ogg",
+          "TranslationKey": "Events/Town:191393:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "No...not this time..."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s4",
+          "DialogueText": "Gather 'round, everyone!",
+          "AudioPath": "assets/tr-TR/Pierre/125.ogg",
+          "TranslationKey": "Events/Town:191393:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Gather 'round, everyone!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s5",
+          "DialogueText": "I remember when I first moved to Pelican Town... This building was active and vibrant.",
+          "AudioPath": "assets/tr-TR/Pierre/126.ogg",
+          "TranslationKey": "Events/Town:191393:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "I remember when I first moved to Pelican Town... This building was active and vibrant."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s6",
+          "DialogueText": "We worked together to make the town a better place. There was a real sense of community.",
+          "AudioPath": "assets/tr-TR/Pierre/127.ogg",
+          "TranslationKey": "Events/Town:191393:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "We worked together to make the town a better place. There was a real sense of community."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s7",
+          "DialogueText": "George, you always used to do the crossword puzzle while sipping coffee in the community kitchen. Remember?",
+          "AudioPath": "assets/tr-TR/Pierre/128.ogg",
+          "TranslationKey": "Events/Town:191393:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "George, you always used to do the crossword puzzle while sipping coffee in the community kitchen. Remember?"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s8",
+          "DialogueText": "Emily, you wove that custom banner for the Stardew Valley Fair.",
+          "AudioPath": "assets/tr-TR/Pierre/129.ogg",
+          "TranslationKey": "Events/Town:191393:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Emily, you wove that custom banner for the Stardew Valley Fair."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s9",
+          "DialogueText": "I remember you working on that for years! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/130.ogg",
+          "TranslationKey": "Events/Town:191393:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "I remember you working on that for years!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s10",
+          "DialogueText": "Willy!",
+          "AudioPath": "assets/tr-TR/Pierre/131.ogg",
+          "TranslationKey": "Events/Town:191393:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Willy!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s11",
+          "DialogueText": "Remember when your little crab experiment got out of hand? {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/132.ogg",
+          "TranslationKey": "Events/Town:191393:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Remember when your little crab experiment got out of hand?"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s12",
+          "DialogueText": "But Gus saved the day with a brilliant idea... A crab leg feast for the entire valley!",
+          "AudioPath": "assets/tr-TR/Pierre/133.ogg",
+          "TranslationKey": "Events/Town:191393:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "But Gus saved the day with a brilliant idea... A crab leg feast for the entire valley!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s13",
+          "DialogueText": "You see, everyone? Our community is what makes Pelican Town special.",
+          "AudioPath": "assets/tr-TR/Pierre/134.ogg",
+          "TranslationKey": "Events/Town:191393:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "You see, everyone? Our community is what makes Pelican Town special."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s14",
+          "DialogueText": "When JojaMart came to town we lost sight of that. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/135.ogg",
+          "TranslationKey": "Events/Town:191393:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "When JojaMart came to town we lost sight of that."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s15",
+          "DialogueText": "But now, thanks to {Farmer_Name}, we have a second chance.",
+          "AudioPath": "assets/tr-TR/Pierre/136.ogg",
+          "TranslationKey": "Events/Town:191393:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "But now, thanks to , we have a second chance."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s16",
+          "DialogueText": "I'm asking that you join me in boycotting JojaMart! We have the power to reclaim our old way of life!",
+          "AudioPath": "assets/tr-TR/Pierre/137.ogg",
+          "TranslationKey": "Events/Town:191393:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm asking that you join me in boycotting JojaMart! We have the power to reclaim our old way of life!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s17",
+          "DialogueText": "Who's with me?",
+          "AudioPath": "assets/tr-TR/Pierre/138.ogg",
+          "TranslationKey": "Events/Town:191393:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "Who's with me?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s0",
+          "DialogueText": "Hey! Who's in the bedroom? {Portrait:Love}",
+          "AudioPath": "assets/tr-TR/Pierre/139.ogg",
+          "TranslationKey": "Events/SeedShop:16:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey! Who's in the bedroom?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s1",
+          "DialogueText": "Wha...? How did you find that?! {Portrait:Love}",
+          "AudioPath": "assets/tr-TR/Pierre/140.ogg",
+          "TranslationKey": "Events/SeedShop:16:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Wha...? How did you find that?!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s2",
+          "DialogueText": "Quick, give it to me! {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Pierre/141.ogg",
+          "TranslationKey": "Events/SeedShop:16:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Quick, give it to me!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s3",
+          "DialogueText": "Promise me you won't tell anyone about this.",
+          "AudioPath": "assets/tr-TR/Pierre/142.ogg",
+          "TranslationKey": "Events/SeedShop:16:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Promise me you won't tell anyone about this."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s4",
+          "DialogueText": "Your secret is safe with me.",
+          "AudioPath": "assets/tr-TR/Pierre/143.ogg",
+          "TranslationKey": "Events/SeedShop:16:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Your secret is safe with me."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s5",
+          "DialogueText": "Your wife deserves to know about this.",
+          "AudioPath": "assets/tr-TR/Pierre/144.ogg",
+          "TranslationKey": "Events/SeedShop:16:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Your wife deserves to know about this."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s6",
+          "DialogueText": "*grumble*...now I have to find a new hiding spot...*grumble* {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Pierre/145.ogg",
+          "TranslationKey": "Events/SeedShop:16:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "*grumble*...now I have to find a new hiding spot...*grumble*"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/3102768:s0",
+          "DialogueText": "Welcome To Pierre's! How can I help you?",
+          "AudioPath": "assets/tr-TR/Pierre/146.ogg",
+          "TranslationKey": "Events/SeedShop:3102768:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Welcome To Pierre's! How can I help you?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/3102768:s1",
+          "DialogueText": "Percent!?!?",
+          "AudioPath": "assets/tr-TR/Pierre/147.ogg",
+          "TranslationKey": "Events/SeedShop:3102768:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Percent!?!?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/3102768:s2",
+          "DialogueText": "But... I can't match those prices! I'd be selling at a loss! {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/148.ogg",
+          "TranslationKey": "Events/SeedShop:3102768:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "But... I can't match those prices! I'd be selling at a loss!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s0",
+          "DialogueText": "Gus, I have just the thing for you...",
+          "AudioPath": "assets/tr-TR/Pierre/149.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Gus, I have just the thing for you..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s1",
+          "DialogueText": "It's a bundle of locally sourced, organic, heirloom veggies...",
+          "AudioPath": "assets/tr-TR/Pierre/150.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a bundle of locally sourced, organic, heirloom veggies..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s2",
+          "DialogueText": "These are hand picked and sorted, to ensure only the very finest in quality and taste.",
+          "AudioPath": "assets/tr-TR/Pierre/151.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "These are hand picked and sorted, to ensure only the very finest in quality and taste."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s3",
+          "DialogueText": "This is a once-in-a-lifetime kind of offer!",
+          "AudioPath": "assets/tr-TR/Pierre/152.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "This is a once-in-a-lifetime kind of offer!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s4",
+          "DialogueText": "ONLY... *mumble* mumble*",
+          "AudioPath": "assets/tr-TR/Pierre/153.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "ONLY... *mumble* mumble*"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s5",
+          "DialogueText": "Heh... that's right. It really is a bargain, isn't it?",
+          "AudioPath": "assets/tr-TR/Pierre/154.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Heh... that's right. It really is a bargain, isn't it?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s6",
+          "DialogueText": "Wait! How about 10,000g then!? {Portrait:Love}",
+          "AudioPath": "assets/tr-TR/Pierre/155.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Wait! How about 10,000g then!?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s7",
+          "DialogueText": "It's a disaster, {Farmer_Name}... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/156.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a disaster, ..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s8",
+          "DialogueText": "I thought this was a surefire business strategy. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/157.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I thought this was a surefire business strategy."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s9",
+          "DialogueText": "But it turns out, no one is willing to buy vegetables at a 10x price markup, even if I put the little 'organic' sticker on them. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/158.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "But it turns out, no one is willing to buy vegetables at a 10x price markup, even if I put the little 'organic' sticker on them."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s10",
+          "DialogueText": "You're right, you can't run a business without taking some risk.",
+          "AudioPath": "assets/tr-TR/Pierre/159.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "You're right, you can't run a business without taking some risk."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s11",
+          "DialogueText": "Hey, I'm not forcing anyone to buy it! If they don't like the price, they can move on. {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Pierre/160.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, I'm not forcing anyone to buy it! If they don't like the price, they can move on."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s12",
+          "DialogueText": "...But, I guess you have a point. If I make all my customers angry, then pretty soon I won't have any customers at all... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/161.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "...But, I guess you have a point. If I make all my customers angry, then pretty soon I won't have any customers at all..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s13",
+          "DialogueText": "By the way, {Farmer_Name}... you look like you could really use a veggie dinner tonight.",
+          "AudioPath": "assets/tr-TR/Pierre/162.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "By the way, ... you look like you could really use a veggie dinner tonight."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s14",
+          "DialogueText": "What do you say, wanna buy these back for the low, low price of 2,501g?",
+          "AudioPath": "assets/tr-TR/Pierre/163.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "What do you say, wanna buy these back for the low, low price of 2,501g?"
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s0",
+          "DialogueText": "No... Not this time, Morris. {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Pierre/164.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "No... Not this time, Morris."
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s1",
+          "DialogueText": "I think it's time we settled this once and for all. {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Pierre/165.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I think it's time we settled this once and for all."
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s2",
+          "DialogueText": "If you're too scared to fight me then bring one of your co-workers! Or are all Joja employees such cowards? {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Pierre/166.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "If you're too scared to fight me then bring one of your co-workers! Or are all Joja employees such cowards?"
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s3",
+          "DialogueText": "And the way you throw punches is just like Joja... {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Pierre/167.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "And the way you throw punches is just like Joja..."
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s4",
+          "DialogueText": "Quantity over quality!",
+          "AudioPath": "assets/tr-TR/Pierre/168.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Quantity over quality!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Pierre",
+          "DialogueText": "Benim dükkanım vadideki en iyi ürünleri içerir. Lütfen sergimi incele ve kararını ver!",
+          "AudioPath": "assets/tr-TR/Pierre/169.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Benim dükkanım vadideki en iyi ürünleri içerir. Lütfen sergimi incele ve kararını ver!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Pierre_y2",
+          "DialogueText": "Bu yılki çiftlik sergisinde galip geleceğime eminim! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/170.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Bu yılki çiftlik sergisinde galip geleceğime eminim!"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Pierre",
+          "DialogueText": "??",
+          "AudioPath": "assets/tr-TR/Pierre/171.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "??"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Pierre_y2",
+          "DialogueText": "Aa, bu çiftçi {Farmer_Name}! Bugün seçkin bazı ürünlerim var. Gel de göz at! {Portrait:Neutral}",
+          "AudioPath": "assets/tr-TR/Pierre/172.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Aa, bu çiftçi ! Bugün seçkin bazı ürünlerim var. Gel de göz at!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Pierre",
+          "DialogueText": "Selam! Buraya nasıl geldin? {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Pierre/173.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Selam! Buraya nasıl geldin?"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Pierre",
+          "DialogueText": "Bir şeye dokunma.",
+          "AudioPath": "assets/tr-TR/Pierre/174.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "Bir şeye dokunma."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Pierre_y2",
+          "DialogueText": "El altından iş mi çeviriyorsun? Hah! Girişkenliğine bayılıyorum.",
+          "AudioPath": "assets/tr-TR/Pierre/175.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "El altından iş mi çeviriyorsun? Hah! Girişkenliğine bayılıyorum."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre",
+          "DialogueText": "Ne? Buraya nasıl geldin? {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Pierre/176.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Ne? Buraya nasıl geldin?"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre",
+          "DialogueText": "Hiçbir şeye dokunma!",
+          "AudioPath": "assets/tr-TR/Pierre/177.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "Hiçbir şeye dokunma!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre_y2",
+          "DialogueText": "Hey, burada olmaman gerek! {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Pierre/178.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, burada olmaman gerek!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre_y2",
+          "DialogueText": "Eğer burada kalacaksan... Bir süre tezgâhın başında durabilir misin? Linus'un tatlı, keskin kokulu reçelini tatmak istiyorum.",
+          "AudioPath": "assets/tr-TR/Pierre/179.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Eğer burada kalacaksan... Bir süre tezgâhın başında durabilir misin? Linus'un tatlı, keskin kokulu reçelini tatmak istiyorum."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre_y2",
+          "DialogueText": "Şaka yapıyorum, kasanın başından ayrılamam... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/180.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre_y2",
+          "PageIndex": 2,
+          "DisplayPattern": "Şaka yapıyorum, kasanın başından ayrılamam..."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre",
+          "DialogueText": "Hım... Belki Vali'nin suyuna gidersem benim dükkanın vergilerini azaltır...",
+          "AudioPath": "assets/tr-TR/Pierre/181.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Hım... Belki Vali'nin suyuna gidersem benim dükkanın vergilerini azaltır..."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre",
+          "DialogueText": "Acaba yıllanmış viski sever mi?",
+          "AudioPath": "assets/tr-TR/Pierre/182.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "Acaba yıllanmış viski sever mi?"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre",
+          "DialogueText": "Eğer Başkan onunla gevezelik etmeyi bırakırsa konuşma fırsatım olabilir.",
+          "AudioPath": "assets/tr-TR/Pierre/183.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre",
+          "PageIndex": 2,
+          "DisplayPattern": "Eğer Başkan onunla gevezelik etmeyi bırakırsa konuşma fırsatım olabilir."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre_y2",
+          "DialogueText": "Lewis, Vali'yle konuşmayı bitirdiği anda... İşte o an, onunla tanışma fırsatım olacak... {Portrait:Neutral}",
+          "AudioPath": "assets/tr-TR/Pierre/184.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Lewis, Vali'yle konuşmayı bitirdiği anda... İşte o an, onunla tanışma fırsatım olacak..."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre_y2",
+          "DialogueText": "Seni orada fark etmemiştim. {Portrait:Love}",
+          "AudioPath": "assets/tr-TR/Pierre/185.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Seni orada fark etmemiştim."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre_y2",
+          "DialogueText": "Bir şey satın almak istiyorsan tezgâhın öbür tarafına geç. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/186.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre_y2",
+          "PageIndex": 2,
+          "DisplayPattern": "Bir şey satın almak istiyorsan tezgâhın öbür tarafına geç."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Pierre",
+          "DialogueText": "Pişt... Yarın güz tohumlarını almak için dükkana uğramayı unutma.",
+          "AudioPath": "assets/tr-TR/Pierre/187.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Pişt... Yarın güz tohumlarını almak için dükkana uğramayı unutma."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Pierre_y2",
+          "DialogueText": "Selam {Farmer_Name}. Güz tohumları için yarın dükkanıma uğramayı unutma! {Portrait:Neutral}",
+          "AudioPath": "assets/tr-TR/Pierre/188.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Selam . Güz tohumları için yarın dükkanıma uğramayı unutma!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Pierre",
+          "DialogueText": "Satışlarım son zamanlarda olağanüstü gidiyor... Kış Yıldızı Şöleni sağ olsun! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/189.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Satışlarım son zamanlarda olağanüstü gidiyor... Kış Yıldızı Şöleni sağ olsun!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Pierre",
+          "DialogueText": "Şölenlerde iyi iş oluyor. Acaba yeni şölenler uydurabilir miyim?..",
+          "AudioPath": "assets/tr-TR/Pierre/190.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "Şölenlerde iyi iş oluyor. Acaba yeni şölenler uydurabilir miyim?.."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Pierre_y2",
+          "DialogueText": "Son dakika hediyesi mi lazım? O iş bende! Sattıklarıma bir göz at. {Portrait:Neutral}",
+          "AudioPath": "assets/tr-TR/Pierre/191.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Son dakika hediyesi mi lazım? O iş bende! Sattıklarıma bir göz at."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Pierre",
+          "DialogueText": "Kar o kadar soğuk ki parmaklarımı hissetmiyorum artık... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/192.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Kar o kadar soğuk ki parmaklarımı hissetmiyorum artık..."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Pierre_y2",
+          "DialogueText": "Ailemizin birbiriyle eşleşen Kış Yıldızı kazakları var.",
+          "AudioPath": "assets/tr-TR/Pierre/193.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ailemizin birbiriyle eşleşen Kış Yıldızı kazakları var."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Pierre_y2",
+          "DialogueText": "Keşke Abigail de giyse... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/194.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Pierre_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Keşke Abigail de giyse..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s0",
+          "DialogueText": "Aldığım en iyi hediye bu! Teşekkür ederim!",
+          "AudioPath": "assets/tr-TR/Pierre/195.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Aldığım en iyi hediye bu! Teşekkür ederim!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s1",
+          "DialogueText": "Çok naziksin. Bunu beğendim.",
+          "AudioPath": "assets/tr-TR/Pierre/196.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Çok naziksin. Bunu beğendim."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s2",
+          "DialogueText": "En sevdiğimden değil ama...",
+          "AudioPath": "assets/tr-TR/Pierre/197.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "En sevdiğimden değil ama..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s3",
+          "DialogueText": "Lütfen bir daha bana bundan getirme.",
+          "AudioPath": "assets/tr-TR/Pierre/198.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Lütfen bir daha bana bundan getirme."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s4",
+          "DialogueText": "Hediye mi? Teşekkürler!",
+          "AudioPath": "assets/tr-TR/Pierre/199.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Hediye mi? Teşekkürler!"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow",
+          "DialogueText": "Selam, geçen bana {2} satmıştın, hatırlıyor musun? Akşam yemeğinde ailemle yiyelim dedik.",
+          "AudioPath": "assets/tr-TR/Pierre/200.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow",
+          "PageIndex": 0,
+          "DisplayPattern": "Selam, geçen bana {2} satmıştın, hatırlıyor musun? Akşam yemeğinde ailemle yiyelim dedik."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow",
+          "DialogueText": "Mükemmel diyemem açıkçası... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/201.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow",
+          "PageIndex": 1,
+          "DisplayPattern": "Mükemmel diyemem açıkçası..."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow",
+          "DialogueText": "... Şey,... artık işe dönmeliyiz.",
+          "AudioPath": "assets/tr-TR/Pierre/202.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow",
+          "PageIndex": 2,
+          "DisplayPattern": "... Şey,... artık işe dönmeliyiz."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh",
+          "DialogueText": "Selam, geçen bana {2} satmıştın, hatırlıyor musun? Akşam yemeğinde ailemle yiyelim dedik.",
+          "AudioPath": "assets/tr-TR/Pierre/203.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh",
+          "PageIndex": 0,
+          "DisplayPattern": "Selam, geçen bana {2} satmıştın, hatırlıyor musun? Akşam yemeğinde ailemle yiyelim dedik."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh",
+          "DialogueText": "Karım bayıldı resmen! Ben bir de sosa bandım ki sonrasında Abby daha da fazla almak için dışarı çıktı. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/204.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh",
+          "PageIndex": 1,
+          "DisplayPattern": "Karım bayıldı resmen! Ben bir de sosa bandım ki sonrasında Abby daha da fazla almak için dışarı çıktı."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh",
+          "DialogueText": "... Şey,... artık işe dönmeliyiz.",
+          "AudioPath": "assets/tr-TR/Pierre/205.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh",
+          "PageIndex": 2,
+          "DisplayPattern": "... Şey,... artık işe dönmeliyiz."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow_Willy",
+          "DialogueText": "Selamlar... Geçen bana {2} satmıştın, hatırlıyor musun? Dün gece barakamdayken tıslıyordu...",
+          "AudioPath": "assets/tr-TR/Pierre/206.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow_Willy",
+          "PageIndex": 0,
+          "DisplayPattern": "Selamlar... Geçen bana {2} satmıştın, hatırlıyor musun? Dün gece barakamdayken tıslıyordu..."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow_Willy",
+          "DialogueText": "Daha önce böylesine salya akıtan bir şey görmemiştim... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Pierre/207.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow_Willy",
+          "PageIndex": 1,
+          "DisplayPattern": "Daha önce böylesine salya akıtan bir şey görmemiştim..."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh_Willy",
+          "DialogueText": "Selamlar! Geçen bana {2} getirmiştin, hatırlıyor musun? Dün gece barakamdayken tıslıyordu...",
+          "AudioPath": "assets/tr-TR/Pierre/208.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh_Willy",
+          "PageIndex": 0,
+          "DisplayPattern": "Selamlar! Geçen bana {2} getirmiştin, hatırlıyor musun? Dün gece barakamdayken tıslıyordu..."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh_Willy",
+          "DialogueText": "Çocukluğumdan beri gördüğüm en iyi balık bu olabilir! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/209.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh_Willy",
+          "PageIndex": 1,
+          "DisplayPattern": "Çocukluğumdan beri gördüğüm en iyi balık bu olabilir!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_love_BeforeMovie",
+          "DialogueText": "Eski bilim kurguları izleyerek büyümüş biri olarak yeni filmleri izlemek için can atıyorum.",
+          "AudioPath": "assets/tr-TR/Pierre/210.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Eski bilim kurguları izleyerek büyümüş biri olarak yeni filmleri izlemek için can atıyorum."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_love_AfterMovie",
+          "DialogueText": "Hah! Beklediğim gibi değildi ama beğendim. Vumbus'u gerçekten anlayabiliyorum. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Pierre/211.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Hah! Beklediğim gibi değildi ama beğendim. Vumbus'u gerçekten anlayabiliyorum."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_like_BeforeMovie",
+          "DialogueText": "Biliyorsun ki sürekli çalışıyorum. Böyle bir kaçamak benim için iyi olacak.",
+          "AudioPath": "assets/tr-TR/Pierre/212.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Biliyorsun ki sürekli çalışıyorum. Böyle bir kaçamak benim için iyi olacak."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_like_AfterMovie",
+          "DialogueText": "Fena değildi! Acaba dükkanda satabileceğim ticari mallar üretmişler midir...",
+          "AudioPath": "assets/tr-TR/Pierre/213.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Fena değildi! Acaba dükkanda satabileceğim ticari mallar üretmişler midir..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "DialogueText": "Bir satıcı olarak diğer satıcıların mekânlarını nasıl işlettiğini görmek hoşuma gidiyor.",
+          "AudioPath": "assets/tr-TR/Pierre/214.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Bir satıcı olarak diğer satıcıların mekânlarını nasıl işlettiğini görmek hoşuma gidiyor."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "DialogueText": "*fısıldar* Sandy'ye söyleme ama benim reyonlarım onunkinden çok daha iyi!",
+          "AudioPath": "assets/tr-TR/Pierre/215.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "*fısıldar* Sandy'ye söyleme ama benim reyonlarım onunkinden çok daha iyi!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Pierre",
+          "DialogueText": "Pişt... Para karşılığında biraz yumurta satıyorum! Hehe... Lewis'e sakın söyleme.",
+          "AudioPath": "assets/tr-TR/Pierre/216.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Pişt... Para karşılığında biraz yumurta satıyorum! Hehe... Lewis'e sakın söyleme."
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Winter",
+          "DialogueText": "Pierre'in ısıtılmış dükkanına hoş geldin!",
+          "AudioPath": "assets/tr-TR/Pierre/217.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Winter",
+          "PageIndex": 0,
+          "DisplayPattern": "Pierre'in ısıtılmış dükkanına hoş geldin!"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_NotWinter",
+          "DialogueText": "Pierre'in Bakkalı'na hoş geldin!",
+          "AudioPath": "assets/tr-TR/Pierre/218.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_NotWinter",
+          "PageIndex": 0,
+          "DisplayPattern": "Pierre'in Bakkalı'na hoş geldin!"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Summer",
+          "DialogueText": "Yaz tohumları geldi!",
+          "AudioPath": "assets/tr-TR/Pierre/219.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Summer",
+          "PageIndex": 0,
+          "DisplayPattern": "Yaz tohumları geldi!"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_NotSummer",
+          "DialogueText": "Satılık tohum bulunur!",
+          "AudioPath": "assets/tr-TR/Pierre/220.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_NotSummer",
+          "PageIndex": 0,
+          "DisplayPattern": "Satılık tohum bulunur!"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Greeting1",
+          "DialogueText": "Merhaba!",
+          "AudioPath": "assets/tr-TR/Pierre/221.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Greeting1",
+          "PageIndex": 0,
+          "DisplayPattern": "Merhaba!"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Greeting2",
+          "DialogueText": "Çiftçi {Farmer_Name} gelmiş!",
+          "AudioPath": "assets/tr-TR/Pierre/222.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Greeting2",
+          "PageIndex": 0,
+          "DisplayPattern": "Çiftçi {0} gelmiş!"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Raining",
+          "DialogueText": "Tam alışveriş yapmalık bir gün!",
+          "AudioPath": "assets/tr-TR/Pierre/223.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Raining",
+          "PageIndex": 0,
+          "DisplayPattern": "Tam alışveriş yapmalık bir gün!"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_NotRaining",
+          "DialogueText": "Hoş geldin!",
+          "AudioPath": "assets/tr-TR/Pierre/224.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_NotRaining",
+          "PageIndex": 0,
+          "DisplayPattern": "Hoş geldin!"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_RareGreeting",
+          "DialogueText": "Cüzdanını getirdin, değil mi?",
+          "AudioPath": "assets/tr-TR/Pierre/225.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_RareGreeting",
+          "PageIndex": 0,
+          "DisplayPattern": "Cüzdanını getirdin, değil mi?"
+        }
+      ]
+    }
+  ]
+}

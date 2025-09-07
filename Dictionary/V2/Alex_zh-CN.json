@@ -1,0 +1,4284 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Alex.zh-CN",
+      "VoicePackName": "DictionarV2 (Alex - zh-CN)",
+      "Character": "Alex",
+      "Language": "zh-CN",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "哦，嘿。你就是那个新来的吧？不错不错。",
+          "AudioPath": "assets/zh-CN/Alex/1_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "哦，嘿。你就是那个新来的吧？不错不错。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "嘿，你就是新来的那个姑娘，是不是？我们一定会相处得很愉快的。我是亚力克斯。",
+          "AudioPath": "assets/zh-CN/Alex/2_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "嘿，你就是新来的那个姑娘，是不是？我们一定会相处得很愉快的。我是亚力克斯。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "回见。",
+          "AudioPath": "assets/zh-CN/Alex/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Introduction",
+          "PageIndex": 2,
+          "DisplayPattern": "回见。"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "你怎么先说了！我刚想问你…… {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:FlowerDance_Accept",
+          "PageIndex": 0,
+          "DisplayPattern": "你怎么先说了！我刚想问你……"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "咱们到时候见。",
+          "AudioPath": "assets/zh-CN/Alex/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:FlowerDance_Accept",
+          "PageIndex": 1,
+          "DisplayPattern": "咱们到时候见。"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Loved",
+          "DialogueText": "太好了，我超喜欢这个东西……{Farmer_Name}，谢谢你送我生日礼物。",
+          "AudioPath": "assets/zh-CN/Alex/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptBirthdayGift_Loved",
+          "PageIndex": 0,
+          "DisplayPattern": "太好了，我超喜欢这个东西……，谢谢你送我生日礼物。"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "什么鬼……？呃，不知道你老家那边觉得这个怎么样，对我来说这就是垃圾。 {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "什么鬼……？呃，不知道你老家那边觉得这个怎么样，对我来说这就是垃圾。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "哇……这个太棒了，谢谢你！",
+          "AudioPath": "assets/zh-CN/Alex/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "哇……这个太棒了，谢谢你！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)Book_Defense",
+          "DialogueText": "哇，太好了……我一直在找这本书，读完之后肯定能练成铜墙铁壁。第一条……要多吃蛋！哈，不成问题！谢谢你！ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)Book_Defense",
+          "PageIndex": 0,
+          "DisplayPattern": "哇，太好了……我一直在找这本书，读完之后肯定能练成铜墙铁壁。第一条……要多吃蛋！哈，不成问题！谢谢你！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Negative_book_item",
+          "DialogueText": "呃……要我读书？那什么……我或许可以试试。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_Negative_book_item",
+          "PageIndex": 0,
+          "DisplayPattern": "呃……要我读书？那什么……我或许可以试试。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)FrogEgg",
+          "DialogueText": "呃……我确实很喜欢吃蛋……可是这个蛋实在是…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(TR)FrogEgg",
+          "PageIndex": 0,
+          "DisplayPattern": "呃……我确实很喜欢吃蛋……可是这个蛋实在是……"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)FrogEgg",
+          "DialogueText": "行吧……一口闷！（咕嘟） {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(TR)FrogEgg",
+          "PageIndex": 1,
+          "DisplayPattern": "行吧……一口闷！（咕嘟）"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)ParrotEgg",
+          "DialogueText": "这个能吃吗？ {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(TR)ParrotEgg",
+          "PageIndex": 0,
+          "DisplayPattern": "这个能吃吗？"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)ParrotEgg",
+          "DialogueText": "看来只有试试才能知道了……",
+          "AudioPath": "assets/zh-CN/Alex/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(TR)ParrotEgg",
+          "PageIndex": 1,
+          "DisplayPattern": "看来只有试试才能知道了……"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)928",
+          "DialogueText": "嘻嘻……多送我点这个，我三十岁就能退休了！ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)928",
+          "PageIndex": 0,
+          "DisplayPattern": "嘻嘻……多送我点这个，我三十岁就能退休了！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)107",
+          "DialogueText": "这才算是个蛋嘛！做成煎蛋卷该有多大……",
+          "AudioPath": "assets/zh-CN/Alex/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)107",
+          "PageIndex": 0,
+          "DisplayPattern": "这才算是个蛋嘛！做成煎蛋卷该有多大……"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)289",
+          "DialogueText": "哇……这么重，都能用来练弯举了。这个我能吃上一个星期！哈哈！ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)289",
+          "PageIndex": 0,
+          "DisplayPattern": "哇……这么重，都能用来练弯举了。这个我能吃上一个星期！哈哈！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)442",
+          "DialogueText": "嗯……是鸭蛋……粘稠又细腻。（敲开）……（吸溜）……啊……",
+          "AudioPath": "assets/zh-CN/Alex/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)442",
+          "PageIndex": 0,
+          "DisplayPattern": "嗯……是鸭蛋……粘稠又细腻。（敲开）……（吸溜）……啊……"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)305",
+          "DialogueText": "啊……呃……我挺喜欢吃蛋的，可是这个看起来有点吓人。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)305",
+          "PageIndex": 0,
+          "DisplayPattern": "啊……呃……我挺喜欢吃蛋的，可是这个看起来有点吓人。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)403",
+          "DialogueText": "（嘎嘣）……嗯……有坚果，我可喜欢了。{Farmer_Name}，谢谢你！",
+          "AudioPath": "assets/zh-CN/Alex/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)403",
+          "PageIndex": 0,
+          "DisplayPattern": "（嘎嘣）……嗯……有坚果，我可喜欢了。，谢谢你！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Positive_category_egg",
+          "DialogueText": "哦！谢谢你，蛋白质可是增肌利器。",
+          "AudioPath": "assets/zh-CN/Alex/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_Positive_category_egg",
+          "PageIndex": 0,
+          "DisplayPattern": "哦！谢谢你，蛋白质可是增肌利器。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Positive_category_egg",
+          "DialogueText": "（敲开）（吸溜）……嗯，这才够意思嘛。",
+          "AudioPath": "assets/zh-CN/Alex/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_Positive_category_egg",
+          "PageIndex": 1,
+          "DisplayPattern": "（敲开）（吸溜）……嗯，这才够意思嘛。"
+        },
+        {
+          "DialogueFrom": "cc_Bridge",
+          "DialogueText": "你最近去过湖边吗？我昨晚深夜跑步的时候，发现那座断桥居然修好了……",
+          "AudioPath": "assets/zh-CN/Alex/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:cc_Bridge",
+          "PageIndex": 0,
+          "DisplayPattern": "你最近去过湖边吗？我昨晚深夜跑步的时候，发现那座断桥居然修好了……"
+        },
+        {
+          "DialogueFrom": "eventSeen_288847",
+          "DialogueText": "呃……我平时不太会那样倾诉的…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:eventSeen_288847",
+          "PageIndex": 0,
+          "DisplayPattern": "呃……我平时不太会那样倾诉的……"
+        },
+        {
+          "DialogueFrom": "fishCaught_159",
+          "DialogueText": "听说你钓到了一条稀有的鱼？",
+          "AudioPath": "assets/zh-CN/Alex/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fishCaught_159",
+          "PageIndex": 0,
+          "DisplayPattern": "听说你钓到了一条稀有的鱼？"
+        },
+        {
+          "DialogueFrom": "fishCaught_159",
+          "DialogueText": "很厉害嘛，你的手臂肯定很强壮！（捏）……还不错哦！ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fishCaught_159",
+          "PageIndex": 1,
+          "DisplayPattern": "很厉害嘛，你的手臂肯定很强壮！（捏）……还不错哦！"
+        },
+        {
+          "DialogueFrom": "purchasedAnimal_Chicken_memory_oneday",
+          "DialogueText": "哎，之前我无意中听说你买了一只小鸡。",
+          "AudioPath": "assets/zh-CN/Alex/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:purchasedAnimal_Chicken_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "哎，之前我无意中听说你买了一只小鸡。"
+        },
+        {
+          "DialogueFrom": "purchasedAnimal_Chicken_memory_oneday",
+          "DialogueText": "好家伙……要是外婆也养鸡就好了，那我每天早饭都要吃一堆生鸡蛋！",
+          "AudioPath": "assets/zh-CN/Alex/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:purchasedAnimal_Chicken_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "好家伙……要是外婆也养鸡就好了，那我每天早饭都要吃一堆生鸡蛋！"
+        },
+        {
+          "DialogueFrom": "eventSeen_288847_memory_oneweek",
+          "DialogueText": "哎……那个……{Farmer_Name}？呃……上周在海滩上跟你聊过之后，我心里轻松多了。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:eventSeen_288847_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "哎……那个……？呃……上周在海滩上跟你聊过之后，我心里轻松多了。"
+        },
+        {
+          "DialogueFrom": "eventSeen_288847_memory_oneweek",
+          "DialogueText": "谢谢你听我说那些。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:eventSeen_288847_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "谢谢你听我说那些。"
+        },
+        {
+          "DialogueFrom": "fishCaught_139",
+          "DialogueText": "我看见你钓到了一条鲑鱼。",
+          "AudioPath": "assets/zh-CN/Alex/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fishCaught_139",
+          "PageIndex": 0,
+          "DisplayPattern": "我看见你钓到了一条鲑鱼。"
+        },
+        {
+          "DialogueFrom": "fishCaught_139",
+          "DialogueText": "如果你打算做“鲑鱼晚餐”，记得给我留一口！",
+          "AudioPath": "assets/zh-CN/Alex/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fishCaught_139",
+          "PageIndex": 1,
+          "DisplayPattern": "如果你打算做“鲑鱼晚餐”，记得给我留一口！"
+        },
+        {
+          "DialogueFrom": "firstVisit_BathHouse_MensLocker_memory_oneday",
+          "DialogueText": "之前我在澡堂看见你了，你是不是在健身？哈哈。",
+          "AudioPath": "assets/zh-CN/Alex/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:firstVisit_BathHouse_MensLocker_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "之前我在澡堂看见你了，你是不是在健身？哈哈。"
+        },
+        {
+          "DialogueFrom": "firstVisit_BathHouse_MensLocker_memory_oneday",
+          "DialogueText": "呃……你没有翻我的储物柜吧？ {Portrait:Custom:9}",
+          "AudioPath": "assets/zh-CN/Alex/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:firstVisit_BathHouse_MensLocker_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "呃……你没有翻我的储物柜吧？"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "外面咋了？要做什么吗？",
+          "AudioPath": "assets/zh-CN/Alex/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "外面咋了？要做什么吗？"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "我就跟外公外婆待在这里…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:GreenRain",
+          "PageIndex": 1,
+          "DisplayPattern": "我就跟外公外婆待在这里……"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "我早上想去晨跑，可是植物长疯了！所以就没跑多远……",
+          "AudioPath": "assets/zh-CN/Alex/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "我早上想去晨跑，可是植物长疯了！所以就没跑多远……"
+        },
+        {
+          "DialogueFrom": "dating_Alex",
+          "DialogueText": "亚历克斯咧嘴笑着，捏了一下你的手臂。",
+          "AudioPath": "assets/zh-CN/Alex/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:dating_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "亚历克斯咧嘴笑着，捏了一下你的手臂。"
+        },
+        {
+          "DialogueFrom": "dating_Alex_memory_oneday",
+          "DialogueText": "唔，我永远不会忘记这个%season！ {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:dating_Alex_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "唔，我永远不会忘记这个！"
+        },
+        {
+          "DialogueFrom": "married_Haley",
+          "DialogueText": "你居然跟海莉结婚了？我还以为你根本追不到她呢！",
+          "AudioPath": "assets/zh-CN/Alex/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:married_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "你居然跟海莉结婚了？我还以为你根本追不到她呢！"
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "总算到了！",
+          "AudioPath": "assets/zh-CN/Alex/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "总算到了！"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "啊……快乐的时光总是这么短暂。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "啊……快乐的时光总是这么短暂。"
+        },
+        {
+          "DialogueFrom": "Resort_Wander",
+          "DialogueText": "好吧，早知道应该带个飞盘来的…… {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Wander",
+          "PageIndex": 0,
+          "DisplayPattern": "好吧，早知道应该带个飞盘来的……"
+        },
+        {
+          "DialogueFrom": "Resort_Wander_2",
+          "DialogueText": "有人来排球比赛吗？",
+          "AudioPath": "assets/zh-CN/Alex/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Wander_2",
+          "PageIndex": 0,
+          "DisplayPattern": "有人来排球比赛吗？"
+        },
+        {
+          "DialogueFrom": "Resort_Wander_2",
+          "DialogueText": "别担心，我会放水的！ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Wander_2",
+          "PageIndex": 1,
+          "DisplayPattern": "别担心，我会放水的！"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "不知道一个来回我能游多远？",
+          "AudioPath": "assets/zh-CN/Alex/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "不知道一个来回我能游多远？"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "我猜怎么着也得有个一英里。",
+          "AudioPath": "assets/zh-CN/Alex/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Shore",
+          "PageIndex": 1,
+          "DisplayPattern": "我猜怎么着也得有个一英里。"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "……别担心，我不会真去试的。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Shore",
+          "PageIndex": 2,
+          "DisplayPattern": "……别担心，我不会真去试的。"
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "你穿那套衣服不热吗？别吧兄弟……这可是在海滩上！",
+          "AudioPath": "assets/zh-CN/Alex/49_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "你穿那套衣服不热吗？别吧兄弟……这可是在海滩上！",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "你穿那套衣服不热吗？你得感受下海风吹拂的感觉！",
+          "AudioPath": "assets/zh-CN/Alex/50_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Chair",
+          "PageIndex": 1,
+          "DisplayPattern": "你穿那套衣服不热吗？你得感受下海风吹拂的感觉！",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Resort_Towel",
+          "DialogueText": "现在岛屿开放了，可就没有借口继续宅在家里了！",
+          "AudioPath": "assets/zh-CN/Alex/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Towel",
+          "PageIndex": 0,
+          "DisplayPattern": "现在岛屿开放了，可就没有借口继续宅在家里了！"
+        },
+        {
+          "DialogueFrom": "Resort_Towel_2",
+          "DialogueText": "哎呀，总算让这些腹肌出来见见太阳了。",
+          "AudioPath": "assets/zh-CN/Alex/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Towel_2",
+          "PageIndex": 0,
+          "DisplayPattern": "哎呀，总算让这些腹肌出来见见太阳了。"
+        },
+        {
+          "DialogueFrom": "Resort_Towel_2",
+          "DialogueText": "回家后一直把它们藏起来有点可惜。",
+          "AudioPath": "assets/zh-CN/Alex/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Towel_2",
+          "PageIndex": 1,
+          "DisplayPattern": "回家后一直把它们藏起来有点可惜。"
+        },
+        {
+          "DialogueFrom": "Resort_Towel_3",
+          "DialogueText": "等我成为职业选手，我要去世界各地的岛屿上度假。",
+          "AudioPath": "assets/zh-CN/Alex/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Towel_3",
+          "PageIndex": 0,
+          "DisplayPattern": "等我成为职业选手，我要去世界各地的岛屿上度假。"
+        },
+        {
+          "DialogueFrom": "Resort_Towel_3",
+          "DialogueText": "不过目前就在这个地方过过瘾吧！ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Towel_3",
+          "PageIndex": 1,
+          "DisplayPattern": "不过目前就在这个地方过过瘾吧！"
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "我点了一份香蕉奶昔加两勺蛋白粉。",
+          "AudioPath": "assets/zh-CN/Alex/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "我点了一份香蕉奶昔加两勺蛋白粉。"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "啊……我会习惯岛屿上的生活的！",
+          "AudioPath": "assets/zh-CN/Alex/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "啊……我会习惯岛屿上的生活的！"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept_Spouse",
+          "DialogueText": "好吧，这应该会很有趣……希望今年我能记住舞步！有好长时间没跳舞了…… {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:FlowerDance_Accept_Spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "好吧，这应该会很有趣……希望今年我能记住舞步！有好长时间没跳舞了……"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Decline",
+          "DialogueText": "算了……我去找别人问问。祝你好运。",
+          "AudioPath": "assets/zh-CN/Alex/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:FlowerDance_Decline",
+          "PageIndex": 0,
+          "DisplayPattern": "算了……我去找别人问问。祝你好运。"
+        },
+        {
+          "DialogueFrom": "divorced",
+          "DialogueText": "我还以为我们之间的关系很特殊……我可能是自作多情了。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:divorced",
+          "PageIndex": 0,
+          "DisplayPattern": "我还以为我们之间的关系很特殊……我可能是自作多情了。"
+        },
+        {
+          "DialogueFrom": "dumped_Guys",
+          "DialogueText": "不要浪费我的时间。 {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:dumped_Guys",
+          "PageIndex": 0,
+          "DisplayPattern": "不要浪费我的时间。"
+        },
+        {
+          "DialogueFrom": "secondChance_Guys",
+          "DialogueText": "我不知道我是否还能相信你，但我愿意给你一次机会。 {Portrait:Custom:9}",
+          "AudioPath": "assets/zh-CN/Alex/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:secondChance_Guys",
+          "PageIndex": 0,
+          "DisplayPattern": "我不知道我是否还能相信你，但我愿意给你一次机会。"
+        },
+        {
+          "DialogueFrom": "breakUp",
+          "DialogueText": "你这是在给我啥……？ {Portrait:Custom:7}",
+          "AudioPath": "assets/zh-CN/Alex/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:breakUp",
+          "PageIndex": 0,
+          "DisplayPattern": "你这是在给我啥……？"
+        },
+        {
+          "DialogueFrom": "breakUp",
+          "DialogueText": "呼……我知道了。好吧……嗯，看来你已经决定好了。我不会赖着不走的。 {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:breakUp",
+          "PageIndex": 1,
+          "DisplayPattern": "呼……我知道了。好吧……嗯，看来你已经决定好了。我不会赖着不走的。"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "你知道吗？我上高中的时候可是全明星四分卫哦。真的。 {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Alex/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "你知道吗？我上高中的时候可是全明星四分卫哦。真的。"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "看到我夹克上这颗小星星了吗？这就是证明。",
+          "AudioPath": "assets/zh-CN/Alex/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "看到我夹克上这颗小星星了吗？这就是证明。"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "海滩是个值得一玩的好地方，在那里还能做个日光浴。",
+          "AudioPath": "assets/zh-CN/Alex/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "海滩是个值得一玩的好地方，在那里还能做个日光浴。"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "你得时常晒晒太阳，要不然肤色就会变得苍白。",
+          "AudioPath": "assets/zh-CN/Alex/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "你得时常晒晒太阳，要不然肤色就会变得苍白。"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "*唉* ……真希望镇上能多些女孩子，你明白我的意思吧？ {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/69_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Tue",
+          "PageIndex": 2,
+          "DisplayPattern": "*唉* ……真希望镇上能多些女孩子，你明白我的意思吧？",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "嘿，有空跟我去海滩玩玩啊？你有比基尼泳衣吗？",
+          "AudioPath": "assets/zh-CN/Alex/70_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Tue",
+          "PageIndex": 3,
+          "DisplayPattern": "嘿，有空跟我去海滩玩玩啊？你有比基尼泳衣吗？",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "今天挺适合打球的，对不对？ {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Alex/71.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "今天挺适合打球的，对不对？"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "我还想叫你一起投投球，但你好像不怎么喜欢运动。",
+          "AudioPath": "assets/zh-CN/Alex/72_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "我还想叫你一起投投球，但你好像不怎么喜欢运动。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "如果你不是女孩子，我就约你打球了。",
+          "AudioPath": "assets/zh-CN/Alex/73_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "如果你不是女孩子，我就约你打球了。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "我站在旁边看就好了。",
+          "AudioPath": "assets/zh-CN/Alex/74.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed",
+          "PageIndex": 3,
+          "DisplayPattern": "我站在旁边看就好了。"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "我想和你打球！",
+          "AudioPath": "assets/zh-CN/Alex/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed",
+          "PageIndex": 4,
+          "DisplayPattern": "我想和你打球！"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "（愤怒）你到底是什么意思？",
+          "AudioPath": "assets/zh-CN/Alex/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed",
+          "PageIndex": 5,
+          "DisplayPattern": "（愤怒）你到底是什么意思？"
+        },
+        {
+          "DialogueFrom": "Wed_01_old",
+          "DialogueText": "长途奔袭！……开个玩笑而已。哈哈哈。",
+          "AudioPath": "assets/zh-CN/Alex/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed_01_old",
+          "PageIndex": 0,
+          "DisplayPattern": "长途奔袭！……开个玩笑而已。哈哈哈。"
+        },
+        {
+          "DialogueFrom": "Wed_01_old",
+          "DialogueText": "我只想找个人一起玩球…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed_01_old",
+          "PageIndex": 1,
+          "DisplayPattern": "我只想找个人一起玩球……"
+        },
+        {
+          "DialogueFrom": "Wed_01_01",
+          "DialogueText": "真的？看来我低估你了。",
+          "AudioPath": "assets/zh-CN/Alex/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed_01_01",
+          "PageIndex": 0,
+          "DisplayPattern": "真的？看来我低估你了。"
+        },
+        {
+          "DialogueFrom": "Wed_01_01",
+          "DialogueText": "我的胳膊有点儿酸，要不还是改日吧。",
+          "AudioPath": "assets/zh-CN/Alex/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed_01_01",
+          "PageIndex": 1,
+          "DisplayPattern": "我的胳膊有点儿酸，要不还是改日吧。"
+        },
+        {
+          "DialogueFrom": "Wed_01_02",
+          "DialogueText": "对，有些人天生就不是运动的料。",
+          "AudioPath": "assets/zh-CN/Alex/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed_01_02",
+          "PageIndex": 0,
+          "DisplayPattern": "对，有些人天生就不是运动的料。"
+        },
+        {
+          "DialogueFrom": "Wed_01_03",
+          "DialogueText": "啊……算了。",
+          "AudioPath": "assets/zh-CN/Alex/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed_01_03",
+          "PageIndex": 0,
+          "DisplayPattern": "啊……算了。"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "天气热起来了……我感觉有些喘不过气。",
+          "AudioPath": "assets/zh-CN/Alex/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "天气热起来了……我感觉有些喘不过气。"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "嘿，怎么啦，农家小伙儿？",
+          "AudioPath": "assets/zh-CN/Alex/84_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，怎么啦，农家小伙儿？",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "嘿，原来是农家姑娘啊。你穿了新裤子吗？这就对了。",
+          "AudioPath": "assets/zh-CN/Alex/85_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "嘿，原来是农家姑娘啊。你穿了新裤子吗？这就对了。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "哦，差点忘了。今天是我做俯卧撑的日子！",
+          "AudioPath": "assets/zh-CN/Alex/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "哦，差点忘了。今天是我做俯卧撑的日子！"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "每次我做俯卧撑，都会试着比上次多做几个。这种锻炼方法挺棒的吧？",
+          "AudioPath": "assets/zh-CN/Alex/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri",
+          "PageIndex": 3,
+          "DisplayPattern": "每次我做俯卧撑，都会试着比上次多做几个。这种锻炼方法挺棒的吧？"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "我的胳膊好酸啊，但对我这样的人来说，这正是取得进步的标志。",
+          "AudioPath": "assets/zh-CN/Alex/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "我的胳膊好酸啊，但对我这样的人来说，这正是取得进步的标志。"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "我昨天肯定做了一千个俯卧撑。",
+          "AudioPath": "assets/zh-CN/Alex/89.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "我昨天肯定做了一千个俯卧撑。"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "嘿。",
+          "AudioPath": "assets/zh-CN/Alex/90.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿。"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "怎么，有话要和我说吗？我这会儿正忙着呢。",
+          "AudioPath": "assets/zh-CN/Alex/91.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "怎么，有话要和我说吗？我这会儿正忙着呢。"
+        },
+        {
+          "DialogueFrom": "Sun2",
+          "DialogueText": "嘿，{Farmer_Name}。",
+          "AudioPath": "assets/zh-CN/Alex/92.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sun2",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，。"
+        },
+        {
+          "DialogueFrom": "Sun2",
+          "DialogueText": "对，我记得你的名字。",
+          "AudioPath": "assets/zh-CN/Alex/93.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sun2",
+          "PageIndex": 1,
+          "DisplayPattern": "对，我记得你的名字。"
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "嘿，{Farmer_Name}。",
+          "AudioPath": "assets/zh-CN/Alex/94.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sun4",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，。"
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "今天过得怎么样？",
+          "AudioPath": "assets/zh-CN/Alex/95.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sun4",
+          "PageIndex": 1,
+          "DisplayPattern": "今天过得怎么样？"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "嘿，{Farmer_Name}。很高兴你能来。",
+          "AudioPath": "assets/zh-CN/Alex/96.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，。很高兴你能来。"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "我敢光明正大地说我爱我奶奶！",
+          "AudioPath": "assets/zh-CN/Alex/97.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri4",
+          "PageIndex": 1,
+          "DisplayPattern": "我敢光明正大地说我爱我奶奶！"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "至于我爷爷嘛……",
+          "AudioPath": "assets/zh-CN/Alex/98.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri4",
+          "PageIndex": 2,
+          "DisplayPattern": "至于我爷爷嘛……"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "说笑呢。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/99.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri4",
+          "PageIndex": 3,
+          "DisplayPattern": "说笑呢。"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "和朋友们在海滩上度过愉快的一天，没有能比这美的事情了……我说的没错吧？",
+          "AudioPath": "assets/zh-CN/Alex/100.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "和朋友们在海滩上度过愉快的一天，没有能比这美的事情了……我说的没错吧？"
+        },
+        {
+          "DialogueFrom": "Mon8",
+          "DialogueText": "我曾经想要追逐名利，但最近，我的想法发生了改变。到了最后，真正能让人满足的其实就是一些微不足道的小事，你说是不是？",
+          "AudioPath": "assets/zh-CN/Alex/101.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Mon8",
+          "PageIndex": 0,
+          "DisplayPattern": "我曾经想要追逐名利，但最近，我的想法发生了改变。到了最后，真正能让人满足的其实就是一些微不足道的小事，你说是不是？"
+        },
+        {
+          "DialogueFrom": "Mon8",
+          "DialogueText": "我仍然想当职业选手，但那已经不是这个世界上最重要的事情了。",
+          "AudioPath": "assets/zh-CN/Alex/102.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Mon8",
+          "PageIndex": 1,
+          "DisplayPattern": "我仍然想当职业选手，但那已经不是这个世界上最重要的事情了。"
+        },
+        {
+          "DialogueFrom": "Fri8",
+          "DialogueText": "嗨，{Farmer_Name}。你今天挺有运动气息的嘛。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/103_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri8",
+          "PageIndex": 0,
+          "DisplayPattern": "嗨，。你今天挺有运动气息的嘛。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Fri8",
+          "DialogueText": "嘿，{Farmer_Name}。你换了发型吗？我感觉眼前一亮呢。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/104_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri8",
+          "PageIndex": 1,
+          "DisplayPattern": "嘿，。你换了发型吗？我感觉眼前一亮呢。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Sat10",
+          "DialogueText": "我最近很难集中注意力。 {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/105.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sat10",
+          "PageIndex": 0,
+          "DisplayPattern": "我最近很难集中注意力。"
+        },
+        {
+          "DialogueFrom": "Event_beach1",
+          "DialogueText": "那是当然的了。不然我会以为你疯了。要不然就是傻了。",
+          "AudioPath": "assets/zh-CN/Alex/106.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_beach1",
+          "PageIndex": 0,
+          "DisplayPattern": "那是当然的了。不然我会以为你疯了。要不然就是傻了。"
+        },
+        {
+          "DialogueFrom": "Event_beach2",
+          "DialogueText": "真的？你还真是个奇怪的家伙啊。 {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/107.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_beach2",
+          "PageIndex": 0,
+          "DisplayPattern": "真的？你还真是个奇怪的家伙啊。"
+        },
+        {
+          "DialogueFrom": "Event_beach2",
+          "DialogueText": "抱歉。",
+          "AudioPath": "assets/zh-CN/Alex/108.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_beach2",
+          "PageIndex": 1,
+          "DisplayPattern": "抱歉。"
+        },
+        {
+          "DialogueFrom": "Event_books1",
+          "DialogueText": "我才不是呢！你这是在恭维我。 {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/109.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_books1",
+          "PageIndex": 0,
+          "DisplayPattern": "我才不是呢！你这是在恭维我。"
+        },
+        {
+          "DialogueFrom": "Event_books2",
+          "DialogueText": "嗯，你或许说得对…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/110.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_books2",
+          "PageIndex": 0,
+          "DisplayPattern": "嗯，你或许说得对……"
+        },
+        {
+          "DialogueFrom": "Event_books3",
+          "DialogueText": "你应该反对我才对。 {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/111.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_books3",
+          "PageIndex": 0,
+          "DisplayPattern": "你应该反对我才对。"
+        },
+        {
+          "DialogueFrom": "event_box1",
+          "DialogueText": "对……我知道。所以我才下定决心，一定要在运动生涯中取得成功…… {Portrait:Custom:9}",
+          "AudioPath": "assets/zh-CN/Alex/112.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box1",
+          "PageIndex": 0,
+          "DisplayPattern": "对……我知道。所以我才下定决心，一定要在运动生涯中取得成功……"
+        },
+        {
+          "DialogueFrom": "event_box1",
+          "DialogueText": "不管成功与否……只要尽了全力，我想她都会以我为傲。谢谢你。",
+          "AudioPath": "assets/zh-CN/Alex/113.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box1",
+          "PageIndex": 1,
+          "DisplayPattern": "不管成功与否……只要尽了全力，我想她都会以我为傲。谢谢你。"
+        },
+        {
+          "DialogueFrom": "event_box2",
+          "DialogueText": "呀……今天是我妈的忌日！你就发发慈悲吧…… {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/114.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box2",
+          "PageIndex": 0,
+          "DisplayPattern": "呀……今天是我妈的忌日！你就发发慈悲吧……"
+        },
+        {
+          "DialogueFrom": "event_box3",
+          "DialogueText": "……谢谢你，{Farmer_Name}。",
+          "AudioPath": "assets/zh-CN/Alex/115.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box3",
+          "PageIndex": 0,
+          "DisplayPattern": "……谢谢你，。"
+        },
+        {
+          "DialogueFrom": "event_box3",
+          "DialogueText": "你和别人不一样。你的心思更加细腻。 {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/116_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box3",
+          "PageIndex": 1,
+          "DisplayPattern": "你和别人不一样。你的心思更加细腻。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "event_box3",
+          "DialogueText": "你是我在整个镇上最好的朋友……",
+          "AudioPath": "assets/zh-CN/Alex/117_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box3",
+          "PageIndex": 2,
+          "DisplayPattern": "你是我在整个镇上最好的朋友……",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "event_box3",
+          "DialogueText": "我很高兴。",
+          "AudioPath": "assets/zh-CN/Alex/118_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box3",
+          "PageIndex": 3,
+          "DisplayPattern": "我很高兴。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "event_box3",
+          "DialogueText": "这种话很难启齿吗？ {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/119_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box3",
+          "PageIndex": 4,
+          "DisplayPattern": "这种话很难启齿吗？",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "event_box4",
+          "DialogueText": "笨蛋，我一点都没感到安慰。 {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/120.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box4",
+          "PageIndex": 0,
+          "DisplayPattern": "笨蛋，我一点都没感到安慰。"
+        },
+        {
+          "DialogueFrom": "Event_parents1",
+          "DialogueText": "这个想法很有趣……",
+          "AudioPath": "assets/zh-CN/Alex/121.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_parents1",
+          "PageIndex": 0,
+          "DisplayPattern": "这个想法很有趣……"
+        },
+        {
+          "DialogueFrom": "Event_parents2",
+          "DialogueText": "他们不会那么做的！ {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/122.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_parents2",
+          "PageIndex": 0,
+          "DisplayPattern": "他们不会那么做的！"
+        },
+        {
+          "DialogueFrom": "Event_parents3",
+          "DialogueText": "……或许你是对的……我不知道。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/123.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_parents3",
+          "PageIndex": 0,
+          "DisplayPattern": "……或许你是对的……我不知道。"
+        },
+        {
+          "DialogueFrom": "summer_1",
+          "DialogueText": "嘿。夏天绝对是一年中最棒的时节。",
+          "AudioPath": "assets/zh-CN/Alex/124.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_1",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿。夏天绝对是一年中最棒的时节。"
+        },
+        {
+          "DialogueFrom": "summer_1",
+          "DialogueText": "现在这个时间正好，可以憧憬整个夏天呢。回头见啦。",
+          "AudioPath": "assets/zh-CN/Alex/125.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_1",
+          "PageIndex": 1,
+          "DisplayPattern": "现在这个时间正好，可以憧憬整个夏天呢。回头见啦。"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "嘿，农家小伙儿。你怎么一副被烤焦的样子？",
+          "AudioPath": "assets/zh-CN/Alex/126_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，农家小伙儿。你怎么一副被烤焦的样子？",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "嘿，农家女孩儿。你的皮肤晒得挺不错啊。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/127_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "嘿，农家女孩儿。你的皮肤晒得挺不错啊。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "今年夏天我练得越多，进入职业队的把握就越大。",
+          "AudioPath": "assets/zh-CN/Alex/128.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Mon",
+          "PageIndex": 2,
+          "DisplayPattern": "今年夏天我练得越多，进入职业队的把握就越大。"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "然后你就可以和人说你认识我了。很酷吧？",
+          "AudioPath": "assets/zh-CN/Alex/129.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Mon",
+          "PageIndex": 3,
+          "DisplayPattern": "然后你就可以和人说你认识我了。很酷吧？"
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "要是我的发型不受女孩子欢迎，我肯定会马上把它剃掉。",
+          "AudioPath": "assets/zh-CN/Alex/130.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "要是我的发型不受女孩子欢迎，我肯定会马上把它剃掉。"
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "*唉* ……生活艰辛啊。",
+          "AudioPath": "assets/zh-CN/Alex/131.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "*唉* ……生活艰辛啊。"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "你一定会成为运动场上的传奇",
+          "AudioPath": "assets/zh-CN/Alex/132.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "你一定会成为运动场上的传奇"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "可能吧，你毕竟练习了那么久",
+          "AudioPath": "assets/zh-CN/Alex/133.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "可能吧，你毕竟练习了那么久"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "别做梦了，你还是老老实实去做推销员吧",
+          "AudioPath": "assets/zh-CN/Alex/134.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "别做梦了，你还是老老实实去做推销员吧"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_old",
+          "DialogueText": "嘿，等我成了职业选手，你就可以跟人说，你是我的第一位“粉丝”。是不是挺酷啊？",
+          "AudioPath": "assets/zh-CN/Alex/135.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_old",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，等我成了职业选手，你就可以跟人说，你是我的第一位“粉丝”。是不是挺酷啊？"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_old",
+          "DialogueText": "嘿，我已经在加倍练习了，所以我一定会进入职业队，然后证明你错了。你就等着瞧吧。 {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/136.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_old",
+          "PageIndex": 1,
+          "DisplayPattern": "嘿，我已经在加倍练习了，所以我一定会进入职业队，然后证明你错了。你就等着瞧吧。"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_01",
+          "DialogueText": "嘿，我就是这个意思！ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/137.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_01",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，我就是这个意思！"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_01",
+          "DialogueText": "你比我想象的还要酷。",
+          "AudioPath": "assets/zh-CN/Alex/138.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_01",
+          "PageIndex": 1,
+          "DisplayPattern": "你比我想象的还要酷。"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_02",
+          "DialogueText": "对，我这么棒，根本不需要练习那么久。 {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Alex/139.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_02",
+          "PageIndex": 0,
+          "DisplayPattern": "对，我这么棒，根本不需要练习那么久。"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_03",
+          "DialogueText": "你有毛病吧。你就是看我比你有天赋，比你受欢迎，所以眼红了。 {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/140_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_03",
+          "PageIndex": 0,
+          "DisplayPattern": "你有毛病吧。你就是看我比你有天赋，比你受欢迎，所以眼红了。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_03",
+          "DialogueText": "怎么可能。你就是看我比你受欢迎得多，所以嫉妒了，你个神经病。 {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/141_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_03",
+          "PageIndex": 1,
+          "DisplayPattern": "怎么可能。你就是看我比你受欢迎得多，所以嫉妒了，你个神经病。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_03",
+          "DialogueText": "离我远点儿。 {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/142.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_03",
+          "PageIndex": 2,
+          "DisplayPattern": "离我远点儿。"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "嘿，整天在农场里干活儿，你一定变得很强壮吧。",
+          "AudioPath": "assets/zh-CN/Alex/143_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，整天在农场里干活儿，你一定变得很强壮吧。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "嘿，整天在农场里干活儿，你肯定会变得很健美。",
+          "AudioPath": "assets/zh-CN/Alex/144_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "嘿，整天在农场里干活儿，你肯定会变得很健美。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "或许有一天你会达到我的水平。是不是很期待哦？",
+          "AudioPath": "assets/zh-CN/Alex/145.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "或许有一天你会达到我的水平。是不是很期待哦？"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "你脸上怎么带着那种表情？",
+          "AudioPath": "assets/zh-CN/Alex/146.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Thu",
+          "PageIndex": 3,
+          "DisplayPattern": "你脸上怎么带着那种表情？"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "有什么事吗？",
+          "AudioPath": "assets/zh-CN/Alex/147.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "有什么事吗？"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "我这会儿还有更重要的事情要做。",
+          "AudioPath": "assets/zh-CN/Alex/148.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "我这会儿还有更重要的事情要做。"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "嗯……我闻到了烧烤的味道。",
+          "AudioPath": "assets/zh-CN/Alex/149.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "嗯……我闻到了烧烤的味道。"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "该死，我得来个汉堡包。",
+          "AudioPath": "assets/zh-CN/Alex/150.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "该死，我得来个汉堡包。"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "我昨天买了这双鞋，因为原来那双粘了一块儿褐色的脏东西。",
+          "AudioPath": "assets/zh-CN/Alex/151.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "我昨天买了这双鞋，因为原来那双粘了一块儿褐色的脏东西。"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "我直接把旧鞋扔进了垃圾堆。我原本可以把它捐了，但我怕被哪个神经病捡去穿，这你理解吧？",
+          "AudioPath": "assets/zh-CN/Alex/152.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "我直接把旧鞋扔进了垃圾堆。我原本可以把它捐了，但我怕被哪个神经病捡去穿，这你理解吧？"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "……什么？ {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/153.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sun",
+          "PageIndex": 2,
+          "DisplayPattern": "……什么？"
+        },
+        {
+          "DialogueFrom": "summer_Sun4",
+          "DialogueText": "哦……你的鞋有点儿脏……但也没关系！",
+          "AudioPath": "assets/zh-CN/Alex/154.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sun4",
+          "PageIndex": 0,
+          "DisplayPattern": "哦……你的鞋有点儿脏……但也没关系！"
+        },
+        {
+          "DialogueFrom": "summer_Sun4",
+          "DialogueText": "每个人品位都不一样嘛。",
+          "AudioPath": "assets/zh-CN/Alex/155.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sun4",
+          "PageIndex": 1,
+          "DisplayPattern": "每个人品位都不一样嘛。"
+        },
+        {
+          "DialogueFrom": "summer_Thu4",
+          "DialogueText": "嘿，今年夏天你的身材变得好好哦！",
+          "AudioPath": "assets/zh-CN/Alex/156.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Thu4",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，今年夏天你的身材变得好好哦！"
+        },
+        {
+          "DialogueFrom": "summer_Thu4",
+          "DialogueText": "在农场里流的那些汗都值了，对不对？",
+          "AudioPath": "assets/zh-CN/Alex/157.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Thu4",
+          "PageIndex": 1,
+          "DisplayPattern": "在农场里流的那些汗都值了，对不对？"
+        },
+        {
+          "DialogueFrom": "summer_Mon4",
+          "DialogueText": "嘿，肤色真不错。",
+          "AudioPath": "assets/zh-CN/Alex/158.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，肤色真不错。"
+        },
+        {
+          "DialogueFrom": "summer_Fri6",
+          "DialogueText": "抱歉，我的房间好乱。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/159.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "抱歉，我的房间好乱。"
+        },
+        {
+          "DialogueFrom": "summer_Fri6",
+          "DialogueText": "我老是忘了打扫。不过我以后也会尽量勤快点的。",
+          "AudioPath": "assets/zh-CN/Alex/160.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "我老是忘了打扫。不过我以后也会尽量勤快点的。"
+        },
+        {
+          "DialogueFrom": "summer_Wed8",
+          "DialogueText": "我其实不介意当农民……从某种意义上来说，这和当运动员是一回事。",
+          "AudioPath": "assets/zh-CN/Alex/161.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed8",
+          "PageIndex": 0,
+          "DisplayPattern": "我其实不介意当农民……从某种意义上来说，这和当运动员是一回事。"
+        },
+        {
+          "DialogueFrom": "summer_Wed8",
+          "DialogueText": "我喜欢在户外用自己的双手做些事情。",
+          "AudioPath": "assets/zh-CN/Alex/162.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed8",
+          "PageIndex": 1,
+          "DisplayPattern": "我喜欢在户外用自己的双手做些事情。"
+        },
+        {
+          "DialogueFrom": "summer_Sat10",
+          "DialogueText": "我最近一直想多读读书……我感觉自己太沉迷于运动，脑子都快生锈了。",
+          "AudioPath": "assets/zh-CN/Alex/163.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sat10",
+          "PageIndex": 0,
+          "DisplayPattern": "我最近一直想多读读书……我感觉自己太沉迷于运动，脑子都快生锈了。"
+        },
+        {
+          "DialogueFrom": "fall_1",
+          "DialogueText": "天气确实开始变冷了……但不妨碍运动！",
+          "AudioPath": "assets/zh-CN/Alex/164.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_1",
+          "PageIndex": 0,
+          "DisplayPattern": "天气确实开始变冷了……但不妨碍运动！"
+        },
+        {
+          "DialogueFrom": "fall_1",
+          "DialogueText": "知道这一点就足够了。",
+          "AudioPath": "assets/zh-CN/Alex/165.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_1",
+          "PageIndex": 1,
+          "DisplayPattern": "知道这一点就足够了。"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "奶奶说我应该在学习上多花些时间。",
+          "AudioPath": "assets/zh-CN/Alex/166.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "奶奶说我应该在学习上多花些时间。"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "我当时就想，“……奶奶，别替我操心了。我会变成职业选手的！” {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/167.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "我当时就想，“……奶奶，别替我操心了。我会变成职业选手的！”"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "毕竟，学习是书呆子的专利。",
+          "AudioPath": "assets/zh-CN/Alex/168.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Mon",
+          "PageIndex": 2,
+          "DisplayPattern": "毕竟，学习是书呆子的专利。"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "嘿，我想问你件事。",
+          "AudioPath": "assets/zh-CN/Alex/169_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，我想问你件事。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "嘿，我能问你件事吗？",
+          "AudioPath": "assets/zh-CN/Alex/170_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "嘿，我能问你件事吗？",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "你觉得女孩子会喜欢我的发型吗？",
+          "AudioPath": "assets/zh-CN/Alex/171_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "你觉得女孩子会喜欢我的发型吗？",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "你觉得我的发型怎么样？",
+          "AudioPath": "assets/zh-CN/Alex/172_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed",
+          "PageIndex": 3,
+          "DisplayPattern": "你觉得我的发型怎么样？",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "看起来挺时尚的。",
+          "AudioPath": "assets/zh-CN/Alex/173.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed",
+          "PageIndex": 4,
+          "DisplayPattern": "看起来挺时尚的。"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "像头上长了蘑菇一样。",
+          "AudioPath": "assets/zh-CN/Alex/174.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed",
+          "PageIndex": 5,
+          "DisplayPattern": "像头上长了蘑菇一样。"
+        },
+        {
+          "DialogueFrom": "fall_Wed_01_old",
+          "DialogueText": "今天我头发上喷太多发胶了。有点疼。",
+          "AudioPath": "assets/zh-CN/Alex/175.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed_01_old",
+          "PageIndex": 0,
+          "DisplayPattern": "今天我头发上喷太多发胶了。有点疼。"
+        },
+        {
+          "DialogueFrom": "fall_Wed_01_old",
+          "DialogueText": "别碰！",
+          "AudioPath": "assets/zh-CN/Alex/176.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed_01_old",
+          "PageIndex": 1,
+          "DisplayPattern": "别碰！"
+        },
+        {
+          "DialogueFrom": "fall_Wed_01_old",
+          "DialogueText": "……什么？",
+          "AudioPath": "assets/zh-CN/Alex/177.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed_01_old",
+          "PageIndex": 2,
+          "DisplayPattern": "……什么？"
+        },
+        {
+          "DialogueFrom": "fall_Wed_01_01",
+          "DialogueText": "是啊，我知道。所以我才喜欢。",
+          "AudioPath": "assets/zh-CN/Alex/178.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed_01_01",
+          "PageIndex": 0,
+          "DisplayPattern": "是啊，我知道。所以我才喜欢。"
+        },
+        {
+          "DialogueFrom": "fall_Wed_01_02",
+          "DialogueText": "没错儿。看我这么帅，你就是眼红了。",
+          "AudioPath": "assets/zh-CN/Alex/179.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed_01_02",
+          "PageIndex": 0,
+          "DisplayPattern": "没错儿。看我这么帅，你就是眼红了。"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "近来如何啊？",
+          "AudioPath": "assets/zh-CN/Alex/180.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "近来如何啊？"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "你是不是叫……%firstnameletter%name呀？",
+          "AudioPath": "assets/zh-CN/Alex/181.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "你是不是叫……%name呀？"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "噢。{Farmer_Name}？好。抱歉。",
+          "AudioPath": "assets/zh-CN/Alex/182.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "噢。？好。抱歉。"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "我今晚要做两百个仰卧起坐。",
+          "AudioPath": "assets/zh-CN/Alex/183.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "我今晚要做两百个仰卧起坐。"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "我是不是很努力啊？ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/184.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "我是不是很努力啊？"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "你还需要什么吗？",
+          "AudioPath": "assets/zh-CN/Alex/185.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "你还需要什么吗？"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "每年的这个时候，都能在河里捞到鲑鱼。",
+          "AudioPath": "assets/zh-CN/Alex/186.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "每年的这个时候，都能在河里捞到鲑鱼。"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "起码我听说是这样的。",
+          "AudioPath": "assets/zh-CN/Alex/187.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "起码我听说是这样的。"
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "嘿，格球比赛就在今天！",
+          "AudioPath": "assets/zh-CN/Alex/188.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，格球比赛就在今天！"
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "秋天的周日最棒了。 {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Alex/189.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "秋天的周日最棒了。"
+        },
+        {
+          "DialogueFrom": "fall_Thu2",
+          "DialogueText": "怎么了，{Farmer_Name}？",
+          "AudioPath": "assets/zh-CN/Alex/190.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Thu2",
+          "PageIndex": 0,
+          "DisplayPattern": "怎么了，？"
+        },
+        {
+          "DialogueFrom": "fall_Fri6",
+          "DialogueText": "我今晚要做一万个仰卧起坐。",
+          "AudioPath": "assets/zh-CN/Alex/191.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "我今晚要做一万个仰卧起坐。"
+        },
+        {
+          "DialogueFrom": "fall_Fri6",
+          "DialogueText": "如果想要最大限度地发挥出潜能，就得努力拼搏。",
+          "AudioPath": "assets/zh-CN/Alex/192.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "如果想要最大限度地发挥出潜能，就得努力拼搏。"
+        },
+        {
+          "DialogueFrom": "fall_Mon4",
+          "DialogueText": "奶奶说我应该在学习上多花些时间。",
+          "AudioPath": "assets/zh-CN/Alex/193.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "奶奶说我应该在学习上多花些时间。"
+        },
+        {
+          "DialogueFrom": "fall_Mon4",
+          "DialogueText": "或许她是对的…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/194.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "或许她是对的……"
+        },
+        {
+          "DialogueFrom": "fall_Wed8",
+          "DialogueText": "我终于下定决心……不会在往头发上抹发胶了。",
+          "AudioPath": "assets/zh-CN/Alex/195.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed8",
+          "PageIndex": 0,
+          "DisplayPattern": "我终于下定决心……不会在往头发上抹发胶了。"
+        },
+        {
+          "DialogueFrom": "fall_Wed8",
+          "DialogueText": "那些因为我抹了发胶才喜欢我的家伙，我可不想和他们做朋友。",
+          "AudioPath": "assets/zh-CN/Alex/196.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed8",
+          "PageIndex": 1,
+          "DisplayPattern": "那些因为我抹了发胶才喜欢我的家伙，我可不想和他们做朋友。"
+        },
+        {
+          "DialogueFrom": "fall_Thu10",
+          "DialogueText": "{Farmer_Name}！呃……嗨。 {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/197.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Thu10",
+          "PageIndex": 0,
+          "DisplayPattern": "！呃……嗨。"
+        },
+        {
+          "DialogueFrom": "winter_1",
+          "DialogueText": "冬天太无聊了。经常下雪，找不到有趣的事情。",
+          "AudioPath": "assets/zh-CN/Alex/198.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_1",
+          "PageIndex": 0,
+          "DisplayPattern": "冬天太无聊了。经常下雪，找不到有趣的事情。"
+        },
+        {
+          "DialogueFrom": "winter_1",
+          "DialogueText": "我猜有人喜欢冬天。",
+          "AudioPath": "assets/zh-CN/Alex/199.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_1",
+          "PageIndex": 1,
+          "DisplayPattern": "我猜有人喜欢冬天。"
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "你喜欢下雪吗？我……我一心只期盼着春天。",
+          "AudioPath": "assets/zh-CN/Alex/200.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "你喜欢下雪吗？我……我一心只期盼着春天。"
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "嘿，你能不能代我去跟海莉问个好？",
+          "AudioPath": "assets/zh-CN/Alex/201.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，你能不能代我去跟海莉问个好？"
+        },
+        {
+          "DialogueFrom": "winter_Tue_inlaw_Haley",
+          "DialogueText": "哦，嘿。婚后生活怎么样？ {Portrait:Custom:9}",
+          "AudioPath": "assets/zh-CN/Alex/202.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Tue_inlaw_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "哦，嘿。婚后生活怎么样？"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "冬天，人们都会待在家里，做些无聊的琐事。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/203.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "冬天，人们都会待在家里，做些无聊的琐事。"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "或许看看书就不会那么无聊……才怪。",
+          "AudioPath": "assets/zh-CN/Alex/204.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "或许看看书就不会那么无聊……才怪。"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "等我成为职业选手，挣了钱，就要在热带买个度假别墅。",
+          "AudioPath": "assets/zh-CN/Alex/205.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "等我成为职业选手，挣了钱，就要在热带买个度假别墅。"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "然后就不用再过这种无聊的冬天了。",
+          "AudioPath": "assets/zh-CN/Alex/206.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "然后就不用再过这种无聊的冬天了。"
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "你居然冒着风雪专程来看我？",
+          "AudioPath": "assets/zh-CN/Alex/207.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "你居然冒着风雪专程来看我？"
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "嗯，挺合情合理的。",
+          "AudioPath": "assets/zh-CN/Alex/208.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "嗯，挺合情合理的。"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "镇子里住了一些怪人。",
+          "AudioPath": "assets/zh-CN/Alex/209.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "镇子里住了一些怪人。"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "……就像塞巴斯蒂安。为什么他总是穿黑色的衣服？",
+          "AudioPath": "assets/zh-CN/Alex/210.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "……就像塞巴斯蒂安。为什么他总是穿黑色的衣服？"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "真是搞不懂。",
+          "AudioPath": "assets/zh-CN/Alex/211.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "真是搞不懂。"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "嘿，格球比赛就在今天！",
+          "AudioPath": "assets/zh-CN/Alex/212.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，格球比赛就在今天！"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "这可能是一周里面我最喜欢的一天。",
+          "AudioPath": "assets/zh-CN/Alex/213.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "这可能是一周里面我最喜欢的一天。"
+        },
+        {
+          "DialogueFrom": "winter_Fri4",
+          "DialogueText": "你居然冒着风雪专程来看我？",
+          "AudioPath": "assets/zh-CN/Alex/214.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "你居然冒着风雪专程来看我？"
+        },
+        {
+          "DialogueFrom": "winter_Fri4",
+          "DialogueText": "你这人实在是太好了。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/215.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Fri4",
+          "PageIndex": 1,
+          "DisplayPattern": "你这人实在是太好了。"
+        },
+        {
+          "DialogueFrom": "winter_Sat6",
+          "DialogueText": "有些与我们截然不同的人存在，这不挺好玩儿的吗？",
+          "AudioPath": "assets/zh-CN/Alex/216.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sat6",
+          "PageIndex": 0,
+          "DisplayPattern": "有些与我们截然不同的人存在，这不挺好玩儿的吗？"
+        },
+        {
+          "DialogueFrom": "winter_Sat6",
+          "DialogueText": "我搞不懂他们为什么会那样，但我并不介意。",
+          "AudioPath": "assets/zh-CN/Alex/217.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sat6",
+          "PageIndex": 1,
+          "DisplayPattern": "我搞不懂他们为什么会那样，但我并不介意。"
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "嘿，{Farmer_Name}。你能帮我个忙吗？ {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/218.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，。你能帮我个忙吗？"
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "要是你见到了海莉，告诉她我正忙着呢。 {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/219.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Tue4",
+          "PageIndex": 1,
+          "DisplayPattern": "要是你见到了海莉，告诉她我正忙着呢。"
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "谢谢你。",
+          "AudioPath": "assets/zh-CN/Alex/220.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Tue4",
+          "PageIndex": 2,
+          "DisplayPattern": "谢谢你。"
+        },
+        {
+          "DialogueFrom": "winter_Tue4_inlaw_Haley",
+          "DialogueText": "我承认……你和海莉结婚的时候我有点儿嫉妒。但是，哎……这也是一个我重新了解自己的机会。 {Portrait:Custom:9}",
+          "AudioPath": "assets/zh-CN/Alex/221.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Tue4_inlaw_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "我承认……你和海莉结婚的时候我有点儿嫉妒。但是，哎……这也是一个我重新了解自己的机会。"
+        },
+        {
+          "DialogueFrom": "winter_Wed8",
+          "DialogueText": "你知道吗？我要开始读书了！",
+          "AudioPath": "assets/zh-CN/Alex/222.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Wed8",
+          "PageIndex": 0,
+          "DisplayPattern": "你知道吗？我要开始读书了！"
+        },
+        {
+          "DialogueFrom": "winter_Thu6",
+          "DialogueText": "真希望我能控制天气。",
+          "AudioPath": "assets/zh-CN/Alex/223.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "真希望我能控制天气。"
+        },
+        {
+          "DialogueFrom": "winter_Thu10",
+          "DialogueText": "要是我能挣到大钱，一定会让我的亲朋好友过上好日子。",
+          "AudioPath": "assets/zh-CN/Alex/224.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Thu10",
+          "PageIndex": 0,
+          "DisplayPattern": "要是我能挣到大钱，一定会让我的亲朋好友过上好日子。"
+        },
+        {
+          "DialogueFrom": "winter_Thu10",
+          "DialogueText": "也包括你在内。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/225.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Thu10",
+          "PageIndex": 1,
+          "DisplayPattern": "也包括你在内。"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Alex0",
+          "DialogueText": "{Farmer_Name}，这是这个世上最棒的事情。 {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/226.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Alex0",
+          "PageIndex": 0,
+          "DisplayPattern": "，这是这个世上最棒的事情。"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Alex0",
+          "DialogueText": "我已经等不及了。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/227.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Alex0",
+          "PageIndex": 1,
+          "DisplayPattern": "我已经等不及了。"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Alex1",
+          "DialogueText": "我一定会爱上农夫的生活的。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/228.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Alex1",
+          "PageIndex": 0,
+          "DisplayPattern": "我一定会爱上农夫的生活的。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_0",
+          "DialogueText": "……你还爱我吗？ {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/229.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_0",
+          "PageIndex": 0,
+          "DisplayPattern": "……你还爱我吗？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_1",
+          "DialogueText": "*唉* ……也许我们结婚太早了。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/230.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_1",
+          "PageIndex": 0,
+          "DisplayPattern": "*唉* ……也许我们结婚太早了。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_2",
+          "DialogueText": "你和我在一起还幸福吗？ {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/231.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_2",
+          "PageIndex": 0,
+          "DisplayPattern": "你和我在一起还幸福吗？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_3",
+          "DialogueText": "我做错什么了吗？你最近的反应不太一样。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/232.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_3",
+          "PageIndex": 0,
+          "DisplayPattern": "我做错什么了吗？你最近的反应不太一样。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_4",
+          "DialogueText": "你有没有想过外面还有什么新事物？ {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/233.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_4",
+          "PageIndex": 0,
+          "DisplayPattern": "你有没有想过外面还有什么新事物？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_5",
+          "DialogueText": "你以前那么浪漫……到底怎么了？ {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/234.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_5",
+          "PageIndex": 0,
+          "DisplayPattern": "你以前那么浪漫……到底怎么了？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_5",
+          "DialogueText": "我知道自己没有以前那么年轻了……难道你和我结婚就是为了我当时的年轻貌美？ {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/235.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_5",
+          "PageIndex": 1,
+          "DisplayPattern": "我知道自己没有以前那么年轻了……难道你和我结婚就是为了我当时的年轻貌美？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_6",
+          "DialogueText": "我们的人生短暂……就这样子度过真的好吗？ {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/236.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_6",
+          "PageIndex": 0,
+          "DisplayPattern": "我们的人生短暂……就这样子度过真的好吗？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_7",
+          "DialogueText": "我曾经是你眼中的宝贝……但现在，只有做顿热腾腾的晚餐才能让你容忍我。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/237.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_7",
+          "PageIndex": 0,
+          "DisplayPattern": "我曾经是你眼中的宝贝……但现在，只有做顿热腾腾的晚餐才能让你容忍我。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_8",
+          "DialogueText": "最近你对我好冷淡…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/238.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_8",
+          "PageIndex": 0,
+          "DisplayPattern": "最近你对我好冷淡……"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_9",
+          "DialogueText": "也许我应该更努力些。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/239.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_9",
+          "PageIndex": 0,
+          "DisplayPattern": "也许我应该更努力些。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_1",
+          "DialogueText": "好吧，夏天过去了……但是我要保持积极。热天总会回来的。",
+          "AudioPath": "assets/zh-CN/Alex/240.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:fall_1",
+          "PageIndex": 0,
+          "DisplayPattern": "好吧，夏天过去了……但是我要保持积极。热天总会回来的。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_15",
+          "DialogueText": "明天是集市，你会去吗？",
+          "AudioPath": "assets/zh-CN/Alex/241.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:fall_15",
+          "PageIndex": 0,
+          "DisplayPattern": "明天是集市，你会去吗？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_15",
+          "DialogueText": "不管怎样，我都不关心。",
+          "AudioPath": "assets/zh-CN/Alex/242.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:fall_15",
+          "PageIndex": 1,
+          "DisplayPattern": "不管怎样，我都不关心。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_26",
+          "DialogueText": "希望我的祖父母一切都好。爷爷总是节俭到冷到不行的时候才把炉子打开。",
+          "AudioPath": "assets/zh-CN/Alex/243.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:fall_26",
+          "PageIndex": 0,
+          "DisplayPattern": "希望我的祖父母一切都好。爷爷总是节俭到冷到不行的时候才把炉子打开。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_8",
+          "DialogueText": "冬天近在眼前。我们需要再次检查一下供暖系统，关掉水阀，检查房子里所有的保温层。",
+          "AudioPath": "assets/zh-CN/Alex/244.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 0,
+          "DisplayPattern": "冬天近在眼前。我们需要再次检查一下供暖系统，关掉水阀，检查房子里所有的保温层。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_8",
+          "DialogueText": "别担心，我会搞定一切的。",
+          "AudioPath": "assets/zh-CN/Alex/245.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 1,
+          "DisplayPattern": "别担心，我会搞定一切的。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_Alex",
+          "DialogueText": "我觉得很虚弱……得多吃点蛋白质。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/246.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "我觉得很虚弱……得多吃点蛋白质。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/funLeave_Alex",
+          "DialogueText": "今天我要到镇子里去。晚上见。",
+          "AudioPath": "assets/zh-CN/Alex/247.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:funLeave_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "今天我要到镇子里去。晚上见。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/funReturn_Alex",
+          "DialogueText": "我今天很愉快。我想经常看看我的祖父母，他们很老了。",
+          "AudioPath": "assets/zh-CN/Alex/248.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:funReturn_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "我今天很愉快。我想经常看看我的祖父母，他们很老了。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_0",
+          "DialogueText": "{Farmer_Name}……我会一直爱你。 {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/249.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Good_0",
+          "PageIndex": 0,
+          "DisplayPattern": "……我会一直爱你。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_1",
+          "DialogueText": "你很帅……我跟你说过吗？ {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/250_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Good_1",
+          "PageIndex": 0,
+          "DisplayPattern": "你很帅……我跟你说过吗？",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_1",
+          "DialogueText": "你很美……我跟你说过吗？ {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/251_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Good_1",
+          "PageIndex": 1,
+          "DisplayPattern": "你很美……我跟你说过吗？",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_2",
+          "DialogueText": "结婚了开心吗，{Farmer_Name}？",
+          "AudioPath": "assets/zh-CN/Alex/252.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_2",
+          "PageIndex": 0,
+          "DisplayPattern": "结婚了开心吗，？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_2",
+          "DialogueText": "我准备好了。 {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/253.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_2",
+          "PageIndex": 1,
+          "DisplayPattern": "我准备好了。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_3",
+          "DialogueText": "哇哦，你今天看起来帅呆了！ {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/254_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_3",
+          "PageIndex": 0,
+          "DisplayPattern": "哇哦，你今天看起来帅呆了！",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_3",
+          "DialogueText": "哇哦，你今天看起来美极了。 {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/255_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_3",
+          "PageIndex": 1,
+          "DisplayPattern": "哇哦，你今天看起来美极了。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_4",
+          "DialogueText": "以后这里就是我的家了……我在这里很幸福。 {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/256.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_4",
+          "PageIndex": 0,
+          "DisplayPattern": "以后这里就是我的家了……我在这里很幸福。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_5",
+          "DialogueText": "我刚刚在欣赏我的婚礼护身符呢……这贝壳完美无瑕。一定花了你很多钱吧。 {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/257.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_5",
+          "PageIndex": 0,
+          "DisplayPattern": "我刚刚在欣赏我的婚礼护身符呢……这贝壳完美无瑕。一定花了你很多钱吧。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_6",
+          "DialogueText": "我知道你很强壮，但是有时候我担心你会被史莱姆吃掉……甚至更糟糕。千万要小心。 {Portrait:Custom:9}",
+          "AudioPath": "assets/zh-CN/Alex/258.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Good_6",
+          "PageIndex": 0,
+          "DisplayPattern": "我知道你很强壮，但是有时候我担心你会被史莱姆吃掉……甚至更糟糕。千万要小心。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_7",
+          "DialogueText": "{Farmer_Name}？我只是想说，我要感谢你为我们一家做出的全部努力。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/259.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_7",
+          "PageIndex": 0,
+          "DisplayPattern": "？我只是想说，我要感谢你为我们一家做出的全部努力。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_8",
+          "DialogueText": "别担心我……我知道你在外面担负着许多责任。我自己一个人没事的！ {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/260.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_8",
+          "PageIndex": 0,
+          "DisplayPattern": "别担心我……我知道你在外面担负着许多责任。我自己一个人没事的！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_9",
+          "DialogueText": "哦，我并不无聊……我只是享受我们所拥有的一切。",
+          "AudioPath": "assets/zh-CN/Alex/261.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_9",
+          "PageIndex": 0,
+          "DisplayPattern": "哦，我并不无聊……我只是享受我们所拥有的一切。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_9",
+          "DialogueText": "生活虽朴素，但我很喜欢。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/262.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_9",
+          "PageIndex": 1,
+          "DisplayPattern": "生活虽朴素，但我很喜欢。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_0",
+          "DialogueText": "啊……在我老公旁边美美的睡一觉简直再好不过了！ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/263_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "啊……在我老公旁边美美的睡一觉简直再好不过了！",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_0",
+          "DialogueText": "啊……在我老婆旁边美美的睡一觉简直再好不过了！ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/264_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_0",
+          "PageIndex": 1,
+          "DisplayPattern": "啊……在我老婆旁边美美的睡一觉简直再好不过了！",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_1",
+          "DialogueText": "嘿，亲爱的！我给你做了热腾腾的早餐！[195 210 211]",
+          "AudioPath": "assets/zh-CN/Alex/265.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，亲爱的！我给你做了热腾腾的早餐！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_1",
+          "DialogueText": "如果你想身体强壮，那你必须把吃当做一回事！",
+          "AudioPath": "assets/zh-CN/Alex/266.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_1",
+          "PageIndex": 1,
+          "DisplayPattern": "如果你想身体强壮，那你必须把吃当做一回事！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_2",
+          "DialogueText": "过来。*捏紧*……唔。那些农活儿让你愈发强壮了。",
+          "AudioPath": "assets/zh-CN/Alex/267.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "过来。*捏紧*……唔。那些农活儿让你愈发强壮了。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_3",
+          "DialogueText": "我还在努力适应做饭、洗衣服……这并不是我喜欢的，但是我知道我和你结婚之后要做这些事情。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/268.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "我还在努力适应做饭、洗衣服……这并不是我喜欢的，但是我知道我和你结婚之后要做这些事情。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_4",
+          "DialogueText": "我今天要处理房子里的一些事情。别担心我，我没感到厌烦。",
+          "AudioPath": "assets/zh-CN/Alex/269.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "我今天要处理房子里的一些事情。别担心我，我没感到厌烦。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_Alex",
+          "DialogueText": "阳光明媚，而我也充满活力！所以你最好小心哦！嘿嘿。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/270.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Day_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "阳光明媚，而我也充满活力！所以你最好小心哦！嘿嘿。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_0",
+          "DialogueText": "把自己推到极限感觉很好，不是吗？今晚你会觉得在舒服的软床上有了一席之地。",
+          "AudioPath": "assets/zh-CN/Alex/271.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "把自己推到极限感觉很好，不是吗？今晚你会觉得在舒服的软床上有了一席之地。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_1",
+          "DialogueText": "你是剪头发了还是做了什么？你今天看起来气色不错。可能是因为新鲜的空气…… {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/272.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "你是剪头发了还是做了什么？你今天看起来气色不错。可能是因为新鲜的空气……"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_2",
+          "DialogueText": "说说今天过得怎么样啊。时不时把自己放空也很好。",
+          "AudioPath": "assets/zh-CN/Alex/273.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "说说今天过得怎么样啊。时不时把自己放空也很好。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_3",
+          "DialogueText": "嘿……我买了些新短裤。我觉得你可能会想知道…… {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/274.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿……我买了些新短裤。我觉得你可能会想知道……"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_4",
+          "DialogueText": "如果你需要一些独处的安静时光也可以。",
+          "AudioPath": "assets/zh-CN/Alex/275.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "如果你需要一些独处的安静时光也可以。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_Alex",
+          "DialogueText": "我的手臂有些不舒服了……做个深层按摩怎么样？ {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/276_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "我的手臂有些不舒服了……做个深层按摩怎么样？",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_Alex",
+          "DialogueText": "我感到精疲力竭……这是件好事！说明我今天很努力。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/277_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "我感到精疲力竭……这是件好事！说明我今天很努力。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_0",
+          "DialogueText": "等到我白发苍苍，我希望你还会喜爱我。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/278.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_0",
+          "PageIndex": 0,
+          "DisplayPattern": "等到我白发苍苍，我希望你还会喜爱我。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_1",
+          "DialogueText": "你觉得爷爷会为我们做的事感到骄傲吗？",
+          "AudioPath": "assets/zh-CN/Alex/279.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_1",
+          "PageIndex": 0,
+          "DisplayPattern": "你觉得爷爷会为我们做的事感到骄傲吗？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_2",
+          "DialogueText": "在休息吗？我猜当一名农夫要比我想的简单……",
+          "AudioPath": "assets/zh-CN/Alex/280.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_2",
+          "PageIndex": 0,
+          "DisplayPattern": "在休息吗？我猜当一名农夫要比我想的简单……"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_3",
+          "DialogueText": "要是你去镇子里，记得替我向大家打个招呼。",
+          "AudioPath": "assets/zh-CN/Alex/281.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_3",
+          "PageIndex": 0,
+          "DisplayPattern": "要是你去镇子里，记得替我向大家打个招呼。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_4",
+          "DialogueText": "明早你起来之前我会把衣服洗了……这样你就可以专心劳作了。",
+          "AudioPath": "assets/zh-CN/Alex/282.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_4",
+          "PageIndex": 0,
+          "DisplayPattern": "明早你起来之前我会把衣服洗了……这样你就可以专心劳作了。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_5",
+          "DialogueText": "家里是不是有些拮据，{Farmer_Name}？",
+          "AudioPath": "assets/zh-CN/Alex/283.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_5",
+          "PageIndex": 0,
+          "DisplayPattern": "家里是不是有些拮据，？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_6",
+          "DialogueText": "不知道镇里的朋友们今天会做些什么呢？",
+          "AudioPath": "assets/zh-CN/Alex/284.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_6",
+          "PageIndex": 0,
+          "DisplayPattern": "不知道镇里的朋友们今天会做些什么呢？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_7",
+          "DialogueText": "今天我真的什么都不想做。",
+          "AudioPath": "assets/zh-CN/Alex/285.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_7",
+          "PageIndex": 0,
+          "DisplayPattern": "今天我真的什么都不想做。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_8",
+          "DialogueText": "不管我怎么打扫，房子还是会变脏。",
+          "AudioPath": "assets/zh-CN/Alex/286.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_8",
+          "PageIndex": 0,
+          "DisplayPattern": "不管我怎么打扫，房子还是会变脏。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_8",
+          "DialogueText": "也许是农场本来就挺脏的吧。",
+          "AudioPath": "assets/zh-CN/Alex/287.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_8",
+          "PageIndex": 1,
+          "DisplayPattern": "也许是农场本来就挺脏的吧。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_9",
+          "DialogueText": "不知道我们这辈子会不会一直住在这里？",
+          "AudioPath": "assets/zh-CN/Alex/288.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_9",
+          "PageIndex": 0,
+          "DisplayPattern": "不知道我们这辈子会不会一直住在这里？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/NoBed_0",
+          "DialogueText": "我该睡在哪……？ {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/289.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_0",
+          "PageIndex": 0,
+          "DisplayPattern": "我该睡在哪……？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/NoBed_1",
+          "DialogueText": "我昨晚没睡好…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/290.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_1",
+          "PageIndex": 0,
+          "DisplayPattern": "我昨晚没睡好……"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/NoBed_2",
+          "DialogueText": "我昨晚只能睡在地上…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/291.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_2",
+          "PageIndex": 0,
+          "DisplayPattern": "我昨晚只能睡在地上……"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/NoBed_3",
+          "DialogueText": "我们的床怎么了……？ {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/292.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_3",
+          "PageIndex": 0,
+          "DisplayPattern": "我们的床怎么了……？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/OneKid_0",
+          "DialogueText": "我还在努力适应我居家奶爸的新生活。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/293.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:OneKid_0",
+          "PageIndex": 0,
+          "DisplayPattern": "我还在努力适应我居家奶爸的新生活。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/OneKid_1",
+          "DialogueText": "小%kid1正在茁壮成长，就像他爸爸一样。",
+          "AudioPath": "assets/zh-CN/Alex/294.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:OneKid_1",
+          "PageIndex": 0,
+          "DisplayPattern": "小%kid1正在茁壮成长，就像他爸爸一样。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/OneKid_2",
+          "DialogueText": "别担心，今天我来喂%kid1。你就专心经营农场吧。",
+          "AudioPath": "assets/zh-CN/Alex/295.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:OneKid_2",
+          "PageIndex": 0,
+          "DisplayPattern": "别担心，今天我来喂。你就专心经营农场吧。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/OneKid_3",
+          "DialogueText": "不知道怀孕感觉怎么样？ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/296.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:OneKid_3",
+          "PageIndex": 0,
+          "DisplayPattern": "不知道怀孕感觉怎么样？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_0",
+          "DialogueText": "嘿。当我站在这里，俯瞰我们的土地……我真的很骄傲。你做得真棒。",
+          "AudioPath": "assets/zh-CN/Alex/297.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Outdoor_0",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿。当我站在这里，俯瞰我们的土地……我真的很骄傲。你做得真棒。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_1",
+          "DialogueText": "这真是抚育孩子的好地方。我喜欢在这样的地方长大。有很大的空间可以到处跑来跑去！",
+          "AudioPath": "assets/zh-CN/Alex/298.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Outdoor_1",
+          "PageIndex": 0,
+          "DisplayPattern": "这真是抚育孩子的好地方。我喜欢在这样的地方长大。有很大的空间可以到处跑来跑去！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_2",
+          "DialogueText": "我喜欢尽可能待在外面。待在这里感觉很棒。",
+          "AudioPath": "assets/zh-CN/Alex/299.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Outdoor_2",
+          "PageIndex": 0,
+          "DisplayPattern": "我喜欢尽可能待在外面。待在这里感觉很棒。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_3",
+          "DialogueText": "看看我们，还有我们的小农场。我们是很配的一对。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/300_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Outdoor_3",
+          "PageIndex": 0,
+          "DisplayPattern": "看看我们，还有我们的小农场。我们是很配的一对。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_3",
+          "DialogueText": "嘿。可能是光线的缘故，但你今天看起来很漂亮。 {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/301_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Outdoor_3",
+          "PageIndex": 1,
+          "DisplayPattern": "嘿。可能是光线的缘故，但你今天看起来很漂亮。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_4",
+          "DialogueText": "啊……在外面感觉可真不错！星露谷真是最美的地方……",
+          "AudioPath": "assets/zh-CN/Alex/302.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Outdoor_4",
+          "PageIndex": 0,
+          "DisplayPattern": "啊……在外面感觉可真不错！星露谷真是最美的地方……"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_Alex",
+          "DialogueText": "我今天要做很多运动！哈哈！我爱农场的生活。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/303.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Outdoor_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "我今天要做很多运动！哈哈！我爱农场的生活。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/patio_Alex",
+          "DialogueText": "啊……一……啊……二……在户外举重感觉真好！ {Portrait:Custom:6}",
+          "AudioPath": "assets/zh-CN/Alex/304.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:patio_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "啊……一……啊……二……在户外举重感觉真好！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Day_0",
+          "DialogueText": "有了这么大的空间，我真的可以全身锻炼了。",
+          "AudioPath": "assets/zh-CN/Alex/305.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "有了这么大的空间，我真的可以全身锻炼了。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Day_1",
+          "DialogueText": "我在镇子上的朋友从来都不多……有时候我会想如果你没搬到这里来，我会落入什么地步。 {Portrait:Custom:9}",
+          "AudioPath": "assets/zh-CN/Alex/306.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "我在镇子上的朋友从来都不多……有时候我会想如果你没搬到这里来，我会落入什么地步。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Day_2",
+          "DialogueText": "啊……我本想在户外慢跑。但这种天气可不行。",
+          "AudioPath": "assets/zh-CN/Alex/307.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "啊……我本想在户外慢跑。但这种天气可不行。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Day_3",
+          "DialogueText": "*嘟囔*……我刚醒，而且急需补充蛋白质。 {Portrait:Custom:9}",
+          "AudioPath": "assets/zh-CN/Alex/308.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "*嘟囔*……我刚醒，而且急需补充蛋白质。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Day_4",
+          "DialogueText": "或许我该开始读书。既然我已经结婚了，可不能变得笨头笨脑的！",
+          "AudioPath": "assets/zh-CN/Alex/309.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "或许我该开始读书。既然我已经结婚了，可不能变得笨头笨脑的！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Day_Alex",
+          "DialogueText": "嗯……看来我今天只能在室内做俯卧撑和仰卧起坐了。",
+          "AudioPath": "assets/zh-CN/Alex/310.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Day_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "嗯……看来我今天只能在室内做俯卧撑和仰卧起坐了。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_0",
+          "DialogueText": "嘿，你今天过得好吗？我相信明天会更好。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/311.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，你今天过得好吗？我相信明天会更好。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_1",
+          "DialogueText": "怎么样了？我一天都带着那只旧格球。人可以假装…… {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Alex/312.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "怎么样了？我一天都带着那只旧格球。人可以假装……"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_2",
+          "DialogueText": "噢……这个味道？我吃了一天的大蒜……我努力保持有男子气概……抱歉。 {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/313.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "噢……这个味道？我吃了一天的大蒜……我努力保持有男子气概……抱歉。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_3",
+          "DialogueText": "我一直给达斯迪留些剩饭。偶尔也该对他好一点。",
+          "AudioPath": "assets/zh-CN/Alex/314.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "我一直给达斯迪留些剩饭。偶尔也该对他好一点。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_4",
+          "DialogueText": "我很饿，所以我做了晚餐。来，我为你留了一盘。 [241 242 225 214 198] {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/315.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "我很饿，所以我做了晚餐。来，我为你留了一盘。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_5",
+          "DialogueText": "你在家就好……今晚很适合待在家里。",
+          "AudioPath": "assets/zh-CN/Alex/316.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Night_5",
+          "PageIndex": 0,
+          "DisplayPattern": "你在家就好……今晚很适合待在家里。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_Alex",
+          "DialogueText": "在这样的晚上，奶奶总会炖上一锅热汤。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/317.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Night_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "在这样的晚上，奶奶总会炖上一锅热汤。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spouseRoom_Alex",
+          "DialogueText": "不要纵容我偷懒。我要为你保持好身材。",
+          "AudioPath": "assets/zh-CN/Alex/318.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "不要纵容我偷懒。我要为你保持好身材。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spouseRoom_Alex",
+          "DialogueText": "$e",
+          "AudioPath": "assets/zh-CN/Alex/319.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spouseRoom_Alex",
+          "DialogueText": "这里有很大的空间供我锻炼。我现在可是进步神速！",
+          "AudioPath": "assets/zh-CN/Alex/320.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Alex",
+          "PageIndex": 2,
+          "DisplayPattern": "这里有很大的空间供我锻炼。我现在可是进步神速！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_1",
+          "DialogueText": "终于，积雪消融，太阳又回升了！我的身体感觉很好。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/321.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:spring_1",
+          "PageIndex": 0,
+          "DisplayPattern": "终于，积雪消融，太阳又回升了！我的身体感觉很好。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_12",
+          "DialogueText": "你对明天的节日感到兴奋吗？我想吃很多免费的鸡蛋对我有好处。",
+          "AudioPath": "assets/zh-CN/Alex/322.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:spring_12",
+          "PageIndex": 0,
+          "DisplayPattern": "你对明天的节日感到兴奋吗？我想吃很多免费的鸡蛋对我有好处。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_23",
+          "DialogueText": "噢……明天是花舞节，对吧？我今晚最好多做几个俯卧撑。 {Portrait:Custom:9}",
+          "AudioPath": "assets/zh-CN/Alex/323.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:spring_23",
+          "PageIndex": 0,
+          "DisplayPattern": "噢……明天是花舞节，对吧？我今晚最好多做几个俯卧撑。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_23",
+          "DialogueText": "这些连身衣太紧了……大家都会仔细看。",
+          "AudioPath": "assets/zh-CN/Alex/324.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:spring_23",
+          "PageIndex": 1,
+          "DisplayPattern": "这些连身衣太紧了……大家都会仔细看。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_6",
+          "DialogueText": "我在想星之果实的果粉能不能帮我增强体格……",
+          "AudioPath": "assets/zh-CN/Alex/325.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:spring_6",
+          "PageIndex": 0,
+          "DisplayPattern": "我在想星之果实的果粉能不能帮我增强体格……"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_8",
+          "DialogueText": "冬天过去了，希望今年能风调雨顺呢。",
+          "AudioPath": "assets/zh-CN/Alex/326.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_8",
+          "PageIndex": 0,
+          "DisplayPattern": "冬天过去了，希望今年能风调雨顺呢。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_Alex",
+          "DialogueText": "嘿，{Farmer_Name}。今天我们都要努力工作哦！",
+          "AudioPath": "assets/zh-CN/Alex/327.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，。今天我们都要努力工作哦！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_1",
+          "DialogueText": "夏天是一年里最有活力的季节，而身体也会感受到！我感觉自己很结实。",
+          "AudioPath": "assets/zh-CN/Alex/328.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:summer_1",
+          "PageIndex": 0,
+          "DisplayPattern": "夏天是一年里最有活力的季节，而身体也会感受到！我感觉自己很结实。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_10",
+          "DialogueText": "你想好在宴会的汤里面放什么了吗？",
+          "AudioPath": "assets/zh-CN/Alex/329.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:summer_10",
+          "PageIndex": 0,
+          "DisplayPattern": "你想好在宴会的汤里面放什么了吗？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_10",
+          "DialogueText": "我不知道放什么好……你才是厨师！ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/330.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:summer_10",
+          "PageIndex": 1,
+          "DisplayPattern": "我不知道放什么好……你才是厨师！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_15",
+          "DialogueText": "夏天到了……估计要满房子苍蝇了。",
+          "AudioPath": "assets/zh-CN/Alex/331.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 0,
+          "DisplayPattern": "夏天到了……估计要满房子苍蝇了。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_15",
+          "DialogueText": "别担心，我会处理它们的。",
+          "AudioPath": "assets/zh-CN/Alex/332.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 1,
+          "DisplayPattern": "别担心，我会处理它们的。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_27",
+          "DialogueText": "呃……夏天都要过完了。我的肌肉开始萎缩了…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/333.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:summer_27",
+          "PageIndex": 0,
+          "DisplayPattern": "呃……夏天都要过完了。我的肌肉开始萎缩了……"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_8",
+          "DialogueText": "抱歉我身上有异味……今晚热得我全身冒汗。",
+          "AudioPath": "assets/zh-CN/Alex/334.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_8",
+          "PageIndex": 0,
+          "DisplayPattern": "抱歉我身上有异味……今晚热得我全身冒汗。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_Alex",
+          "DialogueText": "在夏天，我最有活力。",
+          "AudioPath": "assets/zh-CN/Alex/335.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "在夏天，我最有活力。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/TwoKids_0",
+          "DialogueText": "我已经给%kid1和%kid2做过早餐了。他们是真饿了！",
+          "AudioPath": "assets/zh-CN/Alex/336.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:TwoKids_0",
+          "PageIndex": 0,
+          "DisplayPattern": "我已经给%kid1和%kid2做过早餐了。他们是真饿了！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/TwoKids_1",
+          "DialogueText": "有了%kid2后，我们要记得多关注些%kid1。我不想让他们嫉妒对方。",
+          "AudioPath": "assets/zh-CN/Alex/337.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:TwoKids_1",
+          "PageIndex": 0,
+          "DisplayPattern": "有了%kid2后，我们要记得多关注些。我不想让他们嫉妒对方。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/TwoKids_2",
+          "DialogueText": "可能%kid2将是鹈鹕镇第一位专业格球选手？ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/338.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:TwoKids_2",
+          "PageIndex": 0,
+          "DisplayPattern": "可能%kid2将是鹈鹕镇第一位专业格球选手？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/TwoKids_3",
+          "DialogueText": "我终于拥有了童年错失的家庭生活……谢谢你。 {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/339.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:TwoKids_3",
+          "PageIndex": 0,
+          "DisplayPattern": "我终于拥有了童年错失的家庭生活……谢谢你。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/winter_1",
+          "DialogueText": "今年冬天注意保暖哦。我担心你娇嫩的皮肤。",
+          "AudioPath": "assets/zh-CN/Alex/340.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:winter_1",
+          "PageIndex": 0,
+          "DisplayPattern": "今年冬天注意保暖哦。我担心你娇嫩的皮肤。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/winter_28",
+          "DialogueText": "真是了不起的一年，{Farmer_Name}。我很期待明年。现在，靠近一点嘛。 {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/341.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:winter_28",
+          "PageIndex": 0,
+          "DisplayPattern": "真是了不起的一年，。我很期待明年。现在，靠近一点嘛。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/winter_7",
+          "DialogueText": "你要参加今年的钓鱼大赛吗？我觉得你会获胜！",
+          "AudioPath": "assets/zh-CN/Alex/342.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:winter_7",
+          "PageIndex": 0,
+          "DisplayPattern": "你要参加今年的钓鱼大赛吗？我觉得你会获胜！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/winter_Alex",
+          "DialogueText": "希望我的祖父母一切都好。他们以前需要我帮很多忙。像是搬重物之类的。",
+          "AudioPath": "assets/zh-CN/Alex/343.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:winter_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "希望我的祖父母一切都好。他们以前需要我帮很多忙。像是搬重物之类的。"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "唔。这种天气不适合运动。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/344.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "唔。这种天气不适合运动。"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "啊，不过在室内还是可以练习举重的。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/345.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "啊，不过在室内还是可以练习举重的。"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s0",
+          "DialogueText": "Hey, {Farmer_Name}. Before you head out...",
+          "AudioPath": "assets/zh-CN/Alex/346.ogg",
+          "TranslationKey": "Events/Farm:3917587:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, . Before you head out..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s1",
+          "DialogueText": "I hate to ask this... but can I have 5,000g?",
+          "AudioPath": "assets/zh-CN/Alex/347.ogg",
+          "TranslationKey": "Events/Farm:3917587:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I hate to ask this... but can I have 5,000g?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s2",
+          "DialogueText": "It's for a secret project I'm working on... I know we have a joint bank account, but I thought I should ask anyway.",
+          "AudioPath": "assets/zh-CN/Alex/348.ogg",
+          "TranslationKey": "Events/Farm:3917587:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "It's for a secret project I'm working on... I know we have a joint bank account, but I thought I should ask anyway."
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s3",
+          "DialogueText": "Give Alex 5,000g for his secret project?",
+          "AudioPath": "assets/zh-CN/Alex/349.ogg",
+          "TranslationKey": "Events/Farm:3917587:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Give Alex 5,000g for his secret project?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s4",
+          "DialogueText": "Yes",
+          "AudioPath": "assets/zh-CN/Alex/350.ogg",
+          "TranslationKey": "Events/Farm:3917587:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Yes"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s5",
+          "DialogueText": "No",
+          "AudioPath": "assets/zh-CN/Alex/351.ogg",
+          "TranslationKey": "Events/Farm:3917587:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "No"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s6",
+          "DialogueText": "Really? You won't spare a measly 5,000g to make me happy? {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/352.ogg",
+          "TranslationKey": "Events/Farm:3917587:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Really? You won't spare a measly 5,000g to make me happy?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s7",
+          "DialogueText": "I didn't know you were such a cheapskate... {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/353.ogg",
+          "TranslationKey": "Events/Farm:3917587:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I didn't know you were such a cheapskate..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s8",
+          "DialogueText": "I just wanted to have a little fun... {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/354.ogg",
+          "TranslationKey": "Events/Farm:3917587:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I just wanted to have a little fun..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s9",
+          "DialogueText": "I don't want to talk to you right now... {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/355.ogg",
+          "TranslationKey": "Events/Farm:3917587:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "I don't want to talk to you right now..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/giveAlexMoney:s0",
+          "DialogueText": "Great! Swing by the Saloon on Sunday and I'll show you the end result! {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/356.ogg",
+          "TranslationKey": "Events/Farm:giveAlexMoney:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Great! Swing by the Saloon on Sunday and I'll show you the end result!"
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s0",
+          "DialogueText": "That's a good boy, Dusty.",
+          "AudioPath": "assets/zh-CN/Alex/357.ogg",
+          "TranslationKey": "Events/Town:2481135:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "That's a good boy, Dusty."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s1",
+          "DialogueText": "You might be the only one around here who understands me. {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/358.ogg",
+          "TranslationKey": "Events/Town:2481135:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "You might be the only one around here who understands me."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s2",
+          "DialogueText": "No one else has seen the kind of stuff you and I have. {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/359.ogg",
+          "TranslationKey": "Events/Town:2481135:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "No one else has seen the kind of stuff you and I have."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s3",
+          "DialogueText": "{Farmer_Name}! Did you overhear me talking? {Portrait:Custom:7}",
+          "AudioPath": "assets/zh-CN/Alex/360.ogg",
+          "TranslationKey": "Events/Town:2481135:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "! Did you overhear me talking?"
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s4",
+          "DialogueText": "Yes, I heard everything.",
+          "AudioPath": "assets/zh-CN/Alex/361.ogg",
+          "TranslationKey": "Events/Town:2481135:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Yes, I heard everything."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s5",
+          "DialogueText": "Not really... why?",
+          "AudioPath": "assets/zh-CN/Alex/362.ogg",
+          "TranslationKey": "Events/Town:2481135:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Not really... why?"
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s6",
+          "DialogueText": "I don't really like to talk about it, but I guess I'll explain... {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/363.ogg",
+          "TranslationKey": "Events/Town:2481135:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I don't really like to talk about it, but I guess I'll explain..."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s7",
+          "DialogueText": "Have you ever wondered why I live with my grandparents? {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/364.ogg",
+          "TranslationKey": "Events/Town:2481135:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Have you ever wondered why I live with my grandparents?"
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s8",
+          "DialogueText": "You see, my father wasn't a good guy... He... Well, he ruined everything for me and my mom. {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/365.ogg",
+          "TranslationKey": "Events/Town:2481135:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "You see, my father wasn't a good guy... He... Well, he ruined everything for me and my mom."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s9",
+          "DialogueText": "Half the time he was gone... The other half he'd drink all night and tell me I'm worthless, that I'd never amount to anything. {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/366.ogg",
+          "TranslationKey": "Events/Town:2481135:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Half the time he was gone... The other half he'd drink all night and tell me I'm worthless, that I'd never amount to anything."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s10",
+          "DialogueText": "I think he resented me for being young... Bitter because he'd wasted his youth doing nothing and had gotten nowhere in life.",
+          "AudioPath": "assets/zh-CN/Alex/367.ogg",
+          "TranslationKey": "Events/Town:2481135:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "I think he resented me for being young... Bitter because he'd wasted his youth doing nothing and had gotten nowhere in life."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s11",
+          "DialogueText": "Well... that's my take on it, anyway. Who knows what was going on in his mind. {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/368.ogg",
+          "TranslationKey": "Events/Town:2481135:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Well... that's my take on it, anyway. Who knows what was going on in his mind."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s12",
+          "DialogueText": "One day he left, and soon after that Mom got sick and passed away. I had no choice but to move in with my grandparents. {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/369.ogg",
+          "TranslationKey": "Events/Town:2481135:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "One day he left, and soon after that Mom got sick and passed away. I had no choice but to move in with my grandparents."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s13",
+          "DialogueText": "You seem like someone I can trust... That's why I'm telling you this, {Farmer_Name}. I don't want any sympathy. {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/370.ogg",
+          "TranslationKey": "Events/Town:2481135:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "You seem like someone I can trust... That's why I'm telling you this, . I don't want any sympathy."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s14",
+          "DialogueText": "If there's one good thing about my past, it's that it made me strong.",
+          "AudioPath": "assets/zh-CN/Alex/371.ogg",
+          "TranslationKey": "Events/Town:2481135:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "If there's one good thing about my past, it's that it made me strong."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s15",
+          "DialogueText": "Now... let me show you what Dusty will do for a barbecued steak. {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/372.ogg",
+          "TranslationKey": "Events/Town:2481135:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "Now... let me show you what Dusty will do for a barbecued steak."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s16",
+          "DialogueText": "Ha! Look at him slobbering. I think he might like steak as much as I do. {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/373.ogg",
+          "TranslationKey": "Events/Town:2481135:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "Ha! Look at him slobbering. I think he might like steak as much as I do."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s0",
+          "DialogueText": "Oh... I was talking to Dusty.",
+          "AudioPath": "assets/zh-CN/Alex/374.ogg",
+          "TranslationKey": "Events/Town:didntHear:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh... I was talking to Dusty."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s1",
+          "DialogueText": "He and I have a lot in common, actually. {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/375.ogg",
+          "TranslationKey": "Events/Town:didntHear:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "He and I have a lot in common, actually."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s2",
+          "DialogueText": "I don't usually like to talk about it... But we've been friends for a while now and I think I can trust you. {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/376.ogg",
+          "TranslationKey": "Events/Town:didntHear:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I don't usually like to talk about it... But we've been friends for a while now and I think I can trust you."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s3",
+          "DialogueText": "Have you ever wondered why I live with my grandparents? {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/377.ogg",
+          "TranslationKey": "Events/Town:didntHear:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Have you ever wondered why I live with my grandparents?"
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s4",
+          "DialogueText": "My father wasn't a good guy... He... Well he ruined everything for me and my mom. {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/378.ogg",
+          "TranslationKey": "Events/Town:didntHear:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "My father wasn't a good guy... He... Well he ruined everything for me and my mom."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s5",
+          "DialogueText": "Half the time he was gone... The other half he'd drink all night and tell me I'm worthless, that I'd never amount to anything. {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/379.ogg",
+          "TranslationKey": "Events/Town:didntHear:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Half the time he was gone... The other half he'd drink all night and tell me I'm worthless, that I'd never amount to anything."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s6",
+          "DialogueText": "I think he resented me for being young... Bitter because he'd wasted his youth doing nothing and had gotten nowhere in life. {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/380.ogg",
+          "TranslationKey": "Events/Town:didntHear:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I think he resented me for being young... Bitter because he'd wasted his youth doing nothing and had gotten nowhere in life."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s7",
+          "DialogueText": "Well... that's my take on it, anyway. Who knows what was going on in his mind. {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/381.ogg",
+          "TranslationKey": "Events/Town:didntHear:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Well... that's my take on it, anyway. Who knows what was going on in his mind."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s8",
+          "DialogueText": "One day he left, and soon after that Mom got sick and passed away. I had no choice but to move in with my grandparents. {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/382.ogg",
+          "TranslationKey": "Events/Town:didntHear:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "One day he left, and soon after that Mom got sick and passed away. I had no choice but to move in with my grandparents."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s9",
+          "DialogueText": "You know what? There's no sense dwelling on this stuff... I don't want any sympathy from anyone.",
+          "AudioPath": "assets/zh-CN/Alex/383.ogg",
+          "TranslationKey": "Events/Town:didntHear:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "You know what? There's no sense dwelling on this stuff... I don't want any sympathy from anyone."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s10",
+          "DialogueText": "You have to look on the positive side of things... My childhood wasn't great, but it did make me strong. I had to be.",
+          "AudioPath": "assets/zh-CN/Alex/384.ogg",
+          "TranslationKey": "Events/Town:didntHear:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "You have to look on the positive side of things... My childhood wasn't great, but it did make me strong. I had to be."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s11",
+          "DialogueText": "Here, let me show you what Dusty will do for a barbecued steak. {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/385.ogg",
+          "TranslationKey": "Events/Town:didntHear:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Here, let me show you what Dusty will do for a barbecued steak."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s12",
+          "DialogueText": "Ha! Look at him slobbering. I think he might like steak as much as I do. {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/386.ogg",
+          "TranslationKey": "Events/Town:didntHear:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Ha! Look at him slobbering. I think he might like steak as much as I do."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s0",
+          "DialogueText": "*sigh* {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/387.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s1",
+          "DialogueText": "Oh, Hi {Farmer_Name}. {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/388.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, Hi ."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s2",
+          "DialogueText": "Look at all these books. I haven't read a single one. Just the thought of cracking one open makes me nervous. {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/389.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Look at all these books. I haven't read a single one. Just the thought of cracking one open makes me nervous."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s3",
+          "DialogueText": "But you can't make a decent living in this world without a brain... {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/390.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "But you can't make a decent living in this world without a brain..."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s4",
+          "DialogueText": "I'm worthless... {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/391.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm worthless..."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s5",
+          "DialogueText": "That's crazy. You're a genius!",
+          "AudioPath": "assets/zh-CN/Alex/392.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "That's crazy. You're a genius!"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s6",
+          "DialogueText": "We all have our strengths and weaknesses.",
+          "AudioPath": "assets/zh-CN/Alex/393.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "We all have our strengths and weaknesses."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s7",
+          "DialogueText": "Worthless? Yeah, that about sums it up.",
+          "AudioPath": "assets/zh-CN/Alex/394.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Worthless? Yeah, that about sums it up."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s8",
+          "DialogueText": "Well, I'm not going to give up! {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/395.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I'm not going to give up!"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s9",
+          "DialogueText": "If I work hard, I can do anything!",
+          "AudioPath": "assets/zh-CN/Alex/396.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "If I work hard, I can do anything!"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s10",
+          "DialogueText": "Hey, maybe one day soon we'll have dinner and discuss ....phi-lo-so-phy. Isn't that what you smart people talk about? {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/397.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, maybe one day soon we'll have dinner and discuss ....phi-lo-so-phy. Isn't that what you smart people talk about?"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/2119820:s0",
+          "DialogueText": "Oh! Hey... I was just doing my daily strength training routine. {Portrait:Custom:6}",
+          "AudioPath": "assets/zh-CN/Alex/398.ogg",
+          "TranslationKey": "Events/JoshHouse:2119820:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! Hey... I was just doing my daily strength training routine."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/2119820:s1",
+          "DialogueText": "... sorry I have no shirt on. {Portrait:Custom:6}",
+          "AudioPath": "assets/zh-CN/Alex/399.ogg",
+          "TranslationKey": "Events/JoshHouse:2119820:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "... sorry I have no shirt on."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/2119820:s2",
+          "DialogueText": "Uh... {Farmer_Name}? I've been meaning to talk to you about something... {Portrait:Custom:8}",
+          "AudioPath": "assets/zh-CN/Alex/400.ogg",
+          "TranslationKey": "Events/JoshHouse:2119820:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Uh... ? I've been meaning to talk to you about something..."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/2119820:s3",
+          "DialogueText": "I've started to realize that... well, that I've been really rude towards you in the past. You know, about going pro and all that. {Portrait:Custom:8}",
+          "AudioPath": "assets/zh-CN/Alex/401.ogg",
+          "TranslationKey": "Events/JoshHouse:2119820:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I've started to realize that... well, that I've been really rude towards you in the past. You know, about going pro and all that."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/2119820:s4",
+          "DialogueText": "I guess I might not actually be cut out for professional sports... maybe it was just a childish dream... you know? {Portrait:Custom:8}",
+          "AudioPath": "assets/zh-CN/Alex/402.ogg",
+          "TranslationKey": "Events/JoshHouse:2119820:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I guess I might not actually be cut out for professional sports... maybe it was just a childish dream... you know?"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/2119820:s5",
+          "DialogueText": "Anyway... I want to apologize to you for bragging and being annoying about it. I appreciate that you stayed friends with me through all that. {Portrait:Custom:6}",
+          "AudioPath": "assets/zh-CN/Alex/403.ogg",
+          "TranslationKey": "Events/JoshHouse:2119820:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Anyway... I want to apologize to you for bragging and being annoying about it. I appreciate that you stayed friends with me through all that."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s0",
+          "DialogueText": "Thanks, Gus. That was great.",
+          "AudioPath": "assets/zh-CN/Alex/404.ogg",
+          "TranslationKey": "Events/Saloon:911526:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks, Gus. That was great."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s1",
+          "DialogueText": "This is nice... I've never dined in here before.",
+          "AudioPath": "assets/zh-CN/Alex/405.ogg",
+          "TranslationKey": "Events/Saloon:911526:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "This is nice... I've never dined in here before."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s2",
+          "DialogueText": "Um, anyway... I reserved this private room so we could talk... {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/406.ogg",
+          "TranslationKey": "Events/Saloon:911526:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Um, anyway... I reserved this private room so we could talk..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s3",
+          "DialogueText": "Thanks.",
+          "AudioPath": "assets/zh-CN/Alex/407.ogg",
+          "TranslationKey": "Events/Saloon:911526:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s4",
+          "DialogueText": "So, what I wanted to say was... {Portrait:Custom:9}",
+          "AudioPath": "assets/zh-CN/Alex/408.ogg",
+          "TranslationKey": "Events/Saloon:911526:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "So, what I wanted to say was..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s5",
+          "DialogueText": "*gulp* {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/409.ogg",
+          "TranslationKey": "Events/Saloon:911526:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "*gulp*"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s6|g=male",
+          "DialogueText": "Well... when we first met, I was instantly drawn to you. It was confusing... I'd never felt that way about anyone. {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/410_male.ogg",
+          "TranslationKey": "Events/Saloon:911526:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Well... when we first met, I was instantly drawn to you. It was confusing... I'd never felt that way about anyone.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s7|g=female",
+          "DialogueText": "When I first met you, I thought you were really cute. {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/411_female.ogg",
+          "TranslationKey": "Events/Saloon:911526:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "When I first met you, I thought you were really cute.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s8|g=male",
+          "DialogueText": "I kept telling myself 'You can't have these kinds of feelings for another guy'. {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/412_male.ogg",
+          "TranslationKey": "Events/Saloon:911526:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I kept telling myself 'You can't have these kinds of feelings for another guy'.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s9|g=female",
+          "DialogueText": "Normally, when I have a crush on someone, the feeling goes away pretty quick... {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/413_female.ogg",
+          "TranslationKey": "Events/Saloon:911526:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Normally, when I have a crush on someone, the feeling goes away pretty quick...",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s10|g=male",
+          "DialogueText": "...But my heart was telling me something else.",
+          "AudioPath": "assets/zh-CN/Alex/414_male.ogg",
+          "TranslationKey": "Events/Saloon:911526:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "...But my heart was telling me something else.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s11|g=female",
+          "DialogueText": "...But with you, it kept growing. {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/415_female.ogg",
+          "TranslationKey": "Events/Saloon:911526:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "...But with you, it kept growing.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s12",
+          "DialogueText": "I feel the same way.",
+          "AudioPath": "assets/zh-CN/Alex/416.ogg",
+          "TranslationKey": "Events/Saloon:911526:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "I feel the same way."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s13",
+          "DialogueText": "I'm sorry... I don't feel that way about you.",
+          "AudioPath": "assets/zh-CN/Alex/417.ogg",
+          "TranslationKey": "Events/Saloon:911526:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm sorry... I don't feel that way about you."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s14",
+          "DialogueText": "... {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/418.ogg",
+          "TranslationKey": "Events/Saloon:911526:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s15",
+          "DialogueText": "I can't believe it took this long to say that to each other. {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/419.ogg",
+          "TranslationKey": "Events/Saloon:911526:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "I can't believe it took this long to say that to each other."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s16",
+          "DialogueText": "Mmm... this steak is outstanding. Can you smell that fragrant sauce? {Portrait:Custom:10}",
+          "AudioPath": "assets/zh-CN/Alex/420.ogg",
+          "TranslationKey": "Events/Saloon:911526:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "Mmm... this steak is outstanding. Can you smell that fragrant sauce?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s17",
+          "DialogueText": "... {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/421.ogg",
+          "TranslationKey": "Events/Saloon:911526:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/rejectJosh:s0",
+          "DialogueText": "...Oh... {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/422.ogg",
+          "TranslationKey": "Events/Saloon:rejectJosh:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "...Oh..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/rejectJosh:s1",
+          "DialogueText": "I...I'm sorry if I made you uncomfortable... {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/423.ogg",
+          "TranslationKey": "Events/Saloon:rejectJosh:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I...I'm sorry if I made you uncomfortable..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/rejectJosh:s2",
+          "DialogueText": "I'm not hungry anymore... {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/424.ogg",
+          "TranslationKey": "Events/Saloon:rejectJosh:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm not hungry anymore..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/rejectJosh:s3",
+          "DialogueText": "... {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/425.ogg",
+          "TranslationKey": "Events/Saloon:rejectJosh:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195099:s0",
+          "DialogueText": "What's up?",
+          "AudioPath": "assets/zh-CN/Alex/426.ogg",
+          "TranslationKey": "Events/Saloon:195099:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "What's up?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s0",
+          "DialogueText": "Hold it!",
+          "AudioPath": "assets/zh-CN/Alex/427.ogg",
+          "TranslationKey": "Events/Saloon:195013:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hold it!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s1|g=male",
+          "DialogueText": "{Farmer_Name}? I thought... I thought we were 'one of a kind'... But you were just using me? {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/428_male.ogg",
+          "TranslationKey": "Events/Saloon:195013:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "? I thought... I thought we were 'one of a kind'... But you were just using me?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s2|g=female",
+          "DialogueText": "What are you looking at *me* for? You think I'm gonna come to your rescue? {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/429_female.ogg",
+          "TranslationKey": "Events/Saloon:195013:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "What are you looking at *me* for? You think I'm gonna come to your rescue?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s3",
+          "DialogueText": "That's right!",
+          "AudioPath": "assets/zh-CN/Alex/430.ogg",
+          "TranslationKey": "Events/Saloon:195013:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "That's right!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s4",
+          "DialogueText": "Sure...",
+          "AudioPath": "assets/zh-CN/Alex/431.ogg",
+          "TranslationKey": "Events/Saloon:195013:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Sure..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/choseToExplain:s0",
+          "DialogueText": "Yeah, right!",
+          "AudioPath": "assets/zh-CN/Alex/432.ogg",
+          "TranslationKey": "Events/Saloon:choseToExplain:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Yeah, right!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/crying:s0|g=male",
+          "DialogueText": "I'll assume this is just another act... {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/433_male.ogg",
+          "TranslationKey": "Events/Saloon:crying:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll assume this is just another act...",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/crying:s1|g=female",
+          "DialogueText": "Typical... {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/434_female.ogg",
+          "TranslationKey": "Events/Saloon:crying:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Typical...",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s0",
+          "DialogueText": "Big play!",
+          "AudioPath": "assets/zh-CN/Alex/435.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Big play!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s1",
+          "DialogueText": "There we go!",
+          "AudioPath": "assets/zh-CN/Alex/436.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "There we go!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s2",
+          "DialogueText": "Hey, {Farmer_Name}! You made it! {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/437.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, ! You made it!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s3",
+          "DialogueText": "So... what do you think?",
+          "AudioPath": "assets/zh-CN/Alex/438.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "So... what do you think?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s4",
+          "DialogueText": "I've been thinking... You know how I used to dream of being an athlete someday?",
+          "AudioPath": "assets/zh-CN/Alex/439.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been thinking... You know how I used to dream of being an athlete someday?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s5",
+          "DialogueText": "Well, my life ended up turning out a bit different... {Portrait:Custom:9}",
+          "AudioPath": "assets/zh-CN/Alex/440.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, my life ended up turning out a bit different..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s6",
+          "DialogueText": "I'm happy, though, don't get me wrong! {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/441.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm happy, though, don't get me wrong!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s7",
+          "DialogueText": "...But I thought it would be cool to have a place where us guys could hang out and watch the Sunday game. Gus liked the idea so much he offered me part of his back room!",
+          "AudioPath": "assets/zh-CN/Alex/442.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "...But I thought it would be cool to have a place where us guys could hang out and watch the Sunday game. Gus liked the idea so much he offered me part of his back room!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s8",
+          "DialogueText": "This way, I get to keep part of 'the dream' alive, in a small way.",
+          "AudioPath": "assets/zh-CN/Alex/443.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "This way, I get to keep part of 'the dream' alive, in a small way."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s9",
+          "DialogueText": "Thanks, Grandpa.",
+          "AudioPath": "assets/zh-CN/Alex/444.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks, Grandpa."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s0",
+          "DialogueText": "Oh, hi.",
+          "AudioPath": "assets/zh-CN/Alex/445.ogg",
+          "TranslationKey": "Events/Beach:20:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, hi."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s1",
+          "DialogueText": "Um, it's {Farmer_Name}, right?",
+          "AudioPath": "assets/zh-CN/Alex/446.ogg",
+          "TranslationKey": "Events/Beach:20:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Um, it's , right?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s2",
+          "DialogueText": "I'm just enjoying this great weather, {Farmer_Name}.",
+          "AudioPath": "assets/zh-CN/Alex/447.ogg",
+          "TranslationKey": "Events/Beach:20:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm just enjoying this great weather, ."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s3",
+          "DialogueText": "Hmm... {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Alex/448.ogg",
+          "TranslationKey": "Events/Beach:20:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmm..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s4",
+          "DialogueText": "Hey, go long! {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/449.ogg",
+          "TranslationKey": "Events/Beach:20:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, go long!"
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s5",
+          "DialogueText": "Heh... Nice try.",
+          "AudioPath": "assets/zh-CN/Alex/450.ogg",
+          "TranslationKey": "Events/Beach:20:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Heh... Nice try."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s6",
+          "DialogueText": "I'm going to be the first professional gridball player from Stardew Valley... There's no doubt in my mind.",
+          "AudioPath": "assets/zh-CN/Alex/451.ogg",
+          "TranslationKey": "Events/Beach:20:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm going to be the first professional gridball player from Stardew Valley... There's no doubt in my mind."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s7",
+          "DialogueText": "I already led my school's team to the regional playoffs... Now I'm just training and getting stronger so I can claim my spot on the roster of the Zuzu City Tunnelers. You just wait!",
+          "AudioPath": "assets/zh-CN/Alex/452.ogg",
+          "TranslationKey": "Events/Beach:20:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I already led my school's team to the regional playoffs... Now I'm just training and getting stronger so I can claim my spot on the roster of the Zuzu City Tunnelers. You just wait!"
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s8",
+          "DialogueText": "I believe in you!",
+          "AudioPath": "assets/zh-CN/Alex/453.ogg",
+          "TranslationKey": "Events/Beach:20:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I believe in you!"
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s9",
+          "DialogueText": "Wow, you're really arrogant.",
+          "AudioPath": "assets/zh-CN/Alex/454.ogg",
+          "TranslationKey": "Events/Beach:20:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow, you're really arrogant."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s10",
+          "DialogueText": "Thanks, {Farmer_Name}. I'll remember that.",
+          "AudioPath": "assets/zh-CN/Alex/455.ogg",
+          "TranslationKey": "Events/Beach:20:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks, . I'll remember that."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s11",
+          "DialogueText": "Hey, that was fun, huh?",
+          "AudioPath": "assets/zh-CN/Alex/456.ogg",
+          "TranslationKey": "Events/Beach:20:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, that was fun, huh?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/arrogantJosh:s0",
+          "DialogueText": "Hmmph... I think someone's a little jealous. {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/457.ogg",
+          "TranslationKey": "Events/Beach:arrogantJosh:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmmph... I think someone's a little jealous."
+        },
+        {
+          "DialogueFrom": "Event:Beach/arrogantJosh:s1",
+          "DialogueText": "I'm out of here. {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/458.ogg",
+          "TranslationKey": "Events/Beach:arrogantJosh:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm out of here."
+        },
+        {
+          "DialogueFrom": "Event:Beach/arrogantJosh:s2",
+          "DialogueText": "... {Portrait:Angry}",
+          "AudioPath": "assets/zh-CN/Alex/459.ogg",
+          "TranslationKey": "Events/Beach:arrogantJosh:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s0",
+          "DialogueText": "*sniff*... {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/460.ogg",
+          "TranslationKey": "Events/Beach:288847:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "*sniff*..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s1",
+          "DialogueText": "Oh... {Farmer_Name}. You saw me crying. {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/461.ogg",
+          "TranslationKey": "Events/Beach:288847:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh... . You saw me crying."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s2",
+          "DialogueText": "It was today, twelve years ago... that my Mom died. {Portrait:Custom:9}",
+          "AudioPath": "assets/zh-CN/Alex/462.ogg",
+          "TranslationKey": "Events/Beach:288847:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "It was today, twelve years ago... that my Mom died."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s3",
+          "DialogueText": "I still remember her well... she'd make salted radish sandwiches for lunch... and toss the gridball with me in the back yard. {Portrait:Custom:9}",
+          "AudioPath": "assets/zh-CN/Alex/463.ogg",
+          "TranslationKey": "Events/Beach:288847:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I still remember her well... she'd make salted radish sandwiches for lunch... and toss the gridball with me in the back yard."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s4",
+          "DialogueText": "She took good care of me... and I was too young to really say 'thanks'. Now she's gone forever. {Portrait:Custom:9}",
+          "AudioPath": "assets/zh-CN/Alex/464.ogg",
+          "TranslationKey": "Events/Beach:288847:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "She took good care of me... and I was too young to really say 'thanks'. Now she's gone forever."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s5",
+          "DialogueText": "This is the only keepsake I have left... her secret music box. {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/465.ogg",
+          "TranslationKey": "Events/Beach:288847:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "This is the only keepsake I have left... her secret music box."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s6",
+          "DialogueText": "So... What are you thinking right now, {Farmer_Name}? {Portrait:Custom:9}",
+          "AudioPath": "assets/zh-CN/Alex/466.ogg",
+          "TranslationKey": "Events/Beach:288847:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "So... What are you thinking right now, ?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s7",
+          "DialogueText": "Honor your mother's memory by always doing your best.",
+          "AudioPath": "assets/zh-CN/Alex/467.ogg",
+          "TranslationKey": "Events/Beach:288847:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Honor your mother's memory by always doing your best."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s8",
+          "DialogueText": "You shouldn't dwell in the past.",
+          "AudioPath": "assets/zh-CN/Alex/468.ogg",
+          "TranslationKey": "Events/Beach:288847:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "You shouldn't dwell in the past."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s9",
+          "DialogueText": "I'll always be here for you if you get lonely.",
+          "AudioPath": "assets/zh-CN/Alex/469.ogg",
+          "TranslationKey": "Events/Beach:288847:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll always be here for you if you get lonely."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s10",
+          "DialogueText": "Get over it. Life is hard for everyone.",
+          "AudioPath": "assets/zh-CN/Alex/470.ogg",
+          "TranslationKey": "Events/Beach:288847:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Get over it. Life is hard for everyone."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s11",
+          "DialogueText": "Well, there's no sense sitting around sniveling... let's head back to town. {Portrait:Custom:9}",
+          "AudioPath": "assets/zh-CN/Alex/471.ogg",
+          "TranslationKey": "Events/Beach:288847:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, there's no sense sitting around sniveling... let's head back to town."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s12",
+          "DialogueText": "Um... {Farmer_Name}? {Portrait:Custom:9}",
+          "AudioPath": "assets/zh-CN/Alex/472.ogg",
+          "TranslationKey": "Events/Beach:288847:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... ?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s13",
+          "DialogueText": "Don't tell anyone I was crying. Okay? {Portrait:Custom:7}",
+          "AudioPath": "assets/zh-CN/Alex/473.ogg",
+          "TranslationKey": "Events/Beach:288847:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Don't tell anyone I was crying. Okay?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s14",
+          "DialogueText": "Hey! {Portrait:Custom:7}",
+          "AudioPath": "assets/zh-CN/Alex/474.ogg",
+          "TranslationKey": "Events/Beach:288847:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey!"
+        },
+        {
+          "DialogueFrom": "Event:BusStop/9581348:s0",
+          "DialogueText": "Goal!",
+          "AudioPath": "assets/zh-CN/Alex/475.ogg",
+          "TranslationKey": "Events/BusStop:9581348:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Goal!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Alex",
+          "DialogueText": "我玩了太多次“力量”游戏，现在我的胳膊软得跟橡胶一样。",
+          "AudioPath": "assets/zh-CN/Alex/476.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "我玩了太多次“力量”游戏，现在我的胳膊软得跟橡胶一样。"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Alex_spouse",
+          "DialogueText": "我正好碰上了一些老朋友……你继续玩得开心。",
+          "AudioPath": "assets/zh-CN/Alex/477.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Alex_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "我正好碰上了一些老朋友……你继续玩得开心。"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Alex_y2",
+          "DialogueText": "我每赢一百局力量测试游戏，就吃一个烤肉三明治。 {Portrait:Neutral}",
+          "AudioPath": "assets/zh-CN/Alex/478.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "我每赢一百局力量测试游戏，就吃一个烤肉三明治。"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Alex_spouse_y2",
+          "DialogueText": "你吃过了吗？这都够所有人吃撑了！ {Portrait:Neutral}",
+          "AudioPath": "assets/zh-CN/Alex/479.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "你吃过了吗？这都够所有人吃撑了！"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Alex_spouse_y2",
+          "DialogueText": "我已经吃了三个三明治了……嗯……那个酱汁……",
+          "AudioPath": "assets/zh-CN/Alex/480.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Alex_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "我已经吃了三个三明治了……嗯……那个酱汁……"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Alex",
+          "DialogueText": "那边好像在发生什么大事。好像过去看看哦。",
+          "AudioPath": "assets/zh-CN/Alex/481.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "那边好像在发生什么大事。好像过去看看哦。"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Alex",
+          "DialogueText": "这附近一定有什么秘密通道。",
+          "AudioPath": "assets/zh-CN/Alex/482.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "这附近一定有什么秘密通道。"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Alex_y2",
+          "DialogueText": "我好像听到有女生在尖叫……我得去帮她！ {Portrait:Neutral}",
+          "AudioPath": "assets/zh-CN/Alex/483.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "我好像听到有女生在尖叫……我得去帮她！"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Alex_spouse_y2",
+          "DialogueText": "哎，你闯过了那几个渗人的手。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/484.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "哎，你闯过了那几个渗人的手。"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Alex_spouse_y2",
+          "DialogueText": "我好像听到附近有人在喊救命。 {Portrait:Neutral}",
+          "AudioPath": "assets/zh-CN/Alex/485.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Alex_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "我好像听到附近有人在喊救命。"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Alex",
+          "DialogueText": "我在努力每天吃至少三个鸡蛋。",
+          "AudioPath": "assets/zh-CN/Alex/486.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "我在努力每天吃至少三个鸡蛋。"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Alex",
+          "DialogueText": "我的腿需要更多蛋白质。",
+          "AudioPath": "assets/zh-CN/Alex/487.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "我的腿需要更多蛋白质。"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Alex_spouse",
+          "DialogueText": "呜呃……我好像吃太多水煮蛋了…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/488.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Alex_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "呜呃……我好像吃太多水煮蛋了……"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Alex_y2",
+          "DialogueText": "我在想如果我一天吃 30 个鸡蛋，我的胳膊和腿会怎么样？",
+          "AudioPath": "assets/zh-CN/Alex/489.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "我在想如果我一天吃 30 个鸡蛋，我的胳膊和腿会怎么样？"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Alex",
+          "DialogueText": "我在欣赏这美景呢……嘿嘿。",
+          "AudioPath": "assets/zh-CN/Alex/490.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "我在欣赏这美景呢……嘿嘿。"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Alex_y2",
+          "DialogueText": "跳舞的秘诀就是自信。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/491.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "跳舞的秘诀就是自信。"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Alex_spouse_y2",
+          "DialogueText": "哎，我今天特别有信心，我们肯定能跳得很好……跟着我一起跳就行了。 {Portrait:Neutral}",
+          "AudioPath": "assets/zh-CN/Alex/492.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "哎，我今天特别有信心，我们肯定能跳得很好……跟着我一起跳就行了。"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Alex",
+          "DialogueText": "这么好的天气就该搞个沙滩派对，你说呢？",
+          "AudioPath": "assets/zh-CN/Alex/493.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "这么好的天气就该搞个沙滩派对，你说呢？"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Alex_spouse",
+          "DialogueText": "嘿，这么美好的天气，千方百计都要找借口来海边享受下啊！",
+          "AudioPath": "assets/zh-CN/Alex/494.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Alex_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，这么美好的天气，千方百计都要找借口来海边享受下啊！"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Alex_y2",
+          "DialogueText": "如果我下水，你觉得其他人会一起来吗？我可不想一个人游泳！ {Portrait:Neutral}",
+          "AudioPath": "assets/zh-CN/Alex/495.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "如果我下水，你觉得其他人会一起来吗？我可不想一个人游泳！"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Alex_spouse_y2",
+          "DialogueText": "今天……我要大吃特吃，大不了明天多做几个俯卧撑！ {Portrait:Neutral}",
+          "AudioPath": "assets/zh-CN/Alex/496.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "今天……我要大吃特吃，大不了明天多做几个俯卧撑！"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Alex",
+          "DialogueText": "难以置信夏天就这么结束了……宛如昨天才刚开始。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/497.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "难以置信夏天就这么结束了……宛如昨天才刚开始。"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Alex_y2",
+          "DialogueText": "夏天就这么过去了真可惜，可能这就是生活吧…… {Portrait:Neutral}",
+          "AudioPath": "assets/zh-CN/Alex/498.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "夏天就这么过去了真可惜，可能这就是生活吧……"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Alex_spouse_y2",
+          "DialogueText": "我先和家里人待一会儿，过会儿在码头见，好吗？ {Portrait:Neutral}",
+          "AudioPath": "assets/zh-CN/Alex/499.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "我先和家里人待一会儿，过会儿在码头见，好吗？"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Alex",
+          "DialogueText": "哦，你好。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/500.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "哦，你好。"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Alex_spouse",
+          "DialogueText": "我想感恩什么？等回到家后我会用行动告诉你…… {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Alex/501.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Alex_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "我想感恩什么？等回到家后我会用行动告诉你……"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Alex_y2",
+          "DialogueText": "我确信精灵树下有一个格球形状的礼物，上面写着我的名字。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/502.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "我确信精灵树下有一个格球形状的礼物，上面写着我的名字。"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Alex_spouse_y2",
+          "DialogueText": "如果你感觉冷的话跟我说，我的夹克衫给你穿。 {Portrait:Neutral}",
+          "AudioPath": "assets/zh-CN/Alex/503.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "如果你感觉冷的话跟我说，我的夹克衫给你穿。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Alex",
+          "DialogueText": "雪人挺好玩的。但我还是更喜欢春天。",
+          "AudioPath": "assets/zh-CN/Alex/504.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "雪人挺好玩的。但我还是更喜欢春天。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Alex_spouse",
+          "DialogueText": "我看好你赢得这次的钓鱼比赛。",
+          "AudioPath": "assets/zh-CN/Alex/505.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Alex_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "我看好你赢得这次的钓鱼比赛。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Alex_y2",
+          "DialogueText": "节日结束之后我想到结冰的湖里泡一会儿，你觉得怎么样？",
+          "AudioPath": "assets/zh-CN/Alex/506.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "节日结束之后我想到结冰的湖里泡一会儿，你觉得怎么样？"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Alex_y2",
+          "DialogueText": "据说泡冰水对肌肉有好处。",
+          "AudioPath": "assets/zh-CN/Alex/507.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Alex_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "据说泡冰水对肌肉有好处。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Alex_spouse_y2",
+          "DialogueText": "嘿！你今天肯定会脱颖而出，我相信你，加油！",
+          "AudioPath": "assets/zh-CN/Alex/508.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿！你今天肯定会脱颖而出，我相信你，加油！"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Alex:s0",
+          "DialogueText": "嘿，真棒！我超爱这个！",
+          "AudioPath": "assets/zh-CN/Alex/509.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Alex:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，真棒！我超爱这个！"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Alex:s1",
+          "DialogueText": "这东西好酷！谢谢你啊。",
+          "AudioPath": "assets/zh-CN/Alex/510.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Alex:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "这东西好酷！谢谢你啊。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Alex:s2",
+          "DialogueText": "呃……好的。谢谢你了。",
+          "AudioPath": "assets/zh-CN/Alex/511.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Alex:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "呃……好的。谢谢你了。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Alex:s3",
+          "DialogueText": "你认真的吗？这是垃圾。",
+          "AudioPath": "assets/zh-CN/Alex/512.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Alex:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "你认真的吗？这是垃圾。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Alex:s4",
+          "DialogueText": "谢谢！",
+          "AudioPath": "assets/zh-CN/Alex/513.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Alex:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "谢谢！"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/JoshHouse_Alex_Trash",
+          "DialogueText": "啊……你在做什么？ {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/514.ogg",
+          "TranslationKey": "Data/ExtraDialogue:JoshHouse_Alex_Trash",
+          "PageIndex": 0,
+          "DisplayPattern": "啊……你在做什么？"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Alex",
+          "DialogueText": "嘿，昨晚，我在商店了买了{2}。奶奶做了顿特别的砂锅菜……",
+          "AudioPath": "assets/zh-CN/Alex/515.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，昨晚，我在商店了买了{2}。奶奶做了顿特别的砂锅菜……"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Alex",
+          "DialogueText": "我终于明白了自己想要成为什么样的人……我对未来更有把握了。\"/pause 500/speak Alex \"{Farmer_Name}，如果没有你，我恐怕做不到这一切。\"",
+          "AudioPath": "assets/zh-CN/Alex/516.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "我终于明白了自己想要成为什么样的人……我对未来更有把握了。\"/pause 500/speak Alex \"，如果没有你，我恐怕做不到这一切。\""
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_summer_movie_1_BeforeMovie",
+          "DialogueText": "这片子应该挺好玩的，我很期待。",
+          "AudioPath": "assets/zh-CN/Alex/517.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_summer_movie_1_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "这片子应该挺好玩的，我很期待。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_summer_movie_1_AfterMovie",
+          "DialogueText": "哈！我真挺喜欢这片子！不过我不知道如果我像那样光吃面饼能不能活下来。",
+          "AudioPath": "assets/zh-CN/Alex/518.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_summer_movie_1_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "哈！我真挺喜欢这片子！不过我不知道如果我像那样光吃面饼能不能活下来。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_love_BeforeMovie",
+          "DialogueText": "我最近一直想看这个。谢谢你的票，{Farmer_Name}！",
+          "AudioPath": "assets/zh-CN/Alex/519.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "我最近一直想看这个。谢谢你的票，！"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_love_AfterMovie",
+          "DialogueText": "真的好看！我的腿还在兴奋地打颤。",
+          "AudioPath": "assets/zh-CN/Alex/520.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "真的好看！我的腿还在兴奋地打颤。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_like_BeforeMovie",
+          "DialogueText": "嘿，我很高兴能看电影！不过，我需要一点吃的……",
+          "AudioPath": "assets/zh-CN/Alex/521.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，我很高兴能看电影！不过，我需要一点吃的……"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_like_AfterMovie",
+          "DialogueText": "嘿，电影挺好看的。谢谢你邀请我，{Farmer_Name}。",
+          "AudioPath": "assets/zh-CN/Alex/522.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，电影挺好看的。谢谢你邀请我，。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_dislike_BeforeMovie",
+          "DialogueText": "这部电影看起来略无聊，不过我还是试一试吧。",
+          "AudioPath": "assets/zh-CN/Alex/523.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "这部电影看起来略无聊，不过我还是试一试吧。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_dislike_AfterMovie",
+          "DialogueText": "我不知道是电影太无聊，还是我太笨了没法理解…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Alex/524.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "我不知道是电影太无聊，还是我太笨了没法理解……"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Alex_marriage",
+          "DialogueText": "哎……你在沙漠的阳光下看起来真可爱…… {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Alex/525.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Alex_marriage",
+          "PageIndex": 0,
+          "DisplayPattern": "哎……你在沙漠的阳光下看起来真可爱……"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Alex",
+          "DialogueText": "这些卡利科三花蛋也太大了吧！",
+          "AudioPath": "assets/zh-CN/Alex/526.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "这些卡利科三花蛋也太大了吧！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Alex",
+          "DialogueText": "满满的蛋白质……",
+          "AudioPath": "assets/zh-CN/Alex/527.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "满满的蛋白质……"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Alex",
+          "DialogueText": "哎，你手里有三花蛋吗？",
+          "AudioPath": "assets/zh-CN/Alex/528.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "哎，你手里有三花蛋吗？"
+        }
+      ]
+    }
+  ]
+}

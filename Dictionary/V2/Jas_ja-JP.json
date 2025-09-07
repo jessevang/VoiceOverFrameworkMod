@@ -1,0 +1,944 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Jas.ja-JP",
+      "VoicePackName": "DictionarV2 (Jas - ja-JP)",
+      "Character": "Jas",
+      "Language": "ja-JP",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "… {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Jas/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "…"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "こんにちは… {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Jas/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "こんにちは…"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "わーい、誕生日プレゼントだ！これだーい好き！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "わーい、誕生日プレゼントだ！これだーい好き！"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "こわいよう… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "こわいよう…"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "雨でドレスが緑色になっちゃたらいやだな… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "雨でドレスが緑色になっちゃたらいやだな…"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "誕生日プレゼント？うーん…これキライなんだ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "誕生日プレゼント？うーん…これキライなんだ。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "いいの？とってもいい香りね！毎日ほんのちょっとずつ飲むわ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "いいの？とってもいい香りね！毎日ほんのちょっとずつ飲むわ。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)FairyBox",
+          "DialogueText": "わぁ、とってもかわいいね！妖精さんが中にいるの？ うふふ…歌声が聞こえるわ。秘密の友だちができちゃった。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_(TR)FairyBox",
+          "PageIndex": 0,
+          "DisplayPattern": "わぁ、とってもかわいいね！妖精さんが中にいるの？ うふふ…歌声が聞こえるわ。秘密の友だちができちゃった。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)103",
+          "DialogueText": "わぁ、ちいさなお人形！汚れちゃってるね、お風呂に入れてあげくちゃ。ありがとう！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_(O)103",
+          "PageIndex": 0,
+          "DisplayPattern": "わぁ、ちいさなお人形！汚れちゃってるね、お風呂に入れてあげくちゃ。ありがとう！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Positive_doll_item",
+          "DialogueText": "まぁ！すてき！きっと私のほかのお友だちともすぐに仲良しになれるわ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_Positive_doll_item",
+          "PageIndex": 0,
+          "DisplayPattern": "まぁ！すてき！きっと私のほかのお友だちともすぐに仲良しになれるわ！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Negative_alcohol_item",
+          "DialogueText": "うぅ…これは飲んじゃいけないんだよ。おとなの人のものでしょ？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_Negative_alcohol_item",
+          "PageIndex": 0,
+          "DisplayPattern": "うぅ…これは飲んじゃいけないんだよ。おとなの人のものでしょ？"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Negative_coffee_item",
+          "DialogueText": "えっと…マーニーおばさんから、まだコーヒーは飲んじゃだめって言われてるの… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_Negative_coffee_item",
+          "PageIndex": 0,
+          "DisplayPattern": "えっと…マーニーおばさんから、まだコーヒーは飲んじゃだめって言われてるの…"
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "カニさんを見たわ！",
+          "AudioPath": "assets/ja-JP/Jas/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "カニさんを見たわ！"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "靴に砂が入っちゃった… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "靴に砂が入っちゃった…"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "貝殻を集めて…ネックレスを作りたいの！",
+          "AudioPath": "assets/ja-JP/Jas/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "貝殻を集めて…ネックレスを作りたいの！"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "マーニーおばさんが日焼けしちゃダメって言うの…でも早歩きすると涼しいから、わたしはきっと大丈夫。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "マーニーおばさんが日焼けしちゃダメって言うの…でも早歩きすると涼しいから、わたしはきっと大丈夫。"
+        },
+        {
+          "DialogueFrom": "movieTheater",
+          "DialogueText": "マーニーおばさんから、まだひとりで映画を見ちゃだめって言われてるの… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:movieTheater",
+          "PageIndex": 0,
+          "DisplayPattern": "マーニーおばさんから、まだひとりで映画を見ちゃだめって言われてるの…"
+        },
+        {
+          "DialogueFrom": "reject_869",
+          "DialogueText": "うわっ、ひどい！ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:reject_869",
+          "PageIndex": 0,
+          "DisplayPattern": "うわっ、ひどい！"
+        },
+        {
+          "DialogueFrom": "married_Shane",
+          "DialogueText": "シェーンはまたきっとわたしに会いに来てくれるよね… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:married_Shane",
+          "PageIndex": 0,
+          "DisplayPattern": "シェーンはまたきっとわたしに会いに来てくれるよね…"
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "はぁ…いつかわたしもけっこんしたいなあ。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Jas/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:married",
+          "PageIndex": 0,
+          "DisplayPattern": "はぁ…いつかわたしもけっこんしたいなあ。"
+        },
+        {
+          "DialogueFrom": "cropMatured_595",
+          "DialogueText": "えっと…妖精さんに会ったことはある？",
+          "AudioPath": "assets/ja-JP/Jas/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:cropMatured_595",
+          "PageIndex": 0,
+          "DisplayPattern": "えっと…妖精さんに会ったことはある？"
+        },
+        {
+          "DialogueFrom": "cropMatured_595",
+          "DialogueText": "わぁ！わたしも会ってみたいな。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:cropMatured_595",
+          "PageIndex": 1,
+          "DisplayPattern": "わぁ！わたしも会ってみたいな。"
+        },
+        {
+          "DialogueFrom": "cropMatured_595",
+          "DialogueText": "…わたしもなの。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:cropMatured_595",
+          "PageIndex": 2,
+          "DisplayPattern": "…わたしもなの。"
+        },
+        {
+          "DialogueFrom": "eventSeen_3910975",
+          "DialogueText": "…シェーンはだいじょうぶなの？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:eventSeen_3910975",
+          "PageIndex": 0,
+          "DisplayPattern": "…シェーンはだいじょうぶなの？"
+        },
+        {
+          "DialogueFrom": "eventSeen_3910975_memory_oneweek",
+          "DialogueText": "家がもえちゃうこわい夢を見たの… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:eventSeen_3910975_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "家がもえちゃうこわい夢を見たの…"
+        },
+        {
+          "DialogueFrom": "eventSeen_3910974",
+          "DialogueText": "ふふっ… ほら、本物のバニージュエルのサンダルよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:eventSeen_3910974",
+          "PageIndex": 0,
+          "DisplayPattern": "ふふっ… ほら、本物のバニージュエルのサンダルよ！"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "えっと…マーニーおばさんを 探してるの？ {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Jas/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "えっと…マーニーおばさんを 探してるの？"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "こんにちは、{Farmer_Name}さん。",
+          "AudioPath": "assets/ja-JP/Jas/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、さん。"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "農場生活って 楽しいね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "農場生活って 楽しいね。"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "なぁに？フフッ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "なぁに？フフッ。"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "…こんにちは。",
+          "AudioPath": "assets/ja-JP/Jas/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "…こんにちは。"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "良かったら、 あたしの お人形さんで 遊んでもいいよ。終わったら、 ちゃんと お人形さんの 髪を といてね。",
+          "AudioPath": "assets/ja-JP/Jas/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "良かったら、 あたしの お人形さんで 遊んでもいいよ。終わったら、 ちゃんと お人形さんの 髪を といてね。"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "… {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Jas/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "…"
+        },
+        {
+          "DialogueFrom": "Wed2",
+          "DialogueText": "…こんにちは。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Jas/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed2",
+          "PageIndex": 0,
+          "DisplayPattern": "…こんにちは。"
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "マーニーおばさんがね、 6時以降は 外へ 出ちゃ ダメだって。ずるいよ！ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "マーニーおばさんがね、 6時以降は 外へ 出ちゃ ダメだって。ずるいよ！"
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "もう 暗いのは 怖くないのに！",
+          "AudioPath": "assets/ja-JP/Jas/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed4",
+          "PageIndex": 1,
+          "DisplayPattern": "もう 暗いのは 怖くないのに！"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "知らない人と 話しちゃ いけないんだ… {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Jas/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "知らない人と 話しちゃ いけないんだ…"
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "ペニー先生が 筆記体の 書き方を 教えてくれてるの。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Thu2",
+          "PageIndex": 0,
+          "DisplayPattern": "ペニー先生が 筆記体の 書き方を 教えてくれてるの。"
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "先生の 書く字は かわいいんだよ。",
+          "AudioPath": "assets/ja-JP/Jas/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Thu2",
+          "PageIndex": 1,
+          "DisplayPattern": "先生の 書く字は かわいいんだよ。"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "…あなたのこと、 よく知らない。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Jas/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "…あなたのこと、 よく知らない。"
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "この リボン、 どうかな？",
+          "AudioPath": "assets/ja-JP/Jas/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Fri2",
+          "PageIndex": 0,
+          "DisplayPattern": "この リボン、 どうかな？"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "牧場は 好きなんだ… 牛のミルクから 作った 新鮮な アイスクリームが 一番お気に入りなの。",
+          "AudioPath": "assets/ja-JP/Jas/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "牧場は 好きなんだ… 牛のミルクから 作った 新鮮な アイスクリームが 一番お気に入りなの。"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "あなたから 草の 匂いが するね。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Jas/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "あなたから 草の 匂いが するね。"
+        },
+        {
+          "DialogueFrom": "Sat2",
+          "DialogueText": "時々 川に行って ザリガニを 探すの。一度だけ、 牛に 食べさせたこと… マーニー おばさんには 言わないでね。",
+          "AudioPath": "assets/ja-JP/Jas/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat2",
+          "PageIndex": 0,
+          "DisplayPattern": "時々 川に行って ザリガニを 探すの。一度だけ、 牛に 食べさせたこと… マーニー おばさんには 言わないでね。"
+        },
+        {
+          "DialogueFrom": "Sat2",
+          "DialogueText": "牛さん、 その味を 気に入っちゃったから。",
+          "AudioPath": "assets/ja-JP/Jas/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat2",
+          "PageIndex": 1,
+          "DisplayPattern": "牛さん、 その味を 気に入っちゃったから。"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "{Farmer_Name}さんって、 いつも あたしに やさしいんだね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "さんって、 いつも あたしに やさしいんだね。"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "大人って いつも イジワルで つまんないけど、 あなたは そうじゃない。",
+          "AudioPath": "assets/ja-JP/Jas/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "大人って いつも イジワルで つまんないけど、 あなたは そうじゃない。"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "えっと…な、何か 用なの？ {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Jas/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "えっと…な、何か 用なの？"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "知らない人と 話しちゃ いけないんだ… {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Jas/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "知らない人と 話しちゃ いけないんだ…"
+        },
+        {
+          "DialogueFrom": "Sun2",
+          "DialogueText": "シェーンは よく いなくなるし、 マーニー おばさんは いつも 忙しいから… 自分で 遊びを 考えなくちゃ いけないんだ。",
+          "AudioPath": "assets/ja-JP/Jas/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun2",
+          "PageIndex": 0,
+          "DisplayPattern": "シェーンは よく いなくなるし、 マーニー おばさんは いつも 忙しいから… 自分で 遊びを 考えなくちゃ いけないんだ。"
+        },
+        {
+          "DialogueFrom": "Sun2",
+          "DialogueText": "だから オモチャに ありがとうって 思ってるの。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun2",
+          "PageIndex": 1,
+          "DisplayPattern": "だから オモチャに ありがとうって 思ってるの。"
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "シェーンは あたしの 後見人だって 知ってる？パパとママの 友達 だったんだ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun10",
+          "PageIndex": 0,
+          "DisplayPattern": "シェーンは あたしの 後見人だって 知ってる？パパとママの 友達 だったんだ。"
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "…パパとママは もういないけど…グスッ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun10",
+          "PageIndex": 1,
+          "DisplayPattern": "…パパとママは もういないけど…グスッ…"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s0",
+          "DialogueText": "I loved it! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/54.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I loved it!"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184643:s0",
+          "DialogueText": "Ms. Penny? The cover fell off my math book... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/55.ogg",
+          "TranslationKey": "Events/Town:6184643:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ms. Penny? The cover fell off my math book..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s0",
+          "DialogueText": "A natural resource is a material source of wealth that occurs in a natural state and has economic value. {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Jas/56.ogg",
+          "TranslationKey": "Events/Forest:181928:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "A natural resource is a material source of wealth that occurs in a natural state and has economic value."
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s1",
+          "DialogueText": "Yesss! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/57.ogg",
+          "TranslationKey": "Events/Forest:181928:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Yesss!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s0",
+          "DialogueText": "Ew... it smells. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/58.ogg",
+          "TranslationKey": "Events/Forest:318560:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ew... it smells."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s1",
+          "DialogueText": "I think Gunther has the key.",
+          "AudioPath": "assets/ja-JP/Jas/59.ogg",
+          "TranslationKey": "Events/Forest:318560:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I think Gunther has the key."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s2",
+          "DialogueText": "I saw a big rusty old key fall out of his pocket one time.",
+          "AudioPath": "assets/ja-JP/Jas/60.ogg",
+          "TranslationKey": "Events/Forest:318560:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I saw a big rusty old key fall out of his pocket one time."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s3",
+          "DialogueText": "A creepy sewer door like this has just got to be a match for a big rusty old key. {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Jas/61.ogg",
+          "TranslationKey": "Events/Forest:318560:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "A creepy sewer door like this has just got to be a match for a big rusty old key."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s4",
+          "DialogueText": "There's something moving around in there! {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Jas/62.ogg",
+          "TranslationKey": "Events/Forest:318560:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "There's something moving around in there!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s0",
+          "DialogueText": "They're too spicy for me! {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/63.ogg",
+          "TranslationKey": "Events/Forest:3910979:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "They're too spicy for me!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s1",
+          "DialogueText": "Um... What do you do with the bugs, Vincent?",
+          "AudioPath": "assets/ja-JP/Jas/64.ogg",
+          "TranslationKey": "Events/Forest:3910979:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... What do you do with the bugs, Vincent?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s2",
+          "DialogueText": "*gasp*!",
+          "AudioPath": "assets/ja-JP/Jas/65.ogg",
+          "TranslationKey": "Events/Forest:3910979:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "*gasp*!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s3",
+          "DialogueText": "That's horrible! No, no, no, no, no... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/66.ogg",
+          "TranslationKey": "Events/Forest:3910979:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "That's horrible! No, no, no, no, no..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s4|g=male",
+          "DialogueText": "Mr. {Farmer_Name}? Please... put the bugs back in the grass so they can live in peace.",
+          "AudioPath": "assets/ja-JP/Jas/67_male.ogg",
+          "TranslationKey": "Events/Forest:3910979:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Mr. ? Please... put the bugs back in the grass so they can live in peace.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s5|g=female",
+          "DialogueText": "Miss {Farmer_Name}? Please... put the bugs back in the grass so they can live in peace.",
+          "AudioPath": "assets/ja-JP/Jas/68_female.ogg",
+          "TranslationKey": "Events/Forest:3910979:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Miss ? Please... put the bugs back in the grass so they can live in peace.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s6",
+          "DialogueText": "You learned how to clean the spring onion... without harming any bugs.",
+          "AudioPath": "assets/ja-JP/Jas/69.ogg",
+          "TranslationKey": "Events/Forest:3910979:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "You learned how to clean the spring onion... without harming any bugs."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s7",
+          "DialogueText": "Spring onions are now worth 5x the gold!",
+          "AudioPath": "assets/ja-JP/Jas/70.ogg",
+          "TranslationKey": "Events/Forest:3910979:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Spring onions are now worth 5x the gold!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s0",
+          "DialogueText": "...*sob*...",
+          "AudioPath": "assets/ja-JP/Jas/71.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "...*sob*..."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s0",
+          "DialogueText": "Th... These are real bunny-jewel slippers!! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/72.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Th... These are real bunny-jewel slippers!!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s1",
+          "DialogueText": "B... But these are so expensive! {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Jas/73.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "B... But these are so expensive!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s2",
+          "DialogueText": "How did you afford them? {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Jas/74.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "How did you afford them?"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s0",
+          "DialogueText": "Uncle Shane's in the barn. He said... Uh... He said to tell you he wants to show you something.",
+          "AudioPath": "assets/ja-JP/Jas/75.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Uncle Shane's in the barn. He said... Uh... He said to tell you he wants to show you something."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s1",
+          "DialogueText": "White Chicken",
+          "AudioPath": "assets/ja-JP/Jas/76.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "White Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s2",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/ja-JP/Jas/77.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s3",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/ja-JP/Jas/78.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s4",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/ja-JP/Jas/79.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s5",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/ja-JP/Jas/80.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Jas",
+          "DialogueText": "いたっ！めんどりが小指つついたー！ {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Jas/81.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "いたっ！めんどりが小指つついたー！"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Jas_y2",
+          "DialogueText": "モー！モー！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/82.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "モー！モー！"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Jas_y2",
+          "DialogueText": "牛の赤ちゃんとお話ししたいの。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Jas/83.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Jas_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "牛の赤ちゃんとお話ししたいの。"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Jas",
+          "DialogueText": "そんなあ、マーニーおばさん！あたしも迷路に行きたーい！こわくなんかないもん！ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/84.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "そんなあ、マーニーおばさん！あたしも迷路に行きたーい！こわくなんかないもん！"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Jas_y2",
+          "DialogueText": "こっちに行ってみようよ！%noturn {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/85.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "こっちに行ってみようよ！"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Jas",
+          "DialogueText": "ヴィンセントがぜんぶとっちゃうまえにタマゴを見つけられたらいいなあ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/86.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "ヴィンセントがぜんぶとっちゃうまえにタマゴを見つけられたらいいなあ…"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Jas_y2",
+          "DialogueText": "今年は勝てるようにがんばるわ！",
+          "AudioPath": "assets/ja-JP/Jas/87.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "今年は勝てるようにがんばるわ！"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Jas",
+          "DialogueText": "いつかわたし、フラワークイーンになるの！",
+          "AudioPath": "assets/ja-JP/Jas/88.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "いつかわたし、フラワークイーンになるの！"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Jas_y2",
+          "DialogueText": "うふふっ… うまくできてるかしら？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/89.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "うふふっ… うまくできてるかしら？"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Jas",
+          "DialogueText": "ヴィンセントって、踊るのヘタね。",
+          "AudioPath": "assets/ja-JP/Jas/90.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "ヴィンセントって、踊るのヘタね。"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Jas_y2",
+          "DialogueText": "うぅ… でも…ぜったい食べなくちゃいけないの？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/91.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "うぅ… でも…ぜったい食べなくちゃいけないの？"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Jas",
+          "DialogueText": "今年は赤ちゃんクラゲいるかな？",
+          "AudioPath": "assets/ja-JP/Jas/92.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "今年は赤ちゃんクラゲいるかな？"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Jas_y2",
+          "DialogueText": "目がないのにどうしてクラゲたちはちゃんと泳げるの？ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Jas/93.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "目がないのにどうしてクラゲたちはちゃんと泳げるの？"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Jas",
+          "DialogueText": "わあ！プレゼントだ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/94.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "わあ！プレゼントだ！"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Jas_y2",
+          "DialogueText": "まだプレゼントをあけちゃダメなの？ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Jas/95.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "まだプレゼントをあけちゃダメなの？"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Jas",
+          "DialogueText": "ねえ、ニンジンのおハナつけよう！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/96.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "ねえ、ニンジンのおハナつけよう！"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Jas_y2",
+          "DialogueText": "お魚さんは寒くないのかな？ {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Jas/97.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "お魚さんは寒くないのかな？"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s0",
+          "DialogueText": "わあ…やったぁ！！ありがとう！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/98.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "わあ…やったぁ！！ありがとう！"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s1",
+          "DialogueText": "プレゼントだーいすき！ありがとー！",
+          "AudioPath": "assets/ja-JP/Jas/99.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "プレゼントだーいすき！ありがとー！"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s2",
+          "DialogueText": "これ、プレゼントなの？えーっ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/100.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "これ、プレゼントなの？えーっ…"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s3",
+          "DialogueText": "うえっ。これ、やだぁ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/101.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "うえっ。これ、やだぁ。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s4",
+          "DialogueText": "ありがとう！",
+          "AudioPath": "assets/ja-JP/Jas/102.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "ありがとう！"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_love_BeforeMovie",
+          "DialogueText": "映画を見て本当にハッピーよ！",
+          "AudioPath": "assets/ja-JP/Jas/103.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "映画を見て本当にハッピーよ！"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_love_DuringMovie",
+          "DialogueText": "ジャスは恍惚としています！」",
+          "AudioPath": "assets/ja-JP/Jas/104.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_love_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "ジャスは恍惚としています！」"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_love_AfterMovie",
+          "DialogueText": "とてもたのしかったわ。つれてきてくれてありがとう！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/105.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "とてもたのしかったわ。つれてきてくれてありがとう！"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_like_BeforeMovie",
+          "DialogueText": "これは大人の映画だよね？大丈夫だと思う！",
+          "AudioPath": "assets/ja-JP/Jas/106.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "これは大人の映画だよね？大丈夫だと思う！"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_like_DuringMovie",
+          "DialogueText": "ジャスはうなずいて横からちらっと見ています。」",
+          "AudioPath": "assets/ja-JP/Jas/107.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_like_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "ジャスはうなずいて横からちらっと見ています。」"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_like_AfterMovie",
+          "DialogueText": "よかったね！それは...ええと...良い「ダイアログ」！...だよね？",
+          "AudioPath": "assets/ja-JP/Jas/108.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "よかったね！それは...ええと...良い「ダイアログ」！...だよね？"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_BeforeMovie",
+          "DialogueText": "わたし...わたしはこれを見ちゃダメなのかどうかわからない... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/109.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "わたし...わたしはこれを見ちゃダメなのかどうかわからない..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_DuringMovie",
+          "DialogueText": "怖い... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/110.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "怖い..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_DuringMovie_2",
+          "DialogueText": "ジャスは震えています」",
+          "AudioPath": "assets/ja-JP/Jas/111.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_DuringMovie_2",
+          "PageIndex": 0,
+          "DisplayPattern": "ジャスは震えています」"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_AfterMovie",
+          "DialogueText": "（クンクン）... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Jas/112.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "（クンクン）..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Jas",
+          "DialogueText": "たのしいね！ でも、アイスクリームがたべたいなあ…",
+          "AudioPath": "assets/ja-JP/Jas/113.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "たのしいね！ でも、アイスクリームがたべたいなあ…"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Jas",
+          "DialogueText": "こんにちは…あのね… ふふっ",
+          "AudioPath": "assets/ja-JP/Jas/114.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは…あのね… ふふっ"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Jas_IceCream",
+          "DialogueText": "これ…わたしにくれるの？? {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Jas/115.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Jas_IceCream",
+          "PageIndex": 0,
+          "DisplayPattern": "これ…わたしにくれるの？?"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Jas_IceCream",
+          "DialogueText": "うれしい！ちょうど食べたかったの…ありがとう！あなたっていい人ね！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Jas/116.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Jas_IceCream",
+          "PageIndex": 1,
+          "DisplayPattern": "うれしい！ちょうど食べたかったの…ありがとう！あなたっていい人ね！"
+        }
+      ]
+    }
+  ]
+}

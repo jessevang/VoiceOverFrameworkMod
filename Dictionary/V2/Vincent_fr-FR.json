@@ -1,0 +1,850 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Vincent.fr-FR",
+      "VoicePackName": "DictionarV2 (Vincent - fr-FR)",
+      "Character": "Vincent",
+      "Language": "fr-FR",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Oh, un étranger ! Je m’appelle Vincent.",
+          "AudioPath": "assets/fr-FR/Vincent/1_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, un étranger ! Je m’appelle Vincent.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Oh, une étrangère ! Je m’appelle Vincent.",
+          "AudioPath": "assets/fr-FR/Vincent/2_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "Oh, une étrangère ! Je m’appelle Vincent.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Maman dit qu’il ne faut pas parler aux inconnus... mais tu n’as pas l’air de quelqu’un de méchant.",
+          "AudioPath": "assets/fr-FR/Vincent/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Introduction",
+          "PageIndex": 2,
+          "DisplayPattern": "Maman dit qu’il ne faut pas parler aux inconnus... mais tu n’as pas l’air de quelqu’un de méchant."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "C’est un cadeau d’anniversaire ? Je peux l’ouvrir tout de suite ?",
+          "AudioPath": "assets/fr-FR/Vincent/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "C’est un cadeau d’anniversaire ? Je peux l’ouvrir tout de suite ?"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "Ho, wouah ! C’est exactement ce que je voulais ! Yayayaya ! {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Vincent/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptBirthdayGift_Positive",
+          "PageIndex": 1,
+          "DisplayPattern": "Ho, wouah ! C’est exactement ce que je voulais ! Yayayaya !"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "Un cadeau d’anniversaire ? Ho... ce n’est pas très amusant. {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "Un cadeau d’anniversaire ? Ho... ce n’est pas très amusant."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Wouah ! C’est trop gentil ! Hmmmm....",
+          "AudioPath": "assets/fr-FR/Vincent/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Wouah ! C’est trop gentil ! Hmmmm...."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)FrogEgg",
+          "DialogueText": "*squish* *squish* ... Beurk ! Je peux l’avoir ? Je peux l’avoir ? Génial ! {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Vincent/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptGift_(TR)FrogEgg",
+          "PageIndex": 0,
+          "DisplayPattern": "*squish* *squish* ... Beurk ! Je peux l’avoir ? Je peux l’avoir ? Génial !"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Maman ! Je veux aller jouer dehors !%noturn",
+          "AudioPath": "assets/fr-FR/Vincent/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "Maman ! Je veux aller jouer dehors !"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Vincent est couvert de mousse verte.",
+          "AudioPath": "assets/fr-FR/Vincent/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Vincent est couvert de mousse verte."
+        },
+        {
+          "DialogueFrom": "AcceptGift_Negative_alcohol_item",
+          "DialogueText": "*renifle*... Qu’est-ce que c’est ? Ça sent très mauvais... Mamaaaaaaan !!! {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptGift_Negative_alcohol_item",
+          "PageIndex": 0,
+          "DisplayPattern": "*renifle*... Qu’est-ce que c’est ? Ça sent très mauvais... Mamaaaaaaan !!!"
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "C’était tellement amusant ! Un jour, je serais le capitaine d’un bateau !",
+          "AudioPath": "assets/fr-FR/Vincent/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "C’était tellement amusant ! Un jour, je serais le capitaine d’un bateau !"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "Je veux revenir bientôt !",
+          "AudioPath": "assets/fr-FR/Vincent/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "Je veux revenir bientôt !"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Je veux voir un requin ! {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Vincent/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "Je veux voir un requin !"
+        },
+        {
+          "DialogueFrom": "married_Sam",
+          "DialogueText": "Ne prends pas mon Sammy ! {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:married_Sam",
+          "PageIndex": 0,
+          "DisplayPattern": "Ne prends pas mon Sammy !"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Si tu fais bien attention, tu peux voir de petits insectes sauter en dehors du sable. {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Vincent/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Si tu fais bien attention, tu peux voir de petits insectes sauter en dehors du sable."
+        },
+        {
+          "DialogueFrom": "reject_869",
+          "DialogueText": "Oh ! Belle trouvaille !",
+          "AudioPath": "assets/fr-FR/Vincent/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:reject_869",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh ! Belle trouvaille !"
+        },
+        {
+          "DialogueFrom": "reject_869",
+          "DialogueText": "Cependant, ma mère ne me laissera pas le garder... {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:reject_869",
+          "PageIndex": 1,
+          "DisplayPattern": "Cependant, ma mère ne me laissera pas le garder..."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Je veux être comme mon grand frère quand je serai grand ! {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Vincent/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Je veux être comme mon grand frère quand je serai grand !"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "OK ! Au revoir !",
+          "AudioPath": "assets/fr-FR/Vincent/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "OK ! Au revoir !"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "C’est génial que papa soit de retour... mais il est différent de ce dont je me souviens... {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "C’est génial que papa soit de retour... mais il est différent de ce dont je me souviens..."
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Papa n’est pas souvent là... Ça me manque de jouer avec lui. {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "Papa n’est pas souvent là... Ça me manque de jouer avec lui."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "*Soupir*... Maman ne veut pas que je mange de bonbons aujourd’hui. {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "*Soupir*... Maman ne veut pas que je mange de bonbons aujourd’hui."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Tu peux garder un secret, Monsieur ?",
+          "AudioPath": "assets/fr-FR/Vincent/24_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "Tu peux garder un secret, Monsieur ?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Tu peux garder un secret, Mademoiselle ? {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Vincent/25_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 1,
+          "DisplayPattern": "Tu peux garder un secret, Mademoiselle ?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Je veux épouser Mademoiselle Penny quand je serai grand.",
+          "AudioPath": "assets/fr-FR/Vincent/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 2,
+          "DisplayPattern": "Je veux épouser Mademoiselle Penny quand je serai grand."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Ne lui dis pas, d’accord ? {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Vincent/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 3,
+          "DisplayPattern": "Ne lui dis pas, d’accord ?"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Je veux aller faire la chasse aux insectes, mais ma mère se met en colère quand je rentre tout sale. {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Vincent/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Je veux aller faire la chasse aux insectes, mais ma mère se met en colère quand je rentre tout sale."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Je ne sais pas quoi faire.",
+          "AudioPath": "assets/fr-FR/Vincent/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Je ne sais pas quoi faire."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "J’ai faim... où est maman ? {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "J’ai faim... où est maman ?"
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "Tu ne m’ennuies pas autant que la plupart des adultes !",
+          "AudioPath": "assets/fr-FR/Vincent/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Thu2",
+          "PageIndex": 0,
+          "DisplayPattern": "Tu ne m’ennuies pas autant que la plupart des adultes !"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Beurk, on mange encore des betteraves ce soir... {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Beurk, on mange encore des betteraves ce soir..."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "$e",
+          "AudioPath": "assets/fr-FR/Vincent/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Oh non... Maman fait de la soupe de lentilles pour dîner. {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "Oh non... Maman fait de la soupe de lentilles pour dîner."
+        },
+        {
+          "DialogueFrom": "Sat_1",
+          "DialogueText": "Papa revient bientôt !",
+          "AudioPath": "assets/fr-FR/Vincent/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Papa revient bientôt !"
+        },
+        {
+          "DialogueFrom": "Sat_1",
+          "DialogueText": "J’espère qu’il me rapportera des jouets. {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Vincent/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat_1",
+          "PageIndex": 1,
+          "DisplayPattern": "J’espère qu’il me rapportera des jouets."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Mademoiselle Penny me fait lire un nouveau livre chaque semaine. {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Mademoiselle Penny me fait lire un nouveau livre chaque semaine."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Au moins, elle me laisse les choisir de temps en temps !",
+          "AudioPath": "assets/fr-FR/Vincent/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Au moins, elle me laisse les choisir de temps en temps !"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Papa est bizarre depuis qu’il est rentré. Je me demande ce qui lui est arrivé ? {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "Papa est bizarre depuis qu’il est rentré. Je me demande ce qui lui est arrivé ?"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Il ne joue plus avec moi. {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "Il ne joue plus avec moi."
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Je me demande si papa reviendra un jour à la maison... {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat8",
+          "PageIndex": 2,
+          "DisplayPattern": "Je me demande si papa reviendra un jour à la maison..."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Bonjour, Monsieur !",
+          "AudioPath": "assets/fr-FR/Vincent/42_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Bonjour, Monsieur !",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Bonjour, Mademoiselle.",
+          "AudioPath": "assets/fr-FR/Vincent/43_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Bonjour, Mademoiselle.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "Bonjour, Tonton {Farmer_Name} !",
+          "AudioPath": "assets/fr-FR/Vincent/44_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun10",
+          "PageIndex": 0,
+          "DisplayPattern": "Bonjour, Tonton !",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "Bonjour Tata {Farmer_Name} !",
+          "AudioPath": "assets/fr-FR/Vincent/45_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun10",
+          "PageIndex": 1,
+          "DisplayPattern": "Bonjour Tata !",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "Ne le dis pas à maman... mais tu es l’adulte que je préfère. {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Vincent/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun10",
+          "PageIndex": 2,
+          "DisplayPattern": "Ne le dis pas à maman... mais tu es l’adulte que je préfère."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s0",
+          "DialogueText": "I'm really excited, Sam!",
+          "AudioPath": "assets/fr-FR/Vincent/47.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm really excited, Sam!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s1",
+          "DialogueText": "OK!",
+          "AudioPath": "assets/fr-FR/Vincent/48.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "OK!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s2",
+          "DialogueText": "Me too!",
+          "AudioPath": "assets/fr-FR/Vincent/49.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Me too!"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184643:s0",
+          "DialogueText": "Does this mean I don't have to do my homework? {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Vincent/50.ogg",
+          "TranslationKey": "Events/Town:6184643:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Does this mean I don't have to do my homework?"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184643:s1",
+          "DialogueText": "I've been thinking about cake a lot lately...",
+          "AudioPath": "assets/fr-FR/Vincent/51.ogg",
+          "TranslationKey": "Events/Town:6184643:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been thinking about cake a lot lately..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s0",
+          "DialogueText": "Sam...? {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Vincent/52.ogg",
+          "TranslationKey": "Events/Beach:733330:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Sam...?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s1",
+          "DialogueText": "Is Dad ever going to come home? {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/53.ogg",
+          "TranslationKey": "Events/Beach:733330:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Is Dad ever going to come home?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s2",
+          "DialogueText": "But I heard some grown-ups saying that... that all of our troops are getting shot to pieces. {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/54.ogg",
+          "TranslationKey": "Events/Beach:733330:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "But I heard some grown-ups saying that... that all of our troops are getting shot to pieces."
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s3",
+          "DialogueText": "Okay!",
+          "AudioPath": "assets/fr-FR/Vincent/55.ogg",
+          "TranslationKey": "Events/Beach:733330:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s0|g=male",
+          "DialogueText": "Mr. {Farmer_Name}, are you going to marry Miss Penny? {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/56_male.ogg",
+          "TranslationKey": "Events/Forest:181928:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Mr. , are you going to marry Miss Penny?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s1|g=female",
+          "DialogueText": "Ms. {Farmer_Name}... Um, do you have a boyfriend?",
+          "AudioPath": "assets/fr-FR/Vincent/57_female.ogg",
+          "TranslationKey": "Events/Forest:181928:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ms. ... Um, do you have a boyfriend?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseFarming:s0",
+          "DialogueText": "Um, Farmer {Farmer_Name}? If I eat your veggies will I grow up strong like my big brother Sam?",
+          "AudioPath": "assets/fr-FR/Vincent/58.ogg",
+          "TranslationKey": "Events/Forest:choseFarming:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Um, Farmer ? If I eat your veggies will I grow up strong like my big brother Sam?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseFarming:s1",
+          "DialogueText": "He's so strong, I saw him lift Miss Penny clear off the ground last night when they were climbing into a tree. {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Vincent/59.ogg",
+          "TranslationKey": "Events/Forest:choseFarming:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "He's so strong, I saw him lift Miss Penny clear off the ground last night when they were climbing into a tree."
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseAnimals:s0",
+          "DialogueText": "Farmer {Farmer_Name}? Can I put a saddle on one of your cows and ride it into town? I wanna be a real cowboy!",
+          "AudioPath": "assets/fr-FR/Vincent/60.ogg",
+          "TranslationKey": "Events/Forest:choseAnimals:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Farmer ? Can I put a saddle on one of your cows and ride it into town? I wanna be a real cowboy!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseMinerals:s0",
+          "DialogueText": "Farmer {Farmer_Name}? Is it true that goblins live deep in the caves... and that they like to kidnap little girls for their dinner?",
+          "AudioPath": "assets/fr-FR/Vincent/61.ogg",
+          "TranslationKey": "Events/Forest:choseMinerals:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Farmer ? Is it true that goblins live deep in the caves... and that they like to kidnap little girls for their dinner?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s0",
+          "DialogueText": "... {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/62.ogg",
+          "TranslationKey": "Events/Forest:318560:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s1",
+          "DialogueText": "Why is it locked? I wanna explore the sewers! {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/63.ogg",
+          "TranslationKey": "Events/Forest:318560:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Why is it locked? I wanna explore the sewers!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s2",
+          "DialogueText": "Professor Gunther? The man who runs the museum? Why do you think he has it? {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Vincent/64.ogg",
+          "TranslationKey": "Events/Forest:318560:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Professor Gunther? The man who runs the museum? Why do you think he has it?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s0|g=male",
+          "DialogueText": "Hiya, mister {Farmer_Name}!",
+          "AudioPath": "assets/fr-FR/Vincent/65_male.ogg",
+          "TranslationKey": "Events/Forest:3910979:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hiya, mister !",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s1|g=female",
+          "DialogueText": "Hiya, miss {Farmer_Name}!",
+          "AudioPath": "assets/fr-FR/Vincent/66_female.ogg",
+          "TranslationKey": "Events/Forest:3910979:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hiya, miss !",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s2",
+          "DialogueText": "Sp..spwing onion. Mom sends me out to pick these sometimes...",
+          "AudioPath": "assets/fr-FR/Vincent/67.ogg",
+          "TranslationKey": "Events/Forest:3910979:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Sp..spwing onion. Mom sends me out to pick these sometimes..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s3",
+          "DialogueText": "You're really nice for a grown-up... so I'm going to show you a secret. {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Vincent/68.ogg",
+          "TranslationKey": "Events/Forest:3910979:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "You're really nice for a grown-up... so I'm going to show you a secret."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s4",
+          "DialogueText": "When you see it like this, it looks good, right?",
+          "AudioPath": "assets/fr-FR/Vincent/69.ogg",
+          "TranslationKey": "Events/Forest:3910979:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "When you see it like this, it looks good, right?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s5",
+          "DialogueText": "But if you peel it a little bit...",
+          "AudioPath": "assets/fr-FR/Vincent/70.ogg",
+          "TranslationKey": "Events/Forest:3910979:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "But if you peel it a little bit..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s6",
+          "DialogueText": "...It's full of bugs! {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/71.ogg",
+          "TranslationKey": "Events/Forest:3910979:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "...It's full of bugs!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s7",
+          "DialogueText": "Cool, huh? {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Vincent/72.ogg",
+          "TranslationKey": "Events/Forest:3910979:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Cool, huh?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s8",
+          "DialogueText": "Usually I just squash 'em!",
+          "AudioPath": "assets/fr-FR/Vincent/73.ogg",
+          "TranslationKey": "Events/Forest:3910979:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Usually I just squash 'em!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Vincent",
+          "DialogueText": "Moooo !",
+          "AudioPath": "assets/fr-FR/Vincent/74.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Moooo !"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Vincent_y2",
+          "DialogueText": "Je peux rejouer au jeu du lance-pierre ? S'il te plaît, papa ? {Portrait:Neutral}",
+          "AudioPath": "assets/fr-FR/Vincent/75.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Je peux rejouer au jeu du lance-pierre ? S'il te plaît, papa ?"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Vincent",
+          "DialogueText": "Maman ne veut pas que j’aille dans le labyrinthe. *Sanglote* {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/76.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Maman ne veut pas que j’aille dans le labyrinthe. *Sanglote*"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Vincent_y2",
+          "DialogueText": "Est-ce que c'est la fin du labyrinthe ? Où est ma récompense ? {Portrait:Neutral}",
+          "AudioPath": "assets/fr-FR/Vincent/77.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Est-ce que c'est la fin du labyrinthe ? Où est ma récompense ?"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Vincent",
+          "DialogueText": "Quand commence la chasse aux oeufs ?! Je suis tellement excité !!! {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Vincent/78.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Quand commence la chasse aux oeufs ?! Je suis tellement excité !!!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Vincent_y2",
+          "DialogueText": "Je veux vivre dans un oeuf géant !",
+          "AudioPath": "assets/fr-FR/Vincent/79.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Je veux vivre dans un oeuf géant !"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Vincent",
+          "DialogueText": "Ce n’est pas juste... Pourquoi je ne peux pas être la reine des fleurs ?",
+          "AudioPath": "assets/fr-FR/Vincent/80.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Ce n’est pas juste... Pourquoi je ne peux pas être la reine des fleurs ?"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Vincent_y2",
+          "DialogueText": "S'il y a une reine des fleurs... il doit bien y avoir un roi des fleurs ! {Portrait:Neutral}",
+          "AudioPath": "assets/fr-FR/Vincent/81.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "S'il y a une reine des fleurs... il doit bien y avoir un roi des fleurs !"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Vincent",
+          "DialogueText": "Je m’ennuie...",
+          "AudioPath": "assets/fr-FR/Vincent/82.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Je m’ennuie..."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Vincent_y2",
+          "DialogueText": "Pourquoi je ne peux pas aller jouer près des flaques d’eau ? {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/83.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Pourquoi je ne peux pas aller jouer près des flaques d’eau ?"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Vincent",
+          "DialogueText": "Je veux voir la méduse verte rare !",
+          "AudioPath": "assets/fr-FR/Vincent/84.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Je veux voir la méduse verte rare !"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Vincent_y2",
+          "DialogueText": "J'ai touché une méduse une fois et elle m'a piqué la main. {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/85.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "J'ai touché une méduse une fois et elle m'a piqué la main."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Vincent",
+          "DialogueText": "Pouvons-nous ouvrir les cadeaux maintenant ?!",
+          "AudioPath": "assets/fr-FR/Vincent/86.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Pouvons-nous ouvrir les cadeaux maintenant ?!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Vincent_y2",
+          "DialogueText": "J'ai eu un dinosaure en jouet que je voulais ! Regarde ! {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Vincent/87.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "J'ai eu un dinosaure en jouet que je voulais ! Regarde !"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Vincent_y2",
+          "DialogueText": "C'est un... euh... un sté-... Stégo-... Stégosaure ! Enfin... je crois... {Portrait:Neutral}",
+          "AudioPath": "assets/fr-FR/Vincent/88.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Vincent_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "C'est un... euh... un sté-... Stégo-... Stégosaure ! Enfin... je crois..."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Vincent",
+          "DialogueText": "J’ai vu un gros poisson là-bas !",
+          "AudioPath": "assets/fr-FR/Vincent/89.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "J’ai vu un gros poisson là-bas !"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Vincent_y2",
+          "DialogueText": "Mon grand frère m'aide à construire un bonhomme de neige ! {Portrait:Neutral}",
+          "AudioPath": "assets/fr-FR/Vincent/90.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Mon grand frère m'aide à construire un bonhomme de neige !"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s0",
+          "DialogueText": "Waouh, merci beaucoup ! C’est génial !",
+          "AudioPath": "assets/fr-FR/Vincent/91.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Waouh, merci beaucoup ! C’est génial !"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s1",
+          "DialogueText": "Pour moi ? Waouh, merci !",
+          "AudioPath": "assets/fr-FR/Vincent/92.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Pour moi ? Waouh, merci !"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s2",
+          "DialogueText": "Ce n’est pas très amusant... {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/93.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ce n’est pas très amusant..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s3",
+          "DialogueText": "Beurk, qu’est-ce que c’est ? {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/94.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Beurk, qu’est-ce que c’est ?"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s4",
+          "DialogueText": "Merci !",
+          "AudioPath": "assets/fr-FR/Vincent/95.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Merci !"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_love_BeforeMovie",
+          "DialogueText": "Je suis tellement content ! Ma mère m’a dit que je pouvais avoir des bonbons ! {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Vincent/96.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Je suis tellement content ! Ma mère m’a dit que je pouvais avoir des bonbons !"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_love_DuringMovie",
+          "DialogueText": "Vincent passe un bon moment !",
+          "AudioPath": "assets/fr-FR/Vincent/97.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_love_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Vincent passe un bon moment !"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_love_AfterMovie",
+          "DialogueText": "C’était tellement amusant ! Je veux aller le revoir ! {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Vincent/98.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "C’était tellement amusant ! Je veux aller le revoir !"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_dislike_BeforeMovie",
+          "DialogueText": "Mais... mais... Ce film est pour les grands, non ? {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/99.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Mais... mais... Ce film est pour les grands, non ?"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_dislike_DuringMovie",
+          "DialogueText": "Vincent trépigne d’excitation sur son siège.",
+          "AudioPath": "assets/fr-FR/Vincent/100.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_dislike_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Vincent trépigne d’excitation sur son siège."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_dislike_AfterMovie",
+          "DialogueText": "C’était ennuyeux... Je n’ai rien compris. {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Vincent/101.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "C’était ennuyeux... Je n’ai rien compris."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Vincent",
+          "DialogueText": "Maman, je m’ennuie !",
+          "AudioPath": "assets/fr-FR/Vincent/102.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Maman, je m’ennuie !"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Vincent",
+          "DialogueText": "Bonjour ! Euh... J’ai trouvé des trucs. Tu veux en acheter ?",
+          "AudioPath": "assets/fr-FR/Vincent/103.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Bonjour ! Euh... J’ai trouvé des trucs. Tu veux en acheter ?"
+        }
+      ]
+    }
+  ]
+}

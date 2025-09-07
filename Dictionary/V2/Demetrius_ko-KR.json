@@ -1,0 +1,1576 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Demetrius.ko-KR",
+      "VoicePackName": "DictionarV2 (Demetrius - ko-KR)",
+      "Character": "Demetrius",
+      "Language": "ko-KR",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "안녕하세요! 난 드미트리우스라고 해요, 이 지역 과학자이고 한 가정의 아버지죠. 인사하러 와줘서 고마워요!",
+          "AudioPath": "assets/ko-KR/Demetrius/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕하세요! 난 드미트리우스라고 해요, 이 지역 과학자이고 한 가정의 아버지죠. 인사하러 와줘서 고마워요!"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "난 집에 있는 연구실에서 현지 식물과 동물을 공부하고 있어요.",
+          "AudioPath": "assets/ko-KR/Demetrius/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "난 집에 있는 연구실에서 현지 식물과 동물을 공부하고 있어요."
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "혹시 우리 딸 마루를 만나봤나요? 마루는 무척 만나고 싶어 하던데.",
+          "AudioPath": "assets/ko-KR/Demetrius/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Introduction",
+          "PageIndex": 2,
+          "DisplayPattern": "혹시 우리 딸 마루를 만나봤나요? 마루는 무척 만나고 싶어 하던데."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "오, 이건 희귀한 물질이네. 이건 연구실로 가져가서... 어... 자세히 분석해 봐야겠어.",
+          "AudioPath": "assets/ko-KR/Demetrius/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 이건 희귀한 물질이네. 이건 연구실로 가져가서... 어... 자세히 분석해 봐야겠어."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "선물!... 그것도 최적의 타이밍에. 오늘은 내 출산을 기념하는 날이거든. 고마워! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Demetrius/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "선물!... 그것도 최적의 타이밍에. 오늘은 내 출산을 기념하는 날이거든. 고마워!"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "선물!... 그것도 최적의 타이밍에. 오늘은 내 출산을 기념하는 날이거든. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Demetrius/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "선물!... 그것도 최적의 타이밍에. 오늘은 내 출산을 기념하는 날이거든."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "이게 뭔지 볼까... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Demetrius/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:AcceptBirthdayGift_Negative",
+          "PageIndex": 1,
+          "DisplayPattern": "이게 뭔지 볼까..."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "...오. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Demetrius/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:AcceptBirthdayGift_Negative",
+          "PageIndex": 2,
+          "DisplayPattern": "...오."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)107",
+          "DialogueText": "와우, 온전한 공룡알이라니! 무척 희귀한 견본이지. 이제, 이걸 부화시킬 방법만 있다면...",
+          "AudioPath": "assets/ko-KR/Demetrius/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:AcceptGift_(O)107",
+          "PageIndex": 0,
+          "DisplayPattern": "와우, 온전한 공룡알이라니! 무척 희귀한 견본이지. 이제, 이걸 부화시킬 방법만 있다면..."
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "벌써 희귀한 게를 한 마리 봤어. 여기 너무 좋다. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Demetrius/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "벌써 희귀한 게를 한 마리 봤어. 여기 너무 좋다."
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "난 걱정하지 않아도 돼, {Farmer_Name}. 샘플을 모으는 중이야. 일생일대의 기회일 수도 있어! {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Demetrius/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "난 걱정하지 않아도 돼, . 샘플을 모으는 중이야. 일생일대의 기회일 수도 있어!"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "어... 혹시 내 와이프가 물어보면 난 괜찮다고 전해줘, 알았지? {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Demetrius/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:GreenRain",
+          "PageIndex": 1,
+          "DisplayPattern": "어... 혹시 내 와이프가 물어보면 난 괜찮다고 전해줘, 알았지?"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "비를 맞아도 문제는 없는 것 같아서 올해는 걱정하지 않으려고 해.",
+          "AudioPath": "assets/ko-KR/Demetrius/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "비를 맞아도 문제는 없는 것 같아서 올해는 걱정하지 않으려고 해."
+        },
+        {
+          "DialogueFrom": "firstVisit_Desert",
+          "DialogueText": "최근 네가 칼리코 사막을 방문했단 얘기를 들었어. 흥미로운 소식이야! 분명 방문하는 동안 사막 특유의 생명체를 많이 봤겠지.",
+          "AudioPath": "assets/ko-KR/Demetrius/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:firstVisit_Desert",
+          "PageIndex": 0,
+          "DisplayPattern": "최근 네가 칼리코 사막을 방문했단 얘기를 들었어. 흥미로운 소식이야! 분명 방문하는 동안 사막 특유의 생명체를 많이 봤겠지."
+        },
+        {
+          "DialogueFrom": "questComplete_104_memory_oneday",
+          "DialogueText": "멜론 연구 어떻게 되어가냐고? 맞아, 어... 내가... '분석'해본 결과, 대량영양소 분포가 최적이라는 사실은 알겠어...",
+          "AudioPath": "assets/ko-KR/Demetrius/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:questComplete_104_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "멜론 연구 어떻게 되어가냐고? 맞아, 어... 내가... '분석'해본 결과, 대량영양소 분포가 최적이라는 사실은 알겠어..."
+        },
+        {
+          "DialogueFrom": "purchasedAnimal_Dinosaur",
+          "DialogueText": "다시 말해봐!? 성공적으로 공룡알을 부화시켰다고? 전례 없는 일이야! {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Demetrius/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:purchasedAnimal_Dinosaur",
+          "PageIndex": 0,
+          "DisplayPattern": "다시 말해봐!? 성공적으로 공룡알을 부화시켰다고? 전례 없는 일이야!"
+        },
+        {
+          "DialogueFrom": "purchasedAnimal_Dinosaur",
+          "DialogueText": "여기, 내 커피 받아, 나 지금 너무 흥분해서... 더 못 마시겠다. [253]",
+          "AudioPath": "assets/ko-KR/Demetrius/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:purchasedAnimal_Dinosaur",
+          "PageIndex": 1,
+          "DisplayPattern": "여기, 내 커피 받아, 나 지금 너무 흥분해서... 더 못 마시겠다."
+        },
+        {
+          "DialogueFrom": "dating_Maru",
+          "DialogueText": "그래, 마루에게 소식 들었어. 그렇게 기쁜 소식은 아니지만, 네가 내 생각을 바꿀 수 있을지도 모르지. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Demetrius/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:dating_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "그래, 마루에게 소식 들었어. 그렇게 기쁜 소식은 아니지만, 네가 내 생각을 바꿀 수 있을지도 모르지."
+        },
+        {
+          "DialogueFrom": "married_Maru",
+          "DialogueText": "*한숨*... {Farmer_Name}, 내 딸이 이젠 다 자랐다는 사실을 받아들이기로 했어. 결혼 축하한다. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Demetrius/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:married_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "*한숨*... , 내 딸이 이젠 다 자랐다는 사실을 받아들이기로 했어. 결혼 축하한다."
+        },
+        {
+          "DialogueFrom": "married_Sebastian",
+          "DialogueText": "결혼 축하해. 결혼식 이후로 로빈이 계속 울더라고. '기쁨의 눈물'이라던데! 희한한 개념이지...",
+          "AudioPath": "assets/ko-KR/Demetrius/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:married_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "결혼 축하해. 결혼식 이후로 로빈이 계속 울더라고. '기쁨의 눈물'이라던데! 희한한 개념이지..."
+        },
+        {
+          "DialogueFrom": "married_Sebastian",
+          "DialogueText": "흠, 지하실도 비었겠다, 연구실을 확장할 차례인가... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Demetrius/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:married_Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "흠, 지하실도 비었겠다, 연구실을 확장할 차례인가..."
+        },
+        {
+          "DialogueFrom": "eventSeen_65_memory_oneweek",
+          "DialogueText": "동굴 실험은 잘 진행되고 있어? 가치 있는 생산물이 있었어?",
+          "AudioPath": "assets/ko-KR/Demetrius/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:eventSeen_65_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "동굴 실험은 잘 진행되고 있어? 가치 있는 생산물이 있었어?"
+        },
+        {
+          "DialogueFrom": "eventSeen_65_memory_oneweek",
+          "DialogueText": "아! 내 초기 이론보다 적합한 조건이 갖춰져있다는 의미겠군... 흠...",
+          "AudioPath": "assets/ko-KR/Demetrius/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:eventSeen_65_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "아! 내 초기 이론보다 적합한 조건이 갖춰져있다는 의미겠군... 흠..."
+        },
+        {
+          "DialogueFrom": "eventSeen_65_memory_oneweek",
+          "DialogueText": "그래, 그래도 종종 확인해 봐. 분명 뭔가 얻을 수 있을 거라 확신해.",
+          "AudioPath": "assets/ko-KR/Demetrius/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:eventSeen_65_memory_oneweek",
+          "PageIndex": 2,
+          "DisplayPattern": "그래, 그래도 종종 확인해 봐. 분명 뭔가 얻을 수 있을 거라 확신해."
+        },
+        {
+          "DialogueFrom": "eventSeen_65_memory_twoweeks",
+          "DialogueText": "농장에 동굴 확인하는 거 잊지 말고! 지금쯤이면 분명 뭔가 유용한 게 있을 거야.",
+          "AudioPath": "assets/ko-KR/Demetrius/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:eventSeen_65_memory_twoweeks",
+          "PageIndex": 0,
+          "DisplayPattern": "농장에 동굴 확인하는 거 잊지 말고! 지금쯤이면 분명 뭔가 유용한 게 있을 거야."
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "여기서 모은 자료를 몇 달씩은 분석해야겠군!",
+          "AudioPath": "assets/ko-KR/Demetrius/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "여기서 모은 자료를 몇 달씩은 분석해야겠군!"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "*콰직*... 아이고, 멸종 위기 게였는데 분명... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Demetrius/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "*콰직*... 아이고, 멸종 위기 게였는데 분명..."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "...",
+          "AudioPath": "assets/ko-KR/Demetrius/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Resort_Shore",
+          "PageIndex": 1,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "오, 다행이다. 그냥 빈 껍데기였잖아! 잠도 못 잘뻔했네.",
+          "AudioPath": "assets/ko-KR/Demetrius/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Resort_Shore",
+          "PageIndex": 2,
+          "DisplayPattern": "오, 다행이다. 그냥 빈 껍데기였잖아! 잠도 못 잘뻔했네."
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "즐거운 시간 보내고 있어, {Farmer_Name}? 가끔은 휴식을 취해야 한다는 걸 잊지 마!",
+          "AudioPath": "assets/ko-KR/Demetrius/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "즐거운 시간 보내고 있어, ? 가끔은 휴식을 취해야 한다는 걸 잊지 마!"
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "평소라면 안 마시는데... 평소에는 열대 섬에서 시간을 보내고 있지도 않지. 하하하. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Demetrius/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "평소라면 안 마시는데... 평소에는 열대 섬에서 시간을 보내고 있지도 않지. 하하하."
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "여기 정말 믿기지 않아! 보기 드문 생명체가 바글바글해!",
+          "AudioPath": "assets/ko-KR/Demetrius/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "여기 정말 믿기지 않아! 보기 드문 생명체가 바글바글해!"
+        },
+        {
+          "DialogueFrom": "reject_869",
+          "DialogueText": "좋은 표본이긴 한데, 흔한 종이네. 그냥 네가 가지고 있어.",
+          "AudioPath": "assets/ko-KR/Demetrius/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:reject_869",
+          "PageIndex": 0,
+          "DisplayPattern": "좋은 표본이긴 한데, 흔한 종이네. 그냥 네가 가지고 있어."
+        },
+        {
+          "DialogueFrom": "reject_865",
+          "DialogueText": "과일하고 소금? 특이한 조합이네... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Demetrius/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:reject_865",
+          "PageIndex": 0,
+          "DisplayPattern": "과일하고 소금? 특이한 조합이네..."
+        },
+        {
+          "DialogueFrom": "pamHouseUpgradeAnonymous",
+          "DialogueText": "팸의 새 집 비용을 누가 지불했는지 로빈이 *나한테도* 얘기를 안 해주는 거 있지!",
+          "AudioPath": "assets/ko-KR/Demetrius/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:pamHouseUpgradeAnonymous",
+          "PageIndex": 0,
+          "DisplayPattern": "팸의 새 집 비용을 누가 지불했는지 로빈이 *나한테도* 얘기를 안 해주는 거 있지!"
+        },
+        {
+          "DialogueFrom": "pamHouseUpgradeAnonymous",
+          "DialogueText": "사실 그냥 화난 척하는 거야, 로빈이 비밀을 잘 지켜준다는 사실이 기뻐... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Demetrius/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:pamHouseUpgradeAnonymous",
+          "PageIndex": 1,
+          "DisplayPattern": "사실 그냥 화난 척하는 거야, 로빈이 비밀을 잘 지켜준다는 사실이 기뻐..."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "마루가 가끔 실험실에서 날 도와주곤 해... 착한 아이야.",
+          "AudioPath": "assets/ko-KR/Demetrius/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "마루가 가끔 실험실에서 날 도와주곤 해... 착한 아이야."
+        },
+        {
+          "DialogueFrom": "Mon_inlaw_Maru",
+          "DialogueText": "마루의 도움 없이 꼼꼼한 실험을 하기 어려워...",
+          "AudioPath": "assets/ko-KR/Demetrius/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Mon_inlaw_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "마루의 도움 없이 꼼꼼한 실험을 하기 어려워..."
+        },
+        {
+          "DialogueFrom": "Mon_inlaw_Maru",
+          "DialogueText": "하지만 내 실험보다 그녀의 행복이 훨씬 더 중요해!",
+          "AudioPath": "assets/ko-KR/Demetrius/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Mon_inlaw_Maru",
+          "PageIndex": 1,
+          "DisplayPattern": "하지만 내 실험보다 그녀의 행복이 훨씬 더 중요해!"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "이 계곡의 생태계는 참 생기 넘치고 다양해. 여기 이사 오고 싶었던 이유 중 하나지.",
+          "AudioPath": "assets/ko-KR/Demetrius/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "이 계곡의 생태계는 참 생기 넘치고 다양해. 여기 이사 오고 싶었던 이유 중 하나지."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "넌 아마 농장에서 흥미로운 식물 많이 기르고 있겠지?",
+          "AudioPath": "assets/ko-KR/Demetrius/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "넌 아마 농장에서 흥미로운 식물 많이 기르고 있겠지?"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "하루쯤 방문해서 한번 조사해볼까 싶어.",
+          "AudioPath": "assets/ko-KR/Demetrius/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "하루쯤 방문해서 한번 조사해볼까 싶어."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "농장 일은 어때? 요즘 파스닙 철이지, 그치?",
+          "AudioPath": "assets/ko-KR/Demetrius/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "농장 일은 어때? 요즘 파스닙 철이지, 그치?"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "야외에서 하루 종일 식물 보면서 일하는 건 참 평화로울 거 같아.",
+          "AudioPath": "assets/ko-KR/Demetrius/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "야외에서 하루 종일 식물 보면서 일하는 건 참 평화로울 거 같아."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "로빈은 좀 다혈질적인 면이 있어. 그냥 애당초에 화를 안 나게 하는 게 좋아.",
+          "AudioPath": "assets/ko-KR/Demetrius/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "로빈은 좀 다혈질적인 면이 있어. 그냥 애당초에 화를 안 나게 하는 게 좋아."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "내가 이런 얘기 했다고는 말하지 말고. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Demetrius/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "내가 이런 얘기 했다고는 말하지 말고."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "어디 보자... 근권에 있는 화합물이 탄소-13량이 충분하다면... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Demetrius/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "어디 보자... 근권에 있는 화합물이 탄소-13량이 충분하다면..."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "오! 미안. 데이터 좀 곰곰이 생각하다가 네가 온 줄도 몰랐네.",
+          "AudioPath": "assets/ko-KR/Demetrius/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "오! 미안. 데이터 좀 곰곰이 생각하다가 네가 온 줄도 몰랐네."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "뭘 도와줄까?",
+          "AudioPath": "assets/ko-KR/Demetrius/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "뭘 도와줄까?"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "주기적으로 휴식을 취하는 게 좋아.",
+          "AudioPath": "assets/ko-KR/Demetrius/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "주기적으로 휴식을 취하는 게 좋아."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "농장에서 생활하면 그게 어려울 수는 있겠다, 근데.",
+          "AudioPath": "assets/ko-KR/Demetrius/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "농장에서 생활하면 그게 어려울 수는 있겠다, 근데."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "뭐, 그래도 겨울에는 작물 걱정을 할 필요가 없으니까.",
+          "AudioPath": "assets/ko-KR/Demetrius/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Sun",
+          "PageIndex": 2,
+          "DisplayPattern": "뭐, 그래도 겨울에는 작물 걱정을 할 필요가 없으니까."
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "로빈은 좀 다혈질적인 면이 있어. 그냥 애당초에 화를 안 나게 하는 게 좋아.",
+          "AudioPath": "assets/ko-KR/Demetrius/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "로빈은 좀 다혈질적인 면이 있어. 그냥 애당초에 화를 안 나게 하는 게 좋아."
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "...만약 내가 로빈의 기분을 수량화할 수 있다면, 사인 곡선으로 변동량을 모델링 할 수도 있겠는데... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Demetrius/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Fri4",
+          "PageIndex": 1,
+          "DisplayPattern": "...만약 내가 로빈의 기분을 수량화할 수 있다면, 사인 곡선으로 변동량을 모델링 할 수도 있겠는데..."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "안녕 {Farmer_Name}! 오늘 기분은 어때?",
+          "AudioPath": "assets/ko-KR/Demetrius/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕 ! 오늘 기분은 어때?"
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "네 농장 일을 내가 좀 더 손쉽게 만들 수 있었으면 좋겠다.",
+          "AudioPath": "assets/ko-KR/Demetrius/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Wed6",
+          "PageIndex": 1,
+          "DisplayPattern": "네 농장 일을 내가 좀 더 손쉽게 만들 수 있었으면 좋겠다."
+        },
+        {
+          "DialogueFrom": "Event_tomato1",
+          "DialogueText": "정말? 농부라면 맞는 답변을 알 거라 생각했는데... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Demetrius/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Event_tomato1",
+          "PageIndex": 0,
+          "DisplayPattern": "정말? 농부라면 맞는 답변을 알 거라 생각했는데..."
+        },
+        {
+          "DialogueFrom": "Event_tomato2",
+          "DialogueText": "그치? {Farmer_Name}(이)는 나랑 동의한다고.",
+          "AudioPath": "assets/ko-KR/Demetrius/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Event_tomato2",
+          "PageIndex": 0,
+          "DisplayPattern": "그치? (이)는 나랑 동의한다고."
+        },
+        {
+          "DialogueFrom": "Event_Lab_Silence",
+          "DialogueText": "여하튼, 이 용액에 결정체가 생기기 전에 적정해야겠다.",
+          "AudioPath": "assets/ko-KR/Demetrius/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Event_Lab_Silence",
+          "PageIndex": 0,
+          "DisplayPattern": "여하튼, 이 용액에 결정체가 생기기 전에 적정해야겠다."
+        },
+        {
+          "DialogueFrom": "Event_Lab_Rat",
+          "DialogueText": "*한숨*... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Demetrius/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:Event_Lab_Rat",
+          "PageIndex": 0,
+          "DisplayPattern": "*한숨*..."
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "드미트리우스는 깊은 생각에 잠겨있다.",
+          "AudioPath": "assets/ko-KR/Demetrius/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "드미트리우스는 깊은 생각에 잠겨있다."
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "미안, 지금 무척 바빠.",
+          "AudioPath": "assets/ko-KR/Demetrius/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:summer_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "미안, 지금 무척 바빠."
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "연구해야 할 식물이 너무 많아.",
+          "AudioPath": "assets/ko-KR/Demetrius/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:summer_Mon",
+          "PageIndex": 2,
+          "DisplayPattern": "연구해야 할 식물이 너무 많아."
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "식물한테 꼭 매일 물을 줘야 해.",
+          "AudioPath": "assets/ko-KR/Demetrius/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:summer_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "식물한테 꼭 매일 물을 줘야 해."
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "물론, 보습 토양을 사용한다면 그렇게 자주 물을 안 줘도 되지만.",
+          "AudioPath": "assets/ko-KR/Demetrius/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:summer_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "물론, 보습 토양을 사용한다면 그렇게 자주 물을 안 줘도 되지만."
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "꽤 편리해.",
+          "AudioPath": "assets/ko-KR/Demetrius/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:summer_Tue",
+          "PageIndex": 2,
+          "DisplayPattern": "꽤 편리해."
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "농장 일은 요즘 어때? 지금 토마토 시즌이지, 그치?",
+          "AudioPath": "assets/ko-KR/Demetrius/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:summer_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "농장 일은 요즘 어때? 지금 토마토 시즌이지, 그치?"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "야외에서 하루 종일 식물 보면서 일하는 건 참 평화로울 거 같아.",
+          "AudioPath": "assets/ko-KR/Demetrius/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:summer_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "야외에서 하루 종일 식물 보면서 일하는 건 참 평화로울 거 같아."
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "마루랑 뒤뜰에 있는 망원경 써봤다며?",
+          "AudioPath": "assets/ko-KR/Demetrius/69.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:summer_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "마루랑 뒤뜰에 있는 망원경 써봤다며?"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "마루랑 친해지면 분명 뒤뜰에 있는 망원경 어떻게 쓰는지 알려줄 거야.",
+          "AudioPath": "assets/ko-KR/Demetrius/70.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:summer_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "마루랑 친해지면 분명 뒤뜰에 있는 망원경 어떻게 쓰는지 알려줄 거야."
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "흥미진진하지?",
+          "AudioPath": "assets/ko-KR/Demetrius/71.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:summer_Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "흥미진진하지?"
+        },
+        {
+          "DialogueFrom": "summer_Fri_inlaw_Maru",
+          "DialogueText": "딸아이가 수학이랑 과학 공부는 꾸준히 하고 있어야 할 텐데!",
+          "AudioPath": "assets/ko-KR/Demetrius/72.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:summer_Fri_inlaw_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "딸아이가 수학이랑 과학 공부는 꾸준히 하고 있어야 할 텐데!"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "흠... 스트리고락톤 양을 늘릴 수 있다면, 균근 성장도 비례하는 효과가 있으려나? {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Demetrius/73.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:summer_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "흠... 스트리고락톤 양을 늘릴 수 있다면, 균근 성장도 비례하는 효과가 있으려나?"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "오! 미안. 데이터 좀 곰곰이 생각하다가 네가 온 줄도 몰랐네.",
+          "AudioPath": "assets/ko-KR/Demetrius/74.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:summer_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "오! 미안. 데이터 좀 곰곰이 생각하다가 네가 온 줄도 몰랐네."
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "뭘 도와줄까?",
+          "AudioPath": "assets/ko-KR/Demetrius/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:summer_Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "뭘 도와줄까?"
+        },
+        {
+          "DialogueFrom": "summer_Mon6",
+          "DialogueText": "난 우리 인류의 진척에 기여하고 싶어서 과학자가 되었어.",
+          "AudioPath": "assets/ko-KR/Demetrius/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:summer_Mon6",
+          "PageIndex": 0,
+          "DisplayPattern": "난 우리 인류의 진척에 기여하고 싶어서 과학자가 되었어."
+        },
+        {
+          "DialogueFrom": "summer_Mon6",
+          "DialogueText": "물론, 너와 같은 농부들이 없었더라면 불가능한 일이었겠지만. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Demetrius/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:summer_Mon6",
+          "PageIndex": 1,
+          "DisplayPattern": "물론, 너와 같은 농부들이 없었더라면 불가능한 일이었겠지만."
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "일 년 중 이맘때 난 균상종 연구에 집중해.",
+          "AudioPath": "assets/ko-KR/Demetrius/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:fall_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "일 년 중 이맘때 난 균상종 연구에 집중해."
+        },
+        {
+          "DialogueFrom": "fall_Tue",
+          "DialogueText": "과학 덕에 우린 자연에 대해 알게 된 게 많지.",
+          "AudioPath": "assets/ko-KR/Demetrius/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:fall_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "과학 덕에 우린 자연에 대해 알게 된 게 많지."
+        },
+        {
+          "DialogueFrom": "fall_Tue",
+          "DialogueText": "하지만 항상 더 배울 점이 많아.",
+          "AudioPath": "assets/ko-KR/Demetrius/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:fall_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "하지만 항상 더 배울 점이 많아."
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "농장 일은 요즘 어때? 지금 옥수수 시즌이지, 그치?",
+          "AudioPath": "assets/ko-KR/Demetrius/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:fall_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "농장 일은 요즘 어때? 지금 옥수수 시즌이지, 그치?"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "야외에서 하루 종일 식물 보면서 일하는 건 참 평화로울 거 같아.",
+          "AudioPath": "assets/ko-KR/Demetrius/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:fall_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "야외에서 하루 종일 식물 보면서 일하는 건 참 평화로울 거 같아."
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "마루는 참 자기 장비들 손보는데 시간을 많이 보내.",
+          "AudioPath": "assets/ko-KR/Demetrius/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:fall_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "마루는 참 자기 장비들 손보는데 시간을 많이 보내."
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "전념하는 모습이 참 보기 좋아.",
+          "AudioPath": "assets/ko-KR/Demetrius/84.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:fall_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "전념하는 모습이 참 보기 좋아."
+        },
+        {
+          "DialogueFrom": "fall_Fri_inlaw_Maru",
+          "DialogueText": "아직도 마루의 비밀 로봇 일은 어리둥절해... 설마 전부 꿈이었나?",
+          "AudioPath": "assets/ko-KR/Demetrius/85.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:fall_Fri_inlaw_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "아직도 마루의 비밀 로봇 일은 어리둥절해... 설마 전부 꿈이었나?"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "어디 보자... 질소고정량이 선충 분비물의 영향을 받는 걸지도... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Demetrius/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:fall_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "어디 보자... 질소고정량이 선충 분비물의 영향을 받는 걸지도..."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "오! 미안. 데이터 좀 곰곰이 생각하다가 네가 온 줄도 몰랐네.",
+          "AudioPath": "assets/ko-KR/Demetrius/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:fall_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "오! 미안. 데이터 좀 곰곰이 생각하다가 네가 온 줄도 몰랐네."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "뭘 도와줄까?",
+          "AudioPath": "assets/ko-KR/Demetrius/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:fall_Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "뭘 도와줄까?"
+        },
+        {
+          "DialogueFrom": "fall_Wed6",
+          "DialogueText": "안녕 {Farmer_Name}. 방문하러 와 줄 때마다 반가워.",
+          "AudioPath": "assets/ko-KR/Demetrius/89.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:fall_Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕 . 방문하러 와 줄 때마다 반가워."
+        },
+        {
+          "DialogueFrom": "fall_Wed6",
+          "DialogueText": "사실 연구실 일은 좀 외로운 편이라 손님이 오면 좋더라고.",
+          "AudioPath": "assets/ko-KR/Demetrius/90.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:fall_Wed6",
+          "PageIndex": 1,
+          "DisplayPattern": "사실 연구실 일은 좀 외로운 편이라 손님이 오면 좋더라고."
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "지금은 연구 잠깐 쉬는 중이야.",
+          "AudioPath": "assets/ko-KR/Demetrius/91.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:winter_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "지금은 연구 잠깐 쉬는 중이야."
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "집 확장공사를 하고 싶다면 아내랑 얘기해봐.",
+          "AudioPath": "assets/ko-KR/Demetrius/92.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:winter_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "집 확장공사를 하고 싶다면 아내랑 얘기해봐."
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "집에 주방 설치했어?",
+          "AudioPath": "assets/ko-KR/Demetrius/93.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:winter_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "집에 주방 설치했어?"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "요리도 약간 실험실 일이랑 비슷하지.",
+          "AudioPath": "assets/ko-KR/Demetrius/94.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:winter_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "요리도 약간 실험실 일이랑 비슷하지."
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "농장에 동물도 있어?",
+          "AudioPath": "assets/ko-KR/Demetrius/95.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:winter_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "농장에 동물도 있어?"
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "안녕.",
+          "AudioPath": "assets/ko-KR/Demetrius/96.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:winter_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕."
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "드미트리우스는 사색에 잠겨있는 듯하다.",
+          "AudioPath": "assets/ko-KR/Demetrius/97.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:winter_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "드미트리우스는 사색에 잠겨있는 듯하다."
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "어디 보자... 계절별 질소량을 개별식 함수로 모델링 할 수 있다면... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Demetrius/98.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:winter_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "어디 보자... 계절별 질소량을 개별식 함수로 모델링 할 수 있다면..."
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "오! 미안. 데이터 좀 곰곰이 생각하다가 네가 온 줄도 몰랐네.",
+          "AudioPath": "assets/ko-KR/Demetrius/99.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:winter_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "오! 미안. 데이터 좀 곰곰이 생각하다가 네가 온 줄도 몰랐네."
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "뭘 도와줄까?",
+          "AudioPath": "assets/ko-KR/Demetrius/100.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:winter_Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "뭘 도와줄까?"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "이 근방에서 목재랑 돌을 마음껏 가져가도 좋아.",
+          "AudioPath": "assets/ko-KR/Demetrius/101.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:winter_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "이 근방에서 목재랑 돌을 마음껏 가져가도 좋아."
+        },
+        {
+          "DialogueFrom": "winter_Fri4",
+          "DialogueText": "방문해줘서 고마워. 콩과 식물 외에 다른 생각을 좀 해야겠어.",
+          "AudioPath": "assets/ko-KR/Demetrius/102.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:winter_Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "방문해줘서 고마워. 콩과 식물 외에 다른 생각을 좀 해야겠어."
+        },
+        {
+          "DialogueFrom": "winter_Fri4",
+          "DialogueText": "그래, 요즘은 뭐하고 지내?",
+          "AudioPath": "assets/ko-KR/Demetrius/103.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:winter_Fri4",
+          "PageIndex": 1,
+          "DisplayPattern": "그래, 요즘은 뭐하고 지내?"
+        },
+        {
+          "DialogueFrom": "winter_Fri4",
+          "DialogueText": "그거 흥미로운걸.",
+          "AudioPath": "assets/ko-KR/Demetrius/104.ogg",
+          "TranslationKey": "Characters/Dialogue/Demetrius:winter_Fri4",
+          "PageIndex": 2,
+          "DisplayPattern": "그거 흥미로운걸."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "오, 안녕. 밖이 너무 추우면 안에서 좀 있다 가.",
+          "AudioPath": "assets/ko-KR/Demetrius/105.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Demetrius",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 안녕. 밖이 너무 추우면 안에서 좀 있다 가."
+        },
+        {
+          "DialogueFrom": "Event:Farm/65:s0",
+          "DialogueText": "Hi {Farmer_Name}! I have some good news for you. A few days ago I made a breakthrough in my research on the local environment. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Demetrius/106.ogg",
+          "TranslationKey": "Events/Farm:65:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi ! I have some good news for you. A few days ago I made a breakthrough in my research on the local environment."
+        },
+        {
+          "DialogueFrom": "Event:Farm/65:s1",
+          "DialogueText": "I'll spare you the technical details and get to the point... You know that empty cave you have, over in the cliffs?",
+          "AudioPath": "assets/ko-KR/Demetrius/107.ogg",
+          "TranslationKey": "Events/Farm:65:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll spare you the technical details and get to the point... You know that empty cave you have, over in the cliffs?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/65:s2",
+          "DialogueText": "Well, I have a way to turn it into something useful... for both of us.",
+          "AudioPath": "assets/ko-KR/Demetrius/108.ogg",
+          "TranslationKey": "Events/Farm:65:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I have a way to turn it into something useful... for both of us."
+        },
+        {
+          "DialogueFrom": "Event:Farm/65:s3",
+          "DialogueText": "I'd like to set up the cave to attract some local species. That way I can observe them in a more controlled environment. And you can harvest whatever products they produce.",
+          "AudioPath": "assets/ko-KR/Demetrius/109.ogg",
+          "TranslationKey": "Events/Farm:65:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I'd like to set up the cave to attract some local species. That way I can observe them in a more controlled environment. And you can harvest whatever products they produce."
+        },
+        {
+          "DialogueFrom": "Event:Farm/65:s4",
+          "DialogueText": "I can either set up the cave to attract mushrooms or fruit bats. The bats will sometimes leave fruit for you to collect.",
+          "AudioPath": "assets/ko-KR/Demetrius/110.ogg",
+          "TranslationKey": "Events/Farm:65:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I can either set up the cave to attract mushrooms or fruit bats. The bats will sometimes leave fruit for you to collect."
+        },
+        {
+          "DialogueFrom": "Event:Farm/65:s5",
+          "DialogueText": "Alright! I'll go set it up for you right now! It shouldn't take any time at all. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Demetrius/111.ogg",
+          "TranslationKey": "Events/Farm:65:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Alright! I'll go set it up for you right now! It shouldn't take any time at all."
+        },
+        {
+          "DialogueFrom": "Event:Farm/65:s6",
+          "DialogueText": "Thanks for letting me do this.",
+          "AudioPath": "assets/ko-KR/Demetrius/112.ogg",
+          "TranslationKey": "Events/Farm:65:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks for letting me do this."
+        },
+        {
+          "DialogueFrom": "Event:Farm/65:s7",
+          "DialogueText": "I'm excited to see what happens with that cave. Aren't you?",
+          "AudioPath": "assets/ko-KR/Demetrius/113.ogg",
+          "TranslationKey": "Events/Farm:65:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm excited to see what happens with that cave. Aren't you?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/65:s8",
+          "DialogueText": "I hope you're pleased with the work I did.",
+          "AudioPath": "assets/ko-KR/Demetrius/114.ogg",
+          "TranslationKey": "Events/Farm:65:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I hope you're pleased with the work I did."
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s0",
+          "DialogueText": "I love your art, Leah! 'Post-Dimensional Nullspace' is my favorite. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Demetrius/115.ogg",
+          "TranslationKey": "Events/Town:53:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I love your art, Leah! 'Post-Dimensional Nullspace' is my favorite."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s0",
+          "DialogueText": "I'm in.",
+          "AudioPath": "assets/ko-KR/Demetrius/116.ogg",
+          "TranslationKey": "Events/Town:191393:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm in."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/6:s0",
+          "DialogueText": "Thanks for helping out, {Farmer_Name}.",
+          "AudioPath": "assets/ko-KR/Demetrius/117.ogg",
+          "TranslationKey": "Events/ScienceHouse:6:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks for helping out, ."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/6:s1",
+          "DialogueText": "Maru's a good kid. She's my special little girl...",
+          "AudioPath": "assets/ko-KR/Demetrius/118.ogg",
+          "TranslationKey": "Events/ScienceHouse:6:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Maru's a good kid. She's my special little girl..."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/6:s2",
+          "DialogueText": "I wouldn't want anything getting in the way of her bright future, know what I mean? {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Demetrius/119.ogg",
+          "TranslationKey": "Events/ScienceHouse:6:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I wouldn't want anything getting in the way of her bright future, know what I mean?"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/6:s3",
+          "DialogueText": "Just some food for thought... *chuckle* {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Demetrius/120.ogg",
+          "TranslationKey": "Events/ScienceHouse:6:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Just some food for thought... *chuckle*"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/6:s4",
+          "DialogueText": "...I was just telling {Farmer_Name} about the soil samples we're testing.",
+          "AudioPath": "assets/ko-KR/Demetrius/121.ogg",
+          "TranslationKey": "Events/ScienceHouse:6:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "...I was just telling about the soil samples we're testing."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/6:s5",
+          "DialogueText": "Right, {Farmer_Name}?",
+          "AudioPath": "assets/ko-KR/Demetrius/122.ogg",
+          "TranslationKey": "Events/ScienceHouse:6:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Right, ?"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/6:s6",
+          "DialogueText": "(Say nothing)",
+          "AudioPath": "assets/ko-KR/Demetrius/123.ogg",
+          "TranslationKey": "Events/ScienceHouse:6:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "(Say nothing)"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/6:s7",
+          "DialogueText": "Actually, your Dad was being weird.",
+          "AudioPath": "assets/ko-KR/Demetrius/124.ogg",
+          "TranslationKey": "Events/ScienceHouse:6:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Actually, your Dad was being weird."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/DadWeird:s0",
+          "DialogueText": "Okay, okay... we were talking about you, sweetie. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Demetrius/125.ogg",
+          "TranslationKey": "Events/ScienceHouse:DadWeird:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay, okay... we were talking about you, sweetie."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/DadWeird:s1",
+          "DialogueText": "I wanted to say a few things to {Farmer_Name} about you... but I didn't want to embarrass you. I shouldn't have lied about it. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Demetrius/126.ogg",
+          "TranslationKey": "Events/ScienceHouse:DadWeird:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I wanted to say a few things to about you... but I didn't want to embarrass you. I shouldn't have lied about it."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/25:s0",
+          "DialogueText": "I don't understand. Tomatoes are fruits!",
+          "AudioPath": "assets/ko-KR/Demetrius/127.ogg",
+          "TranslationKey": "Events/ScienceHouse:25:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I don't understand. Tomatoes are fruits!"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/25:s1",
+          "DialogueText": "{Farmer_Name}! I'm glad you're here. You'll be able to put this argument to rest.",
+          "AudioPath": "assets/ko-KR/Demetrius/128.ogg",
+          "TranslationKey": "Events/ScienceHouse:25:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "! I'm glad you're here. You'll be able to put this argument to rest."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/25:s2",
+          "DialogueText": "How would you classify a tomato?",
+          "AudioPath": "assets/ko-KR/Demetrius/129.ogg",
+          "TranslationKey": "Events/ScienceHouse:25:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "How would you classify a tomato?"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/25:s3",
+          "DialogueText": "Vegetable",
+          "AudioPath": "assets/ko-KR/Demetrius/130.ogg",
+          "TranslationKey": "Events/ScienceHouse:25:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Vegetable"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/25:s4",
+          "DialogueText": "Fruit",
+          "AudioPath": "assets/ko-KR/Demetrius/131.ogg",
+          "TranslationKey": "Events/ScienceHouse:25:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Fruit"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/25:s5",
+          "DialogueText": "I just want you to understand my point of view.",
+          "AudioPath": "assets/ko-KR/Demetrius/132.ogg",
+          "TranslationKey": "Events/ScienceHouse:25:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "I just want you to understand my point of view."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/25:s6",
+          "DialogueText": "It's hard for me to know exactly what assumptions I should make when you tell me something.",
+          "AudioPath": "assets/ko-KR/Demetrius/133.ogg",
+          "TranslationKey": "Events/ScienceHouse:25:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "It's hard for me to know exactly what assumptions I should make when you tell me something."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/25:s7",
+          "DialogueText": "But I'll try to get better at it.",
+          "AudioPath": "assets/ko-KR/Demetrius/134.ogg",
+          "TranslationKey": "Events/ScienceHouse:25:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "But I'll try to get better at it."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/25:s8",
+          "DialogueText": "Thanks for your help, {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Demetrius/135.ogg",
+          "TranslationKey": "Events/ScienceHouse:25:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks for your help, ."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s0",
+          "DialogueText": "Ah Ha! I knew it! {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Demetrius/136.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah Ha! I knew it!"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s1",
+          "DialogueText": "Agh! What is it?! {Portrait:Custom:6}",
+          "AudioPath": "assets/ko-KR/Demetrius/137.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Agh! What is it?!"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s2",
+          "DialogueText": "Sweet Yoba... it talks! {Portrait:Custom:6}",
+          "AudioPath": "assets/ko-KR/Demetrius/138.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Sweet Yoba... it talks!"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s3",
+          "DialogueText": "This is why you've locked yourself in your room the last few months? {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Demetrius/139.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "This is why you've locked yourself in your room the last few months?"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s4",
+          "DialogueText": "...and I thought you were down here fooling around with {Farmer_Name}... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Demetrius/140.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "...and I thought you were down here fooling around with ..."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s5",
+          "DialogueText": "It's okay, Maru. Let MarILDA go free. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Demetrius/141.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "It's okay, Maru. Let MarILDA go free."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s6",
+          "DialogueText": "Your mother and I can take care of ourselves. I know you're ready to start a life of your own, and I've come to terms with the thought of not having you around anymore.",
+          "AudioPath": "assets/ko-KR/Demetrius/142.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Your mother and I can take care of ourselves. I know you're ready to start a life of your own, and I've come to terms with the thought of not having you around anymore."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s7",
+          "DialogueText": "Besides, this... creation of yours seems pretty advanced. It wouldn't feel right to keep her as a servant.",
+          "AudioPath": "assets/ko-KR/Demetrius/143.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Besides, this... creation of yours seems pretty advanced. It wouldn't feel right to keep her as a servant."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s8|g=male",
+          "DialogueText": "{Farmer_Name}, I'm sorry I mistrusted you. You're a good guy. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Demetrius/144_male.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s8",
+          "PageIndex": 0,
+          "DisplayPattern": ", I'm sorry I mistrusted you. You're a good guy.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s9|g=female",
+          "DialogueText": "{Farmer_Name}, I'm sorry I mistrusted you. You're a fine young woman. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Demetrius/145_female.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s9",
+          "PageIndex": 0,
+          "DisplayPattern": ", I'm sorry I mistrusted you. You're a fine young woman.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s10",
+          "DialogueText": "I've never seen Maru so lively and creative... and I've never been more proud of her. If you've had a hand in that, then you have my gratitude.",
+          "AudioPath": "assets/ko-KR/Demetrius/146.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "I've never seen Maru so lively and creative... and I've never been more proud of her. If you've had a hand in that, then you have my gratitude."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/1053978:s0",
+          "DialogueText": "Um... Robin? What's the point of the four posts? It seems like an inefficient use of materials. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Demetrius/147.ogg",
+          "TranslationKey": "Events/ScienceHouse:1053978:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... Robin? What's the point of the four posts? It seems like an inefficient use of materials."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/1053978:s1",
+          "DialogueText": "Hmm, I see your point.. But we can't let that outweigh the utility and efficiency of the sleep receptacle.",
+          "AudioPath": "assets/ko-KR/Demetrius/148.ogg",
+          "TranslationKey": "Events/ScienceHouse:1053978:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmm, I see your point.. But we can't let that outweigh the utility and efficiency of the sleep receptacle."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/1053978:s2",
+          "DialogueText": "*ahem*... Well... If anyone needs me, I'll be in the doghouse... {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Demetrius/149.ogg",
+          "TranslationKey": "Events/ScienceHouse:1053978:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "*ahem*... Well... If anyone needs me, I'll be in the doghouse..."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/1053978:s3",
+          "DialogueText": "Great minds think alike... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Demetrius/150.ogg",
+          "TranslationKey": "Events/ScienceHouse:1053978:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Great minds think alike..."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Demetrius",
+          "DialogueText": "로빈은 정말 목공일을 열심히 해... 종종 사람들이 알아봐 줄만해.",
+          "AudioPath": "assets/ko-KR/Demetrius/151.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Demetrius",
+          "PageIndex": 0,
+          "DisplayPattern": "로빈은 정말 목공일을 열심히 해... 종종 사람들이 알아봐 줄만해."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Demetrius_y2",
+          "DialogueText": "양의 기억력은 놀라워... 양과 인간 모두와 친숙함을 유지할 수 있어... {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Demetrius/152.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Demetrius_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "양의 기억력은 놀라워... 양과 인간 모두와 친숙함을 유지할 수 있어..."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Demetrius_y2",
+          "DialogueText": "친구 관계도 맺지, 인간들이 맺는 관계와 마찬가지로! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Demetrius/153.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Demetrius_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "친구 관계도 맺지, 인간들이 맺는 관계와 마찬가지로!"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Demetrius",
+          "DialogueText": "마루가 몇 시간째 안 보여... 괜찮아야 할 텐데.",
+          "AudioPath": "assets/ko-KR/Demetrius/154.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Demetrius",
+          "PageIndex": 0,
+          "DisplayPattern": "마루가 몇 시간째 안 보여... 괜찮아야 할 텐데."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Demetrius_y2",
+          "DialogueText": "알고 있었니... 인류 생리학 학술지에 등재된 연구 내용에 의하면 음악의 종지법, 템포 그리고 조에 따라 코티솔 수치에 유의미한 영향을 준다는 거?",
+          "AudioPath": "assets/ko-KR/Demetrius/155.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Demetrius_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "알고 있었니... 인류 생리학 학술지에 등재된 연구 내용에 의하면 음악의 종지법, 템포 그리고 조에 따라 코티솔 수치에 유의미한 영향을 준다는 거?"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Demetrius_y2",
+          "DialogueText": "어... 블랙베리 코블러랑 먹을 바닐라 아이스크림 있니? {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Demetrius/156.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Demetrius_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "어... 블랙베리 코블러랑 먹을 바닐라 아이스크림 있니?"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Demetrius",
+          "DialogueText": "계란... 먹거리치고는 정말 특이한 거지.",
+          "AudioPath": "assets/ko-KR/Demetrius/157.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Demetrius",
+          "PageIndex": 0,
+          "DisplayPattern": "계란... 먹거리치고는 정말 특이한 거지."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Demetrius_y2",
+          "DialogueText": "안녕 {Farmer_Name}, 내 잉어알 파이 먹어봤어?",
+          "AudioPath": "assets/ko-KR/Demetrius/158.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Demetrius_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕 , 내 잉어알 파이 먹어봤어?"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Demetrius_y2",
+          "DialogueText": "...왜? 꼭 닭의 알일 필요는 없잖아, 아냐?",
+          "AudioPath": "assets/ko-KR/Demetrius/159.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Demetrius_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "...왜? 꼭 닭의 알일 필요는 없잖아, 아냐?"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Demetrius",
+          "DialogueText": "이런 봄철 춤은 고대 풍작 기원 의식에서 유래되었지.",
+          "AudioPath": "assets/ko-KR/Demetrius/160.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Demetrius",
+          "PageIndex": 0,
+          "DisplayPattern": "이런 봄철 춤은 고대 풍작 기원 의식에서 유래되었지."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Demetrius",
+          "DialogueText": "이봐... 농부라면 이런 거 알아야 해.",
+          "AudioPath": "assets/ko-KR/Demetrius/161.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Demetrius",
+          "PageIndex": 1,
+          "DisplayPattern": "이봐... 농부라면 이런 거 알아야 해."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Demetrius_y2",
+          "DialogueText": "이런 모임이 우리 공동체에게 정체성을 부여하지.",
+          "AudioPath": "assets/ko-KR/Demetrius/162.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Demetrius_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "이런 모임이 우리 공동체에게 정체성을 부여하지."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Demetrius_y2",
+          "DialogueText": "아니면 아내 말대로... '동네가 활발해지지'!",
+          "AudioPath": "assets/ko-KR/Demetrius/163.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Demetrius_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "아니면 아내 말대로... '동네가 활발해지지'!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Demetrius",
+          "DialogueText": "이거 너무 지치는데, 여보. 우리 뷔페 쪽에 가볼까? *헉*",
+          "AudioPath": "assets/ko-KR/Demetrius/164.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Demetrius",
+          "PageIndex": 0,
+          "DisplayPattern": "이거 너무 지치는데, 여보. 우리 뷔페 쪽에 가볼까? *헉*"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Demetrius_y2",
+          "DialogueText": "인간은 왜 춤을 즐길까? 본능적인 기전일까, 잠재적인 짝짓기 상대에게 유전적인 우수성을 전하기 위한?%noturn",
+          "AudioPath": "assets/ko-KR/Demetrius/165.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Demetrius_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "인간은 왜 춤을 즐길까? 본능적인 기전일까, 잠재적인 짝짓기 상대에게 유전적인 우수성을 전하기 위한?"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Demetrius",
+          "DialogueText": "'달빛 해파리'... 참으로 멋진 생명체야! 남쪽으로 내려가면서 여기에 멈추는 건 우리한텐 정말 행운이야.",
+          "AudioPath": "assets/ko-KR/Demetrius/166.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Demetrius",
+          "PageIndex": 0,
+          "DisplayPattern": "'달빛 해파리'... 참으로 멋진 생명체야! 남쪽으로 내려가면서 여기에 멈추는 건 우리한텐 정말 행운이야."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Demetrius",
+          "DialogueText": "저 해파리들이 왜 빛에 이끌리는지는 아직 밝혀진 게 없어... 아주 신기하지.",
+          "AudioPath": "assets/ko-KR/Demetrius/167.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Demetrius",
+          "PageIndex": 1,
+          "DisplayPattern": "저 해파리들이 왜 빛에 이끌리는지는 아직 밝혀진 게 없어... 아주 신기하지."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Demetrius_y2",
+          "DialogueText": "다른 종류의 '젤리'가 존재하긴 해, 낚시꾼들이 가끔 낚아 올리는 건데. 질감은 비슷하지만, 달빛 해파리와는 매우 다른 본질을 가지고 있지...",
+          "AudioPath": "assets/ko-KR/Demetrius/168.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Demetrius_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "다른 종류의 '젤리'가 존재하긴 해, 낚시꾼들이 가끔 낚아 올리는 건데. 질감은 비슷하지만, 달빛 해파리와는 매우 다른 본질을 가지고 있지..."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Demetrius",
+          "DialogueText": "난 올해도 아마 공구세트를 받겠지... *한숨*",
+          "AudioPath": "assets/ko-KR/Demetrius/169.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Demetrius",
+          "PageIndex": 0,
+          "DisplayPattern": "난 올해도 아마 공구세트를 받겠지... *한숨*"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Demetrius_y2",
+          "DialogueText": "흠... 이 녹색 젤리는 민트 향이 첨가되었네. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Demetrius/170.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Demetrius_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "흠... 이 녹색 젤리는 민트 향이 첨가되었네."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Demetrius_y2",
+          "DialogueText": "겨울 별의 만찬과 민트의 연관성은 무엇일까? 민트가 겨울에 자라는 식물이긴 한가? {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Demetrius/171.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Demetrius_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "겨울 별의 만찬과 민트의 연관성은 무엇일까? 민트가 겨울에 자라는 식물이긴 한가?"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Demetrius",
+          "DialogueText": "그거 알아? 자켓 하나 더 입을 걸 싶네.",
+          "AudioPath": "assets/ko-KR/Demetrius/172.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Demetrius",
+          "PageIndex": 0,
+          "DisplayPattern": "그거 알아? 자켓 하나 더 입을 걸 싶네."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Demetrius_y2",
+          "DialogueText": "물, 얼음... 정말이지 심오한 물질이지. 생명에 필수인 물질을 생명체의 모양으로 조각하다니, 어울리는 일이야.",
+          "AudioPath": "assets/ko-KR/Demetrius/173.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Demetrius_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "물, 얼음... 정말이지 심오한 물질이지. 생명에 필수인 물질을 생명체의 모양으로 조각하다니, 어울리는 일이야."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Demetrius:s0",
+          "DialogueText": "나한테 주는 거야? 엄청나잖아!",
+          "AudioPath": "assets/ko-KR/Demetrius/174.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Demetrius:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "나한테 주는 거야? 엄청나잖아!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Demetrius:s1",
+          "DialogueText": "고마워! 아주 흥미로운 표본이야.",
+          "AudioPath": "assets/ko-KR/Demetrius/175.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Demetrius:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "고마워! 아주 흥미로운 표본이야."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Demetrius:s2",
+          "DialogueText": "...이건 뭐야?",
+          "AudioPath": "assets/ko-KR/Demetrius/176.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Demetrius:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "...이건 뭐야?"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Demetrius:s3",
+          "DialogueText": "이거 역겨운걸.",
+          "AudioPath": "assets/ko-KR/Demetrius/177.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Demetrius:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "이거 역겨운걸."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Demetrius:s4",
+          "DialogueText": "사려 깊은 선물, 고마워.",
+          "AudioPath": "assets/ko-KR/Demetrius/178.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Demetrius:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "사려 깊은 선물, 고마워."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Demetrius_winter_movie_1_BeforeMovie",
+          "DialogueText": "눈이 쌓여서 그런지, 조금만 뛰어도 금방 피가 도네.",
+          "AudioPath": "assets/ko-KR/Demetrius/179.ogg",
+          "TranslationKey": "Strings/MovieReactions:Demetrius_winter_movie_1_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "눈이 쌓여서 그런지, 조금만 뛰어도 금방 피가 도네."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Demetrius_winter_movie_1_DuringMovie",
+          "DialogueText": "마음의 갈망...? 오! '변연계의 옥시토신 상승신호'겠지.",
+          "AudioPath": "assets/ko-KR/Demetrius/180.ogg",
+          "TranslationKey": "Strings/MovieReactions:Demetrius_winter_movie_1_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "마음의 갈망...? 오! '변연계의 옥시토신 상승신호'겠지."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Demetrius_winter_movie_1_DuringMovie_2",
+          "DialogueText": "드미트리우스가 인상을 쓰고 있습니다.",
+          "AudioPath": "assets/ko-KR/Demetrius/181.ogg",
+          "TranslationKey": "Strings/MovieReactions:Demetrius_winter_movie_1_DuringMovie_2",
+          "PageIndex": 0,
+          "DisplayPattern": "드미트리우스가 인상을 쓰고 있습니다."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Demetrius_winter_movie_1_AfterMovie",
+          "DialogueText": "예전에 비해 촬영 기술이 많이 늘었어, 그렇지?",
+          "AudioPath": "assets/ko-KR/Demetrius/182.ogg",
+          "TranslationKey": "Strings/MovieReactions:Demetrius_winter_movie_1_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "예전에 비해 촬영 기술이 많이 늘었어, 그렇지?"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Demetrius_summer_movie_1_BeforeMovie",
+          "DialogueText": "이 영화는 '미래 사회'가 배경이라던데... 어떤 모습으로 그려졌을지 궁금하다!",
+          "AudioPath": "assets/ko-KR/Demetrius/183.ogg",
+          "TranslationKey": "Strings/MovieReactions:Demetrius_summer_movie_1_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "이 영화는 '미래 사회'가 배경이라던데... 어떤 모습으로 그려졌을지 궁금하다!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Demetrius_summer_movie_1_AfterMovie",
+          "DialogueText": "좋은 영화였어... 우리 행성 너머에 다른 생명체들이 있을지 정말 궁금하네.",
+          "AudioPath": "assets/ko-KR/Demetrius/184.ogg",
+          "TranslationKey": "Strings/MovieReactions:Demetrius_summer_movie_1_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "좋은 영화였어... 우리 행성 너머에 다른 생명체들이 있을지 정말 궁금하네."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Demetrius_spring_movie_1_BeforeMovie",
+          "DialogueText": "이건 정말 내 취향이군... 이 영화를 내가 마음에 들어 할 거란 걸 이미 알고 있지? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Demetrius/185.ogg",
+          "TranslationKey": "Strings/MovieReactions:Demetrius_spring_movie_1_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "이건 정말 내 취향이군... 이 영화를 내가 마음에 들어 할 거란 걸 이미 알고 있지?"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Demetrius_spring_movie_1_DuringMovie",
+          "DialogueText": "엄밀히 따지자면, 저건 틀린 건데... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Demetrius/186.ogg",
+          "TranslationKey": "Strings/MovieReactions:Demetrius_spring_movie_1_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "엄밀히 따지자면, 저건 틀린 건데..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Demetrius_spring_movie_1_DuringMovie_2",
+          "DialogueText": "드미트리우스가 턱을 긁고 있습니다...",
+          "AudioPath": "assets/ko-KR/Demetrius/187.ogg",
+          "TranslationKey": "Strings/MovieReactions:Demetrius_spring_movie_1_DuringMovie_2",
+          "PageIndex": 0,
+          "DisplayPattern": "드미트리우스가 턱을 긁고 있습니다..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Demetrius_spring_movie_1_AfterMovie",
+          "DialogueText": "뭐, 몇몇 각색한 부분이 있긴 하지만, 대부분 맞긴 했어! 여하튼, 재밌는 시간이었어.",
+          "AudioPath": "assets/ko-KR/Demetrius/188.ogg",
+          "TranslationKey": "Strings/MovieReactions:Demetrius_spring_movie_1_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "뭐, 몇몇 각색한 부분이 있긴 하지만, 대부분 맞긴 했어! 여하튼, 재밌는 시간이었어."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Demetrius_winter_movie_0_BeforeMovie",
+          "DialogueText": "신문에서 이 영화 이야기를 봤어... 내 취향은 아닌 것 같았는데. 그래도 한번 봐볼게.",
+          "AudioPath": "assets/ko-KR/Demetrius/189.ogg",
+          "TranslationKey": "Strings/MovieReactions:Demetrius_winter_movie_0_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "신문에서 이 영화 이야기를 봤어... 내 취향은 아닌 것 같았는데. 그래도 한번 봐볼게."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Demetrius_winter_movie_0_AfterMovie",
+          "DialogueText": "터무니없어! 과학적 근거가 전혀 없잖아! {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Demetrius/190.ogg",
+          "TranslationKey": "Strings/MovieReactions:Demetrius_winter_movie_0_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "터무니없어! 과학적 근거가 전혀 없잖아!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Demetrius_like_BeforeMovie",
+          "DialogueText": "영화가 별로더라도, 분석하는 건 흥미로운 일이야.",
+          "AudioPath": "assets/ko-KR/Demetrius/191.ogg",
+          "TranslationKey": "Strings/MovieReactions:Demetrius_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "영화가 별로더라도, 분석하는 건 흥미로운 일이야."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Demetrius_like_AfterMovie",
+          "DialogueText": "흠... 이런 영화의 서사로 인간 동기의 어떤 양상을 충족시켜주는 걸까? {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Demetrius/192.ogg",
+          "TranslationKey": "Strings/MovieReactions:Demetrius_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "흠... 이런 영화의 서사로 인간 동기의 어떤 양상을 충족시켜주는 걸까?"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Demetrius",
+          "DialogueText": "인간은 왜 매운 음식을 즐기는 걸까? 생물학적 관점에선 직관과 반대인 행동인데.",
+          "AudioPath": "assets/ko-KR/Demetrius/193.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Demetrius",
+          "PageIndex": 0,
+          "DisplayPattern": "인간은 왜 매운 음식을 즐기는 걸까? 생물학적 관점에선 직관과 반대인 행동인데."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Demetrius",
+          "DialogueText": "아니면 내가 뭔가 놓치고 있는 걸까... {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Demetrius/194.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Demetrius",
+          "PageIndex": 1,
+          "DisplayPattern": "아니면 내가 뭔가 놓치고 있는 걸까..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Demetrius",
+          "DialogueText": "거래할 달걀 있어? 껍질의 구성을 연구하는 중이야.",
+          "AudioPath": "assets/ko-KR/Demetrius/195.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Demetrius",
+          "PageIndex": 0,
+          "DisplayPattern": "거래할 달걀 있어? 껍질의 구성을 연구하는 중이야."
+        }
+      ]
+    }
+  ]
+}

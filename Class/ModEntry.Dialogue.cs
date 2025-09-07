@@ -51,6 +51,9 @@ namespace VoiceOverFrameworkMod
 
 
 
+
+
+
         // Main dialogue check loop called every tick (or less often if adjusted).
         private void OnUpdateTicked(object sender, UpdateTickedEventArgs e)
         {
@@ -263,7 +266,7 @@ namespace VoiceOverFrameworkMod
                 {
 
                     
-                    // new text/page detected
+                    // text/page detected
                     lastDialogueText = currentDisplayedString;
                     lastSpeakerName = currentSpeaker?.Name;
                     wasDialogueUpLastTick = true;

@@ -1,0 +1,1822 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Pierre.zh-CN",
+      "VoicePackName": "DictionarV2 (Pierre - zh-CN)",
+      "Character": "Pierre",
+      "Language": "zh-CN",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "嘿，您就是新来的农夫{Farmer_Name}先生吧！我是皮埃尔，镇上杂货店的店主。",
+          "AudioPath": "assets/zh-CN/Pierre/1_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，您就是新来的农夫先生吧！我是皮埃尔，镇上杂货店的店主。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "嘿，您就是新来的农夫{Farmer_Name}女士吧！我是皮埃尔，镇上杂货店的店主。",
+          "AudioPath": "assets/zh-CN/Pierre/2_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "嘿，您就是新来的农夫女士吧！我是皮埃尔，镇上杂货店的店主。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "如果想买种子的话，来我这里就对了。而且我还会高价收购你的作物哦！",
+          "AudioPath": "assets/zh-CN/Pierre/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 2,
+          "DisplayPattern": "如果想买种子的话，来我这里就对了。而且我还会高价收购你的作物哦！"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "有了农业发展，相信本地的经济也会振兴起来的！",
+          "AudioPath": "assets/zh-CN/Pierre/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 3,
+          "DisplayPattern": "有了农业发展，相信本地的经济也会振兴起来的！"
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneday",
+          "DialogueText": "这让我怎么跟 Joja 竞争？ {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "这让我怎么跟 Joja 竞争？"
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneday",
+          "DialogueText": "他们财大气粗，可以先亏本销售，搞倒我这种小本生意……然后再抬高价格割韭菜！ {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "他们财大气粗，可以先亏本销售，搞倒我这种小本生意……然后再抬高价格割韭菜！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "哇，你居然要送我这个，肯定很贵吧！谢谢你！",
+          "AudioPath": "assets/zh-CN/Pierre/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "哇，你居然要送我这个，肯定很贵吧！谢谢你！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)Book_PriceCatalogue",
+          "DialogueText": "实在是激动人心！我太需要这本书了！ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:AcceptGift_(O)Book_PriceCatalogue",
+          "PageIndex": 0,
+          "DisplayPattern": "实在是激动人心！我太需要这本书了！"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "唉，顾客都不来了！这“绿”雨要是再下下去，我这店里就全是“赤”字了！ {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "唉，顾客都不来了！这“绿”雨要是再下下去，我这店里就全是“赤”字了！"
+        },
+        {
+          "DialogueFrom": "GreenRainFinished",
+          "DialogueText": "嗯，幸好一切都重回正轨了。感觉事情是被过分夸张了。",
+          "AudioPath": "assets/zh-CN/Pierre/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRainFinished",
+          "PageIndex": 0,
+          "DisplayPattern": "嗯，幸好一切都重回正轨了。感觉事情是被过分夸张了。"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "{Farmer_Name}，你好啊，为了买种子，一点有毒的雨有什么好怕的，是不是？ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "，你好啊，为了买种子，一点有毒的雨有什么好怕的，是不是？"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "我开玩笑的，这场雨好像完全无害。",
+          "AudioPath": "assets/zh-CN/Pierre/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRain_2",
+          "PageIndex": 1,
+          "DisplayPattern": "我开玩笑的，这场雨好像完全无害。"
+        },
+        {
+          "DialogueFrom": "eventSeen_4",
+          "DialogueText": "阿比盖尔还在叛逆期……我懂的。",
+          "AudioPath": "assets/zh-CN/Pierre/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_4",
+          "PageIndex": 0,
+          "DisplayPattern": "阿比盖尔还在叛逆期……我懂的。"
+        },
+        {
+          "DialogueFrom": "eventSeen_4",
+          "DialogueText": "等她到了要还贷款的年纪就会醒悟了！ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_4",
+          "PageIndex": 1,
+          "DisplayPattern": "等她到了要还贷款的年纪就会醒悟了！"
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneweek",
+          "DialogueText": "我下定决心了，不到破产绝不关店。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "我下定决心了，不到破产绝不关店。"
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneweek",
+          "DialogueText": "莫里斯那帮人即使费九牛二虎之力，也别想把我从柜台后面拖出去！ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "莫里斯那帮人即使费九牛二虎之力，也别想把我从柜台后面拖出去！"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "我没有开着商店，所以会亏很多钱…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "我没有开着商店，所以会亏很多钱……"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "不过你明白吗？这是值得的。",
+          "AudioPath": "assets/zh-CN/Pierre/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort",
+          "PageIndex": 1,
+          "DisplayPattern": "不过你明白吗？这是值得的。"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "唔……大海的咸味让我想吃生鱼片了。",
+          "AudioPath": "assets/zh-CN/Pierre/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "唔……大海的咸味让我想吃生鱼片了。"
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "啊，让孩子们在太阳底下玩耍吧。我坐在这里就好。",
+          "AudioPath": "assets/zh-CN/Pierre/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "啊，让孩子们在太阳底下玩耍吧。我坐在这里就好。"
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "一杯接一杯的……格斯一定赚了不少钱！",
+          "AudioPath": "assets/zh-CN/Pierre/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "一杯接一杯的……格斯一定赚了不少钱！"
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "嗯，既然你现在有双份收入了，种子也该买双倍了，对吧？ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married",
+          "PageIndex": 0,
+          "DisplayPattern": "嗯，既然你现在有双份收入了，种子也该买双倍了，对吧？"
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "哈哈……我就开个玩笑……咳咳……",
+          "AudioPath": "assets/zh-CN/Pierre/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married",
+          "PageIndex": 1,
+          "DisplayPattern": "哈哈……我就开个玩笑……咳咳……"
+        },
+        {
+          "DialogueFrom": "married_Abigail_memory_oneday",
+          "DialogueText": "你好，呃……我的女婿$？ {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/24_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married_Abigail_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "你好，呃……我的女婿$？",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "married_Abigail_memory_oneday",
+          "DialogueText": "你好，呃……女儿$？ {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/25_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married_Abigail_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "你好，呃……女儿$？",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "cc_Complete",
+          "DialogueText": "这真是“梦想成真”！你都无法想象 Joja 超市对我造成了多大压力。",
+          "AudioPath": "assets/zh-CN/Pierre/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:cc_Complete",
+          "PageIndex": 0,
+          "DisplayPattern": "这真是“梦想成真”！你都无法想象 Joja 超市对我造成了多大压力。"
+        },
+        {
+          "DialogueFrom": "cc_Complete",
+          "DialogueText": "对于这样的小镇来说，一家商店就够了！不管怎样，社会压力如此之大，我都无法宰客了。",
+          "AudioPath": "assets/zh-CN/Pierre/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:cc_Complete",
+          "PageIndex": 1,
+          "DisplayPattern": "对于这样的小镇来说，一家商店就够了！不管怎样，社会压力如此之大，我都无法宰客了。"
+        },
+        {
+          "DialogueFrom": "joja_Begin",
+          "DialogueText": "这是鹈鹕镇悲伤的一天……Joja超市越强，我离破产就越近。我很快就会被迫卖掉这家店…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:joja_Begin",
+          "PageIndex": 0,
+          "DisplayPattern": "这是鹈鹕镇悲伤的一天……Joja超市越强，我离破产就越近。我很快就会被迫卖掉这家店……"
+        },
+        {
+          "DialogueFrom": "MovieInvitation",
+          "DialogueText": "哎呀，这主意真不错……从柜台后面出来走走是挺好的。那我们到那边见！",
+          "AudioPath": "assets/zh-CN/Pierre/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:MovieInvitation",
+          "PageIndex": 0,
+          "DisplayPattern": "哎呀，这主意真不错……从柜台后面出来走走是挺好的。那我们到那边见！"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "欢迎！如果想买种子的话，来我这里就对了！",
+          "AudioPath": "assets/zh-CN/Pierre/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "欢迎！如果想买种子的话，来我这里就对了！"
+        },
+        {
+          "DialogueFrom": "Mon_inlaw_Abigail",
+          "DialogueText": "你好，呃……我的儿子$？ {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/31_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon_inlaw_Abigail",
+          "PageIndex": 0,
+          "DisplayPattern": "你好，呃……我的儿子$？",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Mon_inlaw_Abigail",
+          "DialogueText": "你好，呃……我的女儿$？ {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/32_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon_inlaw_Abigail",
+          "PageIndex": 1,
+          "DisplayPattern": "你好，呃……我的女儿$？",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "嗨，{Farmer_Name}。今天是来买种子和树苗的吗？",
+          "AudioPath": "assets/zh-CN/Pierre/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "嗨，。今天是来买种子和树苗的吗？"
+        },
+        {
+          "DialogueFrom": "Mon4_inlaw_Abigail",
+          "DialogueText": "嗨，{Farmer_Name}。阿比盖尔怎么样了？没有她商店都不一样了……",
+          "AudioPath": "assets/zh-CN/Pierre/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon4_inlaw_Abigail",
+          "PageIndex": 0,
+          "DisplayPattern": "嗨，。阿比盖尔怎么样了？没有她商店都不一样了……"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "有时我会进新货品，所以平时没事的话，还是常来看看吧。",
+          "AudioPath": "assets/zh-CN/Pierre/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "有时我会进新货品，所以平时没事的话，还是常来看看吧。"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "开商店还真是苦力活呢。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "开商店还真是苦力活呢。"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "我年轻的时候，可是个有名的拳击手……我的右勾拳简直是天下无敌啦！ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "我年轻的时候，可是个有名的拳击手……我的右勾拳简直是天下无敌啦！"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "今天是店里的休息日。",
+          "AudioPath": "assets/zh-CN/Pierre/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "今天是店里的休息日。"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "唔……该做什么好呢…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "唔……该做什么好呢……"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "如果你能找到山货，可以在我这里卖掉哦。",
+          "AudioPath": "assets/zh-CN/Pierre/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "如果你能找到山货，可以在我这里卖掉哦。"
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "# {Portrait:Happy} pierre1",
+          "AudioPath": "assets/zh-CN/Pierre/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierre1"
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "*唉*……不管生意有多好，总感觉还是满足不了我的成功欲。我到底是怎么回事？大概还是对这过于平淡的生活产生了厌倦吧。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed4",
+          "PageIndex": 1,
+          "DisplayPattern": "*唉*……不管生意有多好，总感觉还是满足不了我的成功欲。我到底是怎么回事？大概还是对这过于平淡的生活产生了厌倦吧。"
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "年轻的时候，总是有好多有意思的事可以做……现在呢，不营业的时候我也只是消磨消磨时间。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed4",
+          "PageIndex": 2,
+          "DisplayPattern": "年轻的时候，总是有好多有意思的事可以做……现在呢，不营业的时候我也只是消磨消磨时间。"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "如果有农产品的话，卖给我也可以哦。",
+          "AudioPath": "assets/zh-CN/Pierre/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "如果有农产品的话，卖给我也可以哦。"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "当然了，价格绝对包你满意！",
+          "AudioPath": "assets/zh-CN/Pierre/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "当然了，价格绝对包你满意！"
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "真的很感激你的惠顾，{Farmer_Name}先生。最近想要盈利真的是越来越难了。",
+          "AudioPath": "assets/zh-CN/Pierre/46_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu2",
+          "PageIndex": 0,
+          "DisplayPattern": "真的很感激你的惠顾，先生。最近想要盈利真的是越来越难了。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "真的很感激你的惠顾，{Farmer_Name}女士。最近想要盈利真的是越来越难了。",
+          "AudioPath": "assets/zh-CN/Pierre/47_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu2",
+          "PageIndex": 1,
+          "DisplayPattern": "真的很感激你的惠顾，女士。最近想要盈利真的是越来越难了。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "# {Portrait:Happy} pierre2",
+          "AudioPath": "assets/zh-CN/Pierre/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu8",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierre2"
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "阿比盖尔真的长得像我吗？我跟你说的话你可别和我老婆乱说……但有时候我真怀疑我是不是真的父亲。$k {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu8",
+          "PageIndex": 1,
+          "DisplayPattern": "阿比盖尔真的长得像我吗？我跟你说的话你可别和我老婆乱说……但有时候我真怀疑我是不是真的父亲。"
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "别告诉我老婆啊……我其实很讨厌做饭的。",
+          "AudioPath": "assets/zh-CN/Pierre/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu8",
+          "PageIndex": 2,
+          "DisplayPattern": "别告诉我老婆啊……我其实很讨厌做饭的。"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "# {Portrait:Happy} pierreJoja",
+          "AudioPath": "assets/zh-CN/Pierre/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreJoja"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "自从 Joja 公司进驻小镇后，我这里生意就不好了。本地的小杂货店，怎么可能和 Joja 比货物种类呢。$k {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "自从 Joja 公司进驻小镇后，我这里生意就不好了。本地的小杂货店，怎么可能和 Joja 比货物种类呢。"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "嗨。最近农场怎么样了？",
+          "AudioPath": "assets/zh-CN/Pierre/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "嗨。最近农场怎么样了？"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "也许我的种子能够为你带来大丰收呢。",
+          "AudioPath": "assets/zh-CN/Pierre/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 3,
+          "DisplayPattern": "也许我的种子能够为你带来大丰收呢。"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "如果你能找到山货，可以在我这里卖掉哦。",
+          "AudioPath": "assets/zh-CN/Pierre/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "如果你能找到山货，可以在我这里卖掉哦。"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "告诉你个秘密好了。店里客人少或者快打烊时，我会在柜台后面练习美声。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "告诉你个秘密好了。店里客人少或者快打烊时，我会在柜台后面练习美声。"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "不要告诉任何人。",
+          "AudioPath": "assets/zh-CN/Pierre/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "不要告诉任何人。"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "# {Portrait:Happy} pierreBlue",
+          "AudioPath": "assets/zh-CN/Pierre/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreBlue"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "*唉* ……整天在柜台后面，都无聊死了。$k {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "*唉* ……整天在柜台后面，都无聊死了。"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "其实我也想出去走走，可店里不能没人照应啊。",
+          "AudioPath": "assets/zh-CN/Pierre/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 2,
+          "DisplayPattern": "其实我也想出去走走，可店里不能没人照应啊。"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "听说最近花儿都开了，到处都是芬芳四溢的香气。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 3,
+          "DisplayPattern": "听说最近花儿都开了，到处都是芬芳四溢的香气。"
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "总有一天，我会去大城市里开一家新店，然后举世闻名！",
+          "AudioPath": "assets/zh-CN/Pierre/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "总有一天，我会去大城市里开一家新店，然后举世闻名！"
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "不过，小镇里的生意再怎么好，也还是不景气，也攒不了多少钱呢…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed6",
+          "PageIndex": 1,
+          "DisplayPattern": "不过，小镇里的生意再怎么好，也还是不景气，也攒不了多少钱呢……"
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "自从 Joja 超市关门，生意就一直挺好的。",
+          "AudioPath": "assets/zh-CN/Pierre/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed6",
+          "PageIndex": 2,
+          "DisplayPattern": "自从 Joja 超市关门，生意就一直挺好的。"
+        },
+        {
+          "DialogueFrom": "Thu4",
+          "DialogueText": "嘿，{Farmer_Name}。你是我最爱的顾客哦！",
+          "AudioPath": "assets/zh-CN/Pierre/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu4",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，。你是我最爱的顾客哦！"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "现在开始卖夏季种子了！还是赶紧囤积比较好哦。",
+          "AudioPath": "assets/zh-CN/Pierre/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "现在开始卖夏季种子了！还是赶紧囤积比较好哦。"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "今天终于不上班了，真开心。",
+          "AudioPath": "assets/zh-CN/Pierre/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "今天终于不上班了，真开心。"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "Joja 已经不在了，所以我觉得有责任一周七天都开着店，毕竟大伙都要来我这买东西！",
+          "AudioPath": "assets/zh-CN/Pierre/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Joja 已经不在了，所以我觉得有责任一周七天都开着店，毕竟大伙都要来我这买东西！"
+        },
+        {
+          "DialogueFrom": "summer_Wed2",
+          "DialogueText": "开店是我生活的重心，但有时候还是得休息一天的……",
+          "AudioPath": "assets/zh-CN/Pierre/69.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed2",
+          "PageIndex": 0,
+          "DisplayPattern": "开店是我生活的重心，但有时候还是得休息一天的……"
+        },
+        {
+          "DialogueFrom": "summer_Wed2",
+          "DialogueText": "Joja 已经不在了，所以我觉得有责任一周七天都开着店，毕竟大伙都要来我这买东西！",
+          "AudioPath": "assets/zh-CN/Pierre/70.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed2",
+          "PageIndex": 1,
+          "DisplayPattern": "Joja 已经不在了，所以我觉得有责任一周七天都开着店，毕竟大伙都要来我这买东西！"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "大家都在外面踏青，没人想来买东西……*唉*",
+          "AudioPath": "assets/zh-CN/Pierre/71.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "大家都在外面踏青，没人想来买东西……*唉*"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "嗨。怎么样，我的夏季种子质量还不错吧？",
+          "AudioPath": "assets/zh-CN/Pierre/72.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "嗨。怎么样，我的夏季种子质量还不错吧？"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "夏天还是吃清爽的沙拉最合适，你也这么觉得吧？",
+          "AudioPath": "assets/zh-CN/Pierre/73.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "夏天还是吃清爽的沙拉最合适，你也这么觉得吧？"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "呃……这里真的好热。",
+          "AudioPath": "assets/zh-CN/Pierre/74.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "呃……这里真的好热。"
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "冬天是无法进行播种的，所以我也没有种子可以卖给你。",
+          "AudioPath": "assets/zh-CN/Pierre/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "冬天是无法进行播种的，所以我也没有种子可以卖给你。"
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "这一下雪，咱们俩的收益就都没了呢。",
+          "AudioPath": "assets/zh-CN/Pierre/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "这一下雪，咱们俩的收益就都没了呢。"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "总算能休息一天了。",
+          "AudioPath": "assets/zh-CN/Pierre/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "总算能休息一天了。"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "Joja 已经不在了，所以我觉得有责任一周七天都开着店，毕竟大伙都要来我这买东西！",
+          "AudioPath": "assets/zh-CN/Pierre/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Joja 已经不在了，所以我觉得有责任一周七天都开着店，毕竟大伙都要来我这买东西！"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "# {Portrait:Happy} pierreDin",
+          "AudioPath": "assets/zh-CN/Pierre/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreDin"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "我今晚要用烛光晚餐和星露红酒，给卡洛琳一个惊喜。可别告诉其他人！$k",
+          "AudioPath": "assets/zh-CN/Pierre/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "我今晚要用烛光晚餐和星露红酒，给卡洛琳一个惊喜。可别告诉其他人！"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "嗨。要买点东西吗？",
+          "AudioPath": "assets/zh-CN/Pierre/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "嗨。要买点东西吗？"
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "我主要交易食品，你要是想出售矿石或木材的话就得去找其他人了。",
+          "AudioPath": "assets/zh-CN/Pierre/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "我主要交易食品，你要是想出售矿石或木材的话就得去找其他人了。"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "刚刚一阵寒风刮过，是我的错觉吗？",
+          "AudioPath": "assets/zh-CN/Pierre/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "刚刚一阵寒风刮过，是我的错觉吗？"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "要不是要看店，我早就出去玩了。",
+          "AudioPath": "assets/zh-CN/Pierre/84.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "要不是要看店，我早就出去玩了。"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "这天气打雪仗挺好的。",
+          "AudioPath": "assets/zh-CN/Pierre/85.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "这天气打雪仗挺好的。"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "秋天的种子到货了！冬天是种不了农作物的，所以这是今年的最后一次耕种了。",
+          "AudioPath": "assets/zh-CN/Pierre/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "秋天的种子到货了！冬天是种不了农作物的，所以这是今年的最后一次耕种了。"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "趁现在全力以赴吧？",
+          "AudioPath": "assets/zh-CN/Pierre/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "趁现在全力以赴吧？"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "天气开始冷了……",
+          "AudioPath": "assets/zh-CN/Pierre/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "天气开始冷了……"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "也就是说更多人会来店里取暖……呵呵。",
+          "AudioPath": "assets/zh-CN/Pierre/89.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "也就是说更多人会来店里取暖……呵呵。"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "# {Portrait:Happy} pierreMEGA",
+          "AudioPath": "assets/zh-CN/Pierre/90.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreMEGA"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "我的梦想是建立无数分店、成为富豪。哈哈哈。$k",
+          "AudioPath": "assets/zh-CN/Pierre/91.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "我的梦想是建立无数分店、成为富豪。哈哈哈。"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "嗨。农场那边还顺利吗？",
+          "AudioPath": "assets/zh-CN/Pierre/92.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "嗨。农场那边还顺利吗？"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "也许我的种子能够为你带来大丰收呢。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/93.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 3,
+          "DisplayPattern": "也许我的种子能够为你带来大丰收呢。"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "我愿意购买你的农场产生产的各种农作物。",
+          "AudioPath": "assets/zh-CN/Pierre/94.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "我愿意购买你的农场产生产的各种农作物。"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "当然，我会通过转手销售获得利润……但这是我作为一家有口皆碑的商店主人的福利啊。",
+          "AudioPath": "assets/zh-CN/Pierre/95.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "当然，我会通过转手销售获得利润……但这是我作为一家有口皆碑的商店主人的福利啊。"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "你别多想……",
+          "AudioPath": "assets/zh-CN/Pierre/96.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "你别多想……"
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "要不是要看店，我早就出去玩了。",
+          "AudioPath": "assets/zh-CN/Pierre/97.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "要不是要看店，我早就出去玩了。"
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "秋叶很美，蘑菇也破土而出。",
+          "AudioPath": "assets/zh-CN/Pierre/98.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "秋叶很美，蘑菇也破土而出。"
+        },
+        {
+          "DialogueFrom": "Event_naga1",
+          "DialogueText": "谢谢你，感激不尽。你就当做没看见，好吗？ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/99.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga1",
+          "PageIndex": 0,
+          "DisplayPattern": "谢谢你，感激不尽。你就当做没看见，好吗？"
+        },
+        {
+          "DialogueFrom": "Event_naga1",
+          "DialogueText": "而我也会忘记你随便进出我房间的事！",
+          "AudioPath": "assets/zh-CN/Pierre/100.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga1",
+          "PageIndex": 1,
+          "DisplayPattern": "而我也会忘记你随便进出我房间的事！"
+        },
+        {
+          "DialogueFrom": "Event_naga2",
+          "DialogueText": "你真的要那样对我？你真卑鄙。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/101.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga2",
+          "PageIndex": 0,
+          "DisplayPattern": "你真的要那样对我？你真卑鄙。"
+        },
+        {
+          "DialogueFrom": "Event_naga2",
+          "DialogueText": "你本就不该随便进出我的房间！八卦的邻居什么的最讨厌了。 {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Pierre/102.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga2",
+          "PageIndex": 1,
+          "DisplayPattern": "你本就不该随便进出我的房间！八卦的邻居什么的最讨厌了。"
+        },
+        {
+          "DialogueFrom": "Fair_Judging",
+          "DialogueText": "嘿，祝好运。",
+          "AudioPath": "assets/zh-CN/Pierre/103.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judging",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，祝好运。"
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerLost",
+          "DialogueText": "屹立在顶点感觉可真棒啊！哈！ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/104.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judged_PlayerLost",
+          "PageIndex": 0,
+          "DisplayPattern": "屹立在顶点感觉可真棒啊！哈！"
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerLost",
+          "DialogueText": "努力总算是有成果了。",
+          "AudioPath": "assets/zh-CN/Pierre/105.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judged_PlayerLost",
+          "PageIndex": 1,
+          "DisplayPattern": "努力总算是有成果了。"
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerWon",
+          "DialogueText": "真不敢相信，我竟然输了…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/106.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judged_PlayerWon",
+          "PageIndex": 0,
+          "DisplayPattern": "真不敢相信，我竟然输了……"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "这种天气下很多人都待在家里……生意不好做啊。 {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/107.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "这种天气下很多人都待在家里……生意不好做啊。"
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s0",
+          "DialogueText": "Hello there, {Farmer_Name}. So! Your first year in Stardew Valley is almost over, huh?",
+          "AudioPath": "assets/zh-CN/Pierre/108.ogg",
+          "TranslationKey": "Events/Farm:102:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hello there, . So! Your first year in Stardew Valley is almost over, huh?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s1",
+          "DialogueText": "If you keep buying seeds from me, you'll be twice as productive next year! {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/109.ogg",
+          "TranslationKey": "Events/Farm:102:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "If you keep buying seeds from me, you'll be twice as productive next year!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s2",
+          "DialogueText": "And I have some exciting news...",
+          "AudioPath": "assets/zh-CN/Pierre/110.ogg",
+          "TranslationKey": "Events/Farm:102:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "And I have some exciting news..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s3",
+          "DialogueText": "I'll be selling new seed varieties in my shop next year! I should have 1 new variety per season.",
+          "AudioPath": "assets/zh-CN/Pierre/111.ogg",
+          "TranslationKey": "Events/Farm:102:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll be selling new seed varieties in my shop next year! I should have 1 new variety per season."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s4",
+          "DialogueText": "...Well, that's all I wanted to say. Have a good one.",
+          "AudioPath": "assets/zh-CN/Pierre/112.ogg",
+          "TranslationKey": "Events/Farm:102:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "...Well, that's all I wanted to say. Have a good one."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s5",
+          "DialogueText": "You know... I wouldn't even bother trying my competitor's seeds. {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Pierre/113.ogg",
+          "TranslationKey": "Events/Farm:102:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "You know... I wouldn't even bother trying my competitor's seeds."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s6",
+          "DialogueText": "Pierre's seeds are the *highest* quality seeds you'll find anywhere. That's a promise. {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/114.ogg",
+          "TranslationKey": "Events/Farm:102:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Pierre's seeds are the *highest* quality seeds you'll find anywhere. That's a promise."
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s0",
+          "DialogueText": "Abigail?! {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Pierre/115.ogg",
+          "TranslationKey": "Events/Town:4:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Abigail?!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s1",
+          "DialogueText": "I've been looking all over for you! Your mother wants you to come home and help with dinner! {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Pierre/116.ogg",
+          "TranslationKey": "Events/Town:4:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been looking all over for you! Your mother wants you to come home and help with dinner!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s2",
+          "DialogueText": "What are you doing in the graveyard, anyway? This is no place for a young lady! {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Pierre/117.ogg",
+          "TranslationKey": "Events/Town:4:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "What are you doing in the graveyard, anyway? This is no place for a young lady!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s3",
+          "DialogueText": "...!",
+          "AudioPath": "assets/zh-CN/Pierre/118.ogg",
+          "TranslationKey": "Events/Town:4:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "...!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s4",
+          "DialogueText": "Come back!",
+          "AudioPath": "assets/zh-CN/Pierre/119.ogg",
+          "TranslationKey": "Events/Town:4:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Come back!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s5",
+          "DialogueText": "Okay, my dad won't find us here...",
+          "AudioPath": "assets/zh-CN/Pierre/120.ogg",
+          "TranslationKey": "Events/Town:4:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay, my dad won't find us here..."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s0",
+          "DialogueText": "How does it feel?",
+          "AudioPath": "assets/zh-CN/Pierre/121.ogg",
+          "TranslationKey": "Events/Town:191393:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "How does it feel?"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s1",
+          "DialogueText": "Let's be reasonable.",
+          "AudioPath": "assets/zh-CN/Pierre/122.ogg",
+          "TranslationKey": "Events/Town:191393:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's be reasonable."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s2",
+          "DialogueText": "Let's settle this the old-fashioned way.",
+          "AudioPath": "assets/zh-CN/Pierre/123.ogg",
+          "TranslationKey": "Events/Town:191393:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's settle this the old-fashioned way."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s3",
+          "DialogueText": "No...not this time... {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Pierre/124.ogg",
+          "TranslationKey": "Events/Town:191393:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "No...not this time..."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s4",
+          "DialogueText": "Gather 'round, everyone!",
+          "AudioPath": "assets/zh-CN/Pierre/125.ogg",
+          "TranslationKey": "Events/Town:191393:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Gather 'round, everyone!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s5",
+          "DialogueText": "I remember when I first moved to Pelican Town... This building was active and vibrant.",
+          "AudioPath": "assets/zh-CN/Pierre/126.ogg",
+          "TranslationKey": "Events/Town:191393:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "I remember when I first moved to Pelican Town... This building was active and vibrant."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s6",
+          "DialogueText": "We worked together to make the town a better place. There was a real sense of community.",
+          "AudioPath": "assets/zh-CN/Pierre/127.ogg",
+          "TranslationKey": "Events/Town:191393:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "We worked together to make the town a better place. There was a real sense of community."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s7",
+          "DialogueText": "George, you always used to do the crossword puzzle while sipping coffee in the community kitchen. Remember?",
+          "AudioPath": "assets/zh-CN/Pierre/128.ogg",
+          "TranslationKey": "Events/Town:191393:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "George, you always used to do the crossword puzzle while sipping coffee in the community kitchen. Remember?"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s8",
+          "DialogueText": "Emily, you wove that custom banner for the Stardew Valley Fair.",
+          "AudioPath": "assets/zh-CN/Pierre/129.ogg",
+          "TranslationKey": "Events/Town:191393:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Emily, you wove that custom banner for the Stardew Valley Fair."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s9",
+          "DialogueText": "I remember you working on that for years! {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/130.ogg",
+          "TranslationKey": "Events/Town:191393:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "I remember you working on that for years!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s10",
+          "DialogueText": "Willy!",
+          "AudioPath": "assets/zh-CN/Pierre/131.ogg",
+          "TranslationKey": "Events/Town:191393:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Willy!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s11",
+          "DialogueText": "Remember when your little crab experiment got out of hand? {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/132.ogg",
+          "TranslationKey": "Events/Town:191393:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Remember when your little crab experiment got out of hand?"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s12",
+          "DialogueText": "But Gus saved the day with a brilliant idea... A crab leg feast for the entire valley!",
+          "AudioPath": "assets/zh-CN/Pierre/133.ogg",
+          "TranslationKey": "Events/Town:191393:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "But Gus saved the day with a brilliant idea... A crab leg feast for the entire valley!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s13",
+          "DialogueText": "You see, everyone? Our community is what makes Pelican Town special.",
+          "AudioPath": "assets/zh-CN/Pierre/134.ogg",
+          "TranslationKey": "Events/Town:191393:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "You see, everyone? Our community is what makes Pelican Town special."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s14",
+          "DialogueText": "When JojaMart came to town we lost sight of that. {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/135.ogg",
+          "TranslationKey": "Events/Town:191393:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "When JojaMart came to town we lost sight of that."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s15",
+          "DialogueText": "But now, thanks to {Farmer_Name}, we have a second chance.",
+          "AudioPath": "assets/zh-CN/Pierre/136.ogg",
+          "TranslationKey": "Events/Town:191393:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "But now, thanks to , we have a second chance."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s16",
+          "DialogueText": "I'm asking that you join me in boycotting JojaMart! We have the power to reclaim our old way of life!",
+          "AudioPath": "assets/zh-CN/Pierre/137.ogg",
+          "TranslationKey": "Events/Town:191393:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm asking that you join me in boycotting JojaMart! We have the power to reclaim our old way of life!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s17",
+          "DialogueText": "Who's with me?",
+          "AudioPath": "assets/zh-CN/Pierre/138.ogg",
+          "TranslationKey": "Events/Town:191393:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "Who's with me?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s0",
+          "DialogueText": "Hey! Who's in the bedroom? {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Pierre/139.ogg",
+          "TranslationKey": "Events/SeedShop:16:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey! Who's in the bedroom?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s1",
+          "DialogueText": "Wha...? How did you find that?! {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Pierre/140.ogg",
+          "TranslationKey": "Events/SeedShop:16:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Wha...? How did you find that?!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s2",
+          "DialogueText": "Quick, give it to me! {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Pierre/141.ogg",
+          "TranslationKey": "Events/SeedShop:16:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Quick, give it to me!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s3",
+          "DialogueText": "Promise me you won't tell anyone about this.",
+          "AudioPath": "assets/zh-CN/Pierre/142.ogg",
+          "TranslationKey": "Events/SeedShop:16:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Promise me you won't tell anyone about this."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s4",
+          "DialogueText": "Your secret is safe with me.",
+          "AudioPath": "assets/zh-CN/Pierre/143.ogg",
+          "TranslationKey": "Events/SeedShop:16:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Your secret is safe with me."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s5",
+          "DialogueText": "Your wife deserves to know about this.",
+          "AudioPath": "assets/zh-CN/Pierre/144.ogg",
+          "TranslationKey": "Events/SeedShop:16:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Your wife deserves to know about this."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s6",
+          "DialogueText": "*grumble*...now I have to find a new hiding spot...*grumble* {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Pierre/145.ogg",
+          "TranslationKey": "Events/SeedShop:16:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "*grumble*...now I have to find a new hiding spot...*grumble*"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/3102768:s0",
+          "DialogueText": "Welcome To Pierre's! How can I help you?",
+          "AudioPath": "assets/zh-CN/Pierre/146.ogg",
+          "TranslationKey": "Events/SeedShop:3102768:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Welcome To Pierre's! How can I help you?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/3102768:s1",
+          "DialogueText": "Percent!?!?",
+          "AudioPath": "assets/zh-CN/Pierre/147.ogg",
+          "TranslationKey": "Events/SeedShop:3102768:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Percent!?!?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/3102768:s2",
+          "DialogueText": "But... I can't match those prices! I'd be selling at a loss! {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/148.ogg",
+          "TranslationKey": "Events/SeedShop:3102768:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "But... I can't match those prices! I'd be selling at a loss!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s0",
+          "DialogueText": "Gus, I have just the thing for you...",
+          "AudioPath": "assets/zh-CN/Pierre/149.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Gus, I have just the thing for you..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s1",
+          "DialogueText": "It's a bundle of locally sourced, organic, heirloom veggies...",
+          "AudioPath": "assets/zh-CN/Pierre/150.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a bundle of locally sourced, organic, heirloom veggies..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s2",
+          "DialogueText": "These are hand picked and sorted, to ensure only the very finest in quality and taste.",
+          "AudioPath": "assets/zh-CN/Pierre/151.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "These are hand picked and sorted, to ensure only the very finest in quality and taste."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s3",
+          "DialogueText": "This is a once-in-a-lifetime kind of offer!",
+          "AudioPath": "assets/zh-CN/Pierre/152.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "This is a once-in-a-lifetime kind of offer!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s4",
+          "DialogueText": "ONLY... *mumble* mumble*",
+          "AudioPath": "assets/zh-CN/Pierre/153.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "ONLY... *mumble* mumble*"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s5",
+          "DialogueText": "Heh... that's right. It really is a bargain, isn't it?",
+          "AudioPath": "assets/zh-CN/Pierre/154.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Heh... that's right. It really is a bargain, isn't it?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s6",
+          "DialogueText": "Wait! How about 10,000g then!? {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Pierre/155.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Wait! How about 10,000g then!?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s7",
+          "DialogueText": "It's a disaster, {Farmer_Name}... {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/156.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a disaster, ..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s8",
+          "DialogueText": "I thought this was a surefire business strategy. {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/157.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I thought this was a surefire business strategy."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s9",
+          "DialogueText": "But it turns out, no one is willing to buy vegetables at a 10x price markup, even if I put the little 'organic' sticker on them. {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/158.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "But it turns out, no one is willing to buy vegetables at a 10x price markup, even if I put the little 'organic' sticker on them."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s10",
+          "DialogueText": "You're right, you can't run a business without taking some risk.",
+          "AudioPath": "assets/zh-CN/Pierre/159.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "You're right, you can't run a business without taking some risk."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s11",
+          "DialogueText": "Hey, I'm not forcing anyone to buy it! If they don't like the price, they can move on. {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Pierre/160.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, I'm not forcing anyone to buy it! If they don't like the price, they can move on."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s12",
+          "DialogueText": "...But, I guess you have a point. If I make all my customers angry, then pretty soon I won't have any customers at all... {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/161.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "...But, I guess you have a point. If I make all my customers angry, then pretty soon I won't have any customers at all..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s13",
+          "DialogueText": "By the way, {Farmer_Name}... you look like you could really use a veggie dinner tonight.",
+          "AudioPath": "assets/zh-CN/Pierre/162.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "By the way, ... you look like you could really use a veggie dinner tonight."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s14",
+          "DialogueText": "What do you say, wanna buy these back for the low, low price of 2,501g?",
+          "AudioPath": "assets/zh-CN/Pierre/163.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "What do you say, wanna buy these back for the low, low price of 2,501g?"
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s0",
+          "DialogueText": "No... Not this time, Morris. {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Pierre/164.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "No... Not this time, Morris."
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s1",
+          "DialogueText": "I think it's time we settled this once and for all. {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Pierre/165.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I think it's time we settled this once and for all."
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s2",
+          "DialogueText": "If you're too scared to fight me then bring one of your co-workers! Or are all Joja employees such cowards? {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Pierre/166.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "If you're too scared to fight me then bring one of your co-workers! Or are all Joja employees such cowards?"
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s3",
+          "DialogueText": "And the way you throw punches is just like Joja... {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Pierre/167.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "And the way you throw punches is just like Joja..."
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s4",
+          "DialogueText": "Quantity over quality!",
+          "AudioPath": "assets/zh-CN/Pierre/168.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Quantity over quality!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Pierre",
+          "DialogueText": "我的店里有全谷质量最好的商品。请来好好看看我的农庄展览！",
+          "AudioPath": "assets/zh-CN/Pierre/169.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "我的店里有全谷质量最好的商品。请来好好看看我的农庄展览！"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Pierre_y2",
+          "DialogueText": "我有信心在今年的农庄展览比赛中脱颖而出！ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/170.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "我有信心在今年的农庄展览比赛中脱颖而出！"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Pierre",
+          "DialogueText": "??",
+          "AudioPath": "assets/zh-CN/Pierre/171.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "??"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Pierre_y2",
+          "DialogueText": "啊，{Farmer_Name}，你来啦！今晚我这有很多好东西，来看看吧！ {Portrait:Neutral}",
+          "AudioPath": "assets/zh-CN/Pierre/172.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "啊，，你来啦！今晚我这有很多好东西，来看看吧！"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Pierre",
+          "DialogueText": "咦！你怎么跑来这里了？ {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Pierre/173.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "咦！你怎么跑来这里了？"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Pierre",
+          "DialogueText": "不要乱碰任何东西。",
+          "AudioPath": "assets/zh-CN/Pierre/174.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "不要乱碰任何东西。"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Pierre_y2",
+          "DialogueText": "嗯，想要做一笔幕后交易？哈！挺精明的嘛。",
+          "AudioPath": "assets/zh-CN/Pierre/175.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "嗯，想要做一笔幕后交易？哈！挺精明的嘛。"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre",
+          "DialogueText": "哟！你怎么又回来了？ {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Pierre/176.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "哟！你怎么又回来了？"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre",
+          "DialogueText": "不要碰任何东西。",
+          "AudioPath": "assets/zh-CN/Pierre/177.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "不要碰任何东西。"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre_y2",
+          "DialogueText": "喂，你在这里做什么！ {Portrait:Unique}",
+          "AudioPath": "assets/zh-CN/Pierre/178.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "喂，你在这里做什么！"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre_y2",
+          "DialogueText": "呃，如果你要待在这里的话……能不能帮我看一会儿摊子？我想去尝一尝莱纳斯做的酸甜果冻。",
+          "AudioPath": "assets/zh-CN/Pierre/179.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "呃，如果你要待在这里的话……能不能帮我看一会儿摊子？我想去尝一尝莱纳斯做的酸甜果冻。"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre_y2",
+          "DialogueText": "跟你开玩笑的，我怎么可能离开收银台…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/180.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre_y2",
+          "PageIndex": 2,
+          "DisplayPattern": "跟你开玩笑的，我怎么可能离开收银台……"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre",
+          "DialogueText": "嗯……要是我能讨好州长，说不定他会给我减税呢……",
+          "AudioPath": "assets/zh-CN/Pierre/181.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "嗯……要是我能讨好州长，说不定他会给我减税呢……"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre",
+          "DialogueText": "不知道他喜不喜欢陈年威士忌？",
+          "AudioPath": "assets/zh-CN/Pierre/182.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "不知道他喜不喜欢陈年威士忌？"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre",
+          "DialogueText": "得找机会不让镇长一直跟他闲扯。",
+          "AudioPath": "assets/zh-CN/Pierre/183.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre",
+          "PageIndex": 2,
+          "DisplayPattern": "得找机会不让镇长一直跟他闲扯。"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre_y2",
+          "DialogueText": "等刘易斯从州长身边离开……我就凑上去打招呼…… {Portrait:Neutral}",
+          "AudioPath": "assets/zh-CN/Pierre/184.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "等刘易斯从州长身边离开……我就凑上去打招呼……"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre_y2",
+          "DialogueText": "啊，你怎么在这里。 {Portrait:Love}",
+          "AudioPath": "assets/zh-CN/Pierre/185.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "啊，你怎么在这里。"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre_y2",
+          "DialogueText": "你如果想买东西的话，到柜台对面跟我说吧。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/186.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre_y2",
+          "PageIndex": 2,
+          "DisplayPattern": "你如果想买东西的话，到柜台对面跟我说吧。"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Pierre",
+          "DialogueText": "喂……记得明天到店里来拿你的秋季种子！",
+          "AudioPath": "assets/zh-CN/Pierre/187.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "喂……记得明天到店里来拿你的秋季种子！"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Pierre_y2",
+          "DialogueText": "你好啊，农夫{Farmer_Name}。明天记得来我的商店买秋季种子啊！ {Portrait:Neutral}",
+          "AudioPath": "assets/zh-CN/Pierre/188.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "你好啊，农夫。明天记得来我的商店买秋季种子啊！"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Pierre",
+          "DialogueText": "我生意近来很红火……多亏了冬日星盛宴！ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/189.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "我生意近来很红火……多亏了冬日星盛宴！"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Pierre",
+          "DialogueText": "小子，逢年过节总能赚得盆满钵满。要是我能发明些节日就好了……",
+          "AudioPath": "assets/zh-CN/Pierre/190.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "小子，逢年过节总能赚得盆满钵满。要是我能发明些节日就好了……"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Pierre_y2",
+          "DialogueText": "忘记买礼物了吗？我可以帮你搞定！来看看我的货。 {Portrait:Neutral}",
+          "AudioPath": "assets/zh-CN/Pierre/191.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "忘记买礼物了吗？我可以帮你搞定！来看看我的货。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Pierre",
+          "DialogueText": "这场雪好冷，我手指都冻麻了…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/192.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "这场雪好冷，我手指都冻麻了……"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Pierre_y2",
+          "DialogueText": "我给我们一家都准备了冬日之星的毛衣。",
+          "AudioPath": "assets/zh-CN/Pierre/193.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "我给我们一家都准备了冬日之星的毛衣。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Pierre_y2",
+          "DialogueText": "要是阿比盖尔也能穿上就好了…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/194.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Pierre_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "要是阿比盖尔也能穿上就好了……"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s0",
+          "DialogueText": "我最喜欢这个了！非常感谢！",
+          "AudioPath": "assets/zh-CN/Pierre/195.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "我最喜欢这个了！非常感谢！"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s1",
+          "DialogueText": "你人真好。我喜欢这个。",
+          "AudioPath": "assets/zh-CN/Pierre/196.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "你人真好。我喜欢这个。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s2",
+          "DialogueText": "这可不是我的最爱……",
+          "AudioPath": "assets/zh-CN/Pierre/197.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "这可不是我的最爱……"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s3",
+          "DialogueText": "拜托，再也别把这个带给我了。",
+          "AudioPath": "assets/zh-CN/Pierre/198.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "拜托，再也别把这个带给我了。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s4",
+          "DialogueText": "礼物？谢谢！",
+          "AudioPath": "assets/zh-CN/Pierre/199.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "礼物？谢谢！"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow",
+          "DialogueText": "嘿，记得前几天你卖给我的{2}吗？我最终把它做成了晚餐。",
+          "AudioPath": "assets/zh-CN/Pierre/200.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，记得前几天你卖给我的{2}吗？我最终把它做成了晚餐。"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow",
+          "DialogueText": "我不能说晚餐是成功的…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/201.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow",
+          "PageIndex": 1,
+          "DisplayPattern": "我不能说晚餐是成功的……"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow",
+          "DialogueText": "……好吧，……言归正传，哈？",
+          "AudioPath": "assets/zh-CN/Pierre/202.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow",
+          "PageIndex": 2,
+          "DisplayPattern": "……好吧，……言归正传，哈？"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh",
+          "DialogueText": "嘿，记得前几天你卖给我的{2}吗？我最终把它做成了晚餐。",
+          "AudioPath": "assets/zh-CN/Pierre/203.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh",
+          "PageIndex": 0,
+          "DisplayPattern": "嘿，记得前几天你卖给我的{2}吗？我最终把它做成了晚餐。"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh",
+          "DialogueText": "我的妻子喜欢极了！……在我用海鲜沙司煨它时，阿比盖尔竟然开始尽情享用它了。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/204.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh",
+          "PageIndex": 1,
+          "DisplayPattern": "我的妻子喜欢极了！……在我用海鲜沙司煨它时，阿比盖尔竟然开始尽情享用它了。"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh",
+          "DialogueText": "……好吧……言归正传，哈？",
+          "AudioPath": "assets/zh-CN/Pierre/205.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh",
+          "PageIndex": 2,
+          "DisplayPattern": "……好吧……言归正传，哈？"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow_Willy",
+          "DialogueText": "你好啊……你还记得那天你卖给我的{2}吗？那啥，我昨晚在自家小屋里把它烧焦了……",
+          "AudioPath": "assets/zh-CN/Pierre/206.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow_Willy",
+          "PageIndex": 0,
+          "DisplayPattern": "你好啊……你还记得那天你卖给我的{2}吗？那啥，我昨晚在自家小屋里把它烧焦了……"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow_Willy",
+          "DialogueText": "那真是我吃过的最干巴巴的鱼了…… {Portrait:Sad}",
+          "AudioPath": "assets/zh-CN/Pierre/207.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow_Willy",
+          "PageIndex": 1,
+          "DisplayPattern": "那真是我吃过的最干巴巴的鱼了……"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh_Willy",
+          "DialogueText": "你好啊！还记得你那天弄来的{2}吗？那啥，我昨晚在自家小屋里把它烧焦了……",
+          "AudioPath": "assets/zh-CN/Pierre/208.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh_Willy",
+          "PageIndex": 0,
+          "DisplayPattern": "你好啊！还记得你那天弄来的{2}吗？那啥，我昨晚在自家小屋里把它烧焦了……"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh_Willy",
+          "DialogueText": "那真是自打小时候起我吃过的最好的鱼了！ {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/209.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh_Willy",
+          "PageIndex": 1,
+          "DisplayPattern": "那真是自打小时候起我吃过的最好的鱼了！"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_love_BeforeMovie",
+          "DialogueText": "我从小就看那些旧的科幻电影，所以我对看一个现代的演绎版很有兴趣。",
+          "AudioPath": "assets/zh-CN/Pierre/210.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "我从小就看那些旧的科幻电影，所以我对看一个现代的演绎版很有兴趣。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_love_AfterMovie",
+          "DialogueText": "哈！这跟我期待的不太一样，但我还是很喜欢！我真的很认同温布斯。 {Portrait:Happy}",
+          "AudioPath": "assets/zh-CN/Pierre/211.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "哈！这跟我期待的不太一样，但我还是很喜欢！我真的很认同温布斯。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_like_BeforeMovie",
+          "DialogueText": "我通常一直在干活，所以做这样的事真的很不错。",
+          "AudioPath": "assets/zh-CN/Pierre/212.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "我通常一直在干活，所以做这样的事真的很不错。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_like_AfterMovie",
+          "DialogueText": "不错！我想知道他们是否有我可以收藏的周边产品……",
+          "AudioPath": "assets/zh-CN/Pierre/213.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "不错！我想知道他们是否有我可以收藏的周边产品……"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "DialogueText": "我觉得观察其他人开店很有意思，毕竟我也是店主。",
+          "AudioPath": "assets/zh-CN/Pierre/214.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "我觉得观察其他人开店很有意思，毕竟我也是店主。"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "DialogueText": "（悄悄地）我店里的货比桑迪的强太多了！别告诉她啊。",
+          "AudioPath": "assets/zh-CN/Pierre/215.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "（悄悄地）我店里的货比桑迪的强太多了！别告诉她啊。"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Pierre",
+          "DialogueText": "嘘……我这可以用现金买三花蛋！嘿嘿……别跟刘易斯说啊。",
+          "AudioPath": "assets/zh-CN/Pierre/216.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "嘘……我这可以用现金买三花蛋！嘿嘿……别跟刘易斯说啊。"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Winter",
+          "DialogueText": "欢迎来到热气腾腾的皮埃尔种子店！",
+          "AudioPath": "assets/zh-CN/Pierre/217.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Winter",
+          "PageIndex": 0,
+          "DisplayPattern": "欢迎来到热气腾腾的皮埃尔种子店！"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_NotWinter",
+          "DialogueText": "欢迎来到皮埃尔种子店！",
+          "AudioPath": "assets/zh-CN/Pierre/218.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_NotWinter",
+          "PageIndex": 0,
+          "DisplayPattern": "欢迎来到皮埃尔种子店！"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Summer",
+          "DialogueText": "夏季种子有售！",
+          "AudioPath": "assets/zh-CN/Pierre/219.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Summer",
+          "PageIndex": 0,
+          "DisplayPattern": "夏季种子有售！"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_NotSummer",
+          "DialogueText": "种子出售！",
+          "AudioPath": "assets/zh-CN/Pierre/220.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_NotSummer",
+          "PageIndex": 0,
+          "DisplayPattern": "种子出售！"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Greeting1",
+          "DialogueText": "你好！",
+          "AudioPath": "assets/zh-CN/Pierre/221.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Greeting1",
+          "PageIndex": 0,
+          "DisplayPattern": "你好！"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Greeting2",
+          "DialogueText": "是农夫{Farmer_Name}！",
+          "AudioPath": "assets/zh-CN/Pierre/222.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Greeting2",
+          "PageIndex": 0,
+          "DisplayPattern": "是农夫{0}！"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Raining",
+          "DialogueText": "今天风和日丽，适合购物！",
+          "AudioPath": "assets/zh-CN/Pierre/223.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Raining",
+          "PageIndex": 0,
+          "DisplayPattern": "今天风和日丽，适合购物！"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_NotRaining",
+          "DialogueText": "欢迎！",
+          "AudioPath": "assets/zh-CN/Pierre/224.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_NotRaining",
+          "PageIndex": 0,
+          "DisplayPattern": "欢迎！"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_RareGreeting",
+          "DialogueText": "你带钱包了吧？",
+          "AudioPath": "assets/zh-CN/Pierre/225.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_RareGreeting",
+          "PageIndex": 0,
+          "DisplayPattern": "你带钱包了吧？"
+        }
+      ]
+    }
+  ]
+}

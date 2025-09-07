@@ -1,0 +1,296 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Gunther.ko-KR",
+      "VoicePackName": "DictionarV2 (Gunther - ko-KR)",
+      "Character": "Gunther",
+      "Language": "ko-KR",
+      "Entries": [
+        {
+          "DialogueFrom": "Event:Farm/66:s0|g=male",
+          "DialogueText": "Oh, good morning Mr. {Farmer_Name}!",
+          "AudioPath": "assets/ko-KR/Gunther/1_male.ogg",
+          "TranslationKey": "Events/Farm:66:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, good morning Mr. !",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Farm/66:s1|g=female",
+          "DialogueText": "Oh, good morning Ms. {Farmer_Name}!",
+          "AudioPath": "assets/ko-KR/Gunther/2_female.ogg",
+          "TranslationKey": "Events/Farm:66:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, good morning Ms. !",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Farm/66:s2",
+          "DialogueText": "I hope it's not too early... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Gunther/3.ogg",
+          "TranslationKey": "Events/Farm:66:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I hope it's not too early..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/66:s3",
+          "DialogueText": "Well, I just wanted to stop by and thank you in person for all the wonderful artifacts and minerals you've discovered... you've done so much for one person! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gunther/4.ogg",
+          "TranslationKey": "Events/Farm:66:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I just wanted to stop by and thank you in person for all the wonderful artifacts and minerals you've discovered... you've done so much for one person!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/66:s4",
+          "DialogueText": "In fact, I've just received a letter from the office of the regional secretary of artifacts... We're being honored with the coveted 'golden shovel' award for our significant contributions to the field!",
+          "AudioPath": "assets/ko-KR/Gunther/5.ogg",
+          "TranslationKey": "Events/Farm:66:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "In fact, I've just received a letter from the office of the regional secretary of artifacts... We're being honored with the coveted 'golden shovel' award for our significant contributions to the field!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/66:s5",
+          "DialogueText": "And it's all thanks to you! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gunther/6.ogg",
+          "TranslationKey": "Events/Farm:66:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "And it's all thanks to you!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/66:s6",
+          "DialogueText": "Well, I should let you get back to your work...",
+          "AudioPath": "assets/ko-KR/Gunther/7.ogg",
+          "TranslationKey": "Events/Farm:66:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I should let you get back to your work..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/66:s7",
+          "DialogueText": "Oh! I almost forgot!",
+          "AudioPath": "assets/ko-KR/Gunther/8.ogg",
+          "TranslationKey": "Events/Farm:66:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! I almost forgot!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/66:s8",
+          "DialogueText": "I have a gift for you... It's an old key that's been sealed in the museum vault for at least 100 years. It's a little rusty, but still beautiful. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gunther/9.ogg",
+          "TranslationKey": "Events/Farm:66:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I have a gift for you... It's an old key that's been sealed in the museum vault for at least 100 years. It's a little rusty, but still beautiful."
+        },
+        {
+          "DialogueFrom": "Event:Farm/66:s9",
+          "DialogueText": "You got the 'Rusty Key'! It's been added to your wallet.",
+          "AudioPath": "assets/ko-KR/Gunther/10.ogg",
+          "TranslationKey": "Events/Farm:66:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "You got the 'Rusty Key'! It's been added to your wallet."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s0",
+          "DialogueText": "It's about time!",
+          "AudioPath": "assets/ko-KR/Gunther/11.ogg",
+          "TranslationKey": "Events/Town:191393:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "It's about time!"
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s0",
+          "DialogueText": "Abysmal...",
+          "AudioPath": "assets/ko-KR/Gunther/12.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Abysmal..."
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s1",
+          "DialogueText": "Not a single piece in the entire collection.",
+          "AudioPath": "assets/ko-KR/Gunther/13.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Not a single piece in the entire collection."
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s2",
+          "DialogueText": "What's this? You found something? Let me see it!",
+          "AudioPath": "assets/ko-KR/Gunther/14.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "What's this? You found something? Let me see it!"
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s3",
+          "DialogueText": "Remarkable!",
+          "AudioPath": "assets/ko-KR/Gunther/15.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Remarkable!"
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s4",
+          "DialogueText": "It's very old.",
+          "AudioPath": "assets/ko-KR/Gunther/16.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "It's very old."
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s5",
+          "DialogueText": "I'd love to study this in greater detail... But it is yours.",
+          "AudioPath": "assets/ko-KR/Gunther/17.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "I'd love to study this in greater detail... But it is yours."
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s6",
+          "DialogueText": "Hmmm...",
+          "AudioPath": "assets/ko-KR/Gunther/18.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmmm..."
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s7",
+          "DialogueText": "I've got a favor to ask you.",
+          "AudioPath": "assets/ko-KR/Gunther/19.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I've got a favor to ask you."
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s8",
+          "DialogueText": "Would you consider donating any new artifacts or minerals that you find?",
+          "AudioPath": "assets/ko-KR/Gunther/20.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Would you consider donating any new artifacts or minerals that you find?"
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s9",
+          "DialogueText": "We could make a groundbreaking discovery together!",
+          "AudioPath": "assets/ko-KR/Gunther/21.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "We could make a groundbreaking discovery together!"
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s10",
+          "DialogueText": "Oh, and who knows... If you keep donating I might come across some interesting items to send your way.",
+          "AudioPath": "assets/ko-KR/Gunther/22.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, and who knows... If you keep donating I might come across some interesting items to send your way."
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s11",
+          "DialogueText": "Think about it, will you?",
+          "AudioPath": "assets/ko-KR/Gunther/23.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Think about it, will you?"
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/0:s12",
+          "DialogueText": "If you decide to donate, just bring the objects to the front desk.",
+          "AudioPath": "assets/ko-KR/Gunther/24.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:0:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "If you decide to donate, just bring the objects to the front desk."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/Gunther_MuseumComplete",
+          "DialogueText": "박물관이 한층 멋져졌군요! 다시 한번 도와줘서 고마워요.",
+          "AudioPath": "assets/ko-KR/Gunther/25.ogg",
+          "TranslationKey": "Data/ExtraDialogue:Gunther_MuseumComplete",
+          "PageIndex": 0,
+          "DisplayPattern": "박물관이 한층 멋져졌군요! 다시 한번 도와줘서 고마워요."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/Gunther_NothingToDonate",
+          "DialogueText": "박물관에 기증할만한 건 없는듯하네요. 보물 사냥이라도 하러 가봐야 할까요?",
+          "AudioPath": "assets/ko-KR/Gunther/26.ogg",
+          "TranslationKey": "Data/ExtraDialogue:Gunther_NothingToDonate",
+          "PageIndex": 0,
+          "DisplayPattern": "박물관에 기증할만한 건 없는듯하네요. 보물 사냥이라도 하러 가봐야 할까요?"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/Gunther_NoArtifactsFound",
+          "DialogueText": "안녕하세요! 스타듀밸리 고고학 사무소에 오신 것을 환영합니다!",
+          "AudioPath": "assets/ko-KR/Gunther/27.ogg",
+          "TranslationKey": "Data/ExtraDialogue:Gunther_NoArtifactsFound",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕하세요! 스타듀밸리 고고학 사무소에 오신 것을 환영합니다!"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/Gunther_NoArtifactsFound",
+          "DialogueText": "어... 조금 부끄러운 일이지만, 이전 큐레이터가 소장품을 전부 가지고 떠났더군요. 전시할 유물이 전혀 없어요.",
+          "AudioPath": "assets/ko-KR/Gunther/28.ogg",
+          "TranslationKey": "Data/ExtraDialogue:Gunther_NoArtifactsFound",
+          "PageIndex": 1,
+          "DisplayPattern": "어... 조금 부끄러운 일이지만, 이전 큐레이터가 소장품을 전부 가지고 떠났더군요. 전시할 유물이 전혀 없어요."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/Gunther_NoArtifactsFound",
+          "DialogueText": "하지만 곧 해결책을 찾을 수 있을 거예요! 아, 혹시 유물이나 광물을 발견하신다면... 알려주실 수 있을까요?",
+          "AudioPath": "assets/ko-KR/Gunther/29.ogg",
+          "TranslationKey": "Data/ExtraDialogue:Gunther_NoArtifactsFound",
+          "PageIndex": 2,
+          "DisplayPattern": "하지만 곧 해결책을 찾을 수 있을 거예요! 아, 혹시 유물이나 광물을 발견하신다면... 알려주실 수 있을까요?"
+        },
+        {
+          "DialogueFrom": "ArchaeologyHouse_Gunther_Greeting1",
+          "DialogueText": "새로운 걸 찾으셨나요?",
+          "AudioPath": "assets/ko-KR/Gunther/30.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:ArchaeologyHouse_Gunther_Greeting1",
+          "PageIndex": 0,
+          "DisplayPattern": "새로운 걸 찾으셨나요?"
+        },
+        {
+          "DialogueFrom": "ArchaeologyHouse_Gunther_Greeting2",
+          "DialogueText": "뭔가 파낸 게 있나요?",
+          "AudioPath": "assets/ko-KR/Gunther/31.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:ArchaeologyHouse_Gunther_Greeting2",
+          "PageIndex": 0,
+          "DisplayPattern": "뭔가 파낸 게 있나요?"
+        },
+        {
+          "DialogueFrom": "ArchaeologyHouse_Gunther_Greeting3",
+          "DialogueText": "제 전문지식이 필요한가요?",
+          "AudioPath": "assets/ko-KR/Gunther/32.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:ArchaeologyHouse_Gunther_Greeting3",
+          "PageIndex": 0,
+          "DisplayPattern": "제 전문지식이 필요한가요?"
+        },
+        {
+          "DialogueFrom": "ArchaeologyHouse_Gunther_Greeting4",
+          "DialogueText": "안녕하세요.",
+          "AudioPath": "assets/ko-KR/Gunther/33.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:ArchaeologyHouse_Gunther_Greeting4",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕하세요."
+        },
+        {
+          "DialogueFrom": "ArchaeologyHouse_Gunther_Greeting5",
+          "DialogueText": "가져오신 게 있나요?",
+          "AudioPath": "assets/ko-KR/Gunther/34.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:ArchaeologyHouse_Gunther_Greeting5",
+          "PageIndex": 0,
+          "DisplayPattern": "가져오신 게 있나요?"
+        },
+        {
+          "DialogueFrom": "ArchaeologyHouse_Gunther_RareGreeting",
+          "DialogueText": "흙냄새가 나는군요... 좋아요!",
+          "AudioPath": "assets/ko-KR/Gunther/35.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:ArchaeologyHouse_Gunther_RareGreeting",
+          "PageIndex": 0,
+          "DisplayPattern": "흙냄새가 나는군요... 좋아요!"
+        }
+      ]
+    }
+  ]
+}

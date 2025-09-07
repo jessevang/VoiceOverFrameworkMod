@@ -1,0 +1,1356 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Marnie.hu-HU",
+      "VoicePackName": "DictionarV2 (Marnie - hu-HU)",
+      "Character": "Marnie",
+      "Language": "hu-HU",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Ah, Lewis polgármester szólt, hogy nemrég érkeztél. Marnie vagyok!",
+          "AudioPath": "assets/hu-HU/Marnie/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah, Lewis polgármester szólt, hogy nemrég érkeztél. Marnie vagyok!"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "A tanyámon haszonállatokat és állati termékeket adok el. Beugorhatnál valamikor. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "A tanyámon haszonállatokat és állati termékeket adok el. Beugorhatnál valamikor."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Váó, ezer hála, {Farmer_Name}. Ezt nem fogom elfelejteni!",
+          "AudioPath": "assets/hu-HU/Marnie/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Váó, ezer hála, . Ezt nem fogom elfelejteni!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)SkillBook_0",
+          "DialogueText": "Köszönöm, {Farmer_Name}. Mindig van egy Almanach másolat nálam. Nagyon pontos! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:AcceptGift_(O)SkillBook_0",
+          "PageIndex": 0,
+          "DisplayPattern": "Köszönöm, . Mindig van egy Almanach másolat nálam. Nagyon pontos!"
+        },
+        {
+          "DialogueFrom": "gotPet",
+          "DialogueText": "Szerintem boldog leszel, hogy van egy kis barátod a farmon.",
+          "AudioPath": "assets/hu-HU/Marnie/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:gotPet",
+          "PageIndex": 0,
+          "DisplayPattern": "Szerintem boldog leszel, hogy van egy kis barátod a farmon."
+        },
+        {
+          "DialogueFrom": "gotPet_memory_oneday",
+          "DialogueText": "Biztos, hogy %pet kezdetben szégyenlős lesz. Az állatoknak kis időbe telik, mire kényelmesen érzik magukat egy új helyen.",
+          "AudioPath": "assets/hu-HU/Marnie/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:gotPet_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "Biztos, hogy kezdetben szégyenlős lesz. Az állatoknak kis időbe telik, mire kényelmesen érzik magukat egy új helyen."
+        },
+        {
+          "DialogueFrom": "gotPet_memory_oneweek",
+          "DialogueText": "A kis %pet már berendezkedett? Egy állat számára az a terület olyan remek a felfedezésekhez.",
+          "AudioPath": "assets/hu-HU/Marnie/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:gotPet_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "A kis már berendezkedett? Egy állat számára az a terület olyan remek a felfedezésekhez."
+        },
+        {
+          "DialogueFrom": "gotPet_memory_oneyear",
+          "DialogueText": "Most ugrott be... nagyjából egy éve, hogy %pet örökbe lett fogadva általad. Fogadok, hogy most már sokkal közelebb kerültetek egymáshoz!",
+          "AudioPath": "assets/hu-HU/Marnie/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:gotPet_memory_oneyear",
+          "PageIndex": 0,
+          "DisplayPattern": "Most ugrott be... nagyjából egy éve, hogy örökbe lett fogadva általad. Fogadok, hogy most már sokkal közelebb kerültetek egymáshoz!"
+        },
+        {
+          "DialogueFrom": "structureBuilt_Stable",
+          "DialogueText": "Ó, van egy lovad? Az csodálatos! A lovak lenyűgöző állatok. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:structureBuilt_Stable",
+          "PageIndex": 0,
+          "DisplayPattern": "Ó, van egy lovad? Az csodálatos! A lovak lenyűgöző állatok."
+        },
+        {
+          "DialogueFrom": "dating_Shane_memory_oneweek",
+          "DialogueText": "Mostanában Shane sokkal pozitívabbnak és reménytelibbnek tűnik.",
+          "AudioPath": "assets/hu-HU/Marnie/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:dating_Shane_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "Mostanában Shane sokkal pozitívabbnak és reménytelibbnek tűnik."
+        },
+        {
+          "DialogueFrom": "dating_Shane_memory_oneweek",
+          "DialogueText": "Olyan boldog vagyok, hogy ideköltöztél és ennyire kijöttök egymással! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:dating_Shane_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "Olyan boldog vagyok, hogy ideköltöztél és ennyire kijöttök egymással!"
+        },
+        {
+          "DialogueFrom": "married_Shane",
+          "DialogueText": "Örülök, hogy Shane beköltözött a farmodra... tovább folytathatja a családi hagyományt!",
+          "AudioPath": "assets/hu-HU/Marnie/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:married_Shane",
+          "PageIndex": 0,
+          "DisplayPattern": "Örülök, hogy Shane beköltözött a farmodra... tovább folytathatja a családi hagyományt!"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Hehe... végre bemutathatom, hogy mi lett az aerobik klubban végzett kemény munkám eredménye. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Hehe... végre bemutathatom, hogy mi lett az aerobik klubban végzett kemény munkám eredménye."
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "Melegséget érzek.",
+          "AudioPath": "assets/hu-HU/Marnie/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "Melegséget érzek."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Hee hee... Érdekes mindenkit a fürdőruhájában látni.",
+          "AudioPath": "assets/hu-HU/Marnie/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "Hee hee... Érdekes mindenkit a fürdőruhájában látni."
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "Fúj... vizes a szék.",
+          "AudioPath": "assets/hu-HU/Marnie/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "Fúj... vizes a szék."
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "Huhhh... Forróság van! {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "Huhhh... Forróság van!"
+        },
+        {
+          "DialogueFrom": "reject_789",
+          "DialogueText": "Gyááá! {Portrait:Love}",
+          "AudioPath": "assets/hu-HU/Marnie/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:reject_789",
+          "PageIndex": 0,
+          "DisplayPattern": "Gyááá!"
+        },
+        {
+          "DialogueFrom": "reject_789",
+          "DialogueText": "...Öhm... Tessék? Heh.. Nem tudom, hogy mi az... {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Marnie/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:reject_789",
+          "PageIndex": 1,
+          "DisplayPattern": "...Öhm... Tessék? Heh.. Nem tudom, hogy mi az..."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Szeretem az állatokat, {Farmer_Name}. Ha jól bánsz a tieiddel, akkor jó barátok leszünk!",
+          "AudioPath": "assets/hu-HU/Marnie/20_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Szeretem az állatokat, . Ha jól bánsz a tieiddel, akkor jó barátok leszünk!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Szeretem az állatokat, {Farmer_Name}. Bánj jól a tieiddel és biztos, hogy jó barátok leszünk!",
+          "AudioPath": "assets/hu-HU/Marnie/21_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "Szeretem az állatokat, . Bánj jól a tieiddel és biztos, hogy jó barátok leszünk!",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Az állatok olyan ártatlanok, oly édesek. És ha én nem vigyázok rájuk, akkor ki fog? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "Az állatok olyan ártatlanok, oly édesek. És ha én nem vigyázok rájuk, akkor ki fog?"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Remélem azért a csirkék nem mérgesek, mikor elveszem a tojásaikat. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "Remélem azért a csirkék nem mérgesek, mikor elveszem a tojásaikat."
+        },
+        {
+          "DialogueFrom": "Thu_2",
+          "DialogueText": "Egy ideje már itt vagy... hogy megy a farmod?",
+          "AudioPath": "assets/hu-HU/Marnie/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Thu_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Egy ideje már itt vagy... hogy megy a farmod?"
+        },
+        {
+          "DialogueFrom": "Thu_2",
+          "DialogueText": "Könnyű az állatokról gondoskodni, amíg nem feledkezel meg róluk! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Thu_2",
+          "PageIndex": 1,
+          "DisplayPattern": "Könnyű az állatokról gondoskodni, amíg nem feledkezel meg róluk!"
+        },
+        {
+          "DialogueFrom": "Saloon",
+          "DialogueText": "Mivel itt vagyok, így végre van időm egy kicsit pihenni és szocializálódni.",
+          "AudioPath": "assets/hu-HU/Marnie/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon",
+          "PageIndex": 0,
+          "DisplayPattern": "Mivel itt vagyok, így végre van időm egy kicsit pihenni és szocializálódni."
+        },
+        {
+          "DialogueFrom": "Saloon_Tue",
+          "DialogueText": "Ma nincsenek itt túl sokan... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Ma nincsenek itt túl sokan..."
+        },
+        {
+          "DialogueFrom": "Saloon_Wed",
+          "DialogueText": "# {Portrait:Happy} marnieAnimalSal",
+          "AudioPath": "assets/hu-HU/Marnie/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "# marnieAnimalSal"
+        },
+        {
+          "DialogueFrom": "Saloon_Wed",
+          "DialogueText": "Ma egy egész vödör tejet öntöttem ki a padlóra, szörnyű volt. Annyira elpazaroltam szegény Belindám kemény munkáját.$k {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Ma egy egész vödör tejet öntöttem ki a padlóra, szörnyű volt. Annyira elpazaroltam szegény Belindám kemény munkáját."
+        },
+        {
+          "DialogueFrom": "Saloon_Wed",
+          "DialogueText": "Örülök, hogy felbukkantál! Most már kissé nyüzsgősebb a nap.",
+          "AudioPath": "assets/hu-HU/Marnie/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "Örülök, hogy felbukkantál! Most már kissé nyüzsgősebb a nap."
+        },
+        {
+          "DialogueFrom": "Saloon_Thu",
+          "DialogueText": "Huhhh! Jó érzés egy kemény melós nap után kirúgni a hámból.",
+          "AudioPath": "assets/hu-HU/Marnie/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Huhhh! Jó érzés egy kemény melós nap után kirúgni a hámból."
+        },
+        {
+          "DialogueFrom": "Saloon_Fri",
+          "DialogueText": "Marnie nem veszi észre, hogy itt vagy...",
+          "AudioPath": "assets/hu-HU/Marnie/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Marnie nem veszi észre, hogy itt vagy..."
+        },
+        {
+          "DialogueFrom": "Saloon_Sun",
+          "DialogueText": "*sóhaj*... Ma nem voltam túlságosan eredményes.",
+          "AudioPath": "assets/hu-HU/Marnie/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "*sóhaj*... Ma nem voltam túlságosan eredményes."
+        },
+        {
+          "DialogueFrom": "Saloon_Sat",
+          "DialogueText": "Mindig látom Clintet idebent, de senkihez se szól. Csak néha szétnéz és ennyi. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Saloon_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Mindig látom Clintet idebent, de senkihez se szól. Csak néha szétnéz és ennyi."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Most, hogy Shane elment, meg kell tanítanom Jasnak, hogy hogyan gondozhatja a csirkéket.",
+          "AudioPath": "assets/hu-HU/Marnie/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Most, hogy Shane elment, meg kell tanítanom Jasnak, hogy hogyan gondozhatja a csirkéket."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Az unokaöcsém, Shane nálunk lakik már pár hónapja.",
+          "AudioPath": "assets/hu-HU/Marnie/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Az unokaöcsém, Shane nálunk lakik már pár hónapja."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Besegít nekem a csirkéknél, szóval nem panaszkodhatok.",
+          "AudioPath": "assets/hu-HU/Marnie/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Tue",
+          "PageIndex": 2,
+          "DisplayPattern": "Besegít nekem a csirkéknél, szóval nem panaszkodhatok."
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Te nem aggódsz emiatt az eső miatt? Az számomra kissé megnyugtató...",
+          "AudioPath": "assets/hu-HU/Marnie/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "Te nem aggódsz emiatt az eső miatt? Az számomra kissé megnyugtató..."
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Csak remélem, hogy a tehenek bebújtak a helyükre... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:GreenRain",
+          "PageIndex": 1,
+          "DisplayPattern": "Csak remélem, hogy a tehenek bebújtak a helyükre..."
+        },
+        {
+          "DialogueFrom": "GreenRainFinished",
+          "DialogueText": "Nos, úgy tűnik a semmi miatt ijedtünk meg... Az eső teljesen ártalmatlan volt!",
+          "AudioPath": "assets/hu-HU/Marnie/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:GreenRainFinished",
+          "PageIndex": 0,
+          "DisplayPattern": "Nos, úgy tűnik a semmi miatt ijedtünk meg... Az eső teljesen ártalmatlan volt!"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Úgy tűnik az állatok élvezik ezt az esőt... Azt hiszem extra tápanyaggal tölti meg a füveket.",
+          "AudioPath": "assets/hu-HU/Marnie/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Úgy tűnik az állatok élvezik ezt az esőt... Azt hiszem extra tápanyaggal tölti meg a füveket."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "A kaszával levághatod a füvet, hogy azzal etesd az állataidat.",
+          "AudioPath": "assets/hu-HU/Marnie/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "A kaszával levághatod a füvet, hogy azzal etesd az állataidat."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Vagy akár tőlem is vásárolhatsz párat, ha gondolod. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Vagy akár tőlem is vásárolhatsz párat, ha gondolod."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Jól jönne egy kis pénz... {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Marnie/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "Jól jönne egy kis pénz..."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Adios.",
+          "AudioPath": "assets/hu-HU/Marnie/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Wed",
+          "PageIndex": 3,
+          "DisplayPattern": "Adios."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Üdv. Szükséged van valamire?",
+          "AudioPath": "assets/hu-HU/Marnie/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdv. Szükséged van valamire?"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "A jövőben lehet, hogy másfajta állatokat is be fogok szerezni.",
+          "AudioPath": "assets/hu-HU/Marnie/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "A jövőben lehet, hogy másfajta állatokat is be fogok szerezni."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Habár még nem tudom, hogy van-e rájuk kereslet, szóval előbb be kell bizonyítanod, hogy tudsz bánni az állatokkal.",
+          "AudioPath": "assets/hu-HU/Marnie/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "Habár még nem tudom, hogy van-e rájuk kereslet, szóval előbb be kell bizonyítanod, hogy tudsz bánni az állatokkal."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Csak tisztelettel gondozd az állataidat, és jó dolgok fognak történni.",
+          "AudioPath": "assets/hu-HU/Marnie/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Thu",
+          "PageIndex": 3,
+          "DisplayPattern": "Csak tisztelettel gondozd az állataidat, és jó dolgok fognak történni."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "A legtöbb éjszakán a szalonban találhatsz engem.",
+          "AudioPath": "assets/hu-HU/Marnie/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "A legtöbb éjszakán a szalonban találhatsz engem."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Az állatok jó társaságnak bizonyulnak, de néhanapján emberekkel is kell időt töltenem.",
+          "AudioPath": "assets/hu-HU/Marnie/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "Az állatok jó társaságnak bizonyulnak, de néhanapján emberekkel is kell időt töltenem."
+        },
+        {
+          "DialogueFrom": "Fri6",
+          "DialogueText": "Azon tűnődöm, hogy vajon Mr. Lewis nem magányos abban a nagy házban... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "Azon tűnődöm, hogy vajon Mr. Lewis nem magányos abban a nagy házban..."
+        },
+        {
+          "DialogueFrom": "Fri6",
+          "DialogueText": "Olyan üresnek tűnik ott, nem?",
+          "AudioPath": "assets/hu-HU/Marnie/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "Olyan üresnek tűnik ott, nem?"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Voltál már a házamtól nyugatra lévő furcsa toronyban?",
+          "AudioPath": "assets/hu-HU/Marnie/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Voltál már a házamtól nyugatra lévő furcsa toronyban?"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Egy alkalommal szörnyű, másvilági hangot hallottam onnét kiszűrődni. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Egy alkalommal szörnyű, másvilági hangot hallottam onnét kiszűrődni."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Én a helyedben elkerülném azt a helyet...",
+          "AudioPath": "assets/hu-HU/Marnie/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "Én a helyedben elkerülném azt a helyet..."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Hé, jó téged itt látni!",
+          "AudioPath": "assets/hu-HU/Marnie/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, jó téged itt látni!"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Nyugodtan nézz be hozzánk, amikor kedved tartja.",
+          "AudioPath": "assets/hu-HU/Marnie/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Nyugodtan nézz be hozzánk, amikor kedved tartja."
+        },
+        {
+          "DialogueFrom": "Sun8",
+          "DialogueText": "Üdv {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sun8",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdv !"
+        },
+        {
+          "DialogueFrom": "Sun8",
+          "DialogueText": "Örülök, hogy összebarátkoztunk. Tudom, hogy jó gondját viseled a kedves állataimnak.",
+          "AudioPath": "assets/hu-HU/Marnie/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Sun8",
+          "PageIndex": 1,
+          "DisplayPattern": "Örülök, hogy összebarátkoztunk. Tudom, hogy jó gondját viseled a kedves állataimnak."
+        },
+        {
+          "DialogueFrom": "Fair_Judging",
+          "DialogueText": "Nos, mindent vagy semmit...",
+          "AudioPath": "assets/hu-HU/Marnie/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fair_Judging",
+          "PageIndex": 0,
+          "DisplayPattern": "Nos, mindent vagy semmit..."
+        },
+        {
+          "DialogueFrom": "Fair_Judged",
+          "DialogueText": "Nos, nem nyertem... de ugyanúgy nagy öröm volt megosztani mindenkivel kemény munkám eredményét!",
+          "AudioPath": "assets/hu-HU/Marnie/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fair_Judged",
+          "PageIndex": 0,
+          "DisplayPattern": "Nos, nem nyertem... de ugyanúgy nagy öröm volt megosztani mindenkivel kemény munkám eredményét!"
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerLost_PurpleShorts",
+          "DialogueText": "De furcsa kinézete van annak a lila salátának a kirakatodban! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fair_Judged_PlayerLost_PurpleShorts",
+          "PageIndex": 0,
+          "DisplayPattern": "De furcsa kinézete van annak a lila salátának a kirakatodban!"
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerLost_PurpleShorts",
+          "DialogueText": "Esküszöm, hogy pont úgy néz ki, mint Lewis polgármester különleges alsón... {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Marnie/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fair_Judged_PlayerLost_PurpleShorts",
+          "PageIndex": 1,
+          "DisplayPattern": "Esküszöm, hogy pont úgy néz ki, mint Lewis polgármester különleges alsón..."
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerLost_PurpleShorts",
+          "DialogueText": "Ó!... heh... hagyjuk! {Portrait:Love}",
+          "AudioPath": "assets/hu-HU/Marnie/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Marnie:Fair_Judged_PlayerLost_PurpleShorts",
+          "PageIndex": 2,
+          "DisplayPattern": "Ó!... heh... hagyjuk!"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "Üdv {Farmer_Name}. Úgy tűnik egy kicsit eláztál... te szegény pára! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/66.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdv . Úgy tűnik egy kicsit eláztál... te szegény pára!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s0",
+          "DialogueText": "Hello {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/67.ogg",
+          "TranslationKey": "Events/Farm:1590166:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hello !"
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s1",
+          "DialogueText": "You see this cat here?",
+          "AudioPath": "assets/hu-HU/Marnie/68.ogg",
+          "TranslationKey": "Events/Farm:1590166:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "You see this cat here?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s2",
+          "DialogueText": "I found it sitting outside the entrance to your farm! I think it's a stray... poor little thing. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/69.ogg",
+          "TranslationKey": "Events/Farm:1590166:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I found it sitting outside the entrance to your farm! I think it's a stray... poor little thing."
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s3",
+          "DialogueText": "I think it likes this place! Hey, um.... Don't you think this farm could use a good cat? {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/70.ogg",
+          "TranslationKey": "Events/Farm:1590166:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I think it likes this place! Hey, um.... Don't you think this farm could use a good cat?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/1590166:s4",
+          "DialogueText": "Well, little %pet... You be a good kitty now... okay?",
+          "AudioPath": "assets/hu-HU/Marnie/71.ogg",
+          "TranslationKey": "Events/Farm:1590166:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, little ... You be a good kitty now... okay?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/897405:s0",
+          "DialogueText": "Hello {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/72.ogg",
+          "TranslationKey": "Events/Farm:897405:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hello !"
+        },
+        {
+          "DialogueFrom": "Event:Farm/897405:s1",
+          "DialogueText": "You see this dog here?",
+          "AudioPath": "assets/hu-HU/Marnie/73.ogg",
+          "TranslationKey": "Events/Farm:897405:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "You see this dog here?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/897405:s2",
+          "DialogueText": "I found it sitting outside the entrance to your farm! I think it's a stray... poor thing. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/74.ogg",
+          "TranslationKey": "Events/Farm:897405:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I found it sitting outside the entrance to your farm! I think it's a stray... poor thing."
+        },
+        {
+          "DialogueFrom": "Event:Farm/897405:s3",
+          "DialogueText": "Hey, it seems to like this place! Hey, um.... Don't you think this farm could use a good dog? {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/75.ogg",
+          "TranslationKey": "Events/Farm:897405:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, it seems to like this place! Hey, um.... Don't you think this farm could use a good dog?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/897405:s4",
+          "DialogueText": "Well, %pet... You be a good pooch now... okay?",
+          "AudioPath": "assets/hu-HU/Marnie/76.ogg",
+          "TranslationKey": "Events/Farm:897405:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, ... You be a good pooch now... okay?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s0|g=male",
+          "DialogueText": "Good morning, Mr. {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/77_male.ogg",
+          "TranslationKey": "Events/Farm:91:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Good morning, Mr. !",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s1|g=female",
+          "DialogueText": "Good morning, Ms. {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/78_female.ogg",
+          "TranslationKey": "Events/Farm:91:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Good morning, Ms. !",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s2",
+          "DialogueText": "I came by to ask you a favor, since you're such a kind neighbor.",
+          "AudioPath": "assets/hu-HU/Marnie/79.ogg",
+          "TranslationKey": "Events/Farm:91:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I came by to ask you a favor, since you're such a kind neighbor."
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s3",
+          "DialogueText": "You see, I'm trying to train my goats to say 'hello'... but they simply won't pay attention to me unless I have their favorite treat, cave carrots! {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Marnie/80.ogg",
+          "TranslationKey": "Events/Farm:91:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "You see, I'm trying to train my goats to say 'hello'... but they simply won't pay attention to me unless I have their favorite treat, cave carrots!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s4",
+          "DialogueText": "So... since I'm scared of the mines... I thought, well, maybe you would bring me a cave carrot when you have the chance?",
+          "AudioPath": "assets/hu-HU/Marnie/81.ogg",
+          "TranslationKey": "Events/Farm:91:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "So... since I'm scared of the mines... I thought, well, maybe you would bring me a cave carrot when you have the chance?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s5",
+          "DialogueText": "There's no pressure... but if you want to, just swing by my house between 9:00 AM and 5:00 PM with a cave carrot. You'll make an old girl very happy. Bye.",
+          "AudioPath": "assets/hu-HU/Marnie/82.ogg",
+          "TranslationKey": "Events/Farm:91:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "There's no pressure... but if you want to, just swing by my house between 9:00 AM and 5:00 PM with a cave carrot. You'll make an old girl very happy. Bye."
+        },
+        {
+          "DialogueFrom": "Event:Farm/91:s6",
+          "DialogueText": "My goats go wild over cave carrot... I can't imagine why.",
+          "AudioPath": "assets/hu-HU/Marnie/83.ogg",
+          "TranslationKey": "Events/Farm:91:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "My goats go wild over cave carrot... I can't imagine why."
+        },
+        {
+          "DialogueFrom": "Event:Town/639373:s0",
+          "DialogueText": "You care too much about your job, Lewis. There are other things to life, you know. {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Marnie/84.ogg",
+          "TranslationKey": "Events/Town:639373:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "You care too much about your job, Lewis. There are other things to life, you know."
+        },
+        {
+          "DialogueFrom": "Event:Town/639373:s1",
+          "DialogueText": "...but yes, I understand. I guess we'll have to keep...us...a secret. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/85.ogg",
+          "TranslationKey": "Events/Town:639373:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "...but yes, I understand. I guess we'll have to keep...us...a secret."
+        },
+        {
+          "DialogueFrom": "Event:Town/639373:s2",
+          "DialogueText": "Gahh! {Portrait:Love}",
+          "AudioPath": "assets/hu-HU/Marnie/86.ogg",
+          "TranslationKey": "Events/Town:639373:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Gahh!"
+        },
+        {
+          "DialogueFrom": "Event:Town/639373:s3",
+          "DialogueText": "Why were you hiding there, anyway? {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Marnie/87.ogg",
+          "TranslationKey": "Events/Town:639373:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Why were you hiding there, anyway?"
+        },
+        {
+          "DialogueFrom": "Event:Town/3917584:s0",
+          "DialogueText": "Oh no... this doesn't look good. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/88.ogg",
+          "TranslationKey": "Events/Town:3917584:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh no... this doesn't look good."
+        },
+        {
+          "DialogueFrom": "Event:Town/3917584:s1",
+          "DialogueText": "{Farmer_Name}? You'd better keep your eye on him... next time you catch him coming out of the Saloon, you should say something... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/89.ogg",
+          "TranslationKey": "Events/Town:3917584:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "? You'd better keep your eye on him... next time you catch him coming out of the Saloon, you should say something..."
+        },
+        {
+          "DialogueFrom": "Event:Town/3917584:s2",
+          "DialogueText": "Is everything alright, {Farmer_Name}? You seem worried...",
+          "AudioPath": "assets/hu-HU/Marnie/90.ogg",
+          "TranslationKey": "Events/Town:3917584:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Is everything alright, ? You seem worried..."
+        },
+        {
+          "DialogueFrom": "Event:Town/3917586:s0",
+          "DialogueText": "Alright... we've caught him in the act. Now let's confront him. Take a deep breath... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/91.ogg",
+          "TranslationKey": "Events/Town:3917586:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Alright... we've caught him in the act. Now let's confront him. Take a deep breath..."
+        },
+        {
+          "DialogueFrom": "Event:Town/3917586:s1",
+          "DialogueText": "Shane... this is what you've been doing in here? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/92.ogg",
+          "TranslationKey": "Events/Town:3917586:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Shane... this is what you've been doing in here?"
+        },
+        {
+          "DialogueFrom": "Event:Town/3917586:s2",
+          "DialogueText": "But... these cans... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/93.ogg",
+          "TranslationKey": "Events/Town:3917586:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "But... these cans..."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s0",
+          "DialogueText": "Um... Haley? When do we stop? M... My legs... *pant* *pant* {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/94.ogg",
+          "TranslationKey": "Events/Town:6184644:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... Haley? When do we stop? M... My legs... *pant* *pant*"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s1",
+          "DialogueText": "Yep",
+          "AudioPath": "assets/hu-HU/Marnie/95.ogg",
+          "TranslationKey": "Events/Town:6184644:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Yep"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/150938:s0",
+          "DialogueText": "I do!",
+          "AudioPath": "assets/hu-HU/Marnie/96.ogg",
+          "TranslationKey": "Events/HaleyHouse:150938:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I do!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s0",
+          "DialogueText": "Mmmm... %farm eggs.",
+          "AudioPath": "assets/hu-HU/Marnie/97.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Mmmm... eggs."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s0",
+          "DialogueText": "Um... Leah? How much longer will this be? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/98.ogg",
+          "TranslationKey": "Events/Forest:3091462:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... Leah? How much longer will this be?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s1",
+          "DialogueText": "...My knees are quivering, my thighs are whimpering, and I've lost all sensation in my foot. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/99.ogg",
+          "TranslationKey": "Events/Forest:3091462:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "...My knees are quivering, my thighs are whimpering, and I've lost all sensation in my foot."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s2",
+          "DialogueText": "Make me look good!",
+          "AudioPath": "assets/hu-HU/Marnie/100.ogg",
+          "TranslationKey": "Events/Forest:3091462:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Make me look good!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s3",
+          "DialogueText": "Oooh!",
+          "AudioPath": "assets/hu-HU/Marnie/101.ogg",
+          "TranslationKey": "Events/Forest:3091462:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Oooh!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s4",
+          "DialogueText": "I love it! That's going up in my room... {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/102.ogg",
+          "TranslationKey": "Events/Forest:3091462:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I love it! That's going up in my room..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s5",
+          "DialogueText": "Let me see",
+          "AudioPath": "assets/hu-HU/Marnie/103.ogg",
+          "TranslationKey": "Events/Forest:3091462:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Let me see"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s6",
+          "DialogueText": "Em... {Farmer_Name}, why don't you go ahead and keep yours? It might be nice to, uh... own your first-ever painting... ya know? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/104.ogg",
+          "TranslationKey": "Events/Forest:3091462:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Em... , why don't you go ahead and keep yours? It might be nice to, uh... own your first-ever painting... ya know?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3091462:s7",
+          "DialogueText": "Um... Honey? Where were you planning to hang that painting you did? {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Marnie/105.ogg",
+          "TranslationKey": "Events/Forest:3091462:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... Honey? Where were you planning to hang that painting you did?"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s0|g=male",
+          "DialogueText": "Oh! You brought the cave carrot! Thank you so much, Mr. {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/106_male.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! You brought the cave carrot! Thank you so much, Mr. .",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s1|g=female",
+          "DialogueText": "Oh! You brought the cave carrot! Thank you so much, Ms. {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/107_female.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! You brought the cave carrot! Thank you so much, Ms. .",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s2",
+          "DialogueText": "This looks great... I almost want to eat it myself! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/108.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "This looks great... I almost want to eat it myself!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s3",
+          "DialogueText": "...almost.",
+          "AudioPath": "assets/hu-HU/Marnie/109.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "...almost."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s4",
+          "DialogueText": "I hope it wasn't too much trouble... I really do appreciate it.",
+          "AudioPath": "assets/hu-HU/Marnie/110.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I hope it wasn't too much trouble... I really do appreciate it."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s5",
+          "DialogueText": "Thanks again for helping me out. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/111.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks again for helping me out."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/92:s6",
+          "DialogueText": "...and my goats say 'thanks' too.",
+          "AudioPath": "assets/hu-HU/Marnie/112.ogg",
+          "TranslationKey": "Events/AnimalShop:92:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "...and my goats say 'thanks' too."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s0",
+          "DialogueText": "Shane?",
+          "AudioPath": "assets/hu-HU/Marnie/113.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Shane?"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s1",
+          "DialogueText": "Oh dear...",
+          "AudioPath": "assets/hu-HU/Marnie/114.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh dear..."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s2",
+          "DialogueText": "{Farmer_Name}... Can you do something? He's out cold. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/115.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "... Can you do something? He's out cold."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s3",
+          "DialogueText": "Shane! What's the matter with you? All you do anymore is mope around your room and drink beer! {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/116.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Shane! What's the matter with you? All you do anymore is mope around your room and drink beer!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s4",
+          "DialogueText": "I'm worried...",
+          "AudioPath": "assets/hu-HU/Marnie/117.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm worried..."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s5",
+          "DialogueText": "What's your plan? Don't you ever think about the future?",
+          "AudioPath": "assets/hu-HU/Marnie/118.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "What's your plan? Don't you ever think about the future?"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s0",
+          "DialogueText": "Hi Shane... you look unusually happy today.",
+          "AudioPath": "assets/hu-HU/Marnie/119.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi Shane... you look unusually happy today."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s1",
+          "DialogueText": "Let me guess... Gus had a clearance sale on canned beer? {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Marnie/120.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Let me guess... Gus had a clearance sale on canned beer?"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s2",
+          "DialogueText": "He looks sharp!",
+          "AudioPath": "assets/hu-HU/Marnie/121.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "He looks sharp!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Marnie",
+          "DialogueText": "A tőlem telhető legjobb módon próbálkoztam, de az én kirakatom semmiség Pierréhez képest. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/122.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "A tőlem telhető legjobb módon próbálkoztam, de az én kirakatom semmiség Pierréhez képest."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Marnie",
+          "DialogueText": "Nos, talán a bírák plusz pontot adnak nekem a hatalmas sajtért.",
+          "AudioPath": "assets/hu-HU/Marnie/123.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Marnie",
+          "PageIndex": 1,
+          "DisplayPattern": "Nos, talán a bírák plusz pontot adnak nekem a hatalmas sajtért."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Marnie_y2",
+          "DialogueText": "Az állataimnak sikeres évük volt! Remélem a kiváló minőségű termések le fogják nyűgözni a bírákat. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/124.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Az állataimnak sikeres évük volt! Remélem a kiváló minőségű termések le fogják nyűgözni a bírákat."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Marnie_y2",
+          "DialogueText": "Neked hogy áll a kirakatod, {Farmer_Name}? Az ad lehetőséget arra, hogy megmutasd a munkád gyümölcsét. {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Marnie/125.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Marnie_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Neked hogy áll a kirakatod, ? Az ad lehetőséget arra, hogy megmutasd a munkád gyümölcsét."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Marnie",
+          "DialogueText": "Szia, {Farmer_Name}. Termékeny volt az ősz?",
+          "AudioPath": "assets/hu-HU/Marnie/126.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Szia, . Termékeny volt az ősz?"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Marnie",
+          "DialogueText": "Kezd eléggé hűvös lenni... a termések már nem fogják sokáig bírni.",
+          "AudioPath": "assets/hu-HU/Marnie/127.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Marnie",
+          "PageIndex": 1,
+          "DisplayPattern": "Kezd eléggé hűvös lenni... a termések már nem fogják sokáig bírni."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Marnie_y2",
+          "DialogueText": "Remélem Jas jól van odabent. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/128.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Remélem Jas jól van odabent."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Marnie_y2",
+          "DialogueText": "Jól telt az idei gazdálkodós éved, {Farmer_Name}?",
+          "AudioPath": "assets/hu-HU/Marnie/129.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Marnie_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Jól telt az idei gazdálkodós éved, ?"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Marnie",
+          "DialogueText": "Üdvözlünk a Tojásfesztiválon... hála a temérdek csirkéinknek.",
+          "AudioPath": "assets/hu-HU/Marnie/130.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdvözlünk a Tojásfesztiválon... hála a temérdek csirkéinknek."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Marnie_y2",
+          "DialogueText": "A tyúkok tojják a tojásokat, de a kakasoknak is nagyon fontos szerepük van... ők védik meg a tyúkokat és akadályozzák meg azt, hogy egymásnak essenek!",
+          "AudioPath": "assets/hu-HU/Marnie/131.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "A tyúkok tojják a tojásokat, de a kakasoknak is nagyon fontos szerepük van... ők védik meg a tyúkokat és akadályozzák meg azt, hogy egymásnak essenek!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Marnie_y2",
+          "DialogueText": "Így boldogabbak a tyúkok és jobbak a tojások is... {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/132.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Marnie_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Így boldogabbak a tyúkok és jobbak a tojások is..."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Marnie",
+          "DialogueText": "*sóhaj*... Szerelem van a levegőben... És én még mindig szingli vagyok. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/133.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "*sóhaj*... Szerelem van a levegőben... És én még mindig szingli vagyok."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Marnie_y2",
+          "DialogueText": "Ez a nagy nyílt tér tökéletes legelő lehet az állatok számára, nem gondolod? {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Marnie/134.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez a nagy nyílt tér tökéletes legelő lehet az állatok számára, nem gondolod?"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Marnie_y2",
+          "DialogueText": "Psszt... Szerintem Lewis ma felkér majd táncolni engem! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/135.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Marnie_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Psszt... Szerintem Lewis ma felkér majd táncolni engem!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Marnie",
+          "DialogueText": "Ha hoztál valamit a levesbe, akkor menj fel az oldalán található lépcsőn és dobd bele.",
+          "AudioPath": "assets/hu-HU/Marnie/136.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ha hoztál valamit a levesbe, akkor menj fel az oldalán található lépcsőn és dobd bele."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Marnie_y2",
+          "DialogueText": "Üdvözöllek {Farmer_Name}! Hoztál valamilyen alapanyagot a leveshez? Csak menj fel a lépcsőn és dobd bele! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/137.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdvözöllek ! Hoztál valamilyen alapanyagot a leveshez? Csak menj fel a lépcsőn és dobd bele!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Marnie",
+          "DialogueText": "Túl nagy a tömeg súlya egy ilyen ősi, fából készült kikötőnek! Én itt maradok a strand környékén.",
+          "AudioPath": "assets/hu-HU/Marnie/138.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Túl nagy a tömeg súlya egy ilyen ősi, fából készült kikötőnek! Én itt maradok a strand környékén."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Marnie_y2",
+          "DialogueText": "Nem mehetek tovább a kikötőn. Reszketni tudok a recsegő fa hangjától. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/139.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Nem mehetek tovább a kikötőn. Reszketni tudok a recsegő fa hangjától."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Marnie_y2",
+          "DialogueText": "Mikor még kislány voltam, beszakadt alattam egy rothadó kikötő, és az mély nyomot hagyott bennem... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/140.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Marnie_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Mikor még kislány voltam, beszakadt alattam egy rothadó kikötő, és az mély nyomot hagyott bennem..."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Marnie",
+          "DialogueText": "Üdvözlünk a Téli Csillag ünnepén! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/141.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdvözlünk a Téli Csillag ünnepén!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Marnie_y2",
+          "DialogueText": "Kellemes ünnepeket, {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/142.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Kellemes ünnepeket, !"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Marnie",
+          "DialogueText": "Annyira sajnálom azokat a szegény, fázós állatokat. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Marnie/143.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Annyira sajnálom azokat a szegény, fázós állatokat."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Marnie_y2",
+          "DialogueText": "Ajjj... Olyan cuki az a bebugyolált disznócska! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/144.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Marnie_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ajjj... Olyan cuki az a bebugyolált disznócska!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Marnie:s0",
+          "DialogueText": "Ez egy hihetetlen ajándék! Köszönöm!",
+          "AudioPath": "assets/hu-HU/Marnie/145.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Marnie:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez egy hihetetlen ajándék! Köszönöm!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Marnie:s1",
+          "DialogueText": "Köszönöm!",
+          "AudioPath": "assets/hu-HU/Marnie/146.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Marnie:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Köszönöm!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Marnie:s2",
+          "DialogueText": "Ó. Akkor azt hiszem átveszem.",
+          "AudioPath": "assets/hu-HU/Marnie/147.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Marnie:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ó. Akkor azt hiszem átveszem."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Marnie:s3",
+          "DialogueText": "Ez értéktelen. Nem értelek.",
+          "AudioPath": "assets/hu-HU/Marnie/148.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Marnie:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez értéktelen. Nem értelek."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Marnie:s4",
+          "DialogueText": "Köszönöm! Ez jól néz ki.",
+          "AudioPath": "assets/hu-HU/Marnie/149.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Marnie:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Köszönöm! Ez jól néz ki."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Marnie_love_BeforeMovie",
+          "DialogueText": "Tudom, hogy tetszeni fog nekem ez a film! Kedves tőled, hogy meghívtál engem, {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/150.ogg",
+          "TranslationKey": "Strings/MovieReactions:Marnie_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Tudom, hogy tetszeni fog nekem ez a film! Kedves tőled, hogy meghívtál engem, ."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Marnie_love_AfterMovie",
+          "DialogueText": "Óh, örülök, hogy a végén a család épségben volt. És a tehenek is! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/151.ogg",
+          "TranslationKey": "Strings/MovieReactions:Marnie_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Óh, örülök, hogy a végén a család épségben volt. És a tehenek is!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Marnie_like_BeforeMovie",
+          "DialogueText": "Elég lezser vagyok, ha filmekről van szó... Szinte mindent szeretek!",
+          "AudioPath": "assets/hu-HU/Marnie/152.ogg",
+          "TranslationKey": "Strings/MovieReactions:Marnie_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Elég lezser vagyok, ha filmekről van szó... Szinte mindent szeretek!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Marnie_like_AfterMovie",
+          "DialogueText": "Jól szórakoztam, {Farmer_Name}! Köszönöm, hogy meghívtál.",
+          "AudioPath": "assets/hu-HU/Marnie/153.ogg",
+          "TranslationKey": "Strings/MovieReactions:Marnie_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Jól szórakoztam, ! Köszönöm, hogy meghívtál."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Marnie",
+          "DialogueText": "Hé {Farmer_Name}. Épp a tejen gondolkodtam.",
+          "AudioPath": "assets/hu-HU/Marnie/154.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé . Épp a tejen gondolkodtam."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Marnie",
+          "DialogueText": "Te egyszer megkóstolnád a tevetejet? Úgy hallottam, hogy sós.",
+          "AudioPath": "assets/hu-HU/Marnie/155.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Marnie",
+          "PageIndex": 1,
+          "DisplayPattern": "Te egyszer megkóstolnád a tevetejet? Úgy hallottam, hogy sós."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Marnie",
+          "DialogueText": "Találtam egy extra tapétatekercset a házamban. 20 tojásért a tiéd lehet!",
+          "AudioPath": "assets/hu-HU/Marnie/156.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Találtam egy extra tapétatekercset a házamban. 20 tojásért a tiéd lehet!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Marnie_Counter",
+          "DialogueText": "'Jelenleg nem vagyok elérhető, de attól még az állatkatalógussal vásárolhatsz!' -Marnie",
+          "AudioPath": "assets/hu-HU/Marnie/157.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Marnie_Counter",
+          "PageIndex": 0,
+          "DisplayPattern": "'Jelenleg nem vagyok elérhető, de attól még az állatkatalógussal vásárolhatsz!' -Marnie"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Marnie_Pet_Adoption",
+          "DialogueText": "Ezek a kicsikék jó otthonra vágynak...",
+          "AudioPath": "assets/hu-HU/Marnie/158.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Marnie_Pet_Adoption",
+          "PageIndex": 0,
+          "DisplayPattern": "Ezek a kicsikék jó otthonra vágynak..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:AdoptedPet_Marnie",
+          "DialogueText": "Nagyszerű! A kis {0} máris az otthonodba lett küldve. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Marnie/159.ogg",
+          "TranslationKey": "Strings/1_6_Strings:AdoptedPet_Marnie",
+          "PageIndex": 0,
+          "DisplayPattern": "Nagyszerű! A kis {0} máris az otthonodba lett küldve."
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_Greeting1",
+          "DialogueText": "Üdv!",
+          "AudioPath": "assets/hu-HU/Marnie/160.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_Greeting1",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdv!"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_Greeting2",
+          "DialogueText": "Hellóka!",
+          "AudioPath": "assets/hu-HU/Marnie/161.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_Greeting2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hellóka!"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_CloseFriends",
+          "DialogueText": "Üdv, {Farmer_Name}",
+          "AudioPath": "assets/hu-HU/Marnie/162.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_CloseFriends",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdv, {0}"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_NotCloseFriends",
+          "DialogueText": "Készletekért jöttél?",
+          "AudioPath": "assets/hu-HU/Marnie/163.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_NotCloseFriends",
+          "PageIndex": 0,
+          "DisplayPattern": "Készletekért jöttél?"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_Raining",
+          "DialogueText": "Töröld meg a lábad!",
+          "AudioPath": "assets/hu-HU/Marnie/164.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_Raining",
+          "PageIndex": 0,
+          "DisplayPattern": "Töröld meg a lábad!"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_NotRaining",
+          "DialogueText": "Hé! Milyen az idő?",
+          "AudioPath": "assets/hu-HU/Marnie/165.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_NotRaining",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé! Milyen az idő?"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_Greeting3",
+          "DialogueText": "Hé! Hogy megy {Farm_Name} farm?",
+          "AudioPath": "assets/hu-HU/Marnie/166.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_Greeting3",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé! Hogy megy {1} farm?"
+        },
+        {
+          "DialogueFrom": "AnimalShop_Marnie_RareGreeting",
+          "DialogueText": "Lew...? Ó...",
+          "AudioPath": "assets/hu-HU/Marnie/167.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:AnimalShop_Marnie_RareGreeting",
+          "PageIndex": 0,
+          "DisplayPattern": "Lew...? Ó..."
+        }
+      ]
+    }
+  ]
+}

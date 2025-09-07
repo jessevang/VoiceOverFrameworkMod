@@ -1,0 +1,1822 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Pierre.hu-HU",
+      "VoicePackName": "DictionarV2 (Pierre - hu-HU)",
+      "Character": "Pierre",
+      "Language": "hu-HU",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Hé, ez {Farmer_Name} úr, az új gazda! Én Pierre vagyok, a helyi vegyesbolt tulajdonosa.",
+          "AudioPath": "assets/hu-HU/Pierre/1_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, ez úr, az új gazda! Én Pierre vagyok, a helyi vegyesbolt tulajdonosa.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Hé, ez {Farmer_Name} asszony, az új gazda! Én Pierre vagyok, a helyi vegyesbolt tulajdonosa.",
+          "AudioPath": "assets/hu-HU/Pierre/2_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "Hé, ez asszony, az új gazda! Én Pierre vagyok, a helyi vegyesbolt tulajdonosa.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Ha magvakat keresnél, akkor az én boltomra van szükséged. Sőt, jó áron terméseket is veszek tőled!",
+          "AudioPath": "assets/hu-HU/Pierre/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 2,
+          "DisplayPattern": "Ha magvakat keresnél, akkor az én boltomra van szükséged. Sőt, jó áron terméseket is veszek tőled!"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Egy kis mezőgazdaság jó életet lehelne a helyi gazdaságba!",
+          "AudioPath": "assets/hu-HU/Pierre/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 3,
+          "DisplayPattern": "Egy kis mezőgazdaság jó életet lehelne a helyi gazdaságba!"
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneday",
+          "DialogueText": "Hogyan tudnék a Jojaval versengeni? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "Hogyan tudnék a Jojaval versengeni?"
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneday",
+          "DialogueText": "Olyan mélyek a zsebeik, hogy veszteséggel adják el a portékáikat, míg a hozzám hasonló kisemberek tönkre nem mennek... aztán azonnal feltornázzák az áraikat! {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "Olyan mélyek a zsebeik, hogy veszteséggel adják el a portékáikat, míg a hozzám hasonló kisemberek tönkre nem mennek... aztán azonnal feltornázzák az áraikat!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Váó, el se hiszem, hogy ezt nekem adod. Biztos egy vagyonba került! Köszönöm!",
+          "AudioPath": "assets/hu-HU/Pierre/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Váó, el se hiszem, hogy ezt nekem adod. Biztos egy vagyonba került! Köszönöm!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)Book_PriceCatalogue",
+          "DialogueText": "Lenyűgöző! Fantasztikus! Ez a tökéletes könyv számomra! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:AcceptGift_(O)Book_PriceCatalogue",
+          "PageIndex": 0,
+          "DisplayPattern": "Lenyűgöző! Fantasztikus! Ez a tökéletes könyv számomra!"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Gyááá, nincsenek vásárlók! Ha még több esik ebből a 'zöld' esőből, akkor a főkönyvem hamarosan 'vörösbe' vált át! {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "Gyááá, nincsenek vásárlók! Ha még több esik ebből a 'zöld' esőből, akkor a főkönyvem hamarosan 'vörösbe' vált át!"
+        },
+        {
+          "DialogueFrom": "GreenRainFinished",
+          "DialogueText": "Nos, örülök, hogy végül minden rendben lett. Kissé túlzásba vitték... pont úgy mint bármi mást.",
+          "AudioPath": "assets/hu-HU/Pierre/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRainFinished",
+          "PageIndex": 0,
+          "DisplayPattern": "Nos, örülök, hogy végül minden rendben lett. Kissé túlzásba vitték... pont úgy mint bármi mást."
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Örülök, hogy látlak, {Farmer_Name}. Mi rosszat tehet egy kis mérgező eső, ha magvakat kell vásárolnod? {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Örülök, hogy látlak, . Mi rosszat tehet egy kis mérgező eső, ha magvakat kell vásárolnod?"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Csak vicceltem. Úgy tűnik az eső teljesen ártalmatlan.",
+          "AudioPath": "assets/hu-HU/Pierre/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRain_2",
+          "PageIndex": 1,
+          "DisplayPattern": "Csak vicceltem. Úgy tűnik az eső teljesen ártalmatlan."
+        },
+        {
+          "DialogueFrom": "eventSeen_4",
+          "DialogueText": "Abigail most a lázadó fázisában van... értem én.",
+          "AudioPath": "assets/hu-HU/Pierre/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_4",
+          "PageIndex": 0,
+          "DisplayPattern": "Abigail most a lázadó fázisában van... értem én."
+        },
+        {
+          "DialogueFrom": "eventSeen_4",
+          "DialogueText": "Majd akkor észhez tér, amikor be kell fizetnie az első jelzálogát! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_4",
+          "PageIndex": 1,
+          "DisplayPattern": "Majd akkor észhez tér, amikor be kell fizetnie az első jelzálogát!"
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneweek",
+          "DialogueText": "Elhatároztam, hogy a legvégsőkig üzemeltetem a boltomat. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "Elhatároztam, hogy a legvégsőkig üzemeltetem a boltomat."
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneweek",
+          "DialogueText": "Morrisnak és a cimboráinak üvöltve és rugdalózva kell majd kirángatniuk engem a pult mögül! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "Morrisnak és a cimboráinak üvöltve és rugdalózva kell majd kirángatniuk engem a pult mögül!"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Rengeteg pénzt veszítek azzal, hogy távol vagyok a bolttól... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Rengeteg pénzt veszítek azzal, hogy távol vagyok a bolttól..."
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "De tudod mit? Teljesen megéri.",
+          "AudioPath": "assets/hu-HU/Pierre/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort",
+          "PageIndex": 1,
+          "DisplayPattern": "De tudod mit? Teljesen megéri."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Mmm... a tenger sós illatától egészen megkívántam a szasimit.",
+          "AudioPath": "assets/hu-HU/Pierre/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "Mmm... a tenger sós illatától egészen megkívántam a szasimit."
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "Eh, hadd játszanak a gyerekek a napon. Én addig ebben a székben fogok ülni.",
+          "AudioPath": "assets/hu-HU/Pierre/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "Eh, hadd játszanak a gyerekek a napon. Én addig ebben a székben fogok ülni."
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "Ital-ital után... Gus biztos nagyokat kaszál ezzel!",
+          "AudioPath": "assets/hu-HU/Pierre/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "Ital-ital után... Gus biztos nagyokat kaszál ezzel!"
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "Nos, most, hogy kétszeres bevételed van, remélem kétszer annyi magvat fogsz vásárolni, ugye? {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married",
+          "PageIndex": 0,
+          "DisplayPattern": "Nos, most, hogy kétszeres bevételed van, remélem kétszer annyi magvat fogsz vásárolni, ugye?"
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "Haha... csak vicceltem.... *köhöm*...",
+          "AudioPath": "assets/hu-HU/Pierre/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married",
+          "PageIndex": 1,
+          "DisplayPattern": "Haha... csak vicceltem.... *köhöm*..."
+        },
+        {
+          "DialogueFrom": "married_Abigail_memory_oneday",
+          "DialogueText": "Üdv, izé... fiam? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/24_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married_Abigail_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdv, izé... fiam?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "married_Abigail_memory_oneday",
+          "DialogueText": "Üdv, izé... lányom? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/25_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married_Abigail_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "Üdv, izé... lányom?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "cc_Complete",
+          "DialogueText": "Valóra vált egy álom! El se tudod képzelni, hogy mennyi stresszt okozott nekem a JojaMart.",
+          "AudioPath": "assets/hu-HU/Pierre/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:cc_Complete",
+          "PageIndex": 0,
+          "DisplayPattern": "Valóra vált egy álom! El se tudod képzelni, hogy mennyi stresszt okozott nekem a JojaMart."
+        },
+        {
+          "DialogueFrom": "cc_Complete",
+          "DialogueText": "Egy ilyen kisvárosnak egyetlen bolt is elég! Amúgy is túl sok a társadalmi nyomás rajtam ahhoz, hogy túlárazzak dolgokat.",
+          "AudioPath": "assets/hu-HU/Pierre/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:cc_Complete",
+          "PageIndex": 1,
+          "DisplayPattern": "Egy ilyen kisvárosnak egyetlen bolt is elég! Amúgy is túl sok a társadalmi nyomás rajtam ahhoz, hogy túlárazzak dolgokat."
+        },
+        {
+          "DialogueFrom": "joja_Begin",
+          "DialogueText": "Ez egy nagyon szomorú nap Pelikán városnak... Minél erősebbé válik a Joja, annál közelebb kerülök a csődhöz. Lehet hamarosan el kell adnom a boltot... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:joja_Begin",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez egy nagyon szomorú nap Pelikán városnak... Minél erősebbé válik a Joja, annál közelebb kerülök a csődhöz. Lehet hamarosan el kell adnom a boltot..."
+        },
+        {
+          "DialogueFrom": "MovieInvitation",
+          "DialogueText": "Hé, ez egy remek ötlet... Jó lesz kicsit kimozdulni a pult mögül. Ott találkozunk!",
+          "AudioPath": "assets/hu-HU/Pierre/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:MovieInvitation",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, ez egy remek ötlet... Jó lesz kicsit kimozdulni a pult mögül. Ott találkozunk!"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Üdvözöllek! Ha magvakért jöttél, akkor jó helyen jársz!",
+          "AudioPath": "assets/hu-HU/Pierre/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdvözöllek! Ha magvakért jöttél, akkor jó helyen jársz!"
+        },
+        {
+          "DialogueFrom": "Mon_inlaw_Abigail",
+          "DialogueText": "Üdv, izé... fiam? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/31_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon_inlaw_Abigail",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdv, izé... fiam?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Mon_inlaw_Abigail",
+          "DialogueText": "Üdv, izé... lányom? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/32_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon_inlaw_Abigail",
+          "PageIndex": 1,
+          "DisplayPattern": "Üdv, izé... lányom?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Üdv, {Farmer_Name}. Szükséged van némi magra vagy gyümölcsfacsemetére?",
+          "AudioPath": "assets/hu-HU/Pierre/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdv, . Szükséged van némi magra vagy gyümölcsfacsemetére?"
+        },
+        {
+          "DialogueFrom": "Mon4_inlaw_Abigail",
+          "DialogueText": "Üdv, {Farmer_Name}. Hogy van Abigail? A bolt nélküle nem olyan, mint régen...",
+          "AudioPath": "assets/hu-HU/Pierre/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon4_inlaw_Abigail",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdv, . Hogy van Abigail? A bolt nélküle nem olyan, mint régen..."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Néha új tárgyakat kapok készletre, szóval jó, ha gyakran benézel a boltba.",
+          "AudioPath": "assets/hu-HU/Pierre/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Néha új tárgyakat kapok készletre, szóval jó, ha gyakran benézel a boltba."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Nagyon nagy meló boltot üzemeltetni. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Nagyon nagy meló boltot üzemeltetni."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Tudod, régen elég jó bokszoló voltam... a jobb horgom igazi legenda volt! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "Tudod, régen elég jó bokszoló voltam... a jobb horgom igazi legenda volt!"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Ma van a pihenőnapom.",
+          "AudioPath": "assets/hu-HU/Pierre/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Ma van a pihenőnapom."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Hmmm... de mit csináljak... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Hmmm... de mit csináljak..."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Ha találnál valamilyen vad termést, akkor attól nálam jó áron megszabadulhatsz.",
+          "AudioPath": "assets/hu-HU/Pierre/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "Ha találnál valamilyen vad termést, akkor attól nálam jó áron megszabadulhatsz."
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "# {Portrait:Happy} pierre1",
+          "AudioPath": "assets/hu-HU/Pierre/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierre1"
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "*sóhaj*... Nem számít mennyire jól megy az üzlet, úgy tűnik sosem elég ahhoz, hogy kielégítse a sikerérzetemet. Mi a baj velem? Lehet unom a házias életet. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed4",
+          "PageIndex": 1,
+          "DisplayPattern": "*sóhaj*... Nem számít mennyire jól megy az üzlet, úgy tűnik sosem elég ahhoz, hogy kielégítse a sikerérzetemet. Mi a baj velem? Lehet unom a házias életet."
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "Mikor fiatalabb voltam, mindig valami érdekeset csináltam... most úgy érzem elpazarlom az időt, mikor épp nem dolgozom. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed4",
+          "PageIndex": 2,
+          "DisplayPattern": "Mikor fiatalabb voltam, mindig valami érdekeset csináltam... most úgy érzem elpazarlom az időt, mikor épp nem dolgozom."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Boldogan vásárolok tőled terméseket.",
+          "AudioPath": "assets/hu-HU/Pierre/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Boldogan vásárolok tőled terméseket."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Persze csak jó árért cserébe!",
+          "AudioPath": "assets/hu-HU/Pierre/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Persze csak jó árért cserébe!"
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "Nagyon értékelem az üzletedet, {Farmer_Name} úr. Egyre nehezebb és nehezebb volt számomra profitot termelni.",
+          "AudioPath": "assets/hu-HU/Pierre/46_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu2",
+          "PageIndex": 0,
+          "DisplayPattern": "Nagyon értékelem az üzletedet, úr. Egyre nehezebb és nehezebb volt számomra profitot termelni.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "Nagyon értékelem az üzletedet, {Farmer_Name} asszony. Egyre nehezebb és nehezebb volt számomra profitot termelni.",
+          "AudioPath": "assets/hu-HU/Pierre/47_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu2",
+          "PageIndex": 1,
+          "DisplayPattern": "Nagyon értékelem az üzletedet, asszony. Egyre nehezebb és nehezebb volt számomra profitot termelni.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "# {Portrait:Happy} pierre2",
+          "AudioPath": "assets/hu-HU/Pierre/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu8",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierre2"
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "Szerinted Abigail egyáltalán hasonlít rám? Ne mondd meg a feleségemnek, de néha elgondolkozom azon, hogy vajon tényleg én vagyok-e az igazi apja.$k {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu8",
+          "PageIndex": 1,
+          "DisplayPattern": "Szerinted Abigail egyáltalán hasonlít rám? Ne mondd meg a feleségemnek, de néha elgondolkozom azon, hogy vajon tényleg én vagyok-e az igazi apja."
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "Ne mondd el a feleségemnek, de nagyon utálok főzni.",
+          "AudioPath": "assets/hu-HU/Pierre/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu8",
+          "PageIndex": 2,
+          "DisplayPattern": "Ne mondd el a feleségemnek, de nagyon utálok főzni."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "# {Portrait:Happy} pierreJoja",
+          "AudioPath": "assets/hu-HU/Pierre/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreJoja"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Az üzlet elég lassan megy, amióta a Joja beköltözött a városba. Nehéz felvenni a versenyt a választékukkal.$k {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "Az üzlet elég lassan megy, amióta a Joja beköltözött a városba. Nehéz felvenni a versenyt a választékukkal."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Üdvözöllek. Jól megy a sorod a farmodon?",
+          "AudioPath": "assets/hu-HU/Pierre/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "Üdvözöllek. Jól megy a sorod a farmodon?"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Talán pár mag feldobná egy kicsit.",
+          "AudioPath": "assets/hu-HU/Pierre/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 3,
+          "DisplayPattern": "Talán pár mag feldobná egy kicsit."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Ha találnál valamilyen vad termést, akkor attól nálam jó áron megszabadulhatsz.",
+          "AudioPath": "assets/hu-HU/Pierre/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Ha találnál valamilyen vad termést, akkor attól nálam jó áron megszabadulhatsz."
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Mondok neked egy titkot. Néha, mikor teljesen üres a bolt, akkor a pult mögött gyakorlom az operák éneklését. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "Mondok neked egy titkot. Néha, mikor teljesen üres a bolt, akkor a pult mögött gyakorlom az operák éneklését."
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Ezt senkinek se áruld el.",
+          "AudioPath": "assets/hu-HU/Pierre/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "Ezt senkinek se áruld el."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "# {Portrait:Happy} pierreBlue",
+          "AudioPath": "assets/hu-HU/Pierre/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreBlue"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "*sóhaj*... Nagy dilemmában vagyok itt a pult mögött...$k {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "*sóhaj*... Nagy dilemmában vagyok itt a pult mögött..."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Bárcsak elmehetnék sétálni, de nem hagyhatom figyelem nélkül a boltot.",
+          "AudioPath": "assets/hu-HU/Pierre/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 2,
+          "DisplayPattern": "Bárcsak elmehetnék sétálni, de nem hagyhatom figyelem nélkül a boltot."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Úgy hallottam, hogy most nyílnak a virágok, és remek illat terjeng a levegőben... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 3,
+          "DisplayPattern": "Úgy hallottam, hogy most nyílnak a virágok, és remek illat terjeng a levegőben..."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "Egy nap új boltot fogok nyitni a nagyvárosban, és nagyot fogok rajta kaszálni.",
+          "AudioPath": "assets/hu-HU/Pierre/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "Egy nap új boltot fogok nyitni a nagyvárosban, és nagyot fogok rajta kaszálni."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "Sajnos annyira lassan megy az üzlet, hogy alig tudok belőle félretenni... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed6",
+          "PageIndex": 1,
+          "DisplayPattern": "Sajnos annyira lassan megy az üzlet, hogy alig tudok belőle félretenni..."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "Egész jól megy az üzlet, mióta a JojaMart bezárt.",
+          "AudioPath": "assets/hu-HU/Pierre/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed6",
+          "PageIndex": 2,
+          "DisplayPattern": "Egész jól megy az üzlet, mióta a JojaMart bezárt."
+        },
+        {
+          "DialogueFrom": "Thu4",
+          "DialogueText": "Hé, {Farmer_Name}. Te vagy az első számú vendégem!",
+          "AudioPath": "assets/hu-HU/Pierre/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu4",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, . Te vagy az első számú vendégem!"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "Vannak nyári magjaim! Jobb lesz, ha veszel párat.",
+          "AudioPath": "assets/hu-HU/Pierre/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Vannak nyári magjaim! Jobb lesz, ha veszel párat."
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "Örülök, hogy ma nem kell dolgoznom.",
+          "AudioPath": "assets/hu-HU/Pierre/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Örülök, hogy ma nem kell dolgoznom."
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "Most, hogy a Joja eltűnt, úgy érzem az a felelősségem, hogy a hét minden napján kinyissam a boltot. Az embereknek szüksége van a portékáimra!",
+          "AudioPath": "assets/hu-HU/Pierre/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Most, hogy a Joja eltűnt, úgy érzem az a felelősségem, hogy a hét minden napján kinyissam a boltot. Az embereknek szüksége van a portékáimra!"
+        },
+        {
+          "DialogueFrom": "summer_Wed2",
+          "DialogueText": "A bolt üzemeltetése az életem egyik legfontosabb része, de néha jól esik a pihenés...",
+          "AudioPath": "assets/hu-HU/Pierre/69.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed2",
+          "PageIndex": 0,
+          "DisplayPattern": "A bolt üzemeltetése az életem egyik legfontosabb része, de néha jól esik a pihenés..."
+        },
+        {
+          "DialogueFrom": "summer_Wed2",
+          "DialogueText": "Most, hogy a Joja eltűnt, úgy érzem az a felelősségem, hogy a hét minden napján kinyissam a boltot. Az embereknek szüksége van a portékáimra!",
+          "AudioPath": "assets/hu-HU/Pierre/70.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed2",
+          "PageIndex": 1,
+          "DisplayPattern": "Most, hogy a Joja eltűnt, úgy érzem az a felelősségem, hogy a hét minden napján kinyissam a boltot. Az embereknek szüksége van a portékáimra!"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "Mindenki örül a jó időnek, és így nem vásárolnak... *sóhaj*",
+          "AudioPath": "assets/hu-HU/Pierre/71.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Mindenki örül a jó időnek, és így nem vásárolnak... *sóhaj*"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "Ó, üdv. Elégedett vagy a nyári magjaim minőségével?",
+          "AudioPath": "assets/hu-HU/Pierre/72.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Ó, üdv. Elégedett vagy a nyári magjaim minőségével?"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "A nyár a legalkalmasabb arra, hogy frissítő salátát együnk, nem gondolod?",
+          "AudioPath": "assets/hu-HU/Pierre/73.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "A nyár a legalkalmasabb arra, hogy frissítő salátát együnk, nem gondolod?"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "Uhhh... Annyira nagy a forróság idebent.",
+          "AudioPath": "assets/hu-HU/Pierre/74.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Uhhh... Annyira nagy a forróság idebent."
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "Semmilyen termést nem termeszthetsz télen... így nincs számodra magom.",
+          "AudioPath": "assets/hu-HU/Pierre/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Semmilyen termést nem termeszthetsz télen... így nincs számodra magom."
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "Ezt majd jól megsínyli a profitunk.",
+          "AudioPath": "assets/hu-HU/Pierre/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "Ezt majd jól megsínyli a profitunk."
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "Végre... egy kis pihenés.",
+          "AudioPath": "assets/hu-HU/Pierre/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Végre... egy kis pihenés."
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "Most, hogy a Joja eltűnt, úgy érzem az a felelősségem, hogy a hét minden napján kinyissam a boltot. Az embereknek szüksége van a portékáimra!",
+          "AudioPath": "assets/hu-HU/Pierre/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Most, hogy a Joja eltűnt, úgy érzem az a felelősségem, hogy a hét minden napján kinyissam a boltot. Az embereknek szüksége van a portékáimra!"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "# {Portrait:Happy} pierreDin",
+          "AudioPath": "assets/hu-HU/Pierre/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreDin"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "Ma este meglepem Carolinet vacsorával és egy üveg Stardew Vörössel. Senkinek se szólj!$k",
+          "AudioPath": "assets/hu-HU/Pierre/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Ma este meglepem Carolinet vacsorával és egy üveg Stardew Vörössel. Senkinek se szólj!"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "Üdv. Kedved támadt vásárolni?",
+          "AudioPath": "assets/hu-HU/Pierre/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "Üdv. Kedved támadt vásárolni?"
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "Általában ehető dolgokkal kereskedek, szóval ha érceket vagy fát akarsz eladni, akkor jobb lesz, ha máshol próbálkozol.",
+          "AudioPath": "assets/hu-HU/Pierre/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Általában ehető dolgokkal kereskedek, szóval ha érceket vagy fát akarsz eladni, akkor jobb lesz, ha máshol próbálkozol."
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "Csak képzelem, vagy tényleg hideg huzat jön be valahonnan?",
+          "AudioPath": "assets/hu-HU/Pierre/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Csak képzelem, vagy tényleg hideg huzat jön be valahonnan?"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "Ha nem lenne itt ez a bolt, most épp odakint lennék.",
+          "AudioPath": "assets/hu-HU/Pierre/84.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Ha nem lenne itt ez a bolt, most épp odakint lennék."
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "Jó móka lenne hógolyózni.",
+          "AudioPath": "assets/hu-HU/Pierre/85.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Jó móka lenne hógolyózni."
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "Megérkeztek az őszi magvak! Télen semmilyen termés nem terem meg, szóval tavaszig ez az utolsó esélyed, hogy termessz valamit.",
+          "AudioPath": "assets/hu-HU/Pierre/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Megérkeztek az őszi magvak! Télen semmilyen termés nem terem meg, szóval tavaszig ez az utolsó esélyed, hogy termessz valamit."
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "Jobb mindent bevetni, nemde?",
+          "AudioPath": "assets/hu-HU/Pierre/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "Jobb mindent bevetni, nemde?"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "Kezd hűvös lenni odakint...",
+          "AudioPath": "assets/hu-HU/Pierre/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Kezd hűvös lenni odakint..."
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "Ezért egyre több ember néz be a boltba melegedni... hehe.",
+          "AudioPath": "assets/hu-HU/Pierre/89.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Ezért egyre több ember néz be a boltba melegedni... hehe."
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "# {Portrait:Happy} pierreMEGA",
+          "AudioPath": "assets/hu-HU/Pierre/90.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreMEGA"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "Az álmom az, hogy egyre több, új boltot nyithassak, amíg extrém gazdag nem leszek. Hehehe.$k",
+          "AudioPath": "assets/hu-HU/Pierre/91.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "Az álmom az, hogy egyre több, új boltot nyithassak, amíg extrém gazdag nem leszek. Hehehe."
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "Üdvözöllek. Jól megy a sorod a farmodon?",
+          "AudioPath": "assets/hu-HU/Pierre/92.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "Üdvözöllek. Jól megy a sorod a farmodon?"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "Talán pár magom feldobná egy kicsit. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/93.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 3,
+          "DisplayPattern": "Talán pár magom feldobná egy kicsit."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "Boldogan vásárlok tőled a farmodról származó terméseket.",
+          "AudioPath": "assets/hu-HU/Pierre/94.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Boldogan vásárlok tőled a farmodról származó terméseket."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "Igen, viszonteladom őket, profitot termelve... de ezért éri meg alapos bolttulajdonosnak lenni.",
+          "AudioPath": "assets/hu-HU/Pierre/95.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Igen, viszonteladom őket, profitot termelve... de ezért éri meg alapos bolttulajdonosnak lenni."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "Ne ötletelj túl sokat...",
+          "AudioPath": "assets/hu-HU/Pierre/96.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "Ne ötletelj túl sokat..."
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "Ha nem lenne itt ez a bolt, most épp odakint lennék...",
+          "AudioPath": "assets/hu-HU/Pierre/97.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Ha nem lenne itt ez a bolt, most épp odakint lennék..."
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "A levelek remekül néznek ki, a gombák meg csak úgy nőnek.",
+          "AudioPath": "assets/hu-HU/Pierre/98.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "A levelek remekül néznek ki, a gombák meg csak úgy nőnek."
+        },
+        {
+          "DialogueFrom": "Event_naga1",
+          "DialogueText": "Köszönöm, ezt értékelem. De felejtsd el, hogy ezt valaha is láttad, rendben? {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/99.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga1",
+          "PageIndex": 0,
+          "DisplayPattern": "Köszönöm, ezt értékelem. De felejtsd el, hogy ezt valaha is láttad, rendben?"
+        },
+        {
+          "DialogueFrom": "Event_naga1",
+          "DialogueText": "...És én is elfelejtem azt, hogy a hálószobámban kotorásztál!",
+          "AudioPath": "assets/hu-HU/Pierre/100.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga1",
+          "PageIndex": 1,
+          "DisplayPattern": "...És én is elfelejtem azt, hogy a hálószobámban kotorásztál!"
+        },
+        {
+          "DialogueFrom": "Event_naga2",
+          "DialogueText": "Te tényleg ezt tennéd velem? Szörnyű vagy. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/101.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga2",
+          "PageIndex": 0,
+          "DisplayPattern": "Te tényleg ezt tennéd velem? Szörnyű vagy."
+        },
+        {
+          "DialogueFrom": "Event_naga2",
+          "DialogueText": "Ott kezdődik, hogy nem kellett volna a hálószobámban kotorásznod! A kotnyeles szomszédok a legrosszabbak. {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Pierre/102.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga2",
+          "PageIndex": 1,
+          "DisplayPattern": "Ott kezdődik, hogy nem kellett volna a hálószobámban kotorásznod! A kotnyeles szomszédok a legrosszabbak."
+        },
+        {
+          "DialogueFrom": "Fair_Judging",
+          "DialogueText": "Hé, sok szerencsét!",
+          "AudioPath": "assets/hu-HU/Pierre/103.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judging",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, sok szerencsét!"
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerLost",
+          "DialogueText": "Jó érzés a toppon lenni! Hah! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/104.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judged_PlayerLost",
+          "PageIndex": 0,
+          "DisplayPattern": "Jó érzés a toppon lenni! Hah!"
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerLost",
+          "DialogueText": "Szép próbálkozás volt.",
+          "AudioPath": "assets/hu-HU/Pierre/105.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judged_PlayerLost",
+          "PageIndex": 1,
+          "DisplayPattern": "Szép próbálkozás volt."
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerWon",
+          "DialogueText": "El se hiszem, hogy vesztettem... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/106.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judged_PlayerWon",
+          "PageIndex": 0,
+          "DisplayPattern": "El se hiszem, hogy vesztettem..."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "A legtöbb ember ilyen napokon inkább otthon marad... Ez nem tesz jót az üzletnek. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/107.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "A legtöbb ember ilyen napokon inkább otthon marad... Ez nem tesz jót az üzletnek."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s0",
+          "DialogueText": "Hello there, {Farmer_Name}. So! Your first year in Stardew Valley is almost over, huh?",
+          "AudioPath": "assets/hu-HU/Pierre/108.ogg",
+          "TranslationKey": "Events/Farm:102:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hello there, . So! Your first year in Stardew Valley is almost over, huh?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s1",
+          "DialogueText": "If you keep buying seeds from me, you'll be twice as productive next year! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/109.ogg",
+          "TranslationKey": "Events/Farm:102:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "If you keep buying seeds from me, you'll be twice as productive next year!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s2",
+          "DialogueText": "And I have some exciting news...",
+          "AudioPath": "assets/hu-HU/Pierre/110.ogg",
+          "TranslationKey": "Events/Farm:102:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "And I have some exciting news..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s3",
+          "DialogueText": "I'll be selling new seed varieties in my shop next year! I should have 1 new variety per season.",
+          "AudioPath": "assets/hu-HU/Pierre/111.ogg",
+          "TranslationKey": "Events/Farm:102:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll be selling new seed varieties in my shop next year! I should have 1 new variety per season."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s4",
+          "DialogueText": "...Well, that's all I wanted to say. Have a good one.",
+          "AudioPath": "assets/hu-HU/Pierre/112.ogg",
+          "TranslationKey": "Events/Farm:102:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "...Well, that's all I wanted to say. Have a good one."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s5",
+          "DialogueText": "You know... I wouldn't even bother trying my competitor's seeds. {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Pierre/113.ogg",
+          "TranslationKey": "Events/Farm:102:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "You know... I wouldn't even bother trying my competitor's seeds."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s6",
+          "DialogueText": "Pierre's seeds are the *highest* quality seeds you'll find anywhere. That's a promise. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/114.ogg",
+          "TranslationKey": "Events/Farm:102:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Pierre's seeds are the *highest* quality seeds you'll find anywhere. That's a promise."
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s0",
+          "DialogueText": "Abigail?! {Portrait:Love}",
+          "AudioPath": "assets/hu-HU/Pierre/115.ogg",
+          "TranslationKey": "Events/Town:4:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Abigail?!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s1",
+          "DialogueText": "I've been looking all over for you! Your mother wants you to come home and help with dinner! {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Pierre/116.ogg",
+          "TranslationKey": "Events/Town:4:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been looking all over for you! Your mother wants you to come home and help with dinner!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s2",
+          "DialogueText": "What are you doing in the graveyard, anyway? This is no place for a young lady! {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Pierre/117.ogg",
+          "TranslationKey": "Events/Town:4:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "What are you doing in the graveyard, anyway? This is no place for a young lady!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s3",
+          "DialogueText": "...!",
+          "AudioPath": "assets/hu-HU/Pierre/118.ogg",
+          "TranslationKey": "Events/Town:4:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "...!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s4",
+          "DialogueText": "Come back!",
+          "AudioPath": "assets/hu-HU/Pierre/119.ogg",
+          "TranslationKey": "Events/Town:4:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Come back!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s5",
+          "DialogueText": "Okay, my dad won't find us here...",
+          "AudioPath": "assets/hu-HU/Pierre/120.ogg",
+          "TranslationKey": "Events/Town:4:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay, my dad won't find us here..."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s0",
+          "DialogueText": "How does it feel?",
+          "AudioPath": "assets/hu-HU/Pierre/121.ogg",
+          "TranslationKey": "Events/Town:191393:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "How does it feel?"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s1",
+          "DialogueText": "Let's be reasonable.",
+          "AudioPath": "assets/hu-HU/Pierre/122.ogg",
+          "TranslationKey": "Events/Town:191393:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's be reasonable."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s2",
+          "DialogueText": "Let's settle this the old-fashioned way.",
+          "AudioPath": "assets/hu-HU/Pierre/123.ogg",
+          "TranslationKey": "Events/Town:191393:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's settle this the old-fashioned way."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s3",
+          "DialogueText": "No...not this time... {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Pierre/124.ogg",
+          "TranslationKey": "Events/Town:191393:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "No...not this time..."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s4",
+          "DialogueText": "Gather 'round, everyone!",
+          "AudioPath": "assets/hu-HU/Pierre/125.ogg",
+          "TranslationKey": "Events/Town:191393:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Gather 'round, everyone!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s5",
+          "DialogueText": "I remember when I first moved to Pelican Town... This building was active and vibrant.",
+          "AudioPath": "assets/hu-HU/Pierre/126.ogg",
+          "TranslationKey": "Events/Town:191393:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "I remember when I first moved to Pelican Town... This building was active and vibrant."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s6",
+          "DialogueText": "We worked together to make the town a better place. There was a real sense of community.",
+          "AudioPath": "assets/hu-HU/Pierre/127.ogg",
+          "TranslationKey": "Events/Town:191393:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "We worked together to make the town a better place. There was a real sense of community."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s7",
+          "DialogueText": "George, you always used to do the crossword puzzle while sipping coffee in the community kitchen. Remember?",
+          "AudioPath": "assets/hu-HU/Pierre/128.ogg",
+          "TranslationKey": "Events/Town:191393:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "George, you always used to do the crossword puzzle while sipping coffee in the community kitchen. Remember?"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s8",
+          "DialogueText": "Emily, you wove that custom banner for the Stardew Valley Fair.",
+          "AudioPath": "assets/hu-HU/Pierre/129.ogg",
+          "TranslationKey": "Events/Town:191393:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Emily, you wove that custom banner for the Stardew Valley Fair."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s9",
+          "DialogueText": "I remember you working on that for years! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/130.ogg",
+          "TranslationKey": "Events/Town:191393:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "I remember you working on that for years!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s10",
+          "DialogueText": "Willy!",
+          "AudioPath": "assets/hu-HU/Pierre/131.ogg",
+          "TranslationKey": "Events/Town:191393:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Willy!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s11",
+          "DialogueText": "Remember when your little crab experiment got out of hand? {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/132.ogg",
+          "TranslationKey": "Events/Town:191393:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Remember when your little crab experiment got out of hand?"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s12",
+          "DialogueText": "But Gus saved the day with a brilliant idea... A crab leg feast for the entire valley!",
+          "AudioPath": "assets/hu-HU/Pierre/133.ogg",
+          "TranslationKey": "Events/Town:191393:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "But Gus saved the day with a brilliant idea... A crab leg feast for the entire valley!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s13",
+          "DialogueText": "You see, everyone? Our community is what makes Pelican Town special.",
+          "AudioPath": "assets/hu-HU/Pierre/134.ogg",
+          "TranslationKey": "Events/Town:191393:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "You see, everyone? Our community is what makes Pelican Town special."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s14",
+          "DialogueText": "When JojaMart came to town we lost sight of that. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/135.ogg",
+          "TranslationKey": "Events/Town:191393:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "When JojaMart came to town we lost sight of that."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s15",
+          "DialogueText": "But now, thanks to {Farmer_Name}, we have a second chance.",
+          "AudioPath": "assets/hu-HU/Pierre/136.ogg",
+          "TranslationKey": "Events/Town:191393:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "But now, thanks to , we have a second chance."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s16",
+          "DialogueText": "I'm asking that you join me in boycotting JojaMart! We have the power to reclaim our old way of life!",
+          "AudioPath": "assets/hu-HU/Pierre/137.ogg",
+          "TranslationKey": "Events/Town:191393:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm asking that you join me in boycotting JojaMart! We have the power to reclaim our old way of life!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s17",
+          "DialogueText": "Who's with me?",
+          "AudioPath": "assets/hu-HU/Pierre/138.ogg",
+          "TranslationKey": "Events/Town:191393:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "Who's with me?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s0",
+          "DialogueText": "Hey! Who's in the bedroom? {Portrait:Love}",
+          "AudioPath": "assets/hu-HU/Pierre/139.ogg",
+          "TranslationKey": "Events/SeedShop:16:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey! Who's in the bedroom?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s1",
+          "DialogueText": "Wha...? How did you find that?! {Portrait:Love}",
+          "AudioPath": "assets/hu-HU/Pierre/140.ogg",
+          "TranslationKey": "Events/SeedShop:16:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Wha...? How did you find that?!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s2",
+          "DialogueText": "Quick, give it to me! {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Pierre/141.ogg",
+          "TranslationKey": "Events/SeedShop:16:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Quick, give it to me!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s3",
+          "DialogueText": "Promise me you won't tell anyone about this.",
+          "AudioPath": "assets/hu-HU/Pierre/142.ogg",
+          "TranslationKey": "Events/SeedShop:16:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Promise me you won't tell anyone about this."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s4",
+          "DialogueText": "Your secret is safe with me.",
+          "AudioPath": "assets/hu-HU/Pierre/143.ogg",
+          "TranslationKey": "Events/SeedShop:16:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Your secret is safe with me."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s5",
+          "DialogueText": "Your wife deserves to know about this.",
+          "AudioPath": "assets/hu-HU/Pierre/144.ogg",
+          "TranslationKey": "Events/SeedShop:16:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Your wife deserves to know about this."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s6",
+          "DialogueText": "*grumble*...now I have to find a new hiding spot...*grumble* {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Pierre/145.ogg",
+          "TranslationKey": "Events/SeedShop:16:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "*grumble*...now I have to find a new hiding spot...*grumble*"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/3102768:s0",
+          "DialogueText": "Welcome To Pierre's! How can I help you?",
+          "AudioPath": "assets/hu-HU/Pierre/146.ogg",
+          "TranslationKey": "Events/SeedShop:3102768:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Welcome To Pierre's! How can I help you?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/3102768:s1",
+          "DialogueText": "Percent!?!?",
+          "AudioPath": "assets/hu-HU/Pierre/147.ogg",
+          "TranslationKey": "Events/SeedShop:3102768:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Percent!?!?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/3102768:s2",
+          "DialogueText": "But... I can't match those prices! I'd be selling at a loss! {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/148.ogg",
+          "TranslationKey": "Events/SeedShop:3102768:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "But... I can't match those prices! I'd be selling at a loss!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s0",
+          "DialogueText": "Gus, I have just the thing for you...",
+          "AudioPath": "assets/hu-HU/Pierre/149.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Gus, I have just the thing for you..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s1",
+          "DialogueText": "It's a bundle of locally sourced, organic, heirloom veggies...",
+          "AudioPath": "assets/hu-HU/Pierre/150.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a bundle of locally sourced, organic, heirloom veggies..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s2",
+          "DialogueText": "These are hand picked and sorted, to ensure only the very finest in quality and taste.",
+          "AudioPath": "assets/hu-HU/Pierre/151.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "These are hand picked and sorted, to ensure only the very finest in quality and taste."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s3",
+          "DialogueText": "This is a once-in-a-lifetime kind of offer!",
+          "AudioPath": "assets/hu-HU/Pierre/152.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "This is a once-in-a-lifetime kind of offer!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s4",
+          "DialogueText": "ONLY... *mumble* mumble*",
+          "AudioPath": "assets/hu-HU/Pierre/153.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "ONLY... *mumble* mumble*"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s5",
+          "DialogueText": "Heh... that's right. It really is a bargain, isn't it?",
+          "AudioPath": "assets/hu-HU/Pierre/154.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Heh... that's right. It really is a bargain, isn't it?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s6",
+          "DialogueText": "Wait! How about 10,000g then!? {Portrait:Love}",
+          "AudioPath": "assets/hu-HU/Pierre/155.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Wait! How about 10,000g then!?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s7",
+          "DialogueText": "It's a disaster, {Farmer_Name}... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/156.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a disaster, ..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s8",
+          "DialogueText": "I thought this was a surefire business strategy. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/157.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I thought this was a surefire business strategy."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s9",
+          "DialogueText": "But it turns out, no one is willing to buy vegetables at a 10x price markup, even if I put the little 'organic' sticker on them. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/158.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "But it turns out, no one is willing to buy vegetables at a 10x price markup, even if I put the little 'organic' sticker on them."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s10",
+          "DialogueText": "You're right, you can't run a business without taking some risk.",
+          "AudioPath": "assets/hu-HU/Pierre/159.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "You're right, you can't run a business without taking some risk."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s11",
+          "DialogueText": "Hey, I'm not forcing anyone to buy it! If they don't like the price, they can move on. {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Pierre/160.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, I'm not forcing anyone to buy it! If they don't like the price, they can move on."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s12",
+          "DialogueText": "...But, I guess you have a point. If I make all my customers angry, then pretty soon I won't have any customers at all... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/161.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "...But, I guess you have a point. If I make all my customers angry, then pretty soon I won't have any customers at all..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s13",
+          "DialogueText": "By the way, {Farmer_Name}... you look like you could really use a veggie dinner tonight.",
+          "AudioPath": "assets/hu-HU/Pierre/162.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "By the way, ... you look like you could really use a veggie dinner tonight."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s14",
+          "DialogueText": "What do you say, wanna buy these back for the low, low price of 2,501g?",
+          "AudioPath": "assets/hu-HU/Pierre/163.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "What do you say, wanna buy these back for the low, low price of 2,501g?"
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s0",
+          "DialogueText": "No... Not this time, Morris. {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Pierre/164.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "No... Not this time, Morris."
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s1",
+          "DialogueText": "I think it's time we settled this once and for all. {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Pierre/165.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I think it's time we settled this once and for all."
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s2",
+          "DialogueText": "If you're too scared to fight me then bring one of your co-workers! Or are all Joja employees such cowards? {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Pierre/166.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "If you're too scared to fight me then bring one of your co-workers! Or are all Joja employees such cowards?"
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s3",
+          "DialogueText": "And the way you throw punches is just like Joja... {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Pierre/167.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "And the way you throw punches is just like Joja..."
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s4",
+          "DialogueText": "Quantity over quality!",
+          "AudioPath": "assets/hu-HU/Pierre/168.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Quantity over quality!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Pierre",
+          "DialogueText": "A boltomban találhatóak a völgy legjobb minőségű termései. Kérlek, nézd meg alaposan a kirakatomat, és győződj meg róla magad is!",
+          "AudioPath": "assets/hu-HU/Pierre/169.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "A boltomban találhatóak a völgy legjobb minőségű termései. Kérlek, nézd meg alaposan a kirakatomat, és győződj meg róla magad is!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Pierre_y2",
+          "DialogueText": "Biztos vagyok benne, hogy idén én fogom megnyerni a kirakatos versenyt! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/170.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Biztos vagyok benne, hogy idén én fogom megnyerni a kirakatos versenyt!"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Pierre",
+          "DialogueText": "???",
+          "AudioPath": "assets/hu-HU/Pierre/171.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "???"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Pierre_y2",
+          "DialogueText": "Áh, ez {Farmer_Name} gazda! Ma este van ám miből válogatnod. Nézd csak meg! {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Pierre/172.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Áh, ez gazda! Ma este van ám miből válogatnod. Nézd csak meg!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Pierre",
+          "DialogueText": "Micsoda! Hogy kerülsz ide? {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Pierre/173.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Micsoda! Hogy kerülsz ide?"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Pierre",
+          "DialogueText": "Ne nyúlj semmihez.",
+          "AudioPath": "assets/hu-HU/Pierre/174.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "Ne nyúlj semmihez."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Pierre_y2",
+          "DialogueText": "Próbálsz alkudozni, mi? Hah! Értékelem a leleményességedet.",
+          "AudioPath": "assets/hu-HU/Pierre/175.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Próbálsz alkudozni, mi? Hah! Értékelem a leleményességedet."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre",
+          "DialogueText": "Micsoda! Hogy kerülsz ide? {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Pierre/176.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Micsoda! Hogy kerülsz ide?"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre",
+          "DialogueText": "Ne nyúlj semmihez.",
+          "AudioPath": "assets/hu-HU/Pierre/177.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "Ne nyúlj semmihez."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre_y2",
+          "DialogueText": "Hé, nem szabadna itt lenned! {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Pierre/178.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, nem szabadna itt lenned!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre_y2",
+          "DialogueText": "Nos, ha már itt vagy... nem bánnád, ha vigyáznál egy kicsit a bódéra? Meg akarom kóstolni Linus édes és savanykás zseléjét.",
+          "AudioPath": "assets/hu-HU/Pierre/179.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Nos, ha már itt vagy... nem bánnád, ha vigyáznál egy kicsit a bódéra? Meg akarom kóstolni Linus édes és savanykás zseléjét."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre_y2",
+          "DialogueText": "Csak vicceltem, nem bírnám elviselni azt, hogy távol kerüljek a kasszától... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/180.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre_y2",
+          "PageIndex": 2,
+          "DisplayPattern": "Csak vicceltem, nem bírnám elviselni azt, hogy távol kerüljek a kasszától..."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre",
+          "DialogueText": "Hmm... talán ha a Kormányzó úr jó oldalára kerülök, akkor talán kevesebbet kell majd adóznom...",
+          "AudioPath": "assets/hu-HU/Pierre/181.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmm... talán ha a Kormányzó úr jó oldalára kerülök, akkor talán kevesebbet kell majd adóznom..."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre",
+          "DialogueText": "Vajon szereti a régi whiskyt??",
+          "AudioPath": "assets/hu-HU/Pierre/182.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "Vajon szereti a régi whiskyt??"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre",
+          "DialogueText": "Bárcsak ne foglalná le a polgármester egész délután.",
+          "AudioPath": "assets/hu-HU/Pierre/183.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre",
+          "PageIndex": 2,
+          "DisplayPattern": "Bárcsak ne foglalná le a polgármester egész délután."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre_y2",
+          "DialogueText": "Amint Lewis elmegy a kormányzó mellől... akkor kell odamennem hízelegni neki... {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Pierre/184.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Amint Lewis elmegy a kormányzó mellől... akkor kell odamennem hízelegni neki..."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre_y2",
+          "DialogueText": "Áh, nem láttam, hogy itt vagy. {Portrait:Love}",
+          "AudioPath": "assets/hu-HU/Pierre/185.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Áh, nem láttam, hogy itt vagy."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre_y2",
+          "DialogueText": "Ha vásárolni szeretnél valamit, akkor a pult másik oldaláról beszélj velem. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/186.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre_y2",
+          "PageIndex": 2,
+          "DisplayPattern": "Ha vásárolni szeretnél valamit, akkor a pult másik oldaláról beszélj velem."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Pierre",
+          "DialogueText": "Psszt... Majd nézz be holnap a boltba, hogy beszerezd az őszi magvakat!",
+          "AudioPath": "assets/hu-HU/Pierre/187.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Psszt... Majd nézz be holnap a boltba, hogy beszerezd az őszi magvakat!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Pierre_y2",
+          "DialogueText": "Üdv, {Farmer_Name} gazda. Gyere be holnap a boltba, hogy megvásárold az őszi magvaidat! {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Pierre/188.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdv, gazda. Gyere be holnap a boltba, hogy megvásárold az őszi magvaidat!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Pierre",
+          "DialogueText": "Mostanság fenomenálisak az eladási mutatóim... hála a Téli Csillag ünnepének! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/189.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Mostanság fenomenálisak az eladási mutatóim... hála a Téli Csillag ünnepének!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Pierre",
+          "DialogueText": "Öregem, az ünnepek jót tesznek az üzletnek. Mi lenne, ha újakat találhatnék ki...",
+          "AudioPath": "assets/hu-HU/Pierre/190.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "Öregem, az ünnepek jót tesznek az üzletnek. Mi lenne, ha újakat találhatnék ki..."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Pierre_y2",
+          "DialogueText": "Az utolsó pillanatban kellene pár ajándék? Abban segíthetek! Nézd csak meg a portékámat. {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Pierre/191.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Az utolsó pillanatban kellene pár ajándék? Abban segíthetek! Nézd csak meg a portékámat."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Pierre",
+          "DialogueText": "Annyira hideg a hó, hogy nem érzem az ujjaimat... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/192.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Annyira hideg a hó, hogy nem érzem az ujjaimat..."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Pierre_y2",
+          "DialogueText": "A családunkban mindenkinek egyforma Téli Csillagos pulóvere van.",
+          "AudioPath": "assets/hu-HU/Pierre/193.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "A családunkban mindenkinek egyforma Téli Csillagos pulóvere van."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Pierre_y2",
+          "DialogueText": "Bárcsak Abigail is viselné a sajátját... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/194.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Pierre_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Bárcsak Abigail is viselné a sajátját..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s0",
+          "DialogueText": "Ez a mindenkori kedvencem! Köszönöm!",
+          "AudioPath": "assets/hu-HU/Pierre/195.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez a mindenkori kedvencem! Köszönöm!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s1",
+          "DialogueText": "Ez nagyon kedves tőled. Ez tetszik.",
+          "AudioPath": "assets/hu-HU/Pierre/196.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez nagyon kedves tőled. Ez tetszik."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s2",
+          "DialogueText": "Ez pont nem a kedvencem...",
+          "AudioPath": "assets/hu-HU/Pierre/197.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez pont nem a kedvencem..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s3",
+          "DialogueText": "Kérlek, soha többet ne adj ilyet.",
+          "AudioPath": "assets/hu-HU/Pierre/198.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Kérlek, soha többet ne adj ilyet."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s4",
+          "DialogueText": "Egy ajándék? Köszönöm!",
+          "AudioPath": "assets/hu-HU/Pierre/199.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Egy ajándék? Köszönöm!"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow",
+          "DialogueText": "Hé, emlékszel arra, hogy egy {2}-t adtál el nekem a minap? Felszolgáltam a családomnak egy különleges vacsora alkalmából.",
+          "AudioPath": "assets/hu-HU/Pierre/200.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, emlékszel arra, hogy egy {2}-t adtál el nekem a minap? Felszolgáltam a családomnak egy különleges vacsora alkalmából."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow",
+          "DialogueText": "Nem mondanám, hogy nagy sikert aratott... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/201.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow",
+          "PageIndex": 1,
+          "DisplayPattern": "Nem mondanám, hogy nagy sikert aratott..."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow",
+          "DialogueText": "... nos... térjünk vissza az üzletre, oké?",
+          "AudioPath": "assets/hu-HU/Pierre/202.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow",
+          "PageIndex": 2,
+          "DisplayPattern": "... nos... térjünk vissza az üzletre, oké?"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh",
+          "DialogueText": "Hé, emlékszel arra, hogy egy {2}-t adtál el nekem a minap? Felszolgáltam a családomnak egy különleges vacsora alkalmából.",
+          "AudioPath": "assets/hu-HU/Pierre/203.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, emlékszel arra, hogy egy {2}-t adtál el nekem a minap? Felszolgáltam a családomnak egy különleges vacsora alkalmából."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh",
+          "DialogueText": "A feleségem imádta! ...És Abby csak úgy falta az egészet, miután hoisin szószt kentem rá. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/204.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh",
+          "PageIndex": 1,
+          "DisplayPattern": "A feleségem imádta! ...És Abby csak úgy falta az egészet, miután hoisin szószt kentem rá."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh",
+          "DialogueText": "... nos... térjünk vissza az üzletre, oké?",
+          "AudioPath": "assets/hu-HU/Pierre/205.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh",
+          "PageIndex": 2,
+          "DisplayPattern": "... nos... térjünk vissza az üzletre, oké?"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow_Willy",
+          "DialogueText": "Ahoy... emlékszel, hogy a minap eladtál egy {2}-t nekem? Nos, kissé megsütöttem a kabinban tegnap este...",
+          "AudioPath": "assets/hu-HU/Pierre/206.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow_Willy",
+          "PageIndex": 0,
+          "DisplayPattern": "Ahoy... emlékszel, hogy a minap eladtál egy {2}-t nekem? Nos, kissé megsütöttem a kabinban tegnap este..."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow_Willy",
+          "DialogueText": "Ez volt a legrágósabb hal, amit valaha is megrágcsáltam... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Pierre/207.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow_Willy",
+          "PageIndex": 1,
+          "DisplayPattern": "Ez volt a legrágósabb hal, amit valaha is megrágcsáltam..."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh_Willy",
+          "DialogueText": "Ahoy! Emlékszel, hogy a minap hoztál egy {2}-t? Nos, kissé megsütöttem a kabinban tegnap este...",
+          "AudioPath": "assets/hu-HU/Pierre/208.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh_Willy",
+          "PageIndex": 0,
+          "DisplayPattern": "Ahoy! Emlékszel, hogy a minap hoztál egy {2}-t? Nos, kissé megsütöttem a kabinban tegnap este..."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh_Willy",
+          "DialogueText": "Gyerekkorom óta ez volt a legjobb hal, amit ettem! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/209.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh_Willy",
+          "PageIndex": 1,
+          "DisplayPattern": "Gyerekkorom óta ez volt a legjobb hal, amit ettem!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_love_BeforeMovie",
+          "DialogueText": "Régi sci-fiken nőttem fel, szóval tetszene, ha láthatnék egy modern feldolgozást.",
+          "AudioPath": "assets/hu-HU/Pierre/210.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Régi sci-fiken nőttem fel, szóval tetszene, ha láthatnék egy modern feldolgozást."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_love_AfterMovie",
+          "DialogueText": "Hah! Nem az volt, amire számítottam, de a végén egészen jó volt! Teljesen azonosultam Wumbusszal. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Pierre/211.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Hah! Nem az volt, amire számítottam, de a végén egészen jó volt! Teljesen azonosultam Wumbusszal."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_like_BeforeMovie",
+          "DialogueText": "Általában folyton dolgozom, szóval jó néhanapján ilyesmit csinálni.",
+          "AudioPath": "assets/hu-HU/Pierre/212.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Általában folyton dolgozom, szóval jó néhanapján ilyesmit csinálni."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_like_AfterMovie",
+          "DialogueText": "Nem rossz! Vajon van nekik készleten figura, amit vehetnék...",
+          "AudioPath": "assets/hu-HU/Pierre/213.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Nem rossz! Vajon van nekik készleten figura, amit vehetnék..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "DialogueText": "Boltosként érdekesnek találom azt, ahogyan mások a boltjaikat vezetik.",
+          "AudioPath": "assets/hu-HU/Pierre/214.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Boltosként érdekesnek találom azt, ahogyan mások a boltjaikat vezetik."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "DialogueText": "*suttogva* Ne mondd meg Sandynek, de az én bolti választékom kenterbe veri az övét!",
+          "AudioPath": "assets/hu-HU/Pierre/215.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "*suttogva* Ne mondd meg Sandynek, de az én bolti választékom kenterbe veri az övét!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Pierre",
+          "DialogueText": "Psszt... Tojásokat adok pénzért! Hehe... Ne szólj Lewisnek.",
+          "AudioPath": "assets/hu-HU/Pierre/216.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Psszt... Tojásokat adok pénzért! Hehe... Ne szólj Lewisnek."
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Winter",
+          "DialogueText": "Üdvözlünk Pierre fűtött boltjában!",
+          "AudioPath": "assets/hu-HU/Pierre/217.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Winter",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdvözlünk Pierre fűtött boltjában!"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_NotWinter",
+          "DialogueText": "Üdvözlünk Pierre boltjában!",
+          "AudioPath": "assets/hu-HU/Pierre/218.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_NotWinter",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdvözlünk Pierre boltjában!"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Summer",
+          "DialogueText": "Nyári magvak eladóak!",
+          "AudioPath": "assets/hu-HU/Pierre/219.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Summer",
+          "PageIndex": 0,
+          "DisplayPattern": "Nyári magvak eladóak!"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_NotSummer",
+          "DialogueText": "Magvak eladóak!",
+          "AudioPath": "assets/hu-HU/Pierre/220.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_NotSummer",
+          "PageIndex": 0,
+          "DisplayPattern": "Magvak eladóak!"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Greeting1",
+          "DialogueText": "Helló!",
+          "AudioPath": "assets/hu-HU/Pierre/221.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Greeting1",
+          "PageIndex": 0,
+          "DisplayPattern": "Helló!"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Greeting2",
+          "DialogueText": "Ez {Farmer_Name} gazda!",
+          "AudioPath": "assets/hu-HU/Pierre/222.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Greeting2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez {0} gazda!"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Raining",
+          "DialogueText": "Ma jó nap van a vásárláshoz!",
+          "AudioPath": "assets/hu-HU/Pierre/223.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Raining",
+          "PageIndex": 0,
+          "DisplayPattern": "Ma jó nap van a vásárláshoz!"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_NotRaining",
+          "DialogueText": "Üdvözöllek!",
+          "AudioPath": "assets/hu-HU/Pierre/224.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_NotRaining",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdvözöllek!"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_RareGreeting",
+          "DialogueText": "Ugye elhoztad a pénztárcádat?",
+          "AudioPath": "assets/hu-HU/Pierre/225.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_RareGreeting",
+          "PageIndex": 0,
+          "DisplayPattern": "Ugye elhoztad a pénztárcádat?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1812 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Pierre.ja-JP",
+      "VoicePackName": "DictionarV2 (Pierre - ja-JP)",
+      "Character": "Pierre",
+      "Language": "ja-JP",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "おや、あなたが 新しい 牧場主の {Farmer_Name}さん ですね！私はピエール、 雑貨店を 経営しています。",
+          "AudioPath": "assets/ja-JP/Pierre/1_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "おや、あなたが 新しい 牧場主の さん ですね！私はピエール、 雑貨店を 経営しています。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "おや、 あなたが 新しい 牧場主の {Farmer_Name}さん ですね！私はピエール、 雑貨店を 経営しています。",
+          "AudioPath": "assets/ja-JP/Pierre/2_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "おや、 あなたが 新しい 牧場主の さん ですね！私はピエール、 雑貨店を 経営しています。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "もし タネが 必要なら、 私の 店に きてください。それと、 売りたいものが あれば 買い取りますよ！",
+          "AudioPath": "assets/ja-JP/Pierre/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 2,
+          "DisplayPattern": "もし タネが 必要なら、 私の 店に きてください。それと、 売りたいものが あれば 買い取りますよ！"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "農業は 地元の 経済を 活性化 させてくれますからね！",
+          "AudioPath": "assets/ja-JP/Pierre/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 3,
+          "DisplayPattern": "農業は 地元の 経済を 活性化 させてくれますからね！"
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneday",
+          "DialogueText": "どうやったらJojaに負けずにすむんだ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "どうやったらJojaに負けずにすむんだ…"
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneday",
+          "DialogueText": "向こうにはいくらでも余裕がある。私の店がつぶれるまで赤字でセールをするだろう… それから値上げをするつもりなんだ！ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "向こうにはいくらでも余裕がある。私の店がつぶれるまで赤字でセールをするだろう… それから値上げをするつもりなんだ！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "うわあ、私がもらえるなんて信じられません。大金がかかったんじゃないですか？ありがとうございます！",
+          "AudioPath": "assets/ja-JP/Pierre/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "うわあ、私がもらえるなんて信じられません。大金がかかったんじゃないですか？ありがとうございます！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)Book_PriceCatalogue",
+          "DialogueText": "これはすごい！こんなものがあるなんて！私のためにあるような本ですよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:AcceptGift_(O)Book_PriceCatalogue",
+          "PageIndex": 0,
+          "DisplayPattern": "これはすごい！こんなものがあるなんて！私のためにあるような本ですよ！"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "一大事ですよ！ お客さんが来ないんです！このまま「緑」色の雨が降り続いたら、私のお店は「赤」字になってしまいます！ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "一大事ですよ！ お客さんが来ないんです！このまま「緑」色の雨が降り続いたら、私のお店は「赤」字になってしまいます！"
+        },
+        {
+          "DialogueFrom": "GreenRainFinished",
+          "DialogueText": "いつも通りに戻ってよかったですよ。ちょっと大げさに騒ぎすぎたみたいですね…",
+          "AudioPath": "assets/ja-JP/Pierre/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRainFinished",
+          "PageIndex": 0,
+          "DisplayPattern": "いつも通りに戻ってよかったですよ。ちょっと大げさに騒ぎすぎたみたいですね…"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "こんにちは、{Farmer_Name}さん。少しぐらい有害な雨が降ったって、買い物には関係ありませんよね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、さん。少しぐらい有害な雨が降ったって、買い物には関係ありませんよね。"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "冗談ですよ。この雨はまったくの無害みたいですからね。",
+          "AudioPath": "assets/ja-JP/Pierre/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRain_2",
+          "PageIndex": 1,
+          "DisplayPattern": "冗談ですよ。この雨はまったくの無害みたいですからね。"
+        },
+        {
+          "DialogueFrom": "eventSeen_4",
+          "DialogueText": "アビゲイルは反抗期なんです…わかっています。",
+          "AudioPath": "assets/ja-JP/Pierre/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_4",
+          "PageIndex": 0,
+          "DisplayPattern": "アビゲイルは反抗期なんです…わかっています。"
+        },
+        {
+          "DialogueFrom": "eventSeen_4",
+          "DialogueText": "住宅ローンを払うようになったらあの子も大人になるでしょう！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_4",
+          "PageIndex": 1,
+          "DisplayPattern": "住宅ローンを払うようになったらあの子も大人になるでしょう！"
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneweek",
+          "DialogueText": "私は何があっても店を守る覚悟です。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "私は何があっても店を守る覚悟です。"
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneweek",
+          "DialogueText": "モーリスたちが力づくで私をカウンターのから引きずり出そうとしても負けません！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "モーリスたちが力づくで私をカウンターのから引きずり出そうとしても負けません！"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "店を休業しているから、大損です… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "店を休業しているから、大損です…"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "しかしですよ？その価値はあると思っています。",
+          "AudioPath": "assets/ja-JP/Pierre/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort",
+          "PageIndex": 1,
+          "DisplayPattern": "しかしですよ？その価値はあると思っています。"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "うーん…海からの潮風のおかげで、刺し身が食べたくなってきました。",
+          "AudioPath": "assets/ja-JP/Pierre/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん…海からの潮風のおかげで、刺し身が食べたくなってきました。"
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "ええ…子供達を太陽の下で遊ばせてあげてください。私は椅子に座ってますから。",
+          "AudioPath": "assets/ja-JP/Pierre/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "ええ…子供達を太陽の下で遊ばせてあげてください。私は椅子に座ってますから。"
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "飲んで、また飲んで…ガスはきっと大儲けだ！",
+          "AudioPath": "assets/ja-JP/Pierre/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "飲んで、また飲んで…ガスはきっと大儲けだ！"
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "共稼ぎになったことですし、タネの数も2倍必要になるんじゃないですか？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married",
+          "PageIndex": 0,
+          "DisplayPattern": "共稼ぎになったことですし、タネの数も2倍必要になるんじゃないですか？"
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "ははは…ちょっとした冗談ですよ… （オホン）…",
+          "AudioPath": "assets/ja-JP/Pierre/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married",
+          "PageIndex": 1,
+          "DisplayPattern": "ははは…ちょっとした冗談ですよ… （オホン）…"
+        },
+        {
+          "DialogueFrom": "married_Abigail_memory_oneday",
+          "DialogueText": "こんにちは、ええと… わが息子$よ？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/24_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married_Abigail_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、ええと… わが息子$よ？",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "married_Abigail_memory_oneday",
+          "DialogueText": "こんにちは、ええと… わが娘$よ？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/25_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married_Abigail_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "こんにちは、ええと… わが娘$よ？",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "cc_Complete",
+          "DialogueText": "夢って 本当に 叶うんですね！いや実は Jojaマートの 存在が ずいぶんな ストレス だったんですよ。",
+          "AudioPath": "assets/ja-JP/Pierre/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:cc_Complete",
+          "PageIndex": 0,
+          "DisplayPattern": "夢って 本当に 叶うんですね！いや実は Jojaマートの 存在が ずいぶんな ストレス だったんですよ。"
+        },
+        {
+          "DialogueFrom": "cc_Complete",
+          "DialogueText": "こんな 小さな 町だと、 お店は1つで 十分だったり しますから！みんな 気を使って、 多く 支払ってくれようと するのも それはそれで 心苦しかったんでねえ。",
+          "AudioPath": "assets/ja-JP/Pierre/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:cc_Complete",
+          "PageIndex": 1,
+          "DisplayPattern": "こんな 小さな 町だと、 お店は1つで 十分だったり しますから！みんな 気を使って、 多く 支払ってくれようと するのも それはそれで 心苦しかったんでねえ。"
+        },
+        {
+          "DialogueFrom": "joja_Begin",
+          "DialogueText": "今日は ペリカンタウンに とって 悲しい日…Jojaが 大きくなるほど、 私は 破産に 近づいていく。そろそろ お店を 売らないと ダメかもな… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:joja_Begin",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は ペリカンタウンに とって 悲しい日…Jojaが 大きくなるほど、 私は 破産に 近づいていく。そろそろ お店を 売らないと ダメかもな…"
+        },
+        {
+          "DialogueFrom": "MovieInvitation",
+          "DialogueText": "ほう、それはいいですね！ カウンターから出られるのは嬉しいですよ。じゃあ、後で会いましょう！",
+          "AudioPath": "assets/ja-JP/Pierre/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:MovieInvitation",
+          "PageIndex": 0,
+          "DisplayPattern": "ほう、それはいいですね！ カウンターから出られるのは嬉しいですよ。じゃあ、後で会いましょう！"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "いらっしゃい！タネをお探しでしたら、 当店が 一番ですよ！",
+          "AudioPath": "assets/ja-JP/Pierre/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "いらっしゃい！タネをお探しでしたら、 当店が 一番ですよ！"
+        },
+        {
+          "DialogueFrom": "Mon_inlaw_Abigail",
+          "DialogueText": "こんにちは、えっと… お婿$さん？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/31_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon_inlaw_Abigail",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、えっと… お婿$さん？",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Mon_inlaw_Abigail",
+          "DialogueText": "こんにちは、えっと… お嫁$さん？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/32_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon_inlaw_Abigail",
+          "PageIndex": 1,
+          "DisplayPattern": "こんにちは、えっと… お嫁$さん？",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "こんにちは、{Farmer_Name}さん。タネや くだものの 苗木は ご入用ですか？",
+          "AudioPath": "assets/ja-JP/Pierre/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、さん。タネや くだものの 苗木は ご入用ですか？"
+        },
+        {
+          "DialogueFrom": "Mon4_inlaw_Abigail",
+          "DialogueText": "こんにちは、{Farmer_Name}さん。アビゲイルとの 暮らしは どう？彼女が いなくなって 店も 変わったよ…",
+          "AudioPath": "assets/ja-JP/Pierre/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon4_inlaw_Abigail",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、さん。アビゲイルとの 暮らしは どう？彼女が いなくなって 店も 変わったよ…"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "時々、 新しい 商品を 仕入れるから、 忘れずに 見にきてください。",
+          "AudioPath": "assets/ja-JP/Pierre/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "時々、 新しい 商品を 仕入れるから、 忘れずに 見にきてください。"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "店の 経営は かなりの 大仕事 ですよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "店の 経営は かなりの 大仕事 ですよ。"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "私は昔、 結構強い ボクサー だったのです… この右フックは 当時 話題にも なりましたよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "私は昔、 結構強い ボクサー だったのです… この右フックは 当時 話題にも なりましたよ！"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "今日は お休みですよ。",
+          "AudioPath": "assets/ja-JP/Pierre/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は お休みですよ。"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "うーん… 何をしようか… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "うーん… 何をしようか…"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "もし 野生の 農産物を 見つけたら、 いい お値段で 買い取りますよ。",
+          "AudioPath": "assets/ja-JP/Pierre/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "もし 野生の 農産物を 見つけたら、 いい お値段で 買い取りますよ。"
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "# {Portrait:Happy} pierre1",
+          "AudioPath": "assets/ja-JP/Pierre/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierre1"
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "はぁ… どれだけ 商売が よく 行っても、 成功したいという 気持ちが なかなか 満たせませんね。私、 いったい どうしたの でしょう？たぶん、 普通の 生活に 飽きた だけかも。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed4",
+          "PageIndex": 1,
+          "DisplayPattern": "はぁ… どれだけ 商売が よく 行っても、 成功したいという 気持ちが なかなか 満たせませんね。私、 いったい どうしたの でしょう？たぶん、 普通の 生活に 飽きた だけかも。"
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "若かった頃は、 何を していても 楽しかったのですが… 今となっては 仕事をしていない 時間を 無駄に 過ごしてるような 気がするのです。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed4",
+          "PageIndex": 2,
+          "DisplayPattern": "若かった頃は、 何を していても 楽しかったのですが… 今となっては 仕事をしていない 時間を 無駄に 過ごしてるような 気がするのです。"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "農産物なら 何でも 買い取ります。",
+          "AudioPath": "assets/ja-JP/Pierre/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "農産物なら 何でも 買い取ります。"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "もちろん、 それなりの お金は 出しますよ！",
+          "AudioPath": "assets/ja-JP/Pierre/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "もちろん、 それなりの お金は 出しますよ！"
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "いつも ご愛顧いただき ありがとうございます、{Farmer_Name}さん。利益を 上げるのが 日ごとに 厳しくなって いってますからね。",
+          "AudioPath": "assets/ja-JP/Pierre/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu2",
+          "PageIndex": 0,
+          "DisplayPattern": "いつも ご愛顧いただき ありがとうございます、さん。利益を 上げるのが 日ごとに 厳しくなって いってますからね。"
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "# {Portrait:Happy} pierre2",
+          "AudioPath": "assets/ja-JP/Pierre/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu8",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierre2"
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "アビゲイルは 私に 似ていますかね？妻には 秘密 ですが、 時々 自分が 本当に あの子の 父親か わからなく なるのです。$k {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu8",
+          "PageIndex": 1,
+          "DisplayPattern": "アビゲイルは 私に 似ていますかね？妻には 秘密 ですが、 時々 自分が 本当に あの子の 父親か わからなく なるのです。"
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "妻には 秘密ですが、 夕食を 作るのが イヤなんです。",
+          "AudioPath": "assets/ja-JP/Pierre/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu8",
+          "PageIndex": 2,
+          "DisplayPattern": "妻には 秘密ですが、 夕食を 作るのが イヤなんです。"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "# {Portrait:Happy} pierreJoja",
+          "AudioPath": "assets/ja-JP/Pierre/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreJoja"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Jojaマートが 町に できてから 商売 あがったりですね。あの 品揃えに 対抗するのは 難しいですよ。$k {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "Jojaマートが 町に できてから 商売 あがったりですね。あの 品揃えに 対抗するのは 難しいですよ。"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "こんにちは。牧場運営の 調子は いかがですか？",
+          "AudioPath": "assets/ja-JP/Pierre/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "こんにちは。牧場運営の 調子は いかがですか？"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "当店の タネなら お役に 立てるかも しれません。",
+          "AudioPath": "assets/ja-JP/Pierre/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 3,
+          "DisplayPattern": "当店の タネなら お役に 立てるかも しれません。"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "もし 野生の 農産物を 見つけたら、 いい お値段で 買い取りますよ。",
+          "AudioPath": "assets/ja-JP/Pierre/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "もし 野生の 農産物を 見つけたら、 いい お値段で 買い取りますよ。"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "ここだけの 話ですが、店に 誰もいない時、 私は カウンターで オペラの 練習を することが あんです。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "ここだけの 話ですが、店に 誰もいない時、 私は カウンターで オペラの 練習を することが あんです。"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "絶対 誰にも 言わないでくださいよ。",
+          "AudioPath": "assets/ja-JP/Pierre/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "絶対 誰にも 言わないでくださいよ。"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "# {Portrait:Happy} pierreBlue",
+          "AudioPath": "assets/ja-JP/Pierre/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreBlue"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "はぁ… カウンターに 立ちっぱなしは 憂うつに なります…$k {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "はぁ… カウンターに 立ちっぱなしは 憂うつに なります…"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "軽く 散歩 したいのですが、 店を 空けるわけには いきませんよね。",
+          "AudioPath": "assets/ja-JP/Pierre/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 2,
+          "DisplayPattern": "軽く 散歩 したいのですが、 店を 空けるわけには いきませんよね。"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "外じゃ 花は 満開で、 空気の 香りも 良いと 聞きましたが… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 3,
+          "DisplayPattern": "外じゃ 花は 満開で、 空気の 香りも 良いと 聞きましたが…"
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "いつか、 都会に 新店舗を 開けて、 お金持ちに なってやりますよ。",
+          "AudioPath": "assets/ja-JP/Pierre/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "いつか、 都会に 新店舗を 開けて、 お金持ちに なってやりますよ。"
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "ですが、 商売が 振るわなくて なかなか 資金が たまりませんね… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed6",
+          "PageIndex": 1,
+          "DisplayPattern": "ですが、 商売が 振るわなくて なかなか 資金が たまりませんね…"
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "Jojaマートが閉店して以来、うちの商売はかなりうまくいっていますよ。",
+          "AudioPath": "assets/ja-JP/Pierre/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed6",
+          "PageIndex": 2,
+          "DisplayPattern": "Jojaマートが閉店して以来、うちの商売はかなりうまくいっていますよ。"
+        },
+        {
+          "DialogueFrom": "Thu4",
+          "DialogueText": "こんにちは、 {Farmer_Name}。あなたは 当店いちの お得意様 ですよ！",
+          "AudioPath": "assets/ja-JP/Pierre/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu4",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、 。あなたは 当店いちの お得意様 ですよ！"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "夏季の タネを 入荷 しましたよ！買いだめ したほうが いいですよ。",
+          "AudioPath": "assets/ja-JP/Pierre/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "夏季の タネを 入荷 しましたよ！買いだめ したほうが いいですよ。"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "今日が お休みで 本当に うれしいです。",
+          "AudioPath": "assets/ja-JP/Pierre/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "今日が お休みで 本当に うれしいです。"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "jojaがいなくなって、私は店を週7日オープンし続けることに責任を感じています。みなさんが食料品を必要としているのですから！",
+          "AudioPath": "assets/ja-JP/Pierre/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "jojaがいなくなって、私は店を週7日オープンし続けることに責任を感じています。みなさんが食料品を必要としているのですから！"
+        },
+        {
+          "DialogueFrom": "summer_Wed2",
+          "DialogueText": "店の経営は私の人生にとって大切なことのひとつですが、時には休息も必要です…",
+          "AudioPath": "assets/ja-JP/Pierre/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed2",
+          "PageIndex": 0,
+          "DisplayPattern": "店の経営は私の人生にとって大切なことのひとつですが、時には休息も必要です…"
+        },
+        {
+          "DialogueFrom": "summer_Wed2",
+          "DialogueText": "jojaがいなくなって、私は店を週7日オープンし続けることに責任を感じています。みなさんが食料品を必要としているのですから！",
+          "AudioPath": "assets/ja-JP/Pierre/69.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed2",
+          "PageIndex": 1,
+          "DisplayPattern": "jojaがいなくなって、私は店を週7日オープンし続けることに責任を感じています。みなさんが食料品を必要としているのですから！"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "みんな、 買い物より この 気候を 楽しんでるのですね… はぁ…",
+          "AudioPath": "assets/ja-JP/Pierre/70.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "みんな、 買い物より この 気候を 楽しんでるのですね… はぁ…"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "あら、 こんにちは。夏季の タネの 品質には 満足して いただけましたか？",
+          "AudioPath": "assets/ja-JP/Pierre/71.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "あら、 こんにちは。夏季の タネの 品質には 満足して いただけましたか？"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "夏は 新鮮な サラダを 食べるには いい時期 ですよね。",
+          "AudioPath": "assets/ja-JP/Pierre/72.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "夏は 新鮮な サラダを 食べるには いい時期 ですよね。"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "うーん…ここは すごく暑い ですね。",
+          "AudioPath": "assets/ja-JP/Pierre/73.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん…ここは すごく暑い ですね。"
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "冬は 作物を 育てられませんから… お売りできる タネも ありません。",
+          "AudioPath": "assets/ja-JP/Pierre/74.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "冬は 作物を 育てられませんから… お売りできる タネも ありません。"
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "本当に 冬は 大赤字の 季節 ですね。",
+          "AudioPath": "assets/ja-JP/Pierre/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "本当に 冬は 大赤字の 季節 ですね。"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "ようやく、休日ですね。",
+          "AudioPath": "assets/ja-JP/Pierre/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "ようやく、休日ですね。"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "jojaがいなくなって、私は店を週7日オープンし続けることに責任を感じています。みなさんが食料品を必要としているのですから！",
+          "AudioPath": "assets/ja-JP/Pierre/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "jojaがいなくなって、私は店を週7日オープンし続けることに責任を感じています。みなさんが食料品を必要としているのですから！"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "# {Portrait:Happy} pierreDin",
+          "AudioPath": "assets/ja-JP/Pierre/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreDin"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "今日はディナーとスターデューレッドのボトルでキャロラインをビックリさせようと思っています。誰にも言わないでくださいね！$k",
+          "AudioPath": "assets/ja-JP/Pierre/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "今日はディナーとスターデューレッドのボトルでキャロラインをビックリさせようと思っています。誰にも言わないでくださいね！"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "こんにちは。今日は お買い物の 気分ですか？",
+          "AudioPath": "assets/ja-JP/Pierre/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "こんにちは。今日は お買い物の 気分ですか？"
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "私は 主に 食品を 取り扱っていますので、 木材や 鉱石は 他の方に 買い取っていただいたほうが よいでしょう。",
+          "AudioPath": "assets/ja-JP/Pierre/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "私は 主に 食品を 取り扱っていますので、 木材や 鉱石は 他の方に 買い取っていただいたほうが よいでしょう。"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "スキマ風が 入ってきているのは 気のせい でしょうか？",
+          "AudioPath": "assets/ja-JP/Pierre/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "スキマ風が 入ってきているのは 気のせい でしょうか？"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "店の番を する 必要が なかったら、 私は 今頃 外へ 出ていたかも。",
+          "AudioPath": "assets/ja-JP/Pierre/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "店の番を する 必要が なかったら、 私は 今頃 外へ 出ていたかも。"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "雪合戦、 すごく 楽しそうですし。",
+          "AudioPath": "assets/ja-JP/Pierre/84.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "雪合戦、 すごく 楽しそうですし。"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "秋季の タネが 入荷 しました！冬には 作物は 育てられませんから、 春まで 待つことに なりますよ。",
+          "AudioPath": "assets/ja-JP/Pierre/85.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "秋季の タネが 入荷 しました！冬には 作物は 育てられませんから、 春まで 待つことに なりますよ。"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "全部 売れれば いいんですけどね。",
+          "AudioPath": "assets/ja-JP/Pierre/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "全部 売れれば いいんですけどね。"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "外が 寒くなってきましたね…",
+          "AudioPath": "assets/ja-JP/Pierre/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "外が 寒くなってきましたね…"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "つまり、 暖を取るために 来店する 人も 増えるわけですね… ふふっ。",
+          "AudioPath": "assets/ja-JP/Pierre/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "つまり、 暖を取るために 来店する 人も 増えるわけですね… ふふっ。"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "# {Portrait:Happy} pierreMEGA",
+          "AudioPath": "assets/ja-JP/Pierre/89.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreMEGA"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "私の夢は、 大金持ちに なるまで 店舗を どんどん 各地に 出して行く ことなんです。ふふっ。$k",
+          "AudioPath": "assets/ja-JP/Pierre/90.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "私の夢は、 大金持ちに なるまで 店舗を どんどん 各地に 出して行く ことなんです。ふふっ。"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "こんにちは。牧場運営は 順調ですか？",
+          "AudioPath": "assets/ja-JP/Pierre/91.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "こんにちは。牧場運営は 順調ですか？"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "当店の タネなら お役に 立てるかも しれません。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/92.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 3,
+          "DisplayPattern": "当店の タネなら お役に 立てるかも しれません。"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "農作物なら 何でも 喜んで 買い取りますよ。",
+          "AudioPath": "assets/ja-JP/Pierre/93.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "農作物なら 何でも 喜んで 買い取りますよ。"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "ええ、 買い取ったものは また 売りに出しますけどね… 店主としての 特権でも ありますから。",
+          "AudioPath": "assets/ja-JP/Pierre/94.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "ええ、 買い取ったものは また 売りに出しますけどね… 店主としての 特権でも ありますから。"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "変なことは 考えないで くださいよ…",
+          "AudioPath": "assets/ja-JP/Pierre/95.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "変なことは 考えないで くださいよ…"
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "店の番を する 必要が なかったら、 私は 今頃 外へ 出ていたかも。",
+          "AudioPath": "assets/ja-JP/Pierre/96.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "店の番を する 必要が なかったら、 私は 今頃 外へ 出ていたかも。"
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "紅葉は キレイですし、 キノコも 沢山 取れそうですから。",
+          "AudioPath": "assets/ja-JP/Pierre/97.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "紅葉は キレイですし、 キノコも 沢山 取れそうですから。"
+        },
+        {
+          "DialogueFrom": "Event_naga1",
+          "DialogueText": "ええ、 とても 助かります。いま見たことは 絶対 忘れてくださいよ。 いいですか？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/98.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga1",
+          "PageIndex": 0,
+          "DisplayPattern": "ええ、 とても 助かります。いま見たことは 絶対 忘れてくださいよ。 いいですか？"
+        },
+        {
+          "DialogueFrom": "Event_naga1",
+          "DialogueText": "…私の 寝室の まわりを うろついてたことも 不問に しますから！",
+          "AudioPath": "assets/ja-JP/Pierre/99.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga1",
+          "PageIndex": 1,
+          "DisplayPattern": "…私の 寝室の まわりを うろついてたことも 不問に しますから！"
+        },
+        {
+          "DialogueFrom": "Event_naga2",
+          "DialogueText": "本当に そんなことを するつもりですか？なんて ひどい 人だ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/100.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga2",
+          "PageIndex": 0,
+          "DisplayPattern": "本当に そんなことを するつもりですか？なんて ひどい 人だ。"
+        },
+        {
+          "DialogueFrom": "Event_naga2",
+          "DialogueText": "そもそも、 私の寝室の 周りを うろつくなんて まったく 良いことじゃ ありませんし！詮索好きの 隣人って ほんと 最低ですよ。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Pierre/101.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga2",
+          "PageIndex": 1,
+          "DisplayPattern": "そもそも、 私の寝室の 周りを うろつくなんて まったく 良いことじゃ ありませんし！詮索好きの 隣人って ほんと 最低ですよ。"
+        },
+        {
+          "DialogueFrom": "Fair_Judging",
+          "DialogueText": "がんばって。",
+          "AudioPath": "assets/ja-JP/Pierre/102.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judging",
+          "PageIndex": 0,
+          "DisplayPattern": "がんばって。"
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerLost",
+          "DialogueText": "位に なるって いい気分だね！ ハハッ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/103.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judged_PlayerLost",
+          "PageIndex": 0,
+          "DisplayPattern": "位に なるって いい気分だね！ ハハッ！"
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerLost",
+          "DialogueText": "それでも 良くがんばった。",
+          "AudioPath": "assets/ja-JP/Pierre/104.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judged_PlayerLost",
+          "PageIndex": 1,
+          "DisplayPattern": "それでも 良くがんばった。"
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerWon",
+          "DialogueText": "負けたなんて 信じられない… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/105.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judged_PlayerWon",
+          "PageIndex": 0,
+          "DisplayPattern": "負けたなんて 信じられない…"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "こんな日は みんな 家から 出なくなりますね…商売 あがったりですよ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/106.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "こんな日は みんな 家から 出なくなりますね…商売 あがったりですよ。"
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s0",
+          "DialogueText": "Hello there, {Farmer_Name}. So! Your first year in Stardew Valley is almost over, huh?",
+          "AudioPath": "assets/ja-JP/Pierre/107.ogg",
+          "TranslationKey": "Events/Farm:102:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hello there, . So! Your first year in Stardew Valley is almost over, huh?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s1",
+          "DialogueText": "If you keep buying seeds from me, you'll be twice as productive next year! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/108.ogg",
+          "TranslationKey": "Events/Farm:102:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "If you keep buying seeds from me, you'll be twice as productive next year!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s2",
+          "DialogueText": "And I have some exciting news...",
+          "AudioPath": "assets/ja-JP/Pierre/109.ogg",
+          "TranslationKey": "Events/Farm:102:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "And I have some exciting news..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s3",
+          "DialogueText": "I'll be selling new seed varieties in my shop next year! I should have 1 new variety per season.",
+          "AudioPath": "assets/ja-JP/Pierre/110.ogg",
+          "TranslationKey": "Events/Farm:102:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll be selling new seed varieties in my shop next year! I should have 1 new variety per season."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s4",
+          "DialogueText": "...Well, that's all I wanted to say. Have a good one.",
+          "AudioPath": "assets/ja-JP/Pierre/111.ogg",
+          "TranslationKey": "Events/Farm:102:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "...Well, that's all I wanted to say. Have a good one."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s5",
+          "DialogueText": "You know... I wouldn't even bother trying my competitor's seeds. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Pierre/112.ogg",
+          "TranslationKey": "Events/Farm:102:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "You know... I wouldn't even bother trying my competitor's seeds."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s6",
+          "DialogueText": "Pierre's seeds are the *highest* quality seeds you'll find anywhere. That's a promise. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/113.ogg",
+          "TranslationKey": "Events/Farm:102:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Pierre's seeds are the *highest* quality seeds you'll find anywhere. That's a promise."
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s0",
+          "DialogueText": "Abigail?! {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Pierre/114.ogg",
+          "TranslationKey": "Events/Town:4:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Abigail?!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s1",
+          "DialogueText": "I've been looking all over for you! Your mother wants you to come home and help with dinner! {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Pierre/115.ogg",
+          "TranslationKey": "Events/Town:4:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been looking all over for you! Your mother wants you to come home and help with dinner!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s2",
+          "DialogueText": "What are you doing in the graveyard, anyway? This is no place for a young lady! {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Pierre/116.ogg",
+          "TranslationKey": "Events/Town:4:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "What are you doing in the graveyard, anyway? This is no place for a young lady!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s3",
+          "DialogueText": "...!",
+          "AudioPath": "assets/ja-JP/Pierre/117.ogg",
+          "TranslationKey": "Events/Town:4:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "...!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s4",
+          "DialogueText": "Come back!",
+          "AudioPath": "assets/ja-JP/Pierre/118.ogg",
+          "TranslationKey": "Events/Town:4:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Come back!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s5",
+          "DialogueText": "Okay, my dad won't find us here...",
+          "AudioPath": "assets/ja-JP/Pierre/119.ogg",
+          "TranslationKey": "Events/Town:4:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay, my dad won't find us here..."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s0",
+          "DialogueText": "How does it feel?",
+          "AudioPath": "assets/ja-JP/Pierre/120.ogg",
+          "TranslationKey": "Events/Town:191393:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "How does it feel?"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s1",
+          "DialogueText": "Let's be reasonable.",
+          "AudioPath": "assets/ja-JP/Pierre/121.ogg",
+          "TranslationKey": "Events/Town:191393:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's be reasonable."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s2",
+          "DialogueText": "Let's settle this the old-fashioned way.",
+          "AudioPath": "assets/ja-JP/Pierre/122.ogg",
+          "TranslationKey": "Events/Town:191393:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's settle this the old-fashioned way."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s3",
+          "DialogueText": "No...not this time... {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Pierre/123.ogg",
+          "TranslationKey": "Events/Town:191393:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "No...not this time..."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s4",
+          "DialogueText": "Gather 'round, everyone!",
+          "AudioPath": "assets/ja-JP/Pierre/124.ogg",
+          "TranslationKey": "Events/Town:191393:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Gather 'round, everyone!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s5",
+          "DialogueText": "I remember when I first moved to Pelican Town... This building was active and vibrant.",
+          "AudioPath": "assets/ja-JP/Pierre/125.ogg",
+          "TranslationKey": "Events/Town:191393:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "I remember when I first moved to Pelican Town... This building was active and vibrant."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s6",
+          "DialogueText": "We worked together to make the town a better place. There was a real sense of community.",
+          "AudioPath": "assets/ja-JP/Pierre/126.ogg",
+          "TranslationKey": "Events/Town:191393:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "We worked together to make the town a better place. There was a real sense of community."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s7",
+          "DialogueText": "George, you always used to do the crossword puzzle while sipping coffee in the community kitchen. Remember?",
+          "AudioPath": "assets/ja-JP/Pierre/127.ogg",
+          "TranslationKey": "Events/Town:191393:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "George, you always used to do the crossword puzzle while sipping coffee in the community kitchen. Remember?"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s8",
+          "DialogueText": "Emily, you wove that custom banner for the Stardew Valley Fair.",
+          "AudioPath": "assets/ja-JP/Pierre/128.ogg",
+          "TranslationKey": "Events/Town:191393:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Emily, you wove that custom banner for the Stardew Valley Fair."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s9",
+          "DialogueText": "I remember you working on that for years! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/129.ogg",
+          "TranslationKey": "Events/Town:191393:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "I remember you working on that for years!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s10",
+          "DialogueText": "Willy!",
+          "AudioPath": "assets/ja-JP/Pierre/130.ogg",
+          "TranslationKey": "Events/Town:191393:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Willy!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s11",
+          "DialogueText": "Remember when your little crab experiment got out of hand? {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/131.ogg",
+          "TranslationKey": "Events/Town:191393:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Remember when your little crab experiment got out of hand?"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s12",
+          "DialogueText": "But Gus saved the day with a brilliant idea... A crab leg feast for the entire valley!",
+          "AudioPath": "assets/ja-JP/Pierre/132.ogg",
+          "TranslationKey": "Events/Town:191393:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "But Gus saved the day with a brilliant idea... A crab leg feast for the entire valley!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s13",
+          "DialogueText": "You see, everyone? Our community is what makes Pelican Town special.",
+          "AudioPath": "assets/ja-JP/Pierre/133.ogg",
+          "TranslationKey": "Events/Town:191393:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "You see, everyone? Our community is what makes Pelican Town special."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s14",
+          "DialogueText": "When JojaMart came to town we lost sight of that. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/134.ogg",
+          "TranslationKey": "Events/Town:191393:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "When JojaMart came to town we lost sight of that."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s15",
+          "DialogueText": "But now, thanks to {Farmer_Name}, we have a second chance.",
+          "AudioPath": "assets/ja-JP/Pierre/135.ogg",
+          "TranslationKey": "Events/Town:191393:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "But now, thanks to , we have a second chance."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s16",
+          "DialogueText": "I'm asking that you join me in boycotting JojaMart! We have the power to reclaim our old way of life!",
+          "AudioPath": "assets/ja-JP/Pierre/136.ogg",
+          "TranslationKey": "Events/Town:191393:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm asking that you join me in boycotting JojaMart! We have the power to reclaim our old way of life!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s17",
+          "DialogueText": "Who's with me?",
+          "AudioPath": "assets/ja-JP/Pierre/137.ogg",
+          "TranslationKey": "Events/Town:191393:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "Who's with me?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s0",
+          "DialogueText": "Hey! Who's in the bedroom? {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Pierre/138.ogg",
+          "TranslationKey": "Events/SeedShop:16:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey! Who's in the bedroom?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s1",
+          "DialogueText": "Wha...? How did you find that?! {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Pierre/139.ogg",
+          "TranslationKey": "Events/SeedShop:16:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Wha...? How did you find that?!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s2",
+          "DialogueText": "Quick, give it to me! {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Pierre/140.ogg",
+          "TranslationKey": "Events/SeedShop:16:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Quick, give it to me!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s3",
+          "DialogueText": "Promise me you won't tell anyone about this.",
+          "AudioPath": "assets/ja-JP/Pierre/141.ogg",
+          "TranslationKey": "Events/SeedShop:16:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Promise me you won't tell anyone about this."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s4",
+          "DialogueText": "Your secret is safe with me.",
+          "AudioPath": "assets/ja-JP/Pierre/142.ogg",
+          "TranslationKey": "Events/SeedShop:16:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Your secret is safe with me."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s5",
+          "DialogueText": "Your wife deserves to know about this.",
+          "AudioPath": "assets/ja-JP/Pierre/143.ogg",
+          "TranslationKey": "Events/SeedShop:16:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Your wife deserves to know about this."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s6",
+          "DialogueText": "*grumble*...now I have to find a new hiding spot...*grumble* {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Pierre/144.ogg",
+          "TranslationKey": "Events/SeedShop:16:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "*grumble*...now I have to find a new hiding spot...*grumble*"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/3102768:s0",
+          "DialogueText": "Welcome To Pierre's! How can I help you?",
+          "AudioPath": "assets/ja-JP/Pierre/145.ogg",
+          "TranslationKey": "Events/SeedShop:3102768:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Welcome To Pierre's! How can I help you?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/3102768:s1",
+          "DialogueText": "Percent!?!?",
+          "AudioPath": "assets/ja-JP/Pierre/146.ogg",
+          "TranslationKey": "Events/SeedShop:3102768:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Percent!?!?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/3102768:s2",
+          "DialogueText": "But... I can't match those prices! I'd be selling at a loss! {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/147.ogg",
+          "TranslationKey": "Events/SeedShop:3102768:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "But... I can't match those prices! I'd be selling at a loss!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s0",
+          "DialogueText": "Gus, I have just the thing for you...",
+          "AudioPath": "assets/ja-JP/Pierre/148.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Gus, I have just the thing for you..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s1",
+          "DialogueText": "It's a bundle of locally sourced, organic, heirloom veggies...",
+          "AudioPath": "assets/ja-JP/Pierre/149.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a bundle of locally sourced, organic, heirloom veggies..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s2",
+          "DialogueText": "These are hand picked and sorted, to ensure only the very finest in quality and taste.",
+          "AudioPath": "assets/ja-JP/Pierre/150.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "These are hand picked and sorted, to ensure only the very finest in quality and taste."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s3",
+          "DialogueText": "This is a once-in-a-lifetime kind of offer!",
+          "AudioPath": "assets/ja-JP/Pierre/151.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "This is a once-in-a-lifetime kind of offer!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s4",
+          "DialogueText": "ONLY... *mumble* mumble*",
+          "AudioPath": "assets/ja-JP/Pierre/152.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "ONLY... *mumble* mumble*"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s5",
+          "DialogueText": "Heh... that's right. It really is a bargain, isn't it?",
+          "AudioPath": "assets/ja-JP/Pierre/153.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Heh... that's right. It really is a bargain, isn't it?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s6",
+          "DialogueText": "Wait! How about 10,000g then!? {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Pierre/154.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Wait! How about 10,000g then!?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s7",
+          "DialogueText": "It's a disaster, {Farmer_Name}... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/155.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a disaster, ..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s8",
+          "DialogueText": "I thought this was a surefire business strategy. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/156.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I thought this was a surefire business strategy."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s9",
+          "DialogueText": "But it turns out, no one is willing to buy vegetables at a 10x price markup, even if I put the little 'organic' sticker on them. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/157.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "But it turns out, no one is willing to buy vegetables at a 10x price markup, even if I put the little 'organic' sticker on them."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s10",
+          "DialogueText": "You're right, you can't run a business without taking some risk.",
+          "AudioPath": "assets/ja-JP/Pierre/158.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "You're right, you can't run a business without taking some risk."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s11",
+          "DialogueText": "Hey, I'm not forcing anyone to buy it! If they don't like the price, they can move on. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Pierre/159.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, I'm not forcing anyone to buy it! If they don't like the price, they can move on."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s12",
+          "DialogueText": "...But, I guess you have a point. If I make all my customers angry, then pretty soon I won't have any customers at all... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/160.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "...But, I guess you have a point. If I make all my customers angry, then pretty soon I won't have any customers at all..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s13",
+          "DialogueText": "By the way, {Farmer_Name}... you look like you could really use a veggie dinner tonight.",
+          "AudioPath": "assets/ja-JP/Pierre/161.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "By the way, ... you look like you could really use a veggie dinner tonight."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s14",
+          "DialogueText": "What do you say, wanna buy these back for the low, low price of 2,501g?",
+          "AudioPath": "assets/ja-JP/Pierre/162.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "What do you say, wanna buy these back for the low, low price of 2,501g?"
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s0",
+          "DialogueText": "No... Not this time, Morris. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Pierre/163.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "No... Not this time, Morris."
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s1",
+          "DialogueText": "I think it's time we settled this once and for all. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Pierre/164.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I think it's time we settled this once and for all."
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s2",
+          "DialogueText": "If you're too scared to fight me then bring one of your co-workers! Or are all Joja employees such cowards? {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Pierre/165.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "If you're too scared to fight me then bring one of your co-workers! Or are all Joja employees such cowards?"
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s3",
+          "DialogueText": "And the way you throw punches is just like Joja... {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Pierre/166.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "And the way you throw punches is just like Joja..."
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s4",
+          "DialogueText": "Quantity over quality!",
+          "AudioPath": "assets/ja-JP/Pierre/167.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Quantity over quality!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Pierre",
+          "DialogueText": "ウチの店で仕入れてる品物は、谷じゅうで一番質がいいんですよ。さあさあもっと近くによって、質のよさをその目で確かめてください！",
+          "AudioPath": "assets/ja-JP/Pierre/168.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "ウチの店で仕入れてる品物は、谷じゅうで一番質がいいんですよ。さあさあもっと近くによって、質のよさをその目で確かめてください！"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Pierre_y2",
+          "DialogueText": "今年の品評会では必ず優勝しますよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/169.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "今年の品評会では必ず優勝しますよ！"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Pierre",
+          "DialogueText": "??",
+          "AudioPath": "assets/ja-JP/Pierre/170.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "??"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Pierre_y2",
+          "DialogueText": "やあ、{Farmer_Name}！今夜はいい品物を取りそろえていますよ。どうぞ見ていってください！ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Pierre/171.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "やあ、！今夜はいい品物を取りそろえていますよ。どうぞ見ていってください！"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Pierre",
+          "DialogueText": "ちょっと！どうやって入ったんです？ {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Pierre/172.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "ちょっと！どうやって入ったんです？"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Pierre",
+          "DialogueText": "品物にさわらないでくださいね。",
+          "AudioPath": "assets/ja-JP/Pierre/173.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "品物にさわらないでくださいね。"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Pierre_y2",
+          "DialogueText": "裏取引がしたいのですか？ははは！なかなか勇気がありますね。",
+          "AudioPath": "assets/ja-JP/Pierre/174.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "裏取引がしたいのですか？ははは！なかなか勇気がありますね。"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre",
+          "DialogueText": "ええっ！どうやって入ったんです？ {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Pierre/175.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "ええっ！どうやって入ったんです？"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre",
+          "DialogueText": "品物にさわらないでくださいね。",
+          "AudioPath": "assets/ja-JP/Pierre/176.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "品物にさわらないでくださいね。"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre_y2",
+          "DialogueText": "ここに入ってこないでください！ {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Pierre/177.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "ここに入ってこないでください！"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre_y2",
+          "DialogueText": "まあ、もしここにいたいのなら… しばらくお店を見ていてもらえませんか？ライナスの甘酸っぱいゼリーを食べてみたいんです。",
+          "AudioPath": "assets/ja-JP/Pierre/178.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "まあ、もしここにいたいのなら… しばらくお店を見ていてもらえませんか？ライナスの甘酸っぱいゼリーを食べてみたいんです。"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre_y2",
+          "DialogueText": "冗談ですよ。私はレジから離れると不安になるんです… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/179.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre_y2",
+          "PageIndex": 2,
+          "DisplayPattern": "冗談ですよ。私はレジから離れると不安になるんです…"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre",
+          "DialogueText": "ふむ…知事のごきげんがとれれば、もしかすると税金でなにか優遇してもらえるかもしれないな…",
+          "AudioPath": "assets/ja-JP/Pierre/180.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "ふむ…知事のごきげんがとれれば、もしかすると税金でなにか優遇してもらえるかもしれないな…"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre",
+          "DialogueText": "年代もののウイスキーなんかお気に召すかな？",
+          "AudioPath": "assets/ja-JP/Pierre/181.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "年代もののウイスキーなんかお気に召すかな？"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre",
+          "DialogueText": "問題は、町長が午後じゅうずっと知事をひとりじめするだろうってことだな…",
+          "AudioPath": "assets/ja-JP/Pierre/182.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre",
+          "PageIndex": 2,
+          "DisplayPattern": "問題は、町長が午後じゅうずっと知事をひとりじめするだろうってことだな…"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre_y2",
+          "DialogueText": "お話をするチャンスは… ルイスさんが知事から離れた瞬間だ… {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Pierre/183.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "お話をするチャンスは… ルイスさんが知事から離れた瞬間だ…"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre_y2",
+          "DialogueText": "おっと、なにかご用ですか？ {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Pierre/184.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "おっと、なにかご用ですか？"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre_y2",
+          "DialogueText": "買いたいものがあるならカウンターの向こうから声をかけてください。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/185.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre_y2",
+          "PageIndex": 2,
+          "DisplayPattern": "買いたいものがあるならカウンターの向こうから声をかけてください。"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Pierre",
+          "DialogueText": "ねえ、ちょっと…明日はウチに立ち寄るのを忘れないでくださいね。秋モノのタネが入荷してますよ！",
+          "AudioPath": "assets/ja-JP/Pierre/186.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "ねえ、ちょっと…明日はウチに立ち寄るのを忘れないでくださいね。秋モノのタネが入荷してますよ！"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Pierre_y2",
+          "DialogueText": "こんにちは、{Farmer_Name}。明日は私の店に寄って、秋のタネを買ってくださいね！ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Pierre/187.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、。明日は私の店に寄って、秋のタネを買ってくださいね！"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Pierre",
+          "DialogueText": "今年はおどろくほど売り上げがよかったんですよ…ああ、冬の星に感謝を！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/188.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "今年はおどろくほど売り上げがよかったんですよ…ああ、冬の星に感謝を！"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Pierre",
+          "DialogueText": "いやあ、祭日っていうのはいい商売になりますね。わたしも自分でひとつ考えようかな…",
+          "AudioPath": "assets/ja-JP/Pierre/189.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "いやあ、祭日っていうのはいい商売になりますね。わたしも自分でひとつ考えようかな…"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Pierre_y2",
+          "DialogueText": "急ぎのプレゼントをお探しですか？おまかせください！とっておきの商品を取りそろえていますよ！ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Pierre/190.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "急ぎのプレゼントをお探しですか？おまかせください！とっておきの商品を取りそろえていますよ！"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Pierre",
+          "DialogueText": "雪が冷たすぎて、指の感覚がなくなっちゃいましたよ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/191.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "雪が冷たすぎて、指の感覚がなくなっちゃいましたよ…"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Pierre_y2",
+          "DialogueText": "わが家にはおそろいの冬星のセーターがあるんです。",
+          "AudioPath": "assets/ja-JP/Pierre/192.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "わが家にはおそろいの冬星のセーターがあるんです。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Pierre_y2",
+          "DialogueText": "アビゲイルが着てくれたらうれしいんですが… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/193.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Pierre_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "アビゲイルが着てくれたらうれしいんですが…"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s0",
+          "DialogueText": "ああ、これ大好きなんですよ！ありがとうございます！",
+          "AudioPath": "assets/ja-JP/Pierre/194.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、これ大好きなんですよ！ありがとうございます！"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s1",
+          "DialogueText": "ご親切にありがとうございます。これ、好きなんですよ。",
+          "AudioPath": "assets/ja-JP/Pierre/195.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "ご親切にありがとうございます。これ、好きなんですよ。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s2",
+          "DialogueText": "これは…あまり好みじゃないですね…",
+          "AudioPath": "assets/ja-JP/Pierre/196.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "これは…あまり好みじゃないですね…"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s3",
+          "DialogueText": "こいつはもう二度と持ってこないでください、頼みます。",
+          "AudioPath": "assets/ja-JP/Pierre/197.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "こいつはもう二度と持ってこないでください、頼みます。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s4",
+          "DialogueText": "プレゼントですか？ありがとうございます！",
+          "AudioPath": "assets/ja-JP/Pierre/198.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "プレゼントですか？ありがとうございます！"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow",
+          "DialogueText": "どうも、このあいだ売ってくれた{2}を覚えてますか？あれ、家族で食べる特別な日のディナーに出したんですけどね。",
+          "AudioPath": "assets/ja-JP/Pierre/199.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow",
+          "PageIndex": 0,
+          "DisplayPattern": "どうも、このあいだ売ってくれた{2}を覚えてますか？あれ、家族で食べる特別な日のディナーに出したんですけどね。"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow",
+          "DialogueText": "大成功とはいかなかったですね。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/200.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow",
+          "PageIndex": 1,
+          "DisplayPattern": "大成功とはいかなかったですね。"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow",
+          "DialogueText": "…まあ、…お互い商売に戻りましょうか。ねっ？",
+          "AudioPath": "assets/ja-JP/Pierre/201.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow",
+          "PageIndex": 2,
+          "DisplayPattern": "…まあ、…お互い商売に戻りましょうか。ねっ？"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh",
+          "DialogueText": "どうも、このあいだ売ってくれた{2}を覚えてますか？あれ、家族で食べる特別な日のディナーに出したんですけどね。",
+          "AudioPath": "assets/ja-JP/Pierre/202.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh",
+          "PageIndex": 0,
+          "DisplayPattern": "どうも、このあいだ売ってくれた{2}を覚えてますか？あれ、家族で食べる特別な日のディナーに出したんですけどね。"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh",
+          "DialogueText": "うちの奥さんがとても気にいりましてね！…アビーときたら、わたしが海鮮醤をかけてやったらすごい勢いで食べはじめましてね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/203.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh",
+          "PageIndex": 1,
+          "DisplayPattern": "うちの奥さんがとても気にいりましてね！…アビーときたら、わたしが海鮮醤をかけてやったらすごい勢いで食べはじめましてね。"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh",
+          "DialogueText": "…それじゃ、お互い商売に戻りましょうか。",
+          "AudioPath": "assets/ja-JP/Pierre/204.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh",
+          "PageIndex": 2,
+          "DisplayPattern": "…それじゃ、お互い商売に戻りましょうか。"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow_Willy",
+          "DialogueText": "やぁ...{2}をこの前売ったことを知ってる？うーん、昨日の夜キャビンでそれを焼いたんだ...",
+          "AudioPath": "assets/ja-JP/Pierre/205.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow_Willy",
+          "PageIndex": 0,
+          "DisplayPattern": "やぁ...{2}をこの前売ったことを知ってる？うーん、昨日の夜キャビンでそれを焼いたんだ..."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow_Willy",
+          "DialogueText": "今までによく食べた最もおいしい魚でした... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Pierre/206.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow_Willy",
+          "PageIndex": 1,
+          "DisplayPattern": "今までによく食べた最もおいしい魚でした..."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh_Willy",
+          "DialogueText": "やぁ！この前{2}が持ってきたことを覚えてる？うーん、昨日の夜キャビンでそれを焼いたんだ...",
+          "AudioPath": "assets/ja-JP/Pierre/207.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh_Willy",
+          "PageIndex": 0,
+          "DisplayPattern": "やぁ！この前{2}が持ってきたことを覚えてる？うーん、昨日の夜キャビンでそれを焼いたんだ..."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh_Willy",
+          "DialogueText": "子供の時から食べてる最高級の魚だよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/208.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh_Willy",
+          "PageIndex": 1,
+          "DisplayPattern": "子供の時から食べてる最高級の魚だよ！"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_love_BeforeMovie",
+          "DialogueText": "昔のSF映画を見て育ったので、このジャンルの現代的な見方に興味があります。",
+          "AudioPath": "assets/ja-JP/Pierre/209.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "昔のSF映画を見て育ったので、このジャンルの現代的な見方に興味があります。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_love_AfterMovie",
+          "DialogueText": "ああ！私が期待したものじゃなかった、でも本当にそれが好きになった！本当にウンバスだと識別してます。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Pierre/210.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ！私が期待したものじゃなかった、でも本当にそれが好きになった！本当にウンバスだと識別してます。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_like_BeforeMovie",
+          "DialogueText": "いつも仕事をしてるから、こんなことをするのは本当にうれしい。",
+          "AudioPath": "assets/ja-JP/Pierre/211.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "いつも仕事をしてるから、こんなことをするのは本当にうれしい。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_like_AfterMovie",
+          "DialogueText": "悪くない！在庫がある商品はあるかな...",
+          "AudioPath": "assets/ja-JP/Pierre/212.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "悪くない！在庫がある商品はあるかな..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "DialogueText": "商売をしていると、ほかの人たちがどうやってお店を経営しているのかが気になりますね。",
+          "AudioPath": "assets/ja-JP/Pierre/213.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "商売をしていると、ほかの人たちがどうやってお店を経営しているのかが気になりますね。"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "DialogueText": "（小声）サンディには内緒ですが、私のお店の方が品揃えは充実していますよ！",
+          "AudioPath": "assets/ja-JP/Pierre/214.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "（小声）サンディには内緒ですが、私のお店の方が品揃えは充実していますよ！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Pierre",
+          "DialogueText": "実は…タマゴをお金で売っているんです！ふふふ…ルイスさんには内緒ですよ。",
+          "AudioPath": "assets/ja-JP/Pierre/215.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "実は…タマゴをお金で売っているんです！ふふふ…ルイスさんには内緒ですよ。"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Winter",
+          "DialogueText": "きょうは冷えますね。店の中へどうぞ！",
+          "AudioPath": "assets/ja-JP/Pierre/216.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Winter",
+          "PageIndex": 0,
+          "DisplayPattern": "きょうは冷えますね。店の中へどうぞ！"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_NotWinter",
+          "DialogueText": "ピエール商店へようこそ！",
+          "AudioPath": "assets/ja-JP/Pierre/217.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_NotWinter",
+          "PageIndex": 0,
+          "DisplayPattern": "ピエール商店へようこそ！"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Summer",
+          "DialogueText": "夏のタネが入ってますよ！",
+          "AudioPath": "assets/ja-JP/Pierre/218.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Summer",
+          "PageIndex": 0,
+          "DisplayPattern": "夏のタネが入ってますよ！"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_NotSummer",
+          "DialogueText": "タネはいかがですか！",
+          "AudioPath": "assets/ja-JP/Pierre/219.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_NotSummer",
+          "PageIndex": 0,
+          "DisplayPattern": "タネはいかがですか！"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Greeting1",
+          "DialogueText": "こんにちは！",
+          "AudioPath": "assets/ja-JP/Pierre/220.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Greeting1",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは！"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Greeting2",
+          "DialogueText": "どうも、{Farmer_Name}さん！",
+          "AudioPath": "assets/ja-JP/Pierre/221.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Greeting2",
+          "PageIndex": 0,
+          "DisplayPattern": "どうも、{0}さん！"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Raining",
+          "DialogueText": "きょうはお買いもの日和ですよ！",
+          "AudioPath": "assets/ja-JP/Pierre/222.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Raining",
+          "PageIndex": 0,
+          "DisplayPattern": "きょうはお買いもの日和ですよ！"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_NotRaining",
+          "DialogueText": "いらっしゃいませ！",
+          "AudioPath": "assets/ja-JP/Pierre/223.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_NotRaining",
+          "PageIndex": 0,
+          "DisplayPattern": "いらっしゃいませ！"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_RareGreeting",
+          "DialogueText": "サイフはもってますよね？",
+          "AudioPath": "assets/ja-JP/Pierre/224.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_RareGreeting",
+          "PageIndex": 0,
+          "DisplayPattern": "サイフはもってますよね？"
+        }
+      ]
+    }
+  ]
+}

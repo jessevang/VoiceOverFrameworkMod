@@ -1,0 +1,1424 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Gus.hu-HU",
+      "VoicePackName": "DictionarV2 (Gus - hu-HU)",
+      "Character": "Gus",
+      "Language": "hu-HU",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Kívánok! Gus vagyok, a Hullócsillag szalon séfje és tulaja.",
+          "AudioPath": "assets/hu-HU/Gus/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "Kívánok! Gus vagyok, a Hullócsillag szalon séfje és tulaja."
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Ugorj be, ha frissítőre vágysz. Meleg kávé vagy hideg sör, a választás csak rajtad áll. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "Ugorj be, ha frissítőre vágysz. Meleg kávé vagy hideg sör, a választás csak rajtad áll."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Óh, váó, köszönöm! Nagy a kísértés, hogy az egészet megigyam, de hagyok egy kicsit a szalonnak is. Fogadok, hogy érdekes koktélt tudnék készíteni belőle!",
+          "AudioPath": "assets/hu-HU/Gus/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Óh, váó, köszönöm! Nagy a kísértés, hogy az egészet megigyam, de hagyok egy kicsit a szalonnak is. Fogadok, hogy érdekes koktélt tudnék készíteni belőle!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Positive_category_cooking",
+          "DialogueText": "*szimat*... Áh. Rendkívüli konyhaművészet. Tudod, hogy mit szeretek, {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:AcceptGift_Positive_category_cooking",
+          "PageIndex": 0,
+          "DisplayPattern": "*szimat*... Áh. Rendkívüli konyhaművészet. Tudod, hogy mit szeretek, ."
+        },
+        {
+          "DialogueFrom": "accept_865",
+          "DialogueText": "*szimat* *szimat* ... ez az erős illat!",
+          "AudioPath": "assets/hu-HU/Gus/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:accept_865",
+          "PageIndex": 0,
+          "DisplayPattern": "*szimat* *szimat* ... ez az erős illat!"
+        },
+        {
+          "DialogueFrom": "accept_865",
+          "DialogueText": "*szürcsöl* *szürcsöl* ... ez a pikáns íz! Ez a határozott textúra!",
+          "AudioPath": "assets/hu-HU/Gus/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:accept_865",
+          "PageIndex": 1,
+          "DisplayPattern": "*szürcsöl* *szürcsöl* ... ez a pikáns íz! Ez a határozott textúra!"
+        },
+        {
+          "DialogueFrom": "accept_865",
+          "DialogueText": "Ez csak ínyenc paradicsomos só lehet! Cserélek veled.",
+          "AudioPath": "assets/hu-HU/Gus/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:accept_865",
+          "PageIndex": 2,
+          "DisplayPattern": "Ez csak ínyenc paradicsomos só lehet! Cserélek veled."
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Tegnap este néztem az időjárás előrejelzést. Nagyon megrémisztett! {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Gus/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "Tegnap este néztem az időjárás előrejelzést. Nagyon megrémisztett!"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Most akkor szörnyek vannak odakint? Mi történik?",
+          "AudioPath": "assets/hu-HU/Gus/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:GreenRain",
+          "PageIndex": 1,
+          "DisplayPattern": "Most akkor szörnyek vannak odakint? Mi történik?"
+        },
+        {
+          "DialogueFrom": "GreenRainFinished",
+          "DialogueText": "Örülök, hogy véget ért. Elég a szalon működtetésén aggódnom, nem hiányzik az életemből az egzotikus időjárás!",
+          "AudioPath": "assets/hu-HU/Gus/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:GreenRainFinished",
+          "PageIndex": 0,
+          "DisplayPattern": "Örülök, hogy véget ért. Elég a szalon működtetésén aggódnom, nem hiányzik az életemből az egzotikus időjárás!"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "*szimat*... Ezeknek az esőknek fura az illatuk. Észrevetted? Majdnem olyan, mint a frissen darált fűszernövényeké...",
+          "AudioPath": "assets/hu-HU/Gus/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "*szimat*... Ezeknek az esőknek fura az illatuk. Észrevetted? Majdnem olyan, mint a frissen darált fűszernövényeké..."
+        },
+        {
+          "DialogueFrom": "cropMatured_256",
+          "DialogueText": "Lewis mondta, hogy megérettek a paradicsomjaid. Az remek hír!",
+          "AudioPath": "assets/hu-HU/Gus/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:cropMatured_256",
+          "PageIndex": 0,
+          "DisplayPattern": "Lewis mondta, hogy megérettek a paradicsomjaid. Az remek hír!"
+        },
+        {
+          "DialogueFrom": "cropMatured_256",
+          "DialogueText": "...csak képzeld el, hogy milyen lehet a konyhai világ paradicsomok nélkül...",
+          "AudioPath": "assets/hu-HU/Gus/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:cropMatured_256",
+          "PageIndex": 1,
+          "DisplayPattern": "...csak képzeld el, hogy milyen lehet a konyhai világ paradicsomok nélkül..."
+        },
+        {
+          "DialogueFrom": "eventSeen_502969",
+          "DialogueText": "Számomra fontos, hogy az emberek egészséges, ízletes ételeket fogyasszanak. Sajnálatosan a mai világban ez nem mindenkinek olyan könnyű.",
+          "AudioPath": "assets/hu-HU/Gus/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:eventSeen_502969",
+          "PageIndex": 0,
+          "DisplayPattern": "Számomra fontos, hogy az emberek egészséges, ízletes ételeket fogyasszanak. Sajnálatosan a mai világban ez nem mindenkinek olyan könnyű."
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "Hé {Farmer_Name}, csak azt szeretném mondani, hogy boldog vagyok miattad és %spouse miatt.",
+          "AudioPath": "assets/hu-HU/Gus/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:married",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé , csak azt szeretném mondani, hogy boldog vagyok miattad és miatt."
+        },
+        {
+          "DialogueFrom": "dating_Emily_memory_oneweek",
+          "DialogueText": "Emily mostanában lendületesebben lépked... Vajon miért? *kacsint*",
+          "AudioPath": "assets/hu-HU/Gus/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:dating_Emily_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "Emily mostanában lendületesebben lépked... Vajon miért? *kacsint*"
+        },
+        {
+          "DialogueFrom": "divorced_once",
+          "DialogueText": "Hé, sajnálom, hogy szakítottatok... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Gus/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:divorced_once",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, sajnálom, hogy szakítottatok..."
+        },
+        {
+          "DialogueFrom": "divorced_once",
+          "DialogueText": "Ha társaságra van szükséged, bármikor betérhetsz a szalonba.",
+          "AudioPath": "assets/hu-HU/Gus/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:divorced_once",
+          "PageIndex": 1,
+          "DisplayPattern": "Ha társaságra van szükséged, bármikor betérhetsz a szalonba."
+        },
+        {
+          "DialogueFrom": "divorced_twice",
+          "DialogueText": "Egy újabb sikertelen házasság? Nos, van ez így. Azt hiszem gyakrabban foglak a szalonban látni... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Gus/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:divorced_twice",
+          "PageIndex": 0,
+          "DisplayPattern": "Egy újabb sikertelen házasság? Nos, van ez így. Azt hiszem gyakrabban foglak a szalonban látni..."
+        },
+        {
+          "DialogueFrom": "eventSeen_3206194",
+          "DialogueText": "Hé, sokat megtettél azokért a tojásokért. Az omlett nagyon jó lett, hála neked!",
+          "AudioPath": "assets/hu-HU/Gus/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:eventSeen_3206194",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, sokat megtettél azokért a tojásokért. Az omlett nagyon jó lett, hála neked!"
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "Hé, {Farmer_Name}! Örülök, hogy itt vagy. Pár jóságot fogok felszolgálni itt a pult mögül.",
+          "AudioPath": "assets/hu-HU/Gus/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, ! Örülök, hogy itt vagy. Pár jóságot fogok felszolgálni itt a pult mögül."
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "Majd otthon találkozunk, {Farmer_Name}.",
+          "AudioPath": "assets/hu-HU/Gus/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "Majd otthon találkozunk, ."
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Csak gyere a pulthoz, ha italra lenne szükséged.",
+          "AudioPath": "assets/hu-HU/Gus/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Csak gyere a pulthoz, ha italra lenne szükséged."
+        },
+        {
+          "DialogueFrom": "IslandSouth_14_21",
+          "DialogueText": "Hé, italra van szükséged? Van pár különleges italom, ami a sziget helyi alapanyagait mutatja be. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:IslandSouth_14_21",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, italra van szükséged? Van pár különleges italom, ami a sziget helyi alapanyagait mutatja be."
+        },
+        {
+          "DialogueFrom": "willyCrabs",
+          "DialogueText": "Ezek talán a legjobb ráktorták amiket valaha is készítettem...",
+          "AudioPath": "assets/hu-HU/Gus/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:willyCrabs",
+          "PageIndex": 0,
+          "DisplayPattern": "Ezek talán a legjobb ráktorták amiket valaha is készítettem..."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Hát igen, sokat tudok az itt élőkről.",
+          "AudioPath": "assets/hu-HU/Gus/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Hát igen, sokat tudok az itt élőkről."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Ez az egyik előnye, ha az ember pultos. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "Ez az egyik előnye, ha az ember pultos."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Néha túl sokat is hallok...",
+          "AudioPath": "assets/hu-HU/Gus/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Mon",
+          "PageIndex": 2,
+          "DisplayPattern": "Néha túl sokat is hallok..."
+        },
+        {
+          "DialogueFrom": "pamHouseUpgrade",
+          "DialogueText": "Hé. Hallottam, hogy mit tettél Pamért. Ez valóban nagyon kedves volt tőled! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:pamHouseUpgrade",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé. Hallottam, hogy mit tettél Pamért. Ez valóban nagyon kedves volt tőled!"
+        },
+        {
+          "DialogueFrom": "pamHouseUpgrade",
+          "DialogueText": "Kissé szomorú, de nem hiszem, hogy ettől le fog majd szokni az 'üdítőkről'...",
+          "AudioPath": "assets/hu-HU/Gus/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:pamHouseUpgrade",
+          "PageIndex": 1,
+          "DisplayPattern": "Kissé szomorú, de nem hiszem, hogy ettől le fog majd szokni az 'üdítőkről'..."
+        },
+        {
+          "DialogueFrom": "pamHouseUpgradeAnonymous",
+          "DialogueText": "Ma korábban láttam Pamet... fültől-fülig tartott a vigyora! Mondta, hogy valaki új házat vett neki!",
+          "AudioPath": "assets/hu-HU/Gus/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:pamHouseUpgradeAnonymous",
+          "PageIndex": 0,
+          "DisplayPattern": "Ma korábban láttam Pamet... fültől-fülig tartott a vigyora! Mondta, hogy valaki új házat vett neki!"
+        },
+        {
+          "DialogueFrom": "pamHouseUpgradeAnonymous",
+          "DialogueText": "Bárki is volt az, cserébe minden jót megérdemel! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:pamHouseUpgradeAnonymous",
+          "PageIndex": 1,
+          "DisplayPattern": "Bárki is volt az, cserébe minden jót megérdemel!"
+        },
+        {
+          "DialogueFrom": "Saloon",
+          "DialogueText": "Üdvözöllek a Hullócsillag szalonban! Hozhatok valamit?",
+          "AudioPath": "assets/hu-HU/Gus/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Saloon",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdvözöllek a Hullócsillag szalonban! Hozhatok valamit?"
+        },
+        {
+          "DialogueFrom": "Saloon4",
+          "DialogueText": "Üdvözöllek, {Farmer_Name}. Érezd magad otthon.",
+          "AudioPath": "assets/hu-HU/Gus/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Saloon4",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdvözöllek, . Érezd magad otthon."
+        },
+        {
+          "DialogueFrom": "SeedShop_Entry",
+          "DialogueText": "Szia Pierre!/Nos, mi is kell nekem.../Ó, ez jól néz ki!/Ma a különleges szószomat csinálom!/Pierre! Mid van ami friss?/Pierre! Mid van számomra?",
+          "AudioPath": "assets/hu-HU/Gus/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:SeedShop_Entry",
+          "PageIndex": 0,
+          "DisplayPattern": "Szia Pierre!/Nos, mi is kell nekem.../Ó, ez jól néz ki!/Ma a különleges szószomat csinálom!/Pierre! Mid van ami friss?/Pierre! Mid van számomra?"
+        },
+        {
+          "DialogueFrom": "Saloon8",
+          "DialogueText": "Helló {Farmer_Name}! Örülök, hogy látlak! Ide bármikor betérhetsz.",
+          "AudioPath": "assets/hu-HU/Gus/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Saloon8",
+          "PageIndex": 0,
+          "DisplayPattern": "Helló ! Örülök, hogy látlak! Ide bármikor betérhetsz."
+        },
+        {
+          "DialogueFrom": "Saloon_Tue",
+          "DialogueText": "Szia! Lazulj el és érezd jól magad!",
+          "AudioPath": "assets/hu-HU/Gus/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Saloon_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Szia! Lazulj el és érezd jól magad!"
+        },
+        {
+          "DialogueFrom": "Saloon_Thu",
+          "DialogueText": "Úgy nézel ki mint akire ráfér egy kis innivaló.",
+          "AudioPath": "assets/hu-HU/Gus/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Saloon_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Úgy nézel ki mint akire ráfér egy kis innivaló."
+        },
+        {
+          "DialogueFrom": "Saloon_Fri",
+          "DialogueText": "Ma este nagyon jól ment az üzlet. Meg vagyok elégedve.",
+          "AudioPath": "assets/hu-HU/Gus/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Saloon_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Ma este nagyon jól ment az üzlet. Meg vagyok elégedve."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Minden héten változik az étlap, szóval nézz be gyakran, ha erre jársz!",
+          "AudioPath": "assets/hu-HU/Gus/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Minden héten változik az étlap, szóval nézz be gyakran, ha erre jársz!"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Csodás dolgokat kóstolhatsz nálam. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Csodás dolgokat kóstolhatsz nálam."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Csak szólj, ha allergiás vagy valamire. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Gus/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Tue",
+          "PageIndex": 2,
+          "DisplayPattern": "Csak szólj, ha allergiás vagy valamire."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Oké, viszlát.",
+          "AudioPath": "assets/hu-HU/Gus/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Tue",
+          "PageIndex": 3,
+          "DisplayPattern": "Oké, viszlát."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Emily itt dolgozik már egy ideje. Nem is tudom mihez kezdenék nélküle!",
+          "AudioPath": "assets/hu-HU/Gus/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Emily itt dolgozik már egy ideje. Nem is tudom mihez kezdenék nélküle!"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Gyűlölném, ha nekem kellene elmosogatni az edényeket. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Gus/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Gyűlölném, ha nekem kellene elmosogatni az edényeket."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Pam és Clint majd minden este betérnek a szalonba.",
+          "AudioPath": "assets/hu-HU/Gus/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Pam és Clint majd minden este betérnek a szalonba."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Valószínűleg tönkremennék, ha nem jönnének többet. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Valószínűleg tönkremennék, ha nem jönnének többet."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Szóval kérlek ne üldözd el őket!",
+          "AudioPath": "assets/hu-HU/Gus/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "Szóval kérlek ne üldözd el őket!"
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "Clint majdnem minden este bejön a szalonba egyedül és leül ugyanahhoz az asztalhoz.",
+          "AudioPath": "assets/hu-HU/Gus/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "Clint majdnem minden este bejön a szalonba egyedül és leül ugyanahhoz az asztalhoz."
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "Néha feszült tekintettel pillant rá Emilyre. Hmmm.",
+          "AudioPath": "assets/hu-HU/Gus/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu6",
+          "PageIndex": 1,
+          "DisplayPattern": "Néha feszült tekintettel pillant rá Emilyre. Hmmm."
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "Talán ezért jön ilyen gyakran. Na mindegy, így jobban megy az üzlet.",
+          "AudioPath": "assets/hu-HU/Gus/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu6",
+          "PageIndex": 2,
+          "DisplayPattern": "Talán ezért jön ilyen gyakran. Na mindegy, így jobban megy az üzlet."
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "Pam majdnem minden este bejön a szalonba és túl sok sört iszik.",
+          "AudioPath": "assets/hu-HU/Gus/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu8",
+          "PageIndex": 0,
+          "DisplayPattern": "Pam majdnem minden este bejön a szalonba és túl sok sört iszik."
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "Na mindegy, nem kéne ítélkeznem a vásárlóim felett.",
+          "AudioPath": "assets/hu-HU/Gus/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu8",
+          "PageIndex": 1,
+          "DisplayPattern": "Na mindegy, nem kéne ítélkeznem a vásárlóim felett."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Szerbusz, {Farmer_Name}. Ha bármikor megszomjaznál, a szalon ajtaja nyitva áll.",
+          "AudioPath": "assets/hu-HU/Gus/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Szerbusz, . Ha bármikor megszomjaznál, a szalon ajtaja nyitva áll."
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "Jómagam nem sokat iszom. Azért csinálom, hogy legyen miből megélnem.",
+          "AudioPath": "assets/hu-HU/Gus/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "Jómagam nem sokat iszom. Azért csinálom, hogy legyen miből megélnem."
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "Bár néhanapján jól esik egy korty a Stardew Valley óborból.",
+          "AudioPath": "assets/hu-HU/Gus/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Fri4",
+          "PageIndex": 1,
+          "DisplayPattern": "Bár néhanapján jól esik egy korty a Stardew Valley óborból."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Te milyen séf vagy, {Farmer_Name}?",
+          "AudioPath": "assets/hu-HU/Gus/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Te milyen séf vagy, ?"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Ha van konyhád meg egy pár recepted, hasznos ételeket készíthetsz.",
+          "AudioPath": "assets/hu-HU/Gus/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Ha van konyhád meg egy pár recepted, hasznos ételeket készíthetsz."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Ajándékként is nagyon jó az otthon készült étel.",
+          "AudioPath": "assets/hu-HU/Gus/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "Ajándékként is nagyon jó az otthon készült étel."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "A szokásos vendégeimnek köszönhetően megbízhatóan megy az üzlet.",
+          "AudioPath": "assets/hu-HU/Gus/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "A szokásos vendégeimnek köszönhetően megbízhatóan megy az üzlet."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "Nincs is jobb egy üveg száraz vörös bornál egy ilyen napon, nemde?",
+          "AudioPath": "assets/hu-HU/Gus/61.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "Nincs is jobb egy üveg száraz vörös bornál egy ilyen napon, nemde?"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "Szeretem a munkámat. Hehehe.",
+          "AudioPath": "assets/hu-HU/Gus/62.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Gus",
+          "PageIndex": 1,
+          "DisplayPattern": "Szeretem a munkámat. Hehehe."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s0",
+          "DialogueText": "Good morning!",
+          "AudioPath": "assets/hu-HU/Gus/63.ogg",
+          "TranslationKey": "Events/Farm:980558:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Good morning!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s1",
+          "DialogueText": "Ah... what a beautiful day, huh?",
+          "AudioPath": "assets/hu-HU/Gus/64.ogg",
+          "TranslationKey": "Events/Farm:980558:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah... what a beautiful day, huh?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s2",
+          "DialogueText": "You know, as the Saloon owner, I hear about everything that's going on in town.",
+          "AudioPath": "assets/hu-HU/Gus/65.ogg",
+          "TranslationKey": "Events/Farm:980558:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "You know, as the Saloon owner, I hear about everything that's going on in town."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s3",
+          "DialogueText": "I remember when you first moved here... everyone was a bit unsure of what to expect.",
+          "AudioPath": "assets/hu-HU/Gus/66.ogg",
+          "TranslationKey": "Events/Farm:980558:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I remember when you first moved here... everyone was a bit unsure of what to expect."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s4",
+          "DialogueText": "A stranger from the city... an unknown personality... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Gus/67.ogg",
+          "TranslationKey": "Events/Farm:980558:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "A stranger from the city... an unknown personality..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s5",
+          "DialogueText": "One sec...",
+          "AudioPath": "assets/hu-HU/Gus/68.ogg",
+          "TranslationKey": "Events/Farm:980558:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "One sec..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s6",
+          "DialogueText": "Sorry, I have to stir this pot every 5 minutes.",
+          "AudioPath": "assets/hu-HU/Gus/69.ogg",
+          "TranslationKey": "Events/Farm:980558:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Sorry, I have to stir this pot every 5 minutes."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s7",
+          "DialogueText": "Anyway, what was I saying? Oh yeah... you know, it's like when you're making a sauce...",
+          "AudioPath": "assets/hu-HU/Gus/70.ogg",
+          "TranslationKey": "Events/Farm:980558:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Anyway, what was I saying? Oh yeah... you know, it's like when you're making a sauce..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s8",
+          "DialogueText": "...If you put in a new spice you could ruin everything! {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Gus/71.ogg",
+          "TranslationKey": "Events/Farm:980558:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "...If you put in a new spice you could ruin everything!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s9",
+          "DialogueText": "...But then again, there's always a chance you'll create something new and delicious! Right? Hahahaha. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/72.ogg",
+          "TranslationKey": "Events/Farm:980558:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "...But then again, there's always a chance you'll create something new and delicious! Right? Hahahaha."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s10",
+          "DialogueText": "Er... What I'm trying to say is... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Gus/73.ogg",
+          "TranslationKey": "Events/Farm:980558:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Er... What I'm trying to say is..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s11",
+          "DialogueText": "It's been great having you in town, and I've come to think of you as one of my good friends!",
+          "AudioPath": "assets/hu-HU/Gus/74.ogg",
+          "TranslationKey": "Events/Farm:980558:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "It's been great having you in town, and I've come to think of you as one of my good friends!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s12",
+          "DialogueText": "Anyway, I came to give you something...",
+          "AudioPath": "assets/hu-HU/Gus/75.ogg",
+          "TranslationKey": "Events/Farm:980558:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Anyway, I came to give you something..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s13",
+          "DialogueText": "I was cleaning out the back room and I found this old Mini-Jukebox. I want you to have it!",
+          "AudioPath": "assets/hu-HU/Gus/76.ogg",
+          "TranslationKey": "Events/Farm:980558:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "I was cleaning out the back room and I found this old Mini-Jukebox. I want you to have it!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s14",
+          "DialogueText": "Received a 'Mini-Jukebox'",
+          "AudioPath": "assets/hu-HU/Gus/77.ogg",
+          "TranslationKey": "Events/Farm:980558:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "Received a 'Mini-Jukebox'"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s15",
+          "DialogueText": "It's actually an old Do-It-Yourself project of mine, from many years ago. They're pretty easy to make!",
+          "AudioPath": "assets/hu-HU/Gus/78.ogg",
+          "TranslationKey": "Events/Farm:980558:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "It's actually an old Do-It-Yourself project of mine, from many years ago. They're pretty easy to make!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s16",
+          "DialogueText": "So, just in case you wanted to make more, I brought the blueprints for you...",
+          "AudioPath": "assets/hu-HU/Gus/79.ogg",
+          "TranslationKey": "Events/Farm:980558:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "So, just in case you wanted to make more, I brought the blueprints for you..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s17",
+          "DialogueText": "Learned how to craft a 'Mini-Jukebox'",
+          "AudioPath": "assets/hu-HU/Gus/80.ogg",
+          "TranslationKey": "Events/Farm:980558:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "Learned how to craft a 'Mini-Jukebox'"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s18",
+          "DialogueText": "Well, I'm gonna head home. I gotta get this marinara back on the stove! Have a good one!",
+          "AudioPath": "assets/hu-HU/Gus/81.ogg",
+          "TranslationKey": "Events/Farm:980558:s18",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I'm gonna head home. I gotta get this marinara back on the stove! Have a good one!"
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s0",
+          "DialogueText": "Great stuff!",
+          "AudioPath": "assets/hu-HU/Gus/82.ogg",
+          "TranslationKey": "Events/Town:53:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Great stuff!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s0",
+          "DialogueText": "I still dream of that garlic butter.",
+          "AudioPath": "assets/hu-HU/Gus/83.ogg",
+          "TranslationKey": "Events/Town:191393:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I still dream of that garlic butter."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s1",
+          "DialogueText": "Me too!",
+          "AudioPath": "assets/hu-HU/Gus/84.ogg",
+          "TranslationKey": "Events/Town:191393:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Me too!"
+        },
+        {
+          "DialogueFrom": "Event:Town/502969:s0",
+          "DialogueText": "Wait. {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Gus/85.ogg",
+          "TranslationKey": "Events/Town:502969:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Wait."
+        },
+        {
+          "DialogueFrom": "Event:Town/502969:s1",
+          "DialogueText": "I know what you were doing, Linus. {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Gus/86.ogg",
+          "TranslationKey": "Events/Town:502969:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I know what you were doing, Linus."
+        },
+        {
+          "DialogueFrom": "Event:Town/502969:s2",
+          "DialogueText": "If you need food... just ask. I don't want anyone in Pelican Town to go hungry.",
+          "AudioPath": "assets/hu-HU/Gus/87.ogg",
+          "TranslationKey": "Events/Town:502969:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "If you need food... just ask. I don't want anyone in Pelican Town to go hungry."
+        },
+        {
+          "DialogueFrom": "Event:Town/502969:s3",
+          "DialogueText": "Here. I've got a basket of zucchini fritters for you. Just make sure you dip them in my spicy marinara! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/88.ogg",
+          "TranslationKey": "Events/Town:502969:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Here. I've got a basket of zucchini fritters for you. Just make sure you dip them in my spicy marinara!"
+        },
+        {
+          "DialogueFrom": "Event:Town/502969:s4",
+          "DialogueText": "Go on... take it.",
+          "AudioPath": "assets/hu-HU/Gus/89.ogg",
+          "TranslationKey": "Events/Town:502969:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Go on... take it."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s0",
+          "DialogueText": "Nice!",
+          "AudioPath": "assets/hu-HU/Gus/90.ogg",
+          "TranslationKey": "Events/Town:6184644:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Nice!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s0",
+          "DialogueText": "I'm all ears.",
+          "AudioPath": "assets/hu-HU/Gus/91.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm all ears."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s1",
+          "DialogueText": "That sounds pretty good! I could use some quality veggies for the saloon. How much does it cost?",
+          "AudioPath": "assets/hu-HU/Gus/92.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "That sounds pretty good! I could use some quality veggies for the saloon. How much does it cost?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s2",
+          "DialogueText": "What was that?",
+          "AudioPath": "assets/hu-HU/Gus/93.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "What was that?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s3",
+          "DialogueText": "Hahaha... for a moment there, I thought I heard, '25,000g'. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/94.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Hahaha... for a moment there, I thought I heard, '25,000g'."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s4",
+          "DialogueText": "Pierre, are you crazy? There's no way I could afford that. I'd have to sell the saloon! {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Gus/95.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Pierre, are you crazy? There's no way I could afford that. I'd have to sell the saloon!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/40:s0",
+          "DialogueText": "Hi. I'll take your order in a few moments.",
+          "AudioPath": "assets/hu-HU/Gus/96.ogg",
+          "TranslationKey": "Events/Saloon:40:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi. I'll take your order in a few moments."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/40:s1",
+          "DialogueText": "... {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Gus/97.ogg",
+          "TranslationKey": "Events/Saloon:40:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/40:s2",
+          "DialogueText": "There you go, sir. {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Gus/98.ogg",
+          "TranslationKey": "Events/Saloon:40:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "There you go, sir."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s0|g=male",
+          "DialogueText": "Oh, hello there, buddy.",
+          "AudioPath": "assets/hu-HU/Gus/99_male.ogg",
+          "TranslationKey": "Events/Saloon:96:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, hello there, buddy.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s1|g=female",
+          "DialogueText": "Hi, {Farmer_Name}.",
+          "AudioPath": "assets/hu-HU/Gus/100_female.ogg",
+          "TranslationKey": "Events/Saloon:96:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi, .",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s2",
+          "DialogueText": "*sigh*... I'm just looking over last month's earnings... and it's not looking very good, {Farmer_Name}. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Gus/101.ogg",
+          "TranslationKey": "Events/Saloon:96:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*... I'm just looking over last month's earnings... and it's not looking very good, ."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s3",
+          "DialogueText": "The worst thing... and I hate to say this because she's my friend... is Pam! She hasn't paid off her tab in weeks! {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Gus/102.ogg",
+          "TranslationKey": "Events/Saloon:96:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "The worst thing... and I hate to say this because she's my friend... is Pam! She hasn't paid off her tab in weeks!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s4",
+          "DialogueText": "...But I can't ask her to do it. I know she'll get defensive, and I don't want to hurt her feelings. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Gus/103.ogg",
+          "TranslationKey": "Events/Saloon:96:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "...But I can't ask her to do it. I know she'll get defensive, and I don't want to hurt her feelings."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s5",
+          "DialogueText": "{Farmer_Name}, you gotta help me! {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Gus/104.ogg",
+          "TranslationKey": "Events/Saloon:96:s5",
+          "PageIndex": 0,
+          "DisplayPattern": ", you gotta help me!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s6",
+          "DialogueText": "Er... Well, okay Pam. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Gus/105.ogg",
+          "TranslationKey": "Events/Saloon:96:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Er... Well, okay Pam."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s7",
+          "DialogueText": "Thanks, Pam! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/106.ogg",
+          "TranslationKey": "Events/Saloon:96:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks, Pam!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s8",
+          "DialogueText": "And thank you, {Farmer_Name}. {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Gus/107.ogg",
+          "TranslationKey": "Events/Saloon:96:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "And thank you, ."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s9",
+          "DialogueText": "Now, let's get you that drink, Pam. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/108.ogg",
+          "TranslationKey": "Events/Saloon:96:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Now, let's get you that drink, Pam."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s10",
+          "DialogueText": "Thanks for your help, {Farmer_Name}. This cash is going to be a big help to the saloon.",
+          "AudioPath": "assets/hu-HU/Gus/109.ogg",
+          "TranslationKey": "Events/Saloon:96:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks for your help, . This cash is going to be a big help to the saloon."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s0",
+          "DialogueText": "I'm having a lot of fun. And it's good for business! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/110.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm having a lot of fun. And it's good for business!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s1",
+          "DialogueText": "Though maybe not so good for Shane's liver... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Gus/111.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Though maybe not so good for Shane's liver..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s0",
+          "DialogueText": "Well, folks... once again, we're gathered for a very special occasion.",
+          "AudioPath": "assets/hu-HU/Gus/112.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, folks... once again, we're gathered for a very special occasion."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s1",
+          "DialogueText": "...A rare visit from a very dear friend...",
+          "AudioPath": "assets/hu-HU/Gus/113.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "...A rare visit from a very dear friend..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s2",
+          "DialogueText": "...My world-famous giant omelet! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/114.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "...My world-famous giant omelet!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s3",
+          "DialogueText": "Zesty bell pepper, juicy tomato, rich mushroom, and tangy cheese... all enrobed in a blanket of rich, fluffy egg. Dig in, folks.",
+          "AudioPath": "assets/hu-HU/Gus/115.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Zesty bell pepper, juicy tomato, rich mushroom, and tangy cheese... all enrobed in a blanket of rich, fluffy egg. Dig in, folks."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s4",
+          "DialogueText": "Willy? What do you think?",
+          "AudioPath": "assets/hu-HU/Gus/116.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Willy? What do you think?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s5",
+          "DialogueText": "Is that a good thing? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Gus/117.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Is that a good thing?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s6",
+          "DialogueText": "Nope... You can thank {Farmer_Name} over at %farm Farm!",
+          "AudioPath": "assets/hu-HU/Gus/118.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Nope... You can thank over at Farm!"
+        },
+        {
+          "DialogueFrom": "Event:Beach/711130:s0",
+          "DialogueText": "Hooo~... Back at it again, huh Willy? {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/119.ogg",
+          "TranslationKey": "Events/Beach:711130:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hooo~... Back at it again, huh Willy?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/711130:s1",
+          "DialogueText": "They look fresh all right...",
+          "AudioPath": "assets/hu-HU/Gus/120.ogg",
+          "TranslationKey": "Events/Beach:711130:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "They look fresh all right..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/711130:s2",
+          "DialogueText": "I'll take the whole lot! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/121.ogg",
+          "TranslationKey": "Events/Beach:711130:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll take the whole lot!"
+        },
+        {
+          "DialogueFrom": "Event:Beach/711130:s3",
+          "DialogueText": "With a discount for the extra labor, of course...",
+          "AudioPath": "assets/hu-HU/Gus/122.ogg",
+          "TranslationKey": "Events/Beach:711130:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "With a discount for the extra labor, of course..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/711130:s4",
+          "DialogueText": "Looks like we got 'em all...",
+          "AudioPath": "assets/hu-HU/Gus/123.ogg",
+          "TranslationKey": "Events/Beach:711130:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Looks like we got 'em all..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/711130:s5",
+          "DialogueText": "Psst... {Farmer_Name}... Don't tell Willy, but I'll be doing a special on crab cakes at the saloon for the next few days...",
+          "AudioPath": "assets/hu-HU/Gus/124.ogg",
+          "TranslationKey": "Events/Beach:711130:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Psst... ... Don't tell Willy, but I'll be doing a special on crab cakes at the saloon for the next few days..."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Gus",
+          "DialogueText": "Egyél amennyi beléd fér! Ma minden ingyen van... köszöneted Lewis polgármesternek add át. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/125.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "Egyél amennyi beléd fér! Ma minden ingyen van... köszöneted Lewis polgármesternek add át."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Gus",
+          "DialogueText": "Ó! Majd csepegtess rá egy kicsit a titkos szószomból is.",
+          "AudioPath": "assets/hu-HU/Gus/126.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Gus",
+          "PageIndex": 1,
+          "DisplayPattern": "Ó! Majd csepegtess rá egy kicsit a titkos szószomból is."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Gus_y2",
+          "DialogueText": "Kemény munka egyszerre négy grillt üzemeltetni! Ma egy hatalmas és éhes tömeget kell ellátnom. {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Gus/127.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Kemény munka egyszerre négy grillt üzemeltetni! Ma egy hatalmas és éhes tömeget kell ellátnom."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Gus_y2",
+          "DialogueText": "Mindegyik húspástétomot megspékeltem egy kicsit a fűszeres szószommal. *kacsint*",
+          "AudioPath": "assets/hu-HU/Gus/128.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Gus_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Mindegyik húspástétomot megspékeltem egy kicsit a fűszeres szószommal. *kacsint*"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Gus",
+          "DialogueText": "Jó móka tökből ételt készíteni. Olyan érdekes egy növény.",
+          "AudioPath": "assets/hu-HU/Gus/129.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "Jó móka tökből ételt készíteni. Olyan érdekes egy növény."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Gus_y2",
+          "DialogueText": "Én tehetséges tökfaragó vagyok. Általában én készítem el a legtöbb töklámpást a városlakók számára.",
+          "AudioPath": "assets/hu-HU/Gus/130.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Én tehetséges tökfaragó vagyok. Általában én készítem el a legtöbb töklámpást a városlakók számára."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Gus_y2",
+          "DialogueText": "Cserébe csak annyit kérek, hogy hadd tartsam meg a magvakat... egy kis fahéjas cukrot szórok a kicsikékre, és máris értékes nasit kapok! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/131.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Gus_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Cserébe csak annyit kérek, hogy hadd tartsam meg a magvakat... egy kis fahéjas cukrot szórok a kicsikékre, és máris értékes nasit kapok!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Gus",
+          "DialogueText": "Remélem mindenki élvezi az ételeket... Napokig főztem, hogy minden kész legyen.",
+          "AudioPath": "assets/hu-HU/Gus/132.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "Remélem mindenki élvezi az ételeket... Napokig főztem, hogy minden kész legyen."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Gus",
+          "DialogueText": "Sült tojás, főtt tojás, buggyantott tojás, fűszeres tojás, rántott tojás, csokis tojás... válogass! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/133.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Gus",
+          "PageIndex": 1,
+          "DisplayPattern": "Sült tojás, főtt tojás, buggyantott tojás, fűszeres tojás, rántott tojás, csokis tojás... válogass!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Gus_y2",
+          "DialogueText": "Shh... senkinek se szólj, de idén valami mást csináltam... Kacsatojást használtam a mártáshoz! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/134.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Shh... senkinek se szólj, de idén valami mást csináltam... Kacsatojást használtam a mártáshoz!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Gus",
+          "DialogueText": "Kezd beütni a békák szezonja.",
+          "AudioPath": "assets/hu-HU/Gus/135.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "Kezd beütni a békák szezonja."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Gus_y2",
+          "DialogueText": "Próbáltad már a pitypang salátát? Itt készítem, frissiben! {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Gus/136.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Próbáltad már a pitypang salátát? Itt készítem, frissiben!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Gus",
+          "DialogueText": "Ezek a nyamvadt homoki legyek rárepülnek az ételre!",
+          "AudioPath": "assets/hu-HU/Gus/137.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "Ezek a nyamvadt homoki legyek rárepülnek az ételre!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Gus_y2",
+          "DialogueText": "Egy rossz alapanyag tönkreteheti az egész levest... {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Gus/138.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Egy rossz alapanyag tönkreteheti az egész levest..."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Gus",
+          "DialogueText": "'Holdfény medúzák'... Vajon milyen lehet az ízük? {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/139.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "'Holdfény medúzák'... Vajon milyen lehet az ízük?"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Gus",
+          "DialogueText": "Persze sose próbálnám ki! {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Gus/140.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Gus",
+          "PageIndex": 1,
+          "DisplayPattern": "Persze sose próbálnám ki!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Gus_y2",
+          "DialogueText": "*szimat* Áhh... az óceán friss illata mindig olyan kielégítő. {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Gus/141.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "*szimat* Áhh... az óceán friss illata mindig olyan kielégítő."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus",
+          "DialogueText": "Nagyon szép művészet cukorkákat készíteni. Sok helyütt kell kutakodnod, hogy a legjobb alapanyagokat gyűjtsd össze. Nem könnyű manapság beszerezni őket! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/142.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "Nagyon szép művészet cukorkákat készíteni. Sok helyütt kell kutakodnod, hogy a legjobb alapanyagokat gyűjtsd össze. Nem könnyű manapság beszerezni őket!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus",
+          "DialogueText": "Általában Páfrány-szigeti gyűrűgyümölcsöt használok a prémium árumhoz. A világos vörös színezést nem győzheted le... És ez mind természetes!",
+          "AudioPath": "assets/hu-HU/Gus/143.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus",
+          "PageIndex": 1,
+          "DisplayPattern": "Általában Páfrány-szigeti gyűrűgyümölcsöt használok a prémium árumhoz. A világos vörös színezést nem győzheted le... És ez mind természetes!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus",
+          "DialogueText": "Ó, akarod tudni a dupla cukorkámnak a titkát? Oké, de titoktartási fogadalmat kell tenned. *suttogva* Egy apró vanília cseppet teszek a fehér cukorkába, hogy ellensúlyozza a cseresznyés ízt. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/144.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus",
+          "PageIndex": 2,
+          "DisplayPattern": "Ó, akarod tudni a dupla cukorkámnak a titkát? Oké, de titoktartási fogadalmat kell tenned. *suttogva* Egy apró vanília cseppet teszek a fehér cukorkába, hogy ellensúlyozza a cseresznyés ízt."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus",
+          "DialogueText": "Persze a borsmentás cukorkák alapnak számítanak, és azokból is szép számmal szoktam készíteni.",
+          "AudioPath": "assets/hu-HU/Gus/145.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus",
+          "PageIndex": 3,
+          "DisplayPattern": "Persze a borsmentás cukorkák alapnak számítanak, és azokból is szép számmal szoktam készíteni."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus",
+          "DialogueText": "Hé, nagyon álmosnak tűnsz. Minden rendben? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Gus/146.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus",
+          "PageIndex": 4,
+          "DisplayPattern": "Hé, nagyon álmosnak tűnsz. Minden rendben?"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus_y2",
+          "DialogueText": "Egyél! Egyél, míg friss és meleg. {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Gus/147.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Egyél! Egyél, míg friss és meleg."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus_y2",
+          "DialogueText": "Egész nap beszélhetnék az új cukorka készítési módszeremről... de idén megkíméllek téged a részletektől! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/148.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Egész nap beszélhetnék az új cukorka készítési módszeremről... de idén megkíméllek téged a részletektől!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Gus",
+          "DialogueText": "Sajnálom, hogy ma nincs kaja.",
+          "AudioPath": "assets/hu-HU/Gus/149.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "Sajnálom, hogy ma nincs kaja."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Gus",
+          "DialogueText": "De várd csak ki a Téli Csillag ünnepét. Ott napokig tömve leszel.",
+          "AudioPath": "assets/hu-HU/Gus/150.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Gus",
+          "PageIndex": 1,
+          "DisplayPattern": "De várd csak ki a Téli Csillag ünnepét. Ott napokig tömve leszel."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Gus_y2",
+          "DialogueText": "Túl sok időt töltöttem bezárva, rácslabdát nézve... jó kijutni a friss téli levegőre.",
+          "AudioPath": "assets/hu-HU/Gus/151.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Túl sok időt töltöttem bezárva, rácslabdát nézve... jó kijutni a friss téli levegőre."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Gus:s0",
+          "DialogueText": "Ezt most... nekem adod? Szóhoz sem jutok.",
+          "AudioPath": "assets/hu-HU/Gus/152.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Gus:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ezt most... nekem adod? Szóhoz sem jutok."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Gus:s1",
+          "DialogueText": "Ó, egek! Ez komoly?",
+          "AudioPath": "assets/hu-HU/Gus/153.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Gus:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ó, egek! Ez komoly?"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Gus:s2",
+          "DialogueText": "Nem, nem, nem...",
+          "AudioPath": "assets/hu-HU/Gus/154.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Gus:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Nem, nem, nem..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Gus:s3",
+          "DialogueText": "Ez csak szemét. Meg vagyok sértődve.",
+          "AudioPath": "assets/hu-HU/Gus/155.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Gus:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez csak szemét. Meg vagyok sértődve."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Gus:s4",
+          "DialogueText": "Ó, ez kedves. Köszönöm.",
+          "AudioPath": "assets/hu-HU/Gus/156.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Gus:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Ó, ez kedves. Köszönöm."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_summer_movie_1_BeforeMovie",
+          "DialogueText": "Láttam erről a tévében egy reklámot. Nagyon mókásnak tűnik!",
+          "AudioPath": "assets/hu-HU/Gus/157.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_summer_movie_1_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Láttam erről a tévében egy reklámot. Nagyon mókásnak tűnik!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_summer_movie_1_AfterMovie",
+          "DialogueText": "Amatőr ínyencként mókásnak tartottam a glutén-alapú étellel való furcsa megszállottságot. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/158.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_summer_movie_1_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Amatőr ínyencként mókásnak tartottam a glutén-alapú étellel való furcsa megszállottságot."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_winter_movie_0_BeforeMovie",
+          "DialogueText": "Nem mondhatod, hogy itt vannak az ünnepek, amíg '{0}' filmet nem láttad!",
+          "AudioPath": "assets/hu-HU/Gus/159.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_winter_movie_0_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Nem mondhatod, hogy itt vannak az ünnepek, amíg '{0}' filmet nem láttad!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_winter_movie_0_AfterMovie",
+          "DialogueText": "Ez szívmelengető volt... és valahogy ezt a mesés gyümölcsöt olyan finomnak mutatta be. Egy nap szívesen megízlelném.",
+          "AudioPath": "assets/hu-HU/Gus/160.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_winter_movie_0_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez szívmelengető volt... és valahogy ezt a mesés gyümölcsöt olyan finomnak mutatta be. Egy nap szívesen megízlelném."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_fall_movie_0_BeforeMovie",
+          "DialogueText": "Azt beszélik ez a film elég 'szokatlan'... ez azt jelenti, hogy rossz? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Gus/161.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_fall_movie_0_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Azt beszélik ez a film elég 'szokatlan'... ez azt jelenti, hogy rossz?"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_fall_movie_0_AfterMovie",
+          "DialogueText": "Ennek mégis mi értelme volt? Nem értem. Lehet túl öreg vagyok már. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Gus/162.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_fall_movie_0_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ennek mégis mi értelme volt? Nem értem. Lehet túl öreg vagyok már."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_like_BeforeMovie",
+          "DialogueText": "*szimat* *szimat* ... Valami finomat szimatolok...",
+          "AudioPath": "assets/hu-HU/Gus/163.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "*szimat* *szimat* ... Valami finomat szimatolok..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_like_AfterMovie",
+          "DialogueText": "Nem is rossz. Örülök, hogy eljöttem!",
+          "AudioPath": "assets/hu-HU/Gus/164.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Nem is rossz. Örülök, hogy eljöttem!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Gus",
+          "DialogueText": "Normál esetben minden városi fesztiválhoz én szolgáltatom az ételt. De ma nem! Jó érzés egyszer pihenni. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Gus/165.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "Normál esetben minden városi fesztiválhoz én szolgáltatom az ételt. De ma nem! Jó érzés egyszer pihenni."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Gus",
+          "DialogueText": "Valami finomat keresel?",
+          "AudioPath": "assets/hu-HU/Gus/166.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "Valami finomat keresel?"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_Greeting",
+          "DialogueText": "Kerülj beljebb, kerülj beljebb!",
+          "AudioPath": "assets/hu-HU/Gus/167.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_Greeting",
+          "PageIndex": 0,
+          "DisplayPattern": "Kerülj beljebb, kerülj beljebb!"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_Summer",
+          "DialogueText": "Kell egy hideg ital?",
+          "AudioPath": "assets/hu-HU/Gus/168.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_Summer",
+          "PageIndex": 0,
+          "DisplayPattern": "Kell egy hideg ital?"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_NotSummer",
+          "DialogueText": "Mit adhatok neked?",
+          "AudioPath": "assets/hu-HU/Gus/169.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_NotSummer",
+          "PageIndex": 0,
+          "DisplayPattern": "Mit adhatok neked?"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_Snowing1",
+          "DialogueText": "Odakint hideg van, de a kávé forró!",
+          "AudioPath": "assets/hu-HU/Gus/170.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_Snowing1",
+          "PageIndex": 0,
+          "DisplayPattern": "Odakint hideg van, de a kávé forró!"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_NotSnowing1",
+          "DialogueText": "Kell meleg étel?",
+          "AudioPath": "assets/hu-HU/Gus/171.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_NotSnowing1",
+          "PageIndex": 0,
+          "DisplayPattern": "Kell meleg étel?"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_Raining",
+          "DialogueText": "Kell egy forró ital?",
+          "AudioPath": "assets/hu-HU/Gus/172.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_Raining",
+          "PageIndex": 0,
+          "DisplayPattern": "Kell egy forró ital?"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_NotRaining",
+          "DialogueText": "Kell egy ital?",
+          "AudioPath": "assets/hu-HU/Gus/173.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_NotRaining",
+          "PageIndex": 0,
+          "DisplayPattern": "Kell egy ital?"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_Snowing2",
+          "DialogueText": "Gyere be a hidegről!",
+          "AudioPath": "assets/hu-HU/Gus/174.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_Snowing2",
+          "PageIndex": 0,
+          "DisplayPattern": "Gyere be a hidegről!"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_NotSnowing2",
+          "DialogueText": "Üdvözletem!",
+          "AudioPath": "assets/hu-HU/Gus/175.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_NotSnowing2",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdvözletem!"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_RareGreeting",
+          "DialogueText": "Úgy látom rád férne egy ital.",
+          "AudioPath": "assets/hu-HU/Gus/176.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_RareGreeting",
+          "PageIndex": 0,
+          "DisplayPattern": "Úgy látom rád férne egy ital."
+        }
+      ]
+    }
+  ]
+}

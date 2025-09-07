@@ -1,0 +1,964 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Jas.ru-RU",
+      "VoicePackName": "DictionarV2 (Jas - ru-RU)",
+      "Character": "Jas",
+      "Language": "ru-RU",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "... {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Jas/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Здравствуйте... {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Jas/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "Здравствуйте..."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "Ух ты, подарок! Мне очень нравится! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "Ух ты, подарок! Мне очень нравится!"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Мне страшно... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "Мне страшно..."
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Надеюсь, дождь не окрасит мое платье в зеленый... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Надеюсь, дождь не окрасит мое платье в зеленый..."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "Подарок на день рождения? Ой... Мне такое не нравится. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "Подарок на день рождения? Ой... Мне такое не нравится."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Это точно мне? Как вкусно пахнет! Буду по капельке в день цедить. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Это точно мне? Как вкусно пахнет! Буду по капельке в день цедить."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)FairyBox",
+          "DialogueText": "Ух ты, какая красивая! А внутри что, фея? *смеется*... Я слышу, как она поет. Она будет моей тайной подружкой. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_(TR)FairyBox",
+          "PageIndex": 0,
+          "DisplayPattern": "Ух ты, какая красивая! А внутри что, фея? *смеется*... Я слышу, как она поет. Она будет моей тайной подружкой."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)103",
+          "DialogueText": "Ой, куколка! Она немного грязная, но я ее искупаю. Спасибо! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_(O)103",
+          "PageIndex": 0,
+          "DisplayPattern": "Ой, куколка! Она немного грязная, но я ее искупаю. Спасибо!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Positive_doll_item",
+          "DialogueText": "Ой, он мне нравится. Ему будет хорошо с моими остальными друзьями. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_Positive_doll_item",
+          "PageIndex": 0,
+          "DisplayPattern": "Ой, он мне нравится. Ему будет хорошо с моими остальными друзьями."
+        },
+        {
+          "DialogueFrom": "AcceptGift_Negative_alcohol_item",
+          "DialogueText": "Эм... Мне же нельзя? Это для взрослых? {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_Negative_alcohol_item",
+          "PageIndex": 0,
+          "DisplayPattern": "Эм... Мне же нельзя? Это для взрослых?"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Negative_coffee_item",
+          "DialogueText": "О... Тетушка Марни пока не разрешает мне пить кофе... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_Negative_coffee_item",
+          "PageIndex": 0,
+          "DisplayPattern": "О... Тетушка Марни пока не разрешает мне пить кофе..."
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "Я вижу краба!",
+          "AudioPath": "assets/ru-RU/Jas/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "Я вижу краба!"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "У меня песок в ботиночке... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "У меня песок в ботиночке..."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Я собираю ракушки... Ожерелье сделаю!",
+          "AudioPath": "assets/ru-RU/Jas/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "Я собираю ракушки... Ожерелье сделаю!"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Тетя Марни сказала, чтобы я не обгорела... Но если быстро идти, то тебя ветерок обдувает, так что все в порядке. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Тетя Марни сказала, чтобы я не обгорела... Но если быстро идти, то тебя ветерок обдувает, так что все в порядке."
+        },
+        {
+          "DialogueFrom": "movieTheater",
+          "DialogueText": "Тетушка Марни говорит, что одной ходить в кино мне пока рановато... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:movieTheater",
+          "PageIndex": 0,
+          "DisplayPattern": "Тетушка Марни говорит, что одной ходить в кино мне пока рановато..."
+        },
+        {
+          "DialogueFrom": "reject_869",
+          "DialogueText": "Фу, гадость! {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:reject_869",
+          "PageIndex": 0,
+          "DisplayPattern": "Фу, гадость!"
+        },
+        {
+          "DialogueFrom": "married_Shane",
+          "DialogueText": "Надеюсь, Шейн все же придет в гости... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:married_Shane",
+          "PageIndex": 0,
+          "DisplayPattern": "Надеюсь, Шейн все же придет в гости..."
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "*вздыхает*... Надеюсь, у меня однажды тоже будет свадьба. {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Jas/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:married",
+          "PageIndex": 0,
+          "DisplayPattern": "*вздыхает*... Надеюсь, у меня однажды тоже будет свадьба."
+        },
+        {
+          "DialogueFrom": "cropMatured_595",
+          "DialogueText": "Эм... А тебе доводилось видеть фей?",
+          "AudioPath": "assets/ru-RU/Jas/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:cropMatured_595",
+          "PageIndex": 0,
+          "DisplayPattern": "Эм... А тебе доводилось видеть фей?"
+        },
+        {
+          "DialogueFrom": "cropMatured_595",
+          "DialogueText": "Ух ты, я тоже хочу. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:cropMatured_595",
+          "PageIndex": 1,
+          "DisplayPattern": "Ух ты, я тоже хочу."
+        },
+        {
+          "DialogueFrom": "cropMatured_595",
+          "DialogueText": "...Я тоже не видела. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:cropMatured_595",
+          "PageIndex": 2,
+          "DisplayPattern": "...Я тоже не видела."
+        },
+        {
+          "DialogueFrom": "eventSeen_3910975",
+          "DialogueText": "...С Шейном все будет хорошо? {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:eventSeen_3910975",
+          "PageIndex": 0,
+          "DisplayPattern": "...С Шейном все будет хорошо?"
+        },
+        {
+          "DialogueFrom": "eventSeen_3910975_memory_oneweek",
+          "DialogueText": "Мне приснилось, что наш дом горит, кошмар... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:eventSeen_3910975_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "Мне приснилось, что наш дом горит, кошмар..."
+        },
+        {
+          "DialogueFrom": "eventSeen_3910974",
+          "DialogueText": "*хихикает* ...Смотри, у меня настоящие кроличьи тапочки! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:eventSeen_3910974",
+          "PageIndex": 0,
+          "DisplayPattern": "*хихикает* ...Смотри, у меня настоящие кроличьи тапочки!"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Ой... Вы ищете тетю Марни? {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Jas/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Ой... Вы ищете тетю Марни?"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Привет, мистер. {Farmer_Name}.",
+          "AudioPath": "assets/ru-RU/Jas/28_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет, мистер. .",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Привет, мисс {Farmer_Name}.",
+          "AudioPath": "assets/ru-RU/Jas/29_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "Привет, мисс .",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "На ферме жить весело. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Mon4",
+          "PageIndex": 2,
+          "DisplayPattern": "На ферме жить весело."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Что? *Хихикает* {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Что? *Хихикает*"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "... Привет.",
+          "AudioPath": "assets/ru-RU/Jas/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "... Привет."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Можешь поиграть с моими куклами, если хочешь. Только причеши их, когда наиграешься.",
+          "AudioPath": "assets/ru-RU/Jas/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "Можешь поиграть с моими куклами, если хочешь. Только причеши их, когда наиграешься."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "... {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Jas/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Wed2",
+          "DialogueText": "... Привет. {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Jas/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed2",
+          "PageIndex": 0,
+          "DisplayPattern": "... Привет."
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "Тетя Марни не пускает меня гулять после 6-ти часов вечера. Так нечестно! {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "Тетя Марни не пускает меня гулять после 6-ти часов вечера. Так нечестно!"
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "Я больше не боюсь темноты!",
+          "AudioPath": "assets/ru-RU/Jas/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed4",
+          "PageIndex": 1,
+          "DisplayPattern": "Я больше не боюсь темноты!"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Мне нельзя говорить с незнакомыми... {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Jas/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Мне нельзя говорить с незнакомыми..."
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "Мисс Пенни учит меня чистописанию. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Thu2",
+          "PageIndex": 0,
+          "DisplayPattern": "Мисс Пенни учит меня чистописанию."
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "У нее такой красивый почерк.",
+          "AudioPath": "assets/ru-RU/Jas/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Thu2",
+          "PageIndex": 1,
+          "DisplayPattern": "У нее такой красивый почерк."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "... Я тебя не знаю. {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Jas/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "... Я тебя не знаю."
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "Тебе нравится мой бантик?",
+          "AudioPath": "assets/ru-RU/Jas/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Fri2",
+          "PageIndex": 0,
+          "DisplayPattern": "Тебе нравится мой бантик?"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "Мне нравится жить на ферме... Больше всего мне нравится свежее мороженое из молока наших коровок.",
+          "AudioPath": "assets/ru-RU/Jas/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "Мне нравится жить на ферме... Больше всего мне нравится свежее мороженое из молока наших коровок."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "От тебя пахнет травой. {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Jas/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "От тебя пахнет травой."
+        },
+        {
+          "DialogueFrom": "Sat2",
+          "DialogueText": "Иногда я ищу в речке раков. Ты только не говори тете Марни, но я как-то дала корове рака.",
+          "AudioPath": "assets/ru-RU/Jas/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat2",
+          "PageIndex": 0,
+          "DisplayPattern": "Иногда я ищу в речке раков. Ты только не говори тете Марни, но я как-то дала корове рака."
+        },
+        {
+          "DialogueFrom": "Sat2",
+          "DialogueText": "Ей очень понравилось.",
+          "AudioPath": "assets/ru-RU/Jas/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat2",
+          "PageIndex": 1,
+          "DisplayPattern": "Ей очень понравилось."
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Вы всегда такой добрый, мистер {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/47_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "Вы всегда такой добрый, мистер .",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Вы всегда такая добрая, мисс {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/48_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "Вы всегда такая добрая, мисс .",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Обычно взрослые скучные и злюки, а вы — нет.",
+          "AudioPath": "assets/ru-RU/Jas/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat8",
+          "PageIndex": 2,
+          "DisplayPattern": "Обычно взрослые скучные и злюки, а вы — нет."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Эм... В-вы что-то хотели? {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Jas/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Эм... В-вы что-то хотели?"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Мне нельзя говорить с незнакомыми. {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Jas/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Мне нельзя говорить с незнакомыми."
+        },
+        {
+          "DialogueFrom": "Sun2",
+          "DialogueText": "Шейна часто нет дома, а тетя Марни всегда занята... Приходится мне выдумывать себе игры.",
+          "AudioPath": "assets/ru-RU/Jas/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun2",
+          "PageIndex": 0,
+          "DisplayPattern": "Шейна часто нет дома, а тетя Марни всегда занята... Приходится мне выдумывать себе игры."
+        },
+        {
+          "DialogueFrom": "Sun2",
+          "DialogueText": "Я рада, что у меня столько игрушек. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun2",
+          "PageIndex": 1,
+          "DisplayPattern": "Я рада, что у меня столько игрушек."
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "А ты знаешь, что Шейн — мой крестный? Он был другом моих родителей. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun10",
+          "PageIndex": 0,
+          "DisplayPattern": "А ты знаешь, что Шейн — мой крестный? Он был другом моих родителей."
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "... Они умерли. *Всхлипывает* {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun10",
+          "PageIndex": 1,
+          "DisplayPattern": "... Они умерли. *Всхлипывает*"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s0",
+          "DialogueText": "I loved it! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/56.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I loved it!"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184643:s0",
+          "DialogueText": "Ms. Penny? The cover fell off my math book... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/57.ogg",
+          "TranslationKey": "Events/Town:6184643:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ms. Penny? The cover fell off my math book..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s0",
+          "DialogueText": "A natural resource is a material source of wealth that occurs in a natural state and has economic value. {Portrait:Love}",
+          "AudioPath": "assets/ru-RU/Jas/58.ogg",
+          "TranslationKey": "Events/Forest:181928:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "A natural resource is a material source of wealth that occurs in a natural state and has economic value."
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s1",
+          "DialogueText": "Yesss! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/59.ogg",
+          "TranslationKey": "Events/Forest:181928:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Yesss!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s0",
+          "DialogueText": "Ew... it smells. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/60.ogg",
+          "TranslationKey": "Events/Forest:318560:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ew... it smells."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s1",
+          "DialogueText": "I think Gunther has the key.",
+          "AudioPath": "assets/ru-RU/Jas/61.ogg",
+          "TranslationKey": "Events/Forest:318560:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I think Gunther has the key."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s2",
+          "DialogueText": "I saw a big rusty old key fall out of his pocket one time.",
+          "AudioPath": "assets/ru-RU/Jas/62.ogg",
+          "TranslationKey": "Events/Forest:318560:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I saw a big rusty old key fall out of his pocket one time."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s3",
+          "DialogueText": "A creepy sewer door like this has just got to be a match for a big rusty old key. {Portrait:Love}",
+          "AudioPath": "assets/ru-RU/Jas/63.ogg",
+          "TranslationKey": "Events/Forest:318560:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "A creepy sewer door like this has just got to be a match for a big rusty old key."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s4",
+          "DialogueText": "There's something moving around in there! {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Jas/64.ogg",
+          "TranslationKey": "Events/Forest:318560:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "There's something moving around in there!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s0",
+          "DialogueText": "They're too spicy for me! {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/65.ogg",
+          "TranslationKey": "Events/Forest:3910979:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "They're too spicy for me!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s1",
+          "DialogueText": "Um... What do you do with the bugs, Vincent?",
+          "AudioPath": "assets/ru-RU/Jas/66.ogg",
+          "TranslationKey": "Events/Forest:3910979:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... What do you do with the bugs, Vincent?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s2",
+          "DialogueText": "*gasp*!",
+          "AudioPath": "assets/ru-RU/Jas/67.ogg",
+          "TranslationKey": "Events/Forest:3910979:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "*gasp*!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s3",
+          "DialogueText": "That's horrible! No, no, no, no, no... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/68.ogg",
+          "TranslationKey": "Events/Forest:3910979:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "That's horrible! No, no, no, no, no..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s4|g=male",
+          "DialogueText": "Mr. {Farmer_Name}? Please... put the bugs back in the grass so they can live in peace.",
+          "AudioPath": "assets/ru-RU/Jas/69_male.ogg",
+          "TranslationKey": "Events/Forest:3910979:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Mr. ? Please... put the bugs back in the grass so they can live in peace.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s5|g=female",
+          "DialogueText": "Miss {Farmer_Name}? Please... put the bugs back in the grass so they can live in peace.",
+          "AudioPath": "assets/ru-RU/Jas/70_female.ogg",
+          "TranslationKey": "Events/Forest:3910979:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Miss ? Please... put the bugs back in the grass so they can live in peace.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s6",
+          "DialogueText": "You learned how to clean the spring onion... without harming any bugs.",
+          "AudioPath": "assets/ru-RU/Jas/71.ogg",
+          "TranslationKey": "Events/Forest:3910979:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "You learned how to clean the spring onion... without harming any bugs."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s7",
+          "DialogueText": "Spring onions are now worth 5x the gold!",
+          "AudioPath": "assets/ru-RU/Jas/72.ogg",
+          "TranslationKey": "Events/Forest:3910979:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Spring onions are now worth 5x the gold!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s0",
+          "DialogueText": "...*sob*...",
+          "AudioPath": "assets/ru-RU/Jas/73.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "...*sob*..."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s0",
+          "DialogueText": "Th... These are real bunny-jewel slippers!! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/74.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Th... These are real bunny-jewel slippers!!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s1",
+          "DialogueText": "B... But these are so expensive! {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Jas/75.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "B... But these are so expensive!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s2",
+          "DialogueText": "How did you afford them? {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Jas/76.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "How did you afford them?"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s0",
+          "DialogueText": "Uncle Shane's in the barn. He said... Uh... He said to tell you he wants to show you something.",
+          "AudioPath": "assets/ru-RU/Jas/77.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Uncle Shane's in the barn. He said... Uh... He said to tell you he wants to show you something."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s1",
+          "DialogueText": "White Chicken",
+          "AudioPath": "assets/ru-RU/Jas/78.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "White Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s2",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/ru-RU/Jas/79.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s3",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/ru-RU/Jas/80.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s4",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/ru-RU/Jas/81.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s5",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/ru-RU/Jas/82.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Jas",
+          "DialogueText": "Ай! Курица клюнула меня в мизинец! {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Jas/83.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Ай! Курица клюнула меня в мизинец!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Jas_y2",
+          "DialogueText": "Му-у! Му-у-у-у!! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/84.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Му-у! Му-у-у-у!!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Jas_y2",
+          "DialogueText": "Я пытаюсь с телятами говорить. {Portrait:Neutral}",
+          "AudioPath": "assets/ru-RU/Jas/85.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Jas_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Я пытаюсь с телятами говорить."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Jas",
+          "DialogueText": "Ну теть Марни! Я хочу в лабиринт! Я не боюсь! {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/86.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Ну теть Марни! Я хочу в лабиринт! Я не боюсь!"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Jas_y2",
+          "DialogueText": "Пойдем туда!%noturn {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/87.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Пойдем туда!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Jas",
+          "DialogueText": "Надеюсь, я смогу найти хоть немного яиц, пока Винсент их все не соберет... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/88.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Надеюсь, я смогу найти хоть немного яиц, пока Винсент их все не соберет..."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Jas_y2",
+          "DialogueText": "Я очень постараюсь победить в этом году!",
+          "AudioPath": "assets/ru-RU/Jas/89.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Я очень постараюсь победить в этом году!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Jas",
+          "DialogueText": "Когда-нибудь королевой цветов стану я!",
+          "AudioPath": "assets/ru-RU/Jas/90.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Когда-нибудь королевой цветов стану я!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Jas_y2",
+          "DialogueText": "*смеется* Я все правильно делаю? {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/91.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "*смеется* Я все правильно делаю?"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Jas",
+          "DialogueText": "Винсент — плохой танцор.",
+          "AudioPath": "assets/ru-RU/Jas/92.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Винсент — плохой танцор."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Jas_y2",
+          "DialogueText": "Н... Но... Мне обязательно это есть? {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/93.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Н... Но... Мне обязательно это есть?"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Jas",
+          "DialogueText": "Надеюсь, в этом году и малыши приплывут!",
+          "AudioPath": "assets/ru-RU/Jas/94.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Надеюсь, в этом году и малыши приплывут!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Jas_y2",
+          "DialogueText": "Откуда медузы знают, куда плыть, если у них нет глаз? {Portrait:Neutral}",
+          "AudioPath": "assets/ru-RU/Jas/95.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Откуда медузы знают, куда плыть, если у них нет глаз?"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Jas",
+          "DialogueText": "О-о-о! Подарки! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/96.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "О-о-о! Подарки!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Jas_y2",
+          "DialogueText": "Уже можно открывать подарки? {Portrait:Neutral}",
+          "AudioPath": "assets/ru-RU/Jas/97.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Уже можно открывать подарки?"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Jas",
+          "DialogueText": "Я хочу приделать снеговику морковный нос! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/98.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Я хочу приделать снеговику морковный нос!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Jas_y2",
+          "DialogueText": "А рыбам там не холодно? {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Jas/99.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "А рыбам там не холодно?"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s0",
+          "DialogueText": "Ого-го! Спасибо!! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/100.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ого-го! Спасибо!!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s1",
+          "DialogueText": "Я люблю подарки! Спасибо!",
+          "AudioPath": "assets/ru-RU/Jas/101.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Я люблю подарки! Спасибо!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s2",
+          "DialogueText": "Это подарок? А... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/102.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Это подарок? А..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s3",
+          "DialogueText": "Фу. Гадость. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/103.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Фу. Гадость."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s4",
+          "DialogueText": "Спасибо!",
+          "AudioPath": "assets/ru-RU/Jas/104.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Спасибо!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_love_BeforeMovie",
+          "DialogueText": "Я так рада, что пришла в кино!",
+          "AudioPath": "assets/ru-RU/Jas/105.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Я так рада, что пришла в кино!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_love_DuringMovie",
+          "DialogueText": "Джас очень весело!",
+          "AudioPath": "assets/ru-RU/Jas/106.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_love_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Джас очень весело!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_love_AfterMovie",
+          "DialogueText": "Было так весело! Спасибо за приглашение! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/107.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Было так весело! Спасибо за приглашение!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_like_BeforeMovie",
+          "DialogueText": "Это фильм для взрослых, да? Думаю, ничего со мной не случится!",
+          "AudioPath": "assets/ru-RU/Jas/108.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Это фильм для взрослых, да? Думаю, ничего со мной не случится!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_like_DuringMovie",
+          "DialogueText": "Джас кивает головой и осматривается.",
+          "AudioPath": "assets/ru-RU/Jas/109.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_like_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Джас кивает головой и осматривается."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_like_AfterMovie",
+          "DialogueText": "Мне кажется, фильм хороший! Там были... эм... хорошие «дья-во-ло-ги»! ...верно?",
+          "AudioPath": "assets/ru-RU/Jas/110.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Мне кажется, фильм хороший! Там были... эм... хорошие «дья-во-ло-ги»! ...верно?"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_BeforeMovie",
+          "DialogueText": "Мне... Мне кажется, мне нельзя такое смотреть... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/111.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Мне... Мне кажется, мне нельзя такое смотреть..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_DuringMovie",
+          "DialogueText": "Мне страшно... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/112.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Мне страшно..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_DuringMovie_2",
+          "DialogueText": "Джас дрожит.",
+          "AudioPath": "assets/ru-RU/Jas/113.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_DuringMovie_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Джас дрожит."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_AfterMovie",
+          "DialogueText": "*хлюп*... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Jas/114.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "*хлюп*..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Jas",
+          "DialogueText": "Тут весело, но я хочу мороженое...",
+          "AudioPath": "assets/ru-RU/Jas/115.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Тут весело, но я хочу мороженое..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Jas",
+          "DialogueText": "Привет... Эм... *хихикает*",
+          "AudioPath": "assets/ru-RU/Jas/116.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет... Эм... *хихикает*"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Jas_IceCream",
+          "DialogueText": "Это... Это мне? {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Jas/117.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Jas_IceCream",
+          "PageIndex": 0,
+          "DisplayPattern": "Это... Это мне?"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Jas_IceCream",
+          "DialogueText": "Ух ты, именно то, что я хотела... Спасибо! Это так мило! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Jas/118.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Jas_IceCream",
+          "PageIndex": 1,
+          "DisplayPattern": "Ух ты, именно то, что я хотела... Спасибо! Это так мило!"
+        }
+      ]
+    }
+  ]
+}

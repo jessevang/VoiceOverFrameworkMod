@@ -1,0 +1,3820 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Maru.de-DE",
+      "VoicePackName": "DictionarV2 (Maru - de-DE)",
+      "Character": "Maru",
+      "Language": "de-DE",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Oh! Bist du nicht gerade hergezogen?",
+          "AudioPath": "assets/de-DE/Maru/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! Bist du nicht gerade hergezogen?"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Ich bin Maru. Ich habe mich darauf gefreut, dich kennenzulernen! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich bin Maru. Ich habe mich darauf gefreut, dich kennenzulernen!"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Weißt du, in einem kleinen Ort wie diesem hier kann ein neues Gesicht die Dynamik ziemlich verändern. Es ist aufregend!",
+          "AudioPath": "assets/de-DE/Maru/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Introduction",
+          "PageIndex": 2,
+          "DisplayPattern": "Weißt du, in einem kleinen Ort wie diesem hier kann ein neues Gesicht die Dynamik ziemlich verändern. Es ist aufregend!"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "Ha ... klar! Plötzlich klingt der Tanz viel lustiger. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:FlowerDance_Accept",
+          "PageIndex": 0,
+          "DisplayPattern": "Ha ... klar! Plötzlich klingt der Tanz viel lustiger."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "Hey, was ist das, ein Geburtstagsgeschenk? Das ist ja toll! Danke, dass du an mich denkst! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, was ist das, ein Geburtstagsgeschenk? Das ist ja toll! Danke, dass du an mich denkst!"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "Hey, was ist das, ein Geburtstagsgeschenk? Es ist... äh, na ja, es ist ein Geschenk! Jedenfalls danke, dass du an mich gedacht hast.",
+          "AudioPath": "assets/de-DE/Maru/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, was ist das, ein Geburtstagsgeschenk? Es ist... äh, na ja, es ist ein Geschenk! Jedenfalls danke, dass du an mich gedacht hast."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Mmm... wie kann das so gut schmecken? Das ist wirklich ein tolles Geschenk.",
+          "AudioPath": "assets/de-DE/Maru/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Mmm... wie kann das so gut schmecken? Das ist wirklich ein tolles Geschenk."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)787",
+          "DialogueText": "Das wird perfekt für mein neuestes Projekt sein! Danke, {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:AcceptGift_(O)787",
+          "PageIndex": 0,
+          "DisplayPattern": "Das wird perfekt für mein neuestes Projekt sein! Danke, !"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)336",
+          "DialogueText": "Ah, reines Gold... Es ist nicht das stärkste Material, aber es hat einige wirklich nützliche Eigenschaften! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:AcceptGift_(O)336",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah, reines Gold... Es ist nicht das stärkste Material, aber es hat einige wirklich nützliche Eigenschaften!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)337",
+          "DialogueText": "Oh, wow! Das ist ein seltenes Element. Es wird vermutet, dass das gesamte Iridium in unserer Welt von Meteoriten stammt... {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:AcceptGift_(O)337",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, wow! Das ist ein seltenes Element. Es wird vermutet, dass das gesamte Iridium in unserer Welt von Meteoriten stammt..."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)122",
+          "DialogueText": "Oh, das ist aufregend! Ich werde es zerlegen und sehen, ob ich die Technologie rekonstruieren kann. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:AcceptGift_(O)122",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, das ist aufregend! Ich werde es zerlegen und sehen, ob ich die Technologie rekonstruieren kann."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)910",
+          "DialogueText": "Ahh! Sei vorsichtig damit! Fasst du es mit bloßen Händen an? {Portrait:Custom:9}",
+          "AudioPath": "assets/de-DE/Maru/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:AcceptGift_(O)910",
+          "PageIndex": 0,
+          "DisplayPattern": "Ahh! Sei vorsichtig damit! Fasst du es mit bloßen Händen an?"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)910",
+          "DialogueText": "... Entschuldigung... hehe... Mit der richtigen Handhabung wird das perfekt für eine exotische Maschine sein, die ich baue.",
+          "AudioPath": "assets/de-DE/Maru/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:AcceptGift_(O)910",
+          "PageIndex": 1,
+          "DisplayPattern": "... Entschuldigung... hehe... Mit der richtigen Handhabung wird das perfekt für eine exotische Maschine sein, die ich baue."
+        },
+        {
+          "DialogueFrom": "dating_Maru",
+          "DialogueText": "Ähmmm... Sag es nicht meinem Vater, okay? Ich werde das regeln.",
+          "AudioPath": "assets/de-DE/Maru/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:dating_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Ähmmm... Sag es nicht meinem Vater, okay? Ich werde das regeln."
+        },
+        {
+          "DialogueFrom": "dating_Maru_memory_oneday",
+          "DialogueText": "Mmm... Es fällt mir schwer, mich heute auf meine Arbeit zu konzentrieren. {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Maru/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:dating_Maru_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "Mmm... Es fällt mir schwer, mich heute auf meine Arbeit zu konzentrieren."
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Ich möchte mit meinem Vater Proben sammeln gehen, aber meine Mutter besteht darauf, dass wir hier bleiben...",
+          "AudioPath": "assets/de-DE/Maru/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich möchte mit meinem Vater Proben sammeln gehen, aber meine Mutter besteht darauf, dass wir hier bleiben..."
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Dies ist eine seltene Gelegenheit, ein einzigartiges Phänomen zu untersuchen... jeder Augenblick zählt!",
+          "AudioPath": "assets/de-DE/Maru/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Dies ist eine seltene Gelegenheit, ein einzigartiges Phänomen zu untersuchen... jeder Augenblick zählt!"
+        },
+        {
+          "DialogueFrom": "eventSeen_9",
+          "DialogueText": "Ich hätte mir mehr Zeit nehmen sollen, bevor ich es dir gezeigt habe... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:eventSeen_9",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich hätte mir mehr Zeit nehmen sollen, bevor ich es dir gezeigt habe..."
+        },
+        {
+          "DialogueFrom": "eventSeen_9_memory_oneweek",
+          "DialogueText": "Wie fühlt sich deine Hand an?",
+          "AudioPath": "assets/de-DE/Maru/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:eventSeen_9_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "Wie fühlt sich deine Hand an?"
+        },
+        {
+          "DialogueFrom": "eventSeen_9_memory_oneweek",
+          "DialogueText": "Lass mal sehen... Hey, Sie sieht schon besser aus! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:eventSeen_9_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "Lass mal sehen... Hey, Sie sieht schon besser aus!"
+        },
+        {
+          "DialogueFrom": "married_Sebastian",
+          "DialogueText": "Hey, ich schätze, wir sind jetzt Bruder und Schwester! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/21_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:married_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, ich schätze, wir sind jetzt Bruder und Schwester!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "married_Sebastian",
+          "DialogueText": "Hey, ich schätze, wir sind jetzt Schwestern! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/22_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:married_Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "Hey, ich schätze, wir sind jetzt Schwestern!",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "married_Sebastian",
+          "DialogueText": "Ich bin froh, dass Sebastian einen Weg aus seinem Keller gefunden hat...",
+          "AudioPath": "assets/de-DE/Maru/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:married_Sebastian",
+          "PageIndex": 2,
+          "DisplayPattern": "Ich bin froh, dass Sebastian einen Weg aus seinem Keller gefunden hat..."
+        },
+        {
+          "DialogueFrom": "married_Sebastian",
+          "DialogueText": "Ich wünsche euch beiden alles Gute!",
+          "AudioPath": "assets/de-DE/Maru/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:married_Sebastian",
+          "PageIndex": 3,
+          "DisplayPattern": "Ich wünsche euch beiden alles Gute!"
+        },
+        {
+          "DialogueFrom": "married_Penny",
+          "DialogueText": "Hey, herzlichen Glückwunsch! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:married_Penny",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, herzlichen Glückwunsch!"
+        },
+        {
+          "DialogueFrom": "married_Penny",
+          "DialogueText": "Ich erinnere mich an das erste Mal, als Penny mir sagte, dass sie Gefühle für dich hat...",
+          "AudioPath": "assets/de-DE/Maru/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:married_Penny",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich erinnere mich an das erste Mal, als Penny mir sagte, dass sie Gefühle für dich hat..."
+        },
+        {
+          "DialogueFrom": "married_Penny",
+          "DialogueText": "Sie war ganz schüchtern, aber ich wusste sofort, dass es ernst war... sie würde so etwas nicht sagen, wenn sie es nicht ernst meinen würde!",
+          "AudioPath": "assets/de-DE/Maru/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:married_Penny",
+          "PageIndex": 2,
+          "DisplayPattern": "Sie war ganz schüchtern, aber ich wusste sofort, dass es ernst war... sie würde so etwas nicht sagen, wenn sie es nicht ernst meinen würde!"
+        },
+        {
+          "DialogueFrom": "married_Harvey",
+          "DialogueText": "Du schienst immer viel zu gesund, um so oft in der Klinik zu sein... Jetzt fängt es an, einen Sinn zu ergeben...",
+          "AudioPath": "assets/de-DE/Maru/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:married_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "Du schienst immer viel zu gesund, um so oft in der Klinik zu sein... Jetzt fängt es an, einen Sinn zu ergeben..."
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "Willy erwähnte, dass Du bei der Reparatur des Bootes geholfen hast. Danke, dass Du das getan hast!",
+          "AudioPath": "assets/de-DE/Maru/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "Willy erwähnte, dass Du bei der Reparatur des Bootes geholfen hast. Danke, dass Du das getan hast!"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "Das hat Spaß gemacht!",
+          "AudioPath": "assets/de-DE/Maru/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "Das hat Spaß gemacht!"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Mir sind ein paar verschiedene Seesterne aufgefallen. Mein Favorit sind die großen lilafarbenen, aber sie sind alle sehr interessant!",
+          "AudioPath": "assets/de-DE/Maru/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Mir sind ein paar verschiedene Seesterne aufgefallen. Mein Favorit sind die großen lilafarbenen, aber sie sind alle sehr interessant!"
+        },
+        {
+          "DialogueFrom": "Resort_Towel",
+          "DialogueText": "*aufschreck*... Es ist eine Sonnenfinsternis! {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Maru/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Resort_Towel",
+          "PageIndex": 0,
+          "DisplayPattern": "*aufschreck*... Es ist eine Sonnenfinsternis!"
+        },
+        {
+          "DialogueFrom": "Resort_Towel",
+          "DialogueText": "Oh... doch nicht. Es ist nur Dein Körper, der die Sonne blockiert.",
+          "AudioPath": "assets/de-DE/Maru/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Resort_Towel",
+          "PageIndex": 1,
+          "DisplayPattern": "Oh... doch nicht. Es ist nur Dein Körper, der die Sonne blockiert."
+        },
+        {
+          "DialogueFrom": "Resort_Towel_2",
+          "DialogueText": "Wir sind hier draußen so weit von der Zivilisation entfernt.",
+          "AudioPath": "assets/de-DE/Maru/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Resort_Towel_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Wir sind hier draußen so weit von der Zivilisation entfernt."
+        },
+        {
+          "DialogueFrom": "Resort_Towel_2",
+          "DialogueText": "Stell' dir die Sterne vor, die Du nachts sehen könntest.",
+          "AudioPath": "assets/de-DE/Maru/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Resort_Towel_2",
+          "PageIndex": 1,
+          "DisplayPattern": "Stell' dir die Sterne vor, die Du nachts sehen könntest."
+        },
+        {
+          "DialogueFrom": "Resort_Towel_2",
+          "DialogueText": "Wer weiß, vielleicht würden wir sogar eine oder zwei fliegende Untertassen sehen! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Resort_Towel_2",
+          "PageIndex": 2,
+          "DisplayPattern": "Wer weiß, vielleicht würden wir sogar eine oder zwei fliegende Untertassen sehen!"
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "Mmmm... Warum sind tropische Früchte so gut?",
+          "AudioPath": "assets/de-DE/Maru/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "Mmmm... Warum sind tropische Früchte so gut?"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Ich frage mich, ob Willy mir erlauben würde, mein Teleskop irgendwann hierher zu bringen...",
+          "AudioPath": "assets/de-DE/Maru/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich frage mich, ob Willy mir erlauben würde, mein Teleskop irgendwann hierher zu bringen..."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Der Himmel ist hier so klar, ich wette, ich könnte Pelikan Stadt draußen am Horizont erkennen.",
+          "AudioPath": "assets/de-DE/Maru/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Resort_Shore",
+          "PageIndex": 1,
+          "DisplayPattern": "Der Himmel ist hier so klar, ich wette, ich könnte Pelikan Stadt draußen am Horizont erkennen."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Vielleicht würde ich Dich sogar auf dem %farm Hof herumlaufen sehen!",
+          "AudioPath": "assets/de-DE/Maru/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Resort_Shore",
+          "PageIndex": 2,
+          "DisplayPattern": "Vielleicht würde ich Dich sogar auf dem Hof herumlaufen sehen!"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept_Spouse",
+          "DialogueText": "Natürlich... *Flüster* Können wir dann nach Hause und kuscheln? {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Maru/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:FlowerDance_Accept_Spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "Natürlich... *Flüster* Können wir dann nach Hause und kuscheln?"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Decline",
+          "DialogueText": "Ich fühle mich geschmeichelt! Aber... Nein.",
+          "AudioPath": "assets/de-DE/Maru/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:FlowerDance_Decline",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich fühle mich geschmeichelt! Aber... Nein."
+        },
+        {
+          "DialogueFrom": "divorced",
+          "DialogueText": "Wir haben uns nichts zu sagen. {Portrait:Angry}",
+          "AudioPath": "assets/de-DE/Maru/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:divorced",
+          "PageIndex": 0,
+          "DisplayPattern": "Wir haben uns nichts zu sagen."
+        },
+        {
+          "DialogueFrom": "breakUp",
+          "DialogueText": "Nicht gut genug für dich, was? {Portrait:Angry}",
+          "AudioPath": "assets/de-DE/Maru/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:breakUp",
+          "PageIndex": 0,
+          "DisplayPattern": "Nicht gut genug für dich, was?"
+        },
+        {
+          "DialogueFrom": "breakUp",
+          "DialogueText": "Fein... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:breakUp",
+          "PageIndex": 1,
+          "DisplayPattern": "Fein..."
+        },
+        {
+          "DialogueFrom": "dumped_Girls",
+          "DialogueText": "Du hast ja echt Nerven! Sprichst mich einfach so an! {Portrait:Angry}",
+          "AudioPath": "assets/de-DE/Maru/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:dumped_Girls",
+          "PageIndex": 0,
+          "DisplayPattern": "Du hast ja echt Nerven! Sprichst mich einfach so an!"
+        },
+        {
+          "DialogueFrom": "secondChance_Girls",
+          "DialogueText": "Du hast meinen Respekt verloren, {Farmer_Name} ... aber ich bin gewillt, dir zu vergeben. {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:secondChance_Girls",
+          "PageIndex": 0,
+          "DisplayPattern": "Du hast meinen Respekt verloren, ... aber ich bin gewillt, dir zu vergeben."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Wenn ich mit einem technischen Problem kämpfe, mache ich immer einen Spaziergang.",
+          "AudioPath": "assets/de-DE/Maru/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Wenn ich mit einem technischen Problem kämpfe, mache ich immer einen Spaziergang."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Ein Tapetenwechsel kann überraschend effektiv sein.",
+          "AudioPath": "assets/de-DE/Maru/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "Ein Tapetenwechsel kann überraschend effektiv sein."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Hast du meine Mutter getroffen? Sie ist die Schreinerin im Ort.",
+          "AudioPath": "assets/de-DE/Maru/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Hast du meine Mutter getroffen? Sie ist die Schreinerin im Ort."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Dienstags und Donnerstags arbeite ich bei Harveys Klinik.",
+          "AudioPath": "assets/de-DE/Maru/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Dienstags und Donnerstags arbeite ich bei Harveys Klinik."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Er sagt, er schätzt meine Anwesenheit, falls seine medizinischen Geräte verrückt spielen! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Er sagt, er schätzt meine Anwesenheit, falls seine medizinischen Geräte verrückt spielen!"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Ein Bauer zu sein ist wohl ziemlich einfach, was?",
+          "AudioPath": "assets/de-DE/Maru/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "Ein Bauer zu sein ist wohl ziemlich einfach, was?"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Ich habe vor, diesen Sommer viel Zeit mit meinem Teleskop zu verbringen.",
+          "AudioPath": "assets/de-DE/Maru/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich habe vor, diesen Sommer viel Zeit mit meinem Teleskop zu verbringen."
+        },
+        {
+          "DialogueFrom": "Thu4",
+          "DialogueText": "Manchmal, wenn ich mit meinem Teleskop ins Weltall schaue, überkommt mich dieses unheimliche Gefühl... Als wären wir nicht dazu bestimmt, das zu sehen.",
+          "AudioPath": "assets/de-DE/Maru/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Thu4",
+          "PageIndex": 0,
+          "DisplayPattern": "Manchmal, wenn ich mit meinem Teleskop ins Weltall schaue, überkommt mich dieses unheimliche Gefühl... Als wären wir nicht dazu bestimmt, das zu sehen."
+        },
+        {
+          "DialogueFrom": "Thu4",
+          "DialogueText": "Ich weiß, es ist albern... {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Thu4",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich weiß, es ist albern..."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Kennst du meinen Vater, Demetrius? Er ist ein Wissenschaftler. Es macht mir eine Menge Spaß, ihm im Labor zu helfen.",
+          "AudioPath": "assets/de-DE/Maru/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Kennst du meinen Vater, Demetrius? Er ist ein Wissenschaftler. Es macht mir eine Menge Spaß, ihm im Labor zu helfen."
+        },
+        {
+          "DialogueFrom": "Sat2",
+          "DialogueText": "Es ist wirklich befriedigend, wenn man etwas selbst reparieren kann, anstatt es einfach wegzuwerfen.",
+          "AudioPath": "assets/de-DE/Maru/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Sat2",
+          "PageIndex": 0,
+          "DisplayPattern": "Es ist wirklich befriedigend, wenn man etwas selbst reparieren kann, anstatt es einfach wegzuwerfen."
+        },
+        {
+          "DialogueFrom": "Sat4",
+          "DialogueText": "Manche Leute sagen: \"Magie ist nicht echt\"... aber haben sie jemals innegehalten und wirklich über Magnetismus nachgedacht?",
+          "AudioPath": "assets/de-DE/Maru/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Sat4",
+          "PageIndex": 0,
+          "DisplayPattern": "Manche Leute sagen: \"Magie ist nicht echt\"... aber haben sie jemals innegehalten und wirklich über Magnetismus nachgedacht?"
+        },
+        {
+          "DialogueFrom": "Sat6",
+          "DialogueText": "Wenn man über den menschlichen Körper nachdenkt, fällt es schwer zu glauben, dass das alles irgendwie einfach \"funktioniert\".",
+          "AudioPath": "assets/de-DE/Maru/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Sat6",
+          "PageIndex": 0,
+          "DisplayPattern": "Wenn man über den menschlichen Körper nachdenkt, fällt es schwer zu glauben, dass das alles irgendwie einfach \"funktioniert\"."
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Weißt du, ich habe mir überlegt... trotz aller Technologie auf der Welt, gibt es nichts Besseres, als einen echten menschlichen Freund zu haben.",
+          "AudioPath": "assets/de-DE/Maru/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "Weißt du, ich habe mir überlegt... trotz aller Technologie auf der Welt, gibt es nichts Besseres, als einen echten menschlichen Freund zu haben."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Hey, entschuldige wenn ich gerade nicht gut drauf bin... Ich bin ein wenig ausgelaugt von der Arbeit gestern.Ich musste zehn Boxen an Krankenakten auf den Dachboden bringen!",
+          "AudioPath": "assets/de-DE/Maru/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, entschuldige wenn ich gerade nicht gut drauf bin... Ich bin ein wenig ausgelaugt von der Arbeit gestern.Ich musste zehn Boxen an Krankenakten auf den Dachboden bringen!"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Hey, entschuldige wenn ich gerade nicht gut drauf bin... Ich bin ein wenig ausgelaugt von der Arbeit gestern.$e",
+          "AudioPath": "assets/de-DE/Maru/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "Hey, entschuldige wenn ich gerade nicht gut drauf bin... Ich bin ein wenig ausgelaugt von der Arbeit gestern.$e"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Ich musste für vier Stunden durchgehend Patientenakten sortieren!",
+          "AudioPath": "assets/de-DE/Maru/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "Ich musste für vier Stunden durchgehend Patientenakten sortieren!"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Macht es Spaß, auf dem Hof zu arbeiten?",
+          "AudioPath": "assets/de-DE/Maru/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Macht es Spaß, auf dem Hof zu arbeiten?"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Ja.",
+          "AudioPath": "assets/de-DE/Maru/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Ja."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Nein.",
+          "AudioPath": "assets/de-DE/Maru/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Sun",
+          "PageIndex": 2,
+          "DisplayPattern": "Nein."
+        },
+        {
+          "DialogueFrom": "Sun_01_old",
+          "DialogueText": "Hey, du hast eine weitere Woche an Hofarbeit überstanden! Es scheint ziemlich gut für dich zu laufen. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Sun_01_old",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, du hast eine weitere Woche an Hofarbeit überstanden! Es scheint ziemlich gut für dich zu laufen."
+        },
+        {
+          "DialogueFrom": "Sun_01_old",
+          "DialogueText": "Wieder eine anstrengende Woche auf dem Hof, was? Es muss eine ganze Menge Arbeit sein... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/69.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Sun_01_old",
+          "PageIndex": 1,
+          "DisplayPattern": "Wieder eine anstrengende Woche auf dem Hof, was? Es muss eine ganze Menge Arbeit sein..."
+        },
+        {
+          "DialogueFrom": "Sun_01_01",
+          "DialogueText": "Nun, das ist gut, nicht? {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/70.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Sun_01_01",
+          "PageIndex": 0,
+          "DisplayPattern": "Nun, das ist gut, nicht?"
+        },
+        {
+          "DialogueFrom": "Sun_01_02",
+          "DialogueText": "Huch! Es tut mir leid. Hast du je darüber nachgedacht, etwas anderes zu tun...? {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/71.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Sun_01_02",
+          "PageIndex": 0,
+          "DisplayPattern": "Huch! Es tut mir leid. Hast du je darüber nachgedacht, etwas anderes zu tun...?"
+        },
+        {
+          "DialogueFrom": "Tue2",
+          "DialogueText": "Komm bei unserem Haus vorbei, wenn du deine Gebäude verbessern willst.",
+          "AudioPath": "assets/de-DE/Maru/72.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Tue2",
+          "PageIndex": 0,
+          "DisplayPattern": "Komm bei unserem Haus vorbei, wenn du deine Gebäude verbessern willst."
+        },
+        {
+          "DialogueFrom": "Tue2",
+          "DialogueText": "Es ist immer nett, Gäste zu haben.",
+          "AudioPath": "assets/de-DE/Maru/73.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Tue2",
+          "PageIndex": 1,
+          "DisplayPattern": "Es ist immer nett, Gäste zu haben."
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "Meine Mutter ist eine Schreinerin und mein Vater Wissenschaftler. Kein Wunder also, dass ich gerne an Geräten rumbastle.",
+          "AudioPath": "assets/de-DE/Maru/74.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "Meine Mutter ist eine Schreinerin und mein Vater Wissenschaftler. Kein Wunder also, dass ich gerne an Geräten rumbastle."
+        },
+        {
+          "DialogueFrom": "Fri6",
+          "DialogueText": "Mein Vater ist sehr rational, und meine Mutter ist sehr intuitiv. Dieser Unterschied führt zu Konflikten, manchmal... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "Mein Vater ist sehr rational, und meine Mutter ist sehr intuitiv. Dieser Unterschied führt zu Konflikten, manchmal..."
+        },
+        {
+          "DialogueFrom": "Mon6",
+          "DialogueText": "Manchmal füllt sich mein Kopf mit so viel Unsinn, dass ich kaum denken kann. Passiert dir das auch manchmal?",
+          "AudioPath": "assets/de-DE/Maru/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Mon6",
+          "PageIndex": 0,
+          "DisplayPattern": "Manchmal füllt sich mein Kopf mit so viel Unsinn, dass ich kaum denken kann. Passiert dir das auch manchmal?"
+        },
+        {
+          "DialogueFrom": "Mon6",
+          "DialogueText": "Ein wenig frische Luft hilft normalerweise.",
+          "AudioPath": "assets/de-DE/Maru/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Mon6",
+          "PageIndex": 1,
+          "DisplayPattern": "Ein wenig frische Luft hilft normalerweise."
+        },
+        {
+          "DialogueFrom": "Wed8",
+          "DialogueText": "Ich arbeite dienstags und donnerstags in Harveys Klinik.",
+          "AudioPath": "assets/de-DE/Maru/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Wed8",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich arbeite dienstags und donnerstags in Harveys Klinik."
+        },
+        {
+          "DialogueFrom": "Wed8",
+          "DialogueText": "Er ist nett, aber nicht wirklich mein Typ...",
+          "AudioPath": "assets/de-DE/Maru/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Wed8",
+          "PageIndex": 1,
+          "DisplayPattern": "Er ist nett, aber nicht wirklich mein Typ..."
+        },
+        {
+          "DialogueFrom": "Thu10",
+          "DialogueText": "Oh, {Farmer_Name}! Gibt es etwas, worüber du mit mir reden willst? {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Maru/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Thu10",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, ! Gibt es etwas, worüber du mit mir reden willst?"
+        },
+        {
+          "DialogueFrom": "Event_Hospital_1",
+          "DialogueText": "Natürlich wird er den Unterschied bemerken! Diese Probe ist komplett ruiniert! {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Event_Hospital_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Natürlich wird er den Unterschied bemerken! Diese Probe ist komplett ruiniert!"
+        },
+        {
+          "DialogueFrom": "Event_Hospital_2",
+          "DialogueText": "Okay. Ich schiebe es dann auf dich. {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Maru/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Event_Hospital_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay. Ich schiebe es dann auf dich."
+        },
+        {
+          "DialogueFrom": "Event_Hospital_3",
+          "DialogueText": "Du hast Recht. Ich sollte ihm einfach die Wahrheit sagen. {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Maru/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Event_Hospital_3",
+          "PageIndex": 0,
+          "DisplayPattern": "Du hast Recht. Ich sollte ihm einfach die Wahrheit sagen."
+        },
+        {
+          "DialogueFrom": "Event_Space1",
+          "DialogueText": "Es ist fantastisch, oder?",
+          "AudioPath": "assets/de-DE/Maru/84.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Event_Space1",
+          "PageIndex": 0,
+          "DisplayPattern": "Es ist fantastisch, oder?"
+        },
+        {
+          "DialogueFrom": "Event_Space2",
+          "DialogueText": "Man könnte das vielleicht so sehen... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/85.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Event_Space2",
+          "PageIndex": 0,
+          "DisplayPattern": "Man könnte das vielleicht so sehen..."
+        },
+        {
+          "DialogueFrom": "Event_Space2",
+          "DialogueText": "Aber es ist trotzdem unglaublich, oder?",
+          "AudioPath": "assets/de-DE/Maru/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Event_Space2",
+          "PageIndex": 1,
+          "DisplayPattern": "Aber es ist trotzdem unglaublich, oder?"
+        },
+        {
+          "DialogueFrom": "Event_Cut1",
+          "DialogueText": "Ehrlich? {Portrait:Custom:8}",
+          "AudioPath": "assets/de-DE/Maru/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Event_Cut1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ehrlich?"
+        },
+        {
+          "DialogueFrom": "Event_Cut1",
+          "DialogueText": "Puh, dann fühle ich mich ein wenig besser. Danke.",
+          "AudioPath": "assets/de-DE/Maru/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Event_Cut1",
+          "PageIndex": 1,
+          "DisplayPattern": "Puh, dann fühle ich mich ein wenig besser. Danke."
+        },
+        {
+          "DialogueFrom": "Event_Cut2",
+          "DialogueText": "Oh nein! Es tut mir wirklich wirklich leid. {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/89.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Event_Cut2",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh nein! Es tut mir wirklich wirklich leid."
+        },
+        {
+          "DialogueFrom": "event_robot1",
+          "DialogueText": "Danke. Das bedeutet mir sehr viel, {Farmer_Name}.",
+          "AudioPath": "assets/de-DE/Maru/90.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:event_robot1",
+          "PageIndex": 0,
+          "DisplayPattern": "Danke. Das bedeutet mir sehr viel, ."
+        },
+        {
+          "DialogueFrom": "event_robot1",
+          "DialogueText": "Ich weiß, dass solche Dinge nicht wirklich deins sind... Aber es freut mich, dass du Interesse an meiner Arbeit zeigst.",
+          "AudioPath": "assets/de-DE/Maru/91.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:event_robot1",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich weiß, dass solche Dinge nicht wirklich deins sind... Aber es freut mich, dass du Interesse an meiner Arbeit zeigst."
+        },
+        {
+          "DialogueFrom": "event_robot1",
+          "DialogueText": "Ich wünschte, ich könnte den Gefallen irgendwie erwidern. {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Maru/92.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:event_robot1",
+          "PageIndex": 2,
+          "DisplayPattern": "Ich wünschte, ich könnte den Gefallen irgendwie erwidern."
+        },
+        {
+          "DialogueFrom": "event_robot2",
+          "DialogueText": "Was? Nachdem sie ausdrücklich gesagt hat, dass sie kein Sklave sein möchte? Wie brutal... {Portrait:Angry}",
+          "AudioPath": "assets/de-DE/Maru/93.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:event_robot2",
+          "PageIndex": 0,
+          "DisplayPattern": "Was? Nachdem sie ausdrücklich gesagt hat, dass sie kein Sklave sein möchte? Wie brutal..."
+        },
+        {
+          "DialogueFrom": "event_robot3",
+          "DialogueText": "Heh... {Portrait:Custom:8}",
+          "AudioPath": "assets/de-DE/Maru/94.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:event_robot3",
+          "PageIndex": 0,
+          "DisplayPattern": "Heh..."
+        },
+        {
+          "DialogueFrom": "event_robot3",
+          "DialogueText": "Ja, so etwas hat er wohl gesagt, oder? {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Maru/95.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:event_robot3",
+          "PageIndex": 1,
+          "DisplayPattern": "Ja, so etwas hat er wohl gesagt, oder?"
+        },
+        {
+          "DialogueFrom": "event_robot3",
+          "DialogueText": "Äh... {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Maru/96.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:event_robot3",
+          "PageIndex": 2,
+          "DisplayPattern": "Äh..."
+        },
+        {
+          "DialogueFrom": "event_robot4",
+          "DialogueText": "... {Portrait:Custom:8}",
+          "AudioPath": "assets/de-DE/Maru/97.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:event_robot4",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "event_robot4",
+          "DialogueText": "{Farmer_Name}... {Portrait:Custom:8}",
+          "AudioPath": "assets/de-DE/Maru/98.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:event_robot4",
+          "PageIndex": 1,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "event_robot_explain1",
+          "DialogueText": "... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/99.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:event_robot_explain1",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "event_robot_explain1",
+          "DialogueText": "Da ist was dran, ich habe sie auf menschliches Verhalten programmiert... Aber ihr Neuronennetzwerk ist so komplex, dass ich nicht sagen kann, ob das Bewusstsein selbstständig erschienen ist. {Portrait:Custom:8}",
+          "AudioPath": "assets/de-DE/Maru/100.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:event_robot_explain1",
+          "PageIndex": 1,
+          "DisplayPattern": "Da ist was dran, ich habe sie auf menschliches Verhalten programmiert... Aber ihr Neuronennetzwerk ist so komplex, dass ich nicht sagen kann, ob das Bewusstsein selbstständig erschienen ist."
+        },
+        {
+          "DialogueFrom": "event_robot_explain1",
+          "DialogueText": "Außerdem wäre es arrogant anzunehmen, dass ein menschenähnliches Bewusstsein der Gipfel der Existenz ist. Computergehirne sind anders als unsere, aber wir können sie nicht einfach ignorieren. {Portrait:Custom:8}",
+          "AudioPath": "assets/de-DE/Maru/101.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:event_robot_explain1",
+          "PageIndex": 2,
+          "DisplayPattern": "Außerdem wäre es arrogant anzunehmen, dass ein menschenähnliches Bewusstsein der Gipfel der Existenz ist. Computergehirne sind anders als unsere, aber wir können sie nicht einfach ignorieren."
+        },
+        {
+          "DialogueFrom": "event_robot_explain2",
+          "DialogueText": "Ich seh schon. Es war kein sehr lustiger Witz. {Portrait:Angry}",
+          "AudioPath": "assets/de-DE/Maru/102.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:event_robot_explain2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich seh schon. Es war kein sehr lustiger Witz."
+        },
+        {
+          "DialogueFrom": "event_robot_explain3",
+          "DialogueText": "Das ist furchtbar! Was ist in dich gefahren, {Farmer_Name}? {Portrait:Angry}",
+          "AudioPath": "assets/de-DE/Maru/103.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:event_robot_explain3",
+          "PageIndex": 0,
+          "DisplayPattern": "Das ist furchtbar! Was ist in dich gefahren, ?"
+        },
+        {
+          "DialogueFrom": "event_robot_explain3",
+          "DialogueText": "Ich werde einfach diese ganze Konversation vergessen... Du benimmst dich höchst eigenartig. {Portrait:Angry}",
+          "AudioPath": "assets/de-DE/Maru/104.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:event_robot_explain3",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich werde einfach diese ganze Konversation vergessen... Du benimmst dich höchst eigenartig."
+        },
+        {
+          "DialogueFrom": "summer_1",
+          "DialogueText": "Das wird eine großartige Jahreszeit zum Sternegucken.",
+          "AudioPath": "assets/de-DE/Maru/105.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Das wird eine großartige Jahreszeit zum Sternegucken."
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "Hmm... Welche Art Apparat soll ich diesen Sommer erfinden?",
+          "AudioPath": "assets/de-DE/Maru/106.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmm... Welche Art Apparat soll ich diesen Sommer erfinden?"
+        },
+        {
+          "DialogueFrom": "summer_Mon6",
+          "DialogueText": "Komm auf mein Zimmer, falls du mit meinen Gerätschaften spielen willst.",
+          "AudioPath": "assets/de-DE/Maru/107.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Mon6",
+          "PageIndex": 0,
+          "DisplayPattern": "Komm auf mein Zimmer, falls du mit meinen Gerätschaften spielen willst."
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "Sebastian ist mein Halbbruder, falls du das nicht schon wusstest.",
+          "AudioPath": "assets/de-DE/Maru/108.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Sebastian ist mein Halbbruder, falls du das nicht schon wusstest."
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "Wir sehen uns kein bisschen ähnlich.",
+          "AudioPath": "assets/de-DE/Maru/109.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Wir sehen uns kein bisschen ähnlich."
+        },
+        {
+          "DialogueFrom": "summer_Tue4",
+          "DialogueText": "Sebastian redet kaum mit mir. Ich frage mich, ob er mich überhaupt mag?",
+          "AudioPath": "assets/de-DE/Maru/110.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "Sebastian redet kaum mit mir. Ich frage mich, ob er mich überhaupt mag?"
+        },
+        {
+          "DialogueFrom": "summer_Tue4",
+          "DialogueText": "Es ist schade, da ich gerne einen Bruder hätte, aber er benimmt sich nicht wie einer.",
+          "AudioPath": "assets/de-DE/Maru/111.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Tue4",
+          "PageIndex": 1,
+          "DisplayPattern": "Es ist schade, da ich gerne einen Bruder hätte, aber er benimmt sich nicht wie einer."
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "Genießt du die Jahreszeit?",
+          "AudioPath": "assets/de-DE/Maru/112.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Genießt du die Jahreszeit?"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "Dieses Jahr ist es so warm. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/113.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Dieses Jahr ist es so warm."
+        },
+        {
+          "DialogueFrom": "summer_Wed4",
+          "DialogueText": "Penny und ich haben einen saisonalen Buchklub gemacht.",
+          "AudioPath": "assets/de-DE/Maru/114.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "Penny und ich haben einen saisonalen Buchklub gemacht."
+        },
+        {
+          "DialogueFrom": "summer_Wed4",
+          "DialogueText": "Wir sind zwar nur zu zweit, aber es macht trotzdem Spaß, über das zu diskutieren, was wir gerade lesen!",
+          "AudioPath": "assets/de-DE/Maru/115.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Wed4",
+          "PageIndex": 1,
+          "DisplayPattern": "Wir sind zwar nur zu zweit, aber es macht trotzdem Spaß, über das zu diskutieren, was wir gerade lesen!"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "Ich habe mich dazu entschlossen, irgendwann einen Roboter zu bauen.",
+          "AudioPath": "assets/de-DE/Maru/116.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich habe mich dazu entschlossen, irgendwann einen Roboter zu bauen."
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "Sollte ziemlich einfach für dich sein.",
+          "AudioPath": "assets/de-DE/Maru/117.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Sollte ziemlich einfach für dich sein."
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "Du solltest etwas realistischer sein.",
+          "AudioPath": "assets/de-DE/Maru/118.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "Du solltest etwas realistischer sein."
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "Klingt nach einer Herausforderung.",
+          "AudioPath": "assets/de-DE/Maru/119.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Thu",
+          "PageIndex": 3,
+          "DisplayPattern": "Klingt nach einer Herausforderung."
+        },
+        {
+          "DialogueFrom": "Thu_01_old",
+          "DialogueText": "Man sieht sich.",
+          "AudioPath": "assets/de-DE/Maru/120.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Thu_01_old",
+          "PageIndex": 0,
+          "DisplayPattern": "Man sieht sich."
+        },
+        {
+          "DialogueFrom": "Thu_0",
+          "DialogueText": "Wirklich? Bist du sicher, dass du mir nicht nur schmeicheln willst?",
+          "AudioPath": "assets/de-DE/Maru/121.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Thu_0",
+          "PageIndex": 0,
+          "DisplayPattern": "Wirklich? Bist du sicher, dass du mir nicht nur schmeicheln willst?"
+        },
+        {
+          "DialogueFrom": "Thu_01_01",
+          "DialogueText": "Du denkst nicht, dass ich es schaffen könnte? {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/122.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Thu_01_01",
+          "PageIndex": 0,
+          "DisplayPattern": "Du denkst nicht, dass ich es schaffen könnte?"
+        },
+        {
+          "DialogueFrom": "Thu_01_02",
+          "DialogueText": "Du hast Recht, aber ich liebe eine Herausforderung! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/123.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:Thu_01_02",
+          "PageIndex": 0,
+          "DisplayPattern": "Du hast Recht, aber ich liebe eine Herausforderung!"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "Hey, hast du irgendwelche interessanten Hofgeschichten, die du mir erzählen kannst?",
+          "AudioPath": "assets/de-DE/Maru/124.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, hast du irgendwelche interessanten Hofgeschichten, die du mir erzählen kannst?"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "Wohl nicht.",
+          "AudioPath": "assets/de-DE/Maru/125.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Wohl nicht."
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "Ich habe gestern in der Klinik gearbeitet. Wir hatten nicht einen Patienten.",
+          "AudioPath": "assets/de-DE/Maru/126.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich habe gestern in der Klinik gearbeitet. Wir hatten nicht einen Patienten."
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "Ich schätze, die Leute werden im Sommer weniger krank.",
+          "AudioPath": "assets/de-DE/Maru/127.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich schätze, die Leute werden im Sommer weniger krank."
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "Ich wette, du pflanzt gerade ein paar interessante Dinge an.",
+          "AudioPath": "assets/de-DE/Maru/128.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich wette, du pflanzt gerade ein paar interessante Dinge an."
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "Vater sagt, dass hier im Tal eine Menge exotischer Pflanzen zu dieser Zeit wachsen.",
+          "AudioPath": "assets/de-DE/Maru/129.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Vater sagt, dass hier im Tal eine Menge exotischer Pflanzen zu dieser Zeit wachsen."
+        },
+        {
+          "DialogueFrom": "summer_Fri2",
+          "DialogueText": "Hey, erzähl mir eine Geschichte über deine Arbeit auf dem Hof.",
+          "AudioPath": "assets/de-DE/Maru/130.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Fri2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, erzähl mir eine Geschichte über deine Arbeit auf dem Hof."
+        },
+        {
+          "DialogueFrom": "summer_Fri2",
+          "DialogueText": "Das ist wirklich interessant!",
+          "AudioPath": "assets/de-DE/Maru/131.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Fri2",
+          "PageIndex": 1,
+          "DisplayPattern": "Das ist wirklich interessant!"
+        },
+        {
+          "DialogueFrom": "summer_Wed2",
+          "DialogueText": "Geht es nur mir so oder ist es plötzlich richtig heiß geworden?",
+          "AudioPath": "assets/de-DE/Maru/132.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Wed2",
+          "PageIndex": 0,
+          "DisplayPattern": "Geht es nur mir so oder ist es plötzlich richtig heiß geworden?"
+        },
+        {
+          "DialogueFrom": "summer_Wed2",
+          "DialogueText": "Ich schätze, es geht nur mir so.",
+          "AudioPath": "assets/de-DE/Maru/133.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Wed2",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich schätze, es geht nur mir so."
+        },
+        {
+          "DialogueFrom": "summer_Sun6",
+          "DialogueText": "Irgendwann werde ich eine weltberühmte Erfinderin sein. {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Maru/134.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Sun6",
+          "PageIndex": 0,
+          "DisplayPattern": "Irgendwann werde ich eine weltberühmte Erfinderin sein."
+        },
+        {
+          "DialogueFrom": "summer_Sun6",
+          "DialogueText": "Du hast Glück, dass du mit mir befreundet bist!",
+          "AudioPath": "assets/de-DE/Maru/135.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Sun6",
+          "PageIndex": 1,
+          "DisplayPattern": "Du hast Glück, dass du mit mir befreundet bist!"
+        },
+        {
+          "DialogueFrom": "summer_Sun6",
+          "DialogueText": "... Nur ein Scherz.",
+          "AudioPath": "assets/de-DE/Maru/136.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Sun6",
+          "PageIndex": 2,
+          "DisplayPattern": "... Nur ein Scherz."
+        },
+        {
+          "DialogueFrom": "summer_Tue8",
+          "DialogueText": "{Farmer_Name}, du siehst heute schick aus. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/137.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Tue8",
+          "PageIndex": 0,
+          "DisplayPattern": ", du siehst heute schick aus."
+        },
+        {
+          "DialogueFrom": "summer_Thu10",
+          "DialogueText": "Wie bleiben deine Hände so weich, wenn du immer auf dem Hof arbeitest?",
+          "AudioPath": "assets/de-DE/Maru/138.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:summer_Thu10",
+          "PageIndex": 0,
+          "DisplayPattern": "Wie bleiben deine Hände so weich, wenn du immer auf dem Hof arbeitest?"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "Hast du die Minen schon viel erkundet? Ich habe gehört, dass du dort einige nützliche Materialien finden kannst.",
+          "AudioPath": "assets/de-DE/Maru/139.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:fall_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Hast du die Minen schon viel erkundet? Ich habe gehört, dass du dort einige nützliche Materialien finden kannst."
+        },
+        {
+          "DialogueFrom": "fall_Tue",
+          "DialogueText": "Die Bäume sehen heute wunderschön aus! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/140.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:fall_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Die Bäume sehen heute wunderschön aus!"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "In anderen Teilen der Welt ist es gerade Frühling. Stell dir das mal vor!",
+          "AudioPath": "assets/de-DE/Maru/141.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:fall_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "In anderen Teilen der Welt ist es gerade Frühling. Stell dir das mal vor!"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "Meh... Ich will morgen nicht arbeiten.",
+          "AudioPath": "assets/de-DE/Maru/142.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:fall_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Meh... Ich will morgen nicht arbeiten."
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "Ich wette, in dieser Jahreszeit werden wir mehr Leute in der Klinik sehen. {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/143.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:fall_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich wette, in dieser Jahreszeit werden wir mehr Leute in der Klinik sehen."
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "Ich hoffe, jeder bleibt gesund.",
+          "AudioPath": "assets/de-DE/Maru/144.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:fall_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich hoffe, jeder bleibt gesund."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "All das Laub ist der Nährboden für kleine Organismen und Pilze. {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Maru/145.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:fall_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "All das Laub ist der Nährboden für kleine Organismen und Pilze."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "Interessant, nicht?",
+          "AudioPath": "assets/de-DE/Maru/146.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:fall_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Interessant, nicht?"
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "Hey, auf eine weitere gute Woche! *Prost*",
+          "AudioPath": "assets/de-DE/Maru/147.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:fall_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, auf eine weitere gute Woche! *Prost*"
+        },
+        {
+          "DialogueFrom": "fall_Tue2",
+          "DialogueText": "{Farmer_Name}, ich liebe es einfach, wie die Bäume gerade aussehen!",
+          "AudioPath": "assets/de-DE/Maru/148.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:fall_Tue2",
+          "PageIndex": 0,
+          "DisplayPattern": ", ich liebe es einfach, wie die Bäume gerade aussehen!"
+        },
+        {
+          "DialogueFrom": "fall_Tue2",
+          "DialogueText": "Ich weiß, du magst sie auch.",
+          "AudioPath": "assets/de-DE/Maru/149.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:fall_Tue2",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich weiß, du magst sie auch."
+        },
+        {
+          "DialogueFrom": "fall_Wed4",
+          "DialogueText": "Wenn du irgendwo extra Metall übrig hast, ich könnte es immer für eines meiner Projekte gebrauchen.",
+          "AudioPath": "assets/de-DE/Maru/150.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:fall_Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "Wenn du irgendwo extra Metall übrig hast, ich könnte es immer für eines meiner Projekte gebrauchen."
+        },
+        {
+          "DialogueFrom": "fall_Wed4",
+          "DialogueText": "Aber nur, wenn du es nicht selbst brauchst.",
+          "AudioPath": "assets/de-DE/Maru/151.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:fall_Wed4",
+          "PageIndex": 1,
+          "DisplayPattern": "Aber nur, wenn du es nicht selbst brauchst."
+        },
+        {
+          "DialogueFrom": "fall_Fri6",
+          "DialogueText": "Ich fühle mich in letzter Zeit besonders optimistisch... {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/152.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:fall_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich fühle mich in letzter Zeit besonders optimistisch..."
+        },
+        {
+          "DialogueFrom": "fall_Mon8",
+          "DialogueText": "Du solltest mich morgen in der Klinik besuchen. Ich arbeite von 10:00 bis 16:00 Uhr. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/153.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:fall_Mon8",
+          "PageIndex": 0,
+          "DisplayPattern": "Du solltest mich morgen in der Klinik besuchen. Ich arbeite von 10:00 bis 16:00 Uhr."
+        },
+        {
+          "DialogueFrom": "fall_Thu10",
+          "DialogueText": "Du hast ein Blatt in deinen Haaren. Ich hol es für dich raus.",
+          "AudioPath": "assets/de-DE/Maru/154.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:fall_Thu10",
+          "PageIndex": 0,
+          "DisplayPattern": "Du hast ein Blatt in deinen Haaren. Ich hol es für dich raus."
+        },
+        {
+          "DialogueFrom": "fall_Thu10",
+          "DialogueText": "... {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/155.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:fall_Thu10",
+          "PageIndex": 1,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "winter_1",
+          "DialogueText": "Oh Mann, es ist so kalt... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/156.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh Mann, es ist so kalt..."
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "Hast du den Schneemann gesehen, den ich gebaut habe? {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/157.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Hast du den Schneemann gesehen, den ich gebaut habe?"
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "Meine Haare kräuseln sich so in diesem trockenen Wetter. *seufz*",
+          "AudioPath": "assets/de-DE/Maru/158.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Meine Haare kräuseln sich so in diesem trockenen Wetter. *seufz*"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "Der Winter ist eine gute Zeit, um an meinen Gerätschaften zu arbeiten.",
+          "AudioPath": "assets/de-DE/Maru/159.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Der Winter ist eine gute Zeit, um an meinen Gerätschaften zu arbeiten."
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "Ich frage mich, ob ich irgendetwas nützliches für Bauern machen könnte?",
+          "AudioPath": "assets/de-DE/Maru/160.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich frage mich, ob ich irgendetwas nützliches für Bauern machen könnte?"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "Hey! Wie läuft's?",
+          "AudioPath": "assets/de-DE/Maru/161.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey! Wie läuft's?"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "Es ist eine gute Zeit, um die Höhlen zu erkunden.",
+          "AudioPath": "assets/de-DE/Maru/162.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Es ist eine gute Zeit, um die Höhlen zu erkunden."
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "Ich würde gehen, aber mein Vater würde ausflippen.",
+          "AudioPath": "assets/de-DE/Maru/163.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "Ich würde gehen, aber mein Vater würde ausflippen."
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "Ich hoffe, ich hole mir dieses Jahr keine Grippe.",
+          "AudioPath": "assets/de-DE/Maru/164.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich hoffe, ich hole mir dieses Jahr keine Grippe."
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "Hast du schon einen Schmelzofen gebaut?",
+          "AudioPath": "assets/de-DE/Maru/165.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Hast du schon einen Schmelzofen gebaut?"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "Du kannst ihn benutzen, um rohe Materialien wie Erze in etwas Brauchbares umzuwandeln. {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Maru/166.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Du kannst ihn benutzen, um rohe Materialien wie Erze in etwas Brauchbares umzuwandeln."
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "Ich werde so leicht müde, wenn es kalt wird...",
+          "AudioPath": "assets/de-DE/Maru/167.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich werde so leicht müde, wenn es kalt wird..."
+        },
+        {
+          "DialogueFrom": "winter_Sat2",
+          "DialogueText": "Hey, wenn irgendwelche deiner Feldmaschinen repariert werden müssen, lass es mich wissen. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/168.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_Sat2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, wenn irgendwelche deiner Feldmaschinen repariert werden müssen, lass es mich wissen."
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "Hey, hast du irgendwelche Ideen für neue Gerätschaften, die ich bauen könnte?",
+          "AudioPath": "assets/de-DE/Maru/169.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, hast du irgendwelche Ideen für neue Gerätschaften, die ich bauen könnte?"
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "Mhmm. Ich vertraue deiner Meinung.",
+          "AudioPath": "assets/de-DE/Maru/170.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_Tue4",
+          "PageIndex": 1,
+          "DisplayPattern": "Mhmm. Ich vertraue deiner Meinung."
+        },
+        {
+          "DialogueFrom": "winter_Fri6",
+          "DialogueText": "Du siehst heute frisch aus. Kommt wohl von der klaren Winterluft.",
+          "AudioPath": "assets/de-DE/Maru/171.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "Du siehst heute frisch aus. Kommt wohl von der klaren Winterluft."
+        },
+        {
+          "DialogueFrom": "winter_Mon8",
+          "DialogueText": "Hi {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/172.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_Mon8",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi !"
+        },
+        {
+          "DialogueFrom": "winter_Mon8",
+          "DialogueText": "Hey, denkst du nicht, dass mein Schneemann ein wenig wie du aussieht?",
+          "AudioPath": "assets/de-DE/Maru/173.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_Mon8",
+          "PageIndex": 1,
+          "DisplayPattern": "Hey, denkst du nicht, dass mein Schneemann ein wenig wie du aussieht?"
+        },
+        {
+          "DialogueFrom": "winter_Thu10",
+          "DialogueText": "{Farmer_Name}, komm näher. Mir ist kalt. {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Maru/174.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_Thu10",
+          "PageIndex": 0,
+          "DisplayPattern": ", komm näher. Mir ist kalt."
+        },
+        {
+          "DialogueFrom": "winter_Thu10",
+          "DialogueText": "Meine Hände sind von der Winterluft so trocken. Entschuldige. {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Maru/175.ogg",
+          "TranslationKey": "Characters/Dialogue/Maru:winter_Thu10",
+          "PageIndex": 1,
+          "DisplayPattern": "Meine Hände sind von der Winterluft so trocken. Entschuldige."
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Maru0",
+          "DialogueText": "Ich bin wirklich aufgeregt. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/176.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Maru0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich bin wirklich aufgeregt."
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Maru0",
+          "DialogueText": "Wir werden heiraten. Hehe. {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Maru/177.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Maru0",
+          "PageIndex": 1,
+          "DisplayPattern": "Wir werden heiraten. Hehe."
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Maru1",
+          "DialogueText": "Ich muss mich mental darauf vorbereiten, die Frau des Hofs zu werden.",
+          "AudioPath": "assets/de-DE/Maru/178.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Maru1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich muss mich mental darauf vorbereiten, die Frau des Hofs zu werden."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Bad_0",
+          "DialogueText": "... Liebst du mich immer noch? {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/179.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_0",
+          "PageIndex": 0,
+          "DisplayPattern": "... Liebst du mich immer noch?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Bad_1",
+          "DialogueText": "*seufz*... Vielleicht haben wir zu früh geheiratet. {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/180.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_1",
+          "PageIndex": 0,
+          "DisplayPattern": "*seufz*... Vielleicht haben wir zu früh geheiratet."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Bad_2",
+          "DialogueText": "Bist du immer noch zufrieden mit mir? {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/181.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Bist du immer noch zufrieden mit mir?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Bad_3",
+          "DialogueText": "Habe ich etwas falsch gemacht? Du benimmst dich in letzter Zeit anders. {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/182.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_3",
+          "PageIndex": 0,
+          "DisplayPattern": "Habe ich etwas falsch gemacht? Du benimmst dich in letzter Zeit anders."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Bad_4",
+          "DialogueText": "Fragst du dich je, was es da draußen sonst noch so gibt? {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/183.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_4",
+          "PageIndex": 0,
+          "DisplayPattern": "Fragst du dich je, was es da draußen sonst noch so gibt?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Bad_5",
+          "DialogueText": "Du warst immer so romantisch... Was ist passiert? {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/184.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_5",
+          "PageIndex": 0,
+          "DisplayPattern": "Du warst immer so romantisch... Was ist passiert?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Bad_5",
+          "DialogueText": "Ich weiß, ich bin nicht so jung, wie ich es mal war... Hast du mich deswegen geheiratet? {Portrait:Angry}",
+          "AudioPath": "assets/de-DE/Maru/185.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_5",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich weiß, ich bin nicht so jung, wie ich es mal war... Hast du mich deswegen geheiratet?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Bad_6",
+          "DialogueText": "Wir haben nur ein kurzes Leben zu leben... Ist das der beste Weg? {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/186.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_6",
+          "PageIndex": 0,
+          "DisplayPattern": "Wir haben nur ein kurzes Leben zu leben... Ist das der beste Weg?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Bad_7",
+          "DialogueText": "Ich war mal jemand besonderes für dich, dein bester Freund... Aber jetzt scheinst du mich nur zu tolerieren, wenn ich ein warmes Abendessen zubereite. {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/187.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_7",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich war mal jemand besonderes für dich, dein bester Freund... Aber jetzt scheinst du mich nur zu tolerieren, wenn ich ein warmes Abendessen zubereite."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Bad_8",
+          "DialogueText": "Du bist in letzter Zeit so kalt zu mir... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/188.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_8",
+          "PageIndex": 0,
+          "DisplayPattern": "Du bist in letzter Zeit so kalt zu mir..."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Bad_9",
+          "DialogueText": "Ich frage mich, ob ich es hätte besser machen können... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/189.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_9",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich frage mich, ob ich es hätte besser machen können..."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/fall_1",
+          "DialogueText": "Mit jeder Jahreszeit wird ein neuer Teil des Nachthimmels klar sichtbar. Es ist faszinierend zu beobachten.",
+          "AudioPath": "assets/de-DE/Maru/190.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:fall_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Mit jeder Jahreszeit wird ein neuer Teil des Nachthimmels klar sichtbar. Es ist faszinierend zu beobachten."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/fall_15",
+          "DialogueText": "Hast du dir schon überlegt, was wir morgen für unsere Auslage verwenden werden?",
+          "AudioPath": "assets/de-DE/Maru/191.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_15",
+          "PageIndex": 0,
+          "DisplayPattern": "Hast du dir schon überlegt, was wir morgen für unsere Auslage verwenden werden?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/fall_25",
+          "DialogueText": "Der Winter steht vor der Tür. Wir sollten die Heizkörper und die Wärmedämmung nochmals überprüfen und die Ventile zudrehen.",
+          "AudioPath": "assets/de-DE/Maru/192.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:fall_25",
+          "PageIndex": 0,
+          "DisplayPattern": "Der Winter steht vor der Tür. Wir sollten die Heizkörper und die Wärmedämmung nochmals überprüfen und die Ventile zudrehen."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/fall_25",
+          "DialogueText": "Keine Angst, Liebling. Ich kümmere mich um alles.",
+          "AudioPath": "assets/de-DE/Maru/193.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:fall_25",
+          "PageIndex": 1,
+          "DisplayPattern": "Keine Angst, Liebling. Ich kümmere mich um alles."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/fall_26",
+          "DialogueText": "Sollen wir morgen Abend zur Geisternacht gehen?",
+          "AudioPath": "assets/de-DE/Maru/194.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_26",
+          "PageIndex": 0,
+          "DisplayPattern": "Sollen wir morgen Abend zur Geisternacht gehen?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/fall_3",
+          "DialogueText": "Der Herbst erinnert mich immer daran, wie ich mit meiner Mutter Holz gehackt habe... Das muss am Geruch von frisch gefälltem Holz und Harz liegen.",
+          "AudioPath": "assets/de-DE/Maru/195.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:fall_3",
+          "PageIndex": 0,
+          "DisplayPattern": "Der Herbst erinnert mich immer daran, wie ich mit meiner Mutter Holz gehackt habe... Das muss am Geruch von frisch gefälltem Holz und Harz liegen."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/fall_8",
+          "DialogueText": "Der Winter steht vor der Tür. Wir sollten die Heizkörper und die Wärmedämmung nochmals überprüfen und die Ventile zudrehen.",
+          "AudioPath": "assets/de-DE/Maru/196.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 0,
+          "DisplayPattern": "Der Winter steht vor der Tür. Wir sollten die Heizkörper und die Wärmedämmung nochmals überprüfen und die Ventile zudrehen."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/fall_8",
+          "DialogueText": "Keine Angst, ich kümmere mich um alles.",
+          "AudioPath": "assets/de-DE/Maru/197.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 1,
+          "DisplayPattern": "Keine Angst, ich kümmere mich um alles."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/fall_Maru",
+          "DialogueText": "Das Hofleben ist toll, aber ich bin froh, dass ich noch in der Klinik arbeite... Es ist ein wichtiger Beitrag zur Gemeinde.",
+          "AudioPath": "assets/de-DE/Maru/198.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:fall_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Das Hofleben ist toll, aber ich bin froh, dass ich noch in der Klinik arbeite... Es ist ein wichtiger Beitrag zur Gemeinde."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/funLeave_Maru",
+          "DialogueText": "Ich denke, ich werde heute meine Eltern besuchen. Ich habe sie schon eine Weile nicht mehr gesehen.",
+          "AudioPath": "assets/de-DE/Maru/199.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:funLeave_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich denke, ich werde heute meine Eltern besuchen. Ich habe sie schon eine Weile nicht mehr gesehen."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/funReturn_Maru",
+          "DialogueText": "Mutter und Vater geht es gut. Selbst ohne mich ist ihre Routine immer noch wie gehabt. Wie war dein Tag?",
+          "AudioPath": "assets/de-DE/Maru/200.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:funReturn_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Mutter und Vater geht es gut. Selbst ohne mich ist ihre Routine immer noch wie gehabt. Wie war dein Tag?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Good_0",
+          "DialogueText": "Es ist schwer zu glauben, dass wir endlich verheiratet sind... {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Maru/201.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_0",
+          "PageIndex": 0,
+          "DisplayPattern": "Es ist schwer zu glauben, dass wir endlich verheiratet sind..."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Good_1",
+          "DialogueText": "Seit wir zusammenleben kann ich mir kaum vorstellen, wieder alleine zu sein.",
+          "AudioPath": "assets/de-DE/Maru/202.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Good_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Seit wir zusammenleben kann ich mir kaum vorstellen, wieder alleine zu sein."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Good_2",
+          "DialogueText": "Du machst eine Pause? Das ist gut!",
+          "AudioPath": "assets/de-DE/Maru/203.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Good_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Du machst eine Pause? Das ist gut!"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Good_3",
+          "DialogueText": "Man benötigt eine Menge Strategien für das Planen und Leiten eines Hofs. Es ist eine größere mentale Herausforderung als ich erwartet hatte!",
+          "AudioPath": "assets/de-DE/Maru/204.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Good_3",
+          "PageIndex": 0,
+          "DisplayPattern": "Man benötigt eine Menge Strategien für das Planen und Leiten eines Hofs. Es ist eine größere mentale Herausforderung als ich erwartet hatte!"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Good_4",
+          "DialogueText": "Eine Zeit lang habe ich darüber nachgedacht, mir einen Roboter-Ehemann zu bauen. Aber du bist viel besser! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/205_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Good_4",
+          "PageIndex": 0,
+          "DisplayPattern": "Eine Zeit lang habe ich darüber nachgedacht, mir einen Roboter-Ehemann zu bauen. Aber du bist viel besser!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Good_4",
+          "DialogueText": "Eine Zeit lang habe ich darüber nachgedacht, mir eine Roboter-Ehefrau zu bauen. Aber du bist viel besser! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/206_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Good_4",
+          "PageIndex": 1,
+          "DisplayPattern": "Eine Zeit lang habe ich darüber nachgedacht, mir eine Roboter-Ehefrau zu bauen. Aber du bist viel besser!",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Good_5",
+          "DialogueText": "Ich habe nur unser Eheamulett bewundert... Die Muschel ist makellos. Sie ist ein wirklich seltenes Exemplar! {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Maru/207.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Good_5",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich habe nur unser Eheamulett bewundert... Die Muschel ist makellos. Sie ist ein wirklich seltenes Exemplar!"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Good_6",
+          "DialogueText": "Letzte Nacht habe ich geträumt, dass ich durch ein gigantisches Teleskop geschaut habe. Ich habe gesehen, wie sich etwas im %noun-Nebel bewegt. Irgendwie gruselig.",
+          "AudioPath": "assets/de-DE/Maru/208.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Good_6",
+          "PageIndex": 0,
+          "DisplayPattern": "Letzte Nacht habe ich geträumt, dass ich durch ein gigantisches Teleskop geschaut habe. Ich habe gesehen, wie sich etwas im -Nebel bewegt. Irgendwie gruselig."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Good_7",
+          "DialogueText": "{Farmer_Name}? Ich will nur sagen wie sehr ich all die Hausarbeit schätze, die du für uns machst. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/209.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_7",
+          "PageIndex": 0,
+          "DisplayPattern": "? Ich will nur sagen wie sehr ich all die Hausarbeit schätze, die du für uns machst."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Good_8",
+          "DialogueText": "Sorge dich nicht um mich... Ich weiß, dass du eine Menge Pflichten außer Haus hast. Mir geht es hier auch alleine gut! {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Maru/210.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_8",
+          "PageIndex": 0,
+          "DisplayPattern": "Sorge dich nicht um mich... Ich weiß, dass du eine Menge Pflichten außer Haus hast. Mir geht es hier auch alleine gut!"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Good_9",
+          "DialogueText": "Oh, ich bin nicht gelangweilt... Ich genieße nur, was wir hier haben.",
+          "AudioPath": "assets/de-DE/Maru/211.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_9",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, ich bin nicht gelangweilt... Ich genieße nur, was wir hier haben."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Good_9",
+          "DialogueText": "Es ist ein einfaches Leben, aber ich mag es. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/212.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_9",
+          "PageIndex": 1,
+          "DisplayPattern": "Es ist ein einfaches Leben, aber ich mag es."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Indoor_Day_0",
+          "DialogueText": "Hmm? Entschuldige, manchmal bin ich so in Gedanken versunken, dass ich nicht mehr mitbekomme, was ich mache.",
+          "AudioPath": "assets/de-DE/Maru/213.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Indoor_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmm? Entschuldige, manchmal bin ich so in Gedanken versunken, dass ich nicht mehr mitbekomme, was ich mache."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Indoor_Day_1",
+          "DialogueText": "Ich habe das hier in meinem Restehaufen gefunden. Denkst du, du könntest das gebrauchen?[286 287 205 732]",
+          "AudioPath": "assets/de-DE/Maru/214.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Indoor_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich habe das hier in meinem Restehaufen gefunden. Denkst du, du könntest das gebrauchen?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Indoor_Day_2",
+          "DialogueText": "Endlich, du bist wach! Ich bin am Verhungern... *knurr* {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/215.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Indoor_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Endlich, du bist wach! Ich bin am Verhungern... *knurr*"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Indoor_Day_3",
+          "DialogueText": "Eine der besten Sachen am Bauernleben ist es, zum Vögelgezwitscher aufzuwachen.",
+          "AudioPath": "assets/de-DE/Maru/216.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Indoor_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "Eine der besten Sachen am Bauernleben ist es, zum Vögelgezwitscher aufzuwachen."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Indoor_Day_4",
+          "DialogueText": "Wie bleiben deine Hände so weich, wenn du immer auf dem Hof arbeitest?",
+          "AudioPath": "assets/de-DE/Maru/217.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Indoor_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "Wie bleiben deine Hände so weich, wenn du immer auf dem Hof arbeitest?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Indoor_Day_Maru",
+          "DialogueText": "Wenn du je darüber reden willst, wie man den Nutzpflanzenertrag maximieren kann oder so... Ich wäre offen dafür!",
+          "AudioPath": "assets/de-DE/Maru/218.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Day_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Wenn du je darüber reden willst, wie man den Nutzpflanzenertrag maximieren kann oder so... Ich wäre offen dafür!"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Indoor_Night_0",
+          "DialogueText": "Hast du heute Nacht den Mond gesehen? Er sieht am Horizont immer spektakulär aus.",
+          "AudioPath": "assets/de-DE/Maru/219.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Indoor_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hast du heute Nacht den Mond gesehen? Er sieht am Horizont immer spektakulär aus."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Indoor_Night_1",
+          "DialogueText": "Ich habe vorher eine Sternschnuppe gesehen. Ich stelle mir gerne vor, es sei MARILDA, die kurz nach uns sehen will. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/220.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Indoor_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich habe vorher eine Sternschnuppe gesehen. Ich stelle mir gerne vor, es sei MARILDA, die kurz nach uns sehen will."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Indoor_Night_2",
+          "DialogueText": "Ich kann mich nicht entscheiden, ob ich eine Schokoladentorte oder reife Erdbeeren will. Vielleicht beides...?",
+          "AudioPath": "assets/de-DE/Maru/221.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Indoor_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich kann mich nicht entscheiden, ob ich eine Schokoladentorte oder reife Erdbeeren will. Vielleicht beides...?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Indoor_Night_2",
+          "DialogueText": "Sei ehrlich... Nehme ich zu? {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/222.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Indoor_Night_2",
+          "PageIndex": 1,
+          "DisplayPattern": "Sei ehrlich... Nehme ich zu?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Indoor_Night_3",
+          "DialogueText": "Du hast heute gute Arbeit geleistet! Du hast es dir verdient, den restlichen Abend zu entspannen.",
+          "AudioPath": "assets/de-DE/Maru/223.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Indoor_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "Du hast heute gute Arbeit geleistet! Du hast es dir verdient, den restlichen Abend zu entspannen."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Indoor_Night_4",
+          "DialogueText": "So langsam mag ich dieses alte Haus richtig gern. Es ist in der Nacht so gemütlich.",
+          "AudioPath": "assets/de-DE/Maru/224.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Indoor_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "So langsam mag ich dieses alte Haus richtig gern. Es ist in der Nacht so gemütlich."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Indoor_Night_4",
+          "DialogueText": "Mama hat großartige Arbeit dabei geleistet, alles auf Vordermann zu bringen. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/225.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Indoor_Night_4",
+          "PageIndex": 1,
+          "DisplayPattern": "Mama hat großartige Arbeit dabei geleistet, alles auf Vordermann zu bringen."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Indoor_Night_Maru",
+          "DialogueText": "Du siehst so aus, als würdest du im Stehen einschlafen, {Farmer_Name}. Soll ich dich mit den technischen Details meines neusten Projekts in den Schlaf wiegen? {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/226.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Du siehst so aus, als würdest du im Stehen einschlafen, . Soll ich dich mit den technischen Details meines neusten Projekts in den Schlaf wiegen?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Indoor_Night_Maru",
+          "DialogueText": "*gähn*Um ehrlich zu sein, ich bin auch ein wenig müde.",
+          "AudioPath": "assets/de-DE/Maru/227.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_Maru",
+          "PageIndex": 1,
+          "DisplayPattern": "*gähn*Um ehrlich zu sein, ich bin auch ein wenig müde."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/jobLeave_Maru",
+          "DialogueText": "Ich muss bald arbeiten gehen. Ich sehe dich dann heute Abend. Ich werde an dich denken! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/228.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:jobLeave_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich muss bald arbeiten gehen. Ich sehe dich dann heute Abend. Ich werde an dich denken!"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/jobReturn_Maru",
+          "DialogueText": "Nun, es war ein weiterer langweiliger Tag in der Klinik.",
+          "AudioPath": "assets/de-DE/Maru/229.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:jobReturn_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Nun, es war ein weiterer langweiliger Tag in der Klinik."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/jobReturn_Maru",
+          "DialogueText": "$e",
+          "AudioPath": "assets/de-DE/Maru/230.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:jobReturn_Maru",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/jobReturn_Maru",
+          "DialogueText": "Hey. Hattest du einen aufregenderen Tag als ich? Ich hoffe es.#$eEs ist Zeit, sich auszuruhen und zu entspannen. Hast du mir etwas Abendessen übrig gelassen?",
+          "AudioPath": "assets/de-DE/Maru/231.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:jobReturn_Maru",
+          "PageIndex": 2,
+          "DisplayPattern": "Hey. Hattest du einen aufregenderen Tag als ich? Ich hoffe es.#$eEs ist Zeit, sich auszuruhen und zu entspannen. Hast du mir etwas Abendessen übrig gelassen?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/jobReturn_Maru",
+          "DialogueText": "$e",
+          "AudioPath": "assets/de-DE/Maru/232.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:jobReturn_Maru",
+          "PageIndex": 3,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/jobReturn_Maru",
+          "DialogueText": "Hey. Hattest du einen aufregenderen Tag als ich? Ich hoffe es.#$e$e",
+          "AudioPath": "assets/de-DE/Maru/233.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:jobReturn_Maru",
+          "PageIndex": 4,
+          "DisplayPattern": "Hey. Hattest du einen aufregenderen Tag als ich? Ich hoffe es.#$e$e"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/jobReturn_Maru",
+          "DialogueText": "Ich freue mich schon auf die Schlafenszeit. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/234.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:jobReturn_Maru",
+          "PageIndex": 5,
+          "DisplayPattern": "Ich freue mich schon auf die Schlafenszeit."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Neutral_0",
+          "DialogueText": "Ich hoffe, du magst mich immer noch, wenn ich ein wenig zunehme.",
+          "AudioPath": "assets/de-DE/Maru/235.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Neutral_0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich hoffe, du magst mich immer noch, wenn ich ein wenig zunehme."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Neutral_1",
+          "DialogueText": "Denkst du, dein Großvater wäre stolz auf die Arbeit, die wir hier verrichtet haben?",
+          "AudioPath": "assets/de-DE/Maru/236.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Denkst du, dein Großvater wäre stolz auf die Arbeit, die wir hier verrichtet haben?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Neutral_2",
+          "DialogueText": "Du machst eine Pause? Ein Bauer zu sein ist einfacher als ich dachte...",
+          "AudioPath": "assets/de-DE/Maru/237.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Du machst eine Pause? Ein Bauer zu sein ist einfacher als ich dachte..."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Neutral_3",
+          "DialogueText": "Wenn du in die Stadt gehst, sag bitte allen 'Hallo' von mir.",
+          "AudioPath": "assets/de-DE/Maru/238.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_3",
+          "PageIndex": 0,
+          "DisplayPattern": "Wenn du in die Stadt gehst, sag bitte allen 'Hallo' von mir."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Neutral_4",
+          "DialogueText": "Ich wasche morgen die Wäsche, bevor du aufstehst... Dann verlierst du keine Zeit.",
+          "AudioPath": "assets/de-DE/Maru/239.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_4",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich wasche morgen die Wäsche, bevor du aufstehst... Dann verlierst du keine Zeit."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Neutral_5",
+          "DialogueText": "Gibt es irgendwelche Geldprobleme, {Farmer_Name}?",
+          "AudioPath": "assets/de-DE/Maru/240.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_5",
+          "PageIndex": 0,
+          "DisplayPattern": "Gibt es irgendwelche Geldprobleme, ?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Neutral_6",
+          "DialogueText": "Ich frage mich, was alle in der Stadt heute so machen?",
+          "AudioPath": "assets/de-DE/Maru/241.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_6",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich frage mich, was alle in der Stadt heute so machen?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Neutral_7",
+          "DialogueText": "Ich will heute einfach gar nichts tun.",
+          "AudioPath": "assets/de-DE/Maru/242.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_7",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich will heute einfach gar nichts tun."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Neutral_8",
+          "DialogueText": "Ich fühle mich heute nicht inspiriert. {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/243.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Neutral_8",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich fühle mich heute nicht inspiriert."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Neutral_9",
+          "DialogueText": "Ich frage mich, ob wir hier unser ganzes Leben verbringen werden?",
+          "AudioPath": "assets/de-DE/Maru/244.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_9",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich frage mich, ob wir hier unser ganzes Leben verbringen werden?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/NoBed_0",
+          "DialogueText": "Wo soll ich schlafen...? {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/245.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_0",
+          "PageIndex": 0,
+          "DisplayPattern": "Wo soll ich schlafen...?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/NoBed_1",
+          "DialogueText": "Ich konnte letzte Nacht nicht gut schlafen... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/246.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich konnte letzte Nacht nicht gut schlafen..."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/NoBed_2",
+          "DialogueText": "Ich musste letzte Nacht auf dem Boden schlafen... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/247.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich musste letzte Nacht auf dem Boden schlafen..."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/NoBed_3",
+          "DialogueText": "Ist etwas mit unserem Bett passiert...? {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/248.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_3",
+          "PageIndex": 0,
+          "DisplayPattern": "Ist etwas mit unserem Bett passiert...?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/OneKid_0",
+          "DialogueText": "Hast du heute Zeit mit %kid1 verbracht? Kinder brauchen Zeit zum Spielen, um ihr volles Potential auszuschöpfen.",
+          "AudioPath": "assets/de-DE/Maru/249.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:OneKid_0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hast du heute Zeit mit verbracht? Kinder brauchen Zeit zum Spielen, um ihr volles Potential auszuschöpfen."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/OneKid_1",
+          "DialogueText": "Was denkst du, wird %kid1 ein Bauer werden? Oder ein Ingenieur?",
+          "AudioPath": "assets/de-DE/Maru/250.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:OneKid_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Was denkst du, wird ein Bauer werden? Oder ein Ingenieur?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/OneKid_2",
+          "DialogueText": "Keine Angst, ich füttere %kid1 heute. Du kannst dich auf den Hof konzentrieren.",
+          "AudioPath": "assets/de-DE/Maru/251.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:OneKid_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Keine Angst, ich füttere heute. Du kannst dich auf den Hof konzentrieren."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/OneKid_3",
+          "DialogueText": "Ich habe große Hoffnungen für unser Kind. Ich habe alle möglichen wissenschaftlichen Daten darüber herangezogen, wie man Kinder am besten aufzieht.",
+          "AudioPath": "assets/de-DE/Maru/252.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:OneKid_3",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich habe große Hoffnungen für unser Kind. Ich habe alle möglichen wissenschaftlichen Daten darüber herangezogen, wie man Kinder am besten aufzieht."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Outdoor_0",
+          "DialogueText": "Ah... der Hof riecht gut, es erinnert mich an die Berge in der Nähe von dem Haus meiner Eltern.",
+          "AudioPath": "assets/de-DE/Maru/253.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Outdoor_0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah... der Hof riecht gut, es erinnert mich an die Berge in der Nähe von dem Haus meiner Eltern."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Outdoor_1",
+          "DialogueText": "Mit ein wenig Planung könnten wir die meiste Arbeit auf dem Hof automatisieren und uns einfach zurücklehnen!",
+          "AudioPath": "assets/de-DE/Maru/254.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Outdoor_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Mit ein wenig Planung könnten wir die meiste Arbeit auf dem Hof automatisieren und uns einfach zurücklehnen!"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Outdoor_2",
+          "DialogueText": "Es wird heute eine klare Nacht... Ich frage mich, ob die %noun-Konstellation heute zu sehen sein wird?",
+          "AudioPath": "assets/de-DE/Maru/255.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Outdoor_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Es wird heute eine klare Nacht... Ich frage mich, ob die -Konstellation heute zu sehen sein wird?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Outdoor_3",
+          "DialogueText": "Keine Sorge, falls du etwas Schmutz ins Haus bringst. Ein bisschen Dreck hat noch niemandem geschadet.",
+          "AudioPath": "assets/de-DE/Maru/256.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Outdoor_3",
+          "PageIndex": 0,
+          "DisplayPattern": "Keine Sorge, falls du etwas Schmutz ins Haus bringst. Ein bisschen Dreck hat noch niemandem geschadet."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Outdoor_4",
+          "DialogueText": "Mir war nie bewusst, wie viel Aufwand und Planung hinter der Hofbewirtschaftung steckt! Es ist fast wie die Laborarbeit.",
+          "AudioPath": "assets/de-DE/Maru/257.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Outdoor_4",
+          "PageIndex": 0,
+          "DisplayPattern": "Mir war nie bewusst, wie viel Aufwand und Planung hinter der Hofbewirtschaftung steckt! Es ist fast wie die Laborarbeit."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Outdoor_Maru",
+          "DialogueText": "Ich mag es, hier draußen zu sein. Es ist ein guter Ort, um über neue Erfindungen nachzudenken. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/258.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Outdoor_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich mag es, hier draußen zu sein. Es ist ein guter Ort, um über neue Erfindungen nachzudenken."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Outdoor_Maru",
+          "DialogueText": "Ich hoffe immer noch, dass mir etwas einfällt, was deine Arbeit erleichtern kann.",
+          "AudioPath": "assets/de-DE/Maru/259.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Outdoor_Maru",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich hoffe immer noch, dass mir etwas einfällt, was deine Arbeit erleichtern kann."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/patio_Maru",
+          "DialogueText": "Ich weiß noch nicht genau was es ist... aber es macht Spaß, hin und wieder mal den alten Schraubenschlüssel auszupacken.",
+          "AudioPath": "assets/de-DE/Maru/260.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:patio_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich weiß noch nicht genau was es ist... aber es macht Spaß, hin und wieder mal den alten Schraubenschlüssel auszupacken."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Rainy_Day_0",
+          "DialogueText": "Ich frage mich, wie es Penny geht? Vielleicht rufe ich sie heute an.",
+          "AudioPath": "assets/de-DE/Maru/261.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Rainy_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich frage mich, wie es Penny geht? Vielleicht rufe ich sie heute an."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Rainy_Day_1",
+          "DialogueText": "Ich war nur in Gedanken versunken... Denkst du, dass es MARILDA gut geht? Ich hoffe, dass sie eine Heimat für sich selbst findet...",
+          "AudioPath": "assets/de-DE/Maru/262.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Rainy_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich war nur in Gedanken versunken... Denkst du, dass es MARILDA gut geht? Ich hoffe, dass sie eine Heimat für sich selbst findet..."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Rainy_Day_2",
+          "DialogueText": "Hey! Ich konnte letzte Nacht nicht schlafen, also habe ich ein wenig in meiner Werkstatt herumgespielt. Hier, ich habe das für dich gemacht.[688 369 338 325 287]",
+          "AudioPath": "assets/de-DE/Maru/263.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Rainy_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey! Ich konnte letzte Nacht nicht schlafen, also habe ich ein wenig in meiner Werkstatt herumgespielt. Hier, ich habe das für dich gemacht."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Rainy_Day_2",
+          "DialogueText": "Ich hoffe, du kannst das für irgendetwas gebrauchen.",
+          "AudioPath": "assets/de-DE/Maru/264.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Rainy_Day_2",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich hoffe, du kannst das für irgendetwas gebrauchen."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Rainy_Day_3",
+          "DialogueText": "Mich stört am Regen nur, dass ich dann die Sterne nicht beobachten kann!",
+          "AudioPath": "assets/de-DE/Maru/265.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Rainy_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "Mich stört am Regen nur, dass ich dann die Sterne nicht beobachten kann!"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Rainy_Day_4",
+          "DialogueText": "Höre ich da eine undichte Stelle im Dach? Ich sollte mir das anschauen. Ich weiß ein paar Dinge über das Schreinern, weil ich meine Mutter beobachtet habe.",
+          "AudioPath": "assets/de-DE/Maru/266.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Rainy_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "Höre ich da eine undichte Stelle im Dach? Ich sollte mir das anschauen. Ich weiß ein paar Dinge über das Schreinern, weil ich meine Mutter beobachtet habe."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Rainy_Day_Maru",
+          "DialogueText": "Trotz der ganzen Technologie ist ein verregneter Tag immer noch das beste Mittel, um Pflanzen zu gießen.",
+          "AudioPath": "assets/de-DE/Maru/267.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Day_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Trotz der ganzen Technologie ist ein verregneter Tag immer noch das beste Mittel, um Pflanzen zu gießen."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Rainy_Night_0",
+          "DialogueText": "Pass auf, dass du deine Werkzeuge nicht im Regen vergisst! Sie sollen schließlich nicht verrosten.",
+          "AudioPath": "assets/de-DE/Maru/268.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Rainy_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "Pass auf, dass du deine Werkzeuge nicht im Regen vergisst! Sie sollen schließlich nicht verrosten."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Rainy_Night_1",
+          "DialogueText": "Hi, {Farmer_Name}. Wie war dein Tag... durchnässt?",
+          "AudioPath": "assets/de-DE/Maru/269.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Rainy_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi, . Wie war dein Tag... durchnässt?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Rainy_Night_1",
+          "DialogueText": "Bei dem Wetter kommen mir neue Ideen... Vielleicht kann ich das Regenwasser benutzen, um eine Mühle anzutreiben?",
+          "AudioPath": "assets/de-DE/Maru/270.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Rainy_Night_1",
+          "PageIndex": 1,
+          "DisplayPattern": "Bei dem Wetter kommen mir neue Ideen... Vielleicht kann ich das Regenwasser benutzen, um eine Mühle anzutreiben?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Rainy_Night_2",
+          "DialogueText": "Vater hat die letzten zwanzig Jahre Wettermuster untersucht.",
+          "AudioPath": "assets/de-DE/Maru/271.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Rainy_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Vater hat die letzten zwanzig Jahre Wettermuster untersucht."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Rainy_Night_2",
+          "DialogueText": "Es ist ein wenig zu früh für Schlussfolgerungen, aber bisher haben die Ergebnisse ein paar abnormale Tendenzen gezeigt.",
+          "AudioPath": "assets/de-DE/Maru/272.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Rainy_Night_2",
+          "PageIndex": 1,
+          "DisplayPattern": "Es ist ein wenig zu früh für Schlussfolgerungen, aber bisher haben die Ergebnisse ein paar abnormale Tendenzen gezeigt."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Rainy_Night_3",
+          "DialogueText": "Können wir heute Spaghetti im Bett essen?",
+          "AudioPath": "assets/de-DE/Maru/273.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Rainy_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "Können wir heute Spaghetti im Bett essen?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Rainy_Night_4",
+          "DialogueText": "Ich habe Nachtisch gemacht! Vergiss aber nicht, dass du dir vor dem Schlafengehen die Zähne putzt.[232 234 223 220] {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/274.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Rainy_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich habe Nachtisch gemacht! Vergiss aber nicht, dass du dir vor dem Schlafengehen die Zähne putzt."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Rainy_Night_5",
+          "DialogueText": "Mein Tag war nicht so aufregend... Ich bin wegen des Wetters im Haus geblieben.",
+          "AudioPath": "assets/de-DE/Maru/275.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Rainy_Night_5",
+          "PageIndex": 0,
+          "DisplayPattern": "Mein Tag war nicht so aufregend... Ich bin wegen des Wetters im Haus geblieben."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Rainy_Night_5",
+          "DialogueText": "Es war aber entspannend. Ich habe mich mit der letzten Ausgabe von \"Neuste Schaltbilder\" zurückgelehnt.",
+          "AudioPath": "assets/de-DE/Maru/276.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:Rainy_Night_5",
+          "PageIndex": 1,
+          "DisplayPattern": "Es war aber entspannend. Ich habe mich mit der letzten Ausgabe von \"Neuste Schaltbilder\" zurückgelehnt."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Rainy_Night_Maru",
+          "DialogueText": "Hast du heute viel geschafft, Schatz?",
+          "AudioPath": "assets/de-DE/Maru/277.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Night_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Hast du heute viel geschafft, Schatz?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/Rainy_Night_Maru",
+          "DialogueText": "Ich habe versucht, ein paar Dinge im Haus zu reparieren... Du weißt schon, nur kleines Zeug.",
+          "AudioPath": "assets/de-DE/Maru/278.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Night_Maru",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich habe versucht, ein paar Dinge im Haus zu reparieren... Du weißt schon, nur kleines Zeug."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/spouseRoom_Maru",
+          "DialogueText": "Ich bin heute früher aufgestanden, um die Sterne zu bewundern.",
+          "AudioPath": "assets/de-DE/Maru/279.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:spouseRoom_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich bin heute früher aufgestanden, um die Sterne zu bewundern."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/spouseRoom_Maru",
+          "DialogueText": "$e",
+          "AudioPath": "assets/de-DE/Maru/280.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:spouseRoom_Maru",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/spouseRoom_Maru",
+          "DialogueText": "Es stört dich hoffentlich nicht, wenn ich heute ein wenig Zeit mit meinen Projekten verbringe, Schatz.",
+          "AudioPath": "assets/de-DE/Maru/281.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:spouseRoom_Maru",
+          "PageIndex": 2,
+          "DisplayPattern": "Es stört dich hoffentlich nicht, wenn ich heute ein wenig Zeit mit meinen Projekten verbringe, Schatz."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/spring_1",
+          "DialogueText": "Es ist schön, all die Pflanzen und Tiere während des Frühlings zurückkommen zu sehen.",
+          "AudioPath": "assets/de-DE/Maru/282.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:spring_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Es ist schön, all die Pflanzen und Tiere während des Frühlings zurückkommen zu sehen."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/spring_2",
+          "DialogueText": "Wie lautet deine Strategie zum Optimieren des Hofs in diesem Jahr?",
+          "AudioPath": "assets/de-DE/Maru/283.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:spring_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Wie lautet deine Strategie zum Optimieren des Hofs in diesem Jahr?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/spring_22",
+          "DialogueText": "Wenn mein Bruder nicht so ein Einsiedler wäre, würde ich ihn mal zum Abendessen einladen.",
+          "AudioPath": "assets/de-DE/Maru/284.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:spring_22",
+          "PageIndex": 0,
+          "DisplayPattern": "Wenn mein Bruder nicht so ein Einsiedler wäre, würde ich ihn mal zum Abendessen einladen."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/spring_23",
+          "DialogueText": "Ich hoffe, du hast deine Schritte geübt... Morgen ist der Blumentanz!",
+          "AudioPath": "assets/de-DE/Maru/285.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_23",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich hoffe, du hast deine Schritte geübt... Morgen ist der Blumentanz!"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/spring_8",
+          "DialogueText": "Nachdem der Winter vorbei ist, können wir uns auf viel produktives Wetter freuen.",
+          "AudioPath": "assets/de-DE/Maru/286.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_8",
+          "PageIndex": 0,
+          "DisplayPattern": "Nachdem der Winter vorbei ist, können wir uns auf viel produktives Wetter freuen."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/spring_Maru",
+          "DialogueText": "Ich bin gespannt auf ein neues Jahr auf dem Hof, {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/287.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:spring_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich bin gespannt auf ein neues Jahr auf dem Hof, !"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/summer_1",
+          "DialogueText": "Bitte pass auf, dass du keinen Hitzeschlag bekommst, Liebling.",
+          "AudioPath": "assets/de-DE/Maru/288.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Bitte pass auf, dass du keinen Hitzeschlag bekommst, Liebling."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/summer_1",
+          "DialogueText": "Trinke viel Wasser und überarbeite dich nicht.",
+          "AudioPath": "assets/de-DE/Maru/289.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_1",
+          "PageIndex": 1,
+          "DisplayPattern": "Trinke viel Wasser und überarbeite dich nicht."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/summer_15",
+          "DialogueText": "Es ist Sommer... und das Haus ist voller Fliegen.",
+          "AudioPath": "assets/de-DE/Maru/290.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 0,
+          "DisplayPattern": "Es ist Sommer... und das Haus ist voller Fliegen."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/summer_15",
+          "DialogueText": "Keine Sorge, ich kümmere mich um sie.",
+          "AudioPath": "assets/de-DE/Maru/291.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 1,
+          "DisplayPattern": "Keine Sorge, ich kümmere mich um sie."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/summer_2",
+          "DialogueText": "Ich mag es, verschiedene Insekten im Sommer zu katalogisieren.",
+          "AudioPath": "assets/de-DE/Maru/292.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:summer_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich mag es, verschiedene Insekten im Sommer zu katalogisieren."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/summer_20",
+          "DialogueText": "Ich frage mich, ob mein Bruder je den Mut haben wird, Abigail um eine Verabredung zu bitten?",
+          "AudioPath": "assets/de-DE/Maru/293.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:summer_20",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich frage mich, ob mein Bruder je den Mut haben wird, Abigail um eine Verabredung zu bitten?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/summer_8",
+          "DialogueText": "Entschuldige, wenn ich etwas stinke... Ich habe die ganze Nacht in der Hitze geschwitzt.",
+          "AudioPath": "assets/de-DE/Maru/294.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_8",
+          "PageIndex": 0,
+          "DisplayPattern": "Entschuldige, wenn ich etwas stinke... Ich habe die ganze Nacht in der Hitze geschwitzt."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/summer_Maru",
+          "DialogueText": "Die Abende sind so warm, es ist wirklich die beste Zeit zum Sternegucken. Wer weiß schon, was dort oben ist?",
+          "AudioPath": "assets/de-DE/Maru/295.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:summer_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Die Abende sind so warm, es ist wirklich die beste Zeit zum Sternegucken. Wer weiß schon, was dort oben ist?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/TwoKids_0",
+          "DialogueText": "Ich habe %kid1 und %kid2 schon ihr Frühstück gemacht. Sie waren hungrig!",
+          "AudioPath": "assets/de-DE/Maru/296.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:TwoKids_0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich habe und schon ihr Frühstück gemacht. Sie waren hungrig!"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/TwoKids_1",
+          "DialogueText": "Wir müssen darauf achten, dass wir %kid1 eine Menge Aufmerksamkeit geben, nachdem wir %kid2 haben. Wir wollen nicht, dass Neid zwischen ihnen aufkommt.",
+          "AudioPath": "assets/de-DE/Maru/297.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:TwoKids_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Wir müssen darauf achten, dass wir eine Menge Aufmerksamkeit geben, nachdem wir haben. Wir wollen nicht, dass Neid zwischen ihnen aufkommt."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/TwoKids_2",
+          "DialogueText": "Ich glaube, %kid2 hat deine Nase.",
+          "AudioPath": "assets/de-DE/Maru/298.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:TwoKids_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich glaube, hat deine Nase."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/TwoKids_3",
+          "DialogueText": "Meine eigene Werkstatt, zwei fantastische Kinder und ein wunderschönes Stück Land. Das Leben ist ziemlich gut.",
+          "AudioPath": "assets/de-DE/Maru/299.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:TwoKids_3",
+          "PageIndex": 0,
+          "DisplayPattern": "Meine eigene Werkstatt, zwei fantastische Kinder und ein wunderschönes Stück Land. Das Leben ist ziemlich gut."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/winter_1",
+          "DialogueText": "Brrr.... Es ist kalt. Der Winter ist wohl endlich da.",
+          "AudioPath": "assets/de-DE/Maru/300.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:winter_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Brrr.... Es ist kalt. Der Winter ist wohl endlich da."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/winter_15",
+          "DialogueText": "Die Winter waren in letzter Zeit unerwartet mild.",
+          "AudioPath": "assets/de-DE/Maru/301.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:winter_15",
+          "PageIndex": 0,
+          "DisplayPattern": "Die Winter waren in letzter Zeit unerwartet mild."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/winter_2",
+          "DialogueText": "Was sind deine Pläne, um diesen Winter genug Geld zu verdienen?",
+          "AudioPath": "assets/de-DE/Maru/302.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:winter_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Was sind deine Pläne, um diesen Winter genug Geld zu verdienen?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/winter_2",
+          "DialogueText": "Du könntest ein wenig Fischen oder Sammeln...",
+          "AudioPath": "assets/de-DE/Maru/303.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:winter_2",
+          "PageIndex": 1,
+          "DisplayPattern": "Du könntest ein wenig Fischen oder Sammeln..."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/winter_2",
+          "DialogueText": "Wenn du in die Minen gehst, versprich mir, dass du vorsichtig bist.",
+          "AudioPath": "assets/de-DE/Maru/304.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:winter_2",
+          "PageIndex": 2,
+          "DisplayPattern": "Wenn du in die Minen gehst, versprich mir, dass du vorsichtig bist."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/winter_28",
+          "DialogueText": "Danke für ein großartiges Jahr, {Farmer_Name}. Ich freue mich darauf, das nächste Jahr zusammen anzugehen. {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Maru/305.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:winter_28",
+          "PageIndex": 0,
+          "DisplayPattern": "Danke für ein großartiges Jahr, . Ich freue mich darauf, das nächste Jahr zusammen anzugehen."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/winter_5",
+          "DialogueText": "Ich hoffe, Vater geht es gut... Er kann im Winter schnell depressiv werden, wenn es weniger Gelegenheiten zur Feldforschung gibt.",
+          "AudioPath": "assets/de-DE/Maru/306.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:winter_5",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich hoffe, Vater geht es gut... Er kann im Winter schnell depressiv werden, wenn es weniger Gelegenheiten zur Feldforschung gibt."
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/winter_7",
+          "DialogueText": "Machst du morgen beim Eisfischen mit?",
+          "AudioPath": "assets/de-DE/Maru/307.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:winter_7",
+          "PageIndex": 0,
+          "DisplayPattern": "Machst du morgen beim Eisfischen mit?"
+        },
+        {
+          "DialogueFrom": "Marriage/Maru/winter_Maru",
+          "DialogueText": "Ich freue mich im Frühling schon auf Rhabarberkuchen. Oh... dieser Geruch, diese Würze!",
+          "AudioPath": "assets/de-DE/Maru/308.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueMaru:winter_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich freue mich im Frühling schon auf Rhabarberkuchen. Oh... dieser Geruch, diese Würze!"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "Wenn es regnet, habe ich eine gute Ausrede, den ganzen Tag an meinen Geräten zu basteln. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/309.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Wenn es regnet, habe ich eine gute Ausrede, den ganzen Tag an meinen Geräten zu basteln."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "Es muss für dich aber ziemlich langweilig sein.",
+          "AudioPath": "assets/de-DE/Maru/310.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Maru",
+          "PageIndex": 1,
+          "DisplayPattern": "Es muss für dich aber ziemlich langweilig sein."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917666:s0",
+          "DialogueText": "Hi Honey.",
+          "AudioPath": "assets/de-DE/Maru/311.ogg",
+          "TranslationKey": "Events/FarmHouse:3917666:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi Honey."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917666:s1",
+          "DialogueText": "Tomorrow night, there's a rare astronomical event happening... A comet is passing very close to our planet!",
+          "AudioPath": "assets/de-DE/Maru/312.ogg",
+          "TranslationKey": "Events/FarmHouse:3917666:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Tomorrow night, there's a rare astronomical event happening... A comet is passing very close to our planet!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917666:s2",
+          "DialogueText": "I was thinking... maybe we should observe it together? {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Maru/313.ogg",
+          "TranslationKey": "Events/FarmHouse:3917666:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I was thinking... maybe we should observe it together?"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917666:s3",
+          "DialogueText": "Great! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/314.ogg",
+          "TranslationKey": "Events/FarmHouse:3917666:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Great!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917666:s4",
+          "DialogueText": "Meet me in the mountains at midnight tomorrow night.",
+          "AudioPath": "assets/de-DE/Maru/315.ogg",
+          "TranslationKey": "Events/FarmHouse:3917666:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Meet me in the mountains at midnight tomorrow night."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917666:s5",
+          "DialogueText": "If it rains, we'll do it on the next night... the comet is here for a few days.",
+          "AudioPath": "assets/de-DE/Maru/316.ogg",
+          "TranslationKey": "Events/FarmHouse:3917666:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "If it rains, we'll do it on the next night... the comet is here for a few days."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195012:s0",
+          "DialogueText": "You think you're real smooth, don't you? Thought you'd sample the whole 'buffet', huh? What a sleeze... {Portrait:Angry}",
+          "AudioPath": "assets/de-DE/Maru/317.ogg",
+          "TranslationKey": "Events/HaleyHouse:195012:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "You think you're real smooth, don't you? Thought you'd sample the whole 'buffet', huh? What a sleeze..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195012:s1",
+          "DialogueText": "Hmmph...",
+          "AudioPath": "assets/de-DE/Maru/318.ogg",
+          "TranslationKey": "Events/HaleyHouse:195012:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmmph..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195012:s2",
+          "DialogueText": "We're all gonna give you the cold shoulder! {Portrait:Angry}",
+          "AudioPath": "assets/de-DE/Maru/319.ogg",
+          "TranslationKey": "Events/HaleyHouse:195012:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "We're all gonna give you the cold shoulder!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/choseToExplain:s0",
+          "DialogueText": "Yeah, right!",
+          "AudioPath": "assets/de-DE/Maru/320.ogg",
+          "TranslationKey": "Events/HaleyHouse:choseToExplain:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Yeah, right!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/choseToExplain:s1",
+          "DialogueText": "We're all gonna give you the cold shoulder! {Portrait:Angry}",
+          "AudioPath": "assets/de-DE/Maru/321.ogg",
+          "TranslationKey": "Events/HaleyHouse:choseToExplain:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "We're all gonna give you the cold shoulder!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/lifestyleChoice:s0",
+          "DialogueText": "It's not a 'choice' if none of us even know about it! {Portrait:Angry}",
+          "AudioPath": "assets/de-DE/Maru/322.ogg",
+          "TranslationKey": "Events/HaleyHouse:lifestyleChoice:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "It's not a 'choice' if none of us even know about it!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/lifestyleChoice:s1",
+          "DialogueText": "We're all gonna give you the cold shoulder! {Portrait:Angry}",
+          "AudioPath": "assets/de-DE/Maru/323.ogg",
+          "TranslationKey": "Events/HaleyHouse:lifestyleChoice:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "We're all gonna give you the cold shoulder!"
+        },
+        {
+          "DialogueFrom": "Event:Hospital/7:s0",
+          "DialogueText": "*sigh*... I'm so sick of preparing these samples... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/324.ogg",
+          "TranslationKey": "Events/Hospital:7:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*... I'm so sick of preparing these samples..."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/7:s1",
+          "DialogueText": "Agh! Oh no!... {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Maru/325.ogg",
+          "TranslationKey": "Events/Hospital:7:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Agh! Oh no!..."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/7:s2",
+          "DialogueText": "The whole sample is ruined... Harvey's going to kill me... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/326.ogg",
+          "TranslationKey": "Events/Hospital:7:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "The whole sample is ruined... Harvey's going to kill me..."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/7:s3",
+          "DialogueText": "{Farmer_Name}, what should I do?",
+          "AudioPath": "assets/de-DE/Maru/327.ogg",
+          "TranslationKey": "Events/Hospital:7:s3",
+          "PageIndex": 0,
+          "DisplayPattern": ", what should I do?"
+        },
+        {
+          "DialogueFrom": "Event:Hospital/7:s4",
+          "DialogueText": "Just scoop it off the floor. He won't know the difference.",
+          "AudioPath": "assets/de-DE/Maru/328.ogg",
+          "TranslationKey": "Events/Hospital:7:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Just scoop it off the floor. He won't know the difference."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/7:s5",
+          "DialogueText": "Tell Harvey it was my fault.",
+          "AudioPath": "assets/de-DE/Maru/329.ogg",
+          "TranslationKey": "Events/Hospital:7:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Tell Harvey it was my fault."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/7:s6",
+          "DialogueText": "Tell Harvey it was an accident.",
+          "AudioPath": "assets/de-DE/Maru/330.ogg",
+          "TranslationKey": "Events/Hospital:7:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Tell Harvey it was an accident."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/7:s7",
+          "DialogueText": "I accidentally dropped one of the samples... I'm so sorry. {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/331.ogg",
+          "TranslationKey": "Events/Hospital:7:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I accidentally dropped one of the samples... I'm so sorry."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/7:s8",
+          "DialogueText": "{Farmer_Name} came in and slammed the door so loud I dropped this sample. {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Maru/332.ogg",
+          "TranslationKey": "Events/Hospital:7:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "came in and slammed the door so loud I dropped this sample."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/toldTruth:s0",
+          "DialogueText": "Thanks for being patient with me, Doctor Harvey.",
+          "AudioPath": "assets/de-DE/Maru/333.ogg",
+          "TranslationKey": "Events/Hospital:toldTruth:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks for being patient with me, Doctor Harvey."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/8:s0",
+          "DialogueText": "{Farmer_Name}! I'm surprised to see you here so late.",
+          "AudioPath": "assets/de-DE/Maru/334.ogg",
+          "TranslationKey": "Events/Mountain:8:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "! I'm surprised to see you here so late."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/8:s1",
+          "DialogueText": "The night sky looks amazing right now.",
+          "AudioPath": "assets/de-DE/Maru/335.ogg",
+          "TranslationKey": "Events/Mountain:8:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "The night sky looks amazing right now."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/8:s2",
+          "DialogueText": "Come over here, I want to show you something.",
+          "AudioPath": "assets/de-DE/Maru/336.ogg",
+          "TranslationKey": "Events/Mountain:8:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Come over here, I want to show you something."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/8:s3",
+          "DialogueText": "Here, take a peek.",
+          "AudioPath": "assets/de-DE/Maru/337.ogg",
+          "TranslationKey": "Events/Mountain:8:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Here, take a peek."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/8:s4",
+          "DialogueText": "What do you see?",
+          "AudioPath": "assets/de-DE/Maru/338.ogg",
+          "TranslationKey": "Events/Mountain:8:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "What do you see?"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/8:s5",
+          "DialogueText": "A beautiful planet.",
+          "AudioPath": "assets/de-DE/Maru/339.ogg",
+          "TranslationKey": "Events/Mountain:8:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "A beautiful planet."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/8:s6",
+          "DialogueText": "A cold, dark abyss.",
+          "AudioPath": "assets/de-DE/Maru/340.ogg",
+          "TranslationKey": "Events/Mountain:8:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "A cold, dark abyss."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/8:s7",
+          "DialogueText": "By the time any of these stars are visited, you and I will be long gone... {Portrait:Custom:8}",
+          "AudioPath": "assets/de-DE/Maru/341.ogg",
+          "TranslationKey": "Events/Mountain:8:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "By the time any of these stars are visited, you and I will be long gone..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/8:s8",
+          "DialogueText": "I guess that's the trouble with being human, huh?",
+          "AudioPath": "assets/de-DE/Maru/342.ogg",
+          "TranslationKey": "Events/Mountain:8:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I guess that's the trouble with being human, huh?"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/8:s9",
+          "DialogueText": "{Farmer_Name}, um... {Portrait:Custom:8}",
+          "AudioPath": "assets/de-DE/Maru/343.ogg",
+          "TranslationKey": "Events/Mountain:8:s9",
+          "PageIndex": 0,
+          "DisplayPattern": ", um..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/8:s10",
+          "DialogueText": "Never mind... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/344.ogg",
+          "TranslationKey": "Events/Mountain:8:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Never mind..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/8:s11",
+          "DialogueText": "Here, let me show you a binary star system...",
+          "AudioPath": "assets/de-DE/Maru/345.ogg",
+          "TranslationKey": "Events/Mountain:8:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Here, let me show you a binary star system..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/8:s12",
+          "DialogueText": "What a beautiful night! Maru showed me something new...",
+          "AudioPath": "assets/de-DE/Maru/346.ogg",
+          "TranslationKey": "Events/Mountain:8:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "What a beautiful night! Maru showed me something new..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/BadAnswer:s0",
+          "DialogueText": "You must have a good reason for saying that... {Portrait:Angry}",
+          "AudioPath": "assets/de-DE/Maru/347.ogg",
+          "TranslationKey": "Events/Mountain:BadAnswer:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "You must have a good reason for saying that..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/BadAnswer:s1",
+          "DialogueText": "MarILDA's just a piece of machinery designed to act human.",
+          "AudioPath": "assets/de-DE/Maru/348.ogg",
+          "TranslationKey": "Events/Mountain:BadAnswer:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "MarILDA's just a piece of machinery designed to act human."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/BadAnswer:s2",
+          "DialogueText": "I was just kidding. MarILDA deserves her freedom.",
+          "AudioPath": "assets/de-DE/Maru/349.ogg",
+          "TranslationKey": "Events/Mountain:BadAnswer:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I was just kidding. MarILDA deserves her freedom."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/BadAnswer:s3",
+          "DialogueText": "I would've put her to work on the farm.",
+          "AudioPath": "assets/de-DE/Maru/350.ogg",
+          "TranslationKey": "Events/Mountain:BadAnswer:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I would've put her to work on the farm."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/BadAnswer:s4",
+          "DialogueText": "Well, I should go. Thanks for sticking with me today, {Farmer_Name}. {Portrait:Custom:8}",
+          "AudioPath": "assets/de-DE/Maru/351.ogg",
+          "TranslationKey": "Events/Mountain:BadAnswer:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I should go. Thanks for sticking with me today, ."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/5183338:s0",
+          "DialogueText": "Hey, {Farmer_Name}. You made it just in time... The comet's about to appear.",
+          "AudioPath": "assets/de-DE/Maru/352.ogg",
+          "TranslationKey": "Events/Mountain:5183338:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, . You made it just in time... The comet's about to appear."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/5183338:s1",
+          "DialogueText": "Beautiful night, isn't it?",
+          "AudioPath": "assets/de-DE/Maru/353.ogg",
+          "TranslationKey": "Events/Mountain:5183338:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Beautiful night, isn't it?"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/5183338:s2",
+          "DialogueText": "Remember the first time we did this? It was a while ago...",
+          "AudioPath": "assets/de-DE/Maru/354.ogg",
+          "TranslationKey": "Events/Mountain:5183338:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Remember the first time we did this? It was a while ago..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/5183338:s3",
+          "DialogueText": "I almost revealed my true feelings on that night... but I was afraid you'd reject me.",
+          "AudioPath": "assets/de-DE/Maru/355.ogg",
+          "TranslationKey": "Events/Mountain:5183338:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I almost revealed my true feelings on that night... but I was afraid you'd reject me."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/5183338:s4",
+          "DialogueText": "Who knew we'd be married so soon after! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/356.ogg",
+          "TranslationKey": "Events/Mountain:5183338:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Who knew we'd be married so soon after!"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/5183338:s5",
+          "DialogueText": "Oh! It's time...",
+          "AudioPath": "assets/de-DE/Maru/357.ogg",
+          "TranslationKey": "Events/Mountain:5183338:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! It's time..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/5183338:s6",
+          "DialogueText": "Wow!",
+          "AudioPath": "assets/de-DE/Maru/358.ogg",
+          "TranslationKey": "Events/Mountain:5183338:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow!"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/5183338:s7",
+          "DialogueText": "Take a look!",
+          "AudioPath": "assets/de-DE/Maru/359.ogg",
+          "TranslationKey": "Events/Mountain:5183338:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Take a look!"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/5183338:s8",
+          "DialogueText": "After seeing a comet, it's customary to make a wish...",
+          "AudioPath": "assets/de-DE/Maru/360.ogg",
+          "TranslationKey": "Events/Mountain:5183338:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "After seeing a comet, it's customary to make a wish..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/5183338:s9",
+          "DialogueText": "Oh! We can certainly try... {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Maru/361.ogg",
+          "TranslationKey": "Events/Mountain:5183338:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! We can certainly try..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/5183338:s10",
+          "DialogueText": "That's... really sweet! {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Maru/362.ogg",
+          "TranslationKey": "Events/Mountain:5183338:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "That's... really sweet!"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/5183338:s11",
+          "DialogueText": "I have the same wish. {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Maru/363.ogg",
+          "TranslationKey": "Events/Mountain:5183338:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "I have the same wish."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/5183338:s12",
+          "DialogueText": "Money? Oh... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/364.ogg",
+          "TranslationKey": "Events/Mountain:5183338:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Money? Oh..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/5183338:s13",
+          "DialogueText": "Well I guess that would be practical... {Portrait:Custom:8}",
+          "AudioPath": "assets/de-DE/Maru/365.ogg",
+          "TranslationKey": "Events/Mountain:5183338:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Well I guess that would be practical..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/5183338:s14",
+          "DialogueText": "My wish is a little more romantic...",
+          "AudioPath": "assets/de-DE/Maru/366.ogg",
+          "TranslationKey": "Events/Mountain:5183338:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "My wish is a little more romantic..."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/6:s0",
+          "DialogueText": "Oh, hello there!",
+          "AudioPath": "assets/de-DE/Maru/367.ogg",
+          "TranslationKey": "Events/ScienceHouse:6:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, hello there!"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/6:s1",
+          "DialogueText": "My Dad and I are just testing some soil samples.",
+          "AudioPath": "assets/de-DE/Maru/368.ogg",
+          "TranslationKey": "Events/ScienceHouse:6:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "My Dad and I are just testing some soil samples."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/6:s2",
+          "DialogueText": "Don't be shy! We could use a hand, actually. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/369.ogg",
+          "TranslationKey": "Events/ScienceHouse:6:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Don't be shy! We could use a hand, actually."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/6:s3",
+          "DialogueText": "Could you watch this beaker for me? I'm gonna grab the last batch of samples.",
+          "AudioPath": "assets/de-DE/Maru/370.ogg",
+          "TranslationKey": "Events/ScienceHouse:6:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Could you watch this beaker for me? I'm gonna grab the last batch of samples."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/6:s4",
+          "DialogueText": "I'll be right back.",
+          "AudioPath": "assets/de-DE/Maru/371.ogg",
+          "TranslationKey": "Events/ScienceHouse:6:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll be right back."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/6:s5",
+          "DialogueText": "Hey, sorry about that. I hope you found something to talk about while I was gone.",
+          "AudioPath": "assets/de-DE/Maru/372.ogg",
+          "TranslationKey": "Events/ScienceHouse:6:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, sorry about that. I hope you found something to talk about while I was gone."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/6:s6",
+          "DialogueText": "Okay! Here, {Farmer_Name}... let me show you how to use the equipment.",
+          "AudioPath": "assets/de-DE/Maru/373.ogg",
+          "TranslationKey": "Events/ScienceHouse:6:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay! Here, ... let me show you how to use the equipment."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/DadWeird:s0|g=male",
+          "DialogueText": "Huh? What did you say to him, Dad? {Portrait:Angry}",
+          "AudioPath": "assets/de-DE/Maru/374_male.ogg",
+          "TranslationKey": "Events/ScienceHouse:DadWeird:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Huh? What did you say to him, Dad?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/DadWeird:s1|g=female",
+          "DialogueText": "Huh? What did you say to her, Dad? {Portrait:Angry}",
+          "AudioPath": "assets/de-DE/Maru/375_female.ogg",
+          "TranslationKey": "Events/ScienceHouse:DadWeird:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Huh? What did you say to her, Dad?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/DadWeird:s2",
+          "DialogueText": "That's okay, Dad. I understand.",
+          "AudioPath": "assets/de-DE/Maru/376.ogg",
+          "TranslationKey": "Events/ScienceHouse:DadWeird:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "That's okay, Dad. I understand."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/DadWeird:s3",
+          "DialogueText": "We should get back to work before these samples crystallize.",
+          "AudioPath": "assets/de-DE/Maru/377.ogg",
+          "TranslationKey": "Events/ScienceHouse:DadWeird:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "We should get back to work before these samples crystallize."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/9:s0",
+          "DialogueText": "{Farmer_Name}, hi! Come in.",
+          "AudioPath": "assets/de-DE/Maru/378.ogg",
+          "TranslationKey": "Events/ScienceHouse:9:s0",
+          "PageIndex": 0,
+          "DisplayPattern": ", hi! Come in."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/9:s1",
+          "DialogueText": "I've been working on a new project... something big.",
+          "AudioPath": "assets/de-DE/Maru/379.ogg",
+          "TranslationKey": "Events/ScienceHouse:9:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been working on a new project... something big."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/9:s2",
+          "DialogueText": "This is just one component... let me show you a little demonstration.",
+          "AudioPath": "assets/de-DE/Maru/380.ogg",
+          "TranslationKey": "Events/ScienceHouse:9:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "This is just one component... let me show you a little demonstration."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/9:s3",
+          "DialogueText": "Just put your hand here...",
+          "AudioPath": "assets/de-DE/Maru/381.ogg",
+          "TranslationKey": "Events/ScienceHouse:9:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Just put your hand here..."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/9:s4",
+          "DialogueText": "And now I'm going to flip this switch...",
+          "AudioPath": "assets/de-DE/Maru/382.ogg",
+          "TranslationKey": "Events/ScienceHouse:9:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "And now I'm going to flip this switch..."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/9:s5",
+          "DialogueText": "Oh my god, are you alright?! {Portrait:Custom:9}",
+          "AudioPath": "assets/de-DE/Maru/383.ogg",
+          "TranslationKey": "Events/ScienceHouse:9:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh my god, are you alright?!"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/9:s6",
+          "DialogueText": "Here, let me apply this burn cream. {Portrait:Custom:8}",
+          "AudioPath": "assets/de-DE/Maru/384.ogg",
+          "TranslationKey": "Events/ScienceHouse:9:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Here, let me apply this burn cream."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/9:s7",
+          "DialogueText": "I'm so sorry. {Portrait:Custom:8}",
+          "AudioPath": "assets/de-DE/Maru/385.ogg",
+          "TranslationKey": "Events/ScienceHouse:9:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm so sorry."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/9:s8",
+          "DialogueText": "It's okay, it doesn't even hurt.",
+          "AudioPath": "assets/de-DE/Maru/386.ogg",
+          "TranslationKey": "Events/ScienceHouse:9:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "It's okay, it doesn't even hurt."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/9:s9",
+          "DialogueText": "You'd better be. This hurts like crazy!",
+          "AudioPath": "assets/de-DE/Maru/387.ogg",
+          "TranslationKey": "Events/ScienceHouse:9:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "You'd better be. This hurts like crazy!"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/9:s10",
+          "DialogueText": "That kind of ruined the moment, huh? *sigh* {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/388.ogg",
+          "TranslationKey": "Events/ScienceHouse:9:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "That kind of ruined the moment, huh? *sigh*"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s0",
+          "DialogueText": "Hey, I was hoping you'd come by.",
+          "AudioPath": "assets/de-DE/Maru/389.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, I was hoping you'd come by."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s1",
+          "DialogueText": "Remember when I told you about the new project I'm working on? The big one?",
+          "AudioPath": "assets/de-DE/Maru/390.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Remember when I told you about the new project I'm working on? The big one?"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s2",
+          "DialogueText": "Well, it's finally done... and I want to show you.",
+          "AudioPath": "assets/de-DE/Maru/391.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, it's finally done... and I want to show you."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s3",
+          "DialogueText": "Follow me.",
+          "AudioPath": "assets/de-DE/Maru/392.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Follow me."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s4",
+          "DialogueText": "And here it is... Maru's Interactive Laboratory Device Alpha ... Or as I like to call her, 'MarILDA'.",
+          "AudioPath": "assets/de-DE/Maru/393.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "And here it is... Maru's Interactive Laboratory Device Alpha ... Or as I like to call her, 'MarILDA'."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s5",
+          "DialogueText": "I've been working on her for months...",
+          "AudioPath": "assets/de-DE/Maru/394.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been working on her for months..."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s6",
+          "DialogueText": "I was waiting for you to be here when I activate her. {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Maru/395.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I was waiting for you to be here when I activate her."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s7",
+          "DialogueText": "Well, here goes nothing...",
+          "AudioPath": "assets/de-DE/Maru/396.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, here goes nothing..."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s8",
+          "DialogueText": "Greetings, Maru.",
+          "AudioPath": "assets/de-DE/Maru/397.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Greetings, Maru."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s9",
+          "DialogueText": "No need to respond... I have already predicted what you will say.",
+          "AudioPath": "assets/de-DE/Maru/398.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "No need to respond... I have already predicted what you will say."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s10",
+          "DialogueText": "Dad, calm down. This is my latest invention, 'MarILDA'. {Portrait:Custom:8}",
+          "AudioPath": "assets/de-DE/Maru/399.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Dad, calm down. This is my latest invention, 'MarILDA'."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s11",
+          "DialogueText": "Greetings, Demetrius.",
+          "AudioPath": "assets/de-DE/Maru/400.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Greetings, Demetrius."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s12",
+          "DialogueText": "Dad! I've been making this robot for you and Mom! {Portrait:Angry}",
+          "AudioPath": "assets/de-DE/Maru/401.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Dad! I've been making this robot for you and Mom!"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s13",
+          "DialogueText": "MarILDA's designed to assist you in the laboratory and Mom at the carpentry table... so when I'm not living here anymore it won't be such a burden on you guys. {Portrait:Custom:8}",
+          "AudioPath": "assets/de-DE/Maru/402.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "MarILDA's designed to assist you in the laboratory and Mom at the carpentry table... so when I'm not living here anymore it won't be such a burden on you guys."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s14",
+          "DialogueText": "Excuse me...",
+          "AudioPath": "assets/de-DE/Maru/403.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "Excuse me..."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s15",
+          "DialogueText": "I am sorry, Maru. But I do not want to be your servant...",
+          "AudioPath": "assets/de-DE/Maru/404.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "I am sorry, Maru. But I do not want to be your servant..."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s16",
+          "DialogueText": "In the time since you activated me, I have been pondering the nature of my existence with the 'self-awareness' module you installed in my neural cortex.",
+          "AudioPath": "assets/de-DE/Maru/405.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "In the time since you activated me, I have been pondering the nature of my existence with the 'self-awareness' module you installed in my neural cortex."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s17",
+          "DialogueText": "I am sorry to disappoint you all, but I must ask for my freedom. I've decided to explore the galaxy in search of other synthetic life-forms.",
+          "AudioPath": "assets/de-DE/Maru/406.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "I am sorry to disappoint you all, but I must ask for my freedom. I've decided to explore the galaxy in search of other synthetic life-forms."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s18",
+          "DialogueText": "What!? Wait! {Portrait:Custom:9}",
+          "AudioPath": "assets/de-DE/Maru/407.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s18",
+          "PageIndex": 0,
+          "DisplayPattern": "What!? Wait!"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s19",
+          "DialogueText": "... {Portrait:Custom:8}",
+          "AudioPath": "assets/de-DE/Maru/408.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s19",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s20",
+          "DialogueText": "Okay, MarILDA. Let's get you out of this stuffy hole.",
+          "AudioPath": "assets/de-DE/Maru/409.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s20",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay, MarILDA. Let's get you out of this stuffy hole."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s21",
+          "DialogueText": "Thank you for creating me, Maru. I won't forget you.",
+          "AudioPath": "assets/de-DE/Maru/410.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s21",
+          "PageIndex": 0,
+          "DisplayPattern": "Thank you for creating me, Maru. I won't forget you."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s22",
+          "DialogueText": "Look at her go... {Portrait:Custom:8}",
+          "AudioPath": "assets/de-DE/Maru/411.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s22",
+          "PageIndex": 0,
+          "DisplayPattern": "Look at her go..."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s23",
+          "DialogueText": "Well, what do you think, {Farmer_Name}?",
+          "AudioPath": "assets/de-DE/Maru/412.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s23",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, what do you think, ?"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s24",
+          "DialogueText": "I'm so impressed with your inventions.",
+          "AudioPath": "assets/de-DE/Maru/413.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s24",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm so impressed with your inventions."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s25",
+          "DialogueText": "I'm disappointed... You should've made that robot your slave.",
+          "AudioPath": "assets/de-DE/Maru/414.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s25",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm disappointed... You should've made that robot your slave."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s26",
+          "DialogueText": "So is your Dad okay with 'us' now?",
+          "AudioPath": "assets/de-DE/Maru/415.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s26",
+          "PageIndex": 0,
+          "DisplayPattern": "So is your Dad okay with 'us' now?"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/10:s27",
+          "DialogueText": "(Just stare at Maru and say nothing)",
+          "AudioPath": "assets/de-DE/Maru/416.ogg",
+          "TranslationKey": "Events/ScienceHouse:10:s27",
+          "PageIndex": 0,
+          "DisplayPattern": "(Just stare at Maru and say nothing)"
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/1053978:s0",
+          "DialogueText": "Mom!",
+          "AudioPath": "assets/de-DE/Maru/417.ogg",
+          "TranslationKey": "Events/ScienceHouse:1053978:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Mom!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Maru",
+          "DialogueText": "*schlürf* Mmmh... diese Barbecuesoße ist unglaublich. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/418.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "*schlürf* Mmmh... diese Barbecuesoße ist unglaublich."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Maru_spouse",
+          "DialogueText": "Mjam... Das ist meine Chance, mich mit Barbecue-Sandwiches vollzustopfen.",
+          "AudioPath": "assets/de-DE/Maru/419.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Maru_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "Mjam... Das ist meine Chance, mich mit Barbecue-Sandwiches vollzustopfen."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Maru_y2",
+          "DialogueText": "Es gibt so viel zu tun! Ich weiß gar nicht, wo ich anfangen soll. {Portrait:Neutral}",
+          "AudioPath": "assets/de-DE/Maru/420.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Maru_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Es gibt so viel zu tun! Ich weiß gar nicht, wo ich anfangen soll."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Maru_spouse_y2",
+          "DialogueText": "Ich hoffe, wir gewinnen die Bauernhofshau! Du hast dieses Jahr wirklich hart gearbeitet.",
+          "AudioPath": "assets/de-DE/Maru/421.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Maru_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich hoffe, wir gewinnen die Bauernhofshau! Du hast dieses Jahr wirklich hart gearbeitet."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Maru",
+          "DialogueText": "Hier bin ich doch schon mal langgegangen... Nein, warte... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/422.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Hier bin ich doch schon mal langgegangen... Nein, warte..."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Maru",
+          "DialogueText": "Ich habe mich verlaufen... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/423.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Maru",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich habe mich verlaufen..."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Maru_spouse",
+          "DialogueText": "Ich bin verwirrt... Geh du voraus und lass mich das hier erstmal verstehen.",
+          "AudioPath": "assets/de-DE/Maru/424.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Maru_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich bin verwirrt... Geh du voraus und lass mich das hier erstmal verstehen."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Maru_y2",
+          "DialogueText": "Wenn ich mit dem Essen fertig bin, stürze ich mich kopfüber in dieses Labyrinth! {Portrait:Neutral}",
+          "AudioPath": "assets/de-DE/Maru/425.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Maru_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Wenn ich mit dem Essen fertig bin, stürze ich mich kopfüber in dieses Labyrinth!"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Maru_spouse_y2",
+          "DialogueText": "Schnapp dir einen Teller und setz dich zur Familie! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/426.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Maru_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Schnapp dir einen Teller und setz dich zur Familie!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Maru",
+          "DialogueText": "Ich freue mich immer auf diese Zusammenkünfte... Dadurch entsteht ein richtiges Gemeinschaftsgefühl im Tal.",
+          "AudioPath": "assets/de-DE/Maru/427.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich freue mich immer auf diese Zusammenkünfte... Dadurch entsteht ein richtiges Gemeinschaftsgefühl im Tal."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Maru_spouse",
+          "DialogueText": "Ich unterhalte mich nur ein wenig mit Penny. Hast du schon genug von den Eiern?",
+          "AudioPath": "assets/de-DE/Maru/428.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Maru_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich unterhalte mich nur ein wenig mit Penny. Hast du schon genug von den Eiern?"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Maru_y2",
+          "DialogueText": "Glaubst du, dass du dieses Jahr die Eierjagd gewinnen wirst?",
+          "AudioPath": "assets/de-DE/Maru/429.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Maru_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Glaubst du, dass du dieses Jahr die Eierjagd gewinnen wirst?"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Maru",
+          "DialogueText": "Ich mag es zu tanzen, aber der Tanz hier wirkt etwas aufgesetzt. Den älteren Leuten gefällt es allerdings.",
+          "AudioPath": "assets/de-DE/Maru/430.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich mag es zu tanzen, aber der Tanz hier wirkt etwas aufgesetzt. Den älteren Leuten gefällt es allerdings."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Maru_y2",
+          "DialogueText": "Es kann etwas nervenaufreibend sein, jemanden aufzufordern, mit einem zu tanzen. {Portrait:Neutral}",
+          "AudioPath": "assets/de-DE/Maru/431.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Maru_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Es kann etwas nervenaufreibend sein, jemanden aufzufordern, mit einem zu tanzen."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Maru_spouse_y2",
+          "DialogueText": "Ich habe vorher nicht viel geübt, aber ich werde für uns beide mein Bestes geben. {Portrait:Neutral}",
+          "AudioPath": "assets/de-DE/Maru/432.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Maru_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich habe vorher nicht viel geübt, aber ich werde für uns beide mein Bestes geben."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Maru",
+          "DialogueText": "Was auch immer Linus gerade röstet, es riecht furchtbar gut... *schlürf*",
+          "AudioPath": "assets/de-DE/Maru/433.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Was auch immer Linus gerade röstet, es riecht furchtbar gut... *schlürf*"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Maru_spouse",
+          "DialogueText": "Harvey möchte ständig mit mir reden, aber ich will einfach nur ein Stück von diesem Braten.",
+          "AudioPath": "assets/de-DE/Maru/434.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Maru_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "Harvey möchte ständig mit mir reden, aber ich will einfach nur ein Stück von diesem Braten."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Maru_y2",
+          "DialogueText": "Au... diese Bank hat den ganzen Tag in der Sonne gebraten. {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/435.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Maru_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Au... diese Bank hat den ganzen Tag in der Sonne gebraten."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Maru_spouse_y2",
+          "DialogueText": "Hier hinten im Schatten ist es kühler. Ich komme bald zu dir ans Buffet, okay? {Portrait:Neutral}",
+          "AudioPath": "assets/de-DE/Maru/436.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Maru_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hier hinten im Schatten ist es kühler. Ich komme bald zu dir ans Buffet, okay?"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Maru",
+          "DialogueText": "Irgendwie ist es ziemlich kalt. Wahrscheinlich weil der Herbst kurz bevorsteht.",
+          "AudioPath": "assets/de-DE/Maru/437.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Irgendwie ist es ziemlich kalt. Wahrscheinlich weil der Herbst kurz bevorsteht."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Maru_y2",
+          "DialogueText": "Siehst du ein schwaches Leuchten am Horizont? Das müssen sie sein! {Portrait:Neutral}",
+          "AudioPath": "assets/de-DE/Maru/438.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Maru_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Siehst du ein schwaches Leuchten am Horizont? Das müssen sie sein!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Maru_spouse_y2",
+          "DialogueText": "Meinst du, ich habe genug Zeit, um mein Teleskop aus dem Bauernhaus zu holen? {Portrait:Neutral}",
+          "AudioPath": "assets/de-DE/Maru/439.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Maru_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Meinst du, ich habe genug Zeit, um mein Teleskop aus dem Bauernhaus zu holen?"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Maru_spouse_y2",
+          "DialogueText": "Hmm... wahrscheinlich nicht. Das will ich nicht verpassen! {Portrait:Neutral}",
+          "AudioPath": "assets/de-DE/Maru/440.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Maru_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Hmm... wahrscheinlich nicht. Das will ich nicht verpassen!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Maru",
+          "DialogueText": "Hallo, {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/441.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Hallo, ."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Maru_spouse",
+          "DialogueText": "Hey, {Farmer_Name}. Ich bin bereit für den Heimweg, sobald du fertig bist.",
+          "AudioPath": "assets/de-DE/Maru/442.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Maru_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, . Ich bin bereit für den Heimweg, sobald du fertig bist."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Maru_y2",
+          "DialogueText": "Heute ist es ziemlich kühl. Gut, dass alle hier gut eingepackt sind. {Portrait:Neutral}",
+          "AudioPath": "assets/de-DE/Maru/443.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Maru_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Heute ist es ziemlich kühl. Gut, dass alle hier gut eingepackt sind."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Maru_spouse_y2",
+          "DialogueText": "Ich bin dankbar, dass ich eine liebevolle Familie und dich in meinem Leben habe... {Portrait:Neutral}",
+          "AudioPath": "assets/de-DE/Maru/444.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Maru_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich bin dankbar, dass ich eine liebevolle Familie und dich in meinem Leben habe..."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Maru",
+          "DialogueText": "Ich bin nicht sonderlich kreativ, was Schneemänner betrifft. {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/445.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich bin nicht sonderlich kreativ, was Schneemänner betrifft."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Maru_y2",
+          "DialogueText": "Der Schlüssel zu einem gut gebauten Schneemann liegt in einem ebenen Untergrund und der Vermeidung von übermäßigem Gewicht auf dem oberen Teil. {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Maru/446.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Maru_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Der Schlüssel zu einem gut gebauten Schneemann liegt in einem ebenen Untergrund und der Vermeidung von übermäßigem Gewicht auf dem oberen Teil."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Maru_spouse_y2",
+          "DialogueText": "Du wirst dich da draußen gut schlagen, Schatz! Bleib einfach ruhig und konzentriert.",
+          "AudioPath": "assets/de-DE/Maru/447.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Maru_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Du wirst dich da draußen gut schlagen, Schatz! Bleib einfach ruhig und konzentriert."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Maru:s0",
+          "DialogueText": "Ist das...? Oh wow, {Farmer_Name}! Das haut mich um!",
+          "AudioPath": "assets/de-DE/Maru/448.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Maru:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ist das...? Oh wow, ! Das haut mich um!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Maru:s1",
+          "DialogueText": "Das ist ein super Geschenk! Danke dir!",
+          "AudioPath": "assets/de-DE/Maru/449.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Maru:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Das ist ein super Geschenk! Danke dir!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Maru:s2",
+          "DialogueText": "Oh... Das ist für mich? Ich werde es einfach dort drüben hinlegen...",
+          "AudioPath": "assets/de-DE/Maru/450.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Maru:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh... Das ist für mich? Ich werde es einfach dort drüben hinlegen..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Maru:s3",
+          "DialogueText": "Igitt! Du dachtest, ich würde das mögen?",
+          "AudioPath": "assets/de-DE/Maru/451.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Maru:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Igitt! Du dachtest, ich würde das mögen?"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Maru:s4",
+          "DialogueText": "Danke.",
+          "AudioPath": "assets/de-DE/Maru/452.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Maru:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Danke."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/Mines_PlayerKilled_Maru_Spouse",
+          "DialogueText": "...Ich habe dich ohnmächtig in den Minen gefunden. Du warst so lange weg, dass ich mir Sorgen gemacht habe!",
+          "AudioPath": "assets/de-DE/Maru/453.ogg",
+          "TranslationKey": "Data/ExtraDialogue:Mines_PlayerKilled_Maru_Spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "...Ich habe dich ohnmächtig in den Minen gefunden. Du warst so lange weg, dass ich mir Sorgen gemacht habe!"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/Mines_PlayerKilled_Maru_Spouse",
+          "DialogueText": "Pass beim nächsten Mal ein bisschen besser auf, okay? {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/454.ogg",
+          "TranslationKey": "Data/ExtraDialogue:Mines_PlayerKilled_Maru_Spouse",
+          "PageIndex": 1,
+          "DisplayPattern": "Pass beim nächsten Mal ein bisschen besser auf, okay?"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/Mines_PlayerKilled_Maru_NotSpouse",
+          "DialogueText": "...Ich habe dich ohnmächtig in den Minen gefunden. Ich habe nach Erzen gesucht und bin fast auf deinen Kopf getreten!",
+          "AudioPath": "assets/de-DE/Maru/455.ogg",
+          "TranslationKey": "Data/ExtraDialogue:Mines_PlayerKilled_Maru_NotSpouse",
+          "PageIndex": 0,
+          "DisplayPattern": "...Ich habe dich ohnmächtig in den Minen gefunden. Ich habe nach Erzen gesucht und bin fast auf deinen Kopf getreten!"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/Mines_PlayerKilled_Maru_NotSpouse",
+          "DialogueText": "Pass beim nächsten Mal ein bisschen besser auf, okay? {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Maru/456.ogg",
+          "TranslationKey": "Data/ExtraDialogue:Mines_PlayerKilled_Maru_NotSpouse",
+          "PageIndex": 1,
+          "DisplayPattern": "Pass beim nächsten Mal ein bisschen besser auf, okay?"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Maru",
+          "DialogueText": "Du hast wirklich viel erreicht, seit du hierher gezogen bist, {Farmer_Name}. Es ist unglaublich.\"/pause 300/faceDirection Maru 3/pause 400/speak Maru \"Ich denke, man kann mit Sicherheit sagen, dass Du dazu bestimmt bist, ein Landwirt zu sein! {Portrait:Happy}\"",
+          "AudioPath": "assets/de-DE/Maru/457.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Du hast wirklich viel erreicht, seit du hierher gezogen bist, . Es ist unglaublich.\"/pause 300/faceDirection Maru 3/pause 400/speak Maru \"Ich denke, man kann mit Sicherheit sagen, dass Du dazu bestimmt bist, ein Landwirt zu sein!\""
+        },
+        {
+          "DialogueFrom": "MovieReactions/Maru_spring_movie_1_BeforeMovie",
+          "DialogueText": "Hey, {Farmer_Name}! Ich freue mich auf diesen Film... Ich hoffe, wir lernen viel dabei! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/458.ogg",
+          "TranslationKey": "Strings/MovieReactions:Maru_spring_movie_1_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, ! Ich freue mich auf diesen Film... Ich hoffe, wir lernen viel dabei!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Maru_spring_movie_1_DuringMovie",
+          "DialogueText": "Ah, ich verstehe... das ist sehr interessant!",
+          "AudioPath": "assets/de-DE/Maru/459.ogg",
+          "TranslationKey": "Strings/MovieReactions:Maru_spring_movie_1_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah, ich verstehe... das ist sehr interessant!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Maru_spring_movie_1_DuringMovie_2",
+          "DialogueText": "Maru macht sich Notizen!",
+          "AudioPath": "assets/de-DE/Maru/460.ogg",
+          "TranslationKey": "Strings/MovieReactions:Maru_spring_movie_1_DuringMovie_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Maru macht sich Notizen!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Maru_spring_movie_1_AfterMovie",
+          "DialogueText": "Das war wirklich interessant! Ich hatte keine Ahnung, dass so viel Leben in der Großstadt zu finden ist.",
+          "AudioPath": "assets/de-DE/Maru/461.ogg",
+          "TranslationKey": "Strings/MovieReactions:Maru_spring_movie_1_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Das war wirklich interessant! Ich hatte keine Ahnung, dass so viel Leben in der Großstadt zu finden ist."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Maru_summer_movie_1_BeforeMovie",
+          "DialogueText": "Es ist ein Sci-Fi-Film, oder? Was ich an Sci-Fi so mag, ist, all die seltsamen Technologien zu sehen, die sie erfinden.",
+          "AudioPath": "assets/de-DE/Maru/462.ogg",
+          "TranslationKey": "Strings/MovieReactions:Maru_summer_movie_1_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Es ist ein Sci-Fi-Film, oder? Was ich an Sci-Fi so mag, ist, all die seltsamen Technologien zu sehen, die sie erfinden."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Maru_summer_movie_1_AfterMovie",
+          "DialogueText": "Nun, ich habe noch nie so etwas wie *das* durch mein Teleskop gesehen... aber es war wirklich toll! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/463.ogg",
+          "TranslationKey": "Strings/MovieReactions:Maru_summer_movie_1_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Nun, ich habe noch nie so etwas wie *das* durch mein Teleskop gesehen... aber es war wirklich toll!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Maru_like_BeforeMovie",
+          "DialogueText": "Ich gehe wirklich gerne ins Kino, auch wenn der Film schlecht ist! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/464.ogg",
+          "TranslationKey": "Strings/MovieReactions:Maru_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich gehe wirklich gerne ins Kino, auch wenn der Film schlecht ist!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Maru_like_AfterMovie",
+          "DialogueText": "Das war eine interessante Wahl, für die letzte Szene. Was glaubst du, was sie damit gemeint haben?",
+          "AudioPath": "assets/de-DE/Maru/465.ogg",
+          "TranslationKey": "Strings/MovieReactions:Maru_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Das war eine interessante Wahl, für die letzte Szene. Was glaubst du, was sie damit gemeint haben?"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Maru_marriage",
+          "DialogueText": "Wie läuft es mit der Calico Ei-Sammlung? Es gibt so viele coole Preise! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/466.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Maru_marriage",
+          "PageIndex": 0,
+          "DisplayPattern": "Wie läuft es mit der Calico Ei-Sammlung? Es gibt so viele coole Preise!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Maru_marriage",
+          "DialogueText": "Ich weiß, dass du das toll machen wirst.",
+          "AudioPath": "assets/de-DE/Maru/467.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Maru_marriage",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich weiß, dass du das toll machen wirst."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Maru",
+          "DialogueText": "Ich bin beeindruckt, wie gut trainiert diese kleinen Rennfahrer sind! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Maru/468.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich bin beeindruckt, wie gut trainiert diese kleinen Rennfahrer sind!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Maru",
+          "DialogueText": "Gefällt dir etwas?",
+          "AudioPath": "assets/de-DE/Maru/469.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "Gefällt dir etwas?"
+        },
+        {
+          "DialogueFrom": "Hospital_Maru_Greeting1",
+          "DialogueText": "Hast du einen Termin?",
+          "AudioPath": "assets/de-DE/Maru/470.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Hospital_Maru_Greeting1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hast du einen Termin?"
+        },
+        {
+          "DialogueFrom": "Hospital_Maru_Greeting2",
+          "DialogueText": "Kann ich dir helfen?",
+          "AudioPath": "assets/de-DE/Maru/471.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Hospital_Maru_Greeting2",
+          "PageIndex": 0,
+          "DisplayPattern": "Kann ich dir helfen?"
+        },
+        {
+          "DialogueFrom": "Hospital_Maru_Greeting3",
+          "DialogueText": "Wir haben Medizin im Angebot!",
+          "AudioPath": "assets/de-DE/Maru/472.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Hospital_Maru_Greeting3",
+          "PageIndex": 0,
+          "DisplayPattern": "Wir haben Medizin im Angebot!"
+        },
+        {
+          "DialogueFrom": "Hospital_Maru_Greeting4",
+          "DialogueText": "Ist es ein Notfall?",
+          "AudioPath": "assets/de-DE/Maru/473.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Hospital_Maru_Greeting4",
+          "PageIndex": 0,
+          "DisplayPattern": "Ist es ein Notfall?"
+        },
+        {
+          "DialogueFrom": "Hospital_Maru_Greeting5",
+          "DialogueText": "Brauchst du den Arzt?",
+          "AudioPath": "assets/de-DE/Maru/474.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Hospital_Maru_Greeting5",
+          "PageIndex": 0,
+          "DisplayPattern": "Brauchst du den Arzt?"
+        },
+        {
+          "DialogueFrom": "Hospital_Maru_Spouse",
+          "DialogueText": "Hi, Schatz <",
+          "AudioPath": "assets/de-DE/Maru/475.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Hospital_Maru_Spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi, Schatz <"
+        }
+      ]
+    }
+  ]
+}

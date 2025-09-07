@@ -1,0 +1,1254 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Caroline.ru-RU",
+      "VoicePackName": "DictionarV2 (Caroline - ru-RU)",
+      "Character": "Caroline",
+      "Language": "ru-RU",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Здравствуйте! Вы, должно быть, {Farmer_Name}, новый фермер. Я — Кэролайн.",
+          "AudioPath": "assets/ru-RU/Caroline/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "Здравствуйте! Вы, должно быть, , новый фермер. Я — Кэролайн."
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Мой муж содержит местный магазин. Вы еще не говорили с моей дочерью, Абигейл? Она такая бледненькая, с фиолетовыми волосами.",
+          "AudioPath": "assets/ru-RU/Caroline/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "Мой муж содержит местный магазин. Вы еще не говорили с моей дочерью, Абигейл? Она такая бледненькая, с фиолетовыми волосами."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "Спасибо, дорогуша. Как приятно, что ты помнишь про мой день рождения. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Caroline/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "Спасибо, дорогуша. Как приятно, что ты помнишь про мой день рождения."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "Ой... Это что... подарок на день рождения? Ясно... Спасибо за визит. {Portrait:Angry}",
+          "AudioPath": "assets/ru-RU/Caroline/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "Ой... Это что... подарок на день рождения? Ясно... Спасибо за визит."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "О-о-о, это так мило. Приберегу для тихого дня на террасе.",
+          "AudioPath": "assets/ru-RU/Caroline/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "О-о-о, это так мило. Приберегу для тихого дня на террасе."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)16",
+          "DialogueText": "О, собирательством занимаешься! Спасибо!",
+          "AudioPath": "assets/ru-RU/Caroline/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:AcceptGift_(O)16",
+          "PageIndex": 0,
+          "DisplayPattern": "О, собирательством занимаешься! Спасибо!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)16",
+          "DialogueText": "Добавлю в острый коктейльный соус. У Пьера от этого пробьется пару волосков на груди. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Caroline/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:AcceptGift_(O)16",
+          "PageIndex": 1,
+          "DisplayPattern": "Добавлю в острый коктейльный соус. У Пьера от этого пробьется пару волосков на груди."
+        },
+        {
+          "DialogueFrom": "cropMatured_815",
+          "DialogueText": "Заметила, ты чай у себя на ферме выращиваешь. Не забудь, принеси мне на чашечку! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Caroline/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:cropMatured_815",
+          "PageIndex": 0,
+          "DisplayPattern": "Заметила, ты чай у себя на ферме выращиваешь. Не забудь, принеси мне на чашечку!"
+        },
+        {
+          "DialogueFrom": "dating_Abigail_memory_oneday",
+          "DialogueText": "Эбби сказала мне, что вы встречаетесь. Как славно!",
+          "AudioPath": "assets/ru-RU/Caroline/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:dating_Abigail_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "Эбби сказала мне, что вы встречаетесь. Как славно!"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "В жизни не видела зеленый дождь... Наверное, он не такой уж и опасный, раз ты здесь!",
+          "AudioPath": "assets/ru-RU/Caroline/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "В жизни не видела зеленый дождь... Наверное, он не такой уж и опасный, раз ты здесь!"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "А, особый дождь вернулся, в этом году я наслажусь им по полной!",
+          "AudioPath": "assets/ru-RU/Caroline/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "А, особый дождь вернулся, в этом году я наслажусь им по полной!"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Время заварить чашечку зеленого чая! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Caroline/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:GreenRain_2",
+          "PageIndex": 1,
+          "DisplayPattern": "Время заварить чашечку зеленого чая!"
+        },
+        {
+          "DialogueFrom": "movieTheater_memory_oneweek",
+          "DialogueText": "Хорошо, что у нас теперь есть кинотеатр. Хочу сходить на вестерн!",
+          "AudioPath": "assets/ru-RU/Caroline/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:movieTheater_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "Хорошо, что у нас теперь есть кинотеатр. Хочу сходить на вестерн!"
+        },
+        {
+          "DialogueFrom": "married_Abigail",
+          "DialogueText": "Я так рада за вас обоих. Добро пожаловать в семью! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Caroline/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:married_Abigail",
+          "PageIndex": 0,
+          "DisplayPattern": "Я так рада за вас обоих. Добро пожаловать в семью!"
+        },
+        {
+          "DialogueFrom": "wonGrange",
+          "DialogueText": "Пьер, конечно, виду не подает, но он крайне раздосадован, что проиграл тебе на Ярмарке Долины Стардью.",
+          "AudioPath": "assets/ru-RU/Caroline/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:wonGrange",
+          "PageIndex": 0,
+          "DisplayPattern": "Пьер, конечно, виду не подает, но он крайне раздосадован, что проиграл тебе на Ярмарке Долины Стардью."
+        },
+        {
+          "DialogueFrom": "married_memory_oneweek",
+          "DialogueText": "А, молодожены. Ну и как прошел медовый месяц?",
+          "AudioPath": "assets/ru-RU/Caroline/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:married_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "А, молодожены. Ну и как прошел медовый месяц?"
+        },
+        {
+          "DialogueFrom": "married_memory_oneweek",
+          "DialogueText": "Ясно. Сдается мне, что на ферме все завяло, раз вас там не было...",
+          "AudioPath": "assets/ru-RU/Caroline/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:married_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "Ясно. Сдается мне, что на ферме все завяло, раз вас там не было..."
+        },
+        {
+          "DialogueFrom": "eventSeen_719926",
+          "DialogueText": "Ну как, правда расслабляет? Еще бы...",
+          "AudioPath": "assets/ru-RU/Caroline/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:eventSeen_719926",
+          "PageIndex": 0,
+          "DisplayPattern": "Ну как, правда расслабляет? Еще бы..."
+        },
+        {
+          "DialogueFrom": "houseUpgrade_1",
+          "DialogueText": "Слышала, у тебя новая кухня! Думаешь, теперь будешь много готовить?",
+          "AudioPath": "assets/ru-RU/Caroline/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:houseUpgrade_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Слышала, у тебя новая кухня! Думаешь, теперь будешь много готовить?"
+        },
+        {
+          "DialogueFrom": "houseUpgrade_1",
+          "DialogueText": "Это крайне полезный навык. У тебя на ферме столько всего свежего растет — блюда получатся просто замечательные!",
+          "AudioPath": "assets/ru-RU/Caroline/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:houseUpgrade_1",
+          "PageIndex": 1,
+          "DisplayPattern": "Это крайне полезный навык. У тебя на ферме столько всего свежего растет — блюда получатся просто замечательные!"
+        },
+        {
+          "DialogueFrom": "houseUpgrade_1",
+          "DialogueText": "Ясно. Что ж, не забывай хотя бы правильно питаться... организму нужна полезная пища.",
+          "AudioPath": "assets/ru-RU/Caroline/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:houseUpgrade_1",
+          "PageIndex": 2,
+          "DisplayPattern": "Ясно. Что ж, не забывай хотя бы правильно питаться... организму нужна полезная пища."
+        },
+        {
+          "DialogueFrom": "achievement_15",
+          "DialogueText": "Ветер приносит с фермы такие приятные ароматы, сдается мне, ты готовишь что-то очень вкусное! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Caroline/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:achievement_15",
+          "PageIndex": 0,
+          "DisplayPattern": "Ветер приносит с фермы такие приятные ароматы, сдается мне, ты готовишь что-то очень вкусное!"
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "Вилли раздал нам всем по кусочку его вяленой рыбы. Я до сих пор его жую.",
+          "AudioPath": "assets/ru-RU/Caroline/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "Вилли раздал нам всем по кусочку его вяленой рыбы. Я до сих пор его жую."
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "Сегодня я буду очень крепко спать! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Caroline/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "Сегодня я буду очень крепко спать!"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Тут такая теплая вода, не то, что у нас в Долине. Это так приятно!",
+          "AudioPath": "assets/ru-RU/Caroline/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "Тут такая теплая вода, не то, что у нас в Долине. Это так приятно!"
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "Кэролайн пытается вздремнуть.",
+          "AudioPath": "assets/ru-RU/Caroline/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "Кэролайн пытается вздремнуть."
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "Я попросила Гаса меня удивить, и он намешал мне ледяной зеленый чай с манговой стружкой. Это так мило! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Caroline/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "Я попросила Гаса меня удивить, и он намешал мне ледяной зеленый чай с манговой стружкой. Это так мило!"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Привет, {Farmer_Name}. Ты тут на отдыхе или по работе?",
+          "AudioPath": "assets/ru-RU/Caroline/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет, . Ты тут на отдыхе или по работе?"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Вот бы Эбби не сидела так много у себя в комнате.",
+          "AudioPath": "assets/ru-RU/Caroline/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Вот бы Эбби не сидела так много у себя в комнате."
+        },
+        {
+          "DialogueFrom": "Mon_inlaw_Abigail",
+          "DialogueText": "Привет, {Farmer_Name}. Нравится тебе жизнь в браке? Надеюсь, что да!",
+          "AudioPath": "assets/ru-RU/Caroline/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Mon_inlaw_Abigail",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет, . Нравится тебе жизнь в браке? Надеюсь, что да!"
+        },
+        {
+          "DialogueFrom": "Mon8",
+          "DialogueText": "# {Portrait:Happy} Caroline23",
+          "AudioPath": "assets/ru-RU/Caroline/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Mon8",
+          "PageIndex": 0,
+          "DisplayPattern": "# Caroline23"
+        },
+        {
+          "DialogueFrom": "Mon8",
+          "DialogueText": "Когда мы только переехали в город Пеликан, я тайком ходила в башню к волшебнику. Только не говори Пьеру, у него проблемы с ревностью.",
+          "AudioPath": "assets/ru-RU/Caroline/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Mon8",
+          "PageIndex": 1,
+          "DisplayPattern": "Когда мы только переехали в город Пеликан, я тайком ходила в башню к волшебнику. Только не говори Пьеру, у него проблемы с ревностью."
+        },
+        {
+          "DialogueFrom": "Mon8",
+          "DialogueText": "Абигейл родилась примерно через год после того, как мы переехали в этот город. Интересно, будет ли она когда-нибудь жить где-нибудь вне долины?",
+          "AudioPath": "assets/ru-RU/Caroline/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Mon8",
+          "PageIndex": 2,
+          "DisplayPattern": "Абигейл родилась примерно через год после того, как мы переехали в этот город. Интересно, будет ли она когда-нибудь жить где-нибудь вне долины?"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Я видела в лесу дикий хрен.",
+          "AudioPath": "assets/ru-RU/Caroline/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Я видела в лесу дикий хрен."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Собирательство — это увлекательный способ заработать. А еще то, что ты собираешь, можно дарить или есть.",
+          "AudioPath": "assets/ru-RU/Caroline/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Собирательство — это увлекательный способ заработать. А еще то, что ты собираешь, можно дарить или есть."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Привет. У тебя все нужное есть на ферме?",
+          "AudioPath": "assets/ru-RU/Caroline/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет. У тебя все нужное есть на ферме?"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Если нет, то мы можем помочь.",
+          "AudioPath": "assets/ru-RU/Caroline/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Если нет, то мы можем помочь."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Мы продаем разные полезные вещи.",
+          "AudioPath": "assets/ru-RU/Caroline/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "Мы продаем разные полезные вещи."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "# {Portrait:Happy} Caroline1",
+          "AudioPath": "assets/ru-RU/Caroline/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "# Caroline1"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Хм-м-м... Может, упросить Пьера приготовить сегодня ужин.",
+          "AudioPath": "assets/ru-RU/Caroline/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Хм-м-м... Может, упросить Пьера приготовить сегодня ужин."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Хм-м-м... Что бы такого приготовить сегодня на ужин?",
+          "AudioPath": "assets/ru-RU/Caroline/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "Хм-м-м... Что бы такого приготовить сегодня на ужин?"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Может, просто возьму что-нибудь на вынос в салуне.",
+          "AudioPath": "assets/ru-RU/Caroline/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Thu",
+          "PageIndex": 3,
+          "DisplayPattern": "Может, просто возьму что-нибудь на вынос в салуне."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Хороший сегодня денек.",
+          "AudioPath": "assets/ru-RU/Caroline/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Хороший сегодня денек."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "В такие дни я люблю помогать Эвелин в городском саду.",
+          "AudioPath": "assets/ru-RU/Caroline/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "В такие дни я люблю помогать Эвелин в городском саду."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Она крепкая для своего возраста, но мне кажется, что она ценит любую помощь.",
+          "AudioPath": "assets/ru-RU/Caroline/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "Она крепкая для своего возраста, но мне кажется, что она ценит любую помощь."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Мне кажется, или у Абигейл какая-то нездоровая тяга ко всему мрачному и безысходному?",
+          "AudioPath": "assets/ru-RU/Caroline/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Мне кажется, или у Абигейл какая-то нездоровая тяга ко всему мрачному и безысходному?"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Может, я слишком стара, чтобы понять такое.",
+          "AudioPath": "assets/ru-RU/Caroline/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Может, я слишком стара, чтобы понять такое."
+        },
+        {
+          "DialogueFrom": "Sat_inlaw_Abigail",
+          "DialogueText": "С тех пор, как Абигейл съехала от нас, ужин проходит гораздо тише.",
+          "AudioPath": "assets/ru-RU/Caroline/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Sat_inlaw_Abigail",
+          "PageIndex": 0,
+          "DisplayPattern": "С тех пор, как Абигейл съехала от нас, ужин проходит гораздо тише."
+        },
+        {
+          "DialogueFrom": "Sat_inlaw_Abigail",
+          "DialogueText": "Нет, вовсе не потому, что она жевала с открытым ртом! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Caroline/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Sat_inlaw_Abigail",
+          "PageIndex": 1,
+          "DisplayPattern": "Нет, вовсе не потому, что она жевала с открытым ртом!"
+        },
+        {
+          "DialogueFrom": "Sat2",
+          "DialogueText": "У Эбби всегда был странный интерес ко всему оккультному. Не знаю, от кого это у нее...",
+          "AudioPath": "assets/ru-RU/Caroline/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Sat2",
+          "PageIndex": 0,
+          "DisplayPattern": "У Эбби всегда был странный интерес ко всему оккультному. Не знаю, от кого это у нее..."
+        },
+        {
+          "DialogueFrom": "Sat4",
+          "DialogueText": "У Эбби всегда был странный интерес ко всему оккультному. Уверена, это у нее просто период такой...",
+          "AudioPath": "assets/ru-RU/Caroline/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Sat4",
+          "PageIndex": 0,
+          "DisplayPattern": "У Эбби всегда был странный интерес ко всему оккультному. Уверена, это у нее просто период такой..."
+        },
+        {
+          "DialogueFrom": "Sat6",
+          "DialogueText": "# {Portrait:Happy} Caroline12",
+          "AudioPath": "assets/ru-RU/Caroline/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Sat6",
+          "PageIndex": 0,
+          "DisplayPattern": "# Caroline12"
+        },
+        {
+          "DialogueFrom": "Sat6",
+          "DialogueText": "Когда мы только сюда переехали, я долго осваивалась... Я не была готова к домашней жизни.",
+          "AudioPath": "assets/ru-RU/Caroline/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Sat6",
+          "PageIndex": 1,
+          "DisplayPattern": "Когда мы только сюда переехали, я долго осваивалась... Я не была готова к домашней жизни."
+        },
+        {
+          "DialogueFrom": "Sat6",
+          "DialogueText": "Пьер несколько консервативен в своих взглядах... Но он хороший. У него большие амбиции, но семья для него превыше всего",
+          "AudioPath": "assets/ru-RU/Caroline/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Sat6",
+          "PageIndex": 2,
+          "DisplayPattern": "Пьер несколько консервативен в своих взглядах... Но он хороший. У него большие амбиции, но семья для него превыше всего"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Сегодня я буду расслабляться и мыслить позитивно.",
+          "AudioPath": "assets/ru-RU/Caroline/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Сегодня я буду расслабляться и мыслить позитивно."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Ты когда-нибудь устраиваешь себе выходные?",
+          "AudioPath": "assets/ru-RU/Caroline/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Ты когда-нибудь устраиваешь себе выходные?"
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "Долина Стардью — славное место, но я хотела бы познакомиться с новыми людьми.",
+          "AudioPath": "assets/ru-RU/Caroline/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "Долина Стардью — славное место, но я хотела бы познакомиться с новыми людьми."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "Я рада, что мы подружились.",
+          "AudioPath": "assets/ru-RU/Caroline/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:Wed6",
+          "PageIndex": 1,
+          "DisplayPattern": "Я рада, что мы подружились."
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "По средам наш магазин закрыт.",
+          "AudioPath": "assets/ru-RU/Caroline/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "По средам наш магазин закрыт."
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "Имей это в виду, если тебе что-то будет нужно.",
+          "AudioPath": "assets/ru-RU/Caroline/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:summer_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "Имей это в виду, если тебе что-то будет нужно."
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "В последнее время я вижу в лесу много диких плодов.",
+          "AudioPath": "assets/ru-RU/Caroline/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:summer_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "В последнее время я вижу в лесу много диких плодов."
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "Собирательство — это увлекательный способ заработать. А еще то, что ты собираешь, можно дарить или есть.",
+          "AudioPath": "assets/ru-RU/Caroline/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:summer_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Собирательство — это увлекательный способ заработать. А еще то, что ты собираешь, можно дарить или есть."
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "Привет. У тебя все нужное есть на ферме?",
+          "AudioPath": "assets/ru-RU/Caroline/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:summer_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет. У тебя все нужное есть на ферме?"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "Если нет, то мы можем помочь.",
+          "AudioPath": "assets/ru-RU/Caroline/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:summer_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Если нет, то мы можем помочь."
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "Мы продаем разные полезные вещи.",
+          "AudioPath": "assets/ru-RU/Caroline/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:summer_Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "Мы продаем разные полезные вещи."
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "Мне кажется, или Абигейл бледновата?",
+          "AudioPath": "assets/ru-RU/Caroline/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:summer_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Мне кажется, или Абигейл бледновата?"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "Может быть, я просто слишком много за нее переживаю.",
+          "AudioPath": "assets/ru-RU/Caroline/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:summer_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Может быть, я просто слишком много за нее переживаю."
+        },
+        {
+          "DialogueFrom": "summer_Sat_inlaw_Abigail",
+          "DialogueText": "Как там у Абигейл со здоровьем? Она всегда была бледной девочкой. Надеюсь, она станет хоть немного румянее от жизни на ферме.",
+          "AudioPath": "assets/ru-RU/Caroline/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:summer_Sat_inlaw_Abigail",
+          "PageIndex": 0,
+          "DisplayPattern": "Как там у Абигейл со здоровьем? Она всегда была бледной девочкой. Надеюсь, она станет хоть немного румянее от жизни на ферме."
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "Сегодня я буду расслабляться и думать позитивно.",
+          "AudioPath": "assets/ru-RU/Caroline/69.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:summer_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Сегодня я буду расслабляться и думать позитивно."
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "Ты когда-нибудь устраиваешь себе выходные?",
+          "AudioPath": "assets/ru-RU/Caroline/70.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:summer_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Ты когда-нибудь устраиваешь себе выходные?"
+        },
+        {
+          "DialogueFrom": "summer_Wed6",
+          "DialogueText": "Кажется, что чем ты старше, тем быстрее летит время... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Caroline/71.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:summer_Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "Кажется, что чем ты старше, тем быстрее летит время..."
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "Осень — любимое время года Эбби, поэтому я надеюсь, что она будет почаще выходить из комнаты.",
+          "AudioPath": "assets/ru-RU/Caroline/72.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:fall_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Осень — любимое время года Эбби, поэтому я надеюсь, что она будет почаще выходить из комнаты."
+        },
+        {
+          "DialogueFrom": "fall_Mon_inlaw_Abigail",
+          "DialogueText": "Эбби тут занималась онлайн-курсами, но я не думаю, что она особенно этого хотела...",
+          "AudioPath": "assets/ru-RU/Caroline/73.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:fall_Mon_inlaw_Abigail",
+          "PageIndex": 0,
+          "DisplayPattern": "Эбби тут занималась онлайн-курсами, но я не думаю, что она особенно этого хотела..."
+        },
+        {
+          "DialogueFrom": "fall_Mon_inlaw_Abigail",
+          "DialogueText": "Она — свободная душа, прямо как я до встречи с Пьером. Наверное, ей сейчас на твоей ферме живется лучше всего.",
+          "AudioPath": "assets/ru-RU/Caroline/74.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:fall_Mon_inlaw_Abigail",
+          "PageIndex": 1,
+          "DisplayPattern": "Она — свободная душа, прямо как я до встречи с Пьером. Наверное, ей сейчас на твоей ферме живется лучше всего."
+        },
+        {
+          "DialogueFrom": "fall_Tue",
+          "DialogueText": "Я видела в лесу съедобные грибы.",
+          "AudioPath": "assets/ru-RU/Caroline/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:fall_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Я видела в лесу съедобные грибы."
+        },
+        {
+          "DialogueFrom": "fall_Tue",
+          "DialogueText": "Собирательство — это увлекательный способ заработать. А еще то, что ты собираешь, можно дарить или есть.",
+          "AudioPath": "assets/ru-RU/Caroline/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:fall_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Собирательство — это увлекательный способ заработать. А еще то, что ты собираешь, можно дарить или есть."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "Мне кажется, или Абигейл слишком много играет в видеоигры?",
+          "AudioPath": "assets/ru-RU/Caroline/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:fall_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Мне кажется, или Абигейл слишком много играет в видеоигры?"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "Может быть, я немного старомодна.",
+          "AudioPath": "assets/ru-RU/Caroline/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:fall_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Может быть, я немного старомодна."
+        },
+        {
+          "DialogueFrom": "fall_Wed6",
+          "DialogueText": "Знаешь, я когда-то сама хотела стать фермером. Точнее, хозяйкой ранчо.",
+          "AudioPath": "assets/ru-RU/Caroline/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:fall_Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "Знаешь, я когда-то сама хотела стать фермером. Точнее, хозяйкой ранчо."
+        },
+        {
+          "DialogueFrom": "fall_Wed6",
+          "DialogueText": "Я всегда любила вестерны, когда была маленькой.",
+          "AudioPath": "assets/ru-RU/Caroline/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:fall_Wed6",
+          "PageIndex": 1,
+          "DisplayPattern": "Я всегда любила вестерны, когда была маленькой."
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "Зимой бывает нелегко, но если тебе повезет, можешь накопать кореньев.",
+          "AudioPath": "assets/ru-RU/Caroline/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:winter_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Зимой бывает нелегко, но если тебе повезет, можешь накопать кореньев."
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "Собирательство — это увлекательный способ заработать. А еще то, что ты собираешь, можно дарить или есть.",
+          "AudioPath": "assets/ru-RU/Caroline/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:winter_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Собирательство — это увлекательный способ заработать. А еще то, что ты собираешь, можно дарить или есть."
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "Пускай сейчас и холодно, я все равно иногда проверяю городские клумбы.",
+          "AudioPath": "assets/ru-RU/Caroline/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:winter_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Пускай сейчас и холодно, я все равно иногда проверяю городские клумбы."
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "Просто хочу убедиться, что они не слишком повреждены перед весной.",
+          "AudioPath": "assets/ru-RU/Caroline/84.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:winter_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "Просто хочу убедиться, что они не слишком повреждены перед весной."
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "Тебе не кажется, что Эбби больше идет ее естественный цвет волос?",
+          "AudioPath": "assets/ru-RU/Caroline/85.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:winter_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Тебе не кажется, что Эбби больше идет ее естественный цвет волос?"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "Раньше у нее были светло-каштановые волосы.",
+          "AudioPath": "assets/ru-RU/Caroline/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:winter_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Раньше у нее были светло-каштановые волосы."
+        },
+        {
+          "DialogueFrom": "winter_Wed6",
+          "DialogueText": "Ты радуешься наступлению нового года?",
+          "AudioPath": "assets/ru-RU/Caroline/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:winter_Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "Ты радуешься наступлению нового года?"
+        },
+        {
+          "DialogueFrom": "winter_Wed6",
+          "DialogueText": "Предсказываю тебе огромный успех на ферме. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Caroline/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Caroline:winter_Wed6",
+          "PageIndex": 1,
+          "DisplayPattern": "Предсказываю тебе огромный успех на ферме."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "Сегодня мой сад просто счастлив. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Caroline/89.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Caroline",
+          "PageIndex": 0,
+          "DisplayPattern": "Сегодня мой сад просто счастлив."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "... Да и счет за воду в этом месяце будет поменьше.",
+          "AudioPath": "assets/ru-RU/Caroline/90.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Caroline",
+          "PageIndex": 1,
+          "DisplayPattern": "... Да и счет за воду в этом месяце будет поменьше."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s0",
+          "DialogueText": "Oh, joy",
+          "AudioPath": "assets/ru-RU/Caroline/91.ogg",
+          "TranslationKey": "Events/Town:6184644:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, joy"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/150938:s0",
+          "DialogueText": "Relaxed",
+          "AudioPath": "assets/ru-RU/Caroline/92.ogg",
+          "TranslationKey": "Events/HaleyHouse:150938:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Relaxed"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/150938:s1",
+          "DialogueText": "Looks like the gemstones were put to good use...",
+          "AudioPath": "assets/ru-RU/Caroline/93.ogg",
+          "TranslationKey": "Events/HaleyHouse:150938:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Looks like the gemstones were put to good use..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/17:s0",
+          "DialogueText": "Hey, cut it out! We're letting you live here free of charge until you finish school. It seems like you don't appreciate that at all! {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Caroline/94.ogg",
+          "TranslationKey": "Events/SeedShop:17:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, cut it out! We're letting you live here free of charge until you finish school. It seems like you don't appreciate that at all!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/17:s1",
+          "DialogueText": "...You're right. I'm sorry. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Caroline/95.ogg",
+          "TranslationKey": "Events/SeedShop:17:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "...You're right. I'm sorry."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/58:s0",
+          "DialogueText": "Alright! That concludes our aerobics class!",
+          "AudioPath": "assets/ru-RU/Caroline/96.ogg",
+          "TranslationKey": "Events/SeedShop:58:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Alright! That concludes our aerobics class!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/58:s1",
+          "DialogueText": "Are you breaking a sweat? {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Caroline/97.ogg",
+          "TranslationKey": "Events/SeedShop:58:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Are you breaking a sweat?"
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s0",
+          "DialogueText": "Pierre!",
+          "AudioPath": "assets/ru-RU/Caroline/98.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Pierre!"
+        },
+        {
+          "DialogueFrom": "Event:Sunroom/719926:s0",
+          "DialogueText": "Oh, hi! Good morning, {Farmer_Name}. I'm glad you came in...",
+          "AudioPath": "assets/ru-RU/Caroline/99.ogg",
+          "TranslationKey": "Events/Sunroom:719926:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, hi! Good morning, . I'm glad you came in..."
+        },
+        {
+          "DialogueFrom": "Event:Sunroom/719926:s1",
+          "DialogueText": "I've been meaning to show you this... it's my private sunroom.",
+          "AudioPath": "assets/ru-RU/Caroline/100.ogg",
+          "TranslationKey": "Events/Sunroom:719926:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been meaning to show you this... it's my private sunroom."
+        },
+        {
+          "DialogueFrom": "Event:Sunroom/719926:s2",
+          "DialogueText": "So, what do you think?",
+          "AudioPath": "assets/ru-RU/Caroline/101.ogg",
+          "TranslationKey": "Events/Sunroom:719926:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "So, what do you think?"
+        },
+        {
+          "DialogueFrom": "Event:Sunroom/719926:s3",
+          "DialogueText": "Thank you! I've worked very hard to make it this way... {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Caroline/102.ogg",
+          "TranslationKey": "Events/Sunroom:719926:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Thank you! I've worked very hard to make it this way..."
+        },
+        {
+          "DialogueFrom": "Event:Sunroom/719926:s4",
+          "DialogueText": "Yes... when I step in here, I feel calm and relaxed right away. It's really therapeutic!",
+          "AudioPath": "assets/ru-RU/Caroline/103.ogg",
+          "TranslationKey": "Events/Sunroom:719926:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Yes... when I step in here, I feel calm and relaxed right away. It's really therapeutic!"
+        },
+        {
+          "DialogueFrom": "Event:Sunroom/719926:s5",
+          "DialogueText": "Oh? I find the warmth soothing, myself. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Caroline/104.ogg",
+          "TranslationKey": "Events/Sunroom:719926:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh? I find the warmth soothing, myself."
+        },
+        {
+          "DialogueFrom": "Event:Sunroom/719926:s6",
+          "DialogueText": "It feels better if you keep still.",
+          "AudioPath": "assets/ru-RU/Caroline/105.ogg",
+          "TranslationKey": "Events/Sunroom:719926:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "It feels better if you keep still."
+        },
+        {
+          "DialogueFrom": "Event:Sunroom/719926:s7",
+          "DialogueText": "Oh, but you're a professional... For me, it's just a hobby.",
+          "AudioPath": "assets/ru-RU/Caroline/106.ogg",
+          "TranslationKey": "Events/Sunroom:719926:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, but you're a professional... For me, it's just a hobby."
+        },
+        {
+          "DialogueFrom": "Event:Sunroom/719926:s8",
+          "DialogueText": "You see, this is my sanctuary... a place where I can always find peace...",
+          "AudioPath": "assets/ru-RU/Caroline/107.ogg",
+          "TranslationKey": "Events/Sunroom:719926:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "You see, this is my sanctuary... a place where I can always find peace..."
+        },
+        {
+          "DialogueFrom": "Event:Sunroom/719926:s9",
+          "DialogueText": "And it's a perfect place to drink my home-grown tea! Here, let's have a cup...",
+          "AudioPath": "assets/ru-RU/Caroline/108.ogg",
+          "TranslationKey": "Events/Sunroom:719926:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "And it's a perfect place to drink my home-grown tea! Here, let's have a cup..."
+        },
+        {
+          "DialogueFrom": "Event:Sunroom/719926:s10",
+          "DialogueText": "Sure, no problem...",
+          "AudioPath": "assets/ru-RU/Caroline/109.ogg",
+          "TranslationKey": "Events/Sunroom:719926:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Sure, no problem..."
+        },
+        {
+          "DialogueFrom": "Event:Sunroom/719926:s11",
+          "DialogueText": "Delicious",
+          "AudioPath": "assets/ru-RU/Caroline/110.ogg",
+          "TranslationKey": "Events/Sunroom:719926:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Delicious"
+        },
+        {
+          "DialogueFrom": "Event:Sunroom/719926:s12",
+          "DialogueText": "I love to come in here for a fresh cup of tea every day.",
+          "AudioPath": "assets/ru-RU/Caroline/111.ogg",
+          "TranslationKey": "Events/Sunroom:719926:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "I love to come in here for a fresh cup of tea every day."
+        },
+        {
+          "DialogueFrom": "Event:Sunroom/719926:s13",
+          "DialogueText": "It's my little ritual...",
+          "AudioPath": "assets/ru-RU/Caroline/112.ogg",
+          "TranslationKey": "Events/Sunroom:719926:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "It's my little ritual..."
+        },
+        {
+          "DialogueFrom": "Event:Sunroom/719926:s14",
+          "DialogueText": "Uh... let me try to explain... {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Caroline/113.ogg",
+          "TranslationKey": "Events/Sunroom:719926:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "Uh... let me try to explain..."
+        },
+        {
+          "DialogueFrom": "Event:Sunroom/719926:s15",
+          "DialogueText": "I hope that makes sense...",
+          "AudioPath": "assets/ru-RU/Caroline/114.ogg",
+          "TranslationKey": "Events/Sunroom:719926:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "I hope that makes sense..."
+        },
+        {
+          "DialogueFrom": "Event:Sunroom/719926:s16",
+          "DialogueText": "Life can be pretty hectic, so having a hobby like this is nice.",
+          "AudioPath": "assets/ru-RU/Caroline/115.ogg",
+          "TranslationKey": "Events/Sunroom:719926:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "Life can be pretty hectic, so having a hobby like this is nice."
+        },
+        {
+          "DialogueFrom": "Event:Sunroom/719926:s17",
+          "DialogueText": "Feel free to come here and relax any time you want, okay?",
+          "AudioPath": "assets/ru-RU/Caroline/116.ogg",
+          "TranslationKey": "Events/Sunroom:719926:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "Feel free to come here and relax any time you want, okay?"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Caroline",
+          "DialogueText": "Пьер очень серьезно подходит к оформлению лотка. Он за многие недели до выставки начал подбирать лучшие продукты.",
+          "AudioPath": "assets/ru-RU/Caroline/117.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Caroline",
+          "PageIndex": 0,
+          "DisplayPattern": "Пьер очень серьезно подходит к оформлению лотка. Он за многие недели до выставки начал подбирать лучшие продукты."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Caroline",
+          "DialogueText": "Ну, и тебе удачи, если решишь участвовать!",
+          "AudioPath": "assets/ru-RU/Caroline/118.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Caroline",
+          "PageIndex": 1,
+          "DisplayPattern": "Ну, и тебе удачи, если решишь участвовать!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Caroline_y2",
+          "DialogueText": "Кое-что с нашего лотка — из маленькой теплицы. Мы с любовью растили это все весь год! {Portrait:Neutral}",
+          "AudioPath": "assets/ru-RU/Caroline/119.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Caroline_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Кое-что с нашего лотка — из маленькой теплицы. Мы с любовью растили это все весь год!"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Caroline",
+          "DialogueText": "Я очень пугливая. Пускай в лабиринт идет молодежь.",
+          "AudioPath": "assets/ru-RU/Caroline/120.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Caroline",
+          "PageIndex": 0,
+          "DisplayPattern": "Я очень пугливая. Пускай в лабиринт идет молодежь."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Caroline_y2",
+          "DialogueText": "Нужно мужу что-нибудь наложить. Он весь вечер за прилавком стоит. {Portrait:Neutral}",
+          "AudioPath": "assets/ru-RU/Caroline/121.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Caroline_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Нужно мужу что-нибудь наложить. Он весь вечер за прилавком стоит."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Caroline",
+          "DialogueText": "Эбби с самого детства любит охоту за яйцами.",
+          "AudioPath": "assets/ru-RU/Caroline/122.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Caroline",
+          "PageIndex": 0,
+          "DisplayPattern": "Эбби с самого детства любит охоту за яйцами."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Caroline_y2",
+          "DialogueText": "Эти фестивали, конечно, скука та еще, но зато тут можно пообщаться с соседями.",
+          "AudioPath": "assets/ru-RU/Caroline/123.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Caroline_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Эти фестивали, конечно, скука та еще, но зато тут можно пообщаться с соседями."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Caroline",
+          "DialogueText": "Лучше бы Пьер провел этот праздник с семьей... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Caroline/124.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Caroline",
+          "PageIndex": 0,
+          "DisplayPattern": "Лучше бы Пьер провел этот праздник с семьей..."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Caroline_y2",
+          "DialogueText": "Я бы пригласила мужа потанцевать, но он совсем не умеет. {Portrait:Neutral}",
+          "AudioPath": "assets/ru-RU/Caroline/125.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Caroline_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Я бы пригласила мужа потанцевать, но он совсем не умеет."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Caroline",
+          "DialogueText": "Я положила в общий котел свежие овощи с нашего огорода.",
+          "AudioPath": "assets/ru-RU/Caroline/126.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Caroline",
+          "PageIndex": 0,
+          "DisplayPattern": "Я положила в общий котел свежие овощи с нашего огорода."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Caroline_y2",
+          "DialogueText": "Гас приготовил из моей картошки несколько блюд для буфета. {Portrait:Neutral}",
+          "AudioPath": "assets/ru-RU/Caroline/127.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Caroline_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Гас приготовил из моей картошки несколько блюд для буфета."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Caroline_y2",
+          "DialogueText": "А какой ингредиент в супе твой? {Portrait:Neutral}",
+          "AudioPath": "assets/ru-RU/Caroline/128.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Caroline_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "А какой ингредиент в супе твой?"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Caroline",
+          "DialogueText": "Эти свечи такие романтичные, правда?",
+          "AudioPath": "assets/ru-RU/Caroline/129.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Caroline",
+          "PageIndex": 0,
+          "DisplayPattern": "Эти свечи такие романтичные, правда?"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Caroline_y2",
+          "DialogueText": "Я рада, что медузки решили навестить нас во время своего путешествия на юг. Это волшебный миг, который можно разделить вместе со всем нашим сообществом. {Portrait:Neutral}",
+          "AudioPath": "assets/ru-RU/Caroline/130.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Caroline_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Я рада, что медузки решили навестить нас во время своего путешествия на юг. Это волшебный миг, который можно разделить вместе со всем нашим сообществом."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Caroline",
+          "DialogueText": "У-ух-х-х... Слишком много я выпила гоголя-моголя. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Caroline/131.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Caroline",
+          "PageIndex": 0,
+          "DisplayPattern": "У-ух-х-х... Слишком много я выпила гоголя-моголя."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Caroline_y2",
+          "DialogueText": "Разве она не красавица? {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Caroline/132.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Caroline_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Разве она не красавица?"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Caroline_y2",
+          "DialogueText": "Мы с Марни и Джоди все утро ее наряжали. Славная традиция!",
+          "AudioPath": "assets/ru-RU/Caroline/133.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Caroline_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Мы с Марни и Джоди все утро ее наряжали. Славная традиция!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Caroline",
+          "DialogueText": "Как твои дела этой зимой, {Farmer_Name}? {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Caroline/134.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Caroline",
+          "PageIndex": 0,
+          "DisplayPattern": "Как твои дела этой зимой, ?"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Caroline_y2",
+          "DialogueText": "Привет, {Farmer_Name}. Ты вообще отдыхаешь от своих фермерских обязанностей этой зимой? {Portrait:Neutral}",
+          "AudioPath": "assets/ru-RU/Caroline/135.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Caroline_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет, . Ты вообще отдыхаешь от своих фермерских обязанностей этой зимой?"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Caroline:s0",
+          "DialogueText": "Ой, {Farmer_Name}... ты меня балуешь! Мне очень нравится!",
+          "AudioPath": "assets/ru-RU/Caroline/136.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Caroline:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ой, ... ты меня балуешь! Мне очень нравится!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Caroline:s1",
+          "DialogueText": "Это мне? Какой нужный подарок! Спасибо!",
+          "AudioPath": "assets/ru-RU/Caroline/137.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Caroline:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Это мне? Какой нужный подарок! Спасибо!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Caroline:s2",
+          "DialogueText": "Вот как... Я, э-э... обязательно найду этому хорошее применение...",
+          "AudioPath": "assets/ru-RU/Caroline/138.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Caroline:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Вот как... Я, э-э... обязательно найду этому хорошее применение..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Caroline:s3",
+          "DialogueText": "Э-э... наверное, я сделаю из этого компост...",
+          "AudioPath": "assets/ru-RU/Caroline/139.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Caroline:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Э-э... наверное, я сделаю из этого компост..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Caroline:s4",
+          "DialogueText": "Ой, как мило. Спасибо.",
+          "AudioPath": "assets/ru-RU/Caroline/140.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Caroline:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Ой, как мило. Спасибо."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Caroline_QualityLow",
+          "DialogueText": "Ой, {Farmer_Name}... Как неловко-то вышло. Вчера тот товар, что мы у тебя купили... Кажется, {2}... В общем, он случайно оказался в ведре с компостом. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Caroline/141.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Caroline_QualityLow",
+          "PageIndex": 0,
+          "DisplayPattern": "Ой, ... Как неловко-то вышло. Вчера тот товар, что мы у тебя купили... Кажется, {2}... В общем, он случайно оказался в ведре с компостом."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Caroline_QualityLow",
+          "DialogueText": "Теперь из него ужасно воняет. Где ты вообще такое находишь?",
+          "AudioPath": "assets/ru-RU/Caroline/142.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Caroline_QualityLow",
+          "PageIndex": 1,
+          "DisplayPattern": "Теперь из него ужасно воняет. Где ты вообще такое находишь?"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Caroline_QualityHigh",
+          "DialogueText": "Ой, {Farmer_Name}... Как неловко-то вышло. Вчера тот товар, что мы у тебя купили... Кажется, {2}... В общем, он случайно оказался в ведре с компостом. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Caroline/143.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Caroline_QualityHigh",
+          "PageIndex": 0,
+          "DisplayPattern": "Ой, ... Как неловко-то вышло. Вчера тот товар, что мы у тебя купили... Кажется, {2}... В общем, он случайно оказался в ведре с компостом."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Caroline_QualityHigh",
+          "DialogueText": "Ну, нет худа без добра — червячкам очень понравилось! Никогда не видела их такими счастливыми.",
+          "AudioPath": "assets/ru-RU/Caroline/144.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Caroline_QualityHigh",
+          "PageIndex": 1,
+          "DisplayPattern": "Ну, нет худа без добра — червячкам очень понравилось! Никогда не видела их такими счастливыми."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Caroline_summer_movie_0_BeforeMovie",
+          "DialogueText": "Мне всегда нравились фильмы про Дикий Запад. Не терпится посмотреть этот фильм!",
+          "AudioPath": "assets/ru-RU/Caroline/145.ogg",
+          "TranslationKey": "Strings/MovieReactions:Caroline_summer_movie_0_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Мне всегда нравились фильмы про Дикий Запад. Не терпится посмотреть этот фильм!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Caroline_summer_movie_0_AfterMovie",
+          "DialogueText": "Прекрасный фильм! Все как настоящее: костюмы и все остальное.",
+          "AudioPath": "assets/ru-RU/Caroline/146.ogg",
+          "TranslationKey": "Strings/MovieReactions:Caroline_summer_movie_0_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Прекрасный фильм! Все как настоящее: костюмы и все остальное."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Caroline_love_BeforeMovie",
+          "DialogueText": "Постер такой милый, я все ждала, чтобы меня кто-нибудь на него пригласил!",
+          "AudioPath": "assets/ru-RU/Caroline/147.ogg",
+          "TranslationKey": "Strings/MovieReactions:Caroline_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Постер такой милый, я все ждала, чтобы меня кто-нибудь на него пригласил!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Caroline_love_DuringMovie",
+          "DialogueText": "Надеюсь, с бедняжкой все будет хорошо... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Caroline/148.ogg",
+          "TranslationKey": "Strings/MovieReactions:Caroline_love_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Надеюсь, с бедняжкой все будет хорошо..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Caroline_love_AfterMovie",
+          "DialogueText": "Такой милый фильм. Спасибо за приглашение!",
+          "AudioPath": "assets/ru-RU/Caroline/149.ogg",
+          "TranslationKey": "Strings/MovieReactions:Caroline_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Такой милый фильм. Спасибо за приглашение!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Caroline_like_BeforeMovie",
+          "DialogueText": "«{0}»... Понятия не имею, о чем оно! Надеюсь, там не будет жестоких сцен.",
+          "AudioPath": "assets/ru-RU/Caroline/150.ogg",
+          "TranslationKey": "Strings/MovieReactions:Caroline_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "«{0}»... Понятия не имею, о чем оно! Надеюсь, там не будет жестоких сцен."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Caroline_like_AfterMovie",
+          "DialogueText": "Неплохой фильм! Когда приеду домой, нужно спросить Абигейл, смотрела ли она его. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Caroline/151.ogg",
+          "TranslationKey": "Strings/MovieReactions:Caroline_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Неплохой фильм! Когда приеду домой, нужно спросить Абигейл, смотрела ли она его."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Caroline_dislike_BeforeMovie",
+          "DialogueText": "Мне кажется, этот фильм скорее разочарует меня... Но я все же дам ему шанс.",
+          "AudioPath": "assets/ru-RU/Caroline/152.ogg",
+          "TranslationKey": "Strings/MovieReactions:Caroline_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Мне кажется, этот фильм скорее разочарует меня... Но я все же дам ему шанс."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Caroline_dislike_AfterMovie",
+          "DialogueText": "Какой глупый фильм... держу пари, Пьеру бы он понравился. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Caroline/153.ogg",
+          "TranslationKey": "Strings/MovieReactions:Caroline_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Какой глупый фильм... держу пари, Пьеру бы он понравился."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Caroline",
+          "DialogueText": "Просто прекрасная погода. Не могу сказать, где заканчивается моя кожа и начинается воздух. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Caroline/154.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Caroline",
+          "PageIndex": 0,
+          "DisplayPattern": "Просто прекрасная погода. Не могу сказать, где заканчивается моя кожа и начинается воздух."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Caroline",
+          "DialogueText": "Здравствуй. Я надеюсь, ты найдешь то, что тебе по душе.",
+          "AudioPath": "assets/ru-RU/Caroline/155.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Caroline",
+          "PageIndex": 0,
+          "DisplayPattern": "Здравствуй. Я надеюсь, ты найдешь то, что тебе по душе."
+        }
+      ]
+    }
+  ]
+}

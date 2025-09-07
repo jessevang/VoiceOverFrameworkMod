@@ -143,7 +143,7 @@ namespace VoiceOverFrameworkMod
                                 var entriesByTk = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);           // V2 TranslationKey (with optional :pN)
                                 var dialogueFromCounters = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
 
-                                // NEW: V2 DisplayPattern index (stripped/canonical)
+                                //V2 DisplayPattern index (stripped/canonical)
                                 var entriesByDisplayPattern = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
 
                                 foreach (var entry in manifestData.Entries)
@@ -197,7 +197,7 @@ namespace VoiceOverFrameworkMod
                                         }
                                     }
 
-                                    // NEW: V2 DisplayPattern index (canonical form)
+                                    //V2 DisplayPattern index (canonical form)
                                     if (formatMajor >= 2 && !string.IsNullOrWhiteSpace(entry.DisplayPattern))
                                     {
                                         var dpKey = CanonDisplay(entry.DisplayPattern);
@@ -207,7 +207,7 @@ namespace VoiceOverFrameworkMod
                                 }
 
                                 // If *all* maps are empty, skip; otherwise allow (supports pure-TK packs)
-                                if (!entriesDict.Any() && !entriesByTk.Any() && !entriesByFrom.Any() && !entriesByDisplayPattern.Any()) // NEW include pattern map
+                                if (!entriesDict.Any() && !entriesByTk.Any() && !entriesByFrom.Any() && !entriesByDisplayPattern.Any()) // include pattern map
                                 {
                                     this.Monitor.Log($"---> Skipping definition '{manifestData.VoicePackName}' from '{relativePathForLog}': No valid entries found within it.", LogLevel.Debug);
                                     continue;
@@ -227,7 +227,7 @@ namespace VoiceOverFrameworkMod
                                     // V2 TranslationKey map
                                     EntriesByTranslationKey = entriesByTk,
 
-                                    // NEW: V2 DisplayPattern map
+                                    //: V2 DisplayPattern map
                                     EntriesByDisplayPattern = entriesByDisplayPattern,
 
                                     ContentPackId = contentPack.Manifest.UniqueID,

@@ -1,0 +1,152 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Gil.ja-JP",
+      "VoicePackName": "DictionarV2 (Gil - ja-JP)",
+      "Character": "Gil",
+      "Language": "ja-JP",
+      "Entries": [
+        {
+          "DialogueFrom": "Snoring",
+          "DialogueText": "…グーッ…",
+          "AudioPath": "assets/ja-JP/Gil/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Gil:Snoring",
+          "PageIndex": 0,
+          "DisplayPattern": "…グーッ…"
+        },
+        {
+          "DialogueFrom": "ComeBackLater",
+          "DialogueText": "…何か 見せたいものが ある時に 戻ってきなされ。",
+          "AudioPath": "assets/ja-JP/Gil/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Gil:ComeBackLater",
+          "PageIndex": 0,
+          "DisplayPattern": "…何か 見せたいものが ある時に 戻ってきなされ。"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_NoRating",
+          "DialogueText": "今日はいい天気だな… 洞窟でなにか成果があったらまた戻ってきなされ。",
+          "AudioPath": "assets/ja-JP/Gil/3.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_NoRating",
+          "PageIndex": 0,
+          "DisplayPattern": "今日はいい天気だな… 洞窟でなにか成果があったらまた戻ってきなされ。"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_NextYear",
+          "DialogueText": "今年はここまでだ… ぐぅぐぅ…",
+          "AudioPath": "assets/ja-JP/Gil/4.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_NextYear",
+          "PageIndex": 0,
+          "DisplayPattern": "今年はここまでだ… ぐぅぐぅ…"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_ComeBack",
+          "DialogueText": "今日はここまでだ。また明日挑戦すればいい。 もしやる気があったらな… ぐぅぐぅ…",
+          "AudioPath": "assets/ja-JP/Gil/5.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_ComeBack",
+          "PageIndex": 0,
+          "DisplayPattern": "今日はここまでだ。また明日挑戦すればいい。 もしやる気があったらな… ぐぅぐぅ…"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_SubmitRating",
+          "DialogueText": "今日の最高タマゴポイントをギルに伝えますか？",
+          "AudioPath": "assets/ja-JP/Gil/6_male.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_SubmitRating",
+          "PageIndex": 0,
+          "DisplayPattern": "今日の最高タマゴポイントをギルに伝えますか？",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_SubmitRating",
+          "DialogueText": "（タマゴポイント{0}）",
+          "AudioPath": "assets/ja-JP/Gil/7_female.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_SubmitRating",
+          "PageIndex": 1,
+          "DisplayPattern": "（タマゴポイント{0}）",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_1to4",
+          "DialogueText": "…{0}？ははは… わかったよ、お若いの。賞品はこれだよ… さあ、ほかの子たちと遊びに行っておいで。",
+          "AudioPath": "assets/ja-JP/Gil/8.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_1to4",
+          "PageIndex": 0,
+          "DisplayPattern": "…{0}？ははは… わかったよ、お若いの。賞品はこれだよ… さあ、ほかの子たちと遊びに行っておいで。"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_5to9",
+          "DialogueText": "…{0}？まだまだやれると思うが、挑戦する勇気は大切だ。ほら、これを持っていくといい。",
+          "AudioPath": "assets/ja-JP/Gil/9.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_5to9",
+          "PageIndex": 0,
+          "DisplayPattern": "…{0}？まだまだやれると思うが、挑戦する勇気は大切だ。ほら、これを持っていくといい。"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_10to14",
+          "DialogueText": "{0}、ほう？なかなかのもんだが… ワシがあんたぐらいのときは、この倍はやっていたよ。食料を持たずに、サビた剣だけを持ってな。",
+          "AudioPath": "assets/ja-JP/Gil/10.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_10to14",
+          "PageIndex": 0,
+          "DisplayPattern": "{0}、ほう？なかなかのもんだが… ワシがあんたぐらいのときは、この倍はやっていたよ。食料を持たずに、サビた剣だけを持ってな。"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_15to19",
+          "DialogueText": "{0}… たいしたもんだ。そのくらいのやってくれたら冒険者ギルドとしてはありがたいよ。これが賞品だ。",
+          "AudioPath": "assets/ja-JP/Gil/11.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_15to19",
+          "PageIndex": 0,
+          "DisplayPattern": "{0}… たいしたもんだ。そのくらいのやってくれたら冒険者ギルドとしてはありがたいよ。これが賞品だ。"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_20to24",
+          "DialogueText": "{0}？そいつはすごいな…",
+          "AudioPath": "assets/ja-JP/Gil/12.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_20to24",
+          "PageIndex": 0,
+          "DisplayPattern": "{0}？そいつはすごいな…"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_20to24",
+          "DialogueText": "おい、マーロン！聞いてくれ… 今日のタマゴポイントは{0}だ！",
+          "AudioPath": "assets/ja-JP/Gil/13.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_20to24",
+          "PageIndex": 1,
+          "DisplayPattern": "おい、マーロン！聞いてくれ… 今日のタマゴポイントは{0}だ！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_25",
+          "DialogueText": "{0}！？",
+          "AudioPath": "assets/ja-JP/Gil/14.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_25",
+          "PageIndex": 0,
+          "DisplayPattern": "{0}！？"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_25",
+          "DialogueText": "こりゃあ…あんたこそ真のカリコエッグハンターだ！",
+          "AudioPath": "assets/ja-JP/Gil/15.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_25",
+          "PageIndex": 1,
+          "DisplayPattern": "こりゃあ…あんたこそ真のカリコエッグハンターだ！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_50",
+          "DialogueText": "{0}！？！？！？！？！？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Gil/16.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_50",
+          "PageIndex": 0,
+          "DisplayPattern": "{0}！？！？！？！？！？"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_1000",
+          "DialogueText": "頭の中で声がする：「チートコードで集めたタマゴポイントを使うのは恥ずべき行為です！」",
+          "AudioPath": "assets/ja-JP/Gil/17.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_1000",
+          "PageIndex": 0,
+          "DisplayPattern": "頭の中で声がする：「チートコードで集めたタマゴポイントを使うのは恥ずべき行為です！」"
+        }
+      ]
+    }
+  ]
+}

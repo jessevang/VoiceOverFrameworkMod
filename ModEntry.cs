@@ -18,6 +18,8 @@ namespace VoiceOverFrameworkMod
     // - ModEntry.Commands.cs: Handles console command registration and execution.
     // - ModEntry.Utilities.cs: Contains helper methods for sanitization, validation, etc.
     // - Models.cs: Contains data structure definitions (ModConfig, VoicePack, etc.).
+
+
     public partial class ModEntry : Mod
     {
         internal static ModEntry Instance { get; private set; }
@@ -25,6 +27,9 @@ namespace VoiceOverFrameworkMod
 
         private Dictionary<string, string> SelectedVoicePacks = new(StringComparer.OrdinalIgnoreCase);
 
+        private string _dictLoadedForSaveId = null;
+        internal string SanitizeDialogueTextV2_ForDict(string s) => SanitizeDialogueTextV2(s);
+       
 
         //Events List
         private readonly List<string> CommonEventFileNames = new List<string> {
@@ -185,35 +190,35 @@ namespace VoiceOverFrameworkMod
 
 
 
-
         public override void Entry(IModHelper helper)
         {
-            this.Multilingual = new MultilingualDictionary(this, this.Monitor, this.Helper.DirectoryPath);
+            
             Instance = this; 
             this.Config = helper.ReadConfig<ModConfig>();
             this.SelectedVoicePacks = this.Config?.SelectedVoicePacks ?? new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-            if (Config.developerModeOn)
-            {
-                this.Monitor.Log("Configuration loaded.", LogLevel.Debug);
-            }
             
 
             LoadVoicePacks();
-
-
             ApplyHarmonyPatches();
+            ApplyDictionaryV1();
+            ApplyDictionaryV2();
+
+            helper.Events.GameLoop.SaveLoaded += OnSaveLoaded_PreWarmDictionaries;
+            helper.Events.GameLoop.ReturnedToTitle += OnReturnedToTitle_ClearDictionaries;
 
 
+            
 
             helper.Events.GameLoop.UpdateTicked += this.OnUpdateTicked; 
             helper.Events.GameLoop.GameLaunched += this.OnGameLaunched; 
-
             helper.Events.GameLoop.SaveLoaded += this.OnSaveLoaded;
             SetupConsoleCommands(helper.ConsoleCommands);
 
 
             Monitor.Log($"{this.ModManifest.Name} {this.ModManifest.Version} initialized.", LogLevel.Info);
         }
+
+
   
 
         // Returns logical *pages* (each page can have 1–3 gender variants) and whether to reserve a follow-up serial for $q.
@@ -489,85 +494,7 @@ namespace VoiceOverFrameworkMod
         }
 
 
-        /*
-         //Get Festival Data V1
-         private Dictionary<string, (string RawText, string SourceInfo)> GetFestivalDialogueForCharacter(string characterName,string languageCode,IGameContentHelper contentHelper)
-         {
-             var result = new Dictionary<string, (string RawText, string SourceInfo)>(StringComparer.OrdinalIgnoreCase);
-             string langSuffix = languageCode.Equals("en", StringComparison.OrdinalIgnoreCase) ? "" : $".{languageCode}";
-
-
-             var activeFestivalKeys = DataLoader.Festivals_FestivalDates(Game1.content).Keys;
-             var passiveFestivalKeys = DataLoader.PassiveFestivals(Game1.content).Keys;
-
-
-             var allFestivalKeys = activeFestivalKeys.Concat(passiveFestivalKeys).Distinct();
-
-             foreach (string festivalKey in allFestivalKeys)
-             {
-                 string assetKeyString = $"Data/Festivals/{festivalKey}{langSuffix}";
-                 string sourceInfo = $"Festival/{festivalKey}";
-
-                 try
-                 {
-                     var festivalData = contentHelper.Load<Dictionary<string, string>>(assetKeyString);
-                     if (festivalData == null)
-                         continue;
-
-                     foreach (var kvp in festivalData)
-                     {
-                         string key = kvp.Key;
-                         string value = kvp.Value;
-
-
-                         if (key.StartsWith(characterName, StringComparison.OrdinalIgnoreCase) ||
-                             key.IndexOf(characterName, StringComparison.OrdinalIgnoreCase) >= 0)
-                         {
-                             if (!string.IsNullOrWhiteSpace(value) && !value.Contains("speak "))
-                             {
-                                 string sanitized = SanitizeDialogueText(value);
-                                 string uniqueKey = $"{sourceInfo}:{key}";
-                                 if (!result.ContainsKey(uniqueKey))
-                                     result[uniqueKey] = (sanitized, sourceInfo);
-                             }
-                         }
-
-                         foreach (Match match in Regex.Matches(value, $@"speak\s+{Regex.Escape(characterName)}\s+""([^""]+)"""))
-                         {
-                             string embeddedText = match.Groups[1].Value;
-                             string sanitized = SanitizeDialogueText(embeddedText);
-                             if (!string.IsNullOrWhiteSpace(sanitized))
-                             {
-                                 string uniqueKey = $"{sourceInfo}:{key}:speak:{match.Index}";
-                                 if (!result.ContainsKey(uniqueKey))
-                                     result[uniqueKey] = (sanitized, sourceInfo);
-                             }
-                         }
-
-                         if (key.Equals(characterName, StringComparison.OrdinalIgnoreCase))
-                         {
-                             string sanitized = SanitizeDialogueText(value);
-                             string uniqueKey = $"{sourceInfo}:{key}";
-                             if (!result.ContainsKey(uniqueKey))
-                                 result[uniqueKey] = (sanitized, sourceInfo);
-                         }
-                     }
-                 }
-                 catch (ContentLoadException)
-                 {
-                     // Skip missing assets
-                 }
-                 catch (Exception ex)
-                 {
-                     this.Monitor.Log($"Error reading festival data from '{assetKeyString}': {ex.Message}", LogLevel.Warn);
-                     this.Monitor.Log(ex.ToString(), LogLevel.Trace);
-                 }
-             }
-
-             return result;
-         }
-
-         */
+        
 
 
         // Gets dialogue from Data/NPCGiftTastes.json for a character.
@@ -760,11 +687,12 @@ namespace VoiceOverFrameworkMod
 
             this.Config = this.Helper.ReadConfig<ModConfig>();
             this.SelectedVoicePacks = this.Config?.SelectedVoicePacks ?? new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-
+            /*
             foreach (var character in VoicePacksByCharacter.Keys)
             {
                 this.Multilingual.LoadAllForCharacter(character);
             }
+            */
 
         }
 

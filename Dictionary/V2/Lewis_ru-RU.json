@@ -1,0 +1,2824 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Lewis.ru-RU",
+      "VoicePackName": "DictionarV2 (Lewis - ru-RU)",
+      "Character": "Lewis",
+      "Language": "ru-RU",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Ну, как тебе первая ночь в старом доме?",
+          "AudioPath": "assets/ru-RU/Lewis/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "Ну, как тебе первая ночь в старом доме?"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Твой дедушка часто жаловался на то, что кровать старая и расшатанная. Но я думаю, что глубоко в душе он любил свой дом.",
+          "AudioPath": "assets/ru-RU/Lewis/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "Твой дедушка часто жаловался на то, что кровать старая и расшатанная. Но я думаю, что глубоко в душе он любил свой дом."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Я попробовал множество чаев в своей жизни, но ничего более уникального я еще не встречал. Спасибо!",
+          "AudioPath": "assets/ru-RU/Lewis/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Я попробовал множество чаев в своей жизни, но ничего более уникального я еще не встречал. Спасибо!"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "Ах, ты помнишь о дне рождения старика мэра. Как заботливо с твоей стороны. И какой хороший подарок! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "Ах, ты помнишь о дне рождения старика мэра. Как заботливо с твоей стороны. И какой хороший подарок!"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Я только что говорил по телефону с Губернатором... Оказывается, этот дождь совершенно безопасен. Просто необычное природное явление.",
+          "AudioPath": "assets/ru-RU/Lewis/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "Я только что говорил по телефону с Губернатором... Оказывается, этот дождь совершенно безопасен. Просто необычное природное явление."
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Некоторые горожане до сих пор паникуют и ничего хорошего в этом нет...",
+          "AudioPath": "assets/ru-RU/Lewis/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:GreenRain",
+          "PageIndex": 1,
+          "DisplayPattern": "Некоторые горожане до сих пор паникуют и ничего хорошего в этом нет..."
+        },
+        {
+          "DialogueFrom": "GreenRainFinished",
+          "DialogueText": "Что ж, в нашем городке было много шума по этому поводу! Теперь, когда я вижу, что все целы, можно и выдохнуть. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:GreenRainFinished",
+          "PageIndex": 0,
+          "DisplayPattern": "Что ж, в нашем городке было много шума по этому поводу! Теперь, когда я вижу, что все целы, можно и выдохнуть."
+        },
+        {
+          "DialogueFrom": "GreenRainFinished",
+          "DialogueText": "Если он снова пойдет, я думаю мы уже будем к нему готовы. Это еще не конец света!",
+          "AudioPath": "assets/ru-RU/Lewis/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:GreenRainFinished",
+          "PageIndex": 1,
+          "DisplayPattern": "Если он снова пойдет, я думаю мы уже будем к нему готовы. Это еще не конец света!"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Похоже, теперь такие дожди будут случаться каждый год. Надеюсь, теперь, когда люди знают, что это всего лишь природное явление, они будут реагировать спокойнее.",
+          "AudioPath": "assets/ru-RU/Lewis/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Похоже, теперь такие дожди будут случаться каждый год. Надеюсь, теперь, когда люди знают, что это всего лишь природное явление, они будут реагировать спокойнее."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "Ах, ты помнишь о дне рождения старика мэра... Что это? {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "Ах, ты помнишь о дне рождения старика мэра... Что это?"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "Эм... Ладно. Знаешь же, как говорят: «Важен не подарок, а внимание».",
+          "AudioPath": "assets/ru-RU/Lewis/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:AcceptBirthdayGift_Negative",
+          "PageIndex": 1,
+          "DisplayPattern": "Эм... Ладно. Знаешь же, как говорят: «Важен не подарок, а внимание»."
+        },
+        {
+          "DialogueFrom": "cropMatured_24",
+          "DialogueText": "Эй, во время своего ночного обхода я заметил, что твой первый урожай пастернака поспел. Поздравляю!",
+          "AudioPath": "assets/ru-RU/Lewis/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:cropMatured_24",
+          "PageIndex": 0,
+          "DisplayPattern": "Эй, во время своего ночного обхода я заметил, что твой первый урожай пастернака поспел. Поздравляю!"
+        },
+        {
+          "DialogueFrom": "cropMatured_254",
+          "DialogueText": "А эти дыни хорошо так прижились на ферме «%farm»! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:cropMatured_254",
+          "PageIndex": 0,
+          "DisplayPattern": "А эти дыни хорошо так прижились на ферме «»!"
+        },
+        {
+          "DialogueFrom": "cropMatured_254",
+          "DialogueText": "Ты, наверное, в курсе, что это было любимое растение твоего дедушки.",
+          "AudioPath": "assets/ru-RU/Lewis/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:cropMatured_254",
+          "PageIndex": 1,
+          "DisplayPattern": "Ты, наверное, в курсе, что это было любимое растение твоего дедушки."
+        },
+        {
+          "DialogueFrom": "cropMatured_276",
+          "DialogueText": "Говорят, тыквы по осени считают, правда же?",
+          "AudioPath": "assets/ru-RU/Lewis/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:cropMatured_276",
+          "PageIndex": 0,
+          "DisplayPattern": "Говорят, тыквы по осени считают, правда же?"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Я впечатлен, {Farmer_Name}. Благодаря тебе тут полный порядок! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Я впечатлен, . Благодаря тебе тут полный порядок!"
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "Поздравляю, {Farmer_Name}. Большой шаг для тебя и %spouse. Вы и впрямь пустили корни в нашем городе!",
+          "AudioPath": "assets/ru-RU/Lewis/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:married",
+          "PageIndex": 0,
+          "DisplayPattern": "Поздравляю, . Большой шаг для тебя и . Вы и впрямь пустили корни в нашем городе!"
+        },
+        {
+          "DialogueFrom": "married_twice",
+          "DialogueText": "Поздравляю еще раз, {Farmer_Name}.",
+          "AudioPath": "assets/ru-RU/Lewis/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:married_twice",
+          "PageIndex": 0,
+          "DisplayPattern": "Поздравляю еще раз, ."
+        },
+        {
+          "DialogueFrom": "divorced_once",
+          "DialogueText": "Я подписал все бумаги на развод. Жаль, что у вас ничего не получилось...",
+          "AudioPath": "assets/ru-RU/Lewis/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:divorced_once",
+          "PageIndex": 0,
+          "DisplayPattern": "Я подписал все бумаги на развод. Жаль, что у вас ничего не получилось..."
+        },
+        {
+          "DialogueFrom": "divorced_twice",
+          "DialogueText": "Еще один развод? Ну ты чего, {Farmer_Name}... В следующий раз внимательнее выбирай того, с кем захочешь вступить в брак... {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Lewis/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:divorced_twice",
+          "PageIndex": 0,
+          "DisplayPattern": "Еще один развод? Ну ты чего, ... В следующий раз внимательнее выбирай того, с кем захочешь вступить в брак..."
+        },
+        {
+          "DialogueFrom": "movieTheater",
+          "DialogueText": "Похоже, вся молодежь рада новому кинотеатру.",
+          "AudioPath": "assets/ru-RU/Lewis/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:movieTheater",
+          "PageIndex": 0,
+          "DisplayPattern": "Похоже, вся молодежь рада новому кинотеатру."
+        },
+        {
+          "DialogueFrom": "movieTheater",
+          "DialogueText": "А прибыльный кинотеатр — плюс для местной экономики. Надеюсь лишь, что в этих современных фильмах нет ничего оскорбительного!",
+          "AudioPath": "assets/ru-RU/Lewis/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:movieTheater",
+          "PageIndex": 1,
+          "DisplayPattern": "А прибыльный кинотеатр — плюс для местной экономики. Надеюсь лишь, что в этих современных фильмах нет ничего оскорбительного!"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "Все на борт! Плывем обратно в Долину!",
+          "AudioPath": "assets/ru-RU/Lewis/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "Все на борт! Плывем обратно в Долину!"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Такие туристические маршруты могут положительно сказаться на местной экономике!",
+          "AudioPath": "assets/ru-RU/Lewis/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "Такие туристические маршруты могут положительно сказаться на местной экономике!"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Мне лучше долго на солнце не сидеть, а то у меня все усы высохнут!",
+          "AudioPath": "assets/ru-RU/Lewis/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Resort_Shore",
+          "PageIndex": 1,
+          "DisplayPattern": "Мне лучше долго на солнце не сидеть, а то у меня все усы высохнут!"
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "Хе-хе... Только взгляните на это место! Не знаю, как у тебя это получилось, но в нашем городе только и говорят, что об этом курорте. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "Хе-хе... Только взгляните на это место! Не знаю, как у тебя это получилось, но в нашем городе только и говорят, что об этом курорте."
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "Хе-хе... Похоже, Гас и тут в своей тарелке.",
+          "AudioPath": "assets/ru-RU/Lewis/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "Хе-хе... Похоже, Гас и тут в своей тарелке."
+        },
+        {
+          "DialogueFrom": "pamHouseUpgrade",
+          "DialogueText": "{Farmer_Name}, я слышал, что вы сделали для Пэм и Пенни... Вот *это* я называю пеликанским добрососедством! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:pamHouseUpgrade",
+          "PageIndex": 0,
+          "DisplayPattern": ", я слышал, что вы сделали для Пэм и Пенни... Вот *это* я называю пеликанским добрососедством!"
+        },
+        {
+          "DialogueFrom": "pamHouseUpgradeAnonymous",
+          "DialogueText": "{Farmer_Name}, ты слыхал? Кто-то оплатил Робин работы по возведению нового дома для Пэм и Пенни! Робин так и не сказала, кто это был.",
+          "AudioPath": "assets/ru-RU/Lewis/29_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:pamHouseUpgradeAnonymous",
+          "PageIndex": 0,
+          "DisplayPattern": ", ты слыхал? Кто-то оплатил Робин работы по возведению нового дома для Пэм и Пенни! Робин так и не сказала, кто это был.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "pamHouseUpgradeAnonymous",
+          "DialogueText": "{Farmer_Name}, ты слыхала? Кто-то оплатил Робин работы по возведению нового дома для Пэм и Пенни! Робин так и не сказала, кто это был.",
+          "AudioPath": "assets/ru-RU/Lewis/30_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:pamHouseUpgradeAnonymous",
+          "PageIndex": 1,
+          "DisplayPattern": ", ты слыхала? Кто-то оплатил Робин работы по возведению нового дома для Пэм и Пенни! Робин так и не сказала, кто это был.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "pamHouseUpgradeAnonymous",
+          "DialogueText": "Но кто бы ни был, — отрадно видеть такой уровень взаимовыручки в Пеликане! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:pamHouseUpgradeAnonymous",
+          "PageIndex": 2,
+          "DisplayPattern": "Но кто бы ни был, — отрадно видеть такой уровень взаимовыручки в Пеликане!"
+        },
+        {
+          "DialogueFrom": "willyCrabs",
+          "DialogueText": "*принюхивается* Чувствуете запах? Весь день пахнет свежими крабами... {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Lewis/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:willyCrabs",
+          "PageIndex": 0,
+          "DisplayPattern": "*принюхивается* Чувствуете запах? Весь день пахнет свежими крабами..."
+        },
+        {
+          "DialogueFrom": "cc_Begin",
+          "DialogueText": "*принюхивается* Ага, я смотрю, вы проводите время в старом клубе. Приятно знать, что о нём хоть кто-то заботится.",
+          "AudioPath": "assets/ru-RU/Lewis/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:cc_Begin",
+          "PageIndex": 0,
+          "DisplayPattern": "*принюхивается* Ага, я смотрю, вы проводите время в старом клубе. Приятно знать, что о нём хоть кто-то заботится."
+        },
+        {
+          "DialogueFrom": "cc_Complete",
+          "DialogueText": "Я никогда еще не чувствовал такую гордость за наш город и его жителей. Вы здорово поработали на благо Пеликану, {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:cc_Complete",
+          "PageIndex": 0,
+          "DisplayPattern": "Я никогда еще не чувствовал такую гордость за наш город и его жителей. Вы здорово поработали на благо Пеликану, ."
+        },
+        {
+          "DialogueFrom": "cc_Bridge",
+          "DialogueText": "Каким-то образом старый мост до карьера был починен.",
+          "AudioPath": "assets/ru-RU/Lewis/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:cc_Bridge",
+          "PageIndex": 0,
+          "DisplayPattern": "Каким-то образом старый мост до карьера был починен."
+        },
+        {
+          "DialogueFrom": "cc_Bridge",
+          "DialogueText": "Я поражен... Там дел на целую бригаду, это точно!",
+          "AudioPath": "assets/ru-RU/Lewis/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:cc_Bridge",
+          "PageIndex": 1,
+          "DisplayPattern": "Я поражен... Там дел на целую бригаду, это точно!"
+        },
+        {
+          "DialogueFrom": "cc_Bridge",
+          "DialogueText": "Кто же мог это сделать?",
+          "AudioPath": "assets/ru-RU/Lewis/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:cc_Bridge",
+          "PageIndex": 2,
+          "DisplayPattern": "Кто же мог это сделать?"
+        },
+        {
+          "DialogueFrom": "cc_Bus",
+          "DialogueText": "{Farmer_Name}, вы слышали? Похоже, старый городской автобус опять начал ходить! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:cc_Bus",
+          "PageIndex": 0,
+          "DisplayPattern": ", вы слышали? Похоже, старый городской автобус опять начал ходить!"
+        },
+        {
+          "DialogueFrom": "cc_Bus",
+          "DialogueText": "Он десятилетиями не двигался с места... Это просто чудо.",
+          "AudioPath": "assets/ru-RU/Lewis/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:cc_Bus",
+          "PageIndex": 1,
+          "DisplayPattern": "Он десятилетиями не двигался с места... Это просто чудо."
+        },
+        {
+          "DialogueFrom": "joja_Begin",
+          "DialogueText": "Значит, старого клуба больше нет... Времена меняются, всё приходит и уходит... Но я не могу отделаться от чувства потери. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:joja_Begin",
+          "PageIndex": 0,
+          "DisplayPattern": "Значит, старого клуба больше нет... Времена меняются, всё приходит и уходит... Но я не могу отделаться от чувства потери."
+        },
+        {
+          "DialogueFrom": "joja_Begin",
+          "DialogueText": "Надеюсь, это не запятнает мою репутацию как мэра. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:joja_Begin",
+          "PageIndex": 1,
+          "DisplayPattern": "Надеюсь, это не запятнает мою репутацию как мэра."
+        },
+        {
+          "DialogueFrom": "wonGrange",
+          "DialogueText": "Поздравляю с победой на Ярмарке.",
+          "AudioPath": "assets/ru-RU/Lewis/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:wonGrange",
+          "PageIndex": 0,
+          "DisplayPattern": "Поздравляю с победой на Ярмарке."
+        },
+        {
+          "DialogueFrom": "wonGrange",
+          "DialogueText": "Хе-хе... Строго между нами, я думаю, что Пьеру давно пора было утереть нос! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:wonGrange",
+          "PageIndex": 1,
+          "DisplayPattern": "Хе-хе... Строго между нами, я думаю, что Пьеру давно пора было утереть нос!"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Сейчас самый сезон, чтобы задуматься о садоводстве. Даже для нас, не-фермеров.",
+          "AudioPath": "assets/ru-RU/Lewis/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Сейчас самый сезон, чтобы задуматься о садоводстве. Даже для нас, не-фермеров."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Долина славится одними из самых прекрасных весенних цветов! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "Долина славится одними из самых прекрасных весенних цветов!"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Клади то, что хочешь отправить на рынок, в ящик рядом с домом.",
+          "AudioPath": "assets/ru-RU/Lewis/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Клади то, что хочешь отправить на рынок, в ящик рядом с домом."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Мне интересно, что ты будешь туда складывать.",
+          "AudioPath": "assets/ru-RU/Lewis/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Мне интересно, что ты будешь туда складывать."
+        },
+        {
+          "DialogueFrom": "Saloon_Entry",
+          "DialogueText": "Здорово, Гас!",
+          "AudioPath": "assets/ru-RU/Lewis/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Saloon_Entry",
+          "PageIndex": 0,
+          "DisplayPattern": "Здорово, Гас!"
+        },
+        {
+          "DialogueFrom": "Tue2",
+          "DialogueText": "В начале каждого времени года тебе придется расчищать землю от мертвых растений прошлого сезона. Проще всего это делать косой.",
+          "AudioPath": "assets/ru-RU/Lewis/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Tue2",
+          "PageIndex": 0,
+          "DisplayPattern": "В начале каждого времени года тебе придется расчищать землю от мертвых растений прошлого сезона. Проще всего это делать косой."
+        },
+        {
+          "DialogueFrom": "spring_3",
+          "DialogueText": "Ты ведь уже сажаешь весенние растения? Торопись, весна-то не вечная.",
+          "AudioPath": "assets/ru-RU/Lewis/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:spring_3",
+          "PageIndex": 0,
+          "DisplayPattern": "Ты ведь уже сажаешь весенние растения? Торопись, весна-то не вечная."
+        },
+        {
+          "DialogueFrom": "Town_57_40",
+          "DialogueText": "А ты сегодня рано в городе! Неужели на ферме уже все дела переделаны?",
+          "AudioPath": "assets/ru-RU/Lewis/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Town_57_40",
+          "PageIndex": 0,
+          "DisplayPattern": "А ты сегодня рано в городе! Неужели на ферме уже все дела переделаны?"
+        },
+        {
+          "DialogueFrom": "Town_57_40",
+          "DialogueText": "$e",
+          "AudioPath": "assets/ru-RU/Lewis/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Town_57_40",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Town_57_40",
+          "DialogueText": "Доброе утро! Я вот осматриваю городской сад. {Portrait:Happy}Хм-м... Это что, тля? {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Town_57_40",
+          "PageIndex": 2,
+          "DisplayPattern": "Доброе утро! Я вот осматриваю городской сад.Хм-м... Это что, тля?"
+        },
+        {
+          "DialogueFrom": "Town_57_40",
+          "DialogueText": "$e",
+          "AudioPath": "assets/ru-RU/Lewis/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Town_57_40",
+          "PageIndex": 3,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Town_57_40",
+          "DialogueText": "Доброе утро! Я вот осматриваю городской сад. {Portrait:Happy}$e",
+          "AudioPath": "assets/ru-RU/Lewis/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Town_57_40",
+          "PageIndex": 4,
+          "DisplayPattern": "Доброе утро! Я вот осматриваю городской сад.$e"
+        },
+        {
+          "DialogueFrom": "Town_57_40",
+          "DialogueText": "Хм-м... Надеюсь, это не щитовки... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Town_57_40",
+          "PageIndex": 5,
+          "DisplayPattern": "Хм-м... Надеюсь, это не щитовки..."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Хм-м... Налоговые сборы... *Бормочет* ... Расходы на весенние праздники... *Бормочет*... {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Lewis/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Хм-м... Налоговые сборы... *Бормочет* ... Расходы на весенние праздники... *Бормочет*..."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Да?",
+          "AudioPath": "assets/ru-RU/Lewis/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Да?"
+        },
+        {
+          "DialogueFrom": "spring_10",
+          "DialogueText": "Ах... Нет ничего лучше чашки крепкого чаю с утра.",
+          "AudioPath": "assets/ru-RU/Lewis/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:spring_10",
+          "PageIndex": 0,
+          "DisplayPattern": "Ах... Нет ничего лучше чашки крепкого чаю с утра."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "По вечерам салун бывает очень оживленным. Иногда мы даже кладем монетку в музыкальный автомат! *Усмехается* {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "По вечерам салун бывает очень оживленным. Иногда мы даже кладем монетку в музыкальный автомат! *Усмехается*"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Я люблю заходить сюда раз в неделю, чтобы послушать новости.",
+          "AudioPath": "assets/ru-RU/Lewis/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Я люблю заходить сюда раз в неделю, чтобы послушать новости."
+        },
+        {
+          "DialogueFrom": "Saloon",
+          "DialogueText": "Добрый вечер! Рад видеть, что ты вливаешься в наш коллектив.",
+          "AudioPath": "assets/ru-RU/Lewis/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Saloon",
+          "PageIndex": 0,
+          "DisplayPattern": "Добрый вечер! Рад видеть, что ты вливаешься в наш коллектив."
+        },
+        {
+          "DialogueFrom": "Saloon",
+          "DialogueText": "Бывает полезно иногда зайти сюда и узнать свежие новости. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Saloon",
+          "PageIndex": 1,
+          "DisplayPattern": "Бывает полезно иногда зайти сюда и узнать свежие новости."
+        },
+        {
+          "DialogueFrom": "Saloon4",
+          "DialogueText": "Добрый вечер, {Farmer_Name}! Приятно видеть, что ты отдыхаешь тут, в салуне. Иногда полезно устроить себе перерыв. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Saloon4",
+          "PageIndex": 0,
+          "DisplayPattern": "Добрый вечер, ! Приятно видеть, что ты отдыхаешь тут, в салуне. Иногда полезно устроить себе перерыв."
+        },
+        {
+          "DialogueFrom": "Saloon4",
+          "DialogueText": "Твой дедушка всегда работал слишком много... Пропущу сегодня лишнюю кружку пива в его честь.",
+          "AudioPath": "assets/ru-RU/Lewis/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Saloon4",
+          "PageIndex": 1,
+          "DisplayPattern": "Твой дедушка всегда работал слишком много... Пропущу сегодня лишнюю кружку пива в его честь."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Надеюсь, на ферме «%farm» все хорошо. Было бы грустно, если бы там все завяло.",
+          "AudioPath": "assets/ru-RU/Lewis/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Надеюсь, на ферме «» все хорошо. Было бы грустно, если бы там все завяло."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Кажется, будто на выходных каждый выглядит веселее, чем обычно.",
+          "AudioPath": "assets/ru-RU/Lewis/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Кажется, будто на выходных каждый выглядит веселее, чем обычно."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Я-то семь дней в неделю занят.",
+          "AudioPath": "assets/ru-RU/Lewis/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Я-то семь дней в неделю занят."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Я уже больше двадцати лет занимаю пост мэра Пеликана!",
+          "AudioPath": "assets/ru-RU/Lewis/69.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Я уже больше двадцати лет занимаю пост мэра Пеликана!"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "На выборах никто еще не выдвигался против меня. Думаю, это значит, что работу свою я выполняю хорошо.",
+          "AudioPath": "assets/ru-RU/Lewis/70.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "На выборах никто еще не выдвигался против меня. Думаю, это значит, что работу свою я выполняю хорошо."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Мне нравится быть мэром.",
+          "AudioPath": "assets/ru-RU/Lewis/71.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:Sun",
+          "PageIndex": 2,
+          "DisplayPattern": "Мне нравится быть мэром."
+        },
+        {
+          "DialogueFrom": "event_secret1",
+          "DialogueText": "Спасибо, {Farmer_Name}. Я этого не забуду.",
+          "AudioPath": "assets/ru-RU/Lewis/72.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:event_secret1",
+          "PageIndex": 0,
+          "DisplayPattern": "Спасибо, . Я этого не забуду."
+        },
+        {
+          "DialogueFrom": "event_secret2",
+          "DialogueText": "*Всхлипывает* ... Поверить не могу, что ты сделаешь такое. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/73.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:event_secret2",
+          "PageIndex": 0,
+          "DisplayPattern": "*Всхлипывает* ... Поверить не могу, что ты сделаешь такое."
+        },
+        {
+          "DialogueFrom": "event_secret2",
+          "DialogueText": "Ты чудовище. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/74.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:event_secret2",
+          "PageIndex": 1,
+          "DisplayPattern": "Ты чудовище."
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "Садоводство — мое хобби, так что я рад теплой погоде.",
+          "AudioPath": "assets/ru-RU/Lewis/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Садоводство — мое хобби, так что я рад теплой погоде."
+        },
+        {
+          "DialogueFrom": "summer_Town_57_40",
+          "DialogueText": "Ах, цветочки-то как принялись! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:summer_Town_57_40",
+          "PageIndex": 0,
+          "DisplayPattern": "Ах, цветочки-то как принялись!"
+        },
+        {
+          "DialogueFrom": "summer_Town_57_40",
+          "DialogueText": "Доброе утро! Чувствуешь сладкий аромат росяных лилий?",
+          "AudioPath": "assets/ru-RU/Lewis/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:summer_Town_57_40",
+          "PageIndex": 1,
+          "DisplayPattern": "Доброе утро! Чувствуешь сладкий аромат росяных лилий?"
+        },
+        {
+          "DialogueFrom": "summer_Town_57_40",
+          "DialogueText": "$e",
+          "AudioPath": "assets/ru-RU/Lewis/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:summer_Town_57_40",
+          "PageIndex": 2,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "summer_Town_57_40",
+          "DialogueText": "Сезон только начался, а воздух уже такой теплый. Для такого старика, как я, лето — хорошее время, хе-хе.",
+          "AudioPath": "assets/ru-RU/Lewis/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:summer_Town_57_40",
+          "PageIndex": 3,
+          "DisplayPattern": "Сезон только начался, а воздух уже такой теплый. Для такого старика, как я, лето — хорошее время, хе-хе."
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "Как я вообще стал мэром? Это долгая история.",
+          "AudioPath": "assets/ru-RU/Lewis/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:summer_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Как я вообще стал мэром? Это долгая история."
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "Мы оба сейчас слишком заняты для долгих историй.",
+          "AudioPath": "assets/ru-RU/Lewis/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:summer_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Мы оба сейчас слишком заняты для долгих историй."
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "Скоро к нам прибудут полуночные медузы. Их визит — одно из моих любимых событий этой долины.",
+          "AudioPath": "assets/ru-RU/Lewis/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:summer_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Скоро к нам прибудут полуночные медузы. Их визит — одно из моих любимых событий этой долины."
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "По вечерам салун бывает очень оживленным.",
+          "AudioPath": "assets/ru-RU/Lewis/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:summer_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "По вечерам салун бывает очень оживленным."
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "Я люблю заходить сюда раз в неделю, чтобы послушать новости. Ну, и чтобы отведать настоящих спагетти Гаса.",
+          "AudioPath": "assets/ru-RU/Lewis/84.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:summer_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Я люблю заходить сюда раз в неделю, чтобы послушать новости. Ну, и чтобы отведать настоящих спагетти Гаса."
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "Хм-м... Может, у кого-нибудь сегодня день рождения? Нужно посмотреть на календаре у магазина Пьера",
+          "AudioPath": "assets/ru-RU/Lewis/85.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:summer_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Хм-м... Может, у кого-нибудь сегодня день рождения? Нужно посмотреть на календаре у магазина Пьера"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "Кажется, будто на выходных каждый выглядит веселее, чем обычно.",
+          "AudioPath": "assets/ru-RU/Lewis/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:summer_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Кажется, будто на выходных каждый выглядит веселее, чем обычно."
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "Я-то семь дней в неделю занят.",
+          "AudioPath": "assets/ru-RU/Lewis/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:summer_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Я-то семь дней в неделю занят."
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "Слушай, а ты не выращиваешь чернику?",
+          "AudioPath": "assets/ru-RU/Lewis/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:summer_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Слушай, а ты не выращиваешь чернику?"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "Я люблю свежую черничку.%revealtaste:Lewis:258",
+          "AudioPath": "assets/ru-RU/Lewis/89.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:summer_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Я люблю свежую черничку.%revealtaste:Lewis:258"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "Кое-кто из местных не очень жалует незнакомцев. Чтобы они тебе открылись, сначала нужно завоевать их доверие.",
+          "AudioPath": "assets/ru-RU/Lewis/90.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Кое-кто из местных не очень жалует незнакомцев. Чтобы они тебе открылись, сначала нужно завоевать их доверие."
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "Просто будь упорнее, и ты до них достучишься. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/91.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "Просто будь упорнее, и ты до них достучишься."
+        },
+        {
+          "DialogueFrom": "fall_Tue",
+          "DialogueText": "Примерно в это время, двадцать лет назад, я и стал мэром.",
+          "AudioPath": "assets/ru-RU/Lewis/92.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Примерно в это время, двадцать лет назад, я и стал мэром."
+        },
+        {
+          "DialogueFrom": "fall_Tue",
+          "DialogueText": "Я сейчас себя таким старым почувствовал. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/93.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Я сейчас себя таким старым почувствовал."
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "Если у тебя есть какие-нибудь пожелания насчет городского обустройства, кинь записку в ящик для предложений.",
+          "AudioPath": "assets/ru-RU/Lewis/94.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Если у тебя есть какие-нибудь пожелания насчет городского обустройства, кинь записку в ящик для предложений."
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "А, точно... У меня же нет ящика для предложений.",
+          "AudioPath": "assets/ru-RU/Lewis/95.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "А, точно... У меня же нет ящика для предложений."
+        },
+        {
+          "DialogueFrom": "fall_Wed2",
+          "DialogueText": "Каждую среду на завтрак у меня гречневые вафли с кофе. Это моя маленькая традиция, здорово скрашивает холостяцкую жизнь. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/96.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_Wed2",
+          "PageIndex": 0,
+          "DisplayPattern": "Каждую среду на завтрак у меня гречневые вафли с кофе. Это моя маленькая традиция, здорово скрашивает холостяцкую жизнь."
+        },
+        {
+          "DialogueFrom": "fall_Town_57_40",
+          "DialogueText": "Хм-м... У меня на щепках выросли какие-то странные грибочки. Интересно, что за грибы такие?",
+          "AudioPath": "assets/ru-RU/Lewis/97.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_Town_57_40",
+          "PageIndex": 0,
+          "DisplayPattern": "Хм-м... У меня на щепках выросли какие-то странные грибочки. Интересно, что за грибы такие?"
+        },
+        {
+          "DialogueFrom": "fall_Town_57_40",
+          "DialogueText": "Доброе утро! Скоро станет холодно, так что я потихоньку сворачиваю свой садик.",
+          "AudioPath": "assets/ru-RU/Lewis/98.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_Town_57_40",
+          "PageIndex": 1,
+          "DisplayPattern": "Доброе утро! Скоро станет холодно, так что я потихоньку сворачиваю свой садик."
+        },
+        {
+          "DialogueFrom": "fall_Town_57_40",
+          "DialogueText": "$e",
+          "AudioPath": "assets/ru-RU/Lewis/99.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_Town_57_40",
+          "PageIndex": 2,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "fall_Town_57_40",
+          "DialogueText": "О, ты в городе так рано? Все дела на ферме уже переделаны, значит?",
+          "AudioPath": "assets/ru-RU/Lewis/100.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_Town_57_40",
+          "PageIndex": 3,
+          "DisplayPattern": "О, ты в городе так рано? Все дела на ферме уже переделаны, значит?"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "По вечерам салун бывает очень оживленным.",
+          "AudioPath": "assets/ru-RU/Lewis/101.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "По вечерам салун бывает очень оживленным."
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "Я люблю заходить сюда раз в неделю, чтобы послушать новости.",
+          "AudioPath": "assets/ru-RU/Lewis/102.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Я люблю заходить сюда раз в неделю, чтобы послушать новости."
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "Надеюсь, на ферме дела идут хорошо.",
+          "AudioPath": "assets/ru-RU/Lewis/103.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Надеюсь, на ферме дела идут хорошо."
+        },
+        {
+          "DialogueFrom": "fall_12",
+          "DialogueText": "Ты ставишь ульи у себя на ферме?",
+          "AudioPath": "assets/ru-RU/Lewis/104.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_12",
+          "PageIndex": 0,
+          "DisplayPattern": "Ты ставишь ульи у себя на ферме?"
+        },
+        {
+          "DialogueFrom": "fall_12",
+          "DialogueText": "Если поставить их поближе к цветам, мед будет из их нектара.",
+          "AudioPath": "assets/ru-RU/Lewis/105.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_12",
+          "PageIndex": 1,
+          "DisplayPattern": "Если поставить их поближе к цветам, мед будет из их нектара."
+        },
+        {
+          "DialogueFrom": "fall_19",
+          "DialogueText": "Иногда сразу видно, что в земле что-то закопано. Ты только гляди в оба.",
+          "AudioPath": "assets/ru-RU/Lewis/106.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_19",
+          "PageIndex": 0,
+          "DisplayPattern": "Иногда сразу видно, что в земле что-то закопано. Ты только гляди в оба."
+        },
+        {
+          "DialogueFrom": "fall_Fri4",
+          "DialogueText": "Тебе уже доводилось пробовать \"секретный\" соус Гаса к спагетти? {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/107.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "Тебе уже доводилось пробовать \"секретный\" соус Гаса к спагетти?"
+        },
+        {
+          "DialogueFrom": "fall_Fri4",
+          "DialogueText": "... Ингредиенты он, может, и держит в секрете, но запах-то не утаишь.",
+          "AudioPath": "assets/ru-RU/Lewis/108.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_Fri4",
+          "PageIndex": 1,
+          "DisplayPattern": "... Ингредиенты он, может, и держит в секрете, но запах-то не утаишь."
+        },
+        {
+          "DialogueFrom": "fall_Fri4",
+          "DialogueText": "Еще увидимся.",
+          "AudioPath": "assets/ru-RU/Lewis/109.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_Fri4",
+          "PageIndex": 2,
+          "DisplayPattern": "Еще увидимся."
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "Ты ведь стараешься у себя на ферме, да, {Farmer_Name}? Нужно проявить себя во многих сферах, если хочешь стать разносторонним гражданином.",
+          "AudioPath": "assets/ru-RU/Lewis/110.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:fall_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Ты ведь стараешься у себя на ферме, да, ? Нужно проявить себя во многих сферах, если хочешь стать разносторонним гражданином."
+        },
+        {
+          "DialogueFrom": "winter_1",
+          "DialogueText": "А вот и зима пришла! Это значит, что все будут сидеть по домам.",
+          "AudioPath": "assets/ru-RU/Lewis/111.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:winter_1",
+          "PageIndex": 0,
+          "DisplayPattern": "А вот и зима пришла! Это значит, что все будут сидеть по домам."
+        },
+        {
+          "DialogueFrom": "winter_1",
+          "DialogueText": "Ну, по крайней мере, не нужно будет их нигде искать! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/112.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:winter_1",
+          "PageIndex": 1,
+          "DisplayPattern": "Ну, по крайней мере, не нужно будет их нигде искать!"
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "Вот и закончился очередной год!",
+          "AudioPath": "assets/ru-RU/Lewis/113.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:winter_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Вот и закончился очередной год!"
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "Надеюсь, твой год был продуктивным!",
+          "AudioPath": "assets/ru-RU/Lewis/114.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:winter_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "Надеюсь, твой год был продуктивным!"
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "Нужно разрабатывать план по улучшению города на следующий год!",
+          "AudioPath": "assets/ru-RU/Lewis/115.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:winter_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Нужно разрабатывать план по улучшению города на следующий год!"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "Я буду увозить твои товары на рынок даже зимой.",
+          "AudioPath": "assets/ru-RU/Lewis/116.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:winter_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Я буду увозить твои товары на рынок даже зимой."
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "Зимой ведь тоже нужно зарабатывать!",
+          "AudioPath": "assets/ru-RU/Lewis/117.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:winter_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Зимой ведь тоже нужно зарабатывать!"
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "Надеюсь, на ферме дела идут хорошо.",
+          "AudioPath": "assets/ru-RU/Lewis/118.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:winter_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Надеюсь, на ферме дела идут хорошо."
+        },
+        {
+          "DialogueFrom": "winter_Fri6",
+          "DialogueText": "Я никогда не был женат. У меня нет семьи. Я живу лишь ради работы мэра. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/119.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:winter_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "Я никогда не был женат. У меня нет семьи. Я живу лишь ради работы мэра."
+        },
+        {
+          "DialogueFrom": "winter_Fri6",
+          "DialogueText": "Стоит оно того? {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/120.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:winter_Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "Стоит оно того?"
+        },
+        {
+          "DialogueFrom": "winter_Fri6",
+          "DialogueText": "... Эх... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/121.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:winter_Fri6",
+          "PageIndex": 2,
+          "DisplayPattern": "... Эх..."
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "Здорово, {Farmer_Name}! Как поживаешь? {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/122.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:winter_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Здорово, ! Как поживаешь?"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "Если встретишь Марни, передавай ей от меня привет.",
+          "AudioPath": "assets/ru-RU/Lewis/123.ogg",
+          "TranslationKey": "Characters/Dialogue/Lewis:winter_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Если встретишь Марни, передавай ей от меня привет."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "Здорово, {Farmer_Name}. Отдыхаешь?",
+          "AudioPath": "assets/ru-RU/Lewis/124.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Lewis",
+          "PageIndex": 0,
+          "DisplayPattern": "Здорово, . Отдыхаешь?"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "Надеюсь, паводка не случится... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/125.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Lewis",
+          "PageIndex": 1,
+          "DisplayPattern": "Надеюсь, паводка не случится..."
+        },
+        {
+          "DialogueFrom": "Event:Town/45:s0",
+          "DialogueText": "Hey! What do you think you're doing? That's private property! {Portrait:Love}",
+          "AudioPath": "assets/ru-RU/Lewis/126.ogg",
+          "TranslationKey": "Events/Town:45:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey! What do you think you're doing? That's private property!"
+        },
+        {
+          "DialogueFrom": "Event:Town/45:s1",
+          "DialogueText": "Sam!",
+          "AudioPath": "assets/ru-RU/Lewis/127.ogg",
+          "TranslationKey": "Events/Town:45:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Sam!"
+        },
+        {
+          "DialogueFrom": "Event:Town/45:s2",
+          "DialogueText": "*sigh*... The youth these days... Sometimes I wonder if this town isn't doomed. {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Lewis/128.ogg",
+          "TranslationKey": "Events/Town:45:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*... The youth these days... Sometimes I wonder if this town isn't doomed."
+        },
+        {
+          "DialogueFrom": "Event:Town/45:s3",
+          "DialogueText": "You saw what happened, {Farmer_Name}. What do you have to say about this?",
+          "AudioPath": "assets/ru-RU/Lewis/129.ogg",
+          "TranslationKey": "Events/Town:45:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "You saw what happened, . What do you have to say about this?"
+        },
+        {
+          "DialogueFrom": "Event:Town/45:s4",
+          "DialogueText": "You're right, sir. Sam should respect private property.",
+          "AudioPath": "assets/ru-RU/Lewis/130.ogg",
+          "TranslationKey": "Events/Town:45:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "You're right, sir. Sam should respect private property."
+        },
+        {
+          "DialogueFrom": "Event:Town/45:s5",
+          "DialogueText": "Don't blame Sam. There's nowhere else for him to ride!",
+          "AudioPath": "assets/ru-RU/Lewis/131.ogg",
+          "TranslationKey": "Events/Town:45:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Don't blame Sam. There's nowhere else for him to ride!"
+        },
+        {
+          "DialogueFrom": "Event:Town/45:s6",
+          "DialogueText": "I'm staying out of this.",
+          "AudioPath": "assets/ru-RU/Lewis/132.ogg",
+          "TranslationKey": "Events/Town:45:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm staying out of this."
+        },
+        {
+          "DialogueFrom": "Event:Town/45:s7",
+          "DialogueText": "Fine! I just won't ride my skateboard ever again. Happy? {Portrait:Angry}~Exactly! If there was a park in town, I could ride there and everyone would be happy.~Hmmph. Alright. {Portrait:Angry}",
+          "AudioPath": "assets/ru-RU/Lewis/133.ogg",
+          "TranslationKey": "Events/Town:45:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Fine! I just won't ride my skateboard ever again. Happy?~Exactly! If there was a park in town, I could ride there and everyone would be happy.~Hmmph. Alright."
+        },
+        {
+          "DialogueFrom": "Event:Town/45:s8",
+          "DialogueText": "You're being difficult, Sam. I have no problem with you riding around town, just try not to cause any damage! It's that simple.~Hmmph. I thought you were more mature than this, {Farmer_Name}. {Portrait:Love}~I'll let it slide this time, Sam. But I don't want to see you doing this anymore.",
+          "AudioPath": "assets/ru-RU/Lewis/134.ogg",
+          "TranslationKey": "Events/Town:45:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "You're being difficult, Sam. I have no problem with you riding around town, just try not to cause any damage! It's that simple.~Hmmph. I thought you were more mature than this, .~I'll let it slide this time, Sam. But I don't want to see you doing this anymore."
+        },
+        {
+          "DialogueFrom": "Event:Town/45:s9",
+          "DialogueText": "Got it?~Sam... I'm sorry I yelled at you. Just please try not to damage anything in the future. Got it?~Got it?",
+          "AudioPath": "assets/ru-RU/Lewis/135.ogg",
+          "TranslationKey": "Events/Town:45:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Got it?~Sam... I'm sorry I yelled at you. Just please try not to damage anything in the future. Got it?~Got it?"
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s0",
+          "DialogueText": "I'm proud of you, Leah! Events like this really breathe life into our little town! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/136.ogg",
+          "TranslationKey": "Events/Town:53:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm proud of you, Leah! Events like this really breathe life into our little town!"
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s1",
+          "DialogueText": "Now let's start the bidding on these wonderful art pieces... A marvelous addition to your home! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/137.ogg",
+          "TranslationKey": "Events/Town:53:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Now let's start the bidding on these wonderful art pieces... A marvelous addition to your home!"
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s2",
+          "DialogueText": "Do I hear 5000g for the pink one?",
+          "AudioPath": "assets/ru-RU/Lewis/138.ogg",
+          "TranslationKey": "Events/Town:53:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Do I hear 5000g for the pink one?"
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s3",
+          "DialogueText": "Wow! I'm exhausted.",
+          "AudioPath": "assets/ru-RU/Lewis/139.ogg",
+          "TranslationKey": "Events/Town:53:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow! I'm exhausted."
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s4",
+          "DialogueText": "My show was a real success, wasn't it? {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/140.ogg",
+          "TranslationKey": "Events/Town:53:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "My show was a real success, wasn't it?"
+        },
+        {
+          "DialogueFrom": "Event:Town/639373:s0",
+          "DialogueText": "Marnie... we can't. If word got out, it could undermine my position of authority in the town! {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/141.ogg",
+          "TranslationKey": "Events/Town:639373:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Marnie... we can't. If word got out, it could undermine my position of authority in the town!"
+        },
+        {
+          "DialogueFrom": "Event:Town/639373:s1",
+          "DialogueText": "You understand... don't you? {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/142.ogg",
+          "TranslationKey": "Events/Town:639373:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "You understand... don't you?"
+        },
+        {
+          "DialogueFrom": "Event:Town/639373:s2",
+          "DialogueText": "{Farmer_Name}...You overheard everything, didn't you? {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/143.ogg",
+          "TranslationKey": "Events/Town:639373:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "...You overheard everything, didn't you?"
+        },
+        {
+          "DialogueFrom": "Event:Town/639373:s3",
+          "DialogueText": "Yes... but I'll keep it a secret.",
+          "AudioPath": "assets/ru-RU/Lewis/144.ogg",
+          "TranslationKey": "Events/Town:639373:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Yes... but I'll keep it a secret."
+        },
+        {
+          "DialogueFrom": "Event:Town/639373:s4",
+          "DialogueText": "Yes... and I'm going to tell everyone.",
+          "AudioPath": "assets/ru-RU/Lewis/145.ogg",
+          "TranslationKey": "Events/Town:639373:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Yes... and I'm going to tell everyone."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s0",
+          "DialogueText": "Oh, hi there.",
+          "AudioPath": "assets/ru-RU/Lewis/146.ogg",
+          "TranslationKey": "Events/Town:611439:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, hi there."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s1",
+          "DialogueText": "What an eyesore... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/147.ogg",
+          "TranslationKey": "Events/Town:611439:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "What an eyesore..."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s2",
+          "DialogueText": "This is the Pelican Town Community Center... or what's left of it, anyway. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/148.ogg",
+          "TranslationKey": "Events/Town:611439:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "This is the Pelican Town Community Center... or what's left of it, anyway."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s3",
+          "DialogueText": "It used to be the pride and joy of the town... always bustling with activity.",
+          "AudioPath": "assets/ru-RU/Lewis/149.ogg",
+          "TranslationKey": "Events/Town:611439:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "It used to be the pride and joy of the town... always bustling with activity."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s4",
+          "DialogueText": "Now... just look at it. It's shameful. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/150.ogg",
+          "TranslationKey": "Events/Town:611439:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Now... just look at it. It's shameful."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s5",
+          "DialogueText": "These days, the young folk would rather sit in front of the TV than engage with the community.",
+          "AudioPath": "assets/ru-RU/Lewis/151.ogg",
+          "TranslationKey": "Events/Town:611439:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "These days, the young folk would rather sit in front of the TV than engage with the community."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s6",
+          "DialogueText": "But listen to me, I sound like an old fool. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/152.ogg",
+          "TranslationKey": "Events/Town:611439:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "But listen to me, I sound like an old fool."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s7",
+          "DialogueText": "Joja Corporation has been hounding me to sell them the land so they can turn it into a warehouse...",
+          "AudioPath": "assets/ru-RU/Lewis/153.ogg",
+          "TranslationKey": "Events/Town:611439:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Joja Corporation has been hounding me to sell them the land so they can turn it into a warehouse..."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s8",
+          "DialogueText": "Pelican Town could use the money, but there's something stopping me from selling it... I guess old timers like me get attached to relics of the past... Ah well. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/154.ogg",
+          "TranslationKey": "Events/Town:611439:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Pelican Town could use the money, but there's something stopping me from selling it... I guess old timers like me get attached to relics of the past... Ah well."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s9",
+          "DialogueText": "If anyone else buys a Joja Co. Membership I'm just gonna go ahead and sell it.",
+          "AudioPath": "assets/ru-RU/Lewis/155.ogg",
+          "TranslationKey": "Events/Town:611439:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "If anyone else buys a Joja Co. Membership I'm just gonna go ahead and sell it."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s10",
+          "DialogueText": "*sigh*... Here, let's go inside...",
+          "AudioPath": "assets/ru-RU/Lewis/156.ogg",
+          "TranslationKey": "Events/Town:611439:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*... Here, let's go inside..."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s11",
+          "DialogueText": "Hmm? What's this?...",
+          "AudioPath": "assets/ru-RU/Lewis/157.ogg",
+          "TranslationKey": "Events/Town:611439:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmm? What's this?..."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s12",
+          "DialogueText": "I guess Vincent and Jas must've been playing in here.",
+          "AudioPath": "assets/ru-RU/Lewis/158.ogg",
+          "TranslationKey": "Events/Town:611439:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "I guess Vincent and Jas must've been playing in here."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s13",
+          "DialogueText": "This place is even more dilapidated than I remember.",
+          "AudioPath": "assets/ru-RU/Lewis/159.ogg",
+          "TranslationKey": "Events/Town:611439:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "This place is even more dilapidated than I remember."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s14",
+          "DialogueText": "What?",
+          "AudioPath": "assets/ru-RU/Lewis/160.ogg",
+          "TranslationKey": "Events/Town:611439:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "What?"
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s15",
+          "DialogueText": "What's the matter? Are you ill? {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/161.ogg",
+          "TranslationKey": "Events/Town:611439:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "What's the matter? Are you ill?"
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s16",
+          "DialogueText": "You saw something? Hmm... I wouldn't be surprised if this place was full of rats. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/162.ogg",
+          "TranslationKey": "Events/Town:611439:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "You saw something? Hmm... I wouldn't be surprised if this place was full of rats."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s17",
+          "DialogueText": "You're worrying me, {Farmer_Name}... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/163.ogg",
+          "TranslationKey": "Events/Town:611439:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "You're worrying me, ..."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s18",
+          "DialogueText": "Look, I think I'm going to head home. I need some lunch.",
+          "AudioPath": "assets/ru-RU/Lewis/164.ogg",
+          "TranslationKey": "Events/Town:611439:s18",
+          "PageIndex": 0,
+          "DisplayPattern": "Look, I think I'm going to head home. I need some lunch."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s19",
+          "DialogueText": "Hey. I'll keep this place unlocked from now on... maybe you can help catch that rat if you have some extra time.",
+          "AudioPath": "assets/ru-RU/Lewis/165.ogg",
+          "TranslationKey": "Events/Town:611439:s19",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey. I'll keep this place unlocked from now on... maybe you can help catch that rat if you have some extra time."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s20",
+          "DialogueText": "Strange...",
+          "AudioPath": "assets/ru-RU/Lewis/166.ogg",
+          "TranslationKey": "Events/Town:611439:s20",
+          "PageIndex": 0,
+          "DisplayPattern": "Strange..."
+        },
+        {
+          "DialogueFrom": "Event:Town/611439:s21",
+          "DialogueText": "I'll have to come back and explore this building further.",
+          "AudioPath": "assets/ru-RU/Lewis/167.ogg",
+          "TranslationKey": "Events/Town:611439:s21",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll have to come back and explore this building further."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s0",
+          "DialogueText": "I'm not sure how you did it, {Farmer_Name}... but the community center has never looked better! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/168.ogg",
+          "TranslationKey": "Events/Town:191393:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm not sure how you did it, ... but the community center has never looked better!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s1",
+          "DialogueText": "You've done Pelican Town a great service. Everyone in town is pleased. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/169.ogg",
+          "TranslationKey": "Events/Town:191393:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "You've done Pelican Town a great service. Everyone in town is pleased."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s2",
+          "DialogueText": "As a way of saying 'Thank You', I'd like to present you with this Town's greatest honor... The Stardew Hero Award. You've earned it! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/170.ogg",
+          "TranslationKey": "Events/Town:191393:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "As a way of saying 'Thank You', I'd like to present you with this Town's greatest honor... The Stardew Hero Award. You've earned it!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s3",
+          "DialogueText": "VOICE: Grumble... Grumble...",
+          "AudioPath": "assets/ru-RU/Lewis/171.ogg",
+          "TranslationKey": "Events/Town:191393:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "VOICE: Grumble... Grumble..."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s4",
+          "DialogueText": "Who's that?",
+          "AudioPath": "assets/ru-RU/Lewis/172.ogg",
+          "TranslationKey": "Events/Town:191393:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Who's that?"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s5",
+          "DialogueText": "Ah, Morris.",
+          "AudioPath": "assets/ru-RU/Lewis/173.ogg",
+          "TranslationKey": "Events/Town:191393:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah, Morris."
+        },
+        {
+          "DialogueFrom": "Event:Town/15389722:s0",
+          "DialogueText": "Ah, hello there, {Farmer_Name}. You showed up at the perfect time. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/174.ogg",
+          "TranslationKey": "Events/Town:15389722:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah, hello there, . You showed up at the perfect time."
+        },
+        {
+          "DialogueFrom": "Event:Town/15389722:s1",
+          "DialogueText": "It's our new 'Special Orders' board.",
+          "AudioPath": "assets/ru-RU/Lewis/175.ogg",
+          "TranslationKey": "Events/Town:15389722:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "It's our new 'Special Orders' board."
+        },
+        {
+          "DialogueFrom": "Event:Town/15389722:s2",
+          "DialogueText": "Robin and I built it from scratch. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/176.ogg",
+          "TranslationKey": "Events/Town:15389722:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Robin and I built it from scratch."
+        },
+        {
+          "DialogueFrom": "Event:Town/15389722:s3",
+          "DialogueText": "*Ahem*... Ignore her. {Portrait:Angry}",
+          "AudioPath": "assets/ru-RU/Lewis/177.ogg",
+          "TranslationKey": "Events/Town:15389722:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "*Ahem*... Ignore her."
+        },
+        {
+          "DialogueFrom": "Event:Town/15389722:s4",
+          "DialogueText": "Now, let me explain...",
+          "AudioPath": "assets/ru-RU/Lewis/178.ogg",
+          "TranslationKey": "Events/Town:15389722:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Now, let me explain..."
+        },
+        {
+          "DialogueFrom": "Event:Town/15389722:s5",
+          "DialogueText": "You see... with %farm Farm back in business, the local economy has really been picking up.",
+          "AudioPath": "assets/ru-RU/Lewis/179.ogg",
+          "TranslationKey": "Events/Town:15389722:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "You see... with Farm back in business, the local economy has really been picking up."
+        },
+        {
+          "DialogueFrom": "Event:Town/15389722:s6",
+          "DialogueText": "As a result, some of the local townsfolk have been asking me for a way to source local ingredients for their businesses or personal projects.",
+          "AudioPath": "assets/ru-RU/Lewis/180.ogg",
+          "TranslationKey": "Events/Town:15389722:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "As a result, some of the local townsfolk have been asking me for a way to source local ingredients for their businesses or personal projects."
+        },
+        {
+          "DialogueFrom": "Event:Town/15389722:s7",
+          "DialogueText": "So, Robin and I came up with the idea of a new 'Special Orders' board, where people can post bigger jobs than would make sense for the old billboard outside Pierre's.",
+          "AudioPath": "assets/ru-RU/Lewis/181.ogg",
+          "TranslationKey": "Events/Town:15389722:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "So, Robin and I came up with the idea of a new 'Special Orders' board, where people can post bigger jobs than would make sense for the old billboard outside Pierre's."
+        },
+        {
+          "DialogueFrom": "Event:Town/15389722:s8",
+          "DialogueText": "I thought so! I wouldn't expect anything less from you, {Farmer_Name}.",
+          "AudioPath": "assets/ru-RU/Lewis/182.ogg",
+          "TranslationKey": "Events/Town:15389722:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I thought so! I wouldn't expect anything less from you, ."
+        },
+        {
+          "DialogueFrom": "Event:Town/15389722:s9",
+          "DialogueText": "*groan*",
+          "AudioPath": "assets/ru-RU/Lewis/183.ogg",
+          "TranslationKey": "Events/Town:15389722:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "*groan*"
+        },
+        {
+          "DialogueFrom": "Event:Town/15389722:s10",
+          "DialogueText": "Well, I'm sure you're busy, so we won't keep you away from your work any longer.",
+          "AudioPath": "assets/ru-RU/Lewis/184.ogg",
+          "TranslationKey": "Events/Town:15389722:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I'm sure you're busy, so we won't keep you away from your work any longer."
+        },
+        {
+          "DialogueFrom": "Event:Town/15389722:s11",
+          "DialogueText": "As always, I appreciate your willingness to contribute! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/185.ogg",
+          "TranslationKey": "Events/Town:15389722:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "As always, I appreciate your willingness to contribute!"
+        },
+        {
+          "DialogueFrom": "Event:Town/15389722:s12",
+          "DialogueText": "Take care, {Farmer_Name}.",
+          "AudioPath": "assets/ru-RU/Lewis/186.ogg",
+          "TranslationKey": "Events/Town:15389722:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Take care, ."
+        },
+        {
+          "DialogueFrom": "Event:Town/15389722:s13",
+          "DialogueText": "Huh... I wouldn't expect such a tepid response from you, {Farmer_Name}. I'm disappointed. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/187.ogg",
+          "TranslationKey": "Events/Town:15389722:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Huh... I wouldn't expect such a tepid response from you, . I'm disappointed."
+        },
+        {
+          "DialogueFrom": "Event:Town/15389722:s14",
+          "DialogueText": "Hmmph... Well, we're done here, Robin. {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Lewis/188.ogg",
+          "TranslationKey": "Events/Town:15389722:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmmph... Well, we're done here, Robin."
+        },
+        {
+          "DialogueFrom": "Event:Town/15389722:s15",
+          "DialogueText": "...Wouldn't want to waste any more of {Farmer_Name}'s precious 'me' time. {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Lewis/189.ogg",
+          "TranslationKey": "Events/Town:15389722:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "...Wouldn't want to waste any more of 's precious 'me' time."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s0",
+          "DialogueText": "Oh my!",
+          "AudioPath": "assets/ru-RU/Lewis/190.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh my!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s1",
+          "DialogueText": "Why not...",
+          "AudioPath": "assets/ru-RU/Lewis/191.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Why not..."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/prizeTicketIntro:s0",
+          "DialogueText": "Ah, hello there, {Farmer_Name}.",
+          "AudioPath": "assets/ru-RU/Lewis/192.ogg",
+          "TranslationKey": "Events/ManorHouse:prizeTicketIntro:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah, hello there, ."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/prizeTicketIntro:s1",
+          "DialogueText": "I was just loading some more prizes into this machine here...",
+          "AudioPath": "assets/ru-RU/Lewis/193.ogg",
+          "TranslationKey": "Events/ManorHouse:prizeTicketIntro:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I was just loading some more prizes into this machine here..."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/prizeTicketIntro:s2",
+          "DialogueText": "It's a new program I've come up with, to help promote a spirit of goodwill among the townsfolk... You included!",
+          "AudioPath": "assets/ru-RU/Lewis/194.ogg",
+          "TranslationKey": "Events/ManorHouse:prizeTicketIntro:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a new program I've come up with, to help promote a spirit of goodwill among the townsfolk... You included!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/prizeTicketIntro:s3",
+          "DialogueText": "It's pretty simple... sometimes, when you help out others in town, you'll receive a 'Prize Ticket'. You can turn them in for rewards.",
+          "AudioPath": "assets/ru-RU/Lewis/195.ogg",
+          "TranslationKey": "Events/ManorHouse:prizeTicketIntro:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "It's pretty simple... sometimes, when you help out others in town, you'll receive a 'Prize Ticket'. You can turn them in for rewards."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/prizeTicketIntro:s4",
+          "DialogueText": "There's some special stuff in there! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/196.ogg",
+          "TranslationKey": "Events/ManorHouse:prizeTicketIntro:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "There's some special stuff in there!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/prizeTicketIntro:s5",
+          "DialogueText": "My only worry is that people will just go after the tickets, rather than cultivating a true compassion for their fellow man... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/197.ogg",
+          "TranslationKey": "Events/ManorHouse:prizeTicketIntro:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "My only worry is that people will just go after the tickets, rather than cultivating a true compassion for their fellow man..."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/prizeTicketIntro:s6",
+          "DialogueText": "Is that so? Well, I'm glad to hear that! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/198.ogg",
+          "TranslationKey": "Events/ManorHouse:prizeTicketIntro:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Is that so? Well, I'm glad to hear that!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/prizeTicketIntro:s7",
+          "DialogueText": "I see! {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Lewis/199.ogg",
+          "TranslationKey": "Events/ManorHouse:prizeTicketIntro:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I see!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/prizeTicketIntro:s8",
+          "DialogueText": "Well... that's not what I hoped to hear, but I appreciate the honesty.",
+          "AudioPath": "assets/ru-RU/Lewis/200.ogg",
+          "TranslationKey": "Events/ManorHouse:prizeTicketIntro:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Well... that's not what I hoped to hear, but I appreciate the honesty."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/prizeTicketIntro:s9",
+          "DialogueText": "At any rate... keep checking the 'Help Wanted' board in town. That's a good way to get your hands on more tickets.",
+          "AudioPath": "assets/ru-RU/Lewis/201.ogg",
+          "TranslationKey": "Events/ManorHouse:prizeTicketIntro:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "At any rate... keep checking the 'Help Wanted' board in town. That's a good way to get your hands on more tickets."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/prizeTicketIntro:s10",
+          "DialogueText": "Good luck out there.",
+          "AudioPath": "assets/ru-RU/Lewis/202.ogg",
+          "TranslationKey": "Events/ManorHouse:prizeTicketIntro:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Good luck out there."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s0",
+          "DialogueText": "Mmph..",
+          "AudioPath": "assets/ru-RU/Lewis/203.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Mmph.."
+        },
+        {
+          "DialogueFrom": "Event:BusStop/60367:s0",
+          "DialogueText": "Ah, the new farmer! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/204.ogg",
+          "TranslationKey": "Events/BusStop:60367:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah, the new farmer!"
+        },
+        {
+          "DialogueFrom": "Event:BusStop/60367:s1",
+          "DialogueText": "Welcome! I'm Lewis, Mayor of Pelican Town.",
+          "AudioPath": "assets/ru-RU/Lewis/205.ogg",
+          "TranslationKey": "Events/BusStop:60367:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Welcome! I'm Lewis, Mayor of Pelican Town."
+        },
+        {
+          "DialogueFrom": "Event:BusStop/60367:s2",
+          "DialogueText": "You know, everyone's been asking about you.",
+          "AudioPath": "assets/ru-RU/Lewis/206.ogg",
+          "TranslationKey": "Events/BusStop:60367:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "You know, everyone's been asking about you."
+        },
+        {
+          "DialogueFrom": "Event:BusStop/60367:s3",
+          "DialogueText": "It's not every day that someone new moves in. It's quite a big deal!",
+          "AudioPath": "assets/ru-RU/Lewis/207.ogg",
+          "TranslationKey": "Events/BusStop:60367:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "It's not every day that someone new moves in. It's quite a big deal!"
+        },
+        {
+          "DialogueFrom": "Event:BusStop/60367:s4",
+          "DialogueText": "So... You're moving into your grandfather's old cottage.",
+          "AudioPath": "assets/ru-RU/Lewis/208.ogg",
+          "TranslationKey": "Events/BusStop:60367:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "So... You're moving into your grandfather's old cottage."
+        },
+        {
+          "DialogueFrom": "Event:BusStop/60367:s5",
+          "DialogueText": "It's a good house... very 'rustic'.",
+          "AudioPath": "assets/ru-RU/Lewis/209.ogg",
+          "TranslationKey": "Events/BusStop:60367:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a good house... very 'rustic'."
+        },
+        {
+          "DialogueFrom": "Event:BusStop/60367:s6",
+          "DialogueText": "Rude!",
+          "AudioPath": "assets/ru-RU/Lewis/210.ogg",
+          "TranslationKey": "Events/BusStop:60367:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Rude!"
+        },
+        {
+          "DialogueFrom": "Event:BusStop/60367:s7",
+          "DialogueText": "Don't listen to her, {Farmer_Name}. She's just trying to make you dissatisfied so that you buy one of her house upgrades. {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Lewis/211.ogg",
+          "TranslationKey": "Events/BusStop:60367:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Don't listen to her, . She's just trying to make you dissatisfied so that you buy one of her house upgrades."
+        },
+        {
+          "DialogueFrom": "Event:BusStop/60367:s8",
+          "DialogueText": "Anyway... You must be tired from the long journey. You should get some rest.",
+          "AudioPath": "assets/ru-RU/Lewis/212.ogg",
+          "TranslationKey": "Events/BusStop:60367:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Anyway... You must be tired from the long journey. You should get some rest."
+        },
+        {
+          "DialogueFrom": "Event:BusStop/60367:s9",
+          "DialogueText": "Tomorrow you ought to explore the town a bit and introduce yourself.",
+          "AudioPath": "assets/ru-RU/Lewis/213.ogg",
+          "TranslationKey": "Events/BusStop:60367:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Tomorrow you ought to explore the town a bit and introduce yourself."
+        },
+        {
+          "DialogueFrom": "Event:BusStop/60367:s10",
+          "DialogueText": "The townspeople would appreciate that.",
+          "AudioPath": "assets/ru-RU/Lewis/214.ogg",
+          "TranslationKey": "Events/BusStop:60367:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "The townspeople would appreciate that."
+        },
+        {
+          "DialogueFrom": "Event:BusStop/60367:s11",
+          "DialogueText": "Oh, I almost forgot. If you have anything to sell, just place it in this box here. I'll come by during the night to collect it.",
+          "AudioPath": "assets/ru-RU/Lewis/215.ogg",
+          "TranslationKey": "Events/BusStop:60367:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, I almost forgot. If you have anything to sell, just place it in this box here. I'll come by during the night to collect it."
+        },
+        {
+          "DialogueFrom": "Event:BusStop/60367:s12",
+          "DialogueText": "Well... Good luck!",
+          "AudioPath": "assets/ru-RU/Lewis/216.ogg",
+          "TranslationKey": "Events/BusStop:60367:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Well... Good luck!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Lewis",
+          "DialogueText": "Ну, {Farmer_Name}, вот и настал большой день... Наш самый главный праздник в году, ярмарка долины Стардью.",
+          "AudioPath": "assets/ru-RU/Lewis/217.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Lewis",
+          "PageIndex": 0,
+          "DisplayPattern": "Ну, , вот и настал большой день... Наш самый главный праздник в году, ярмарка долины Стардью."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Lewis",
+          "DialogueText": "Если желаешь участвовать в выставке, я оставил тебе пустой лоток — оформляй, если хочешь. Просто дай мне знать, как закончишь, и мы начнем оценку.",
+          "AudioPath": "assets/ru-RU/Lewis/218.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Lewis",
+          "PageIndex": 1,
+          "DisplayPattern": "Если желаешь участвовать в выставке, я оставил тебе пустой лоток — оформляй, если хочешь. Просто дай мне знать, как закончишь, и мы начнем оценку."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Lewis_y2",
+          "DialogueText": "Приветствую, {Farmer_Name}! «Ярмарка Долины Стардью» наконец-то началась, и народ прибывает с каждой минутой.",
+          "AudioPath": "assets/ru-RU/Lewis/219.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Lewis_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Приветствую, ! «Ярмарка Долины Стардью» наконец-то началась, и народ прибывает с каждой минутой."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Lewis_y2",
+          "DialogueText": "Мы оставили для тебя пустой лоток, как и в том году. Поговори со мной, когда можно будет начинать судейство.",
+          "AudioPath": "assets/ru-RU/Lewis/220.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Lewis_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Мы оставили для тебя пустой лоток, как и в том году. Поговори со мной, когда можно будет начинать судейство."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Lewis",
+          "DialogueText": "Добрый вечер, {Farmer_Name}. Как тебе лабиринт с привидениями? Он очень жуткий.",
+          "AudioPath": "assets/ru-RU/Lewis/221.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Lewis",
+          "PageIndex": 0,
+          "DisplayPattern": "Добрый вечер, . Как тебе лабиринт с привидениями? Он очень жуткий."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Lewis",
+          "DialogueText": "Тот чудной человек из башни построил его в одиночку. А пока строил — никого близко не подпускал.",
+          "AudioPath": "assets/ru-RU/Lewis/222.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Lewis",
+          "PageIndex": 1,
+          "DisplayPattern": "Тот чудной человек из башни построил его в одиночку. А пока строил — никого близко не подпускал."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Lewis_y2",
+          "DialogueText": "Добрый вечер, {Farmer_Name}. Опять перед нами предстал лабиринт с привидениями, который построил живущий в лесу чудак.. {Portrait:Neutral}",
+          "AudioPath": "assets/ru-RU/Lewis/223.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Lewis_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Добрый вечер, . Опять перед нами предстал лабиринт с привидениями, который построил живущий в лесу чудак.."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Lewis_y2",
+          "DialogueText": "Говорят, в этом году он намного больше, так что удачи...",
+          "AudioPath": "assets/ru-RU/Lewis/224.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Lewis_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Говорят, в этом году он намного больше, так что удачи..."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis",
+          "DialogueText": "Весело тебе, {Farmer_Name}? {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/225.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Lewis",
+          "PageIndex": 0,
+          "DisplayPattern": "Весело тебе, ?"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:0",
+          "DialogueText": "Ого, погляди-ка, сколько яиц собрали! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/226.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ого, погляди-ка, сколько яиц собрали!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:0",
+          "DialogueText": "Если б вы, ребятки, мусора столько же собирали, наш город был бы самым чистым по эту сторону Самоцветного моря! *усмехается* {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/227.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s0",
+          "PageIndex": 1,
+          "DisplayPattern": "Если б вы, ребятки, мусора столько же собирали, наш город был бы самым чистым по эту сторону Самоцветного моря! *усмехается*"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:1",
+          "DialogueText": "И в этом году в охоте за яйцами побеждает...",
+          "AudioPath": "assets/ru-RU/Lewis/228.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "И в этом году в охоте за яйцами побеждает..."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:2",
+          "DialogueText": "Вот и твой приз! Наслаждайся.",
+          "AudioPath": "assets/ru-RU/Lewis/229.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Вот и твой приз! Наслаждайся."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:3",
+          "DialogueText": "Вот и подошел к концу Яичный фестиваль. Спасибо всем, что пришли!",
+          "AudioPath": "assets/ru-RU/Lewis/230.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Вот и подошел к концу Яичный фестиваль. Спасибо всем, что пришли!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:4",
+          "DialogueText": "Вот твой приз, Абигейл. Наслаждайся!",
+          "AudioPath": "assets/ru-RU/Lewis/231.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Вот твой приз, Абигейл. Наслаждайся!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:5",
+          "DialogueText": "Вот и подошел к концу Яичный фестиваль. Спасибо всем, что пришли!",
+          "AudioPath": "assets/ru-RU/Lewis/232.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Вот и подошел к концу Яичный фестиваль. Спасибо всем, что пришли!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:6",
+          "DialogueText": "Пора приступить к главному событию фестиваля... Ежегодная охота за яйцами! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/233.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Пора приступить к главному событию фестиваля... Ежегодная охота за яйцами!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:7",
+          "DialogueText": "Успокойтесь, детки. Вам понадобится вся ваша энергия, чтобы найти больше всего яиц и забрать домой особенный приз.",
+          "AudioPath": "assets/ru-RU/Lewis/234.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Успокойтесь, детки. Вам понадобится вся ваша энергия, чтобы найти больше всего яиц и забрать домой особенный приз."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:8",
+          "DialogueText": "Итак... Все готовы?",
+          "AudioPath": "assets/ru-RU/Lewis/235.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Итак... Все готовы?"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:9",
+          "DialogueText": "Да начнется охота! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/236.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Да начнется охота!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:10",
+          "DialogueText": "Ух ты, только посмотрите на все эти яйца! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/237.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Ух ты, только посмотрите на все эти яйца!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:10",
+          "DialogueText": "Вот бы дети с таким же рвением мусор собирали, тогда у нас был бы самый чистый город на этом берегу Самоцветного моря! *смеется* {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/238.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s10",
+          "PageIndex": 1,
+          "DisplayPattern": "Вот бы дети с таким же рвением мусор собирали, тогда у нас был бы самый чистый город на этом берегу Самоцветного моря! *смеется*"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:11",
+          "DialogueText": "И победителем охоты за яйцами в этом году становится...",
+          "AudioPath": "assets/ru-RU/Lewis/239.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "И победителем охоты за яйцами в этом году становится..."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:12",
+          "DialogueText": "Вот, держи приз! Заслуженная победа.",
+          "AudioPath": "assets/ru-RU/Lewis/240.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Вот, держи приз! Заслуженная победа."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:13",
+          "DialogueText": "Ну вот и закончился ежегодный Яичный фестиваль. Спасибо, что пришли!",
+          "AudioPath": "assets/ru-RU/Lewis/241.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Ну вот и закончился ежегодный Яичный фестиваль. Спасибо, что пришли!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:14",
+          "DialogueText": "Пришла пора самого важного мероприятия на сегодня... Ежегодной весенней охоты за яйцами! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/242.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "Пришла пора самого важного мероприятия на сегодня... Ежегодной весенней охоты за яйцами!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:15",
+          "DialogueText": "Тише, детки. Вам понадобится вся ваша энергия, если хотите найти все яйца и унести домой особый приз.",
+          "AudioPath": "assets/ru-RU/Lewis/243.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "Тише, детки. Вам понадобится вся ваша энергия, если хотите найти все яйца и унести домой особый приз."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:16",
+          "DialogueText": "Ну что... Все готовы?",
+          "AudioPath": "assets/ru-RU/Lewis/244.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "Ну что... Все готовы?"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Lewis:speak:17",
+          "DialogueText": "Да начнется охота за яйцами! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/245.ogg",
+          "TranslationKey": "Festivals/spring13:Lewis:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "Да начнется охота за яйцами!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Lewis",
+          "DialogueText": "Если хочешь танцевать с остальной молодежью, тебе нужно будет найти партнера.",
+          "AudioPath": "assets/ru-RU/Lewis/246.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Lewis",
+          "PageIndex": 0,
+          "DisplayPattern": "Если хочешь танцевать с остальной молодежью, тебе нужно будет найти партнера."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Lewis_y2",
+          "DialogueText": "Добрый день, {Farmer_Name}. Сегодняшняя погода как нельзя лучше подходит для торжества. {Portrait:Neutral}",
+          "AudioPath": "assets/ru-RU/Lewis/247.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Lewis_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Добрый день, . Сегодняшняя погода как нельзя лучше подходит для торжества."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Lewis_y2",
+          "DialogueText": "Поговори со мной, когда захочешь начать церемонию. {Portrait:Neutral}",
+          "AudioPath": "assets/ru-RU/Lewis/248.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Lewis_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Поговори со мной, когда захочешь начать церемонию."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis",
+          "DialogueText": "Веди себя прилично! К нам приехал губернатор с ежегодным визитом.",
+          "AudioPath": "assets/ru-RU/Lewis/249.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Lewis",
+          "PageIndex": 0,
+          "DisplayPattern": "Веди себя прилично! К нам приехал губернатор с ежегодным визитом."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis",
+          "DialogueText": "Если у тебя есть что-нибудь с собой на суп, не забудь положить в общий котел.",
+          "AudioPath": "assets/ru-RU/Lewis/250.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Lewis",
+          "PageIndex": 1,
+          "DisplayPattern": "Если у тебя есть что-нибудь с собой на суп, не забудь положить в общий котел."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis_y2",
+          "DialogueText": "Губернатор — наш почетный гость! Очень надеюсь, что вы все будете вести себя подобающе.",
+          "AudioPath": "assets/ru-RU/Lewis/251.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Lewis_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Губернатор — наш почетный гость! Очень надеюсь, что вы все будете вести себя подобающе."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis_y2",
+          "DialogueText": "Если принесли ингредиенты для супа, положите их в котел.",
+          "AudioPath": "assets/ru-RU/Lewis/252.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Lewis_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Если принесли ингредиенты для супа, положите их в котел."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:0",
+          "DialogueText": "Ну что, народ, вот мы снова и собрались у общего котла.",
+          "AudioPath": "assets/ru-RU/Lewis/253.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ну что, народ, вот мы снова и собрались у общего котла."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:0",
+          "DialogueText": "Я надеюсь, каждый положил в котел только самые лучшие продукты в этом году. Мы ведь не хотим, чтобы губернатор пожалел о своем визите?",
+          "AudioPath": "assets/ru-RU/Lewis/254.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s0",
+          "PageIndex": 1,
+          "DisplayPattern": "Я надеюсь, каждый положил в котел только самые лучшие продукты в этом году. Мы ведь не хотим, чтобы губернатор пожалел о своем визите?"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:1",
+          "DialogueText": "Итак... Губернатор? Окажете ли нам честь снять пробу?",
+          "AudioPath": "assets/ru-RU/Lewis/255.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Итак... Губернатор? Окажете ли нам честь снять пробу?"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:2",
+          "DialogueText": "Кто бы ни устроил эту отвратительную шутку, он достоин порицания. Взять мою личную вещь для такой глупой шутки! {Portrait:Love}",
+          "AudioPath": "assets/ru-RU/Lewis/256.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Кто бы ни устроил эту отвратительную шутку, он достоин порицания. Взять мою личную вещь для такой глупой шутки!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:2",
+          "DialogueText": "Да еще и испортить отличный суп... непростительно! Мне еще никогда не было так стыдно за наш город... Просто отвратительно. {Portrait:Love}",
+          "AudioPath": "assets/ru-RU/Lewis/257.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s2",
+          "PageIndex": 1,
+          "DisplayPattern": "Да еще и испортить отличный суп... непростительно! Мне еще никогда не было так стыдно за наш город... Просто отвратительно."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:3",
+          "DialogueText": "Идите по домам, фестиваль окончен. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/258.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Идите по домам, фестиваль окончен."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:4",
+          "DialogueText": "Да, вы правы... Суп вышел скучноватым. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/259.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Да, вы правы... Суп вышел скучноватым."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:5",
+          "DialogueText": "Ну, спасибо, что присоединились к нам в этом году, губернатор. Уж простите, что суп вышел скучный.",
+          "AudioPath": "assets/ru-RU/Lewis/260.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Ну, спасибо, что присоединились к нам в этом году, губернатор. Уж простите, что суп вышел скучный."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:6",
+          "DialogueText": "Ну что, кому супа?",
+          "AudioPath": "assets/ru-RU/Lewis/261.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Ну что, кому супа?"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:7",
+          "DialogueText": "Вы правы... Суп великолепен! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/262.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Вы правы... Суп великолепен!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:8",
+          "DialogueText": "Вы все отлично постарались! Ну, кто хочет попробовать? {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/263.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Вы все отлично постарались! Ну, кто хочет попробовать?"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:9",
+          "DialogueText": "М-м-м... Вкусно. Вы все сегодня молодцы.",
+          "AudioPath": "assets/ru-RU/Lewis/264.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "М-м-м... Вкусно. Вы все сегодня молодцы."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:10",
+          "DialogueText": "Кто еще хочет супа?",
+          "AudioPath": "assets/ru-RU/Lewis/265.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Кто еще хочет супа?"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:11",
+          "DialogueText": "Он прав... Ничего особенного. Но суп все равно неплохой.",
+          "AudioPath": "assets/ru-RU/Lewis/266.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Он прав... Ничего особенного. Но суп все равно неплохой."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:12",
+          "DialogueText": "Ну, кому супа?",
+          "AudioPath": "assets/ru-RU/Lewis/267.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Ну, кому супа?"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:13",
+          "DialogueText": "Фу. Наверное, кто-то все испортил плохим ингредиентом. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/268.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Фу. Наверное, кто-то все испортил плохим ингредиентом."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:14",
+          "DialogueText": "Кто-нибудь будет суп?",
+          "AudioPath": "assets/ru-RU/Lewis/269.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "Кто-нибудь будет суп?"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:15",
+          "DialogueText": "Ну вы, ребята, молодцы... Кто-то положил в котел что-то настолько мерзкое, что губернатор в обмороке! Мне стыдно за вас. {Portrait:Love}",
+          "AudioPath": "assets/ru-RU/Lewis/270.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "Ну вы, ребята, молодцы... Кто-то положил в котел что-то настолько мерзкое, что губернатор в обмороке! Мне стыдно за вас."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:16",
+          "DialogueText": "Расходитесь, праздник кончился. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/271.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "Расходитесь, праздник кончился."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:17",
+          "DialogueText": "Всем привет и добро пожаловать! Рад сообщить о начале церемонии общего супа.",
+          "AudioPath": "assets/ru-RU/Lewis/272.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "Всем привет и добро пожаловать! Рад сообщить о начале церемонии общего супа."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:17",
+          "DialogueText": "Очень надеюсь, что вы все принесли ингредиенты только самого высшего качества! Хотелось бы, чтобы губернатору все понравилось.",
+          "AudioPath": "assets/ru-RU/Lewis/273.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s17",
+          "PageIndex": 1,
+          "DisplayPattern": "Очень надеюсь, что вы все принесли ингредиенты только самого высшего качества! Хотелось бы, чтобы губернатору все понравилось."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Lewis:speak:18",
+          "DialogueText": "Так... Губернатор? Не окажете ли честь первым снять пробу?",
+          "AudioPath": "assets/ru-RU/Lewis/274.ogg",
+          "TranslationKey": "Festivals/summer11:Lewis:s18",
+          "PageIndex": 0,
+          "DisplayPattern": "Так... Губернатор? Не окажете ли честь первым снять пробу?"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Lewis",
+          "DialogueText": "Добрый вечер, {Farmer_Name}. Скоро приплывут полуночные медузы... Я уже видел одну вдалеке.",
+          "AudioPath": "assets/ru-RU/Lewis/275.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Lewis",
+          "PageIndex": 0,
+          "DisplayPattern": "Добрый вечер, . Скоро приплывут полуночные медузы... Я уже видел одну вдалеке."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Lewis",
+          "DialogueText": "Когда мы пустим лодку со свечами, они подплывут к докам и поздороваются с нами.",
+          "AudioPath": "assets/ru-RU/Lewis/276.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Lewis",
+          "PageIndex": 1,
+          "DisplayPattern": "Когда мы пустим лодку со свечами, они подплывут к докам и поздороваются с нами."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Lewis_y2",
+          "DialogueText": "Привет, {Farmer_Name}. С наступлением темноты Полуночные медузы ближе подплывут к берегу.",
+          "AudioPath": "assets/ru-RU/Lewis/277.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Lewis_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет, . С наступлением темноты Полуночные медузы ближе подплывут к берегу."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Lewis_y2",
+          "DialogueText": "Они соберутся у доков, как только мы пустим к ним лодочку со свечами. {Portrait:Neutral}",
+          "AudioPath": "assets/ru-RU/Lewis/278.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Lewis_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Они соберутся у доков, как только мы пустим к ним лодочку со свечами."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Lewis",
+          "DialogueText": "Сегодня мы все благодарны за удачу, которую принес этот год. Забудь о своих тревогах и расслабься!",
+          "AudioPath": "assets/ru-RU/Lewis/279.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Lewis",
+          "PageIndex": 0,
+          "DisplayPattern": "Сегодня мы все благодарны за удачу, которую принес этот год. Забудь о своих тревогах и расслабься!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Lewis_y2",
+          "DialogueText": "Счастливого Пира Зимней звезды, {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/280.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Lewis_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Счастливого Пира Зимней звезды, ."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Lewis_y2",
+          "DialogueText": "Самое время расслабиться, провести время в хорошей компании и поблагодарить за все, что было. {Portrait:Neutral}",
+          "AudioPath": "assets/ru-RU/Lewis/281.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Lewis_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Самое время расслабиться, провести время в хорошей компании и поблагодарить за все, что было."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis",
+          "DialogueText": "Добро пожаловать на Ледовый праздник!",
+          "AudioPath": "assets/ru-RU/Lewis/282.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Lewis",
+          "PageIndex": 0,
+          "DisplayPattern": "Добро пожаловать на Ледовый праздник!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis",
+          "DialogueText": "Гвоздь сегодняшней программы — соревнование по подледному лову. Мы устроили тут небольшое \"озерцо\" и запустили в него кучу рыбы.",
+          "AudioPath": "assets/ru-RU/Lewis/283.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Lewis",
+          "PageIndex": 1,
+          "DisplayPattern": "Гвоздь сегодняшней программы — соревнование по подледному лову. Мы устроили тут небольшое \"озерцо\" и запустили в него кучу рыбы."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis",
+          "DialogueText": "Мы начнем, когда скажешь.",
+          "AudioPath": "assets/ru-RU/Lewis/284.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Lewis",
+          "PageIndex": 2,
+          "DisplayPattern": "Мы начнем, когда скажешь."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis_y2",
+          "DialogueText": "Привет, {Farmer_Name}. Снова пришло время ледового рыболовного соревнования.",
+          "AudioPath": "assets/ru-RU/Lewis/285.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Lewis_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет, . Снова пришло время ледового рыболовного соревнования."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis_y2",
+          "DialogueText": "Поговори со мной, когда захочешь начать! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/286.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Lewis_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Поговори со мной, когда захочешь начать!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:0",
+          "DialogueText": "Так, народ. Давайте начнем наше ежегодное соревнование по подледному лову.",
+          "AudioPath": "assets/ru-RU/Lewis/287.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Так, народ. Давайте начнем наше ежегодное соревнование по подледному лову."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:1",
+          "DialogueText": "Участники должны поймать предоставленными удочками как можно больше рыбы за две минуты.",
+          "AudioPath": "assets/ru-RU/Lewis/288.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Участники должны поймать предоставленными удочками как можно больше рыбы за две минуты."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:1",
+          "DialogueText": "Ловить можно только вот в этих прорубях.",
+          "AudioPath": "assets/ru-RU/Lewis/289.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s1",
+          "PageIndex": 1,
+          "DisplayPattern": "Ловить можно только вот в этих прорубях."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:2",
+          "DialogueText": "Ну, все готовы?",
+          "AudioPath": "assets/ru-RU/Lewis/290.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ну, все готовы?"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:3",
+          "DialogueText": "Начали!",
+          "AudioPath": "assets/ru-RU/Lewis/291.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Начали!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:4",
+          "DialogueText": "Ого, сколько рыбы! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/292.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Ого, сколько рыбы!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:5",
+          "DialogueText": "*поперхнулся*... Ну и запах... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/293.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "*поперхнулся*... Ну и запах..."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:6",
+          "DialogueText": "Итак, победитель сегодняшнего соревнования...",
+          "AudioPath": "assets/ru-RU/Lewis/294.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Итак, победитель сегодняшнего соревнования..."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:7",
+          "DialogueText": "А вот и твой приз! Наслаждайся.",
+          "AudioPath": "assets/ru-RU/Lewis/295.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "А вот и твой приз! Наслаждайся."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:8",
+          "DialogueText": "Вот и закончился Ледовый праздник. Спасибо всем, что пришли!",
+          "AudioPath": "assets/ru-RU/Lewis/296.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Вот и закончился Ледовый праздник. Спасибо всем, что пришли!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:8",
+          "DialogueText": "А теперь давайте выпустим эту бедную рыбу... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/297.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s8",
+          "PageIndex": 1,
+          "DisplayPattern": "А теперь давайте выпустим эту бедную рыбу..."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:9",
+          "DialogueText": "Вот твой приз, Вилли. Наслаждайся.",
+          "AudioPath": "assets/ru-RU/Lewis/298.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Вот твой приз, Вилли. Наслаждайся."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:10",
+          "DialogueText": "Вот и закончился Ледовый праздник. Спасибо всем, что пришли!",
+          "AudioPath": "assets/ru-RU/Lewis/299.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Вот и закончился Ледовый праздник. Спасибо всем, что пришли!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:10",
+          "DialogueText": "А теперь давайте выпустим эту бедную рыбу... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/300.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s10",
+          "PageIndex": 1,
+          "DisplayPattern": "А теперь давайте выпустим эту бедную рыбу..."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:11",
+          "DialogueText": "Так, народ. Пришла пора начать ежегодное ледовое рыболовное соревнование.",
+          "AudioPath": "assets/ru-RU/Lewis/301.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Так, народ. Пришла пора начать ежегодное ледовое рыболовное соревнование."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:12",
+          "DialogueText": "Участники, вам выдадут удочки. Ваша цель: выудить как можно больше рыбы из лунок во льду.",
+          "AudioPath": "assets/ru-RU/Lewis/302.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Участники, вам выдадут удочки. Ваша цель: выудить как можно больше рыбы из лунок во льду."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:13",
+          "DialogueText": "Все готовы?",
+          "AudioPath": "assets/ru-RU/Lewis/303.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Все готовы?"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:14",
+          "DialogueText": "Начали!",
+          "AudioPath": "assets/ru-RU/Lewis/304.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "Начали!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:15",
+          "DialogueText": "Невероятно, как много рыбы! {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/305.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "Невероятно, как много рыбы!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:16",
+          "DialogueText": "*фу*... Не могу привыкнуть к этому запаху... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/306.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "*фу*... Не могу привыкнуть к этому запаху..."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:17",
+          "DialogueText": "Так, и победителем Ледового праздника в этом году становится...",
+          "AudioPath": "assets/ru-RU/Lewis/307.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "Так, и победителем Ледового праздника в этом году становится..."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:18",
+          "DialogueText": "Вот твой приз. Заслуженная победа.",
+          "AudioPath": "assets/ru-RU/Lewis/308.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s18",
+          "PageIndex": 0,
+          "DisplayPattern": "Вот твой приз. Заслуженная победа."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:19",
+          "DialogueText": "Что ж, вот и закончился наш Ледовый праздник. Спасибо, что пришли!",
+          "AudioPath": "assets/ru-RU/Lewis/309.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s19",
+          "PageIndex": 0,
+          "DisplayPattern": "Что ж, вот и закончился наш Ледовый праздник. Спасибо, что пришли!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:19",
+          "DialogueText": "А теперь отпускайте эту бедную рыбу... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/310.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s19",
+          "PageIndex": 1,
+          "DisplayPattern": "А теперь отпускайте эту бедную рыбу..."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:20",
+          "DialogueText": "Вот твой приз, Вилли. Заслужил.",
+          "AudioPath": "assets/ru-RU/Lewis/311.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s20",
+          "PageIndex": 0,
+          "DisplayPattern": "Вот твой приз, Вилли. Заслужил."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:21",
+          "DialogueText": "Что ж, вот и закончился наш Ледовый праздник. Спасибо, что пришли!",
+          "AudioPath": "assets/ru-RU/Lewis/312.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s21",
+          "PageIndex": 0,
+          "DisplayPattern": "Что ж, вот и закончился наш Ледовый праздник. Спасибо, что пришли!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Lewis:speak:21",
+          "DialogueText": "А теперь отпускайте эту бедную рыбу... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/313.ogg",
+          "TranslationKey": "Festivals/winter8:Lewis:s21",
+          "PageIndex": 1,
+          "DisplayPattern": "А теперь отпускайте эту бедную рыбу..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Lewis:s0",
+          "DialogueText": "Ого, да это же мое любимое! Спасибо тебе!",
+          "AudioPath": "assets/ru-RU/Lewis/314.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Lewis:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ого, да это же мое любимое! Спасибо тебе!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Lewis:s1",
+          "DialogueText": "Здорово, спасибо!",
+          "AudioPath": "assets/ru-RU/Lewis/315.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Lewis:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Здорово, спасибо!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Lewis:s2",
+          "DialogueText": "Ну, главное — внимание...",
+          "AudioPath": "assets/ru-RU/Lewis/316.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Lewis:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ну, главное — внимание..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Lewis:s3",
+          "DialogueText": "Меня тошнит от такого. Чудовищный подарок.",
+          "AudioPath": "assets/ru-RU/Lewis/317.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Lewis:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Меня тошнит от такого. Чудовищный подарок."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Lewis:s4",
+          "DialogueText": "Очень мило с твоей стороны. Спасибо.",
+          "AudioPath": "assets/ru-RU/Lewis/318.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Lewis:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Очень мило с твоей стороны. Спасибо."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Intro_Lewis",
+          "DialogueText": "Ух ты... Вот это вид.",
+          "AudioPath": "assets/ru-RU/Lewis/319.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Intro_Lewis",
+          "PageIndex": 0,
+          "DisplayPattern": "Ух ты... Вот это вид."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue1_Lewis",
+          "DialogueText": "Знаешь, {Farmer_Name}... Я уже давно являюсь мэром города Пеликана.",
+          "AudioPath": "assets/ru-RU/Lewis/320.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue1_Lewis",
+          "PageIndex": 0,
+          "DisplayPattern": "Знаешь, ... Я уже давно являюсь мэром города Пеликана."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue1_Lewis",
+          "DialogueText": "Люди приходили и уходили. Были у нас и тяжелые времена, и времена изобилия.",
+          "AudioPath": "assets/ru-RU/Lewis/321.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue1_Lewis",
+          "PageIndex": 1,
+          "DisplayPattern": "Люди приходили и уходили. Были у нас и тяжелые времена, и времена изобилия."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue2_Lewis",
+          "DialogueText": "Но за все эти годы на посту, я ничем не гордился сильнее, чем тобой и тем, чем стала ферма «%farm» под твоим чутким руководством. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/322.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue2_Lewis",
+          "PageIndex": 0,
+          "DisplayPattern": "Но за все эти годы на посту, я ничем не гордился сильнее, чем тобой и тем, чем стала ферма «» под твоим чутким руководством."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue2_Lewis",
+          "DialogueText": "Ты вывел ферму на такой уровень, о котором твой Дедушка даже не мечтал.",
+          "AudioPath": "assets/ru-RU/Lewis/323_male.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue2_Lewis",
+          "PageIndex": 1,
+          "DisplayPattern": "Ты вывел ферму на такой уровень, о котором твой Дедушка даже не мечтал.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue2_Lewis",
+          "DialogueText": "Ты вывела ферму на такой уровень, о котором твой Дедушка даже не мечтал.",
+          "AudioPath": "assets/ru-RU/Lewis/324_female.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue2_Lewis",
+          "PageIndex": 2,
+          "DisplayPattern": "Ты вывела ферму на такой уровень, о котором твой Дедушка даже не мечтал.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue2_Lewis",
+          "DialogueText": "И на пути к этим достижениям, ты также навсегда изменил и нашу долину.",
+          "AudioPath": "assets/ru-RU/Lewis/325_male.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue2_Lewis",
+          "PageIndex": 3,
+          "DisplayPattern": "И на пути к этим достижениям, ты также навсегда изменил и нашу долину.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue2_Lewis",
+          "DialogueText": "И на пути к этим достижениям, ты также навсегда изменила и нашу долину.",
+          "AudioPath": "assets/ru-RU/Lewis/326_female.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue2_Lewis",
+          "PageIndex": 4,
+          "DisplayPattern": "И на пути к этим достижениям, ты также навсегда изменила и нашу долину.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Outro_Lewis",
+          "DialogueText": "Может по мне и не заметно, но я часто размышляю о том, что ждет наш городок в будущем, {Farmer_Name}.",
+          "AudioPath": "assets/ru-RU/Lewis/327.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Outro_Lewis",
+          "PageIndex": 0,
+          "DisplayPattern": "Может по мне и не заметно, но я часто размышляю о том, что ждет наш городок в будущем, ."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Outro_Lewis",
+          "DialogueText": "А больше %year лет назад я и вовсе места себе не находил — такой неопределенной казалась мне судьба долины в то время. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Lewis/328.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Outro_Lewis",
+          "PageIndex": 1,
+          "DisplayPattern": "А больше %year лет назад я и вовсе места себе не находил — такой неопределенной казалась мне судьба долины в то время."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Outro_Lewis",
+          "DialogueText": "Однако теперь я за нее спокоен.",
+          "AudioPath": "assets/ru-RU/Lewis/329.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Outro_Lewis",
+          "PageIndex": 2,
+          "DisplayPattern": "Однако теперь я за нее спокоен."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Outro_Lewis",
+          "DialogueText": "Мог ли кто подумать, что скромный фермер, однажды переехавший в наш городишко, так все тут преобразит? {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/330_male.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Outro_Lewis",
+          "PageIndex": 3,
+          "DisplayPattern": "Мог ли кто подумать, что скромный фермер, однажды переехавший в наш городишко, так все тут преобразит?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Outro_Lewis",
+          "DialogueText": "Мог ли кто подумать, что скромный фермер, однажды переехавшая в наш городишко, так все тут преобразит? {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/331_male.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Outro_Lewis",
+          "PageIndex": 4,
+          "DisplayPattern": "Мог ли кто подумать, что скромный фермер, однажды переехавшая в наш городишко, так все тут преобразит?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Outro_Lewis",
+          "DialogueText": "Мог ли кто подумать, что скромная девушка с фермы, однажды переехавший в наш городишко, так все тут преобразит? {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/332_female.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Outro_Lewis",
+          "PageIndex": 5,
+          "DisplayPattern": "Мог ли кто подумать, что скромная девушка с фермы, однажды переехавший в наш городишко, так все тут преобразит?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Outro_Lewis",
+          "DialogueText": "Мог ли кто подумать, что скромная девушка с фермы, однажды переехавшая в наш городишко, так все тут преобразит? {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/333_female.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Outro_Lewis",
+          "PageIndex": 6,
+          "DisplayPattern": "Мог ли кто подумать, что скромная девушка с фермы, однажды переехавшая в наш городишко, так все тут преобразит?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Outro_Lewis",
+          "DialogueText": "... Спасибо тебе.",
+          "AudioPath": "assets/ru-RU/Lewis/334.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Outro_Lewis",
+          "PageIndex": 7,
+          "DisplayPattern": "... Спасибо тебе."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Lewis_summer_movie_0_BeforeMovie",
+          "DialogueText": "Я фильмы про ковбоев мальцом смотрел... Хорошо, что жанр еще держится!",
+          "AudioPath": "assets/ru-RU/Lewis/335.ogg",
+          "TranslationKey": "Strings/MovieReactions:Lewis_summer_movie_0_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Я фильмы про ковбоев мальцом смотрел... Хорошо, что жанр еще держится!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Lewis_summer_movie_0_DuringMovie",
+          "DialogueText": "(Интересно, чем он укладывает усы?)",
+          "AudioPath": "assets/ru-RU/Lewis/336.ogg",
+          "TranslationKey": "Strings/MovieReactions:Lewis_summer_movie_0_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "(Интересно, чем он укладывает усы?)"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Lewis_summer_movie_0_DuringMovie_2",
+          "DialogueText": "Мэр Льюис, кажется, глубоко задумался...",
+          "AudioPath": "assets/ru-RU/Lewis/337.ogg",
+          "TranslationKey": "Strings/MovieReactions:Lewis_summer_movie_0_DuringMovie_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Мэр Льюис, кажется, глубоко задумался..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Lewis_summer_movie_0_AfterMovie",
+          "DialogueText": "Хе-хе, хорошее кино. Я будто в юность вернулся... {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/338.ogg",
+          "TranslationKey": "Strings/MovieReactions:Lewis_summer_movie_0_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Хе-хе, хорошее кино. Я будто в юность вернулся..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Lewis_spring_movie_1_BeforeMovie",
+          "DialogueText": "Этот фильм мне порекомендовал сам губернатор!",
+          "AudioPath": "assets/ru-RU/Lewis/339.ogg",
+          "TranslationKey": "Strings/MovieReactions:Lewis_spring_movie_1_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Этот фильм мне порекомендовал сам губернатор!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Lewis_spring_movie_1_AfterMovie",
+          "DialogueText": "Потрясающе! Как живописно у них выглядит долина Стардью, правда же? Вот бы они еще и сам Пеликан продемонстрировали... {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/340.ogg",
+          "TranslationKey": "Strings/MovieReactions:Lewis_spring_movie_1_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Потрясающе! Как живописно у них выглядит долина Стардью, правда же? Вот бы они еще и сам Пеликан продемонстрировали..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Lewis_like_BeforeMovie",
+          "DialogueText": "Мне как мэру нужно быть в курсе того, какие фильмы смотрят горожане. Нам нужно чутко следить за нравственным развитием подрастающего поколения!",
+          "AudioPath": "assets/ru-RU/Lewis/341.ogg",
+          "TranslationKey": "Strings/MovieReactions:Lewis_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Мне как мэру нужно быть в курсе того, какие фильмы смотрят горожане. Нам нужно чутко следить за нравственным развитием подрастающего поколения!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Lewis_like_AfterMovie",
+          "DialogueText": "Ха! Очень даже неплохо... Я бы даже сказал, «одобрено мэром». {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Lewis/342.ogg",
+          "TranslationKey": "Strings/MovieReactions:Lewis_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ха! Очень даже неплохо... Я бы даже сказал, «одобрено мэром»."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Lewis_dislike_BeforeMovie",
+          "DialogueText": "Хм-м... Ну что ж, посмотрим, что сегодня смотрит наша молодежь...",
+          "AudioPath": "assets/ru-RU/Lewis/343.ogg",
+          "TranslationKey": "Strings/MovieReactions:Lewis_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Хм-м... Ну что ж, посмотрим, что сегодня смотрит наша молодежь..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Lewis_dislike_AfterMovie",
+          "DialogueText": "Хм... Интересно, насколько важен посыл этого фильма для нашего сообщества?",
+          "AudioPath": "assets/ru-RU/Lewis/344.ogg",
+          "TranslationKey": "Strings/MovieReactions:Lewis_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Хм... Интересно, насколько важен посыл этого фильма для нашего сообщества?"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Lewis",
+          "DialogueText": "Этот фестиваль — то что нужно, чтобы всех взбодрить после долгой и темной зимы.",
+          "AudioPath": "assets/ru-RU/Lewis/345.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Lewis",
+          "PageIndex": 0,
+          "DisplayPattern": "Этот фестиваль — то что нужно, чтобы всех взбодрить после долгой и темной зимы."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Lewis2",
+          "DialogueText": "Все это стало возможным лишь потому, что автобус снова на ходу, {Farmer_Name}! Не знаю, как тебя благодарить!",
+          "AudioPath": "assets/ru-RU/Lewis/346.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Lewis2",
+          "PageIndex": 0,
+          "DisplayPattern": "Все это стало возможным лишь потому, что автобус снова на ходу, ! Не знаю, как тебя благодарить!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Lewis3",
+          "DialogueText": "Помни, сегодня последний день фестиваля. Но через год мы устроим новый.",
+          "AudioPath": "assets/ru-RU/Lewis/347.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Lewis3",
+          "PageIndex": 0,
+          "DisplayPattern": "Помни, сегодня последний день фестиваля. Но через год мы устроим новый."
+        },
+        {
+          "DialogueFrom": "ManorHouse_Lewis_Morning",
+          "DialogueText": "Доброе утро!",
+          "AudioPath": "assets/ru-RU/Lewis/348.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:ManorHouse_Lewis_Morning",
+          "PageIndex": 0,
+          "DisplayPattern": "Доброе утро!"
+        },
+        {
+          "DialogueFrom": "ManorHouse_Lewis_Afternoon",
+          "DialogueText": "Добрый день.",
+          "AudioPath": "assets/ru-RU/Lewis/349.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:ManorHouse_Lewis_Afternoon",
+          "PageIndex": 0,
+          "DisplayPattern": "Добрый день."
+        },
+        {
+          "DialogueFrom": "ManorHouse_Lewis_Evening",
+          "DialogueText": "Добрый вечер.",
+          "AudioPath": "assets/ru-RU/Lewis/350.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:ManorHouse_Lewis_Evening",
+          "PageIndex": 0,
+          "DisplayPattern": "Добрый вечер."
+        }
+      ]
+    }
+  ]
+}

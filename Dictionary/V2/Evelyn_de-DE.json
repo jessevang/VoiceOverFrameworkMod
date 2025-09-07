@@ -1,0 +1,1228 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Evelyn.de-DE",
+      "VoicePackName": "DictionarV2 (Evelyn - de-DE)",
+      "Character": "Evelyn",
+      "Language": "de-DE",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Ah, hallo und willkommen in unserer kleinen Gemeinde, mein Kind!",
+          "AudioPath": "assets/de-DE/Evelyn/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah, hallo und willkommen in unserer kleinen Gemeinde, mein Kind!"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Du kannst mich 'Oma' nennen, wenn du willst. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "Du kannst mich 'Oma' nennen, wenn du willst."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Oh, das schenkst du mir? Vielen Dank, mein Lieber. Das ist ein ganz besonderes Geschenk!",
+          "AudioPath": "assets/de-DE/Evelyn/3_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, das schenkst du mir? Vielen Dank, mein Lieber. Das ist ein ganz besonderes Geschenk!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Oh, das schenkst du mir? Vielen Dank, meine Liebe. Das ist ein ganz besonderes Geschenk!",
+          "AudioPath": "assets/de-DE/Evelyn/4_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:AcceptGift_(O)StardropTea",
+          "PageIndex": 1,
+          "DisplayPattern": "Oh, das schenkst du mir? Vielen Dank, meine Liebe. Das ist ein ganz besonderes Geschenk!",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)170",
+          "DialogueText": "Danke, mein Lieber. Ich habe überall nach meiner Lesebrille gesucht...",
+          "AudioPath": "assets/de-DE/Evelyn/5_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:AcceptGift_(O)170",
+          "PageIndex": 0,
+          "DisplayPattern": "Danke, mein Lieber. Ich habe überall nach meiner Lesebrille gesucht...",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)170",
+          "DialogueText": "Danke, meine Liebe. Ich habe überall nach meiner Lesebrille gesucht...",
+          "AudioPath": "assets/de-DE/Evelyn/6_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:AcceptGift_(O)170",
+          "PageIndex": 1,
+          "DisplayPattern": "Danke, meine Liebe. Ich habe überall nach meiner Lesebrille gesucht...",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)170",
+          "DialogueText": "Meine Güte! Sie ist schmutzig geworden...",
+          "AudioPath": "assets/de-DE/Evelyn/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:AcceptGift_(O)170",
+          "PageIndex": 2,
+          "DisplayPattern": "Meine Güte! Sie ist schmutzig geworden..."
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "George, mein Lieber... Ist das das Ende? Es war ein gutes Leben, aber ich würde gerne sehen, wie Alex seinen Weg findet, bevor er abreist... {Portrait:Sad}%noturn",
+          "AudioPath": "assets/de-DE/Evelyn/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "George, mein Lieber... Ist das das Ende? Es war ein gutes Leben, aber ich würde gerne sehen, wie Alex seinen Weg findet, bevor er abreist..."
+        },
+        {
+          "DialogueFrom": "GreenRainFinished",
+          "DialogueText": "Oh, mein Lieber... Ich bin so froh, dass alles gut ausgegangen ist. Und meine Blumen sehen gesünder aus als je zuvor!",
+          "AudioPath": "assets/de-DE/Evelyn/9_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:GreenRainFinished",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, mein Lieber... Ich bin so froh, dass alles gut ausgegangen ist. Und meine Blumen sehen gesünder aus als je zuvor!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "GreenRainFinished",
+          "DialogueText": "Oh, meine Liebe... Ich bin so froh, dass alles gut ausgegangen ist. Und meine Blumen sehen gesünder aus als je zuvor!",
+          "AudioPath": "assets/de-DE/Evelyn/10_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:GreenRainFinished",
+          "PageIndex": 1,
+          "DisplayPattern": "Oh, meine Liebe... Ich bin so froh, dass alles gut ausgegangen ist. Und meine Blumen sehen gesünder aus als je zuvor!",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Den Blumen scheint dieser Regen zu gefallen...",
+          "AudioPath": "assets/de-DE/Evelyn/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Den Blumen scheint dieser Regen zu gefallen..."
+        },
+        {
+          "DialogueFrom": "AcceptGift_Positive_forage_item_beach",
+          "DialogueText": "Danke, mein Lieber. Das bringt so schöne Erinnerungen zurück...",
+          "AudioPath": "assets/de-DE/Evelyn/12_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:AcceptGift_Positive_forage_item_beach",
+          "PageIndex": 0,
+          "DisplayPattern": "Danke, mein Lieber. Das bringt so schöne Erinnerungen zurück...",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Positive_forage_item_beach",
+          "DialogueText": "Danke, meine Liebe. Das bringt so schöne Erinnerungen zurück...",
+          "AudioPath": "assets/de-DE/Evelyn/13_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:AcceptGift_Positive_forage_item_beach",
+          "PageIndex": 1,
+          "DisplayPattern": "Danke, meine Liebe. Das bringt so schöne Erinnerungen zurück...",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "reject_867",
+          "DialogueText": "Oh, ich bin sicher, George wäre daran interessiert!",
+          "AudioPath": "assets/de-DE/Evelyn/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:reject_867",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, ich bin sicher, George wäre daran interessiert!"
+        },
+        {
+          "DialogueFrom": "cropMatured_591",
+          "DialogueText": "Selbstgezogene Tulpen sind ein schönes Frühlingsgeschenk.",
+          "AudioPath": "assets/de-DE/Evelyn/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:cropMatured_591",
+          "PageIndex": 0,
+          "DisplayPattern": "Selbstgezogene Tulpen sind ein schönes Frühlingsgeschenk."
+        },
+        {
+          "DialogueFrom": "cc_Complete",
+          "DialogueText": "Es ist schön, das alte Gemeindezentrum wieder zu haben. Wir haben so viele Erinnerungen an die alten Zeiten... Es ist ein besonderer Ort.",
+          "AudioPath": "assets/de-DE/Evelyn/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:cc_Complete",
+          "PageIndex": 0,
+          "DisplayPattern": "Es ist schön, das alte Gemeindezentrum wieder zu haben. Wir haben so viele Erinnerungen an die alten Zeiten... Es ist ein besonderer Ort."
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "Ich freue mich sehr für dich. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:married",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich freue mich sehr für dich."
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "Junge verliebte Menschen zu sehen, ist für alte Omas wie mich herzerwärmend.",
+          "AudioPath": "assets/de-DE/Evelyn/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:married",
+          "PageIndex": 1,
+          "DisplayPattern": "Junge verliebte Menschen zu sehen, ist für alte Omas wie mich herzerwärmend."
+        },
+        {
+          "DialogueFrom": "divorce",
+          "DialogueText": "Wenn du das nächste Mal heiratest, achte darauf, dass es die richtige Entscheidung ist... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Evelyn/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:divorce",
+          "PageIndex": 0,
+          "DisplayPattern": "Wenn du das nächste Mal heiratest, achte darauf, dass es die richtige Entscheidung ist..."
+        },
+        {
+          "DialogueFrom": "reject_866",
+          "DialogueText": "Das ist eine sehr hübsche Rose. Hast du sie Emily gezeigt? Sie erinnert mich an sie.",
+          "AudioPath": "assets/de-DE/Evelyn/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:reject_866",
+          "PageIndex": 0,
+          "DisplayPattern": "Das ist eine sehr hübsche Rose. Hast du sie Emily gezeigt? Sie erinnert mich an sie."
+        },
+        {
+          "DialogueFrom": "pamHouseUpgrade",
+          "DialogueText": "Ach, Schatz ... es war wirklich lieb von dir, Pam so ein wunderschönes, neues Heim zu geben! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:pamHouseUpgrade",
+          "PageIndex": 0,
+          "DisplayPattern": "Ach, Schatz ... es war wirklich lieb von dir, Pam so ein wunderschönes, neues Heim zu geben!"
+        },
+        {
+          "DialogueFrom": "pamHouseUpgrade",
+          "DialogueText": "Mein Herz wird ganz warm, wenn Leute sich so um einander kümmern ...",
+          "AudioPath": "assets/de-DE/Evelyn/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:pamHouseUpgrade",
+          "PageIndex": 1,
+          "DisplayPattern": "Mein Herz wird ganz warm, wenn Leute sich so um einander kümmern ..."
+        },
+        {
+          "DialogueFrom": "pamHouseUpgradeAnonymous",
+          "DialogueText": "Ich bin zwar nur ein alter Narr ... aber ich habe eine Vorstellung, wer für Pams neues Haus bezahlt haben könnte ... *zwinker*",
+          "AudioPath": "assets/de-DE/Evelyn/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:pamHouseUpgradeAnonymous",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich bin zwar nur ein alter Narr ... aber ich habe eine Vorstellung, wer für Pams neues Haus bezahlt haben könnte ... *zwinker*"
+        },
+        {
+          "DialogueFrom": "MovieInvitation",
+          "DialogueText": "Oje! Das ist so nett von dir. Aber ja ... Ich würde gerne ins Kino gehen! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:MovieInvitation",
+          "PageIndex": 0,
+          "DisplayPattern": "Oje! Das ist so nett von dir. Aber ja ... Ich würde gerne ins Kino gehen!"
+        },
+        {
+          "DialogueFrom": "MovieInvitation",
+          "DialogueText": "Geh schon mal vor, ich treffe dich dann im Kino.",
+          "AudioPath": "assets/de-DE/Evelyn/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:MovieInvitation",
+          "PageIndex": 1,
+          "DisplayPattern": "Geh schon mal vor, ich treffe dich dann im Kino."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Oh! Was für ein schöner Tag. {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Evelyn/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! Was für ein schöner Tag."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Lass dich nicht von meinem Mann George stören. Er ist nicht sonderlich freundlich zu Fremden.",
+          "AudioPath": "assets/de-DE/Evelyn/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Lass dich nicht von meinem Mann George stören. Er ist nicht sonderlich freundlich zu Fremden."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Wenn du ihn besser kennenlernst, wird er sich dir öffnen.",
+          "AudioPath": "assets/de-DE/Evelyn/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Wenn du ihn besser kennenlernst, wird er sich dir öffnen."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Ich bin mir sicher, dass ihr beiden eines Tages gute Freunde sein werdet! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Tue",
+          "PageIndex": 2,
+          "DisplayPattern": "Ich bin mir sicher, dass ihr beiden eines Tages gute Freunde sein werdet!"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Weil du so interessiert an meinem Mann bist, erzähle ich dir ein kleines Geheimnis: Er liebt Lauch! Du kannst ihn zu dieser Jahreszeit in den Bergen finden.",
+          "AudioPath": "assets/de-DE/Evelyn/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Tue",
+          "PageIndex": 3,
+          "DisplayPattern": "Weil du so interessiert an meinem Mann bist, erzähle ich dir ein kleines Geheimnis: Er liebt Lauch! Du kannst ihn zu dieser Jahreszeit in den Bergen finden."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "# {Portrait:Happy} evelynGarden1",
+          "AudioPath": "assets/de-DE/Evelyn/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "# evelynGarden1"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Ich habe gestern die schönste Schmetterlingsfamilie gesehen, wie sie sich im Stadtgarten gesonnt hat.$k",
+          "AudioPath": "assets/de-DE/Evelyn/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich habe gestern die schönste Schmetterlingsfamilie gesehen, wie sie sich im Stadtgarten gesonnt hat."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Der gute Bürgermeister hat mich für die städtischen öffentlichen Gärten verantwortlich gemacht.",
+          "AudioPath": "assets/de-DE/Evelyn/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "Der gute Bürgermeister hat mich für die städtischen öffentlichen Gärten verantwortlich gemacht."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Ich habe wochenlang an den Blumenbeeten gearbeitet, bitte tritt nicht in sie rein!",
+          "AudioPath": "assets/de-DE/Evelyn/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Wed",
+          "PageIndex": 3,
+          "DisplayPattern": "Ich habe wochenlang an den Blumenbeeten gearbeitet, bitte tritt nicht in sie rein!"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Ich backe heute Kekse. Ich mag es, im Frühling Blumenformen zu benutzen. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich backe heute Kekse. Ich mag es, im Frühling Blumenformen zu benutzen."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Vielleicht verrate ich dir eines Tages mein Rezept.",
+          "AudioPath": "assets/de-DE/Evelyn/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Vielleicht verrate ich dir eines Tages mein Rezept."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "George verbringt den ganzen Tag vor diesem verdammten Fernseher.",
+          "AudioPath": "assets/de-DE/Evelyn/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "George verbringt den ganzen Tag vor diesem verdammten Fernseher."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Ich wünschte, er würde mehr nach draußen gehen. Ein wenig frische Luft würde ihm gut tun.",
+          "AudioPath": "assets/de-DE/Evelyn/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich wünschte, er würde mehr nach draußen gehen. Ein wenig frische Luft würde ihm gut tun."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Ich mochte es immer sehr, die Wolken zu betrachten, aber heutzutage habe ich Probleme, sie zu sehen.",
+          "AudioPath": "assets/de-DE/Evelyn/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich mochte es immer sehr, die Wolken zu betrachten, aber heutzutage habe ich Probleme, sie zu sehen."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Meine Augen funktionieren einfach nicht mehr so gut wie früher. {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Evelyn/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Meine Augen funktionieren einfach nicht mehr so gut wie früher."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Es ist so schön, in der Nähe des Meers zu leben. Das Geräusch der Wellen wiegt mich immer in den Schlaf.",
+          "AudioPath": "assets/de-DE/Evelyn/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Es ist so schön, in der Nähe des Meers zu leben. Das Geräusch der Wellen wiegt mich immer in den Schlaf."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Als Kinder haben wir nach Muscheln gesucht, sobald es Ebbe war. Das waren noch Tage...",
+          "AudioPath": "assets/de-DE/Evelyn/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Als Kinder haben wir nach Muscheln gesucht, sobald es Ebbe war. Das waren noch Tage..."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Es ist nett von dir, George und mich zu besuchen.",
+          "AudioPath": "assets/de-DE/Evelyn/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "Es ist nett von dir, George und mich zu besuchen."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Ohne junge Leute um uns herum würden wir viel schneller altern. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Tue6",
+          "PageIndex": 1,
+          "DisplayPattern": "Ohne junge Leute um uns herum würden wir viel schneller altern."
+        },
+        {
+          "DialogueFrom": "Event_cookies1",
+          "DialogueText": "Danke dir! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Event_cookies1",
+          "PageIndex": 0,
+          "DisplayPattern": "Danke dir!"
+        },
+        {
+          "DialogueFrom": "Event_cookies2",
+          "DialogueText": "Was war das, mein Kind? Ich könnte schwören, dass du 'Pappe' gesagt hast. *seufz* Meine Ohren sind nicht mehr, was sie mal waren. {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Evelyn/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:Event_cookies2",
+          "PageIndex": 0,
+          "DisplayPattern": "Was war das, mein Kind? Ich könnte schwören, dass du 'Pappe' gesagt hast. *seufz* Meine Ohren sind nicht mehr, was sie mal waren."
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "Ich fühle mich bei diesem Wetter viel lebendiger. {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Evelyn/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich fühle mich bei diesem Wetter viel lebendiger."
+        },
+        {
+          "DialogueFrom": "summer_Mon_inlaw_Alex",
+          "DialogueText": "Wie geht es meinem Enkel so? Ich kann mir vorstellen, dass er auf dem Hof ziemlich glücklich ist.",
+          "AudioPath": "assets/de-DE/Evelyn/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:summer_Mon_inlaw_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "Wie geht es meinem Enkel so? Ich kann mir vorstellen, dass er auf dem Hof ziemlich glücklich ist."
+        },
+        {
+          "DialogueFrom": "summer_Mon_inlaw_Alex",
+          "DialogueText": "Er verdient es, glücklich zu sein... Er ist ein guter Junge.",
+          "AudioPath": "assets/de-DE/Evelyn/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:summer_Mon_inlaw_Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "Er verdient es, glücklich zu sein... Er ist ein guter Junge."
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "George ist im Sommer immer ein bisschen weniger griesgrämig. Das warme Wetter macht ihn etwas sanftmütiger.",
+          "AudioPath": "assets/de-DE/Evelyn/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:summer_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "George ist im Sommer immer ein bisschen weniger griesgrämig. Das warme Wetter macht ihn etwas sanftmütiger."
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "Du kannst es ihm vermutlich nicht ansehen, aber ich kann es. Ich kenne ihn schon seit sechzig Jahren!",
+          "AudioPath": "assets/de-DE/Evelyn/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:summer_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Du kannst es ihm vermutlich nicht ansehen, aber ich kann es. Ich kenne ihn schon seit sechzig Jahren!"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "Der gute Bürgermeister hat mich für die städtischen öffentlichen Gärten verantwortlich gemacht.",
+          "AudioPath": "assets/de-DE/Evelyn/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:summer_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Der gute Bürgermeister hat mich für die städtischen öffentlichen Gärten verantwortlich gemacht."
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "Ich habe monatelang an den Blumenbeeten gearbeitet, bitte tritt nicht in sie rein!",
+          "AudioPath": "assets/de-DE/Evelyn/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:summer_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich habe monatelang an den Blumenbeeten gearbeitet, bitte tritt nicht in sie rein!"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "Ich werde heute Kekse backen. Ich nenne sie Kokosnuss-Wunder, in der Form von kleinen Palmen! Heehee. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:summer_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich werde heute Kekse backen. Ich nenne sie Kokosnuss-Wunder, in der Form von kleinen Palmen! Heehee."
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "Vielleicht verrate ich dir eines Tages das Rezept.",
+          "AudioPath": "assets/de-DE/Evelyn/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:summer_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Vielleicht verrate ich dir eines Tages das Rezept."
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "Pass da draußen auf dich auf, mein Kind. Du könntest dir einen Sonnenbrand holen!",
+          "AudioPath": "assets/de-DE/Evelyn/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:summer_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Pass da draußen auf dich auf, mein Kind. Du könntest dir einen Sonnenbrand holen!"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "Edelwicken sind momentan in voller Blüte.",
+          "AudioPath": "assets/de-DE/Evelyn/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:summer_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Edelwicken sind momentan in voller Blüte."
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "Sie haben so einen wundervollen Geruch, nicht?",
+          "AudioPath": "assets/de-DE/Evelyn/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:summer_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Sie haben so einen wundervollen Geruch, nicht?"
+        },
+        {
+          "DialogueFrom": "summer_Thu4",
+          "DialogueText": "Wir bekommen irgendwie immer mehr Besucher, wenn ich Kekse backe.",
+          "AudioPath": "assets/de-DE/Evelyn/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:summer_Thu4",
+          "PageIndex": 0,
+          "DisplayPattern": "Wir bekommen irgendwie immer mehr Besucher, wenn ich Kekse backe."
+        },
+        {
+          "DialogueFrom": "summer_Thu4",
+          "DialogueText": "Meine Mutter hat mir das Rezept beigebracht.",
+          "AudioPath": "assets/de-DE/Evelyn/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:summer_Thu4",
+          "PageIndex": 1,
+          "DisplayPattern": "Meine Mutter hat mir das Rezept beigebracht."
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "Mit jedem Jahr schätze ich die Jahreszeiten mehr und mehr. Für junge Leute ist es einfach, sie einfach vergehen zu lassen.",
+          "AudioPath": "assets/de-DE/Evelyn/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:fall_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Mit jedem Jahr schätze ich die Jahreszeiten mehr und mehr. Für junge Leute ist es einfach, sie einfach vergehen zu lassen."
+        },
+        {
+          "DialogueFrom": "fall_Tue",
+          "DialogueText": "Ich habe Rosinen in Georges Haferflocken gemischt... Aber er hat kein Wort gesagt. Ich frage mich, ob er so etwas überhaupt bemerkt?",
+          "AudioPath": "assets/de-DE/Evelyn/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:fall_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich habe Rosinen in Georges Haferflocken gemischt... Aber er hat kein Wort gesagt. Ich frage mich, ob er so etwas überhaupt bemerkt?"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "Der gute Bürgermeister hat mich für die städtischen öffentlichen Gärten verantwortlich gemacht.",
+          "AudioPath": "assets/de-DE/Evelyn/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:fall_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Der gute Bürgermeister hat mich für die städtischen öffentlichen Gärten verantwortlich gemacht."
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "Die Herbstblumen sind empfindlich, stampfe also bitte nicht auf ihnen herum! Ich weiß, wie gerne ihr Kinder das macht.",
+          "AudioPath": "assets/de-DE/Evelyn/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:fall_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Die Herbstblumen sind empfindlich, stampfe also bitte nicht auf ihnen herum! Ich weiß, wie gerne ihr Kinder das macht."
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "Heute backe ich Kekse. Sie sind wie kleine Kürbisse geformt. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:fall_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Heute backe ich Kekse. Sie sind wie kleine Kürbisse geformt."
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "Vielleicht verrate ich dir später mal das Rezept.",
+          "AudioPath": "assets/de-DE/Evelyn/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:fall_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Vielleicht verrate ich dir später mal das Rezept."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "Bist du näher mit Alex befreundet?",
+          "AudioPath": "assets/de-DE/Evelyn/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:fall_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Bist du näher mit Alex befreundet?"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "Manchmal mache ich mir wirklich Sorgen um ihn.",
+          "AudioPath": "assets/de-DE/Evelyn/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:fall_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Manchmal mache ich mir wirklich Sorgen um ihn."
+        },
+        {
+          "DialogueFrom": "fall_Sat_inlaw_Alex",
+          "DialogueText": "Oh, hallo Jungchen. Ich sehe dich inzwischen schon wie meinen eigenen Enkel. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/69_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:fall_Sat_inlaw_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, hallo Jungchen. Ich sehe dich inzwischen schon wie meinen eigenen Enkel.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "fall_Sat_inlaw_Alex",
+          "DialogueText": "Oh, hallo Jungchen. Ich sehe dich inzwischen schon wie meine eigene Enkelin. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/70_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:fall_Sat_inlaw_Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "Oh, hallo Jungchen. Ich sehe dich inzwischen schon wie meine eigene Enkelin.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "fall_Sat_inlaw_Alex",
+          "DialogueText": "Oh, hallo Kleine. Ich sehe dich inzwischen schon wie meinen eigenen Enkel. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/71_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:fall_Sat_inlaw_Alex",
+          "PageIndex": 2,
+          "DisplayPattern": "Oh, hallo Kleine. Ich sehe dich inzwischen schon wie meinen eigenen Enkel.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "fall_Sat_inlaw_Alex",
+          "DialogueText": "Oh, hallo Kleine. Ich sehe dich inzwischen schon wie meine eigene Enkelin. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/72_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:fall_Sat_inlaw_Alex",
+          "PageIndex": 3,
+          "DisplayPattern": "Oh, hallo Kleine. Ich sehe dich inzwischen schon wie meine eigene Enkelin.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "Meine Sicht mag schwach sein, aber meine Nase hat mich noch nicht im Stich gelassen!",
+          "AudioPath": "assets/de-DE/Evelyn/73.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:fall_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Meine Sicht mag schwach sein, aber meine Nase hat mich noch nicht im Stich gelassen!"
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "Ich kann die Herbstblätter und Pilze riechen. Es erinnert mich an den Wald, in dem ich als Kind immer gespielt habe.",
+          "AudioPath": "assets/de-DE/Evelyn/74.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:fall_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich kann die Herbstblätter und Pilze riechen. Es erinnert mich an den Wald, in dem ich als Kind immer gespielt habe."
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "Pass auf, dass du nicht auf dem Eis ausrutschst, Kind.",
+          "AudioPath": "assets/de-DE/Evelyn/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:winter_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Pass auf, dass du nicht auf dem Eis ausrutschst, Kind."
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "Ist dir nicht kalt? Du solltest eine dickere Jacke anziehen, Kind!",
+          "AudioPath": "assets/de-DE/Evelyn/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:winter_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Ist dir nicht kalt? Du solltest eine dickere Jacke anziehen, Kind!"
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "Dieses Wetter ist nicht gut für meine Gelenke... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Evelyn/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:winter_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Dieses Wetter ist nicht gut für meine Gelenke..."
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "Normalerweise würde ich mich um die Gärten kümmern, aber sie sind vom Schnee bedeckt.",
+          "AudioPath": "assets/de-DE/Evelyn/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:winter_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Normalerweise würde ich mich um die Gärten kümmern, aber sie sind vom Schnee bedeckt."
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "Ich schaue gern trotzdem hin und wieder vorbei.",
+          "AudioPath": "assets/de-DE/Evelyn/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:winter_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich schaue gern trotzdem hin und wieder vorbei."
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "Heute backe ich Plätzchen. Sie haben die Form von kleinen Wintersternen. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:winter_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Heute backe ich Plätzchen. Sie haben die Form von kleinen Wintersternen."
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "Vielleicht verrate ich dir irgendwann mal mein Rezept.",
+          "AudioPath": "assets/de-DE/Evelyn/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:winter_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Vielleicht verrate ich dir irgendwann mal mein Rezept."
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "Wir leben hier schon seit über 30 Jahren.",
+          "AudioPath": "assets/de-DE/Evelyn/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:winter_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Wir leben hier schon seit über 30 Jahren."
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "Wir haben viele Leute kommen und gehen gesehen. Dein Großvater war einer davon. Gott hab ihn selig... *seufz*",
+          "AudioPath": "assets/de-DE/Evelyn/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:winter_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Wir haben viele Leute kommen und gehen gesehen. Dein Großvater war einer davon. Gott hab ihn selig... *seufz*"
+        },
+        {
+          "DialogueFrom": "winter_Sat6",
+          "DialogueText": "Oh... mein Kind. Du hast die Augen deines Großvaters... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Evelyn/84.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:winter_Sat6",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh... mein Kind. Du hast die Augen deines Großvaters..."
+        },
+        {
+          "DialogueFrom": "winter_Sat6",
+          "DialogueText": "Ja... ja... Ich kannte ihn sehr gut.",
+          "AudioPath": "assets/de-DE/Evelyn/85.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:winter_Sat6",
+          "PageIndex": 1,
+          "DisplayPattern": "Ja... ja... Ich kannte ihn sehr gut."
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "Du solltest etwas heiße Suppe machen, um dich zu wärmen.",
+          "AudioPath": "assets/de-DE/Evelyn/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:winter_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Du solltest etwas heiße Suppe machen, um dich zu wärmen."
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "Und denk daran, dass du eine Jacke anziehst!",
+          "AudioPath": "assets/de-DE/Evelyn/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:winter_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Und denk daran, dass du eine Jacke anziehst!"
+        },
+        {
+          "DialogueFrom": "winter_Sat8",
+          "DialogueText": "{Farmer_Name}, habe ich dir erzählt, dass George und ich schon seit 30 Jahren in unserem Haus leben?",
+          "AudioPath": "assets/de-DE/Evelyn/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:winter_Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": ", habe ich dir erzählt, dass George und ich schon seit 30 Jahren in unserem Haus leben?"
+        },
+        {
+          "DialogueFrom": "winter_Sat8",
+          "DialogueText": "Ich hoffe, du bleibst eine Weile. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/89.ogg",
+          "TranslationKey": "Characters/Dialogue/Evelyn:winter_Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich hoffe, du bleibst eine Weile."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "Ich bin aufgewacht und habe irgendwo ein Tropfen gehört... Ich denke, das Dach könnte undicht sein. {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Evelyn/90.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Evelyn",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich bin aufgewacht und habe irgendwo ein Tropfen gehört... Ich denke, das Dach könnte undicht sein."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "Früher wäre George sofort aufgesprungen und hätte es repariert... *seufz* {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Evelyn/91.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Evelyn",
+          "PageIndex": 1,
+          "DisplayPattern": "Früher wäre George sofort aufgesprungen und hätte es repariert... *seufz*"
+        },
+        {
+          "DialogueFrom": "Event:Farm/900553:s0",
+          "DialogueText": "Good morning, dear.",
+          "AudioPath": "assets/de-DE/Evelyn/92.ogg",
+          "TranslationKey": "Events/Farm:900553:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Good morning, dear."
+        },
+        {
+          "DialogueFrom": "Event:Farm/900553:s1",
+          "DialogueText": "It was a lovely walk out here... I haven't seen this old farm in a long time. {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Evelyn/93.ogg",
+          "TranslationKey": "Events/Farm:900553:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "It was a lovely walk out here... I haven't seen this old farm in a long time."
+        },
+        {
+          "DialogueFrom": "Event:Farm/900553:s2",
+          "DialogueText": "It looks even better than I remember! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/94.ogg",
+          "TranslationKey": "Events/Farm:900553:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "It looks even better than I remember!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/900553:s3",
+          "DialogueText": "Here, I brought you a little something.",
+          "AudioPath": "assets/de-DE/Evelyn/95.ogg",
+          "TranslationKey": "Events/Farm:900553:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Here, I brought you a little something."
+        },
+        {
+          "DialogueFrom": "Event:Farm/900553:s4",
+          "DialogueText": "It's a gift... from one gardener to another. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/96.ogg",
+          "TranslationKey": "Events/Farm:900553:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a gift... from one gardener to another."
+        },
+        {
+          "DialogueFrom": "Event:Farm/900553:s5",
+          "DialogueText": "Received a 'Garden Pot'",
+          "AudioPath": "assets/de-DE/Evelyn/97.ogg",
+          "TranslationKey": "Events/Farm:900553:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Received a 'Garden Pot'"
+        },
+        {
+          "DialogueFrom": "Event:Farm/900553:s6",
+          "DialogueText": "These pots are really handy. You can use them to grow crops of any season indoors!",
+          "AudioPath": "assets/de-DE/Evelyn/98.ogg",
+          "TranslationKey": "Events/Farm:900553:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "These pots are really handy. You can use them to grow crops of any season indoors!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/900553:s7",
+          "DialogueText": "They also look nice outside... but out here they can only house in-season crops.",
+          "AudioPath": "assets/de-DE/Evelyn/99.ogg",
+          "TranslationKey": "Events/Farm:900553:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "They also look nice outside... but out here they can only house in-season crops."
+        },
+        {
+          "DialogueFrom": "Event:Farm/900553:s8",
+          "DialogueText": "If you need more, they're really easy to make, too... here, I've got an old magazine clipping with instructions.",
+          "AudioPath": "assets/de-DE/Evelyn/100.ogg",
+          "TranslationKey": "Events/Farm:900553:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "If you need more, they're really easy to make, too... here, I've got an old magazine clipping with instructions."
+        },
+        {
+          "DialogueFrom": "Event:Farm/900553:s9",
+          "DialogueText": "Learned how to craft a 'Garden Pot'",
+          "AudioPath": "assets/de-DE/Evelyn/101.ogg",
+          "TranslationKey": "Events/Farm:900553:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Learned how to craft a 'Garden Pot'"
+        },
+        {
+          "DialogueFrom": "Event:Farm/900553:s10",
+          "DialogueText": "Well, I'd better go. George gets grumpy if he doesn't have his oatmeal on time...",
+          "AudioPath": "assets/de-DE/Evelyn/102.ogg",
+          "TranslationKey": "Events/Farm:900553:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I'd better go. George gets grumpy if he doesn't have his oatmeal on time..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/900553:s11",
+          "DialogueText": "You have a great day, honey! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/103.ogg",
+          "TranslationKey": "Events/Farm:900553:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "You have a great day, honey!"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/19:s0",
+          "DialogueText": "Oh! {Farmer_Name}! You're wondering what that good smell is?",
+          "AudioPath": "assets/de-DE/Evelyn/104.ogg",
+          "TranslationKey": "Events/JoshHouse:19:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! ! You're wondering what that good smell is?"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/19:s1",
+          "DialogueText": "Why, that's nice of you to say! I'm actually baking my famous cookies! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/105.ogg",
+          "TranslationKey": "Events/JoshHouse:19:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Why, that's nice of you to say! I'm actually baking my famous cookies!"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/19:s2",
+          "DialogueText": "Here, why don't you try one?",
+          "AudioPath": "assets/de-DE/Evelyn/106.ogg",
+          "TranslationKey": "Events/JoshHouse:19:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Here, why don't you try one?"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/19:s3",
+          "DialogueText": "Well, what do you think?",
+          "AudioPath": "assets/de-DE/Evelyn/107.ogg",
+          "TranslationKey": "Events/JoshHouse:19:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, what do you think?"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/19:s4",
+          "DialogueText": "It's delicious!",
+          "AudioPath": "assets/de-DE/Evelyn/108.ogg",
+          "TranslationKey": "Events/JoshHouse:19:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "It's delicious!"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/19:s5",
+          "DialogueText": "It was like chewing on a hockey puck",
+          "AudioPath": "assets/de-DE/Evelyn/109.ogg",
+          "TranslationKey": "Events/JoshHouse:19:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "It was like chewing on a hockey puck"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/19:s6",
+          "DialogueText": "I think I've come to know you well enough to give you my recipe. Just make sure to keep it a secret. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/110.ogg",
+          "TranslationKey": "Events/JoshHouse:19:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I think I've come to know you well enough to give you my recipe. Just make sure to keep it a secret."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/19:s7",
+          "DialogueText": "Learned how to make 'Cookies'",
+          "AudioPath": "assets/de-DE/Evelyn/111.ogg",
+          "TranslationKey": "Events/JoshHouse:19:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Learned how to make 'Cookies'"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Evelyn",
+          "DialogueText": "Ich wünschte, Gus würde etwas Vegetarisches anbieten. Ein paar Zucchini-Spieße vielleicht?",
+          "AudioPath": "assets/de-DE/Evelyn/112.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Evelyn",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich wünschte, Gus würde etwas Vegetarisches anbieten. Ein paar Zucchini-Spieße vielleicht?"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Evelyn_y2",
+          "DialogueText": "Hee hee... Vielleicht sollte ich eine Sammlung von Clown-Figuren anlegen...",
+          "AudioPath": "assets/de-DE/Evelyn/113.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Evelyn_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hee hee... Vielleicht sollte ich eine Sammlung von Clown-Figuren anlegen..."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Evelyn",
+          "DialogueText": "Ich wünschte, Gus würde etwas Vegetarisches anbieten. Ein paar Zucchini-Spieße vielleicht?",
+          "AudioPath": "assets/de-DE/Evelyn/114.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Evelyn",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich wünschte, Gus würde etwas Vegetarisches anbieten. Ein paar Zucchini-Spieße vielleicht?"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Evelyn_y2",
+          "DialogueText": "Kannst du mir bitte die Zucchiniküchlein reichen? {Portrait:Neutral}",
+          "AudioPath": "assets/de-DE/Evelyn/115.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Evelyn_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Kannst du mir bitte die Zucchiniküchlein reichen?"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Evelyn",
+          "DialogueText": "Dieses Fest war schon immer Tradition.",
+          "AudioPath": "assets/de-DE/Evelyn/116.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Evelyn",
+          "PageIndex": 0,
+          "DisplayPattern": "Dieses Fest war schon immer Tradition."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Evelyn",
+          "DialogueText": "Tradition verbindet uns mit unserer Vergangenheit und der Zukunft... Ein angenehmes Gefühl.",
+          "AudioPath": "assets/de-DE/Evelyn/117.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Evelyn",
+          "PageIndex": 1,
+          "DisplayPattern": "Tradition verbindet uns mit unserer Vergangenheit und der Zukunft... Ein angenehmes Gefühl."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Evelyn_y2",
+          "DialogueText": "Hast du Hühner auf deinem Hof?",
+          "AudioPath": "assets/de-DE/Evelyn/118.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Evelyn_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hast du Hühner auf deinem Hof?"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Evelyn_y2",
+          "DialogueText": "Gut! Ich bin sicher, sie legen die köstlichsten Eier... {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/119.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Evelyn_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Gut! Ich bin sicher, sie legen die köstlichsten Eier..."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Evelyn_y2",
+          "DialogueText": "Frühling wäre ein guter Zeitpunkt, mit der Hühnerzucht zu beginnen, meinst Du nicht?",
+          "AudioPath": "assets/de-DE/Evelyn/120.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Evelyn_y2",
+          "PageIndex": 2,
+          "DisplayPattern": "Frühling wäre ein guter Zeitpunkt, mit der Hühnerzucht zu beginnen, meinst Du nicht?"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Evelyn",
+          "DialogueText": "Ich arbeite schon seit einer Woche an diesen Blumenarrangements. Gefallen sie dir?",
+          "AudioPath": "assets/de-DE/Evelyn/121.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Evelyn",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich arbeite schon seit einer Woche an diesen Blumenarrangements. Gefallen sie dir?"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Evelyn_y2",
+          "DialogueText": "Als ich jünger war, habe ich diesen Ort oft besucht. Er hat sich im Laufe der Jahre kaum verändert. {Portrait:Neutral}",
+          "AudioPath": "assets/de-DE/Evelyn/122.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Evelyn_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Als ich jünger war, habe ich diesen Ort oft besucht. Er hat sich im Laufe der Jahre kaum verändert."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Evelyn",
+          "DialogueText": "Ahh... Der Geruch des Ozeans trägt mich Jahre zurück. Lange bevor du geboren wurdest.",
+          "AudioPath": "assets/de-DE/Evelyn/123.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Evelyn",
+          "PageIndex": 0,
+          "DisplayPattern": "Ahh... Der Geruch des Ozeans trägt mich Jahre zurück. Lange bevor du geboren wurdest."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Evelyn_y2",
+          "DialogueText": "Jetzt aber nicht zu viel essen. Ich möchte nicht, dass du Bauchschmerzen bekommst.%noturn {Portrait:Neutral}",
+          "AudioPath": "assets/de-DE/Evelyn/124.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Evelyn_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Jetzt aber nicht zu viel essen. Ich möchte nicht, dass du Bauchschmerzen bekommst."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Evelyn",
+          "DialogueText": "Ich erinnere mich daran, wie ich als junges Mädchen diese Quallen schon einmal gesehen habe. Oh, wie ich mich über ihre Ankunft gefreut habe!",
+          "AudioPath": "assets/de-DE/Evelyn/125.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Evelyn",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich erinnere mich daran, wie ich als junges Mädchen diese Quallen schon einmal gesehen habe. Oh, wie ich mich über ihre Ankunft gefreut habe!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Evelyn",
+          "DialogueText": "Aber das ist lange her... Ich bin nicht mehr so voller Energie wie früher.",
+          "AudioPath": "assets/de-DE/Evelyn/126.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Evelyn",
+          "PageIndex": 1,
+          "DisplayPattern": "Aber das ist lange her... Ich bin nicht mehr so voller Energie wie früher."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Evelyn_y2",
+          "DialogueText": "George und ich beobachten nun schon seit Jahrzehnten das Kommen und Gehen der Quallen gemeinsam. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/127.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Evelyn_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "George und ich beobachten nun schon seit Jahrzehnten das Kommen und Gehen der Quallen gemeinsam."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Evelyn",
+          "DialogueText": "Ach, du meine Güte! Ist dir nicht kalt? Wir haben Minusgrade!",
+          "AudioPath": "assets/de-DE/Evelyn/128.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Evelyn",
+          "PageIndex": 0,
+          "DisplayPattern": "Ach, du meine Güte! Ist dir nicht kalt? Wir haben Minusgrade!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Evelyn_y2",
+          "DialogueText": "Du bist herzlich eingeladen, dich zu uns an den Tisch zu setzen, Herzchen. {Portrait:Neutral}",
+          "AudioPath": "assets/de-DE/Evelyn/129.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Evelyn_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Du bist herzlich eingeladen, dich zu uns an den Tisch zu setzen, Herzchen."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Evelyn",
+          "DialogueText": "Habe ich dir je erzählt, wie George und ich uns das erste Mal getroffen haben? Er hat mich tatsächlich mit einem Schneeball in diesem Fest hier abgeworfen.",
+          "AudioPath": "assets/de-DE/Evelyn/130.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Evelyn",
+          "PageIndex": 0,
+          "DisplayPattern": "Habe ich dir je erzählt, wie George und ich uns das erste Mal getroffen haben? Er hat mich tatsächlich mit einem Schneeball in diesem Fest hier abgeworfen."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Evelyn",
+          "DialogueText": "Er war damals ein Gentleman und hat sich sofort um mich gesorgt. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/131.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Evelyn",
+          "PageIndex": 1,
+          "DisplayPattern": "Er war damals ein Gentleman und hat sich sofort um mich gesorgt."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Evelyn_y2",
+          "DialogueText": "Man weiß ja nie... es könnte das letzte Mal sein, dass ich mit Alex einen Schneemann baue.",
+          "AudioPath": "assets/de-DE/Evelyn/132.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Evelyn_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Man weiß ja nie... es könnte das letzte Mal sein, dass ich mit Alex einen Schneemann baue."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Evelyn_y2",
+          "DialogueText": "Das Leben ist kurz. Schätze jeden Moment.",
+          "AudioPath": "assets/de-DE/Evelyn/133.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Evelyn_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Das Leben ist kurz. Schätze jeden Moment."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Evelyn:s0",
+          "DialogueText": "*schock* Das ist absolut fabelhaft! {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Evelyn/134.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Evelyn:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "*schock* Das ist absolut fabelhaft!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Evelyn:s0",
+          "DialogueText": "Du hast eine alte Dame sehr glücklich gemacht.",
+          "AudioPath": "assets/de-DE/Evelyn/135.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Evelyn:s0",
+          "PageIndex": 1,
+          "DisplayPattern": "Du hast eine alte Dame sehr glücklich gemacht."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Evelyn:s1",
+          "DialogueText": "Ach du meine Güte, das sieht wundervoll aus! Das ist sehr lieb von dir.",
+          "AudioPath": "assets/de-DE/Evelyn/136.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Evelyn:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ach du meine Güte, das sieht wundervoll aus! Das ist sehr lieb von dir."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Evelyn:s2",
+          "DialogueText": "Hm, wo werde ich das hinstellen?",
+          "AudioPath": "assets/de-DE/Evelyn/137.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Evelyn:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hm, wo werde ich das hinstellen?"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Evelyn:s3",
+          "DialogueText": "... Es riecht furchtbar.",
+          "AudioPath": "assets/de-DE/Evelyn/138.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Evelyn:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "... Es riecht furchtbar."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Evelyn:s4",
+          "DialogueText": "Wie nett. Dank dir.",
+          "AudioPath": "assets/de-DE/Evelyn/139.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Evelyn:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Wie nett. Dank dir."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Evelyn_love_BeforeMovie",
+          "DialogueText": "Bevor Sie das Kino in unserer Stadt gebaut haben, hatte ich seit 20 Jahren keinen Film mehr gesehen! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/140.ogg",
+          "TranslationKey": "Strings/MovieReactions:Evelyn_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Bevor Sie das Kino in unserer Stadt gebaut haben, hatte ich seit 20 Jahren keinen Film mehr gesehen!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Evelyn_love_AfterMovie",
+          "DialogueText": "Ich fand's toll... jetzt weißt du, warum \"{2}\" als Klassiker gilt.",
+          "AudioPath": "assets/de-DE/Evelyn/141.ogg",
+          "TranslationKey": "Strings/MovieReactions:Evelyn_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich fand's toll... jetzt weißt du, warum \"{2}\" als Klassiker gilt."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Evelyn_like_BeforeMovie",
+          "DialogueText": "Es ist sehr nett von dir, eine alte Dame ins Kino einzuladen. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Evelyn/142.ogg",
+          "TranslationKey": "Strings/MovieReactions:Evelyn_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Es ist sehr nett von dir, eine alte Dame ins Kino einzuladen."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Evelyn_like_AfterMovie",
+          "DialogueText": "Ich bin froh, dass sie immer noch anständige Filme machen... Ich hatte eine Menge Spaß!",
+          "AudioPath": "assets/de-DE/Evelyn/143.ogg",
+          "TranslationKey": "Strings/MovieReactions:Evelyn_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich bin froh, dass sie immer noch anständige Filme machen... Ich hatte eine Menge Spaß!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Evelyn_dislike_BeforeMovie",
+          "DialogueText": "Ich war noch nie ein Fan von Gruselfilmen, aber ich werde versuchen, aufgeschlossen zu bleiben.",
+          "AudioPath": "assets/de-DE/Evelyn/144.ogg",
+          "TranslationKey": "Strings/MovieReactions:Evelyn_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich war noch nie ein Fan von Gruselfilmen, aber ich werde versuchen, aufgeschlossen zu bleiben."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Evelyn_dislike_DuringMovie",
+          "DialogueText": "Ist es schon vorbei? {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Evelyn/145.ogg",
+          "TranslationKey": "Strings/MovieReactions:Evelyn_dislike_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ist es schon vorbei?"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Evelyn_dislike_DuringMovie_2",
+          "DialogueText": "Evelyn verdeckt ihre Augen",
+          "AudioPath": "assets/de-DE/Evelyn/146.ogg",
+          "TranslationKey": "Strings/MovieReactions:Evelyn_dislike_DuringMovie_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Evelyn verdeckt ihre Augen"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Evelyn_dislike_AfterMovie",
+          "DialogueText": "Ich musste die meiste Zeit lang meine Augen geschlossen halten... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Evelyn/147.ogg",
+          "TranslationKey": "Strings/MovieReactions:Evelyn_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich musste die meiste Zeit lang meine Augen geschlossen halten..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Evelyn",
+          "DialogueText": "Ah... der Sand der Zeit, der Sand der Zeit...",
+          "AudioPath": "assets/de-DE/Evelyn/148.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Evelyn",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah... der Sand der Zeit, der Sand der Zeit..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Evelyn",
+          "DialogueText": "Hallo mein Lieber. Bitte lass dir Zeit, ich werde den ganzen Tag hier sein!",
+          "AudioPath": "assets/de-DE/Evelyn/149_male.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Evelyn",
+          "PageIndex": 0,
+          "DisplayPattern": "Hallo mein Lieber. Bitte lass dir Zeit, ich werde den ganzen Tag hier sein!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Evelyn",
+          "DialogueText": "Hallo meine Liebe. Bitte lass dir Zeit, ich werde den ganzen Tag hier sein!",
+          "AudioPath": "assets/de-DE/Evelyn/150_female.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Evelyn",
+          "PageIndex": 1,
+          "DisplayPattern": "Hallo meine Liebe. Bitte lass dir Zeit, ich werde den ganzen Tag hier sein!",
+          "GenderVariant": "female"
+        }
+      ]
+    }
+  ]
+}

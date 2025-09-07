@@ -1,0 +1,4284 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Alex.ko-KR",
+      "VoicePackName": "DictionarV2 (Alex - ko-KR)",
+      "Character": "Alex",
+      "Language": "ko-KR",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "어, 야. 네가 새로 온 녀석이구나? 멋지네.",
+          "AudioPath": "assets/ko-KR/Alex/1_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "어, 야. 네가 새로 온 녀석이구나? 멋지네.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "야, 네가 새로 온 여자애구나? 우리 좋은 사이로 지낼 거 같아. 난 알렉스라고 해.",
+          "AudioPath": "assets/ko-KR/Alex/2_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "야, 네가 새로 온 여자애구나? 우리 좋은 사이로 지낼 거 같아. 난 알렉스라고 해.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "그럼 종종 보자고.",
+          "AudioPath": "assets/ko-KR/Alex/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Introduction",
+          "PageIndex": 2,
+          "DisplayPattern": "그럼 종종 보자고."
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "네가 먼저 물어보는구나! 나도 막 물어보려고 했는데... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:FlowerDance_Accept",
+          "PageIndex": 0,
+          "DisplayPattern": "네가 먼저 물어보는구나! 나도 막 물어보려고 했는데..."
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "무대에서 봐.",
+          "AudioPath": "assets/ko-KR/Alex/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:FlowerDance_Accept",
+          "PageIndex": 1,
+          "DisplayPattern": "무대에서 봐."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Loved",
+          "DialogueText": "오 좋아, 바로 이거지... 생일선물 고마워, {Farmer_Name}.",
+          "AudioPath": "assets/ko-KR/Alex/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptBirthdayGift_Loved",
+          "PageIndex": 0,
+          "DisplayPattern": "오 좋아, 바로 이거지... 생일선물 고마워, ."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "이게 뭔...? 어, 네가 자란 곳에서는 어떤지 모르겠지만, 나한테는 이거 쓰레기야. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "이게 뭔...? 어, 네가 자란 곳에서는 어떤지 모르겠지만, 나한테는 이거 쓰레기야."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "워어... 이거 엄청난데. 고마워!",
+          "AudioPath": "assets/ko-KR/Alex/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "워어... 이거 엄청난데. 고마워!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)Book_Defense",
+          "DialogueText": "오, 이거지... 내가 찾던 책이야. 벌크업 팁이 잔뜩 있다더라고. 어디 보자... 달걀 많이 먹기! 하, 문제없지! 고마워! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)Book_Defense",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 이거지... 내가 찾던 책이야. 벌크업 팁이 잔뜩 있다더라고. 어디 보자... 달걀 많이 먹기! 하, 문제없지! 고마워!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Negative_book_item",
+          "DialogueText": "어어... 책을 읽으라고? 그래, 어... 한번 해볼게. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_Negative_book_item",
+          "PageIndex": 0,
+          "DisplayPattern": "어어... 책을 읽으라고? 그래, 어... 한번 해볼게."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)FrogEgg",
+          "DialogueText": "음... 내가 계란을 많이 먹긴 하지만... 이런 의미가 아니었는데... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(TR)FrogEgg",
+          "PageIndex": 0,
+          "DisplayPattern": "음... 내가 계란을 많이 먹긴 하지만... 이런 의미가 아니었는데..."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)FrogEgg",
+          "DialogueText": "그래도... 먹어봐야지! *꿀꺽* {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(TR)FrogEgg",
+          "PageIndex": 1,
+          "DisplayPattern": "그래도... 먹어봐야지! *꿀꺽*"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)ParrotEgg",
+          "DialogueText": "이거 먹을 수 있는 거야? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(TR)ParrotEgg",
+          "PageIndex": 0,
+          "DisplayPattern": "이거 먹을 수 있는 거야?"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)ParrotEgg",
+          "DialogueText": "해보면 알겠지...",
+          "AudioPath": "assets/ko-KR/Alex/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(TR)ParrotEgg",
+          "PageIndex": 1,
+          "DisplayPattern": "해보면 알겠지..."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)928",
+          "DialogueText": "헤헤... 매일 나한테 이거 하나씩만 준다면 난 서른에 은퇴할 수 있겠는 걸! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)928",
+          "PageIndex": 0,
+          "DisplayPattern": "헤헤... 매일 나한테 이거 하나씩만 준다면 난 서른에 은퇴할 수 있겠는 걸!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)107",
+          "DialogueText": "이 정도는 되어야 달걀이지! 이걸로 오믈렛을 만들면 얼마나 클지 상상해 봐...",
+          "AudioPath": "assets/ko-KR/Alex/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)107",
+          "PageIndex": 0,
+          "DisplayPattern": "이 정도는 되어야 달걀이지! 이걸로 오믈렛을 만들면 얼마나 클지 상상해 봐..."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)289",
+          "DialogueText": "와아... 이렇게 무거우면 이두 컬에도 쓸 수 있겠는걸. 일주일은 마시겠다! 하하! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)289",
+          "PageIndex": 0,
+          "DisplayPattern": "와아... 이렇게 무거우면 이두 컬에도 쓸 수 있겠는걸. 일주일은 마시겠다! 하하!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)442",
+          "DialogueText": "으음... 오리알... 맛이 진한 거. *딱*... *후루룩*. 아아...",
+          "AudioPath": "assets/ko-KR/Alex/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)442",
+          "PageIndex": 0,
+          "DisplayPattern": "으음... 오리알... 맛이 진한 거. *딱*... *후루룩*. 아아..."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)305",
+          "DialogueText": "어... 음... 내가 보통 달걀은 좋아하는데, 이건 사악해 보인다. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)305",
+          "PageIndex": 0,
+          "DisplayPattern": "어... 음... 내가 보통 달걀은 좋아하는데, 이건 사악해 보인다."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)403",
+          "DialogueText": "*오도독*... 으음... 견과류. 딱 좋아. 고마워, {Farmer_Name}!",
+          "AudioPath": "assets/ko-KR/Alex/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)403",
+          "PageIndex": 0,
+          "DisplayPattern": "*오도독*... 으음... 견과류. 딱 좋아. 고마워, !"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Positive_category_egg",
+          "DialogueText": "야, 고마워. 벌크업엔 계란이 좋지.",
+          "AudioPath": "assets/ko-KR/Alex/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_Positive_category_egg",
+          "PageIndex": 0,
+          "DisplayPattern": "야, 고마워. 벌크업엔 계란이 좋지."
+        },
+        {
+          "DialogueFrom": "AcceptGift_Positive_category_egg",
+          "DialogueText": "*딱* 후루룩... 으음. 그래, 이게 간식이지.",
+          "AudioPath": "assets/ko-KR/Alex/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_Positive_category_egg",
+          "PageIndex": 1,
+          "DisplayPattern": "*딱* 후루룩... 으음. 그래, 이게 간식이지."
+        },
+        {
+          "DialogueFrom": "cc_Bridge",
+          "DialogueText": "최근에 호수 쪽에 가봤어? 어젯밤 늦게 뛰고 있었는데, 거기 오래된 다리가 수리되었더라고...",
+          "AudioPath": "assets/ko-KR/Alex/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:cc_Bridge",
+          "PageIndex": 0,
+          "DisplayPattern": "최근에 호수 쪽에 가봤어? 어젯밤 늦게 뛰고 있었는데, 거기 오래된 다리가 수리되었더라고..."
+        },
+        {
+          "DialogueFrom": "eventSeen_288847",
+          "DialogueText": "어... 나 그런 식으로 마음을 여는 건 익숙하지가 않아서... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:eventSeen_288847",
+          "PageIndex": 0,
+          "DisplayPattern": "어... 나 그런 식으로 마음을 여는 건 익숙하지가 않아서..."
+        },
+        {
+          "DialogueFrom": "fishCaught_159",
+          "DialogueText": "네가 희귀한 물고기를 잡았다며?",
+          "AudioPath": "assets/ko-KR/Alex/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fishCaught_159",
+          "PageIndex": 0,
+          "DisplayPattern": "네가 희귀한 물고기를 잡았다며?"
+        },
+        {
+          "DialogueFrom": "fishCaught_159",
+          "DialogueText": "멋지네. 보기보다 팔힘이 좀 있나 봐! *꼬집* ... 나쁘지 않은걸! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fishCaught_159",
+          "PageIndex": 1,
+          "DisplayPattern": "멋지네. 보기보다 팔힘이 좀 있나 봐! *꼬집* ... 나쁘지 않은걸!"
+        },
+        {
+          "DialogueFrom": "purchasedAnimal_Chicken_memory_oneday",
+          "DialogueText": "아, 얼마 전에 네가 첫 닭을 마련했다고 들었어.",
+          "AudioPath": "assets/ko-KR/Alex/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:purchasedAnimal_Chicken_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "아, 얼마 전에 네가 첫 닭을 마련했다고 들었어."
+        },
+        {
+          "DialogueFrom": "purchasedAnimal_Chicken_memory_oneday",
+          "DialogueText": "이야... 할머니도 닭 키우셨으면 좋겠다. 그럼 아침마다 날계란을 12개씩 먹을 텐데!",
+          "AudioPath": "assets/ko-KR/Alex/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:purchasedAnimal_Chicken_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "이야... 할머니도 닭 키우셨으면 좋겠다. 그럼 아침마다 날계란을 12개씩 먹을 텐데!"
+        },
+        {
+          "DialogueFrom": "eventSeen_288847_memory_oneweek",
+          "DialogueText": "야.. 어... {Farmer_Name}? 나... 지난주에 너랑 해변에서 얘기한 뒤로 마음속이 편해진 느낌이야. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:eventSeen_288847_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "야.. 어... ? 나... 지난주에 너랑 해변에서 얘기한 뒤로 마음속이 편해진 느낌이야."
+        },
+        {
+          "DialogueFrom": "eventSeen_288847_memory_oneweek",
+          "DialogueText": "내 얘기 들어줘서 고마워. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:eventSeen_288847_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "내 얘기 들어줘서 고마워."
+        },
+        {
+          "DialogueFrom": "fishCaught_139",
+          "DialogueText": "네가 연어 낚는 걸 봤어.",
+          "AudioPath": "assets/ko-KR/Alex/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fishCaught_139",
+          "PageIndex": 0,
+          "DisplayPattern": "네가 연어 낚는 걸 봤어."
+        },
+        {
+          "DialogueFrom": "fishCaught_139",
+          "DialogueText": "혹시 그걸로 '연어 정찬'을 만든다면, 나 한 입만 줘!",
+          "AudioPath": "assets/ko-KR/Alex/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fishCaught_139",
+          "PageIndex": 1,
+          "DisplayPattern": "혹시 그걸로 '연어 정찬'을 만든다면, 나 한 입만 줘!"
+        },
+        {
+          "DialogueFrom": "firstVisit_BathHouse_MensLocker_memory_oneday",
+          "DialogueText": "저번에 네가 온천에 가는 걸 봤어. 운동 좀 했어? 헤헤.",
+          "AudioPath": "assets/ko-KR/Alex/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:firstVisit_BathHouse_MensLocker_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "저번에 네가 온천에 가는 걸 봤어. 운동 좀 했어? 헤헤."
+        },
+        {
+          "DialogueFrom": "firstVisit_BathHouse_MensLocker_memory_oneday",
+          "DialogueText": "어... 내 라커를 열어보거나 하진 않았지? {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Alex/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:firstVisit_BathHouse_MensLocker_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "어... 내 라커를 열어보거나 하진 않았지?"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "밖에 무슨 일이야? 신나는 거 없어?",
+          "AudioPath": "assets/ko-KR/Alex/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "밖에 무슨 일이야? 신나는 거 없어?"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "난 할아버지랑 할머니랑 여기 있어야 해서... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:GreenRain",
+          "PageIndex": 1,
+          "DisplayPattern": "난 할아버지랑 할머니랑 여기 있어야 해서..."
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "오늘 아침에 조깅하려고 했는데, 식물들이 미쳤어! 그래서 멀리 가진 못했어...",
+          "AudioPath": "assets/ko-KR/Alex/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 아침에 조깅하려고 했는데, 식물들이 미쳤어! 그래서 멀리 가진 못했어..."
+        },
+        {
+          "DialogueFrom": "dating_Alex",
+          "DialogueText": "알렉스가 당신의 팔을 한번 꼭 잡고는 미소를 짓습니다.",
+          "AudioPath": "assets/ko-KR/Alex/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:dating_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "알렉스가 당신의 팔을 한번 꼭 잡고는 미소를 짓습니다."
+        },
+        {
+          "DialogueFrom": "dating_Alex_memory_oneday",
+          "DialogueText": "좋아, 이번 %season 절대 잊지 못할 계절이 될 거야! {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:dating_Alex_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "좋아, 이번 절대 잊지 못할 계절이 될 거야!"
+        },
+        {
+          "DialogueFrom": "married_Haley",
+          "DialogueText": "헤일리랑 결혼했다고? 네가 헤일리를 꼬실 수 있을 거라곤 생각도 못 했는데!",
+          "AudioPath": "assets/ko-KR/Alex/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:married_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "헤일리랑 결혼했다고? 네가 헤일리를 꼬실 수 있을 거라곤 생각도 못 했는데!"
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "드디어 도착했다!",
+          "AudioPath": "assets/ko-KR/Alex/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "드디어 도착했다!"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "아쉽네... 영원히 여기 있을 수는 없겠지. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "아쉽네... 영원히 여기 있을 수는 없겠지."
+        },
+        {
+          "DialogueFrom": "Resort_Wander",
+          "DialogueText": "프리즈비 가져올걸... 어쩔 수 없지. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Wander",
+          "PageIndex": 0,
+          "DisplayPattern": "프리즈비 가져올걸... 어쩔 수 없지."
+        },
+        {
+          "DialogueFrom": "Resort_Wander_2",
+          "DialogueText": "배구 시합할 사람 있으려나 궁금하네.",
+          "AudioPath": "assets/ko-KR/Alex/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Wander_2",
+          "PageIndex": 0,
+          "DisplayPattern": "배구 시합할 사람 있으려나 궁금하네."
+        },
+        {
+          "DialogueFrom": "Resort_Wander_2",
+          "DialogueText": "걱정하지 마, 봐줄게! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Wander_2",
+          "PageIndex": 1,
+          "DisplayPattern": "걱정하지 마, 봐줄게!"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "어디까지 헤엄쳐나갔다 돌아올 수 있을까?",
+          "AudioPath": "assets/ko-KR/Alex/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "어디까지 헤엄쳐나갔다 돌아올 수 있을까?"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "킬로쯤 나갔다 올 수 있을 거 같은데.",
+          "AudioPath": "assets/ko-KR/Alex/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Shore",
+          "PageIndex": 1,
+          "DisplayPattern": "킬로쯤 나갔다 올 수 있을 거 같은데."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "... 걱정하지 마, 진짜 해보겠다는 건 아냐. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Shore",
+          "PageIndex": 2,
+          "DisplayPattern": "... 걱정하지 마, 진짜 해보겠다는 건 아냐."
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "그렇게 입으면 덥지 않아? 야, 그래도... 해변까지 왔는데!",
+          "AudioPath": "assets/ko-KR/Alex/49_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "그렇게 입으면 덥지 않아? 야, 그래도... 해변까지 왔는데!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "그렇게 입으면 덥지 않아? 시원하게 바닷바람 좀 쐐!",
+          "AudioPath": "assets/ko-KR/Alex/50_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Chair",
+          "PageIndex": 1,
+          "DisplayPattern": "그렇게 입으면 덥지 않아? 시원하게 바닷바람 좀 쐐!",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Resort_Towel",
+          "DialogueText": "이렇게 좋은 섬에 왔으면 태닝 제대로 하고 가야지!",
+          "AudioPath": "assets/ko-KR/Alex/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Towel",
+          "PageIndex": 0,
+          "DisplayPattern": "이렇게 좋은 섬에 왔으면 태닝 제대로 하고 가야지!"
+        },
+        {
+          "DialogueFrom": "Resort_Towel_2",
+          "DialogueText": "휴, 드디어 복근이 해를 좀 보네.",
+          "AudioPath": "assets/ko-KR/Alex/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Towel_2",
+          "PageIndex": 0,
+          "DisplayPattern": "휴, 드디어 복근이 해를 좀 보네."
+        },
+        {
+          "DialogueFrom": "Resort_Towel_2",
+          "DialogueText": "집에선 항상 가리고 있어서 안타까운걸.",
+          "AudioPath": "assets/ko-KR/Alex/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Towel_2",
+          "PageIndex": 1,
+          "DisplayPattern": "집에선 항상 가리고 있어서 안타까운걸."
+        },
+        {
+          "DialogueFrom": "Resort_Towel_3",
+          "DialogueText": "프로 선수가 되면, 세상 각지의 섬으로 휴가를 가겠어.",
+          "AudioPath": "assets/ko-KR/Alex/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Towel_3",
+          "PageIndex": 0,
+          "DisplayPattern": "프로 선수가 되면, 세상 각지의 섬으로 휴가를 가겠어."
+        },
+        {
+          "DialogueFrom": "Resort_Towel_3",
+          "DialogueText": "하지만 지금은 여기로 충분해! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Towel_3",
+          "PageIndex": 1,
+          "DisplayPattern": "하지만 지금은 여기로 충분해!"
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "바나나 셰이크에 프로틴 두 스푼 주문했어.",
+          "AudioPath": "assets/ko-KR/Alex/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "바나나 셰이크에 프로틴 두 스푼 주문했어."
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "아... 섬 생활. 이렇게 지낼만하네!",
+          "AudioPath": "assets/ko-KR/Alex/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "아... 섬 생활. 이렇게 지낼만하네!"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept_Spouse",
+          "DialogueText": "그래, 이거 재밌겠다... 올해는 춤 동작이 기억나야 할 텐데! 좀 됐거든... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:FlowerDance_Accept_Spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "그래, 이거 재밌겠다... 올해는 춤 동작이 기억나야 할 텐데! 좀 됐거든..."
+        },
+        {
+          "DialogueFrom": "FlowerDance_Decline",
+          "DialogueText": "아냐... 나 다른 사람에게 물어볼 생각이라. 행운을 빌어.",
+          "AudioPath": "assets/ko-KR/Alex/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:FlowerDance_Decline",
+          "PageIndex": 0,
+          "DisplayPattern": "아냐... 나 다른 사람에게 물어볼 생각이라. 행운을 빌어."
+        },
+        {
+          "DialogueFrom": "divorced",
+          "DialogueText": "우리 뭔가 특별한 게 있다 생각했는데... 내가 잘못 생각했나 봐. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:divorced",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 뭔가 특별한 게 있다 생각했는데... 내가 잘못 생각했나 봐."
+        },
+        {
+          "DialogueFrom": "dumped_Guys",
+          "DialogueText": "내 시간 낭비하지 마. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:dumped_Guys",
+          "PageIndex": 0,
+          "DisplayPattern": "내 시간 낭비하지 마."
+        },
+        {
+          "DialogueFrom": "secondChance_Guys",
+          "DialogueText": "널 다시 믿을 수 있을지 모르겠지만, 다시 기회를 줄게. {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Alex/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:secondChance_Guys",
+          "PageIndex": 0,
+          "DisplayPattern": "널 다시 믿을 수 있을지 모르겠지만, 다시 기회를 줄게."
+        },
+        {
+          "DialogueFrom": "breakUp",
+          "DialogueText": "나한테 뭘 주겠다고...? {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Alex/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:breakUp",
+          "PageIndex": 0,
+          "DisplayPattern": "나한테 뭘 주겠다고...?"
+        },
+        {
+          "DialogueFrom": "breakUp",
+          "DialogueText": "*흥*... 알았어. 그래... 그럼, 넌 이미 결정을 내린 거겠지. 내가 매달릴 거라 생각하지 마. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:breakUp",
+          "PageIndex": 1,
+          "DisplayPattern": "*흥*... 알았어. 그래... 그럼, 넌 이미 결정을 내린 거겠지. 내가 매달릴 거라 생각하지 마."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "내가 고등학교 때 올 스타 쿼터백이었던 거 알아? 사실이야. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Alex/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 고등학교 때 올 스타 쿼터백이었던 거 알아? 사실이야."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "여기 옷에 별 보이지? 그때 받은 거야.",
+          "AudioPath": "assets/ko-KR/Alex/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "여기 옷에 별 보이지? 그때 받은 거야."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "해변은 놀면서 햇빛 좀 쬐기 좋은 장소지.",
+          "AudioPath": "assets/ko-KR/Alex/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "해변은 놀면서 햇빛 좀 쬐기 좋은 장소지."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "태양 좀 보면서 살아야지 안 그러면 막 창백해져.",
+          "AudioPath": "assets/ko-KR/Alex/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "태양 좀 보면서 살아야지 안 그러면 막 창백해져."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "*한숨*... 동네에 여자애들이 좀 더 많았으면 좋았을 텐데, 무슨 말인지 알지? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/69_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Tue",
+          "PageIndex": 2,
+          "DisplayPattern": "*한숨*... 동네에 여자애들이 좀 더 많았으면 좋았을 텐데, 무슨 말인지 알지?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "야, 언제 한번 나랑 바다 갈래? 비키니 있어?",
+          "AudioPath": "assets/ko-KR/Alex/70_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Tue",
+          "PageIndex": 3,
+          "DisplayPattern": "야, 언제 한번 나랑 바다 갈래? 비키니 있어?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "공 좀 던지기 좋은 날인 거 같은데, 안 그래? {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Alex/71.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "공 좀 던지기 좋은 날인 거 같은데, 안 그래?"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "같이 공 던지고 놀자고 하겠는데, 운동은 별로 안 좋아하는 타입 같아.",
+          "AudioPath": "assets/ko-KR/Alex/72_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "같이 공 던지고 놀자고 하겠는데, 운동은 별로 안 좋아하는 타입 같아.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "여자 아니었으면 같이 공 던지고 놀자고 했겠는데.",
+          "AudioPath": "assets/ko-KR/Alex/73_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "여자 아니었으면 같이 공 던지고 놀자고 했겠는데.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "난 그냥 구경하는 것도 괜찮아.",
+          "AudioPath": "assets/ko-KR/Alex/74.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed",
+          "PageIndex": 3,
+          "DisplayPattern": "난 그냥 구경하는 것도 괜찮아."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "아냐, 같이 놀자!",
+          "AudioPath": "assets/ko-KR/Alex/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed",
+          "PageIndex": 4,
+          "DisplayPattern": "아냐, 같이 놀자!"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "(화를 내며) 무슨 의미로 한 말이야?",
+          "AudioPath": "assets/ko-KR/Alex/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed",
+          "PageIndex": 5,
+          "DisplayPattern": "(화를 내며) 무슨 의미로 한 말이야?"
+        },
+        {
+          "DialogueFrom": "Wed_01_old",
+          "DialogueText": "롱 패스! ...농담이야. 하하하.",
+          "AudioPath": "assets/ko-KR/Alex/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed_01_old",
+          "PageIndex": 0,
+          "DisplayPattern": "롱 패스! ...농담이야. 하하하."
+        },
+        {
+          "DialogueFrom": "Wed_01_old",
+          "DialogueText": "같이 공놀이할 사람 있었으면 좋겠다... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed_01_old",
+          "PageIndex": 1,
+          "DisplayPattern": "같이 공놀이할 사람 있었으면 좋겠다..."
+        },
+        {
+          "DialogueFrom": "Wed_01_01",
+          "DialogueText": "오 정말? 내가 널 좀 과소평가했나 보네.",
+          "AudioPath": "assets/ko-KR/Alex/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed_01_01",
+          "PageIndex": 0,
+          "DisplayPattern": "오 정말? 내가 널 좀 과소평가했나 보네."
+        },
+        {
+          "DialogueFrom": "Wed_01_01",
+          "DialogueText": "오늘은 팔이 좀 아프고, 다음번에.",
+          "AudioPath": "assets/ko-KR/Alex/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed_01_01",
+          "PageIndex": 1,
+          "DisplayPattern": "오늘은 팔이 좀 아프고, 다음번에."
+        },
+        {
+          "DialogueFrom": "Wed_01_02",
+          "DialogueText": "그래, 운동이 적성이 아닌 사람들이 있지.",
+          "AudioPath": "assets/ko-KR/Alex/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed_01_02",
+          "PageIndex": 0,
+          "DisplayPattern": "그래, 운동이 적성이 아닌 사람들이 있지."
+        },
+        {
+          "DialogueFrom": "Wed_01_03",
+          "DialogueText": "어... 아냐.",
+          "AudioPath": "assets/ko-KR/Alex/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed_01_03",
+          "PageIndex": 0,
+          "DisplayPattern": "어... 아냐."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "공기가 슬슬 따뜻해지네... 힘 나는 걸!",
+          "AudioPath": "assets/ko-KR/Alex/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "공기가 슬슬 따뜻해지네... 힘 나는 걸!"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "야, 농부맨, 잘 지내?",
+          "AudioPath": "assets/ko-KR/Alex/84_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "야, 농부맨, 잘 지내?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "야, 농부걸이잖아. 새 바지야? 잘 어울리는데?",
+          "AudioPath": "assets/ko-KR/Alex/85_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "야, 농부걸이잖아. 새 바지야? 잘 어울리는데?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "아, 까먹을뻔했다! 오늘 팔굽혀 펴기 하는 날이지!",
+          "AudioPath": "assets/ko-KR/Alex/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "아, 까먹을뻔했다! 오늘 팔굽혀 펴기 하는 날이지!"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "팔굽혀 펴기 할 때마다 매번 하나씩 더 늘리고 있어. 꽤 괜찮은 전략이지, 그치?",
+          "AudioPath": "assets/ko-KR/Alex/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri",
+          "PageIndex": 3,
+          "DisplayPattern": "팔굽혀 펴기 할 때마다 매번 하나씩 더 늘리고 있어. 꽤 괜찮은 전략이지, 그치?"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "팔이 진짜 아픈데, 나 같은 사람한텐 그게 진척이 있다는 신호지.",
+          "AudioPath": "assets/ko-KR/Alex/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "팔이 진짜 아픈데, 나 같은 사람한텐 그게 진척이 있다는 신호지."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "어제 팔굽혀 펴기 한 천 개는 한거 같아.",
+          "AudioPath": "assets/ko-KR/Alex/89.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "어제 팔굽혀 펴기 한 천 개는 한거 같아."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "야.",
+          "AudioPath": "assets/ko-KR/Alex/90.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "야."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "뭐, 얘기하자고? 나 지금 바빠.",
+          "AudioPath": "assets/ko-KR/Alex/91.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "뭐, 얘기하자고? 나 지금 바빠."
+        },
+        {
+          "DialogueFrom": "Sun2",
+          "DialogueText": "야, {Farmer_Name}.",
+          "AudioPath": "assets/ko-KR/Alex/92.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sun2",
+          "PageIndex": 0,
+          "DisplayPattern": "야, ."
+        },
+        {
+          "DialogueFrom": "Sun2",
+          "DialogueText": "그래, 네 이름 기억하고 있지.",
+          "AudioPath": "assets/ko-KR/Alex/93.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sun2",
+          "PageIndex": 1,
+          "DisplayPattern": "그래, 네 이름 기억하고 있지."
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "야, {Farmer_Name}.",
+          "AudioPath": "assets/ko-KR/Alex/94.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sun4",
+          "PageIndex": 0,
+          "DisplayPattern": "야, ."
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "오늘 하루 어때?",
+          "AudioPath": "assets/ko-KR/Alex/95.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sun4",
+          "PageIndex": 1,
+          "DisplayPattern": "오늘 하루 어때?"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "야, {Farmer_Name}. 들러줘서 기뻐.",
+          "AudioPath": "assets/ko-KR/Alex/96.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "야, . 들러줘서 기뻐."
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "할머니를 사랑한다고 말하는 거 난 안 부끄러워!",
+          "AudioPath": "assets/ko-KR/Alex/97.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri4",
+          "PageIndex": 1,
+          "DisplayPattern": "할머니를 사랑한다고 말하는 거 난 안 부끄러워!"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "반면에 할아버지는...",
+          "AudioPath": "assets/ko-KR/Alex/98.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri4",
+          "PageIndex": 2,
+          "DisplayPattern": "반면에 할아버지는..."
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "농담이야. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/99.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri4",
+          "PageIndex": 3,
+          "DisplayPattern": "농담이야."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "친구들이랑 해변에서 활기차게 보내는 하루보다 좋은 게 없지... 그치?",
+          "AudioPath": "assets/ko-KR/Alex/100.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "친구들이랑 해변에서 활기차게 보내는 하루보다 좋은 게 없지... 그치?"
+        },
+        {
+          "DialogueFrom": "Mon8",
+          "DialogueText": "그거 알아, 예전에는 부와 명예 이런 걸 원했는데, 요즘은 좀 다른 생각이 들어. 결국에 진짜 만족스러운 건 겸허한 작은 일들인 거 같아, 안 그래?",
+          "AudioPath": "assets/ko-KR/Alex/101.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Mon8",
+          "PageIndex": 0,
+          "DisplayPattern": "그거 알아, 예전에는 부와 명예 이런 걸 원했는데, 요즘은 좀 다른 생각이 들어. 결국에 진짜 만족스러운 건 겸허한 작은 일들인 거 같아, 안 그래?"
+        },
+        {
+          "DialogueFrom": "Mon8",
+          "DialogueText": "아직 프로가 되고 싶지만, 그게 세상에서 제일 중요한 건 아냐.",
+          "AudioPath": "assets/ko-KR/Alex/102.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Mon8",
+          "PageIndex": 1,
+          "DisplayPattern": "아직 프로가 되고 싶지만, 그게 세상에서 제일 중요한 건 아냐."
+        },
+        {
+          "DialogueFrom": "Fri8",
+          "DialogueText": "안녕 {Farmer_Name}. 오늘 날렵해 보이네. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/103_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri8",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕 . 오늘 날렵해 보이네.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Fri8",
+          "DialogueText": "야 {Farmer_Name}. 오늘 머리 좀 다르게 했어? 뭔가 자꾸 내 시선을 사로잡는데. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/104_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri8",
+          "PageIndex": 1,
+          "DisplayPattern": "야 . 오늘 머리 좀 다르게 했어? 뭔가 자꾸 내 시선을 사로잡는데.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Sat10",
+          "DialogueText": "요즘 집중이 잘 안되는 기분이야. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/105.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sat10",
+          "PageIndex": 0,
+          "DisplayPattern": "요즘 집중이 잘 안되는 기분이야."
+        },
+        {
+          "DialogueFrom": "Event_beach1",
+          "DialogueText": "그야 당연하지. 안 그랬으면 네가 미쳤다고 생각했을 거야. 아니면 무슨 괴짜거나.",
+          "AudioPath": "assets/ko-KR/Alex/106.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_beach1",
+          "PageIndex": 0,
+          "DisplayPattern": "그야 당연하지. 안 그랬으면 네가 미쳤다고 생각했을 거야. 아니면 무슨 괴짜거나."
+        },
+        {
+          "DialogueFrom": "Event_beach2",
+          "DialogueText": "그래? 너 뭔 괴짜구나. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/107.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_beach2",
+          "PageIndex": 0,
+          "DisplayPattern": "그래? 너 뭔 괴짜구나."
+        },
+        {
+          "DialogueFrom": "Event_beach2",
+          "DialogueText": "미안.",
+          "AudioPath": "assets/ko-KR/Alex/108.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_beach2",
+          "PageIndex": 1,
+          "DisplayPattern": "미안."
+        },
+        {
+          "DialogueFrom": "Event_books1",
+          "DialogueText": "아냐, 안 그래! 그냥 나 기분 좋으라고 하는 소리지. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/109.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_books1",
+          "PageIndex": 0,
+          "DisplayPattern": "아냐, 안 그래! 그냥 나 기분 좋으라고 하는 소리지."
+        },
+        {
+          "DialogueFrom": "Event_books2",
+          "DialogueText": "그래, 네 말이 맞는 거 같아... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/110.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_books2",
+          "PageIndex": 0,
+          "DisplayPattern": "그래, 네 말이 맞는 거 같아..."
+        },
+        {
+          "DialogueFrom": "Event_books3",
+          "DialogueText": "거기서 나랑 동의하면 안 되지. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/111.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_books3",
+          "PageIndex": 0,
+          "DisplayPattern": "거기서 나랑 동의하면 안 되지."
+        },
+        {
+          "DialogueFrom": "event_box1",
+          "DialogueText": "맞아... 나도 알아. 내가 그래서 운동으로 성공하려고 이렇게 단단히 결심한 거야... {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Alex/112.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box1",
+          "PageIndex": 0,
+          "DisplayPattern": "맞아... 나도 알아. 내가 그래서 운동으로 성공하려고 이렇게 단단히 결심한 거야..."
+        },
+        {
+          "DialogueFrom": "event_box1",
+          "DialogueText": "근데 성공을 하건 안 하건... 내가 최선을 다하면 자랑스러워하실 거라 생각해. 고마워.",
+          "AudioPath": "assets/ko-KR/Alex/113.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box1",
+          "PageIndex": 1,
+          "DisplayPattern": "근데 성공을 하건 안 하건... 내가 최선을 다하면 자랑스러워하실 거라 생각해. 고마워."
+        },
+        {
+          "DialogueFrom": "event_box2",
+          "DialogueText": "야... 그래도 어머니 기일인데! 너무했다... {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/114.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box2",
+          "PageIndex": 0,
+          "DisplayPattern": "야... 그래도 어머니 기일인데! 너무했다..."
+        },
+        {
+          "DialogueFrom": "event_box3",
+          "DialogueText": "...고마워, {Farmer_Name}.",
+          "AudioPath": "assets/ko-KR/Alex/115.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box3",
+          "PageIndex": 0,
+          "DisplayPattern": "...고마워, ."
+        },
+        {
+          "DialogueFrom": "event_box3",
+          "DialogueText": "너... 너 다른 남자애들이랑 좀 다르다. 좀 더 세심해. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/116_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box3",
+          "PageIndex": 1,
+          "DisplayPattern": "너... 너 다른 남자애들이랑 좀 다르다. 좀 더 세심해.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "event_box3",
+          "DialogueText": "이 동네에서 너랑 제일 사이가 가까워진거 같아...",
+          "AudioPath": "assets/ko-KR/Alex/117_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box3",
+          "PageIndex": 2,
+          "DisplayPattern": "이 동네에서 너랑 제일 사이가 가까워진거 같아...",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "event_box3",
+          "DialogueText": "기뻐.",
+          "AudioPath": "assets/ko-KR/Alex/118_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box3",
+          "PageIndex": 3,
+          "DisplayPattern": "기뻐.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "event_box3",
+          "DialogueText": "말로 하긴 좀 쑥스러운 건가? {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/119_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box3",
+          "PageIndex": 4,
+          "DisplayPattern": "말로 하긴 좀 쑥스러운 건가?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "event_box4",
+          "DialogueText": "기분이 전혀 나아지지 않잖아, 멍청아. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/120.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box4",
+          "PageIndex": 0,
+          "DisplayPattern": "기분이 전혀 나아지지 않잖아, 멍청아."
+        },
+        {
+          "DialogueFrom": "Event_parents1",
+          "DialogueText": "그거 흥미로운 생각인데...",
+          "AudioPath": "assets/ko-KR/Alex/121.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_parents1",
+          "PageIndex": 0,
+          "DisplayPattern": "그거 흥미로운 생각인데..."
+        },
+        {
+          "DialogueFrom": "Event_parents2",
+          "DialogueText": "그럴 리가 없잖아! {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/122.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_parents2",
+          "PageIndex": 0,
+          "DisplayPattern": "그럴 리가 없잖아!"
+        },
+        {
+          "DialogueFrom": "Event_parents3",
+          "DialogueText": "...네 말이 맞는 거 같기도... 모르겠다. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/123.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_parents3",
+          "PageIndex": 0,
+          "DisplayPattern": "...네 말이 맞는 거 같기도... 모르겠다."
+        },
+        {
+          "DialogueFrom": "summer_1",
+          "DialogueText": "야. 일 년 중 최고는 역시 여름인 거 같아.",
+          "AudioPath": "assets/ko-KR/Alex/124.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_1",
+          "PageIndex": 0,
+          "DisplayPattern": "야. 일 년 중 최고는 역시 여름인 거 같아."
+        },
+        {
+          "DialogueFrom": "summer_1",
+          "DialogueText": "지금이 딱 좋은 게 아직 여름이 많이 남았다는 거야. 그럼 나중에 또 봐.",
+          "AudioPath": "assets/ko-KR/Alex/125.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_1",
+          "PageIndex": 1,
+          "DisplayPattern": "지금이 딱 좋은 게 아직 여름이 많이 남았다는 거야. 그럼 나중에 또 봐."
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "야, 농부맨. 너 좀 탄 거 같다.",
+          "AudioPath": "assets/ko-KR/Alex/126_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "야, 농부맨. 너 좀 탄 거 같다.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "야 농부걸. 태닝 잘 됐네. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/127_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "야 농부걸. 태닝 잘 됐네.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "이번 여름에 연습 제대로 하면, 프로 되는 것도 쉬워지겠지.",
+          "AudioPath": "assets/ko-KR/Alex/128.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Mon",
+          "PageIndex": 2,
+          "DisplayPattern": "이번 여름에 연습 제대로 하면, 프로 되는 것도 쉬워지겠지."
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "그럼 너도 나 안다고 자랑할 수 있어. 멋지지, 안 그래?",
+          "AudioPath": "assets/ko-KR/Alex/129.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Mon",
+          "PageIndex": 3,
+          "DisplayPattern": "그럼 너도 나 안다고 자랑할 수 있어. 멋지지, 안 그래?"
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "숙녀들이 내 머리를 이렇게 안 좋아했다면, 당장이라도 다 밀어버릴 텐데.",
+          "AudioPath": "assets/ko-KR/Alex/130.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "숙녀들이 내 머리를 이렇게 안 좋아했다면, 당장이라도 다 밀어버릴 텐데."
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "*한숨*... 삶이 참 힘든 때가 있어.",
+          "AudioPath": "assets/ko-KR/Alex/131.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "*한숨*... 삶이 참 힘든 때가 있어."
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "스포츠계의 전설이 될 운명이야",
+          "AudioPath": "assets/ko-KR/Alex/132.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "스포츠계의 전설이 될 운명이야"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "글쎄, 연습 많이 한다면",
+          "AudioPath": "assets/ko-KR/Alex/133.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "글쎄, 연습 많이 한다면"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "아니, 웬만하면 실패하고 그냥 판매사원이 될 거야",
+          "AudioPath": "assets/ko-KR/Alex/134.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "아니, 웬만하면 실패하고 그냥 판매사원이 될 거야"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_old",
+          "DialogueText": "야, 내가 프로 선수되면 네가 내 첫 번째 \"팬\"이었다고 말할 수 있을거야. 나쁘지 않지?",
+          "AudioPath": "assets/ko-KR/Alex/135.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_old",
+          "PageIndex": 0,
+          "DisplayPattern": "야, 내가 프로 선수되면 네가 내 첫 번째 \"팬\"이었다고 말할 수 있을거야. 나쁘지 않지?"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_old",
+          "DialogueText": "야, 네가 틀렸다는 걸 보여주려고 요즘 두 배로 열심히 연습하고 있어. 딱 기다려. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/136.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_old",
+          "PageIndex": 1,
+          "DisplayPattern": "야, 네가 틀렸다는 걸 보여주려고 요즘 두 배로 열심히 연습하고 있어. 딱 기다려."
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_01",
+          "DialogueText": "그래, 바로 그거야! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/137.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_01",
+          "PageIndex": 0,
+          "DisplayPattern": "그래, 바로 그거야!"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_01",
+          "DialogueText": "너 생각보다 괜찮은데?",
+          "AudioPath": "assets/ko-KR/Alex/138.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_01",
+          "PageIndex": 1,
+          "DisplayPattern": "너 생각보다 괜찮은데?"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_02",
+          "DialogueText": "뭐, 내가 워낙 잘하니까 그렇게 많이 연습할 필요는 없을 거야. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Alex/139.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_02",
+          "PageIndex": 0,
+          "DisplayPattern": "뭐, 내가 워낙 잘하니까 그렇게 많이 연습할 필요는 없을 거야."
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_03",
+          "DialogueText": "미친 소리야. 그냥 내가 재능이 많고 인기가 좋다고 시기하는 거지. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/140_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_03",
+          "PageIndex": 0,
+          "DisplayPattern": "미친 소리야. 그냥 내가 재능이 많고 인기가 좋다고 시기하는 거지.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_03",
+          "DialogueText": "말도 안 되는 소리. 너는 상상도 할 수 없는 정도로 내가 인기가 많아서 질투하는 거지, 이 괴물아. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/141_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_03",
+          "PageIndex": 1,
+          "DisplayPattern": "말도 안 되는 소리. 너는 상상도 할 수 없는 정도로 내가 인기가 많아서 질투하는 거지, 이 괴물아.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_03",
+          "DialogueText": "나한테서 떨어져. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/142.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_03",
+          "PageIndex": 2,
+          "DisplayPattern": "나한테서 떨어져."
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "야, 농장에서 매일 일해서 힘 좀 쓰겠는걸.",
+          "AudioPath": "assets/ko-KR/Alex/143_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "야, 농장에서 매일 일해서 힘 좀 쓰겠는걸.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "야, 농장에서 매일 일해서 꽤 건강하겠어.",
+          "AudioPath": "assets/ko-KR/Alex/144_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "야, 농장에서 매일 일해서 꽤 건강하겠어.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "그러다 어느 날 내 수준까지 올 수 있을지도 몰라. 기대할만하지, 안 그래?",
+          "AudioPath": "assets/ko-KR/Alex/145.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "그러다 어느 날 내 수준까지 올 수 있을지도 몰라. 기대할만하지, 안 그래?"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "표정이 왜 그래?",
+          "AudioPath": "assets/ko-KR/Alex/146.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Thu",
+          "PageIndex": 3,
+          "DisplayPattern": "표정이 왜 그래?"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "원하는 게 뭐야?",
+          "AudioPath": "assets/ko-KR/Alex/147.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "원하는 게 뭐야?"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "난 지금 더 중요한 할 일이 있어.",
+          "AudioPath": "assets/ko-KR/Alex/148.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "난 지금 더 중요한 할 일이 있어."
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "으음... 어디서 바베큐 냄새가 나는데.",
+          "AudioPath": "assets/ko-KR/Alex/149.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "으음... 어디서 바베큐 냄새가 나는데."
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "제기랄, 버거 먹고 싶네.",
+          "AudioPath": "assets/ko-KR/Alex/150.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "제기랄, 버거 먹고 싶네."
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "옛 신발에 무슨 갈색 자국이 있길래 어제 새 신발을 샀어.",
+          "AudioPath": "assets/ko-KR/Alex/151.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "옛 신발에 무슨 갈색 자국이 있길래 어제 새 신발을 샀어."
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "그냥 쓰레기통에 버렸어. 기부를 하자니 뭔 이상한 놈이 내 신발을 신을 생각이 싫더라고, 뭔 말인지 알지?",
+          "AudioPath": "assets/ko-KR/Alex/152.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "그냥 쓰레기통에 버렸어. 기부를 하자니 뭔 이상한 놈이 내 신발을 신을 생각이 싫더라고, 뭔 말인지 알지?"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "...뭐? {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/153.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sun",
+          "PageIndex": 2,
+          "DisplayPattern": "...뭐?"
+        },
+        {
+          "DialogueFrom": "summer_Sun4",
+          "DialogueText": "어 야... 너 신발이 좀 더럽다... 근데 뭐, 괜찮아!",
+          "AudioPath": "assets/ko-KR/Alex/154.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sun4",
+          "PageIndex": 0,
+          "DisplayPattern": "어 야... 너 신발이 좀 더럽다... 근데 뭐, 괜찮아!"
+        },
+        {
+          "DialogueFrom": "summer_Sun4",
+          "DialogueText": "사람마다 취향이 다른 거겠지.",
+          "AudioPath": "assets/ko-KR/Alex/155.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sun4",
+          "PageIndex": 1,
+          "DisplayPattern": "사람마다 취향이 다른 거겠지."
+        },
+        {
+          "DialogueFrom": "summer_Thu4",
+          "DialogueText": "야, 이번 여름 몸 좀 잡히나 보네!",
+          "AudioPath": "assets/ko-KR/Alex/156.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Thu4",
+          "PageIndex": 0,
+          "DisplayPattern": "야, 이번 여름 몸 좀 잡히나 보네!"
+        },
+        {
+          "DialogueFrom": "summer_Thu4",
+          "DialogueText": "농장 일 덕 좀 보고 있나 봐, 그치?",
+          "AudioPath": "assets/ko-KR/Alex/157.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Thu4",
+          "PageIndex": 1,
+          "DisplayPattern": "농장 일 덕 좀 보고 있나 봐, 그치?"
+        },
+        {
+          "DialogueFrom": "summer_Mon4",
+          "DialogueText": "야, 태닝 잘 됐다.",
+          "AudioPath": "assets/ko-KR/Alex/158.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "야, 태닝 잘 됐다."
+        },
+        {
+          "DialogueFrom": "summer_Fri6",
+          "DialogueText": "방이 좀 지저분해서 미안해. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/159.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "방이 좀 지저분해서 미안해."
+        },
+        {
+          "DialogueFrom": "summer_Fri6",
+          "DialogueText": "청소하는 걸 기억하는 게 너무 어려워. 개선하려고 노력하고는 있어, 그래도.",
+          "AudioPath": "assets/ko-KR/Alex/160.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "청소하는 걸 기억하는 게 너무 어려워. 개선하려고 노력하고는 있어, 그래도."
+        },
+        {
+          "DialogueFrom": "summer_Wed8",
+          "DialogueText": "있지, 나도 농경생활 그렇게 싫진 않을 거 같아... 스포츠랑 비슷한 점도 많아 보여.",
+          "AudioPath": "assets/ko-KR/Alex/161.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed8",
+          "PageIndex": 0,
+          "DisplayPattern": "있지, 나도 농경생활 그렇게 싫진 않을 거 같아... 스포츠랑 비슷한 점도 많아 보여."
+        },
+        {
+          "DialogueFrom": "summer_Wed8",
+          "DialogueText": "내가 실외활동을 즐기고 손으로 직접 뭘 하는 게 좋아서.",
+          "AudioPath": "assets/ko-KR/Alex/162.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed8",
+          "PageIndex": 1,
+          "DisplayPattern": "내가 실외활동을 즐기고 손으로 직접 뭘 하는 게 좋아서."
+        },
+        {
+          "DialogueFrom": "summer_Sat10",
+          "DialogueText": "요즘 책을 좀 더 읽어보려는 중이야... 운동에 너무 집착해서 몇 년 동안 뇌를 방치한 느낌이야.",
+          "AudioPath": "assets/ko-KR/Alex/163.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sat10",
+          "PageIndex": 0,
+          "DisplayPattern": "요즘 책을 좀 더 읽어보려는 중이야... 운동에 너무 집착해서 몇 년 동안 뇌를 방치한 느낌이야."
+        },
+        {
+          "DialogueFrom": "fall_1",
+          "DialogueText": "그래, 날이 추워지고 있긴 해... 하지만 아직 운동할 만큼은 따뜻한걸!",
+          "AudioPath": "assets/ko-KR/Alex/164.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_1",
+          "PageIndex": 0,
+          "DisplayPattern": "그래, 날이 추워지고 있긴 해... 하지만 아직 운동할 만큼은 따뜻한걸!"
+        },
+        {
+          "DialogueFrom": "fall_1",
+          "DialogueText": "난 그거면 됐어.",
+          "AudioPath": "assets/ko-KR/Alex/165.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_1",
+          "PageIndex": 1,
+          "DisplayPattern": "난 그거면 됐어."
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "할머니는 나더러 공부하는데 시간을 더 들이라던데.",
+          "AudioPath": "assets/ko-KR/Alex/166.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "할머니는 나더러 공부하는데 시간을 더 들이라던데."
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "그래서 내가 말했지, '...할매, 걱정 마. 나 프로가 될 거야!' {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/167.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "그래서 내가 말했지, '...할매, 걱정 마. 나 프로가 될 거야!'"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "공부는 멍청이나 하는 짓인걸, 뭐.",
+          "AudioPath": "assets/ko-KR/Alex/168.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Mon",
+          "PageIndex": 2,
+          "DisplayPattern": "공부는 멍청이나 하는 짓인걸, 뭐."
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "야, 나 물어보고 싶은 거 있었어.",
+          "AudioPath": "assets/ko-KR/Alex/169_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "야, 나 물어보고 싶은 거 있었어.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "야, 뭐하나 물어봐도 돼?",
+          "AudioPath": "assets/ko-KR/Alex/170_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "야, 뭐하나 물어봐도 돼?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "여자들이 내 머리 스타일 좋아할까?",
+          "AudioPath": "assets/ko-KR/Alex/171_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "여자들이 내 머리 스타일 좋아할까?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "내 머리 스타일 어때?",
+          "AudioPath": "assets/ko-KR/Alex/172_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed",
+          "PageIndex": 3,
+          "DisplayPattern": "내 머리 스타일 어때?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "유행하는 스타일인 것 같아.",
+          "AudioPath": "assets/ko-KR/Alex/173.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed",
+          "PageIndex": 4,
+          "DisplayPattern": "유행하는 스타일인 것 같아."
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "무슨 곰팡이 뭉친 것 같아.",
+          "AudioPath": "assets/ko-KR/Alex/174.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed",
+          "PageIndex": 5,
+          "DisplayPattern": "무슨 곰팡이 뭉친 것 같아."
+        },
+        {
+          "DialogueFrom": "fall_Wed_01_old",
+          "DialogueText": "오늘 머리에 젤 너무 많이 발랐어. 좀 아프네.",
+          "AudioPath": "assets/ko-KR/Alex/175.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed_01_old",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 머리에 젤 너무 많이 발랐어. 좀 아프네."
+        },
+        {
+          "DialogueFrom": "fall_Wed_01_old",
+          "DialogueText": "만지지 마!",
+          "AudioPath": "assets/ko-KR/Alex/176.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed_01_old",
+          "PageIndex": 1,
+          "DisplayPattern": "만지지 마!"
+        },
+        {
+          "DialogueFrom": "fall_Wed_01_old",
+          "DialogueText": "...뭐?",
+          "AudioPath": "assets/ko-KR/Alex/177.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed_01_old",
+          "PageIndex": 2,
+          "DisplayPattern": "...뭐?"
+        },
+        {
+          "DialogueFrom": "fall_Wed_01_01",
+          "DialogueText": "그래, 나도 알아. 그래서 이렇게 한 거야.",
+          "AudioPath": "assets/ko-KR/Alex/178.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed_01_01",
+          "PageIndex": 0,
+          "DisplayPattern": "그래, 나도 알아. 그래서 이렇게 한 거야."
+        },
+        {
+          "DialogueFrom": "fall_Wed_01_02",
+          "DialogueText": "뭐래. 그냥 내가 잘생겨서 질투하는 거지.",
+          "AudioPath": "assets/ko-KR/Alex/179.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed_01_02",
+          "PageIndex": 0,
+          "DisplayPattern": "뭐래. 그냥 내가 잘생겨서 질투하는 거지."
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "와썹?",
+          "AudioPath": "assets/ko-KR/Alex/180.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "와썹?"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "너 이름 뭐더라, 막, %firstnameletter%name, 아닌가?",
+          "AudioPath": "assets/ko-KR/Alex/181.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "너 이름 뭐더라, 막, , 아닌가?"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "오. {Farmer_Name}(이)라고? 알았어. 미안.",
+          "AudioPath": "assets/ko-KR/Alex/182.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "오. (이)라고? 알았어. 미안."
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "오늘 밤에 윗몸일으키기 200번 할 거야.",
+          "AudioPath": "assets/ko-KR/Alex/183.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 밤에 윗몸일으키기 200번 할 거야."
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "나 꽤 열심히 하지, 안 그래? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/184.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "나 꽤 열심히 하지, 안 그래?"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "다른 거 필요한 거 있어?",
+          "AudioPath": "assets/ko-KR/Alex/185.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "다른 거 필요한 거 있어?"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "이맘때쯤 강에서 연어 낚을 수 있는 걸로 알아.",
+          "AudioPath": "assets/ko-KR/Alex/186.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "이맘때쯤 강에서 연어 낚을 수 있는 걸로 알아."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "적어도 듣기론 그렇대.",
+          "AudioPath": "assets/ko-KR/Alex/187.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "적어도 듣기론 그렇대."
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "야, 오늘 그리드볼 경기 있어!",
+          "AudioPath": "assets/ko-KR/Alex/188.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "야, 오늘 그리드볼 경기 있어!"
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "가을철 일요일은 꽤 멋져. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Alex/189.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "가을철 일요일은 꽤 멋져."
+        },
+        {
+          "DialogueFrom": "fall_Thu2",
+          "DialogueText": "잘 지내, {Farmer_Name}?",
+          "AudioPath": "assets/ko-KR/Alex/190.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Thu2",
+          "PageIndex": 0,
+          "DisplayPattern": "잘 지내, ?"
+        },
+        {
+          "DialogueFrom": "fall_Fri6",
+          "DialogueText": "오늘 밤 윗몸일으키기 엄청 많이 할 거야.",
+          "AudioPath": "assets/ko-KR/Alex/191.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 밤 윗몸일으키기 엄청 많이 할 거야."
+        },
+        {
+          "DialogueFrom": "fall_Fri6",
+          "DialogueText": "잠재력을 최대로 이루고 싶으면 정말 열심히 노력해야 해.",
+          "AudioPath": "assets/ko-KR/Alex/192.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "잠재력을 최대로 이루고 싶으면 정말 열심히 노력해야 해."
+        },
+        {
+          "DialogueFrom": "fall_Mon4",
+          "DialogueText": "할머니께서 내가 좀 더 공부하는 데 시간을 들여야 한다 하셨어.",
+          "AudioPath": "assets/ko-KR/Alex/193.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "할머니께서 내가 좀 더 공부하는 데 시간을 들여야 한다 하셨어."
+        },
+        {
+          "DialogueFrom": "fall_Mon4",
+          "DialogueText": "맞는 말씀일 수도 있어... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/194.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "맞는 말씀일 수도 있어..."
+        },
+        {
+          "DialogueFrom": "fall_Wed8",
+          "DialogueText": "드디어 결심했어... 머리에 젤 안 바르기로 결정했어.",
+          "AudioPath": "assets/ko-KR/Alex/195.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed8",
+          "PageIndex": 0,
+          "DisplayPattern": "드디어 결심했어... 머리에 젤 안 바르기로 결정했어."
+        },
+        {
+          "DialogueFrom": "fall_Wed8",
+          "DialogueText": "머리에 젤 발라야만 나를 좋아하는 사람하고는 친구가 되고 싶지 않아.",
+          "AudioPath": "assets/ko-KR/Alex/196.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed8",
+          "PageIndex": 1,
+          "DisplayPattern": "머리에 젤 발라야만 나를 좋아하는 사람하고는 친구가 되고 싶지 않아."
+        },
+        {
+          "DialogueFrom": "fall_Thu10",
+          "DialogueText": "{Farmer_Name}! 음... 안녕. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/197.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Thu10",
+          "PageIndex": 0,
+          "DisplayPattern": "! 음... 안녕."
+        },
+        {
+          "DialogueFrom": "winter_1",
+          "DialogueText": "날씨 좀 별로다. 재밌는 걸 하자니 눈이 너무 많아.",
+          "AudioPath": "assets/ko-KR/Alex/198.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_1",
+          "PageIndex": 0,
+          "DisplayPattern": "날씨 좀 별로다. 재밌는 걸 하자니 눈이 너무 많아."
+        },
+        {
+          "DialogueFrom": "winter_1",
+          "DialogueText": "좋아하는 사람도 있겠지.",
+          "AudioPath": "assets/ko-KR/Alex/199.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_1",
+          "PageIndex": 1,
+          "DisplayPattern": "좋아하는 사람도 있겠지."
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "눈 좋아해? 난... 난 그냥 봄을 오길 기대하고 있어.",
+          "AudioPath": "assets/ko-KR/Alex/200.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "눈 좋아해? 난... 난 그냥 봄을 오길 기대하고 있어."
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "야, 혹시 헤일리 찾아가서 내가 인사했다고 전해줄 수 있어?",
+          "AudioPath": "assets/ko-KR/Alex/201.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "야, 혹시 헤일리 찾아가서 내가 인사했다고 전해줄 수 있어?"
+        },
+        {
+          "DialogueFrom": "winter_Tue_inlaw_Haley",
+          "DialogueText": "오, 야. 결혼생활은 좀 어때? {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Alex/202.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Tue_inlaw_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 야. 결혼생활은 좀 어때?"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "사람들 겨울엔 보통 실내에만 있고, 따분한 것만 해. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/203.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "사람들 겨울엔 보통 실내에만 있고, 따분한 것만 해."
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "책이라도 읽으면 덜 지루하려나... 에이, 아냐.",
+          "AudioPath": "assets/ko-KR/Alex/204.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "책이라도 읽으면 덜 지루하려나... 에이, 아냐."
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "프로 선수가 되면, 돈이 너무 많아서 열대지방에 있는 별장도 생길 거야.",
+          "AudioPath": "assets/ko-KR/Alex/205.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "프로 선수가 되면, 돈이 너무 많아서 열대지방에 있는 별장도 생길 거야."
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "그럼 이런 지루한 겨울을 견딜 필요가 없겠지.",
+          "AudioPath": "assets/ko-KR/Alex/206.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "그럼 이런 지루한 겨울을 견딜 필요가 없겠지."
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "나 보러 눈을 뚫고 여기까지 온 거야?",
+          "AudioPath": "assets/ko-KR/Alex/207.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "나 보러 눈을 뚫고 여기까지 온 거야?"
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "뭐 말이 되긴 하네.",
+          "AudioPath": "assets/ko-KR/Alex/208.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "뭐 말이 되긴 하네."
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "마을에 이상한 사람들이 좀 살고 있어.",
+          "AudioPath": "assets/ko-KR/Alex/209.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "마을에 이상한 사람들이 좀 살고 있어."
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "...예를 들면 세바스찬. 왜 항상 검은 옷만 입지?",
+          "AudioPath": "assets/ko-KR/Alex/210.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "...예를 들면 세바스찬. 왜 항상 검은 옷만 입지?"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "이해가 안 돼.",
+          "AudioPath": "assets/ko-KR/Alex/211.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "이해가 안 돼."
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "야, 오늘 그리드볼 경기한다!",
+          "AudioPath": "assets/ko-KR/Alex/212.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "야, 오늘 그리드볼 경기한다!"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "일주일 중 오늘이 제일 좋아.",
+          "AudioPath": "assets/ko-KR/Alex/213.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "일주일 중 오늘이 제일 좋아."
+        },
+        {
+          "DialogueFrom": "winter_Fri4",
+          "DialogueText": "나 보러 눈을 뚫고 여기까지 온 거야?",
+          "AudioPath": "assets/ko-KR/Alex/214.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "나 보러 눈을 뚫고 여기까지 온 거야?"
+        },
+        {
+          "DialogueFrom": "winter_Fri4",
+          "DialogueText": "고마워, 다정하네. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/215.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Fri4",
+          "PageIndex": 1,
+          "DisplayPattern": "고마워, 다정하네."
+        },
+        {
+          "DialogueFrom": "winter_Sat6",
+          "DialogueText": "우리랑 완전히 다른 사람들이 있다는 게 좀 흥미로운 거 같아, 그치?",
+          "AudioPath": "assets/ko-KR/Alex/216.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sat6",
+          "PageIndex": 0,
+          "DisplayPattern": "우리랑 완전히 다른 사람들이 있다는 게 좀 흥미로운 거 같아, 그치?"
+        },
+        {
+          "DialogueFrom": "winter_Sat6",
+          "DialogueText": "항상 남들이 왜 그렇게 행동하는지 이해할 순 없지만, 나쁘지 않아.",
+          "AudioPath": "assets/ko-KR/Alex/217.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sat6",
+          "PageIndex": 1,
+          "DisplayPattern": "항상 남들이 왜 그렇게 행동하는지 이해할 순 없지만, 나쁘지 않아."
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "야, {Farmer_Name}. 나 부탁 하나 들어줄 수 있어? {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/218.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "야, . 나 부탁 하나 들어줄 수 있어?"
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "혹시 헤일리 보면, 나 바쁘다고 얘기해줘. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/219.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Tue4",
+          "PageIndex": 1,
+          "DisplayPattern": "혹시 헤일리 보면, 나 바쁘다고 얘기해줘."
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "고마워.",
+          "AudioPath": "assets/ko-KR/Alex/220.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Tue4",
+          "PageIndex": 2,
+          "DisplayPattern": "고마워."
+        },
+        {
+          "DialogueFrom": "winter_Tue4_inlaw_Haley",
+          "DialogueText": "인정할게... 너랑 헤일리가 결혼했을 때 질투가 나긴 했어. 근데, 뭐... 나 자신에 대해 무언가 배울 기회였어. {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Alex/221.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Tue4_inlaw_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "인정할게... 너랑 헤일리가 결혼했을 때 질투가 나긴 했어. 근데, 뭐... 나 자신에 대해 무언가 배울 기회였어."
+        },
+        {
+          "DialogueFrom": "winter_Wed8",
+          "DialogueText": "그거 알아? 나 책 읽으려고!",
+          "AudioPath": "assets/ko-KR/Alex/222.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Wed8",
+          "PageIndex": 0,
+          "DisplayPattern": "그거 알아? 나 책 읽으려고!"
+        },
+        {
+          "DialogueFrom": "winter_Thu6",
+          "DialogueText": "내가 날씨를 조종할 수 있었으면 좋겠다.",
+          "AudioPath": "assets/ko-KR/Alex/223.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 날씨를 조종할 수 있었으면 좋겠다."
+        },
+        {
+          "DialogueFrom": "winter_Thu10",
+          "DialogueText": "내가 만약 돈을 많이 번다면, 가족들이랑 친구들부터 확실히 챙길 거야.",
+          "AudioPath": "assets/ko-KR/Alex/224.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Thu10",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 만약 돈을 많이 번다면, 가족들이랑 친구들부터 확실히 챙길 거야."
+        },
+        {
+          "DialogueFrom": "winter_Thu10",
+          "DialogueText": "그거 너도 포함이다. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/225.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Thu10",
+          "PageIndex": 1,
+          "DisplayPattern": "그거 너도 포함이다."
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Alex0",
+          "DialogueText": "{Farmer_Name}, 이건 정말이지 최고의 사건이야. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/226.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Alex0",
+          "PageIndex": 0,
+          "DisplayPattern": ", 이건 정말이지 최고의 사건이야."
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Alex0",
+          "DialogueText": "기다리기 힘들겠는걸. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/227.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Alex0",
+          "PageIndex": 1,
+          "DisplayPattern": "기다리기 힘들겠는걸."
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Alex1",
+          "DialogueText": "농장 생활을 정말 사랑할 거야. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/228.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Alex1",
+          "PageIndex": 0,
+          "DisplayPattern": "농장 생활을 정말 사랑할 거야."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_0",
+          "DialogueText": "...나 아직 사랑해? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/229.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_0",
+          "PageIndex": 0,
+          "DisplayPattern": "...나 아직 사랑해?"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_1",
+          "DialogueText": "*한숨*... 우리 너무 젊을 때 결혼했나 봐. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/230.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_1",
+          "PageIndex": 0,
+          "DisplayPattern": "*한숨*... 우리 너무 젊을 때 결혼했나 봐."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_2",
+          "DialogueText": "아직 나랑 행복한 거 맞지? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/231.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_2",
+          "PageIndex": 0,
+          "DisplayPattern": "아직 나랑 행복한 거 맞지?"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_3",
+          "DialogueText": "내가 뭔가 잘못한 거 있어? 요즘 당신 달라졌어. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/232.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_3",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 뭔가 잘못한 거 있어? 요즘 당신 달라졌어."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_4",
+          "DialogueText": "세상에 뭔가 다른 것이 있을까 생각해본 적 있어? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/233.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_4",
+          "PageIndex": 0,
+          "DisplayPattern": "세상에 뭔가 다른 것이 있을까 생각해본 적 있어?"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_5",
+          "DialogueText": "자기 로맨틱했는데... 어떻게 된 거야? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/234.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_5",
+          "PageIndex": 0,
+          "DisplayPattern": "자기 로맨틱했는데... 어떻게 된 거야?"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_5",
+          "DialogueText": "내가 예전처럼 젊지 않은 거 알아... 그냥 그것 때문에 나랑 결혼한 거야? {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/235.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_5",
+          "PageIndex": 1,
+          "DisplayPattern": "내가 예전처럼 젊지 않은 거 알아... 그냥 그것 때문에 나랑 결혼한 거야?"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_6",
+          "DialogueText": "우리 삶은 이 짧은 시간 하나뿐인데... 이게 정말 최선일까? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/236.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_6",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 삶은 이 짧은 시간 하나뿐인데... 이게 정말 최선일까?"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_7",
+          "DialogueText": "내가 예전엔 당신의 애인이었는데... 이젠 내가 저녁 요리할 때만 참고 견디는 것 같아. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/237.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_7",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 예전엔 당신의 애인이었는데... 이젠 내가 저녁 요리할 때만 참고 견디는 것 같아."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_8",
+          "DialogueText": "요즘 나한테 너무 차가워... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/238.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_8",
+          "PageIndex": 0,
+          "DisplayPattern": "요즘 나한테 너무 차가워..."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_9",
+          "DialogueText": "나한테 더 나은 삶이 있었을 수도 있는데. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/239.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_9",
+          "PageIndex": 0,
+          "DisplayPattern": "나한테 더 나은 삶이 있었을 수도 있는데."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_1",
+          "DialogueText": "뭐, 여름은 끝났지만... 긍정적인 태도를 유지하겠어. 따뜻한 계절은 항상 돌아오니까.",
+          "AudioPath": "assets/ko-KR/Alex/240.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:fall_1",
+          "PageIndex": 0,
+          "DisplayPattern": "뭐, 여름은 끝났지만... 긍정적인 태도를 유지하겠어. 따뜻한 계절은 항상 돌아오니까."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_15",
+          "DialogueText": "내일 축제인데, 우리 가는 거야?",
+          "AudioPath": "assets/ko-KR/Alex/241.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:fall_15",
+          "PageIndex": 0,
+          "DisplayPattern": "내일 축제인데, 우리 가는 거야?"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_15",
+          "DialogueText": "사실 이러나저러나 난 괜찮아.",
+          "AudioPath": "assets/ko-KR/Alex/242.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:fall_15",
+          "PageIndex": 1,
+          "DisplayPattern": "사실 이러나저러나 난 괜찮아."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_26",
+          "DialogueText": "할머니 할아버지 잘 계시나 궁금하네. 할아버지가 좀 구두쇠 셔서 마지막 순간까지 난방을 안 트셔.",
+          "AudioPath": "assets/ko-KR/Alex/243.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:fall_26",
+          "PageIndex": 0,
+          "DisplayPattern": "할머니 할아버지 잘 계시나 궁금하네. 할아버지가 좀 구두쇠 셔서 마지막 순간까지 난방을 안 트셔."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_8",
+          "DialogueText": "조금 있으면 겨울이네. 난방 잘 돌아가게 필요 없는 밸브는 잠그고 집에 단열처리 아직 잘 되어있나 확인해야지.",
+          "AudioPath": "assets/ko-KR/Alex/244.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 0,
+          "DisplayPattern": "조금 있으면 겨울이네. 난방 잘 돌아가게 필요 없는 밸브는 잠그고 집에 단열처리 아직 잘 되어있나 확인해야지."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_8",
+          "DialogueText": "걱정하지 마, 내가 손볼게.",
+          "AudioPath": "assets/ko-KR/Alex/245.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 1,
+          "DisplayPattern": "걱정하지 마, 내가 손볼게."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_Alex",
+          "DialogueText": "힘이 없어... 단백질이 필요해. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/246.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "힘이 없어... 단백질이 필요해."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/funLeave_Alex",
+          "DialogueText": "나 오늘은 마을에 좀 갔다 올게. 나중에 저녁에 봐.",
+          "AudioPath": "assets/ko-KR/Alex/247.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:funLeave_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "나 오늘은 마을에 좀 갔다 올게. 나중에 저녁에 봐."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/funReturn_Alex",
+          "DialogueText": "오늘 괜찮은 하루를 보냈어. 할머니 할아버지 좀 더 자주 봐야겠어, 나이도 점점 드시니.",
+          "AudioPath": "assets/ko-KR/Alex/248.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:funReturn_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 괜찮은 하루를 보냈어. 할머니 할아버지 좀 더 자주 봐야겠어, 나이도 점점 드시니."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_0",
+          "DialogueText": "{Farmer_Name}... 언제까지나 널 사랑할 거야. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/249.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Good_0",
+          "PageIndex": 0,
+          "DisplayPattern": "... 언제까지나 널 사랑할 거야."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_1",
+          "DialogueText": "너 무척 잘생겼어... 내가 얘기해준 적 있었나? {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/250_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Good_1",
+          "PageIndex": 0,
+          "DisplayPattern": "너 무척 잘생겼어... 내가 얘기해준 적 있었나?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_1",
+          "DialogueText": "너 정말 아름다워... 내가 얘기해준 적 있었나? {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/251_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Good_1",
+          "PageIndex": 1,
+          "DisplayPattern": "너 정말 아름다워... 내가 얘기해준 적 있었나?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_2",
+          "DialogueText": "결혼생활은 행복해, {Farmer_Name}?",
+          "AudioPath": "assets/ko-KR/Alex/252.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_2",
+          "PageIndex": 0,
+          "DisplayPattern": "결혼생활은 행복해, ?"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_2",
+          "DialogueText": "난 행복해. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/253.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_2",
+          "PageIndex": 1,
+          "DisplayPattern": "난 행복해."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_3",
+          "DialogueText": "오늘 왜 이렇게 잘생겼어! {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/254_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_3",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 왜 이렇게 잘생겼어!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_3",
+          "DialogueText": "오늘 왜 이렇게 아름다워. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/255_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_3",
+          "PageIndex": 1,
+          "DisplayPattern": "오늘 왜 이렇게 아름다워.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_4",
+          "DialogueText": "여기가 이제 내 집이야... 여기서 난 행복해. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/256.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_4",
+          "PageIndex": 0,
+          "DisplayPattern": "여기가 이제 내 집이야... 여기서 난 행복해."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_5",
+          "DialogueText": "결혼 펜던트 감상하고 있었어... 껍데기가 티 하나 없네. 이거 아주 비쌌겠는데! {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/257.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_5",
+          "PageIndex": 0,
+          "DisplayPattern": "결혼 펜던트 감상하고 있었어... 껍데기가 티 하나 없네. 이거 아주 비쌌겠는데!"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_6",
+          "DialogueText": "네가 강하다는 건 알지만, 가끔 네가 슬라임에 잡아먹히거나... 더 끔찍한 일이 있을까 봐 걱정돼. 조심해, 알았지? {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Alex/258.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Good_6",
+          "PageIndex": 0,
+          "DisplayPattern": "네가 강하다는 건 알지만, 가끔 네가 슬라임에 잡아먹히거나... 더 끔찍한 일이 있을까 봐 걱정돼. 조심해, 알았지?"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_7",
+          "DialogueText": "{Farmer_Name}? 우리 집안을 위해서 네가 하는 모든 일에 항상 고맙다고 얘기하고 싶었어. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/259.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_7",
+          "PageIndex": 0,
+          "DisplayPattern": "? 우리 집안을 위해서 네가 하는 모든 일에 항상 고맙다고 얘기하고 싶었어."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_8",
+          "DialogueText": "난 너무 걱정하지 말고... 네가 책임지고해야 할 일이 많다는 걸 알아. 나 혼자서도 괜찮아! {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/260.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_8",
+          "PageIndex": 0,
+          "DisplayPattern": "난 너무 걱정하지 말고... 네가 책임지고해야 할 일이 많다는 걸 알아. 나 혼자서도 괜찮아!"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_9",
+          "DialogueText": "오, 난 심심하지 않아... 우리한테 여기 있는 것들을 즐기고 있어.",
+          "AudioPath": "assets/ko-KR/Alex/261.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_9",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 난 심심하지 않아... 우리한테 여기 있는 것들을 즐기고 있어."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_9",
+          "DialogueText": "간단한 삶이지만, 마음에 들어. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/262.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_9",
+          "PageIndex": 1,
+          "DisplayPattern": "간단한 삶이지만, 마음에 들어."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_0",
+          "DialogueText": "아... 역시 내 남편 옆에서 하룻밤 푹 자는 것만 한게 없지! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/263_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "아... 역시 내 남편 옆에서 하룻밤 푹 자는 것만 한게 없지!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_0",
+          "DialogueText": "아... 역시 내 아내 옆에서 하룻밤 푹 자는 것만 한게 없지! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/264_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_0",
+          "PageIndex": 1,
+          "DisplayPattern": "아... 역시 내 아내 옆에서 하룻밤 푹 자는 것만 한게 없지!",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_1",
+          "DialogueText": "어, 여보! 아침식사 갓 만들었어.[195 210 211]",
+          "AudioPath": "assets/ko-KR/Alex/265.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "어, 여보! 아침식사 갓 만들었어."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_1",
+          "DialogueText": "강해지고 싶으면, 강해지고 싶은 만큼 먹어야 해!",
+          "AudioPath": "assets/ko-KR/Alex/266.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_1",
+          "PageIndex": 1,
+          "DisplayPattern": "강해지고 싶으면, 강해지고 싶은 만큼 먹어야 해!"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_2",
+          "DialogueText": "이리 와봐. *꽈악*... 으흠. 농장일 해서 탄탄해지고 있네.",
+          "AudioPath": "assets/ko-KR/Alex/267.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "이리 와봐. *꽈악*... 으흠. 농장일 해서 탄탄해지고 있네."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_3",
+          "DialogueText": "아직 요리하고 빨래하는 건 익숙해지고 있어... 내가 좋아하는 건 아니지만, 결혼할 때 이런 게 필요하다는 것을 알고 있었으니까. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/268.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "아직 요리하고 빨래하는 건 익숙해지고 있어... 내가 좋아하는 건 아니지만, 결혼할 때 이런 게 필요하다는 것을 알고 있었으니까."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_4",
+          "DialogueText": "오늘 집에 한두 가지 고쳐보려는 게 있어. 난 걱정하지 마, 심심하다거나 그러진 않으니까.",
+          "AudioPath": "assets/ko-KR/Alex/269.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 집에 한두 가지 고쳐보려는 게 있어. 난 걱정하지 마, 심심하다거나 그러진 않으니까."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_Alex",
+          "DialogueText": "해가 빛나고 있고 난 활력이 넘치고 있어! 조심하라고! 헤 헤. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/270.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Day_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "해가 빛나고 있고 난 활력이 넘치고 있어! 조심하라고! 헤 헤."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_0",
+          "DialogueText": "한계치까지 최대한 노력하는 건 기분 좋지, 안 그래? 밤에 부드러운 침대에 누울 권리를 얻어낸 것 같거든.",
+          "AudioPath": "assets/ko-KR/Alex/271.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "한계치까지 최대한 노력하는 건 기분 좋지, 안 그래? 밤에 부드러운 침대에 누울 권리를 얻어낸 것 같거든."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_1",
+          "DialogueText": "혹시 머리 잘랐어? 오늘 많이 괜찮아 보이네. 신선한 공기의 영향인가... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/272.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "혹시 머리 잘랐어? 오늘 많이 괜찮아 보이네. 신선한 공기의 영향인가..."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_2",
+          "DialogueText": "오늘 하루 어땠는지 얘기해줘. 종종 터놓고 얘기하는 건 좋은 거지.",
+          "AudioPath": "assets/ko-KR/Alex/273.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 하루 어땠는지 얘기해줘. 종종 터놓고 얘기하는 건 좋은 거지."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_3",
+          "DialogueText": "야... 나 반바지 새로 샀어. 알고 싶어 할까 봐 얘기해주는 거야... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/274.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "야... 나 반바지 새로 샀어. 알고 싶어 할까 봐 얘기해주는 거야..."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_4",
+          "DialogueText": "혹시 혼자 조용히 있을 시간이 필요하다면, 말만 해.",
+          "AudioPath": "assets/ko-KR/Alex/275.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "혹시 혼자 조용히 있을 시간이 필요하다면, 말만 해."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_Alex",
+          "DialogueText": "팔이 가만있질 못하겠네... 마사지 길고 진하게 해줄까? {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/276_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "팔이 가만있질 못하겠네... 마사지 길고 진하게 해줄까?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_Alex",
+          "DialogueText": "기진맥진이야... 좋은 일이지! 오늘 열심히 일했다는 뜻이니까. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/277_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "기진맥진이야... 좋은 일이지! 오늘 열심히 일했다는 뜻이니까.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_0",
+          "DialogueText": "내가 늙고 머리가 하얗게 되어도 아직 날 좋아했으면 좋겠네. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/278.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_0",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 늙고 머리가 하얗게 되어도 아직 날 좋아했으면 좋겠네."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_1",
+          "DialogueText": "우리가 해낸 일을 당신 할아버지께서도 자랑스러워하실까?",
+          "AudioPath": "assets/ko-KR/Alex/279.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_1",
+          "PageIndex": 0,
+          "DisplayPattern": "우리가 해낸 일을 당신 할아버지께서도 자랑스러워하실까?"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_2",
+          "DialogueText": "쉬는 중이야? 내가 생각했던 것보다 농부 일이 쉬운가 보네...",
+          "AudioPath": "assets/ko-KR/Alex/280.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_2",
+          "PageIndex": 0,
+          "DisplayPattern": "쉬는 중이야? 내가 생각했던 것보다 농부 일이 쉬운가 보네..."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_3",
+          "DialogueText": "오늘 마을 가게 되면, 사람들한테 내 안부도 전해줘.",
+          "AudioPath": "assets/ko-KR/Alex/281.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_3",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 마을 가게 되면, 사람들한테 내 안부도 전해줘."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_4",
+          "DialogueText": "내일 아침에 당신이 깨기 전에 빨래 해놓을게... 그럼 마냥 기다리는 시간은 없겠지.",
+          "AudioPath": "assets/ko-KR/Alex/282.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_4",
+          "PageIndex": 0,
+          "DisplayPattern": "내일 아침에 당신이 깨기 전에 빨래 해놓을게... 그럼 마냥 기다리는 시간은 없겠지."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_5",
+          "DialogueText": "{Farmer_Name}, 우리 재정상황은 괜찮지?",
+          "AudioPath": "assets/ko-KR/Alex/283.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_5",
+          "PageIndex": 0,
+          "DisplayPattern": ", 우리 재정상황은 괜찮지?"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_6",
+          "DialogueText": "오늘 마을 사람들은 뭐하고 있으려나?",
+          "AudioPath": "assets/ko-KR/Alex/284.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_6",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 마을 사람들은 뭐하고 있으려나?"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_7",
+          "DialogueText": "오늘은 왠지 아무것도 하기 싫다.",
+          "AudioPath": "assets/ko-KR/Alex/285.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_7",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘은 왠지 아무것도 하기 싫다."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_8",
+          "DialogueText": "아무리 청소를 해도, 집안이 다시 지저분해져.",
+          "AudioPath": "assets/ko-KR/Alex/286.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_8",
+          "PageIndex": 0,
+          "DisplayPattern": "아무리 청소를 해도, 집안이 다시 지저분해져."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_8",
+          "DialogueText": "농장에서 지내다 보면 그럴 수 있는 거겠지.",
+          "AudioPath": "assets/ko-KR/Alex/287.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_8",
+          "PageIndex": 1,
+          "DisplayPattern": "농장에서 지내다 보면 그럴 수 있는 거겠지."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_9",
+          "DialogueText": "우리 평생 여기서 지내려나?",
+          "AudioPath": "assets/ko-KR/Alex/288.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_9",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 평생 여기서 지내려나?"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/NoBed_0",
+          "DialogueText": "난 이제 어디서 자야 하지...? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/289.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_0",
+          "PageIndex": 0,
+          "DisplayPattern": "난 이제 어디서 자야 하지...?"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/NoBed_1",
+          "DialogueText": "지난밤 푹 잘 수가 없었어... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/290.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_1",
+          "PageIndex": 0,
+          "DisplayPattern": "지난밤 푹 잘 수가 없었어..."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/NoBed_2",
+          "DialogueText": "바닥에서 자야 하는 신세라니... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/291.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_2",
+          "PageIndex": 0,
+          "DisplayPattern": "바닥에서 자야 하는 신세라니..."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/NoBed_3",
+          "DialogueText": "우리 침대는...? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/292.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_3",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 침대는...?"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/OneKid_0",
+          "DialogueText": "나 아직은 집에서 머무는 아빠로서의 역할에 익숙해지고 있는 것 같아. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/293.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:OneKid_0",
+          "PageIndex": 0,
+          "DisplayPattern": "나 아직은 집에서 머무는 아빠로서의 역할에 익숙해지고 있는 것 같아."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/OneKid_1",
+          "DialogueText": "우리 작은 %kid1, 잘 크고 있어, 아빠처럼 강하게.",
+          "AudioPath": "assets/ko-KR/Alex/294.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:OneKid_1",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 작은 , 잘 크고 있어, 아빠처럼 강하게."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/OneKid_2",
+          "DialogueText": "kid1(이) 밥은 오늘 내가 챙길게, 걱정 안 해도 될 거야. 농장 운영에 집중해요 여보.",
+          "AudioPath": "assets/ko-KR/Alex/295.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:OneKid_2",
+          "PageIndex": 0,
+          "DisplayPattern": "kid1(이) 밥은 오늘 내가 챙길게, 걱정 안 해도 될 거야. 농장 운영에 집중해요 여보."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/OneKid_3",
+          "DialogueText": "임신하는 건 어떤 기분일까...? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/296.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:OneKid_3",
+          "PageIndex": 0,
+          "DisplayPattern": "임신하는 건 어떤 기분일까...?"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_0",
+          "DialogueText": "있지. 여기 서서 우리 농장을 둘러보고 있으면... 정말 자랑스러워. 정말 잘했어.",
+          "AudioPath": "assets/ko-KR/Alex/297.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Outdoor_0",
+          "PageIndex": 0,
+          "DisplayPattern": "있지. 여기 서서 우리 농장을 둘러보고 있으면... 정말 자랑스러워. 정말 잘했어."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_1",
+          "DialogueText": "여긴 아이가 크기에 정말 좋은 장소야. 나도 이런 곳에서 자랐으면 정말 마음에 들어 했을 거야. 뛰어다닐 공간이 이렇게나 많아!",
+          "AudioPath": "assets/ko-KR/Alex/298.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Outdoor_1",
+          "PageIndex": 0,
+          "DisplayPattern": "여긴 아이가 크기에 정말 좋은 장소야. 나도 이런 곳에서 자랐으면 정말 마음에 들어 했을 거야. 뛰어다닐 공간이 이렇게나 많아!"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_2",
+          "DialogueText": "난 최대한 많은 시간을 밖에서 보내고 싶어. 그냥 밖에 나와있는 게 기분이 더 좋아.",
+          "AudioPath": "assets/ko-KR/Alex/299.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Outdoor_2",
+          "PageIndex": 0,
+          "DisplayPattern": "난 최대한 많은 시간을 밖에서 보내고 싶어. 그냥 밖에 나와있는 게 기분이 더 좋아."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_3",
+          "DialogueText": "우리 봐봐, 작은 농장에. 우리 진짜 귀여운 커플이지. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/300_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Outdoor_3",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 봐봐, 작은 농장에. 우리 진짜 귀여운 커플이지.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_3",
+          "DialogueText": "있지. 햇빛이 황금빛이라 그런 건지 모르겠는데, 오늘 정말 아름다워 보여. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/301_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Outdoor_3",
+          "PageIndex": 1,
+          "DisplayPattern": "있지. 햇빛이 황금빛이라 그런 건지 모르겠는데, 오늘 정말 아름다워 보여.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_4",
+          "DialogueText": "아... 밖에 나와있으니 정말 좋다. 스타듀 밸리는 정말 아름다운 곳이야...",
+          "AudioPath": "assets/ko-KR/Alex/302.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Outdoor_4",
+          "PageIndex": 0,
+          "DisplayPattern": "아... 밖에 나와있으니 정말 좋다. 스타듀 밸리는 정말 아름다운 곳이야..."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_Alex",
+          "DialogueText": "오늘은 운동 잔뜩 할 거야! 하하! 농장에 사는 거 진짜 좋네. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/303.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Outdoor_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘은 운동 잔뜩 할 거야! 하하! 농장에 사는 거 진짜 좋네."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/patio_Alex",
+          "DialogueText": "으으... 하나... 으으으... 둘... 밖에서 웨이트 하는 거 기분 최고야! {Portrait:Custom:6}",
+          "AudioPath": "assets/ko-KR/Alex/304.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:patio_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "으으... 하나... 으으으... 둘... 밖에서 웨이트 하는 거 기분 최고야!"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Day_0",
+          "DialogueText": "공간이 워낙 많아서, 온몸의 근육을 다 운동할 수 있어.",
+          "AudioPath": "assets/ko-KR/Alex/305.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "공간이 워낙 많아서, 온몸의 근육을 다 운동할 수 있어."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Day_1",
+          "DialogueText": "사실 나 주민들 중에 친구가 많이 없어... 네가 여기 이사 오지 않았다면 어떻게 되었을까 모르겠어. {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Alex/306.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "사실 나 주민들 중에 친구가 많이 없어... 네가 여기 이사 오지 않았다면 어떻게 되었을까 모르겠어."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Day_2",
+          "DialogueText": "아... 밖에서 조깅 좀 하려고 했는데. 날씨가 이러면 어쩔 수 없지.",
+          "AudioPath": "assets/ko-KR/Alex/307.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "아... 밖에서 조깅 좀 하려고 했는데. 날씨가 이러면 어쩔 수 없지."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Day_3",
+          "DialogueText": "*궁시렁*... 방금 일어났는데 단백질 좀 먹어야겠어. {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Alex/308.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "*궁시렁*... 방금 일어났는데 단백질 좀 먹어야겠어."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Day_4",
+          "DialogueText": "나 책 좀 읽으려고. 결혼했다고 해서 침체되면 안 되지!",
+          "AudioPath": "assets/ko-KR/Alex/309.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "나 책 좀 읽으려고. 결혼했다고 해서 침체되면 안 되지!"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Day_Alex",
+          "DialogueText": "흠... 오늘은 실내에서 팔굽혀펴기랑 윗몸일으키기 해야겠네.",
+          "AudioPath": "assets/ko-KR/Alex/310.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Day_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "흠... 오늘은 실내에서 팔굽혀펴기랑 윗몸일으키기 해야겠네."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_0",
+          "DialogueText": "오늘 하루 괜찮았어? 내일은 훨씬 더 좋을 거야. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/311.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 하루 괜찮았어? 내일은 훨씬 더 좋을 거야."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_1",
+          "DialogueText": "요즘 좀 어때? 오늘 난 종일 낡은 그리드볼을 들고 다녔어. 척이라도 하려고... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Alex/312.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "요즘 좀 어때? 오늘 난 종일 낡은 그리드볼을 들고 다녔어. 척이라도 하려고..."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_2",
+          "DialogueText": "오... 냄새 말이야? 나 하루 종일 마늘 먹었어. 남자다움을 유지하려고... 미안. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/313.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "오... 냄새 말이야? 나 하루 종일 마늘 먹었어. 남자다움을 유지하려고... 미안."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_3",
+          "DialogueText": "더스티한테 주려고 음식 좀 일부러 남기고 있었어. 가끔 간식도 주고 해야지.",
+          "AudioPath": "assets/ko-KR/Alex/314.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "더스티한테 주려고 음식 좀 일부러 남기고 있었어. 가끔 간식도 주고 해야지."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_4",
+          "DialogueText": "나 배고파서 저녁 먼저 차렸어. 여기, 자기 것도 만들었어. [241 242 225 214 198] {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/315.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "나 배고파서 저녁 먼저 차렸어. 여기, 자기 것도 만들었어."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_5",
+          "DialogueText": "자기가 여기 있어서 너무 좋다... 집에 있기 좋은 밤이야.",
+          "AudioPath": "assets/ko-KR/Alex/316.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Night_5",
+          "PageIndex": 0,
+          "DisplayPattern": "자기가 여기 있어서 너무 좋다... 집에 있기 좋은 밤이야."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_Alex",
+          "DialogueText": "할머니께서 이런 밤에는 항상 스튜를 만들곤 하셨지. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/317.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Night_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "할머니께서 이런 밤에는 항상 스튜를 만들곤 하셨지."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spouseRoom_Alex",
+          "DialogueText": "내가 게으르게 있는 걸 가만두지 마. 널 위해서 항상 최선의 컨디션을 유지하고 싶어!",
+          "AudioPath": "assets/ko-KR/Alex/318.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 게으르게 있는 걸 가만두지 마. 널 위해서 항상 최선의 컨디션을 유지하고 싶어!"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spouseRoom_Alex",
+          "DialogueText": "$e",
+          "AudioPath": "assets/ko-KR/Alex/319.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spouseRoom_Alex",
+          "DialogueText": "여긴 운동할 공간이 많아. 그 어느 때보다 빠른 진척을 보이고 있어!",
+          "AudioPath": "assets/ko-KR/Alex/320.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Alex",
+          "PageIndex": 2,
+          "DisplayPattern": "여긴 운동할 공간이 많아. 그 어느 때보다 빠른 진척을 보이고 있어!"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_1",
+          "DialogueText": "드디어 눈이 녹고 해가 환하게 떴어! 컨디션 최고야. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/321.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:spring_1",
+          "PageIndex": 0,
+          "DisplayPattern": "드디어 눈이 녹고 해가 환하게 떴어! 컨디션 최고야."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_12",
+          "DialogueText": "내일 축제 기대하고 있어? 공짜로 달걀 받아오기엔 좋겠다.",
+          "AudioPath": "assets/ko-KR/Alex/322.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:spring_12",
+          "PageIndex": 0,
+          "DisplayPattern": "내일 축제 기대하고 있어? 공짜로 달걀 받아오기엔 좋겠다."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_23",
+          "DialogueText": "오... 내일 봄꽃 무도회지? 오늘 밤엔 팔굽혀 펴기 좀 더 해야겠다. {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Alex/323.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:spring_23",
+          "PageIndex": 0,
+          "DisplayPattern": "오... 내일 봄꽃 무도회지? 오늘 밤엔 팔굽혀 펴기 좀 더 해야겠다."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_23",
+          "DialogueText": "옷이 좀 붙는 편이라... 게다가 다들 유심히 구경하고 있을 테고.",
+          "AudioPath": "assets/ko-KR/Alex/324.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:spring_23",
+          "PageIndex": 1,
+          "DisplayPattern": "옷이 좀 붙는 편이라... 게다가 다들 유심히 구경하고 있을 테고."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_6",
+          "DialogueText": "별방울 가루가 벌크업 하는데 도움이 되려나...",
+          "AudioPath": "assets/ko-KR/Alex/325.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:spring_6",
+          "PageIndex": 0,
+          "DisplayPattern": "별방울 가루가 벌크업 하는데 도움이 되려나..."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_8",
+          "DialogueText": "겨울이 끝났으니, 생산적일 수 있는 날이 많아지겠지.",
+          "AudioPath": "assets/ko-KR/Alex/326.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_8",
+          "PageIndex": 0,
+          "DisplayPattern": "겨울이 끝났으니, 생산적일 수 있는 날이 많아지겠지."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_Alex",
+          "DialogueText": "야 {Farmer_Name}. 오늘도 열심히 하자고!",
+          "AudioPath": "assets/ko-KR/Alex/327.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "야 . 오늘도 열심히 하자고!"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_1",
+          "DialogueText": "여름은 일 년 중 정말 활력 넘치는 시기야, 몸에서 느껴져! 단단한 기분이야.",
+          "AudioPath": "assets/ko-KR/Alex/328.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:summer_1",
+          "PageIndex": 0,
+          "DisplayPattern": "여름은 일 년 중 정말 활력 넘치는 시기야, 몸에서 느껴져! 단단한 기분이야."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_10",
+          "DialogueText": "내일 루아우 스프에 뭘 넣을지 생각해봤어?",
+          "AudioPath": "assets/ko-KR/Alex/329.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:summer_10",
+          "PageIndex": 0,
+          "DisplayPattern": "내일 루아우 스프에 뭘 넣을지 생각해봤어?"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_10",
+          "DialogueText": "난 뭐가 좋은지 잘 모르겠어... 여보가 요리사니까! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/330.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:summer_10",
+          "PageIndex": 1,
+          "DisplayPattern": "난 뭐가 좋은지 잘 모르겠어... 여보가 요리사니까!"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_15",
+          "DialogueText": "여름이네... 집안에 파리가 너무 많아.",
+          "AudioPath": "assets/ko-KR/Alex/331.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 0,
+          "DisplayPattern": "여름이네... 집안에 파리가 너무 많아."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_15",
+          "DialogueText": "걱정하지 마, 내가 처리할게.",
+          "AudioPath": "assets/ko-KR/Alex/332.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 1,
+          "DisplayPattern": "걱정하지 마, 내가 처리할게."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_27",
+          "DialogueText": "아... 여름 거의 끝났네. 근육이 오므라든다... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/333.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:summer_27",
+          "PageIndex": 0,
+          "DisplayPattern": "아... 여름 거의 끝났네. 근육이 오므라든다..."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_8",
+          "DialogueText": "나 혹시 냄새나면 미안해... 밤새 더워서 계속 땀났어.",
+          "AudioPath": "assets/ko-KR/Alex/334.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_8",
+          "PageIndex": 0,
+          "DisplayPattern": "나 혹시 냄새나면 미안해... 밤새 더워서 계속 땀났어."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_Alex",
+          "DialogueText": "난 항상 여름에 제일 힘이 나더라고.",
+          "AudioPath": "assets/ko-KR/Alex/335.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "난 항상 여름에 제일 힘이 나더라고."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/TwoKids_0",
+          "DialogueText": "내가 벌써 %kid1(이)랑 %kid2(이) 아침 줬어. 배고팠대!",
+          "AudioPath": "assets/ko-KR/Alex/336.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:TwoKids_0",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 벌써 (이)랑 (이) 아침 줬어. 배고팠대!"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/TwoKids_1",
+          "DialogueText": "우리 이제 %kid2(이)가 있으니 %kid1(이)한테도 관심 많이 줘야 해. 서로 질투하면 안 되겠지.",
+          "AudioPath": "assets/ko-KR/Alex/337.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:TwoKids_1",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 이제 (이)가 있으니 (이)한테도 관심 많이 줘야 해. 서로 질투하면 안 되겠지."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/TwoKids_2",
+          "DialogueText": "혹시 %kid2(이)가 펠리컨 마을 출신의 첫 그리드볼 선수가 될까? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/338.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:TwoKids_2",
+          "PageIndex": 0,
+          "DisplayPattern": "혹시 (이)가 펠리컨 마을 출신의 첫 그리드볼 선수가 될까?"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/TwoKids_3",
+          "DialogueText": "드디어 내가 어려서 경험하지 못한 가족다운 삶을 느껴볼 수 있어... 고마워. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/339.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:TwoKids_3",
+          "PageIndex": 0,
+          "DisplayPattern": "드디어 내가 어려서 경험하지 못한 가족다운 삶을 느껴볼 수 있어... 고마워."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/winter_1",
+          "DialogueText": "올겨울 꼭 따뜻하게 지내고. 네 연약한 피부가 걱정이야.",
+          "AudioPath": "assets/ko-KR/Alex/340.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:winter_1",
+          "PageIndex": 0,
+          "DisplayPattern": "올겨울 꼭 따뜻하게 지내고. 네 연약한 피부가 걱정이야."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/winter_28",
+          "DialogueText": "올해 정말 좋은 한 해였어, {Farmer_Name}. 내년도 기대되는걸! 자, 이제 가까이 와봐... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/341.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:winter_28",
+          "PageIndex": 0,
+          "DisplayPattern": "올해 정말 좋은 한 해였어, . 내년도 기대되는걸! 자, 이제 가까이 와봐..."
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/winter_7",
+          "DialogueText": "내일 낚시 대회 참가할 거야? 너라면 이길 수 있을 거야!",
+          "AudioPath": "assets/ko-KR/Alex/342.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:winter_7",
+          "PageIndex": 0,
+          "DisplayPattern": "내일 낚시 대회 참가할 거야? 너라면 이길 수 있을 거야!"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/winter_Alex",
+          "DialogueText": "할아버지 할머니 잘 계시려나. 같이 지낼 때 내가 많이 도와드렸는데. 알잖아, 뭐 무거운 거 들어 올리거나 그런 거.",
+          "AudioPath": "assets/ko-KR/Alex/343.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:winter_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "할아버지 할머니 잘 계시려나. 같이 지낼 때 내가 많이 도와드렸는데. 알잖아, 뭐 무거운 거 들어 올리거나 그런 거."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "흐음. 운동하기 좋은 날씨는 아니네. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/344.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "흐음. 운동하기 좋은 날씨는 아니네."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "뭐, 그냥 집에서 웨이트나 들어야지. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/345.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "뭐, 그냥 집에서 웨이트나 들어야지."
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s0",
+          "DialogueText": "Hey, {Farmer_Name}. Before you head out...",
+          "AudioPath": "assets/ko-KR/Alex/346.ogg",
+          "TranslationKey": "Events/Farm:3917587:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, . Before you head out..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s1",
+          "DialogueText": "I hate to ask this... but can I have 5,000g?",
+          "AudioPath": "assets/ko-KR/Alex/347.ogg",
+          "TranslationKey": "Events/Farm:3917587:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I hate to ask this... but can I have 5,000g?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s2",
+          "DialogueText": "It's for a secret project I'm working on... I know we have a joint bank account, but I thought I should ask anyway.",
+          "AudioPath": "assets/ko-KR/Alex/348.ogg",
+          "TranslationKey": "Events/Farm:3917587:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "It's for a secret project I'm working on... I know we have a joint bank account, but I thought I should ask anyway."
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s3",
+          "DialogueText": "Give Alex 5,000g for his secret project?",
+          "AudioPath": "assets/ko-KR/Alex/349.ogg",
+          "TranslationKey": "Events/Farm:3917587:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Give Alex 5,000g for his secret project?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s4",
+          "DialogueText": "Yes",
+          "AudioPath": "assets/ko-KR/Alex/350.ogg",
+          "TranslationKey": "Events/Farm:3917587:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Yes"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s5",
+          "DialogueText": "No",
+          "AudioPath": "assets/ko-KR/Alex/351.ogg",
+          "TranslationKey": "Events/Farm:3917587:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "No"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s6",
+          "DialogueText": "Really? You won't spare a measly 5,000g to make me happy? {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/352.ogg",
+          "TranslationKey": "Events/Farm:3917587:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Really? You won't spare a measly 5,000g to make me happy?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s7",
+          "DialogueText": "I didn't know you were such a cheapskate... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/353.ogg",
+          "TranslationKey": "Events/Farm:3917587:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I didn't know you were such a cheapskate..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s8",
+          "DialogueText": "I just wanted to have a little fun... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/354.ogg",
+          "TranslationKey": "Events/Farm:3917587:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I just wanted to have a little fun..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s9",
+          "DialogueText": "I don't want to talk to you right now... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/355.ogg",
+          "TranslationKey": "Events/Farm:3917587:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "I don't want to talk to you right now..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/giveAlexMoney:s0",
+          "DialogueText": "Great! Swing by the Saloon on Sunday and I'll show you the end result! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/356.ogg",
+          "TranslationKey": "Events/Farm:giveAlexMoney:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Great! Swing by the Saloon on Sunday and I'll show you the end result!"
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s0",
+          "DialogueText": "That's a good boy, Dusty.",
+          "AudioPath": "assets/ko-KR/Alex/357.ogg",
+          "TranslationKey": "Events/Town:2481135:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "That's a good boy, Dusty."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s1",
+          "DialogueText": "You might be the only one around here who understands me. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/358.ogg",
+          "TranslationKey": "Events/Town:2481135:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "You might be the only one around here who understands me."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s2",
+          "DialogueText": "No one else has seen the kind of stuff you and I have. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/359.ogg",
+          "TranslationKey": "Events/Town:2481135:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "No one else has seen the kind of stuff you and I have."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s3",
+          "DialogueText": "{Farmer_Name}! Did you overhear me talking? {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Alex/360.ogg",
+          "TranslationKey": "Events/Town:2481135:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "! Did you overhear me talking?"
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s4",
+          "DialogueText": "Yes, I heard everything.",
+          "AudioPath": "assets/ko-KR/Alex/361.ogg",
+          "TranslationKey": "Events/Town:2481135:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Yes, I heard everything."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s5",
+          "DialogueText": "Not really... why?",
+          "AudioPath": "assets/ko-KR/Alex/362.ogg",
+          "TranslationKey": "Events/Town:2481135:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Not really... why?"
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s6",
+          "DialogueText": "I don't really like to talk about it, but I guess I'll explain... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/363.ogg",
+          "TranslationKey": "Events/Town:2481135:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I don't really like to talk about it, but I guess I'll explain..."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s7",
+          "DialogueText": "Have you ever wondered why I live with my grandparents? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/364.ogg",
+          "TranslationKey": "Events/Town:2481135:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Have you ever wondered why I live with my grandparents?"
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s8",
+          "DialogueText": "You see, my father wasn't a good guy... He... Well, he ruined everything for me and my mom. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/365.ogg",
+          "TranslationKey": "Events/Town:2481135:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "You see, my father wasn't a good guy... He... Well, he ruined everything for me and my mom."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s9",
+          "DialogueText": "Half the time he was gone... The other half he'd drink all night and tell me I'm worthless, that I'd never amount to anything. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/366.ogg",
+          "TranslationKey": "Events/Town:2481135:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Half the time he was gone... The other half he'd drink all night and tell me I'm worthless, that I'd never amount to anything."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s10",
+          "DialogueText": "I think he resented me for being young... Bitter because he'd wasted his youth doing nothing and had gotten nowhere in life.",
+          "AudioPath": "assets/ko-KR/Alex/367.ogg",
+          "TranslationKey": "Events/Town:2481135:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "I think he resented me for being young... Bitter because he'd wasted his youth doing nothing and had gotten nowhere in life."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s11",
+          "DialogueText": "Well... that's my take on it, anyway. Who knows what was going on in his mind. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/368.ogg",
+          "TranslationKey": "Events/Town:2481135:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Well... that's my take on it, anyway. Who knows what was going on in his mind."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s12",
+          "DialogueText": "One day he left, and soon after that Mom got sick and passed away. I had no choice but to move in with my grandparents. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/369.ogg",
+          "TranslationKey": "Events/Town:2481135:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "One day he left, and soon after that Mom got sick and passed away. I had no choice but to move in with my grandparents."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s13",
+          "DialogueText": "You seem like someone I can trust... That's why I'm telling you this, {Farmer_Name}. I don't want any sympathy. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/370.ogg",
+          "TranslationKey": "Events/Town:2481135:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "You seem like someone I can trust... That's why I'm telling you this, . I don't want any sympathy."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s14",
+          "DialogueText": "If there's one good thing about my past, it's that it made me strong.",
+          "AudioPath": "assets/ko-KR/Alex/371.ogg",
+          "TranslationKey": "Events/Town:2481135:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "If there's one good thing about my past, it's that it made me strong."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s15",
+          "DialogueText": "Now... let me show you what Dusty will do for a barbecued steak. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/372.ogg",
+          "TranslationKey": "Events/Town:2481135:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "Now... let me show you what Dusty will do for a barbecued steak."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s16",
+          "DialogueText": "Ha! Look at him slobbering. I think he might like steak as much as I do. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/373.ogg",
+          "TranslationKey": "Events/Town:2481135:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "Ha! Look at him slobbering. I think he might like steak as much as I do."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s0",
+          "DialogueText": "Oh... I was talking to Dusty.",
+          "AudioPath": "assets/ko-KR/Alex/374.ogg",
+          "TranslationKey": "Events/Town:didntHear:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh... I was talking to Dusty."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s1",
+          "DialogueText": "He and I have a lot in common, actually. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/375.ogg",
+          "TranslationKey": "Events/Town:didntHear:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "He and I have a lot in common, actually."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s2",
+          "DialogueText": "I don't usually like to talk about it... But we've been friends for a while now and I think I can trust you. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/376.ogg",
+          "TranslationKey": "Events/Town:didntHear:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I don't usually like to talk about it... But we've been friends for a while now and I think I can trust you."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s3",
+          "DialogueText": "Have you ever wondered why I live with my grandparents? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/377.ogg",
+          "TranslationKey": "Events/Town:didntHear:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Have you ever wondered why I live with my grandparents?"
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s4",
+          "DialogueText": "My father wasn't a good guy... He... Well he ruined everything for me and my mom. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/378.ogg",
+          "TranslationKey": "Events/Town:didntHear:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "My father wasn't a good guy... He... Well he ruined everything for me and my mom."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s5",
+          "DialogueText": "Half the time he was gone... The other half he'd drink all night and tell me I'm worthless, that I'd never amount to anything. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/379.ogg",
+          "TranslationKey": "Events/Town:didntHear:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Half the time he was gone... The other half he'd drink all night and tell me I'm worthless, that I'd never amount to anything."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s6",
+          "DialogueText": "I think he resented me for being young... Bitter because he'd wasted his youth doing nothing and had gotten nowhere in life. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/380.ogg",
+          "TranslationKey": "Events/Town:didntHear:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I think he resented me for being young... Bitter because he'd wasted his youth doing nothing and had gotten nowhere in life."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s7",
+          "DialogueText": "Well... that's my take on it, anyway. Who knows what was going on in his mind. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/381.ogg",
+          "TranslationKey": "Events/Town:didntHear:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Well... that's my take on it, anyway. Who knows what was going on in his mind."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s8",
+          "DialogueText": "One day he left, and soon after that Mom got sick and passed away. I had no choice but to move in with my grandparents. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/382.ogg",
+          "TranslationKey": "Events/Town:didntHear:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "One day he left, and soon after that Mom got sick and passed away. I had no choice but to move in with my grandparents."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s9",
+          "DialogueText": "You know what? There's no sense dwelling on this stuff... I don't want any sympathy from anyone.",
+          "AudioPath": "assets/ko-KR/Alex/383.ogg",
+          "TranslationKey": "Events/Town:didntHear:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "You know what? There's no sense dwelling on this stuff... I don't want any sympathy from anyone."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s10",
+          "DialogueText": "You have to look on the positive side of things... My childhood wasn't great, but it did make me strong. I had to be.",
+          "AudioPath": "assets/ko-KR/Alex/384.ogg",
+          "TranslationKey": "Events/Town:didntHear:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "You have to look on the positive side of things... My childhood wasn't great, but it did make me strong. I had to be."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s11",
+          "DialogueText": "Here, let me show you what Dusty will do for a barbecued steak. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/385.ogg",
+          "TranslationKey": "Events/Town:didntHear:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Here, let me show you what Dusty will do for a barbecued steak."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s12",
+          "DialogueText": "Ha! Look at him slobbering. I think he might like steak as much as I do. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/386.ogg",
+          "TranslationKey": "Events/Town:didntHear:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Ha! Look at him slobbering. I think he might like steak as much as I do."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s0",
+          "DialogueText": "*sigh* {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/387.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s1",
+          "DialogueText": "Oh, Hi {Farmer_Name}. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/388.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, Hi ."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s2",
+          "DialogueText": "Look at all these books. I haven't read a single one. Just the thought of cracking one open makes me nervous. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/389.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Look at all these books. I haven't read a single one. Just the thought of cracking one open makes me nervous."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s3",
+          "DialogueText": "But you can't make a decent living in this world without a brain... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/390.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "But you can't make a decent living in this world without a brain..."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s4",
+          "DialogueText": "I'm worthless... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/391.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm worthless..."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s5",
+          "DialogueText": "That's crazy. You're a genius!",
+          "AudioPath": "assets/ko-KR/Alex/392.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "That's crazy. You're a genius!"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s6",
+          "DialogueText": "We all have our strengths and weaknesses.",
+          "AudioPath": "assets/ko-KR/Alex/393.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "We all have our strengths and weaknesses."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s7",
+          "DialogueText": "Worthless? Yeah, that about sums it up.",
+          "AudioPath": "assets/ko-KR/Alex/394.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Worthless? Yeah, that about sums it up."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s8",
+          "DialogueText": "Well, I'm not going to give up! {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/395.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I'm not going to give up!"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s9",
+          "DialogueText": "If I work hard, I can do anything!",
+          "AudioPath": "assets/ko-KR/Alex/396.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "If I work hard, I can do anything!"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s10",
+          "DialogueText": "Hey, maybe one day soon we'll have dinner and discuss ....phi-lo-so-phy. Isn't that what you smart people talk about? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/397.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, maybe one day soon we'll have dinner and discuss ....phi-lo-so-phy. Isn't that what you smart people talk about?"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/2119820:s0",
+          "DialogueText": "Oh! Hey... I was just doing my daily strength training routine. {Portrait:Custom:6}",
+          "AudioPath": "assets/ko-KR/Alex/398.ogg",
+          "TranslationKey": "Events/JoshHouse:2119820:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! Hey... I was just doing my daily strength training routine."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/2119820:s1",
+          "DialogueText": "... sorry I have no shirt on. {Portrait:Custom:6}",
+          "AudioPath": "assets/ko-KR/Alex/399.ogg",
+          "TranslationKey": "Events/JoshHouse:2119820:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "... sorry I have no shirt on."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/2119820:s2",
+          "DialogueText": "Uh... {Farmer_Name}? I've been meaning to talk to you about something... {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Alex/400.ogg",
+          "TranslationKey": "Events/JoshHouse:2119820:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Uh... ? I've been meaning to talk to you about something..."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/2119820:s3",
+          "DialogueText": "I've started to realize that... well, that I've been really rude towards you in the past. You know, about going pro and all that. {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Alex/401.ogg",
+          "TranslationKey": "Events/JoshHouse:2119820:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I've started to realize that... well, that I've been really rude towards you in the past. You know, about going pro and all that."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/2119820:s4",
+          "DialogueText": "I guess I might not actually be cut out for professional sports... maybe it was just a childish dream... you know? {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Alex/402.ogg",
+          "TranslationKey": "Events/JoshHouse:2119820:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I guess I might not actually be cut out for professional sports... maybe it was just a childish dream... you know?"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/2119820:s5",
+          "DialogueText": "Anyway... I want to apologize to you for bragging and being annoying about it. I appreciate that you stayed friends with me through all that. {Portrait:Custom:6}",
+          "AudioPath": "assets/ko-KR/Alex/403.ogg",
+          "TranslationKey": "Events/JoshHouse:2119820:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Anyway... I want to apologize to you for bragging and being annoying about it. I appreciate that you stayed friends with me through all that."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s0",
+          "DialogueText": "Thanks, Gus. That was great.",
+          "AudioPath": "assets/ko-KR/Alex/404.ogg",
+          "TranslationKey": "Events/Saloon:911526:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks, Gus. That was great."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s1",
+          "DialogueText": "This is nice... I've never dined in here before.",
+          "AudioPath": "assets/ko-KR/Alex/405.ogg",
+          "TranslationKey": "Events/Saloon:911526:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "This is nice... I've never dined in here before."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s2",
+          "DialogueText": "Um, anyway... I reserved this private room so we could talk... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/406.ogg",
+          "TranslationKey": "Events/Saloon:911526:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Um, anyway... I reserved this private room so we could talk..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s3",
+          "DialogueText": "Thanks.",
+          "AudioPath": "assets/ko-KR/Alex/407.ogg",
+          "TranslationKey": "Events/Saloon:911526:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s4",
+          "DialogueText": "So, what I wanted to say was... {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Alex/408.ogg",
+          "TranslationKey": "Events/Saloon:911526:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "So, what I wanted to say was..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s5",
+          "DialogueText": "*gulp* {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/409.ogg",
+          "TranslationKey": "Events/Saloon:911526:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "*gulp*"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s6|g=male",
+          "DialogueText": "Well... when we first met, I was instantly drawn to you. It was confusing... I'd never felt that way about anyone. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/410_male.ogg",
+          "TranslationKey": "Events/Saloon:911526:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Well... when we first met, I was instantly drawn to you. It was confusing... I'd never felt that way about anyone.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s7|g=female",
+          "DialogueText": "When I first met you, I thought you were really cute. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/411_female.ogg",
+          "TranslationKey": "Events/Saloon:911526:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "When I first met you, I thought you were really cute.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s8|g=male",
+          "DialogueText": "I kept telling myself 'You can't have these kinds of feelings for another guy'. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/412_male.ogg",
+          "TranslationKey": "Events/Saloon:911526:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I kept telling myself 'You can't have these kinds of feelings for another guy'.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s9|g=female",
+          "DialogueText": "Normally, when I have a crush on someone, the feeling goes away pretty quick... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/413_female.ogg",
+          "TranslationKey": "Events/Saloon:911526:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Normally, when I have a crush on someone, the feeling goes away pretty quick...",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s10|g=male",
+          "DialogueText": "...But my heart was telling me something else.",
+          "AudioPath": "assets/ko-KR/Alex/414_male.ogg",
+          "TranslationKey": "Events/Saloon:911526:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "...But my heart was telling me something else.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s11|g=female",
+          "DialogueText": "...But with you, it kept growing. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/415_female.ogg",
+          "TranslationKey": "Events/Saloon:911526:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "...But with you, it kept growing.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s12",
+          "DialogueText": "I feel the same way.",
+          "AudioPath": "assets/ko-KR/Alex/416.ogg",
+          "TranslationKey": "Events/Saloon:911526:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "I feel the same way."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s13",
+          "DialogueText": "I'm sorry... I don't feel that way about you.",
+          "AudioPath": "assets/ko-KR/Alex/417.ogg",
+          "TranslationKey": "Events/Saloon:911526:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm sorry... I don't feel that way about you."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s14",
+          "DialogueText": "... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/418.ogg",
+          "TranslationKey": "Events/Saloon:911526:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s15",
+          "DialogueText": "I can't believe it took this long to say that to each other. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/419.ogg",
+          "TranslationKey": "Events/Saloon:911526:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "I can't believe it took this long to say that to each other."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s16",
+          "DialogueText": "Mmm... this steak is outstanding. Can you smell that fragrant sauce? {Portrait:Custom:10}",
+          "AudioPath": "assets/ko-KR/Alex/420.ogg",
+          "TranslationKey": "Events/Saloon:911526:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "Mmm... this steak is outstanding. Can you smell that fragrant sauce?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s17",
+          "DialogueText": "... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/421.ogg",
+          "TranslationKey": "Events/Saloon:911526:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/rejectJosh:s0",
+          "DialogueText": "...Oh... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/422.ogg",
+          "TranslationKey": "Events/Saloon:rejectJosh:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "...Oh..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/rejectJosh:s1",
+          "DialogueText": "I...I'm sorry if I made you uncomfortable... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/423.ogg",
+          "TranslationKey": "Events/Saloon:rejectJosh:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I...I'm sorry if I made you uncomfortable..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/rejectJosh:s2",
+          "DialogueText": "I'm not hungry anymore... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/424.ogg",
+          "TranslationKey": "Events/Saloon:rejectJosh:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm not hungry anymore..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/rejectJosh:s3",
+          "DialogueText": "... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/425.ogg",
+          "TranslationKey": "Events/Saloon:rejectJosh:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195099:s0",
+          "DialogueText": "What's up?",
+          "AudioPath": "assets/ko-KR/Alex/426.ogg",
+          "TranslationKey": "Events/Saloon:195099:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "What's up?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s0",
+          "DialogueText": "Hold it!",
+          "AudioPath": "assets/ko-KR/Alex/427.ogg",
+          "TranslationKey": "Events/Saloon:195013:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hold it!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s1|g=male",
+          "DialogueText": "{Farmer_Name}? I thought... I thought we were 'one of a kind'... But you were just using me? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/428_male.ogg",
+          "TranslationKey": "Events/Saloon:195013:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "? I thought... I thought we were 'one of a kind'... But you were just using me?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s2|g=female",
+          "DialogueText": "What are you looking at *me* for? You think I'm gonna come to your rescue? {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/429_female.ogg",
+          "TranslationKey": "Events/Saloon:195013:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "What are you looking at *me* for? You think I'm gonna come to your rescue?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s3",
+          "DialogueText": "That's right!",
+          "AudioPath": "assets/ko-KR/Alex/430.ogg",
+          "TranslationKey": "Events/Saloon:195013:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "That's right!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s4",
+          "DialogueText": "Sure...",
+          "AudioPath": "assets/ko-KR/Alex/431.ogg",
+          "TranslationKey": "Events/Saloon:195013:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Sure..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/choseToExplain:s0",
+          "DialogueText": "Yeah, right!",
+          "AudioPath": "assets/ko-KR/Alex/432.ogg",
+          "TranslationKey": "Events/Saloon:choseToExplain:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Yeah, right!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/crying:s0|g=male",
+          "DialogueText": "I'll assume this is just another act... {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/433_male.ogg",
+          "TranslationKey": "Events/Saloon:crying:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll assume this is just another act...",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/crying:s1|g=female",
+          "DialogueText": "Typical... {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/434_female.ogg",
+          "TranslationKey": "Events/Saloon:crying:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Typical...",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s0",
+          "DialogueText": "Big play!",
+          "AudioPath": "assets/ko-KR/Alex/435.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Big play!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s1",
+          "DialogueText": "There we go!",
+          "AudioPath": "assets/ko-KR/Alex/436.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "There we go!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s2",
+          "DialogueText": "Hey, {Farmer_Name}! You made it! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/437.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, ! You made it!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s3",
+          "DialogueText": "So... what do you think?",
+          "AudioPath": "assets/ko-KR/Alex/438.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "So... what do you think?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s4",
+          "DialogueText": "I've been thinking... You know how I used to dream of being an athlete someday?",
+          "AudioPath": "assets/ko-KR/Alex/439.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been thinking... You know how I used to dream of being an athlete someday?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s5",
+          "DialogueText": "Well, my life ended up turning out a bit different... {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Alex/440.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, my life ended up turning out a bit different..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s6",
+          "DialogueText": "I'm happy, though, don't get me wrong! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/441.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm happy, though, don't get me wrong!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s7",
+          "DialogueText": "...But I thought it would be cool to have a place where us guys could hang out and watch the Sunday game. Gus liked the idea so much he offered me part of his back room!",
+          "AudioPath": "assets/ko-KR/Alex/442.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "...But I thought it would be cool to have a place where us guys could hang out and watch the Sunday game. Gus liked the idea so much he offered me part of his back room!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s8",
+          "DialogueText": "This way, I get to keep part of 'the dream' alive, in a small way.",
+          "AudioPath": "assets/ko-KR/Alex/443.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "This way, I get to keep part of 'the dream' alive, in a small way."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s9",
+          "DialogueText": "Thanks, Grandpa.",
+          "AudioPath": "assets/ko-KR/Alex/444.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks, Grandpa."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s0",
+          "DialogueText": "Oh, hi.",
+          "AudioPath": "assets/ko-KR/Alex/445.ogg",
+          "TranslationKey": "Events/Beach:20:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, hi."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s1",
+          "DialogueText": "Um, it's {Farmer_Name}, right?",
+          "AudioPath": "assets/ko-KR/Alex/446.ogg",
+          "TranslationKey": "Events/Beach:20:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Um, it's , right?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s2",
+          "DialogueText": "I'm just enjoying this great weather, {Farmer_Name}.",
+          "AudioPath": "assets/ko-KR/Alex/447.ogg",
+          "TranslationKey": "Events/Beach:20:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm just enjoying this great weather, ."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s3",
+          "DialogueText": "Hmm... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Alex/448.ogg",
+          "TranslationKey": "Events/Beach:20:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmm..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s4",
+          "DialogueText": "Hey, go long! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/449.ogg",
+          "TranslationKey": "Events/Beach:20:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, go long!"
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s5",
+          "DialogueText": "Heh... Nice try.",
+          "AudioPath": "assets/ko-KR/Alex/450.ogg",
+          "TranslationKey": "Events/Beach:20:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Heh... Nice try."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s6",
+          "DialogueText": "I'm going to be the first professional gridball player from Stardew Valley... There's no doubt in my mind.",
+          "AudioPath": "assets/ko-KR/Alex/451.ogg",
+          "TranslationKey": "Events/Beach:20:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm going to be the first professional gridball player from Stardew Valley... There's no doubt in my mind."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s7",
+          "DialogueText": "I already led my school's team to the regional playoffs... Now I'm just training and getting stronger so I can claim my spot on the roster of the Zuzu City Tunnelers. You just wait!",
+          "AudioPath": "assets/ko-KR/Alex/452.ogg",
+          "TranslationKey": "Events/Beach:20:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I already led my school's team to the regional playoffs... Now I'm just training and getting stronger so I can claim my spot on the roster of the Zuzu City Tunnelers. You just wait!"
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s8",
+          "DialogueText": "I believe in you!",
+          "AudioPath": "assets/ko-KR/Alex/453.ogg",
+          "TranslationKey": "Events/Beach:20:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I believe in you!"
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s9",
+          "DialogueText": "Wow, you're really arrogant.",
+          "AudioPath": "assets/ko-KR/Alex/454.ogg",
+          "TranslationKey": "Events/Beach:20:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow, you're really arrogant."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s10",
+          "DialogueText": "Thanks, {Farmer_Name}. I'll remember that.",
+          "AudioPath": "assets/ko-KR/Alex/455.ogg",
+          "TranslationKey": "Events/Beach:20:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks, . I'll remember that."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s11",
+          "DialogueText": "Hey, that was fun, huh?",
+          "AudioPath": "assets/ko-KR/Alex/456.ogg",
+          "TranslationKey": "Events/Beach:20:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, that was fun, huh?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/arrogantJosh:s0",
+          "DialogueText": "Hmmph... I think someone's a little jealous. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/457.ogg",
+          "TranslationKey": "Events/Beach:arrogantJosh:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmmph... I think someone's a little jealous."
+        },
+        {
+          "DialogueFrom": "Event:Beach/arrogantJosh:s1",
+          "DialogueText": "I'm out of here. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/458.ogg",
+          "TranslationKey": "Events/Beach:arrogantJosh:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm out of here."
+        },
+        {
+          "DialogueFrom": "Event:Beach/arrogantJosh:s2",
+          "DialogueText": "... {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Alex/459.ogg",
+          "TranslationKey": "Events/Beach:arrogantJosh:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s0",
+          "DialogueText": "*sniff*... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/460.ogg",
+          "TranslationKey": "Events/Beach:288847:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "*sniff*..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s1",
+          "DialogueText": "Oh... {Farmer_Name}. You saw me crying. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/461.ogg",
+          "TranslationKey": "Events/Beach:288847:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh... . You saw me crying."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s2",
+          "DialogueText": "It was today, twelve years ago... that my Mom died. {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Alex/462.ogg",
+          "TranslationKey": "Events/Beach:288847:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "It was today, twelve years ago... that my Mom died."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s3",
+          "DialogueText": "I still remember her well... she'd make salted radish sandwiches for lunch... and toss the gridball with me in the back yard. {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Alex/463.ogg",
+          "TranslationKey": "Events/Beach:288847:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I still remember her well... she'd make salted radish sandwiches for lunch... and toss the gridball with me in the back yard."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s4",
+          "DialogueText": "She took good care of me... and I was too young to really say 'thanks'. Now she's gone forever. {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Alex/464.ogg",
+          "TranslationKey": "Events/Beach:288847:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "She took good care of me... and I was too young to really say 'thanks'. Now she's gone forever."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s5",
+          "DialogueText": "This is the only keepsake I have left... her secret music box. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/465.ogg",
+          "TranslationKey": "Events/Beach:288847:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "This is the only keepsake I have left... her secret music box."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s6",
+          "DialogueText": "So... What are you thinking right now, {Farmer_Name}? {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Alex/466.ogg",
+          "TranslationKey": "Events/Beach:288847:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "So... What are you thinking right now, ?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s7",
+          "DialogueText": "Honor your mother's memory by always doing your best.",
+          "AudioPath": "assets/ko-KR/Alex/467.ogg",
+          "TranslationKey": "Events/Beach:288847:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Honor your mother's memory by always doing your best."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s8",
+          "DialogueText": "You shouldn't dwell in the past.",
+          "AudioPath": "assets/ko-KR/Alex/468.ogg",
+          "TranslationKey": "Events/Beach:288847:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "You shouldn't dwell in the past."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s9",
+          "DialogueText": "I'll always be here for you if you get lonely.",
+          "AudioPath": "assets/ko-KR/Alex/469.ogg",
+          "TranslationKey": "Events/Beach:288847:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll always be here for you if you get lonely."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s10",
+          "DialogueText": "Get over it. Life is hard for everyone.",
+          "AudioPath": "assets/ko-KR/Alex/470.ogg",
+          "TranslationKey": "Events/Beach:288847:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Get over it. Life is hard for everyone."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s11",
+          "DialogueText": "Well, there's no sense sitting around sniveling... let's head back to town. {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Alex/471.ogg",
+          "TranslationKey": "Events/Beach:288847:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, there's no sense sitting around sniveling... let's head back to town."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s12",
+          "DialogueText": "Um... {Farmer_Name}? {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Alex/472.ogg",
+          "TranslationKey": "Events/Beach:288847:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... ?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s13",
+          "DialogueText": "Don't tell anyone I was crying. Okay? {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Alex/473.ogg",
+          "TranslationKey": "Events/Beach:288847:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Don't tell anyone I was crying. Okay?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s14",
+          "DialogueText": "Hey! {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Alex/474.ogg",
+          "TranslationKey": "Events/Beach:288847:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey!"
+        },
+        {
+          "DialogueFrom": "Event:BusStop/9581348:s0",
+          "DialogueText": "Goal!",
+          "AudioPath": "assets/ko-KR/Alex/475.ogg",
+          "TranslationKey": "Events/BusStop:9581348:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Goal!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Alex",
+          "DialogueText": "'힘' 게임 너무 많이 했더니 팔이 고무가 된 것 같아.",
+          "AudioPath": "assets/ko-KR/Alex/476.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "'힘' 게임 너무 많이 했더니 팔이 고무가 된 것 같아."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Alex_spouse",
+          "DialogueText": "나 친구들이랑 잠깐 얘기할게... 먼저 가서 재밌게 놀아.",
+          "AudioPath": "assets/ko-KR/Alex/477.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Alex_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "나 친구들이랑 잠깐 얘기할게... 먼저 가서 재밌게 놀아."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Alex_y2",
+          "DialogueText": "'힘' 게임 100번 이길 때마다 바베큐 샌드위치를 하나 먹고 있어. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Alex/478.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "'힘' 게임 100번 이길 때마다 바베큐 샌드위치를 하나 먹고 있어."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Alex_spouse_y2",
+          "DialogueText": "밥은 먹었어? 다들 맘껏 먹고도 남겠는걸! {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Alex/479.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "밥은 먹었어? 다들 맘껏 먹고도 남겠는걸!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Alex_spouse_y2",
+          "DialogueText": "난 벌써 샌드위치를 3개나 먹었어... 으음... 그 소스...",
+          "AudioPath": "assets/ko-KR/Alex/480.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Alex_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "난 벌써 샌드위치를 3개나 먹었어... 으음... 그 소스..."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Alex",
+          "DialogueText": "저쪽에 뭔가 이상한 게 있는데. 그런데 저기까지 어떻게 가지?",
+          "AudioPath": "assets/ko-KR/Alex/481.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "저쪽에 뭔가 이상한 게 있는데. 그런데 저기까지 어떻게 가지?"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Alex",
+          "DialogueText": "이 근처 어딘가에 분명 비밀통로가 있을 거야.",
+          "AudioPath": "assets/ko-KR/Alex/482.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "이 근처 어딘가에 분명 비밀통로가 있을 거야."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Alex_y2",
+          "DialogueText": "어디서 여자 비명소리가 들렸는데... 내가 도와줘야 해! {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Alex/483.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "어디서 여자 비명소리가 들렸는데... 내가 도와줘야 해!"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Alex_spouse_y2",
+          "DialogueText": "어, 으스스한 손 잘 통과했구나. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/484.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "어, 으스스한 손 잘 통과했구나."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Alex_spouse_y2",
+          "DialogueText": "근처에 누가 도와달라고 하는 게 들리는 거 같아. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Alex/485.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Alex_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "근처에 누가 도와달라고 하는 게 들리는 거 같아."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Alex",
+          "DialogueText": "난 하루에 달걀을 적어도 세 개씩은 먹어.",
+          "AudioPath": "assets/ko-KR/Alex/486.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "난 하루에 달걀을 적어도 세 개씩은 먹어."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Alex",
+          "DialogueText": "다리 근력을 위해서 단백질이 필요해.",
+          "AudioPath": "assets/ko-KR/Alex/487.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "다리 근력을 위해서 단백질이 필요해."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Alex_spouse",
+          "DialogueText": "으응... 완숙란 마지막 열두 개는 먹지 말걸... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/488.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Alex_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "으응... 완숙란 마지막 열두 개는 먹지 말걸..."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Alex_y2",
+          "DialogueText": "하루에 계란 30개씩 먹으면 근육량에는 어떤 변화가 있을까?",
+          "AudioPath": "assets/ko-KR/Alex/489.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "하루에 계란 30개씩 먹으면 근육량에는 어떤 변화가 있을까?"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Alex",
+          "DialogueText": "그냥 경치 감상하는 중이야... 헤헤.",
+          "AudioPath": "assets/ko-KR/Alex/490.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "그냥 경치 감상하는 중이야... 헤헤."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Alex_y2",
+          "DialogueText": "춤은 자신감이 제일 중요해. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/491.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "춤은 자신감이 제일 중요해."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Alex_spouse_y2",
+          "DialogueText": "나 오늘이 잘 풀릴 것만 같아. 우리 공연은 멋질 거야... 내 리드만 잘 맞춰주면 돼. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Alex/492.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "나 오늘이 잘 풀릴 것만 같아. 우리 공연은 멋질 거야... 내 리드만 잘 맞춰주면 돼."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Alex",
+          "DialogueText": "해변에서 파티하기 완벽한 날씨야, 그치?",
+          "AudioPath": "assets/ko-KR/Alex/493.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "해변에서 파티하기 완벽한 날씨야, 그치?"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Alex_spouse",
+          "DialogueText": "좋아, 해변에 나올 수 있다면 이유가 중요한 게 아니지. 날씨 정말 최고야!",
+          "AudioPath": "assets/ko-KR/Alex/494.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Alex_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "좋아, 해변에 나올 수 있다면 이유가 중요한 게 아니지. 날씨 정말 최고야!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Alex_y2",
+          "DialogueText": "내가 물에 들어가면 다른 사람들도 같이 올까? 나 혼자서 수영하긴 싫어! {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Alex/495.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 물에 들어가면 다른 사람들도 같이 올까? 나 혼자서 수영하긴 싫어!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Alex_spouse_y2",
+          "DialogueText": "오늘은... 먹고 싶은걸 다 먹겠어. 내일 팔굽혀펴기 더 많이 하면 되겠지! {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Alex/496.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘은... 먹고 싶은걸 다 먹겠어. 내일 팔굽혀펴기 더 많이 하면 되겠지!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Alex",
+          "DialogueText": "여름이 끝났다는 게 믿기지 않아... 이제 막 시작한 거 같은데. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/497.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "여름이 끝났다는 게 믿기지 않아... 이제 막 시작한 거 같은데."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Alex_y2",
+          "DialogueText": "여름이 끝났다니 안타깝지만, 그게 인생인 거겠지... {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Alex/498.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "여름이 끝났다니 안타깝지만, 그게 인생인 거겠지..."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Alex_spouse_y2",
+          "DialogueText": "나 지금은 잠시 가족이랑 얘기하려고. 조금 있다 부두에서 볼게, 알았지? {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Alex/499.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "나 지금은 잠시 가족이랑 얘기하려고. 조금 있다 부두에서 볼게, 알았지?"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Alex",
+          "DialogueText": "오, 안녕. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/500.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 안녕."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Alex_spouse",
+          "DialogueText": "나는 어떤 게 감사하냐고? 집에 가면 보여줄게... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Alex/501.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Alex_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "나는 어떤 게 감사하냐고? 집에 가면 보여줄게..."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Alex_y2",
+          "DialogueText": "나무 아래 있는 그리드볼 모양의 선물에 분명 내 이름이 적혀있겠지. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/502.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "나무 아래 있는 그리드볼 모양의 선물에 분명 내 이름이 적혀있겠지."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Alex_spouse_y2",
+          "DialogueText": "추우면 말해줘. 재킷 빌려줄게. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Alex/503.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "추우면 말해줘. 재킷 빌려줄게."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Alex",
+          "DialogueText": "눈사람도 나쁘진 않아, 뭐. 그래도 봄이 제일 기대돼.",
+          "AudioPath": "assets/ko-KR/Alex/504.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "눈사람도 나쁘진 않아, 뭐. 그래도 봄이 제일 기대돼."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Alex_spouse",
+          "DialogueText": "낚시대회 우승하길 응원할게.",
+          "AudioPath": "assets/ko-KR/Alex/505.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Alex_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "낚시대회 우승하길 응원할게."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Alex_y2",
+          "DialogueText": "축제 끝나고 언 호수에 잠깐 들어가도 아무도 뭐라고 안 하겠지?",
+          "AudioPath": "assets/ko-KR/Alex/506.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "축제 끝나고 언 호수에 잠깐 들어가도 아무도 뭐라고 안 하겠지?"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Alex_y2",
+          "DialogueText": "얼음 목욕이 근육에 좋다고 들었어.",
+          "AudioPath": "assets/ko-KR/Alex/507.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Alex_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "얼음 목욕이 근육에 좋다고 들었어."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Alex_spouse_y2",
+          "DialogueText": "야! 오늘 분명 네가 압승할 거야, 난 이미 알고 있어. 힘내!",
+          "AudioPath": "assets/ko-KR/Alex/508.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "야! 오늘 분명 네가 압승할 거야, 난 이미 알고 있어. 힘내!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Alex:s0",
+          "DialogueText": "야, 굉장한데! 나 이런 거 너무 좋아!",
+          "AudioPath": "assets/ko-KR/Alex/509.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Alex:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "야, 굉장한데! 나 이런 거 너무 좋아!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Alex:s1",
+          "DialogueText": "이거 멋진데! 고마워.",
+          "AudioPath": "assets/ko-KR/Alex/510.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Alex:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "이거 멋진데! 고마워."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Alex:s2",
+          "DialogueText": "음... 그래. 고마워.",
+          "AudioPath": "assets/ko-KR/Alex/511.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Alex:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "음... 그래. 고마워."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Alex:s3",
+          "DialogueText": "장난해? 이거 쓰레기잖아.",
+          "AudioPath": "assets/ko-KR/Alex/512.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Alex:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "장난해? 이거 쓰레기잖아."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Alex:s4",
+          "DialogueText": "고마워!",
+          "AudioPath": "assets/ko-KR/Alex/513.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Alex:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "고마워!"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/JoshHouse_Alex_Trash",
+          "DialogueText": "어.. 뭐 하고 있어? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/514.ogg",
+          "TranslationKey": "Data/ExtraDialogue:JoshHouse_Alex_Trash",
+          "PageIndex": 0,
+          "DisplayPattern": "어.. 뭐 하고 있어?"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Alex",
+          "DialogueText": "야, 그래서 어제저녁에 가게에서 {2} 하나 사갔어. 할머니께서 특별히 캐서롤을 만들어주셨지...",
+          "AudioPath": "assets/ko-KR/Alex/515.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "야, 그래서 어제저녁에 가게에서 {2} 하나 사갔어. 할머니께서 특별히 캐서롤을 만들어주셨지..."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Alex",
+          "DialogueText": "드디어 내가 어떤 사람이 되고 싶은지 알아냈어... 미래에 대한 확신이 들어.\"/pause 500/speak Alex \"{Farmer_Name}, 네가 없었다면 이럴 수 없었을 거야.\"",
+          "AudioPath": "assets/ko-KR/Alex/516.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "드디어 내가 어떤 사람이 되고 싶은지 알아냈어... 미래에 대한 확신이 들어.\"/pause 500/speak Alex \", 네가 없었다면 이럴 수 없었을 거야.\""
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_summer_movie_1_BeforeMovie",
+          "DialogueText": "이번 영화는 웃긴 영화라던데, 그래서 기대하고 있네.",
+          "AudioPath": "assets/ko-KR/Alex/517.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_summer_movie_1_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "이번 영화는 웃긴 영화라던데, 그래서 기대하고 있네."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_summer_movie_1_AfterMovie",
+          "DialogueText": "하! 정말 마음에 들었어. 하지만 그렇게 글루텐만 먹고 사는 게 가능한지 모르겠네.",
+          "AudioPath": "assets/ko-KR/Alex/518.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_summer_movie_1_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "하! 정말 마음에 들었어. 하지만 그렇게 글루텐만 먹고 사는 게 가능한지 모르겠네."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_love_BeforeMovie",
+          "DialogueText": "한동안 보고 싶었던 영화야. 표 고마워, {Farmer_Name}!",
+          "AudioPath": "assets/ko-KR/Alex/519.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "한동안 보고 싶었던 영화야. 표 고마워, !"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_love_AfterMovie",
+          "DialogueText": "정말 재밌었어! 아직도 흥분돼서 다리가 저려.",
+          "AudioPath": "assets/ko-KR/Alex/520.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "정말 재밌었어! 아직도 흥분돼서 다리가 저려."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_like_BeforeMovie",
+          "DialogueText": "안녕, 영화 볼 생각에 신나네! 근데 간식 좀 사서 들어가야겠어...",
+          "AudioPath": "assets/ko-KR/Alex/521.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕, 영화 볼 생각에 신나네! 근데 간식 좀 사서 들어가야겠어..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_like_AfterMovie",
+          "DialogueText": "꽤 재밌었다. 초대해줘서 고마워, {Farmer_Name}.",
+          "AudioPath": "assets/ko-KR/Alex/522.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "꽤 재밌었다. 초대해줘서 고마워, ."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_dislike_BeforeMovie",
+          "DialogueText": "좀 따분해 보이는 영화지만, 한번 봐볼게.",
+          "AudioPath": "assets/ko-KR/Alex/523.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "좀 따분해 보이는 영화지만, 한번 봐볼게."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_dislike_AfterMovie",
+          "DialogueText": "그냥 영화가 지루했던 건지, 아니면 영화를 이해하기엔 내 머리가 부족한 건지 잘 모르겠어... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Alex/524.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "그냥 영화가 지루했던 건지, 아니면 영화를 이해하기엔 내 머리가 부족한 건지 잘 모르겠어..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Alex_marriage",
+          "DialogueText": "야... 사막 태양이 비추는 네 모습 정말 귀엽다... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Alex/525.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Alex_marriage",
+          "PageIndex": 0,
+          "DisplayPattern": "야... 사막 태양이 비추는 네 모습 정말 귀엽다..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Alex",
+          "DialogueText": "칼리코 달걀 크기 봤어?",
+          "AudioPath": "assets/ko-KR/Alex/526.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "칼리코 달걀 크기 봤어?"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Alex",
+          "DialogueText": "단백질 함량을 상상해 봐...",
+          "AudioPath": "assets/ko-KR/Alex/527.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "단백질 함량을 상상해 봐..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Alex",
+          "DialogueText": "야, 달걀 좀 있어?",
+          "AudioPath": "assets/ko-KR/Alex/528.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "야, 달걀 좀 있어?"
+        }
+      ]
+    }
+  ]
+}

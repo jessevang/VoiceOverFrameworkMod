@@ -15,6 +15,18 @@ namespace VoiceOverFrameworkMod
             // Add others if supported/needed
         };
 
+        // Converts "es-ES" -> "es", "pt-BR" -> "pt", "en" -> "en"
+        private static string ToBaseLang(string stardewCode)
+        {
+            if (string.IsNullOrWhiteSpace(stardewCode))
+                return null;
+            var s = stardewCode.Trim().ToLowerInvariant();
+            int i = s.IndexOf('-');
+            return i > 0 ? s.Substring(0, i) : s;
+        }
+
+
+
         private static readonly HashSet<string> DisallowedCharacterNames = new(StringComparer.OrdinalIgnoreCase) { "???", };
         private bool ShouldSkipCharacterForTemplates(string name)
         {
@@ -432,6 +444,28 @@ namespace VoiceOverFrameworkMod
 
             return s;
         }
+
+        private bool IsSameLanguageForNpc(string npcName)
+        {
+            if (string.IsNullOrWhiteSpace(npcName)) return true; // allow generic tests
+            var pack = GetSelectedVoicePack(npcName);
+            if (pack == null) return true; // no pack → let vanilla run
+            return !LanguagesDiffer(pack);
+        }
+
+        private bool GuardTestForNpc(string npcName, string verb)
+        {
+            if (IsSameLanguageForNpc(npcName)) return true;
+
+            var pack = GetSelectedVoicePack(npcName);
+            Monitor.Log(
+                $"[TEST DISABLED] Game language '{CanonGameLang()}' differs from voice pack language '{LangOfPack(pack)}' for '{npcName}'. " +
+                $"Testing ({verb}) only runs when they match.",
+                LogLevel.Warn
+            );
+            return false;
+        }
+
 
 
 

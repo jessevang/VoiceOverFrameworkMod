@@ -1,0 +1,1424 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Gus.ko-KR",
+      "VoicePackName": "DictionarV2 (Gus - ko-KR)",
+      "Character": "Gus",
+      "Language": "ko-KR",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "안녕하신가! 난 거스라고 하네, 스타드롭 주점의 주방장이자 주인이지.",
+          "AudioPath": "assets/ko-KR/Gus/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕하신가! 난 거스라고 하네, 스타드롭 주점의 주방장이자 주인이지."
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "가벼운 식사나 음료가 필요하면 언제든 들러주게, 뜨거운 커피와 차가운 맥주가 준비되어있다고. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "가벼운 식사나 음료가 필요하면 언제든 들러주게, 뜨거운 커피와 차가운 맥주가 준비되어있다고."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "우와, 고마워! 내가 다 마셔버릴 거 같지만, 그래도 주점에서 쓸 건 좀 남겨야지. 이걸로 재밌는 칵테일을 만들 수 있겠어!",
+          "AudioPath": "assets/ko-KR/Gus/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "우와, 고마워! 내가 다 마셔버릴 거 같지만, 그래도 주점에서 쓸 건 좀 남겨야지. 이걸로 재밌는 칵테일을 만들 수 있겠어!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Positive_category_cooking",
+          "DialogueText": "*킁킁*... 아. 절묘한 요리군. 내가 좋아하는 걸 잘 아는구나, {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:AcceptGift_Positive_category_cooking",
+          "PageIndex": 0,
+          "DisplayPattern": "*킁킁*... 아. 절묘한 요리군. 내가 좋아하는 걸 잘 아는구나, ."
+        },
+        {
+          "DialogueFrom": "accept_865",
+          "DialogueText": "*킁* 킁* ... 그 날카로운 향!",
+          "AudioPath": "assets/ko-KR/Gus/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:accept_865",
+          "PageIndex": 0,
+          "DisplayPattern": "*킁* 킁* ... 그 날카로운 향!"
+        },
+        {
+          "DialogueFrom": "accept_865",
+          "DialogueText": "*후룩* *후룩* ... 이 풍미 깊은 맛! 이 거친 감촉!",
+          "AudioPath": "assets/ko-KR/Gus/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:accept_865",
+          "PageIndex": 1,
+          "DisplayPattern": "*후룩* *후룩* ... 이 풍미 깊은 맛! 이 거친 감촉!"
+        },
+        {
+          "DialogueFrom": "accept_865",
+          "DialogueText": "미식가의 토마토 소금일 수밖에 없어 이건! 보답으로 이걸 주겠네.",
+          "AudioPath": "assets/ko-KR/Gus/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:accept_865",
+          "PageIndex": 2,
+          "DisplayPattern": "미식가의 토마토 소금일 수밖에 없어 이건! 보답으로 이걸 주겠네."
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "어젯밤 일기예보를 봤어. 정말 무서웠다니까! {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Gus/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "어젯밤 일기예보를 봤어. 정말 무서웠다니까!"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "혹시 몬스터가 돌아다니니? 무슨 일이지?",
+          "AudioPath": "assets/ko-KR/Gus/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:GreenRain",
+          "PageIndex": 1,
+          "DisplayPattern": "혹시 몬스터가 돌아다니니? 무슨 일이지?"
+        },
+        {
+          "DialogueFrom": "GreenRainFinished",
+          "DialogueText": "끝나서 다행이네. 주점 운영만으로도 걱정이 한가득인데, 이상기후까지 겪을 필요는 없지!",
+          "AudioPath": "assets/ko-KR/Gus/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:GreenRainFinished",
+          "PageIndex": 0,
+          "DisplayPattern": "끝나서 다행이네. 주점 운영만으로도 걱정이 한가득인데, 이상기후까지 겪을 필요는 없지!"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "*킁킁*... 비에서 특이한 향이 나. 자네도 느꼈나? 마치 갓 으깬 허브 같은...",
+          "AudioPath": "assets/ko-KR/Gus/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "*킁킁*... 비에서 특이한 향이 나. 자네도 느꼈나? 마치 갓 으깬 허브 같은..."
+        },
+        {
+          "DialogueFrom": "cropMatured_256",
+          "DialogueText": "자네 토마토가 다 익었다고 루이스가 그러던데. 희소식이구만!",
+          "AudioPath": "assets/ko-KR/Gus/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:cropMatured_256",
+          "PageIndex": 0,
+          "DisplayPattern": "자네 토마토가 다 익었다고 루이스가 그러던데. 희소식이구만!"
+        },
+        {
+          "DialogueFrom": "cropMatured_256",
+          "DialogueText": "...토마토가 없는 요리의 세상이 어떨지 상상해 보면 정말...",
+          "AudioPath": "assets/ko-KR/Gus/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:cropMatured_256",
+          "PageIndex": 1,
+          "DisplayPattern": "...토마토가 없는 요리의 세상이 어떨지 상상해 보면 정말..."
+        },
+        {
+          "DialogueFrom": "eventSeen_502969",
+          "DialogueText": "사람들이 건강하고 맛있는 식사를 하는 건 정말 중요하다고 생각해. 안타깝게도 요즘 세상에선 쉬운 일이 아니지.",
+          "AudioPath": "assets/ko-KR/Gus/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:eventSeen_502969",
+          "PageIndex": 0,
+          "DisplayPattern": "사람들이 건강하고 맛있는 식사를 하는 건 정말 중요하다고 생각해. 안타깝게도 요즘 세상에선 쉬운 일이 아니지."
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "{Farmer_Name}, 너와 %spouse 모두 행복하길 진심으로 바란다.",
+          "AudioPath": "assets/ko-KR/Gus/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:married",
+          "PageIndex": 0,
+          "DisplayPattern": ", 너와 모두 행복하길 진심으로 바란다."
+        },
+        {
+          "DialogueFrom": "dating_Emily_memory_oneweek",
+          "DialogueText": "에밀리가 요즘 기운이 넘치네... 왜 그럴까? *윙크*",
+          "AudioPath": "assets/ko-KR/Gus/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:dating_Emily_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "에밀리가 요즘 기운이 넘치네... 왜 그럴까? *윙크*"
+        },
+        {
+          "DialogueFrom": "divorced_once",
+          "DialogueText": "이봐, 이혼 얘기는 정말 유감일세... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Gus/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:divorced_once",
+          "PageIndex": 0,
+          "DisplayPattern": "이봐, 이혼 얘기는 정말 유감일세..."
+        },
+        {
+          "DialogueFrom": "divorced_once",
+          "DialogueText": "혼자있기 싫다면, 언제든 주점에 들러줘.",
+          "AudioPath": "assets/ko-KR/Gus/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:divorced_once",
+          "PageIndex": 1,
+          "DisplayPattern": "혼자있기 싫다면, 언제든 주점에 들러줘."
+        },
+        {
+          "DialogueFrom": "divorced_twice",
+          "DialogueText": "또 결혼이 그렇게 되었다고? 뭐, 그럴 때도 있지. 주점에서 자주 보겠네... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Gus/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:divorced_twice",
+          "PageIndex": 0,
+          "DisplayPattern": "또 결혼이 그렇게 되었다고? 뭐, 그럴 때도 있지. 주점에서 자주 보겠네..."
+        },
+        {
+          "DialogueFrom": "eventSeen_3206194",
+          "DialogueText": "이봐, 그때 달걀은 정말 도움이 많이 됐어. 네 덕분에 멋진 오믈렛이 완성되었지!",
+          "AudioPath": "assets/ko-KR/Gus/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:eventSeen_3206194",
+          "PageIndex": 0,
+          "DisplayPattern": "이봐, 그때 달걀은 정말 도움이 많이 됐어. 네 덕분에 멋진 오믈렛이 완성되었지!"
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "안녕, {Farmer_Name}! 여기서 보니 반갑네. 좋은 것 좀 만들고 있으니 맘껏 먹고 마시게.",
+          "AudioPath": "assets/ko-KR/Gus/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕, ! 여기서 보니 반갑네. 좋은 것 좀 만들고 있으니 맘껏 먹고 마시게."
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "마을에 가서 다시 봐, {Farmer_Name}.",
+          "AudioPath": "assets/ko-KR/Gus/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "마을에 가서 다시 봐, ."
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "마실 거 필요하면 바에서 나 찾으면 돼.",
+          "AudioPath": "assets/ko-KR/Gus/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "마실 거 필요하면 바에서 나 찾으면 돼."
+        },
+        {
+          "DialogueFrom": "IslandSouth_14_21",
+          "DialogueText": "안녕, 마실 건 필요 없어? 이 섬만의 재료를 선보일 특별한 음료를 준비했어. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:IslandSouth_14_21",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕, 마실 건 필요 없어? 이 섬만의 재료를 선보일 특별한 음료를 준비했어."
+        },
+        {
+          "DialogueFrom": "willyCrabs",
+          "DialogueText": "이건 내가 만든 최고의 게살 케이크야...",
+          "AudioPath": "assets/ko-KR/Gus/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:willyCrabs",
+          "PageIndex": 0,
+          "DisplayPattern": "이건 내가 만든 최고의 게살 케이크야..."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "그래, 이 지역 주민들에 대해선 내가 많이 알고 있지.",
+          "AudioPath": "assets/ko-KR/Gus/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "그래, 이 지역 주민들에 대해선 내가 많이 알고 있지."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "바텐더로 일하면 그런 장점이 있지. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "바텐더로 일하면 그런 장점이 있지."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "근데 가끔 너무 많은 걸 듣기도 해...",
+          "AudioPath": "assets/ko-KR/Gus/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Mon",
+          "PageIndex": 2,
+          "DisplayPattern": "근데 가끔 너무 많은 걸 듣기도 해..."
+        },
+        {
+          "DialogueFrom": "pamHouseUpgrade",
+          "DialogueText": "야. 팸을 위해서 해준 일은 얘기 들었어. 정말 정말 좋은 일 했네! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:pamHouseUpgrade",
+          "PageIndex": 0,
+          "DisplayPattern": "야. 팸을 위해서 해준 일은 얘기 들었어. 정말 정말 좋은 일 했네!"
+        },
+        {
+          "DialogueFrom": "pamHouseUpgrade",
+          "DialogueText": "슬프게도, 그런다고 그녀가 '음료'를 덜 마실 것 같진 않아...",
+          "AudioPath": "assets/ko-KR/Gus/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:pamHouseUpgrade",
+          "PageIndex": 1,
+          "DisplayPattern": "슬프게도, 그런다고 그녀가 '음료'를 덜 마실 것 같진 않아..."
+        },
+        {
+          "DialogueFrom": "pamHouseUpgradeAnonymous",
+          "DialogueText": "오늘 아까 팸을 봤는데... 입이 귀에 걸려있더라고! 누군가 새 집을 사줬다던데!",
+          "AudioPath": "assets/ko-KR/Gus/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:pamHouseUpgradeAnonymous",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 아까 팸을 봤는데... 입이 귀에 걸려있더라고! 누군가 새 집을 사줬다던데!"
+        },
+        {
+          "DialogueFrom": "pamHouseUpgradeAnonymous",
+          "DialogueText": "누군지는 몰라도, 진심으로 복받을 사람이야! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:pamHouseUpgradeAnonymous",
+          "PageIndex": 1,
+          "DisplayPattern": "누군지는 몰라도, 진심으로 복받을 사람이야!"
+        },
+        {
+          "DialogueFrom": "Saloon",
+          "DialogueText": "안녕하신가. 뭘로 갖다줄까?",
+          "AudioPath": "assets/ko-KR/Gus/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Saloon",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕하신가. 뭘로 갖다줄까?"
+        },
+        {
+          "DialogueFrom": "Saloon4",
+          "DialogueText": "좋은 저녁. 편히 쉬다 가.",
+          "AudioPath": "assets/ko-KR/Gus/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Saloon4",
+          "PageIndex": 0,
+          "DisplayPattern": "좋은 저녁. 편히 쉬다 가."
+        },
+        {
+          "DialogueFrom": "SeedShop_Entry",
+          "DialogueText": "안녕, 피에르!/자, 뭐가 필요했더라.../아, 저거 괜찮네!/오늘 저녁엔 내 특제 소스를 만들 거야!/피에르! 어떤 게 신선해?/피에르! 오늘은 뭘 가져왔나?",
+          "AudioPath": "assets/ko-KR/Gus/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:SeedShop_Entry",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕, 피에르!/자, 뭐가 필요했더라.../아, 저거 괜찮네!/오늘 저녁엔 내 특제 소스를 만들 거야!/피에르! 어떤 게 신선해?/피에르! 오늘은 뭘 가져왔나?"
+        },
+        {
+          "DialogueFrom": "Saloon8",
+          "DialogueText": "안녕 {Farmer_Name}. 봐서 반갑네! 자넨 언제라도 환영이야.",
+          "AudioPath": "assets/ko-KR/Gus/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Saloon8",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕 . 봐서 반갑네! 자넨 언제라도 환영이야."
+        },
+        {
+          "DialogueFrom": "Saloon_Tue",
+          "DialogueText": "안녕하신가! 느긋하게 좋은 시간 보내.",
+          "AudioPath": "assets/ko-KR/Gus/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Saloon_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕하신가! 느긋하게 좋은 시간 보내."
+        },
+        {
+          "DialogueFrom": "Saloon_Thu",
+          "DialogueText": "이보게, 뭐라도 마셔야 할 표정이구먼.",
+          "AudioPath": "assets/ko-KR/Gus/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Saloon_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "이보게, 뭐라도 마셔야 할 표정이구먼."
+        },
+        {
+          "DialogueFrom": "Saloon_Fri",
+          "DialogueText": "오늘 장사 정말 잘 됐어. 기쁘구먼.",
+          "AudioPath": "assets/ko-KR/Gus/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Saloon_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 장사 정말 잘 됐어. 기쁘구먼."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "난 매주 다른 요리를 팔고 있으니, 종종 들러서 확인해보게!",
+          "AudioPath": "assets/ko-KR/Gus/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "난 매주 다른 요리를 팔고 있으니, 종종 들러서 확인해보게!"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "뭔가 엄청난 것을 맛볼 수도 있어. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "뭔가 엄청난 것을 맛볼 수도 있어."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "아, 혹시 알러지가 있다면 알려주고. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Gus/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Tue",
+          "PageIndex": 2,
+          "DisplayPattern": "아, 혹시 알러지가 있다면 알려주고."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "그럼, 종종 보세.",
+          "AudioPath": "assets/ko-KR/Gus/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Tue",
+          "PageIndex": 3,
+          "DisplayPattern": "그럼, 종종 보세."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "에밀리가 여기서 일한 지도 오래되었지. 그녀가 없이 여길 운영하긴 너무 어려웠을 거야!",
+          "AudioPath": "assets/ko-KR/Gus/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "에밀리가 여기서 일한 지도 오래되었지. 그녀가 없이 여길 운영하긴 너무 어려웠을 거야!"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "난 도저히 혼자서 저 냄비를 전부 설거지할 엄두가 안 나거든. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Gus/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "난 도저히 혼자서 저 냄비를 전부 설거지할 엄두가 안 나거든."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "팸과 클린트는 거의 매일 저녁에 주점에 오지.",
+          "AudioPath": "assets/ko-KR/Gus/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "팸과 클린트는 거의 매일 저녁에 주점에 오지."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "그 둘이 갑자기 안 온다면 폐업할 수도 있어. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "그 둘이 갑자기 안 온다면 폐업할 수도 있어."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "그러니까 그들을 쫓아내지 않도록 해!",
+          "AudioPath": "assets/ko-KR/Gus/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "그러니까 그들을 쫓아내지 않도록 해!"
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "클린트는 거의 매일 저녁 주점에 와서 매번 혼자서 같은 테이블에 앉지.",
+          "AudioPath": "assets/ko-KR/Gus/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "클린트는 거의 매일 저녁 주점에 와서 매번 혼자서 같은 테이블에 앉지."
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "가끔 불안해하는 눈빛으로 에밀리를 힐끔 보고. 흐음.",
+          "AudioPath": "assets/ko-KR/Gus/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu6",
+          "PageIndex": 1,
+          "DisplayPattern": "가끔 불안해하는 눈빛으로 에밀리를 힐끔 보고. 흐음."
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "그래서 자주 오는 건가 봐. 뭐, 나야 장사할 거리는 늘어나는 거니까.",
+          "AudioPath": "assets/ko-KR/Gus/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu6",
+          "PageIndex": 2,
+          "DisplayPattern": "그래서 자주 오는 건가 봐. 뭐, 나야 장사할 거리는 늘어나는 거니까."
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "팸은 거의 매일 저녁 주점에 와서 맥주를 좀 과하게 마시지.",
+          "AudioPath": "assets/ko-KR/Gus/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu8",
+          "PageIndex": 0,
+          "DisplayPattern": "팸은 거의 매일 저녁 주점에 와서 맥주를 좀 과하게 마시지."
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "뭐, 난 손님을 비판하는 게 일은 아니니까.",
+          "AudioPath": "assets/ko-KR/Gus/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Thu8",
+          "PageIndex": 1,
+          "DisplayPattern": "뭐, 난 손님을 비판하는 게 일은 아니니까."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "안녕, {Farmer_Name}. 혹시 목마르다면, 주점만 한 곳이 없지.",
+          "AudioPath": "assets/ko-KR/Gus/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕, . 혹시 목마르다면, 주점만 한 곳이 없지."
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "사실 난 그다지 술을 많이 안 마셔. 생계를 꾸리려고 하는 일이지.",
+          "AudioPath": "assets/ko-KR/Gus/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "사실 난 그다지 술을 많이 안 마셔. 생계를 꾸리려고 하는 일이지."
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "물론 가끔 스타듀 밸리 빈티지의 맛을 즐기기는 하지만.",
+          "AudioPath": "assets/ko-KR/Gus/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Fri4",
+          "PageIndex": 1,
+          "DisplayPattern": "물론 가끔 스타듀 밸리 빈티지의 맛을 즐기기는 하지만."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "자넨 요리 좀 하나, {Farmer_Name}?",
+          "AudioPath": "assets/ko-KR/Gus/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "자넨 요리 좀 하나, ?"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "주방과 레시피만 있다면, 유용한 요리를 만들 수 있지.",
+          "AudioPath": "assets/ko-KR/Gus/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "주방과 레시피만 있다면, 유용한 요리를 만들 수 있지."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "손수 만든 요리는 근사한 선물이기도 하고.",
+          "AudioPath": "assets/ko-KR/Gus/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "손수 만든 요리는 근사한 선물이기도 하고."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "단골 고객들 덕분에 장사는 꽤 안정적으로 되어가고 있네.",
+          "AudioPath": "assets/ko-KR/Gus/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Gus:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "단골 고객들 덕분에 장사는 꽤 안정적으로 되어가고 있네."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "오늘 같은 날은 드라이한 레드 와인 한잔 만한 게 없지 않나?",
+          "AudioPath": "assets/ko-KR/Gus/61.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 같은 날은 드라이한 레드 와인 한잔 만한 게 없지 않나?"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "난 내 직업이 너무 마음에 들어. 헤헤헤.",
+          "AudioPath": "assets/ko-KR/Gus/62.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Gus",
+          "PageIndex": 1,
+          "DisplayPattern": "난 내 직업이 너무 마음에 들어. 헤헤헤."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s0",
+          "DialogueText": "Good morning!",
+          "AudioPath": "assets/ko-KR/Gus/63.ogg",
+          "TranslationKey": "Events/Farm:980558:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Good morning!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s1",
+          "DialogueText": "Ah... what a beautiful day, huh?",
+          "AudioPath": "assets/ko-KR/Gus/64.ogg",
+          "TranslationKey": "Events/Farm:980558:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah... what a beautiful day, huh?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s2",
+          "DialogueText": "You know, as the Saloon owner, I hear about everything that's going on in town.",
+          "AudioPath": "assets/ko-KR/Gus/65.ogg",
+          "TranslationKey": "Events/Farm:980558:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "You know, as the Saloon owner, I hear about everything that's going on in town."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s3",
+          "DialogueText": "I remember when you first moved here... everyone was a bit unsure of what to expect.",
+          "AudioPath": "assets/ko-KR/Gus/66.ogg",
+          "TranslationKey": "Events/Farm:980558:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I remember when you first moved here... everyone was a bit unsure of what to expect."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s4",
+          "DialogueText": "A stranger from the city... an unknown personality... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Gus/67.ogg",
+          "TranslationKey": "Events/Farm:980558:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "A stranger from the city... an unknown personality..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s5",
+          "DialogueText": "One sec...",
+          "AudioPath": "assets/ko-KR/Gus/68.ogg",
+          "TranslationKey": "Events/Farm:980558:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "One sec..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s6",
+          "DialogueText": "Sorry, I have to stir this pot every 5 minutes.",
+          "AudioPath": "assets/ko-KR/Gus/69.ogg",
+          "TranslationKey": "Events/Farm:980558:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Sorry, I have to stir this pot every 5 minutes."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s7",
+          "DialogueText": "Anyway, what was I saying? Oh yeah... you know, it's like when you're making a sauce...",
+          "AudioPath": "assets/ko-KR/Gus/70.ogg",
+          "TranslationKey": "Events/Farm:980558:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Anyway, what was I saying? Oh yeah... you know, it's like when you're making a sauce..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s8",
+          "DialogueText": "...If you put in a new spice you could ruin everything! {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Gus/71.ogg",
+          "TranslationKey": "Events/Farm:980558:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "...If you put in a new spice you could ruin everything!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s9",
+          "DialogueText": "...But then again, there's always a chance you'll create something new and delicious! Right? Hahahaha. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/72.ogg",
+          "TranslationKey": "Events/Farm:980558:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "...But then again, there's always a chance you'll create something new and delicious! Right? Hahahaha."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s10",
+          "DialogueText": "Er... What I'm trying to say is... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Gus/73.ogg",
+          "TranslationKey": "Events/Farm:980558:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Er... What I'm trying to say is..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s11",
+          "DialogueText": "It's been great having you in town, and I've come to think of you as one of my good friends!",
+          "AudioPath": "assets/ko-KR/Gus/74.ogg",
+          "TranslationKey": "Events/Farm:980558:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "It's been great having you in town, and I've come to think of you as one of my good friends!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s12",
+          "DialogueText": "Anyway, I came to give you something...",
+          "AudioPath": "assets/ko-KR/Gus/75.ogg",
+          "TranslationKey": "Events/Farm:980558:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Anyway, I came to give you something..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s13",
+          "DialogueText": "I was cleaning out the back room and I found this old Mini-Jukebox. I want you to have it!",
+          "AudioPath": "assets/ko-KR/Gus/76.ogg",
+          "TranslationKey": "Events/Farm:980558:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "I was cleaning out the back room and I found this old Mini-Jukebox. I want you to have it!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s14",
+          "DialogueText": "Received a 'Mini-Jukebox'",
+          "AudioPath": "assets/ko-KR/Gus/77.ogg",
+          "TranslationKey": "Events/Farm:980558:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "Received a 'Mini-Jukebox'"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s15",
+          "DialogueText": "It's actually an old Do-It-Yourself project of mine, from many years ago. They're pretty easy to make!",
+          "AudioPath": "assets/ko-KR/Gus/78.ogg",
+          "TranslationKey": "Events/Farm:980558:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "It's actually an old Do-It-Yourself project of mine, from many years ago. They're pretty easy to make!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s16",
+          "DialogueText": "So, just in case you wanted to make more, I brought the blueprints for you...",
+          "AudioPath": "assets/ko-KR/Gus/79.ogg",
+          "TranslationKey": "Events/Farm:980558:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "So, just in case you wanted to make more, I brought the blueprints for you..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s17",
+          "DialogueText": "Learned how to craft a 'Mini-Jukebox'",
+          "AudioPath": "assets/ko-KR/Gus/80.ogg",
+          "TranslationKey": "Events/Farm:980558:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "Learned how to craft a 'Mini-Jukebox'"
+        },
+        {
+          "DialogueFrom": "Event:Farm/980558:s18",
+          "DialogueText": "Well, I'm gonna head home. I gotta get this marinara back on the stove! Have a good one!",
+          "AudioPath": "assets/ko-KR/Gus/81.ogg",
+          "TranslationKey": "Events/Farm:980558:s18",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I'm gonna head home. I gotta get this marinara back on the stove! Have a good one!"
+        },
+        {
+          "DialogueFrom": "Event:Town/53:s0",
+          "DialogueText": "Great stuff!",
+          "AudioPath": "assets/ko-KR/Gus/82.ogg",
+          "TranslationKey": "Events/Town:53:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Great stuff!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s0",
+          "DialogueText": "I still dream of that garlic butter.",
+          "AudioPath": "assets/ko-KR/Gus/83.ogg",
+          "TranslationKey": "Events/Town:191393:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I still dream of that garlic butter."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s1",
+          "DialogueText": "Me too!",
+          "AudioPath": "assets/ko-KR/Gus/84.ogg",
+          "TranslationKey": "Events/Town:191393:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Me too!"
+        },
+        {
+          "DialogueFrom": "Event:Town/502969:s0",
+          "DialogueText": "Wait. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Gus/85.ogg",
+          "TranslationKey": "Events/Town:502969:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Wait."
+        },
+        {
+          "DialogueFrom": "Event:Town/502969:s1",
+          "DialogueText": "I know what you were doing, Linus. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Gus/86.ogg",
+          "TranslationKey": "Events/Town:502969:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I know what you were doing, Linus."
+        },
+        {
+          "DialogueFrom": "Event:Town/502969:s2",
+          "DialogueText": "If you need food... just ask. I don't want anyone in Pelican Town to go hungry.",
+          "AudioPath": "assets/ko-KR/Gus/87.ogg",
+          "TranslationKey": "Events/Town:502969:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "If you need food... just ask. I don't want anyone in Pelican Town to go hungry."
+        },
+        {
+          "DialogueFrom": "Event:Town/502969:s3",
+          "DialogueText": "Here. I've got a basket of zucchini fritters for you. Just make sure you dip them in my spicy marinara! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/88.ogg",
+          "TranslationKey": "Events/Town:502969:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Here. I've got a basket of zucchini fritters for you. Just make sure you dip them in my spicy marinara!"
+        },
+        {
+          "DialogueFrom": "Event:Town/502969:s4",
+          "DialogueText": "Go on... take it.",
+          "AudioPath": "assets/ko-KR/Gus/89.ogg",
+          "TranslationKey": "Events/Town:502969:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Go on... take it."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s0",
+          "DialogueText": "Nice!",
+          "AudioPath": "assets/ko-KR/Gus/90.ogg",
+          "TranslationKey": "Events/Town:6184644:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Nice!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s0",
+          "DialogueText": "I'm all ears.",
+          "AudioPath": "assets/ko-KR/Gus/91.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm all ears."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s1",
+          "DialogueText": "That sounds pretty good! I could use some quality veggies for the saloon. How much does it cost?",
+          "AudioPath": "assets/ko-KR/Gus/92.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "That sounds pretty good! I could use some quality veggies for the saloon. How much does it cost?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s2",
+          "DialogueText": "What was that?",
+          "AudioPath": "assets/ko-KR/Gus/93.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "What was that?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s3",
+          "DialogueText": "Hahaha... for a moment there, I thought I heard, '25,000g'. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/94.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Hahaha... for a moment there, I thought I heard, '25,000g'."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s4",
+          "DialogueText": "Pierre, are you crazy? There's no way I could afford that. I'd have to sell the saloon! {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Gus/95.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Pierre, are you crazy? There's no way I could afford that. I'd have to sell the saloon!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/40:s0",
+          "DialogueText": "Hi. I'll take your order in a few moments.",
+          "AudioPath": "assets/ko-KR/Gus/96.ogg",
+          "TranslationKey": "Events/Saloon:40:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi. I'll take your order in a few moments."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/40:s1",
+          "DialogueText": "... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Gus/97.ogg",
+          "TranslationKey": "Events/Saloon:40:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/40:s2",
+          "DialogueText": "There you go, sir. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Gus/98.ogg",
+          "TranslationKey": "Events/Saloon:40:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "There you go, sir."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s0|g=male",
+          "DialogueText": "Oh, hello there, buddy.",
+          "AudioPath": "assets/ko-KR/Gus/99_male.ogg",
+          "TranslationKey": "Events/Saloon:96:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, hello there, buddy.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s1|g=female",
+          "DialogueText": "Hi, {Farmer_Name}.",
+          "AudioPath": "assets/ko-KR/Gus/100_female.ogg",
+          "TranslationKey": "Events/Saloon:96:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi, .",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s2",
+          "DialogueText": "*sigh*... I'm just looking over last month's earnings... and it's not looking very good, {Farmer_Name}. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Gus/101.ogg",
+          "TranslationKey": "Events/Saloon:96:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*... I'm just looking over last month's earnings... and it's not looking very good, ."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s3",
+          "DialogueText": "The worst thing... and I hate to say this because she's my friend... is Pam! She hasn't paid off her tab in weeks! {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Gus/102.ogg",
+          "TranslationKey": "Events/Saloon:96:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "The worst thing... and I hate to say this because she's my friend... is Pam! She hasn't paid off her tab in weeks!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s4",
+          "DialogueText": "...But I can't ask her to do it. I know she'll get defensive, and I don't want to hurt her feelings. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Gus/103.ogg",
+          "TranslationKey": "Events/Saloon:96:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "...But I can't ask her to do it. I know she'll get defensive, and I don't want to hurt her feelings."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s5",
+          "DialogueText": "{Farmer_Name}, you gotta help me! {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Gus/104.ogg",
+          "TranslationKey": "Events/Saloon:96:s5",
+          "PageIndex": 0,
+          "DisplayPattern": ", you gotta help me!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s6",
+          "DialogueText": "Er... Well, okay Pam. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Gus/105.ogg",
+          "TranslationKey": "Events/Saloon:96:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Er... Well, okay Pam."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s7",
+          "DialogueText": "Thanks, Pam! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/106.ogg",
+          "TranslationKey": "Events/Saloon:96:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks, Pam!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s8",
+          "DialogueText": "And thank you, {Farmer_Name}. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Gus/107.ogg",
+          "TranslationKey": "Events/Saloon:96:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "And thank you, ."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s9",
+          "DialogueText": "Now, let's get you that drink, Pam. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/108.ogg",
+          "TranslationKey": "Events/Saloon:96:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Now, let's get you that drink, Pam."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/96:s10",
+          "DialogueText": "Thanks for your help, {Farmer_Name}. This cash is going to be a big help to the saloon.",
+          "AudioPath": "assets/ko-KR/Gus/109.ogg",
+          "TranslationKey": "Events/Saloon:96:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks for your help, . This cash is going to be a big help to the saloon."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s0",
+          "DialogueText": "I'm having a lot of fun. And it's good for business! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/110.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm having a lot of fun. And it's good for business!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s1",
+          "DialogueText": "Though maybe not so good for Shane's liver... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Gus/111.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Though maybe not so good for Shane's liver..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s0",
+          "DialogueText": "Well, folks... once again, we're gathered for a very special occasion.",
+          "AudioPath": "assets/ko-KR/Gus/112.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, folks... once again, we're gathered for a very special occasion."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s1",
+          "DialogueText": "...A rare visit from a very dear friend...",
+          "AudioPath": "assets/ko-KR/Gus/113.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "...A rare visit from a very dear friend..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s2",
+          "DialogueText": "...My world-famous giant omelet! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/114.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "...My world-famous giant omelet!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s3",
+          "DialogueText": "Zesty bell pepper, juicy tomato, rich mushroom, and tangy cheese... all enrobed in a blanket of rich, fluffy egg. Dig in, folks.",
+          "AudioPath": "assets/ko-KR/Gus/115.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Zesty bell pepper, juicy tomato, rich mushroom, and tangy cheese... all enrobed in a blanket of rich, fluffy egg. Dig in, folks."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s4",
+          "DialogueText": "Willy? What do you think?",
+          "AudioPath": "assets/ko-KR/Gus/116.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Willy? What do you think?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s5",
+          "DialogueText": "Is that a good thing? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Gus/117.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Is that a good thing?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3206194:s6",
+          "DialogueText": "Nope... You can thank {Farmer_Name} over at %farm Farm!",
+          "AudioPath": "assets/ko-KR/Gus/118.ogg",
+          "TranslationKey": "Events/Saloon:3206194:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Nope... You can thank over at Farm!"
+        },
+        {
+          "DialogueFrom": "Event:Beach/711130:s0",
+          "DialogueText": "Hooo~... Back at it again, huh Willy? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/119.ogg",
+          "TranslationKey": "Events/Beach:711130:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hooo~... Back at it again, huh Willy?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/711130:s1",
+          "DialogueText": "They look fresh all right...",
+          "AudioPath": "assets/ko-KR/Gus/120.ogg",
+          "TranslationKey": "Events/Beach:711130:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "They look fresh all right..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/711130:s2",
+          "DialogueText": "I'll take the whole lot! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/121.ogg",
+          "TranslationKey": "Events/Beach:711130:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll take the whole lot!"
+        },
+        {
+          "DialogueFrom": "Event:Beach/711130:s3",
+          "DialogueText": "With a discount for the extra labor, of course...",
+          "AudioPath": "assets/ko-KR/Gus/122.ogg",
+          "TranslationKey": "Events/Beach:711130:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "With a discount for the extra labor, of course..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/711130:s4",
+          "DialogueText": "Looks like we got 'em all...",
+          "AudioPath": "assets/ko-KR/Gus/123.ogg",
+          "TranslationKey": "Events/Beach:711130:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Looks like we got 'em all..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/711130:s5",
+          "DialogueText": "Psst... {Farmer_Name}... Don't tell Willy, but I'll be doing a special on crab cakes at the saloon for the next few days...",
+          "AudioPath": "assets/ko-KR/Gus/124.ogg",
+          "TranslationKey": "Events/Beach:711130:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Psst... ... Don't tell Willy, but I'll be doing a special on crab cakes at the saloon for the next few days..."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Gus",
+          "DialogueText": "먹고 싶은 만큼 마음껏 먹어! 오늘은 전부 무료야... 루이스 시장님께서 신경 좀 써주셨지. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/125.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "먹고 싶은 만큼 마음껏 먹어! 오늘은 전부 무료야... 루이스 시장님께서 신경 좀 써주셨지."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Gus",
+          "DialogueText": "오! 거기엔 꼭 내 비밀 소스 좀 뿌리고.",
+          "AudioPath": "assets/ko-KR/Gus/126.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Gus",
+          "PageIndex": 1,
+          "DisplayPattern": "오! 거기엔 꼭 내 비밀 소스 좀 뿌리고."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Gus_y2",
+          "DialogueText": "그릴 4개를 동시에 다루는 건 힘든 일이지! 배고픈 사람들이 많은 날이라고. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Gus/127.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "그릴 4개를 동시에 다루는 건 힘든 일이지! 배고픈 사람들이 많은 날이라고."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Gus_y2",
+          "DialogueText": "패티마다 내 풍미 깊은 소스를 조금씩 뿌려야지. *윙크*",
+          "AudioPath": "assets/ko-KR/Gus/128.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Gus_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "패티마다 내 풍미 깊은 소스를 조금씩 뿌려야지. *윙크*"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Gus",
+          "DialogueText": "호박으로 요리하는 건 참 재밌단 말이지. 흥미로운 과일이야.",
+          "AudioPath": "assets/ko-KR/Gus/129.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "호박으로 요리하는 건 참 재밌단 말이지. 흥미로운 과일이야."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Gus_y2",
+          "DialogueText": "호박 깎는 건 내 특기지. 마을 호박등은 거의 내가 만든다고 보면 돼.",
+          "AudioPath": "assets/ko-KR/Gus/130.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "호박 깎는 건 내 특기지. 마을 호박등은 거의 내가 만든다고 보면 돼."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Gus_y2",
+          "DialogueText": "난 호박씨만 받으면 충분해... 시나몬이랑 설탕 조금 뿌리면 금 같은 간식이 완성되지! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/131.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Gus_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "난 호박씨만 받으면 충분해... 시나몬이랑 설탕 조금 뿌리면 금 같은 간식이 완성되지!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Gus",
+          "DialogueText": "다들 음식이 마음에 들어야 할 텐데... 준비하느라 며칠 동안 요리만 했어.",
+          "AudioPath": "assets/ko-KR/Gus/132.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "다들 음식이 마음에 들어야 할 텐데... 준비하느라 며칠 동안 요리만 했어."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Gus",
+          "DialogueText": "계란 프라이, 삶은 계란, 수란, 매운 계란, 계란 스크램블, 초콜릿 계란... 말만 해! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/133.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Gus",
+          "PageIndex": 1,
+          "DisplayPattern": "계란 프라이, 삶은 계란, 수란, 매운 계란, 계란 스크램블, 초콜릿 계란... 말만 해!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Gus_y2",
+          "DialogueText": "쉿... 이건 비밀인데, 올해는 좀 색다른 걸 시도해봤어... 오리알로 커스터드를 만들었지! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/134.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "쉿... 이건 비밀인데, 올해는 좀 색다른 걸 시도해봤어... 오리알로 커스터드를 만들었지!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Gus",
+          "DialogueText": "개구리들이 요즘 점점 많이 보인단 말이지.",
+          "AudioPath": "assets/ko-KR/Gus/135.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "개구리들이 요즘 점점 많이 보인단 말이지."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Gus_y2",
+          "DialogueText": "민들레 샐러드 먹어봤어? 이 자리에서 신선하게 준비한 거야! {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Gus/136.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "민들레 샐러드 먹어봤어? 이 자리에서 신선하게 준비한 거야!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Gus",
+          "DialogueText": "이 빌어먹을 모래 파리들이 자꾸 음식에 앉네!",
+          "AudioPath": "assets/ko-KR/Gus/137.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "이 빌어먹을 모래 파리들이 자꾸 음식에 앉네!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Gus_y2",
+          "DialogueText": "나쁜 재료 하나만 들어가도 스프 전체가 잘못될 수 있어... {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Gus/138.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "나쁜 재료 하나만 들어가도 스프 전체가 잘못될 수 있어..."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Gus",
+          "DialogueText": "'달빛 해파리'... 어떤 맛이려나? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/139.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "'달빛 해파리'... 어떤 맛이려나?"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Gus",
+          "DialogueText": "아니, 진짜 먹는다는 소리는 아니지, 물론! {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Gus/140.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Gus",
+          "PageIndex": 1,
+          "DisplayPattern": "아니, 진짜 먹는다는 소리는 아니지, 물론!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Gus_y2",
+          "DialogueText": "*킁킁* 아아... 바다의 신선한 냄새는 매번 만족스럽네. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Gus/141.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "*킁킁* 아아... 바다의 신선한 냄새는 매번 만족스럽네."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus",
+          "DialogueText": "이게 되게 섬세한 작업이야, 사탕 막대를 만드는 일이. 정말 최고의 재료를 구하려면 멀리까지 갈 각오를 해야 해. 요즘 쉽게 찾긴 힘들다고! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/142.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "이게 되게 섬세한 작업이야, 사탕 막대를 만드는 일이. 정말 최고의 재료를 구하려면 멀리까지 갈 각오를 해야 해. 요즘 쉽게 찾긴 힘들다고!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus",
+          "DialogueText": "내 최고급 사탕에는 페른 섬 링프루트를 보통 써. 그 밝은 빨간 색감 만한 게 없지... 게다가 천연재료고!",
+          "AudioPath": "assets/ko-KR/Gus/143.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus",
+          "PageIndex": 1,
+          "DisplayPattern": "내 최고급 사탕에는 페른 섬 링프루트를 보통 써. 그 밝은 빨간 색감 만한 게 없지... 게다가 천연재료고!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus",
+          "DialogueText": "오, 그리고 내 디럭스 더블 막대의 비밀을 알고 싶나? 그래, 알려줄게, 대신 아무한테도 말하면 안 돼. *소곤* 체리 향과 조화를 이루기 위해 흰 사탕 부분에 바닐라 한 방울을 첨가해. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/144.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus",
+          "PageIndex": 2,
+          "DisplayPattern": "오, 그리고 내 디럭스 더블 막대의 비밀을 알고 싶나? 그래, 알려줄게, 대신 아무한테도 말하면 안 돼. *소곤* 체리 향과 조화를 이루기 위해 흰 사탕 부분에 바닐라 한 방울을 첨가해."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus",
+          "DialogueText": "물론, 페퍼민트 사탕 막대가 기본이 되니까, 그것도 항상 풍부하게 만드는 편이고.",
+          "AudioPath": "assets/ko-KR/Gus/145.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus",
+          "PageIndex": 3,
+          "DisplayPattern": "물론, 페퍼민트 사탕 막대가 기본이 되니까, 그것도 항상 풍부하게 만드는 편이고."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus",
+          "DialogueText": "야, 너 잠드는 것 같은데, 괜찮아? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Gus/146.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus",
+          "PageIndex": 4,
+          "DisplayPattern": "야, 너 잠드는 것 같은데, 괜찮아?"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus_y2",
+          "DialogueText": "드십시다! 많이들 드세요, 아직 신선하고 뜨거울 때. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Gus/147.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "드십시다! 많이들 드세요, 아직 신선하고 뜨거울 때."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Gus_y2",
+          "DialogueText": "이 사탕 지팡이를 어떻게 만들었는지 설명하자면 한참 얘기할 수 있지만... 올해는 내가 참지! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/148.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Gus_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "이 사탕 지팡이를 어떻게 만들었는지 설명하자면 한참 얘기할 수 있지만... 올해는 내가 참지!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Gus",
+          "DialogueText": "음식이 없어서 미안하네.",
+          "AudioPath": "assets/ko-KR/Gus/149.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "음식이 없어서 미안하네."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Gus",
+          "DialogueText": "겨울 별의 만찬만 기다리라고. 며칠은 배부를 거야.",
+          "AudioPath": "assets/ko-KR/Gus/150.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Gus",
+          "PageIndex": 1,
+          "DisplayPattern": "겨울 별의 만찬만 기다리라고. 며칠은 배부를 거야."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Gus_y2",
+          "DialogueText": "최근 그리드볼 본다고 너무 집안에만 있었어... 신선한 겨울 공기를 느끼니 좋구먼.",
+          "AudioPath": "assets/ko-KR/Gus/151.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Gus_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "최근 그리드볼 본다고 너무 집안에만 있었어... 신선한 겨울 공기를 느끼니 좋구먼."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Gus:s0",
+          "DialogueText": "이걸 나한테... 주는 건가? 놀라서 말이 안 나오는구먼.",
+          "AudioPath": "assets/ko-KR/Gus/152.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Gus:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "이걸 나한테... 주는 건가? 놀라서 말이 안 나오는구먼."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Gus:s1",
+          "DialogueText": "오, 세상에! 확실한가?",
+          "AudioPath": "assets/ko-KR/Gus/153.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Gus:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 세상에! 확실한가?"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Gus:s2",
+          "DialogueText": "아냐, 아냐, 아냐...",
+          "AudioPath": "assets/ko-KR/Gus/154.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Gus:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "아냐, 아냐, 아냐..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Gus:s3",
+          "DialogueText": "이건 완전히 고물인걸. 불쾌하네.",
+          "AudioPath": "assets/ko-KR/Gus/155.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Gus:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "이건 완전히 고물인걸. 불쾌하네."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Gus:s4",
+          "DialogueText": "오, 친절하기도 하지. 고맙네.",
+          "AudioPath": "assets/ko-KR/Gus/156.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Gus:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 친절하기도 하지. 고맙네."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_summer_movie_1_BeforeMovie",
+          "DialogueText": "티비에서 이 영화 광고 봤는데. 재밌어 보이던걸!",
+          "AudioPath": "assets/ko-KR/Gus/157.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_summer_movie_1_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "티비에서 이 영화 광고 봤는데. 재밌어 보이던걸!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_summer_movie_1_AfterMovie",
+          "DialogueText": "아마추어 전문가로서 하는 말인데, 글루텐 들어간 음식에 대해 집착하는 거 정말 재밌었어. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/158.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_summer_movie_1_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "아마추어 전문가로서 하는 말인데, 글루텐 들어간 음식에 대해 집착하는 거 정말 재밌었어."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_winter_movie_0_BeforeMovie",
+          "DialogueText": "'{0}'을(를) 봐야 좀 이 계절 느낌이 나고 그러지!",
+          "AudioPath": "assets/ko-KR/Gus/159.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_winter_movie_0_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "'{0}'을(를) 봐야 좀 이 계절 느낌이 나고 그러지!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_winter_movie_0_AfterMovie",
+          "DialogueText": "마음이 따뜻해지네... 어떻게 말로만 듣던 과일을 그렇게 맛있어 보이게 한 걸까? 언제 나도 한번 맛보고 싶네.",
+          "AudioPath": "assets/ko-KR/Gus/160.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_winter_movie_0_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "마음이 따뜻해지네... 어떻게 말로만 듣던 과일을 그렇게 맛있어 보이게 한 걸까? 언제 나도 한번 맛보고 싶네."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_fall_movie_0_BeforeMovie",
+          "DialogueText": "이 영화가 '독특하다'라고들 하던데... 별로라는 건가? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Gus/161.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_fall_movie_0_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "이 영화가 '독특하다'라고들 하던데... 별로라는 건가?"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_fall_movie_0_AfterMovie",
+          "DialogueText": "방금 영화는 요점이 뭐였지? 난 이해가 안 되네. 나도 늙은 걸까. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Gus/162.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_fall_movie_0_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "방금 영화는 요점이 뭐였지? 난 이해가 안 되네. 나도 늙은 걸까."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_like_BeforeMovie",
+          "DialogueText": "*킁* *킁* ... 어디서 맛있는 냄새가 나는데...",
+          "AudioPath": "assets/ko-KR/Gus/163.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "*킁* *킁* ... 어디서 맛있는 냄새가 나는데..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Gus_like_AfterMovie",
+          "DialogueText": "나쁘지 않네. 정말 오길 잘했어!",
+          "AudioPath": "assets/ko-KR/Gus/164.ogg",
+          "TranslationKey": "Strings/MovieReactions:Gus_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "나쁘지 않네. 정말 오길 잘했어!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Gus",
+          "DialogueText": "평소 마을 축제라면 내가 음식을 다 준비하거든. 하지만 오늘은 아니지! 그냥 이렇게 쉴 수 있는 것도 좋네. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Gus/165.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "평소 마을 축제라면 내가 음식을 다 준비하거든. 하지만 오늘은 아니지! 그냥 이렇게 쉴 수 있는 것도 좋네."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Gus",
+          "DialogueText": "맛있는 거 먹을 준비되었나?",
+          "AudioPath": "assets/ko-KR/Gus/166.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Gus",
+          "PageIndex": 0,
+          "DisplayPattern": "맛있는 거 먹을 준비되었나?"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_Greeting",
+          "DialogueText": "들어오시게, 들어와!",
+          "AudioPath": "assets/ko-KR/Gus/167.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_Greeting",
+          "PageIndex": 0,
+          "DisplayPattern": "들어오시게, 들어와!"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_Summer",
+          "DialogueText": "차가운 걸로 한잔?",
+          "AudioPath": "assets/ko-KR/Gus/168.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_Summer",
+          "PageIndex": 0,
+          "DisplayPattern": "차가운 걸로 한잔?"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_NotSummer",
+          "DialogueText": "뭐 갖다 줄까?",
+          "AudioPath": "assets/ko-KR/Gus/169.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_NotSummer",
+          "PageIndex": 0,
+          "DisplayPattern": "뭐 갖다 줄까?"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_Snowing1",
+          "DialogueText": "밖은 춥지만 우리 커피는 뜨겁지!",
+          "AudioPath": "assets/ko-KR/Gus/170.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_Snowing1",
+          "PageIndex": 0,
+          "DisplayPattern": "밖은 춥지만 우리 커피는 뜨겁지!"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_NotSnowing1",
+          "DialogueText": "따끈한 한 끼 필요해?",
+          "AudioPath": "assets/ko-KR/Gus/171.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_NotSnowing1",
+          "PageIndex": 0,
+          "DisplayPattern": "따끈한 한 끼 필요해?"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_Raining",
+          "DialogueText": "뜨끈한 걸로 한잔?",
+          "AudioPath": "assets/ko-KR/Gus/172.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_Raining",
+          "PageIndex": 0,
+          "DisplayPattern": "뜨끈한 걸로 한잔?"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_NotRaining",
+          "DialogueText": "뭐라도 한잔 줄까?",
+          "AudioPath": "assets/ko-KR/Gus/173.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_NotRaining",
+          "PageIndex": 0,
+          "DisplayPattern": "뭐라도 한잔 줄까?"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_Snowing2",
+          "DialogueText": "추운데 있지말고 들어와!",
+          "AudioPath": "assets/ko-KR/Gus/174.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_Snowing2",
+          "PageIndex": 0,
+          "DisplayPattern": "추운데 있지말고 들어와!"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_NotSnowing2",
+          "DialogueText": "환영하네!",
+          "AudioPath": "assets/ko-KR/Gus/175.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_NotSnowing2",
+          "PageIndex": 0,
+          "DisplayPattern": "환영하네!"
+        },
+        {
+          "DialogueFrom": "Saloon_Gus_RareGreeting",
+          "DialogueText": "뭔가 한잔 필요한 얼굴인데.",
+          "AudioPath": "assets/ko-KR/Gus/176.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:Saloon_Gus_RareGreeting",
+          "PageIndex": 0,
+          "DisplayPattern": "뭔가 한잔 필요한 얼굴인데."
+        }
+      ]
+    }
+  ]
+}

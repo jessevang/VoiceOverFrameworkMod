@@ -1,0 +1,162 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Gil.ru-RU",
+      "VoicePackName": "DictionarV2 (Gil - ru-RU)",
+      "Character": "Gil",
+      "Language": "ru-RU",
+      "Entries": [
+        {
+          "DialogueFrom": "Snoring",
+          "DialogueText": "...*Храпит*...",
+          "AudioPath": "assets/ru-RU/Gil/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Gil:Snoring",
+          "PageIndex": 0,
+          "DisplayPattern": "...*Храпит*..."
+        },
+        {
+          "DialogueFrom": "ComeBackLater",
+          "DialogueText": "... Возвращайся, когда у тебя будет, что мне показать, молодежь.",
+          "AudioPath": "assets/ru-RU/Gil/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Gil:ComeBackLater",
+          "PageIndex": 0,
+          "DisplayPattern": "... Возвращайся, когда у тебя будет, что мне показать, молодежь."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_NoRating",
+          "DialogueText": "Вот и новый день... Возвращайся, когда покажешь себя в пещерах.",
+          "AudioPath": "assets/ru-RU/Gil/3.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_NoRating",
+          "PageIndex": 0,
+          "DisplayPattern": "Вот и новый день... Возвращайся, когда покажешь себя в пещерах."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_NextYear",
+          "DialogueText": "На этот год все... *храпит*...",
+          "AudioPath": "assets/ru-RU/Gil/4.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_NextYear",
+          "PageIndex": 0,
+          "DisplayPattern": "На этот год все... *храпит*..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_ComeBack",
+          "DialogueText": "На сегодня все. Завтра можешь постараться снова, если не дрогнешь... *храпит*...",
+          "AudioPath": "assets/ru-RU/Gil/5.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_ComeBack",
+          "PageIndex": 0,
+          "DisplayPattern": "На сегодня все. Завтра можешь постараться снова, если не дрогнешь... *храпит*..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_SubmitRating",
+          "DialogueText": "Предъявить Гилу яичный рейтинг за сегодняшний день?",
+          "AudioPath": "assets/ru-RU/Gil/6_male.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_SubmitRating",
+          "PageIndex": 0,
+          "DisplayPattern": "Предъявить Гилу яичный рейтинг за сегодняшний день?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_SubmitRating",
+          "DialogueText": "(Яичный рейтинг: {0})",
+          "AudioPath": "assets/ru-RU/Gil/7_female.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_SubmitRating",
+          "PageIndex": 1,
+          "DisplayPattern": "(Яичный рейтинг: {0})",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_1to4",
+          "DialogueText": "...{0}? Ха-ха-ха-ха... Ну ладно, малыш. Вот тебе призочек... А теперь беги поиграй с другими детишками.",
+          "AudioPath": "assets/ru-RU/Gil/8_male.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_1to4",
+          "PageIndex": 0,
+          "DisplayPattern": "...{0}? Ха-ха-ха-ха... Ну ладно, малыш. Вот тебе призочек... А теперь беги поиграй с другими детишками.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_1to4",
+          "DialogueText": "...{0}? Ха-ха-ха-ха... Ну ладно, малышка. Вот тебе призочек... А теперь беги поиграй с другими детишками.",
+          "AudioPath": "assets/ru-RU/Gil/9_female.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_1to4",
+          "PageIndex": 1,
+          "DisplayPattern": "...{0}? Ха-ха-ха-ха... Ну ладно, малышка. Вот тебе призочек... А теперь беги поиграй с другими детишками.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_5to9",
+          "DialogueText": "...{0}? Не шибко высокий рейтинг, зато у тебя хватило дерзости на попытку. Вот тебе кое-что.",
+          "AudioPath": "assets/ru-RU/Gil/10.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_5to9",
+          "PageIndex": 0,
+          "DisplayPattern": "...{0}? Не шибко высокий рейтинг, зато у тебя хватило дерзости на попытку. Вот тебе кое-что."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_10to14",
+          "DialogueText": "{0}, хм? Неплохо-неплохо... Хотя я в твоем возрасте в два раза больше выбивал. С Ржавым мечом да без еды!",
+          "AudioPath": "assets/ru-RU/Gil/11.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_10to14",
+          "PageIndex": 0,
+          "DisplayPattern": "{0}, хм? Неплохо-неплохо... Хотя я в твоем возрасте в два раза больше выбивал. С Ржавым мечом да без еды!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_15to19",
+          "DialogueText": "{0}... Весьма недурно. Мы в нашей Гильдии меньшего и не ждем. Вот твой приз.",
+          "AudioPath": "assets/ru-RU/Gil/12.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_15to19",
+          "PageIndex": 0,
+          "DisplayPattern": "{0}... Весьма недурно. Мы в нашей Гильдии меньшего и не ждем. Вот твой приз."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_20to24",
+          "DialogueText": "{0}? Хорошо, я впечатлен...",
+          "AudioPath": "assets/ru-RU/Gil/13.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_20to24",
+          "PageIndex": 0,
+          "DisplayPattern": "{0}? Хорошо, я впечатлен..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_20to24",
+          "DialogueText": "Эй, Марлон! Ты глянь... {0} сегодня вон с каким результатом!",
+          "AudioPath": "assets/ru-RU/Gil/14.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_20to24",
+          "PageIndex": 1,
+          "DisplayPattern": "Эй, Марлон! Ты глянь... {0} сегодня вон с каким результатом!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_25",
+          "DialogueText": "{0}!?!",
+          "AudioPath": "assets/ru-RU/Gil/15.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_25",
+          "PageIndex": 0,
+          "DisplayPattern": "{0}!?!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_25",
+          "DialogueText": "Вот те раз! Да у нас тут настоящий охотник на яйца Калико!",
+          "AudioPath": "assets/ru-RU/Gil/16.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_25",
+          "PageIndex": 1,
+          "DisplayPattern": "Вот те раз! Да у нас тут настоящий охотник на яйца Калико!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_50",
+          "DialogueText": "{0}!?!?!?!?!?!?!? {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Gil/17.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_50",
+          "PageIndex": 0,
+          "DisplayPattern": "{0}!?!?!?!?!?!?!?"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Gil_Rating_1000",
+          "DialogueText": "Ты слышишь голос в своей голове: «Позор тому, кто предъявит яичный рейтинг, накрученный при помощи читерства!»",
+          "AudioPath": "assets/ru-RU/Gil/18.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Gil_Rating_1000",
+          "PageIndex": 0,
+          "DisplayPattern": "Ты слышишь голос в своей голове: «Позор тому, кто предъявит яичный рейтинг, накрученный при помощи читерства!»"
+        }
+      ]
+    }
+  ]
+}

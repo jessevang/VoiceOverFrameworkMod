@@ -1,0 +1,840 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Vincent.ja-JP",
+      "VoicePackName": "DictionarV2 (Vincent - ja-JP)",
+      "Character": "Vincent",
+      "Language": "ja-JP",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "はじめまして！ボクはヴィンセント。",
+          "AudioPath": "assets/ja-JP/Vincent/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "はじめまして！ボクはヴィンセント。"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "おかあさんが 知らない人と 話しちゃ ダメだって 言ってるけど…あなたなら 大丈夫そう。",
+          "AudioPath": "assets/ja-JP/Vincent/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "おかあさんが 知らない人と 話しちゃ ダメだって 言ってるけど…あなたなら 大丈夫そう。"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "誕生日プレゼント？ぼくに？",
+          "AudioPath": "assets/ja-JP/Vincent/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "誕生日プレゼント？ぼくに？"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "うわぁ！すっごく欲しかったんだ！やったー！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Vincent/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptBirthdayGift_Positive",
+          "PageIndex": 1,
+          "DisplayPattern": "うわぁ！すっごく欲しかったんだ！やったー！"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "誕生日プレゼント？なーんだ… あまりうれしくないや {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "誕生日プレゼント？なーんだ… あまりうれしくないや"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "わぁ！とっても甘いね！うん… おいしいよ！",
+          "AudioPath": "assets/ja-JP/Vincent/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "わぁ！とっても甘いね！うん… おいしいよ！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)FrogEgg",
+          "DialogueText": "（つるん つるん）…えーっ！これをくれるの？もらっていいの？やったー！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Vincent/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptGift_(TR)FrogEgg",
+          "PageIndex": 0,
+          "DisplayPattern": "（つるん つるん）…えーっ！これをくれるの？もらっていいの？やったー！"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "お母さん！外に出て遊びたいよ！%noturn",
+          "AudioPath": "assets/ja-JP/Vincent/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "お母さん！外に出て遊びたいよ！"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "ヴィンセントはコケにおおわれている。",
+          "AudioPath": "assets/ja-JP/Vincent/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "ヴィンセントはコケにおおわれている。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Negative_alcohol_item",
+          "DialogueText": "（クンクン）… これはなに？変なにおい…ねえ、お母さーん！ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptGift_Negative_alcohol_item",
+          "PageIndex": 0,
+          "DisplayPattern": "（クンクン）… これはなに？変なにおい…ねえ、お母さーん！"
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "とても楽しかったよ！いつかボートの船長になりたいな！",
+          "AudioPath": "assets/ja-JP/Vincent/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "とても楽しかったよ！いつかボートの船長になりたいな！"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "すぐに戻って来たいよ！",
+          "AudioPath": "assets/ja-JP/Vincent/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "すぐに戻って来たいよ！"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "サメを見てみたいな！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Vincent/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "サメを見てみたいな！"
+        },
+        {
+          "DialogueFrom": "married_Sam",
+          "DialogueText": "ボクのお兄ちゃんをつれていかないで！ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:married_Sam",
+          "PageIndex": 0,
+          "DisplayPattern": "ボクのお兄ちゃんをつれていかないで！"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "近くで見ると、小さな虫が砂の中から飛び出しているのが見えるんだ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Vincent/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "近くで見ると、小さな虫が砂の中から飛び出しているのが見えるんだ。"
+        },
+        {
+          "DialogueFrom": "reject_869",
+          "DialogueText": "おおー！よく見つけたね！",
+          "AudioPath": "assets/ja-JP/Vincent/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:reject_869",
+          "PageIndex": 0,
+          "DisplayPattern": "おおー！よく見つけたね！"
+        },
+        {
+          "DialogueFrom": "reject_869",
+          "DialogueText": "お母さんは飼っちゃダメって言ってるけど… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:reject_869",
+          "PageIndex": 1,
+          "DisplayPattern": "お母さんは飼っちゃダメって言ってるけど…"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "大きくなったら、 お兄ちゃん みたいに なりたいな！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Vincent/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "大きくなったら、 お兄ちゃん みたいに なりたいな！"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "うん！じゃあね！",
+          "AudioPath": "assets/ja-JP/Vincent/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "うん！じゃあね！"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "おとうさんが戻ってうれしいけどさ、前とは様子が違うんだ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "おとうさんが戻ってうれしいけどさ、前とは様子が違うんだ。"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "おとうさんとはあんまり会えないんだ…一緒に遊びたいよ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "おとうさんとはあんまり会えないんだ…一緒に遊びたいよ。"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "はぁ… 今日は これ以上 おかあさんから グミが もらえないんだ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "はぁ… 今日は これ以上 おかあさんから グミが もらえないんだ。"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "お兄さん、 秘密だよ？",
+          "AudioPath": "assets/ja-JP/Vincent/23_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "お兄さん、 秘密だよ？",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "お姉さん、 秘密だよ？ {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Vincent/24_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 1,
+          "DisplayPattern": "お姉さん、 秘密だよ？",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "大きくなったら、 ペニーさんと 結婚したいんだ。",
+          "AudioPath": "assets/ja-JP/Vincent/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 2,
+          "DisplayPattern": "大きくなったら、 ペニーさんと 結婚したいんだ。"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "ペニーさんには 言わないでね。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Vincent/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 3,
+          "DisplayPattern": "ペニーさんには 言わないでね。"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "虫を 探したいけど、 泥まみれになると おかあさんに しかられるんだ。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Vincent/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "虫を 探したいけど、 泥まみれになると おかあさんに しかられるんだ。"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "難しいよね。",
+          "AudioPath": "assets/ja-JP/Vincent/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "難しいよね。"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "おなかすいた… おかあさんは どこ？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "おなかすいた… おかあさんは どこ？"
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "あなたって、 他の 大人と 違って 面白いんだね！",
+          "AudioPath": "assets/ja-JP/Vincent/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Thu2",
+          "PageIndex": 0,
+          "DisplayPattern": "あなたって、 他の 大人と 違って 面白いんだね！"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "うわっ、 また テンサイの煮込み… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "うわっ、 また テンサイの煮込み…"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "$e",
+          "AudioPath": "assets/ja-JP/Vincent/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "サイアクだよ…今夜は おかあさんが レンズマメの スープを 作るんだって。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "サイアクだよ…今夜は おかあさんが レンズマメの スープを 作るんだって。"
+        },
+        {
+          "DialogueFrom": "Sat_1",
+          "DialogueText": "もうすぐ おとうさんが 帰ってくるんだって！",
+          "AudioPath": "assets/ja-JP/Vincent/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat_1",
+          "PageIndex": 0,
+          "DisplayPattern": "もうすぐ おとうさんが 帰ってくるんだって！"
+        },
+        {
+          "DialogueFrom": "Sat_1",
+          "DialogueText": "お土産の オモチャは ないかな。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Vincent/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat_1",
+          "PageIndex": 1,
+          "DisplayPattern": "お土産の オモチャは ないかな。"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "ペニーさんは 毎週 新しい 本を 読ませてくれるんだ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "ペニーさんは 毎週 新しい 本を 読ませてくれるんだ。"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "時々、 本を 選ばせてくれることも あるんだよ！",
+          "AudioPath": "assets/ja-JP/Vincent/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "時々、 本を 選ばせてくれることも あるんだよ！"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "おとうさんが帰ってきたけど、何か変。いったいどうしたんだろう？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "おとうさんが帰ってきたけど、何か変。いったいどうしたんだろう？"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "ボクと一緒に遊んでくれないんだ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "ボクと一緒に遊んでくれないんだ。"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "ちゃんと帰ってくるかなぁって思ってしまう。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat8",
+          "PageIndex": 2,
+          "DisplayPattern": "ちゃんと帰ってくるかなぁって思ってしまう。"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "こんにちは、 お兄さん！",
+          "AudioPath": "assets/ja-JP/Vincent/41_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、 お兄さん！",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "こんにちは、 お姉さん！",
+          "AudioPath": "assets/ja-JP/Vincent/42_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "こんにちは、 お姉さん！",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "こんにちは、{Farmer_Name}おじさん！",
+          "AudioPath": "assets/ja-JP/Vincent/43_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun10",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、おじさん！",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "こんにちは、{Farmer_Name}おばさん！",
+          "AudioPath": "assets/ja-JP/Vincent/44_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun10",
+          "PageIndex": 1,
+          "DisplayPattern": "こんにちは、おばさん！",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "大人では あなたが 好きだって… おかあさんには 言わないでね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Vincent/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun10",
+          "PageIndex": 2,
+          "DisplayPattern": "大人では あなたが 好きだって… おかあさんには 言わないでね。"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s0",
+          "DialogueText": "I'm really excited, Sam!",
+          "AudioPath": "assets/ja-JP/Vincent/46.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm really excited, Sam!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s1",
+          "DialogueText": "OK!",
+          "AudioPath": "assets/ja-JP/Vincent/47.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "OK!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s2",
+          "DialogueText": "Me too!",
+          "AudioPath": "assets/ja-JP/Vincent/48.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Me too!"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184643:s0",
+          "DialogueText": "Does this mean I don't have to do my homework? {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Vincent/49.ogg",
+          "TranslationKey": "Events/Town:6184643:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Does this mean I don't have to do my homework?"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184643:s1",
+          "DialogueText": "I've been thinking about cake a lot lately...",
+          "AudioPath": "assets/ja-JP/Vincent/50.ogg",
+          "TranslationKey": "Events/Town:6184643:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been thinking about cake a lot lately..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s0",
+          "DialogueText": "Sam...? {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Vincent/51.ogg",
+          "TranslationKey": "Events/Beach:733330:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Sam...?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s1",
+          "DialogueText": "Is Dad ever going to come home? {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/52.ogg",
+          "TranslationKey": "Events/Beach:733330:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Is Dad ever going to come home?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s2",
+          "DialogueText": "But I heard some grown-ups saying that... that all of our troops are getting shot to pieces. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/53.ogg",
+          "TranslationKey": "Events/Beach:733330:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "But I heard some grown-ups saying that... that all of our troops are getting shot to pieces."
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s3",
+          "DialogueText": "Okay!",
+          "AudioPath": "assets/ja-JP/Vincent/54.ogg",
+          "TranslationKey": "Events/Beach:733330:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s0|g=male",
+          "DialogueText": "Mr. {Farmer_Name}, are you going to marry Miss Penny? {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/55_male.ogg",
+          "TranslationKey": "Events/Forest:181928:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Mr. , are you going to marry Miss Penny?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s1|g=female",
+          "DialogueText": "Ms. {Farmer_Name}... Um, do you have a boyfriend?",
+          "AudioPath": "assets/ja-JP/Vincent/56_female.ogg",
+          "TranslationKey": "Events/Forest:181928:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ms. ... Um, do you have a boyfriend?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseFarming:s0",
+          "DialogueText": "Um, Farmer {Farmer_Name}? If I eat your veggies will I grow up strong like my big brother Sam?",
+          "AudioPath": "assets/ja-JP/Vincent/57.ogg",
+          "TranslationKey": "Events/Forest:choseFarming:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Um, Farmer ? If I eat your veggies will I grow up strong like my big brother Sam?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseFarming:s1",
+          "DialogueText": "He's so strong, I saw him lift Miss Penny clear off the ground last night when they were climbing into a tree. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Vincent/58.ogg",
+          "TranslationKey": "Events/Forest:choseFarming:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "He's so strong, I saw him lift Miss Penny clear off the ground last night when they were climbing into a tree."
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseAnimals:s0",
+          "DialogueText": "Farmer {Farmer_Name}? Can I put a saddle on one of your cows and ride it into town? I wanna be a real cowboy!",
+          "AudioPath": "assets/ja-JP/Vincent/59.ogg",
+          "TranslationKey": "Events/Forest:choseAnimals:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Farmer ? Can I put a saddle on one of your cows and ride it into town? I wanna be a real cowboy!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseMinerals:s0",
+          "DialogueText": "Farmer {Farmer_Name}? Is it true that goblins live deep in the caves... and that they like to kidnap little girls for their dinner?",
+          "AudioPath": "assets/ja-JP/Vincent/60.ogg",
+          "TranslationKey": "Events/Forest:choseMinerals:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Farmer ? Is it true that goblins live deep in the caves... and that they like to kidnap little girls for their dinner?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s0",
+          "DialogueText": "... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/61.ogg",
+          "TranslationKey": "Events/Forest:318560:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s1",
+          "DialogueText": "Why is it locked? I wanna explore the sewers! {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/62.ogg",
+          "TranslationKey": "Events/Forest:318560:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Why is it locked? I wanna explore the sewers!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s2",
+          "DialogueText": "Professor Gunther? The man who runs the museum? Why do you think he has it? {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Vincent/63.ogg",
+          "TranslationKey": "Events/Forest:318560:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Professor Gunther? The man who runs the museum? Why do you think he has it?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s0|g=male",
+          "DialogueText": "Hiya, mister {Farmer_Name}!",
+          "AudioPath": "assets/ja-JP/Vincent/64_male.ogg",
+          "TranslationKey": "Events/Forest:3910979:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hiya, mister !",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s1|g=female",
+          "DialogueText": "Hiya, miss {Farmer_Name}!",
+          "AudioPath": "assets/ja-JP/Vincent/65_female.ogg",
+          "TranslationKey": "Events/Forest:3910979:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hiya, miss !",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s2",
+          "DialogueText": "Sp..spwing onion. Mom sends me out to pick these sometimes...",
+          "AudioPath": "assets/ja-JP/Vincent/66.ogg",
+          "TranslationKey": "Events/Forest:3910979:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Sp..spwing onion. Mom sends me out to pick these sometimes..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s3",
+          "DialogueText": "You're really nice for a grown-up... so I'm going to show you a secret. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Vincent/67.ogg",
+          "TranslationKey": "Events/Forest:3910979:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "You're really nice for a grown-up... so I'm going to show you a secret."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s4",
+          "DialogueText": "When you see it like this, it looks good, right?",
+          "AudioPath": "assets/ja-JP/Vincent/68.ogg",
+          "TranslationKey": "Events/Forest:3910979:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "When you see it like this, it looks good, right?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s5",
+          "DialogueText": "But if you peel it a little bit...",
+          "AudioPath": "assets/ja-JP/Vincent/69.ogg",
+          "TranslationKey": "Events/Forest:3910979:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "But if you peel it a little bit..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s6",
+          "DialogueText": "...It's full of bugs! {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/70.ogg",
+          "TranslationKey": "Events/Forest:3910979:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "...It's full of bugs!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s7",
+          "DialogueText": "Cool, huh? {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Vincent/71.ogg",
+          "TranslationKey": "Events/Forest:3910979:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Cool, huh?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s8",
+          "DialogueText": "Usually I just squash 'em!",
+          "AudioPath": "assets/ja-JP/Vincent/72.ogg",
+          "TranslationKey": "Events/Forest:3910979:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Usually I just squash 'em!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Vincent",
+          "DialogueText": "モオー！モオー！",
+          "AudioPath": "assets/ja-JP/Vincent/73.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "モオー！モオー！"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Vincent_y2",
+          "DialogueText": "お父さん！もう一回的あてゲームをやってもいい？お願い！ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Vincent/74.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "お父さん！もう一回的あてゲームをやってもいい？お願い！"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Vincent",
+          "DialogueText": "おかあさんが、ボクは迷路に行っちゃダメって。ぐすっ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/75.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "おかあさんが、ボクは迷路に行っちゃダメって。ぐすっ…"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Vincent_y2",
+          "DialogueText": "もう迷路はおしまい？賞品は？ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Vincent/76.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "もう迷路はおしまい？賞品は？"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Vincent",
+          "DialogueText": "エッグハントはいつはじまるの？！すっごく楽しみ！！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Vincent/77.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "エッグハントはいつはじまるの？！すっごく楽しみ！！"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Vincent_y2",
+          "DialogueText": "大きなタマゴの中に住んでみたいな！",
+          "AudioPath": "assets/ja-JP/Vincent/78.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "大きなタマゴの中に住んでみたいな！"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Vincent",
+          "DialogueText": "不公平だよ…なんでボクはフラワークイーンになれないの？",
+          "AudioPath": "assets/ja-JP/Vincent/79.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "不公平だよ…なんでボクはフラワークイーンになれないの？"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Vincent_y2",
+          "DialogueText": "フラワークイーンがいるなら… フラワーキングもいるはずだよね！ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Vincent/80.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "フラワークイーンがいるなら… フラワーキングもいるはずだよね！"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Vincent",
+          "DialogueText": "あきちゃった…",
+          "AudioPath": "assets/ja-JP/Vincent/81.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "あきちゃった…"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Vincent_y2",
+          "DialogueText": "どうして潮だまりであそんじゃいけないの？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/82.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "どうして潮だまりであそんじゃいけないの？"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Vincent",
+          "DialogueText": "グリーンはレアなんだよ！見たいなあ！",
+          "AudioPath": "assets/ja-JP/Vincent/83.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "グリーンはレアなんだよ！見たいなあ！"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Vincent_y2",
+          "DialogueText": "一度だけクラゲをさわったことがあるけど、さされちゃったんだ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/84.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "一度だけクラゲをさわったことがあるけど、さされちゃったんだ。"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Vincent",
+          "DialogueText": "ねえ、いまプレゼント開けちゃダメ？！",
+          "AudioPath": "assets/ja-JP/Vincent/85.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "ねえ、いまプレゼント開けちゃダメ？！"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Vincent_y2",
+          "DialogueText": "ずっとほしかった恐竜のおもちゃだ！ほら！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Vincent/86.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "ずっとほしかった恐竜のおもちゃだ！ほら！"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Vincent_y2",
+          "DialogueText": "えっと… これはス… ステゴ… ステゴサウルスっていうんだよ！ …きっと。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Vincent/87.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Vincent_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "えっと… これはス… ステゴ… ステゴサウルスっていうんだよ！ …きっと。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Vincent",
+          "DialogueText": "氷の下にでっかいのがいたよ！",
+          "AudioPath": "assets/ja-JP/Vincent/88.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "氷の下にでっかいのがいたよ！"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Vincent_y2",
+          "DialogueText": "お兄ちゃんといっしょに雪だるまをつくってるんだ！ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Vincent/89.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "お兄ちゃんといっしょに雪だるまをつくってるんだ！"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s0",
+          "DialogueText": "うわぁ、ありがとう！これ、めちゃくちゃすごいや！",
+          "AudioPath": "assets/ja-JP/Vincent/90.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "うわぁ、ありがとう！これ、めちゃくちゃすごいや！"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s1",
+          "DialogueText": "ぼくにくれるの？わあ、ありがとう！",
+          "AudioPath": "assets/ja-JP/Vincent/91.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "ぼくにくれるの？わあ、ありがとう！"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s2",
+          "DialogueText": "つまんないの… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/92.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "つまんないの…"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s3",
+          "DialogueText": "うえーっ、なにこれ？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/93.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "うえーっ、なにこれ？"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s4",
+          "DialogueText": "ありがとう！",
+          "AudioPath": "assets/ja-JP/Vincent/94.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "ありがとう！"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_love_BeforeMovie",
+          "DialogueText": "とても興奮してるよ！お母さんもお菓子を食べられるって言ってる！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Vincent/95.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "とても興奮してるよ！お母さんもお菓子を食べられるって言ってる！"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_love_DuringMovie",
+          "DialogueText": "ヴィンセントは衝撃を受けてる！」",
+          "AudioPath": "assets/ja-JP/Vincent/96.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_love_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "ヴィンセントは衝撃を受けてる！」"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_love_AfterMovie",
+          "DialogueText": "とても楽しかったよ！また会いたいね！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Vincent/97.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "とても楽しかったよ！また会いたいね！"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_dislike_BeforeMovie",
+          "DialogueText": "で...でもね...この映画は大人向けですよね？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/98.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "で...でもね...この映画は大人向けですよね？"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_dislike_DuringMovie",
+          "DialogueText": "ヴィンセントは彼の席にそわそわしてる。」",
+          "AudioPath": "assets/ja-JP/Vincent/99.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_dislike_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "ヴィンセントは彼の席にそわそわしてる。」"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_dislike_AfterMovie",
+          "DialogueText": "退屈だった...何も分からなかった。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Vincent/100.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "退屈だった...何も分からなかった。"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Vincent",
+          "DialogueText": "お母さん、たいくつだよ！",
+          "AudioPath": "assets/ja-JP/Vincent/101.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "お母さん、たいくつだよ！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Vincent",
+          "DialogueText": "こんにちは！えーと…いろいろ見つけてきたんだ。買ってくれる？",
+          "AudioPath": "assets/ja-JP/Vincent/102.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは！えーと…いろいろ見つけてきたんだ。買ってくれる？"
+        }
+      ]
+    }
+  ]
+}

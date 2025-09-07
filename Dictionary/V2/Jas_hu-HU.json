@@ -1,0 +1,964 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Jas.hu-HU",
+      "VoicePackName": "DictionarV2 (Jas - hu-HU)",
+      "Character": "Jas",
+      "Language": "hu-HU",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "... {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Jas/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Szia... {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Jas/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "Szia..."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "Váó, egy szülinapi ajándék! Imádom! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "Váó, egy szülinapi ajándék! Imádom!"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Félek... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "Félek..."
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Remélem az eső nem fogja bezöldíteni a ruhámat... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Remélem az eső nem fogja bezöldíteni a ruhámat..."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "Egy szülinapi ajándék? Ó... Ez nem tetszik. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "Egy szülinapi ajándék? Ó... Ez nem tetszik."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Biztos vagy benne? Olyan jó az illata! Naponta csak egy gyűszűnyit fogok belőle inni. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Biztos vagy benne? Olyan jó az illata! Naponta csak egy gyűszűnyit fogok belőle inni."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)FairyBox",
+          "DialogueText": "Váó, ez annyira szép! És egy tündérke van benne? *kacag*... Hallom ahogy énekel. Ő lesz a titkos barátom. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_(TR)FairyBox",
+          "PageIndex": 0,
+          "DisplayPattern": "Váó, ez annyira szép! És egy tündérke van benne? *kacag*... Hallom ahogy énekel. Ő lesz a titkos barátom."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)103",
+          "DialogueText": "Óh, egy játékbaba! Kissé piszkos, de majd megfürdetem. Köszönöm! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_(O)103",
+          "PageIndex": 0,
+          "DisplayPattern": "Óh, egy játékbaba! Kissé piszkos, de majd megfürdetem. Köszönöm!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Positive_doll_item",
+          "DialogueText": "Óh, őt kedvelem! Jól be fog illeszkedni a többi barátom közé. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_Positive_doll_item",
+          "PageIndex": 0,
+          "DisplayPattern": "Óh, őt kedvelem! Jól be fog illeszkedni a többi barátom közé."
+        },
+        {
+          "DialogueFrom": "AcceptGift_Negative_alcohol_item",
+          "DialogueText": "Öhm... Ezt nem szabadna meginnom. Ez nem csak felnőtteknek való? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_Negative_alcohol_item",
+          "PageIndex": 0,
+          "DisplayPattern": "Öhm... Ezt nem szabadna meginnom. Ez nem csak felnőtteknek való?"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Negative_coffee_item",
+          "DialogueText": "Óh... Marnie néni még nem engedi nekem, hogy kávét igyak... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_Negative_coffee_item",
+          "PageIndex": 0,
+          "DisplayPattern": "Óh... Marnie néni még nem engedi nekem, hogy kávét igyak..."
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "Látok egy rákot!",
+          "AudioPath": "assets/hu-HU/Jas/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "Látok egy rákot!"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "Homok került a cipőmbe... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "Homok került a cipőmbe..."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Kagylókat gyűjtök... Csinálok egy nyakláncot!",
+          "AudioPath": "assets/hu-HU/Jas/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "Kagylókat gyűjtök... Csinálok egy nyakláncot!"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Marnie néni mondta, hogy ne égjek le... De mikor gyorsan sétálok, akkor az jó érzés, szóval szerintem jól leszek. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Marnie néni mondta, hogy ne égjek le... De mikor gyorsan sétálok, akkor az jó érzés, szóval szerintem jól leszek."
+        },
+        {
+          "DialogueFrom": "movieTheater",
+          "DialogueText": "Marnie néni azt mondta, hogy még nem vagyok elég idős ahhoz, hogy egyedül moziba menjek... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:movieTheater",
+          "PageIndex": 0,
+          "DisplayPattern": "Marnie néni azt mondta, hogy még nem vagyok elég idős ahhoz, hogy egyedül moziba menjek..."
+        },
+        {
+          "DialogueFrom": "reject_869",
+          "DialogueText": "Fúj, undi! {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:reject_869",
+          "PageIndex": 0,
+          "DisplayPattern": "Fúj, undi!"
+        },
+        {
+          "DialogueFrom": "married_Shane",
+          "DialogueText": "Remélem Shane továbbra is eljön meglátogatni engem... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:married_Shane",
+          "PageIndex": 0,
+          "DisplayPattern": "Remélem Shane továbbra is eljön meglátogatni engem..."
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "*sóhaj*... Remélem egy napon én is meg fogok házasodni. {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Jas/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:married",
+          "PageIndex": 0,
+          "DisplayPattern": "*sóhaj*... Remélem egy napon én is meg fogok házasodni."
+        },
+        {
+          "DialogueFrom": "cropMatured_595",
+          "DialogueText": "Öhm... Találkoztál már tündérrel?",
+          "AudioPath": "assets/hu-HU/Jas/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:cropMatured_595",
+          "PageIndex": 0,
+          "DisplayPattern": "Öhm... Találkoztál már tündérrel?"
+        },
+        {
+          "DialogueFrom": "cropMatured_595",
+          "DialogueText": "Váó! Én is látni akarok egyet. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:cropMatured_595",
+          "PageIndex": 1,
+          "DisplayPattern": "Váó! Én is látni akarok egyet."
+        },
+        {
+          "DialogueFrom": "cropMatured_595",
+          "DialogueText": "...Még én sem. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:cropMatured_595",
+          "PageIndex": 2,
+          "DisplayPattern": "...Még én sem."
+        },
+        {
+          "DialogueFrom": "eventSeen_3910975",
+          "DialogueText": "...Shane jól lesz? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:eventSeen_3910975",
+          "PageIndex": 0,
+          "DisplayPattern": "...Shane jól lesz?"
+        },
+        {
+          "DialogueFrom": "eventSeen_3910975_memory_oneweek",
+          "DialogueText": "Egyszer olyan rémálmom volt, hogy ég a házunk... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:eventSeen_3910975_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "Egyszer olyan rémálmom volt, hogy ég a házunk..."
+        },
+        {
+          "DialogueFrom": "eventSeen_3910974",
+          "DialogueText": "*kacag* ...nézd, igazi nyuszókás papucsom van! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:eventSeen_3910974",
+          "PageIndex": 0,
+          "DisplayPattern": "*kacag* ...nézd, igazi nyuszókás papucsom van!"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Ó...Marnie nénit keresed? {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Jas/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Ó...Marnie nénit keresed?"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Helló, {Farmer_Name} úr.",
+          "AudioPath": "assets/hu-HU/Jas/28_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "Helló, úr.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Helló, {Farmer_Name} néni.",
+          "AudioPath": "assets/hu-HU/Jas/29_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "Helló, néni.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Jó móka farmon élni. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Mon4",
+          "PageIndex": 2,
+          "DisplayPattern": "Jó móka farmon élni."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Hogy? *kuncog* {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Hogy? *kuncog*"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "...szia.",
+          "AudioPath": "assets/hu-HU/Jas/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "...szia."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Játszhatsz a babáimmal, ha szeretnél. Csak mindig fésüld meg a hajukat, ha végeztél.",
+          "AudioPath": "assets/hu-HU/Jas/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "Játszhatsz a babáimmal, ha szeretnél. Csak mindig fésüld meg a hajukat, ha végeztél."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "... {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Jas/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Wed2",
+          "DialogueText": "...Szia. {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Jas/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed2",
+          "PageIndex": 0,
+          "DisplayPattern": "...Szia."
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "Marnie néni nem enged ki hat óra után. Ez nem igazság! {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "Marnie néni nem enged ki hat óra után. Ez nem igazság!"
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "Már nem félek a sötéttől!",
+          "AudioPath": "assets/hu-HU/Jas/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed4",
+          "PageIndex": 1,
+          "DisplayPattern": "Már nem félek a sötéttől!"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Nem szabadna idegenekkel beszélnem... {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Jas/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Nem szabadna idegenekkel beszélnem..."
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "Penny néni folyóírásra tanít. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Thu2",
+          "PageIndex": 0,
+          "DisplayPattern": "Penny néni folyóírásra tanít."
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "Olyan szép kézírása van.",
+          "AudioPath": "assets/hu-HU/Jas/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Thu2",
+          "PageIndex": 1,
+          "DisplayPattern": "Olyan szép kézírása van."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "... Nem is ismerlek. {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Jas/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "... Nem is ismerlek."
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "Tetszik a masnim?",
+          "AudioPath": "assets/hu-HU/Jas/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Fri2",
+          "PageIndex": 0,
+          "DisplayPattern": "Tetszik a masnim?"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "Szeretek a farmon élni... A kedvencem a friss fagylalt a bocijaink tejéből.",
+          "AudioPath": "assets/hu-HU/Jas/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "Szeretek a farmon élni... A kedvencem a friss fagylalt a bocijaink tejéből."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Fűillatod van. {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Jas/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Fűillatod van."
+        },
+        {
+          "DialogueFrom": "Sat2",
+          "DialogueText": "Néha folyami rákokra vadászok a folyóban. Ne mondd el Marnie néninek... de egyszer megetettem egyet egy bocival.",
+          "AudioPath": "assets/hu-HU/Jas/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat2",
+          "PageIndex": 0,
+          "DisplayPattern": "Néha folyami rákokra vadászok a folyóban. Ne mondd el Marnie néninek... de egyszer megetettem egyet egy bocival."
+        },
+        {
+          "DialogueFrom": "Sat2",
+          "DialogueText": "Nagyon ízlett neki.",
+          "AudioPath": "assets/hu-HU/Jas/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat2",
+          "PageIndex": 1,
+          "DisplayPattern": "Nagyon ízlett neki."
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Mindig olyan kedves vagy hozzám, {Farmer_Name} bácsi. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/47_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "Mindig olyan kedves vagy hozzám, bácsi.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Mindig olyan kedves vagy hozzám, {Farmer_Name} néni. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/48_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "Mindig olyan kedves vagy hozzám, néni.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "A felnőttek általában gonoszak és unalmasak, de te más vagy.",
+          "AudioPath": "assets/hu-HU/Jas/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat8",
+          "PageIndex": 2,
+          "DisplayPattern": "A felnőttek általában gonoszak és unalmasak, de te más vagy."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Őőő... sze... szeretnél valamit? {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Jas/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Őőő... sze... szeretnél valamit?"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Nem szabadna idegenekkel beszélnem. {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Jas/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Nem szabadna idegenekkel beszélnem."
+        },
+        {
+          "DialogueFrom": "Sun2",
+          "DialogueText": "Shane keveset van itthon, Marnie néni folyton elfoglalt... szóval magamnak kell kitalálnom a játékokat.",
+          "AudioPath": "assets/hu-HU/Jas/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun2",
+          "PageIndex": 0,
+          "DisplayPattern": "Shane keveset van itthon, Marnie néni folyton elfoglalt... szóval magamnak kell kitalálnom a játékokat."
+        },
+        {
+          "DialogueFrom": "Sun2",
+          "DialogueText": "Hálás vagyok az összes játékomért. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun2",
+          "PageIndex": 1,
+          "DisplayPattern": "Hálás vagyok az összes játékomért."
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "Tudtad, hogy Shane a keresztapám? A szüleim barátja volt. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun10",
+          "PageIndex": 0,
+          "DisplayPattern": "Tudtad, hogy Shane a keresztapám? A szüleim barátja volt."
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "...ők meghaltak. *szipp* {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun10",
+          "PageIndex": 1,
+          "DisplayPattern": "...ők meghaltak. *szipp*"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s0",
+          "DialogueText": "I loved it! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/56.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I loved it!"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184643:s0",
+          "DialogueText": "Ms. Penny? The cover fell off my math book... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/57.ogg",
+          "TranslationKey": "Events/Town:6184643:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ms. Penny? The cover fell off my math book..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s0",
+          "DialogueText": "A natural resource is a material source of wealth that occurs in a natural state and has economic value. {Portrait:Love}",
+          "AudioPath": "assets/hu-HU/Jas/58.ogg",
+          "TranslationKey": "Events/Forest:181928:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "A natural resource is a material source of wealth that occurs in a natural state and has economic value."
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s1",
+          "DialogueText": "Yesss! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/59.ogg",
+          "TranslationKey": "Events/Forest:181928:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Yesss!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s0",
+          "DialogueText": "Ew... it smells. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/60.ogg",
+          "TranslationKey": "Events/Forest:318560:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ew... it smells."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s1",
+          "DialogueText": "I think Gunther has the key.",
+          "AudioPath": "assets/hu-HU/Jas/61.ogg",
+          "TranslationKey": "Events/Forest:318560:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I think Gunther has the key."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s2",
+          "DialogueText": "I saw a big rusty old key fall out of his pocket one time.",
+          "AudioPath": "assets/hu-HU/Jas/62.ogg",
+          "TranslationKey": "Events/Forest:318560:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I saw a big rusty old key fall out of his pocket one time."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s3",
+          "DialogueText": "A creepy sewer door like this has just got to be a match for a big rusty old key. {Portrait:Love}",
+          "AudioPath": "assets/hu-HU/Jas/63.ogg",
+          "TranslationKey": "Events/Forest:318560:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "A creepy sewer door like this has just got to be a match for a big rusty old key."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s4",
+          "DialogueText": "There's something moving around in there! {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Jas/64.ogg",
+          "TranslationKey": "Events/Forest:318560:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "There's something moving around in there!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s0",
+          "DialogueText": "They're too spicy for me! {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/65.ogg",
+          "TranslationKey": "Events/Forest:3910979:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "They're too spicy for me!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s1",
+          "DialogueText": "Um... What do you do with the bugs, Vincent?",
+          "AudioPath": "assets/hu-HU/Jas/66.ogg",
+          "TranslationKey": "Events/Forest:3910979:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... What do you do with the bugs, Vincent?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s2",
+          "DialogueText": "*gasp*!",
+          "AudioPath": "assets/hu-HU/Jas/67.ogg",
+          "TranslationKey": "Events/Forest:3910979:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "*gasp*!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s3",
+          "DialogueText": "That's horrible! No, no, no, no, no... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/68.ogg",
+          "TranslationKey": "Events/Forest:3910979:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "That's horrible! No, no, no, no, no..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s4|g=male",
+          "DialogueText": "Mr. {Farmer_Name}? Please... put the bugs back in the grass so they can live in peace.",
+          "AudioPath": "assets/hu-HU/Jas/69_male.ogg",
+          "TranslationKey": "Events/Forest:3910979:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Mr. ? Please... put the bugs back in the grass so they can live in peace.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s5|g=female",
+          "DialogueText": "Miss {Farmer_Name}? Please... put the bugs back in the grass so they can live in peace.",
+          "AudioPath": "assets/hu-HU/Jas/70_female.ogg",
+          "TranslationKey": "Events/Forest:3910979:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Miss ? Please... put the bugs back in the grass so they can live in peace.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s6",
+          "DialogueText": "You learned how to clean the spring onion... without harming any bugs.",
+          "AudioPath": "assets/hu-HU/Jas/71.ogg",
+          "TranslationKey": "Events/Forest:3910979:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "You learned how to clean the spring onion... without harming any bugs."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s7",
+          "DialogueText": "Spring onions are now worth 5x the gold!",
+          "AudioPath": "assets/hu-HU/Jas/72.ogg",
+          "TranslationKey": "Events/Forest:3910979:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Spring onions are now worth 5x the gold!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s0",
+          "DialogueText": "...*sob*...",
+          "AudioPath": "assets/hu-HU/Jas/73.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "...*sob*..."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s0",
+          "DialogueText": "Th... These are real bunny-jewel slippers!! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/74.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Th... These are real bunny-jewel slippers!!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s1",
+          "DialogueText": "B... But these are so expensive! {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Jas/75.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "B... But these are so expensive!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s2",
+          "DialogueText": "How did you afford them? {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Jas/76.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "How did you afford them?"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s0",
+          "DialogueText": "Uncle Shane's in the barn. He said... Uh... He said to tell you he wants to show you something.",
+          "AudioPath": "assets/hu-HU/Jas/77.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Uncle Shane's in the barn. He said... Uh... He said to tell you he wants to show you something."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s1",
+          "DialogueText": "White Chicken",
+          "AudioPath": "assets/hu-HU/Jas/78.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "White Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s2",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/hu-HU/Jas/79.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s3",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/hu-HU/Jas/80.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s4",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/hu-HU/Jas/81.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s5",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/hu-HU/Jas/82.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Jas",
+          "DialogueText": "Aú! Egy csirke megcsípte a kisujjamat! {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Jas/83.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Aú! Egy csirke megcsípte a kisujjamat!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Jas_y2",
+          "DialogueText": "Múúú! Múúúúúú! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/84.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Múúú! Múúúúúú!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Jas_y2",
+          "DialogueText": "Próbálok a bébi tehenekkel beszélni. {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Jas/85.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Jas_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Próbálok a bébi tehenekkel beszélni."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Jas",
+          "DialogueText": "De Marnie néni! Be akarok menni az útvesztőbe! Én nem félek! {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/86.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "De Marnie néni! Be akarok menni az útvesztőbe! Én nem félek!"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Jas_y2",
+          "DialogueText": "Menjünk erre!%noturn {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/87.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Menjünk erre!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Jas",
+          "DialogueText": "Remélem találni fogok pár tojást, mielőtt Vincent mindent felkapkodja... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/88.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Remélem találni fogok pár tojást, mielőtt Vincent mindent felkapkodja..."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Jas_y2",
+          "DialogueText": "Mindent megteszek, hogy idén én legyek a győztes!",
+          "AudioPath": "assets/hu-HU/Jas/89.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Mindent megteszek, hogy idén én legyek a győztes!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Jas",
+          "DialogueText": "Egy napon én leszek majd a virágkirálynő!",
+          "AudioPath": "assets/hu-HU/Jas/90.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Egy napon én leszek majd a virágkirálynő!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Jas_y2",
+          "DialogueText": "*kacag* Jól csinálom? {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/91.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "*kacag* Jól csinálom?"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Jas",
+          "DialogueText": "Vincent nem táncol túl jól.",
+          "AudioPath": "assets/hu-HU/Jas/92.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Vincent nem táncol túl jól."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Jas_y2",
+          "DialogueText": "D...De... Ezt meg is kell ennem? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/93.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "D...De... Ezt meg is kell ennem?"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Jas",
+          "DialogueText": "Remélem idén lesznek kicsinyek!",
+          "AudioPath": "assets/hu-HU/Jas/94.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Remélem idén lesznek kicsinyek!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Jas_y2",
+          "DialogueText": "Honnan tudják a medúzák, hogy merre ússzanak, ha nincs szemük? {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Jas/95.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Honnan tudják a medúzák, hogy merre ússzanak, ha nincs szemük?"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Jas",
+          "DialogueText": "Ohh! Ajándékok! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/96.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Ohh! Ajándékok!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Jas_y2",
+          "DialogueText": "Ki lehet már bontani az ajándékokat? {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Jas/97.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ki lehet már bontani az ajándékokat?"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Jas",
+          "DialogueText": "Egy répaorrt akarok neki adni! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/98.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Egy répaorrt akarok neki adni!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Jas_y2",
+          "DialogueText": "A halak nem fáznak odalent? {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Jas/99.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "A halak nem fáznak odalent?"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s0",
+          "DialogueText": "*meghökken*...Váó! Köszönöm szépen! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/100.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "*meghökken*...Váó! Köszönöm szépen!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s1",
+          "DialogueText": "Szeretem az ajándékokat! Köszönöm szépen!",
+          "AudioPath": "assets/hu-HU/Jas/101.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Szeretem az ajándékokat! Köszönöm szépen!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s2",
+          "DialogueText": "Ez egy ajándék volna? Ó... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/102.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez egy ajándék volna? Ó..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s3",
+          "DialogueText": "Fúj. Ez undi. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/103.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Fúj. Ez undi."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s4",
+          "DialogueText": "Köszönöm!",
+          "AudioPath": "assets/hu-HU/Jas/104.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Köszönöm!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_love_BeforeMovie",
+          "DialogueText": "Nagyon örülök, hogy filmet nézhetek!",
+          "AudioPath": "assets/hu-HU/Jas/105.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Nagyon örülök, hogy filmet nézhetek!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_love_DuringMovie",
+          "DialogueText": "Jas nagyon boldog!",
+          "AudioPath": "assets/hu-HU/Jas/106.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_love_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Jas nagyon boldog!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_love_AfterMovie",
+          "DialogueText": "Ez olyan jó móka volt! Köszönöm, hogy elhoztál! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/107.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez olyan jó móka volt! Köszönöm, hogy elhoztál!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_like_BeforeMovie",
+          "DialogueText": "Ez egy felnőtteknek szóló film, ugye? Jó lesz!",
+          "AudioPath": "assets/hu-HU/Jas/108.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez egy felnőtteknek szóló film, ugye? Jó lesz!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_like_DuringMovie",
+          "DialogueText": "Jas bólogat és oldalra pillantgat.",
+          "AudioPath": "assets/hu-HU/Jas/109.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_like_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Jas bólogat és oldalra pillantgat."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_like_AfterMovie",
+          "DialogueText": "Szerintem jó volt! Volt benne... ööö... jó 'pár beszéd'! ...ugye?",
+          "AudioPath": "assets/hu-HU/Jas/110.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Szerintem jó volt! Volt benne... ööö... jó 'pár beszéd'! ...ugye?"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_BeforeMovie",
+          "DialogueText": "Én... Én nem tudom, hogy megnézhetem ezt... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/111.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Én... Én nem tudom, hogy megnézhetem ezt..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_DuringMovie",
+          "DialogueText": "Félek... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/112.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Félek..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_DuringMovie_2",
+          "DialogueText": "Jas reszket.",
+          "AudioPath": "assets/hu-HU/Jas/113.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_DuringMovie_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Jas reszket."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_AfterMovie",
+          "DialogueText": "*szipog*... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Jas/114.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "*szipog*..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Jas",
+          "DialogueText": "Ez mókás, de bárcsak lenne nálam jégkrém...",
+          "AudioPath": "assets/hu-HU/Jas/115.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez mókás, de bárcsak lenne nálam jégkrém..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Jas",
+          "DialogueText": "Szia... Öhm... *kacag*",
+          "AudioPath": "assets/hu-HU/Jas/116.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Szia... Öhm... *kacag*"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Jas_IceCream",
+          "DialogueText": "Ez... Ez az enyém? {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Jas/117.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Jas_IceCream",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez... Ez az enyém?"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Jas_IceCream",
+          "DialogueText": "Váó! Pont erre vágytam... Köszönöm! Olyan kedves vagy! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Jas/118.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Jas_IceCream",
+          "PageIndex": 1,
+          "DisplayPattern": "Váó! Pont erre vágytam... Köszönöm! Olyan kedves vagy!"
+        }
+      ]
+    }
+  ]
+}

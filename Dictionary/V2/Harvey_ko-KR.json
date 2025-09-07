@@ -1,0 +1,3780 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Harvey.ko-KR",
+      "VoicePackName": "DictionarV2 (Harvey - ko-KR)",
+      "Character": "Harvey",
+      "Language": "ko-KR",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "만나서 반가워요. 동네 의사인 하비라고 해요.",
+          "AudioPath": "assets/ko-KR/Harvey/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "만나서 반가워요. 동네 의사인 하비라고 해요."
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "펠리컨 마을 주민의 건강 검진과 치료를 하고 있죠. 참 뿌듯한 일이에요.",
+          "AudioPath": "assets/ko-KR/Harvey/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "펠리컨 마을 주민의 건강 검진과 치료를 하고 있죠. 참 뿌듯한 일이에요."
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "본인이 하는 일에서도 그런 만족감을 느끼길 바라요. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Introduction",
+          "PageIndex": 2,
+          "DisplayPattern": "본인이 하는 일에서도 그런 만족감을 느끼길 바라요."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "오! 정말 고마워! 사실 오늘이 내 생일인 걸 아는 사람이 없을 거라 생각했어. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "오! 정말 고마워! 사실 오늘이 내 생일인 걸 아는 사람이 없을 거라 생각했어."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "오! 이건 어... 그래, 물건이네. 오늘이 내 생일인 걸 아는 사람이 없을 거라 생각했는데.",
+          "AudioPath": "assets/ko-KR/Harvey/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "오! 이건 어... 그래, 물건이네. 오늘이 내 생일인 걸 아는 사람이 없을 거라 생각했는데."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "이걸 나한테 선물하겠다고? 영광이야. 고마워!",
+          "AudioPath": "assets/ko-KR/Harvey/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "이걸 나한테 선물하겠다고? 영광이야. 고마워!"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "오! 네가... 나랑 춤추고 싶다고? {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:FlowerDance_Accept",
+          "PageIndex": 0,
+          "DisplayPattern": "오! 네가... 나랑 춤추고 싶다고?"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "...좋아. 아주 좋아! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:FlowerDance_Accept",
+          "PageIndex": 1,
+          "DisplayPattern": "...좋아. 아주 좋아!"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "의약품을 좀 챙겨왔어요, 혹시 몰라서. 오늘 조심하세요!",
+          "AudioPath": "assets/ko-KR/Harvey/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "의약품을 좀 챙겨왔어요, 혹시 몰라서. 오늘 조심하세요!"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "처음 이런 일이 있을 때는 다들 비가 위험할 수 있어서 걱정했는데.",
+          "AudioPath": "assets/ko-KR/Harvey/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "처음 이런 일이 있을 때는 다들 비가 위험할 수 있어서 걱정했는데."
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "하지만 사실은 건강에 이로울지도? 누가 알겠어... 적어도 식물들은 좋아하는 것 같네.",
+          "AudioPath": "assets/ko-KR/Harvey/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:GreenRain_2",
+          "PageIndex": 1,
+          "DisplayPattern": "하지만 사실은 건강에 이로울지도? 누가 알겠어... 적어도 식물들은 좋아하는 것 같네."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)432",
+          "DialogueText": "나한테 주는 선물이야? 고마워! 파스타에 뿌려 먹으면 환상적이겠다. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:AcceptGift_(O)432",
+          "PageIndex": 0,
+          "DisplayPattern": "나한테 주는 선물이야? 고마워! 파스타에 뿌려 먹으면 환상적이겠다."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)348",
+          "DialogueText": "날 위해서? 멋진 선물이네! 환상적이다! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:AcceptGift_(O)348",
+          "PageIndex": 0,
+          "DisplayPattern": "날 위해서? 멋진 선물이네! 환상적이다!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)348",
+          "DialogueText": "사실, 생리학적으로는 알코올 섭취를 권장하진 못하겠지만...",
+          "AudioPath": "assets/ko-KR/Harvey/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:AcceptGift_(O)348",
+          "PageIndex": 1,
+          "DisplayPattern": "사실, 생리학적으로는 알코올 섭취를 권장하진 못하겠지만..."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)348",
+          "DialogueText": "느긋하게 즐기는 스타듀 밸리의 고급 와인 한 잔의 장점을 부정할 순 없지! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:AcceptGift_(O)348",
+          "PageIndex": 2,
+          "DisplayPattern": "느긋하게 즐기는 스타듀 밸리의 고급 와인 한 잔의 장점을 부정할 순 없지!"
+        },
+        {
+          "DialogueFrom": "eventSeen_56_memory_fourweeks",
+          "DialogueText": "몇 년째 '동물 체크리스트'를 채워나가는 중이야. 밸리에 서식하는 모든 종을 관찰하고 싶어!",
+          "AudioPath": "assets/ko-KR/Harvey/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:eventSeen_56_memory_fourweeks",
+          "PageIndex": 0,
+          "DisplayPattern": "몇 년째 '동물 체크리스트'를 채워나가는 중이야. 밸리에 서식하는 모든 종을 관찰하고 싶어!"
+        },
+        {
+          "DialogueFrom": "eventSeen_56_memory_twoweeks",
+          "DialogueText": "내가 직접 피클을 만들어보려고 한 적이 있는데... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:eventSeen_56_memory_twoweeks",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 직접 피클을 만들어보려고 한 적이 있는데..."
+        },
+        {
+          "DialogueFrom": "eventSeen_56_memory_twoweeks",
+          "DialogueText": "음, 이렇게만 말할게... 고등학교 때 해부한 개구리 정도면 장미향이라고 생각하게 됐어...",
+          "AudioPath": "assets/ko-KR/Harvey/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:eventSeen_56_memory_twoweeks",
+          "PageIndex": 1,
+          "DisplayPattern": "음, 이렇게만 말할게... 고등학교 때 해부한 개구리 정도면 장미향이라고 생각하게 됐어..."
+        },
+        {
+          "DialogueFrom": "eventSeen_56",
+          "DialogueText": "작은 마을 의사로 일하다 보면 환자들과 개인적인 관계가 생길 수밖에 없지. 좋은 일일 수도 있고 나쁜 일일 수도 있어...",
+          "AudioPath": "assets/ko-KR/Harvey/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:eventSeen_56",
+          "PageIndex": 0,
+          "DisplayPattern": "작은 마을 의사로 일하다 보면 환자들과 개인적인 관계가 생길 수밖에 없지. 좋은 일일 수도 있고 나쁜 일일 수도 있어..."
+        },
+        {
+          "DialogueFrom": "eventSeen_58_memory_oneweek",
+          "DialogueText": "내 비밀을 이미 알고 있으니까 자랑해도 되겠지... 이번 주 에어로빅 수업 중에는 훨씬 숨이 덜 차더군!",
+          "AudioPath": "assets/ko-KR/Harvey/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:eventSeen_58_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "내 비밀을 이미 알고 있으니까 자랑해도 되겠지... 이번 주 에어로빅 수업 중에는 훨씬 숨이 덜 차더군!"
+        },
+        {
+          "DialogueFrom": "eventSeen_58_memory_twoweeks",
+          "DialogueText": "오늘 에어로빅 수업 때 운동을 정말 많이 해서 저녁에 파스타 프리마베라로 축하해도 되겠지 싶어... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:eventSeen_58_memory_twoweeks",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 에어로빅 수업 때 운동을 정말 많이 해서 저녁에 파스타 프리마베라로 축하해도 되겠지 싶어..."
+        },
+        {
+          "DialogueFrom": "eventSeen_58_memory_fourweeks",
+          "DialogueText": "내가 왜 에어로빅 수업을 부끄러워했는지 모르겠어. 다리가 정말 튼튼해졌고, 사자 같은 자신감도 생겼는걸!",
+          "AudioPath": "assets/ko-KR/Harvey/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:eventSeen_58_memory_fourweeks",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 왜 에어로빅 수업을 부끄러워했는지 모르겠어. 다리가 정말 튼튼해졌고, 사자 같은 자신감도 생겼는걸!"
+        },
+        {
+          "DialogueFrom": "eventSeen_571102_memory",
+          "DialogueText": "내 비행기 취미는 누구에게도 얘기하지 않았는데... 너랑 얘기할 때 마음이 편한가 봐.",
+          "AudioPath": "assets/ko-KR/Harvey/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:eventSeen_571102_memory",
+          "PageIndex": 0,
+          "DisplayPattern": "내 비행기 취미는 누구에게도 얘기하지 않았는데... 너랑 얘기할 때 마음이 편한가 봐."
+        },
+        {
+          "DialogueFrom": "eventSeen_571102_memory_oneweek",
+          "DialogueText": "의사로서 환자를 위해 해줄 수 있는 일은 한계가 있어...",
+          "AudioPath": "assets/ko-KR/Harvey/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:eventSeen_571102_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "의사로서 환자를 위해 해줄 수 있는 일은 한계가 있어..."
+        },
+        {
+          "DialogueFrom": "eventSeen_571102_memory_oneweek",
+          "DialogueText": "예전에 감정을 분리하지 못한 실수를 저지른 적이 있었지... 다시는 그러지 않을 거야... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:eventSeen_571102_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "예전에 감정을 분리하지 못한 실수를 저지른 적이 있었지... 다시는 그러지 않을 거야..."
+        },
+        {
+          "DialogueFrom": "dating_Harvey",
+          "DialogueText": "이런 기분 처음이야... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:dating_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "이런 기분 처음이야..."
+        },
+        {
+          "DialogueFrom": "dating_Harvey_memory_oneday",
+          "DialogueText": "요즘 네 생각이 너무 많이 나서 일을 거의 못했어. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:dating_Harvey_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "요즘 네 생각이 너무 많이 나서 일을 거의 못했어."
+        },
+        {
+          "DialogueFrom": "dating_Maru_memory_oneday",
+          "DialogueText": "마루가 요즘 평소보다 쾌활하더라고... 네 영향이라고 들었어.",
+          "AudioPath": "assets/ko-KR/Harvey/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:dating_Maru_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "마루가 요즘 평소보다 쾌활하더라고... 네 영향이라고 들었어."
+        },
+        {
+          "DialogueFrom": "married_Maru",
+          "DialogueText": "결혼 축하해, {Farmer_Name}. 마루는 병원에서 일은 계속할 거라고 하더라고, 정말 다행이야!",
+          "AudioPath": "assets/ko-KR/Harvey/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:married_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "결혼 축하해, . 마루는 병원에서 일은 계속할 거라고 하더라고, 정말 다행이야!"
+        },
+        {
+          "DialogueFrom": "married_Harvey",
+          "DialogueText": "이런 기분은 처음이야... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:married_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "이런 기분은 처음이야..."
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "자외선 차단제? 있고...",
+          "AudioPath": "assets/ko-KR/Harvey/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "자외선 차단제? 있고..."
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "챙 넓은 모자? 있고...",
+          "AudioPath": "assets/ko-KR/Harvey/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Resort_Entering",
+          "PageIndex": 1,
+          "DisplayPattern": "챙 넓은 모자? 있고..."
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "햇볕에 타면, 알로에베라 크림으로 피부를 진정시킬 수 있을 거예요.",
+          "AudioPath": "assets/ko-KR/Harvey/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "햇볕에 타면, 알로에베라 크림으로 피부를 진정시킬 수 있을 거예요."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "해변에 유리 파편 있는지 샅샅이 살펴봤어요. 누가 발이라도 베이면 안 되죠!",
+          "AudioPath": "assets/ko-KR/Harvey/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "해변에 유리 파편 있는지 샅샅이 살펴봤어요. 누가 발이라도 베이면 안 되죠!"
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "가끔 이렇게 느긋하게 쉴 기회는 좋지.",
+          "AudioPath": "assets/ko-KR/Harvey/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "가끔 이렇게 느긋하게 쉴 기회는 좋지."
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "마음먹는다고 바로 근심을 잊을 수 있는 건 아니지만... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Resort_Chair",
+          "PageIndex": 1,
+          "DisplayPattern": "마음먹는다고 바로 근심을 잊을 수 있는 건 아니지만..."
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "이런 날씨에 수분 보충은 필수죠. 코코넛 워터 있는지 거스한테 물어봐야겠어요! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "이런 날씨에 수분 보충은 필수죠. 코코넛 워터 있는지 거스한테 물어봐야겠어요!"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "비밀 하나 알려줄게... 나 사실 튜브 없이 헤엄 못 쳐요. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "비밀 하나 알려줄게... 나 사실 튜브 없이 헤엄 못 쳐요."
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept_Spouse",
+          "DialogueText": "난 오후 내내 기대하고 있었다고! 상큼한 봄 공기 중에 밝게 빛나고 있군요, 내 사랑. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:FlowerDance_Accept_Spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "난 오후 내내 기대하고 있었다고! 상큼한 봄 공기 중에 밝게 빛나고 있군요, 내 사랑."
+        },
+        {
+          "DialogueFrom": "FlowerDance_Decline",
+          "DialogueText": "오! 미안해요... 난, 그... 다른 사람에게 물어볼 생각이에요. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:FlowerDance_Decline",
+          "PageIndex": 0,
+          "DisplayPattern": "오! 미안해요... 난, 그... 다른 사람에게 물어볼 생각이에요."
+        },
+        {
+          "DialogueFrom": "divorced",
+          "DialogueText": "나... 너를 못 보겠어. 제발 내게 더 고통 주는 일은 하지 말아 줘. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:divorced",
+          "PageIndex": 0,
+          "DisplayPattern": "나... 너를 못 보겠어. 제발 내게 더 고통 주는 일은 하지 말아 줘."
+        },
+        {
+          "DialogueFrom": "breakUp",
+          "DialogueText": "...ㄴ...너...? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:breakUp",
+          "PageIndex": 0,
+          "DisplayPattern": "...ㄴ...너...?"
+        },
+        {
+          "DialogueFrom": "breakUp",
+          "DialogueText": "*꿀꺽*... 나... 나 토할 것 같아... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:breakUp",
+          "PageIndex": 1,
+          "DisplayPattern": "*꿀꺽*... 나... 나 토할 것 같아..."
+        },
+        {
+          "DialogueFrom": "dumped_Guys",
+          "DialogueText": "일이 좀 바빠서. 지금은 얘기하기 어렵네요. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:dumped_Guys",
+          "PageIndex": 0,
+          "DisplayPattern": "일이 좀 바빠서. 지금은 얘기하기 어렵네요."
+        },
+        {
+          "DialogueFrom": "secondChance_Guys",
+          "DialogueText": "내 인생에 네가 필요해, {Farmer_Name}. 이전에 있었던 일은 잊도록 할게. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:secondChance_Guys",
+          "PageIndex": 0,
+          "DisplayPattern": "내 인생에 네가 필요해, . 이전에 있었던 일은 잊도록 할게."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "병원에서 몇몇 일반의약품도 판매하고 있어요... 기진맥진한 기분이 든다면 언제든 들러주세요.",
+          "AudioPath": "assets/ko-KR/Harvey/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "병원에서 몇몇 일반의약품도 판매하고 있어요... 기진맥진한 기분이 든다면 언제든 들러주세요."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "농장 일은 힘을 많이 쓰는 일인 걸 알아요... 너무 무리하진 마세요!",
+          "AudioPath": "assets/ko-KR/Harvey/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "농장 일은 힘을 많이 쓰는 일인 걸 알아요... 너무 무리하진 마세요!"
+        },
+        {
+          "DialogueFrom": "Mon2",
+          "DialogueText": "주민들 모두의 건강에 대한 책임감을 많이 느껴요... 사실 좀 스트레스받죠.",
+          "AudioPath": "assets/ko-KR/Harvey/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Mon2",
+          "PageIndex": 0,
+          "DisplayPattern": "주민들 모두의 건강에 대한 책임감을 많이 느껴요... 사실 좀 스트레스받죠."
+        },
+        {
+          "DialogueFrom": "Mon2",
+          "DialogueText": "다행히도 작은 공동체라 주민 한 사람 한 사람과 좋은 관계를 쌓을 수 있었어요.",
+          "AudioPath": "assets/ko-KR/Harvey/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Mon2",
+          "PageIndex": 1,
+          "DisplayPattern": "다행히도 작은 공동체라 주민 한 사람 한 사람과 좋은 관계를 쌓을 수 있었어요."
+        },
+        {
+          "DialogueFrom": "Mon6",
+          "DialogueText": "스타듀 밸리에 오래 머무르고 싶어. 정말 공동체의 일원이 된 기분이 들기 시작했어.",
+          "AudioPath": "assets/ko-KR/Harvey/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Mon6",
+          "PageIndex": 0,
+          "DisplayPattern": "스타듀 밸리에 오래 머무르고 싶어. 정말 공동체의 일원이 된 기분이 들기 시작했어."
+        },
+        {
+          "DialogueFrom": "Mon6",
+          "DialogueText": "남에게 도움을 된다는 걸 아는 건 참 기분 좋은 일이지.",
+          "AudioPath": "assets/ko-KR/Harvey/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Mon6",
+          "PageIndex": 1,
+          "DisplayPattern": "남에게 도움을 된다는 걸 아는 건 참 기분 좋은 일이지."
+        },
+        {
+          "DialogueFrom": "Mon10",
+          "DialogueText": "오! 안녕, {Farmer_Name}. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Mon10",
+          "PageIndex": 0,
+          "DisplayPattern": "오! 안녕, ."
+        },
+        {
+          "DialogueFrom": "Mon10",
+          "DialogueText": "뭔가... 의학적인 질문이 있는 거야? {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Mon10",
+          "PageIndex": 1,
+          "DisplayPattern": "뭔가... 의학적인 질문이 있는 거야?"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "혹시 몸이 아픈 것 같으면 언제라도 방문해주세요.",
+          "AudioPath": "assets/ko-KR/Harvey/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "혹시 몸이 아픈 것 같으면 언제라도 방문해주세요."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "하지만 아직 젊으셔서 큰 노력 없이도 건강을 쉽게 유지될 거예요. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "하지만 아직 젊으셔서 큰 노력 없이도 건강을 쉽게 유지될 거예요."
+        },
+        {
+          "DialogueFrom": "Tue8",
+          "DialogueText": "너무 무리하게 일하진 마, {Farmer_Name}. 이건 의사의 지시야!",
+          "AudioPath": "assets/ko-KR/Harvey/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Tue8",
+          "PageIndex": 0,
+          "DisplayPattern": "너무 무리하게 일하진 마, . 이건 의사의 지시야!"
+        },
+        {
+          "DialogueFrom": "Tue8",
+          "DialogueText": "농부가 아프면 다들 굶게 되는 거라고! 우린 네가 필요해! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Tue8",
+          "PageIndex": 1,
+          "DisplayPattern": "농부가 아프면 다들 굶게 되는 거라고! 우린 네가 필요해!"
+        },
+        {
+          "DialogueFrom": "Tue8",
+          "DialogueText": "너무 무리하게 일하진 마, {Farmer_Name}. 이건 의사의 지시야!",
+          "AudioPath": "assets/ko-KR/Harvey/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Tue8",
+          "PageIndex": 2,
+          "DisplayPattern": "너무 무리하게 일하진 마, . 이건 의사의 지시야!"
+        },
+        {
+          "DialogueFrom": "Tue8",
+          "DialogueText": "네 건강은 내게 중요한걸. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Tue8",
+          "PageIndex": 3,
+          "DisplayPattern": "네 건강은 내게 중요한걸."
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "너와 좀 더 잘 알고 지내고 싶어, {Farmer_Name}. 우리 너무 의사-환자관계로만 지내진 말자.",
+          "AudioPath": "assets/ko-KR/Harvey/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "너와 좀 더 잘 알고 지내고 싶어, . 우리 너무 의사-환자관계로만 지내진 말자."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "동네에 친구가 있어서 즐겁네. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "동네에 친구가 있어서 즐겁네."
+        },
+        {
+          "DialogueFrom": "Wed8",
+          "DialogueText": "안색이 정말 건강하네. 좋은 일이야. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Wed8",
+          "PageIndex": 0,
+          "DisplayPattern": "안색이 정말 건강하네. 좋은 일이야."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "재채기를 할 땐 꼭 입을 가리세요.",
+          "AudioPath": "assets/ko-KR/Harvey/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "재채기를 할 땐 꼭 입을 가리세요."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "그러고 나서 손을 씻는 것도 잊지 말아요.",
+          "AudioPath": "assets/ko-KR/Harvey/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "그러고 나서 손을 씻는 것도 잊지 말아요."
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "의사다 보니 집에서 직접 요리한 음식이 건강에 얼마나 좋은지 잘 알지. 하지만 바빠서 직접 요리할 기회가 많진 않네. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Thu8",
+          "PageIndex": 0,
+          "DisplayPattern": "의사다 보니 집에서 직접 요리한 음식이 건강에 얼마나 좋은지 잘 알지. 하지만 바빠서 직접 요리할 기회가 많진 않네."
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "의사라는 직업은 일이 참 많아. 충분히 잘 챙겨 먹지 못하는 경우도 많고. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Thu8",
+          "PageIndex": 1,
+          "DisplayPattern": "의사라는 직업은 일이 참 많아. 충분히 잘 챙겨 먹지 못하는 경우도 많고."
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "혼자 살지 않았더라면 좀 더 수월했을 텐데. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Thu8",
+          "PageIndex": 2,
+          "DisplayPattern": "혼자 살지 않았더라면 좀 더 수월했을 텐데."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "올바른 영양분 섭취는 아주 중요해요, 꼭 잘 챙겨 드세요. 야채도 많이 드시고요!",
+          "AudioPath": "assets/ko-KR/Harvey/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "올바른 영양분 섭취는 아주 중요해요, 꼭 잘 챙겨 드세요. 야채도 많이 드시고요!"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "집에서 만들어 먹는 식사가 제일 좋죠. 요리하시나요?",
+          "AudioPath": "assets/ko-KR/Harvey/69.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "집에서 만들어 먹는 식사가 제일 좋죠. 요리하시나요?"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "참 아름다운 날이죠, 그렇죠?",
+          "AudioPath": "assets/ko-KR/Harvey/70.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "참 아름다운 날이죠, 그렇죠?"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "할 일이 이렇게 많지 않았으면 좋겠네요. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/71.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "할 일이 이렇게 많지 않았으면 좋겠네요."
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "집에 놀러 오고 싶다면, 언제든지 방문해도 좋아. 난 병원 위층에서 지내.",
+          "AudioPath": "assets/ko-KR/Harvey/72.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "집에 놀러 오고 싶다면, 언제든지 방문해도 좋아. 난 병원 위층에서 지내."
+        },
+        {
+          "DialogueFrom": "Fri10",
+          "DialogueText": "혹시 비밀리에 검진받고 싶은 게 있다면 집으로 방문해도 좋아. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/73.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Fri10",
+          "PageIndex": 0,
+          "DisplayPattern": "혹시 비밀리에 검진받고 싶은 게 있다면 집으로 방문해도 좋아."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "뭘 도와드릴까요?",
+          "AudioPath": "assets/ko-KR/Harvey/74.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "뭘 도와드릴까요?"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "건강 조심하세요.",
+          "AudioPath": "assets/ko-KR/Harvey/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "건강 조심하세요."
+        },
+        {
+          "DialogueFrom": "Sat4",
+          "DialogueText": "난 이런 작은 마을 분위기가 좋기도 했고, 전체론적 접근으로 환자 치료를 할 수 있는 가능성 때문에 여기에 왔어.",
+          "AudioPath": "assets/ko-KR/Harvey/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Sat4",
+          "PageIndex": 0,
+          "DisplayPattern": "난 이런 작은 마을 분위기가 좋기도 했고, 전체론적 접근으로 환자 치료를 할 수 있는 가능성 때문에 여기에 왔어."
+        },
+        {
+          "DialogueFrom": "Sat4",
+          "DialogueText": "그런데 지내다 보니 정말 사랑에 빠지게 되더라고. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Sat4",
+          "PageIndex": 1,
+          "DisplayPattern": "그런데 지내다 보니 정말 사랑에 빠지게 되더라고."
+        },
+        {
+          "DialogueFrom": "Sat10",
+          "DialogueText": "*한숨*... 나도 이제 늙었나 봐...",
+          "AudioPath": "assets/ko-KR/Harvey/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Sat10",
+          "PageIndex": 0,
+          "DisplayPattern": "*한숨*... 나도 이제 늙었나 봐..."
+        },
+        {
+          "DialogueFrom": "Sat10",
+          "DialogueText": "나이가 들수록 기억의 무게가 무거워지네. 압도되는 느낌이야. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Sat10",
+          "PageIndex": 1,
+          "DisplayPattern": "나이가 들수록 기억의 무게가 무거워지네. 압도되는 느낌이야."
+        },
+        {
+          "DialogueFrom": "Sat10",
+          "DialogueText": "그래도 너랑 있으면 젊어지는 기분이야. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Sat10",
+          "PageIndex": 2,
+          "DisplayPattern": "그래도 너랑 있으면 젊어지는 기분이야."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "흠... 생계유지가 생각보다 어렵군요. 방문 환자가 충분하지 않은가 봐요.",
+          "AudioPath": "assets/ko-KR/Harvey/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "흠... 생계유지가 생각보다 어렵군요. 방문 환자가 충분하지 않은가 봐요."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "옆 동네의 환자분들도 오실 수 있도록 해봐야겠어요...",
+          "AudioPath": "assets/ko-KR/Harvey/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "옆 동네의 환자분들도 오실 수 있도록 해봐야겠어요..."
+        },
+        {
+          "DialogueFrom": "Sun6",
+          "DialogueText": "환자의 생명의 유일한 책임자인데, 실패하는 경우를 생각해봐... 평생 잊을 수 없는 일이 될 거야. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:Sun6",
+          "PageIndex": 0,
+          "DisplayPattern": "환자의 생명의 유일한 책임자인데, 실패하는 경우를 생각해봐... 평생 잊을 수 없는 일이 될 거야."
+        },
+        {
+          "DialogueFrom": "event_george1",
+          "DialogueText": "고마워요, {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/84.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:event_george1",
+          "PageIndex": 0,
+          "DisplayPattern": "고마워요, ."
+        },
+        {
+          "DialogueFrom": "event_george1",
+          "DialogueText": "보시다시피, 전 그저 도우려는 것뿐이에요.",
+          "AudioPath": "assets/ko-KR/Harvey/85.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:event_george1",
+          "PageIndex": 1,
+          "DisplayPattern": "보시다시피, 전 그저 도우려는 것뿐이에요."
+        },
+        {
+          "DialogueFrom": "event_george2",
+          "DialogueText": "*한숨* {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:event_george2",
+          "PageIndex": 0,
+          "DisplayPattern": "*한숨*"
+        },
+        {
+          "DialogueFrom": "event_george2",
+          "DialogueText": "조지, 봐요. 이렇게 행동하실 거라면 아내분께도 말씀드려야겠어요. 그다지 달가워하실 것 같진 않은데요.",
+          "AudioPath": "assets/ko-KR/Harvey/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:event_george2",
+          "PageIndex": 1,
+          "DisplayPattern": "조지, 봐요. 이렇게 행동하실 거라면 아내분께도 말씀드려야겠어요. 그다지 달가워하실 것 같진 않은데요."
+        },
+        {
+          "DialogueFrom": "event_aerobics1",
+          "DialogueText": "고마워, {Farmer_Name}. 나한테 의미가 커. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:event_aerobics1",
+          "PageIndex": 0,
+          "DisplayPattern": "고마워, . 나한테 의미가 커."
+        },
+        {
+          "DialogueFrom": "event_aerobics2",
+          "DialogueText": "*한숨*... 너무하네. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/89.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:event_aerobics2",
+          "PageIndex": 0,
+          "DisplayPattern": "*한숨*... 너무하네."
+        },
+        {
+          "DialogueFrom": "event_heart1",
+          "DialogueText": "오! 병원이라 긴장될 수 있지.",
+          "AudioPath": "assets/ko-KR/Harvey/90.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:event_heart1",
+          "PageIndex": 0,
+          "DisplayPattern": "오! 병원이라 긴장될 수 있지."
+        },
+        {
+          "DialogueFrom": "event_heart1",
+          "DialogueText": "마음 편히 가져. 난 너를 도우려고 하는 거니까. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/91.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:event_heart1",
+          "PageIndex": 1,
+          "DisplayPattern": "마음 편히 가져. 난 너를 도우려고 하는 거니까."
+        },
+        {
+          "DialogueFrom": "event_heart2",
+          "DialogueText": "그래. 맞아, 그럴 수 있어.",
+          "AudioPath": "assets/ko-KR/Harvey/92.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:event_heart2",
+          "PageIndex": 0,
+          "DisplayPattern": "그래. 맞아, 그럴 수 있어."
+        },
+        {
+          "DialogueFrom": "event_heart3",
+          "DialogueText": "음. 그래... 네 말이 그렇다면. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/93.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:event_heart3",
+          "PageIndex": 0,
+          "DisplayPattern": "음. 그래... 네 말이 그렇다면."
+        },
+        {
+          "DialogueFrom": "event_grave1",
+          "DialogueText": "...네 말이 맞아.",
+          "AudioPath": "assets/ko-KR/Harvey/94.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:event_grave1",
+          "PageIndex": 0,
+          "DisplayPattern": "...네 말이 맞아."
+        },
+        {
+          "DialogueFrom": "event_grave1",
+          "DialogueText": "...고마워.",
+          "AudioPath": "assets/ko-KR/Harvey/95.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:event_grave1",
+          "PageIndex": 1,
+          "DisplayPattern": "...고마워."
+        },
+        {
+          "DialogueFrom": "event_grave2",
+          "DialogueText": "*한숨* {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/96.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:event_grave2",
+          "PageIndex": 0,
+          "DisplayPattern": "*한숨*"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "적정량의 햇볕을 쬐는 건 좋아요. 너무 타지만 않도록 주의해주세요.",
+          "AudioPath": "assets/ko-KR/Harvey/97.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "적정량의 햇볕을 쬐는 건 좋아요. 너무 타지만 않도록 주의해주세요."
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "그럼 몸조심해요! 건강하세요.",
+          "AudioPath": "assets/ko-KR/Harvey/98.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:summer_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "그럼 몸조심해요! 건강하세요."
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "운동도 중요하지만, 탈진할 정도로 하면 병원에 가야 하는 수가 있어요!",
+          "AudioPath": "assets/ko-KR/Harvey/99.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:summer_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "운동도 중요하지만, 탈진할 정도로 하면 병원에 가야 하는 수가 있어요!"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "꼭 몸이 하는 이야기를 들으세요.",
+          "AudioPath": "assets/ko-KR/Harvey/100.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:summer_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "꼭 몸이 하는 이야기를 들으세요."
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "여름에 제일 아픈 사람이 적어요. 좋은 일이지만, 난 일거리가 줄어들긴 해요.",
+          "AudioPath": "assets/ko-KR/Harvey/101.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:summer_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "여름에 제일 아픈 사람이 적어요. 좋은 일이지만, 난 일거리가 줄어들긴 해요."
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "광산에 드나드는 거예요, {Farmer_Name}?",
+          "AudioPath": "assets/ko-KR/Harvey/102.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:fall_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "광산에 드나드는 거예요, ?"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "거긴 위험해요. 가지 않을 것을 추천드려요.",
+          "AudioPath": "assets/ko-KR/Harvey/103.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:fall_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "거긴 위험해요. 가지 않을 것을 추천드려요."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "특정 음식을 먹으면 능률이 좋아지죠.",
+          "AudioPath": "assets/ko-KR/Harvey/104.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:fall_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "특정 음식을 먹으면 능률이 좋아지죠."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "'농부의 브런치'를 먹는다면 작물에 물을 주고 수확하는 일이 수월해질 거예요!",
+          "AudioPath": "assets/ko-KR/Harvey/105.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:fall_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "'농부의 브런치'를 먹는다면 작물에 물을 주고 수확하는 일이 수월해질 거예요!"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "독감 시즌이라 특히 조심해야 해요.",
+          "AudioPath": "assets/ko-KR/Harvey/106.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:winter_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "독감 시즌이라 특히 조심해야 해요."
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "손을 자주 씻는 게 중요해요.",
+          "AudioPath": "assets/ko-KR/Harvey/107.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:winter_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "손을 자주 씻는 게 중요해요."
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "이런 말 하긴 싫지만, 독감 철에 돈을 더 많이 벌긴 해요.",
+          "AudioPath": "assets/ko-KR/Harvey/108.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:winter_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "이런 말 하긴 싫지만, 독감 철에 돈을 더 많이 벌긴 해요."
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "사람들이 더 이상 아프지 않는다면, 문을 닫아야겠죠.",
+          "AudioPath": "assets/ko-KR/Harvey/109.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:winter_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "사람들이 더 이상 아프지 않는다면, 문을 닫아야겠죠."
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "이상하게 받아들이진 마요! 사람들이 건강했으면 좋겠어요... 정말로!",
+          "AudioPath": "assets/ko-KR/Harvey/110.ogg",
+          "TranslationKey": "Characters/Dialogue/Harvey:winter_Sun",
+          "PageIndex": 2,
+          "DisplayPattern": "이상하게 받아들이진 마요! 사람들이 건강했으면 좋겠어요... 정말로!"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Harvey0",
+          "DialogueText": "오 세상에! 결혼식 전에 준비할게 너무 많은걸! 긴장되네요. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/111.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Harvey0",
+          "PageIndex": 0,
+          "DisplayPattern": "오 세상에! 결혼식 전에 준비할게 너무 많은걸! 긴장되네요."
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Harvey0",
+          "DialogueText": "농장에 자리를 잡고 나면 좀 마음이 놓일 거예요. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/112.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Harvey0",
+          "PageIndex": 1,
+          "DisplayPattern": "농장에 자리를 잡고 나면 좀 마음이 놓일 거예요."
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Harvey1",
+          "DialogueText": "나 정말 행복해요. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/113.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Harvey1",
+          "PageIndex": 0,
+          "DisplayPattern": "나 정말 행복해요."
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Harvey1",
+          "DialogueText": "항상 비밀리에 원하던 일이었어요. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/114.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Harvey1",
+          "PageIndex": 1,
+          "DisplayPattern": "항상 비밀리에 원하던 일이었어요."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Bad_0",
+          "DialogueText": "...나 아직 사랑해? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/115.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_0",
+          "PageIndex": 0,
+          "DisplayPattern": "...나 아직 사랑해?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Bad_1",
+          "DialogueText": "*한숨*... 우리 너무 젊을 때 결혼했나 봐. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/116.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_1",
+          "PageIndex": 0,
+          "DisplayPattern": "*한숨*... 우리 너무 젊을 때 결혼했나 봐."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Bad_2",
+          "DialogueText": "아직 나랑 행복한 거 맞지? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/117.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_2",
+          "PageIndex": 0,
+          "DisplayPattern": "아직 나랑 행복한 거 맞지?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Bad_3",
+          "DialogueText": "내가 뭔가 잘못한 거 있어? 요즘 당신 달라졌어. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/118.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_3",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 뭔가 잘못한 거 있어? 요즘 당신 달라졌어."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Bad_4",
+          "DialogueText": "세상에 뭔가 다른 것이 있을까 생각해본 적 있어? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/119.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_4",
+          "PageIndex": 0,
+          "DisplayPattern": "세상에 뭔가 다른 것이 있을까 생각해본 적 있어?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Bad_5",
+          "DialogueText": "자기 로맨틱했는데... 어떻게 된 거야? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/120.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_5",
+          "PageIndex": 0,
+          "DisplayPattern": "자기 로맨틱했는데... 어떻게 된 거야?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Bad_5",
+          "DialogueText": "내가 예전처럼 젊지 않은 거 알아... 그냥 그것 때문에 나랑 결혼한 거야? {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Harvey/121.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_5",
+          "PageIndex": 1,
+          "DisplayPattern": "내가 예전처럼 젊지 않은 거 알아... 그냥 그것 때문에 나랑 결혼한 거야?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Bad_6",
+          "DialogueText": "우리 삶은 이 짧은 시간 하나뿐인데... 이게 정말 최선일까? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/122.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_6",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 삶은 이 짧은 시간 하나뿐인데... 이게 정말 최선일까?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Bad_7",
+          "DialogueText": "내가 예전엔 당신의 애인이었는데... 이젠 내가 저녁 요리할 때만 참고 견디는 것 같아. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/123.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_7",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 예전엔 당신의 애인이었는데... 이젠 내가 저녁 요리할 때만 참고 견디는 것 같아."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Bad_8",
+          "DialogueText": "요즘 나한테 너무 차가워... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/124.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_8",
+          "PageIndex": 0,
+          "DisplayPattern": "요즘 나한테 너무 차가워..."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Bad_9",
+          "DialogueText": "나한테 더 나은 삶이 있었을 수도 있는데. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/125.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_9",
+          "PageIndex": 0,
+          "DisplayPattern": "나한테 더 나은 삶이 있었을 수도 있는데."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/fall_1",
+          "DialogueText": "여보, 이번 가을은 꼭 작물을 다양하게 심는 거 잊지 말고.",
+          "AudioPath": "assets/ko-KR/Harvey/126.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:fall_1",
+          "PageIndex": 0,
+          "DisplayPattern": "여보, 이번 가을은 꼭 작물을 다양하게 심는 거 잊지 말고."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/fall_1",
+          "DialogueText": "아니면 그냥 온통 크랜베리를 키우거나... 사실 전적으로 여보 결정이지. 난 농경 지식이 없는 걸?",
+          "AudioPath": "assets/ko-KR/Harvey/127.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:fall_1",
+          "PageIndex": 1,
+          "DisplayPattern": "아니면 그냥 온통 크랜베리를 키우거나... 사실 전적으로 여보 결정이지. 난 농경 지식이 없는 걸?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/fall_15",
+          "DialogueText": "내일이 축제네. 음식이 기름지고 염분이 많지만, 가끔은 실컷 먹는 것도 좋지. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/128.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:fall_15",
+          "PageIndex": 0,
+          "DisplayPattern": "내일이 축제네. 음식이 기름지고 염분이 많지만, 가끔은 실컷 먹는 것도 좋지."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/fall_26",
+          "DialogueText": "인정할게, 영령의 전야제 생각하면 배가 아파... 하지만 최선을 다해서 용기 내볼게.",
+          "AudioPath": "assets/ko-KR/Harvey/129.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:fall_26",
+          "PageIndex": 0,
+          "DisplayPattern": "인정할게, 영령의 전야제 생각하면 배가 아파... 하지만 최선을 다해서 용기 내볼게."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/fall_8",
+          "DialogueText": "조금 있으면 겨울이네. 난방 잘 돌아가게 필요 없는 밸브는 잠그고 집에 단열처리 아직 잘 되어있나 확인해야지.",
+          "AudioPath": "assets/ko-KR/Harvey/130.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 0,
+          "DisplayPattern": "조금 있으면 겨울이네. 난방 잘 돌아가게 필요 없는 밸브는 잠그고 집에 단열처리 아직 잘 되어있나 확인해야지."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/fall_8",
+          "DialogueText": "걱정하지 마, 내가 손볼게.",
+          "AudioPath": "assets/ko-KR/Harvey/131.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 1,
+          "DisplayPattern": "걱정하지 마, 내가 손볼게."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/fall_Harvey",
+          "DialogueText": "와인 마시기 좋은 날씨인걸.",
+          "AudioPath": "assets/ko-KR/Harvey/132.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "와인 마시기 좋은 날씨인걸."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/funLeave_Harvey",
+          "DialogueText": "오늘은 산책 좀 하려고. 긴장 좀 풀어야겠어.",
+          "AudioPath": "assets/ko-KR/Harvey/133.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:funLeave_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘은 산책 좀 하려고. 긴장 좀 풀어야겠어."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/funReturn_Harvey",
+          "DialogueText": "오늘 하루 좋았어. 가끔 혼자만의 시간을 보내는 것도 상쾌하지. 오늘 좋은 하루 보냈어, 여보?",
+          "AudioPath": "assets/ko-KR/Harvey/134.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:funReturn_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 하루 좋았어. 가끔 혼자만의 시간을 보내는 것도 상쾌하지. 오늘 좋은 하루 보냈어, 여보?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Good_0",
+          "DialogueText": "{Farmer_Name}...우리가 결혼했다는 사실이 아직도 안 믿겨... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/135.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Good_0",
+          "PageIndex": 0,
+          "DisplayPattern": "...우리가 결혼했다는 사실이 아직도 안 믿겨..."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Good_1",
+          "DialogueText": "나를 외로움으로부터 구해줬어, 내 마음속의 빈 공간도 채워줬고. 고마워. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/136.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Good_1",
+          "PageIndex": 0,
+          "DisplayPattern": "나를 외로움으로부터 구해줬어, 내 마음속의 빈 공간도 채워줬고. 고마워."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Good_2",
+          "DialogueText": "네가 여기 이사 온 순간부터 내 인생은 너와 함께할 거란 걸 알았어... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/137.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Good_2",
+          "PageIndex": 0,
+          "DisplayPattern": "네가 여기 이사 온 순간부터 내 인생은 너와 함께할 거란 걸 알았어..."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Good_3",
+          "DialogueText": "와우, 오늘 정말 잘생겼는걸! 면도한 거야? {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/138_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Good_3",
+          "PageIndex": 0,
+          "DisplayPattern": "와우, 오늘 정말 잘생겼는걸! 면도한 거야?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Good_3",
+          "DialogueText": "오, 세상에... 오늘 아름다워 보여. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/139_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Good_3",
+          "PageIndex": 1,
+          "DisplayPattern": "오, 세상에... 오늘 아름다워 보여.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Good_4",
+          "DialogueText": "여기가 이제 내 집이야... 여기서 난 행복해. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/140.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_4",
+          "PageIndex": 0,
+          "DisplayPattern": "여기가 이제 내 집이야... 여기서 난 행복해."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Good_5",
+          "DialogueText": "결혼 펜던트 감상하고 있었어... 껍데기가 티 하나 없네. 이거 아주 비쌌겠는데! {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/141.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_5",
+          "PageIndex": 0,
+          "DisplayPattern": "결혼 펜던트 감상하고 있었어... 껍데기가 티 하나 없네. 이거 아주 비쌌겠는데!"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Good_6",
+          "DialogueText": "꼭 조심해! 나 가끔 네가 몸이 축 처진 채로 응급실로 실려 들어오는 악몽을 꿔. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Harvey/142.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Good_6",
+          "PageIndex": 0,
+          "DisplayPattern": "꼭 조심해! 나 가끔 네가 몸이 축 처진 채로 응급실로 실려 들어오는 악몽을 꿔."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Good_7",
+          "DialogueText": "{Farmer_Name}? 우리 집안을 위해서 네가 하는 모든 일에 항상 고맙다고 얘기하고 싶었어. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/143.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_7",
+          "PageIndex": 0,
+          "DisplayPattern": "? 우리 집안을 위해서 네가 하는 모든 일에 항상 고맙다고 얘기하고 싶었어."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Good_8",
+          "DialogueText": "난 너무 걱정하지 말고... 네가 책임지고해야 할 일이 많다는 걸 알아. 나 혼자서도 괜찮아! {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/144.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_8",
+          "PageIndex": 0,
+          "DisplayPattern": "난 너무 걱정하지 말고... 네가 책임지고해야 할 일이 많다는 걸 알아. 나 혼자서도 괜찮아!"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Good_9",
+          "DialogueText": "오, 난 심심하지 않아... 우리한테 여기 있는 것들을 즐기고 있어.",
+          "AudioPath": "assets/ko-KR/Harvey/145.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_9",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 난 심심하지 않아... 우리한테 여기 있는 것들을 즐기고 있어."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Good_9",
+          "DialogueText": "간단한 삶이지만, 마음에 들어. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/146.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_9",
+          "PageIndex": 1,
+          "DisplayPattern": "간단한 삶이지만, 마음에 들어."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Indoor_Day_0",
+          "DialogueText": "우리 모두 인생의 어떤 균형을 맞추려고 노력하는 것 같아. 복잡함의 평형상태 같은 거.",
+          "AudioPath": "assets/ko-KR/Harvey/147.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Indoor_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 모두 인생의 어떤 균형을 맞추려고 노력하는 것 같아. 복잡함의 평형상태 같은 거."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Indoor_Day_0",
+          "DialogueText": "나한테는 여기 이사오는 게 딱 내 몸이 필요로 하던 일이었어. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/148.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Indoor_Day_0",
+          "PageIndex": 1,
+          "DisplayPattern": "나한테는 여기 이사오는 게 딱 내 몸이 필요로 하던 일이었어."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Indoor_Day_1",
+          "DialogueText": "{Farmer_Name}, 좋은 아침! 영양 가득한 아침식사를 차렸어.[201]",
+          "AudioPath": "assets/ko-KR/Harvey/149.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Indoor_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": ", 좋은 아침! 영양 가득한 아침식사를 차렸어."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Indoor_Day_1",
+          "DialogueText": "계란은 필수 영양소가 많이 들어있으니까, 꼭 챙겨 먹고.",
+          "AudioPath": "assets/ko-KR/Harvey/150.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Indoor_Day_1",
+          "PageIndex": 1,
+          "DisplayPattern": "계란은 필수 영양소가 많이 들어있으니까, 꼭 챙겨 먹고."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Indoor_Day_2",
+          "DialogueText": "오늘은 의학 서적 공부하려고. 이런 거 평소에 꼬박꼬박 해둬야지 환자들에게 최선의 치료를 제공해 줄 수 있다고!",
+          "AudioPath": "assets/ko-KR/Harvey/151.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Indoor_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘은 의학 서적 공부하려고. 이런 거 평소에 꼬박꼬박 해둬야지 환자들에게 최선의 치료를 제공해 줄 수 있다고!"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Indoor_Day_3",
+          "DialogueText": "나 오늘은 재즈 좀 들으면서 진료 보고 작성하는 거 마무리하려고. 자기는 오늘 어떤 계획이 있어?",
+          "AudioPath": "assets/ko-KR/Harvey/152.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Indoor_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "나 오늘은 재즈 좀 들으면서 진료 보고 작성하는 거 마무리하려고. 자기는 오늘 어떤 계획이 있어?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Indoor_Day_4",
+          "DialogueText": "우리 처음 만났을 때 나 사실 자기 무서웠어. 이렇게까지 상황이 달라졌다니 재밌네. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/153.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Indoor_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 처음 만났을 때 나 사실 자기 무서웠어. 이렇게까지 상황이 달라졌다니 재밌네."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Indoor_Day_Harvey",
+          "DialogueText": "하늘 오늘 엄청난걸... 아주 맑아!",
+          "AudioPath": "assets/ko-KR/Harvey/154.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Day_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "하늘 오늘 엄청난걸... 아주 맑아!"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Indoor_Day_Harvey",
+          "DialogueText": "이제부터는 예약진료가 있을 때만 병원을 가야겠어. 나머지 일은 집에서 하면 되니까!",
+          "AudioPath": "assets/ko-KR/Harvey/155.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Day_Harvey",
+          "PageIndex": 1,
+          "DisplayPattern": "이제부터는 예약진료가 있을 때만 병원을 가야겠어. 나머지 일은 집에서 하면 되니까!"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Indoor_Night_0",
+          "DialogueText": "여보, 지쳐 보여. 내가 마사지해줄게. 근육조직에 있는 염증을 줄여줄 거야, 장담할게! {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/156.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Indoor_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "여보, 지쳐 보여. 내가 마사지해줄게. 근육조직에 있는 염증을 줄여줄 거야, 장담할게!"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Indoor_Night_1",
+          "DialogueText": "오늘은 좀 편하게 보냈어... 책 좀 읽고, 라디오 좀 만지고, 모형 비행기 작업 좀 했지.",
+          "AudioPath": "assets/ko-KR/Harvey/157.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Indoor_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘은 좀 편하게 보냈어... 책 좀 읽고, 라디오 좀 만지고, 모형 비행기 작업 좀 했지."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Indoor_Night_1",
+          "DialogueText": "가끔 쉬는 것도 중요하지... 스트레스는 건강에 안 좋아.",
+          "AudioPath": "assets/ko-KR/Harvey/158.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Indoor_Night_1",
+          "PageIndex": 1,
+          "DisplayPattern": "가끔 쉬는 것도 중요하지... 스트레스는 건강에 안 좋아."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Indoor_Night_2",
+          "DialogueText": "좋은 저녁이야... 오늘 하려던 일은 다 끝냈어?",
+          "AudioPath": "assets/ko-KR/Harvey/159.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Indoor_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "좋은 저녁이야... 오늘 하려던 일은 다 끝냈어?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Indoor_Night_2",
+          "DialogueText": "난 너무 걱정하지 말고. 나 자급자족 잘해. 해야 할 일이 남았으면 해야지.",
+          "AudioPath": "assets/ko-KR/Harvey/160.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Indoor_Night_2",
+          "PageIndex": 1,
+          "DisplayPattern": "난 너무 걱정하지 말고. 나 자급자족 잘해. 해야 할 일이 남았으면 해야지."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Indoor_Night_3",
+          "DialogueText": "의사는 스트레스가 많은 직업이라서, %farm 농장처럼 마음을 느긋하게 해주는 곳에서 사는 게 정말 좋은 것 같아.",
+          "AudioPath": "assets/ko-KR/Harvey/161.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Indoor_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "의사는 스트레스가 많은 직업이라서, 농장처럼 마음을 느긋하게 해주는 곳에서 사는 게 정말 좋은 것 같아."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Indoor_Night_4",
+          "DialogueText": "오! 순환계에 대해 생각하다가 뭐하려고 했는지 깜빡했네. 의사들이 겪는 고전적인 문제야.",
+          "AudioPath": "assets/ko-KR/Harvey/162.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Indoor_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "오! 순환계에 대해 생각하다가 뭐하려고 했는지 깜빡했네. 의사들이 겪는 고전적인 문제야."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Indoor_Night_Harvey",
+          "DialogueText": "오늘 밤은 마사지 제대로 받아야겠는걸. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/163.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 밤은 마사지 제대로 받아야겠는걸."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Indoor_Night_Harvey",
+          "DialogueText": "의사의 권고야 이건... 혈액순환에 도움이 된다고!",
+          "AudioPath": "assets/ko-KR/Harvey/164.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_Harvey",
+          "PageIndex": 1,
+          "DisplayPattern": "의사의 권고야 이건... 혈액순환에 도움이 된다고!"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/jobLeave_Harvey",
+          "DialogueText": "나 오늘은 병원 갔다 와야 해. 오늘도 좋은 하루 보내, 알았지?",
+          "AudioPath": "assets/ko-KR/Harvey/165.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:jobLeave_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "나 오늘은 병원 갔다 와야 해. 오늘도 좋은 하루 보내, 알았지?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/jobReturn_Harvey",
+          "DialogueText": "여보, 안녕. 오늘 하루 어땠어?",
+          "AudioPath": "assets/ko-KR/Harvey/166.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:jobReturn_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "여보, 안녕. 오늘 하루 어땠어?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/jobReturn_Harvey",
+          "DialogueText": "$e",
+          "AudioPath": "assets/ko-KR/Harvey/167.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:jobReturn_Harvey",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/jobReturn_Harvey",
+          "DialogueText": "*휴*... 힘들다... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/168.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:jobReturn_Harvey",
+          "PageIndex": 2,
+          "DisplayPattern": "*휴*... 힘들다..."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/jobReturn_Harvey",
+          "DialogueText": "환자분들은 아직 건강하시니, 좋은 하루긴 했어.",
+          "AudioPath": "assets/ko-KR/Harvey/169.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:jobReturn_Harvey",
+          "PageIndex": 3,
+          "DisplayPattern": "환자분들은 아직 건강하시니, 좋은 하루긴 했어."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Neutral_0",
+          "DialogueText": "내가 늙고 머리가 하얗게 되어도 아직 날 좋아했으면 좋겠네. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/170.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_0",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 늙고 머리가 하얗게 되어도 아직 날 좋아했으면 좋겠네."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Neutral_1",
+          "DialogueText": "우리가 해낸 일을 당신 할아버지께서도 자랑스러워하실까?",
+          "AudioPath": "assets/ko-KR/Harvey/171.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_1",
+          "PageIndex": 0,
+          "DisplayPattern": "우리가 해낸 일을 당신 할아버지께서도 자랑스러워하실까?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Neutral_2",
+          "DialogueText": "쉬는 중이야? 내가 생각했던 것보다 농부 일이 쉬운가 보네...",
+          "AudioPath": "assets/ko-KR/Harvey/172.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_2",
+          "PageIndex": 0,
+          "DisplayPattern": "쉬는 중이야? 내가 생각했던 것보다 농부 일이 쉬운가 보네..."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Neutral_3",
+          "DialogueText": "오늘 마을 가게 되면, 사람들한테 내 안부도 전해줘.",
+          "AudioPath": "assets/ko-KR/Harvey/173.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_3",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 마을 가게 되면, 사람들한테 내 안부도 전해줘."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Neutral_4",
+          "DialogueText": "내일 아침에 당신이 깨기 전에 빨래 해놓을게... 그럼 마냥 기다리는 시간은 없겠지.",
+          "AudioPath": "assets/ko-KR/Harvey/174.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_4",
+          "PageIndex": 0,
+          "DisplayPattern": "내일 아침에 당신이 깨기 전에 빨래 해놓을게... 그럼 마냥 기다리는 시간은 없겠지."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Neutral_5",
+          "DialogueText": "{Farmer_Name}, 우리 재정상황은 괜찮지?",
+          "AudioPath": "assets/ko-KR/Harvey/175.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_5",
+          "PageIndex": 0,
+          "DisplayPattern": ", 우리 재정상황은 괜찮지?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Neutral_6",
+          "DialogueText": "오늘 마을 사람들은 뭐하고 있으려나?",
+          "AudioPath": "assets/ko-KR/Harvey/176.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_6",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 마을 사람들은 뭐하고 있으려나?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Neutral_7",
+          "DialogueText": "오늘은 왠지 아무것도 하기 싫다.",
+          "AudioPath": "assets/ko-KR/Harvey/177.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_7",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘은 왠지 아무것도 하기 싫다."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Neutral_8",
+          "DialogueText": "아무리 청소를 해도, 집안이 다시 지저분해져.",
+          "AudioPath": "assets/ko-KR/Harvey/178.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_8",
+          "PageIndex": 0,
+          "DisplayPattern": "아무리 청소를 해도, 집안이 다시 지저분해져."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Neutral_8",
+          "DialogueText": "농장에서 지내다 보면 그럴 수 있는 거겠지.",
+          "AudioPath": "assets/ko-KR/Harvey/179.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_8",
+          "PageIndex": 1,
+          "DisplayPattern": "농장에서 지내다 보면 그럴 수 있는 거겠지."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Neutral_9",
+          "DialogueText": "우리 평생 여기서 지내려나?",
+          "AudioPath": "assets/ko-KR/Harvey/180.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_9",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 평생 여기서 지내려나?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/NoBed_0",
+          "DialogueText": "난 이제 어디서 자야 하지...? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/181.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_0",
+          "PageIndex": 0,
+          "DisplayPattern": "난 이제 어디서 자야 하지...?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/NoBed_1",
+          "DialogueText": "지난밤 푹 잘 수가 없었어... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/182.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_1",
+          "PageIndex": 0,
+          "DisplayPattern": "지난밤 푹 잘 수가 없었어..."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/NoBed_2",
+          "DialogueText": "바닥에서 자야 하는 신세라니... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/183.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_2",
+          "PageIndex": 0,
+          "DisplayPattern": "바닥에서 자야 하는 신세라니..."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/NoBed_3",
+          "DialogueText": "우리 침대는...? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/184.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_3",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 침대는...?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/OneKid_0",
+          "DialogueText": "너와 %kid1(이)는 내 인생의 가장 중요한 부분이야.",
+          "AudioPath": "assets/ko-KR/Harvey/185.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:OneKid_0",
+          "PageIndex": 0,
+          "DisplayPattern": "너와 (이)는 내 인생의 가장 중요한 부분이야."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/OneKid_1",
+          "DialogueText": "우리 작은 %kid1(이)는 여기서 완벽한 유년기를 보낼 수 있을 거야. 이런 기회를 가질 수 있는 우린 정말 복받은 거야.",
+          "AudioPath": "assets/ko-KR/Harvey/186.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:OneKid_1",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 작은 (이)는 여기서 완벽한 유년기를 보낼 수 있을 거야. 이런 기회를 가질 수 있는 우린 정말 복받은 거야."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/OneKid_2",
+          "DialogueText": "kid1(이) 밥은 오늘 내가 챙길게, 걱정 안 해도 될 거야. 농장 운영에 집중해요 여보.",
+          "AudioPath": "assets/ko-KR/Harvey/187.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:OneKid_2",
+          "PageIndex": 0,
+          "DisplayPattern": "kid1(이) 밥은 오늘 내가 챙길게, 걱정 안 해도 될 거야. 농장 운영에 집중해요 여보."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/OneKid_3",
+          "DialogueText": "지금까지는 적어도, 난 아빠인 게 정말 정말 좋아! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/188.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:OneKid_3",
+          "PageIndex": 0,
+          "DisplayPattern": "지금까지는 적어도, 난 아빠인 게 정말 정말 좋아!"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Outdoor_0",
+          "DialogueText": "여기 정말 안전한 기분이 드네. 할 일 하러 가봐도 괜찮아, 난 걱정 안 해도 돼.",
+          "AudioPath": "assets/ko-KR/Harvey/189.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Outdoor_0",
+          "PageIndex": 0,
+          "DisplayPattern": "여기 정말 안전한 기분이 드네. 할 일 하러 가봐도 괜찮아, 난 걱정 안 해도 돼."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Outdoor_1",
+          "DialogueText": "여긴 아이를 키우기 정말 이상적인 곳이라 생각해, 과학적으로. 네 생각은 어때?",
+          "AudioPath": "assets/ko-KR/Harvey/190.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Outdoor_1",
+          "PageIndex": 0,
+          "DisplayPattern": "여긴 아이를 키우기 정말 이상적인 곳이라 생각해, 과학적으로. 네 생각은 어때?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Outdoor_2",
+          "DialogueText": "내가 그렇게 톡톡 튀는 사람은 아니지만, 한평생 네게만 충실할 거야. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/191.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Outdoor_2",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 그렇게 톡톡 튀는 사람은 아니지만, 한평생 네게만 충실할 거야."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Outdoor_3",
+          "DialogueText": "{Farmer_Name}... 너... 넌 내게 있어 이 세상 전부야. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/192.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Outdoor_3",
+          "PageIndex": 0,
+          "DisplayPattern": "... 너... 넌 내게 있어 이 세상 전부야."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Outdoor_4",
+          "DialogueText": "과학자로서 난 곤충과 식물의 섬세한 상호 작용이 대단히 흥미로운 걸.",
+          "AudioPath": "assets/ko-KR/Harvey/193.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Outdoor_4",
+          "PageIndex": 0,
+          "DisplayPattern": "과학자로서 난 곤충과 식물의 섬세한 상호 작용이 대단히 흥미로운 걸."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Outdoor_Harvey",
+          "DialogueText": "하루종일 병원이 있는 것보다 훨씬 좋다. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/194.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Outdoor_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "하루종일 병원이 있는 것보다 훨씬 좋다."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Outdoor_Harvey",
+          "DialogueText": "여보가 농장에서 일하는 모습도 사랑스럽고... 헤헤.",
+          "AudioPath": "assets/ko-KR/Harvey/195.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Outdoor_Harvey",
+          "PageIndex": 1,
+          "DisplayPattern": "여보가 농장에서 일하는 모습도 사랑스럽고... 헤헤."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/patio_Harvey",
+          "DialogueText": "있지, 이 '건 역학 학술지'도 밖에 나와서 읽으니까 좀 견딜만하네.",
+          "AudioPath": "assets/ko-KR/Harvey/196.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:patio_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "있지, 이 '건 역학 학술지'도 밖에 나와서 읽으니까 좀 견딜만하네."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Rainy_Day_0",
+          "DialogueText": "비가 오면 감기 걸린다는 건 미신이야. 그래도, 진흙에 미끄러져서 넘어지지 않게 조심하고!",
+          "AudioPath": "assets/ko-KR/Harvey/197.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Rainy_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "비가 오면 감기 걸린다는 건 미신이야. 그래도, 진흙에 미끄러져서 넘어지지 않게 조심하고!"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Rainy_Day_0",
+          "DialogueText": "자기 걱정 자주 한다니까.",
+          "AudioPath": "assets/ko-KR/Harvey/198.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Rainy_Day_0",
+          "PageIndex": 1,
+          "DisplayPattern": "자기 걱정 자주 한다니까."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Rainy_Day_1",
+          "DialogueText": "병원 위에서 혼자 사는 건 정말이지 너무 외로웠어... 지금 난 훨씬 행복해. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/199.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Rainy_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "병원 위에서 혼자 사는 건 정말이지 너무 외로웠어... 지금 난 훨씬 행복해."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Rainy_Day_2",
+          "DialogueText": "나 일찍 일어났을 때 아직 자고 있길래 안 깨웠어. 너무 평화로워 보였거든.",
+          "AudioPath": "assets/ko-KR/Harvey/200.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Rainy_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "나 일찍 일어났을 때 아직 자고 있길래 안 깨웠어. 너무 평화로워 보였거든."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Rainy_Day_3",
+          "DialogueText": "사실 나 비가 싫은 건 아냐. 물론, 비행기가 오가는 건 못 보지만, 무선 통신은 들을 수 있으니까.",
+          "AudioPath": "assets/ko-KR/Harvey/201.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Rainy_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "사실 나 비가 싫은 건 아냐. 물론, 비행기가 오가는 건 못 보지만, 무선 통신은 들을 수 있으니까."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Rainy_Day_3",
+          "DialogueText": "이러면 좀 더 신비로운 느낌이 들지.",
+          "AudioPath": "assets/ko-KR/Harvey/202.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Rainy_Day_3",
+          "PageIndex": 1,
+          "DisplayPattern": "이러면 좀 더 신비로운 느낌이 들지."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Rainy_Day_4",
+          "DialogueText": "오늘 끝내고 싶은 밀린 집안일이 있어. 오늘 종일 바쁘겠는걸!",
+          "AudioPath": "assets/ko-KR/Harvey/203.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Rainy_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 끝내고 싶은 밀린 집안일이 있어. 오늘 종일 바쁘겠는걸!"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Rainy_Day_Harvey",
+          "DialogueText": "오늘 꼭 비 많이 안 맞도록 조심해, 여보. 체온 떨어지면 안 돼.",
+          "AudioPath": "assets/ko-KR/Harvey/204.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Day_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 꼭 비 많이 안 맞도록 조심해, 여보. 체온 떨어지면 안 돼."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Rainy_Night_0",
+          "DialogueText": "오늘 하루 어땠어, 여보? 난 설거지하려다가 무릎 수술 잡지에 빠져서 계속 읽었네.",
+          "AudioPath": "assets/ko-KR/Harvey/205.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Rainy_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 하루 어땠어, 여보? 난 설거지하려다가 무릎 수술 잡지에 빠져서 계속 읽었네."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Rainy_Night_1",
+          "DialogueText": "인생이 즐겁다면, 좀 반복적이면 어때? 적어도 내 생각은 그래.",
+          "AudioPath": "assets/ko-KR/Harvey/206.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Rainy_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "인생이 즐겁다면, 좀 반복적이면 어때? 적어도 내 생각은 그래."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Rainy_Night_2",
+          "DialogueText": "자기야, 좀 축축해 보이네. 난로 앞에 앉아서 몸 좀 데우지그래?",
+          "AudioPath": "assets/ko-KR/Harvey/207_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Rainy_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "자기야, 좀 축축해 보이네. 난로 앞에 앉아서 몸 좀 데우지그래?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Rainy_Night_2",
+          "DialogueText": "여보, 좀 축축해 보이네. 난로 앞에 앉아서 몸 좀 데우지그래?",
+          "AudioPath": "assets/ko-KR/Harvey/208_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Rainy_Night_2",
+          "PageIndex": 1,
+          "DisplayPattern": "여보, 좀 축축해 보이네. 난로 앞에 앉아서 몸 좀 데우지그래?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Rainy_Night_3",
+          "DialogueText": "빗소리에 정신을 집중해야 하니까, 잡다한 생각으로 산만해지지 않을 수 있어.",
+          "AudioPath": "assets/ko-KR/Harvey/209.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Rainy_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "빗소리에 정신을 집중해야 하니까, 잡다한 생각으로 산만해지지 않을 수 있어."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Rainy_Night_3",
+          "DialogueText": "적어도 왜 빗소리가 그렇게 마음을 차분하게 해주는지에 대한 내 이론은 그래...",
+          "AudioPath": "assets/ko-KR/Harvey/210.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Rainy_Night_3",
+          "PageIndex": 1,
+          "DisplayPattern": "적어도 왜 빗소리가 그렇게 마음을 차분하게 해주는지에 대한 내 이론은 그래..."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Rainy_Night_4",
+          "DialogueText": "건강한 저녁을 차려봤어. 계곡에서 난 신선하고 건강에 좋은 재료만 사용했지! [212 214 225 209 200] {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/211.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Rainy_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "건강한 저녁을 차려봤어. 계곡에서 난 신선하고 건강에 좋은 재료만 사용했지!"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Rainy_Night_4",
+          "DialogueText": "여보, 그렇다고 너무 많이 먹진 말고.",
+          "AudioPath": "assets/ko-KR/Harvey/212.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:Rainy_Night_4",
+          "PageIndex": 1,
+          "DisplayPattern": "여보, 그렇다고 너무 많이 먹진 말고."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Rainy_Night_5",
+          "DialogueText": "자기가 여기 있어서 너무 좋다... 집에 있기 좋은 밤이야.",
+          "AudioPath": "assets/ko-KR/Harvey/213.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Night_5",
+          "PageIndex": 0,
+          "DisplayPattern": "자기가 여기 있어서 너무 좋다... 집에 있기 좋은 밤이야."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Rainy_Night_Harvey",
+          "DialogueText": "안녕. 오늘 하루 괜찮았어? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/214.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Night_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕. 오늘 하루 괜찮았어?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/Rainy_Night_Harvey",
+          "DialogueText": "오늘은 의학학술지 보면서 보냈어.",
+          "AudioPath": "assets/ko-KR/Harvey/215.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Night_Harvey",
+          "PageIndex": 1,
+          "DisplayPattern": "오늘은 의학학술지 보면서 보냈어."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/spouseRoom_Harvey",
+          "DialogueText": "오늘 주변에 비행기는 없네. 그래도 가끔 장비를 꺼내는 건 재밌어.",
+          "AudioPath": "assets/ko-KR/Harvey/216.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 주변에 비행기는 없네. 그래도 가끔 장비를 꺼내는 건 재밌어."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/spouseRoom_Harvey",
+          "DialogueText": "$e",
+          "AudioPath": "assets/ko-KR/Harvey/217.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Harvey",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/spouseRoom_Harvey",
+          "DialogueText": "새로운 비행기 모형을 만드는 중이야. 전에 살던 집보다 여기서 훨씬 편안하게 작업할 수 있어.",
+          "AudioPath": "assets/ko-KR/Harvey/218.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Harvey",
+          "PageIndex": 2,
+          "DisplayPattern": "새로운 비행기 모형을 만드는 중이야. 전에 살던 집보다 여기서 훨씬 편안하게 작업할 수 있어."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/spring_1",
+          "DialogueText": "식물들이 살아돌아오는 것을 보니 좋네. 흑백의 겨울이 지나고 나서 녹색이 보이니 신선해.",
+          "AudioPath": "assets/ko-KR/Harvey/219.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:spring_1",
+          "PageIndex": 0,
+          "DisplayPattern": "식물들이 살아돌아오는 것을 보니 좋네. 흑백의 겨울이 지나고 나서 녹색이 보이니 신선해."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/spring_12",
+          "DialogueText": "오, 내일 축제날이지, 그치? 사람도 많고, 활동도 많고... *꿀꺽* {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/220.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:spring_12",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 내일 축제날이지, 그치? 사람도 많고, 활동도 많고... *꿀꺽*"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/spring_23",
+          "DialogueText": "내...내일 저와 춤을 추시겠어요? {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Harvey/221.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:spring_23",
+          "PageIndex": 0,
+          "DisplayPattern": "내...내일 저와 춤을 추시겠어요?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/spring_23",
+          "DialogueText": "이건 매번 부끄럽네. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Harvey/222.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:spring_23",
+          "PageIndex": 1,
+          "DisplayPattern": "이건 매번 부끄럽네."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/spring_8",
+          "DialogueText": "겨울이 끝났으니, 생산적일 수 있는 날이 많아지겠지.",
+          "AudioPath": "assets/ko-KR/Harvey/223.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_8",
+          "PageIndex": 0,
+          "DisplayPattern": "겨울이 끝났으니, 생산적일 수 있는 날이 많아지겠지."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/spring_Harvey",
+          "DialogueText": "올봄은 건강한 채소 많이 기르자고. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/224.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "올봄은 건강한 채소 많이 기르자고."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/summer_1",
+          "DialogueText": "햇볕에 타지 않도록 조심해, 여보! 피부에 아주 위험한 일이야. {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Harvey/225.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:summer_1",
+          "PageIndex": 0,
+          "DisplayPattern": "햇볕에 타지 않도록 조심해, 여보! 피부에 아주 위험한 일이야."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/summer_1",
+          "DialogueText": "당신의 남편과 의사로서, 당신의 건강과 안전은 내게 최우선이라고!",
+          "AudioPath": "assets/ko-KR/Harvey/226.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:summer_1",
+          "PageIndex": 1,
+          "DisplayPattern": "당신의 남편과 의사로서, 당신의 건강과 안전은 내게 최우선이라고!"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/summer_10",
+          "DialogueText": "루아우 스프에 어떤 걸 넣을지 생각해봤어?",
+          "AudioPath": "assets/ko-KR/Harvey/227.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:summer_10",
+          "PageIndex": 0,
+          "DisplayPattern": "루아우 스프에 어떤 걸 넣을지 생각해봤어?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/summer_10",
+          "DialogueText": "품질도 가치도 높은 걸 넣는 게 좋을 것 같아. 도지사님께 좋은 인상 남겨야지!",
+          "AudioPath": "assets/ko-KR/Harvey/228.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:summer_10",
+          "PageIndex": 1,
+          "DisplayPattern": "품질도 가치도 높은 걸 넣는 게 좋을 것 같아. 도지사님께 좋은 인상 남겨야지!"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/summer_15",
+          "DialogueText": "여름이네... 집안에 파리가 너무 많아.",
+          "AudioPath": "assets/ko-KR/Harvey/229.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 0,
+          "DisplayPattern": "여름이네... 집안에 파리가 너무 많아."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/summer_15",
+          "DialogueText": "걱정하지 마, 내가 처리할게.",
+          "AudioPath": "assets/ko-KR/Harvey/230.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 1,
+          "DisplayPattern": "걱정하지 마, 내가 처리할게."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/summer_27",
+          "DialogueText": "여름이 끝나고 날이 추워지면서 내 할 일도 점점 늘겠지. 내가 기분이 좀 안 좋아 보인다면 미안해...",
+          "AudioPath": "assets/ko-KR/Harvey/231.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:summer_27",
+          "PageIndex": 0,
+          "DisplayPattern": "여름이 끝나고 날이 추워지면서 내 할 일도 점점 늘겠지. 내가 기분이 좀 안 좋아 보인다면 미안해..."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/summer_8",
+          "DialogueText": "나 혹시 냄새나면 미안해... 밤새 더워서 계속 땀났어.",
+          "AudioPath": "assets/ko-KR/Harvey/232.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_8",
+          "PageIndex": 0,
+          "DisplayPattern": "나 혹시 냄새나면 미안해... 밤새 더워서 계속 땀났어."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/summer_Harvey",
+          "DialogueText": "햇볕에 타지 않게 조심해, 여보... 피부에 정말 안 좋아.",
+          "AudioPath": "assets/ko-KR/Harvey/233.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "햇볕에 타지 않게 조심해, 여보... 피부에 정말 안 좋아."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/TwoKids_0",
+          "DialogueText": "kid1(이)랑 %kid2(이) 이미 아침은 내가 차려줬어. 건강한 음식을 즐길 수 있도록 가르치려 하고 있어!",
+          "AudioPath": "assets/ko-KR/Harvey/234.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:TwoKids_0",
+          "PageIndex": 0,
+          "DisplayPattern": "kid1(이)랑 (이) 이미 아침은 내가 차려줬어. 건강한 음식을 즐길 수 있도록 가르치려 하고 있어!"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/TwoKids_1",
+          "DialogueText": "난 아이라면 마음껏 놀고 탐험할 수 있어야 한다 믿어. 인생에서 어린 시절은 한 번뿐이잖아.",
+          "AudioPath": "assets/ko-KR/Harvey/235.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:TwoKids_1",
+          "PageIndex": 0,
+          "DisplayPattern": "난 아이라면 마음껏 놀고 탐험할 수 있어야 한다 믿어. 인생에서 어린 시절은 한 번뿐이잖아."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/TwoKids_2",
+          "DialogueText": "kid2(이)가 자라서 비행사가 될 수 있을까?",
+          "AudioPath": "assets/ko-KR/Harvey/236.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:TwoKids_2",
+          "PageIndex": 0,
+          "DisplayPattern": "kid2(이)가 자라서 비행사가 될 수 있을까?"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/TwoKids_3",
+          "DialogueText": "내 인생은 여보랑 아이들에게 헌신하면 되는 거니까, 난 행복해. 항상 멋진 가족과 함께하는 것이 꿈이었어. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/237.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:TwoKids_3",
+          "PageIndex": 0,
+          "DisplayPattern": "내 인생은 여보랑 아이들에게 헌신하면 되는 거니까, 난 행복해. 항상 멋진 가족과 함께하는 것이 꿈이었어."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/TwoKids_3",
+          "DialogueText": "평생 혼자일까 악몽도 꿨고.... 정말이지, 많이 사랑해. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/238.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:TwoKids_3",
+          "PageIndex": 1,
+          "DisplayPattern": "평생 혼자일까 악몽도 꿨고.... 정말이지, 많이 사랑해."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/winter_1",
+          "DialogueText": "겨울에는 공기가 많이 건조하지. 그래서 피부가 약해지는 거고.",
+          "AudioPath": "assets/ko-KR/Harvey/239.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:winter_1",
+          "PageIndex": 0,
+          "DisplayPattern": "겨울에는 공기가 많이 건조하지. 그래서 피부가 약해지는 거고."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/winter_1",
+          "DialogueText": "걱정할 필요 없어, 밤마다 등에 송로버섯 오일 조금 발라줄게. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/240.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:winter_1",
+          "PageIndex": 1,
+          "DisplayPattern": "걱정할 필요 없어, 밤마다 등에 송로버섯 오일 조금 발라줄게."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/winter_28",
+          "DialogueText": "자, 우리 내년도 멋진 한해 보내야지. 내년이 훨씬 더 좋을 거라고 난 확고하게 믿어! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/241.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:winter_28",
+          "PageIndex": 0,
+          "DisplayPattern": "자, 우리 내년도 멋진 한해 보내야지. 내년이 훨씬 더 좋을 거라고 난 확고하게 믿어!"
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/winter_7",
+          "DialogueText": "우리 내일 얼음 축제 잠깐 갈까? 이글루가 정말 마음에 드는데...",
+          "AudioPath": "assets/ko-KR/Harvey/242.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHarvey:winter_7",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 내일 얼음 축제 잠깐 갈까? 이글루가 정말 마음에 드는데..."
+        },
+        {
+          "DialogueFrom": "Marriage/Harvey/winter_Harvey",
+          "DialogueText": "겨울은 독감 철이라, 병원 일이 좀 더 힘들 수 있겠다. 내가 혹시 평소보다 투덜거리게 되면 미리 미안해.",
+          "AudioPath": "assets/ko-KR/Harvey/243.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:winter_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "겨울은 독감 철이라, 병원 일이 좀 더 힘들 수 있겠다. 내가 혹시 평소보다 투덜거리게 되면 미리 미안해."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "안녕 {Farmer_Name}! 어... 최근에 도서관에서 흥미로운 책 좀 읽었나요?",
+          "AudioPath": "assets/ko-KR/Harvey/244.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕 ! 어... 최근에 도서관에서 흥미로운 책 좀 읽었나요?"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "헤. 어, 그럼... 나중에 봐요?",
+          "AudioPath": "assets/ko-KR/Harvey/245.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Harvey",
+          "PageIndex": 1,
+          "DisplayPattern": "헤. 어, 그럼... 나중에 봐요?"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s0",
+          "DialogueText": "Needs salt...",
+          "AudioPath": "assets/ko-KR/Harvey/246.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Needs salt..."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s1",
+          "DialogueText": "It's burning!",
+          "AudioPath": "assets/ko-KR/Harvey/247.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "It's burning!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s2",
+          "DialogueText": "Hmm...",
+          "AudioPath": "assets/ko-KR/Harvey/248.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmm..."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s3",
+          "DialogueText": "A little bit of this...",
+          "AudioPath": "assets/ko-KR/Harvey/249.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "A little bit of this..."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s4",
+          "DialogueText": "Some of this...",
+          "AudioPath": "assets/ko-KR/Harvey/250.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Some of this..."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s5",
+          "DialogueText": "Presto!",
+          "AudioPath": "assets/ko-KR/Harvey/251.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Presto!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s6",
+          "DialogueText": "Ah... You're right on time, {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/252.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah... You're right on time, !"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s7",
+          "DialogueText": "Let me just set the table...",
+          "AudioPath": "assets/ko-KR/Harvey/253.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Let me just set the table..."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s8",
+          "DialogueText": "You've been working so hard on the farm... I wanted to make you a special dinner.",
+          "AudioPath": "assets/ko-KR/Harvey/254.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "You've been working so hard on the farm... I wanted to make you a special dinner."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s9",
+          "DialogueText": "It's my very own 'angel hair pasta primavera'... with clams! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/255.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "It's my very own 'angel hair pasta primavera'... with clams!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s10",
+          "DialogueText": "Heavenly, huh? That must be the 'angel hair'! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/256.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Heavenly, huh? That must be the 'angel hair'!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s11",
+          "DialogueText": "I'm glad you like it! You deserve the best. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/257.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm glad you like it! You deserve the best."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s12",
+          "DialogueText": "Oh yes, I forgot to mention... it's 'whole wheat' pasta. And it's brimming with fresh vegetables.",
+          "AudioPath": "assets/ko-KR/Harvey/258.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh yes, I forgot to mention... it's 'whole wheat' pasta. And it's brimming with fresh vegetables."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s13",
+          "DialogueText": "It's important that you eat healthy food! I want you to live forever... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/259.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "It's important that you eat healthy food! I want you to live forever..."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s14",
+          "DialogueText": "Oh... I see. I knew I needed to add more salt. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/260.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh... I see. I knew I needed to add more salt."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s15",
+          "DialogueText": "Well, at least you'll be well hydrated. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/261.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, at least you'll be well hydrated."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s16",
+          "DialogueText": "Oh... I thought I gave myself the burnt one. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/262.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh... I thought I gave myself the burnt one."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s17",
+          "DialogueText": "Um, I lost track of one the pans and it caught fire... Sorry, dear. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/263.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "Um, I lost track of one the pans and it caught fire... Sorry, dear."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s18",
+          "DialogueText": "Uhhh...! Heh. I guess a piece of my moustache may have fallen into the pasta... {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Harvey/264.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s18",
+          "PageIndex": 0,
+          "DisplayPattern": "Uhhh...! Heh. I guess a piece of my moustache may have fallen into the pasta..."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s19",
+          "DialogueText": "Well! Extra fiber, right? Heh... (sorry honey) {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Harvey/265.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s19",
+          "PageIndex": 0,
+          "DisplayPattern": "Well! Extra fiber, right? Heh... (sorry honey)"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s20",
+          "DialogueText": "Oh! Eh... Must've been the truffle oil I drizzled on top... {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Harvey/266.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s20",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! Eh... Must've been the truffle oil I drizzled on top..."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s21",
+          "DialogueText": "You meant delicious, edible fungus... right honey? Of course... Heh. {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Harvey/267.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s21",
+          "PageIndex": 0,
+          "DisplayPattern": "You meant delicious, edible fungus... right honey? Of course... Heh."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s22",
+          "DialogueText": "So, tell me about your day...",
+          "AudioPath": "assets/ko-KR/Harvey/268.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s22",
+          "PageIndex": 0,
+          "DisplayPattern": "So, tell me about your day..."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s23",
+          "DialogueText": "Yes, I can still see the dirt in your hair! I really appreciate all the hard work you do, honey.",
+          "AudioPath": "assets/ko-KR/Harvey/269.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s23",
+          "PageIndex": 0,
+          "DisplayPattern": "Yes, I can still see the dirt in your hair! I really appreciate all the hard work you do, honey."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s24",
+          "DialogueText": "That sounds dangerous... are you sure that's safe? {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Harvey/270.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s24",
+          "PageIndex": 0,
+          "DisplayPattern": "That sounds dangerous... are you sure that's safe?"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s25",
+          "DialogueText": "I don't want to see you on the operating table anytime soon... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/271.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s25",
+          "PageIndex": 0,
+          "DisplayPattern": "I don't want to see you on the operating table anytime soon..."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s26",
+          "DialogueText": "Although I have to say, I like how courageous you are... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/272.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s26",
+          "PageIndex": 0,
+          "DisplayPattern": "Although I have to say, I like how courageous you are..."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s27",
+          "DialogueText": "A peaceful day by the water, huh? That sounds very relaxing.",
+          "AudioPath": "assets/ko-KR/Harvey/273.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s27",
+          "PageIndex": 0,
+          "DisplayPattern": "A peaceful day by the water, huh? That sounds very relaxing."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s28",
+          "DialogueText": "I'm glad you're having fun out there! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/274.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s28",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm glad you're having fun out there!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s29",
+          "DialogueText": "Ah, that's good. Having an active social life is healthy for the brain.",
+          "AudioPath": "assets/ko-KR/Harvey/275.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s29",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah, that's good. Having an active social life is healthy for the brain."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s30",
+          "DialogueText": "But remember, I'm always here for you if you need someone to talk to! {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/276.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s30",
+          "PageIndex": 0,
+          "DisplayPattern": "But remember, I'm always here for you if you need someone to talk to!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s31",
+          "DialogueText": "That makes sense. There's lots to do in this valley! ...And I know how hard you work.",
+          "AudioPath": "assets/ko-KR/Harvey/277.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s31",
+          "PageIndex": 0,
+          "DisplayPattern": "That makes sense. There's lots to do in this valley! ...And I know how hard you work."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s32",
+          "DialogueText": "Just remember to take breaks! When you're so busy, it's easy to get burnt out from exhaustion.",
+          "AudioPath": "assets/ko-KR/Harvey/278.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s32",
+          "PageIndex": 0,
+          "DisplayPattern": "Just remember to take breaks! When you're so busy, it's easy to get burnt out from exhaustion."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s33",
+          "DialogueText": "Ah... I have that problem, too. The boundary between days can blur together... it's hard to keep track of everything!",
+          "AudioPath": "assets/ko-KR/Harvey/279.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s33",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah... I have that problem, too. The boundary between days can blur together... it's hard to keep track of everything!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s34",
+          "DialogueText": "Took the day off, huh? I'm glad to hear it.",
+          "AudioPath": "assets/ko-KR/Harvey/280.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s34",
+          "PageIndex": 0,
+          "DisplayPattern": "Took the day off, huh? I'm glad to hear it."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s35",
+          "DialogueText": "Well, with a day off and a hearty dinner you'll be fully re-charged for tomorrow.",
+          "AudioPath": "assets/ko-KR/Harvey/281.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s35",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, with a day off and a hearty dinner you'll be fully re-charged for tomorrow."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s36",
+          "DialogueText": "Whew... I'm stuffed! That was great...",
+          "AudioPath": "assets/ko-KR/Harvey/282.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s36",
+          "PageIndex": 0,
+          "DisplayPattern": "Whew... I'm stuffed! That was great..."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s37",
+          "DialogueText": "I'll take care of the dishes...",
+          "AudioPath": "assets/ko-KR/Harvey/283.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s37",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll take care of the dishes..."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s38",
+          "DialogueText": "Don't feel bad... I like to do nice things for you! It makes me happy.",
+          "AudioPath": "assets/ko-KR/Harvey/284.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s38",
+          "PageIndex": 0,
+          "DisplayPattern": "Don't feel bad... I like to do nice things for you! It makes me happy."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s39",
+          "DialogueText": "I know I say this a lot, but... marrying you was the best thing that ever happened to me! {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/285.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s39",
+          "PageIndex": 0,
+          "DisplayPattern": "I know I say this a lot, but... marrying you was the best thing that ever happened to me!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917626:s40",
+          "DialogueText": "That was filling. I'm gonna sleep well...",
+          "AudioPath": "assets/ko-KR/Harvey/286.ogg",
+          "TranslationKey": "Events/FarmHouse:3917626:s40",
+          "PageIndex": 0,
+          "DisplayPattern": "That was filling. I'm gonna sleep well..."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/56:s0",
+          "DialogueText": "Okay, George. I want you take a deep breath for me.",
+          "AudioPath": "assets/ko-KR/Harvey/287.ogg",
+          "TranslationKey": "Events/JoshHouse:56:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay, George. I want you take a deep breath for me."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/56:s1",
+          "DialogueText": "Mmhmm... turn around, please.",
+          "AudioPath": "assets/ko-KR/Harvey/288.ogg",
+          "TranslationKey": "Events/JoshHouse:56:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Mmhmm... turn around, please."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/56:s2",
+          "DialogueText": "George, I'll be honest with you. You need to make some changes in your lifestyle if you want to stay healthy.",
+          "AudioPath": "assets/ko-KR/Harvey/289.ogg",
+          "TranslationKey": "Events/JoshHouse:56:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "George, I'll be honest with you. You need to make some changes in your lifestyle if you want to stay healthy."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/56:s3",
+          "DialogueText": "I'd like you to reduce your sodium intake, and try to get some moderate exercise with your arms.",
+          "AudioPath": "assets/ko-KR/Harvey/290.ogg",
+          "TranslationKey": "Events/JoshHouse:56:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I'd like you to reduce your sodium intake, and try to get some moderate exercise with your arms."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/56:s4",
+          "DialogueText": "I'm your doctor, George. That's who I am...",
+          "AudioPath": "assets/ko-KR/Harvey/291.ogg",
+          "TranslationKey": "Events/JoshHouse:56:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm your doctor, George. That's who I am..."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/56:s5",
+          "DialogueText": "And I went to school for 8 years so I could learn how to help people stay healthy.",
+          "AudioPath": "assets/ko-KR/Harvey/292.ogg",
+          "TranslationKey": "Events/JoshHouse:56:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "And I went to school for 8 years so I could learn how to help people stay healthy."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/56:s6",
+          "DialogueText": "Oh!",
+          "AudioPath": "assets/ko-KR/Harvey/293.ogg",
+          "TranslationKey": "Events/JoshHouse:56:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh!"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/56:s7",
+          "DialogueText": "I'm sorry, but you shouldn't be here... these check-ups are supposed to be private.",
+          "AudioPath": "assets/ko-KR/Harvey/294.ogg",
+          "TranslationKey": "Events/JoshHouse:56:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm sorry, but you shouldn't be here... these check-ups are supposed to be private."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/56:s8",
+          "DialogueText": "Very well...",
+          "AudioPath": "assets/ko-KR/Harvey/295.ogg",
+          "TranslationKey": "Events/JoshHouse:56:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Very well..."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/56:s9",
+          "DialogueText": "{Farmer_Name}, what do you think George should do?",
+          "AudioPath": "assets/ko-KR/Harvey/296.ogg",
+          "TranslationKey": "Events/JoshHouse:56:s9",
+          "PageIndex": 0,
+          "DisplayPattern": ", what do you think George should do?"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/56:s10",
+          "DialogueText": "George should follow Dr. Harvey's advice.",
+          "AudioPath": "assets/ko-KR/Harvey/297.ogg",
+          "TranslationKey": "Events/JoshHouse:56:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "George should follow Dr. Harvey's advice."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/56:s11",
+          "DialogueText": "George knows what's best for his own body.",
+          "AudioPath": "assets/ko-KR/Harvey/298.ogg",
+          "TranslationKey": "Events/JoshHouse:56:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "George knows what's best for his own body."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/56:s12",
+          "DialogueText": "Thanks for your help, {Farmer_Name}. I appreciate it. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/299.ogg",
+          "TranslationKey": "Events/JoshHouse:56:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks for your help, . I appreciate it."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/56:s13",
+          "DialogueText": "It's better not to give my patients mixed messages, {Farmer_Name}. Please remember that in the future.",
+          "AudioPath": "assets/ko-KR/Harvey/300.ogg",
+          "TranslationKey": "Events/JoshHouse:56:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "It's better not to give my patients mixed messages, . Please remember that in the future."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/58:s0",
+          "DialogueText": "*pant*...*pant*...Yes. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Harvey/301.ogg",
+          "TranslationKey": "Events/SeedShop:58:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "*pant*...*pant*...Yes."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/58:s1",
+          "DialogueText": "{Farmer_Name}! You were watching me? {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Harvey/302.ogg",
+          "TranslationKey": "Events/SeedShop:58:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "! You were watching me?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/58:s2",
+          "DialogueText": "...How embarrassing... I didn't want anyone to know. Least of all you. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/303.ogg",
+          "TranslationKey": "Events/SeedShop:58:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "...How embarrassing... I didn't want anyone to know. Least of all you."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/58:s3",
+          "DialogueText": "I'm just trying to stay healthy. As you get older, it requires more effort.",
+          "AudioPath": "assets/ko-KR/Harvey/304.ogg",
+          "TranslationKey": "Events/SeedShop:58:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm just trying to stay healthy. As you get older, it requires more effort."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/58:s4",
+          "DialogueText": "I'm not in very good shape, though... I can hardly keep up with them. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/305.ogg",
+          "TranslationKey": "Events/SeedShop:58:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm not in very good shape, though... I can hardly keep up with them."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/58:s5",
+          "DialogueText": "Look... Don't tell everyone in town that I'm doing dance aerobics, okay?",
+          "AudioPath": "assets/ko-KR/Harvey/306.ogg",
+          "TranslationKey": "Events/SeedShop:58:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Look... Don't tell everyone in town that I'm doing dance aerobics, okay?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/58:s6",
+          "DialogueText": "I won't tell.",
+          "AudioPath": "assets/ko-KR/Harvey/307.ogg",
+          "TranslationKey": "Events/SeedShop:58:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I won't tell."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/58:s7",
+          "DialogueText": "I can't promise that.",
+          "AudioPath": "assets/ko-KR/Harvey/308.ogg",
+          "TranslationKey": "Events/SeedShop:58:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I can't promise that."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/58:s8",
+          "DialogueText": "Wow, that was quite a workout...",
+          "AudioPath": "assets/ko-KR/Harvey/309.ogg",
+          "TranslationKey": "Events/SeedShop:58:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow, that was quite a workout..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195099:s0",
+          "DialogueText": "You showed up just in time for the first ever Pelican Town 8-ball tournament!",
+          "AudioPath": "assets/ko-KR/Harvey/310.ogg",
+          "TranslationKey": "Events/Saloon:195099:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "You showed up just in time for the first ever Pelican Town 8-ball tournament!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s0|g=male",
+          "DialogueText": "You tricked all of us into thinking we loved you... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/311_male.ogg",
+          "TranslationKey": "Events/Saloon:195013:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "You tricked all of us into thinking we loved you...",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s1|g=female",
+          "DialogueText": "{Farmer_Name}... I thought you wanted to get married and start a family with me... What did I do wrong? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/312_female.ogg",
+          "TranslationKey": "Events/Saloon:195013:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "... I thought you wanted to get married and start a family with me... What did I do wrong?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s2",
+          "DialogueText": "...yes. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/313.ogg",
+          "TranslationKey": "Events/Saloon:195013:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "...yes."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/choseToExplain:s0",
+          "DialogueText": "...yes. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/314.ogg",
+          "TranslationKey": "Events/Saloon:choseToExplain:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "...yes."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/crying:s0",
+          "DialogueText": "That's not going to work! You won't be preying on our sympathies this time! {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Harvey/315.ogg",
+          "TranslationKey": "Events/Saloon:crying:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "That's not going to work! You won't be preying on our sympathies this time!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/crying:s1",
+          "DialogueText": "...yes. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/316.ogg",
+          "TranslationKey": "Events/Saloon:crying:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "...yes."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/7:s0",
+          "DialogueText": "What happened? I heard something break.",
+          "AudioPath": "assets/ko-KR/Harvey/317.ogg",
+          "TranslationKey": "Events/Hospital:7:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "What happened? I heard something break."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/7:s1",
+          "DialogueText": "You shouldn't blame others for your own problems, Maru. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Harvey/318.ogg",
+          "TranslationKey": "Events/Hospital:7:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "You shouldn't blame others for your own problems, Maru."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/7:s2",
+          "DialogueText": "*sigh*... I'll have to call the patient back in to recollect this sample. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/319.ogg",
+          "TranslationKey": "Events/Hospital:7:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*... I'll have to call the patient back in to recollect this sample."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/7:s3",
+          "DialogueText": "This'll probably put us in the red for another month... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/320.ogg",
+          "TranslationKey": "Events/Hospital:7:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "This'll probably put us in the red for another month..."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/toldTruth:s0",
+          "DialogueText": "Thanks for telling me the truth, Maru.",
+          "AudioPath": "assets/ko-KR/Harvey/321.ogg",
+          "TranslationKey": "Events/Hospital:toldTruth:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks for telling me the truth, Maru."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/toldTruth:s1",
+          "DialogueText": "Don't worry about the sample, we'll just get another one.",
+          "AudioPath": "assets/ko-KR/Harvey/322.ogg",
+          "TranslationKey": "Events/Hospital:toldTruth:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Don't worry about the sample, we'll just get another one."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/toldTruth:s2",
+          "DialogueText": "Of course... you've been a big help around here. I don't know what I'd do without you!",
+          "AudioPath": "assets/ko-KR/Harvey/323.ogg",
+          "TranslationKey": "Events/Hospital:toldTruth:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Of course... you've been a big help around here. I don't know what I'd do without you!"
+        },
+        {
+          "DialogueFrom": "Event:Hospital/toldTruth:s3",
+          "DialogueText": "{Farmer_Name}? You look a little pale... are you feeling okay?",
+          "AudioPath": "assets/ko-KR/Harvey/324.ogg",
+          "TranslationKey": "Events/Hospital:toldTruth:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "? You look a little pale... are you feeling okay?"
+        },
+        {
+          "DialogueFrom": "Event:Hospital/57:s0",
+          "DialogueText": "Ah, {Farmer_Name}! I was just about to write you a letter.",
+          "AudioPath": "assets/ko-KR/Harvey/325.ogg",
+          "TranslationKey": "Events/Hospital:57:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah, ! I was just about to write you a letter."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/57:s1",
+          "DialogueText": "You see, my records indicate that you're due for your annual checkup!",
+          "AudioPath": "assets/ko-KR/Harvey/326.ogg",
+          "TranslationKey": "Events/Hospital:57:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "You see, my records indicate that you're due for your annual checkup!"
+        },
+        {
+          "DialogueFrom": "Event:Hospital/57:s2",
+          "DialogueText": "Now, now... There's no need to worry. It'll be quick and painless. Please follow me.",
+          "AudioPath": "assets/ko-KR/Harvey/327.ogg",
+          "TranslationKey": "Events/Hospital:57:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Now, now... There's no need to worry. It'll be quick and painless. Please follow me."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/57:s3",
+          "DialogueText": "Hmm... Okay. Hold still, please.",
+          "AudioPath": "assets/ko-KR/Harvey/328.ogg",
+          "TranslationKey": "Events/Hospital:57:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmm... Okay. Hold still, please."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/57:s4",
+          "DialogueText": "Say 'ahhh...'",
+          "AudioPath": "assets/ko-KR/Harvey/329.ogg",
+          "TranslationKey": "Events/Hospital:57:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Say 'ahhh...'"
+        },
+        {
+          "DialogueFrom": "Event:Hospital/57:s5",
+          "DialogueText": "Okay, you can stop.",
+          "AudioPath": "assets/ko-KR/Harvey/330.ogg",
+          "TranslationKey": "Events/Hospital:57:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay, you can stop."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/57:s6",
+          "DialogueText": "I just need to check your vitals.",
+          "AudioPath": "assets/ko-KR/Harvey/331.ogg",
+          "TranslationKey": "Events/Hospital:57:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I just need to check your vitals."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/57:s7",
+          "DialogueText": "Hmm... Your pulse is high. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Harvey/332.ogg",
+          "TranslationKey": "Events/Hospital:57:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmm... Your pulse is high."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/57:s8",
+          "DialogueText": "I'm a little nervous...",
+          "AudioPath": "assets/ko-KR/Harvey/333.ogg",
+          "TranslationKey": "Events/Hospital:57:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm a little nervous..."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/57:s9",
+          "DialogueText": "I'm out of breath from working on the farm.",
+          "AudioPath": "assets/ko-KR/Harvey/334.ogg",
+          "TranslationKey": "Events/Hospital:57:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm out of breath from working on the farm."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/57:s10",
+          "DialogueText": "Are you really a doctor? My pulse is fine!",
+          "AudioPath": "assets/ko-KR/Harvey/335.ogg",
+          "TranslationKey": "Events/Hospital:57:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Are you really a doctor? My pulse is fine!"
+        },
+        {
+          "DialogueFrom": "Event:Hospital/57:s11",
+          "DialogueText": "Well, then! You seem very healthy, {Farmer_Name}.",
+          "AudioPath": "assets/ko-KR/Harvey/336.ogg",
+          "TranslationKey": "Events/Hospital:57:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, then! You seem very healthy, ."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/57:s12",
+          "DialogueText": "Just make sure not to overwork yourself on that farm!",
+          "AudioPath": "assets/ko-KR/Harvey/337.ogg",
+          "TranslationKey": "Events/Hospital:57:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Just make sure not to overwork yourself on that farm!"
+        },
+        {
+          "DialogueFrom": "Event:Hospital/57:s13",
+          "DialogueText": "Thanks for stopping in. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/338.ogg",
+          "TranslationKey": "Events/Hospital:57:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks for stopping in."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/571102:s0",
+          "DialogueText": "Hello? Hello? Is anyone out there? {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Harvey/339.ogg",
+          "TranslationKey": "Events/Hospital:571102:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hello? Hello? Is anyone out there?"
+        },
+        {
+          "DialogueFrom": "Event:Hospital/571102:s1",
+          "DialogueText": "This is Dr. H at... 52 North 43.5 East... Seeking aerial response...Anyone out there? {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Harvey/340.ogg",
+          "TranslationKey": "Events/Hospital:571102:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "This is Dr. H at... 52 North 43.5 East... Seeking aerial response...Anyone out there?"
+        },
+        {
+          "DialogueFrom": "Event:Hospital/571102:s2",
+          "DialogueText": "Copy.. Dr. H on the ground... this is Blackbird Fiver Fiver Zuzu. Anything to report?",
+          "AudioPath": "assets/ko-KR/Harvey/341.ogg",
+          "TranslationKey": "Events/Hospital:571102:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Copy.. Dr. H on the ground... this is Blackbird Fiver Fiver Zuzu. Anything to report?"
+        },
+        {
+          "DialogueFrom": "Event:Hospital/571102:s3",
+          "DialogueText": "Someone's there!? {Portrait:Custom:10}",
+          "AudioPath": "assets/ko-KR/Harvey/342.ogg",
+          "TranslationKey": "Events/Hospital:571102:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Someone's there!?"
+        },
+        {
+          "DialogueFrom": "Event:Hospital/571102:s4",
+          "DialogueText": "Er... I mean!... Standard ground report: Wind at 3 Clicks, 36 Degrees North of West. Ground Temperature at 42 Kraggs. Humidity 53%. Dr. H out! {Portrait:Custom:10}",
+          "AudioPath": "assets/ko-KR/Harvey/343.ogg",
+          "TranslationKey": "Events/Hospital:571102:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Er... I mean!... Standard ground report: Wind at 3 Clicks, 36 Degrees North of West. Ground Temperature at 42 Kraggs. Humidity 53%. Dr. H out!"
+        },
+        {
+          "DialogueFrom": "Event:Hospital/571102:s5",
+          "DialogueText": "Yikes, my pulse is soaring... {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Harvey/344.ogg",
+          "TranslationKey": "Events/Hospital:571102:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Yikes, my pulse is soaring..."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/571102:s6",
+          "DialogueText": "{Farmer_Name}!",
+          "AudioPath": "assets/ko-KR/Harvey/345.ogg",
+          "TranslationKey": "Events/Hospital:571102:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "!"
+        },
+        {
+          "DialogueFrom": "Event:Hospital/571102:s7",
+          "DialogueText": "Ask Harvey why he's all flustered.",
+          "AudioPath": "assets/ko-KR/Harvey/346.ogg",
+          "TranslationKey": "Events/Hospital:571102:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Ask Harvey why he's all flustered."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/571102:s8",
+          "DialogueText": "Pretend like everything's normal.",
+          "AudioPath": "assets/ko-KR/Harvey/347.ogg",
+          "TranslationKey": "Events/Hospital:571102:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Pretend like everything's normal."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/571102:s9",
+          "DialogueText": "Ah, well... You see, I was just on my radio here... and I made contact with a real pilot!",
+          "AudioPath": "assets/ko-KR/Harvey/348.ogg",
+          "TranslationKey": "Events/Hospital:571102:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah, well... You see, I was just on my radio here... and I made contact with a real pilot!"
+        },
+        {
+          "DialogueFrom": "Event:Hospital/571102:s10",
+          "DialogueText": "As a matter of fact, we can probably see him flying overhead right now!",
+          "AudioPath": "assets/ko-KR/Harvey/349.ogg",
+          "TranslationKey": "Events/Hospital:571102:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "As a matter of fact, we can probably see him flying overhead right now!"
+        },
+        {
+          "DialogueFrom": "Event:Hospital/571102:s11",
+          "DialogueText": "Quick, get over here!",
+          "AudioPath": "assets/ko-KR/Harvey/350.ogg",
+          "TranslationKey": "Events/Hospital:571102:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Quick, get over here!"
+        },
+        {
+          "DialogueFrom": "Event:Hospital/571102:s12",
+          "DialogueText": "Look!",
+          "AudioPath": "assets/ko-KR/Harvey/351.ogg",
+          "TranslationKey": "Events/Hospital:571102:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Look!"
+        },
+        {
+          "DialogueFrom": "Event:Hospital/571102:s13",
+          "DialogueText": "As a kid, my dream was always to be a pilot.",
+          "AudioPath": "assets/ko-KR/Harvey/352.ogg",
+          "TranslationKey": "Events/Hospital:571102:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "As a kid, my dream was always to be a pilot."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/571102:s14",
+          "DialogueText": "...But with my bad eyesight and a crippling fear of heights, that dream started to fade away. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/353.ogg",
+          "TranslationKey": "Events/Hospital:571102:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "...But with my bad eyesight and a crippling fear of heights, that dream started to fade away."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/571102:s15",
+          "DialogueText": "It's okay... don't be sad.",
+          "AudioPath": "assets/ko-KR/Harvey/354.ogg",
+          "TranslationKey": "Events/Hospital:571102:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "It's okay... don't be sad."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/571102:s16",
+          "DialogueText": "I've grown to accept my station in life. Not everyone can achieve their dreams... that's just the way the world is.",
+          "AudioPath": "assets/ko-KR/Harvey/355.ogg",
+          "TranslationKey": "Events/Hospital:571102:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "I've grown to accept my station in life. Not everyone can achieve their dreams... that's just the way the world is."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/571102:s17",
+          "DialogueText": "Hey, let me show you my model airplanes. I just finished the new TR-Starbird deluxe set. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/356.ogg",
+          "TranslationKey": "Events/Hospital:571102:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, let me show you my model airplanes. I just finished the new TR-Starbird deluxe set."
+        },
+        {
+          "DialogueFrom": "Event:Hospital/PlayerKilled:s0",
+          "DialogueText": "Someone found you unconscious and battered... I had to perform an emergency surgery on you!",
+          "AudioPath": "assets/ko-KR/Harvey/357.ogg",
+          "TranslationKey": "Events/Hospital:PlayerKilled:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Someone found you unconscious and battered... I had to perform an emergency surgery on you!"
+        },
+        {
+          "DialogueFrom": "Event:Hospital/PlayerKilled:s1",
+          "DialogueText": "Be a little more careful next time, okay? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/358.ogg",
+          "TranslationKey": "Events/Hospital:PlayerKilled:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Be a little more careful next time, okay?"
+        },
+        {
+          "DialogueFrom": "Event:HarveyRoom/normal:s0",
+          "DialogueText": "Sorry I'm all disheveled... I didn't know you were coming over. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/359.ogg",
+          "TranslationKey": "Events/HarveyRoom:normal:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Sorry I'm all disheveled... I didn't know you were coming over."
+        },
+        {
+          "DialogueFrom": "Event:HarveyRoom/normal:s1",
+          "DialogueText": "Hey, I think I hear a plane overhead...",
+          "AudioPath": "assets/ko-KR/Harvey/360.ogg",
+          "TranslationKey": "Events/HarveyRoom:normal:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, I think I hear a plane overhead..."
+        },
+        {
+          "DialogueFrom": "Event:HarveyRoom/normal:s2",
+          "DialogueText": "{Farmer_Name}, get over here!",
+          "AudioPath": "assets/ko-KR/Harvey/361.ogg",
+          "TranslationKey": "Events/HarveyRoom:normal:s2",
+          "PageIndex": 0,
+          "DisplayPattern": ", get over here!"
+        },
+        {
+          "DialogueFrom": "Event:HarveyRoom/normal:s3",
+          "DialogueText": "Look!",
+          "AudioPath": "assets/ko-KR/Harvey/362.ogg",
+          "TranslationKey": "Events/HarveyRoom:normal:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Look!"
+        },
+        {
+          "DialogueFrom": "Event:HarveyRoom/normal:s4",
+          "DialogueText": "As a kid, my dream was always to be a pilot.",
+          "AudioPath": "assets/ko-KR/Harvey/363.ogg",
+          "TranslationKey": "Events/HarveyRoom:normal:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "As a kid, my dream was always to be a pilot."
+        },
+        {
+          "DialogueFrom": "Event:HarveyRoom/normal:s5",
+          "DialogueText": "...But with my bad eyesight and a crippling fear of heights, that dream started to fade away. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/364.ogg",
+          "TranslationKey": "Events/HarveyRoom:normal:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "...But with my bad eyesight and a crippling fear of heights, that dream started to fade away."
+        },
+        {
+          "DialogueFrom": "Event:HarveyRoom/normal:s6",
+          "DialogueText": "It's okay... don't be sad.",
+          "AudioPath": "assets/ko-KR/Harvey/365.ogg",
+          "TranslationKey": "Events/HarveyRoom:normal:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "It's okay... don't be sad."
+        },
+        {
+          "DialogueFrom": "Event:HarveyRoom/normal:s7",
+          "DialogueText": "I've grown to accept my station in life. Not everyone can achieve their dreams... that's just the way the world is.",
+          "AudioPath": "assets/ko-KR/Harvey/366.ogg",
+          "TranslationKey": "Events/HarveyRoom:normal:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I've grown to accept my station in life. Not everyone can achieve their dreams... that's just the way the world is."
+        },
+        {
+          "DialogueFrom": "Event:HarveyRoom/normal:s8",
+          "DialogueText": "Hey, let me show you my model airplanes. I just finished the new TR-Starbird deluxe set. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/367.ogg",
+          "TranslationKey": "Events/HarveyRoom:normal:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, let me show you my model airplanes. I just finished the new TR-Starbird deluxe set."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910975:s0",
+          "DialogueText": "...I've pumped his stomach and re-hydrated his body. He's going to be okay.",
+          "AudioPath": "assets/ko-KR/Harvey/368.ogg",
+          "TranslationKey": "Events/Forest:3910975:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "...I've pumped his stomach and re-hydrated his body. He's going to be okay."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910975:s1",
+          "DialogueText": "It's good that you brought him in, though.",
+          "AudioPath": "assets/ko-KR/Harvey/369.ogg",
+          "TranslationKey": "Events/Forest:3910975:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "It's good that you brought him in, though."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910975:s2",
+          "DialogueText": "Too much alcohol is terrible for the body... but right now I'm most worried about his mental health... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/370.ogg",
+          "TranslationKey": "Events/Forest:3910975:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Too much alcohol is terrible for the body... but right now I'm most worried about his mental health..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910975:s3",
+          "DialogueText": "When he comes to, I'll have a chat with him about his treatment options. I know an excellent counselor in Zuzu City...",
+          "AudioPath": "assets/ko-KR/Harvey/371.ogg",
+          "TranslationKey": "Events/Forest:3910975:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "When he comes to, I'll have a chat with him about his treatment options. I know an excellent counselor in Zuzu City..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910975:s4",
+          "DialogueText": "Life can be painful, sometimes...",
+          "AudioPath": "assets/ko-KR/Harvey/372.ogg",
+          "TranslationKey": "Events/Forest:3910975:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Life can be painful, sometimes..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910975:s5",
+          "DialogueText": "But there's always hope for a better future. You've got to believe in that.",
+          "AudioPath": "assets/ko-KR/Harvey/373.ogg",
+          "TranslationKey": "Events/Forest:3910975:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "But there's always hope for a better future. You've got to believe in that."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s0",
+          "DialogueText": "There you are... just in time! {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/374.ogg",
+          "TranslationKey": "Events/Railroad:528052:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "There you are... just in time!"
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s1",
+          "DialogueText": "Look, here it comes! {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Harvey/375.ogg",
+          "TranslationKey": "Events/Railroad:528052:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Look, here it comes!"
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s2",
+          "DialogueText": "Marcello's Balloon Rentals at your service!",
+          "AudioPath": "assets/ko-KR/Harvey/376.ogg",
+          "TranslationKey": "Events/Railroad:528052:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Marcello's Balloon Rentals at your service!"
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s3",
+          "DialogueText": "Marcello: It's all yours for two hours.",
+          "AudioPath": "assets/ko-KR/Harvey/377.ogg",
+          "TranslationKey": "Events/Railroad:528052:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Marcello: It's all yours for two hours."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s4",
+          "DialogueText": "Marcello: Now... I was told there's a saloon somewhere around here?",
+          "AudioPath": "assets/ko-KR/Harvey/378.ogg",
+          "TranslationKey": "Events/Railroad:528052:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Marcello: Now... I was told there's a saloon somewhere around here?"
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s5",
+          "DialogueText": "I saw an ad in the paper for these balloon rides and I knew I had to surprise you with one.",
+          "AudioPath": "assets/ko-KR/Harvey/379.ogg",
+          "TranslationKey": "Events/Railroad:528052:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "I saw an ad in the paper for these balloon rides and I knew I had to surprise you with one."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s6",
+          "DialogueText": "This looks fun! Let's ride!",
+          "AudioPath": "assets/ko-KR/Harvey/380.ogg",
+          "TranslationKey": "Events/Railroad:528052:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "This looks fun! Let's ride!"
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s7",
+          "DialogueText": "...But aren't you afraid of heights?",
+          "AudioPath": "assets/ko-KR/Harvey/381.ogg",
+          "TranslationKey": "Events/Railroad:528052:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "...But aren't you afraid of heights?"
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s8",
+          "DialogueText": "Okay... you first. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/382.ogg",
+          "TranslationKey": "Events/Railroad:528052:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay... you first."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s9",
+          "DialogueText": "We... We're up so high... *gulp* {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Harvey/383.ogg",
+          "TranslationKey": "Events/Railroad:528052:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "We... We're up so high... *gulp*"
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s10",
+          "DialogueText": "I wanted to impress you with this... but look at me. I'm a trembling coward. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Harvey/384.ogg",
+          "TranslationKey": "Events/Railroad:528052:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "I wanted to impress you with this... but look at me. I'm a trembling coward."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s11",
+          "DialogueText": "Well, you've got more than enough courage to make up for me, {Farmer_Name}... that's... that's part of why I like you. {Portrait:Custom:11}",
+          "AudioPath": "assets/ko-KR/Harvey/385.ogg",
+          "TranslationKey": "Events/Railroad:528052:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, you've got more than enough courage to make up for me, ... that's... that's part of why I like you."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s12",
+          "DialogueText": "Okay, I'm going to open my eyes and look down... don't let go of my hand. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/386.ogg",
+          "TranslationKey": "Events/Railroad:528052:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay, I'm going to open my eyes and look down... don't let go of my hand."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s13",
+          "DialogueText": "I... I think I can do it now. {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Harvey/387.ogg",
+          "TranslationKey": "Events/Railroad:528052:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "I... I think I can do it now."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s14",
+          "DialogueText": "Hey, this is incredible! I think I can see Mayor Lewis standing in the town square! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/388.ogg",
+          "TranslationKey": "Events/Railroad:528052:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, this is incredible! I think I can see Mayor Lewis standing in the town square!"
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s15",
+          "DialogueText": "Oh dear... our time's almost up. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/389.ogg",
+          "TranslationKey": "Events/Railroad:528052:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh dear... our time's almost up."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s16",
+          "DialogueText": "Um... {Farmer_Name}? We've known each other for a while now and... I... er... {Portrait:Custom:11}",
+          "AudioPath": "assets/ko-KR/Harvey/390.ogg",
+          "TranslationKey": "Events/Railroad:528052:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... ? We've known each other for a while now and... I... er..."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s17",
+          "DialogueText": "... {Portrait:Custom:11}",
+          "AudioPath": "assets/ko-KR/Harvey/391.ogg",
+          "TranslationKey": "Events/Railroad:528052:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s18",
+          "DialogueText": "Whoops... Our time was up half an hour ago. We'd better touch down. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/392.ogg",
+          "TranslationKey": "Events/Railroad:528052:s18",
+          "PageIndex": 0,
+          "DisplayPattern": "Whoops... Our time was up half an hour ago. We'd better touch down."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/528052:s19",
+          "DialogueText": "I haven't had such a wonderful day for as long as I can remember. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/393.ogg",
+          "TranslationKey": "Events/Railroad:528052:s19",
+          "PageIndex": 0,
+          "DisplayPattern": "I haven't had such a wonderful day for as long as I can remember."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/afraid:s0",
+          "DialogueText": "I am... yeah. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/394.ogg",
+          "TranslationKey": "Events/Railroad:afraid:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I am... yeah."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/afraid:s1",
+          "DialogueText": "But I'm determined to not let that stop me from doing what I want... and experiencing this with you. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/395.ogg",
+          "TranslationKey": "Events/Railroad:afraid:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "But I'm determined to not let that stop me from doing what I want... and experiencing this with you."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/afraid:s2",
+          "DialogueText": "I'll try not to get scared.",
+          "AudioPath": "assets/ko-KR/Harvey/396.ogg",
+          "TranslationKey": "Events/Railroad:afraid:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll try not to get scared."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/afraid:s3",
+          "DialogueText": "We... We're up so high... *gulp* {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Harvey/397.ogg",
+          "TranslationKey": "Events/Railroad:afraid:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "We... We're up so high... *gulp*"
+        },
+        {
+          "DialogueFrom": "Event:Railroad/afraid:s4",
+          "DialogueText": "I wanted to impress you with this... but look at me. I'm a trembling coward. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Harvey/398.ogg",
+          "TranslationKey": "Events/Railroad:afraid:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I wanted to impress you with this... but look at me. I'm a trembling coward."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/afraid:s5",
+          "DialogueText": "Well, you've got more than enough courage to make up for me, {Farmer_Name}... that's... that's part of why I like you. {Portrait:Custom:11}",
+          "AudioPath": "assets/ko-KR/Harvey/399.ogg",
+          "TranslationKey": "Events/Railroad:afraid:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, you've got more than enough courage to make up for me, ... that's... that's part of why I like you."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/afraid:s6",
+          "DialogueText": "Okay, I'm going to open my eyes and look down... don't let go of my hand. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/400.ogg",
+          "TranslationKey": "Events/Railroad:afraid:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay, I'm going to open my eyes and look down... don't let go of my hand."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/afraid:s7",
+          "DialogueText": "I... I think I can do it now. {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Harvey/401.ogg",
+          "TranslationKey": "Events/Railroad:afraid:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I... I think I can do it now."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/afraid:s8",
+          "DialogueText": "Hey, this is incredible! I think I can see Mayor Lewis standing in the town square! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/402.ogg",
+          "TranslationKey": "Events/Railroad:afraid:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, this is incredible! I think I can see Mayor Lewis standing in the town square!"
+        },
+        {
+          "DialogueFrom": "Event:Railroad/afraid:s9",
+          "DialogueText": "Oh dear... our time's almost up. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/403.ogg",
+          "TranslationKey": "Events/Railroad:afraid:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh dear... our time's almost up."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/afraid:s10",
+          "DialogueText": "Um... {Farmer_Name}? We've known each other for a while now and... I... er... {Portrait:Custom:11}",
+          "AudioPath": "assets/ko-KR/Harvey/404.ogg",
+          "TranslationKey": "Events/Railroad:afraid:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... ? We've known each other for a while now and... I... er..."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/afraid:s11",
+          "DialogueText": "... {Portrait:Custom:11}",
+          "AudioPath": "assets/ko-KR/Harvey/405.ogg",
+          "TranslationKey": "Events/Railroad:afraid:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/afraid:s12",
+          "DialogueText": "Whoops... Our time was up half an hour ago. We'd better touch down. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/406.ogg",
+          "TranslationKey": "Events/Railroad:afraid:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Whoops... Our time was up half an hour ago. We'd better touch down."
+        },
+        {
+          "DialogueFrom": "Event:Railroad/afraid:s13",
+          "DialogueText": "I haven't had such a wonderful day for as long as I can remember. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/407.ogg",
+          "TranslationKey": "Events/Railroad:afraid:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "I haven't had such a wonderful day for as long as I can remember."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Harvey",
+          "DialogueText": "그리고 바로 옆에서 거스가 돼지갈비를 굽고 있네... 으악. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/408.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "그리고 바로 옆에서 거스가 돼지갈비를 굽고 있네... 으악."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Harvey",
+          "DialogueText": "내 내면을 성찰해야겠어... {Portrait:Custom:11}",
+          "AudioPath": "assets/ko-KR/Harvey/409.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Harvey",
+          "PageIndex": 1,
+          "DisplayPattern": "내 내면을 성찰해야겠어..."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Harvey_spouse",
+          "DialogueText": "집에 갈 준비되면 알려줘, 여기서 기다리고 있을게...",
+          "AudioPath": "assets/ko-KR/Harvey/410.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Harvey_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "집에 갈 준비되면 알려줘, 여기서 기다리고 있을게..."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Harvey_y2",
+          "DialogueText": "오늘 전시되어 있는 물건들이 다들 너무 훌륭해서 놀랐어. 능력 있는 사람들이 정말 많네! {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Harvey/411.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Harvey_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 전시되어 있는 물건들이 다들 너무 훌륭해서 놀랐어. 능력 있는 사람들이 정말 많네!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Harvey_spouse_y2",
+          "DialogueText": "안녕, 여보. 오늘 대회 행운을 빌어. 분명 멋지게 해낼 수 있을 거야! {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Harvey/412.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Harvey_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕, 여보. 오늘 대회 행운을 빌어. 분명 멋지게 해낼 수 있을 거야!"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Harvey",
+          "DialogueText": "오! 나 찾았구나... {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Harvey/413.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "오! 나 찾았구나..."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Harvey",
+          "DialogueText": "사실은, 너무 겁먹어서 여기 숨었어. 아무한테도 말하지 말아 줘. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/414.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Harvey",
+          "PageIndex": 1,
+          "DisplayPattern": "사실은, 너무 겁먹어서 여기 숨었어. 아무한테도 말하지 말아 줘."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Harvey_spouse",
+          "DialogueText": "안녕... 여기서 날 찾길 기다리고 있었어... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/415.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Harvey_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕... 여기서 날 찾길 기다리고 있었어..."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Harvey_y2",
+          "DialogueText": "안타깝지만 이건 내가 못 풀겠네... {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Harvey/416.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Harvey_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "안타깝지만 이건 내가 못 풀겠네..."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Harvey_spouse_y2",
+          "DialogueText": "여보 언제 오나 했지. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/417.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Harvey_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "여보 언제 오나 했지."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Harvey_spouse_y2",
+          "DialogueText": "난 괜찮아. 잠깐 쉬는 중이야. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Harvey/418.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Harvey_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "난 괜찮아. 잠깐 쉬는 중이야."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Harvey",
+          "DialogueText": "달걀은 균형 잡힌 식사의 일부분으로 중요하지.",
+          "AudioPath": "assets/ko-KR/Harvey/419.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "달걀은 균형 잡힌 식사의 일부분으로 중요하지."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Harvey",
+          "DialogueText": "앗... 일단 잠시 의사 같은 이야기는 그만해야지. {Portrait:Custom:11}",
+          "AudioPath": "assets/ko-KR/Harvey/420.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Harvey",
+          "PageIndex": 1,
+          "DisplayPattern": "앗... 일단 잠시 의사 같은 이야기는 그만해야지."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Harvey_spouse",
+          "DialogueText": "다들 어떻게 지내려나? 난 그냥 좀 쉬려고. 달걀 사냥 때 모습 기대할게!",
+          "AudioPath": "assets/ko-KR/Harvey/421.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Harvey_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "다들 어떻게 지내려나? 난 그냥 좀 쉬려고. 달걀 사냥 때 모습 기대할게!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Harvey_y2",
+          "DialogueText": "계란은 괜찮은데, 하루에 서른 개씩은 먹지 말라고 조언할게!",
+          "AudioPath": "assets/ko-KR/Harvey/422.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Harvey_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "계란은 괜찮은데, 하루에 서른 개씩은 먹지 말라고 조언할게!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Harvey",
+          "DialogueText": "누군가에게 춤 신청을 할 용기를 찾는 중이야. {Portrait:Custom:11}",
+          "AudioPath": "assets/ko-KR/Harvey/423.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "누군가에게 춤 신청을 할 용기를 찾는 중이야."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Harvey_y2",
+          "DialogueText": "인생의 어려움을 겪어보면 객관적인 관점을 가질 수 있지. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Harvey/424.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Harvey_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "인생의 어려움을 겪어보면 객관적인 관점을 가질 수 있지."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Harvey_y2",
+          "DialogueText": "잘 안 맞는 옷을 입고 마을 사람들 앞에서 춤추는 것도 갑자기 나쁜 일이 아닌 것처럼 느껴지고 말이야! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/425.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Harvey_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "잘 안 맞는 옷을 입고 마을 사람들 앞에서 춤추는 것도 갑자기 나쁜 일이 아닌 것처럼 느껴지고 말이야!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Harvey_spouse_y2",
+          "DialogueText": "오늘을 위해 내가 제일 아끼는 넥타이를 했지. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/426.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Harvey_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘을 위해 내가 제일 아끼는 넥타이를 했지."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Harvey",
+          "DialogueText": "자외선 차단 크림을 가져오길 잘했어.",
+          "AudioPath": "assets/ko-KR/Harvey/427.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "자외선 차단 크림을 가져오길 잘했어."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Harvey",
+          "DialogueText": "마루도 어깨에 좀 발라야 하는 거 아닌가 싶네?",
+          "AudioPath": "assets/ko-KR/Harvey/428.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Harvey",
+          "PageIndex": 1,
+          "DisplayPattern": "마루도 어깨에 좀 발라야 하는 거 아닌가 싶네?"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Harvey_spouse",
+          "DialogueText": "아이고... 양말에 모래가 들어갔네... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/429.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Harvey_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "아이고... 양말에 모래가 들어갔네..."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Harvey_y2",
+          "DialogueText": "*헥*... *헥*... 아아아, 뜨거운 스프 한 그릇이 기대되네... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/430.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Harvey_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "*헥*... *헥*... 아아아, 뜨거운 스프 한 그릇이 기대되네..."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Harvey_spouse_y2",
+          "DialogueText": "음악소리에 다리가 저절로 움직이네... 에어로빅 수업 때처럼 말이야! {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Harvey/431.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Harvey_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "음악소리에 다리가 저절로 움직이네... 에어로빅 수업 때처럼 말이야!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Harvey",
+          "DialogueText": "그래, 여름이 끝났네. 솔직히 말하자면, 모기랑 작별할 수 있어서 기뻐!",
+          "AudioPath": "assets/ko-KR/Harvey/432.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "그래, 여름이 끝났네. 솔직히 말하자면, 모기랑 작별할 수 있어서 기뻐!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Harvey_y2",
+          "DialogueText": "일초가 지날 때마다 기대가 커져... {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Harvey/433.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Harvey_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "일초가 지날 때마다 기대가 커져..."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Harvey_spouse_y2",
+          "DialogueText": "안녕, 여보. 곧 해파리들이 보일 거야... 몇 번을 봐도 좋네! {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Harvey/434.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Harvey_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕, 여보. 곧 해파리들이 보일 거야... 몇 번을 봐도 좋네!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Harvey",
+          "DialogueText": "올해 긴급한 의료 상황이 없었다는 것에 감사하고 있어!",
+          "AudioPath": "assets/ko-KR/Harvey/435.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "올해 긴급한 의료 상황이 없었다는 것에 감사하고 있어!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Harvey_spouse",
+          "DialogueText": "좀 기분이 벅찬걸... 공기가 상쾌해서 다행이야... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/436.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Harvey_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "좀 기분이 벅찬걸... 공기가 상쾌해서 다행이야..."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Harvey_y2",
+          "DialogueText": "피칸 파이 먹어봤어? 내가 제일 좋아하는 거야. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Harvey/437.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Harvey_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "피칸 파이 먹어봤어? 내가 제일 좋아하는 거야."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Harvey_spouse_y2",
+          "DialogueText": "감사할 일 많지, 병원도 감사하고, 방문하시는 분들 건강하신 것도 감사하고...",
+          "AudioPath": "assets/ko-KR/Harvey/438.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Harvey_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "감사할 일 많지, 병원도 감사하고, 방문하시는 분들 건강하신 것도 감사하고..."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Harvey_spouse_y2",
+          "DialogueText": "하지만 가장 감사한 건 역시 우리가 함께 살아가는 삶이라고 생각해... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/439.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Harvey_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "하지만 가장 감사한 건 역시 우리가 함께 살아가는 삶이라고 생각해..."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Harvey",
+          "DialogueText": "극한 기온은 몸에 무리를 많이 줄 수 있기 때문에, 꼭 따뜻하게 입고!",
+          "AudioPath": "assets/ko-KR/Harvey/440.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "극한 기온은 몸에 무리를 많이 줄 수 있기 때문에, 꼭 따뜻하게 입고!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Harvey",
+          "DialogueText": "아, 그리고 축제도 재밌게 즐기고! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/441.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Harvey",
+          "PageIndex": 1,
+          "DisplayPattern": "아, 그리고 축제도 재밌게 즐기고!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Harvey_spouse",
+          "DialogueText": "집에 가서 불 따뜻하게 켜는 거 기대하고 있어... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Harvey/442.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Harvey_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "집에 가서 불 따뜻하게 켜는 거 기대하고 있어..."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Harvey_y2",
+          "DialogueText": "오늘 아침 콧수염에 왁스 바르지 말걸, 얼어붙어버렸어! 아이고 이런... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/443.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Harvey_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 아침 콧수염에 왁스 바르지 말걸, 얼어붙어버렸어! 아이고 이런..."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Harvey_y2",
+          "DialogueText": "뭐, 얼음송곳이 필요하다면, 날 찾아오면 될 거야... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/444.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Harvey_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "뭐, 얼음송곳이 필요하다면, 날 찾아오면 될 거야..."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Harvey_spouse_y2",
+          "DialogueText": "안녕, 여보. 오늘 얼음낚시 대회 행운을 빌게. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Harvey/445.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Harvey_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕, 여보. 오늘 얼음낚시 대회 행운을 빌게."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Harvey:s0",
+          "DialogueText": "나 주는 거야? 이거 진짜 좋아하는 건데! 내 마음을 읽은 거 같아.",
+          "AudioPath": "assets/ko-KR/Harvey/446.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Harvey:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "나 주는 거야? 이거 진짜 좋아하는 건데! 내 마음을 읽은 거 같아."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Harvey:s1",
+          "DialogueText": "정말 괜찮은 선물이네. 고마워!",
+          "AudioPath": "assets/ko-KR/Harvey/447.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Harvey:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "정말 괜찮은 선물이네. 고마워!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Harvey:s2",
+          "DialogueText": "음... 이거 건강한 거 맞아?",
+          "AudioPath": "assets/ko-KR/Harvey/448.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Harvey:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "음... 이거 건강한 거 맞아?"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Harvey:s3",
+          "DialogueText": "...나 이거에 알러지 있는 거 같아.",
+          "AudioPath": "assets/ko-KR/Harvey/449.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Harvey:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "...나 이거에 알러지 있는 거 같아."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Harvey:s4",
+          "DialogueText": "고마워. 친절하구나.",
+          "AudioPath": "assets/ko-KR/Harvey/450.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Harvey:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "고마워. 친절하구나."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Harvey",
+          "DialogueText": "너와 함께 있을 땐 이렇게 높은 절벽에서 떨어져서 밑에 있는 날카로운 바위에 부딪힐 생각도 두렵지 않아... {Portrait:Love}\"/jump Harvey/shake Harvey 1000/pause 1000/speak Harvey \"... {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Harvey/451.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "너와 함께 있을 땐 이렇게 높은 절벽에서 떨어져서 밑에 있는 날카로운 바위에 부딪힐 생각도 두렵지 않아...\"/jump Harvey/shake Harvey 1000/pause 1000/speak Harvey \"..."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Harvey",
+          "DialogueText": "마... 많이 사랑하고 존경해, {Farmer_Name}... {Portrait:Love}\"",
+          "AudioPath": "assets/ko-KR/Harvey/452.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Harvey",
+          "PageIndex": 1,
+          "DisplayPattern": "마... 많이 사랑하고 존경해, ...\""
+        },
+        {
+          "DialogueFrom": "MovieReactions/Harvey_spring_movie_1_BeforeMovie",
+          "DialogueText": "이 영화는 좀 긴장되는걸... *꿀꺽*",
+          "AudioPath": "assets/ko-KR/Harvey/453.ogg",
+          "TranslationKey": "Strings/MovieReactions:Harvey_spring_movie_1_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "이 영화는 좀 긴장되는걸... *꿀꺽*"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Harvey_spring_movie_1_DuringMovie",
+          "DialogueText": "무서워! {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Harvey/454.ogg",
+          "TranslationKey": "Strings/MovieReactions:Harvey_spring_movie_1_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "무서워!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Harvey_spring_movie_1_DuringMovie_2",
+          "DialogueText": "하비가 덜덜 떨고 있습니다!",
+          "AudioPath": "assets/ko-KR/Harvey/455.ogg",
+          "TranslationKey": "Strings/MovieReactions:Harvey_spring_movie_1_DuringMovie_2",
+          "PageIndex": 0,
+          "DisplayPattern": "하비가 덜덜 떨고 있습니다!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Harvey_spring_movie_1_AfterMovie",
+          "DialogueText": "고소공포증 때문에 높이서 찍은 장면들은 정말 무섭더라... 그래도 즐거운 시간이었어. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/456.ogg",
+          "TranslationKey": "Strings/MovieReactions:Harvey_spring_movie_1_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "고소공포증 때문에 높이서 찍은 장면들은 정말 무섭더라... 그래도 즐거운 시간이었어."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Harvey_love_BeforeMovie",
+          "DialogueText": "주주 시티 타임즈에서 이 영화를 극찬하던데...",
+          "AudioPath": "assets/ko-KR/Harvey/457.ogg",
+          "TranslationKey": "Strings/MovieReactions:Harvey_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "주주 시티 타임즈에서 이 영화를 극찬하던데..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Harvey_love_DuringMovie",
+          "DialogueText": "많은 생각을 하게 하는 영화야, 그렇지?",
+          "AudioPath": "assets/ko-KR/Harvey/458.ogg",
+          "TranslationKey": "Strings/MovieReactions:Harvey_love_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "많은 생각을 하게 하는 영화야, 그렇지?"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Harvey_love_AfterMovie",
+          "DialogueText": "훌륭한 영화였어! 함께 보러 가자고 초대해줘서 정말 기뻐, {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Harvey/459.ogg",
+          "TranslationKey": "Strings/MovieReactions:Harvey_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "훌륭한 영화였어! 함께 보러 가자고 초대해줘서 정말 기뻐, ."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Harvey_like_BeforeMovie",
+          "DialogueText": "내가 영화를 많이 보는 편은 아니지만, 이 영화는 인기가 많은 거지?",
+          "AudioPath": "assets/ko-KR/Harvey/460.ogg",
+          "TranslationKey": "Strings/MovieReactions:Harvey_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 영화를 많이 보는 편은 아니지만, 이 영화는 인기가 많은 거지?"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Harvey_like_AfterMovie",
+          "DialogueText": "흥미로웠어! 한동안 생각날 것 같아.",
+          "AudioPath": "assets/ko-KR/Harvey/461.ogg",
+          "TranslationKey": "Strings/MovieReactions:Harvey_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "흥미로웠어! 한동안 생각날 것 같아."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Harvey_dislike_BeforeMovie",
+          "DialogueText": "이 영화는 내가 보기엔 좀 강렬한 편일 것 같은데... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/462.ogg",
+          "TranslationKey": "Strings/MovieReactions:Harvey_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "이 영화는 내가 보기엔 좀 강렬한 편일 것 같은데..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Harvey_dislike_DuringMovie",
+          "DialogueText": "기절할 것 같아... {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Harvey/463.ogg",
+          "TranslationKey": "Strings/MovieReactions:Harvey_dislike_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "기절할 것 같아..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Harvey_dislike_DuringMovie_2",
+          "DialogueText": "하비의 혈압이 하늘을 향해 치솟고 있습니다!",
+          "AudioPath": "assets/ko-KR/Harvey/464.ogg",
+          "TranslationKey": "Strings/MovieReactions:Harvey_dislike_DuringMovie_2",
+          "PageIndex": 0,
+          "DisplayPattern": "하비의 혈압이 하늘을 향해 치솟고 있습니다!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Harvey_dislike_AfterMovie",
+          "DialogueText": "몸에서 열나는 것 같아... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Harvey/465.ogg",
+          "TranslationKey": "Strings/MovieReactions:Harvey_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "몸에서 열나는 것 같아..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Harvey_marriage",
+          "DialogueText": "저기, {Farmer_Name}. 나 오늘 축제 때문에 늦게까지 일할 거 같아서 밤에 기다리지 말고 먼저 자!",
+          "AudioPath": "assets/ko-KR/Harvey/466.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Harvey_marriage",
+          "PageIndex": 0,
+          "DisplayPattern": "저기, . 나 오늘 축제 때문에 늦게까지 일할 거 같아서 밤에 기다리지 말고 먼저 자!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Harvey_marriage",
+          "DialogueText": "해골 동굴 들어가면 꼭 조심하겠다고 약속하고.",
+          "AudioPath": "assets/ko-KR/Harvey/467.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Harvey_marriage",
+          "PageIndex": 1,
+          "DisplayPattern": "해골 동굴 들어가면 꼭 조심하겠다고 약속하고."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Harvey",
+          "DialogueText": "동굴 탐험은 정말 위험한 일이지. 사고가 없긴 바라지만, 그래도... 혹시 모르니 오늘은 계속 여기 있어야겠어.",
+          "AudioPath": "assets/ko-KR/Harvey/468.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "동굴 탐험은 정말 위험한 일이지. 사고가 없긴 바라지만, 그래도... 혹시 모르니 오늘은 계속 여기 있어야겠어."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Harvey",
+          "DialogueText": "의사로서 용이 가득한 동굴은 최대한 피하는 것을 추천해! 하지만 최종적으로는 네 선택이니까.",
+          "AudioPath": "assets/ko-KR/Harvey/469.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Harvey",
+          "PageIndex": 1,
+          "DisplayPattern": "의사로서 용이 가득한 동굴은 최대한 피하는 것을 추천해! 하지만 최종적으로는 네 선택이니까."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Harvey",
+          "DialogueText": "어, 음... 내가 지은 모형 비행기야... 마음에 들어?",
+          "AudioPath": "assets/ko-KR/Harvey/470.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Harvey",
+          "PageIndex": 0,
+          "DisplayPattern": "어, 음... 내가 지은 모형 비행기야... 마음에 들어?"
+        }
+      ]
+    }
+  ]
+}

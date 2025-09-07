@@ -1,0 +1,4284 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Alex.ja-JP",
+      "VoicePackName": "DictionarV2 (Alex - ja-JP)",
+      "Character": "Alex",
+      "Language": "ja-JP",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "あら、お前が 引っ越した ばかりの 新人か。いい感じだな。",
+          "AudioPath": "assets/ja-JP/Alex/1_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "あら、お前が 引っ越した ばかりの 新人か。いい感じだな。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "お前が 引っ越した ばかりの 新しい子か。仲良く やっていけると 思ってるぜ。オレは アレックスだ。",
+          "AudioPath": "assets/ja-JP/Alex/2_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "お前が 引っ越した ばかりの 新しい子か。仲良く やっていけると 思ってるぜ。オレは アレックスだ。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "またな。",
+          "AudioPath": "assets/ja-JP/Alex/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Introduction",
+          "PageIndex": 2,
+          "DisplayPattern": "またな。"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "先をこされたよ！今さそおうと思ってたんだ… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:FlowerDance_Accept",
+          "PageIndex": 0,
+          "DisplayPattern": "先をこされたよ！今さそおうと思ってたんだ…"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "じゃあ、またあとでな。",
+          "AudioPath": "assets/ja-JP/Alex/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:FlowerDance_Accept",
+          "PageIndex": 1,
+          "DisplayPattern": "じゃあ、またあとでな。"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Loved",
+          "DialogueText": "おっと、こいつはいいものだな…誕生日プレゼントをありがとよ、{Farmer_Name}。",
+          "AudioPath": "assets/ja-JP/Alex/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptBirthdayGift_Loved",
+          "PageIndex": 0,
+          "DisplayPattern": "おっと、こいつはいいものだな…誕生日プレゼントをありがとよ、。"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "そいつは…？おまえがどう育ったかは知らないが、オレにとってそれはゴミだ。 {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "そいつは…？おまえがどう育ったかは知らないが、オレにとってそれはゴミだ。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "うわっ… これはすごいな。ありがとよ！",
+          "AudioPath": "assets/ja-JP/Alex/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "うわっ… これはすごいな。ありがとよ！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)Book_Defense",
+          "DialogueText": "おっと、これは…ちょうどこれを探してたんだ。筋力アップのコツが山ほど載ってるはずだからな。ルールその1…タマゴをたくさん食べること！はははっ、もうやってるよ！ありがとな！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)Book_Defense",
+          "PageIndex": 0,
+          "DisplayPattern": "おっと、これは…ちょうどこれを探してたんだ。筋力アップのコツが山ほど載ってるはずだからな。ルールその1…タマゴをたくさん食べること！はははっ、もうやってるよ！ありがとな！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Negative_book_item",
+          "DialogueText": "えーと…本か？そうだな…すこしは読んでみるとするか。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_Negative_book_item",
+          "PageIndex": 0,
+          "DisplayPattern": "えーと…本か？そうだな…すこしは読んでみるとするか。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)FrogEgg",
+          "DialogueText": "うーん…タマゴは大好きだけど…それはこういうことじゃなくて… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(TR)FrogEgg",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん…タマゴは大好きだけど…それはこういうことじゃなくて…"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)FrogEgg",
+          "DialogueText": "よし…ものはためしだ！ （ゴクン） {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(TR)FrogEgg",
+          "PageIndex": 1,
+          "DisplayPattern": "よし…ものはためしだ！ （ゴクン）"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)ParrotEgg",
+          "DialogueText": "これ、食えるのか？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(TR)ParrotEgg",
+          "PageIndex": 0,
+          "DisplayPattern": "これ、食えるのか？"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)ParrotEgg",
+          "DialogueText": "まあ、答えを知る方法はひとつだけど…",
+          "AudioPath": "assets/ja-JP/Alex/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(TR)ParrotEgg",
+          "PageIndex": 1,
+          "DisplayPattern": "まあ、答えを知る方法はひとつだけど…"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)928",
+          "DialogueText": "はっはっは…これを毎日くれたら、オレは30歳から気楽な引退生活ができるぜ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)928",
+          "PageIndex": 0,
+          "DisplayPattern": "はっはっは…これを毎日くれたら、オレは30歳から気楽な引退生活ができるぜ！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)107",
+          "DialogueText": "これがタマゴってもんだ！オムレツのサイズを想像してみろよ…",
+          "AudioPath": "assets/ja-JP/Alex/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)107",
+          "PageIndex": 0,
+          "DisplayPattern": "これがタマゴってもんだ！オムレツのサイズを想像してみろよ…"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)289",
+          "DialogueText": "おっと…腕の筋トレに使えそうな重さだな。1週間これを飲み続けるぞ！はっはっは！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)289",
+          "PageIndex": 0,
+          "DisplayPattern": "おっと…腕の筋トレに使えそうな重さだな。1週間これを飲み続けるぞ！はっはっは！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)442",
+          "DialogueText": "うーん…アヒルのタマゴか…味が濃くてクリーミーなんだ。（バリッ）… （ゴクン）おおぉぉ…",
+          "AudioPath": "assets/ja-JP/Alex/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)442",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん…アヒルのタマゴか…味が濃くてクリーミーなんだ。（バリッ）… （ゴクン）おおぉぉ…"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)305",
+          "DialogueText": "ああ… うん…たしかにタマゴは好きだけど、これは体に悪そうだな。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)305",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ… うん…たしかにタマゴは好きだけど、これは体に悪そうだな。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)403",
+          "DialogueText": "（バリッ）うーん…ナッツの風味。やっぱこれだな。ありがとよ、{Farmer_Name}！",
+          "AudioPath": "assets/ja-JP/Alex/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_(O)403",
+          "PageIndex": 0,
+          "DisplayPattern": "（バリッ）うーん…ナッツの風味。やっぱこれだな。ありがとよ、！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Positive_category_egg",
+          "DialogueText": "おう、ありがとよ。タマゴは体づくりには欠かせないんだ。",
+          "AudioPath": "assets/ja-JP/Alex/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_Positive_category_egg",
+          "PageIndex": 0,
+          "DisplayPattern": "おう、ありがとよ。タマゴは体づくりには欠かせないんだ。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Positive_category_egg",
+          "DialogueText": "（バリッ）ごくん…うん。オレにとってはスナックみたいなもんさ。",
+          "AudioPath": "assets/ja-JP/Alex/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:AcceptGift_Positive_category_egg",
+          "PageIndex": 1,
+          "DisplayPattern": "（バリッ）ごくん…うん。オレにとってはスナックみたいなもんさ。"
+        },
+        {
+          "DialogueFrom": "cc_Bridge",
+          "DialogueText": "最近湖に行ったか？きのうの夜ランニングしてたら、古い橋が修理されてたんだ…",
+          "AudioPath": "assets/ja-JP/Alex/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:cc_Bridge",
+          "PageIndex": 0,
+          "DisplayPattern": "最近湖に行ったか？きのうの夜ランニングしてたら、古い橋が修理されてたんだ…"
+        },
+        {
+          "DialogueFrom": "eventSeen_288847",
+          "DialogueText": "オレは…オレはそんな風に心を開くことに慣れてないんだ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:eventSeen_288847",
+          "PageIndex": 0,
+          "DisplayPattern": "オレは…オレはそんな風に心を開くことに慣れてないんだ…"
+        },
+        {
+          "DialogueFrom": "fishCaught_159",
+          "DialogueText": "珍しい魚を釣ったんだって？",
+          "AudioPath": "assets/ja-JP/Alex/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fishCaught_159",
+          "PageIndex": 0,
+          "DisplayPattern": "珍しい魚を釣ったんだって？"
+        },
+        {
+          "DialogueFrom": "fishCaught_159",
+          "DialogueText": "やるじゃねえか。見た目よりも腕力があるんだな！ …わるくないぜ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fishCaught_159",
+          "PageIndex": 1,
+          "DisplayPattern": "やるじゃねえか。見た目よりも腕力があるんだな！ …わるくないぜ！"
+        },
+        {
+          "DialogueFrom": "purchasedAnimal_Chicken_memory_oneday",
+          "DialogueText": "そういえば、初めてニワトリを飼ったんだって？",
+          "AudioPath": "assets/ja-JP/Alex/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:purchasedAnimal_Chicken_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "そういえば、初めてニワトリを飼ったんだって？"
+        },
+        {
+          "DialogueFrom": "purchasedAnimal_Chicken_memory_oneday",
+          "DialogueText": "ああ…ばあちゃんもニワトリを飼ってくれたらいいのに。オレは毎朝、生タマゴを1ダース食べるんだ！",
+          "AudioPath": "assets/ja-JP/Alex/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:purchasedAnimal_Chicken_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "ああ…ばあちゃんもニワトリを飼ってくれたらいいのに。オレは毎朝、生タマゴを1ダース食べるんだ！"
+        },
+        {
+          "DialogueFrom": "eventSeen_288847_memory_oneweek",
+          "DialogueText": "よう… なあ、{Farmer_Name}？オレは… 先週ビーチでお前と話してからずっと気分が落ち着いてるんだ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:eventSeen_288847_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "よう… なあ、？オレは… 先週ビーチでお前と話してからずっと気分が落ち着いてるんだ。"
+        },
+        {
+          "DialogueFrom": "eventSeen_288847_memory_oneweek",
+          "DialogueText": "話を聞いてくれてありがとな。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:eventSeen_288847_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "話を聞いてくれてありがとな。"
+        },
+        {
+          "DialogueFrom": "fishCaught_139",
+          "DialogueText": "サケを釣ったのを見てたぜ。",
+          "AudioPath": "assets/ja-JP/Alex/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fishCaught_139",
+          "PageIndex": 0,
+          "DisplayPattern": "サケを釣ったのを見てたぜ。"
+        },
+        {
+          "DialogueFrom": "fishCaught_139",
+          "DialogueText": "「サーモンディナー」を作ったら一口食べさせてくれよ！",
+          "AudioPath": "assets/ja-JP/Alex/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fishCaught_139",
+          "PageIndex": 1,
+          "DisplayPattern": "「サーモンディナー」を作ったら一口食べさせてくれよ！"
+        },
+        {
+          "DialogueFrom": "firstVisit_BathHouse_MensLocker_memory_oneday",
+          "DialogueText": "こないだスパに行ってただろう？体をきたえてるのか？へへっ。",
+          "AudioPath": "assets/ja-JP/Alex/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:firstVisit_BathHouse_MensLocker_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "こないだスパに行ってただろう？体をきたえてるのか？へへっ。"
+        },
+        {
+          "DialogueFrom": "firstVisit_BathHouse_MensLocker_memory_oneday",
+          "DialogueText": "ええと… オレのロッカーを調べたりしてないよな？ {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Alex/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:firstVisit_BathHouse_MensLocker_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "ええと… オレのロッカーを調べたりしてないよな？"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "いったいなにが起こってるんだ？どうしたらいいんだ？",
+          "AudioPath": "assets/ja-JP/Alex/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "いったいなにが起こってるんだ？どうしたらいいんだ？"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "今日はじいちゃんばあちゃんと一緒にいた方がよさそうだな… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:GreenRain",
+          "PageIndex": 1,
+          "DisplayPattern": "今日はじいちゃんばあちゃんと一緒にいた方がよさそうだな…"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "今朝ランニングに行こうとしたんだけど、草がめちゃくちゃすごいんだ！近場しか走れなかったよ…",
+          "AudioPath": "assets/ja-JP/Alex/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "今朝ランニングに行こうとしたんだけど、草がめちゃくちゃすごいんだ！近場しか走れなかったよ…"
+        },
+        {
+          "DialogueFrom": "dating_Alex",
+          "DialogueText": "アレックスはあなたの腕をぎゅっと握って、にっこり笑った。",
+          "AudioPath": "assets/ja-JP/Alex/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:dating_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "アレックスはあなたの腕をぎゅっと握って、にっこり笑った。"
+        },
+        {
+          "DialogueFrom": "dating_Alex_memory_oneday",
+          "DialogueText": "忘れられない%seasonになりそうだ！ {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:dating_Alex_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "忘れられない%seasonになりそうだ！"
+        },
+        {
+          "DialogueFrom": "married_Haley",
+          "DialogueText": "ヘイリーに結婚を決意させるなんてすごいじゃないか。お似合いの2人って感じには見えなかったけどな！",
+          "AudioPath": "assets/ja-JP/Alex/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:married_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "ヘイリーに結婚を決意させるなんてすごいじゃないか。お似合いの2人って感じには見えなかったけどな！"
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "ついに着いたぞ！",
+          "AudioPath": "assets/ja-JP/Alex/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "ついに着いたぞ！"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "あーあ…これはずっとは続かないんだよな。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "あーあ…これはずっとは続かないんだよな。"
+        },
+        {
+          "DialogueFrom": "Resort_Wander",
+          "DialogueText": "フリスビーを持ってくればよかったな…まあいいか。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Wander",
+          "PageIndex": 0,
+          "DisplayPattern": "フリスビーを持ってくればよかったな…まあいいか。"
+        },
+        {
+          "DialogueFrom": "Resort_Wander_2",
+          "DialogueText": "誰かバレーボール大会をやりたいヤツはいるかな？",
+          "AudioPath": "assets/ja-JP/Alex/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Wander_2",
+          "PageIndex": 0,
+          "DisplayPattern": "誰かバレーボール大会をやりたいヤツはいるかな？"
+        },
+        {
+          "DialogueFrom": "Resort_Wander_2",
+          "DialogueText": "心配ないって、ほどほどにするさ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Wander_2",
+          "PageIndex": 1,
+          "DisplayPattern": "心配ないって、ほどほどにするさ！"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "オレが泳いで往復できる距離はどのくらいだと思う？",
+          "AudioPath": "assets/ja-JP/Alex/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "オレが泳いで往復できる距離はどのくらいだと思う？"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "オレの予想では、少なくとも1マイルは行けるな。",
+          "AudioPath": "assets/ja-JP/Alex/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Shore",
+          "PageIndex": 1,
+          "DisplayPattern": "オレの予想では、少なくとも1マイルは行けるな。"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "…心配するなって、試しはしないさ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Shore",
+          "PageIndex": 2,
+          "DisplayPattern": "…心配するなって、試しはしないさ。"
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "そんな服装で暑くないのか？おい頼むぜ…ここはビーチだぞ！",
+          "AudioPath": "assets/ja-JP/Alex/49_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "そんな服装で暑くないのか？おい頼むぜ…ここはビーチだぞ！",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "その服装じゃ暑いだろ？海風ってのは肌で感じるもんだぜ！",
+          "AudioPath": "assets/ja-JP/Alex/50_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Chair",
+          "PageIndex": 1,
+          "DisplayPattern": "その服装じゃ暑いだろ？海風ってのは肌で感じるもんだぜ！",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Resort_Towel",
+          "DialogueText": "この自由な島には、クヨクヨした愚痴なんて似合わない！",
+          "AudioPath": "assets/ja-JP/Alex/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Towel",
+          "PageIndex": 0,
+          "DisplayPattern": "この自由な島には、クヨクヨした愚痴なんて似合わない！"
+        },
+        {
+          "DialogueFrom": "Resort_Towel_2",
+          "DialogueText": "ふう、腹筋に太陽が当たるようになって気持ちがいいな。",
+          "AudioPath": "assets/ja-JP/Alex/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Towel_2",
+          "PageIndex": 0,
+          "DisplayPattern": "ふう、腹筋に太陽が当たるようになって気持ちがいいな。"
+        },
+        {
+          "DialogueFrom": "Resort_Towel_2",
+          "DialogueText": "家にばかりいるのはもったいないぜ。",
+          "AudioPath": "assets/ja-JP/Alex/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Towel_2",
+          "PageIndex": 1,
+          "DisplayPattern": "家にばかりいるのはもったいないぜ。"
+        },
+        {
+          "DialogueFrom": "Resort_Towel_3",
+          "DialogueText": "もしプロになったら、世界中の島にバカンスに行くのさ。",
+          "AudioPath": "assets/ja-JP/Alex/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Towel_3",
+          "PageIndex": 0,
+          "DisplayPattern": "もしプロになったら、世界中の島にバカンスに行くのさ。"
+        },
+        {
+          "DialogueFrom": "Resort_Towel_3",
+          "DialogueText": "でも今んとこ、この場所が最高だぜ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Towel_3",
+          "PageIndex": 1,
+          "DisplayPattern": "でも今んとこ、この場所が最高だぜ！"
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "オレはプロテインパウダーを2杯入れたバナナシェイクを注文してるんだ。",
+          "AudioPath": "assets/ja-JP/Alex/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "オレはプロテインパウダーを2杯入れたバナナシェイクを注文してるんだ。"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "ああ…島の生活。すっかり慣れちまったぜ！",
+          "AudioPath": "assets/ja-JP/Alex/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ…島の生活。すっかり慣れちまったぜ！"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept_Spouse",
+          "DialogueText": "いいぜ、 楽しくなりそうだ… 久しぶりだから、 今年の分の ステップを 覚えてるか どうかだな！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:FlowerDance_Accept_Spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "いいぜ、 楽しくなりそうだ… 久しぶりだから、 今年の分の ステップを 覚えてるか どうかだな！"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Decline",
+          "DialogueText": "いいや…他の誰かを 誘おうとしてるとこだ。じゃあな。",
+          "AudioPath": "assets/ja-JP/Alex/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:FlowerDance_Decline",
+          "PageIndex": 0,
+          "DisplayPattern": "いいや…他の誰かを 誘おうとしてるとこだ。じゃあな。"
+        },
+        {
+          "DialogueFrom": "divorced",
+          "DialogueText": "オレたちは運命で結ばれてるって思ってたのに…オレが間違ってたみたいだな。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:divorced",
+          "PageIndex": 0,
+          "DisplayPattern": "オレたちは運命で結ばれてるって思ってたのに…オレが間違ってたみたいだな。"
+        },
+        {
+          "DialogueFrom": "dumped_Guys",
+          "DialogueText": "お前に 割く時間は ない。 {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:dumped_Guys",
+          "PageIndex": 0,
+          "DisplayPattern": "お前に 割く時間は ない。"
+        },
+        {
+          "DialogueFrom": "secondChance_Guys",
+          "DialogueText": "お前を 信じられるかは わからない、 でももう一度 やり直して みようと思う。 {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Alex/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:secondChance_Guys",
+          "PageIndex": 0,
+          "DisplayPattern": "お前を 信じられるかは わからない、 でももう一度 やり直して みようと思う。"
+        },
+        {
+          "DialogueFrom": "breakUp",
+          "DialogueText": "何を言っているのか...？ {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Alex/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:breakUp",
+          "PageIndex": 0,
+          "DisplayPattern": "何を言っているのか...？"
+        },
+        {
+          "DialogueFrom": "breakUp",
+          "DialogueText": "（へん）...分かった。オーライ...さて、あなたは自身で選択しました。懇願するようなことはないね。 {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:breakUp",
+          "PageIndex": 1,
+          "DisplayPattern": "（へん）...分かった。オーライ...さて、あなたは自身で選択しました。懇願するようなことはないね。"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "ハイスクール時代、 オールスターの クォーターバックを やったんだぜ。本当さ。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Alex/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "ハイスクール時代、 オールスターの クォーターバックを やったんだぜ。本当さ。"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "ジャケットの 星が 見えるだろ？これが その証拠だ。",
+          "AudioPath": "assets/ja-JP/Alex/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "ジャケットの 星が 見えるだろ？これが その証拠だ。"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "日焼けするには ビーチが一番だ。",
+          "AudioPath": "assets/ja-JP/Alex/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "日焼けするには ビーチが一番だ。"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "ちゃんと 日光を 浴びないと、 肌が真っ白に なってしまうぜ。",
+          "AudioPath": "assets/ja-JP/Alex/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "ちゃんと 日光を 浴びないと、 肌が真っ白に なってしまうぜ。"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "はぁ…この町に もっと女の子が いたらなぁ。 そう思わないか？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/69_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Tue",
+          "PageIndex": 2,
+          "DisplayPattern": "はぁ…この町に もっと女の子が いたらなぁ。 そう思わないか？",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "よぉ、 今度一緒に ビーチで 遊ばないか？ビキニは 持ってるよな？",
+          "AudioPath": "assets/ja-JP/Alex/70_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Tue",
+          "PageIndex": 3,
+          "DisplayPattern": "よぉ、 今度一緒に ビーチで 遊ばないか？ビキニは 持ってるよな？",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "キャッチボールを するには いい日だな。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Alex/71.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "キャッチボールを するには いい日だな。"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "お前と一緒に 遊びたいところだが、 見た感じ スポーツは 好きじゃなさそうだな。",
+          "AudioPath": "assets/ja-JP/Alex/72_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "お前と一緒に 遊びたいところだが、 見た感じ スポーツは 好きじゃなさそうだな。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "お前が 女の子じゃなかったら、 キャッチボールに 誘ってたかもな。",
+          "AudioPath": "assets/ja-JP/Alex/73_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "お前が 女の子じゃなかったら、 キャッチボールに 誘ってたかもな。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "遠くで 見てるだけでもいい。",
+          "AudioPath": "assets/ja-JP/Alex/74.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed",
+          "PageIndex": 3,
+          "DisplayPattern": "遠くで 見てるだけでもいい。"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "一緒に キャッチボールしよう！",
+          "AudioPath": "assets/ja-JP/Alex/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed",
+          "PageIndex": 4,
+          "DisplayPattern": "一緒に キャッチボールしよう！"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "(怒り)それは いったい どういうこと？",
+          "AudioPath": "assets/ja-JP/Alex/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed",
+          "PageIndex": 5,
+          "DisplayPattern": "(怒り)それは いったい どういうこと？"
+        },
+        {
+          "DialogueFrom": "Wed_01_old",
+          "DialogueText": "いくぞ！ …なんてな。ハハハッ！",
+          "AudioPath": "assets/ja-JP/Alex/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed_01_old",
+          "PageIndex": 0,
+          "DisplayPattern": "いくぞ！ …なんてな。ハハハッ！"
+        },
+        {
+          "DialogueFrom": "Wed_01_old",
+          "DialogueText": "誰かと キャッチボールしたかった だけなんだよ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed_01_old",
+          "PageIndex": 1,
+          "DisplayPattern": "誰かと キャッチボールしたかった だけなんだよ…"
+        },
+        {
+          "DialogueFrom": "Wed_01_01",
+          "DialogueText": "ほんと？お前を 見くびっていたかもな。",
+          "AudioPath": "assets/ja-JP/Alex/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed_01_01",
+          "PageIndex": 0,
+          "DisplayPattern": "ほんと？お前を 見くびっていたかもな。"
+        },
+        {
+          "DialogueFrom": "Wed_01_01",
+          "DialogueText": "でも腕が 少し痛いから、 また今度にしよう。",
+          "AudioPath": "assets/ja-JP/Alex/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed_01_01",
+          "PageIndex": 1,
+          "DisplayPattern": "でも腕が 少し痛いから、 また今度にしよう。"
+        },
+        {
+          "DialogueFrom": "Wed_01_02",
+          "DialogueText": "ああ、 スポーツが 苦手な人だって いるよな。",
+          "AudioPath": "assets/ja-JP/Alex/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed_01_02",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、 スポーツが 苦手な人だって いるよな。"
+        },
+        {
+          "DialogueFrom": "Wed_01_03",
+          "DialogueText": "あー… 気にするな。",
+          "AudioPath": "assets/ja-JP/Alex/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Wed_01_03",
+          "PageIndex": 0,
+          "DisplayPattern": "あー… 気にするな。"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "空気が 暖かくなってきてるな…ワクワク してきたぜ。",
+          "AudioPath": "assets/ja-JP/Alex/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "空気が 暖かくなってきてるな…ワクワク してきたぜ。"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "よう、 ファーマーボーイ。",
+          "AudioPath": "assets/ja-JP/Alex/84_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "よう、 ファーマーボーイ。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "おっ、 ファーマーガールじゃないか。新しい服に したのか？結構 似合ってるぜ。",
+          "AudioPath": "assets/ja-JP/Alex/85_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "おっ、 ファーマーガールじゃないか。新しい服に したのか？結構 似合ってるぜ。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "おっと、 忘れるところだった！今日は 腕立ての日だ！",
+          "AudioPath": "assets/ja-JP/Alex/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "おっと、 忘れるところだった！今日は 腕立ての日だ！"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "腕立てを するたびに、 必ず前回よりも 1回多くやるんだ。いい考えだろ？",
+          "AudioPath": "assets/ja-JP/Alex/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri",
+          "PageIndex": 3,
+          "DisplayPattern": "腕立てを するたびに、 必ず前回よりも 1回多くやるんだ。いい考えだろ？"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "腕がすごく痛むけど、 オレにとっては 継続の証 みたいなもんだ。",
+          "AudioPath": "assets/ja-JP/Alex/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "腕がすごく痛むけど、 オレにとっては 継続の証 みたいなもんだ。"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "昨日の 腕立ては 一千回まで 行ってたに 違いない。",
+          "AudioPath": "assets/ja-JP/Alex/89.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "昨日の 腕立ては 一千回まで 行ってたに 違いない。"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "よう。",
+          "AudioPath": "assets/ja-JP/Alex/90.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "よう。"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "オレと話が したいって？今忙しいんだ。",
+          "AudioPath": "assets/ja-JP/Alex/91.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "オレと話が したいって？今忙しいんだ。"
+        },
+        {
+          "DialogueFrom": "Sun2",
+          "DialogueText": "よう、 {Farmer_Name}。",
+          "AudioPath": "assets/ja-JP/Alex/92.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sun2",
+          "PageIndex": 0,
+          "DisplayPattern": "よう、 。"
+        },
+        {
+          "DialogueFrom": "Sun2",
+          "DialogueText": "ああ、お前の 名前は覚えてるぜ。",
+          "AudioPath": "assets/ja-JP/Alex/93.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sun2",
+          "PageIndex": 1,
+          "DisplayPattern": "ああ、お前の 名前は覚えてるぜ。"
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "よう、 {Farmer_Name}。",
+          "AudioPath": "assets/ja-JP/Alex/94.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sun4",
+          "PageIndex": 0,
+          "DisplayPattern": "よう、 。"
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "今日の 調子はどうだ？",
+          "AudioPath": "assets/ja-JP/Alex/95.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sun4",
+          "PageIndex": 1,
+          "DisplayPattern": "今日の 調子はどうだ？"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "よう、 {Farmer_Name}。会いに 来てくれて うれしいぜ。",
+          "AudioPath": "assets/ja-JP/Alex/96.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "よう、 。会いに 来てくれて うれしいぜ。"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "オレは ばあちゃんが好きだと、 胸を張って 言えるぜ！",
+          "AudioPath": "assets/ja-JP/Alex/97.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri4",
+          "PageIndex": 1,
+          "DisplayPattern": "オレは ばあちゃんが好きだと、 胸を張って 言えるぜ！"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "一方で じいちゃんはな…",
+          "AudioPath": "assets/ja-JP/Alex/98.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri4",
+          "PageIndex": 2,
+          "DisplayPattern": "一方で じいちゃんはな…"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "冗談だって。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/99.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri4",
+          "PageIndex": 3,
+          "DisplayPattern": "冗談だって。"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "こんな エネルギッシュな日は、 友達と ビーチで 過ごすのが 一番だ。 そう思うだろ？",
+          "AudioPath": "assets/ja-JP/Alex/100.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "こんな エネルギッシュな日は、 友達と ビーチで 過ごすのが 一番だ。 そう思うだろ？"
+        },
+        {
+          "DialogueFrom": "Mon8",
+          "DialogueText": "なぁ、オレは 富と名声を求めていたが、 最近になって考え直したんだ。そんなのって、 自分の欲を 満たすためだけのものだと思うが、 そうは思わないか？",
+          "AudioPath": "assets/ja-JP/Alex/101.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Mon8",
+          "PageIndex": 0,
+          "DisplayPattern": "なぁ、オレは 富と名声を求めていたが、 最近になって考え直したんだ。そんなのって、 自分の欲を 満たすためだけのものだと思うが、 そうは思わないか？"
+        },
+        {
+          "DialogueFrom": "Mon8",
+          "DialogueText": "プロ入りは まだ諦めていないけど、 それもこの世界じゃ たいしたことじゃ ないんだよな。",
+          "AudioPath": "assets/ja-JP/Alex/102.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Mon8",
+          "PageIndex": 1,
+          "DisplayPattern": "プロ入りは まだ諦めていないけど、 それもこの世界じゃ たいしたことじゃ ないんだよな。"
+        },
+        {
+          "DialogueFrom": "Fri8",
+          "DialogueText": "{Farmer_Name}さんこんにちは。今日は スポーティな 感じだな。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/103_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri8",
+          "PageIndex": 0,
+          "DisplayPattern": "さんこんにちは。今日は スポーティな 感じだな。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Fri8",
+          "DialogueText": "よう、 {Farmer_Name}。いつもと違う 髪のセットでも したのか？何だか 気になるんだよな。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/104_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Fri8",
+          "PageIndex": 1,
+          "DisplayPattern": "よう、 。いつもと違う 髪のセットでも したのか？何だか 気になるんだよな。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Sat10",
+          "DialogueText": "最近、 なかなか 物事に 集中できないんだ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/105.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Sat10",
+          "PageIndex": 0,
+          "DisplayPattern": "最近、 なかなか 物事に 集中できないんだ。"
+        },
+        {
+          "DialogueFrom": "Event_beach1",
+          "DialogueText": "お前もそうか。そうじゃなかったら、 変なヤツだと思ってたかも。または、 ただのオタクかと。",
+          "AudioPath": "assets/ja-JP/Alex/106.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_beach1",
+          "PageIndex": 0,
+          "DisplayPattern": "お前もそうか。そうじゃなかったら、 変なヤツだと思ってたかも。または、 ただのオタクかと。"
+        },
+        {
+          "DialogueFrom": "Event_beach2",
+          "DialogueText": "ほんと？お前、 結構変わってるな。 {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/107.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_beach2",
+          "PageIndex": 0,
+          "DisplayPattern": "ほんと？お前、 結構変わってるな。"
+        },
+        {
+          "DialogueFrom": "Event_beach2",
+          "DialogueText": "すまん。",
+          "AudioPath": "assets/ja-JP/Alex/108.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_beach2",
+          "PageIndex": 1,
+          "DisplayPattern": "すまん。"
+        },
+        {
+          "DialogueFrom": "Event_books1",
+          "DialogueText": "いいや！おせじを 言いたいだけじゃないのか。 {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/109.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_books1",
+          "PageIndex": 0,
+          "DisplayPattern": "いいや！おせじを 言いたいだけじゃないのか。"
+        },
+        {
+          "DialogueFrom": "Event_books2",
+          "DialogueText": "ああ、 お前が正しいかもな… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/110.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_books2",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、 お前が正しいかもな…"
+        },
+        {
+          "DialogueFrom": "Event_books3",
+          "DialogueText": "オレに 同意しないと 思ってた。 {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/111.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_books3",
+          "PageIndex": 0,
+          "DisplayPattern": "オレに 同意しないと 思ってた。"
+        },
+        {
+          "DialogueFrom": "event_box1",
+          "DialogueText": "ああ…そうさ。だからオレは スポーツで 成功しようと 本気で決意したんだ。 {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Alex/112.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box1",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ…そうさ。だからオレは スポーツで 成功しようと 本気で決意したんだ。"
+        },
+        {
+          "DialogueFrom": "event_box1",
+          "DialogueText": "うまくいくかは 関係ない…あの人の 誇りになれるよう 努力するだけだ。ありがとな。",
+          "AudioPath": "assets/ja-JP/Alex/113.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box1",
+          "PageIndex": 1,
+          "DisplayPattern": "うまくいくかは 関係ない…あの人の 誇りになれるよう 努力するだけだ。ありがとな。"
+        },
+        {
+          "DialogueFrom": "event_box2",
+          "DialogueText": "ああ…今日は 母さんの 命日なんだ！わかってくれるか… {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/114.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box2",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ…今日は 母さんの 命日なんだ！わかってくれるか…"
+        },
+        {
+          "DialogueFrom": "event_box3",
+          "DialogueText": "…ありがとな、{Farmer_Name}。",
+          "AudioPath": "assets/ja-JP/Alex/115.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box3",
+          "PageIndex": 0,
+          "DisplayPattern": "…ありがとな、。"
+        },
+        {
+          "DialogueFrom": "event_box3",
+          "DialogueText": "お前は… 他の男達とは違って、親切なんだな。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/116_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box3",
+          "PageIndex": 1,
+          "DisplayPattern": "お前は… 他の男達とは違って、親切なんだな。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "event_box3",
+          "DialogueText": "お前は この町で 一番の友達だ…",
+          "AudioPath": "assets/ja-JP/Alex/117_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box3",
+          "PageIndex": 2,
+          "DisplayPattern": "お前は この町で 一番の友達だ…",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "event_box3",
+          "DialogueText": "本当に 感謝してるぜ。",
+          "AudioPath": "assets/ja-JP/Alex/118_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box3",
+          "PageIndex": 3,
+          "DisplayPattern": "本当に 感謝してるぜ。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "event_box3",
+          "DialogueText": "聞いて 恥ずかしくなったか？ {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/119_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box3",
+          "PageIndex": 4,
+          "DisplayPattern": "聞いて 恥ずかしくなったか？",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "event_box4",
+          "DialogueText": "そんなの 気晴らしにもならねえよ、 この野郎。 {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/120.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:event_box4",
+          "PageIndex": 0,
+          "DisplayPattern": "そんなの 気晴らしにもならねえよ、 この野郎。"
+        },
+        {
+          "DialogueFrom": "Event_parents1",
+          "DialogueText": "それは 面白い考えだな…",
+          "AudioPath": "assets/ja-JP/Alex/121.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_parents1",
+          "PageIndex": 0,
+          "DisplayPattern": "それは 面白い考えだな…"
+        },
+        {
+          "DialogueFrom": "Event_parents2",
+          "DialogueText": "絶対に そんなことしねえよ！ {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/122.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_parents2",
+          "PageIndex": 0,
+          "DisplayPattern": "絶対に そんなことしねえよ！"
+        },
+        {
+          "DialogueFrom": "Event_parents3",
+          "DialogueText": "…お前が 正しいかもな…オレにはわからん。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/123.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:Event_parents3",
+          "PageIndex": 0,
+          "DisplayPattern": "…お前が 正しいかもな…オレにはわからん。"
+        },
+        {
+          "DialogueFrom": "summer_1",
+          "DialogueText": "ねぇ、夏は一年で 最高の時だよな。",
+          "AudioPath": "assets/ja-JP/Alex/124.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_1",
+          "PageIndex": 0,
+          "DisplayPattern": "ねぇ、夏は一年で 最高の時だよな。"
+        },
+        {
+          "DialogueFrom": "summer_1",
+          "DialogueText": "色々と 楽しいことが 待っている 季節だから、 最高の気分だぜ。また後でな。",
+          "AudioPath": "assets/ja-JP/Alex/125.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_1",
+          "PageIndex": 1,
+          "DisplayPattern": "色々と 楽しいことが 待っている 季節だから、 最高の気分だぜ。また後でな。"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "よぉ、 ファーマーボーイ。少し 日焼けしたな。",
+          "AudioPath": "assets/ja-JP/Alex/126_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "よぉ、 ファーマーボーイ。少し 日焼けしたな。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "よぉ、 ファーマーガール。いい感じに 日焼けしてるじゃん。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/127_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "よぉ、 ファーマーガール。いい感じに 日焼けしてるじゃん。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "この夏は 練習しまくって、 プロへの道に近づくぜ。",
+          "AudioPath": "assets/ja-JP/Alex/128.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Mon",
+          "PageIndex": 2,
+          "DisplayPattern": "この夏は 練習しまくって、 プロへの道に近づくぜ。"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "それでお前は、 プロ入りしたオレとは 知り合いだって 自慢できるんだ。いいことだろ？",
+          "AudioPath": "assets/ja-JP/Alex/129.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Mon",
+          "PageIndex": 3,
+          "DisplayPattern": "それでお前は、 プロ入りしたオレとは 知り合いだって 自慢できるんだ。いいことだろ？"
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "もしこの髪型が 女の子に ウケないなら、 いっそ坊主頭に しようかと 思うんだ。",
+          "AudioPath": "assets/ja-JP/Alex/130.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "もしこの髪型が 女の子に ウケないなら、 いっそ坊主頭に しようかと 思うんだ。"
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "はぁ…人生って つらいもんだな。",
+          "AudioPath": "assets/ja-JP/Alex/131.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "はぁ…人生って つらいもんだな。"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "スポーツ界の 伝説になる 運命にある",
+          "AudioPath": "assets/ja-JP/Alex/132.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "スポーツ界の 伝説になる 運命にある"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "沢山練習したら いけるかも",
+          "AudioPath": "assets/ja-JP/Alex/133.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "沢山練習したら いけるかも"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "いいや、 失敗して セールスマンに なるだろうね",
+          "AudioPath": "assets/ja-JP/Alex/134.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "いいや、 失敗して セールスマンに なるだろうね"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_old",
+          "DialogueText": "オレがプロになったら、 お前は ファン第一号を 名乗れるんだぜ。悪くないだろ？",
+          "AudioPath": "assets/ja-JP/Alex/135.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_old",
+          "PageIndex": 0,
+          "DisplayPattern": "オレがプロになったら、 お前は ファン第一号を 名乗れるんだぜ。悪くないだろ？"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_old",
+          "DialogueText": "いつもの倍は 練習してるから、 じきにプロになって お前を 見返してやるさ。待ってろよ。 {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/136.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_old",
+          "PageIndex": 1,
+          "DisplayPattern": "いつもの倍は 練習してるから、 じきにプロになって お前を 見返してやるさ。待ってろよ。"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_01",
+          "DialogueText": "ああ、 やっぱりそうだよな！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/137.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_01",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、 やっぱりそうだよな！"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_01",
+          "DialogueText": "お前、 思ったよりも クールなヤツだな。",
+          "AudioPath": "assets/ja-JP/Alex/138.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_01",
+          "PageIndex": 1,
+          "DisplayPattern": "お前、 思ったよりも クールなヤツだな。"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_02",
+          "DialogueText": "まあ、 オレには 才能があるから、 そんなに 練習しなくたって いいかも。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Alex/139.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_02",
+          "PageIndex": 0,
+          "DisplayPattern": "まあ、 オレには 才能があるから、 そんなに 練習しなくたって いいかも。"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_03",
+          "DialogueText": "ふざけるなよ。お前はただ、 オレの才能と 人気に 嫉妬してる だけじゃねえか。 {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/140_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_03",
+          "PageIndex": 0,
+          "DisplayPattern": "ふざけるなよ。お前はただ、 オレの才能と 人気に 嫉妬してる だけじゃねえか。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_03",
+          "DialogueText": "なんてことを 言うんだ。オレほどの 有名人には なれないから 嫉妬してるだけ じゃないのか。 {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/141_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_03",
+          "PageIndex": 1,
+          "DisplayPattern": "なんてことを 言うんだ。オレほどの 有名人には なれないから 嫉妬してるだけ じゃないのか。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "summer_Wed_01_03",
+          "DialogueText": "あっちへ 行けよ。 {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/142.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed_01_03",
+          "PageIndex": 2,
+          "DisplayPattern": "あっちへ 行けよ。"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "あの牧場で 働き続けて、 結構筋肉が ついたんだろうな。",
+          "AudioPath": "assets/ja-JP/Alex/143_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "あの牧場で 働き続けて、 結構筋肉が ついたんだろうな。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "あの牧場で 働き続けて、 かなりシェイプアップ できてるんだろうな。",
+          "AudioPath": "assets/ja-JP/Alex/144_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "あの牧場で 働き続けて、 かなりシェイプアップ できてるんだろうな。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "近いうちに、 オレと肩を並べられそうだ。これからが 楽しみになってきたぜ。",
+          "AudioPath": "assets/ja-JP/Alex/145.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "近いうちに、 オレと肩を並べられそうだ。これからが 楽しみになってきたぜ。"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "どうして そんな顔をしているんだ？",
+          "AudioPath": "assets/ja-JP/Alex/146.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Thu",
+          "PageIndex": 3,
+          "DisplayPattern": "どうして そんな顔をしているんだ？"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "何の用だ？",
+          "AudioPath": "assets/ja-JP/Alex/147.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "何の用だ？"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "今は大切な 用事があるんだ。",
+          "AudioPath": "assets/ja-JP/Alex/148.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "今は大切な 用事があるんだ。"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "むむ…バーベキューの 匂いがするぞ。",
+          "AudioPath": "assets/ja-JP/Alex/149.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "むむ…バーベキューの 匂いがするぞ。"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "バーガーが 食いたくなってきたな。",
+          "AudioPath": "assets/ja-JP/Alex/150.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "バーガーが 食いたくなってきたな。"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "使ってたシューズに 茶色のシミが できたから、新しいのを 買ったんだ。",
+          "AudioPath": "assets/ja-JP/Alex/151.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "使ってたシューズに 茶色のシミが できたから、新しいのを 買ったんだ。"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "前のシューズは 捨てたさ。寄付しても 良かったけど、 オレがはいてたシューズを使うような 物好きなんて 考えたくもないな。",
+          "AudioPath": "assets/ja-JP/Alex/152.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "前のシューズは 捨てたさ。寄付しても 良かったけど、 オレがはいてたシューズを使うような 物好きなんて 考えたくもないな。"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "…ん？ {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/153.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sun",
+          "PageIndex": 2,
+          "DisplayPattern": "…ん？"
+        },
+        {
+          "DialogueFrom": "summer_Sun4",
+          "DialogueText": "お前の靴、 少し汚れてるが… 悪くないんじゃないか！",
+          "AudioPath": "assets/ja-JP/Alex/154.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sun4",
+          "PageIndex": 0,
+          "DisplayPattern": "お前の靴、 少し汚れてるが… 悪くないんじゃないか！"
+        },
+        {
+          "DialogueFrom": "summer_Sun4",
+          "DialogueText": "人によって 好みは違うだろうし。",
+          "AudioPath": "assets/ja-JP/Alex/155.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sun4",
+          "PageIndex": 1,
+          "DisplayPattern": "人によって 好みは違うだろうし。"
+        },
+        {
+          "DialogueFrom": "summer_Thu4",
+          "DialogueText": "よう、夏に入ってから 体が しまってきてるな！",
+          "AudioPath": "assets/ja-JP/Alex/156.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Thu4",
+          "PageIndex": 0,
+          "DisplayPattern": "よう、夏に入ってから 体が しまってきてるな！"
+        },
+        {
+          "DialogueFrom": "summer_Thu4",
+          "DialogueText": "農作業の 成果か？",
+          "AudioPath": "assets/ja-JP/Alex/157.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Thu4",
+          "PageIndex": 1,
+          "DisplayPattern": "農作業の 成果か？"
+        },
+        {
+          "DialogueFrom": "summer_Mon4",
+          "DialogueText": "よう、 いい日焼けっぷりだな。",
+          "AudioPath": "assets/ja-JP/Alex/158.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "よう、 いい日焼けっぷりだな。"
+        },
+        {
+          "DialogueFrom": "summer_Fri6",
+          "DialogueText": "部屋が 散らかってて すまん。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/159.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "部屋が 散らかってて すまん。"
+        },
+        {
+          "DialogueFrom": "summer_Fri6",
+          "DialogueText": "片付けようと 思っても すぐ忘れてしまってな。何とかしようと 努力はしてるが。",
+          "AudioPath": "assets/ja-JP/Alex/160.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "片付けようと 思っても すぐ忘れてしまってな。何とかしようと 努力はしてるが。"
+        },
+        {
+          "DialogueFrom": "summer_Wed8",
+          "DialogueText": "実はな… 牧場主に なるのも 悪くないかなって 思ってるんだ… ある意味、 スポーツと 似てるからな。",
+          "AudioPath": "assets/ja-JP/Alex/161.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed8",
+          "PageIndex": 0,
+          "DisplayPattern": "実はな… 牧場主に なるのも 悪くないかなって 思ってるんだ… ある意味、 スポーツと 似てるからな。"
+        },
+        {
+          "DialogueFrom": "summer_Wed8",
+          "DialogueText": "外に出て、 この手で何かを するのが 好きだ。",
+          "AudioPath": "assets/ja-JP/Alex/162.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Wed8",
+          "PageIndex": 1,
+          "DisplayPattern": "外に出て、 この手で何かを するのが 好きだ。"
+        },
+        {
+          "DialogueFrom": "summer_Sat10",
+          "DialogueText": "最近、 もっと本を 読もうと してるんだ…体を 動かして ばっかりで、 長い間 頭を 使っていないような 気がするからな。",
+          "AudioPath": "assets/ja-JP/Alex/163.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:summer_Sat10",
+          "PageIndex": 0,
+          "DisplayPattern": "最近、 もっと本を 読もうと してるんだ…体を 動かして ばっかりで、 長い間 頭を 使っていないような 気がするからな。"
+        },
+        {
+          "DialogueFrom": "fall_1",
+          "DialogueText": "ああ、 寒くはなってきたが…体を動かすには まだ 十分な気温だぜ！",
+          "AudioPath": "assets/ja-JP/Alex/164.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_1",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、 寒くはなってきたが…体を動かすには まだ 十分な気温だぜ！"
+        },
+        {
+          "DialogueFrom": "fall_1",
+          "DialogueText": "暖かければ それでいい。",
+          "AudioPath": "assets/ja-JP/Alex/165.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_1",
+          "PageIndex": 1,
+          "DisplayPattern": "暖かければ それでいい。"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "ばあちゃんが もっと勉強しろって 言ってくるんだ。",
+          "AudioPath": "assets/ja-JP/Alex/166.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "ばあちゃんが もっと勉強しろって 言ってくるんだ。"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "オレは「…ばあちゃん、 心配するな。オレはプロになるから！」と返した。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/167.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "オレは「…ばあちゃん、 心配するな。オレはプロになるから！」と返した。"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "勉強なんて、 オタクのすることさ。",
+          "AudioPath": "assets/ja-JP/Alex/168.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Mon",
+          "PageIndex": 2,
+          "DisplayPattern": "勉強なんて、 オタクのすることさ。"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "なぁ、 ちょっと 聞きたいことが あるんだ。",
+          "AudioPath": "assets/ja-JP/Alex/169_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "なぁ、 ちょっと 聞きたいことが あるんだ。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "なぁ、 聞きたいことが あるけど いいか？",
+          "AudioPath": "assets/ja-JP/Alex/170_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "なぁ、 聞きたいことが あるけど いいか？",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "オレの髪型、 女の子達は 気に入ると 思うか？",
+          "AudioPath": "assets/ja-JP/Alex/171_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "オレの髪型、 女の子達は 気に入ると 思うか？",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "オレの髪型、 どう思う？",
+          "AudioPath": "assets/ja-JP/Alex/172_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed",
+          "PageIndex": 3,
+          "DisplayPattern": "オレの髪型、 どう思う？",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "すごく イカしてるよ。",
+          "AudioPath": "assets/ja-JP/Alex/173.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed",
+          "PageIndex": 4,
+          "DisplayPattern": "すごく イカしてるよ。"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "まるで キノコみたいに 見えるよ。",
+          "AudioPath": "assets/ja-JP/Alex/174.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed",
+          "PageIndex": 5,
+          "DisplayPattern": "まるで キノコみたいに 見えるよ。"
+        },
+        {
+          "DialogueFrom": "fall_Wed_01_old",
+          "DialogueText": "今日は 髪に ジェルを つけすぎた。チクチクするかもしれないぜ。",
+          "AudioPath": "assets/ja-JP/Alex/175.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed_01_old",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 髪に ジェルを つけすぎた。チクチクするかもしれないぜ。"
+        },
+        {
+          "DialogueFrom": "fall_Wed_01_old",
+          "DialogueText": "だから触るなよ！",
+          "AudioPath": "assets/ja-JP/Alex/176.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed_01_old",
+          "PageIndex": 1,
+          "DisplayPattern": "だから触るなよ！"
+        },
+        {
+          "DialogueFrom": "fall_Wed_01_old",
+          "DialogueText": "…え？",
+          "AudioPath": "assets/ja-JP/Alex/177.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed_01_old",
+          "PageIndex": 2,
+          "DisplayPattern": "…え？"
+        },
+        {
+          "DialogueFrom": "fall_Wed_01_01",
+          "DialogueText": "ああ、 分かってる。だから こんな感じに してるんだ。",
+          "AudioPath": "assets/ja-JP/Alex/178.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed_01_01",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、 分かってる。だから こんな感じに してるんだ。"
+        },
+        {
+          "DialogueFrom": "fall_Wed_01_02",
+          "DialogueText": "ああ、そうかい。オレがカッコ良すぎるから 嫉妬してるのか。",
+          "AudioPath": "assets/ja-JP/Alex/179.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed_01_02",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、そうかい。オレがカッコ良すぎるから 嫉妬してるのか。"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "よお！",
+          "AudioPath": "assets/ja-JP/Alex/180.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "よお！"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "お前の名前、確か %firstnameletter%name か、そんな感じ だったよな？",
+          "AudioPath": "assets/ja-JP/Alex/181.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "お前の名前、確か か、そんな感じ だったよな？"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "えっ。{Farmer_Name}だって？わかった。ごめんね。",
+          "AudioPath": "assets/ja-JP/Alex/182.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "えっ。だって？わかった。ごめんね。"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "今夜の 腹筋は 200回だ。",
+          "AudioPath": "assets/ja-JP/Alex/183.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "今夜の 腹筋は 200回だ。"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "気合いを 入れてるのが わかるだろ？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/184.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "気合いを 入れてるのが わかるだろ？"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "他に 何が必要だって？",
+          "AudioPath": "assets/ja-JP/Alex/185.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "他に 何が必要だって？"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "この季節なら、 川で鮭が 見られるかも しれないぜ。",
+          "AudioPath": "assets/ja-JP/Alex/186.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "この季節なら、 川で鮭が 見られるかも しれないぜ。"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "少なくとも、そう聞いた。",
+          "AudioPath": "assets/ja-JP/Alex/187.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "少なくとも、そう聞いた。"
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "よお、今日は グリッドボールの 試合だ！",
+          "AudioPath": "assets/ja-JP/Alex/188.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "よお、今日は グリッドボールの 試合だ！"
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "秋の日曜日って 最高だよな。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Alex/189.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "秋の日曜日って 最高だよな。"
+        },
+        {
+          "DialogueFrom": "fall_Thu2",
+          "DialogueText": "どうかしたか、{Farmer_Name}？",
+          "AudioPath": "assets/ja-JP/Alex/190.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Thu2",
+          "PageIndex": 0,
+          "DisplayPattern": "どうかしたか、？"
+        },
+        {
+          "DialogueFrom": "fall_Fri6",
+          "DialogueText": "今夜は 沢山 腹筋を するぜ。",
+          "AudioPath": "assets/ja-JP/Alex/191.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "今夜は 沢山 腹筋を するぜ。"
+        },
+        {
+          "DialogueFrom": "fall_Fri6",
+          "DialogueText": "最高の ポテンシャルを 引き出すには、 本気で 努力しなきゃ ならないからな。",
+          "AudioPath": "assets/ja-JP/Alex/192.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "最高の ポテンシャルを 引き出すには、 本気で 努力しなきゃ ならないからな。"
+        },
+        {
+          "DialogueFrom": "fall_Mon4",
+          "DialogueText": "ばあちゃんが もっと 勉強しろって 言ってくるんだ。",
+          "AudioPath": "assets/ja-JP/Alex/193.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "ばあちゃんが もっと 勉強しろって 言ってくるんだ。"
+        },
+        {
+          "DialogueFrom": "fall_Mon4",
+          "DialogueText": "言うとおりかも 知れないな… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/194.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "言うとおりかも 知れないな…"
+        },
+        {
+          "DialogueFrom": "fall_Wed8",
+          "DialogueText": "オレは 思い切って…髪にジェルを つけるのを やめたんだ。",
+          "AudioPath": "assets/ja-JP/Alex/195.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed8",
+          "PageIndex": 0,
+          "DisplayPattern": "オレは 思い切って…髪にジェルを つけるのを やめたんだ。"
+        },
+        {
+          "DialogueFrom": "fall_Wed8",
+          "DialogueText": "ジェルで カッコいい髪型に してるだけで 好くような人とは 友達に なりたくないからな。",
+          "AudioPath": "assets/ja-JP/Alex/196.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Wed8",
+          "PageIndex": 1,
+          "DisplayPattern": "ジェルで カッコいい髪型に してるだけで 好くような人とは 友達に なりたくないからな。"
+        },
+        {
+          "DialogueFrom": "fall_Thu10",
+          "DialogueText": "{Farmer_Name}さん！あー…よお。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/197.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:fall_Thu10",
+          "PageIndex": 0,
+          "DisplayPattern": "さん！あー…よお。"
+        },
+        {
+          "DialogueFrom": "winter_1",
+          "DialogueText": "冬って イヤなんだよな。雪が多すぎて、 楽しいことが やれねえからな。",
+          "AudioPath": "assets/ja-JP/Alex/198.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_1",
+          "PageIndex": 0,
+          "DisplayPattern": "冬って イヤなんだよな。雪が多すぎて、 楽しいことが やれねえからな。"
+        },
+        {
+          "DialogueFrom": "winter_1",
+          "DialogueText": "雪が 好きな人は いるだろうけど。",
+          "AudioPath": "assets/ja-JP/Alex/199.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_1",
+          "PageIndex": 1,
+          "DisplayPattern": "雪が 好きな人は いるだろうけど。"
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "お前は 雪が好きか？オレは…ただ春が 待ち遠しいな。",
+          "AudioPath": "assets/ja-JP/Alex/200.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "お前は 雪が好きか？オレは…ただ春が 待ち遠しいな。"
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "なあ、 ヘイリーに会って、よろしくって伝えてくれないか？",
+          "AudioPath": "assets/ja-JP/Alex/201.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "なあ、 ヘイリーに会って、よろしくって伝えてくれないか？"
+        },
+        {
+          "DialogueFrom": "winter_Tue_inlaw_Haley",
+          "DialogueText": "あら、結婚生活はどんな調子だ？ {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Alex/202.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Tue_inlaw_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "あら、結婚生活はどんな調子だ？"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "冬の間は みんな 家にこもって、 退屈なことを やってる。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/203.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "冬の間は みんな 家にこもって、 退屈なことを やってる。"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "オレも家で 本を読めば 退屈をしのげる… わけないか。",
+          "AudioPath": "assets/ja-JP/Alex/204.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "オレも家で 本を読めば 退屈をしのげる… わけないか。"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "オレが プロになったら、 稼いだ金で 南の島に 別荘を 建ててやる。",
+          "AudioPath": "assets/ja-JP/Alex/205.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "オレが プロになったら、 稼いだ金で 南の島に 別荘を 建ててやる。"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "そうすれば、 つまらない冬も 問題に ならなくなるだろうな。",
+          "AudioPath": "assets/ja-JP/Alex/206.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "そうすれば、 つまらない冬も 問題に ならなくなるだろうな。"
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "オレに会うために、 わざわざこの雪の中を やってきたのか？",
+          "AudioPath": "assets/ja-JP/Alex/207.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "オレに会うために、 わざわざこの雪の中を やってきたのか？"
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "なるほどな。",
+          "AudioPath": "assets/ja-JP/Alex/208.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "なるほどな。"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "この町には 変わった人が 何人か 住んでるな。",
+          "AudioPath": "assets/ja-JP/Alex/209.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "この町には 変わった人が 何人か 住んでるな。"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "…たとえばあの セバスチャン。どうして いつも 黒ずくめ なんだろうな？",
+          "AudioPath": "assets/ja-JP/Alex/210.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "…たとえばあの セバスチャン。どうして いつも 黒ずくめ なんだろうな？"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "オレには わからんよ。",
+          "AudioPath": "assets/ja-JP/Alex/211.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "オレには わからんよ。"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "よう、今日は グリッドボールの 試合だ！",
+          "AudioPath": "assets/ja-JP/Alex/212.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "よう、今日は グリッドボールの 試合だ！"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "今週で一番 楽しみの日に なりそうだな。",
+          "AudioPath": "assets/ja-JP/Alex/213.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "今週で一番 楽しみの日に なりそうだな。"
+        },
+        {
+          "DialogueFrom": "winter_Fri4",
+          "DialogueText": "オレに会うために、 わざわざこの雪の中を やってきたのか？",
+          "AudioPath": "assets/ja-JP/Alex/214.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "オレに会うために、 わざわざこの雪の中を やってきたのか？"
+        },
+        {
+          "DialogueFrom": "winter_Fri4",
+          "DialogueText": "うれしいぜ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/215.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Fri4",
+          "PageIndex": 1,
+          "DisplayPattern": "うれしいぜ。"
+        },
+        {
+          "DialogueFrom": "winter_Sat6",
+          "DialogueText": "オレ達と全く違う人もいるってのは、 結構 興味深いこと だよな。",
+          "AudioPath": "assets/ja-JP/Alex/216.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sat6",
+          "PageIndex": 0,
+          "DisplayPattern": "オレ達と全く違う人もいるってのは、 結構 興味深いこと だよな。"
+        },
+        {
+          "DialogueFrom": "winter_Sat6",
+          "DialogueText": "他人の 言動を 全て 理解することは できないが、 それでもいいんだ。",
+          "AudioPath": "assets/ja-JP/Alex/217.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Sat6",
+          "PageIndex": 1,
+          "DisplayPattern": "他人の 言動を 全て 理解することは できないが、 それでもいいんだ。"
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "よう、 {Farmer_Name}。ちょっと 頼みごとが あるんだ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/218.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "よう、 。ちょっと 頼みごとが あるんだ。"
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "ヘイリーを 見たら、 オレは忙しいって 言ってくれ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/219.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Tue4",
+          "PageIndex": 1,
+          "DisplayPattern": "ヘイリーを 見たら、 オレは忙しいって 言ってくれ。"
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "頼んだぜ。",
+          "AudioPath": "assets/ja-JP/Alex/220.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Tue4",
+          "PageIndex": 2,
+          "DisplayPattern": "頼んだぜ。"
+        },
+        {
+          "DialogueFrom": "winter_Tue4_inlaw_Haley",
+          "DialogueText": "正直…お前と ヘイリーが結婚したのを 羨んだのは 認めるぜ。でもな…これは 自分について 新しいことを 学ぶ チャンスでも あるんだ。 {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Alex/221.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Tue4_inlaw_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "正直…お前と ヘイリーが結婚したのを 羨んだのは 認めるぜ。でもな…これは 自分について 新しいことを 学ぶ チャンスでも あるんだ。"
+        },
+        {
+          "DialogueFrom": "winter_Wed8",
+          "DialogueText": "聞いてくれよ。ようやく 本を 読むことに したぜ！",
+          "AudioPath": "assets/ja-JP/Alex/222.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Wed8",
+          "PageIndex": 0,
+          "DisplayPattern": "聞いてくれよ。ようやく 本を 読むことに したぜ！"
+        },
+        {
+          "DialogueFrom": "winter_Thu6",
+          "DialogueText": "天気を 自由に 操れたらなぁ。",
+          "AudioPath": "assets/ja-JP/Alex/223.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "天気を 自由に 操れたらなぁ。"
+        },
+        {
+          "DialogueFrom": "winter_Thu10",
+          "DialogueText": "もしオレが 大金を 得たら、 家族と友達全員が 生活に 困らないように するぜ。",
+          "AudioPath": "assets/ja-JP/Alex/224.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Thu10",
+          "PageIndex": 0,
+          "DisplayPattern": "もしオレが 大金を 得たら、 家族と友達全員が 生活に 困らないように するぜ。"
+        },
+        {
+          "DialogueFrom": "winter_Thu10",
+          "DialogueText": "お前も そのうちの一人さ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/225.ogg",
+          "TranslationKey": "Characters/Dialogue/Alex:winter_Thu10",
+          "PageIndex": 1,
+          "DisplayPattern": "お前も そのうちの一人さ。"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Alex0",
+          "DialogueText": "{Farmer_Name}、ありがとな。人生最高の気分だよ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/226.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Alex0",
+          "PageIndex": 0,
+          "DisplayPattern": "、ありがとな。人生最高の気分だよ。"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Alex0",
+          "DialogueText": "いまから待ちきれないぜ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/227.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Alex0",
+          "PageIndex": 1,
+          "DisplayPattern": "いまから待ちきれないぜ。"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Alex1",
+          "DialogueText": "牧場暮らしがいまから楽しみだぜ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/228.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Alex1",
+          "PageIndex": 0,
+          "DisplayPattern": "牧場暮らしがいまから楽しみだぜ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_0",
+          "DialogueText": "… まだ 愛してくれてる？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/229.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_0",
+          "PageIndex": 0,
+          "DisplayPattern": "… まだ 愛してくれてる？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_1",
+          "DialogueText": "はぁ… たぶん、 結婚するには 早すぎた かも。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/230.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_1",
+          "PageIndex": 0,
+          "DisplayPattern": "はぁ… たぶん、 結婚するには 早すぎた かも。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_2",
+          "DialogueText": "私と 一緒で まだ 楽しめてる？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/231.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_2",
+          "PageIndex": 0,
+          "DisplayPattern": "私と 一緒で まだ 楽しめてる？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_3",
+          "DialogueText": "何か 悪いことを した？最近 様子が おかしいよ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/232.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_3",
+          "PageIndex": 0,
+          "DisplayPattern": "何か 悪いことを した？最近 様子が おかしいよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_4",
+          "DialogueText": "外の世界に 何が あるか 考えたことは ある？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/233.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_4",
+          "PageIndex": 0,
+          "DisplayPattern": "外の世界に 何が あるか 考えたことは ある？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_5",
+          "DialogueText": "前は もっと ロマンチックだったのに… どうしたの？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/234.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_5",
+          "PageIndex": 0,
+          "DisplayPattern": "前は もっと ロマンチックだったのに… どうしたの？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_5",
+          "DialogueText": "今の自分は あの時ほど 若くないけど… そのために結婚したのかな？ {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/235.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_5",
+          "PageIndex": 1,
+          "DisplayPattern": "今の自分は あの時ほど 若くないけど… そのために結婚したのかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_6",
+          "DialogueText": "人生は 短いし 一回きりだけど… このままで 本当に いいの？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/236.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_6",
+          "PageIndex": 0,
+          "DisplayPattern": "人生は 短いし 一回きりだけど… このままで 本当に いいの？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_7",
+          "DialogueText": "以前は やさしかったけど… 今は 私が暖かい 夕食を 作ってる時だけ 我慢 してるように 見える。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/237.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_7",
+          "PageIndex": 0,
+          "DisplayPattern": "以前は やさしかったけど… 今は 私が暖かい 夕食を 作ってる時だけ 我慢 してるように 見える。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_8",
+          "DialogueText": "最近、 私に対して 冷たくない？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/238.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_8",
+          "PageIndex": 0,
+          "DisplayPattern": "最近、 私に対して 冷たくない？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Bad_9",
+          "DialogueText": "もう少し あなたの ために 何か できたらなぁ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/239.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_9",
+          "PageIndex": 0,
+          "DisplayPattern": "もう少し あなたの ために 何か できたらなぁ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_1",
+          "DialogueText": "夏は 終わったが… ポジティブに 考えよう。夏は かならず 戻ってくる ってな。",
+          "AudioPath": "assets/ja-JP/Alex/240.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:fall_1",
+          "PageIndex": 0,
+          "DisplayPattern": "夏は 終わったが… ポジティブに 考えよう。夏は かならず 戻ってくる ってな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_15",
+          "DialogueText": "明日は 祭りだが、 行く予定は あるのか？",
+          "AudioPath": "assets/ja-JP/Alex/241.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:fall_15",
+          "PageIndex": 0,
+          "DisplayPattern": "明日は 祭りだが、 行く予定は あるのか？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_15",
+          "DialogueText": "オレは どっちでも いいぜ。",
+          "AudioPath": "assets/ja-JP/Alex/242.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:fall_15",
+          "PageIndex": 1,
+          "DisplayPattern": "オレは どっちでも いいぜ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_26",
+          "DialogueText": "じいちゃんと ばあちゃんは 元気かな。じいちゃんは かまどの 火を ギリギリまで 節約 するほど ケチだからな。",
+          "AudioPath": "assets/ja-JP/Alex/243.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:fall_26",
+          "PageIndex": 0,
+          "DisplayPattern": "じいちゃんと ばあちゃんは 元気かな。じいちゃんは かまどの 火を ギリギリまで 節約 するほど ケチだからな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_8",
+          "DialogueText": "もうすぐ 冬だね。暖房を ちゃんと チェックして、 水道の 蛇口を 閉めて、 家に スキマが ないか 確認 しないと。",
+          "AudioPath": "assets/ja-JP/Alex/244.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 0,
+          "DisplayPattern": "もうすぐ 冬だね。暖房を ちゃんと チェックして、 水道の 蛇口を 閉めて、 家に スキマが ないか 確認 しないと。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_8",
+          "DialogueText": "大丈夫、 全部 やってあげるから。",
+          "AudioPath": "assets/ja-JP/Alex/245.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 1,
+          "DisplayPattern": "大丈夫、 全部 やってあげるから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/fall_Alex",
+          "DialogueText": "力が 抜ける 感じだな…プロテインが ほしくなるぜ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/246.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "力が 抜ける 感じだな…プロテインが ほしくなるぜ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/funLeave_Alex",
+          "DialogueText": "今日は 町へ 行くつもりさ。また 夜に 会いましょう。",
+          "AudioPath": "assets/ja-JP/Alex/247.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:funLeave_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 町へ 行くつもりさ。また 夜に 会いましょう。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/funReturn_Alex",
+          "DialogueText": "今日は 良い 一日だった。じいちゃんと ばあちゃん、 結構 年いってるから 何度も 顔を 見せたく なるんだ。",
+          "AudioPath": "assets/ja-JP/Alex/248.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:funReturn_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 良い 一日だった。じいちゃんと ばあちゃん、 結構 年いってるから 何度も 顔を 見せたく なるんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_0",
+          "DialogueText": "{Farmer_Name}…いつも 愛してるぜ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/249.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Good_0",
+          "PageIndex": 0,
+          "DisplayPattern": "…いつも 愛してるぜ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_1",
+          "DialogueText": "お前、 本当に ハンサムだ… 前にも そう 言ったかな？ {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/250_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Good_1",
+          "PageIndex": 0,
+          "DisplayPattern": "お前、 本当に ハンサムだ… 前にも そう 言ったかな？",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_1",
+          "DialogueText": "お前、 本当に キレイだ… 前にも そう 言ったかな？ {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/251_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Good_1",
+          "PageIndex": 1,
+          "DisplayPattern": "お前、 本当に キレイだ… 前にも そう 言ったかな？",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_2",
+          "DialogueText": "{Farmer_Name}、結婚生活は 楽しめてる。",
+          "AudioPath": "assets/ja-JP/Alex/252.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_2",
+          "PageIndex": 0,
+          "DisplayPattern": "、結婚生活は 楽しめてる。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_2",
+          "DialogueText": "自分は 楽しんでるよ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/253.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_2",
+          "PageIndex": 1,
+          "DisplayPattern": "自分は 楽しんでるよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_3",
+          "DialogueText": "今日は とても ハンサムに 見えるわ！ {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/254_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_3",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は とても ハンサムに 見えるわ！",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_3",
+          "DialogueText": "今日は とても 美しいね。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/255_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_3",
+          "PageIndex": 1,
+          "DisplayPattern": "今日は とても 美しいね。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_4",
+          "DialogueText": "ここが 自分の 家…すごく うれしいな。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/256.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_4",
+          "PageIndex": 0,
+          "DisplayPattern": "ここが 自分の 家…すごく うれしいな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_5",
+          "DialogueText": "結婚式に もらった 首飾りが 美しいね…特に この 貝殻は カンペキ。すごく お金を かけてくれたんだね！ {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/257.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_5",
+          "PageIndex": 0,
+          "DisplayPattern": "結婚式に もらった 首飾りが 美しいね…特に この 貝殻は カンペキ。すごく お金を かけてくれたんだね！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_6",
+          "DialogueText": "お前の 強さは 分かってるが、 時々 スライムに 食われたり… 酷い目に あったり しないか 心配なんだ。とにかく 気をつけてくれ。 {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Alex/258.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Good_6",
+          "PageIndex": 0,
+          "DisplayPattern": "お前の 強さは 分かってるが、 時々 スライムに 食われたり… 酷い目に あったり しないか 心配なんだ。とにかく 気をつけてくれ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_7",
+          "DialogueText": "{Farmer_Name}さんか。君が 家のために 尽くしてくれていることに、 本当に 感謝したいんだ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/259.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_7",
+          "PageIndex": 0,
+          "DisplayPattern": "さんか。君が 家のために 尽くしてくれていることに、 本当に 感謝したいんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_8",
+          "DialogueText": "自分のことは 心配しないで…あなたは 家の外で いろんな 責任を 負ってるから。だから こっちは 大丈夫さ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/260.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_8",
+          "PageIndex": 0,
+          "DisplayPattern": "自分のことは 心配しないで…あなたは 家の外で いろんな 責任を 負ってるから。だから こっちは 大丈夫さ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_9",
+          "DialogueText": "全く 飽きてもいないよ…ここにある もので 十分 楽しめてる。",
+          "AudioPath": "assets/ja-JP/Alex/261.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_9",
+          "PageIndex": 0,
+          "DisplayPattern": "全く 飽きてもいないよ…ここにある もので 十分 楽しめてる。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Good_9",
+          "DialogueText": "シンプルな 生活だけど 好きだよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/262.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_9",
+          "PageIndex": 1,
+          "DisplayPattern": "シンプルな 生活だけど 好きだよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_0",
+          "DialogueText": "ああ… 夫と 一緒に グッスリ 寝るのは 最高だな！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/263_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ… 夫と 一緒に グッスリ 寝るのは 最高だな！",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_0",
+          "DialogueText": "ああ… 妻と 一緒に グッスリ 寝るのは 最高だな！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/264_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_0",
+          "PageIndex": 1,
+          "DisplayPattern": "ああ… 妻と 一緒に グッスリ 寝るのは 最高だな！",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_1",
+          "DialogueText": "なぁ！暖かい 朝食を 作ったぞ。[195 210 211]",
+          "AudioPath": "assets/ja-JP/Alex/265.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "なぁ！暖かい 朝食を 作ったぞ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_1",
+          "DialogueText": "強くなりたければ、 ちゃんと 食事を 取ろうぜ！",
+          "AudioPath": "assets/ja-JP/Alex/266.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_1",
+          "PageIndex": 1,
+          "DisplayPattern": "強くなりたければ、 ちゃんと 食事を 取ろうぜ！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_2",
+          "DialogueText": "こっちへ きてくれ。 ギューッ…ふむふむ。牧場での 仕事で、 体が 締まってきてるな。",
+          "AudioPath": "assets/ja-JP/Alex/267.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "こっちへ きてくれ。 ギューッ…ふむふむ。牧場での 仕事で、 体が 締まってきてるな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_3",
+          "DialogueText": "料理と 洗濯に 少しずつ 慣れてきたぞ…オレが本当に やりたいこととは 違うけど、 結婚する時から こういうのを やるんだろうなって 思ってたさ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/268.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "料理と 洗濯に 少しずつ 慣れてきたぞ…オレが本当に やりたいこととは 違うけど、 結婚する時から こういうのを やるんだろうなって 思ってたさ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_4",
+          "DialogueText": "今日は 家のまわりの ものを 直しに いくつもりさ。飽きてはいないから、 オレのことは 心配するな。",
+          "AudioPath": "assets/ja-JP/Alex/269.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 家のまわりの ものを 直しに いくつもりさ。飽きてはいないから、 オレのことは 心配するな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Day_Alex",
+          "DialogueText": "これだけ 太陽が 輝いてりゃ、 オレの 元気も 溢れそうだ！気をつけたほうが いいぜ！ヘヘッ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/270.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Day_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "これだけ 太陽が 輝いてりゃ、 オレの 元気も 溢れそうだ！気をつけたほうが いいぜ！ヘヘッ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_0",
+          "DialogueText": "限界まで がんばるって いい気分に ならないか？がんばった後は やわらかいベッドで 良く眠れる 権利を 得た気に なるからな。",
+          "AudioPath": "assets/ja-JP/Alex/271.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "限界まで がんばるって いい気分に ならないか？がんばった後は やわらかいベッドで 良く眠れる 権利を 得た気に なるからな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_1",
+          "DialogueText": "髪でも 切ったのか？今日は いい感じだな。たぶん、 新鮮な 空気のおかげ かもな… {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/272.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "髪でも 切ったのか？今日は いい感じだな。たぶん、 新鮮な 空気のおかげ かもな…"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_2",
+          "DialogueText": "今日は どんな一日 だったかな。たまには 抱えてるものを 全部 降ろすのも いいことだ。",
+          "AudioPath": "assets/ja-JP/Alex/273.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は どんな一日 だったかな。たまには 抱えてるものを 全部 降ろすのも いいことだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_3",
+          "DialogueText": "なぁ…新しい パンツに したぜ。お前が 興味あると 思ってな… {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/274.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "なぁ…新しい パンツに したぜ。お前が 興味あると 思ってな…"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_4",
+          "DialogueText": "一人きりの 静かなひと時が ほしかったら、 オレは かまわないぜ。",
+          "AudioPath": "assets/ja-JP/Alex/275.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Indoor_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "一人きりの 静かなひと時が ほしかったら、 オレは かまわないぜ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_Alex",
+          "DialogueText": "なんだか 腕が 落ち着かないな…そうだ、 マッサージでも してやろうか？ {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/276_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "なんだか 腕が 落ち着かないな…そうだ、 マッサージでも してやろうか？",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Indoor_Night_Alex",
+          "DialogueText": "疲れた気分だが…それって いいこと だよな！今日は しっかり 働いた 証拠に なるからさ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/277_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "疲れた気分だが…それって いいこと だよな！今日は しっかり 働いた 証拠に なるからさ。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_0",
+          "DialogueText": "君が年を取っても、 ずっと 好きで いてくれるよね。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/278.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_0",
+          "PageIndex": 0,
+          "DisplayPattern": "君が年を取っても、 ずっと 好きで いてくれるよね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_1",
+          "DialogueText": "お互いの 仕事っぷり、 君の おじいさんは 誇りに 思ってくれるかな？",
+          "AudioPath": "assets/ja-JP/Alex/279.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_1",
+          "PageIndex": 0,
+          "DisplayPattern": "お互いの 仕事っぷり、 君の おじいさんは 誇りに 思ってくれるかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_2",
+          "DialogueText": "休憩中？牧場主って 思ったより 楽なんだね…",
+          "AudioPath": "assets/ja-JP/Alex/280.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_2",
+          "PageIndex": 0,
+          "DisplayPattern": "休憩中？牧場主って 思ったより 楽なんだね…"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_3",
+          "DialogueText": "もし 町へ 行ったら、 私の 代わりに みんなと あいさつ してくれるかな。",
+          "AudioPath": "assets/ja-JP/Alex/281.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_3",
+          "PageIndex": 0,
+          "DisplayPattern": "もし 町へ 行ったら、 私の 代わりに みんなと あいさつ してくれるかな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_4",
+          "DialogueText": "明日、 あなたが 起きる前に 洗濯を するわね… そうすれば 効率が いいから。",
+          "AudioPath": "assets/ja-JP/Alex/282.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_4",
+          "PageIndex": 0,
+          "DisplayPattern": "明日、 あなたが 起きる前に 洗濯を するわね… そうすれば 効率が いいから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_5",
+          "DialogueText": "{Farmer_Name}、お金には 困ってない？",
+          "AudioPath": "assets/ja-JP/Alex/283.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_5",
+          "PageIndex": 0,
+          "DisplayPattern": "、お金には 困ってない？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_6",
+          "DialogueText": "町の みんなは 今日 何を してるのかな。",
+          "AudioPath": "assets/ja-JP/Alex/284.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_6",
+          "PageIndex": 0,
+          "DisplayPattern": "町の みんなは 今日 何を してるのかな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_7",
+          "DialogueText": "今日は 本当に 何もしたくない 気分だわ。",
+          "AudioPath": "assets/ja-JP/Alex/285.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_7",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 本当に 何もしたくない 気分だわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_8",
+          "DialogueText": "どれだけ がんばって キレイにしても、 家が すぐに 汚れちゃう。",
+          "AudioPath": "assets/ja-JP/Alex/286.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_8",
+          "PageIndex": 0,
+          "DisplayPattern": "どれだけ がんばって キレイにしても、 家が すぐに 汚れちゃう。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_8",
+          "DialogueText": "牧場って そういうものかな。",
+          "AudioPath": "assets/ja-JP/Alex/287.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_8",
+          "PageIndex": 1,
+          "DisplayPattern": "牧場って そういうものかな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Neutral_9",
+          "DialogueText": "ずっと このまま ここで 暮らせるかな？",
+          "AudioPath": "assets/ja-JP/Alex/288.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_9",
+          "PageIndex": 0,
+          "DisplayPattern": "ずっと このまま ここで 暮らせるかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/NoBed_0",
+          "DialogueText": "どこで寝たらいいの…？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/289.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_0",
+          "PageIndex": 0,
+          "DisplayPattern": "どこで寝たらいいの…？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/NoBed_1",
+          "DialogueText": "昨日はぜんぜん眠れなかったよ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/290.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_1",
+          "PageIndex": 0,
+          "DisplayPattern": "昨日はぜんぜん眠れなかったよ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/NoBed_2",
+          "DialogueText": "昨日は床の上で寝たよ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/291.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_2",
+          "PageIndex": 0,
+          "DisplayPattern": "昨日は床の上で寝たよ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/NoBed_3",
+          "DialogueText": "ベッドに何かしたの…？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/292.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_3",
+          "PageIndex": 0,
+          "DisplayPattern": "ベッドに何かしたの…？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/OneKid_0",
+          "DialogueText": "まだ 専業主夫としての 生活に 慣れようと してるところさ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/293.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:OneKid_0",
+          "PageIndex": 0,
+          "DisplayPattern": "まだ 専業主夫としての 生活に 慣れようと してるところさ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/OneKid_1",
+          "DialogueText": "小さい %kid1よ、 パパみたいに 強く 育つんだぞ。",
+          "AudioPath": "assets/ja-JP/Alex/294.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:OneKid_1",
+          "PageIndex": 0,
+          "DisplayPattern": "小さい %kid1よ、 パパみたいに 強く 育つんだぞ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/OneKid_2",
+          "DialogueText": "大丈夫、 %kid1の 面倒は 見るから。君は 牧場運営に 集中しても いいよ。",
+          "AudioPath": "assets/ja-JP/Alex/295.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:OneKid_2",
+          "PageIndex": 0,
+          "DisplayPattern": "大丈夫、 %kid1の 面倒は 見るから。君は 牧場運営に 集中しても いいよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/OneKid_3",
+          "DialogueText": "妊娠してる 時って どんな 気分 なんだろうか… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/296.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:OneKid_3",
+          "PageIndex": 0,
+          "DisplayPattern": "妊娠してる 時って どんな 気分 なんだろうか…"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_0",
+          "DialogueText": "ねぇ、ここから オレ達の 土地を 見下ろすと…すごく 誇らしく 思えるぜ。本当に 良い仕事を したな。",
+          "AudioPath": "assets/ja-JP/Alex/297.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Outdoor_0",
+          "PageIndex": 0,
+          "DisplayPattern": "ねぇ、ここから オレ達の 土地を 見下ろすと…すごく 誇らしく 思えるぜ。本当に 良い仕事を したな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_1",
+          "DialogueText": "ここは 子どもを 育てるには 最高の 場所だな。オレも こんな 場所で 育ちたかったぜ。走り回れるほど 部屋が 広いからな！",
+          "AudioPath": "assets/ja-JP/Alex/298.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Outdoor_1",
+          "PageIndex": 0,
+          "DisplayPattern": "ここは 子どもを 育てるには 最高の 場所だな。オレも こんな 場所で 育ちたかったぜ。走り回れるほど 部屋が 広いからな！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_2",
+          "DialogueText": "オレは できるだけ 外に 出ていたいんだ。そのほうが 気分が いいからさ。",
+          "AudioPath": "assets/ja-JP/Alex/299.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Outdoor_2",
+          "PageIndex": 0,
+          "DisplayPattern": "オレは できるだけ 外に 出ていたいんだ。そのほうが 気分が いいからさ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_3",
+          "DialogueText": "牧場にいる、 オレ達二人を 見ろよ。いい カップル じゃないか。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/300_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Outdoor_3",
+          "PageIndex": 0,
+          "DisplayPattern": "牧場にいる、 オレ達二人を 見ろよ。いい カップル じゃないか。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_3",
+          "DialogueText": "なぁ。たぶん 日の光に 映ってるからか、 今日は お前が 美しく 見える。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/301_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Outdoor_3",
+          "PageIndex": 1,
+          "DisplayPattern": "なぁ。たぶん 日の光に 映ってるからか、 今日は お前が 美しく 見える。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_4",
+          "DialogueText": "ああ…外に 出ると いい気分に なるわ。スターデューバレーは 最高に 美しい場所だ…",
+          "AudioPath": "assets/ja-JP/Alex/302.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Outdoor_4",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ…外に 出ると いい気分に なるわ。スターデューバレーは 最高に 美しい場所だ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Outdoor_Alex",
+          "DialogueText": "今日は 沢山 運動 するぞ！ハハッ！牧場生活って いいよなぁ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/303.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Outdoor_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 沢山 運動 するぞ！ハハッ！牧場生活って いいよなぁ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/patio_Alex",
+          "DialogueText": "ふうっ…1…ぐうっ…2…外でする筋トレってのは気分がいいな！ {Portrait:Custom:6}",
+          "AudioPath": "assets/ja-JP/Alex/304.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:patio_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "ふうっ…1…ぐうっ…2…外でする筋トレってのは気分がいいな！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Day_0",
+          "DialogueText": "これだけ 広かったら、 全身運動も ラクに できるぜ。",
+          "AudioPath": "assets/ja-JP/Alex/305.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "これだけ 広かったら、 全身運動も ラクに できるぜ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Day_1",
+          "DialogueText": "町に 友達なんて あんまり いなくてな…もし お前が 来なかったら オレは どうなってたんだろう、と 考える 時が あるんだ。 {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Alex/306.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "町に 友達なんて あんまり いなくてな…もし お前が 来なかったら オレは どうなってたんだろう、と 考える 時が あるんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Day_2",
+          "DialogueText": "ああ…外で ジョギング しようと 思ってたのに。こんな天気じゃ 無理だな。",
+          "AudioPath": "assets/ja-JP/Alex/307.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ…外で ジョギング しようと 思ってたのに。こんな天気じゃ 無理だな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Day_3",
+          "DialogueText": "ブツブツ…起きた ばかりなのに プロテインが ほしくなってきたぜ。 {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Alex/308.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "ブツブツ…起きた ばかりなのに プロテインが ほしくなってきたぜ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Day_4",
+          "DialogueText": "そろそろ 読書を はじめようかな。オレはもう 結婚したんだから、 ちゃんと 何か しないとな！",
+          "AudioPath": "assets/ja-JP/Alex/309.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "そろそろ 読書を はじめようかな。オレはもう 結婚したんだから、 ちゃんと 何か しないとな！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Day_Alex",
+          "DialogueText": "うーん…今日は 屋内で 腕立てと 腹筋でも やるか。",
+          "AudioPath": "assets/ja-JP/Alex/310.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Day_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん…今日は 屋内で 腕立てと 腹筋でも やるか。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_0",
+          "DialogueText": "いい一日 だったか？明日は もっと いい日に なるはずさ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/311.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "いい一日 だったか？明日は もっと いい日に なるはずさ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_1",
+          "DialogueText": "調子は どうだ？オレは いつも 古い グリッドボールを 持ち歩いてるぜ。選手になった 気分で いたいからな… {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Alex/312.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "調子は どうだ？オレは いつも 古い グリッドボールを 持ち歩いてるぜ。選手になった 気分で いたいからな…"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_2",
+          "DialogueText": "えっ… この匂いは、って？ずっと ニンニクを 食べてたからだな。男らしく なりたくてさ…ごめんね。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/313.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "えっ… この匂いは、って？ずっと ニンニクを 食べてたからだな。男らしく なりたくてさ…ごめんね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_3",
+          "DialogueText": "ダスティの ために 少しだけ 残してるんだ。あいつにも 時々 エサを 与えないとな。",
+          "AudioPath": "assets/ja-JP/Alex/314.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "ダスティの ために 少しだけ 残してるんだ。あいつにも 時々 エサを 与えないとな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_4",
+          "DialogueText": "腹が 減ってたから、 夕食を 作ってたんだ。お前の 分も とってあるぜ。[241 242 225 214 198] {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/315.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:Rainy_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "腹が 減ってたから、 夕食を 作ってたんだ。お前の 分も とってあるぜ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_5",
+          "DialogueText": "家に いてくれて うれしい…家の中で 過ごすには 良い夜 だね。",
+          "AudioPath": "assets/ja-JP/Alex/316.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Night_5",
+          "PageIndex": 0,
+          "DisplayPattern": "家に いてくれて うれしい…家の中で 過ごすには 良い夜 だね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/Rainy_Night_Alex",
+          "DialogueText": "こういう日は よく、 ばあちゃんが 暖かい シチューを 作ってくれた。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/317.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Night_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "こういう日は よく、 ばあちゃんが 暖かい シチューを 作ってくれた。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spouseRoom_Alex",
+          "DialogueText": "オレを ダラダラ させないで くれよ。お前の ために、 この 体格を 維持したいんだ！",
+          "AudioPath": "assets/ja-JP/Alex/318.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "オレを ダラダラ させないで くれよ。お前の ために、 この 体格を 維持したいんだ！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spouseRoom_Alex",
+          "DialogueText": "$e",
+          "AudioPath": "assets/ja-JP/Alex/319.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spouseRoom_Alex",
+          "DialogueText": "この家は 運動するには 十分 広い。だから 今まで 以上に シェイプアップ できてるぜ！",
+          "AudioPath": "assets/ja-JP/Alex/320.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Alex",
+          "PageIndex": 2,
+          "DisplayPattern": "この家は 運動するには 十分 広い。だから 今まで 以上に シェイプアップ できてるぜ！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_1",
+          "DialogueText": "やっと 雪が 溶けて、 日が でてきたか！体も 暖まってきたぜ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/321.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:spring_1",
+          "PageIndex": 0,
+          "DisplayPattern": "やっと 雪が 溶けて、 日が でてきたか！体も 暖まってきたぜ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_12",
+          "DialogueText": "明日の 祭りを 楽しみにしてるのか？エッグを 一杯 集めるのは 楽しいもんな。",
+          "AudioPath": "assets/ja-JP/Alex/322.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:spring_12",
+          "PageIndex": 0,
+          "DisplayPattern": "明日の 祭りを 楽しみにしてるのか？エッグを 一杯 集めるのは 楽しいもんな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_23",
+          "DialogueText": "ああ… 明日は フラワーダンス だったか？今夜は もう少し 腕立てを しよう。 {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Alex/323.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:spring_23",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ… 明日は フラワーダンス だったか？今夜は もう少し 腕立てを しよう。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_23",
+          "DialogueText": "ジャンプスーツは 結構 きついし、 みんなに 近くから 見られるからな。",
+          "AudioPath": "assets/ja-JP/Alex/324.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:spring_23",
+          "PageIndex": 1,
+          "DisplayPattern": "ジャンプスーツは 結構 きついし、 みんなに 近くから 見られるからな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_6",
+          "DialogueText": "スタードロップの 粉なら オレの 体も 強くなれるの だろうか…",
+          "AudioPath": "assets/ja-JP/Alex/325.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:spring_6",
+          "PageIndex": 0,
+          "DisplayPattern": "スタードロップの 粉なら オレの 体も 強くなれるの だろうか…"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_8",
+          "DialogueText": "冬が ようやく 終わって、 これからの 天気に 期待できるように なった。",
+          "AudioPath": "assets/ja-JP/Alex/326.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_8",
+          "PageIndex": 0,
+          "DisplayPattern": "冬が ようやく 終わって、 これからの 天気に 期待できるように なった。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/spring_Alex",
+          "DialogueText": "ねぇ、今日も しっかり 働こうぜ！",
+          "AudioPath": "assets/ja-JP/Alex/327.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "ねぇ、今日も しっかり 働こうぜ！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_1",
+          "DialogueText": "夏は エネルギッシュな 時期だ。 体が そう 感じるよな！身が 引き締まる 気が するぜ。",
+          "AudioPath": "assets/ja-JP/Alex/328.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:summer_1",
+          "PageIndex": 0,
+          "DisplayPattern": "夏は エネルギッシュな 時期だ。 体が そう 感じるよな！身が 引き締まる 気が するぜ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_10",
+          "DialogueText": "今夜の ルアウスープに 何を 入れるか 考えたか？",
+          "AudioPath": "assets/ja-JP/Alex/329.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:summer_10",
+          "PageIndex": 0,
+          "DisplayPattern": "今夜の ルアウスープに 何を 入れるか 考えたか？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_10",
+          "DialogueText": "オレは 何が いいか 分からないがな… お前が 決めてくれ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/330.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:summer_10",
+          "PageIndex": 1,
+          "DisplayPattern": "オレは 何が いいか 分からないがな… お前が 決めてくれ！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_15",
+          "DialogueText": "夏… ハエが 出てくる季節ってことだね。",
+          "AudioPath": "assets/ja-JP/Alex/331.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 0,
+          "DisplayPattern": "夏… ハエが 出てくる季節ってことだね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_15",
+          "DialogueText": "大丈夫、 退治してあげるから。",
+          "AudioPath": "assets/ja-JP/Alex/332.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 1,
+          "DisplayPattern": "大丈夫、 退治してあげるから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_27",
+          "DialogueText": "ああ… 夏が もうすぐ 終わりそうだ。筋肉が しぼんでいく 感じが するぜ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/333.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:summer_27",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ… 夏が もうすぐ 終わりそうだ。筋肉が しぼんでいく 感じが するぜ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_8",
+          "DialogueText": "臭ったら ごめん…暑くて 汗 かきっぱなし だったからさ。",
+          "AudioPath": "assets/ja-JP/Alex/334.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_8",
+          "PageIndex": 0,
+          "DisplayPattern": "臭ったら ごめん…暑くて 汗 かきっぱなし だったからさ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/summer_Alex",
+          "DialogueText": "夏は オレにとって、 一番 元気に なれる 時期さ。",
+          "AudioPath": "assets/ja-JP/Alex/335.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "夏は オレにとって、 一番 元気に なれる 時期さ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/TwoKids_0",
+          "DialogueText": "kid1と%kid2には もう 朝ごはんを 食べさせたよ。おなか すいてたからね！",
+          "AudioPath": "assets/ja-JP/Alex/336.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:TwoKids_0",
+          "PageIndex": 0,
+          "DisplayPattern": "kid1と%kid2には もう 朝ごはんを 食べさせたよ。おなか すいてたからね！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/TwoKids_1",
+          "DialogueText": "二人目の子ができたから、 %kid2だけでなく %kid1にも ちゃんと かまってあげよう。子ども達の 間で 嫉妬が 起こらない ようにね。",
+          "AudioPath": "assets/ja-JP/Alex/337.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:TwoKids_1",
+          "PageIndex": 0,
+          "DisplayPattern": "二人目の子ができたから、 %kid2だけでなく %kid1にも ちゃんと かまってあげよう。子ども達の 間で 嫉妬が 起こらない ようにね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/TwoKids_2",
+          "DialogueText": "いずれ %kid2は ペリカンタウン初の プロ グリッドボール 選手に なるのかな？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/338.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:TwoKids_2",
+          "PageIndex": 0,
+          "DisplayPattern": "いずれ %kid2は ペリカンタウン初の プロ グリッドボール 選手に なるのかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/TwoKids_3",
+          "DialogueText": "オレが ガキの頃に 持てなかった 家族ってものを ようやく 持つことが できたよ… ありがとな。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/339.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:TwoKids_3",
+          "PageIndex": 0,
+          "DisplayPattern": "オレが ガキの頃に 持てなかった 家族ってものを ようやく 持つことが できたよ… ありがとな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/winter_1",
+          "DialogueText": "冬は 暖かく するんだぞ。お前の デリケートな 肌を 心配してるんだ。",
+          "AudioPath": "assets/ja-JP/Alex/340.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:winter_1",
+          "PageIndex": 0,
+          "DisplayPattern": "冬は 暖かく するんだぞ。お前の デリケートな 肌を 心配してるんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/winter_28",
+          "DialogueText": "{Farmer_Name}、 良い 一年を ありがとう。来年も また 楽しみに してるぜ！さあ、 こっちへ 来るんだ… {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/341.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:winter_28",
+          "PageIndex": 0,
+          "DisplayPattern": "、 良い 一年を ありがとう。来年も また 楽しみに してるぜ！さあ、 こっちへ 来るんだ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/winter_7",
+          "DialogueText": "明日の 釣りコンテストには 参加する つもりか？お前なら 優勝 できるはずだ！",
+          "AudioPath": "assets/ja-JP/Alex/342.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueAlex:winter_7",
+          "PageIndex": 0,
+          "DisplayPattern": "明日の 釣りコンテストには 参加する つもりか？お前なら 優勝 できるはずだ！"
+        },
+        {
+          "DialogueFrom": "Marriage/Alex/winter_Alex",
+          "DialogueText": "じいちゃんと ばあちゃんは 元気かな。二人とも、 オレに 結構 頼ってたんだ。オレが 重いものを 持ち上げたり、 雑用したりしてさ。",
+          "AudioPath": "assets/ja-JP/Alex/343.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:winter_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "じいちゃんと ばあちゃんは 元気かな。二人とも、 オレに 結構 頼ってたんだ。オレが 重いものを 持ち上げたり、 雑用したりしてさ。"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "ふん…こういう 天気じゃ 運動できねえな。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/344.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "ふん…こういう 天気じゃ 運動できねえな。"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "まあ、 家の中で いつでも 筋トレできる けどな。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/345.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "まあ、 家の中で いつでも 筋トレできる けどな。"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s0",
+          "DialogueText": "Hey, {Farmer_Name}. Before you head out...",
+          "AudioPath": "assets/ja-JP/Alex/346.ogg",
+          "TranslationKey": "Events/Farm:3917587:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, . Before you head out..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s1",
+          "DialogueText": "I hate to ask this... but can I have 5,000g?",
+          "AudioPath": "assets/ja-JP/Alex/347.ogg",
+          "TranslationKey": "Events/Farm:3917587:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I hate to ask this... but can I have 5,000g?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s2",
+          "DialogueText": "It's for a secret project I'm working on... I know we have a joint bank account, but I thought I should ask anyway.",
+          "AudioPath": "assets/ja-JP/Alex/348.ogg",
+          "TranslationKey": "Events/Farm:3917587:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "It's for a secret project I'm working on... I know we have a joint bank account, but I thought I should ask anyway."
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s3",
+          "DialogueText": "Give Alex 5,000g for his secret project?",
+          "AudioPath": "assets/ja-JP/Alex/349.ogg",
+          "TranslationKey": "Events/Farm:3917587:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Give Alex 5,000g for his secret project?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s4",
+          "DialogueText": "Yes",
+          "AudioPath": "assets/ja-JP/Alex/350.ogg",
+          "TranslationKey": "Events/Farm:3917587:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Yes"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s5",
+          "DialogueText": "No",
+          "AudioPath": "assets/ja-JP/Alex/351.ogg",
+          "TranslationKey": "Events/Farm:3917587:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "No"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s6",
+          "DialogueText": "Really? You won't spare a measly 5,000g to make me happy? {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/352.ogg",
+          "TranslationKey": "Events/Farm:3917587:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Really? You won't spare a measly 5,000g to make me happy?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s7",
+          "DialogueText": "I didn't know you were such a cheapskate... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/353.ogg",
+          "TranslationKey": "Events/Farm:3917587:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I didn't know you were such a cheapskate..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s8",
+          "DialogueText": "I just wanted to have a little fun... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/354.ogg",
+          "TranslationKey": "Events/Farm:3917587:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I just wanted to have a little fun..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917587:s9",
+          "DialogueText": "I don't want to talk to you right now... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/355.ogg",
+          "TranslationKey": "Events/Farm:3917587:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "I don't want to talk to you right now..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/giveAlexMoney:s0",
+          "DialogueText": "Great! Swing by the Saloon on Sunday and I'll show you the end result! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/356.ogg",
+          "TranslationKey": "Events/Farm:giveAlexMoney:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Great! Swing by the Saloon on Sunday and I'll show you the end result!"
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s0",
+          "DialogueText": "That's a good boy, Dusty.",
+          "AudioPath": "assets/ja-JP/Alex/357.ogg",
+          "TranslationKey": "Events/Town:2481135:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "That's a good boy, Dusty."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s1",
+          "DialogueText": "You might be the only one around here who understands me. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/358.ogg",
+          "TranslationKey": "Events/Town:2481135:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "You might be the only one around here who understands me."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s2",
+          "DialogueText": "No one else has seen the kind of stuff you and I have. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/359.ogg",
+          "TranslationKey": "Events/Town:2481135:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "No one else has seen the kind of stuff you and I have."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s3",
+          "DialogueText": "{Farmer_Name}! Did you overhear me talking? {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Alex/360.ogg",
+          "TranslationKey": "Events/Town:2481135:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "! Did you overhear me talking?"
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s4",
+          "DialogueText": "Yes, I heard everything.",
+          "AudioPath": "assets/ja-JP/Alex/361.ogg",
+          "TranslationKey": "Events/Town:2481135:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Yes, I heard everything."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s5",
+          "DialogueText": "Not really... why?",
+          "AudioPath": "assets/ja-JP/Alex/362.ogg",
+          "TranslationKey": "Events/Town:2481135:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Not really... why?"
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s6",
+          "DialogueText": "I don't really like to talk about it, but I guess I'll explain... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/363.ogg",
+          "TranslationKey": "Events/Town:2481135:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I don't really like to talk about it, but I guess I'll explain..."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s7",
+          "DialogueText": "Have you ever wondered why I live with my grandparents? {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/364.ogg",
+          "TranslationKey": "Events/Town:2481135:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Have you ever wondered why I live with my grandparents?"
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s8",
+          "DialogueText": "You see, my father wasn't a good guy... He... Well, he ruined everything for me and my mom. {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/365.ogg",
+          "TranslationKey": "Events/Town:2481135:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "You see, my father wasn't a good guy... He... Well, he ruined everything for me and my mom."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s9",
+          "DialogueText": "Half the time he was gone... The other half he'd drink all night and tell me I'm worthless, that I'd never amount to anything. {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/366.ogg",
+          "TranslationKey": "Events/Town:2481135:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Half the time he was gone... The other half he'd drink all night and tell me I'm worthless, that I'd never amount to anything."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s10",
+          "DialogueText": "I think he resented me for being young... Bitter because he'd wasted his youth doing nothing and had gotten nowhere in life.",
+          "AudioPath": "assets/ja-JP/Alex/367.ogg",
+          "TranslationKey": "Events/Town:2481135:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "I think he resented me for being young... Bitter because he'd wasted his youth doing nothing and had gotten nowhere in life."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s11",
+          "DialogueText": "Well... that's my take on it, anyway. Who knows what was going on in his mind. {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/368.ogg",
+          "TranslationKey": "Events/Town:2481135:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Well... that's my take on it, anyway. Who knows what was going on in his mind."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s12",
+          "DialogueText": "One day he left, and soon after that Mom got sick and passed away. I had no choice but to move in with my grandparents. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/369.ogg",
+          "TranslationKey": "Events/Town:2481135:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "One day he left, and soon after that Mom got sick and passed away. I had no choice but to move in with my grandparents."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s13",
+          "DialogueText": "You seem like someone I can trust... That's why I'm telling you this, {Farmer_Name}. I don't want any sympathy. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/370.ogg",
+          "TranslationKey": "Events/Town:2481135:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "You seem like someone I can trust... That's why I'm telling you this, . I don't want any sympathy."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s14",
+          "DialogueText": "If there's one good thing about my past, it's that it made me strong.",
+          "AudioPath": "assets/ja-JP/Alex/371.ogg",
+          "TranslationKey": "Events/Town:2481135:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "If there's one good thing about my past, it's that it made me strong."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s15",
+          "DialogueText": "Now... let me show you what Dusty will do for a barbecued steak. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/372.ogg",
+          "TranslationKey": "Events/Town:2481135:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "Now... let me show you what Dusty will do for a barbecued steak."
+        },
+        {
+          "DialogueFrom": "Event:Town/2481135:s16",
+          "DialogueText": "Ha! Look at him slobbering. I think he might like steak as much as I do. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/373.ogg",
+          "TranslationKey": "Events/Town:2481135:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "Ha! Look at him slobbering. I think he might like steak as much as I do."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s0",
+          "DialogueText": "Oh... I was talking to Dusty.",
+          "AudioPath": "assets/ja-JP/Alex/374.ogg",
+          "TranslationKey": "Events/Town:didntHear:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh... I was talking to Dusty."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s1",
+          "DialogueText": "He and I have a lot in common, actually. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/375.ogg",
+          "TranslationKey": "Events/Town:didntHear:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "He and I have a lot in common, actually."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s2",
+          "DialogueText": "I don't usually like to talk about it... But we've been friends for a while now and I think I can trust you. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/376.ogg",
+          "TranslationKey": "Events/Town:didntHear:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I don't usually like to talk about it... But we've been friends for a while now and I think I can trust you."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s3",
+          "DialogueText": "Have you ever wondered why I live with my grandparents? {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/377.ogg",
+          "TranslationKey": "Events/Town:didntHear:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Have you ever wondered why I live with my grandparents?"
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s4",
+          "DialogueText": "My father wasn't a good guy... He... Well he ruined everything for me and my mom. {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/378.ogg",
+          "TranslationKey": "Events/Town:didntHear:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "My father wasn't a good guy... He... Well he ruined everything for me and my mom."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s5",
+          "DialogueText": "Half the time he was gone... The other half he'd drink all night and tell me I'm worthless, that I'd never amount to anything. {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/379.ogg",
+          "TranslationKey": "Events/Town:didntHear:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Half the time he was gone... The other half he'd drink all night and tell me I'm worthless, that I'd never amount to anything."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s6",
+          "DialogueText": "I think he resented me for being young... Bitter because he'd wasted his youth doing nothing and had gotten nowhere in life. {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/380.ogg",
+          "TranslationKey": "Events/Town:didntHear:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I think he resented me for being young... Bitter because he'd wasted his youth doing nothing and had gotten nowhere in life."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s7",
+          "DialogueText": "Well... that's my take on it, anyway. Who knows what was going on in his mind. {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/381.ogg",
+          "TranslationKey": "Events/Town:didntHear:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Well... that's my take on it, anyway. Who knows what was going on in his mind."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s8",
+          "DialogueText": "One day he left, and soon after that Mom got sick and passed away. I had no choice but to move in with my grandparents. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/382.ogg",
+          "TranslationKey": "Events/Town:didntHear:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "One day he left, and soon after that Mom got sick and passed away. I had no choice but to move in with my grandparents."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s9",
+          "DialogueText": "You know what? There's no sense dwelling on this stuff... I don't want any sympathy from anyone.",
+          "AudioPath": "assets/ja-JP/Alex/383.ogg",
+          "TranslationKey": "Events/Town:didntHear:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "You know what? There's no sense dwelling on this stuff... I don't want any sympathy from anyone."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s10",
+          "DialogueText": "You have to look on the positive side of things... My childhood wasn't great, but it did make me strong. I had to be.",
+          "AudioPath": "assets/ja-JP/Alex/384.ogg",
+          "TranslationKey": "Events/Town:didntHear:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "You have to look on the positive side of things... My childhood wasn't great, but it did make me strong. I had to be."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s11",
+          "DialogueText": "Here, let me show you what Dusty will do for a barbecued steak. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/385.ogg",
+          "TranslationKey": "Events/Town:didntHear:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Here, let me show you what Dusty will do for a barbecued steak."
+        },
+        {
+          "DialogueFrom": "Event:Town/didntHear:s12",
+          "DialogueText": "Ha! Look at him slobbering. I think he might like steak as much as I do. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/386.ogg",
+          "TranslationKey": "Events/Town:didntHear:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Ha! Look at him slobbering. I think he might like steak as much as I do."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s0",
+          "DialogueText": "*sigh* {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/387.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s1",
+          "DialogueText": "Oh, Hi {Farmer_Name}. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/388.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, Hi ."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s2",
+          "DialogueText": "Look at all these books. I haven't read a single one. Just the thought of cracking one open makes me nervous. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/389.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Look at all these books. I haven't read a single one. Just the thought of cracking one open makes me nervous."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s3",
+          "DialogueText": "But you can't make a decent living in this world without a brain... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/390.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "But you can't make a decent living in this world without a brain..."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s4",
+          "DialogueText": "I'm worthless... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/391.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm worthless..."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s5",
+          "DialogueText": "That's crazy. You're a genius!",
+          "AudioPath": "assets/ja-JP/Alex/392.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "That's crazy. You're a genius!"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s6",
+          "DialogueText": "We all have our strengths and weaknesses.",
+          "AudioPath": "assets/ja-JP/Alex/393.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "We all have our strengths and weaknesses."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s7",
+          "DialogueText": "Worthless? Yeah, that about sums it up.",
+          "AudioPath": "assets/ja-JP/Alex/394.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Worthless? Yeah, that about sums it up."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s8",
+          "DialogueText": "Well, I'm not going to give up! {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/395.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I'm not going to give up!"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s9",
+          "DialogueText": "If I work hard, I can do anything!",
+          "AudioPath": "assets/ja-JP/Alex/396.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "If I work hard, I can do anything!"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/21:s10",
+          "DialogueText": "Hey, maybe one day soon we'll have dinner and discuss ....phi-lo-so-phy. Isn't that what you smart people talk about? {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/397.ogg",
+          "TranslationKey": "Events/JoshHouse:21:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, maybe one day soon we'll have dinner and discuss ....phi-lo-so-phy. Isn't that what you smart people talk about?"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/2119820:s0",
+          "DialogueText": "Oh! Hey... I was just doing my daily strength training routine. {Portrait:Custom:6}",
+          "AudioPath": "assets/ja-JP/Alex/398.ogg",
+          "TranslationKey": "Events/JoshHouse:2119820:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! Hey... I was just doing my daily strength training routine."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/2119820:s1",
+          "DialogueText": "... sorry I have no shirt on. {Portrait:Custom:6}",
+          "AudioPath": "assets/ja-JP/Alex/399.ogg",
+          "TranslationKey": "Events/JoshHouse:2119820:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "... sorry I have no shirt on."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/2119820:s2",
+          "DialogueText": "Uh... {Farmer_Name}? I've been meaning to talk to you about something... {Portrait:Custom:8}",
+          "AudioPath": "assets/ja-JP/Alex/400.ogg",
+          "TranslationKey": "Events/JoshHouse:2119820:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Uh... ? I've been meaning to talk to you about something..."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/2119820:s3",
+          "DialogueText": "I've started to realize that... well, that I've been really rude towards you in the past. You know, about going pro and all that. {Portrait:Custom:8}",
+          "AudioPath": "assets/ja-JP/Alex/401.ogg",
+          "TranslationKey": "Events/JoshHouse:2119820:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I've started to realize that... well, that I've been really rude towards you in the past. You know, about going pro and all that."
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/2119820:s4",
+          "DialogueText": "I guess I might not actually be cut out for professional sports... maybe it was just a childish dream... you know? {Portrait:Custom:8}",
+          "AudioPath": "assets/ja-JP/Alex/402.ogg",
+          "TranslationKey": "Events/JoshHouse:2119820:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I guess I might not actually be cut out for professional sports... maybe it was just a childish dream... you know?"
+        },
+        {
+          "DialogueFrom": "Event:JoshHouse/2119820:s5",
+          "DialogueText": "Anyway... I want to apologize to you for bragging and being annoying about it. I appreciate that you stayed friends with me through all that. {Portrait:Custom:6}",
+          "AudioPath": "assets/ja-JP/Alex/403.ogg",
+          "TranslationKey": "Events/JoshHouse:2119820:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Anyway... I want to apologize to you for bragging and being annoying about it. I appreciate that you stayed friends with me through all that."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s0",
+          "DialogueText": "Thanks, Gus. That was great.",
+          "AudioPath": "assets/ja-JP/Alex/404.ogg",
+          "TranslationKey": "Events/Saloon:911526:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks, Gus. That was great."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s1",
+          "DialogueText": "This is nice... I've never dined in here before.",
+          "AudioPath": "assets/ja-JP/Alex/405.ogg",
+          "TranslationKey": "Events/Saloon:911526:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "This is nice... I've never dined in here before."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s2",
+          "DialogueText": "Um, anyway... I reserved this private room so we could talk... {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/406.ogg",
+          "TranslationKey": "Events/Saloon:911526:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Um, anyway... I reserved this private room so we could talk..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s3",
+          "DialogueText": "Thanks.",
+          "AudioPath": "assets/ja-JP/Alex/407.ogg",
+          "TranslationKey": "Events/Saloon:911526:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s4",
+          "DialogueText": "So, what I wanted to say was... {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Alex/408.ogg",
+          "TranslationKey": "Events/Saloon:911526:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "So, what I wanted to say was..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s5",
+          "DialogueText": "*gulp* {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/409.ogg",
+          "TranslationKey": "Events/Saloon:911526:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "*gulp*"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s6|g=male",
+          "DialogueText": "Well... when we first met, I was instantly drawn to you. It was confusing... I'd never felt that way about anyone. {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/410_male.ogg",
+          "TranslationKey": "Events/Saloon:911526:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Well... when we first met, I was instantly drawn to you. It was confusing... I'd never felt that way about anyone.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s7|g=female",
+          "DialogueText": "When I first met you, I thought you were really cute. {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/411_female.ogg",
+          "TranslationKey": "Events/Saloon:911526:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "When I first met you, I thought you were really cute.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s8|g=male",
+          "DialogueText": "I kept telling myself 'You can't have these kinds of feelings for another guy'. {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/412_male.ogg",
+          "TranslationKey": "Events/Saloon:911526:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I kept telling myself 'You can't have these kinds of feelings for another guy'.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s9|g=female",
+          "DialogueText": "Normally, when I have a crush on someone, the feeling goes away pretty quick... {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/413_female.ogg",
+          "TranslationKey": "Events/Saloon:911526:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Normally, when I have a crush on someone, the feeling goes away pretty quick...",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s10|g=male",
+          "DialogueText": "...But my heart was telling me something else.",
+          "AudioPath": "assets/ja-JP/Alex/414_male.ogg",
+          "TranslationKey": "Events/Saloon:911526:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "...But my heart was telling me something else.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s11|g=female",
+          "DialogueText": "...But with you, it kept growing. {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/415_female.ogg",
+          "TranslationKey": "Events/Saloon:911526:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "...But with you, it kept growing.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s12",
+          "DialogueText": "I feel the same way.",
+          "AudioPath": "assets/ja-JP/Alex/416.ogg",
+          "TranslationKey": "Events/Saloon:911526:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "I feel the same way."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s13",
+          "DialogueText": "I'm sorry... I don't feel that way about you.",
+          "AudioPath": "assets/ja-JP/Alex/417.ogg",
+          "TranslationKey": "Events/Saloon:911526:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm sorry... I don't feel that way about you."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s14",
+          "DialogueText": "... {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/418.ogg",
+          "TranslationKey": "Events/Saloon:911526:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s15",
+          "DialogueText": "I can't believe it took this long to say that to each other. {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/419.ogg",
+          "TranslationKey": "Events/Saloon:911526:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "I can't believe it took this long to say that to each other."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s16",
+          "DialogueText": "Mmm... this steak is outstanding. Can you smell that fragrant sauce? {Portrait:Custom:10}",
+          "AudioPath": "assets/ja-JP/Alex/420.ogg",
+          "TranslationKey": "Events/Saloon:911526:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "Mmm... this steak is outstanding. Can you smell that fragrant sauce?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s17",
+          "DialogueText": "... {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/421.ogg",
+          "TranslationKey": "Events/Saloon:911526:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/rejectJosh:s0",
+          "DialogueText": "...Oh... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/422.ogg",
+          "TranslationKey": "Events/Saloon:rejectJosh:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "...Oh..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/rejectJosh:s1",
+          "DialogueText": "I...I'm sorry if I made you uncomfortable... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/423.ogg",
+          "TranslationKey": "Events/Saloon:rejectJosh:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I...I'm sorry if I made you uncomfortable..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/rejectJosh:s2",
+          "DialogueText": "I'm not hungry anymore... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/424.ogg",
+          "TranslationKey": "Events/Saloon:rejectJosh:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm not hungry anymore..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/rejectJosh:s3",
+          "DialogueText": "... {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/425.ogg",
+          "TranslationKey": "Events/Saloon:rejectJosh:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195099:s0",
+          "DialogueText": "What's up?",
+          "AudioPath": "assets/ja-JP/Alex/426.ogg",
+          "TranslationKey": "Events/Saloon:195099:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "What's up?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s0",
+          "DialogueText": "Hold it!",
+          "AudioPath": "assets/ja-JP/Alex/427.ogg",
+          "TranslationKey": "Events/Saloon:195013:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hold it!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s1|g=male",
+          "DialogueText": "{Farmer_Name}? I thought... I thought we were 'one of a kind'... But you were just using me? {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/428_male.ogg",
+          "TranslationKey": "Events/Saloon:195013:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "? I thought... I thought we were 'one of a kind'... But you were just using me?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s2|g=female",
+          "DialogueText": "What are you looking at *me* for? You think I'm gonna come to your rescue? {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/429_female.ogg",
+          "TranslationKey": "Events/Saloon:195013:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "What are you looking at *me* for? You think I'm gonna come to your rescue?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s3",
+          "DialogueText": "That's right!",
+          "AudioPath": "assets/ja-JP/Alex/430.ogg",
+          "TranslationKey": "Events/Saloon:195013:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "That's right!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s4",
+          "DialogueText": "Sure...",
+          "AudioPath": "assets/ja-JP/Alex/431.ogg",
+          "TranslationKey": "Events/Saloon:195013:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Sure..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/choseToExplain:s0",
+          "DialogueText": "Yeah, right!",
+          "AudioPath": "assets/ja-JP/Alex/432.ogg",
+          "TranslationKey": "Events/Saloon:choseToExplain:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Yeah, right!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/crying:s0|g=male",
+          "DialogueText": "I'll assume this is just another act... {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/433_male.ogg",
+          "TranslationKey": "Events/Saloon:crying:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll assume this is just another act...",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/crying:s1|g=female",
+          "DialogueText": "Typical... {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/434_female.ogg",
+          "TranslationKey": "Events/Saloon:crying:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Typical...",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s0",
+          "DialogueText": "Big play!",
+          "AudioPath": "assets/ja-JP/Alex/435.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Big play!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s1",
+          "DialogueText": "There we go!",
+          "AudioPath": "assets/ja-JP/Alex/436.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "There we go!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s2",
+          "DialogueText": "Hey, {Farmer_Name}! You made it! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/437.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, ! You made it!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s3",
+          "DialogueText": "So... what do you think?",
+          "AudioPath": "assets/ja-JP/Alex/438.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "So... what do you think?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s4",
+          "DialogueText": "I've been thinking... You know how I used to dream of being an athlete someday?",
+          "AudioPath": "assets/ja-JP/Alex/439.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been thinking... You know how I used to dream of being an athlete someday?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s5",
+          "DialogueText": "Well, my life ended up turning out a bit different... {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Alex/440.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, my life ended up turning out a bit different..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s6",
+          "DialogueText": "I'm happy, though, don't get me wrong! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/441.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm happy, though, don't get me wrong!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s7",
+          "DialogueText": "...But I thought it would be cool to have a place where us guys could hang out and watch the Sunday game. Gus liked the idea so much he offered me part of his back room!",
+          "AudioPath": "assets/ja-JP/Alex/442.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "...But I thought it would be cool to have a place where us guys could hang out and watch the Sunday game. Gus liked the idea so much he offered me part of his back room!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s8",
+          "DialogueText": "This way, I get to keep part of 'the dream' alive, in a small way.",
+          "AudioPath": "assets/ja-JP/Alex/443.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "This way, I get to keep part of 'the dream' alive, in a small way."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s9",
+          "DialogueText": "Thanks, Grandpa.",
+          "AudioPath": "assets/ja-JP/Alex/444.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks, Grandpa."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s0",
+          "DialogueText": "Oh, hi.",
+          "AudioPath": "assets/ja-JP/Alex/445.ogg",
+          "TranslationKey": "Events/Beach:20:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, hi."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s1",
+          "DialogueText": "Um, it's {Farmer_Name}, right?",
+          "AudioPath": "assets/ja-JP/Alex/446.ogg",
+          "TranslationKey": "Events/Beach:20:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Um, it's , right?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s2",
+          "DialogueText": "I'm just enjoying this great weather, {Farmer_Name}.",
+          "AudioPath": "assets/ja-JP/Alex/447.ogg",
+          "TranslationKey": "Events/Beach:20:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm just enjoying this great weather, ."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s3",
+          "DialogueText": "Hmm... {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Alex/448.ogg",
+          "TranslationKey": "Events/Beach:20:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmm..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s4",
+          "DialogueText": "Hey, go long! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/449.ogg",
+          "TranslationKey": "Events/Beach:20:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, go long!"
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s5",
+          "DialogueText": "Heh... Nice try.",
+          "AudioPath": "assets/ja-JP/Alex/450.ogg",
+          "TranslationKey": "Events/Beach:20:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Heh... Nice try."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s6",
+          "DialogueText": "I'm going to be the first professional gridball player from Stardew Valley... There's no doubt in my mind.",
+          "AudioPath": "assets/ja-JP/Alex/451.ogg",
+          "TranslationKey": "Events/Beach:20:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm going to be the first professional gridball player from Stardew Valley... There's no doubt in my mind."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s7",
+          "DialogueText": "I already led my school's team to the regional playoffs... Now I'm just training and getting stronger so I can claim my spot on the roster of the Zuzu City Tunnelers. You just wait!",
+          "AudioPath": "assets/ja-JP/Alex/452.ogg",
+          "TranslationKey": "Events/Beach:20:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I already led my school's team to the regional playoffs... Now I'm just training and getting stronger so I can claim my spot on the roster of the Zuzu City Tunnelers. You just wait!"
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s8",
+          "DialogueText": "I believe in you!",
+          "AudioPath": "assets/ja-JP/Alex/453.ogg",
+          "TranslationKey": "Events/Beach:20:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I believe in you!"
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s9",
+          "DialogueText": "Wow, you're really arrogant.",
+          "AudioPath": "assets/ja-JP/Alex/454.ogg",
+          "TranslationKey": "Events/Beach:20:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow, you're really arrogant."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s10",
+          "DialogueText": "Thanks, {Farmer_Name}. I'll remember that.",
+          "AudioPath": "assets/ja-JP/Alex/455.ogg",
+          "TranslationKey": "Events/Beach:20:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks, . I'll remember that."
+        },
+        {
+          "DialogueFrom": "Event:Beach/20:s11",
+          "DialogueText": "Hey, that was fun, huh?",
+          "AudioPath": "assets/ja-JP/Alex/456.ogg",
+          "TranslationKey": "Events/Beach:20:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, that was fun, huh?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/arrogantJosh:s0",
+          "DialogueText": "Hmmph... I think someone's a little jealous. {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/457.ogg",
+          "TranslationKey": "Events/Beach:arrogantJosh:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmmph... I think someone's a little jealous."
+        },
+        {
+          "DialogueFrom": "Event:Beach/arrogantJosh:s1",
+          "DialogueText": "I'm out of here. {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/458.ogg",
+          "TranslationKey": "Events/Beach:arrogantJosh:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm out of here."
+        },
+        {
+          "DialogueFrom": "Event:Beach/arrogantJosh:s2",
+          "DialogueText": "... {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Alex/459.ogg",
+          "TranslationKey": "Events/Beach:arrogantJosh:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s0",
+          "DialogueText": "*sniff*... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/460.ogg",
+          "TranslationKey": "Events/Beach:288847:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "*sniff*..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s1",
+          "DialogueText": "Oh... {Farmer_Name}. You saw me crying. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/461.ogg",
+          "TranslationKey": "Events/Beach:288847:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh... . You saw me crying."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s2",
+          "DialogueText": "It was today, twelve years ago... that my Mom died. {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Alex/462.ogg",
+          "TranslationKey": "Events/Beach:288847:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "It was today, twelve years ago... that my Mom died."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s3",
+          "DialogueText": "I still remember her well... she'd make salted radish sandwiches for lunch... and toss the gridball with me in the back yard. {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Alex/463.ogg",
+          "TranslationKey": "Events/Beach:288847:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I still remember her well... she'd make salted radish sandwiches for lunch... and toss the gridball with me in the back yard."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s4",
+          "DialogueText": "She took good care of me... and I was too young to really say 'thanks'. Now she's gone forever. {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Alex/464.ogg",
+          "TranslationKey": "Events/Beach:288847:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "She took good care of me... and I was too young to really say 'thanks'. Now she's gone forever."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s5",
+          "DialogueText": "This is the only keepsake I have left... her secret music box. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/465.ogg",
+          "TranslationKey": "Events/Beach:288847:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "This is the only keepsake I have left... her secret music box."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s6",
+          "DialogueText": "So... What are you thinking right now, {Farmer_Name}? {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Alex/466.ogg",
+          "TranslationKey": "Events/Beach:288847:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "So... What are you thinking right now, ?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s7",
+          "DialogueText": "Honor your mother's memory by always doing your best.",
+          "AudioPath": "assets/ja-JP/Alex/467.ogg",
+          "TranslationKey": "Events/Beach:288847:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Honor your mother's memory by always doing your best."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s8",
+          "DialogueText": "You shouldn't dwell in the past.",
+          "AudioPath": "assets/ja-JP/Alex/468.ogg",
+          "TranslationKey": "Events/Beach:288847:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "You shouldn't dwell in the past."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s9",
+          "DialogueText": "I'll always be here for you if you get lonely.",
+          "AudioPath": "assets/ja-JP/Alex/469.ogg",
+          "TranslationKey": "Events/Beach:288847:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll always be here for you if you get lonely."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s10",
+          "DialogueText": "Get over it. Life is hard for everyone.",
+          "AudioPath": "assets/ja-JP/Alex/470.ogg",
+          "TranslationKey": "Events/Beach:288847:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Get over it. Life is hard for everyone."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s11",
+          "DialogueText": "Well, there's no sense sitting around sniveling... let's head back to town. {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Alex/471.ogg",
+          "TranslationKey": "Events/Beach:288847:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, there's no sense sitting around sniveling... let's head back to town."
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s12",
+          "DialogueText": "Um... {Farmer_Name}? {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Alex/472.ogg",
+          "TranslationKey": "Events/Beach:288847:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... ?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s13",
+          "DialogueText": "Don't tell anyone I was crying. Okay? {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Alex/473.ogg",
+          "TranslationKey": "Events/Beach:288847:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Don't tell anyone I was crying. Okay?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/288847:s14",
+          "DialogueText": "Hey! {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Alex/474.ogg",
+          "TranslationKey": "Events/Beach:288847:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey!"
+        },
+        {
+          "DialogueFrom": "Event:BusStop/9581348:s0",
+          "DialogueText": "Goal!",
+          "AudioPath": "assets/ja-JP/Alex/475.ogg",
+          "TranslationKey": "Events/BusStop:9581348:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Goal!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Alex",
+          "DialogueText": "「ちからだめし」ゲームをやりすぎたな。腕に力が入らなくなっちまった…",
+          "AudioPath": "assets/ja-JP/Alex/476.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "「ちからだめし」ゲームをやりすぎたな。腕に力が入らなくなっちまった…"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Alex_spouse",
+          "DialogueText": "オレは昔の友だちと会ってくるよ…お前も、行って楽しんでこいよ。",
+          "AudioPath": "assets/ja-JP/Alex/477.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Alex_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "オレは昔の友だちと会ってくるよ…お前も、行って楽しんでこいよ。"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Alex_y2",
+          "DialogueText": "ちからだめしで100回勝つごとにバーベキューサンドを食べてるんだ。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Alex/478.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "ちからだめしで100回勝つごとにバーベキューサンドを食べてるんだ。"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Alex_spouse_y2",
+          "DialogueText": "まだ食べてないのか？ほら、たくさんあるぞ！ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Alex/479.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "まだ食べてないのか？ほら、たくさんあるぞ！"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Alex_spouse_y2",
+          "DialogueText": "オレはもう3個も食べちまったよ…うーん… このソースがいいんだ…",
+          "AudioPath": "assets/ja-JP/Alex/480.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Alex_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "オレはもう3個も食べちまったよ…うーん… このソースがいいんだ…"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Alex",
+          "DialogueText": "なんか怪しげな場所があるな。でもあそこ、どうやって行くんだ？",
+          "AudioPath": "assets/ja-JP/Alex/481.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "なんか怪しげな場所があるな。でもあそこ、どうやって行くんだ？"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Alex",
+          "DialogueText": "このへんのどっかにヒミツの通路があるに決まってる。",
+          "AudioPath": "assets/ja-JP/Alex/482.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "このへんのどっかにヒミツの通路があるに決まってる。"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Alex_y2",
+          "DialogueText": "女の子の叫び声が聞こえたような…助けに行かないと！ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Alex/483.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "女の子の叫び声が聞こえたような…助けに行かないと！"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Alex_spouse_y2",
+          "DialogueText": "よし、不気味な手を通り抜けた。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/484.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "よし、不気味な手を通り抜けた。"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Alex_spouse_y2",
+          "DialogueText": "近くで誰かが助けを呼んでるみたいだぞ。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Alex/485.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Alex_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "近くで誰かが助けを呼んでるみたいだぞ。"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Alex",
+          "DialogueText": "オレ、タマゴは毎日3つ食ってるんだ。",
+          "AudioPath": "assets/ja-JP/Alex/486.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "オレ、タマゴは毎日3つ食ってるんだ。"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Alex",
+          "DialogueText": "足をきたえるなら、タンパク質はだいじだからな。",
+          "AudioPath": "assets/ja-JP/Alex/487.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "足をきたえるなら、タンパク質はだいじだからな。"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Alex_spouse",
+          "DialogueText": "うえっ…さすがに、かたゆでタマゴ1ダースは食いすぎたかな… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/488.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Alex_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "うえっ…さすがに、かたゆでタマゴ1ダースは食いすぎたかな…"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Alex_y2",
+          "DialogueText": "日に30個のタマゴを食べたら腕や足が丈夫になるかな？",
+          "AudioPath": "assets/ja-JP/Alex/489.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "日に30個のタマゴを食べたら腕や足が丈夫になるかな？"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Alex",
+          "DialogueText": "景色を楽しんでるだけさ…へへっ。",
+          "AudioPath": "assets/ja-JP/Alex/490.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "景色を楽しんでるだけさ…へへっ。"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Alex_y2",
+          "DialogueText": "ダンスで大切なのは自信を持つことだ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/491.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "ダンスで大切なのは自信を持つことだ。"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Alex_spouse_y2",
+          "DialogueText": "今日はとてもいい気分だ。ダンスはうまくいくさ… リードはオレにまかせてくれ。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Alex/492.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "今日はとてもいい気分だ。ダンスはうまくいくさ… リードはオレにまかせてくれ。"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Alex",
+          "DialogueText": "きょうは最高のビーチパーティー日和だよな！だろ？",
+          "AudioPath": "assets/ja-JP/Alex/493.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "きょうは最高のビーチパーティー日和だよな！だろ？"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Alex_spouse",
+          "DialogueText": "やったね、なんでもいいからビーチであそぶ言い訳がほしかったんだ。見ろよこの天気、最高だろ！",
+          "AudioPath": "assets/ja-JP/Alex/494.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Alex_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "やったね、なんでもいいからビーチであそぶ言い訳がほしかったんだ。見ろよこの天気、最高だろ！"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Alex_y2",
+          "DialogueText": "オレが海に入ったら誰かついてくると思うか？ひとりで泳ぐのはいくらオレでも気が引けるんだ！ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Alex/495.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "オレが海に入ったら誰かついてくると思うか？ひとりで泳ぐのはいくらオレでも気が引けるんだ！"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Alex_spouse_y2",
+          "DialogueText": "今日は…好きなだけ食べるぞ。明日の腕立て伏せを増やせばいいだけだ！ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Alex/496.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は…好きなだけ食べるぞ。明日の腕立て伏せを増やせばいいだけだ！"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Alex",
+          "DialogueText": "もう夏が終わるなんて信じられないぜ…まだはじまったばかりって気分なのにさ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/497.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "もう夏が終わるなんて信じられないぜ…まだはじまったばかりって気分なのにさ。"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Alex_y2",
+          "DialogueText": "夏が終わるのは残念だけど、それが人生ってもんなんだろう… {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Alex/498.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "夏が終わるのは残念だけど、それが人生ってもんなんだろう…"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Alex_spouse_y2",
+          "DialogueText": "今は家族で過ごしてるところさ。もう少ししたら波止場で会おうぜ。 いいか？ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Alex/499.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "今は家族で過ごしてるところさ。もう少ししたら波止場で会おうぜ。 いいか？"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Alex",
+          "DialogueText": "よう、どうも。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/500.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "よう、どうも。"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Alex_spouse",
+          "DialogueText": "なにに感謝するかって？家に帰ったら教えてやるよ… {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Alex/501.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Alex_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "なにに感謝するかって？家に帰ったら教えてやるよ…"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Alex_y2",
+          "DialogueText": "スピリットツリーの下には、グリッドボールの形をしたオレからのプレゼントがあるはずだぜ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/502.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "スピリットツリーの下には、グリッドボールの形をしたオレからのプレゼントがあるはずだぜ。"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Alex_spouse_y2",
+          "DialogueText": "寒くなったら言ってくれ。オレのジャケットをかしてやるよ。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Alex/503.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "寒くなったら言ってくれ。オレのジャケットをかしてやるよ。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Alex",
+          "DialogueText": "まあ、雪だるまもわるくないけどさ。でもそれより、オレは春が待ちどおしいね。",
+          "AudioPath": "assets/ja-JP/Alex/504.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "まあ、雪だるまもわるくないけどさ。でもそれより、オレは春が待ちどおしいね。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Alex_spouse",
+          "DialogueText": "釣り大会、応援してるぜ。がんばれよ。",
+          "AudioPath": "assets/ja-JP/Alex/505.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Alex_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "釣り大会、応援してるぜ。がんばれよ。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Alex_y2",
+          "DialogueText": "まつりの後、凍った池に入っても誰も気づかないかな？",
+          "AudioPath": "assets/ja-JP/Alex/506.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Alex_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "まつりの後、凍った池に入っても誰も気づかないかな？"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Alex_y2",
+          "DialogueText": "氷風呂は筋肉にいいって聞いたんだ。",
+          "AudioPath": "assets/ja-JP/Alex/507.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Alex_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "氷風呂は筋肉にいいって聞いたんだ。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Alex_spouse_y2",
+          "DialogueText": "よう！おまえならぶっちぎりで優勝さ！がんばってくれよ！",
+          "AudioPath": "assets/ja-JP/Alex/508.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Alex_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "よう！おまえならぶっちぎりで優勝さ！がんばってくれよ！"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Alex:s0",
+          "DialogueText": "サイコーじゃんか！オレ、これすっげー好きなんだ！",
+          "AudioPath": "assets/ja-JP/Alex/509.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Alex:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "サイコーじゃんか！オレ、これすっげー好きなんだ！"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Alex:s1",
+          "DialogueText": "イカしてるじゃん！サンキューな。",
+          "AudioPath": "assets/ja-JP/Alex/510.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Alex:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "イカしてるじゃん！サンキューな。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Alex:s2",
+          "DialogueText": "あー…うん。ありがとう。",
+          "AudioPath": "assets/ja-JP/Alex/511.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Alex:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "あー…うん。ありがとう。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Alex:s3",
+          "DialogueText": "おい、マジかよ？ゴミじゃねーか、こんなの。",
+          "AudioPath": "assets/ja-JP/Alex/512.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Alex:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "おい、マジかよ？ゴミじゃねーか、こんなの。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Alex:s4",
+          "DialogueText": "サンキューな。",
+          "AudioPath": "assets/ja-JP/Alex/513.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Alex:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "サンキューな。"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/JoshHouse_Alex_Trash",
+          "DialogueText": "あー…お前、なにしてんだ？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/514.ogg",
+          "TranslationKey": "Data/ExtraDialogue:JoshHouse_Alex_Trash",
+          "PageIndex": 0,
+          "DisplayPattern": "あー…お前、なにしてんだ？"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Alex",
+          "DialogueText": "よお、きのうの夜さ、{1}{2}を店で買ってったんだ。そしたらばあちゃん、うまいキャセロールをつくってくれてさ…",
+          "AudioPath": "assets/ja-JP/Alex/515.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "よお、きのうの夜さ、{1}{2}を店で買ってったんだ。そしたらばあちゃん、うまいキャセロールをつくってくれてさ…"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Alex",
+          "DialogueText": "なりたい自分をやっと見つけたんだ…未来に確信が持てた。\"/pause 500/speak Alex \"お前がいなかったら、俺は今のようになれなかったよ、{Farmer_Name}。\"",
+          "AudioPath": "assets/ja-JP/Alex/516.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "なりたい自分をやっと見つけたんだ…未来に確信が持てた。\"/pause 500/speak Alex \"お前がいなかったら、俺は今のようになれなかったよ、。\""
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_summer_movie_1_BeforeMovie",
+          "DialogueText": "これはかなり面白くて、それを楽しみにしてます。",
+          "AudioPath": "assets/ja-JP/Alex/517.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_summer_movie_1_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "これはかなり面白くて、それを楽しみにしてます。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_summer_movie_1_AfterMovie",
+          "DialogueText": "ああ！本当にそれが気に入った。でもそんなグルテンパックで生き残れるかどうか私は分からない。",
+          "AudioPath": "assets/ja-JP/Alex/518.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_summer_movie_1_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ！本当にそれが気に入った。でもそんなグルテンパックで生き残れるかどうか私は分からない。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_love_BeforeMovie",
+          "DialogueText": "しばらくそれを見てみたいと思ってました。.チケットをありがとう、{Farmer_Name}！",
+          "AudioPath": "assets/ja-JP/Alex/519.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "しばらくそれを見てみたいと思ってました。.チケットをありがとう、！"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_love_AfterMovie",
+          "DialogueText": "すごく良かったよ！私の足はまだ興奮してます。",
+          "AudioPath": "assets/ja-JP/Alex/520.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "すごく良かったよ！私の足はまだ興奮してます。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_like_BeforeMovie",
+          "DialogueText": "ヘイ、映画を見るのにとても興奮してるよ！おやつが必要だけど...",
+          "AudioPath": "assets/ja-JP/Alex/521.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "ヘイ、映画を見るのにとても興奮してるよ！おやつが必要だけど..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_like_AfterMovie",
+          "DialogueText": "こんにちは、それはかなり良かったよ。ここに招待してくれてありがとう、{Farmer_Name}。",
+          "AudioPath": "assets/ja-JP/Alex/522.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、それはかなり良かったよ。ここに招待してくれてありがとう、。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_dislike_BeforeMovie",
+          "DialogueText": "この映画はちょっとオタク向けだけど、見てみるよ。",
+          "AudioPath": "assets/ja-JP/Alex/523.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "この映画はちょっとオタク向けだけど、見てみるよ。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Alex_dislike_AfterMovie",
+          "DialogueText": "退屈だったのか、理解できないくらい賢くないのかは分からない... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Alex/524.ogg",
+          "TranslationKey": "Strings/MovieReactions:Alex_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "退屈だったのか、理解できないくらい賢くないのかは分からない..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Alex_marriage",
+          "DialogueText": "砂漠の太陽に照らされたおまえは… 本当にキュートだ… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Alex/525.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Alex_marriage",
+          "PageIndex": 0,
+          "DisplayPattern": "砂漠の太陽に照らされたおまえは… 本当にキュートだ…"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Alex",
+          "DialogueText": "カリコエッグの大きさを見たか？",
+          "AudioPath": "assets/ja-JP/Alex/526.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "カリコエッグの大きさを見たか？"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Alex",
+          "DialogueText": "あれに含まれてるタンパク質の量を想像してみろよ…",
+          "AudioPath": "assets/ja-JP/Alex/527.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Alex",
+          "PageIndex": 1,
+          "DisplayPattern": "あれに含まれてるタンパク質の量を想像してみろよ…"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Alex",
+          "DialogueText": "よう、タマゴは持ってるか？",
+          "AudioPath": "assets/ja-JP/Alex/528.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Alex",
+          "PageIndex": 0,
+          "DisplayPattern": "よう、タマゴは持ってるか？"
+        }
+      ]
+    }
+  ]
+}

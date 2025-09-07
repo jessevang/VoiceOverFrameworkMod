@@ -1,0 +1,964 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Jas.tr-TR",
+      "VoicePackName": "DictionarV2 (Jas - tr-TR)",
+      "Character": "Jas",
+      "Language": "tr-TR",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "... {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Jas/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Selam... {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Jas/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "Selam..."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "Vay, doğum günü hediyesi! Bayıldım! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "Vay, doğum günü hediyesi! Bayıldım!"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Korkuyorum... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "Korkuyorum..."
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Umarım yağmur, elbisemi yeşile çevirmez... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Umarım yağmur, elbisemi yeşile çevirmez..."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "Doğum günü hediyesi mi? Ya... Bunu sevmedim. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "Doğum günü hediyesi mi? Ya... Bunu sevmedim."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Emin misin? Aşırı güzel kokuyor! Her gün azar azar içeceğim. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Emin misin? Aşırı güzel kokuyor! Her gün azar azar içeceğim."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)FairyBox",
+          "DialogueText": "Vay, çok güzel! İçinde bir peri mi var? *kıkırdar*... Şarkı söylediğini duyabiliyorum. O benim gizli arkadaşım olacak. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_(TR)FairyBox",
+          "PageIndex": 0,
+          "DisplayPattern": "Vay, çok güzel! İçinde bir peri mi var? *kıkırdar*... Şarkı söylediğini duyabiliyorum. O benim gizli arkadaşım olacak."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)103",
+          "DialogueText": "Aa, küçük bir bebek! Biraz kirli ama onu yıkarım. Teşekkürler! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_(O)103",
+          "PageIndex": 0,
+          "DisplayPattern": "Aa, küçük bir bebek! Biraz kirli ama onu yıkarım. Teşekkürler!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Positive_doll_item",
+          "DialogueText": "Aa, çok beğendim! Arkadaşlarımla iyi anlaşacak. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_Positive_doll_item",
+          "PageIndex": 0,
+          "DisplayPattern": "Aa, çok beğendim! Arkadaşlarımla iyi anlaşacak."
+        },
+        {
+          "DialogueFrom": "AcceptGift_Negative_alcohol_item",
+          "DialogueText": "Şey... Bunu içmemem gerekiyor. Bu büyükler için değil mi? {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_Negative_alcohol_item",
+          "PageIndex": 0,
+          "DisplayPattern": "Şey... Bunu içmemem gerekiyor. Bu büyükler için değil mi?"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Negative_coffee_item",
+          "DialogueText": "Of... Marnie teyze hâlâ benim kahve içmeme izin vermiyor... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_Negative_coffee_item",
+          "PageIndex": 0,
+          "DisplayPattern": "Of... Marnie teyze hâlâ benim kahve içmeme izin vermiyor..."
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "Bir yengeç gördüm!",
+          "AudioPath": "assets/tr-TR/Jas/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "Bir yengeç gördüm!"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "Ayakkabıma kum girdi... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "Ayakkabıma kum girdi..."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Deniz kabuğu topluyorum... Bunlardan kolye yapacağım!",
+          "AudioPath": "assets/tr-TR/Jas/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "Deniz kabuğu topluyorum... Bunlardan kolye yapacağım!"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Marnie teyzem güneşin altında kalmamamı söyledi... Hızlı yürüdüğümde serinlik hissediyorum. Bence sorun olmaz. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Marnie teyzem güneşin altında kalmamamı söyledi... Hızlı yürüdüğümde serinlik hissediyorum. Bence sorun olmaz."
+        },
+        {
+          "DialogueFrom": "movieTheater",
+          "DialogueText": "Marnie teyze tek başıma filme gitmek için yeterince büyük olmadığımı söylüyor... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:movieTheater",
+          "PageIndex": 0,
+          "DisplayPattern": "Marnie teyze tek başıma filme gitmek için yeterince büyük olmadığımı söylüyor..."
+        },
+        {
+          "DialogueFrom": "reject_869",
+          "DialogueText": "Iyy! {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:reject_869",
+          "PageIndex": 0,
+          "DisplayPattern": "Iyy!"
+        },
+        {
+          "DialogueFrom": "married_Shane",
+          "DialogueText": "Umarım Shane beni ziyaret etmeye devam eder... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:married_Shane",
+          "PageIndex": 0,
+          "DisplayPattern": "Umarım Shane beni ziyaret etmeye devam eder..."
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "*iç çeker*... Umarım bir gün ben de evlenebilirim. {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Jas/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:married",
+          "PageIndex": 0,
+          "DisplayPattern": "*iç çeker*... Umarım bir gün ben de evlenebilirim."
+        },
+        {
+          "DialogueFrom": "cropMatured_595",
+          "DialogueText": "Şey... Daha önce hiç peri gördün mü?",
+          "AudioPath": "assets/tr-TR/Jas/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:cropMatured_595",
+          "PageIndex": 0,
+          "DisplayPattern": "Şey... Daha önce hiç peri gördün mü?"
+        },
+        {
+          "DialogueFrom": "cropMatured_595",
+          "DialogueText": "Ya! Ben de görmek istiyorum. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:cropMatured_595",
+          "PageIndex": 1,
+          "DisplayPattern": "Ya! Ben de görmek istiyorum."
+        },
+        {
+          "DialogueFrom": "cropMatured_595",
+          "DialogueText": "...Ben de görmedim. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:cropMatured_595",
+          "PageIndex": 2,
+          "DisplayPattern": "...Ben de görmedim."
+        },
+        {
+          "DialogueFrom": "eventSeen_3910975",
+          "DialogueText": "...Shane iyi olacak mı? {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:eventSeen_3910975",
+          "PageIndex": 0,
+          "DisplayPattern": "...Shane iyi olacak mı?"
+        },
+        {
+          "DialogueFrom": "eventSeen_3910975_memory_oneweek",
+          "DialogueText": "Kabusumda evde yangın çıkıyordu... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:eventSeen_3910975_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "Kabusumda evde yangın çıkıyordu..."
+        },
+        {
+          "DialogueFrom": "eventSeen_3910974",
+          "DialogueText": "*kıkırdar* ...Bak, gerçek tavşan tüylü terliklerim var! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:eventSeen_3910974",
+          "PageIndex": 0,
+          "DisplayPattern": "*kıkırdar* ...Bak, gerçek tavşan tüylü terliklerim var!"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Ah... Marnie teyzeyi mi arıyorsun? {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Jas/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah... Marnie teyzeyi mi arıyorsun?"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Merhaba, Bay {Farmer_Name}.",
+          "AudioPath": "assets/tr-TR/Jas/28_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "Merhaba, Bay .",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Merhaba, Bayan {Farmer_Name}.",
+          "AudioPath": "assets/tr-TR/Jas/29_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "Merhaba, Bayan .",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Çiftlikte yaşamak çok güzel. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Mon4",
+          "PageIndex": 2,
+          "DisplayPattern": "Çiftlikte yaşamak çok güzel."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Ne? *kıkırdar* {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Ne? *kıkırdar*"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "...Selam.",
+          "AudioPath": "assets/tr-TR/Jas/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "...Selam."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "İstersen oyuncak bebeklerimle oynayabilirsin. Yalnızca işin bittiğinde saçlarını taramayı unutma.",
+          "AudioPath": "assets/tr-TR/Jas/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "İstersen oyuncak bebeklerimle oynayabilirsin. Yalnızca işin bittiğinde saçlarını taramayı unutma."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "... {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Jas/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Wed2",
+          "DialogueText": "...Selam. {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Jas/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed2",
+          "PageIndex": 0,
+          "DisplayPattern": "...Selam."
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "Marnie teyze 6'dan sonra dışarıya çıkmama izin vermiyor. Bu haksızlık! {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "Marnie teyze 6'dan sonra dışarıya çıkmama izin vermiyor. Bu haksızlık!"
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "Artık karanlıktan korkmuyorum!",
+          "AudioPath": "assets/tr-TR/Jas/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed4",
+          "PageIndex": 1,
+          "DisplayPattern": "Artık karanlıktan korkmuyorum!"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Yabancılar ile konuşmamam gerekiyor... {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Jas/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Yabancılar ile konuşmamam gerekiyor..."
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "Bayan Penny bana el yazısı ile yazmayı öğretiyor. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Thu2",
+          "PageIndex": 0,
+          "DisplayPattern": "Bayan Penny bana el yazısı ile yazmayı öğretiyor."
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "Harika bir el yazısı var.",
+          "AudioPath": "assets/tr-TR/Jas/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Thu2",
+          "PageIndex": 1,
+          "DisplayPattern": "Harika bir el yazısı var."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "... Seni tanımıyorum. {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Jas/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "... Seni tanımıyorum."
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "Fiyonkumu sevdin mi?",
+          "AudioPath": "assets/tr-TR/Jas/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Fri2",
+          "PageIndex": 0,
+          "DisplayPattern": "Fiyonkumu sevdin mi?"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "Çiftlikte yaşamayı seviyorum... En sevdiğim şey ineklerimizin sütünden yapılan taze dondurma.",
+          "AudioPath": "assets/tr-TR/Jas/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "Çiftlikte yaşamayı seviyorum... En sevdiğim şey ineklerimizin sütünden yapılan taze dondurma."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Çimen kokuyorsun. {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Jas/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Çimen kokuyorsun."
+        },
+        {
+          "DialogueFrom": "Sat2",
+          "DialogueText": "Bazen suda kerevit arıyorum. Marnie teyzeye söyleme, bir keresinde birini ineklere verdim.",
+          "AudioPath": "assets/tr-TR/Jas/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat2",
+          "PageIndex": 0,
+          "DisplayPattern": "Bazen suda kerevit arıyorum. Marnie teyzeye söyleme, bir keresinde birini ineklere verdim."
+        },
+        {
+          "DialogueFrom": "Sat2",
+          "DialogueText": "Çok sevdiler.",
+          "AudioPath": "assets/tr-TR/Jas/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat2",
+          "PageIndex": 1,
+          "DisplayPattern": "Çok sevdiler."
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Bana karşı çok iyi davranıyorsunuz, Bay {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/47_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "Bana karşı çok iyi davranıyorsunuz, Bay .",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Bana karşı çok iyisiniz, Bayan {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/48_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "Bana karşı çok iyisiniz, Bayan .",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Yetişkinler genellikle sıkıcı oluyorlar ama sen farklısın.",
+          "AudioPath": "assets/tr-TR/Jas/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat8",
+          "PageIndex": 2,
+          "DisplayPattern": "Yetişkinler genellikle sıkıcı oluyorlar ama sen farklısın."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Şey... bir...bir şey mi istiyorsun? {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Jas/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Şey... bir...bir şey mi istiyorsun?"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Yabancılar ile konuşmamam gerekiyor. {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Jas/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Yabancılar ile konuşmamam gerekiyor."
+        },
+        {
+          "DialogueFrom": "Sun2",
+          "DialogueText": "Shane'in kafası hep uçuk ve Marnie teyze hep meşgul... Bu yüzden kendi oyunlarımı icat etmem gerekiyor.",
+          "AudioPath": "assets/tr-TR/Jas/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun2",
+          "PageIndex": 0,
+          "DisplayPattern": "Shane'in kafası hep uçuk ve Marnie teyze hep meşgul... Bu yüzden kendi oyunlarımı icat etmem gerekiyor."
+        },
+        {
+          "DialogueFrom": "Sun2",
+          "DialogueText": "Oyuncaklarıma minnettarım. {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun2",
+          "PageIndex": 1,
+          "DisplayPattern": "Oyuncaklarıma minnettarım."
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "Shane'in vaftiz babam olduğunu biliyor muydun? Ebeveynlerimin bir arkadaşıydı. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun10",
+          "PageIndex": 0,
+          "DisplayPattern": "Shane'in vaftiz babam olduğunu biliyor muydun? Ebeveynlerimin bir arkadaşıydı."
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "...vefat ettiler. *burnunu çeker* {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun10",
+          "PageIndex": 1,
+          "DisplayPattern": "...vefat ettiler. *burnunu çeker*"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s0",
+          "DialogueText": "I loved it! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/56.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I loved it!"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184643:s0",
+          "DialogueText": "Ms. Penny? The cover fell off my math book... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/57.ogg",
+          "TranslationKey": "Events/Town:6184643:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ms. Penny? The cover fell off my math book..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s0",
+          "DialogueText": "A natural resource is a material source of wealth that occurs in a natural state and has economic value. {Portrait:Love}",
+          "AudioPath": "assets/tr-TR/Jas/58.ogg",
+          "TranslationKey": "Events/Forest:181928:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "A natural resource is a material source of wealth that occurs in a natural state and has economic value."
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s1",
+          "DialogueText": "Yesss! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/59.ogg",
+          "TranslationKey": "Events/Forest:181928:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Yesss!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s0",
+          "DialogueText": "Ew... it smells. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/60.ogg",
+          "TranslationKey": "Events/Forest:318560:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ew... it smells."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s1",
+          "DialogueText": "I think Gunther has the key.",
+          "AudioPath": "assets/tr-TR/Jas/61.ogg",
+          "TranslationKey": "Events/Forest:318560:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I think Gunther has the key."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s2",
+          "DialogueText": "I saw a big rusty old key fall out of his pocket one time.",
+          "AudioPath": "assets/tr-TR/Jas/62.ogg",
+          "TranslationKey": "Events/Forest:318560:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I saw a big rusty old key fall out of his pocket one time."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s3",
+          "DialogueText": "A creepy sewer door like this has just got to be a match for a big rusty old key. {Portrait:Love}",
+          "AudioPath": "assets/tr-TR/Jas/63.ogg",
+          "TranslationKey": "Events/Forest:318560:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "A creepy sewer door like this has just got to be a match for a big rusty old key."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s4",
+          "DialogueText": "There's something moving around in there! {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Jas/64.ogg",
+          "TranslationKey": "Events/Forest:318560:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "There's something moving around in there!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s0",
+          "DialogueText": "They're too spicy for me! {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/65.ogg",
+          "TranslationKey": "Events/Forest:3910979:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "They're too spicy for me!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s1",
+          "DialogueText": "Um... What do you do with the bugs, Vincent?",
+          "AudioPath": "assets/tr-TR/Jas/66.ogg",
+          "TranslationKey": "Events/Forest:3910979:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... What do you do with the bugs, Vincent?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s2",
+          "DialogueText": "*gasp*!",
+          "AudioPath": "assets/tr-TR/Jas/67.ogg",
+          "TranslationKey": "Events/Forest:3910979:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "*gasp*!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s3",
+          "DialogueText": "That's horrible! No, no, no, no, no... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/68.ogg",
+          "TranslationKey": "Events/Forest:3910979:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "That's horrible! No, no, no, no, no..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s4|g=male",
+          "DialogueText": "Mr. {Farmer_Name}? Please... put the bugs back in the grass so they can live in peace.",
+          "AudioPath": "assets/tr-TR/Jas/69_male.ogg",
+          "TranslationKey": "Events/Forest:3910979:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Mr. ? Please... put the bugs back in the grass so they can live in peace.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s5|g=female",
+          "DialogueText": "Miss {Farmer_Name}? Please... put the bugs back in the grass so they can live in peace.",
+          "AudioPath": "assets/tr-TR/Jas/70_female.ogg",
+          "TranslationKey": "Events/Forest:3910979:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Miss ? Please... put the bugs back in the grass so they can live in peace.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s6",
+          "DialogueText": "You learned how to clean the spring onion... without harming any bugs.",
+          "AudioPath": "assets/tr-TR/Jas/71.ogg",
+          "TranslationKey": "Events/Forest:3910979:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "You learned how to clean the spring onion... without harming any bugs."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s7",
+          "DialogueText": "Spring onions are now worth 5x the gold!",
+          "AudioPath": "assets/tr-TR/Jas/72.ogg",
+          "TranslationKey": "Events/Forest:3910979:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Spring onions are now worth 5x the gold!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s0",
+          "DialogueText": "...*sob*...",
+          "AudioPath": "assets/tr-TR/Jas/73.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "...*sob*..."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s0",
+          "DialogueText": "Th... These are real bunny-jewel slippers!! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/74.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Th... These are real bunny-jewel slippers!!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s1",
+          "DialogueText": "B... But these are so expensive! {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Jas/75.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "B... But these are so expensive!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s2",
+          "DialogueText": "How did you afford them? {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Jas/76.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "How did you afford them?"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s0",
+          "DialogueText": "Uncle Shane's in the barn. He said... Uh... He said to tell you he wants to show you something.",
+          "AudioPath": "assets/tr-TR/Jas/77.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Uncle Shane's in the barn. He said... Uh... He said to tell you he wants to show you something."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s1",
+          "DialogueText": "White Chicken",
+          "AudioPath": "assets/tr-TR/Jas/78.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "White Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s2",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/tr-TR/Jas/79.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s3",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/tr-TR/Jas/80.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s4",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/tr-TR/Jas/81.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s5",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/tr-TR/Jas/82.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Jas",
+          "DialogueText": "Ah! Bir tavuk serçe parmağımı ısırdı. {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Jas/83.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah! Bir tavuk serçe parmağımı ısırdı."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Jas_y2",
+          "DialogueText": "Mö! Möööööö! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/84.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Mö! Möööööö!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Jas_y2",
+          "DialogueText": "Buzağılarla konuşmaya çalışıyorum. {Portrait:Neutral}",
+          "AudioPath": "assets/tr-TR/Jas/85.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Jas_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Buzağılarla konuşmaya çalışıyorum."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Jas",
+          "DialogueText": "Ama Marnie teyze! Labirente girmek istiyorum! Korkmuyorum ben! {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/86.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Ama Marnie teyze! Labirente girmek istiyorum! Korkmuyorum ben!"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Jas_y2",
+          "DialogueText": "Hadi bu taraftan gidelim!%noturn {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/87.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hadi bu taraftan gidelim!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Jas",
+          "DialogueText": "Umarım Vincent hepsini bulmadan önce ben de birkaç yumurta bulabilirim... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/88.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Umarım Vincent hepsini bulmadan önce ben de birkaç yumurta bulabilirim..."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Jas_y2",
+          "DialogueText": "Bu sene kazanmak için elimden geleni yapacağım!",
+          "AudioPath": "assets/tr-TR/Jas/89.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Bu sene kazanmak için elimden geleni yapacağım!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Jas",
+          "DialogueText": "Bir gün ben de Çiçek Kraliçesi olacağım!",
+          "AudioPath": "assets/tr-TR/Jas/90.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Bir gün ben de Çiçek Kraliçesi olacağım!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Jas_y2",
+          "DialogueText": "*kıkırdar* Doğru mu yapıyorum? {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/91.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "*kıkırdar* Doğru mu yapıyorum?"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Jas",
+          "DialogueText": "Vincent iyi bir dansçı değil.",
+          "AudioPath": "assets/tr-TR/Jas/92.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Vincent iyi bir dansçı değil."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Jas_y2",
+          "DialogueText": "A... Ama... Yemek zorunda mıyım? {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/93.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "A... Ama... Yemek zorunda mıyım?"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Jas",
+          "DialogueText": "Umarım bu sene yavru denizanaları da olur!",
+          "AudioPath": "assets/tr-TR/Jas/94.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Umarım bu sene yavru denizanaları da olur!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Jas_y2",
+          "DialogueText": "Eğer gözleri yoksa denizanaları nereye doğru yüzdüklerini nereden biliyor? {Portrait:Neutral}",
+          "AudioPath": "assets/tr-TR/Jas/95.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Eğer gözleri yoksa denizanaları nereye doğru yüzdüklerini nereden biliyor?"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Jas",
+          "DialogueText": "Ah! Hediyeler! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/96.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah! Hediyeler!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Jas_y2",
+          "DialogueText": "Hediyeleri açma zamanı gelmedi mi? {Portrait:Neutral}",
+          "AudioPath": "assets/tr-TR/Jas/97.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hediyeleri açma zamanı gelmedi mi?"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Jas",
+          "DialogueText": "Havuçtan bir burnu olsun istiyorum! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/98.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Havuçtan bir burnu olsun istiyorum!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Jas_y2",
+          "DialogueText": "Balıklar aşağıda üşümüyor mu? {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Jas/99.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Balıklar aşağıda üşümüyor mu?"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s0",
+          "DialogueText": "*nefesi kesilir*...Vay be, teşekkürler! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/100.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "*nefesi kesilir*...Vay be, teşekkürler!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s1",
+          "DialogueText": "Hediyelere bayılırım. Çok teşekkürler!",
+          "AudioPath": "assets/tr-TR/Jas/101.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hediyelere bayılırım. Çok teşekkürler!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s2",
+          "DialogueText": "Bu hediye mi şimdi? Ah... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/102.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Bu hediye mi şimdi? Ah..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s3",
+          "DialogueText": "Iy, bu iğrenç bir şey. {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/103.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Iy, bu iğrenç bir şey."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s4",
+          "DialogueText": "Teşekkürler!",
+          "AudioPath": "assets/tr-TR/Jas/104.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Teşekkürler!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_love_BeforeMovie",
+          "DialogueText": "Filme gitmek istiyorum!",
+          "AudioPath": "assets/tr-TR/Jas/105.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Filme gitmek istiyorum!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_love_DuringMovie",
+          "DialogueText": "Jas çok mutlu!",
+          "AudioPath": "assets/tr-TR/Jas/106.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_love_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Jas çok mutlu!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_love_AfterMovie",
+          "DialogueText": "Çok keyifliydi! Beni getirdiğin için teşekkür ederim! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/107.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Çok keyifliydi! Beni getirdiğin için teşekkür ederim!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_like_BeforeMovie",
+          "DialogueText": "Bu yetişkin filmlerinden, değil mi? Bana bir şey olmaz!",
+          "AudioPath": "assets/tr-TR/Jas/108.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Bu yetişkin filmlerinden, değil mi? Bana bir şey olmaz!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_like_DuringMovie",
+          "DialogueText": "Jas kafasını çevirip gözünü kapatıyor.",
+          "AudioPath": "assets/tr-TR/Jas/109.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_like_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Jas kafasını çevirip gözünü kapatıyor."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_like_AfterMovie",
+          "DialogueText": "Güzeldi bence! Şey vardı... filmde... iyi 'di-ya-log-lar'! ...değil mi?",
+          "AudioPath": "assets/tr-TR/Jas/110.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Güzeldi bence! Şey vardı... filmde... iyi 'di-ya-log-lar'! ...değil mi?"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_BeforeMovie",
+          "DialogueText": "B... Bunu izlemeli miyim bilmiyorum... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/111.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "B... Bunu izlemeli miyim bilmiyorum..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_DuringMovie",
+          "DialogueText": "Korkuyorum... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/112.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Korkuyorum..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_DuringMovie_2",
+          "DialogueText": "Jas titriyor.",
+          "AudioPath": "assets/tr-TR/Jas/113.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_DuringMovie_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Jas titriyor."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_AfterMovie",
+          "DialogueText": "*uyuklar*... {Portrait:Sad}",
+          "AudioPath": "assets/tr-TR/Jas/114.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "*uyuklar*..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Jas",
+          "DialogueText": "Çok eğleniyorum, keşke dondurma da alsaydım...",
+          "AudioPath": "assets/tr-TR/Jas/115.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Çok eğleniyorum, keşke dondurma da alsaydım..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Jas",
+          "DialogueText": "Selam... Şey... *kıkırdar*",
+          "AudioPath": "assets/tr-TR/Jas/116.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Selam... Şey... *kıkırdar*"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Jas_IceCream",
+          "DialogueText": "Bu... Bana mı? {Portrait:Unique}",
+          "AudioPath": "assets/tr-TR/Jas/117.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Jas_IceCream",
+          "PageIndex": 0,
+          "DisplayPattern": "Bu... Bana mı?"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Jas_IceCream",
+          "DialogueText": "Vay be! O kadar çok istiyordum ki... Teşekkürler! Çok tatlısın! {Portrait:Happy}",
+          "AudioPath": "assets/tr-TR/Jas/118.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Jas_IceCream",
+          "PageIndex": 1,
+          "DisplayPattern": "Vay be! O kadar çok istiyordum ki... Teşekkürler! Çok tatlısın!"
+        }
+      ]
+    }
+  ]
+}

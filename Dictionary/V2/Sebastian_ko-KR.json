@@ -1,0 +1,4198 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Sebastian.ko-KR",
+      "VoicePackName": "DictionarV2 (Sebastian - ko-KR)",
+      "Character": "Sebastian",
+      "Language": "ko-KR",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "오. 최근에 이사 온 사람 맞지? 좋네.",
+          "AudioPath": "assets/ko-KR/Sebastian/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "오. 최근에 이사 온 사람 맞지? 좋네."
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "근데 그 많은 곳들 중에 펠리컨 마을을 선택했다고?",
+          "AudioPath": "assets/ko-KR/Sebastian/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "근데 그 많은 곳들 중에 펠리컨 마을을 선택했다고?"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "오, 정말로? 이건 예상 못 했네. 멋져 보인다 그래도. 고마워. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 정말로? 이건 예상 못 했네. 멋져 보인다 그래도. 고마워."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "어... 그래, 마음만은 고맙게 받을게.",
+          "AudioPath": "assets/ko-KR/Sebastian/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "어... 그래, 마음만은 고맙게 받을게."
+        },
+        {
+          "DialogueFrom": "dating_Sebastian",
+          "DialogueText": "듣고 놀리진 말아줘... 하지만 나 사실 이런 관계는 처음이야. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/5_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:dating_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "듣고 놀리진 말아줘... 하지만 나 사실 이런 관계는 처음이야.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "dating_Sebastian",
+          "DialogueText": "듣고 놀리진 말아줘... 하지만 나 사실 한 번도 여자친구를 사귄 적이 없었어. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/6_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:dating_Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "듣고 놀리진 말아줘... 하지만 나 사실 한 번도 여자친구를 사귄 적이 없었어.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "dating_Sebastian_memory_oneday",
+          "DialogueText": "안녕... 오늘 멋지네. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:dating_Sebastian_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕... 오늘 멋지네."
+        },
+        {
+          "DialogueFrom": "dating_Sebastian_memory_oneday",
+          "DialogueText": "하루 종일 네 생각을 했어... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:dating_Sebastian_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "하루 종일 네 생각을 했어..."
+        },
+        {
+          "DialogueFrom": "dating_Sebastian_memory_oneyear",
+          "DialogueText": "저기... 우리 사귀기 시작한 지 일 년이 되었어, 기억나? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:dating_Sebastian_memory_oneyear",
+          "PageIndex": 0,
+          "DisplayPattern": "저기... 우리 사귀기 시작한 지 일 년이 되었어, 기억나?"
+        },
+        {
+          "DialogueFrom": "dating_Sebastian_memory_oneyear",
+          "DialogueText": "내 인생 최고의 일 년이었어... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:dating_Sebastian_memory_oneyear",
+          "PageIndex": 1,
+          "DisplayPattern": "내 인생 최고의 일 년이었어..."
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "어 그래? ... 그래, 출게.",
+          "AudioPath": "assets/ko-KR/Sebastian/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:FlowerDance_Accept",
+          "PageIndex": 0,
+          "DisplayPattern": "어 그래? ... 그래, 출게."
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "헤헤... 이 축제 그렇게 나쁜 게 아닐지도. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:FlowerDance_Accept",
+          "PageIndex": 1,
+          "DisplayPattern": "헤헤... 이 축제 그렇게 나쁜 게 아닐지도."
+        },
+        {
+          "DialogueFrom": "married_Maru",
+          "DialogueText": "결혼식 때문에 드미트리우스가 내내 긴장하고 있어, 그래서 집안 분위기도 긴장이 넘쳐.",
+          "AudioPath": "assets/ko-KR/Sebastian/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:married_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "결혼식 때문에 드미트리우스가 내내 긴장하고 있어, 그래서 집안 분위기도 긴장이 넘쳐."
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "엄마는 걱정 많이 하시던데, 사실 난 즐거워. 개구리들은 신났겠지! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "엄마는 걱정 많이 하시던데, 사실 난 즐거워. 개구리들은 신났겠지!"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "그래도 난 여기서 엄마를 도와야겠어.",
+          "AudioPath": "assets/ko-KR/Sebastian/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:GreenRain",
+          "PageIndex": 1,
+          "DisplayPattern": "그래도 난 여기서 엄마를 도와야겠어."
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "이 비가 다시 왔으면 좋겠다 싶긴 했어. 덕분에 여름이 좀 마음에 들어.",
+          "AudioPath": "assets/ko-KR/Sebastian/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "이 비가 다시 왔으면 좋겠다 싶긴 했어. 덕분에 여름이 좀 마음에 들어."
+        },
+        {
+          "DialogueFrom": "eventSeen_4081148",
+          "DialogueText": "공연 잘 됐어. 시작하기 전에는 긴장됐는데, 무대에 서니까 어째선지 집중이 되더라.",
+          "AudioPath": "assets/ko-KR/Sebastian/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:eventSeen_4081148",
+          "PageIndex": 0,
+          "DisplayPattern": "공연 잘 됐어. 시작하기 전에는 긴장됐는데, 무대에 서니까 어째선지 집중이 되더라."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)575",
+          "DialogueText": "흑요석이야? 딱 내가 찾던 거네... 이걸로 단검을 만들 수 있나 봐야겠다. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)575",
+          "PageIndex": 0,
+          "DisplayPattern": "흑요석이야? 딱 내가 찾던 거네... 이걸로 단검을 만들 수 있나 봐야겠다."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "야, 고마워. 하늘이 어두워지면 마실게.",
+          "AudioPath": "assets/ko-KR/Sebastian/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "야, 고마워. 하늘이 어두워지면 마실게."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)Book_Defense",
+          "DialogueText": "무슨 말이 하고 싶은 거야... 내가 운동을 해야 한다고? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)Book_Defense",
+          "PageIndex": 0,
+          "DisplayPattern": "무슨 말이 하고 싶은 거야... 내가 운동을 해야 한다고?"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)Book_Defense",
+          "DialogueText": "그게, 난 좀 더 '민첩한' 쪽이라서... 앞부분만이라도 읽어볼게. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)Book_Defense",
+          "PageIndex": 1,
+          "DisplayPattern": "그게, 난 좀 더 '민첩한' 쪽이라서... 앞부분만이라도 읽어볼게."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)227",
+          "DialogueText": "나 이거 정말 좋아하는데. 어떻게 알았어 {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)227",
+          "PageIndex": 0,
+          "DisplayPattern": "나 이거 정말 좋아하는데. 어떻게 알았어"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)227",
+          "DialogueText": "음... 날생선 먹다 보면 중독된다니까.",
+          "AudioPath": "assets/ko-KR/Sebastian/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)227",
+          "PageIndex": 1,
+          "DisplayPattern": "음... 날생선 먹다 보면 중독된다니까."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)305",
+          "DialogueText": "오... 이거 정말 마음에 드는걸... 책상에 올려둬야겠어. 고마워! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)305",
+          "PageIndex": 0,
+          "DisplayPattern": "오... 이거 정말 마음에 드는걸... 책상에 올려둬야겠어. 고마워!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)305",
+          "DialogueText": "흠... 혹시, 이걸 베개 밑에 두면 부화할까? 헤헤... 해봐야 알겠지. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)305",
+          "PageIndex": 1,
+          "DisplayPattern": "흠... 혹시, 이걸 베개 밑에 두면 부화할까? 헤헤... 해봐야 알겠지."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)236",
+          "DialogueText": "스프를 주겠다고? 정말 상냥하구나. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)236",
+          "PageIndex": 0,
+          "DisplayPattern": "스프를 주겠다고? 정말 상냥하구나."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)236",
+          "DialogueText": "기억이 많이 떠오르네...",
+          "AudioPath": "assets/ko-KR/Sebastian/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)236",
+          "PageIndex": 1,
+          "DisplayPattern": "기억이 많이 떠오르네..."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)FrogEgg",
+          "DialogueText": "어, 개구리알이잖아! 부화시킬 수 있나 봐야겠다. 고마워! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(TR)FrogEgg",
+          "PageIndex": 0,
+          "DisplayPattern": "어, 개구리알이잖아! 부화시킬 수 있나 봐야겠다. 고마워!"
+        },
+        {
+          "DialogueFrom": "firstVisit_Railroad",
+          "DialogueText": "기찻길로 가는 길이 다시 열려서 다행이야.",
+          "AudioPath": "assets/ko-KR/Sebastian/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:firstVisit_Railroad",
+          "PageIndex": 0,
+          "DisplayPattern": "기찻길로 가는 길이 다시 열려서 다행이야."
+        },
+        {
+          "DialogueFrom": "firstVisit_Railroad",
+          "DialogueText": "혼자 있고 싶을 때 거기 올라가거든.",
+          "AudioPath": "assets/ko-KR/Sebastian/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:firstVisit_Railroad",
+          "PageIndex": 1,
+          "DisplayPattern": "혼자 있고 싶을 때 거기 올라가거든."
+        },
+        {
+          "DialogueFrom": "firstVisit_Railroad",
+          "DialogueText": "...그래서 자주 가지.",
+          "AudioPath": "assets/ko-KR/Sebastian/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:firstVisit_Railroad",
+          "PageIndex": 2,
+          "DisplayPattern": "...그래서 자주 가지."
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "배 타고 오는 거 좋았어. 중간에 아예 주변에 육지가 안 보이는 시점이 있었지..",
+          "AudioPath": "assets/ko-KR/Sebastian/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "배 타고 오는 거 좋았어. 중간에 아예 주변에 육지가 안 보이는 시점이 있었지.."
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "집으로 돌아갈 준비 되었어.",
+          "AudioPath": "assets/ko-KR/Sebastian/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "집으로 돌아갈 준비 되었어."
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "해변이 좋긴 하지만, 사람 많은 건 별로다.",
+          "AudioPath": "assets/ko-KR/Sebastian/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "해변이 좋긴 하지만, 사람 많은 건 별로다."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "내가 여기까지 제트 스키 가져와도 윌리가 괜찮아할까?",
+          "AudioPath": "assets/ko-KR/Sebastian/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 여기까지 제트 스키 가져와도 윌리가 괜찮아할까?"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "...아니다. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Resort_Shore",
+          "PageIndex": 1,
+          "DisplayPattern": "...아니다."
+        },
+        {
+          "DialogueFrom": "Resort_Wander",
+          "DialogueText": "...자, 내가 열대 개구리라면, 어디에 숨어있을까... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Resort_Wander",
+          "PageIndex": 0,
+          "DisplayPattern": "...자, 내가 열대 개구리라면, 어디에 숨어있을까..."
+        },
+        {
+          "DialogueFrom": "Resort_Wander_2",
+          "DialogueText": "비가 올 때 여기 경치가 꽤 멋질 것 같아.",
+          "AudioPath": "assets/ko-KR/Sebastian/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Resort_Wander_2",
+          "PageIndex": 0,
+          "DisplayPattern": "비가 올 때 여기 경치가 꽤 멋질 것 같아."
+        },
+        {
+          "DialogueFrom": "Resort_Towel",
+          "DialogueText": "컴퓨터 앞에 앉아있는 대신 실제로 세상을 보는 것도 좋아. 얼마나 멋진지 까먹곤 해. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Resort_Towel",
+          "PageIndex": 0,
+          "DisplayPattern": "컴퓨터 앞에 앉아있는 대신 실제로 세상을 보는 것도 좋아. 얼마나 멋진지 까먹곤 해."
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "내가 주로 검은 옷을 입긴 하는데, 이런 날씨면 좀...",
+          "AudioPath": "assets/ko-KR/Sebastian/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 주로 검은 옷을 입긴 하는데, 이런 날씨면 좀..."
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept_Spouse",
+          "DialogueText": "으... 꼭 해야 해? 알았어.",
+          "AudioPath": "assets/ko-KR/Sebastian/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:FlowerDance_Accept_Spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "으... 꼭 해야 해? 알았어."
+        },
+        {
+          "DialogueFrom": "FlowerDance_Decline",
+          "DialogueText": "미안... 난 춤추고 싶은 사람이 따로 있어서.",
+          "AudioPath": "assets/ko-KR/Sebastian/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:FlowerDance_Decline",
+          "PageIndex": 0,
+          "DisplayPattern": "미안... 난 춤추고 싶은 사람이 따로 있어서."
+        },
+        {
+          "DialogueFrom": "divorced",
+          "DialogueText": "왜 자꾸 성가시게 그래? 난 너에 대해 잊으려고 하고 있다고. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:divorced",
+          "PageIndex": 0,
+          "DisplayPattern": "왜 자꾸 성가시게 그래? 난 너에 대해 잊으려고 하고 있다고."
+        },
+        {
+          "DialogueFrom": "dumped_Guys",
+          "DialogueText": "한동안은 널 보고 싶지 않아. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Sebastian/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:dumped_Guys",
+          "PageIndex": 0,
+          "DisplayPattern": "한동안은 널 보고 싶지 않아."
+        },
+        {
+          "DialogueFrom": "breakUp",
+          "DialogueText": "... 알았어... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:breakUp",
+          "PageIndex": 0,
+          "DisplayPattern": "... 알았어..."
+        },
+        {
+          "DialogueFrom": "breakUp",
+          "DialogueText": "그럼 나중에 볼게... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:breakUp",
+          "PageIndex": 1,
+          "DisplayPattern": "그럼 나중에 볼게..."
+        },
+        {
+          "DialogueFrom": "secondChance_Guys",
+          "DialogueText": "야, 있지...",
+          "AudioPath": "assets/ko-KR/Sebastian/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:secondChance_Guys",
+          "PageIndex": 0,
+          "DisplayPattern": "야, 있지..."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "어... 필요한 거 있어?",
+          "AudioPath": "assets/ko-KR/Sebastian/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "어... 필요한 거 있어?"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "내가 갑자기 사라지면 차이가 있을까? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 갑자기 사라지면 차이가 있을까?"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "내가 생각해봤는데... 사람들은 물수제비떠서 날아가는 조약돌 같아.",
+          "AudioPath": "assets/ko-KR/Sebastian/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 생각해봤는데... 사람들은 물수제비떠서 날아가는 조약돌 같아."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "결국은 다들 가라앉는 거지.",
+          "AudioPath": "assets/ko-KR/Sebastian/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "결국은 다들 가라앉는 거지."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "샘이 워낙 외향적이라 같이 놀 때면 말은 주로 샘이 해.",
+          "AudioPath": "assets/ko-KR/Sebastian/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "샘이 워낙 외향적이라 같이 놀 때면 말은 주로 샘이 해."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "나야 그게 편해서 좋지!",
+          "AudioPath": "assets/ko-KR/Sebastian/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Tue6",
+          "PageIndex": 1,
+          "DisplayPattern": "나야 그게 편해서 좋지!"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "샘이 나만큼 말이 없었다고 상상해 봐... 같이 있는 내내 서로 한마디도 안 할걸. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Tue6",
+          "PageIndex": 2,
+          "DisplayPattern": "샘이 나만큼 말이 없었다고 상상해 봐... 같이 있는 내내 서로 한마디도 안 할걸."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "말하는 게 좋은 사람이 있고, 듣는 게 좋은 사람이 있는 거겠지. 나는 듣는 게 좋고.",
+          "AudioPath": "assets/ko-KR/Sebastian/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Tue6",
+          "PageIndex": 3,
+          "DisplayPattern": "말하는 게 좋은 사람이 있고, 듣는 게 좋은 사람이 있는 거겠지. 나는 듣는 게 좋고."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "오늘 난 뭐 하지?",
+          "AudioPath": "assets/ko-KR/Sebastian/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 난 뭐 하지?"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "아마 아무것도 안 하겠지.",
+          "AudioPath": "assets/ko-KR/Sebastian/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "아마 아무것도 안 하겠지."
+        },
+        {
+          "DialogueFrom": "Wed2",
+          "DialogueText": "이 마을에 나 친구는 샘 밖에 없는 거 같아.",
+          "AudioPath": "assets/ko-KR/Sebastian/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Wed2",
+          "PageIndex": 0,
+          "DisplayPattern": "이 마을에 나 친구는 샘 밖에 없는 거 같아."
+        },
+        {
+          "DialogueFrom": "Wed2",
+          "DialogueText": "뭐, 애비도 좋긴 하지만... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Wed2",
+          "PageIndex": 1,
+          "DisplayPattern": "뭐, 애비도 좋긴 하지만..."
+        },
+        {
+          "DialogueFrom": "Wed2",
+          "DialogueText": "음.. 아냐, 신경 쓰지 마.",
+          "AudioPath": "assets/ko-KR/Sebastian/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Wed2",
+          "PageIndex": 2,
+          "DisplayPattern": "음.. 아냐, 신경 쓰지 마."
+        },
+        {
+          "DialogueFrom": "Wed2_inlaw_Abigail",
+          "DialogueText": "이 마을에 나 친구는 샘 밖에 없는 거 같아, 더 이상은...",
+          "AudioPath": "assets/ko-KR/Sebastian/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Wed2_inlaw_Abigail",
+          "PageIndex": 0,
+          "DisplayPattern": "이 마을에 나 친구는 샘 밖에 없는 거 같아, 더 이상은..."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "이 마을에 나 친구는 너랑 샘뿐이야. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "이 마을에 나 친구는 너랑 샘뿐이야."
+        },
+        {
+          "DialogueFrom": "Wed10",
+          "DialogueText": "네가 없었으면 내가 뭐 하고 있었을지 모르겠다... 아마 어디 도랑에 빠져있겠지. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Wed10",
+          "PageIndex": 0,
+          "DisplayPattern": "네가 없었으면 내가 뭐 하고 있었을지 모르겠다... 아마 어디 도랑에 빠져있겠지."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "# {Portrait:Happy} Sebastian1",
+          "AudioPath": "assets/ko-KR/Sebastian/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "# Sebastian1"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "어젯밤에 동굴에 몰래 갔다가 바위 게한테 심하게 베였어. 아무한테도 말하진 마, 알았지?",
+          "AudioPath": "assets/ko-KR/Sebastian/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "어젯밤에 동굴에 몰래 갔다가 바위 게한테 심하게 베였어. 아무한테도 말하진 마, 알았지?"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "어, 안녕.",
+          "AudioPath": "assets/ko-KR/Sebastian/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "어, 안녕."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "...필요한 거 있어?",
+          "AudioPath": "assets/ko-KR/Sebastian/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu",
+          "PageIndex": 3,
+          "DisplayPattern": "...필요한 거 있어?"
+        },
+        {
+          "DialogueFrom": "Mountain_47_23",
+          "DialogueText": "난 여기 평화롭고 조용해서 찾아오게 되더라.",
+          "AudioPath": "assets/ko-KR/Sebastian/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Mountain_47_23",
+          "PageIndex": 0,
+          "DisplayPattern": "난 여기 평화롭고 조용해서 찾아오게 되더라."
+        },
+        {
+          "DialogueFrom": "Thu4",
+          "DialogueText": "다들 왜 그렇게 마루를 좋아하지? 물론, 영리하고 상냥하지만, 그게 다 관심받으려고 사기 치는 거란 걸 모르는 건가?",
+          "AudioPath": "assets/ko-KR/Sebastian/69.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu4",
+          "PageIndex": 0,
+          "DisplayPattern": "다들 왜 그렇게 마루를 좋아하지? 물론, 영리하고 상냥하지만, 그게 다 관심받으려고 사기 치는 거란 걸 모르는 건가?"
+        },
+        {
+          "DialogueFrom": "Thu4",
+          "DialogueText": "미안... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/70.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu4",
+          "PageIndex": 1,
+          "DisplayPattern": "미안..."
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "나 같은 사람이 농장에서 사는 게 상상이 가? 웃기는 생각이야. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/71.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "나 같은 사람이 농장에서 사는 게 상상이 가? 웃기는 생각이야."
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "안녕... 농장은 잘 돌아가고 있어?",
+          "AudioPath": "assets/ko-KR/Sebastian/72.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu8",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕... 농장은 잘 돌아가고 있어?"
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "일상의 반복이라고? 그래, 나도 그 기분 알지...",
+          "AudioPath": "assets/ko-KR/Sebastian/73.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu8",
+          "PageIndex": 1,
+          "DisplayPattern": "일상의 반복이라고? 그래, 나도 그 기분 알지..."
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "나 같은 사람이 농장에서 사는 게 상상이 가?",
+          "AudioPath": "assets/ko-KR/Sebastian/74.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu8",
+          "PageIndex": 2,
+          "DisplayPattern": "나 같은 사람이 농장에서 사는 게 상상이 가?"
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "웃기는 생각이긴 한데, 요즘 자꾸 생각하게 되네.",
+          "AudioPath": "assets/ko-KR/Sebastian/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu8",
+          "PageIndex": 3,
+          "DisplayPattern": "웃기는 생각이긴 한데, 요즘 자꾸 생각하게 되네."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "어... 나 사실 네가 누군지 잘 몰라.",
+          "AudioPath": "assets/ko-KR/Sebastian/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "어... 나 사실 네가 누군지 잘 몰라."
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "*한숨*... 기름값이 그렇게 비싸지 않았더라면 오토바이 타고 도시로 가볼 텐데.",
+          "AudioPath": "assets/ko-KR/Sebastian/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri2",
+          "PageIndex": 0,
+          "DisplayPattern": "*한숨*... 기름값이 그렇게 비싸지 않았더라면 오토바이 타고 도시로 가볼 텐데."
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "너는 일 안 할 때는 뭐 해?",
+          "AudioPath": "assets/ko-KR/Sebastian/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri2",
+          "PageIndex": 1,
+          "DisplayPattern": "너는 일 안 할 때는 뭐 해?"
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "농사 더 지어",
+          "AudioPath": "assets/ko-KR/Sebastian/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri2",
+          "PageIndex": 2,
+          "DisplayPattern": "농사 더 지어"
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "만화책 봐",
+          "AudioPath": "assets/ko-KR/Sebastian/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri2",
+          "PageIndex": 3,
+          "DisplayPattern": "만화책 봐"
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "쇼핑",
+          "AudioPath": "assets/ko-KR/Sebastian/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri2",
+          "PageIndex": 4,
+          "DisplayPattern": "쇼핑"
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "운동",
+          "AudioPath": "assets/ko-KR/Sebastian/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri2",
+          "PageIndex": 5,
+          "DisplayPattern": "운동"
+        },
+        {
+          "DialogueFrom": "Fri_old",
+          "DialogueText": "야, 혹시 심심하면 언제든 내 방에 놀러 와... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri_old",
+          "PageIndex": 0,
+          "DisplayPattern": "야, 혹시 심심하면 언제든 내 방에 놀러 와..."
+        },
+        {
+          "DialogueFrom": "Fri_old",
+          "DialogueText": "넌 이런 작은 마을에서 생활하는 게 더 편하구나, 그치?",
+          "AudioPath": "assets/ko-KR/Sebastian/84.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri_old",
+          "PageIndex": 1,
+          "DisplayPattern": "넌 이런 작은 마을에서 생활하는 게 더 편하구나, 그치?"
+        },
+        {
+          "DialogueFrom": "Fri_good",
+          "DialogueText": "아 그래? 혹시 이번에 나온 '동굴 전설 X' 읽어봤어? 스포는 안 할 건데, 와 진짜 대박이야... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/85.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri_good",
+          "PageIndex": 0,
+          "DisplayPattern": "아 그래? 혹시 이번에 나온 '동굴 전설 X' 읽어봤어? 스포는 안 할 건데, 와 진짜 대박이야..."
+        },
+        {
+          "DialogueFrom": "Fri_bad",
+          "DialogueText": "아 그래? 흠... 별로 내 취향은 아니지만, 다들 각자 좋아하는 게 다른 거겠지. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Sebastian/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri_bad",
+          "PageIndex": 0,
+          "DisplayPattern": "아 그래? 흠... 별로 내 취향은 아니지만, 다들 각자 좋아하는 게 다른 거겠지."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "응? 뭐라고 했는지 못 들었어... 다른 생각 하고 있었어.",
+          "AudioPath": "assets/ko-KR/Sebastian/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "응? 뭐라고 했는지 못 들었어... 다른 생각 하고 있었어."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "뭐 원하는 거 있어?",
+          "AudioPath": "assets/ko-KR/Sebastian/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "뭐 원하는 거 있어?"
+        },
+        {
+          "DialogueFrom": "Sat2",
+          "DialogueText": "있지, 사실 나 지금 좀 생산적인 일을 해야 할 텐데. 내가 집중을 오래 못해서... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/89.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sat2",
+          "PageIndex": 0,
+          "DisplayPattern": "있지, 사실 나 지금 좀 생산적인 일을 해야 할 텐데. 내가 집중을 오래 못해서..."
+        },
+        {
+          "DialogueFrom": "Sat2",
+          "DialogueText": "커피를 더 마셔야 하나?",
+          "AudioPath": "assets/ko-KR/Sebastian/90.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sat2",
+          "PageIndex": 1,
+          "DisplayPattern": "커피를 더 마셔야 하나?"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "야. 너 이름 {Farmer_Name} 맞지?",
+          "AudioPath": "assets/ko-KR/Sebastian/91.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "야. 너 이름 맞지?"
+        },
+        {
+          "DialogueFrom": "Sun2",
+          "DialogueText": "주말 잘 보내고 있어? ...좋네.",
+          "AudioPath": "assets/ko-KR/Sebastian/92.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sun2",
+          "PageIndex": 0,
+          "DisplayPattern": "주말 잘 보내고 있어? ...좋네."
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "보통 밖에 안 나가는 편인데, 가끔 해변에 가긴 해.",
+          "AudioPath": "assets/ko-KR/Sebastian/93.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sun4",
+          "PageIndex": 0,
+          "DisplayPattern": "보통 밖에 안 나가는 편인데, 가끔 해변에 가긴 해."
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "비가 올 때만 가, 근데.",
+          "AudioPath": "assets/ko-KR/Sebastian/94.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sun4",
+          "PageIndex": 1,
+          "DisplayPattern": "비가 올 때만 가, 근데."
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "왜 그런지는 모르겠는데, 황량한 수평선을 보고 있으면... 모르겠다. 계속 노력할만하다는 느낌이 든달까.",
+          "AudioPath": "assets/ko-KR/Sebastian/95.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sun4",
+          "PageIndex": 2,
+          "DisplayPattern": "왜 그런지는 모르겠는데, 황량한 수평선을 보고 있으면... 모르겠다. 계속 노력할만하다는 느낌이 든달까."
+        },
+        {
+          "DialogueFrom": "Fri8",
+          "DialogueText": "요즘 어때? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/96.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri8",
+          "PageIndex": 0,
+          "DisplayPattern": "요즘 어때?"
+        },
+        {
+          "DialogueFrom": "Fri8",
+          "DialogueText": "난 오늘 밤에도 주점에 가서 포켓볼로 샘을 혼쭐내줘야 해. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/97.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri8",
+          "PageIndex": 1,
+          "DisplayPattern": "난 오늘 밤에도 주점에 가서 포켓볼로 샘을 혼쭐내줘야 해."
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "어, 안 그래도 네 생각 하고 있었어... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/98.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sun10",
+          "PageIndex": 0,
+          "DisplayPattern": "어, 안 그래도 네 생각 하고 있었어..."
+        },
+        {
+          "DialogueFrom": "Event_game1",
+          "DialogueText": "그래, 그것도 괜찮지.",
+          "AudioPath": "assets/ko-KR/Sebastian/99.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Event_game1",
+          "PageIndex": 0,
+          "DisplayPattern": "그래, 그것도 괜찮지."
+        },
+        {
+          "DialogueFrom": "Event_game2",
+          "DialogueText": "좋은 선택이야. 내 캐릭터랑도 잘 맞네.",
+          "AudioPath": "assets/ko-KR/Sebastian/100.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Event_game2",
+          "PageIndex": 0,
+          "DisplayPattern": "좋은 선택이야. 내 캐릭터랑도 잘 맞네."
+        },
+        {
+          "DialogueFrom": "Event_cave1",
+          "DialogueText": "잠깐만! 뭔지 알고 싶어.",
+          "AudioPath": "assets/ko-KR/Sebastian/101.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Event_cave1",
+          "PageIndex": 0,
+          "DisplayPattern": "잠깐만! 뭔지 알고 싶어."
+        },
+        {
+          "DialogueFrom": "Event_cave2",
+          "DialogueText": "정말? 소리 엄청 내고 있었는데!",
+          "AudioPath": "assets/ko-KR/Sebastian/102.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Event_cave2",
+          "PageIndex": 0,
+          "DisplayPattern": "정말? 소리 엄청 내고 있었는데!"
+        },
+        {
+          "DialogueFrom": "Event_cave3",
+          "DialogueText": "칼 없이 가는 건 너무 위험해. 근데 그 모험심은 마음에 든다. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/103.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Event_cave3",
+          "PageIndex": 0,
+          "DisplayPattern": "칼 없이 가는 건 너무 위험해. 근데 그 모험심은 마음에 든다."
+        },
+        {
+          "DialogueFrom": "event_garage1",
+          "DialogueText": "좋아. {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Sebastian/104.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_garage1",
+          "PageIndex": 0,
+          "DisplayPattern": "좋아."
+        },
+        {
+          "DialogueFrom": "event_garage2",
+          "DialogueText": "그래... 그럼 말고. {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Sebastian/105.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_garage2",
+          "PageIndex": 0,
+          "DisplayPattern": "그래... 그럼 말고."
+        },
+        {
+          "DialogueFrom": "event_garage3",
+          "DialogueText": "걱정하지 마, 위험한 일을 시도하기 전에 일단 기본부터 확실히 알려줄 테니까. {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Sebastian/106_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_garage3",
+          "PageIndex": 0,
+          "DisplayPattern": "걱정하지 마, 위험한 일을 시도하기 전에 일단 기본부터 확실히 알려줄 테니까.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "event_garage3",
+          "DialogueText": "걱정할 필요 없어... 네가 안전은 내가 지킬 거야. {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Sebastian/107_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_garage3",
+          "PageIndex": 1,
+          "DisplayPattern": "걱정할 필요 없어... 네가 안전은 내가 지킬 거야.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "event_city1",
+          "DialogueText": "음... 내가 쓸 표현은 아니지만, 그렇긴 해.",
+          "AudioPath": "assets/ko-KR/Sebastian/108.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_city1",
+          "PageIndex": 0,
+          "DisplayPattern": "음... 내가 쓸 표현은 아니지만, 그렇긴 해."
+        },
+        {
+          "DialogueFrom": "event_city2",
+          "DialogueText": "응... 나도 딱 그런 기분이야. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/109.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_city2",
+          "PageIndex": 0,
+          "DisplayPattern": "응... 나도 딱 그런 기분이야."
+        },
+        {
+          "DialogueFrom": "event_city3",
+          "DialogueText": "오... 널 데리고 올 장소가 아니었나 보다 그럼. 이 경치의 아름다움을 너도 감상할 수 있었으면 좋았을 텐데. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/110.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_city3",
+          "PageIndex": 0,
+          "DisplayPattern": "오... 널 데리고 올 장소가 아니었나 보다 그럼. 이 경치의 아름다움을 너도 감상할 수 있었으면 좋았을 텐데."
+        },
+        {
+          "DialogueFrom": "event_city4",
+          "DialogueText": "으... 내 엄마 같은 소리 하네. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Sebastian/111.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_city4",
+          "PageIndex": 0,
+          "DisplayPattern": "으... 내 엄마 같은 소리 하네."
+        },
+        {
+          "DialogueFrom": "event_city4",
+          "DialogueText": "...*한숨* {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/112.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_city4",
+          "PageIndex": 1,
+          "DisplayPattern": "...*한숨*"
+        },
+        {
+          "DialogueFrom": "event_city4",
+          "DialogueText": "네 말이 맞긴 해, 근데. 이건 중독이고, 좋지 않아. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/113.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_city4",
+          "PageIndex": 2,
+          "DisplayPattern": "네 말이 맞긴 해, 근데. 이건 중독이고, 좋지 않아."
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "다들 햇빛을 받으며 행복해하네. 이해가 안 돼.",
+          "AudioPath": "assets/ko-KR/Sebastian/114.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "다들 햇빛을 받으며 행복해하네. 이해가 안 돼."
+        },
+        {
+          "DialogueFrom": "summer_Mon6",
+          "DialogueText": "다들 날이 맑으면 좋아하네...",
+          "AudioPath": "assets/ko-KR/Sebastian/115.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Mon6",
+          "PageIndex": 0,
+          "DisplayPattern": "다들 날이 맑으면 좋아하네..."
+        },
+        {
+          "DialogueFrom": "summer_Mon6",
+          "DialogueText": "뭐, 다들 각자 좋아하는 게 다른 거겠지.",
+          "AudioPath": "assets/ko-KR/Sebastian/116.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Mon6",
+          "PageIndex": 1,
+          "DisplayPattern": "뭐, 다들 각자 좋아하는 게 다른 거겠지."
+        },
+        {
+          "DialogueFrom": "summer_Mon6",
+          "DialogueText": "다들 날씨 맑은 걸 좋아하지?",
+          "AudioPath": "assets/ko-KR/Sebastian/117.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Mon6",
+          "PageIndex": 2,
+          "DisplayPattern": "다들 날씨 맑은 걸 좋아하지?"
+        },
+        {
+          "DialogueFrom": "summer_Mon6",
+          "DialogueText": "비타민 D가 필요하긴 하겠지...",
+          "AudioPath": "assets/ko-KR/Sebastian/118.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Mon6",
+          "PageIndex": 3,
+          "DisplayPattern": "비타민 D가 필요하긴 하겠지..."
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "사실 좀 더 춥고 습한 계절이 기대돼. 좀 더 마음이 놓이더라고.",
+          "AudioPath": "assets/ko-KR/Sebastian/119.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "사실 좀 더 춥고 습한 계절이 기대돼. 좀 더 마음이 놓이더라고."
+        },
+        {
+          "DialogueFrom": "summer_Tue4",
+          "DialogueText": "춥고 습한 계절을 기대하는 중이야. 내 내면의 두꺼비가 기대하는 걸지도. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/120.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "춥고 습한 계절을 기대하는 중이야. 내 내면의 두꺼비가 기대하는 걸지도."
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "밖에 뭐 하러 나가? 이미 다 본 적 있는 건데.",
+          "AudioPath": "assets/ko-KR/Sebastian/121.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "밖에 뭐 하러 나가? 이미 다 본 적 있는 건데."
+        },
+        {
+          "DialogueFrom": "summer_Wed6",
+          "DialogueText": "우울할 때면 모든 게 멍청한 일 같아. 하지만 기분이 긍정적이면 평범한 것들만 봐도 행복하지.",
+          "AudioPath": "assets/ko-KR/Sebastian/122.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "우울할 때면 모든 게 멍청한 일 같아. 하지만 기분이 긍정적이면 평범한 것들만 봐도 행복하지."
+        },
+        {
+          "DialogueFrom": "summer_Wed6",
+          "DialogueText": "어떻게 오랫동안 긍정적일 수 있을까? 난 진짜 모르겠어.",
+          "AudioPath": "assets/ko-KR/Sebastian/123.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Wed6",
+          "PageIndex": 1,
+          "DisplayPattern": "어떻게 오랫동안 긍정적일 수 있을까? 난 진짜 모르겠어."
+        },
+        {
+          "DialogueFrom": "summer_Wed6",
+          "DialogueText": "...언젠가 알게 되려나.",
+          "AudioPath": "assets/ko-KR/Sebastian/124.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Wed6",
+          "PageIndex": 2,
+          "DisplayPattern": "...언젠가 알게 되려나."
+        },
+        {
+          "DialogueFrom": "summer_Wed10",
+          "DialogueText": "왜 웃고 있냐고? 요즘 이상할 정도로 행복해서 그래... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/125.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Wed10",
+          "PageIndex": 0,
+          "DisplayPattern": "왜 웃고 있냐고? 요즘 이상할 정도로 행복해서 그래..."
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "나 절대 수영하러 안가, 물어보기 전에 얘기해둘게. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/126.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "나 절대 수영하러 안가, 물어보기 전에 얘기해둘게."
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "어, 그냥 인사하러 온 거라고? 미안.",
+          "AudioPath": "assets/ko-KR/Sebastian/127.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "어, 그냥 인사하러 온 거라고? 미안."
+        },
+        {
+          "DialogueFrom": "summer_Thu10",
+          "DialogueText": "네가 수영 가자고 하면... 가긴 갈 거 같아. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/128.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Thu10",
+          "PageIndex": 0,
+          "DisplayPattern": "네가 수영 가자고 하면... 가긴 갈 거 같아."
+        },
+        {
+          "DialogueFrom": "summer_Mountain_58_35",
+          "DialogueText": "해가 지고 나서야 좀 편안한 온도가 되더라.",
+          "AudioPath": "assets/ko-KR/Sebastian/129.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Mountain_58_35",
+          "PageIndex": 0,
+          "DisplayPattern": "해가 지고 나서야 좀 편안한 온도가 되더라."
+        },
+        {
+          "DialogueFrom": "summer_Mountain_58_35",
+          "DialogueText": "$e",
+          "AudioPath": "assets/ko-KR/Sebastian/130.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Mountain_58_35",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "summer_Mountain_58_35",
+          "DialogueText": "그래도 호수 쪽이 항상 좀 더 시원한 것 같아.",
+          "AudioPath": "assets/ko-KR/Sebastian/131.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Mountain_58_35",
+          "PageIndex": 2,
+          "DisplayPattern": "그래도 호수 쪽이 항상 좀 더 시원한 것 같아."
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "어, 안녕. *하품*",
+          "AudioPath": "assets/ko-KR/Sebastian/132.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "어, 안녕. *하품*"
+        },
+        {
+          "DialogueFrom": "summer_Fri6",
+          "DialogueText": "어, 와줘서 고마워. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/133.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "어, 와줘서 고마워."
+        },
+        {
+          "DialogueFrom": "summer_Fri6",
+          "DialogueText": "더운데 어떻게 지내고 있어?",
+          "AudioPath": "assets/ko-KR/Sebastian/134.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "더운데 어떻게 지내고 있어?"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "오늘 저녁이 버섯 캐서롤이 아니었으면 좋겠는데... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/135.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 저녁이 버섯 캐서롤이 아니었으면 좋겠는데..."
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "오 안돼, 동굴 당근 타코 먹는 날이다...*으으* {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/136.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "오 안돼, 동굴 당근 타코 먹는 날이다...*으으*"
+        },
+        {
+          "DialogueFrom": "spring_12",
+          "DialogueText": "사실 축제는 별로 안 좋아해. 너무 시끌벅적하고, 사람도 너무 많이 마주치고... 내 입장에선 재미 보단 스트레스가 많아.",
+          "AudioPath": "assets/ko-KR/Sebastian/137.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:spring_12",
+          "PageIndex": 0,
+          "DisplayPattern": "사실 축제는 별로 안 좋아해. 너무 시끌벅적하고, 사람도 너무 많이 마주치고... 내 입장에선 재미 보단 스트레스가 많아."
+        },
+        {
+          "DialogueFrom": "spring_23",
+          "DialogueText": "아... 내일 축제가 진짜 최악이야. 춤출 때 내 모습이 얼마나 바보 같을지 기대해봐.",
+          "AudioPath": "assets/ko-KR/Sebastian/138.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:spring_23",
+          "PageIndex": 0,
+          "DisplayPattern": "아... 내일 축제가 진짜 최악이야. 춤출 때 내 모습이 얼마나 바보 같을지 기대해봐."
+        },
+        {
+          "DialogueFrom": "fall_20",
+          "DialogueText": "영령의 전야제 기대하고 있어? 내가 제일 좋아하는 축제 같아. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/139.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_20",
+          "PageIndex": 0,
+          "DisplayPattern": "영령의 전야제 기대하고 있어? 내가 제일 좋아하는 축제 같아."
+        },
+        {
+          "DialogueFrom": "fall_26",
+          "DialogueText": "내일이 영령의 전야제야. 올해도 그 해골 장식 있었으면 좋겠다. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/140.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_26",
+          "PageIndex": 0,
+          "DisplayPattern": "내일이 영령의 전야제야. 올해도 그 해골 장식 있었으면 좋겠다."
+        },
+        {
+          "DialogueFrom": "fall_26",
+          "DialogueText": "이쯤 되니까 그 해골들이 거의 내 친구가 된 느낌이야.",
+          "AudioPath": "assets/ko-KR/Sebastian/141.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_26",
+          "PageIndex": 1,
+          "DisplayPattern": "이쯤 되니까 그 해골들이 거의 내 친구가 된 느낌이야."
+        },
+        {
+          "DialogueFrom": "summer_10",
+          "DialogueText": "헤헤... 내일 포트럭 때 역겨운 걸 넣는 것도 재밌을 것 같아. 그렇다고 누구 독살하진 말고.",
+          "AudioPath": "assets/ko-KR/Sebastian/142.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_10",
+          "PageIndex": 0,
+          "DisplayPattern": "헤헤... 내일 포트럭 때 역겨운 걸 넣는 것도 재밌을 것 같아. 그렇다고 누구 독살하진 말고."
+        },
+        {
+          "DialogueFrom": "summer_10",
+          "DialogueText": "왜 포트럭을 망치냐고? 흠... 사회의 뻣뻣한 구조가 조금 무너져내려야 숨통이 트이는 기분이 드는 사람이 있는 걸지도. 아니면 그냥 내가 이상한 걸지도.",
+          "AudioPath": "assets/ko-KR/Sebastian/143.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_10",
+          "PageIndex": 1,
+          "DisplayPattern": "왜 포트럭을 망치냐고? 흠... 사회의 뻣뻣한 구조가 조금 무너져내려야 숨통이 트이는 기분이 드는 사람이 있는 걸지도. 아니면 그냥 내가 이상한 걸지도."
+        },
+        {
+          "DialogueFrom": "summer_27",
+          "DialogueText": "오늘 부두에 모여서 달빛 해파리들이 이주하는 걸 구경할 거야. 열시엔가 시작하는 거 같던데.",
+          "AudioPath": "assets/ko-KR/Sebastian/144.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_27",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 부두에 모여서 달빛 해파리들이 이주하는 걸 구경할 거야. 열시엔가 시작하는 거 같던데."
+        },
+        {
+          "DialogueFrom": "winter_24",
+          "DialogueText": "오늘이 겨울 별의 만찬 전야네. 내일 많이 먹으려면 오늘부터 속을 비워놔야 해.",
+          "AudioPath": "assets/ko-KR/Sebastian/145.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_24",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘이 겨울 별의 만찬 전야네. 내일 많이 먹으려면 오늘부터 속을 비워놔야 해."
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "난 보통 어두워지고 나서 밖에 나가. 좀 이상한 것 같아?",
+          "AudioPath": "assets/ko-KR/Sebastian/146.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "난 보통 어두워지고 나서 밖에 나가. 좀 이상한 것 같아?"
+        },
+        {
+          "DialogueFrom": "summer_Sun4",
+          "DialogueText": "어젯밤에 호수 근처에 박쥐 한무리가 날아다니는 걸 봤어.",
+          "AudioPath": "assets/ko-KR/Sebastian/147.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Sun4",
+          "PageIndex": 0,
+          "DisplayPattern": "어젯밤에 호수 근처에 박쥐 한무리가 날아다니는 걸 봤어."
+        },
+        {
+          "DialogueFrom": "summer_Sun4",
+          "DialogueText": "이맘때 모기를 먹는 건가?",
+          "AudioPath": "assets/ko-KR/Sebastian/148.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Sun4",
+          "PageIndex": 1,
+          "DisplayPattern": "이맘때 모기를 먹는 건가?"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "그래... 추수 한번 크게 할 계절이네, 그치?",
+          "AudioPath": "assets/ko-KR/Sebastian/149.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "그래... 추수 한번 크게 할 계절이네, 그치?"
+        },
+        {
+          "DialogueFrom": "fall_Mon4",
+          "DialogueText": "농장일 해서 돈 많이 벌고 있겠다, 그치?",
+          "AudioPath": "assets/ko-KR/Sebastian/150.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "농장일 해서 돈 많이 벌고 있겠다, 그치?"
+        },
+        {
+          "DialogueFrom": "fall_Mon4",
+          "DialogueText": "나도 곧 일거리를 찾아야 할 텐데... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/151.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "나도 곧 일거리를 찾아야 할 텐데..."
+        },
+        {
+          "DialogueFrom": "fall_Tue",
+          "DialogueText": "이것도 펌킨 스파이스... 저것도 펌킨 스파이스... 아, 계절 유행 진짜 질린다.",
+          "AudioPath": "assets/ko-KR/Sebastian/152.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "이것도 펌킨 스파이스... 저것도 펌킨 스파이스... 아, 계절 유행 진짜 질린다."
+        },
+        {
+          "DialogueFrom": "fall_Tue6",
+          "DialogueText": "드미트리우스는 뭔 생각인 거지, 나보고 이래라저래라 하고? 내 진짜 아빠도 아니면서. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Sebastian/153.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "드미트리우스는 뭔 생각인 거지, 나보고 이래라저래라 하고? 내 진짜 아빠도 아니면서."
+        },
+        {
+          "DialogueFrom": "fall_Tue10",
+          "DialogueText": "항상 내가 불리한 쪽이라는 기분이 들었어. 하지만 도전을 극복하고 난 더 강해질 거야.",
+          "AudioPath": "assets/ko-KR/Sebastian/154.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Tue10",
+          "PageIndex": 0,
+          "DisplayPattern": "항상 내가 불리한 쪽이라는 기분이 들었어. 하지만 도전을 극복하고 난 더 강해질 거야."
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "*하품*... 몇 시야? 나 어젯밤에 너무 많이 잤나 봐.",
+          "AudioPath": "assets/ko-KR/Sebastian/155.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "*하품*... 몇 시야? 나 어젯밤에 너무 많이 잤나 봐."
+        },
+        {
+          "DialogueFrom": "fall_Wed8",
+          "DialogueText": "오, 와줘서 반갑다. 심심해지고 있었는데.",
+          "AudioPath": "assets/ko-KR/Sebastian/156.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Wed8",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 와줘서 반갑다. 심심해지고 있었는데."
+        },
+        {
+          "DialogueFrom": "fall_Wed8",
+          "DialogueText": "믿거나 말거나, 지금 갑자기 기운이 막 나고 있어.",
+          "AudioPath": "assets/ko-KR/Sebastian/157.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Wed8",
+          "PageIndex": 1,
+          "DisplayPattern": "믿거나 말거나, 지금 갑자기 기운이 막 나고 있어."
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "방에 창문이라도 있었다면 좀 덜 우울했을 것 같아... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/158.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "방에 창문이라도 있었다면 좀 덜 우울했을 것 같아..."
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "{Farmer_Name}, 너도 책 읽어?",
+          "AudioPath": "assets/ko-KR/Sebastian/159.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": ", 너도 책 읽어?"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "응. 고전들로.",
+          "AudioPath": "assets/ko-KR/Sebastian/160.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "응. 고전들로."
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "공상과학하고 판타지만",
+          "AudioPath": "assets/ko-KR/Sebastian/161.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "공상과학하고 판타지만"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "로맨스 이야기 좋더라",
+          "AudioPath": "assets/ko-KR/Sebastian/162.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri",
+          "PageIndex": 3,
+          "DisplayPattern": "로맨스 이야기 좋더라"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "아니, 책은 안 읽어",
+          "AudioPath": "assets/ko-KR/Sebastian/163.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri",
+          "PageIndex": 4,
+          "DisplayPattern": "아니, 책은 안 읽어"
+        },
+        {
+          "DialogueFrom": "fall_Fri_old",
+          "DialogueText": "넌 별로 안 좋아하겠다. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/164.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri_old",
+          "PageIndex": 0,
+          "DisplayPattern": "넌 별로 안 좋아하겠다."
+        },
+        {
+          "DialogueFrom": "fall_Fri_old",
+          "DialogueText": "너도 분명 좋아할 거야.",
+          "AudioPath": "assets/ko-KR/Sebastian/165.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri_old",
+          "PageIndex": 1,
+          "DisplayPattern": "너도 분명 좋아할 거야."
+        },
+        {
+          "DialogueFrom": "fall_Fri_good",
+          "DialogueText": "어, 나도. 상상을 자극하는데 좋은 소설만 한 게 없지. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/166.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri_good",
+          "PageIndex": 0,
+          "DisplayPattern": "어, 나도. 상상을 자극하는데 좋은 소설만 한 게 없지."
+        },
+        {
+          "DialogueFrom": "fall_Fri_bad",
+          "DialogueText": "흠. 별로 재미없는 대답이다.",
+          "AudioPath": "assets/ko-KR/Sebastian/167.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri_bad",
+          "PageIndex": 0,
+          "DisplayPattern": "흠. 별로 재미없는 대답이다."
+        },
+        {
+          "DialogueFrom": "fall_Fri6",
+          "DialogueText": "요즘 농부에 대한 책을 읽고 있었어. 사실 읽으면서 네 생각 많이 했어. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/168.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "요즘 농부에 대한 책을 읽고 있었어. 사실 읽으면서 네 생각 많이 했어."
+        },
+        {
+          "DialogueFrom": "fall_Fri6",
+          "DialogueText": "어, 소름 끼쳤다면 미안해. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/169.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "어, 소름 끼쳤다면 미안해."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "딱 *요만큼만* 더 게을렀어도 하루 종일 침대에 있을 뻔했네. 그런 편이 나았겠다, 근데.",
+          "AudioPath": "assets/ko-KR/Sebastian/170.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "딱 *요만큼만* 더 게을렀어도 하루 종일 침대에 있을 뻔했네. 그런 편이 나았겠다, 근데."
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "하루 중 해가 떠있는 시간이 점점 짧아지고 있어... 아주 좋아.",
+          "AudioPath": "assets/ko-KR/Sebastian/171.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "하루 중 해가 떠있는 시간이 점점 짧아지고 있어... 아주 좋아."
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "난 요즘 이 침울한 날씨를 즐기고 있어... 근데 솔직히 좀 춥긴 하다.",
+          "AudioPath": "assets/ko-KR/Sebastian/172.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "난 요즘 이 침울한 날씨를 즐기고 있어... 근데 솔직히 좀 춥긴 하다."
+        },
+        {
+          "DialogueFrom": "winter_Mon4",
+          "DialogueText": "아무것도 놀라운 일이 없어... 별로 웃을 일도 없고.",
+          "AudioPath": "assets/ko-KR/Sebastian/173.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "아무것도 놀라운 일이 없어... 별로 웃을 일도 없고."
+        },
+        {
+          "DialogueFrom": "winter_Mon4",
+          "DialogueText": "알아, 알아... 내가 좀 너무 과장해서 얘기하고 있긴 하지.",
+          "AudioPath": "assets/ko-KR/Sebastian/174.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "알아, 알아... 내가 좀 너무 과장해서 얘기하고 있긴 하지."
+        },
+        {
+          "DialogueFrom": "winter_Mon8",
+          "DialogueText": "가끔 자신의 옛 모습이 부끄럽고 한심하다 생각한 적 있어?",
+          "AudioPath": "assets/ko-KR/Sebastian/175.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Mon8",
+          "PageIndex": 0,
+          "DisplayPattern": "가끔 자신의 옛 모습이 부끄럽고 한심하다 생각한 적 있어?"
+        },
+        {
+          "DialogueFrom": "winter_Mon8",
+          "DialogueText": "성장하는 과정의 일부겠지 이것도.",
+          "AudioPath": "assets/ko-KR/Sebastian/176.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Mon8",
+          "PageIndex": 1,
+          "DisplayPattern": "성장하는 과정의 일부겠지 이것도."
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "흠... 사실 무슨 얘기를 해야 할지 잘 모르겠다. 아직 널 잘 아는 편이 아니라서 말이지.",
+          "AudioPath": "assets/ko-KR/Sebastian/177.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "흠... 사실 무슨 얘기를 해야 할지 잘 모르겠다. 아직 널 잘 아는 편이 아니라서 말이지."
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "어...",
+          "AudioPath": "assets/ko-KR/Sebastian/178.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "어..."
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "가끔 새로운 주제를 떠올리기 힘드네. 좀 잘 알게 된 사람이랑 얘기하는 거라도.",
+          "AudioPath": "assets/ko-KR/Sebastian/179.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Tue4",
+          "PageIndex": 1,
+          "DisplayPattern": "가끔 새로운 주제를 떠올리기 힘드네. 좀 잘 알게 된 사람이랑 얘기하는 거라도."
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "...미안.",
+          "AudioPath": "assets/ko-KR/Sebastian/180.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Tue4",
+          "PageIndex": 2,
+          "DisplayPattern": "...미안."
+        },
+        {
+          "DialogueFrom": "winter_Tue6",
+          "DialogueText": "내 옛날 만화들 버렸다고 엄마한테 소리 지를 뻔 했는데... 왠지 그냥 멈췄어.",
+          "AudioPath": "assets/ko-KR/Sebastian/181.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "내 옛날 만화들 버렸다고 엄마한테 소리 지를 뻔 했는데... 왠지 그냥 멈췄어."
+        },
+        {
+          "DialogueFrom": "winter_Tue6",
+          "DialogueText": "흠... 나이가 들면 지혜로워지는 법이지.",
+          "AudioPath": "assets/ko-KR/Sebastian/182.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Tue6",
+          "PageIndex": 1,
+          "DisplayPattern": "흠... 나이가 들면 지혜로워지는 법이지."
+        },
+        {
+          "DialogueFrom": "winter_Tue10",
+          "DialogueText": "나 보러 여기 온 거야? {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/183.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Tue10",
+          "PageIndex": 0,
+          "DisplayPattern": "나 보러 여기 온 거야?"
+        },
+        {
+          "DialogueFrom": "winter_Tue10",
+          "DialogueText": "... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/184.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Tue10",
+          "PageIndex": 1,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "세바스찬은 생각에 잠겨있습니다...",
+          "AudioPath": "assets/ko-KR/Sebastian/185.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "세바스찬은 생각에 잠겨있습니다..."
+        },
+        {
+          "DialogueFrom": "winter_Wed4",
+          "DialogueText": "야, 나 때문에 할 일을 미루진 말고.",
+          "AudioPath": "assets/ko-KR/Sebastian/186.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "야, 나 때문에 할 일을 미루진 말고."
+        },
+        {
+          "DialogueFrom": "winter_Wed4",
+          "DialogueText": "특별히 바쁜 게 아니어서 놀다 가면 나야 좋지만. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/187.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Wed4",
+          "PageIndex": 1,
+          "DisplayPattern": "특별히 바쁜 게 아니어서 놀다 가면 나야 좋지만."
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "오늘 저녁은 뭐 먹으려나... *궁시렁* {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/188.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 저녁은 뭐 먹으려나... *궁시렁*"
+        },
+        {
+          "DialogueFrom": "winter_Thu6",
+          "DialogueText": "요리하는 법을 배워야겠어. 분명 유용할 거야.",
+          "AudioPath": "assets/ko-KR/Sebastian/189.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "요리하는 법을 배워야겠어. 분명 유용할 거야."
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "철로 옆에 사는 건 재밌어. 저 밖에 큰 세상이 있다는 걸 항상 상기시켜주지.",
+          "AudioPath": "assets/ko-KR/Sebastian/190.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "철로 옆에 사는 건 재밌어. 저 밖에 큰 세상이 있다는 걸 항상 상기시켜주지."
+        },
+        {
+          "DialogueFrom": "winter_Fri8",
+          "DialogueText": "어렸을 때는 기차 오는 소리가 들리면 꼭 구경하러 뛰어나갔었는데.",
+          "AudioPath": "assets/ko-KR/Sebastian/191.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Fri8",
+          "PageIndex": 0,
+          "DisplayPattern": "어렸을 때는 기차 오는 소리가 들리면 꼭 구경하러 뛰어나갔었는데."
+        },
+        {
+          "DialogueFrom": "winter_Fri8",
+          "DialogueText": "그 시절은 어디 갔을까...? *한숨* {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/192.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Fri8",
+          "PageIndex": 1,
+          "DisplayPattern": "그 시절은 어디 갔을까...? *한숨*"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "겨울철에 개구리들은 참 힘들 것 같아.",
+          "AudioPath": "assets/ko-KR/Sebastian/193.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "겨울철에 개구리들은 참 힘들 것 같아."
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "불쌍한 녀석들. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/194.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "불쌍한 녀석들."
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "개구리들은 겨울에 뭘 할까? 그냥 얼었다가 봄에 다시 녹나?",
+          "AudioPath": "assets/ko-KR/Sebastian/195.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "개구리들은 겨울에 뭘 할까? 그냥 얼었다가 봄에 다시 녹나?"
+        },
+        {
+          "DialogueFrom": "winter_Sat6",
+          "DialogueText": "난 겨울이 좋지만 추워할 동물들 생각하면 마음이 좀 아프긴 해.",
+          "AudioPath": "assets/ko-KR/Sebastian/196.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Sat6",
+          "PageIndex": 0,
+          "DisplayPattern": "난 겨울이 좋지만 추워할 동물들 생각하면 마음이 좀 아프긴 해."
+        },
+        {
+          "DialogueFrom": "winter_Sat6",
+          "DialogueText": "근데, 나처럼 익숙해져 있겠지...",
+          "AudioPath": "assets/ko-KR/Sebastian/197.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Sat6",
+          "PageIndex": 1,
+          "DisplayPattern": "근데, 나처럼 익숙해져 있겠지..."
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "눈사람을 지었는데 드미트리우스가 치우게 했어.",
+          "AudioPath": "assets/ko-KR/Sebastian/198.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "눈사람을 지었는데 드미트리우스가 치우게 했어."
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "대체 왜 저러는 거지? {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Sebastian/199.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "대체 왜 저러는 거지?"
+        },
+        {
+          "DialogueFrom": "winter_Sun6",
+          "DialogueText": "눈사람을 지었는데 드미트리우스가 치우게 했어... 하지만 마루가 지은 작고 귀여운 눈사람은 그냥 두고! {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Sebastian/200.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Sun6",
+          "PageIndex": 0,
+          "DisplayPattern": "눈사람을 지었는데 드미트리우스가 치우게 했어... 하지만 마루가 지은 작고 귀여운 눈사람은 그냥 두고!"
+        },
+        {
+          "DialogueFrom": "winter_Sun6",
+          "DialogueText": "이건 말도 안 돼.",
+          "AudioPath": "assets/ko-KR/Sebastian/201.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Sun6",
+          "PageIndex": 1,
+          "DisplayPattern": "이건 말도 안 돼."
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Sebastian0",
+          "DialogueText": "며칠 후면 난 이제 농장에서 지내게 되는 거구나. 믿을 수가 없는 걸. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/202.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Sebastian0",
+          "PageIndex": 0,
+          "DisplayPattern": "며칠 후면 난 이제 농장에서 지내게 되는 거구나. 믿을 수가 없는 걸."
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Sebastian0",
+          "DialogueText": "근데 행복해. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/203.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Sebastian0",
+          "PageIndex": 1,
+          "DisplayPattern": "근데 행복해."
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Sebastian1",
+          "DialogueText": "네가 마을에 처음 왔을 때, 우리가 결혼하게 될 거라곤 생각 못 했는데. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/204.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Sebastian1",
+          "PageIndex": 0,
+          "DisplayPattern": "네가 마을에 처음 왔을 때, 우리가 결혼하게 될 거라곤 생각 못 했는데."
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Sebastian1",
+          "DialogueText": "인생 참 신기해, 그치? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/205.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Sebastian1",
+          "PageIndex": 1,
+          "DisplayPattern": "인생 참 신기해, 그치?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_0",
+          "DialogueText": "...나 아직 사랑해? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/206.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_0",
+          "PageIndex": 0,
+          "DisplayPattern": "...나 아직 사랑해?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_1",
+          "DialogueText": "*한숨*... 우리 너무 젊을 때 결혼했나 봐. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/207.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_1",
+          "PageIndex": 0,
+          "DisplayPattern": "*한숨*... 우리 너무 젊을 때 결혼했나 봐."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_2",
+          "DialogueText": "아직 나랑 행복한 거 맞지? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/208.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_2",
+          "PageIndex": 0,
+          "DisplayPattern": "아직 나랑 행복한 거 맞지?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_3",
+          "DialogueText": "내가 뭔가 잘못한 거 있어? 요즘 당신 달라졌어. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/209.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_3",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 뭔가 잘못한 거 있어? 요즘 당신 달라졌어."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_4",
+          "DialogueText": "세상에 뭔가 다른 것이 있을까 생각해본 적 있어? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/210.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_4",
+          "PageIndex": 0,
+          "DisplayPattern": "세상에 뭔가 다른 것이 있을까 생각해본 적 있어?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_5",
+          "DialogueText": "있지, 나 지금은 그냥 혼자 있고 싶어. 한동안 나가서 네가 해야 할 일 하는 건 어때?",
+          "AudioPath": "assets/ko-KR/Sebastian/211.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Bad_5",
+          "PageIndex": 0,
+          "DisplayPattern": "있지, 나 지금은 그냥 혼자 있고 싶어. 한동안 나가서 네가 해야 할 일 하는 건 어때?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_6",
+          "DialogueText": "뭘 원해? 꼭 하는 소리가 내 새아빠 같네. 저리 가. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Sebastian/212.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Bad_6",
+          "PageIndex": 0,
+          "DisplayPattern": "뭘 원해? 꼭 하는 소리가 내 새아빠 같네. 저리 가."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_7",
+          "DialogueText": "여기 좀 무덤 같다. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/213.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Bad_7",
+          "PageIndex": 0,
+          "DisplayPattern": "여기 좀 무덤 같다."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_8",
+          "DialogueText": "나 담배 다시 피기 시작했어... 그냥 요즘 스트레스가 너무 많아서. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/214.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Bad_8",
+          "PageIndex": 0,
+          "DisplayPattern": "나 담배 다시 피기 시작했어... 그냥 요즘 스트레스가 너무 많아서."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_9",
+          "DialogueText": "나한테 더 나은 삶이 있었을 수도 있는데. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/215.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_9",
+          "PageIndex": 0,
+          "DisplayPattern": "나한테 더 나은 삶이 있었을 수도 있는데."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/fall_1",
+          "DialogueText": "온 계곡이 밤사이 전부 바뀐 것 같아... 드디어 가을이 왔나 보네.",
+          "AudioPath": "assets/ko-KR/Sebastian/216.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:fall_1",
+          "PageIndex": 0,
+          "DisplayPattern": "온 계곡이 밤사이 전부 바뀐 것 같아... 드디어 가을이 왔나 보네."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/fall_15",
+          "DialogueText": "스타듀 밸리 품평회는 사람이 너무 붐벼... 그래도 샘 보러 가야지. 오랜만에 보면 좋을 거야.",
+          "AudioPath": "assets/ko-KR/Sebastian/217.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:fall_15",
+          "PageIndex": 0,
+          "DisplayPattern": "스타듀 밸리 품평회는 사람이 너무 붐벼... 그래도 샘 보러 가야지. 오랜만에 보면 좋을 거야."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/fall_15",
+          "DialogueText": "넌 그래도 축제 즐기고! 내 걱정은 안해도 돼. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/218.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:fall_15",
+          "PageIndex": 1,
+          "DisplayPattern": "넌 그래도 축제 즐기고! 내 걱정은 안해도 돼."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/fall_26",
+          "DialogueText": "나 내일 영령의 전야제 기대하고 있어. 어떤 공포가 기다리고 있을지 궁금하네. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/219.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:fall_26",
+          "PageIndex": 0,
+          "DisplayPattern": "나 내일 영령의 전야제 기대하고 있어. 어떤 공포가 기다리고 있을지 궁금하네."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/fall_8",
+          "DialogueText": "조금 있으면 겨울이네. 난방 잘 돌아가게 필요 없는 밸브는 잠그고 집에 단열처리 아직 잘 되어있나 확인해야지.",
+          "AudioPath": "assets/ko-KR/Sebastian/220.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 0,
+          "DisplayPattern": "조금 있으면 겨울이네. 난방 잘 돌아가게 필요 없는 밸브는 잠그고 집에 단열처리 아직 잘 되어있나 확인해야지."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/fall_8",
+          "DialogueText": "걱정하지 마, 내가 손볼게.",
+          "AudioPath": "assets/ko-KR/Sebastian/221.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 1,
+          "DisplayPattern": "걱정하지 마, 내가 손볼게."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/fall_Sebastian",
+          "DialogueText": "어머니께선 가을이면 항상 정말 맛있는 호박죽을 만드셨어.",
+          "AudioPath": "assets/ko-KR/Sebastian/222.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "어머니께선 가을이면 항상 정말 맛있는 호박죽을 만드셨어."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/funLeave_Sebastian",
+          "DialogueText": "나 오늘은 산책하고 오려고. 혼자 있을 시간이 필요해. 저녁에 볼게.",
+          "AudioPath": "assets/ko-KR/Sebastian/223.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:funLeave_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "나 오늘은 산책하고 오려고. 혼자 있을 시간이 필요해. 저녁에 볼게."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/funReturn_Sebastian",
+          "DialogueText": "오늘 하루 괜찮았어, 특별히 들려줄 얘기는 없지만. 네 하루는 어땠어?",
+          "AudioPath": "assets/ko-KR/Sebastian/224.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:funReturn_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 하루 괜찮았어, 특별히 들려줄 얘기는 없지만. 네 하루는 어땠어?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_0",
+          "DialogueText": "이봐. 나 봐봐. 내가 널 사랑한다는 사실을 잊지 마... 넌 내 전부야. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/225.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_0",
+          "PageIndex": 0,
+          "DisplayPattern": "이봐. 나 봐봐. 내가 널 사랑한다는 사실을 잊지 마... 넌 내 전부야."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_0",
+          "DialogueText": "자, 이제 가서 돈 벌어. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/226.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_0",
+          "PageIndex": 1,
+          "DisplayPattern": "자, 이제 가서 돈 벌어."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_1",
+          "DialogueText": "야... 일로 와봐. 오늘 좋아 보여. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/227.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_1",
+          "PageIndex": 0,
+          "DisplayPattern": "야... 일로 와봐. 오늘 좋아 보여."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_2",
+          "DialogueText": "자긴 항상 멋져 보여, 하루 종일 밭일을 했는데도 말이야. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/228.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_2",
+          "PageIndex": 0,
+          "DisplayPattern": "자긴 항상 멋져 보여, 하루 종일 밭일을 했는데도 말이야."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_3",
+          "DialogueText": "내가 자주 내색하진 않지만, 내가 네 남편이라서 정말 행복해. 너와 결혼하는 건 내가 내린 최고의 결정이야. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/229.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_3",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 자주 내색하진 않지만, 내가 네 남편이라서 정말 행복해. 너와 결혼하는 건 내가 내린 최고의 결정이야."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_4",
+          "DialogueText": "내 걱정 할 필요는 없어. 나 혼자서 시간 잘 보내잖아.",
+          "AudioPath": "assets/ko-KR/Sebastian/230.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_4",
+          "PageIndex": 0,
+          "DisplayPattern": "내 걱정 할 필요는 없어. 나 혼자서 시간 잘 보내잖아."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_5",
+          "DialogueText": "가끔 정말 화가 나는데... 네가 오면 항상 기분이 풀려. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/231.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_5",
+          "PageIndex": 0,
+          "DisplayPattern": "가끔 정말 화가 나는데... 네가 오면 항상 기분이 풀려."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_5",
+          "DialogueText": "나이가 들면 좀 더 차분해지려나.",
+          "AudioPath": "assets/ko-KR/Sebastian/232.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_5",
+          "PageIndex": 1,
+          "DisplayPattern": "나이가 들면 좀 더 차분해지려나."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_6",
+          "DialogueText": "네가 강하다는 건 알지만, 그래도 가끔 네 걱정이 되는걸. 생명의 영약이랑 튼튼한 장화 없이는 절대로 몬스터 사냥하러 가지 마, 알았지?",
+          "AudioPath": "assets/ko-KR/Sebastian/233.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_6",
+          "PageIndex": 0,
+          "DisplayPattern": "네가 강하다는 건 알지만, 그래도 가끔 네 걱정이 되는걸. 생명의 영약이랑 튼튼한 장화 없이는 절대로 몬스터 사냥하러 가지 마, 알았지?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_7",
+          "DialogueText": "{Farmer_Name}? 우리 집안을 위해서 네가 하는 모든 일에 항상 고맙다고 얘기하고 싶었어. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/234.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_7",
+          "PageIndex": 0,
+          "DisplayPattern": "? 우리 집안을 위해서 네가 하는 모든 일에 항상 고맙다고 얘기하고 싶었어."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_8",
+          "DialogueText": "오늘 정말이지 일하고 싶은 기분은 아니다. 티비에서 뭐하나 볼까.",
+          "AudioPath": "assets/ko-KR/Sebastian/235.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_8",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 정말이지 일하고 싶은 기분은 아니다. 티비에서 뭐하나 볼까."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_9",
+          "DialogueText": "나 친구는 별로 필요 없어. 내 인생에서 필요한 사람은 너뿐인걸. 이상한 건가?",
+          "AudioPath": "assets/ko-KR/Sebastian/236.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_9",
+          "PageIndex": 0,
+          "DisplayPattern": "나 친구는 별로 필요 없어. 내 인생에서 필요한 사람은 너뿐인걸. 이상한 건가?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_9",
+          "DialogueText": "내가 대부분 사람들하고 다르긴 하지.",
+          "AudioPath": "assets/ko-KR/Sebastian/237.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_9",
+          "PageIndex": 1,
+          "DisplayPattern": "내가 대부분 사람들하고 다르긴 하지."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_0",
+          "DialogueText": "나이가 들수록, 도시의 매력이 줄어드는 것 같아. 한때는 신비로운 느낌이 들었지. 근데 그냥 로맨틱한 환상이더라고.",
+          "AudioPath": "assets/ko-KR/Sebastian/238.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "나이가 들수록, 도시의 매력이 줄어드는 것 같아. 한때는 신비로운 느낌이 들었지. 근데 그냥 로맨틱한 환상이더라고."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_0",
+          "DialogueText": "도시는 정말 바쁘고 사람들로 가득해... 내가 있을 곳이 아니야. 난 혼자가 좋은 걸.",
+          "AudioPath": "assets/ko-KR/Sebastian/239.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Day_0",
+          "PageIndex": 1,
+          "DisplayPattern": "도시는 정말 바쁘고 사람들로 가득해... 내가 있을 곳이 아니야. 난 혼자가 좋은 걸."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_1",
+          "DialogueText": "야... 커피 마실래?[395] {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/240.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "야... 커피 마실래?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_1",
+          "DialogueText": "난 좀 필요했어... 악몽 때문에 일찍 깨서 잠이 오질 않더라고.",
+          "AudioPath": "assets/ko-KR/Sebastian/241.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Day_1",
+          "PageIndex": 1,
+          "DisplayPattern": "난 좀 필요했어... 악몽 때문에 일찍 깨서 잠이 오질 않더라고."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_2",
+          "DialogueText": "밤에 잠이 안 와서 오토바이 타러 잠깐 나갔어.",
+          "AudioPath": "assets/ko-KR/Sebastian/242.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "밤에 잠이 안 와서 오토바이 타러 잠깐 나갔어."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_2",
+          "DialogueText": "난 나만의 시간이 필요해, 우리가 결혼하긴 했지만. 그냥 내가 이런 걸. 그래도 내가 널 사랑한다는 건 변함없어. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/243.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Day_2",
+          "PageIndex": 1,
+          "DisplayPattern": "난 나만의 시간이 필요해, 우리가 결혼하긴 했지만. 그냥 내가 이런 걸. 그래도 내가 널 사랑한다는 건 변함없어."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_3",
+          "DialogueText": "어젯밤에 잘 잤어? 네가 중얼거리는 걸 들었어.",
+          "AudioPath": "assets/ko-KR/Sebastian/244.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "어젯밤에 잘 잤어? 네가 중얼거리는 걸 들었어."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_3",
+          "DialogueText": "겁먹은 것 같았는데, 솔직히... 좀 귀여웠어. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/245.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Day_3",
+          "PageIndex": 1,
+          "DisplayPattern": "겁먹은 것 같았는데, 솔직히... 좀 귀여웠어."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_4",
+          "DialogueText": "너랑 여기서 지내다 보니까 내면으로 자꾸 숨는 버릇이 점점 없어지고 있어. 나한테 좋은 일 같아. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/246.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "너랑 여기서 지내다 보니까 내면으로 자꾸 숨는 버릇이 점점 없어지고 있어. 나한테 좋은 일 같아."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_Sebastian",
+          "DialogueText": "뭐, 전에 살던 지하실에 비하면 여기가 훨씬 좋은 걸, 안 그래? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/247.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Day_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "뭐, 전에 살던 지하실에 비하면 여기가 훨씬 좋은 걸, 안 그래?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_0",
+          "DialogueText": "안녕. 오늘은 그냥 집에서 보냈어. 특별한 건 없었어...",
+          "AudioPath": "assets/ko-KR/Sebastian/248.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕. 오늘은 그냥 집에서 보냈어. 특별한 건 없었어..."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_0",
+          "DialogueText": "...",
+          "AudioPath": "assets/ko-KR/Sebastian/249.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Night_0",
+          "PageIndex": 1,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_0",
+          "DialogueText": "우리 집에서 보이는 풍경이 완벽해. 앞마당에서 펠리컨 마을에 해가 지는 게 보여.",
+          "AudioPath": "assets/ko-KR/Sebastian/250.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Night_0",
+          "PageIndex": 2,
+          "DisplayPattern": "우리 집에서 보이는 풍경이 완벽해. 앞마당에서 펠리컨 마을에 해가 지는 게 보여."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_1",
+          "DialogueText": "커피를 너무 많이 마셨나... 피곤한 기분이 안 들어.",
+          "AudioPath": "assets/ko-KR/Sebastian/251.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "커피를 너무 많이 마셨나... 피곤한 기분이 안 들어."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_1",
+          "DialogueText": "아직 농장 생활에 적응 중이야. 예전에는 새벽 5시에 잠들고 오후 2시까지 잔 경우도 있는걸. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/252.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Night_1",
+          "PageIndex": 1,
+          "DisplayPattern": "아직 농장 생활에 적응 중이야. 예전에는 새벽 5시에 잠들고 오후 2시까지 잔 경우도 있는걸."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_2",
+          "DialogueText": "우리만의 장소가 있어서 좋다. 사람들 잔소리 없이 내가 하고 싶은 대로 할 수 있어.",
+          "AudioPath": "assets/ko-KR/Sebastian/253.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "우리만의 장소가 있어서 좋다. 사람들 잔소리 없이 내가 하고 싶은 대로 할 수 있어."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_2",
+          "DialogueText": "내가 떠나서 마루도 분명 기쁠 거야.",
+          "AudioPath": "assets/ko-KR/Sebastian/254.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Night_2",
+          "PageIndex": 1,
+          "DisplayPattern": "내가 떠나서 마루도 분명 기쁠 거야."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_3",
+          "DialogueText": "아까 창밖으로 박쥐를 봤어. 보기 어렵긴 하지만, 집중하면 날아다니는 게 보여. 저 밖에 어딘가 있어.",
+          "AudioPath": "assets/ko-KR/Sebastian/255.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "아까 창밖으로 박쥐를 봤어. 보기 어렵긴 하지만, 집중하면 날아다니는 게 보여. 저 밖에 어딘가 있어."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_4",
+          "DialogueText": "집에서 지낼 때는 인정받지 못하는 기분이 자주 들었는데... 여기는 내가 있을 자리라는 기분이 확실히 들어. 환영받는 기분을 느끼게 해줘서 고마워, {Farmer_Name}. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/256.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "집에서 지낼 때는 인정받지 못하는 기분이 자주 들었는데... 여기는 내가 있을 자리라는 기분이 확실히 들어. 환영받는 기분을 느끼게 해줘서 고마워, ."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_Sebastian",
+          "DialogueText": "내가 좀 은둔자이긴 하지만, 네가 있을 때는 언제라도 좋아. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/257.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 좀 은둔자이긴 하지만, 네가 있을 때는 언제라도 좋아."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_Sebastian",
+          "DialogueText": "$e",
+          "AudioPath": "assets/ko-KR/Sebastian/258.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_Sebastian",
+          "DialogueText": "안녕, {Farmer_Name}. 언제 봐도 좋네. 네 곁에 있으면 편안해. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/259.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_Sebastian",
+          "PageIndex": 2,
+          "DisplayPattern": "안녕, . 언제 봐도 좋네. 네 곁에 있으면 편안해."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_0",
+          "DialogueText": "나 산책할 때면 되도록 다른 사람들은 피해. 잡담해야 하는 상황이 너무 싫어.",
+          "AudioPath": "assets/ko-KR/Sebastian/260.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Neutral_0",
+          "PageIndex": 0,
+          "DisplayPattern": "나 산책할 때면 되도록 다른 사람들은 피해. 잡담해야 하는 상황이 너무 싫어."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_1",
+          "DialogueText": "우리가 해낸 일을 당신 할아버지께서도 자랑스러워하실까?",
+          "AudioPath": "assets/ko-KR/Sebastian/261.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_1",
+          "PageIndex": 0,
+          "DisplayPattern": "우리가 해낸 일을 당신 할아버지께서도 자랑스러워하실까?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_2",
+          "DialogueText": "오늘 하루 어땠는지는 자기 전에 얘기하면 안 될까? 나 지금은 좀 바빠서...",
+          "AudioPath": "assets/ko-KR/Sebastian/262.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Neutral_2",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 하루 어땠는지는 자기 전에 얘기하면 안 될까? 나 지금은 좀 바빠서..."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_3",
+          "DialogueText": "오늘 마을 가려고? 왜, 뭐하려고?",
+          "AudioPath": "assets/ko-KR/Sebastian/263.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Neutral_3",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 마을 가려고? 왜, 뭐하려고?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_4",
+          "DialogueText": "오늘 빨래는 내가 해야겠네... 농장 일로도 넌 충분히 바쁘겠지.",
+          "AudioPath": "assets/ko-KR/Sebastian/264.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Neutral_4",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 빨래는 내가 해야겠네... 농장 일로도 넌 충분히 바쁘겠지."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_5",
+          "DialogueText": "우리 돈은 괜찮은 거지? 노트북을 팔고 싶진 않아...",
+          "AudioPath": "assets/ko-KR/Sebastian/265.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Neutral_5",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 돈은 괜찮은 거지? 노트북을 팔고 싶진 않아..."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_6",
+          "DialogueText": "마을에서 친구들 보러 가야 하면 언제든 다녀와. 난 어차피 혼자인 게 좋으니까.",
+          "AudioPath": "assets/ko-KR/Sebastian/266.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Neutral_6",
+          "PageIndex": 0,
+          "DisplayPattern": "마을에서 친구들 보러 가야 하면 언제든 다녀와. 난 어차피 혼자인 게 좋으니까."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_7",
+          "DialogueText": "오늘은 왠지 아무것도 하기 싫다.",
+          "AudioPath": "assets/ko-KR/Sebastian/267.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_7",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘은 왠지 아무것도 하기 싫다."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_8",
+          "DialogueText": "청소하는 게 재밌진 않지만, 음악 들으면서 하면 금방 끝나더라.",
+          "AudioPath": "assets/ko-KR/Sebastian/268.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Neutral_8",
+          "PageIndex": 0,
+          "DisplayPattern": "청소하는 게 재밌진 않지만, 음악 들으면서 하면 금방 끝나더라."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_9",
+          "DialogueText": "우리 평생 여기서 지내려나?",
+          "AudioPath": "assets/ko-KR/Sebastian/269.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_9",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 평생 여기서 지내려나?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/NoBed_0",
+          "DialogueText": "난 이제 어디서 자야 하지...? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/270.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_0",
+          "PageIndex": 0,
+          "DisplayPattern": "난 이제 어디서 자야 하지...?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/NoBed_1",
+          "DialogueText": "지난밤 푹 잘 수가 없었어... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/271.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_1",
+          "PageIndex": 0,
+          "DisplayPattern": "지난밤 푹 잘 수가 없었어..."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/NoBed_2",
+          "DialogueText": "바닥에서 자야 하는 신세라니... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/272.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_2",
+          "PageIndex": 0,
+          "DisplayPattern": "바닥에서 자야 하는 신세라니..."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/NoBed_3",
+          "DialogueText": "우리 침대는...? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/273.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_3",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 침대는...?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/OneKid_0",
+          "DialogueText": "아직 아빠라는 사실에 익숙해지고 있어. 걱정하진 마, %kid1(이)는 잘 돌보고 있어! 그냥... 많이 새로워.",
+          "AudioPath": "assets/ko-KR/Sebastian/274.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:OneKid_0",
+          "PageIndex": 0,
+          "DisplayPattern": "아직 아빠라는 사실에 익숙해지고 있어. 걱정하진 마, (이)는 잘 돌보고 있어! 그냥... 많이 새로워."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/OneKid_1",
+          "DialogueText": "kid1(이)가 나이가 좀 더 들면, 바이크에 연결할 사이드카 구해서 같이 타러 갈 수 있겠다. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/275.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:OneKid_1",
+          "PageIndex": 0,
+          "DisplayPattern": "kid1(이)가 나이가 좀 더 들면, 바이크에 연결할 사이드카 구해서 같이 타러 갈 수 있겠다."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/OneKid_2",
+          "DialogueText": "kid1(이) 밥은 오늘 내가 챙길게, 걱정 안 해도 될 거야. 농장 운영에 집중해요 여보.",
+          "AudioPath": "assets/ko-KR/Sebastian/276.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:OneKid_2",
+          "PageIndex": 0,
+          "DisplayPattern": "kid1(이) 밥은 오늘 내가 챙길게, 걱정 안 해도 될 거야. 농장 운영에 집중해요 여보."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/OneKid_3",
+          "DialogueText": "kid1(이) 냄새 맡아봤어? 목욕시켜야겠는걸...",
+          "AudioPath": "assets/ko-KR/Sebastian/277.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:OneKid_3",
+          "PageIndex": 0,
+          "DisplayPattern": "kid1(이) 냄새 맡아봤어? 목욕시켜야겠는걸..."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_0",
+          "DialogueText": "오늘 뭔가 하고 싶은데... 뭘 하고 싶은지 모르겠어. 이런 기분 들 때 있어, {Farmer_Name}?",
+          "AudioPath": "assets/ko-KR/Sebastian/278.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Outdoor_0",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 뭔가 하고 싶은데... 뭘 하고 싶은지 모르겠어. 이런 기분 들 때 있어, ?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_1",
+          "DialogueText": "흠... 가끔 건강을 위해서 밖으로 일부러 나와.",
+          "AudioPath": "assets/ko-KR/Sebastian/279.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Outdoor_1",
+          "PageIndex": 0,
+          "DisplayPattern": "흠... 가끔 건강을 위해서 밖으로 일부러 나와."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_1",
+          "DialogueText": "왜 그런지 모르겠는데, 난 실내에 있는 게 좋더라고. 어두운 지하실에 너무 익숙해진 걸까.",
+          "AudioPath": "assets/ko-KR/Sebastian/280.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Outdoor_1",
+          "PageIndex": 1,
+          "DisplayPattern": "왜 그런지 모르겠는데, 난 실내에 있는 게 좋더라고. 어두운 지하실에 너무 익숙해진 걸까."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_2",
+          "DialogueText": "난 그냥 여기서 너 구경하고 있을게. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/281.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Outdoor_2",
+          "PageIndex": 0,
+          "DisplayPattern": "난 그냥 여기서 너 구경하고 있을게."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_2",
+          "DialogueText": "난 너 보고 있는 게 좋더라.",
+          "AudioPath": "assets/ko-KR/Sebastian/282.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Outdoor_2",
+          "PageIndex": 1,
+          "DisplayPattern": "난 너 보고 있는 게 좋더라."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_3",
+          "DialogueText": "결혼했다고 내가 너무 여린 사람이 되면 안 되는데. 매운 고추를 먹고 운동을 해야 하나?",
+          "AudioPath": "assets/ko-KR/Sebastian/283.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Outdoor_3",
+          "PageIndex": 0,
+          "DisplayPattern": "결혼했다고 내가 너무 여린 사람이 되면 안 되는데. 매운 고추를 먹고 운동을 해야 하나?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_3",
+          "DialogueText": "그냥 생각해본 거야... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/284.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Outdoor_3",
+          "PageIndex": 1,
+          "DisplayPattern": "그냥 생각해본 거야..."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_4",
+          "DialogueText": "우리 슬라임 좀 더 많이 키우자... 양이 많으면 꽤 수익성도 괜찮을 거야. 키우기도 쉽고.",
+          "AudioPath": "assets/ko-KR/Sebastian/285.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Outdoor_4",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 슬라임 좀 더 많이 키우자... 양이 많으면 꽤 수익성도 괜찮을 거야. 키우기도 쉽고."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_4",
+          "DialogueText": "게다가, 색깔별로 다른 물품을 생산하거든. 그리고, 모르겠다, 꽤 재밌는 취미일 수도 있을 것 같아.",
+          "AudioPath": "assets/ko-KR/Sebastian/286.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Outdoor_4",
+          "PageIndex": 1,
+          "DisplayPattern": "게다가, 색깔별로 다른 물품을 생산하거든. 그리고, 모르겠다, 꽤 재밌는 취미일 수도 있을 것 같아."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_Sebastian",
+          "DialogueText": "내 예전 삶이랑 너무 다르긴 한데, 점점 마음에 드는 것 같아. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/287.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Outdoor_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "내 예전 삶이랑 너무 다르긴 한데, 점점 마음에 드는 것 같아."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_Sebastian",
+          "DialogueText": "내가 있어야 할 곳이 딱 여기라는 기분이 들어. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/288.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Outdoor_Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "내가 있어야 할 곳이 딱 여기라는 기분이 들어."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/patio_Sebastian",
+          "DialogueText": "필요한 거 있어? 나 여기서 바이크 좀 손보고 있을게.",
+          "AudioPath": "assets/ko-KR/Sebastian/289.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:patio_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "필요한 거 있어? 나 여기서 바이크 좀 손보고 있을게."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Day_0",
+          "DialogueText": "드디어... 비가 좀 많이 와주네. 화창한 날은 금방 질려.",
+          "AudioPath": "assets/ko-KR/Sebastian/290.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "드디어... 비가 좀 많이 와주네. 화창한 날은 금방 질려."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Day_1",
+          "DialogueText": "아. 내 방으로 쓰던 지하실 생각하고 있었어. 편하긴 했지만, 여기가 훨씬 흥미로워. 게다가 냄새도 별로였지...",
+          "AudioPath": "assets/ko-KR/Sebastian/291.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "아. 내 방으로 쓰던 지하실 생각하고 있었어. 편하긴 했지만, 여기가 훨씬 흥미로워. 게다가 냄새도 별로였지..."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Day_1",
+          "DialogueText": "사실 엄마네 집에서 그렇게 오래 지낸 게 부끄럽기도 해.",
+          "AudioPath": "assets/ko-KR/Sebastian/292.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Day_1",
+          "PageIndex": 1,
+          "DisplayPattern": "사실 엄마네 집에서 그렇게 오래 지낸 게 부끄럽기도 해."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Day_2",
+          "DialogueText": "야. 어젯밤에 잠이 안 와서 동굴 쪽으로 산책 갔어. 이거 찾았는데... 줄까?[575 769 767 84 66 78]",
+          "AudioPath": "assets/ko-KR/Sebastian/293.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "야. 어젯밤에 잠이 안 와서 동굴 쪽으로 산책 갔어. 이거 찾았는데... 줄까?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Day_2",
+          "DialogueText": "그냥 가끔 잠을 못 자는 것뿐이야, 네가 그랬다는 건 아니고. 사랑해. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/294.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Day_2",
+          "PageIndex": 1,
+          "DisplayPattern": "그냥 가끔 잠을 못 자는 것뿐이야, 네가 그랬다는 건 아니고. 사랑해."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Day_3",
+          "DialogueText": "그냥 누워있기 좋은 날 같다, 책이라도 읽거나... 네 생각은 어때?",
+          "AudioPath": "assets/ko-KR/Sebastian/295.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "그냥 누워있기 좋은 날 같다, 책이라도 읽거나... 네 생각은 어때?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Day_4",
+          "DialogueText": "야, 또 비 온다... 완벽해.",
+          "AudioPath": "assets/ko-KR/Sebastian/296.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "야, 또 비 온다... 완벽해."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Day_4",
+          "DialogueText": "너 추워 보여... 여기, 좀 더 가까이 와. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/297.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Day_4",
+          "PageIndex": 1,
+          "DisplayPattern": "너 추워 보여... 여기, 좀 더 가까이 와."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Day_Sebastian",
+          "DialogueText": "새벽에 해 뜨기 전에 일어나서 농장 주변 잠깐 산책했어. 그 시간엔 정말 평화로워.",
+          "AudioPath": "assets/ko-KR/Sebastian/298.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Day_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "새벽에 해 뜨기 전에 일어나서 농장 주변 잠깐 산책했어. 그 시간엔 정말 평화로워."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_0",
+          "DialogueText": "우리 결혼했으니 담배 끊는데 최선을 다해야지... 널 두고 죽을 순 없어. 나쁜 버릇이기도 하고.",
+          "AudioPath": "assets/ko-KR/Sebastian/299.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 결혼했으니 담배 끊는데 최선을 다해야지... 널 두고 죽을 순 없어. 나쁜 버릇이기도 하고."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_0",
+          "DialogueText": "함께할 미래를 누리고 있는 걸. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/300.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Night_0",
+          "PageIndex": 1,
+          "DisplayPattern": "함께할 미래를 누리고 있는 걸."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_1",
+          "DialogueText": "오늘 노트북으로 일 좀 했어. 사실 내가 만들고 싶은 게임 아이디어 좀 정리해보고 있었어.",
+          "AudioPath": "assets/ko-KR/Sebastian/301.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 노트북으로 일 좀 했어. 사실 내가 만들고 싶은 게임 아이디어 좀 정리해보고 있었어."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_1",
+          "DialogueText": "농장 수입 덕분에, 정말 하고 싶은 일을 할 수 있어. 환상적이야. 정말 고마워. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/302.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Night_1",
+          "PageIndex": 1,
+          "DisplayPattern": "농장 수입 덕분에, 정말 하고 싶은 일을 할 수 있어. 환상적이야. 정말 고마워."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_2",
+          "DialogueText": "미안, 저녁 차리는 거 깜빡했어. 냉장고에 냉동피자라도 있을 거야.",
+          "AudioPath": "assets/ko-KR/Sebastian/303.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "미안, 저녁 차리는 거 깜빡했어. 냉장고에 냉동피자라도 있을 거야."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_2",
+          "DialogueText": "모르겠어, 다른 생각하고 있었나. 집안일 기억하는 게 어려워...",
+          "AudioPath": "assets/ko-KR/Sebastian/304.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Night_2",
+          "PageIndex": 1,
+          "DisplayPattern": "모르겠어, 다른 생각하고 있었나. 집안일 기억하는 게 어려워..."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_3",
+          "DialogueText": "오늘 하루 어땠어? 몬스터 좀 잡았어? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/305.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 하루 어땠어? 몬스터 좀 잡았어?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_3",
+          "DialogueText": "가끔 그런 격한 활동도 좋지, 안 그래?",
+          "AudioPath": "assets/ko-KR/Sebastian/306.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Night_3",
+          "PageIndex": 1,
+          "DisplayPattern": "가끔 그런 격한 활동도 좋지, 안 그래?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_4",
+          "DialogueText": "오늘 밤 마녀가 방문하려나? 하.. 인생이 그렇게 흥미로웠으면...",
+          "AudioPath": "assets/ko-KR/Sebastian/307.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 밤 마녀가 방문하려나? 하.. 인생이 그렇게 흥미로웠으면..."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_5",
+          "DialogueText": "자기가 여기 있어서 너무 좋다... 집에 있기 좋은 밤이야.",
+          "AudioPath": "assets/ko-KR/Sebastian/308.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Night_5",
+          "PageIndex": 0,
+          "DisplayPattern": "자기가 여기 있어서 너무 좋다... 집에 있기 좋은 밤이야."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_Sebastian",
+          "DialogueText": "비는 봐도 봐도 질리지 않아... 특히 이렇게 시골에선.",
+          "AudioPath": "assets/ko-KR/Sebastian/309.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Night_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "비는 봐도 봐도 질리지 않아... 특히 이렇게 시골에선."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/spouseRoom_Sebastian",
+          "DialogueText": "오늘 일할지 하루 종일 만화를 읽을지 고민 중이야.",
+          "AudioPath": "assets/ko-KR/Sebastian/310.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 일할지 하루 종일 만화를 읽을지 고민 중이야."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/spouseRoom_Sebastian",
+          "DialogueText": "$e",
+          "AudioPath": "assets/ko-KR/Sebastian/311.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/spouseRoom_Sebastian",
+          "DialogueText": "아, 우리 냉동 피자 좀 있어? 나 배고파.",
+          "AudioPath": "assets/ko-KR/Sebastian/312.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Sebastian",
+          "PageIndex": 2,
+          "DisplayPattern": "아, 우리 냉동 피자 좀 있어? 나 배고파."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/spring_1",
+          "DialogueText": "아이고... 머리야. 새해 복 많이 받아... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/313.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:spring_1",
+          "PageIndex": 0,
+          "DisplayPattern": "아이고... 머리야. 새해 복 많이 받아..."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/spring_12",
+          "DialogueText": "내일 축제 기대하고 있어? 샘도 다시 볼 수 있겠네.",
+          "AudioPath": "assets/ko-KR/Sebastian/314.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:spring_12",
+          "PageIndex": 0,
+          "DisplayPattern": "내일 축제 기대하고 있어? 샘도 다시 볼 수 있겠네."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/spring_23",
+          "DialogueText": "오... 내일 봄꽃 무도회구나, 그치? 우리 꼭 가야 해?",
+          "AudioPath": "assets/ko-KR/Sebastian/315.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:spring_23",
+          "PageIndex": 0,
+          "DisplayPattern": "오... 내일 봄꽃 무도회구나, 그치? 우리 꼭 가야 해?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/spring_23",
+          "DialogueText": "그 웃기는 점프 슈트 정말 입기 싫어. 루이스는 왜 우리한테 이런 걸 하게 만드는 거지? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/316.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:spring_23",
+          "PageIndex": 1,
+          "DisplayPattern": "그 웃기는 점프 슈트 정말 입기 싫어. 루이스는 왜 우리한테 이런 걸 하게 만드는 거지?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/spring_8",
+          "DialogueText": "겨울이 끝났으니, 생산적일 수 있는 날이 많아지겠지.",
+          "AudioPath": "assets/ko-KR/Sebastian/317.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_8",
+          "PageIndex": 0,
+          "DisplayPattern": "겨울이 끝났으니, 생산적일 수 있는 날이 많아지겠지."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/spring_Sebastian",
+          "DialogueText": "와, 나 창백해졌네... 이번 계절은 농장 일 꼭 도와줘야겠어.",
+          "AudioPath": "assets/ko-KR/Sebastian/318.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "와, 나 창백해졌네... 이번 계절은 농장 일 꼭 도와줘야겠어."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/summer_1",
+          "DialogueText": "여름이네... 내 창백한 피부를 유지하려면 선크림 꽤 두텁게 바르기 시작해야겠어...",
+          "AudioPath": "assets/ko-KR/Sebastian/319.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:summer_1",
+          "PageIndex": 0,
+          "DisplayPattern": "여름이네... 내 창백한 피부를 유지하려면 선크림 꽤 두텁게 바르기 시작해야겠어..."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/summer_10",
+          "DialogueText": "루아우 스프에 뭘 넣을지 생각해봤어?",
+          "AudioPath": "assets/ko-KR/Sebastian/320.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:summer_10",
+          "PageIndex": 0,
+          "DisplayPattern": "루아우 스프에 뭘 넣을지 생각해봤어?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/summer_10",
+          "DialogueText": "난 뭐가 좋을지 전혀 모르겠어... 네가 셰프인걸! {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/321.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:summer_10",
+          "PageIndex": 1,
+          "DisplayPattern": "난 뭐가 좋을지 전혀 모르겠어... 네가 셰프인걸!"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/summer_15",
+          "DialogueText": "여름이네... 집안에 파리가 너무 많아.",
+          "AudioPath": "assets/ko-KR/Sebastian/322.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 0,
+          "DisplayPattern": "여름이네... 집안에 파리가 너무 많아."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/summer_15",
+          "DialogueText": "걱정하지 마, 내가 처리할게.",
+          "AudioPath": "assets/ko-KR/Sebastian/323.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 1,
+          "DisplayPattern": "걱정하지 마, 내가 처리할게."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/summer_27",
+          "DialogueText": "날이 선선해지고 있네. 정말 좋다.",
+          "AudioPath": "assets/ko-KR/Sebastian/324.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:summer_27",
+          "PageIndex": 0,
+          "DisplayPattern": "날이 선선해지고 있네. 정말 좋다."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/summer_27",
+          "DialogueText": "우리 내일 밤에 축제 갈까? 사실 내가 좀 즐기는 전통 축제야. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/325.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:summer_27",
+          "PageIndex": 1,
+          "DisplayPattern": "우리 내일 밤에 축제 갈까? 사실 내가 좀 즐기는 전통 축제야."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/summer_8",
+          "DialogueText": "나 혹시 냄새나면 미안해... 밤새 더워서 계속 땀났어.",
+          "AudioPath": "assets/ko-KR/Sebastian/326.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_8",
+          "PageIndex": 0,
+          "DisplayPattern": "나 혹시 냄새나면 미안해... 밤새 더워서 계속 땀났어."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/summer_Sebastian",
+          "DialogueText": "올여름은 최대한 집안에 있을 거야.",
+          "AudioPath": "assets/ko-KR/Sebastian/327.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "올여름은 최대한 집안에 있을 거야."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/TwoKids_0",
+          "DialogueText": "애들 밥은 이미 챙겨줬어, 걱정 안 해도 괜찮아... %kid2(이)가 또 내 옷에 초콜릿 우유를 온통 흘렸어.",
+          "AudioPath": "assets/ko-KR/Sebastian/328.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:TwoKids_0",
+          "PageIndex": 0,
+          "DisplayPattern": "애들 밥은 이미 챙겨줬어, 걱정 안 해도 괜찮아... (이)가 또 내 옷에 초콜릿 우유를 온통 흘렸어."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/TwoKids_1",
+          "DialogueText": "kid1(이)랑 %kid2(이)가 서로 친했으면 좋겠다. 마루랑 나랑 어렸을 때 자주 싸웠거든.",
+          "AudioPath": "assets/ko-KR/Sebastian/329.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:TwoKids_1",
+          "PageIndex": 0,
+          "DisplayPattern": "kid1(이)랑 (이)가 서로 친했으면 좋겠다. 마루랑 나랑 어렸을 때 자주 싸웠거든."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/TwoKids_1",
+          "DialogueText": "다시 생각해보니까, 대부분 내 탓이었네...",
+          "AudioPath": "assets/ko-KR/Sebastian/330.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:TwoKids_1",
+          "PageIndex": 1,
+          "DisplayPattern": "다시 생각해보니까, 대부분 내 탓이었네..."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/TwoKids_2",
+          "DialogueText": "요즘 %kid2(이)가 그림자 주술사 복장을 하고 빛나는 호박에 앉아있는 꿈을 자꾸 꿔. 이상하지, 그치?",
+          "AudioPath": "assets/ko-KR/Sebastian/331.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:TwoKids_2",
+          "PageIndex": 0,
+          "DisplayPattern": "요즘 (이)가 그림자 주술사 복장을 하고 빛나는 호박에 앉아있는 꿈을 자꾸 꿔. 이상하지, 그치?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/TwoKids_3",
+          "DialogueText": "우리 정말 이룬 게 많아, {Farmer_Name}. 우리 가족을 봐. 솔직히, 내게 이런 상황이 올 줄은 생각해본 적이 없어.",
+          "AudioPath": "assets/ko-KR/Sebastian/332.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:TwoKids_3",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 정말 이룬 게 많아, . 우리 가족을 봐. 솔직히, 내게 이런 상황이 올 줄은 생각해본 적이 없어."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/TwoKids_3",
+          "DialogueText": "근데 막상 이러니까, 정말 마음에 들어... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/333.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:TwoKids_3",
+          "PageIndex": 1,
+          "DisplayPattern": "근데 막상 이러니까, 정말 마음에 들어..."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/winter_1",
+          "DialogueText": "올겨울 어떻게 보낼 계획이야? 농장에서 해야 할 일이 좀 더 적은 계절이란 건 알아.",
+          "AudioPath": "assets/ko-KR/Sebastian/334.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:winter_1",
+          "PageIndex": 0,
+          "DisplayPattern": "올겨울 어떻게 보낼 계획이야? 농장에서 해야 할 일이 좀 더 적은 계절이란 건 알아."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/winter_28",
+          "DialogueText": "정말 좋은 한 해였어, {Farmer_Name}. 우리 축하도 좀 하자. [346] {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/335.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:winter_28",
+          "PageIndex": 0,
+          "DisplayPattern": "정말 좋은 한 해였어, . 우리 축하도 좀 하자."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/winter_28",
+          "DialogueText": "내년은 분명 더 좋을 거야. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/336.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:winter_28",
+          "PageIndex": 1,
+          "DisplayPattern": "내년은 분명 더 좋을 거야."
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/winter_7",
+          "DialogueText": "내일 낚시 대회 참가할 거야?",
+          "AudioPath": "assets/ko-KR/Sebastian/337.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:winter_7",
+          "PageIndex": 0,
+          "DisplayPattern": "내일 낚시 대회 참가할 거야?"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/winter_Sebastian",
+          "DialogueText": "샘은 요즘 뭐 하려나? 우리 참 친했는데.",
+          "AudioPath": "assets/ko-KR/Sebastian/338.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:winter_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "샘은 요즘 뭐 하려나? 우리 참 친했는데."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "운이 좋으면, 이런 날에는 개구리를 볼 수도 있어.",
+          "AudioPath": "assets/ko-KR/Sebastian/339.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "운이 좋으면, 이런 날에는 개구리를 볼 수도 있어."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s0",
+          "DialogueText": "Our little friend's doing much better, see?",
+          "AudioPath": "assets/ko-KR/Sebastian/340.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Our little friend's doing much better, see?"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s1",
+          "DialogueText": "...but I don't think he can go back into the wild... he's not fast enough to avoid predators anymore.",
+          "AudioPath": "assets/ko-KR/Sebastian/341.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "...but I don't think he can go back into the wild... he's not fast enough to avoid predators anymore."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s2",
+          "DialogueText": "...So I set up this terrarium.",
+          "AudioPath": "assets/ko-KR/Sebastian/342.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "...So I set up this terrarium."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s3",
+          "DialogueText": "He looks happy, doesn't he? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/343.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "He looks happy, doesn't he?"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s4",
+          "DialogueText": "I wonder if he'll get lonely, though...",
+          "AudioPath": "assets/ko-KR/Sebastian/344.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I wonder if he'll get lonely, though..."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s5",
+          "DialogueText": "...a haven for frogs and toads who can't make it on their own? Not a bad idea.",
+          "AudioPath": "assets/ko-KR/Sebastian/345.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "...a haven for frogs and toads who can't make it on their own? Not a bad idea."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s6",
+          "DialogueText": "He does look pretty tough. But still, If I find another injured frog, I think he'd be better off with a friend.",
+          "AudioPath": "assets/ko-KR/Sebastian/346.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "He does look pretty tough. But still, If I find another injured frog, I think he'd be better off with a friend."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s7",
+          "DialogueText": "Hmm... Well, I like going out in the rain. So I guess I encountered a lot of frogs that way.",
+          "AudioPath": "assets/ko-KR/Sebastian/347.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmm... Well, I like going out in the rain. So I guess I encountered a lot of frogs that way."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s8",
+          "DialogueText": "I ended up feeling a common bond with the little guys.",
+          "AudioPath": "assets/ko-KR/Sebastian/348.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I ended up feeling a common bond with the little guys."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s9",
+          "DialogueText": "Well it's not up for debate. This is my corner of the house and I can do what I want with it.",
+          "AudioPath": "assets/ko-KR/Sebastian/349.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Well it's not up for debate. This is my corner of the house and I can do what I want with it."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s10",
+          "DialogueText": "Yeah, it'll be fun. I spend a lot of time on the computer, so it's nice to have some real, physical hobbies.",
+          "AudioPath": "assets/ko-KR/Sebastian/350.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Yeah, it'll be fun. I spend a lot of time on the computer, so it's nice to have some real, physical hobbies."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s11",
+          "DialogueText": "I might even try my hand at some frog breeding! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/351.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "I might even try my hand at some frog breeding!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s12",
+          "DialogueText": "Today our family grew a little larger...",
+          "AudioPath": "assets/ko-KR/Sebastian/352.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Today our family grew a little larger..."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s13",
+          "DialogueText": "...and a lot slimier!",
+          "AudioPath": "assets/ko-KR/Sebastian/353.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "...and a lot slimier!"
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/44:s0",
+          "DialogueText": "...Okay.",
+          "AudioPath": "assets/ko-KR/Sebastian/354.ogg",
+          "TranslationKey": "Events/SamHouse:44:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "...Okay."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s0",
+          "DialogueText": "Well? What do you have to say for yourself? {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Sebastian/355.ogg",
+          "TranslationKey": "Events/Saloon:195013:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Well? What do you have to say for yourself?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s1",
+          "DialogueText": "I'm sorry... what I did was wrong.",
+          "AudioPath": "assets/ko-KR/Sebastian/356.ogg",
+          "TranslationKey": "Events/Saloon:195013:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm sorry... what I did was wrong."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s2",
+          "DialogueText": "Guys, calm down! I can explain...",
+          "AudioPath": "assets/ko-KR/Sebastian/357.ogg",
+          "TranslationKey": "Events/Saloon:195013:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Guys, calm down! I can explain..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/choseToExplain:s0",
+          "DialogueText": "Absolutely. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Sebastian/358.ogg",
+          "TranslationKey": "Events/Saloon:choseToExplain:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Absolutely."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/crying:s0",
+          "DialogueText": "You need to take responsibility for what you've done... {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Sebastian/359.ogg",
+          "TranslationKey": "Events/Saloon:crying:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "You need to take responsibility for what you've done..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/crying:s1",
+          "DialogueText": "Absolutely. {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Sebastian/360.ogg",
+          "TranslationKey": "Events/Saloon:crying:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Absolutely."
+        },
+        {
+          "DialogueFrom": "Event:Beach/29:s0",
+          "DialogueText": "{Farmer_Name}?",
+          "AudioPath": "assets/ko-KR/Sebastian/361.ogg",
+          "TranslationKey": "Events/Beach:29:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/29:s1",
+          "DialogueText": "Hey. I'm surprised to find you out here in the rain.",
+          "AudioPath": "assets/ko-KR/Sebastian/362.ogg",
+          "TranslationKey": "Events/Beach:29:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey. I'm surprised to find you out here in the rain."
+        },
+        {
+          "DialogueFrom": "Event:Beach/29:s2",
+          "DialogueText": "Look at those dark clouds looming over the horizon...",
+          "AudioPath": "assets/ko-KR/Sebastian/363.ogg",
+          "TranslationKey": "Events/Beach:29:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Look at those dark clouds looming over the horizon..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/29:s3",
+          "DialogueText": "I hope they come this way.",
+          "AudioPath": "assets/ko-KR/Sebastian/364.ogg",
+          "TranslationKey": "Events/Beach:29:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I hope they come this way."
+        },
+        {
+          "DialogueFrom": "Event:Beach/29:s4",
+          "DialogueText": "I like this weather because it makes everyone disappear... you know?",
+          "AudioPath": "assets/ko-KR/Sebastian/365.ogg",
+          "TranslationKey": "Events/Beach:29:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I like this weather because it makes everyone disappear... you know?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/29:s5",
+          "DialogueText": "Being around people makes me feel anxious. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/366.ogg",
+          "TranslationKey": "Events/Beach:29:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Being around people makes me feel anxious."
+        },
+        {
+          "DialogueFrom": "Event:Beach/29:s6",
+          "DialogueText": "I don't feel that way around you, though. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/367.ogg",
+          "TranslationKey": "Events/Beach:29:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I don't feel that way around you, though."
+        },
+        {
+          "DialogueFrom": "Event:Beach/29:s7",
+          "DialogueText": "We're getting soaked...",
+          "AudioPath": "assets/ko-KR/Sebastian/368.ogg",
+          "TranslationKey": "Events/Beach:29:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "We're getting soaked..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/29:s8",
+          "DialogueText": "Here... There's room for two. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/369.ogg",
+          "TranslationKey": "Events/Beach:29:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Here... There's room for two."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s0",
+          "DialogueText": "Oh, hello {Farmer_Name}. {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Sebastian/370.ogg",
+          "TranslationKey": "Events/Mountain:384883:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, hello ."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s1",
+          "DialogueText": "What, you haven't seen my motorcycle before? Hmmm... I guess I haven't shown it to you. {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Sebastian/371.ogg",
+          "TranslationKey": "Events/Mountain:384883:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "What, you haven't seen my motorcycle before? Hmmm... I guess I haven't shown it to you."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s2",
+          "DialogueText": "Sometimes, after sundown, I make the long ride out of Stardew Valley... {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Sebastian/372.ogg",
+          "TranslationKey": "Events/Mountain:384883:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Sometimes, after sundown, I make the long ride out of Stardew Valley..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s3",
+          "DialogueText": "There's nothing else like it, blazing along the empty stretch of road toward the faint city glow... {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Sebastian/373.ogg",
+          "TranslationKey": "Events/Mountain:384883:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "There's nothing else like it, blazing along the empty stretch of road toward the faint city glow..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s4",
+          "DialogueText": "Once I've saved up enough money, I'm going to head out on my own... to the city and beyond. Just me and my bike. {Portrait:Custom:9}",
+          "AudioPath": "assets/ko-KR/Sebastian/374.ogg",
+          "TranslationKey": "Events/Mountain:384883:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Once I've saved up enough money, I'm going to head out on my own... to the city and beyond. Just me and my bike."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s5",
+          "DialogueText": "There we go, oil's changed. {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Sebastian/375.ogg",
+          "TranslationKey": "Events/Mountain:384883:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "There we go, oil's changed."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s6|g=male",
+          "DialogueText": "Hey... Maybe I'll let you ride sometime, if you want. {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Sebastian/376_male.ogg",
+          "TranslationKey": "Events/Mountain:384883:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey... Maybe I'll let you ride sometime, if you want.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s7|g=female",
+          "DialogueText": "Hey... maybe I'll take you for a ride some day. {Portrait:Custom:8}",
+          "AudioPath": "assets/ko-KR/Sebastian/377_female.ogg",
+          "TranslationKey": "Events/Mountain:384883:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey... maybe I'll take you for a ride some day.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s8",
+          "DialogueText": "That sounds fun.",
+          "AudioPath": "assets/ko-KR/Sebastian/378.ogg",
+          "TranslationKey": "Events/Mountain:384883:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "That sounds fun."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s9",
+          "DialogueText": "No thanks. That sounds stupid.",
+          "AudioPath": "assets/ko-KR/Sebastian/379.ogg",
+          "TranslationKey": "Events/Mountain:384883:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "No thanks. That sounds stupid."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s10",
+          "DialogueText": "I'm scared of motorcycles.",
+          "AudioPath": "assets/ko-KR/Sebastian/380.ogg",
+          "TranslationKey": "Events/Mountain:384883:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm scared of motorcycles."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s0",
+          "DialogueText": "Hey {Farmer_Name}. I was just about to head out.",
+          "AudioPath": "assets/ko-KR/Sebastian/381.ogg",
+          "TranslationKey": "Events/Mountain:384882:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey . I was just about to head out."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s1",
+          "DialogueText": "Hop on...I wanna show you something.",
+          "AudioPath": "assets/ko-KR/Sebastian/382.ogg",
+          "TranslationKey": "Events/Mountain:384882:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hop on...I wanna show you something."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s2",
+          "DialogueText": "That's Zuzu City in the distance...",
+          "AudioPath": "assets/ko-KR/Sebastian/383.ogg",
+          "TranslationKey": "Events/Mountain:384882:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "That's Zuzu City in the distance..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s3",
+          "DialogueText": "I come here when I want to get away from everything and just... think.",
+          "AudioPath": "assets/ko-KR/Sebastian/384.ogg",
+          "TranslationKey": "Events/Mountain:384882:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I come here when I want to get away from everything and just... think."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s4",
+          "DialogueText": "So, what do you think?",
+          "AudioPath": "assets/ko-KR/Sebastian/385.ogg",
+          "TranslationKey": "Events/Mountain:384882:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "So, what do you think?"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s5",
+          "DialogueText": "It's beautiful.",
+          "AudioPath": "assets/ko-KR/Sebastian/386.ogg",
+          "TranslationKey": "Events/Mountain:384882:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "It's beautiful."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s6",
+          "DialogueText": "It gives me a strange, sad feeling.",
+          "AudioPath": "assets/ko-KR/Sebastian/387.ogg",
+          "TranslationKey": "Events/Mountain:384882:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "It gives me a strange, sad feeling."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s7",
+          "DialogueText": "Kind of ugly.",
+          "AudioPath": "assets/ko-KR/Sebastian/388.ogg",
+          "TranslationKey": "Events/Mountain:384882:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Kind of ugly."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s8",
+          "DialogueText": "You should quit smoking.",
+          "AudioPath": "assets/ko-KR/Sebastian/389.ogg",
+          "TranslationKey": "Events/Mountain:384882:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "You should quit smoking."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s9",
+          "DialogueText": "The city used to draw me in... but now I'm finding myself happier at home in the valley.",
+          "AudioPath": "assets/ko-KR/Sebastian/390.ogg",
+          "TranslationKey": "Events/Mountain:384882:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "The city used to draw me in... but now I'm finding myself happier at home in the valley."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s10",
+          "DialogueText": "{Farmer_Name}...? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/391.ogg",
+          "TranslationKey": "Events/Mountain:384882:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "...?"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s11|g=male",
+          "DialogueText": "Um... I've never... felt anything like this with another guy before... But you're different. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/392_male.ogg",
+          "TranslationKey": "Events/Mountain:384882:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... I've never... felt anything like this with another guy before... But you're different.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s12|g=female",
+          "DialogueText": "I don't usually bring girls to this place... In fact, you're the only one. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/393_female.ogg",
+          "TranslationKey": "Events/Mountain:384882:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "I don't usually bring girls to this place... In fact, you're the only one.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s13",
+          "DialogueText": "You know what I'm trying to say, don't you? {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/394.ogg",
+          "TranslationKey": "Events/Mountain:384882:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "You know what I'm trying to say, don't you?"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s0",
+          "DialogueText": "Hey {Farmer_Name}... Glad you showed up.",
+          "AudioPath": "assets/ko-KR/Sebastian/395.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey ... Glad you showed up."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s1",
+          "DialogueText": "There's an injured frog in that bush... I gotta save him!",
+          "AudioPath": "assets/ko-KR/Sebastian/396.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "There's an injured frog in that bush... I gotta save him!"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s2",
+          "DialogueText": "I need your help. Go over to the bush and try to get him to come towards me. I'll wait over here and catch him.",
+          "AudioPath": "assets/ko-KR/Sebastian/397.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I need your help. Go over to the bush and try to get him to come towards me. I'll wait over here and catch him."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s3",
+          "DialogueText": "Okay... you ready?",
+          "AudioPath": "assets/ko-KR/Sebastian/398.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay... you ready?"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s4",
+          "DialogueText": "Now!",
+          "AudioPath": "assets/ko-KR/Sebastian/399.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Now!"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s5",
+          "DialogueText": "Got him!",
+          "AudioPath": "assets/ko-KR/Sebastian/400.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Got him!"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s6",
+          "DialogueText": "Poor little guy... his foot's all mangled. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/401.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Poor little guy... his foot's all mangled."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s7",
+          "DialogueText": "I'm gonna take him home for now, and make him comfortable.",
+          "AudioPath": "assets/ko-KR/Sebastian/402.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm gonna take him home for now, and make him comfortable."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s8",
+          "DialogueText": "I guess I'll do some research on how to take care of frogs. Maybe Marnie knows something.",
+          "AudioPath": "assets/ko-KR/Sebastian/403.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I guess I'll do some research on how to take care of frogs. Maybe Marnie knows something."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s9",
+          "DialogueText": "Hah... Yeah, I guess so. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/404.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Hah... Yeah, I guess so."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s10",
+          "DialogueText": "He's definitely got your nose... {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/405.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "He's definitely got your nose..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s11",
+          "DialogueText": "Well, sorry if I don't take your word for it... I'm gonna give the poor guy a chance.",
+          "AudioPath": "assets/ko-KR/Sebastian/406.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, sorry if I don't take your word for it... I'm gonna give the poor guy a chance."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s12",
+          "DialogueText": "We'll do our best. But don't get too attached just yet...",
+          "AudioPath": "assets/ko-KR/Sebastian/407.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "We'll do our best. But don't get too attached just yet..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s13",
+          "DialogueText": "Let's take him home.",
+          "AudioPath": "assets/ko-KR/Sebastian/408.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's take him home."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/1053978:s0",
+          "DialogueText": "Yea",
+          "AudioPath": "assets/ko-KR/Sebastian/409.ogg",
+          "TranslationKey": "Events/ScienceHouse:1053978:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Yea"
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/2794460:s0",
+          "DialogueText": "Oh, hey. Gimme one sec.",
+          "AudioPath": "assets/ko-KR/Sebastian/410.ogg",
+          "TranslationKey": "Events/SebastianRoom:2794460:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, hey. Gimme one sec."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/2794460:s1",
+          "DialogueText": "He's busy... I should leave.",
+          "AudioPath": "assets/ko-KR/Sebastian/411.ogg",
+          "TranslationKey": "Events/SebastianRoom:2794460:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "He's busy... I should leave."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/2794460:s2",
+          "DialogueText": "Stay put.",
+          "AudioPath": "assets/ko-KR/Sebastian/412.ogg",
+          "TranslationKey": "Events/SebastianRoom:2794460:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Stay put."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/2794460:s3",
+          "DialogueText": "Where are you going? {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Sebastian/413.ogg",
+          "TranslationKey": "Events/SebastianRoom:2794460:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Where are you going?"
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/2794460:s4",
+          "DialogueText": "Sorry... I had to finish this line before I lost my train of thought.",
+          "AudioPath": "assets/ko-KR/Sebastian/414.ogg",
+          "TranslationKey": "Events/SebastianRoom:2794460:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Sorry... I had to finish this line before I lost my train of thought."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/didntLeave:s0",
+          "DialogueText": "Okay. Sorry about that, I just needed to finish what I was working on.",
+          "AudioPath": "assets/ko-KR/Sebastian/415.ogg",
+          "TranslationKey": "Events/SebastianRoom:didntLeave:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay. Sorry about that, I just needed to finish what I was working on."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/sebastianRoom:s0",
+          "DialogueText": "I do freelance work as a programmer.",
+          "AudioPath": "assets/ko-KR/Sebastian/416.ogg",
+          "TranslationKey": "Events/SebastianRoom:sebastianRoom:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I do freelance work as a programmer."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/decor:s0",
+          "DialogueText": "Decorations?... Oh, yeah... thanks. I've been sticking posters on the wall for years, I guess it's kinda cluttered.",
+          "AudioPath": "assets/ko-KR/Sebastian/417.ogg",
+          "TranslationKey": "Events/SebastianRoom:decor:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Decorations?... Oh, yeah... thanks. I've been sticking posters on the wall for years, I guess it's kinda cluttered."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s0",
+          "DialogueText": "That was an instant message from Sam... I guess he wants to hang out...",
+          "AudioPath": "assets/ko-KR/Sebastian/418.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "That was an instant message from Sam... I guess he wants to hang out..."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s1",
+          "DialogueText": "Ugh, I don't really feel like going out today. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Sebastian/419.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ugh, I don't really feel like going out today."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s2",
+          "DialogueText": "Did you tell her I'm working?",
+          "AudioPath": "assets/ko-KR/Sebastian/420.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Did you tell her I'm working?"
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s3",
+          "DialogueText": "*sigh*... No one takes my job seriously. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Sebastian/421.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*... No one takes my job seriously."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s4",
+          "DialogueText": "No one ever bothers Maru when she's working at the clinic... does everyone think I'm just surfing the web all day?",
+          "AudioPath": "assets/ko-KR/Sebastian/422.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "No one ever bothers Maru when she's working at the clinic... does everyone think I'm just surfing the web all day?"
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s5",
+          "DialogueText": "Ask him about his career goals.",
+          "AudioPath": "assets/ko-KR/Sebastian/423.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Ask him about his career goals."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s6",
+          "DialogueText": "Ask him why he doesn't want to see his friends.",
+          "AudioPath": "assets/ko-KR/Sebastian/424.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Ask him why he doesn't want to see his friends."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s7",
+          "DialogueText": "Well, I'm trying to save up so I can move out of here. Probably to the city or something.",
+          "AudioPath": "assets/ko-KR/Sebastian/425.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I'm trying to save up so I can move out of here. Probably to the city or something."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s8",
+          "DialogueText": "You know, if I'd gone to college I'd probably be making six figures right now... but I just don't want to be part of that corporate rat race, you know?",
+          "AudioPath": "assets/ko-KR/Sebastian/426.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "You know, if I'd gone to college I'd probably be making six figures right now... but I just don't want to be part of that corporate rat race, you know?"
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s9",
+          "DialogueText": "Well, and I guess I just feel more comfortable hidden behind the computer than dealing with people face-to-face. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/427.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, and I guess I just feel more comfortable hidden behind the computer than dealing with people face-to-face."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s10",
+          "DialogueText": "Well, I should get back to work... I need to get this module finished by tomorrow.",
+          "AudioPath": "assets/ko-KR/Sebastian/428.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I should get back to work... I need to get this module finished by tomorrow."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/noFriends:s0",
+          "DialogueText": "*sigh*... I like having friends, I just need a lot of time alone to balance out the social stuff. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/429.ogg",
+          "TranslationKey": "Events/SebastianRoom:noFriends:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*... I like having friends, I just need a lot of time alone to balance out the social stuff."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/noFriends:s1",
+          "DialogueText": "Sam's the opposite... he goes crazy if he's alone for too long.",
+          "AudioPath": "assets/ko-KR/Sebastian/430.ogg",
+          "TranslationKey": "Events/SebastianRoom:noFriends:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Sam's the opposite... he goes crazy if he's alone for too long."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/noFriends:s2",
+          "DialogueText": "Maybe that's why I like computers so much... They're engaging, straightforward, and unselfish. Quite the opposite of a lot of people I know.",
+          "AudioPath": "assets/ko-KR/Sebastian/431.ogg",
+          "TranslationKey": "Events/SebastianRoom:noFriends:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Maybe that's why I like computers so much... They're engaging, straightforward, and unselfish. Quite the opposite of a lot of people I know."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/noFriends:s3",
+          "DialogueText": "Well, I should get back to work... I need to get this module finished by tomorrow.",
+          "AudioPath": "assets/ko-KR/Sebastian/432.ogg",
+          "TranslationKey": "Events/SebastianRoom:noFriends:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I should get back to work... I need to get this module finished by tomorrow."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/27:s0",
+          "DialogueText": "Hey, {Farmer_Name}. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/433.ogg",
+          "TranslationKey": "Events/SebastianRoom:27:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, ."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/27:s1",
+          "DialogueText": "Sam and I were about to play 'Solarion Chronicles: The Game'... Why don't you join us? It's better with three players anyway. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/434.ogg",
+          "TranslationKey": "Events/SebastianRoom:27:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Sam and I were about to play 'Solarion Chronicles: The Game'... Why don't you join us? It's better with three players anyway."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/27:s2",
+          "DialogueText": "Okay, here we go... Let me draw the scenario card. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/435.ogg",
+          "TranslationKey": "Events/SebastianRoom:27:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay, here we go... Let me draw the scenario card."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/27:s3",
+          "DialogueText": "Hmm... It looks like today's quest will take us into the Necromancer's Tower... to try and reclaim the Solarion Staff from the clutches of Dreadlord Xarth.",
+          "AudioPath": "assets/ko-KR/Sebastian/436.ogg",
+          "TranslationKey": "Events/SebastianRoom:27:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmm... It looks like today's quest will take us into the Necromancer's Tower... to try and reclaim the Solarion Staff from the clutches of Dreadlord Xarth."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/27:s4",
+          "DialogueText": "Hey! That's what I was going to pick! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/437.ogg",
+          "TranslationKey": "Events/SebastianRoom:27:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey! That's what I was going to pick!"
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/27:s5",
+          "DialogueText": "I guess I'll be the healer then.",
+          "AudioPath": "assets/ko-KR/Sebastian/438.ogg",
+          "TranslationKey": "Events/SebastianRoom:27:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "I guess I'll be the healer then."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/warrior:s0",
+          "DialogueText": "Good choice. Warrior's probably the easiest for beginners. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/439.ogg",
+          "TranslationKey": "Events/SebastianRoom:warrior:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Good choice. Warrior's probably the easiest for beginners."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/warrior:s1",
+          "DialogueText": "I guess I'll pick the wizard, then.",
+          "AudioPath": "assets/ko-KR/Sebastian/440.ogg",
+          "TranslationKey": "Events/SebastianRoom:warrior:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I guess I'll pick the wizard, then."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/healer:s0",
+          "DialogueText": "Healer, huh? That's a very important role. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/441.ogg",
+          "TranslationKey": "Events/SebastianRoom:healer:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Healer, huh? That's a very important role."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/healer:s1",
+          "DialogueText": "I guess I'll pick the wizard, then.",
+          "AudioPath": "assets/ko-KR/Sebastian/442.ogg",
+          "TranslationKey": "Events/SebastianRoom:healer:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I guess I'll pick the wizard, then."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s0",
+          "DialogueText": "Let's begin...",
+          "AudioPath": "assets/ko-KR/Sebastian/443.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's begin..."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s1",
+          "DialogueText": "The King has entrusted you and your companions with recovering the Solarion Staff... a task which, if completed successfully, will ensure your place in the hall of legends as well as a sizable fortune of gold and silver.",
+          "AudioPath": "assets/ko-KR/Sebastian/444.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "The King has entrusted you and your companions with recovering the Solarion Staff... a task which, if completed successfully, will ensure your place in the hall of legends as well as a sizable fortune of gold and silver."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s2",
+          "DialogueText": "After a long month journeying across unforgiving lands, you step out onto a precipice to see your destination looming in the distance.",
+          "AudioPath": "assets/ko-KR/Sebastian/445.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "After a long month journeying across unforgiving lands, you step out onto a precipice to see your destination looming in the distance."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s3",
+          "DialogueText": "There, beyond a moonlit plain, lies the Necromancer's Tower... where Dreadlord Xarth usurps the power of the stolen Solarion Staff for his vile purposes.",
+          "AudioPath": "assets/ko-KR/Sebastian/446.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "There, beyond a moonlit plain, lies the Necromancer's Tower... where Dreadlord Xarth usurps the power of the stolen Solarion Staff for his vile purposes."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s4",
+          "DialogueText": "The tower lies before you.",
+          "AudioPath": "assets/ko-KR/Sebastian/447.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "The tower lies before you."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s5",
+          "DialogueText": "Go in the front. Fortune favors the bold.",
+          "AudioPath": "assets/ko-KR/Sebastian/448.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Go in the front. Fortune favors the bold."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s6",
+          "DialogueText": "Search for a back entrance. Let's remain hidden.",
+          "AudioPath": "assets/ko-KR/Sebastian/449.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Search for a back entrance. Let's remain hidden."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s7",
+          "DialogueText": "A skeleton guards the hallway before you. It looks dangerous.",
+          "AudioPath": "assets/ko-KR/Sebastian/450.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "A skeleton guards the hallway before you. It looks dangerous."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s8",
+          "DialogueText": "What do you do?",
+          "AudioPath": "assets/ko-KR/Sebastian/451.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "What do you do?"
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s9",
+          "DialogueText": "Fight the skeleton.",
+          "AudioPath": "assets/ko-KR/Sebastian/452.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Fight the skeleton."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s10",
+          "DialogueText": "Run away.",
+          "AudioPath": "assets/ko-KR/Sebastian/453.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Run away."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s11",
+          "DialogueText": "The skeleton lunges forward!",
+          "AudioPath": "assets/ko-KR/Sebastian/454.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "The skeleton lunges forward!"
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s12",
+          "DialogueText": "Swing your weapons.",
+          "AudioPath": "assets/ko-KR/Sebastian/455.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Swing your weapons."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s13",
+          "DialogueText": "Raise your shields.",
+          "AudioPath": "assets/ko-KR/Sebastian/456.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Raise your shields."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s14",
+          "DialogueText": "You successfully block the attack. The skeleton stumbles backward, giving you enough time to strike out and slay the foul creature.",
+          "AudioPath": "assets/ko-KR/Sebastian/457.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "You successfully block the attack. The skeleton stumbles backward, giving you enough time to strike out and slay the foul creature."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s15",
+          "DialogueText": "You continue down the hallway, taking care not to step on the skeleton's remains.",
+          "AudioPath": "assets/ko-KR/Sebastian/458.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "You continue down the hallway, taking care not to step on the skeleton's remains."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/Necromancer:s0",
+          "DialogueText": "Thanks, {Farmer_Name}. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/459.ogg",
+          "TranslationKey": "Events/SebastianRoom:Necromancer:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks, ."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/healedSam:s0",
+          "DialogueText": "... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Sebastian/460.ogg",
+          "TranslationKey": "Events/SebastianRoom:healedSam:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/healedSam:s1",
+          "DialogueText": "Sam charges ahead and strikes down Xarth, freeing the Solarion Staff from his clutches and restoring peace and order to the world.",
+          "AudioPath": "assets/ko-KR/Sebastian/461.ogg",
+          "TranslationKey": "Events/SebastianRoom:healedSam:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Sam charges ahead and strikes down Xarth, freeing the Solarion Staff from his clutches and restoring peace and order to the world."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/end:s0",
+          "DialogueText": "Hey, not bad! {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/462.ogg",
+          "TranslationKey": "Events/SebastianRoom:end:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, not bad!"
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/end:s1",
+          "DialogueText": "It took me like, three or four tries to beat my first scenario. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/463.ogg",
+          "TranslationKey": "Events/SebastianRoom:end:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "It took me like, three or four tries to beat my first scenario."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/end:s2",
+          "DialogueText": "Thanks for stopping by... I'll see you later. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/464.ogg",
+          "TranslationKey": "Events/SebastianRoom:end:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks for stopping by... I'll see you later."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Sebastian",
+          "DialogueText": "오늘 너무 정신없네... 난 그냥 여기에 좀 있어야겠다.",
+          "AudioPath": "assets/ko-KR/Sebastian/465.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 너무 정신없네... 난 그냥 여기에 좀 있어야겠다."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Sebastian_spouse",
+          "DialogueText": "야, {Farmer_Name}. 나 잠깐 샘이랑 얘기할게. 먼저 가서 놀고 있어.",
+          "AudioPath": "assets/ko-KR/Sebastian/466.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Sebastian_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "야, . 나 잠깐 샘이랑 얘기할게. 먼저 가서 놀고 있어."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Sebastian_y2",
+          "DialogueText": "저기 아주머니께서 점을 봐줬어. 결과를 어떻게 생각해야 할지 모르겠어... {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Sebastian/467.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Sebastian_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "저기 아주머니께서 점을 봐줬어. 결과를 어떻게 생각해야 할지 모르겠어..."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Sebastian_spouse_y2",
+          "DialogueText": "묘지에 있던 아주머니께서 우리 미래를 점쳐줬어... {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Sebastian/468.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Sebastian_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "묘지에 있던 아주머니께서 우리 미래를 점쳐줬어..."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Sebastian_spouse_y2",
+          "DialogueText": "듣기론 우리가 행복한 삶을 함께 보낼 운명이래. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/469.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Sebastian_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "듣기론 우리가 행복한 삶을 함께 보낼 운명이래."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Sebastian",
+          "DialogueText": "저 해골들이 어떻게 걷고 있는지 모르겠네... 으스스 한걸.",
+          "AudioPath": "assets/ko-KR/Sebastian/470.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "저 해골들이 어떻게 걷고 있는지 모르겠네... 으스스 한걸."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Sebastian",
+          "DialogueText": "꽤 멋지긴 하다.",
+          "AudioPath": "assets/ko-KR/Sebastian/471.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "꽤 멋지긴 하다."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Sebastian_spouse",
+          "DialogueText": "농장에 이거 하나 있으면 재밌을 것 같아.",
+          "AudioPath": "assets/ko-KR/Sebastian/472.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Sebastian_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "농장에 이거 하나 있으면 재밌을 것 같아."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Sebastian_y2",
+          "DialogueText": "여긴 내 자리야. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Sebastian/473.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Sebastian_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "여긴 내 자리야."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Sebastian_spouse_y2",
+          "DialogueText": "저기, 이거... 손 좀 봐줄래? 헤헤헤... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/474.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Sebastian_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "저기, 이거... 손 좀 봐줄래? 헤헤헤..."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Sebastian_spouse_y2",
+          "DialogueText": "이거 묘석으로 농장 꾸미면 분위기 있겠다, 안 그래? {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Sebastian/475.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Sebastian_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "이거 묘석으로 농장 꾸미면 분위기 있겠다, 안 그래?"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Sebastian",
+          "DialogueText": "우리 예전에 상한 계란을 던지고 놀았는데...",
+          "AudioPath": "assets/ko-KR/Sebastian/476.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 예전에 상한 계란을 던지고 놀았는데..."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Sebastian",
+          "DialogueText": "루이스 시장님이 그건 금방 막으셨지.",
+          "AudioPath": "assets/ko-KR/Sebastian/477.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "루이스 시장님이 그건 금방 막으셨지."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Sebastian_spouse",
+          "DialogueText": "달걀 사냥 우승하는 거 응원할게. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/478.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Sebastian_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "달걀 사냥 우승하는 거 응원할게."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Sebastian_y2",
+          "DialogueText": "그거 알아? 겨울이 좀 그립기도 해... 좀 더 단순한 계절이랄까.",
+          "AudioPath": "assets/ko-KR/Sebastian/479.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Sebastian_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "그거 알아? 겨울이 좀 그립기도 해... 좀 더 단순한 계절이랄까."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Sebastian",
+          "DialogueText": "으...",
+          "AudioPath": "assets/ko-KR/Sebastian/480.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "으..."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Sebastian_y2",
+          "DialogueText": "내가 원해서 온 건 아냐. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Sebastian/481.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Sebastian_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 원해서 온 건 아냐."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Sebastian_spouse_y2",
+          "DialogueText": "너 아니었으면 난 오늘 여기 오지도 않았어... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/482.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Sebastian_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "너 아니었으면 난 오늘 여기 오지도 않았어..."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Sebastian",
+          "DialogueText": "한 번은 샘이 멸치젓 반키로를 포트럭에 넣었어.",
+          "AudioPath": "assets/ko-KR/Sebastian/483.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "한 번은 샘이 멸치젓 반키로를 포트럭에 넣었어."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Sebastian",
+          "DialogueText": "왜 샘이 마을 봉사활동을 이끄는지 궁금했던 적 없어? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/484.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "왜 샘이 마을 봉사활동을 이끄는지 궁금했던 적 없어?"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Sebastian_spouse",
+          "DialogueText": "좋은 기분을 유지하려고 최선을 다하고 있어...",
+          "AudioPath": "assets/ko-KR/Sebastian/485.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Sebastian_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "좋은 기분을 유지하려고 최선을 다하고 있어..."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Sebastian_y2",
+          "DialogueText": "오, 안녕. 너도 너무 시끄러워서 이쪽으로 온 거야? {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Sebastian/486.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Sebastian_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 안녕. 너도 너무 시끄러워서 이쪽으로 온 거야?"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Sebastian_spouse_y2",
+          "DialogueText": "비 오는 날 내가 여기 서있는 걸 발견했던 날 기억나? {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Sebastian/487.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Sebastian_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "비 오는 날 내가 여기 서있는 걸 발견했던 날 기억나?"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Sebastian_spouse_y2",
+          "DialogueText": "나 혼자만의 자리긴 하지만... 네가 와서 좋았어. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/488.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Sebastian_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "나 혼자만의 자리긴 하지만... 네가 와서 좋았어."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Sebastian",
+          "DialogueText": "저기 뭔가 움직이는 것 같았는데... 무언가 크고 어두운 게.",
+          "AudioPath": "assets/ko-KR/Sebastian/489.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "저기 뭔가 움직이는 것 같았는데... 무언가 크고 어두운 게."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Sebastian",
+          "DialogueText": "그냥 너 겁주려는 거야... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/490.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "그냥 너 겁주려는 거야..."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Sebastian_y2",
+          "DialogueText": "바닷속을 들여다보면, 밑에서 무언가가 너를 올려다보고 있을 수도 있어... {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Sebastian/491.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Sebastian_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "바닷속을 들여다보면, 밑에서 무언가가 너를 올려다보고 있을 수도 있어..."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Sebastian_spouse_y2",
+          "DialogueText": "네가 처음으로 온 달빛 해파리의 축제를 난 기억해.",
+          "AudioPath": "assets/ko-KR/Sebastian/492.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Sebastian_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "네가 처음으로 온 달빛 해파리의 축제를 난 기억해."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Sebastian_spouse_y2",
+          "DialogueText": "몰랐겠지만, 사실 해파리들이 나타났을 때 너를 보고 있었어. 그 푸른 빛에 비친 모습이 너무 아름다웠어... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/493.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Sebastian_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "몰랐겠지만, 사실 해파리들이 나타났을 때 너를 보고 있었어. 그 푸른 빛에 비친 모습이 너무 아름다웠어..."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Sebastian",
+          "DialogueText": "가족이랑 시간을 보내는 건 피곤할 때도 있어.",
+          "AudioPath": "assets/ko-KR/Sebastian/494.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "가족이랑 시간을 보내는 건 피곤할 때도 있어."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Sebastian_spouse",
+          "DialogueText": "안녕, {Farmer_Name}. 보다시피, 난 가족 구성원의 의무를 다하고 있지...",
+          "AudioPath": "assets/ko-KR/Sebastian/495.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Sebastian_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕, . 보다시피, 난 가족 구성원의 의무를 다하고 있지..."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Sebastian_y2",
+          "DialogueText": "가족들이 다 같이 한자리에 모이니 좋긴 하네. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Sebastian/496.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Sebastian_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "가족들이 다 같이 한자리에 모이니 좋긴 하네."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Sebastian_spouse_y2",
+          "DialogueText": "아니야... 고민할 거 없어, 난 선물 같은 게 필요한 게 아니야. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/497.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Sebastian_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "아니야... 고민할 거 없어, 난 선물 같은 게 필요한 게 아니야."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Sebastian_spouse_y2",
+          "DialogueText": "네 옆에서 매일 아침 일어나는 것만으로도 너무 행복한걸... 더 이상 필요한 게 있겠어? {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Sebastian/498.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Sebastian_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "네 옆에서 매일 아침 일어나는 것만으로도 너무 행복한걸... 더 이상 필요한 게 있겠어?"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Sebastian",
+          "DialogueText": "춥냐고? 아냐, 나 추위 안타.",
+          "AudioPath": "assets/ko-KR/Sebastian/499.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "춥냐고? 아냐, 나 추위 안타."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Sebastian_spouse",
+          "DialogueText": "난 걱정하지 말고, 추위를 잘 안 타서...",
+          "AudioPath": "assets/ko-KR/Sebastian/500.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Sebastian_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "난 걱정하지 말고, 추위를 잘 안 타서..."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Sebastian_y2",
+          "DialogueText": "눈이 내린 뒤의 고요함을 감상해 본 적 있어?",
+          "AudioPath": "assets/ko-KR/Sebastian/501.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Sebastian_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "눈이 내린 뒤의 고요함을 감상해 본 적 있어?"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Sebastian_spouse_y2",
+          "DialogueText": "있지, 오늘 대회는 꼭 우승해야 해. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Sebastian/502.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Sebastian_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "있지, 오늘 대회는 꼭 우승해야 해."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Sebastian_spouse_y2",
+          "DialogueText": "어... 그게, 내가 말론하고 작은 내기를 걸었는데... {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/503.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Sebastian_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "어... 그게, 내가 말론하고 작은 내기를 걸었는데..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Sebastian:s0",
+          "DialogueText": "나 이거 진짜 사랑하는데. 어떻게 알았어?",
+          "AudioPath": "assets/ko-KR/Sebastian/504.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Sebastian:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "나 이거 진짜 사랑하는데. 어떻게 알았어?"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Sebastian:s1",
+          "DialogueText": "고마워, 이거 마음에 들어.",
+          "AudioPath": "assets/ko-KR/Sebastian/505.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Sebastian:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "고마워, 이거 마음에 들어."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Sebastian:s2",
+          "DialogueText": "...?",
+          "AudioPath": "assets/ko-KR/Sebastian/506.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Sebastian:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "...?"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Sebastian:s3",
+          "DialogueText": "...이거 너무 싫다.",
+          "AudioPath": "assets/ko-KR/Sebastian/507.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Sebastian:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "...이거 너무 싫다."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Sebastian:s4",
+          "DialogueText": "...고마워.",
+          "AudioPath": "assets/ko-KR/Sebastian/508.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Sebastian:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "...고마워."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Sebastian",
+          "DialogueText": "널 만나기 전에 나는 대부분 시간을 현실을 외면하면서 지냈어... 내가 행복을 찾을 수 있을 거라고 생각 못 했거든.",
+          "AudioPath": "assets/ko-KR/Sebastian/509.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "널 만나기 전에 나는 대부분 시간을 현실을 외면하면서 지냈어... 내가 행복을 찾을 수 있을 거라고 생각 못 했거든."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Sebastian",
+          "DialogueText": "...하지만 세상은 그렇게 어두운 곳이 아니란 걸 네가 보여줬지. {Portrait:Happy}\"/faceDirection Sebastian 3/pause 500/speak Sebastian \"...내가 너를 사랑하는 이유 중 하나야...\"",
+          "AudioPath": "assets/ko-KR/Sebastian/510.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "...하지만 세상은 그렇게 어두운 곳이 아니란 걸 네가 보여줬지.\"/faceDirection Sebastian 3/pause 500/speak Sebastian \"...내가 너를 사랑하는 이유 중 하나야...\""
+        },
+        {
+          "DialogueFrom": "MovieReactions/Sebastian_love_BeforeMovie",
+          "DialogueText": "야. 이 영화 꽤 암울하다고 들었어... 기대하고 있어. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/511.ogg",
+          "TranslationKey": "Strings/MovieReactions:Sebastian_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "야. 이 영화 꽤 암울하다고 들었어... 기대하고 있어."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Sebastian_love_DuringMovie",
+          "DialogueText": "촬영 기술이 수준급이다.",
+          "AudioPath": "assets/ko-KR/Sebastian/512.ogg",
+          "TranslationKey": "Strings/MovieReactions:Sebastian_love_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "촬영 기술이 수준급이다."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Sebastian_love_DuringMovie_2",
+          "DialogueText": "세바스찬이 미소 짓고 있습니다.",
+          "AudioPath": "assets/ko-KR/Sebastian/513.ogg",
+          "TranslationKey": "Strings/MovieReactions:Sebastian_love_DuringMovie_2",
+          "PageIndex": 0,
+          "DisplayPattern": "세바스찬이 미소 짓고 있습니다."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Sebastian_love_AfterMovie",
+          "DialogueText": "최근에 본 최고의 영화다... 특수효과는 어떻게 해낸 걸까? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/514.ogg",
+          "TranslationKey": "Strings/MovieReactions:Sebastian_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "최근에 본 최고의 영화다... 특수효과는 어떻게 해낸 걸까?"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Sebastian_like_BeforeMovie",
+          "DialogueText": "*으쓱*... 포스터는 괜찮아 보이길래, 볼만하겠다 싶었어.",
+          "AudioPath": "assets/ko-KR/Sebastian/515.ogg",
+          "TranslationKey": "Strings/MovieReactions:Sebastian_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "*으쓱*... 포스터는 괜찮아 보이길래, 볼만하겠다 싶었어."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Sebastian_like_AfterMovie",
+          "DialogueText": "막 최고의 영화다, 이런 건 아니었는데 그래도 재밌었어... 초대해줘서 고마워.",
+          "AudioPath": "assets/ko-KR/Sebastian/516.ogg",
+          "TranslationKey": "Strings/MovieReactions:Sebastian_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "막 최고의 영화다, 이런 건 아니었는데 그래도 재밌었어... 초대해줘서 고마워."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Sebastian_dislike_BeforeMovie",
+          "DialogueText": "너무 길지 않았으면 좋겠네...",
+          "AudioPath": "assets/ko-KR/Sebastian/517.ogg",
+          "TranslationKey": "Strings/MovieReactions:Sebastian_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "너무 길지 않았으면 좋겠네..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Sebastian_dislike_AfterMovie",
+          "DialogueText": "이런 영화를 좋아하는 사람들에겐 괜찮은 영화겠지만, 나랑은 좀 안 맞네.",
+          "AudioPath": "assets/ko-KR/Sebastian/518.ogg",
+          "TranslationKey": "Strings/MovieReactions:Sebastian_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "이런 영화를 좋아하는 사람들에겐 괜찮은 영화겠지만, 나랑은 좀 안 맞네."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Sebastian_marriage",
+          "DialogueText": "음, 난 여기 그늘 쪽에 있을게.",
+          "AudioPath": "assets/ko-KR/Sebastian/519.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Sebastian_marriage",
+          "PageIndex": 0,
+          "DisplayPattern": "음, 난 여기 그늘 쪽에 있을게."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Sebastian_marriage",
+          "DialogueText": "나 잘 알잖아... 항상 좀 동굴 같은 환경을 좋아했지. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Sebastian/520.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Sebastian_marriage",
+          "PageIndex": 1,
+          "DisplayPattern": "나 잘 알잖아... 항상 좀 동굴 같은 환경을 좋아했지."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Sebastian",
+          "DialogueText": "안녕. 난 이 새랑 시간 좀 보내고 있어. 나를 좋아하는 것 같아.",
+          "AudioPath": "assets/ko-KR/Sebastian/521.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕. 난 이 새랑 시간 좀 보내고 있어. 나를 좋아하는 것 같아."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Sebastian",
+          "DialogueText": "호수 근처에서 뭐 좀 찾았어.",
+          "AudioPath": "assets/ko-KR/Sebastian/522.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "호수 근처에서 뭐 좀 찾았어."
+        }
+      ]
+    }
+  ]
+}

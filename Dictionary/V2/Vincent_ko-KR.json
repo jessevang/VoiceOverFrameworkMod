@@ -1,0 +1,840 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Vincent.ko-KR",
+      "VoicePackName": "DictionarV2 (Vincent - ko-KR)",
+      "Character": "Vincent",
+      "Language": "ko-KR",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "앗, 처음 보는 사람! 내 이름은 빈센트예요.",
+          "AudioPath": "assets/ko-KR/Vincent/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "앗, 처음 보는 사람! 내 이름은 빈센트예요."
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "엄마가 낯선 사람한테는 말하지 말라고 했지만... 괜찮은 사람인 거 같아요.",
+          "AudioPath": "assets/ko-KR/Vincent/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "엄마가 낯선 사람한테는 말하지 말라고 했지만... 괜찮은 사람인 거 같아요."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "생일선물이에요? 지금 열어도 돼요?",
+          "AudioPath": "assets/ko-KR/Vincent/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "생일선물이에요? 지금 열어도 돼요?"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "오 우와! 딱 가지고 싶던 거예요! 오예오예오예! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Vincent/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptBirthdayGift_Positive",
+          "PageIndex": 1,
+          "DisplayPattern": "오 우와! 딱 가지고 싶던 거예요! 오예오예오예!"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "생일선물이에요? 오... 이건 재밌는 게 아니네요. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "생일선물이에요? 오... 이건 재밌는 게 아니네요."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "우와! 달콤해요! 으음....",
+          "AudioPath": "assets/ko-KR/Vincent/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "우와! 달콤해요! 으음...."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)FrogEgg",
+          "DialogueText": "*철벅* *철벅* ... 으으! 나 이거 가져도 돼요? 가져도 되는 거죠? 이예! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Vincent/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptGift_(TR)FrogEgg",
+          "PageIndex": 0,
+          "DisplayPattern": "*철벅* *철벅* ... 으으! 나 이거 가져도 돼요? 가져도 되는 거죠? 이예!"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "엄마! 나 나가서 놀래요!%noturn",
+          "AudioPath": "assets/ko-KR/Vincent/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "엄마! 나 나가서 놀래요!"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "빈센트가 이끼로 뒤덮여있습니다.",
+          "AudioPath": "assets/ko-KR/Vincent/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "빈센트가 이끼로 뒤덮여있습니다."
+        },
+        {
+          "DialogueFrom": "AcceptGift_Negative_alcohol_item",
+          "DialogueText": "*킁킁*... 이게 뭐예요? 냄새가 끔찍해... 엄마아아!!! {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptGift_Negative_alcohol_item",
+          "PageIndex": 0,
+          "DisplayPattern": "*킁킁*... 이게 뭐예요? 냄새가 끔찍해... 엄마아아!!!"
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "재밌었다! 나도 커서 선장 될래!",
+          "AudioPath": "assets/ko-KR/Vincent/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "재밌었다! 나도 커서 선장 될래!"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "얼른 다시 돌아오고 싶어!",
+          "AudioPath": "assets/ko-KR/Vincent/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "얼른 다시 돌아오고 싶어!"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "나 상어 보고 싶어! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Vincent/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "나 상어 보고 싶어!"
+        },
+        {
+          "DialogueFrom": "married_Sam",
+          "DialogueText": "형 데리고 가지 마요! {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:married_Sam",
+          "PageIndex": 0,
+          "DisplayPattern": "형 데리고 가지 마요!"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "잘 보면 모래 속에서 작은 벌레들이 뛰어오르는 게 보여요. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Vincent/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "잘 보면 모래 속에서 작은 벌레들이 뛰어오르는 게 보여요."
+        },
+        {
+          "DialogueFrom": "reject_869",
+          "DialogueText": "오! 멋져요!",
+          "AudioPath": "assets/ko-KR/Vincent/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:reject_869",
+          "PageIndex": 0,
+          "DisplayPattern": "오! 멋져요!"
+        },
+        {
+          "DialogueFrom": "reject_869",
+          "DialogueText": "엄마가 나 이거 가지고 있으면 안 된다고 할 거예요, 근데... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:reject_869",
+          "PageIndex": 1,
+          "DisplayPattern": "엄마가 나 이거 가지고 있으면 안 된다고 할 거예요, 근데..."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "나 크면 내 형처럼 되고 싶어요! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Vincent/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "나 크면 내 형처럼 되고 싶어요!"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "그럼 안녕히계세요!",
+          "AudioPath": "assets/ko-KR/Vincent/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "그럼 안녕히계세요!"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "아빠가 집에 와서 좋지만... 기억하던 거랑 좀 달라요... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "아빠가 집에 와서 좋지만... 기억하던 거랑 좀 달라요..."
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "아빠는 집에 없어요... 아빠랑 놀고 싶어요. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "아빠는 집에 없어요... 아빠랑 놀고 싶어요."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "*한숨*... 엄마가 오늘은 젤리 더 먹으면 안 된대요. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "*한숨*... 엄마가 오늘은 젤리 더 먹으면 안 된대요."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "아저씨, 비밀 하나 알려줄까요?",
+          "AudioPath": "assets/ko-KR/Vincent/23_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "아저씨, 비밀 하나 알려줄까요?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "아줌마, 비밀 하나 알려줄까요? {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Vincent/24_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 1,
+          "DisplayPattern": "아줌마, 비밀 하나 알려줄까요?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "난 커서 페니 선생님이랑 결혼할 거예요.",
+          "AudioPath": "assets/ko-KR/Vincent/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 2,
+          "DisplayPattern": "난 커서 페니 선생님이랑 결혼할 거예요."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "선생님한테는 얘기하지 마요, 알았죠? {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Vincent/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 3,
+          "DisplayPattern": "선생님한테는 얘기하지 마요, 알았죠?"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "벌레 찾으러 가고 싶은데, 내가 지저분해지면 엄마가 화내요. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Vincent/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "벌레 찾으러 가고 싶은데, 내가 지저분해지면 엄마가 화내요."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "어려운 결정이죠.",
+          "AudioPath": "assets/ko-KR/Vincent/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "어려운 결정이죠."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "배고파... 엄마 어딨어? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "배고파... 엄마 어딨어?"
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "다른 어른들처럼 지루하지 않네요!",
+          "AudioPath": "assets/ko-KR/Vincent/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Thu2",
+          "PageIndex": 0,
+          "DisplayPattern": "다른 어른들처럼 지루하지 않네요!"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "으웩, 끓인 사탕무 먹는 날이야 또... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "으웩, 끓인 사탕무 먹는 날이야 또..."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "$e",
+          "AudioPath": "assets/ko-KR/Vincent/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "어 안돼... 엄마가 밤에 렌틸콩 스프를 만든대요. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "어 안돼... 엄마가 밤에 렌틸콩 스프를 만든대요."
+        },
+        {
+          "DialogueFrom": "Sat_1",
+          "DialogueText": "아빠가 곧 돌아와요!",
+          "AudioPath": "assets/ko-KR/Vincent/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat_1",
+          "PageIndex": 0,
+          "DisplayPattern": "아빠가 곧 돌아와요!"
+        },
+        {
+          "DialogueFrom": "Sat_1",
+          "DialogueText": "장난감 사 왔으면 좋겠다. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Vincent/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat_1",
+          "PageIndex": 1,
+          "DisplayPattern": "장난감 사 왔으면 좋겠다."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "페니 선생님은 매주 새 책을 읽게 시켜요. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "페니 선생님은 매주 새 책을 읽게 시켜요."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "그래도 가끔 내가 고를 수 있게 해줘요!",
+          "AudioPath": "assets/ko-KR/Vincent/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "그래도 가끔 내가 고를 수 있게 해줘요!"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "돌아온 뒤로 아빠 좀 이상해 보여요. 아빠한테 무슨 일이 있었던 걸까? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "돌아온 뒤로 아빠 좀 이상해 보여요. 아빠한테 무슨 일이 있었던 걸까?"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "나랑 이제 안 놀아줘요. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "나랑 이제 안 놀아줘요."
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "아빠가 집에 오긴 할까요... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat8",
+          "PageIndex": 2,
+          "DisplayPattern": "아빠가 집에 오긴 할까요..."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "안녕하세요 아저씨!",
+          "AudioPath": "assets/ko-KR/Vincent/41_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕하세요 아저씨!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "안녕하세요 아줌마.",
+          "AudioPath": "assets/ko-KR/Vincent/42_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "안녕하세요 아줌마.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "{Farmer_Name} 삼촌 안녕!",
+          "AudioPath": "assets/ko-KR/Vincent/43_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun10",
+          "PageIndex": 0,
+          "DisplayPattern": "삼촌 안녕!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "{Farmer_Name} 이모 안녕!",
+          "AudioPath": "assets/ko-KR/Vincent/44_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun10",
+          "PageIndex": 1,
+          "DisplayPattern": "이모 안녕!",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "내가 제일 좋아하는 어른이에요... 엄마한테는 말하지 마요. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Vincent/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun10",
+          "PageIndex": 2,
+          "DisplayPattern": "내가 제일 좋아하는 어른이에요... 엄마한테는 말하지 마요."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s0",
+          "DialogueText": "I'm really excited, Sam!",
+          "AudioPath": "assets/ko-KR/Vincent/46.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm really excited, Sam!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s1",
+          "DialogueText": "OK!",
+          "AudioPath": "assets/ko-KR/Vincent/47.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "OK!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s2",
+          "DialogueText": "Me too!",
+          "AudioPath": "assets/ko-KR/Vincent/48.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Me too!"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184643:s0",
+          "DialogueText": "Does this mean I don't have to do my homework? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Vincent/49.ogg",
+          "TranslationKey": "Events/Town:6184643:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Does this mean I don't have to do my homework?"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184643:s1",
+          "DialogueText": "I've been thinking about cake a lot lately...",
+          "AudioPath": "assets/ko-KR/Vincent/50.ogg",
+          "TranslationKey": "Events/Town:6184643:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been thinking about cake a lot lately..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s0",
+          "DialogueText": "Sam...? {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Vincent/51.ogg",
+          "TranslationKey": "Events/Beach:733330:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Sam...?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s1",
+          "DialogueText": "Is Dad ever going to come home? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/52.ogg",
+          "TranslationKey": "Events/Beach:733330:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Is Dad ever going to come home?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s2",
+          "DialogueText": "But I heard some grown-ups saying that... that all of our troops are getting shot to pieces. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/53.ogg",
+          "TranslationKey": "Events/Beach:733330:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "But I heard some grown-ups saying that... that all of our troops are getting shot to pieces."
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s3",
+          "DialogueText": "Okay!",
+          "AudioPath": "assets/ko-KR/Vincent/54.ogg",
+          "TranslationKey": "Events/Beach:733330:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s0|g=male",
+          "DialogueText": "Mr. {Farmer_Name}, are you going to marry Miss Penny? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/55_male.ogg",
+          "TranslationKey": "Events/Forest:181928:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Mr. , are you going to marry Miss Penny?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s1|g=female",
+          "DialogueText": "Ms. {Farmer_Name}... Um, do you have a boyfriend?",
+          "AudioPath": "assets/ko-KR/Vincent/56_female.ogg",
+          "TranslationKey": "Events/Forest:181928:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ms. ... Um, do you have a boyfriend?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseFarming:s0",
+          "DialogueText": "Um, Farmer {Farmer_Name}? If I eat your veggies will I grow up strong like my big brother Sam?",
+          "AudioPath": "assets/ko-KR/Vincent/57.ogg",
+          "TranslationKey": "Events/Forest:choseFarming:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Um, Farmer ? If I eat your veggies will I grow up strong like my big brother Sam?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseFarming:s1",
+          "DialogueText": "He's so strong, I saw him lift Miss Penny clear off the ground last night when they were climbing into a tree. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Vincent/58.ogg",
+          "TranslationKey": "Events/Forest:choseFarming:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "He's so strong, I saw him lift Miss Penny clear off the ground last night when they were climbing into a tree."
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseAnimals:s0",
+          "DialogueText": "Farmer {Farmer_Name}? Can I put a saddle on one of your cows and ride it into town? I wanna be a real cowboy!",
+          "AudioPath": "assets/ko-KR/Vincent/59.ogg",
+          "TranslationKey": "Events/Forest:choseAnimals:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Farmer ? Can I put a saddle on one of your cows and ride it into town? I wanna be a real cowboy!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseMinerals:s0",
+          "DialogueText": "Farmer {Farmer_Name}? Is it true that goblins live deep in the caves... and that they like to kidnap little girls for their dinner?",
+          "AudioPath": "assets/ko-KR/Vincent/60.ogg",
+          "TranslationKey": "Events/Forest:choseMinerals:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Farmer ? Is it true that goblins live deep in the caves... and that they like to kidnap little girls for their dinner?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s0",
+          "DialogueText": "... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/61.ogg",
+          "TranslationKey": "Events/Forest:318560:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s1",
+          "DialogueText": "Why is it locked? I wanna explore the sewers! {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/62.ogg",
+          "TranslationKey": "Events/Forest:318560:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Why is it locked? I wanna explore the sewers!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s2",
+          "DialogueText": "Professor Gunther? The man who runs the museum? Why do you think he has it? {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Vincent/63.ogg",
+          "TranslationKey": "Events/Forest:318560:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Professor Gunther? The man who runs the museum? Why do you think he has it?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s0|g=male",
+          "DialogueText": "Hiya, mister {Farmer_Name}!",
+          "AudioPath": "assets/ko-KR/Vincent/64_male.ogg",
+          "TranslationKey": "Events/Forest:3910979:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hiya, mister !",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s1|g=female",
+          "DialogueText": "Hiya, miss {Farmer_Name}!",
+          "AudioPath": "assets/ko-KR/Vincent/65_female.ogg",
+          "TranslationKey": "Events/Forest:3910979:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hiya, miss !",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s2",
+          "DialogueText": "Sp..spwing onion. Mom sends me out to pick these sometimes...",
+          "AudioPath": "assets/ko-KR/Vincent/66.ogg",
+          "TranslationKey": "Events/Forest:3910979:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Sp..spwing onion. Mom sends me out to pick these sometimes..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s3",
+          "DialogueText": "You're really nice for a grown-up... so I'm going to show you a secret. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Vincent/67.ogg",
+          "TranslationKey": "Events/Forest:3910979:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "You're really nice for a grown-up... so I'm going to show you a secret."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s4",
+          "DialogueText": "When you see it like this, it looks good, right?",
+          "AudioPath": "assets/ko-KR/Vincent/68.ogg",
+          "TranslationKey": "Events/Forest:3910979:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "When you see it like this, it looks good, right?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s5",
+          "DialogueText": "But if you peel it a little bit...",
+          "AudioPath": "assets/ko-KR/Vincent/69.ogg",
+          "TranslationKey": "Events/Forest:3910979:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "But if you peel it a little bit..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s6",
+          "DialogueText": "...It's full of bugs! {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/70.ogg",
+          "TranslationKey": "Events/Forest:3910979:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "...It's full of bugs!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s7",
+          "DialogueText": "Cool, huh? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Vincent/71.ogg",
+          "TranslationKey": "Events/Forest:3910979:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Cool, huh?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s8",
+          "DialogueText": "Usually I just squash 'em!",
+          "AudioPath": "assets/ko-KR/Vincent/72.ogg",
+          "TranslationKey": "Events/Forest:3910979:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Usually I just squash 'em!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Vincent",
+          "DialogueText": "음메에에!",
+          "AudioPath": "assets/ko-KR/Vincent/73.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "음메에에!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Vincent_y2",
+          "DialogueText": "나 새총 게임 한번 더해봐도 돼요, 아빠?! 제발요? {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Vincent/74.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "나 새총 게임 한번 더해봐도 돼요, 아빠?! 제발요?"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Vincent",
+          "DialogueText": "엄마가 나 미로 못 들어가게 해요. *훌쩍* {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/75.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "엄마가 나 미로 못 들어가게 해요. *훌쩍*"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Vincent_y2",
+          "DialogueText": "미로 끝이에요? 상품 어딨어요? {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Vincent/76.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "미로 끝이에요? 상품 어딨어요?"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Vincent",
+          "DialogueText": "달걀 사냥은 언제 시작해요?! 빨리 시작하고 싶어요!! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Vincent/77.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "달걀 사냥은 언제 시작해요?! 빨리 시작하고 싶어요!!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Vincent_y2",
+          "DialogueText": "큰 계란 속에서 살고 싶어요!",
+          "AudioPath": "assets/ko-KR/Vincent/78.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "큰 계란 속에서 살고 싶어요!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Vincent",
+          "DialogueText": "불공평해... 왜 난 봄꽃 여왕 못하는거야?",
+          "AudioPath": "assets/ko-KR/Vincent/79.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "불공평해... 왜 난 봄꽃 여왕 못하는거야?"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Vincent_y2",
+          "DialogueText": "봄꽃 여왕이 있다면... 봄꽃 왕도 있어야 해! {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Vincent/80.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "봄꽃 여왕이 있다면... 봄꽃 왕도 있어야 해!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Vincent",
+          "DialogueText": "나 심심해...",
+          "AudioPath": "assets/ko-KR/Vincent/81.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "나 심심해..."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Vincent_y2",
+          "DialogueText": "난 왜 웅덩이에서 놀면 안 돼요? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/82.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "난 왜 웅덩이에서 놀면 안 돼요?"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Vincent",
+          "DialogueText": "희귀한 초록 해파리 보고 싶어요!",
+          "AudioPath": "assets/ko-KR/Vincent/83.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "희귀한 초록 해파리 보고 싶어요!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Vincent_y2",
+          "DialogueText": "한번 해파리를 만졌는데 손을 쏘였어요. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/84.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "한번 해파리를 만졌는데 손을 쏘였어요."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Vincent",
+          "DialogueText": "지금 선물 열어봐도 돼요?!",
+          "AudioPath": "assets/ko-KR/Vincent/85.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "지금 선물 열어봐도 돼요?!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Vincent_y2",
+          "DialogueText": "갖고 싶던 장난감 공룡을 받았어요! 봐요! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Vincent/86.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "갖고 싶던 장난감 공룡을 받았어요! 봐요!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Vincent_y2",
+          "DialogueText": "이건 이름이 음... 스-... 스테-... 스테고소나우루스! ...인 것 같아요. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Vincent/87.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Vincent_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "이건 이름이 음... 스-... 스테-... 스테고소나우루스! ...인 것 같아요."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Vincent",
+          "DialogueText": "저 아래 엄청 큰 물고기를 봤어요!",
+          "AudioPath": "assets/ko-KR/Vincent/88.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "저 아래 엄청 큰 물고기를 봤어요!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Vincent_y2",
+          "DialogueText": "형이 눈사람 만드는 거 도와주고 있어요! {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Vincent/89.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "형이 눈사람 만드는 거 도와주고 있어요!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s0",
+          "DialogueText": "우와, 감사합니다! 이거 아주 멋져요!",
+          "AudioPath": "assets/ko-KR/Vincent/90.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "우와, 감사합니다! 이거 아주 멋져요!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s1",
+          "DialogueText": "나 주는 거예요? 우와, 고마워요!",
+          "AudioPath": "assets/ko-KR/Vincent/91.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "나 주는 거예요? 우와, 고마워요!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s2",
+          "DialogueText": "이거 별로 재미없어요... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/92.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "이거 별로 재미없어요..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s3",
+          "DialogueText": "우웩, 이거 뭐예요? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/93.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "우웩, 이거 뭐예요?"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s4",
+          "DialogueText": "고마워요!",
+          "AudioPath": "assets/ko-KR/Vincent/94.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "고마워요!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_love_BeforeMovie",
+          "DialogueText": "신나요! 엄마가 사탕도 먹어도 된다고 했어요! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Vincent/95.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "신나요! 엄마가 사탕도 먹어도 된다고 했어요!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_love_DuringMovie",
+          "DialogueText": "빈센트는 정말 신났습니다!",
+          "AudioPath": "assets/ko-KR/Vincent/96.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_love_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "빈센트는 정말 신났습니다!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_love_AfterMovie",
+          "DialogueText": "재밌었어요! 또 보고 싶어요! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Vincent/97.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "재밌었어요! 또 보고 싶어요!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_dislike_BeforeMovie",
+          "DialogueText": "하... 하지만... 이거 어른들 보는 영화 아니에요? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/98.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "하... 하지만... 이거 어른들 보는 영화 아니에요?"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_dislike_DuringMovie",
+          "DialogueText": "빈센트가 자리에서 꼼지락거립니다.",
+          "AudioPath": "assets/ko-KR/Vincent/99.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_dislike_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "빈센트가 자리에서 꼼지락거립니다."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_dislike_AfterMovie",
+          "DialogueText": "재미없었어요... 무슨 이야기인지 모르겠어요. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Vincent/100.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "재미없었어요... 무슨 이야기인지 모르겠어요."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Vincent",
+          "DialogueText": "엄마, 심심해요!",
+          "AudioPath": "assets/ko-KR/Vincent/101.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "엄마, 심심해요!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Vincent",
+          "DialogueText": "안녕하세요! 어... 물건을 찾았어요. 살래요!?",
+          "AudioPath": "assets/ko-KR/Vincent/102.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕하세요! 어... 물건을 찾았어요. 살래요!?"
+        }
+      ]
+    }
+  ]
+}

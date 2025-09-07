@@ -1,0 +1,1823 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Pierre.fr-FR",
+      "VoicePackName": "DictionarV2 (Pierre - fr-FR)",
+      "Character": "Pierre",
+      "Language": "fr-FR",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Bonjour, M. {Farmer_Name}, le nouvel agriculteur ! Je m’appelle Pierre, propriétaire du magasin général.",
+          "AudioPath": "assets/fr-FR/Pierre/1_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "Bonjour, M. , le nouvel agriculteur ! Je m’appelle Pierre, propriétaire du magasin général.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Bonjour, Mme {Farmer_Name}, la nouvelle agricultrice ! Je m’appelle Pierre, propriétaire du magasin général.",
+          "AudioPath": "assets/fr-FR/Pierre/2_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "Bonjour, Mme , la nouvelle agricultrice ! Je m’appelle Pierre, propriétaire du magasin général.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Si tu cherches des graines, mon magasin est l’endroit qu’il te faut. Je t’achèterai aussi tes produits à un bon prix !",
+          "AudioPath": "assets/fr-FR/Pierre/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 2,
+          "DisplayPattern": "Si tu cherches des graines, mon magasin est l’endroit qu’il te faut. Je t’achèterai aussi tes produits à un bon prix !"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Un peu d’agriculture pourrait donner une nouvelle vie à l’économie locale !",
+          "AudioPath": "assets/fr-FR/Pierre/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Introduction",
+          "PageIndex": 3,
+          "DisplayPattern": "Un peu d’agriculture pourrait donner une nouvelle vie à l’économie locale !"
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneday",
+          "DialogueText": "Comment puis-je rivaliser avec Joja ? {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "Comment puis-je rivaliser avec Joja ?"
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneday",
+          "DialogueText": "Leurs poches sont si profondes qu’ils peuvent se contenter de vendre à perte jusqu’à ce que les petits commerçants comme moi fassent faillite... Et puis ils augmenteront leurs prix ! {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "Leurs poches sont si profondes qu’ils peuvent se contenter de vendre à perte jusqu’à ce que les petits commerçants comme moi fassent faillite... Et puis ils augmenteront leurs prix !"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Wouah, je n’arrive pas à croire que tu m’aies donné ça. Ça a dû te coûter une fortune ! Merci beaucoup !",
+          "AudioPath": "assets/fr-FR/Pierre/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Wouah, je n’arrive pas à croire que tu m’aies donné ça. Ça a dû te coûter une fortune ! Merci beaucoup !"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)Book_PriceCatalogue",
+          "DialogueText": "Saisissant ! Fascinant ! Ce livre est parfait pour moi ! {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:AcceptGift_(O)Book_PriceCatalogue",
+          "PageIndex": 0,
+          "DisplayPattern": "Saisissant ! Fascinant ! Ce livre est parfait pour moi !"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Haaaaa, pas de clients ! Encore un peu plus de cette pluie \"verte\" et mon registre sera dans le \"rouge\" ! {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "Haaaaa, pas de clients ! Encore un peu plus de cette pluie \"verte\" et mon registre sera dans le \"rouge\" !"
+        },
+        {
+          "DialogueFrom": "GreenRainFinished",
+          "DialogueText": "Je suis content que les choses soient revenues à la normale. Il semblerait que la situation a été exagérée... comme tout le reste.",
+          "AudioPath": "assets/fr-FR/Pierre/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRainFinished",
+          "PageIndex": 0,
+          "DisplayPattern": "Je suis content que les choses soient revenues à la normale. Il semblerait que la situation a été exagérée... comme tout le reste."
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Content de te voir, {Farmer_Name}. Quel mal peut bien faire une petite pluie toxique quand on a des graines à acheter ? {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Content de te voir, . Quel mal peut bien faire une petite pluie toxique quand on a des graines à acheter ?"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Cette pluie semble tout à fait inoffensive.",
+          "AudioPath": "assets/fr-FR/Pierre/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:GreenRain_2",
+          "PageIndex": 1,
+          "DisplayPattern": "Cette pluie semble tout à fait inoffensive."
+        },
+        {
+          "DialogueFrom": "eventSeen_4",
+          "DialogueText": "Je comprends qu’Abigaïl traverse une phase de rébellion...",
+          "AudioPath": "assets/fr-FR/Pierre/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_4",
+          "PageIndex": 0,
+          "DisplayPattern": "Je comprends qu’Abigaïl traverse une phase de rébellion..."
+        },
+        {
+          "DialogueFrom": "eventSeen_4",
+          "DialogueText": "Elle grandira rapidement quand elle devra faire son premier paiement hypothécaire ! {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_4",
+          "PageIndex": 1,
+          "DisplayPattern": "Elle grandira rapidement quand elle devra faire son premier paiement hypothécaire !"
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneweek",
+          "DialogueText": "Je suis déterminé à garder mon magasin ouvert jusqu’au bout. {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "Je suis déterminé à garder mon magasin ouvert jusqu’au bout."
+        },
+        {
+          "DialogueFrom": "eventSeen_3102768_memory_oneweek",
+          "DialogueText": "Morris et ses acolytes devront me trainer dehors, à coups de pied et de cris ! {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:eventSeen_3102768_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "Morris et ses acolytes devront me trainer dehors, à coups de pied et de cris !"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Je perds beaucoup d’argent si je ne suis pas à la boutique... {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Je perds beaucoup d’argent si je ne suis pas à la boutique..."
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Mais, tu sais quoi ? Ça vaut le coup.",
+          "AudioPath": "assets/fr-FR/Pierre/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort",
+          "PageIndex": 1,
+          "DisplayPattern": "Mais, tu sais quoi ? Ça vaut le coup."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Mmm... cette odeur salée de la mer me donne envie de manger des sashimis.",
+          "AudioPath": "assets/fr-FR/Pierre/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "Mmm... cette odeur salée de la mer me donne envie de manger des sashimis."
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "Laisse les enfants jouer au soleil. Je vais m’asseoir sur cette chaise.",
+          "AudioPath": "assets/fr-FR/Pierre/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "Laisse les enfants jouer au soleil. Je vais m’asseoir sur cette chaise."
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "Boisson après boisson... Gus doit ce faire beaucoup d’argent !",
+          "AudioPath": "assets/fr-FR/Pierre/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "Boisson après boisson... Gus doit ce faire beaucoup d’argent !"
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "Maintenant que tu as deux revenus, j’imagine que tu vas acheter deux fois plus de graines, n’est-ce pas ? {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married",
+          "PageIndex": 0,
+          "DisplayPattern": "Maintenant que tu as deux revenus, j’imagine que tu vas acheter deux fois plus de graines, n’est-ce pas ?"
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "Je plaisante bien sûr... *soupir*...",
+          "AudioPath": "assets/fr-FR/Pierre/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married",
+          "PageIndex": 1,
+          "DisplayPattern": "Je plaisante bien sûr... *soupir*..."
+        },
+        {
+          "DialogueFrom": "married_Abigail_memory_oneday",
+          "DialogueText": "Bien le bonjour, heu... mon fils ? {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/24_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married_Abigail_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "Bien le bonjour, heu... mon fils ?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "married_Abigail_memory_oneday",
+          "DialogueText": "Bien le bonjour, heu... ma fille ? {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/25_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:married_Abigail_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "Bien le bonjour, heu... ma fille ?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "cc_Complete",
+          "DialogueText": "C’est un rêve qui devient réalité ! Tu ne peux pas imaginer le stress que me causait ce Marché Joja.",
+          "AudioPath": "assets/fr-FR/Pierre/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:cc_Complete",
+          "PageIndex": 0,
+          "DisplayPattern": "C’est un rêve qui devient réalité ! Tu ne peux pas imaginer le stress que me causait ce Marché Joja."
+        },
+        {
+          "DialogueFrom": "cc_Complete",
+          "DialogueText": "Pour une petite ville comme celle-ci, un seul magasin suffit ! Il y a trop de pression sociale pour que j’augmente beaucoup mes prix de toute façon.",
+          "AudioPath": "assets/fr-FR/Pierre/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:cc_Complete",
+          "PageIndex": 1,
+          "DisplayPattern": "Pour une petite ville comme celle-ci, un seul magasin suffit ! Il y a trop de pression sociale pour que j’augmente beaucoup mes prix de toute façon."
+        },
+        {
+          "DialogueFrom": "joja_Begin",
+          "DialogueText": "C’est un triste jour pour Pélican Ville... Plus Joja devient populaire, plus je risque de mettre la clé sous la porte. Je vais peut-être devoir vendre mon magasin un de ces jours... {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:joja_Begin",
+          "PageIndex": 0,
+          "DisplayPattern": "C’est un triste jour pour Pélican Ville... Plus Joja devient populaire, plus je risque de mettre la clé sous la porte. Je vais peut-être devoir vendre mon magasin un de ces jours..."
+        },
+        {
+          "DialogueFrom": "MovieInvitation",
+          "DialogueText": "Hé, c’est une bonne idée... Ça me fera du bien de sortir un peu de derrière le comptoir. Je te rejoins là-bas !",
+          "AudioPath": "assets/fr-FR/Pierre/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:MovieInvitation",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, c’est une bonne idée... Ça me fera du bien de sortir un peu de derrière le comptoir. Je te rejoins là-bas !"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Bienvenue ! Si tu cherches des graines, tu es au bon endroit !",
+          "AudioPath": "assets/fr-FR/Pierre/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Bienvenue ! Si tu cherches des graines, tu es au bon endroit !"
+        },
+        {
+          "DialogueFrom": "Mon_inlaw_Abigail",
+          "DialogueText": "Bonjour, euh... mon fils ? {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/31_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon_inlaw_Abigail",
+          "PageIndex": 0,
+          "DisplayPattern": "Bonjour, euh... mon fils ?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Mon_inlaw_Abigail",
+          "DialogueText": "Bonjour, euh... ma fille ? {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/32_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon_inlaw_Abigail",
+          "PageIndex": 1,
+          "DisplayPattern": "Bonjour, euh... ma fille ?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Bonjour, {Farmer_Name}. Besoin de graines ou de jeunes pousses d’arbres fruitiers ?",
+          "AudioPath": "assets/fr-FR/Pierre/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "Bonjour, . Besoin de graines ou de jeunes pousses d’arbres fruitiers ?"
+        },
+        {
+          "DialogueFrom": "Mon4_inlaw_Abigail",
+          "DialogueText": "Bonjour, {Farmer_Name}. Comment va Abigail ? La boutique n’est plus la même sans elle...",
+          "AudioPath": "assets/fr-FR/Pierre/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Mon4_inlaw_Abigail",
+          "PageIndex": 0,
+          "DisplayPattern": "Bonjour, . Comment va Abigail ? La boutique n’est plus la même sans elle..."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Parfois, je reçois de nouveaux produits, alors pense à passer de temps en temps.",
+          "AudioPath": "assets/fr-FR/Pierre/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Parfois, je reçois de nouveaux produits, alors pense à passer de temps en temps."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Tenir un magasin, c’est beaucoup de travail. {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Tenir un magasin, c’est beaucoup de travail."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Tu sais, j’étais un très bon boxeur avant... mon crochet du droit était légendaire ! {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "Tu sais, j’étais un très bon boxeur avant... mon crochet du droit était légendaire !"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "C’est mon jour de congé aujourd’hui.",
+          "AudioPath": "assets/fr-FR/Pierre/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "C’est mon jour de congé aujourd’hui."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Mmm... qu’est-ce que je vais bien pouvoir faire... {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Mmm... qu’est-ce que je vais bien pouvoir faire..."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Si tu trouves des produits sauvages, je te les achèterai à un prix raisonnable.",
+          "AudioPath": "assets/fr-FR/Pierre/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "Si tu trouves des produits sauvages, je te les achèterai à un prix raisonnable."
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "# {Portrait:Happy} pierre1",
+          "AudioPath": "assets/fr-FR/Pierre/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierre1"
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "*Soupir*... Peu importe comment marchent les affaires, ça ne suffit jamais à satisfaire mon désir de réussite. Qu’est-ce qui ne va pas ? Peut-être que je suis juste un peu lasse de la vie domestique. {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed4",
+          "PageIndex": 1,
+          "DisplayPattern": "*Soupir*... Peu importe comment marchent les affaires, ça ne suffit jamais à satisfaire mon désir de réussite. Qu’est-ce qui ne va pas ? Peut-être que je suis juste un peu lasse de la vie domestique."
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "Quand j’étais plus jeune, j’avais toujours quelque chose d’intéressant à faire... maintenant, je ne sais pas quoi faire quand je ne travail pas. {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed4",
+          "PageIndex": 2,
+          "DisplayPattern": "Quand j’étais plus jeune, j’avais toujours quelque chose d’intéressant à faire... maintenant, je ne sais pas quoi faire quand je ne travail pas."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Je serais heureux d’acheter tout ce que tu produis.",
+          "AudioPath": "assets/fr-FR/Pierre/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Je serais heureux d’acheter tout ce que tu produis."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Je te paierai un bon prix, bien sûr !",
+          "AudioPath": "assets/fr-FR/Pierre/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Je te paierai un bon prix, bien sûr !"
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "J’apprécie vraiment de faire affaire avec toi, Mr {Farmer_Name}. C’est de plus en plus difficile de faire un bénéfice correct en ce moment.",
+          "AudioPath": "assets/fr-FR/Pierre/46_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu2",
+          "PageIndex": 0,
+          "DisplayPattern": "J’apprécie vraiment de faire affaire avec toi, Mr . C’est de plus en plus difficile de faire un bénéfice correct en ce moment.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "J’apprécie vraiment de faire affaire avec toi, madame {Farmer_Name}. C’est de plus en plus difficile de faire un bénéfice correct en ce moment.",
+          "AudioPath": "assets/fr-FR/Pierre/47_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu2",
+          "PageIndex": 1,
+          "DisplayPattern": "J’apprécie vraiment de faire affaire avec toi, madame . C’est de plus en plus difficile de faire un bénéfice correct en ce moment.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "# {Portrait:Happy} pierre2",
+          "AudioPath": "assets/fr-FR/Pierre/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu8",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierre2"
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "Est-ce qu’Abigail me ressemble ? Ne le dis pas à ma femme, mais parfois je me demande si je suis vraiment son père.$k {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu8",
+          "PageIndex": 1,
+          "DisplayPattern": "Est-ce qu’Abigail me ressemble ? Ne le dis pas à ma femme, mais parfois je me demande si je suis vraiment son père."
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "Ne le dis pas à ma femme, mais je n’aime pas cuisiner.",
+          "AudioPath": "assets/fr-FR/Pierre/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu8",
+          "PageIndex": 2,
+          "DisplayPattern": "Ne le dis pas à ma femme, mais je n’aime pas cuisiner."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "# {Portrait:Happy} pierreJoja",
+          "AudioPath": "assets/fr-FR/Pierre/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreJoja"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Les affaires tournent au ralenti depuis que Joja s’est installée au village. C’est difficile de rivaliser contre eux.$k {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "Les affaires tournent au ralenti depuis que Joja s’est installée au village. C’est difficile de rivaliser contre eux."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Bonjour. Est-ce que ta ferme se porte bien ?",
+          "AudioPath": "assets/fr-FR/Pierre/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "Bonjour. Est-ce que ta ferme se porte bien ?"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Peut-être que certaines de mes graines pourront t’aider.",
+          "AudioPath": "assets/fr-FR/Pierre/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fri",
+          "PageIndex": 3,
+          "DisplayPattern": "Peut-être que certaines de mes graines pourront t’aider."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Si tu trouves des produits sauvages, je te les achèterai à un prix raisonnable.",
+          "AudioPath": "assets/fr-FR/Pierre/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Si tu trouves des produits sauvages, je te les achèterai à un prix raisonnable."
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Je vais te dire un secret. Parfois, quand le magasin est vide, je pratique ma voix d’opéra en chantant derrière le comptoir. {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "Je vais te dire un secret. Parfois, quand le magasin est vide, je pratique ma voix d’opéra en chantant derrière le comptoir."
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Ne le dis à personne.",
+          "AudioPath": "assets/fr-FR/Pierre/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "Ne le dis à personne."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "# {Portrait:Happy} pierreBlue",
+          "AudioPath": "assets/fr-FR/Pierre/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreBlue"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "*Soupir*... J’ai le blues de rester derrière le comptoir...$k {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "*Soupir*... J’ai le blues de rester derrière le comptoir..."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "J’aimerais pouvoir me promener, mais je ne peux pas laisser le magasin sans surveillance.",
+          "AudioPath": "assets/fr-FR/Pierre/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 2,
+          "DisplayPattern": "J’aimerais pouvoir me promener, mais je ne peux pas laisser le magasin sans surveillance."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "J’ai entendu dire que les fleurs étaient en pleine floraison et que l’air sentait bon... {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Sun",
+          "PageIndex": 3,
+          "DisplayPattern": "J’ai entendu dire que les fleurs étaient en pleine floraison et que l’air sentait bon..."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "Un jour, je vais ouvrir un nouveau magasin dans la grande ville et faire un malheur.",
+          "AudioPath": "assets/fr-FR/Pierre/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "Un jour, je vais ouvrir un nouveau magasin dans la grande ville et faire un malheur."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "Malheureusement, les affaires sont si lentes que j’ai du mal à économiser de l’argent... {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed6",
+          "PageIndex": 1,
+          "DisplayPattern": "Malheureusement, les affaires sont si lentes que j’ai du mal à économiser de l’argent..."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "Les affaires vont plutôt bien depuis que le Marché Joja a fermé.",
+          "AudioPath": "assets/fr-FR/Pierre/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Wed6",
+          "PageIndex": 2,
+          "DisplayPattern": "Les affaires vont plutôt bien depuis que le Marché Joja a fermé."
+        },
+        {
+          "DialogueFrom": "Thu4",
+          "DialogueText": "Salut, {Farmer_Name}. De tous mes clients, tu es le numéro 1 !",
+          "AudioPath": "assets/fr-FR/Pierre/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Thu4",
+          "PageIndex": 0,
+          "DisplayPattern": "Salut, . De tous mes clients, tu es le numéro 1 !"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "J’ai des graines d’été disponibles ! Tu devrais faire des stocks.",
+          "AudioPath": "assets/fr-FR/Pierre/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "J’ai des graines d’été disponibles ! Tu devrais faire des stocks."
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "Je suis ravi d’avoir un jour de repos.",
+          "AudioPath": "assets/fr-FR/Pierre/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Je suis ravi d’avoir un jour de repos."
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "Maintenant que Joja est parti, je me sens responsable de garder le magasin ouvert sept jours sur sept. Les gens ont besoin de provisions !",
+          "AudioPath": "assets/fr-FR/Pierre/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Maintenant que Joja est parti, je me sens responsable de garder le magasin ouvert sept jours sur sept. Les gens ont besoin de provisions !"
+        },
+        {
+          "DialogueFrom": "summer_Wed2",
+          "DialogueText": "La gestion du magasin est l’une des choses les plus importantes de ma vie, mais parfois, moi aussi j’ai besoin d’un jour de repos...",
+          "AudioPath": "assets/fr-FR/Pierre/69.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed2",
+          "PageIndex": 0,
+          "DisplayPattern": "La gestion du magasin est l’une des choses les plus importantes de ma vie, mais parfois, moi aussi j’ai besoin d’un jour de repos..."
+        },
+        {
+          "DialogueFrom": "summer_Wed2",
+          "DialogueText": "Maintenant que Joja n’est plus là, je me sens responsable de garder le magasin ouvert sept jours sur sept. Les gens ont besoin de provisions !",
+          "AudioPath": "assets/fr-FR/Pierre/70.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Wed2",
+          "PageIndex": 1,
+          "DisplayPattern": "Maintenant que Joja n’est plus là, je me sens responsable de garder le magasin ouvert sept jours sur sept. Les gens ont besoin de provisions !"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "Tout le monde profite du beau temps au lieu de faire les magasins... *Soupir*",
+          "AudioPath": "assets/fr-FR/Pierre/71.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Tout le monde profite du beau temps au lieu de faire les magasins... *Soupir*"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "Oh, bonjour. Est-ce que la qualité de mes graines d’été te convient ?",
+          "AudioPath": "assets/fr-FR/Pierre/72.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, bonjour. Est-ce que la qualité de mes graines d’été te convient ?"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "L’été est la période idéale pour manger une salade rafraîchissante, tu ne trouves pas ?",
+          "AudioPath": "assets/fr-FR/Pierre/73.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "L’été est la période idéale pour manger une salade rafraîchissante, tu ne trouves pas ?"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "Il fait tellement chaud ici.",
+          "AudioPath": "assets/fr-FR/Pierre/74.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:summer_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Il fait tellement chaud ici."
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "Ce n’est pas possible de faire pousser des récoltes pendant l’hiver... donc je n’ai pas de graines à vendre.",
+          "AudioPath": "assets/fr-FR/Pierre/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Ce n’est pas possible de faire pousser des récoltes pendant l’hiver... donc je n’ai pas de graines à vendre."
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "Ça va vraiment réduire nos profits.",
+          "AudioPath": "assets/fr-FR/Pierre/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "Ça va vraiment réduire nos profits."
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "Enfin... un jour de repos.",
+          "AudioPath": "assets/fr-FR/Pierre/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Enfin... un jour de repos."
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "Maintenant que Joja est parti, je me sens responsable de garder le magasin ouvert sept jours sur sept. Les gens ont besoin de provisions !",
+          "AudioPath": "assets/fr-FR/Pierre/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Maintenant que Joja est parti, je me sens responsable de garder le magasin ouvert sept jours sur sept. Les gens ont besoin de provisions !"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "# {Portrait:Happy} pierreDin",
+          "AudioPath": "assets/fr-FR/Pierre/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreDin"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "Ce soir, je fais une surprise à Caroline, avec un bon dîner et une bonne bouteille de vin de Stardew. Ne le dis à personne !$k",
+          "AudioPath": "assets/fr-FR/Pierre/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Ce soir, je fais une surprise à Caroline, avec un bon dîner et une bonne bouteille de vin de Stardew. Ne le dis à personne !"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "Bonjour. Envie de faire un peu de shopping ?",
+          "AudioPath": "assets/fr-FR/Pierre/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "Bonjour. Envie de faire un peu de shopping ?"
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "Je m’occupe principalement de produits comestibles, alors si tu as des minerais ou du bois, tu devrais aller les vendre à quelqu’un d’autre.",
+          "AudioPath": "assets/fr-FR/Pierre/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Je m’occupe principalement de produits comestibles, alors si tu as des minerais ou du bois, tu devrais aller les vendre à quelqu’un d’autre."
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "C’est moi ou il y a un courant d’air froid, ici ?",
+          "AudioPath": "assets/fr-FR/Pierre/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "C’est moi ou il y a un courant d’air froid, ici ?"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "Si je n’avais pas ce magasin à gérer, je profiterais de l’air frais.",
+          "AudioPath": "assets/fr-FR/Pierre/84.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Si je n’avais pas ce magasin à gérer, je profiterais de l’air frais."
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "J’aimerais bien faire une bataille de boules de neige.",
+          "AudioPath": "assets/fr-FR/Pierre/85.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:winter_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "J’aimerais bien faire une bataille de boules de neige."
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "Les graines d’automne sont là ! Les récoltes ne poussent pas en hiver, c’est ta dernière occasion jusqu’au printemps.",
+          "AudioPath": "assets/fr-FR/Pierre/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Les graines d’automne sont là ! Les récoltes ne poussent pas en hiver, c’est ta dernière occasion jusqu’au printemps."
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "Tu devrais faire des stocks.",
+          "AudioPath": "assets/fr-FR/Pierre/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "Tu devrais faire des stocks."
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "Il commence à faire froid dehors...",
+          "AudioPath": "assets/fr-FR/Pierre/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Il commence à faire froid dehors..."
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "Ça veut dire que plus de gens vont venir dans le magasin pour se réchauffer... hé hé.",
+          "AudioPath": "assets/fr-FR/Pierre/89.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Ça veut dire que plus de gens vont venir dans le magasin pour se réchauffer... hé hé."
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "# {Portrait:Happy} pierreMEGA",
+          "AudioPath": "assets/fr-FR/Pierre/90.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "# pierreMEGA"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "Mon rêve serait d’ouvrir de nouveaux magasins jusqu’à ce que je devienne très riche. Hé hé hé.$k",
+          "AudioPath": "assets/fr-FR/Pierre/91.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "Mon rêve serait d’ouvrir de nouveaux magasins jusqu’à ce que je devienne très riche. Hé hé hé."
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "Bonjour. Comment va ta ferme ?",
+          "AudioPath": "assets/fr-FR/Pierre/92.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "Bonjour. Comment va ta ferme ?"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "Peut-être que certaines de mes graines pourront t’aider. {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/93.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Fri",
+          "PageIndex": 3,
+          "DisplayPattern": "Peut-être que certaines de mes graines pourront t’aider."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "Je serais heureux d’acheter les produits de ta ferme.",
+          "AudioPath": "assets/fr-FR/Pierre/94.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Je serais heureux d’acheter les produits de ta ferme."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "Oui, je les revends avec un bénéfice... mais c’est l’avantage d’être propriétaire d’un magasin.",
+          "AudioPath": "assets/fr-FR/Pierre/95.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Oui, je les revends avec un bénéfice... mais c’est l’avantage d’être propriétaire d’un magasin."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "Que ça ne te donne pas des idées...",
+          "AudioPath": "assets/fr-FR/Pierre/96.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "Que ça ne te donne pas des idées..."
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "Si je n’avais pas ce magasin à gérer, je profiterais de l’air frais.",
+          "AudioPath": "assets/fr-FR/Pierre/97.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Si je n’avais pas ce magasin à gérer, je profiterais de l’air frais."
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "Les feuilles sont superbes et les champignons poussent de partout.",
+          "AudioPath": "assets/fr-FR/Pierre/98.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:fall_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Les feuilles sont superbes et les champignons poussent de partout."
+        },
+        {
+          "DialogueFrom": "Event_naga1",
+          "DialogueText": "Merci, j’apprécie beaucoup. Oublie ce que tu as vu, d’accord ? {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/99.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga1",
+          "PageIndex": 0,
+          "DisplayPattern": "Merci, j’apprécie beaucoup. Oublie ce que tu as vu, d’accord ?"
+        },
+        {
+          "DialogueFrom": "Event_naga1",
+          "DialogueText": "... Et j’oublierai que tu fouines dans ma chambre !",
+          "AudioPath": "assets/fr-FR/Pierre/100.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga1",
+          "PageIndex": 1,
+          "DisplayPattern": "... Et j’oublierai que tu fouines dans ma chambre !"
+        },
+        {
+          "DialogueFrom": "Event_naga2",
+          "DialogueText": "Tu me ferais ça, vraiment ? Tu es horrible. {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/101.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga2",
+          "PageIndex": 0,
+          "DisplayPattern": "Tu me ferais ça, vraiment ? Tu es horrible."
+        },
+        {
+          "DialogueFrom": "Event_naga2",
+          "DialogueText": "Déjà, tu n’as rien à faire dans ma chambre ! Je déteste les voisins qui fourrent leur nez partout. {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Pierre/102.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Event_naga2",
+          "PageIndex": 1,
+          "DisplayPattern": "Déjà, tu n’as rien à faire dans ma chambre ! Je déteste les voisins qui fourrent leur nez partout."
+        },
+        {
+          "DialogueFrom": "Fair_Judging",
+          "DialogueText": "Hé, bonne chance.",
+          "AudioPath": "assets/fr-FR/Pierre/103.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judging",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, bonne chance."
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerLost",
+          "DialogueText": "C’est génial d’être en tête de classement ! Ha ! {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/104.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judged_PlayerLost",
+          "PageIndex": 0,
+          "DisplayPattern": "C’est génial d’être en tête de classement ! Ha !"
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerLost",
+          "DialogueText": "Bel effort.",
+          "AudioPath": "assets/fr-FR/Pierre/105.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judged_PlayerLost",
+          "PageIndex": 1,
+          "DisplayPattern": "Bel effort."
+        },
+        {
+          "DialogueFrom": "Fair_Judged_PlayerWon",
+          "DialogueText": "Je n’arrive pas à croire que j’ai perdu... {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/106.ogg",
+          "TranslationKey": "Characters/Dialogue/Pierre:Fair_Judged_PlayerWon",
+          "PageIndex": 0,
+          "DisplayPattern": "Je n’arrive pas à croire que j’ai perdu..."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "La plupart des gens restent à l’intérieur avec un temps comme celui-ci. Ce n’est pas bon pour les affaires. {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/107.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "La plupart des gens restent à l’intérieur avec un temps comme celui-ci. Ce n’est pas bon pour les affaires."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s0",
+          "DialogueText": "Hello there, {Farmer_Name}. So! Your first year in Stardew Valley is almost over, huh?",
+          "AudioPath": "assets/fr-FR/Pierre/108.ogg",
+          "TranslationKey": "Events/Farm:102:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hello there, . So! Your first year in Stardew Valley is almost over, huh?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s1",
+          "DialogueText": "If you keep buying seeds from me, you'll be twice as productive next year! {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/109.ogg",
+          "TranslationKey": "Events/Farm:102:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "If you keep buying seeds from me, you'll be twice as productive next year!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s2",
+          "DialogueText": "And I have some exciting news...",
+          "AudioPath": "assets/fr-FR/Pierre/110.ogg",
+          "TranslationKey": "Events/Farm:102:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "And I have some exciting news..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s3",
+          "DialogueText": "I'll be selling new seed varieties in my shop next year! I should have 1 new variety per season.",
+          "AudioPath": "assets/fr-FR/Pierre/111.ogg",
+          "TranslationKey": "Events/Farm:102:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll be selling new seed varieties in my shop next year! I should have 1 new variety per season."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s4",
+          "DialogueText": "...Well, that's all I wanted to say. Have a good one.",
+          "AudioPath": "assets/fr-FR/Pierre/112.ogg",
+          "TranslationKey": "Events/Farm:102:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "...Well, that's all I wanted to say. Have a good one."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s5",
+          "DialogueText": "You know... I wouldn't even bother trying my competitor's seeds. {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Pierre/113.ogg",
+          "TranslationKey": "Events/Farm:102:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "You know... I wouldn't even bother trying my competitor's seeds."
+        },
+        {
+          "DialogueFrom": "Event:Farm/102:s6",
+          "DialogueText": "Pierre's seeds are the *highest* quality seeds you'll find anywhere. That's a promise. {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/114.ogg",
+          "TranslationKey": "Events/Farm:102:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Pierre's seeds are the *highest* quality seeds you'll find anywhere. That's a promise."
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s0",
+          "DialogueText": "Abigail?! {Portrait:Love}",
+          "AudioPath": "assets/fr-FR/Pierre/115.ogg",
+          "TranslationKey": "Events/Town:4:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Abigail?!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s1",
+          "DialogueText": "I've been looking all over for you! Your mother wants you to come home and help with dinner! {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Pierre/116.ogg",
+          "TranslationKey": "Events/Town:4:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been looking all over for you! Your mother wants you to come home and help with dinner!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s2",
+          "DialogueText": "What are you doing in the graveyard, anyway? This is no place for a young lady! {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Pierre/117.ogg",
+          "TranslationKey": "Events/Town:4:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "What are you doing in the graveyard, anyway? This is no place for a young lady!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s3",
+          "DialogueText": "...!",
+          "AudioPath": "assets/fr-FR/Pierre/118.ogg",
+          "TranslationKey": "Events/Town:4:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "...!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s4",
+          "DialogueText": "Come back!",
+          "AudioPath": "assets/fr-FR/Pierre/119.ogg",
+          "TranslationKey": "Events/Town:4:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Come back!"
+        },
+        {
+          "DialogueFrom": "Event:Town/4:s5",
+          "DialogueText": "Okay, my dad won't find us here...",
+          "AudioPath": "assets/fr-FR/Pierre/120.ogg",
+          "TranslationKey": "Events/Town:4:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay, my dad won't find us here..."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s0",
+          "DialogueText": "How does it feel?",
+          "AudioPath": "assets/fr-FR/Pierre/121.ogg",
+          "TranslationKey": "Events/Town:191393:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "How does it feel?"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s1",
+          "DialogueText": "Let's be reasonable.",
+          "AudioPath": "assets/fr-FR/Pierre/122.ogg",
+          "TranslationKey": "Events/Town:191393:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's be reasonable."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s2",
+          "DialogueText": "Let's settle this the old-fashioned way.",
+          "AudioPath": "assets/fr-FR/Pierre/123.ogg",
+          "TranslationKey": "Events/Town:191393:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's settle this the old-fashioned way."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s3",
+          "DialogueText": "No...not this time... {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Pierre/124.ogg",
+          "TranslationKey": "Events/Town:191393:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "No...not this time..."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s4",
+          "DialogueText": "Gather 'round, everyone!",
+          "AudioPath": "assets/fr-FR/Pierre/125.ogg",
+          "TranslationKey": "Events/Town:191393:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Gather 'round, everyone!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s5",
+          "DialogueText": "I remember when I first moved to Pelican Town... This building was active and vibrant.",
+          "AudioPath": "assets/fr-FR/Pierre/126.ogg",
+          "TranslationKey": "Events/Town:191393:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "I remember when I first moved to Pelican Town... This building was active and vibrant."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s6",
+          "DialogueText": "We worked together to make the town a better place. There was a real sense of community.",
+          "AudioPath": "assets/fr-FR/Pierre/127.ogg",
+          "TranslationKey": "Events/Town:191393:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "We worked together to make the town a better place. There was a real sense of community."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s7",
+          "DialogueText": "George, you always used to do the crossword puzzle while sipping coffee in the community kitchen. Remember?",
+          "AudioPath": "assets/fr-FR/Pierre/128.ogg",
+          "TranslationKey": "Events/Town:191393:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "George, you always used to do the crossword puzzle while sipping coffee in the community kitchen. Remember?"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s8",
+          "DialogueText": "Emily, you wove that custom banner for the Stardew Valley Fair.",
+          "AudioPath": "assets/fr-FR/Pierre/129.ogg",
+          "TranslationKey": "Events/Town:191393:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Emily, you wove that custom banner for the Stardew Valley Fair."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s9",
+          "DialogueText": "I remember you working on that for years! {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/130.ogg",
+          "TranslationKey": "Events/Town:191393:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "I remember you working on that for years!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s10",
+          "DialogueText": "Willy!",
+          "AudioPath": "assets/fr-FR/Pierre/131.ogg",
+          "TranslationKey": "Events/Town:191393:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Willy!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s11",
+          "DialogueText": "Remember when your little crab experiment got out of hand? {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/132.ogg",
+          "TranslationKey": "Events/Town:191393:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Remember when your little crab experiment got out of hand?"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s12",
+          "DialogueText": "But Gus saved the day with a brilliant idea... A crab leg feast for the entire valley!",
+          "AudioPath": "assets/fr-FR/Pierre/133.ogg",
+          "TranslationKey": "Events/Town:191393:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "But Gus saved the day with a brilliant idea... A crab leg feast for the entire valley!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s13",
+          "DialogueText": "You see, everyone? Our community is what makes Pelican Town special.",
+          "AudioPath": "assets/fr-FR/Pierre/134.ogg",
+          "TranslationKey": "Events/Town:191393:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "You see, everyone? Our community is what makes Pelican Town special."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s14",
+          "DialogueText": "When JojaMart came to town we lost sight of that. {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/135.ogg",
+          "TranslationKey": "Events/Town:191393:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "When JojaMart came to town we lost sight of that."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s15",
+          "DialogueText": "But now, thanks to {Farmer_Name}, we have a second chance.",
+          "AudioPath": "assets/fr-FR/Pierre/136.ogg",
+          "TranslationKey": "Events/Town:191393:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "But now, thanks to , we have a second chance."
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s16",
+          "DialogueText": "I'm asking that you join me in boycotting JojaMart! We have the power to reclaim our old way of life!",
+          "AudioPath": "assets/fr-FR/Pierre/137.ogg",
+          "TranslationKey": "Events/Town:191393:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm asking that you join me in boycotting JojaMart! We have the power to reclaim our old way of life!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s17",
+          "DialogueText": "Who's with me?",
+          "AudioPath": "assets/fr-FR/Pierre/138.ogg",
+          "TranslationKey": "Events/Town:191393:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "Who's with me?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s0",
+          "DialogueText": "Hey! Who's in the bedroom? {Portrait:Love}",
+          "AudioPath": "assets/fr-FR/Pierre/139.ogg",
+          "TranslationKey": "Events/SeedShop:16:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey! Who's in the bedroom?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s1",
+          "DialogueText": "Wha...? How did you find that?! {Portrait:Love}",
+          "AudioPath": "assets/fr-FR/Pierre/140.ogg",
+          "TranslationKey": "Events/SeedShop:16:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Wha...? How did you find that?!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s2",
+          "DialogueText": "Quick, give it to me! {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Pierre/141.ogg",
+          "TranslationKey": "Events/SeedShop:16:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Quick, give it to me!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s3",
+          "DialogueText": "Promise me you won't tell anyone about this.",
+          "AudioPath": "assets/fr-FR/Pierre/142.ogg",
+          "TranslationKey": "Events/SeedShop:16:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Promise me you won't tell anyone about this."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s4",
+          "DialogueText": "Your secret is safe with me.",
+          "AudioPath": "assets/fr-FR/Pierre/143.ogg",
+          "TranslationKey": "Events/SeedShop:16:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Your secret is safe with me."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s5",
+          "DialogueText": "Your wife deserves to know about this.",
+          "AudioPath": "assets/fr-FR/Pierre/144.ogg",
+          "TranslationKey": "Events/SeedShop:16:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Your wife deserves to know about this."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/16:s6",
+          "DialogueText": "*grumble*...now I have to find a new hiding spot...*grumble* {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Pierre/145.ogg",
+          "TranslationKey": "Events/SeedShop:16:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "*grumble*...now I have to find a new hiding spot...*grumble*"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/3102768:s0",
+          "DialogueText": "Welcome To Pierre's! How can I help you?",
+          "AudioPath": "assets/fr-FR/Pierre/146.ogg",
+          "TranslationKey": "Events/SeedShop:3102768:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Welcome To Pierre's! How can I help you?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/3102768:s1",
+          "DialogueText": "Percent!?!?",
+          "AudioPath": "assets/fr-FR/Pierre/147.ogg",
+          "TranslationKey": "Events/SeedShop:3102768:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Percent!?!?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/3102768:s2",
+          "DialogueText": "But... I can't match those prices! I'd be selling at a loss! {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/148.ogg",
+          "TranslationKey": "Events/SeedShop:3102768:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "But... I can't match those prices! I'd be selling at a loss!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s0",
+          "DialogueText": "Gus, I have just the thing for you...",
+          "AudioPath": "assets/fr-FR/Pierre/149.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Gus, I have just the thing for you..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s1",
+          "DialogueText": "It's a bundle of locally sourced, organic, heirloom veggies...",
+          "AudioPath": "assets/fr-FR/Pierre/150.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a bundle of locally sourced, organic, heirloom veggies..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s2",
+          "DialogueText": "These are hand picked and sorted, to ensure only the very finest in quality and taste.",
+          "AudioPath": "assets/fr-FR/Pierre/151.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "These are hand picked and sorted, to ensure only the very finest in quality and taste."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s3",
+          "DialogueText": "This is a once-in-a-lifetime kind of offer!",
+          "AudioPath": "assets/fr-FR/Pierre/152.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "This is a once-in-a-lifetime kind of offer!"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s4",
+          "DialogueText": "ONLY... *mumble* mumble*",
+          "AudioPath": "assets/fr-FR/Pierre/153.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "ONLY... *mumble* mumble*"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s5",
+          "DialogueText": "Heh... that's right. It really is a bargain, isn't it?",
+          "AudioPath": "assets/fr-FR/Pierre/154.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Heh... that's right. It really is a bargain, isn't it?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s6",
+          "DialogueText": "Wait! How about 10,000g then!? {Portrait:Love}",
+          "AudioPath": "assets/fr-FR/Pierre/155.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Wait! How about 10,000g then!?"
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s7",
+          "DialogueText": "It's a disaster, {Farmer_Name}... {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/156.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a disaster, ..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s8",
+          "DialogueText": "I thought this was a surefire business strategy. {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/157.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I thought this was a surefire business strategy."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s9",
+          "DialogueText": "But it turns out, no one is willing to buy vegetables at a 10x price markup, even if I put the little 'organic' sticker on them. {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/158.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "But it turns out, no one is willing to buy vegetables at a 10x price markup, even if I put the little 'organic' sticker on them."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s10",
+          "DialogueText": "You're right, you can't run a business without taking some risk.",
+          "AudioPath": "assets/fr-FR/Pierre/159.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "You're right, you can't run a business without taking some risk."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s11",
+          "DialogueText": "Hey, I'm not forcing anyone to buy it! If they don't like the price, they can move on. {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Pierre/160.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, I'm not forcing anyone to buy it! If they don't like the price, they can move on."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s12",
+          "DialogueText": "...But, I guess you have a point. If I make all my customers angry, then pretty soon I won't have any customers at all... {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/161.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "...But, I guess you have a point. If I make all my customers angry, then pretty soon I won't have any customers at all..."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s13",
+          "DialogueText": "By the way, {Farmer_Name}... you look like you could really use a veggie dinner tonight.",
+          "AudioPath": "assets/fr-FR/Pierre/162.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "By the way, ... you look like you could really use a veggie dinner tonight."
+        },
+        {
+          "DialogueFrom": "Event:SeedShop/963113:s14",
+          "DialogueText": "What do you say, wanna buy these back for the low, low price of 2,501g?",
+          "AudioPath": "assets/fr-FR/Pierre/163.ogg",
+          "TranslationKey": "Events/SeedShop:963113:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "What do you say, wanna buy these back for the low, low price of 2,501g?"
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s0",
+          "DialogueText": "No... Not this time, Morris. {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Pierre/164.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "No... Not this time, Morris."
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s1",
+          "DialogueText": "I think it's time we settled this once and for all. {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Pierre/165.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I think it's time we settled this once and for all."
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s2",
+          "DialogueText": "If you're too scared to fight me then bring one of your co-workers! Or are all Joja employees such cowards? {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Pierre/166.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "If you're too scared to fight me then bring one of your co-workers! Or are all Joja employees such cowards?"
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s3",
+          "DialogueText": "And the way you throw punches is just like Joja... {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Pierre/167.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "And the way you throw punches is just like Joja..."
+        },
+        {
+          "DialogueFrom": "Event:CommunityCenter/Punch:s4",
+          "DialogueText": "Quantity over quality!",
+          "AudioPath": "assets/fr-FR/Pierre/168.ogg",
+          "TranslationKey": "Events/CommunityCenter:Punch:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Quantity over quality!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Pierre",
+          "DialogueText": "Mon magasin propose les meilleurs produits de toute la vallée. Jette un oeil à mon présentoir et juge par toi-même !",
+          "AudioPath": "assets/fr-FR/Pierre/169.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Mon magasin propose les meilleurs produits de toute la vallée. Jette un oeil à mon présentoir et juge par toi-même !"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Pierre_y2",
+          "DialogueText": "Je suis persuadé que je vais gagner le concours des présentoirs de fermier cette année ! {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/170.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Je suis persuadé que je vais gagner le concours des présentoirs de fermier cette année !"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Pierre",
+          "DialogueText": "???",
+          "AudioPath": "assets/fr-FR/Pierre/171.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "???"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Pierre_y2",
+          "DialogueText": "Ha, c'est {Farmer_Name} ! J'ai toute une sélection de produits ce soir. Jette donc un petit coup d'œil ! {Portrait:Neutral}",
+          "AudioPath": "assets/fr-FR/Pierre/172.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ha, c'est ! J'ai toute une sélection de produits ce soir. Jette donc un petit coup d'œil !"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Pierre",
+          "DialogueText": "Hé ! Comment as-tu fait pour entrer ici ? {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Pierre/173.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé ! Comment as-tu fait pour entrer ici ?"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Pierre",
+          "DialogueText": "Ne touche à rien.",
+          "AudioPath": "assets/fr-FR/Pierre/174.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "Ne touche à rien."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Pierre_y2",
+          "DialogueText": "Je vous vois tenter de faire des négociations secrètes. Ah ! J’admire votre bon sens.",
+          "AudioPath": "assets/fr-FR/Pierre/175.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Je vous vois tenter de faire des négociations secrètes. Ah ! J’admire votre bon sens."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre",
+          "DialogueText": "Quoi ! Comment as-tu fait pour entrer ici ? {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Pierre/176.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Quoi ! Comment as-tu fait pour entrer ici ?"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre",
+          "DialogueText": "Ne touche à rien.",
+          "AudioPath": "assets/fr-FR/Pierre/177.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "Ne touche à rien."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre_y2",
+          "DialogueText": "Hé, tu ne devrais pas être ici ! {Portrait:Unique}",
+          "AudioPath": "assets/fr-FR/Pierre/178.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, tu ne devrais pas être ici !"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre_y2",
+          "DialogueText": "Et bien, si tu restes dans le coin... ça te dérangerait de t'occuper du stand un moment ? Je veux goûter la confiture sucrée et acidulée de Linus.",
+          "AudioPath": "assets/fr-FR/Pierre/179.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Et bien, si tu restes dans le coin... ça te dérangerait de t'occuper du stand un moment ? Je veux goûter la confiture sucrée et acidulée de Linus."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Pierre_y2",
+          "DialogueText": "Je plaisante, je n'aime pas être loin de la caisse enregistreuse... {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/180.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Pierre_y2",
+          "PageIndex": 2,
+          "DisplayPattern": "Je plaisante, je n'aime pas être loin de la caisse enregistreuse..."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre",
+          "DialogueText": "Mmm... peut-être que si j’obtiens les bonnes grâces du gouverneur, il m’accordera une réduction d’impôts pour mon entreprise...",
+          "AudioPath": "assets/fr-FR/Pierre/181.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Mmm... peut-être que si j’obtiens les bonnes grâces du gouverneur, il m’accordera une réduction d’impôts pour mon entreprise..."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre",
+          "DialogueText": "Je me demande s’il aime le vieux whisky ?",
+          "AudioPath": "assets/fr-FR/Pierre/182.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "Je me demande s’il aime le vieux whisky ?"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre",
+          "DialogueText": "Si seulement le maire voulait bien arrêter de parler avec lui toute la journée.",
+          "AudioPath": "assets/fr-FR/Pierre/183.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre",
+          "PageIndex": 2,
+          "DisplayPattern": "Si seulement le maire voulait bien arrêter de parler avec lui toute la journée."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre_y2",
+          "DialogueText": "Au moment où Lewis s’éloigne du gouverneur... C’est le moment pour moi de me présenter... {Portrait:Neutral}",
+          "AudioPath": "assets/fr-FR/Pierre/184.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Au moment où Lewis s’éloigne du gouverneur... C’est le moment pour moi de me présenter..."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre_y2",
+          "DialogueText": "Ha ! Je ne t’avais pas vu. {Portrait:Love}",
+          "AudioPath": "assets/fr-FR/Pierre/185.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Ha ! Je ne t’avais pas vu."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Pierre_y2",
+          "DialogueText": "Si tu veux acheter quelque chose, parle-moi de l’autre côté du comptoir. {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/186.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Pierre_y2",
+          "PageIndex": 2,
+          "DisplayPattern": "Si tu veux acheter quelque chose, parle-moi de l’autre côté du comptoir."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Pierre",
+          "DialogueText": "Pss... Assure-toi de passer demain à la boutique pour récupérer tes graines d’automne !",
+          "AudioPath": "assets/fr-FR/Pierre/187.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Pss... Assure-toi de passer demain à la boutique pour récupérer tes graines d’automne !"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Pierre_y2",
+          "DialogueText": "Bonjour, {Farmer_Name}. N'oublie pas de passer me voir au magasin demain pour acheter tes graines d'automne ! {Portrait:Neutral}",
+          "AudioPath": "assets/fr-FR/Pierre/188.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Bonjour, . N'oublie pas de passer me voir au magasin demain pour acheter tes graines d'automne !"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Pierre",
+          "DialogueText": "Mes chiffres de vente ont été phénoménaux ces derniers temps... grâce à la fête de l’étoile hivernale ! {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/189.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Mes chiffres de vente ont été phénoménaux ces derniers temps... grâce à la fête de l’étoile hivernale !"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Pierre",
+          "DialogueText": "Les fêtes sont bonnes pour les affaires. Je me demande si je ne pourrais pas inventer de nouvelles fêtes...",
+          "AudioPath": "assets/fr-FR/Pierre/190.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "Les fêtes sont bonnes pour les affaires. Je me demande si je ne pourrais pas inventer de nouvelles fêtes..."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Pierre_y2",
+          "DialogueText": "Tu as besoin d'un cadeau de dernière minute ? J'ai tout ce qu'il te faut ! Donne donc un coup d'œil à ma marchandise. {Portrait:Neutral}",
+          "AudioPath": "assets/fr-FR/Pierre/191.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Tu as besoin d'un cadeau de dernière minute ? J'ai tout ce qu'il te faut ! Donne donc un coup d'œil à ma marchandise."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Pierre",
+          "DialogueText": "Cette neige est si froide que je ne sens plus mes doigts ... {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/192.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Cette neige est si froide que je ne sens plus mes doigts ..."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Pierre_y2",
+          "DialogueText": "Notre famille a des pulls de l'étoile hivernale assortis.",
+          "AudioPath": "assets/fr-FR/Pierre/193.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Pierre_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Notre famille a des pulls de l'étoile hivernale assortis."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Pierre_y2",
+          "DialogueText": "Si seulement Abigaïl voulait bien porter le sien... {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/194.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Pierre_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Si seulement Abigaïl voulait bien porter le sien..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s0",
+          "DialogueText": "C'est ce que j'aime par-dessus tout ! Merci !",
+          "AudioPath": "assets/fr-FR/Pierre/195.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "C'est ce que j'aime par-dessus tout ! Merci !"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s1",
+          "DialogueText": "C'est très gentil de ta part. Ça me plaît.",
+          "AudioPath": "assets/fr-FR/Pierre/196.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "C'est très gentil de ta part. Ça me plaît."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s2",
+          "DialogueText": "Ce n'est pas vraiment ce que je préfère...",
+          "AudioPath": "assets/fr-FR/Pierre/197.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ce n'est pas vraiment ce que je préfère..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s3",
+          "DialogueText": "S'il te plaît, ne me rapporte plus jamais de trucs comme ça.",
+          "AudioPath": "assets/fr-FR/Pierre/198.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "S'il te plaît, ne me rapporte plus jamais de trucs comme ça."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Pierre:s4",
+          "DialogueText": "Un cadeau ? Merci !",
+          "AudioPath": "assets/fr-FR/Pierre/199.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Pierre:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Un cadeau ? Merci !"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow",
+          "DialogueText": "Salut, tu te souviens de ce que tu m’as vendu l’autre jour : {2} ? Je l’ai servi à la famille au dîner lors d’une occasion spéciale.",
+          "AudioPath": "assets/fr-FR/Pierre/200.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow",
+          "PageIndex": 0,
+          "DisplayPattern": "Salut, tu te souviens de ce que tu m’as vendu l’autre jour : {2} ? Je l’ai servi à la famille au dîner lors d’une occasion spéciale."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow",
+          "DialogueText": "Je ne peux pas dire que c’était un succès... {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/201.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow",
+          "PageIndex": 1,
+          "DisplayPattern": "Je ne peux pas dire que c’était un succès..."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow",
+          "DialogueText": "... Eh bien... les affaires continuent, n’est-ce pas ?",
+          "AudioPath": "assets/fr-FR/Pierre/202.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow",
+          "PageIndex": 2,
+          "DisplayPattern": "... Eh bien... les affaires continuent, n’est-ce pas ?"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh",
+          "DialogueText": "Salut, tu te souviens de ce que tu m’as vendu l’autre jour : {2} ? Je l’ai servi à la famille au dîner lors d’une occasion spéciale.",
+          "AudioPath": "assets/fr-FR/Pierre/203.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh",
+          "PageIndex": 0,
+          "DisplayPattern": "Salut, tu te souviens de ce que tu m’as vendu l’autre jour : {2} ? Je l’ai servi à la famille au dîner lors d’une occasion spéciale."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh",
+          "DialogueText": "Ma femme a adoré !... Et Abby s’est régalée après avoir versé une sauce hoisin dessus. {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/204.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh",
+          "PageIndex": 1,
+          "DisplayPattern": "Ma femme a adoré !... Et Abby s’est régalée après avoir versé une sauce hoisin dessus."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh",
+          "DialogueText": "... Eh bien... les affaires continuent, n’est-ce pas ?",
+          "AudioPath": "assets/fr-FR/Pierre/205.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh",
+          "PageIndex": 2,
+          "DisplayPattern": "... Eh bien... les affaires continuent, n’est-ce pas ?"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow_Willy",
+          "DialogueText": "Ohé... tu te souviens du {2} que tu m’as vendu l’autre jour ? Eh bien, je l’ai fait griller dans ma cabane hier soir..",
+          "AudioPath": "assets/fr-FR/Pierre/206.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow_Willy",
+          "PageIndex": 0,
+          "DisplayPattern": "Ohé... tu te souviens du {2} que tu m’as vendu l’autre jour ? Eh bien, je l’ai fait griller dans ma cabane hier soir.."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityLow_Willy",
+          "DialogueText": "C’était certainement le poisson le plus charnue que j’ai jamais mangé... {Portrait:Sad}",
+          "AudioPath": "assets/fr-FR/Pierre/207.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityLow_Willy",
+          "PageIndex": 1,
+          "DisplayPattern": "C’était certainement le poisson le plus charnue que j’ai jamais mangé..."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh_Willy",
+          "DialogueText": "Ohé... tu te souviens du {2} que tu m’as vendu l’autre jour ? Eh bien, je l’ai fait griller dans ma cabane hier soir.",
+          "AudioPath": "assets/fr-FR/Pierre/208.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh_Willy",
+          "PageIndex": 0,
+          "DisplayPattern": "Ohé... tu te souviens du {2} que tu m’as vendu l’autre jour ? Eh bien, je l’ai fait griller dans ma cabane hier soir."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Pierre_QualityHigh_Willy",
+          "DialogueText": "C’était la meilleure chose que j’ai eu le plaisir de manger depuis longtemps ! {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/209.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Pierre_QualityHigh_Willy",
+          "PageIndex": 1,
+          "DisplayPattern": "C’était la meilleure chose que j’ai eu le plaisir de manger depuis longtemps !"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_love_BeforeMovie",
+          "DialogueText": "J’ai grandi en regardant de vieux films de science-fiction, alors ça m’intéresse beaucoup de voir comment ce genre de films a évolué !",
+          "AudioPath": "assets/fr-FR/Pierre/210.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "J’ai grandi en regardant de vieux films de science-fiction, alors ça m’intéresse beaucoup de voir comment ce genre de films a évolué !"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_love_AfterMovie",
+          "DialogueText": "Hah ! Ce n’était pas ce à quoi je m’attendais, mais j’ai bien aimé ! Je me suis vraiment identifié à Wumbus. {Portrait:Happy}",
+          "AudioPath": "assets/fr-FR/Pierre/211.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Hah ! Ce n’était pas ce à quoi je m’attendais, mais j’ai bien aimé ! Je me suis vraiment identifié à Wumbus."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_like_BeforeMovie",
+          "DialogueText": "Habituellement, je suis toujours en train de travailler, alors c’est vraiment agréable de pouvoir sortir un peu.",
+          "AudioPath": "assets/fr-FR/Pierre/212.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Habituellement, je suis toujours en train de travailler, alors c’est vraiment agréable de pouvoir sortir un peu."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Pierre_like_AfterMovie",
+          "DialogueText": "C’était pas mal ! Je me demande s’ils ont des marchandises que je pourrais stocker...",
+          "AudioPath": "assets/fr-FR/Pierre/213.ogg",
+          "TranslationKey": "Strings/MovieReactions:Pierre_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "C’était pas mal ! Je me demande s’ils ont des marchandises que je pourrais stocker..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "DialogueText": "En tant que commerçant, je trouve intéressant de voir comment les autres gèrent leurs magasins...",
+          "AudioPath": "assets/fr-FR/Pierre/214.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "En tant que commerçant, je trouve intéressant de voir comment les autres gèrent leurs magasins..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "DialogueText": "*chuchote* Ne le dis pas à Sandy, mais ma sélection de produits d’épicerie surpasse la sienne !",
+          "AudioPath": "assets/fr-FR/Pierre/215.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Pierre",
+          "PageIndex": 1,
+          "DisplayPattern": "*chuchote* Ne le dis pas à Sandy, mais ma sélection de produits d’épicerie surpasse la sienne !"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Pierre",
+          "DialogueText": "Psst... Je vends des œufs pour de l’argent ! Hé, hé, hé... Ne le dis pas à Lewis.",
+          "AudioPath": "assets/fr-FR/Pierre/216.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Pierre",
+          "PageIndex": 0,
+          "DisplayPattern": "Psst... Je vends des œufs pour de l’argent ! Hé, hé, hé... Ne le dis pas à Lewis."
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Winter",
+          "DialogueText": "Bienvenue dans le magasin chauffé de Pierre !",
+          "AudioPath": "assets/fr-FR/Pierre/217.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Winter",
+          "PageIndex": 0,
+          "DisplayPattern": "Bienvenue dans le magasin chauffé de Pierre !"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_NotWinter",
+          "DialogueText": "Bienvenue chez Pierre !",
+          "AudioPath": "assets/fr-FR/Pierre/218.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_NotWinter",
+          "PageIndex": 0,
+          "DisplayPattern": "Bienvenue chez Pierre !"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Summer",
+          "DialogueText": "Graines d’été disponibles !",
+          "AudioPath": "assets/fr-FR/Pierre/219.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Summer",
+          "PageIndex": 0,
+          "DisplayPattern": "Graines d’été disponibles !"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_NotSummer",
+          "DialogueText": "Graines à vendre !",
+          "AudioPath": "assets/fr-FR/Pierre/220.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_NotSummer",
+          "PageIndex": 0,
+          "DisplayPattern": "Graines à vendre !"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Greeting1",
+          "DialogueText": "Bonjour !",
+          "AudioPath": "assets/fr-FR/Pierre/221.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Greeting1",
+          "PageIndex": 0,
+          "DisplayPattern": "Bonjour !"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Greeting2",
+          "DialogueText": "C’est le fermier {Farmer_Name} !",
+          "AudioPath": "assets/fr-FR/Pierre/222_male.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Greeting2",
+          "PageIndex": 0,
+          "DisplayPattern": "C’est le fermier {0} !",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_Raining",
+          "DialogueText": "C’est une bonne journée pour faire des courses !",
+          "AudioPath": "assets/fr-FR/Pierre/223.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_Raining",
+          "PageIndex": 0,
+          "DisplayPattern": "C’est une bonne journée pour faire des courses !"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_NotRaining",
+          "DialogueText": "Bienvenue !",
+          "AudioPath": "assets/fr-FR/Pierre/224.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_NotRaining",
+          "PageIndex": 0,
+          "DisplayPattern": "Bienvenue !"
+        },
+        {
+          "DialogueFrom": "SeedShop_Pierre_RareGreeting",
+          "DialogueText": "Tu n’as pas oublié ton portefeuille ?",
+          "AudioPath": "assets/fr-FR/Pierre/225.ogg",
+          "TranslationKey": "Strings/SpeechBubbles:SeedShop_Pierre_RareGreeting",
+          "PageIndex": 0,
+          "DisplayPattern": "Tu n’as pas oublié ton portefeuille ?"
+        }
+      ]
+    }
+  ]
+}

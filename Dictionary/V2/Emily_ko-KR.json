@@ -1,0 +1,4030 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Emily.ko-KR",
+      "VoicePackName": "DictionarV2 (Emily - ko-KR)",
+      "Character": "Emily",
+      "Language": "ko-KR",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "오!... 얼굴만 봐도 딱 알겠어. 넌 펠리컨 마을과 사랑에 빠지게 될 거야.",
+          "AudioPath": "assets/ko-KR/Emily/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "오!... 얼굴만 봐도 딱 알겠어. 넌 펠리컨 마을과 사랑에 빠지게 될 거야."
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "저녁에 할 거리를 찾고 있다면, 술집에 들려. 내가 일하는 곳이야!!",
+          "AudioPath": "assets/ko-KR/Emily/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "저녁에 할 거리를 찾고 있다면, 술집에 들려. 내가 일하는 곳이야!!"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "오, 내 생일 기억해 줬구나! 고마워, {Farmer_Name}! 역시 너야. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 내 생일 기억해 줬구나! 고마워, ! 역시 너야."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "오, 내 생일 기억해 줬구나! 고마워, {Farmer_Name}! 역시 너-- {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 내 생일 기억해 줬구나! 고마워, ! 역시 너--"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "...*킁*...*킁*... 이게 무슨 냄새지? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptBirthdayGift_Negative",
+          "PageIndex": 1,
+          "DisplayPattern": "...*킁*...*킁*... 이게 무슨 냄새지?"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "... 이게 뭐야...? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptBirthdayGift_Negative",
+          "PageIndex": 2,
+          "DisplayPattern": "... 이게 뭐야...?"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "그럼, 나도 너랑 춤추고 싶어, {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:FlowerDance_Accept",
+          "PageIndex": 0,
+          "DisplayPattern": "그럼, 나도 너랑 춤추고 싶어, !"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "나 벌써 기대돼... 정말 재밌을 거야!",
+          "AudioPath": "assets/ko-KR/Emily/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:FlowerDance_Accept",
+          "PageIndex": 1,
+          "DisplayPattern": "나 벌써 기대돼... 정말 재밌을 거야!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "우와, 고마워! 잠들기 전에 이걸 마시면 생생한 꿈을 꾼다고 들었어.",
+          "AudioPath": "assets/ko-KR/Emily/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "우와, 고마워! 잠들기 전에 이걸 마시면 생생한 꿈을 꾼다고 들었어."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)ParrotEgg",
+          "DialogueText": "오, 다행이야, 아직 따뜻하네... 불쌍해라, 엄마는 어디 갔지? *소곤* ...내가 네 엄마가 되어줄게, 걱정 말렴... 불쌍한 아가. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(TR)ParrotEgg",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 다행이야, 아직 따뜻하네... 불쌍해라, 엄마는 어디 갔지? *소곤* ...내가 네 엄마가 되어줄게, 걱정 말렴... 불쌍한 아가."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)ParrotEgg",
+          "DialogueText": "나한테 이걸 줘서 정말 기뻐, {Farmer_Name}. 꼭 잘 보살필게.",
+          "AudioPath": "assets/ko-KR/Emily/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(TR)ParrotEgg",
+          "PageIndex": 1,
+          "DisplayPattern": "나한테 이걸 줘서 정말 기뻐, . 꼭 잘 보살필게."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)68",
+          "DialogueText": "우와... 고마워! 오늘 내 기분이랑 정말 어울리는 색이야. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)68",
+          "PageIndex": 0,
+          "DisplayPattern": "우와... 고마워! 오늘 내 기분이랑 정말 어울리는 색이야."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)68",
+          "DialogueText": "이 돌의 따뜻한 에너지가 우리 마음을 다잡아주지... 오늘 같은 날 이게 필요했어. 고마워!",
+          "AudioPath": "assets/ko-KR/Emily/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)68",
+          "PageIndex": 1,
+          "DisplayPattern": "이 돌의 따뜻한 에너지가 우리 마음을 다잡아주지... 오늘 같은 날 이게 필요했어. 고마워!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)70",
+          "DialogueText": "신기하다, 네가 오늘 나한테 옥을 선물할 거란 꿈을 꿨어! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)70",
+          "PageIndex": 0,
+          "DisplayPattern": "신기하다, 네가 오늘 나한테 옥을 선물할 거란 꿈을 꿨어!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)70",
+          "DialogueText": "오오, 옥이잖아! 부를 끌어 모으는 성질이 있대... 누가 마다 하겠어? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)70",
+          "PageIndex": 1,
+          "DisplayPattern": "오오, 옥이잖아! 부를 끌어 모으는 성질이 있대... 누가 마다 하겠어?"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)66",
+          "DialogueText": "오, 아름다워, {Farmer_Name}! 이걸 찾다가 위험한 일은 없었으면 하는데. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)66",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 아름다워, ! 이걸 찾다가 위험한 일은 없었으면 하는데."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)66",
+          "DialogueText": "아, 자수정이구나! 주점에서 늦게까지 일하는 날이면 이게 날 보호해 줄 거야.",
+          "AudioPath": "assets/ko-KR/Emily/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)66",
+          "PageIndex": 1,
+          "DisplayPattern": "아, 자수정이구나! 주점에서 늦게까지 일하는 날이면 이게 날 보호해 줄 거야."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)64",
+          "DialogueText": "와, 색 좀 봐! 내 옷이랑 딱 맞네. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)64",
+          "PageIndex": 0,
+          "DisplayPattern": "와, 색 좀 봐! 내 옷이랑 딱 맞네."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)64",
+          "DialogueText": "오, 정말 완벽해... 내가 요즘 기운이 없었거든. 루비는 영혼에 에너지를 주지!",
+          "AudioPath": "assets/ko-KR/Emily/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)64",
+          "PageIndex": 1,
+          "DisplayPattern": "오, 정말 완벽해... 내가 요즘 기운이 없었거든. 루비는 영혼에 에너지를 주지!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)62",
+          "DialogueText": "너무 반질반질하다! 들고 있으면... 인어들의 에너지가 느껴져. 고마워!",
+          "AudioPath": "assets/ko-KR/Emily/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)62",
+          "PageIndex": 0,
+          "DisplayPattern": "너무 반질반질하다! 들고 있으면... 인어들의 에너지가 느껴져. 고마워!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)62",
+          "DialogueText": "고마워! 이건 베개 밑에 둬야겠어, 그럼 바다 꿈을 꿀지도 모르지.",
+          "AudioPath": "assets/ko-KR/Emily/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)62",
+          "PageIndex": 1,
+          "DisplayPattern": "고마워! 이건 베개 밑에 둬야겠어, 그럼 바다 꿈을 꿀지도 모르지."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)60",
+          "DialogueText": "오!... 헤헤... 네가 오늘 나한테 이 돌을 준 이유를 나는 정확히 알고 있지. 아주 흥미로워...",
+          "AudioPath": "assets/ko-KR/Emily/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)60",
+          "PageIndex": 0,
+          "DisplayPattern": "오!... 헤헤... 네가 오늘 나한테 이 돌을 준 이유를 나는 정확히 알고 있지. 아주 흥미로워..."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)60",
+          "DialogueText": "우와, 아름다워! 숲의 영혼들의 힘이 생각나는 색이야... 나무들의 에너지가 느껴져?",
+          "AudioPath": "assets/ko-KR/Emily/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)60",
+          "PageIndex": 1,
+          "DisplayPattern": "우와, 아름다워! 숲의 영혼들의 힘이 생각나는 색이야... 나무들의 에너지가 느껴져?"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "분명 깊은 의미가 있어... 자연이 우리에게 무언가 말해주려는 거야. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "분명 깊은 의미가 있어... 자연이 우리에게 무언가 말해주려는 거야."
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "무얼 말해주려는 거냐고? 잘 모르겠어... 읽어내기 어렵네. 그래도 강한 존재감이 느껴져... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:GreenRain",
+          "PageIndex": 1,
+          "DisplayPattern": "무얼 말해주려는 거냐고? 잘 모르겠어... 읽어내기 어렵네. 그래도 강한 존재감이 느껴져..."
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "느껴져? 숲이 노래하고 있어! 나무들이 환희의 춤을 추고 있어!",
+          "AudioPath": "assets/ko-KR/Emily/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "느껴져? 숲이 노래하고 있어! 나무들이 환희의 춤을 추고 있어!"
+        },
+        {
+          "DialogueFrom": "married_Haley",
+          "DialogueText": "아름다운 결혼식이었어... 너와 헤일리 모두 축복해! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:married_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "아름다운 결혼식이었어... 너와 헤일리 모두 축복해!"
+        },
+        {
+          "DialogueFrom": "divorced_Haley",
+          "DialogueText": "이혼으로 슬퍼하는건 헤일리의 자존심이 허락하지 않을거야... 최소한 그래 보이고 싶진 않겠지. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:divorced_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "이혼으로 슬퍼하는건 헤일리의 자존심이 허락하지 않을거야... 최소한 그래 보이고 싶진 않겠지."
+        },
+        {
+          "DialogueFrom": "eventSeen_471942",
+          "DialogueText": "안녕 {Farmer_Name}. 오늘 널 볼 거라는 느낌이 있었어.",
+          "AudioPath": "assets/ko-KR/Emily/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:eventSeen_471942",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕 . 오늘 널 볼 거라는 느낌이 있었어."
+        },
+        {
+          "DialogueFrom": "eventSeen_463391",
+          "DialogueText": "다친 동물보다 슬픈 건 없어... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:eventSeen_463391",
+          "PageIndex": 0,
+          "DisplayPattern": "다친 동물보다 슬픈 건 없어..."
+        },
+        {
+          "DialogueFrom": "purchasedAnimal_Sheep",
+          "DialogueText": "양이 생겼다고 들었어, 이제 옷감을 만들 수 있을 거야! 이제 네 앞으로 재단의 무궁무진한 가능성이 열릴 거야. 두고 봐.",
+          "AudioPath": "assets/ko-KR/Emily/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:purchasedAnimal_Sheep",
+          "PageIndex": 0,
+          "DisplayPattern": "양이 생겼다고 들었어, 이제 옷감을 만들 수 있을 거야! 이제 네 앞으로 재단의 무궁무진한 가능성이 열릴 거야. 두고 봐."
+        },
+        {
+          "DialogueFrom": "eventSeen_11_memory_oneweek",
+          "DialogueText": "레시피 없이 요리를 시도해 본 적 있어? 해방감이 드는 기분이야.",
+          "AudioPath": "assets/ko-KR/Emily/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:eventSeen_11_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "레시피 없이 요리를 시도해 본 적 있어? 해방감이 드는 기분이야."
+        },
+        {
+          "DialogueFrom": "eventSeen_11_memory_oneweek",
+          "DialogueText": "그리고 혹시 알아... 뭔가 엄청난 걸 발견할지도!",
+          "AudioPath": "assets/ko-KR/Emily/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:eventSeen_11_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "그리고 혹시 알아... 뭔가 엄청난 걸 발견할지도!"
+        },
+        {
+          "DialogueFrom": "eventSeen_101_memory_oneweek",
+          "DialogueText": "클린트랑 재밌게 놀았어!",
+          "AudioPath": "assets/ko-KR/Emily/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:eventSeen_101_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "클린트랑 재밌게 놀았어!"
+        },
+        {
+          "DialogueFrom": "eventSeen_101_memory_oneweek",
+          "DialogueText": "물론 클린트는 도착해서 10분 만에 음료를 쏟고 내내 한마디도 안 했지만. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:eventSeen_101_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "물론 클린트는 도착해서 10분 만에 음료를 쏟고 내내 한마디도 안 했지만."
+        },
+        {
+          "DialogueFrom": "eventSeen_4081148",
+          "DialogueText": "안녕, 샘의 공연에서 널 봤어. 재밌었지! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:eventSeen_4081148",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕, 샘의 공연에서 널 봤어. 재밌었지!"
+        },
+        {
+          "DialogueFrom": "eventSeen_4081148",
+          "DialogueText": "도시 냄새는 별로더라 근데. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:eventSeen_4081148",
+          "PageIndex": 1,
+          "DisplayPattern": "도시 냄새는 별로더라 근데."
+        },
+        {
+          "DialogueFrom": "eventSeen_2123343_memory_oneday",
+          "DialogueText": "우리 캠핑 추억은 잊지 못할 것 같아... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Emily/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:eventSeen_2123343_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 캠핑 추억은 잊지 못할 것 같아..."
+        },
+        {
+          "DialogueFrom": "dating_Emily",
+          "DialogueText": "에밀리는 크게 미소 짓고 있습니다.",
+          "AudioPath": "assets/ko-KR/Emily/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:dating_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "에밀리는 크게 미소 짓고 있습니다."
+        },
+        {
+          "DialogueFrom": "dating_Emily_memory_oneday",
+          "DialogueText": "우린 분명 즐거운 추억을 많이 만들 거야, 내가 알아. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:dating_Emily_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "우린 분명 즐거운 추억을 많이 만들 거야, 내가 알아."
+        },
+        {
+          "DialogueFrom": "married_Shane",
+          "DialogueText": "아, 이제 결혼했으니까 셰인이 주점에 그렇게 자주 오진 않겠구나!",
+          "AudioPath": "assets/ko-KR/Emily/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:married_Shane",
+          "PageIndex": 0,
+          "DisplayPattern": "아, 이제 결혼했으니까 셰인이 주점에 그렇게 자주 오진 않겠구나!"
+        },
+        {
+          "DialogueFrom": "married_Shane",
+          "DialogueText": "좋은 일이긴 하지만, 단골을 잃는 건 좀 슬프네... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:married_Shane",
+          "PageIndex": 1,
+          "DisplayPattern": "좋은 일이긴 하지만, 단골을 잃는 건 좀 슬프네..."
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "오, 나 여기 좋아! 앵무새 정말 많다!",
+          "AudioPath": "assets/ko-KR/Emily/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 나 여기 좋아! 앵무새 정말 많다!"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "아... 마음까지 맑아진다.",
+          "AudioPath": "assets/ko-KR/Emily/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "아... 마음까지 맑아진다."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "느껴져? 바닷속에 심오한 치유의 기운이 있어.",
+          "AudioPath": "assets/ko-KR/Emily/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "느껴져? 바닷속에 심오한 치유의 기운이 있어."
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "즐거운 시간 보내고 있어, {Farmer_Name}? 이런 휴식이 때때로 필요하다는 사실을 잊으면 안 돼!",
+          "AudioPath": "assets/ko-KR/Emily/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "즐거운 시간 보내고 있어, ? 이런 휴식이 때때로 필요하다는 사실을 잊으면 안 돼!"
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "이쪽에서 바에 앉으니까 색다르네! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "이쪽에서 바에 앉으니까 색다르네!"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "태양이 들어올 수 있게 마음을 열어주면, 내면에 사랑스런 기운이 느껴질 거야. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "태양이 들어올 수 있게 마음을 열어주면, 내면에 사랑스런 기운이 느껴질 거야."
+        },
+        {
+          "DialogueFrom": "Resort_Dance",
+          "DialogueText": "에밀리는 음악에 심취해있습니다.",
+          "AudioPath": "assets/ko-KR/Emily/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Resort_Dance",
+          "PageIndex": 0,
+          "DisplayPattern": "에밀리는 음악에 심취해있습니다."
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept_Spouse",
+          "DialogueText": "당연하지, 내 사랑. 기대하고 있었다고! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:FlowerDance_Accept_Spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "당연하지, 내 사랑. 기대하고 있었다고!"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Decline",
+          "DialogueText": "정말 미안해... 그런데 이미 다른 사람과 춤추기로 했어. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:FlowerDance_Decline",
+          "PageIndex": 0,
+          "DisplayPattern": "정말 미안해... 그런데 이미 다른 사람과 춤추기로 했어."
+        },
+        {
+          "DialogueFrom": "divorced",
+          "DialogueText": "{Farmer_Name}... 넌 내 심장을 찢어놨어... 나 더는 너랑 얘기할 수 없을 것 같아. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:divorced",
+          "PageIndex": 0,
+          "DisplayPattern": "... 넌 내 심장을 찢어놨어... 나 더는 너랑 얘기할 수 없을 것 같아."
+        },
+        {
+          "DialogueFrom": "divorced",
+          "DialogueText": "제발, 내게 아픔을 치유할 수 있게 놔줘... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:divorced",
+          "PageIndex": 1,
+          "DisplayPattern": "제발, 내게 아픔을 치유할 수 있게 놔줘..."
+        },
+        {
+          "DialogueFrom": "dumped_Girls",
+          "DialogueText": "... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:dumped_Girls",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "breakUp",
+          "DialogueText": "하...하지만 우리가 각별한 유대감이 있다 생각했는데... *흑* {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:breakUp",
+          "PageIndex": 0,
+          "DisplayPattern": "하...하지만 우리가 각별한 유대감이 있다 생각했는데... *흑*"
+        },
+        {
+          "DialogueFrom": "reject_866",
+          "DialogueText": "오, 그거 너무 아름답다... 그걸 정말 좋아할 친구 한 명 있는데! 여기서 너무 멀리 살긴 하지만...",
+          "AudioPath": "assets/ko-KR/Emily/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:reject_866",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 그거 너무 아름답다... 그걸 정말 좋아할 친구 한 명 있는데! 여기서 너무 멀리 살긴 하지만..."
+        },
+        {
+          "DialogueFrom": "secondChance_Girls",
+          "DialogueText": "{Farmer_Name}... 내게 다시 기회를 줄 준비가 되었어. 아직 네 내면에 좋은 사람이 있다고 믿어. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:secondChance_Girls",
+          "PageIndex": 0,
+          "DisplayPattern": "... 내게 다시 기회를 줄 준비가 되었어. 아직 네 내면에 좋은 사람이 있다고 믿어."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "내가 헤일리랑 자매라고 얘기해준 적 있나? 이상하지, 그치?",
+          "AudioPath": "assets/ko-KR/Emily/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 헤일리랑 자매라고 얘기해준 적 있나? 이상하지, 그치?"
+        },
+        {
+          "DialogueFrom": "Mon2",
+          "DialogueText": "나 사실 비밀리에 하는 취미가 있는데, 더 이상은 얘기하지 않겠어.",
+          "AudioPath": "assets/ko-KR/Emily/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon2",
+          "PageIndex": 0,
+          "DisplayPattern": "나 사실 비밀리에 하는 취미가 있는데, 더 이상은 얘기하지 않겠어."
+        },
+        {
+          "DialogueFrom": "Mon2",
+          "DialogueText": "어쩌면 어느 날 네게 보여줄 수도. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon2",
+          "PageIndex": 1,
+          "DisplayPattern": "어쩌면 어느 날 네게 보여줄 수도."
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "이 세계는 정령과 마법으로 가득해... 안 믿는 사람들도 있지만, 난 사실이란 걸 알아.",
+          "AudioPath": "assets/ko-KR/Emily/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "이 세계는 정령과 마법으로 가득해... 안 믿는 사람들도 있지만, 난 사실이란 걸 알아."
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "네 눈에서도 보여... 너도 나처럼 다른 세계의 존재를 믿는구나.",
+          "AudioPath": "assets/ko-KR/Emily/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "네 눈에서도 보여... 너도 나처럼 다른 세계의 존재를 믿는구나."
+        },
+        {
+          "DialogueFrom": "Mon6",
+          "DialogueText": "헤일리가 취직하거나 적어도 요리하고 청소하는 데 도움을 좀 줬으면 좋겠어. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon6",
+          "PageIndex": 0,
+          "DisplayPattern": "헤일리가 취직하거나 적어도 요리하고 청소하는 데 도움을 좀 줬으면 좋겠어."
+        },
+        {
+          "DialogueFrom": "Mon6",
+          "DialogueText": "그저 돈 많은 사람이랑 결혼하려는 것 같아. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon6",
+          "PageIndex": 1,
+          "DisplayPattern": "그저 돈 많은 사람이랑 결혼하려는 것 같아."
+        },
+        {
+          "DialogueFrom": "Mon6_inlaw_Haley",
+          "DialogueText": "확실히, 헤일리가 떠난 뒤로 정리정돈하는 일은 쉬워졌어.",
+          "AudioPath": "assets/ko-KR/Emily/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon6_inlaw_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "확실히, 헤일리가 떠난 뒤로 정리정돈하는 일은 쉬워졌어."
+        },
+        {
+          "DialogueFrom": "Mon8",
+          "DialogueText": "이 마을에 정말 좋은 사람들이 행복을 못 찾는 경우가 있어. 참 슬픈 일이야. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon8",
+          "PageIndex": 0,
+          "DisplayPattern": "이 마을에 정말 좋은 사람들이 행복을 못 찾는 경우가 있어. 참 슬픈 일이야."
+        },
+        {
+          "DialogueFrom": "Mon8",
+          "DialogueText": "술집에서 일하다 보니, 모든 사람들의 문제를 직접 듣게 되는 것 같아. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon8",
+          "PageIndex": 1,
+          "DisplayPattern": "술집에서 일하다 보니, 모든 사람들의 문제를 직접 듣게 되는 것 같아."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "거스네 술집에서 아르바이트를 하고 있어. 그걸로 지불하고 있지.",
+          "AudioPath": "assets/ko-KR/Emily/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "거스네 술집에서 아르바이트를 하고 있어. 그걸로 지불하고 있지."
+        },
+        {
+          "DialogueFrom": "Tue4",
+          "DialogueText": "거스네서 일해서 먹고살긴 하지만... 내가 진짜 열정을 가지고 있는 일은 옷을 만드는 일이야. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/69.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "거스네서 일해서 먹고살긴 하지만... 내가 진짜 열정을 가지고 있는 일은 옷을 만드는 일이야."
+        },
+        {
+          "DialogueFrom": "Tue4",
+          "DialogueText": "이 옷도 다 내가 직접 만든 거다?",
+          "AudioPath": "assets/ko-KR/Emily/70.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Tue4",
+          "PageIndex": 1,
+          "DisplayPattern": "이 옷도 다 내가 직접 만든 거다?"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "오, 안녕... 이렇게 방문해주러 와서 좋다. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/71.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 안녕... 이렇게 방문해주러 와서 좋다."
+        },
+        {
+          "DialogueFrom": "Tue8",
+          "DialogueText": "그거 알아, {Farmer_Name}... 내 생각엔 우리 둘 다 미래가 밝아.",
+          "AudioPath": "assets/ko-KR/Emily/72.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Tue8",
+          "PageIndex": 0,
+          "DisplayPattern": "그거 알아, ... 내 생각엔 우리 둘 다 미래가 밝아."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "이제는 잊힌 문명이 예전에 제작한 희귀하고 강력한 마법 반지에 대한 소문을 들은 적 있어. 나도 그게 사실인지 그저 동화인지는 잘 모르겠어.",
+          "AudioPath": "assets/ko-KR/Emily/73.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "이제는 잊힌 문명이 예전에 제작한 희귀하고 강력한 마법 반지에 대한 소문을 들은 적 있어. 나도 그게 사실인지 그저 동화인지는 잘 모르겠어."
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "낚시해? 불쌍한 것들을 인도적으로 대하는 거였으면 좋겠어. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/74.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "낚시해? 불쌍한 것들을 인도적으로 대하는 거였으면 좋겠어."
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "모든 생물은 존중해야 해, 미끈미끈한 생물들도.",
+          "AudioPath": "assets/ko-KR/Emily/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Wed4",
+          "PageIndex": 1,
+          "DisplayPattern": "모든 생물은 존중해야 해, 미끈미끈한 생물들도."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "믿음을 가져... 매일매일 운명된 길을 따라 한 걸음씩 더 가고 있는 거야.",
+          "AudioPath": "assets/ko-KR/Emily/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "믿음을 가져... 매일매일 운명된 길을 따라 한 걸음씩 더 가고 있는 거야."
+        },
+        {
+          "DialogueFrom": "Wed8",
+          "DialogueText": "안녕, {Farmer_Name}.",
+          "AudioPath": "assets/ko-KR/Emily/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Wed8",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕, ."
+        },
+        {
+          "DialogueFrom": "Wed8",
+          "DialogueText": "난 우리가 좋은 친구가 될 거란 걸 알았어. 별들이 알려줬거든!",
+          "AudioPath": "assets/ko-KR/Emily/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Wed8",
+          "PageIndex": 1,
+          "DisplayPattern": "난 우리가 좋은 친구가 될 거란 걸 알았어. 별들이 알려줬거든!"
+        },
+        {
+          "DialogueFrom": "Wed8",
+          "DialogueText": "안녕, {Farmer_Name}. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Wed8",
+          "PageIndex": 2,
+          "DisplayPattern": "안녕, ."
+        },
+        {
+          "DialogueFrom": "Wed8",
+          "DialogueText": "우리가 이렇게 가까워질 거란 걸 항상 알았어...",
+          "AudioPath": "assets/ko-KR/Emily/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Wed8",
+          "PageIndex": 3,
+          "DisplayPattern": "우리가 이렇게 가까워질 거란 걸 항상 알았어..."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "지속 가능한 방식으로 농사를 짓고 있길 바라. 계곡의 생태계는 섬세해!",
+          "AudioPath": "assets/ko-KR/Emily/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "지속 가능한 방식으로 농사를 짓고 있길 바라. 계곡의 생태계는 섬세해!"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "어떻게 아냐고? 직감적으로!",
+          "AudioPath": "assets/ko-KR/Emily/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "어떻게 아냐고? 직감적으로!"
+        },
+        {
+          "DialogueFrom": "Thu4",
+          "DialogueText": "가끔 꽃들이 내게 말을 걸어... 다들 각자만의 이야기가 있어!",
+          "AudioPath": "assets/ko-KR/Emily/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Thu4",
+          "PageIndex": 0,
+          "DisplayPattern": "가끔 꽃들이 내게 말을 걸어... 다들 각자만의 이야기가 있어!"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "아, 봄. 파스텔 색의 계절. 난 사실 보석 톤이 더 좋은데.",
+          "AudioPath": "assets/ko-KR/Emily/84.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "아, 봄. 파스텔 색의 계절. 난 사실 보석 톤이 더 좋은데."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "오, 미안! 내가 또 패션 얘기 중얼거리고 있었지?",
+          "AudioPath": "assets/ko-KR/Emily/85.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "오, 미안! 내가 또 패션 얘기 중얼거리고 있었지?"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "내 옷을 만드는 걸 좋아하지만, 옷감을 구하는 게 쉽지 않아.",
+          "AudioPath": "assets/ko-KR/Emily/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "내 옷을 만드는 걸 좋아하지만, 옷감을 구하는 게 쉽지 않아."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "도시까지 가려면 너무 먼 거리야.",
+          "AudioPath": "assets/ko-KR/Emily/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "도시까지 가려면 너무 먼 거리야."
+        },
+        {
+          "DialogueFrom": "Sat6",
+          "DialogueText": "직물의 촉감에 대해 생각해본 적 있어, {Farmer_Name}? 촉감마다 뚜렷한 개성이 있어... 내 드레스 만져봐... 그치?",
+          "AudioPath": "assets/ko-KR/Emily/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Sat6",
+          "PageIndex": 0,
+          "DisplayPattern": "직물의 촉감에 대해 생각해본 적 있어, ? 촉감마다 뚜렷한 개성이 있어... 내 드레스 만져봐... 그치?"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "안녕 {Farmer_Name}!",
+          "AudioPath": "assets/ko-KR/Emily/89.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕 !"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "외양간에서 양 키워? 양털로 정말 아름다운 옷감을 짜낼 수 있어!",
+          "AudioPath": "assets/ko-KR/Emily/90.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "외양간에서 양 키워? 양털로 정말 아름다운 옷감을 짜낼 수 있어!"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "근데 베틀이 필요할 거야. 제작법만 안다면 직접 만들 수도 있어.",
+          "AudioPath": "assets/ko-KR/Emily/91.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Sun",
+          "PageIndex": 2,
+          "DisplayPattern": "근데 베틀이 필요할 거야. 제작법만 안다면 직접 만들 수도 있어."
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "부모님께서 이 집을 남겨주시고 가셨어. 지난 2년간 세계 일주 중이셔.",
+          "AudioPath": "assets/ko-KR/Emily/92.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Sun4",
+          "PageIndex": 0,
+          "DisplayPattern": "부모님께서 이 집을 남겨주시고 가셨어. 지난 2년간 세계 일주 중이셔."
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "언제 돌아오실지는 모르겠어.",
+          "AudioPath": "assets/ko-KR/Emily/93.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Sun4",
+          "PageIndex": 1,
+          "DisplayPattern": "언제 돌아오실지는 모르겠어."
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "그래도, 여기서 지내는 건 좋아. 경치도 아름답고 마을도 멋지고.",
+          "AudioPath": "assets/ko-KR/Emily/94.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Sun4",
+          "PageIndex": 2,
+          "DisplayPattern": "그래도, 여기서 지내는 건 좋아. 경치도 아름답고 마을도 멋지고."
+        },
+        {
+          "DialogueFrom": "event_dance1",
+          "DialogueText": "고마워!",
+          "AudioPath": "assets/ko-KR/Emily/95.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:event_dance1",
+          "PageIndex": 0,
+          "DisplayPattern": "고마워!"
+        },
+        {
+          "DialogueFrom": "event_dance2",
+          "DialogueText": "음... 그래. 마음에 안 들었다니 유감이네. 3년 동안 연습한 게 완전히 의미가 없었구나... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/96.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:event_dance2",
+          "PageIndex": 0,
+          "DisplayPattern": "음... 그래. 마음에 안 들었다니 유감이네. 3년 동안 연습한 게 완전히 의미가 없었구나..."
+        },
+        {
+          "DialogueFrom": "event_dance3",
+          "DialogueText": "정말 그렇게 생각해? 딱 내가 원하던 느낌이야! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/97.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:event_dance3",
+          "PageIndex": 0,
+          "DisplayPattern": "정말 그렇게 생각해? 딱 내가 원하던 느낌이야!"
+        },
+        {
+          "DialogueFrom": "event_dance3",
+          "DialogueText": "마음에 든다니 너무 기쁘다.",
+          "AudioPath": "assets/ko-KR/Emily/98.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:event_dance3",
+          "PageIndex": 1,
+          "DisplayPattern": "마음에 든다니 너무 기쁘다."
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "헤일리는 입맛이 까다로워. 요리해주는 게 너무 힘들어.",
+          "AudioPath": "assets/ko-KR/Emily/99.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "헤일리는 입맛이 까다로워. 요리해주는 게 너무 힘들어."
+        },
+        {
+          "DialogueFrom": "summer_Mon4",
+          "DialogueText": "난 건강한 식단이 아주 중요하다 생각해. 오래도록 활동적으로 살고 싶어.",
+          "AudioPath": "assets/ko-KR/Emily/100.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "난 건강한 식단이 아주 중요하다 생각해. 오래도록 활동적으로 살고 싶어."
+        },
+        {
+          "DialogueFrom": "summer_Mon_inlaw_Haley",
+          "DialogueText": "헤일리가 이사 가고 나서 사이가 훨씬 좋아졌어. 방문 오는 건 환영이야!",
+          "AudioPath": "assets/ko-KR/Emily/101.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Mon_inlaw_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "헤일리가 이사 가고 나서 사이가 훨씬 좋아졌어. 방문 오는 건 환영이야!"
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "안녕, {Farmer_Name}.",
+          "AudioPath": "assets/ko-KR/Emily/102.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕, ."
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "오늘은 게으른 기분이야. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/103.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "오늘은 게으른 기분이야."
+        },
+        {
+          "DialogueFrom": "summer_Tue6",
+          "DialogueText": "라이너스 너무 안됐어. 사람들이 마음대로 그를 평가하는데, 그냥 다른 라이프스타일을 추구하는 건데. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/104.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "라이너스 너무 안됐어. 사람들이 마음대로 그를 평가하는데, 그냥 다른 라이프스타일을 추구하는 건데."
+        },
+        {
+          "DialogueFrom": "summer_Tue6",
+          "DialogueText": "다들 서로를 받아들일 수 있으면 좋겠어.",
+          "AudioPath": "assets/ko-KR/Emily/105.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Tue6",
+          "PageIndex": 1,
+          "DisplayPattern": "다들 서로를 받아들일 수 있으면 좋겠어."
+        },
+        {
+          "DialogueFrom": "summer_Sun6",
+          "DialogueText": "안녕, {Farmer_Name}! 우리 괜찮은 친구가 되었지, 안 그래? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/106.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Sun6",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕, ! 우리 괜찮은 친구가 되었지, 안 그래?"
+        },
+        {
+          "DialogueFrom": "summer_Sun6",
+          "DialogueText": "난 괜찮아. 넌 멋진 사람이야.",
+          "AudioPath": "assets/ko-KR/Emily/107_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Sun6",
+          "PageIndex": 1,
+          "DisplayPattern": "난 괜찮아. 넌 멋진 사람이야.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "summer_Sun6",
+          "DialogueText": "기뻐. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/108_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Sun6",
+          "PageIndex": 2,
+          "DisplayPattern": "기뻐.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "summer_Sun8",
+          "DialogueText": "안녕, {Farmer_Name}! 우리 괜찮은 친구가 되었지, 안 그래? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/109.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Sun8",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕, ! 우리 괜찮은 친구가 되었지, 안 그래?"
+        },
+        {
+          "DialogueFrom": "summer_Sun8",
+          "DialogueText": "조금 이상하게 들릴 수도 있겠지만, 이렇게 될 거라고 항상 확신했었어.",
+          "AudioPath": "assets/ko-KR/Emily/110.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Sun8",
+          "PageIndex": 1,
+          "DisplayPattern": "조금 이상하게 들릴 수도 있겠지만, 이렇게 될 거라고 항상 확신했었어."
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "여름엔 비가 많이 안 내리네?",
+          "AudioPath": "assets/ko-KR/Emily/111.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "여름엔 비가 많이 안 내리네?"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "물을 더 자주 줘야 해서 네가 일이 많아지겠다.",
+          "AudioPath": "assets/ko-KR/Emily/112.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "물을 더 자주 줘야 해서 네가 일이 많아지겠다."
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "아니면 그냥 화창한 날씨를 즐기는 편이야?",
+          "AudioPath": "assets/ko-KR/Emily/113.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "아니면 그냥 화창한 날씨를 즐기는 편이야?"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "난 벌과 나비가 내 특별한 친구라고 생각해!",
+          "AudioPath": "assets/ko-KR/Emily/114.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "난 벌과 나비가 내 특별한 친구라고 생각해!"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "내가 바쁘지만 않았더라면 농장 일도 도와줬을 텐데!",
+          "AudioPath": "assets/ko-KR/Emily/115.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 바쁘지만 않았더라면 농장 일도 도와줬을 텐데!"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "하지만 내가 일을 더 맡으면 거스가 속상해할 거야... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/116.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "하지만 내가 일을 더 맡으면 거스가 속상해할 거야..."
+        },
+        {
+          "DialogueFrom": "summer_Fri6",
+          "DialogueText": "그거 알아, 내가 어느 날 술집을 떠나겠다고 얘기하면 거스도 이해해줄 거야.",
+          "AudioPath": "assets/ko-KR/Emily/117.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "그거 알아, 내가 어느 날 술집을 떠나겠다고 얘기하면 거스도 이해해줄 거야."
+        },
+        {
+          "DialogueFrom": "summer_Fri6",
+          "DialogueText": "세상에는 너무나 다양한 것들이 있어서, 언제까지고 바텐더로 지낼 순 없어. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/118.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "세상에는 너무나 다양한 것들이 있어서, 언제까지고 바텐더로 지낼 순 없어."
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "너무 무리하지 마, 그러다가 하비네 병원에 입원하는 수가 있어!",
+          "AudioPath": "assets/ko-KR/Emily/119.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "너무 무리하지 마, 그러다가 하비네 병원에 입원하는 수가 있어!"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "안녕 {Farmer_Name}!",
+          "AudioPath": "assets/ko-KR/Emily/120.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕 !"
+        },
+        {
+          "DialogueFrom": "summer_Sun4",
+          "DialogueText": "일 년 중 이맘때 내 친한 친구들이 방문하러 와... 바로 앵무새들이 오는 시기지!",
+          "AudioPath": "assets/ko-KR/Emily/121.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Sun4",
+          "PageIndex": 0,
+          "DisplayPattern": "일 년 중 이맘때 내 친한 친구들이 방문하러 와... 바로 앵무새들이 오는 시기지!"
+        },
+        {
+          "DialogueFrom": "fall_1",
+          "DialogueText": "그래, 가을이 왔네. 새로운 작물을 심을 시기겠다, 그치?",
+          "AudioPath": "assets/ko-KR/Emily/122.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_1",
+          "PageIndex": 0,
+          "DisplayPattern": "그래, 가을이 왔네. 새로운 작물을 심을 시기겠다, 그치?"
+        },
+        {
+          "DialogueFrom": "fall_15",
+          "DialogueText": "오늘은 샌디 보러 가려고. 우린 절친이야!",
+          "AudioPath": "assets/ko-KR/Emily/123.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_15",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘은 샌디 보러 가려고. 우린 절친이야!"
+        },
+        {
+          "DialogueFrom": "fall_15",
+          "DialogueText": "버스가 수리되어서 너무 기뻐.",
+          "AudioPath": "assets/ko-KR/Emily/124.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_15",
+          "PageIndex": 1,
+          "DisplayPattern": "버스가 수리되어서 너무 기뻐."
+        },
+        {
+          "DialogueFrom": "fall_15",
+          "DialogueText": "*휴*... 버스만 고장 나지 않았다면 오늘 샌디를 보러 갈 수 있었을 텐데... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/125.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_15",
+          "PageIndex": 2,
+          "DisplayPattern": "*휴*... 버스만 고장 나지 않았다면 오늘 샌디를 보러 갈 수 있었을 텐데..."
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "소풍 가기 좋은 날씨지, 안 그래?",
+          "AudioPath": "assets/ko-KR/Emily/126.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "소풍 가기 좋은 날씨지, 안 그래?"
+        },
+        {
+          "DialogueFrom": "fall_Mon8",
+          "DialogueText": "내가 오늘 일하는 날이 아니었다면 소풍 가자고 했을 텐데!",
+          "AudioPath": "assets/ko-KR/Emily/127.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Mon8",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 오늘 일하는 날이 아니었다면 소풍 가자고 했을 텐데!"
+        },
+        {
+          "DialogueFrom": "fall_Tue",
+          "DialogueText": "안녕. 여름은 잘 보냈어?",
+          "AudioPath": "assets/ko-KR/Emily/128.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕. 여름은 잘 보냈어?"
+        },
+        {
+          "DialogueFrom": "fall_Tue4",
+          "DialogueText": "안녕 {Farmer_Name}! 지난여름 동안 농장 일 정말 잘 풀렸을 거라 생각해!",
+          "AudioPath": "assets/ko-KR/Emily/129.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕 ! 지난여름 동안 농장 일 정말 잘 풀렸을 거라 생각해!"
+        },
+        {
+          "DialogueFrom": "fall_Tue4",
+          "DialogueText": "넌 훌륭한 농부니까 {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/130.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Tue4",
+          "PageIndex": 1,
+          "DisplayPattern": "넌 훌륭한 농부니까"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "친구가 사막에서 가게를 해. 혹시 방문하게 되면 내가 안부 전한다고 얘기해줘.",
+          "AudioPath": "assets/ko-KR/Emily/131.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "친구가 사막에서 가게를 해. 혹시 방문하게 되면 내가 안부 전한다고 얘기해줘."
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "좀 희귀한 물품을 파는 것 같더라.",
+          "AudioPath": "assets/ko-KR/Emily/132.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "좀 희귀한 물품을 파는 것 같더라."
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "클린트랑 친구야? 친해져보면 참 착한 사람이야.",
+          "AudioPath": "assets/ko-KR/Emily/133.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "클린트랑 친구야? 친해져보면 참 착한 사람이야."
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "하루 종일 혼자 일해서 외롭나 봐. 그런데 수줍음도 많아서 새 친구를 사귀는 일도 어려운가 봐.",
+          "AudioPath": "assets/ko-KR/Emily/134.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "하루 종일 혼자 일해서 외롭나 봐. 그런데 수줍음도 많아서 새 친구를 사귀는 일도 어려운가 봐."
+        },
+        {
+          "DialogueFrom": "fall_Thu8",
+          "DialogueText": "클린트가 나한테 화난 거 같아. 요즘 시선을 피하는 느낌이 들어... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/135.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Thu8",
+          "PageIndex": 0,
+          "DisplayPattern": "클린트가 나한테 화난 거 같아. 요즘 시선을 피하는 느낌이 들어..."
+        },
+        {
+          "DialogueFrom": "fall_Thu8",
+          "DialogueText": "친구라고 생각했는데. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/136.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Thu8",
+          "PageIndex": 1,
+          "DisplayPattern": "친구라고 생각했는데."
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "아름다운 가을 날이네.",
+          "AudioPath": "assets/ko-KR/Emily/137.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "아름다운 가을 날이네."
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "곧 끝날 거라니, 애석한 일이야.",
+          "AudioPath": "assets/ko-KR/Emily/138.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "곧 끝날 거라니, 애석한 일이야."
+        },
+        {
+          "DialogueFrom": "fall_Fri6",
+          "DialogueText": "깨끗한 공기 냄새 맡아봐. 사랑스럽지, 그치?",
+          "AudioPath": "assets/ko-KR/Emily/139.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "깨끗한 공기 냄새 맡아봐. 사랑스럽지, 그치?"
+        },
+        {
+          "DialogueFrom": "fall_Fri6",
+          "DialogueText": "세상의 조자 기업 같은 회사들이 이러 걸 앗아갈까 봐 두려워. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/140.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "세상의 조자 기업 같은 회사들이 이러 걸 앗아갈까 봐 두려워."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "열린 마음으로 지내면 흥미로운 것들을 발견할 수도 있어.",
+          "AudioPath": "assets/ko-KR/Emily/141.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "열린 마음으로 지내면 흥미로운 것들을 발견할 수도 있어."
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "여하튼, 오늘 하루 잘 보내고 있어?",
+          "AudioPath": "assets/ko-KR/Emily/142.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "여하튼, 오늘 하루 잘 보내고 있어?"
+        },
+        {
+          "DialogueFrom": "fall_Sat6",
+          "DialogueText": "인생에 큰 계획은 없어. 미래에 대한 걱정 때문에 스트레스받고 싶진 않아.",
+          "AudioPath": "assets/ko-KR/Emily/143.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Sat6",
+          "PageIndex": 0,
+          "DisplayPattern": "인생에 큰 계획은 없어. 미래에 대한 걱정 때문에 스트레스받고 싶진 않아."
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "화창한 일요일만큼 기운 나게 하는 것도 없지!",
+          "AudioPath": "assets/ko-KR/Emily/144.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "화창한 일요일만큼 기운 나게 하는 것도 없지!"
+        },
+        {
+          "DialogueFrom": "fall_Sun6",
+          "DialogueText": "우리를 막아서는 투명한 벽이 너무 많아. 왜 사람들은 좀 내려놓고 자유를 만끽하지 못하는 걸까?",
+          "AudioPath": "assets/ko-KR/Emily/145.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Sun6",
+          "PageIndex": 0,
+          "DisplayPattern": "우리를 막아서는 투명한 벽이 너무 많아. 왜 사람들은 좀 내려놓고 자유를 만끽하지 못하는 걸까?"
+        },
+        {
+          "DialogueFrom": "fall_Sun6",
+          "DialogueText": "나? 왜, 그런 옛말 있잖아... '야생 주니모를 우리에 가둘 순 없다'.",
+          "AudioPath": "assets/ko-KR/Emily/146.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Sun6",
+          "PageIndex": 1,
+          "DisplayPattern": "나? 왜, 그런 옛말 있잖아... '야생 주니모를 우리에 가둘 순 없다'."
+        },
+        {
+          "DialogueFrom": "fall_Sun10",
+          "DialogueText": "넌 정말 좋은 사람이야, {Farmer_Name}! 친구가 되어줘서 고마워. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/147.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Sun10",
+          "PageIndex": 0,
+          "DisplayPattern": "넌 정말 좋은 사람이야, ! 친구가 되어줘서 고마워."
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "머리에 고드름 떨어지지 않게 조심해!",
+          "AudioPath": "assets/ko-KR/Emily/148.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "머리에 고드름 떨어지지 않게 조심해!"
+        },
+        {
+          "DialogueFrom": "winter_Mon10",
+          "DialogueText": "머리에 고드름 떨어지지 않게 조심해! 네가 다치지 않았으면 좋겠어!",
+          "AudioPath": "assets/ko-KR/Emily/149.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Mon10",
+          "PageIndex": 0,
+          "DisplayPattern": "머리에 고드름 떨어지지 않게 조심해! 네가 다치지 않았으면 좋겠어!"
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "오, 안녕 {Farmer_Name}! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/150.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 안녕 !"
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "이제 농장 일은 정말 많이 익숙해졌겠다, 그치?",
+          "AudioPath": "assets/ko-KR/Emily/151.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "이제 농장 일은 정말 많이 익숙해졌겠다, 그치?"
+        },
+        {
+          "DialogueFrom": "winter_Tue2",
+          "DialogueText": "지금까지 해온 게 많아서 넌 정말 뛰어난 농부일 거야!",
+          "AudioPath": "assets/ko-KR/Emily/152.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Tue2",
+          "PageIndex": 0,
+          "DisplayPattern": "지금까지 해온 게 많아서 넌 정말 뛰어난 농부일 거야!"
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "머리카락이 얼어버린 거 같아... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/153.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "머리카락이 얼어버린 거 같아..."
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "헤일리랑 나랑 둘이 이렇게 큰 집에서 지낼 건 없었는데. 청소하는데 많이 번거로워.",
+          "AudioPath": "assets/ko-KR/Emily/154.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "헤일리랑 나랑 둘이 이렇게 큰 집에서 지낼 건 없었는데. 청소하는데 많이 번거로워."
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "어쩌겠어. 사실 불평할 상황은 아니지.",
+          "AudioPath": "assets/ko-KR/Emily/155.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "어쩌겠어. 사실 불평할 상황은 아니지."
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "네 농가도 정말 아늑하고 괜찮아 보이더라. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/156.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "네 농가도 정말 아늑하고 괜찮아 보이더라."
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "불쌍한 물고기들, 얼마나 추울까. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/157.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "불쌍한 물고기들, 얼마나 추울까."
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "물고기도 동면하나? 드미트리우스한테 물어봐야겠다.",
+          "AudioPath": "assets/ko-KR/Emily/158.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "물고기도 동면하나? 드미트리우스한테 물어봐야겠다."
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "내가 바쁘지 않았다면 호수 옆에 있는 그 동굴 안을 탐험하는 걸 도와줬을 텐데.",
+          "AudioPath": "assets/ko-KR/Emily/159.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 바쁘지 않았다면 호수 옆에 있는 그 동굴 안을 탐험하는 걸 도와줬을 텐데."
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "그 안에 분명 강력한 힘이 깃든 수정이 있을 거야.",
+          "AudioPath": "assets/ko-KR/Emily/160.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "그 안에 분명 강력한 힘이 깃든 수정이 있을 거야."
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "혹시 '콩 스튜' 요리할 줄 알아?",
+          "AudioPath": "assets/ko-KR/Emily/161.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "혹시 '콩 스튜' 요리할 줄 알아?"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "나 그 요리 상당히 좋아해. {Portrait:Happy}%revealtaste:Emily:207",
+          "AudioPath": "assets/ko-KR/Emily/162.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "나 그 요리 상당히 좋아해.%revealtaste:Emily:207"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "겨울에 신선한 재료를 구하는 게 관건이야 근데, 그치?",
+          "AudioPath": "assets/ko-KR/Emily/163.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "겨울에 신선한 재료를 구하는 게 관건이야 근데, 그치?"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "안녕!",
+          "AudioPath": "assets/ko-KR/Emily/164.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕!"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "...응?",
+          "AudioPath": "assets/ko-KR/Emily/165.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "...응?"
+        },
+        {
+          "DialogueFrom": "winter_Sun6",
+          "DialogueText": "여동생이랑 나랑 가끔 싸우긴 하지만, 만약 떠난다면 많이 보고 싶을 거야.",
+          "AudioPath": "assets/ko-KR/Emily/166.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Sun6",
+          "PageIndex": 0,
+          "DisplayPattern": "여동생이랑 나랑 가끔 싸우긴 하지만, 만약 떠난다면 많이 보고 싶을 거야."
+        },
+        {
+          "DialogueFrom": "winter_Sun6",
+          "DialogueText": "언젠가 아주 좋은 어른이 될 거라 생각하긴 해... 내가 이런 얘기 했다고 하진 말고. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/167.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Sun6",
+          "PageIndex": 1,
+          "DisplayPattern": "언젠가 아주 좋은 어른이 될 거라 생각하긴 해... 내가 이런 얘기 했다고 하진 말고."
+        },
+        {
+          "DialogueFrom": "winter_Sun6",
+          "DialogueText": "그럼, 하고 싶은 다른 얘기 있어?",
+          "AudioPath": "assets/ko-KR/Emily/168.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Sun6",
+          "PageIndex": 2,
+          "DisplayPattern": "그럼, 하고 싶은 다른 얘기 있어?"
+        },
+        {
+          "DialogueFrom": "winter_Sun6_inlaw_Haley",
+          "DialogueText": "여동생한테 안부 전해줘! 그리고 내일 찾아오라고 말도 좀 해줘.",
+          "AudioPath": "assets/ko-KR/Emily/169.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Sun6_inlaw_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "여동생한테 안부 전해줘! 그리고 내일 찾아오라고 말도 좀 해줘."
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Emily0",
+          "DialogueText": "우리 이제 같이 살 거란 게 믿겨? 나 지금까지 가족하고 밖에 안 살아봤는데.",
+          "AudioPath": "assets/ko-KR/Emily/170.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Emily0",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 이제 같이 살 거란 게 믿겨? 나 지금까지 가족하고 밖에 안 살아봤는데."
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Emily0",
+          "DialogueText": "뭔가... 신나.",
+          "AudioPath": "assets/ko-KR/Emily/171.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Emily0",
+          "PageIndex": 1,
+          "DisplayPattern": "뭔가... 신나."
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Emily1",
+          "DialogueText": "난 항상 우리 사이 뭔가 특별한 일이 있을 거라 생각했어... 그게 이거일 줄은 몰랐지! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/172.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Emily1",
+          "PageIndex": 0,
+          "DisplayPattern": "난 항상 우리 사이 뭔가 특별한 일이 있을 거라 생각했어... 그게 이거일 줄은 몰랐지!"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Emily1",
+          "DialogueText": "앵무새도 신났네.",
+          "AudioPath": "assets/ko-KR/Emily/173.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Emily1",
+          "PageIndex": 1,
+          "DisplayPattern": "앵무새도 신났네."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_0",
+          "DialogueText": "...나 아직 사랑해? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/174.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_0",
+          "PageIndex": 0,
+          "DisplayPattern": "...나 아직 사랑해?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_1",
+          "DialogueText": "*한숨*... 우리 너무 젊을 때 결혼했나 봐. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/175.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_1",
+          "PageIndex": 0,
+          "DisplayPattern": "*한숨*... 우리 너무 젊을 때 결혼했나 봐."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_2",
+          "DialogueText": "아직 나랑 행복한 거 맞지? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/176.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_2",
+          "PageIndex": 0,
+          "DisplayPattern": "아직 나랑 행복한 거 맞지?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_3",
+          "DialogueText": "내가 뭔가 잘못한 거 있어? 요즘 당신 달라졌어. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/177.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_3",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 뭔가 잘못한 거 있어? 요즘 당신 달라졌어."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_4",
+          "DialogueText": "세상에 뭔가 다른 것이 있을까 생각해본 적 있어? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/178.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_4",
+          "PageIndex": 0,
+          "DisplayPattern": "세상에 뭔가 다른 것이 있을까 생각해본 적 있어?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_5",
+          "DialogueText": "자기 로맨틱했는데... 어떻게 된 거야? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/179.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_5",
+          "PageIndex": 0,
+          "DisplayPattern": "자기 로맨틱했는데... 어떻게 된 거야?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_5",
+          "DialogueText": "내가 예전처럼 젊지 않은 거 알아... 그냥 그것 때문에 나랑 결혼한 거야? {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Emily/180.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_5",
+          "PageIndex": 1,
+          "DisplayPattern": "내가 예전처럼 젊지 않은 거 알아... 그냥 그것 때문에 나랑 결혼한 거야?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_6",
+          "DialogueText": "우리 삶은 이 짧은 시간 하나뿐인데... 이게 정말 최선일까? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/181.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_6",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 삶은 이 짧은 시간 하나뿐인데... 이게 정말 최선일까?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_7",
+          "DialogueText": "내가 예전엔 당신의 애인이었는데... 이젠 내가 저녁 요리할 때만 참고 견디는 것 같아. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/182.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_7",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 예전엔 당신의 애인이었는데... 이젠 내가 저녁 요리할 때만 참고 견디는 것 같아."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_8",
+          "DialogueText": "요즘 나한테 너무 차가워... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/183.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_8",
+          "PageIndex": 0,
+          "DisplayPattern": "요즘 나한테 너무 차가워..."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_9",
+          "DialogueText": "나한테 더 나은 삶이 있었을 수도 있는데. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/184.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_9",
+          "PageIndex": 0,
+          "DisplayPattern": "나한테 더 나은 삶이 있었을 수도 있는데."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/fall_1",
+          "DialogueText": "올해가 벌써 반이 지났어. 믿어져?",
+          "AudioPath": "assets/ko-KR/Emily/185.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:fall_1",
+          "PageIndex": 0,
+          "DisplayPattern": "올해가 벌써 반이 지났어. 믿어져?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/fall_15",
+          "DialogueText": "우리 내일 농가 전시 때 보여줄 물품들 정했어?",
+          "AudioPath": "assets/ko-KR/Emily/186.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_15",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 내일 농가 전시 때 보여줄 물품들 정했어?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/fall_25",
+          "DialogueText": "우리 몸은 자연스럽게 계절에 조율되어 있어. 가을의 빛과 색이 황량한 겨울을 준비하게 만들지.",
+          "AudioPath": "assets/ko-KR/Emily/187.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:fall_25",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 몸은 자연스럽게 계절에 조율되어 있어. 가을의 빛과 색이 황량한 겨울을 준비하게 만들지."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/fall_25",
+          "DialogueText": "우리 조상들은 이 느낌을 온 세상을 통해 느끼고 필수적이었어. 우리는 현대 생활의 소음 때문에 겨우 알아차릴 수 있고.",
+          "AudioPath": "assets/ko-KR/Emily/188.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:fall_25",
+          "PageIndex": 1,
+          "DisplayPattern": "우리 조상들은 이 느낌을 온 세상을 통해 느끼고 필수적이었어. 우리는 현대 생활의 소음 때문에 겨우 알아차릴 수 있고."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/fall_26",
+          "DialogueText": "우리 내일 밤에 영령의 전야제 축제 갈까?",
+          "AudioPath": "assets/ko-KR/Emily/189.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_26",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 내일 밤에 영령의 전야제 축제 갈까?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/fall_8",
+          "DialogueText": "조금 있으면 겨울이네. 난방 잘 돌아가게 필요 없는 밸브는 잠그고 집에 단열처리 아직 잘 되어있나 확인해야지.",
+          "AudioPath": "assets/ko-KR/Emily/190.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 0,
+          "DisplayPattern": "조금 있으면 겨울이네. 난방 잘 돌아가게 필요 없는 밸브는 잠그고 집에 단열처리 아직 잘 되어있나 확인해야지."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/fall_8",
+          "DialogueText": "걱정하지 마, 내가 손볼게.",
+          "AudioPath": "assets/ko-KR/Emily/191.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 1,
+          "DisplayPattern": "걱정하지 마, 내가 손볼게."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/fall_Emily",
+          "DialogueText": "오늘 아침에 슈퍼푸드 스무디 마셨더니 기분이 너어어어어무 좋아! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/192.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:fall_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 아침에 슈퍼푸드 스무디 마셨더니 기분이 너어어어어무 좋아!"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/funLeave_Emily",
+          "DialogueText": "오늘 마을에 갔다가, 나중엔 주점 일 도와주려고. 밤에 볼게.",
+          "AudioPath": "assets/ko-KR/Emily/193.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:funLeave_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 마을에 갔다가, 나중엔 주점 일 도와주려고. 밤에 볼게."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/funReturn_Emily",
+          "DialogueText": "오늘 하루 잘 보냈어... 때때로 집을 나서는 것도 좋지.",
+          "AudioPath": "assets/ko-KR/Emily/194.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:funReturn_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 하루 잘 보냈어... 때때로 집을 나서는 것도 좋지."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_0",
+          "DialogueText": "우리가 드디어 결혼했다는 게 믿기지 않아... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Emily/195.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_0",
+          "PageIndex": 0,
+          "DisplayPattern": "우리가 드디어 결혼했다는 게 믿기지 않아..."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_1",
+          "DialogueText": "같이 사는 거 너무 재밌어! 나 평생 혼자일 거라 생각했는데.",
+          "AudioPath": "assets/ko-KR/Emily/196.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Good_1",
+          "PageIndex": 0,
+          "DisplayPattern": "같이 사는 거 너무 재밌어! 나 평생 혼자일 거라 생각했는데."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_2",
+          "DialogueText": "우리 함께할 운명이었어... 내 온 마음을 다해 믿어!",
+          "AudioPath": "assets/ko-KR/Emily/197.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Good_2",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 함께할 운명이었어... 내 온 마음을 다해 믿어!"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_3",
+          "DialogueText": "나와 함께 해줘서 고마워. 나 내 새 삶이 너무 사랑스러워. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Emily/198.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Good_3",
+          "PageIndex": 0,
+          "DisplayPattern": "나와 함께 해줘서 고마워. 나 내 새 삶이 너무 사랑스러워."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_4",
+          "DialogueText": "우리의 진동 에너지가 완벽히 조화가 맞아. 느껴져?",
+          "AudioPath": "assets/ko-KR/Emily/199.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Good_4",
+          "PageIndex": 0,
+          "DisplayPattern": "우리의 진동 에너지가 완벽히 조화가 맞아. 느껴져?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_5",
+          "DialogueText": "우리 결혼 펜던트 감상하고 있었어... 정말 아름다워! 순수한 푸른 에너지가 발산되는 게 느껴져. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Emily/200.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Good_5",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 결혼 펜던트 감상하고 있었어... 정말 아름다워! 순수한 푸른 에너지가 발산되는 게 느껴져."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_6",
+          "DialogueText": "어젯밤에 우리가 나오는 꿈을 꿨어. 우리가 수정으로 된 나무에 올라가서, 그 무엇보다 우거지고 아름다운 초원을 바라보고 있었어. 요즘 계속 이 꿈을 꿔.",
+          "AudioPath": "assets/ko-KR/Emily/201.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Good_6",
+          "PageIndex": 0,
+          "DisplayPattern": "어젯밤에 우리가 나오는 꿈을 꿨어. 우리가 수정으로 된 나무에 올라가서, 그 무엇보다 우거지고 아름다운 초원을 바라보고 있었어. 요즘 계속 이 꿈을 꿔."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_6",
+          "DialogueText": "무슨 의미인지는 모르겠지만, 좋은 징조라는 기분이 들어.",
+          "AudioPath": "assets/ko-KR/Emily/202.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Good_6",
+          "PageIndex": 1,
+          "DisplayPattern": "무슨 의미인지는 모르겠지만, 좋은 징조라는 기분이 들어."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_7",
+          "DialogueText": "{Farmer_Name}? 우리 집안을 위해서 네가 하는 모든 일에 항상 고맙다고 얘기하고 싶었어. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/203.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_7",
+          "PageIndex": 0,
+          "DisplayPattern": "? 우리 집안을 위해서 네가 하는 모든 일에 항상 고맙다고 얘기하고 싶었어."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_8",
+          "DialogueText": "난 너무 걱정하지 말고... 네가 책임지고해야 할 일이 많다는 걸 알아. 나 혼자서도 괜찮아! {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Emily/204.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_8",
+          "PageIndex": 0,
+          "DisplayPattern": "난 너무 걱정하지 말고... 네가 책임지고해야 할 일이 많다는 걸 알아. 나 혼자서도 괜찮아!"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_9",
+          "DialogueText": "오, 난 심심하지 않아... 우리한테 여기 있는 것들을 즐기고 있어.",
+          "AudioPath": "assets/ko-KR/Emily/205.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_9",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 난 심심하지 않아... 우리한테 여기 있는 것들을 즐기고 있어."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_9",
+          "DialogueText": "간단한 삶이지만, 마음에 들어. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/206.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_9",
+          "PageIndex": 1,
+          "DisplayPattern": "간단한 삶이지만, 마음에 들어."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Day_0",
+          "DialogueText": "farm 농장에서 또 아름다운 하루를 보낼 시간이네... 오늘 좋은 일이 있을 것이라고 믿어! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/207.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "farm 농장에서 또 아름다운 하루를 보낼 시간이네... 오늘 좋은 일이 있을 것이라고 믿어!"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Day_1",
+          "DialogueText": "여기, 이거 가져가. 너 주려는 거야. [428 440 444 338 207 395 749]",
+          "AudioPath": "assets/ko-KR/Emily/208.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "여기, 이거 가져가. 너 주려는 거야."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Day_2",
+          "DialogueText": "오, 잠 좀 푹 잤나 보네... 오늘 아침 상쾌해 보여. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/209.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 잠 좀 푹 잤나 보네... 오늘 아침 상쾌해 보여."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Day_3",
+          "DialogueText": "오늘 나 별자리 운세가 별로야... 하지만 항상 그랬듯 최선을 다해야지. 일하러 가자!",
+          "AudioPath": "assets/ko-KR/Emily/210.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 나 별자리 운세가 별로야... 하지만 항상 그랬듯 최선을 다해야지. 일하러 가자!"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Day_4",
+          "DialogueText": "어으... *꾸륵*... 아침으로 밀기울 머핀을 너무 많이 먹었어. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/211.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "어으... *꾸륵*... 아침으로 밀기울 머핀을 너무 많이 먹었어."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Day_Emily",
+          "DialogueText": "신선하고 건강한 작물을 주민들에게 제공해주니까 우린 큰 도움을 주고 있는 거야!",
+          "AudioPath": "assets/ko-KR/Emily/212.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Day_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "신선하고 건강한 작물을 주민들에게 제공해주니까 우린 큰 도움을 주고 있는 거야!"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Night_0",
+          "DialogueText": "옷에 구멍 난 거야? 내가 바로 기워줄게.",
+          "AudioPath": "assets/ko-KR/Emily/213.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "옷에 구멍 난 거야? 내가 바로 기워줄게."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Night_1",
+          "DialogueText": "집에 돌아온 걸 환영해, {Farmer_Name}. 오늘 멋진 하루 보냈어?",
+          "AudioPath": "assets/ko-KR/Emily/214.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "집에 돌아온 걸 환영해, . 오늘 멋진 하루 보냈어?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Night_2",
+          "DialogueText": "벌써 잘 시간이야? 어머, 내 하루가 또 이렇게 떠흘러갔네. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/215.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "벌써 잘 시간이야? 어머, 내 하루가 또 이렇게 떠흘러갔네."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Night_3",
+          "DialogueText": "아, 그 향! 이건 분명 네 향기야. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/216.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "아, 그 향! 이건 분명 네 향기야."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Night_3",
+          "DialogueText": "좋은 냄새야.",
+          "AudioPath": "assets/ko-KR/Emily/217.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Night_3",
+          "PageIndex": 1,
+          "DisplayPattern": "좋은 냄새야."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Night_4",
+          "DialogueText": "오늘 집 다 쓸고, 창문 닦고, 먼지 털고, 냉장고 청소도 했어. 아주 생산적인 하루였어!",
+          "AudioPath": "assets/ko-KR/Emily/218.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 집 다 쓸고, 창문 닦고, 먼지 털고, 냉장고 청소도 했어. 아주 생산적인 하루였어!"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Night_Emily",
+          "DialogueText": "집 정말 아늑해... 마음에 들어.",
+          "AudioPath": "assets/ko-KR/Emily/219.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "집 정말 아늑해... 마음에 들어."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_0",
+          "DialogueText": "내가 늙고 머리색이 칙칙하게 바랜 철색이 되어도 날 좋아하길 바라.",
+          "AudioPath": "assets/ko-KR/Emily/220.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Neutral_0",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 늙고 머리색이 칙칙하게 바랜 철색이 되어도 날 좋아하길 바라."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_1",
+          "DialogueText": "우리가 해낸 일을 당신 할아버지께서도 자랑스러워하실까?",
+          "AudioPath": "assets/ko-KR/Emily/221.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_1",
+          "PageIndex": 0,
+          "DisplayPattern": "우리가 해낸 일을 당신 할아버지께서도 자랑스러워하실까?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_2",
+          "DialogueText": "쉬는 중이야? 내가 생각했던 것보다 농부 일이 쉬운가 보네...",
+          "AudioPath": "assets/ko-KR/Emily/222.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_2",
+          "PageIndex": 0,
+          "DisplayPattern": "쉬는 중이야? 내가 생각했던 것보다 농부 일이 쉬운가 보네..."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_3",
+          "DialogueText": "오늘 마을 가게 되면, 사람들한테 내 안부도 전해줘.",
+          "AudioPath": "assets/ko-KR/Emily/223.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_3",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 마을 가게 되면, 사람들한테 내 안부도 전해줘."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_4",
+          "DialogueText": "내일 아침에 당신이 깨기 전에 빨래 해놓을게... 그럼 마냥 기다리는 시간은 없겠지.",
+          "AudioPath": "assets/ko-KR/Emily/224.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_4",
+          "PageIndex": 0,
+          "DisplayPattern": "내일 아침에 당신이 깨기 전에 빨래 해놓을게... 그럼 마냥 기다리는 시간은 없겠지."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_5",
+          "DialogueText": "{Farmer_Name}, 우리 재정상황은 괜찮지?",
+          "AudioPath": "assets/ko-KR/Emily/225.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_5",
+          "PageIndex": 0,
+          "DisplayPattern": ", 우리 재정상황은 괜찮지?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_6",
+          "DialogueText": "오늘 마을 사람들은 뭐하고 있으려나?",
+          "AudioPath": "assets/ko-KR/Emily/226.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_6",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 마을 사람들은 뭐하고 있으려나?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_7",
+          "DialogueText": "오늘은 왠지 아무것도 하기 싫다.",
+          "AudioPath": "assets/ko-KR/Emily/227.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_7",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘은 왠지 아무것도 하기 싫다."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_8",
+          "DialogueText": "오늘 동기부여가 안되네. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/228.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Neutral_8",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 동기부여가 안되네."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_9",
+          "DialogueText": "우리 평생 여기서 지내려나?",
+          "AudioPath": "assets/ko-KR/Emily/229.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_9",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 평생 여기서 지내려나?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/NoBed_0",
+          "DialogueText": "난 이제 어디서 자야 하지...? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/230.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_0",
+          "PageIndex": 0,
+          "DisplayPattern": "난 이제 어디서 자야 하지...?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/NoBed_1",
+          "DialogueText": "지난밤 푹 잘 수가 없었어... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/231.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_1",
+          "PageIndex": 0,
+          "DisplayPattern": "지난밤 푹 잘 수가 없었어..."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/NoBed_2",
+          "DialogueText": "바닥에서 자야 하는 신세라니... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/232.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_2",
+          "PageIndex": 0,
+          "DisplayPattern": "바닥에서 자야 하는 신세라니..."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/NoBed_3",
+          "DialogueText": "우리 침대는...? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/233.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_3",
+          "PageIndex": 0,
+          "DisplayPattern": "우리 침대는...?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/OneKid_0",
+          "DialogueText": "kid1(이)가 다정하고 배려할 줄 아는 사람이 되었으면 좋겠어. 학교에서 성적을 잘 받는 것보다 중요해.",
+          "AudioPath": "assets/ko-KR/Emily/234.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:OneKid_0",
+          "PageIndex": 0,
+          "DisplayPattern": "kid1(이)가 다정하고 배려할 줄 아는 사람이 되었으면 좋겠어. 학교에서 성적을 잘 받는 것보다 중요해."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/OneKid_1",
+          "DialogueText": "아이 한 명이면 충분할까, 아니면 한 명 더 있으면 좋을까?",
+          "AudioPath": "assets/ko-KR/Emily/235.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:OneKid_1",
+          "PageIndex": 0,
+          "DisplayPattern": "아이 한 명이면 충분할까, 아니면 한 명 더 있으면 좋을까?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/OneKid_1",
+          "DialogueText": "일단은 운명이 우리를 어디로 이끄는지 봐야겠지.",
+          "AudioPath": "assets/ko-KR/Emily/236.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:OneKid_1",
+          "PageIndex": 1,
+          "DisplayPattern": "일단은 운명이 우리를 어디로 이끄는지 봐야겠지."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/OneKid_2",
+          "DialogueText": "kid1(이) 밥은 오늘 내가 챙길게, 걱정 안 해도 될 거야. 농장 운영에 집중해요 여보.",
+          "AudioPath": "assets/ko-KR/Emily/237.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:OneKid_2",
+          "PageIndex": 0,
+          "DisplayPattern": "kid1(이) 밥은 오늘 내가 챙길게, 걱정 안 해도 될 거야. 농장 운영에 집중해요 여보."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/OneKid_3",
+          "DialogueText": "창백한 녹색을 켜고 %kid1(이) 머리 위에 어린 민트 잎을 흔들었어. 이러면 위험한 유령은 막아줄 거야.",
+          "AudioPath": "assets/ko-KR/Emily/238.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:OneKid_3",
+          "PageIndex": 0,
+          "DisplayPattern": "창백한 녹색을 켜고 (이) 머리 위에 어린 민트 잎을 흔들었어. 이러면 위험한 유령은 막아줄 거야."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Outdoor_0",
+          "DialogueText": "일찍 일어나는 거 너무 좋아. 공기가 특히 더 상쾌하고 야생동물들도 더 활발한 시간이야.",
+          "AudioPath": "assets/ko-KR/Emily/239.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Outdoor_0",
+          "PageIndex": 0,
+          "DisplayPattern": "일찍 일어나는 거 너무 좋아. 공기가 특히 더 상쾌하고 야생동물들도 더 활발한 시간이야."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Outdoor_1",
+          "DialogueText": "여보, 오늘 우리 할 일이 뭐지?",
+          "AudioPath": "assets/ko-KR/Emily/240.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Outdoor_1",
+          "PageIndex": 0,
+          "DisplayPattern": "여보, 오늘 우리 할 일이 뭐지?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Outdoor_2",
+          "DialogueText": "오오! 오! 하나 더 봤어! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/241.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Outdoor_2",
+          "PageIndex": 0,
+          "DisplayPattern": "오오! 오! 하나 더 봤어!"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Outdoor_2",
+          "DialogueText": "다람쥐 세고 있어.",
+          "AudioPath": "assets/ko-KR/Emily/242.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Outdoor_2",
+          "PageIndex": 1,
+          "DisplayPattern": "다람쥐 세고 있어."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Outdoor_3",
+          "DialogueText": "햇빛은 건강에 좋지. 그렇다고 너무 타진 말고, 알았지?",
+          "AudioPath": "assets/ko-KR/Emily/243.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Outdoor_3",
+          "PageIndex": 0,
+          "DisplayPattern": "햇빛은 건강에 좋지. 그렇다고 너무 타진 말고, 알았지?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Outdoor_4",
+          "DialogueText": "좋은 아침이야! 네가 언제쯤 침대에서 나오려나 궁금해하고 있었는데! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/244.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Outdoor_4",
+          "PageIndex": 0,
+          "DisplayPattern": "좋은 아침이야! 네가 언제쯤 침대에서 나오려나 궁금해하고 있었는데!"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Outdoor_4",
+          "DialogueText": "괜찮아, {Farmer_Name}... 밤에는 푹 자야지.",
+          "AudioPath": "assets/ko-KR/Emily/245.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Outdoor_4",
+          "PageIndex": 1,
+          "DisplayPattern": "괜찮아, ... 밤에는 푹 자야지."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Outdoor_Emily",
+          "DialogueText": "잘하고 있어, {Farmer_Name}. 열심히 하자.",
+          "AudioPath": "assets/ko-KR/Emily/246.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Outdoor_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "잘하고 있어, . 열심히 하자."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/patio_Emily",
+          "DialogueText": "난 여기서 아침 명상을 하는 게 제일 좋더라.",
+          "AudioPath": "assets/ko-KR/Emily/247.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:patio_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "난 여기서 아침 명상을 하는 게 제일 좋더라."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/patio_Emily",
+          "DialogueText": "이 수정 정원의 에너지가 내 몸 속으로 흐르는 것을 마음속으로 그려보고 있어.",
+          "AudioPath": "assets/ko-KR/Emily/248.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:patio_Emily",
+          "PageIndex": 1,
+          "DisplayPattern": "이 수정 정원의 에너지가 내 몸 속으로 흐르는 것을 마음속으로 그려보고 있어."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Day_0",
+          "DialogueText": "비가 오면 날벌레는 어디로 가는 걸까? 빗방울에 맞지는 않나?",
+          "AudioPath": "assets/ko-KR/Emily/249.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "비가 오면 날벌레는 어디로 가는 걸까? 빗방울에 맞지는 않나?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Day_1",
+          "DialogueText": "이런 날은 대자연이 내려준 축복이지.",
+          "AudioPath": "assets/ko-KR/Emily/250.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "이런 날은 대자연이 내려준 축복이지."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Day_2",
+          "DialogueText": "좋은 아침... 널 위한 선물이 있어. 걱정하진 마, 세이지 향을 피워서 정화시킨 거야. [428 440 444 338 207]",
+          "AudioPath": "assets/ko-KR/Emily/251.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "좋은 아침... 널 위한 선물이 있어. 걱정하진 마, 세이지 향을 피워서 정화시킨 거야."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Day_3",
+          "DialogueText": "앵무새를 풀어줄 의도였는데, 날개가 완전히 낫질 않았어. 그래도 만족하고 있는 것 같아. 내가 관심 많이 주거든.",
+          "AudioPath": "assets/ko-KR/Emily/252.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "앵무새를 풀어줄 의도였는데, 날개가 완전히 낫질 않았어. 그래도 만족하고 있는 것 같아. 내가 관심 많이 주거든."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Day_3",
+          "DialogueText": "나한테 여기서 지내는 게 행복하다고 했어.",
+          "AudioPath": "assets/ko-KR/Emily/253.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Day_3",
+          "PageIndex": 1,
+          "DisplayPattern": "나한테 여기서 지내는 게 행복하다고 했어."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Day_4",
+          "DialogueText": "얘기해준 적 없지만... 네가 여기 처음 이사 왔을 때 네 꿈을 꿨어. 그때 우리 삶이 엮일 거란 걸 바로 알았지. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Emily/254.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "얘기해준 적 없지만... 네가 여기 처음 이사 왔을 때 네 꿈을 꿨어. 그때 우리 삶이 엮일 거란 걸 바로 알았지."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Day_Emily",
+          "DialogueText": "일에 자부심을 느끼는 건 알지만, 오늘은 너무 무리하지 마. 알았지, 여보? {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/255.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Day_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "일에 자부심을 느끼는 건 알지만, 오늘은 너무 무리하지 마. 알았지, 여보?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Night_0",
+          "DialogueText": "매 순간이 독특하고 귀중한 아름다움을 가지고 있어... 혹시 알아챘어? 가끔은 잊기 쉬운 것 같아.",
+          "AudioPath": "assets/ko-KR/Emily/256.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "매 순간이 독특하고 귀중한 아름다움을 가지고 있어... 혹시 알아챘어? 가끔은 잊기 쉬운 것 같아."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Night_1",
+          "DialogueText": "식물들이 서로 얘기하는 게 들려... 오늘 비가 와서 행복하대!",
+          "AudioPath": "assets/ko-KR/Emily/257.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "식물들이 서로 얘기하는 게 들려... 오늘 비가 와서 행복하대!"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Night_2",
+          "DialogueText": "오늘 하루 어땠어, {Farmer_Name}? 좀 축축해 보인다.",
+          "AudioPath": "assets/ko-KR/Emily/258.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 하루 어땠어, ? 좀 축축해 보인다."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Night_3",
+          "DialogueText": "나 오늘 하루는 평화로웠어. 너는 어땠어?",
+          "AudioPath": "assets/ko-KR/Emily/259.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "나 오늘 하루는 평화로웠어. 너는 어땠어?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Night_4",
+          "DialogueText": "디저트 좀 먹을래? 내가 특별히 만든 가공되지 않은 재료만 쓴, 글루텐 없는, 선인장 시럽으로만 단맛을 낸 디저트야.[232 234 223 220] {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/260.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "디저트 좀 먹을래? 내가 특별히 만든 가공되지 않은 재료만 쓴, 글루텐 없는, 선인장 시럽으로만 단맛을 낸 디저트야."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Night_5",
+          "DialogueText": "빗소리에 황홀해진 적이 있니?",
+          "AudioPath": "assets/ko-KR/Emily/261.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Night_5",
+          "PageIndex": 0,
+          "DisplayPattern": "빗소리에 황홀해진 적이 있니?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Night_Emily",
+          "DialogueText": "몇몇 정령은 비가 올 때만 나타난대. 그들의 소리를 들어본 적 있어?",
+          "AudioPath": "assets/ko-KR/Emily/262.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Night_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "몇몇 정령은 비가 올 때만 나타난대. 그들의 소리를 들어본 적 있어?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/spouseRoom_Emily",
+          "DialogueText": "오늘은 앵무새랑 시간 좀 보내려고. 다시는 날 수 없다는 생각에 마음이 너무 아파. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/263.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:spouseRoom_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘은 앵무새랑 시간 좀 보내려고. 다시는 날 수 없다는 생각에 마음이 너무 아파."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/spring_1",
+          "DialogueText": "새로운 한 해의 시작이야, 여보. 올해를 특별한 해로 만들자. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Emily/264.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:spring_1",
+          "PageIndex": 0,
+          "DisplayPattern": "새로운 한 해의 시작이야, 여보. 올해를 특별한 해로 만들자."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/spring_2",
+          "DialogueText": "내 친구들, 식물들이, 다시 살아났어. 만족스러워.",
+          "AudioPath": "assets/ko-KR/Emily/265.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:spring_2",
+          "PageIndex": 0,
+          "DisplayPattern": "내 친구들, 식물들이, 다시 살아났어. 만족스러워."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/spring_22",
+          "DialogueText": "흠... 오늘 채집한 신선한 야채로 샐러드 만들어서 저녁으로 먹을까 생각 중이야.",
+          "AudioPath": "assets/ko-KR/Emily/266.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:spring_22",
+          "PageIndex": 0,
+          "DisplayPattern": "흠... 오늘 채집한 신선한 야채로 샐러드 만들어서 저녁으로 먹을까 생각 중이야."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/spring_23",
+          "DialogueText": "춤 연습은 좀 해뒀길 바라... 내일 봄꽃 무도회 거든!",
+          "AudioPath": "assets/ko-KR/Emily/267.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_23",
+          "PageIndex": 0,
+          "DisplayPattern": "춤 연습은 좀 해뒀길 바라... 내일 봄꽃 무도회 거든!"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/spring_8",
+          "DialogueText": "겨울이 끝났으니, 생산적일 수 있는 날이 많아지겠지.",
+          "AudioPath": "assets/ko-KR/Emily/268.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_8",
+          "PageIndex": 0,
+          "DisplayPattern": "겨울이 끝났으니, 생산적일 수 있는 날이 많아지겠지."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/spring_Emily",
+          "DialogueText": "{Farmer_Name}, 한해 더 농사지을 생각하니 신나! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/269.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:spring_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": ", 한해 더 농사지을 생각하니 신나!"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/summer_1",
+          "DialogueText": "열사병 조심해, 여보.",
+          "AudioPath": "assets/ko-KR/Emily/270.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_1",
+          "PageIndex": 0,
+          "DisplayPattern": "열사병 조심해, 여보."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/summer_1",
+          "DialogueText": "물 많이 마시고 무리하지 말고.",
+          "AudioPath": "assets/ko-KR/Emily/271.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_1",
+          "PageIndex": 1,
+          "DisplayPattern": "물 많이 마시고 무리하지 말고."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/summer_15",
+          "DialogueText": "여름이네... 집안에 파리가 너무 많아.",
+          "AudioPath": "assets/ko-KR/Emily/272.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 0,
+          "DisplayPattern": "여름이네... 집안에 파리가 너무 많아."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/summer_15",
+          "DialogueText": "걱정하지 마, 내가 처리할게.",
+          "AudioPath": "assets/ko-KR/Emily/273.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 1,
+          "DisplayPattern": "걱정하지 마, 내가 처리할게."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/summer_2",
+          "DialogueText": "오늘 같이 사랑스러운 날에 요바의 축복이 있기를. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Emily/274.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:summer_2",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 같이 사랑스러운 날에 요바의 축복이 있기를."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/summer_20",
+          "DialogueText": "계절처럼 우리 몸 안의 에너지도 변동이 있어. 내면의 화합을 이루려면 자신만의 리듬을 이해하는 게 중요해.",
+          "AudioPath": "assets/ko-KR/Emily/275.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:summer_20",
+          "PageIndex": 0,
+          "DisplayPattern": "계절처럼 우리 몸 안의 에너지도 변동이 있어. 내면의 화합을 이루려면 자신만의 리듬을 이해하는 게 중요해."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/summer_8",
+          "DialogueText": "나 혹시 냄새나면 미안해... 밤새 더워서 계속 땀났어.",
+          "AudioPath": "assets/ko-KR/Emily/276.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_8",
+          "PageIndex": 0,
+          "DisplayPattern": "나 혹시 냄새나면 미안해... 밤새 더워서 계속 땀났어."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/summer_Emily",
+          "DialogueText": "휴! 여름이 정말 덥지만 기분 좋긴 해, 그치?",
+          "AudioPath": "assets/ko-KR/Emily/277.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:summer_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "휴! 여름이 정말 덥지만 기분 좋긴 해, 그치?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/summer_Emily",
+          "DialogueText": "오늘 야생 앵무새를 볼 수 있을지도 모르겠다.",
+          "AudioPath": "assets/ko-KR/Emily/278.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:summer_Emily",
+          "PageIndex": 1,
+          "DisplayPattern": "오늘 야생 앵무새를 볼 수 있을지도 모르겠다."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/TwoKids_0",
+          "DialogueText": "내가 벌써 %kid1(이)랑 %kid2(이) 아침 줬어. 배고팠대!",
+          "AudioPath": "assets/ko-KR/Emily/279.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:TwoKids_0",
+          "PageIndex": 0,
+          "DisplayPattern": "내가 벌써 (이)랑 (이) 아침 줬어. 배고팠대!"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/TwoKids_1",
+          "DialogueText": "큰 집, 아이 둘, 앵무새... 바쁠 일로 가득하네!",
+          "AudioPath": "assets/ko-KR/Emily/280.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:TwoKids_1",
+          "PageIndex": 0,
+          "DisplayPattern": "큰 집, 아이 둘, 앵무새... 바쁠 일로 가득하네!"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/TwoKids_2",
+          "DialogueText": "오, %kid2(이) 머리가 확실히 당신 닮았네... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/281.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:TwoKids_2",
+          "PageIndex": 0,
+          "DisplayPattern": "오, (이) 머리가 확실히 당신 닮았네..."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/TwoKids_3",
+          "DialogueText": "아, 아이들한테 벌써 염소젖이랑 퀴노아 씨리얼 줬어. 자기는 농장 일에 집중해도 돼!",
+          "AudioPath": "assets/ko-KR/Emily/282.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:TwoKids_3",
+          "PageIndex": 0,
+          "DisplayPattern": "아, 아이들한테 벌써 염소젖이랑 퀴노아 씨리얼 줬어. 자기는 농장 일에 집중해도 돼!"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/winter_1",
+          "DialogueText": "으으.... 춥네. 겨울인가 봐.",
+          "AudioPath": "assets/ko-KR/Emily/283.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:winter_1",
+          "PageIndex": 0,
+          "DisplayPattern": "으으.... 춥네. 겨울인가 봐."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/winter_15",
+          "DialogueText": "오늘 같은 날에는 시나몬, 넛메그, 클로브랑 카르다몸이 먹고싶어.",
+          "AudioPath": "assets/ko-KR/Emily/284.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:winter_15",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 같은 날에는 시나몬, 넛메그, 클로브랑 카르다몸이 먹고싶어."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/winter_2",
+          "DialogueText": "저 밖에 있을 불쌍한, 꽁꽁 얼어있을 다람쥐들이 자꾸 생각나. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/285.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:winter_2",
+          "PageIndex": 0,
+          "DisplayPattern": "저 밖에 있을 불쌍한, 꽁꽁 얼어있을 다람쥐들이 자꾸 생각나."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/winter_28",
+          "DialogueText": "올해도 고마워, {Farmer_Name}. 우리 함께 내년도 힘내자고. {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Emily/286.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:winter_28",
+          "PageIndex": 0,
+          "DisplayPattern": "올해도 고마워, . 우리 함께 내년도 힘내자고."
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/winter_5",
+          "DialogueText": "*한숨*... 왜 세상엔 전쟁과 증오가 있어야 하는 걸까? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/287.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:winter_5",
+          "PageIndex": 0,
+          "DisplayPattern": "*한숨*... 왜 세상엔 전쟁과 증오가 있어야 하는 걸까?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/winter_7",
+          "DialogueText": "내일 낚시대회 참가할 거야?",
+          "AudioPath": "assets/ko-KR/Emily/288.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:winter_7",
+          "PageIndex": 0,
+          "DisplayPattern": "내일 낚시대회 참가할 거야?"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/winter_Emily",
+          "DialogueText": "웁스, 머리가 얼어서 단단해졌네. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/289.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:winter_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "웁스, 머리가 얼어서 단단해졌네."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "칼리코 사막에는 비가 안 와... 내 친구 샌디가 거기 살아.",
+          "AudioPath": "assets/ko-KR/Emily/290.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "칼리코 사막에는 비가 안 와... 내 친구 샌디가 거기 살아."
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "오늘 놀러 갈걸 그랬어. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/291.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Emily",
+          "PageIndex": 1,
+          "DisplayPattern": "오늘 놀러 갈걸 그랬어."
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917600:s0",
+          "DialogueText": "Hey, honey... before you get to work today, do you have a moment?",
+          "AudioPath": "assets/ko-KR/Emily/292.ogg",
+          "TranslationKey": "Events/Farm:3917600:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, honey... before you get to work today, do you have a moment?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917600:s1",
+          "DialogueText": "I've been working on something special for you... but I need a little help finishing it.",
+          "AudioPath": "assets/ko-KR/Emily/293.ogg",
+          "TranslationKey": "Events/Farm:3917600:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been working on something special for you... but I need a little help finishing it."
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917600:s2",
+          "DialogueText": "It's a secret, so I can't tell you what it is... but could you bring me 200 pieces of fiber?",
+          "AudioPath": "assets/ko-KR/Emily/294.ogg",
+          "TranslationKey": "Events/Farm:3917600:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a secret, so I can't tell you what it is... but could you bring me 200 pieces of fiber?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917600:s3",
+          "DialogueText": "That's all I need! Just bring the 200 fiber by when you have a chance... no rush!",
+          "AudioPath": "assets/ko-KR/Emily/295.ogg",
+          "TranslationKey": "Events/Farm:3917600:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "That's all I need! Just bring the 200 fiber by when you have a chance... no rush!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917600:s4",
+          "DialogueText": "No peeking! You'll see the end result soon.",
+          "AudioPath": "assets/ko-KR/Emily/296.ogg",
+          "TranslationKey": "Events/Farm:3917600:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "No peeking! You'll see the end result soon."
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s0",
+          "DialogueText": "Hi {Farmer_Name}! Good morning!",
+          "AudioPath": "assets/ko-KR/Emily/297.ogg",
+          "TranslationKey": "Events/Farm:992559:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi ! Good morning!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s1",
+          "DialogueText": "You seem to be doing well... the farm looks great! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/298.ogg",
+          "TranslationKey": "Events/Farm:992559:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "You seem to be doing well... the farm looks great!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s2",
+          "DialogueText": "So... you've been here a while, and I'm sure you've acquired some 'cloth' by now... right?",
+          "AudioPath": "assets/ko-KR/Emily/299.ogg",
+          "TranslationKey": "Events/Farm:992559:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "So... you've been here a while, and I'm sure you've acquired some 'cloth' by now... right?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s3",
+          "DialogueText": "Well, did you know that you can use cloth to tailor all kinds of clothes? All you need is access to a sewing machine...",
+          "AudioPath": "assets/ko-KR/Emily/300.ogg",
+          "TranslationKey": "Events/Farm:992559:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, did you know that you can use cloth to tailor all kinds of clothes? All you need is access to a sewing machine..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s4",
+          "DialogueText": "And I happen to have one at home! Feel free to swing by and use it any time. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/301.ogg",
+          "TranslationKey": "Events/Farm:992559:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "And I happen to have one at home! Feel free to swing by and use it any time."
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s5",
+          "DialogueText": "You can now access Emily's sewing machine!",
+          "AudioPath": "assets/ko-KR/Emily/302.ogg",
+          "TranslationKey": "Events/Farm:992559:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "You can now access Emily's sewing machine!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s6",
+          "DialogueText": "To start tailoring, you'll need a piece of cloth and a secondary item. Experiment and see what unique styles are out there!",
+          "AudioPath": "assets/ko-KR/Emily/303.ogg",
+          "TranslationKey": "Events/Farm:992559:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "To start tailoring, you'll need a piece of cloth and a secondary item. Experiment and see what unique styles are out there!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s0",
+          "DialogueText": "Good morning, {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/304.ogg",
+          "TranslationKey": "Events/Farm:992559:s0",
+          "PageIndex": 1,
+          "DisplayPattern": "Good morning, ."
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s1",
+          "DialogueText": "I just remembered... I have a sewing machine at my old place!",
+          "AudioPath": "assets/ko-KR/Emily/305.ogg",
+          "TranslationKey": "Events/Farm:992559:s1",
+          "PageIndex": 1,
+          "DisplayPattern": "I just remembered... I have a sewing machine at my old place!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s2",
+          "DialogueText": "If you ever feel like making clothes, you should swing by and check it out. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/306.ogg",
+          "TranslationKey": "Events/Farm:992559:s2",
+          "PageIndex": 1,
+          "DisplayPattern": "If you ever feel like making clothes, you should swing by and check it out."
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s3",
+          "DialogueText": "You can now access Emily's sewing machine!",
+          "AudioPath": "assets/ko-KR/Emily/307.ogg",
+          "TranslationKey": "Events/Farm:992559:s3",
+          "PageIndex": 1,
+          "DisplayPattern": "You can now access Emily's sewing machine!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s4",
+          "DialogueText": "To start tailoring, you'll need a piece of cloth and a secondary item. Experiment and see what unique styles are out there!",
+          "AudioPath": "assets/ko-KR/Emily/308.ogg",
+          "TranslationKey": "Events/Farm:992559:s4",
+          "PageIndex": 1,
+          "DisplayPattern": "To start tailoring, you'll need a piece of cloth and a secondary item. Experiment and see what unique styles are out there!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s5",
+          "DialogueText": "I'm going to have a lot of fun seeing you in all kinds of different outfits! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/309.ogg",
+          "TranslationKey": "Events/Farm:992559:s5",
+          "PageIndex": 1,
+          "DisplayPattern": "I'm going to have a lot of fun seeing you in all kinds of different outfits!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917601:s0",
+          "DialogueText": "Welcome home, {Farmer_Name}. I hope you had a nice day.",
+          "AudioPath": "assets/ko-KR/Emily/310.ogg",
+          "TranslationKey": "Events/FarmHouse:3917601:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Welcome home, . I hope you had a nice day."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917601:s1",
+          "DialogueText": "So... I finished that secret project I was working on.",
+          "AudioPath": "assets/ko-KR/Emily/311.ogg",
+          "TranslationKey": "Events/FarmHouse:3917601:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "So... I finished that secret project I was working on."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917601:s2",
+          "DialogueText": "It's a brand new hand-made outfit for you! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/312.ogg",
+          "TranslationKey": "Events/FarmHouse:3917601:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a brand new hand-made outfit for you!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917601:s3",
+          "DialogueText": "Received Emily's Magic Hat, Emily's Magic Boots, Emily's Magic Shirt, and a matching set of pants!",
+          "AudioPath": "assets/ko-KR/Emily/313.ogg",
+          "TranslationKey": "Events/FarmHouse:3917601:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Received Emily's Magic Hat, Emily's Magic Boots, Emily's Magic Shirt, and a matching set of pants!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917601:s4",
+          "DialogueText": "I've always loved sewing and making crafts... So I thought it'd be nice to make you something by hand. I had a lot of fun!",
+          "AudioPath": "assets/ko-KR/Emily/314.ogg",
+          "TranslationKey": "Events/FarmHouse:3917601:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I've always loved sewing and making crafts... So I thought it'd be nice to make you something by hand. I had a lot of fun!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917601:s5",
+          "DialogueText": "I hope it fits right... and that the fiber isn't too itchy.",
+          "AudioPath": "assets/ko-KR/Emily/315.ogg",
+          "TranslationKey": "Events/FarmHouse:3917601:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "I hope it fits right... and that the fiber isn't too itchy."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917601:s6",
+          "DialogueText": "There's boots, a hat, a shirt, and pants! It's a complete outfit.",
+          "AudioPath": "assets/ko-KR/Emily/316.ogg",
+          "TranslationKey": "Events/FarmHouse:3917601:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "There's boots, a hat, a shirt, and pants! It's a complete outfit."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917601:s7",
+          "DialogueText": "Now, when you wear those clothes, you'll think of me... and you'll know I'm here waiting for you to come home safe... okay? {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Emily/317.ogg",
+          "TranslationKey": "Events/FarmHouse:3917601:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Now, when you wear those clothes, you'll think of me... and you'll know I'm here waiting for you to come home safe... okay?"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917601:s8",
+          "DialogueText": "Time for bed.",
+          "AudioPath": "assets/ko-KR/Emily/318.ogg",
+          "TranslationKey": "Events/FarmHouse:3917601:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Time for bed."
+        },
+        {
+          "DialogueFrom": "Event:Town/831125:s0",
+          "DialogueText": "Yes!",
+          "AudioPath": "assets/ko-KR/Emily/319.ogg",
+          "TranslationKey": "Events/Town:831125:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Yes!"
+        },
+        {
+          "DialogueFrom": "Event:Town/831125:s1",
+          "DialogueText": "I thought we had something special... I guess I was wrong. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/320.ogg",
+          "TranslationKey": "Events/Town:831125:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I thought we had something special... I guess I was wrong."
+        },
+        {
+          "DialogueFrom": "Event:Town/831125:s2",
+          "DialogueText": "I thought we had something special... You said you wouldn't leave me for anything. I guess that was a lie. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/321.ogg",
+          "TranslationKey": "Events/Town:831125:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I thought we had something special... You said you wouldn't leave me for anything. I guess that was a lie."
+        },
+        {
+          "DialogueFrom": "Event:Town/831125:s3",
+          "DialogueText": "But... But... Isn't soda unhealthy? You promised me... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/322.ogg",
+          "TranslationKey": "Events/Town:831125:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "But... But... Isn't soda unhealthy? You promised me..."
+        },
+        {
+          "DialogueFrom": "Event:Town/831125:s4",
+          "DialogueText": "...Clint? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/323.ogg",
+          "TranslationKey": "Events/Town:831125:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "...Clint?"
+        },
+        {
+          "DialogueFrom": "Event:Town/831125:s5",
+          "DialogueText": "What a productive day... I got some great footage.",
+          "AudioPath": "assets/ko-KR/Emily/324.ogg",
+          "TranslationKey": "Events/Town:831125:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "What a productive day... I got some great footage."
+        },
+        {
+          "DialogueFrom": "Event:Town/101:s0",
+          "DialogueText": "Sorry, Caroline. Could you excuse me for a minute?",
+          "AudioPath": "assets/ko-KR/Emily/325.ogg",
+          "TranslationKey": "Events/Town:101:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Sorry, Caroline. Could you excuse me for a minute?"
+        },
+        {
+          "DialogueFrom": "Event:Town/101:s1",
+          "DialogueText": "Yes, Clint?",
+          "AudioPath": "assets/ko-KR/Emily/326.ogg",
+          "TranslationKey": "Events/Town:101:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Yes, Clint?"
+        },
+        {
+          "DialogueFrom": "Event:Town/101:s2",
+          "DialogueText": "Sure, Clint! That sounds fun! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/327.ogg",
+          "TranslationKey": "Events/Town:101:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Sure, Clint! That sounds fun!"
+        },
+        {
+          "DialogueFrom": "Event:Town/101:s3",
+          "DialogueText": "Okay! See you tomorrow!",
+          "AudioPath": "assets/ko-KR/Emily/328.ogg",
+          "TranslationKey": "Events/Town:101:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay! See you tomorrow!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s0",
+          "DialogueText": "It... It was a lot of fun... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/329.ogg",
+          "TranslationKey": "Events/Town:191393:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "It... It was a lot of fun..."
+        },
+        {
+          "DialogueFrom": "Event:Town/463391:s0",
+          "DialogueText": "Ah... Another beautiful day in Pelican Town.",
+          "AudioPath": "assets/ko-KR/Emily/330.ogg",
+          "TranslationKey": "Events/Town:463391:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah... Another beautiful day in Pelican Town."
+        },
+        {
+          "DialogueFrom": "Event:Town/463391:s1",
+          "DialogueText": "My friends!",
+          "AudioPath": "assets/ko-KR/Emily/331.ogg",
+          "TranslationKey": "Events/Town:463391:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "My friends!"
+        },
+        {
+          "DialogueFrom": "Event:Town/463391:s2",
+          "DialogueText": "Oh no! You poor thing! {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/332.ogg",
+          "TranslationKey": "Events/Town:463391:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh no! You poor thing!"
+        },
+        {
+          "DialogueFrom": "Event:Town/463391:s3",
+          "DialogueText": "Your wing's broken. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/333.ogg",
+          "TranslationKey": "Events/Town:463391:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Your wing's broken."
+        },
+        {
+          "DialogueFrom": "Event:Town/463391:s4",
+          "DialogueText": "Oh, you're a bit different than the others, aren't you? Just like me... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/334.ogg",
+          "TranslationKey": "Events/Town:463391:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, you're a bit different than the others, aren't you? Just like me..."
+        },
+        {
+          "DialogueFrom": "Event:Town/463391:s5",
+          "DialogueText": "Don't worry. I'll nurse you back to health, little one. Everything will be alright. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/335.ogg",
+          "TranslationKey": "Events/Town:463391:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Don't worry. I'll nurse you back to health, little one. Everything will be alright."
+        },
+        {
+          "DialogueFrom": "Event:Town/463391:s6",
+          "DialogueText": "Emily took the injured parrot into her home and bandaged the wing.",
+          "AudioPath": "assets/ko-KR/Emily/336.ogg",
+          "TranslationKey": "Events/Town:463391:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Emily took the injured parrot into her home and bandaged the wing."
+        },
+        {
+          "DialogueFrom": "Event:Town/463391:s7",
+          "DialogueText": "He's all set up in her room. But as a token of respect, she didn't give the bird a name.",
+          "AudioPath": "assets/ko-KR/Emily/337.ogg",
+          "TranslationKey": "Events/Town:463391:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "He's all set up in her room. But as a token of respect, she didn't give the bird a name."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s0",
+          "DialogueText": "I am!",
+          "AudioPath": "assets/ko-KR/Emily/338.ogg",
+          "TranslationKey": "Events/Town:6184644:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I am!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/11:s0",
+          "DialogueText": "You're being childish, Haley. I do the vast majority of work in this house, and you know it. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/339.ogg",
+          "TranslationKey": "Events/HaleyHouse:11:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "You're being childish, Haley. I do the vast majority of work in this house, and you know it."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/11:s1|g=male",
+          "DialogueText": "He has a name, you know. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/340_male.ogg",
+          "TranslationKey": "Events/HaleyHouse:11:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "He has a name, you know.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/11:s2|g=female",
+          "DialogueText": "She has a name, you know. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/341_female.ogg",
+          "TranslationKey": "Events/HaleyHouse:11:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "She has a name, you know.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/11:s3",
+          "DialogueText": "*sigh*... I'm really sorry to involve you in this, {Farmer_Name}. Haley is complaining because I asked her to clean under the cushions. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/342.ogg",
+          "TranslationKey": "Events/HaleyHouse:11:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*... I'm really sorry to involve you in this, . Haley is complaining because I asked her to clean under the cushions."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/11:s4",
+          "DialogueText": "Thanks, {Farmer_Name}. That was a great solution. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/343.ogg",
+          "TranslationKey": "Events/HaleyHouse:11:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks, . That was a great solution."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/haleyWontDoIt:s0",
+          "DialogueText": "*sigh*... I guess I'll just do it, then... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/344.ogg",
+          "TranslationKey": "Events/HaleyHouse:haleyWontDoIt:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*... I guess I'll just do it, then..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s0",
+          "DialogueText": "Come in, {Farmer_Name}! I want to show you something. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/345.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Come in, ! I want to show you something."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s1",
+          "DialogueText": "It's my secret hobby... I've been practicing for months.",
+          "AudioPath": "assets/ko-KR/Emily/346.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "It's my secret hobby... I've been practicing for months."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s2",
+          "DialogueText": "Now, sit back, relax, and allow yourself to be carried away to a better place... okay?",
+          "AudioPath": "assets/ko-KR/Emily/347.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Now, sit back, relax, and allow yourself to be carried away to a better place... okay?"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s3",
+          "DialogueText": "So... *gasp*... what did you think? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/348.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "So... *gasp*... what did you think?"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s4",
+          "DialogueText": "That was amazing!",
+          "AudioPath": "assets/ko-KR/Emily/349.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "That was amazing!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s5",
+          "DialogueText": "That was embarrassing...",
+          "AudioPath": "assets/ko-KR/Emily/350.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "That was embarrassing..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s6",
+          "DialogueText": "(Say nothing and do a slow clap)",
+          "AudioPath": "assets/ko-KR/Emily/351.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "(Say nothing and do a slow clap)"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s7",
+          "DialogueText": "Phew... that was quite a workout... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/352.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Phew... that was quite a workout..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s8",
+          "DialogueText": "I haven't been this sweaty since I ordered the pepper platter at Abigail's graduation fiesta! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/353.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I haven't been this sweaty since I ordered the pepper platter at Abigail's graduation fiesta!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s9",
+          "DialogueText": "...Well, I'd better take a shower. Thanks for watching.",
+          "AudioPath": "assets/ko-KR/Emily/354.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "...Well, I'd better take a shower. Thanks for watching."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s10",
+          "DialogueText": "Don't tell anyone about the dance. That was for your eyes only.",
+          "AudioPath": "assets/ko-KR/Emily/355.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Don't tell anyone about the dance. That was for your eyes only."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/471942:s0",
+          "DialogueText": "Mui-wah",
+          "AudioPath": "assets/ko-KR/Emily/356.ogg",
+          "TranslationKey": "Events/HaleyHouse:471942:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Mui-wah"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/471942:s1",
+          "DialogueText": "Muuui-wah",
+          "AudioPath": "assets/ko-KR/Emily/357.ogg",
+          "TranslationKey": "Events/HaleyHouse:471942:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Muuui-wah"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/471942:s2",
+          "DialogueText": "Why are you here? {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/358.ogg",
+          "TranslationKey": "Events/HaleyHouse:471942:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Why are you here?"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/471942:s3",
+          "DialogueText": "... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/359.ogg",
+          "TranslationKey": "Events/HaleyHouse:471942:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/471942:s4",
+          "DialogueText": "That reminded me of something. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/360.ogg",
+          "TranslationKey": "Events/HaleyHouse:471942:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "That reminded me of something."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/471942:s5",
+          "DialogueText": "Even the tiniest, blandest, simplest light holds a wonderful secret.",
+          "AudioPath": "assets/ko-KR/Emily/361.ogg",
+          "TranslationKey": "Events/HaleyHouse:471942:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Even the tiniest, blandest, simplest light holds a wonderful secret."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/471942:s6",
+          "DialogueText": "Nowwwwww I know why you're here. It's a sign. Hahaha! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/362.ogg",
+          "TranslationKey": "Events/HaleyHouse:471942:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Nowwwwww I know why you're here. It's a sign. Hahaha!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/471942:s7",
+          "DialogueText": "{Farmer_Name}... There's something special about {Farmer_Name}... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/363.ogg",
+          "TranslationKey": "Events/HaleyHouse:471942:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "... There's something special about ..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/471942:s8",
+          "DialogueText": "Our destinies will intersect... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/364.ogg",
+          "TranslationKey": "Events/HaleyHouse:471942:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Our destinies will intersect..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195012:s0",
+          "DialogueText": "Th... That night in the tent... you whispered such sweet things to me in the dark... {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/365.ogg",
+          "TranslationKey": "Events/HaleyHouse:195012:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Th... That night in the tent... you whispered such sweet things to me in the dark..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195012:s1",
+          "DialogueText": "Now I have to face each day knowing it was all a lie. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/366.ogg",
+          "TranslationKey": "Events/HaleyHouse:195012:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Now I have to face each day knowing it was all a lie."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/choseToExplain:s0",
+          "DialogueText": "Do you really expect us to believe that? You're just digging yourself into a deeper hole... {Portrait:Angry}",
+          "AudioPath": "assets/ko-KR/Emily/367.ogg",
+          "TranslationKey": "Events/HaleyHouse:choseToExplain:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Do you really expect us to believe that? You're just digging yourself into a deeper hole..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/150938:s0",
+          "DialogueText": "Great... everyone has their stone.",
+          "AudioPath": "assets/ko-KR/Emily/368.ogg",
+          "TranslationKey": "Events/HaleyHouse:150938:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Great... everyone has their stone."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/150938:s1",
+          "DialogueText": "Now, close your eyes, and take slow, deep breaths. Focus on your lungs.",
+          "AudioPath": "assets/ko-KR/Emily/369.ogg",
+          "TranslationKey": "Events/HaleyHouse:150938:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Now, close your eyes, and take slow, deep breaths. Focus on your lungs."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/150938:s2",
+          "DialogueText": "Visualize the pure energy flowing into your body with every breath.",
+          "AudioPath": "assets/ko-KR/Emily/370.ogg",
+          "TranslationKey": "Events/HaleyHouse:150938:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Visualize the pure energy flowing into your body with every breath."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/150938:s3",
+          "DialogueText": "And when you exhale, feel all the tension and negative energy flowing out, leaving you more and more relaxed with every breath.",
+          "AudioPath": "assets/ko-KR/Emily/371.ogg",
+          "TranslationKey": "Events/HaleyHouse:150938:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "And when you exhale, feel all the tension and negative energy flowing out, leaving you more and more relaxed with every breath."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/150938:s4",
+          "DialogueText": "Now, open your heart to the vibrational frequency of your stone. Do you feel anything?",
+          "AudioPath": "assets/ko-KR/Emily/372.ogg",
+          "TranslationKey": "Events/HaleyHouse:150938:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Now, open your heart to the vibrational frequency of your stone. Do you feel anything?"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s0",
+          "DialogueText": "Welcome to clothing therapy!",
+          "AudioPath": "assets/ko-KR/Emily/373.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Welcome to clothing therapy!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s1",
+          "DialogueText": "You're probably wondering... what is clothing therapy?",
+          "AudioPath": "assets/ko-KR/Emily/374.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "You're probably wondering... what is clothing therapy?"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s2",
+          "DialogueText": "I'll try to explain.",
+          "AudioPath": "assets/ko-KR/Emily/375.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll try to explain."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s3",
+          "DialogueText": "So many of us are struggling with personal issues... things holding us back from living how we want. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/376.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "So many of us are struggling with personal issues... things holding us back from living how we want."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s4",
+          "DialogueText": "It's important to me that everyone has a free and happy life... so I came up with a new kind of therapy to help people achieve that. {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/377.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "It's important to me that everyone has a free and happy life... so I came up with a new kind of therapy to help people achieve that."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s5",
+          "DialogueText": "It's based on the amazing power of self-expression. Self-expression is a wonderful healing tool, did you know that?",
+          "AudioPath": "assets/ko-KR/Emily/378.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "It's based on the amazing power of self-expression. Self-expression is a wonderful healing tool, did you know that?"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s6",
+          "DialogueText": "Behind this curtain, you'll find racks and racks of clothes. There's endless options to choose from.",
+          "AudioPath": "assets/ko-KR/Emily/379.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Behind this curtain, you'll find racks and racks of clothes. There's endless options to choose from."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s7",
+          "DialogueText": "Your job is simple: find the outfit that truly speaks to you, and put it on.",
+          "AudioPath": "assets/ko-KR/Emily/380.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Your job is simple: find the outfit that truly speaks to you, and put it on."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s8",
+          "DialogueText": "Feel confident in yourself and your choice. You all have a unique style to share with the world!",
+          "AudioPath": "assets/ko-KR/Emily/381.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Feel confident in yourself and your choice. You all have a unique style to share with the world!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s9",
+          "DialogueText": "Shane, you're up first! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/382.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Shane, you're up first!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s10",
+          "DialogueText": "Ah, {Farmer_Name}. You're just in time. Just observe and keep an open mind... okay?",
+          "AudioPath": "assets/ko-KR/Emily/383.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah, . You're just in time. Just observe and keep an open mind... okay?"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s11",
+          "DialogueText": "Shane, it's a new side of you we've never known about. That's great!",
+          "AudioPath": "assets/ko-KR/Emily/384.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Shane, it's a new side of you we've never known about. That's great!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s12",
+          "DialogueText": "Now, go outside with confidence and show the world!",
+          "AudioPath": "assets/ko-KR/Emily/385.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Now, go outside with confidence and show the world!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s13",
+          "DialogueText": "Okay, everyone gets a turn!",
+          "AudioPath": "assets/ko-KR/Emily/386.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay, everyone gets a turn!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s14",
+          "DialogueText": "Beautiful!",
+          "AudioPath": "assets/ko-KR/Emily/387.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "Beautiful!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s15",
+          "DialogueText": "Lookin' sharp!",
+          "AudioPath": "assets/ko-KR/Emily/388.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "Lookin' sharp!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s16",
+          "DialogueText": "Very nice!",
+          "AudioPath": "assets/ko-KR/Emily/389.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "Very nice!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s17",
+          "DialogueText": "Clint? You're up!",
+          "AudioPath": "assets/ko-KR/Emily/390.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "Clint? You're up!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s18",
+          "DialogueText": "Awww, cute!",
+          "AudioPath": "assets/ko-KR/Emily/391.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s18",
+          "PageIndex": 0,
+          "DisplayPattern": "Awww, cute!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s19",
+          "DialogueText": "Well, that went very well!",
+          "AudioPath": "assets/ko-KR/Emily/392.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s19",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, that went very well!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s20",
+          "DialogueText": "I just hope this experience helps everyone break out of their shells a bit.",
+          "AudioPath": "assets/ko-KR/Emily/393.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s20",
+          "PageIndex": 0,
+          "DisplayPattern": "I just hope this experience helps everyone break out of their shells a bit."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s21",
+          "DialogueText": "{Farmer_Name}... um... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Emily/394.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s21",
+          "PageIndex": 0,
+          "DisplayPattern": "... um..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/97:s0",
+          "DialogueText": "Hi Clint, what can I get for you tonight? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/395.ogg",
+          "TranslationKey": "Events/Saloon:97:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi Clint, what can I get for you tonight?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/97:s1",
+          "DialogueText": "Hi {Farmer_Name}.",
+          "AudioPath": "assets/ko-KR/Emily/396.ogg",
+          "TranslationKey": "Events/Saloon:97:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi ."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/97:s2",
+          "DialogueText": "Yes, Clint? {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/397.ogg",
+          "TranslationKey": "Events/Saloon:97:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Yes, Clint?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/97:s3",
+          "DialogueText": "Hi, Shane! Here's your beverage. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/398.ogg",
+          "TranslationKey": "Events/Saloon:97:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi, Shane! Here's your beverage."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/97:s4",
+          "DialogueText": "It's fine! Thanks for asking, Shane! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/399.ogg",
+          "TranslationKey": "Events/Saloon:97:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "It's fine! Thanks for asking, Shane!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/97:s5",
+          "DialogueText": "Do you have any new chicken stories for me?",
+          "AudioPath": "assets/ko-KR/Emily/400.ogg",
+          "TranslationKey": "Events/Saloon:97:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Do you have any new chicken stories for me?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s0|g=male",
+          "DialogueText": "I've got a linguini with mushroom cream sauce for Mr. {Farmer_Name}.",
+          "AudioPath": "assets/ko-KR/Emily/401_male.ogg",
+          "TranslationKey": "Events/Saloon:911526:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I've got a linguini with mushroom cream sauce for Mr. .",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s1|g=female",
+          "DialogueText": "I've got a kale and walnut salad for the lady.",
+          "AudioPath": "assets/ko-KR/Emily/402_female.ogg",
+          "TranslationKey": "Events/Saloon:911526:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I've got a kale and walnut salad for the lady.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s2|g=male",
+          "DialogueText": "...and a grilled steak for Alex.",
+          "AudioPath": "assets/ko-KR/Emily/403_male.ogg",
+          "TranslationKey": "Events/Saloon:911526:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "...and a grilled steak for Alex.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s3|g=female",
+          "DialogueText": "And a grilled steak for the gentleman.",
+          "AudioPath": "assets/ko-KR/Emily/404_female.ogg",
+          "TranslationKey": "Events/Saloon:911526:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "And a grilled steak for the gentleman.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/1848481:s0",
+          "DialogueText": "Hi!",
+          "AudioPath": "assets/ko-KR/Emily/405.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:1848481:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi!"
+        },
+        {
+          "DialogueFrom": "Event:Woods/2123343:s0",
+          "DialogueText": "Well, this is fun, isn't it?",
+          "AudioPath": "assets/ko-KR/Emily/406.ogg",
+          "TranslationKey": "Events/Woods:2123343:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, this is fun, isn't it?"
+        },
+        {
+          "DialogueFrom": "Event:Woods/2123343:s1",
+          "DialogueText": "Kind of spooky, actually... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/407.ogg",
+          "TranslationKey": "Events/Woods:2123343:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Kind of spooky, actually..."
+        },
+        {
+          "DialogueFrom": "Event:Woods/2123343:s2",
+          "DialogueText": "Heh... it's chilly out here... {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Emily/408.ogg",
+          "TranslationKey": "Events/Woods:2123343:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Heh... it's chilly out here..."
+        },
+        {
+          "DialogueFrom": "Event:Woods/2123343:s3",
+          "DialogueText": "A bear! I hope he's not hungry... {Portrait:Custom:6}",
+          "AudioPath": "assets/ko-KR/Emily/409.ogg",
+          "TranslationKey": "Events/Woods:2123343:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "A bear! I hope he's not hungry..."
+        },
+        {
+          "DialogueFrom": "Event:Woods/2123343:s4",
+          "DialogueText": "Oh... the other sleeping bag is still outside... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/410.ogg",
+          "TranslationKey": "Events/Woods:2123343:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh... the other sleeping bag is still outside..."
+        },
+        {
+          "DialogueFrom": "Event:Woods/2123343:s5",
+          "DialogueText": "No way am I going back out there! {Portrait:Custom:6}",
+          "AudioPath": "assets/ko-KR/Emily/411.ogg",
+          "TranslationKey": "Events/Woods:2123343:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "No way am I going back out there!"
+        },
+        {
+          "DialogueFrom": "Event:Woods/2123343:s6",
+          "DialogueText": "Um.. {Farmer_Name}? You don't mind sharing a sleeping bag with me, do you? {Portrait:Love}",
+          "AudioPath": "assets/ko-KR/Emily/412.ogg",
+          "TranslationKey": "Events/Woods:2123343:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Um.. ? You don't mind sharing a sleeping bag with me, do you?"
+        },
+        {
+          "DialogueFrom": "Event:Temp/poppy:s0",
+          "DialogueText": "Wow! Those electronic sounds were far out! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/413.ogg",
+          "TranslationKey": "Events/Temp:poppy:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow! Those electronic sounds were far out!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/poppy:s1",
+          "DialogueText": "Woooh! That was great! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/414.ogg",
+          "TranslationKey": "Events/Temp:poppy:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Woooh! That was great!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/heavy:s0",
+          "DialogueText": "Wow! Those electronic sounds were far out! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/415.ogg",
+          "TranslationKey": "Events/Temp:heavy:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow! Those electronic sounds were far out!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/heavy:s1",
+          "DialogueText": "Woooh! That was great! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/416.ogg",
+          "TranslationKey": "Events/Temp:heavy:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Woooh! That was great!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/techno:s0",
+          "DialogueText": "Wow! Those electronic sounds were far out! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/417.ogg",
+          "TranslationKey": "Events/Temp:techno:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow! Those electronic sounds were far out!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/techno:s1",
+          "DialogueText": "Woooh! That was great! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/418.ogg",
+          "TranslationKey": "Events/Temp:techno:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Woooh! That was great!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/honkytonk:s0",
+          "DialogueText": "Wow! Those electronic sounds were far out! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/419.ogg",
+          "TranslationKey": "Events/Temp:honkytonk:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow! Those electronic sounds were far out!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/honkytonk:s1",
+          "DialogueText": "Woooh! That was great! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/420.ogg",
+          "TranslationKey": "Events/Temp:honkytonk:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Woooh! That was great!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Emily",
+          "DialogueText": "그거 알아, 나 광대 일도 잘했을 것 같아. 내 천직을 놓친 걸까.",
+          "AudioPath": "assets/ko-KR/Emily/421.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "그거 알아, 나 광대 일도 잘했을 것 같아. 내 천직을 놓친 걸까."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Emily_y2",
+          "DialogueText": "샌디랑 나랑 어렸을 때 다 버리고 도망쳐서 서커스단에 들어가자는 농담을 종종 했어. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Emily/422.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Emily_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "샌디랑 나랑 어렸을 때 다 버리고 도망쳐서 서커스단에 들어가자는 농담을 종종 했어."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Emily_y2",
+          "DialogueText": "실제로 그랬을 것 같진 않지만, 상상해 보는 건 재밌지. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/423.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Emily_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "실제로 그랬을 것 같진 않지만, 상상해 보는 건 재밌지."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Emily_spouse_y2",
+          "DialogueText": "샌디가 오늘 축제라서 칼리코 사막에서 여기까지 왔어.",
+          "AudioPath": "assets/ko-KR/Emily/424.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Emily_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "샌디가 오늘 축제라서 칼리코 사막에서 여기까지 왔어."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Emily_spouse_y2",
+          "DialogueText": "만날 기회가 자주 있진 않지!",
+          "AudioPath": "assets/ko-KR/Emily/425.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Emily_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "만날 기회가 자주 있진 않지!"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Emily",
+          "DialogueText": "호박 등 마음에 들어? 내가 직접 깎은 거야.",
+          "AudioPath": "assets/ko-KR/Emily/426.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "호박 등 마음에 들어? 내가 직접 깎은 거야."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Emily_y2",
+          "DialogueText": "오오. 너도 비밀 입구를 찾았구나! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/427.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Emily_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "오오. 너도 비밀 입구를 찾았구나!"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Emily_spouse_y2",
+          "DialogueText": "*히히* 네가 여기까지 찾아올 줄 알았지. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Emily/428.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Emily_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "*히히* 네가 여기까지 찾아올 줄 알았지."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Emily",
+          "DialogueText": "새벽부터 깨서 달걀을 색칠했어... 이 계절에서 내가 제일 좋아하는 일이야. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/429.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "새벽부터 깨서 달걀을 색칠했어... 이 계절에서 내가 제일 좋아하는 일이야."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Emily_y2",
+          "DialogueText": "올해는 달걀을 위한 작은 바지와 모자를 만들어봤어. 너무 귀여워! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/430.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Emily_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "올해는 달걀을 위한 작은 바지와 모자를 만들어봤어. 너무 귀여워!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Emily",
+          "DialogueText": "와... 배불러. 야, 빨간 젤리 먹어봤어?",
+          "AudioPath": "assets/ko-KR/Emily/431.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "와... 배불러. 야, 빨간 젤리 먹어봤어?"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Emily_y2",
+          "DialogueText": "오, 안녕! 올해 나도 헤일리랑 경쟁해서 봄꽃 여왕 자리를 노리려고. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Emily/432.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Emily_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 안녕! 올해 나도 헤일리랑 경쟁해서 봄꽃 여왕 자리를 노리려고."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Emily_y2",
+          "DialogueText": "안무 연습을 좀 했지! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/433.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Emily_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "안무 연습을 좀 했지!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Emily_spouse_y2",
+          "DialogueText": "안녕, 뭐 하고 있나 궁금했어! {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Emily/434.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Emily_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕, 뭐 하고 있나 궁금했어!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Emily",
+          "DialogueText": "대답이 없습니다.",
+          "AudioPath": "assets/ko-KR/Emily/435.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "대답이 없습니다."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Emily_y2",
+          "DialogueText": "*헥헥* 허리 움직임이 중요해! {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Emily/436.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Emily_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "*헥헥* 허리 움직임이 중요해!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Emily_y2",
+          "DialogueText": "나 곧 쉬어야 할 것 같아. 땀난다! {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Emily/437.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Emily_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "나 곧 쉬어야 할 것 같아. 땀난다!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Emily_spouse_y2",
+          "DialogueText": "*헥헥* 곧 조금 쉬어야겠어. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Emily/438.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Emily_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "*헥헥* 곧 조금 쉬어야겠어."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Emily_spouse_y2",
+          "DialogueText": "우리는 나중에 같이 춤추자, 알았지? {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/439.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Emily_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "우리는 나중에 같이 춤추자, 알았지?"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Emily",
+          "DialogueText": "저길 봐, 끝없는 바다를. 물속 깊은 곳에 별의별 생명체가 어둠 속에서 움직이고 있어.",
+          "AudioPath": "assets/ko-KR/Emily/440.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "저길 봐, 끝없는 바다를. 물속 깊은 곳에 별의별 생명체가 어둠 속에서 움직이고 있어."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Emily",
+          "DialogueText": "으스스하지, 그렇지?",
+          "AudioPath": "assets/ko-KR/Emily/441.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Emily",
+          "PageIndex": 1,
+          "DisplayPattern": "으스스하지, 그렇지?"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Emily_y2",
+          "DialogueText": "달빛 해파리에겐 미스테리의 깊고 푸른 오오라가 있어... {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Emily/442.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Emily_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "달빛 해파리에겐 미스테리의 깊고 푸른 오오라가 있어..."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Emily_y2",
+          "DialogueText": "보이는 것보다 심오한 존재야. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Emily/443.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Emily_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "보이는 것보다 심오한 존재야."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Emily_spouse_y2",
+          "DialogueText": "안녕, 여기 있었구나! {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Emily/444.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Emily_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "안녕, 여기 있었구나!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Emily_spouse_y2",
+          "DialogueText": "바다는 많은 비밀과 신비를 숨기고 있지. 진심으로 놀라워. {Portrait:Neutral}",
+          "AudioPath": "assets/ko-KR/Emily/445.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Emily_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "바다는 많은 비밀과 신비를 숨기고 있지. 진심으로 놀라워."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Emily",
+          "DialogueText": "{Farmer_Name}! 영령의 나무 밑에서 어떤 게 나왔으면 좋겠어?",
+          "AudioPath": "assets/ko-KR/Emily/446.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "! 영령의 나무 밑에서 어떤 게 나왔으면 좋겠어?"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Emily",
+          "DialogueText": "일 생각뿐이구나? 재밌는 대답은 아니네. {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/447.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Emily",
+          "PageIndex": 1,
+          "DisplayPattern": "일 생각뿐이구나? 재밌는 대답은 아니네."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Emily",
+          "DialogueText": "오오... 그거 좋겠다. 나도 꼭 한입 주고. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/448.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Emily",
+          "PageIndex": 2,
+          "DisplayPattern": "오오... 그거 좋겠다. 나도 꼭 한입 주고."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Emily",
+          "DialogueText": "그렇구나. 그거 좋은 선물일 것 같아!",
+          "AudioPath": "assets/ko-KR/Emily/449.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Emily",
+          "PageIndex": 3,
+          "DisplayPattern": "그렇구나. 그거 좋은 선물일 것 같아!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Emily_y2",
+          "DialogueText": "봐! 저기 '겨울 별'이야!%noturn {Portrait:Custom:6}",
+          "AudioPath": "assets/ko-KR/Emily/450.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Emily_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "봐! 저기 '겨울 별'이야!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Emily_y2",
+          "DialogueText": "아, 아니구나. 그냥 장식이네! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/451.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Emily_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "아, 아니구나. 그냥 장식이네!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Emily_spouse_y2",
+          "DialogueText": "헤일리랑 나랑 어렸을 때 이 축제에서 쿠키를 꾸미곤 했어.",
+          "AudioPath": "assets/ko-KR/Emily/452.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Emily_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "헤일리랑 나랑 어렸을 때 이 축제에서 쿠키를 꾸미곤 했어."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Emily_spouse_y2",
+          "DialogueText": "우리도 언제 같이하자! 좋은 전통은 나서서 지켜야지. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/453.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Emily_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "우리도 언제 같이하자! 좋은 전통은 나서서 지켜야지."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Emily",
+          "DialogueText": "와, 이 눈사람 제대로 다시 만들어야겠다. 누가 만든 거지? {Portrait:Sad}",
+          "AudioPath": "assets/ko-KR/Emily/454.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "와, 이 눈사람 제대로 다시 만들어야겠다. 누가 만든 거지?"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Emily_y2",
+          "DialogueText": "눈사람도 잘 꾸며줘야 해! 실크 모자랑 스카프 멋지지 않아?",
+          "AudioPath": "assets/ko-KR/Emily/455.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Emily_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "눈사람도 잘 꾸며줘야 해! 실크 모자랑 스카프 멋지지 않아?"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Emily_spouse_y2",
+          "DialogueText": "짜잔! 너야!",
+          "AudioPath": "assets/ko-KR/Emily/456.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Emily_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "짜잔! 너야!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Emily_spouse_y2",
+          "DialogueText": "응? 닮은 것 같지 않다고? 내가 보기엔 완벽한데!",
+          "AudioPath": "assets/ko-KR/Emily/457.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Emily_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "응? 닮은 것 같지 않다고? 내가 보기엔 완벽한데!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Emily:s0",
+          "DialogueText": "이 선물 굉장해! 너무 고마워!",
+          "AudioPath": "assets/ko-KR/Emily/458.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Emily:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "이 선물 굉장해! 너무 고마워!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Emily:s1",
+          "DialogueText": "고마워! 선물에서 긍정적인 에너지가 느껴져.",
+          "AudioPath": "assets/ko-KR/Emily/459.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Emily:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "고마워! 선물에서 긍정적인 에너지가 느껴져."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Emily:s2",
+          "DialogueText": "미안해, {Farmer_Name}. 나 이건 안 좋아해.",
+          "AudioPath": "assets/ko-KR/Emily/460.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Emily:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "미안해, . 나 이건 안 좋아해."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Emily:s3",
+          "DialogueText": "이 선물 부정적인 에너지가 너무 강해. 견디기 힘들다.",
+          "AudioPath": "assets/ko-KR/Emily/461.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Emily:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "이 선물 부정적인 에너지가 너무 강해. 견디기 힘들다."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Emily:s4",
+          "DialogueText": "고마워!",
+          "AudioPath": "assets/ko-KR/Emily/462.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Emily:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "고마워!"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Emily",
+          "DialogueText": "아주 특별한 순간이야...",
+          "AudioPath": "assets/ko-KR/Emily/463.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "아주 특별한 순간이야..."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Emily",
+          "DialogueText": "언젠가 이곳에 너와 함께 서있을 날이 올 거라는 걸 알았어. 마음속에서 항상 느꼈던 사실이야.",
+          "AudioPath": "assets/ko-KR/Emily/464.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Emily",
+          "PageIndex": 1,
+          "DisplayPattern": "언젠가 이곳에 너와 함께 서있을 날이 올 거라는 걸 알았어. 마음속에서 항상 느꼈던 사실이야."
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Emily",
+          "DialogueText": "이제 모든 게 현실이 되었어.\"/pause 500/speak Emily \"세상은 신비하고 특별한 곳이야... {Portrait:Love}\"",
+          "AudioPath": "assets/ko-KR/Emily/465.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Emily",
+          "PageIndex": 2,
+          "DisplayPattern": "이제 모든 게 현실이 되었어.\"/pause 500/speak Emily \"세상은 신비하고 특별한 곳이야...\""
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_spring_movie_1_BeforeMovie",
+          "DialogueText": "이 영화 보려고 견과류 한 줌 먹고 왔어... 머리에 좋은 음식이지!",
+          "AudioPath": "assets/ko-KR/Emily/466.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_spring_movie_1_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "이 영화 보려고 견과류 한 줌 먹고 왔어... 머리에 좋은 음식이지!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_spring_movie_1_AfterMovie",
+          "DialogueText": "전보다 좀 더 똑똑해진 기분이야... 네 생각은 어때?",
+          "AudioPath": "assets/ko-KR/Emily/467.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_spring_movie_1_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "전보다 좀 더 똑똑해진 기분이야... 네 생각은 어때?"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_love_BeforeMovie",
+          "DialogueText": "이 영화 포스터를 봤을 때, 머리 꼭대기부터 아주 긍정적인 기운을 느꼈어. {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/468.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "이 영화 포스터를 봤을 때, 머리 꼭대기부터 아주 긍정적인 기운을 느꼈어."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_love_AfterMovie",
+          "DialogueText": "무언가 아주 정신적인 느낌이 드는 영화였어... 그렇지? 너무 좋아! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/469.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "무언가 아주 정신적인 느낌이 드는 영화였어... 그렇지? 너무 좋아!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_like_BeforeMovie",
+          "DialogueText": "같이 영화를 볼 수 있어서 행복해! 나 영화 중에 완전히 몰입해서 보는 경향이 있어.",
+          "AudioPath": "assets/ko-KR/Emily/470.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "같이 영화를 볼 수 있어서 행복해! 나 영화 중에 완전히 몰입해서 보는 경향이 있어."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_like_AfterMovie",
+          "DialogueText": "보고 난 후에 긍정적인 기분이 드네... 좋은 영화였다는 뜻이겠지! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/471.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "보고 난 후에 긍정적인 기분이 드네... 좋은 영화였다는 뜻이겠지!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_dislike_BeforeMovie",
+          "DialogueText": "난 주로 좀 더 긍정적인 영화를 보는 편이라서, 이런 것도 흥미로울 것 같아.",
+          "AudioPath": "assets/ko-KR/Emily/472.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "난 주로 좀 더 긍정적인 영화를 보는 편이라서, 이런 것도 흥미로울 것 같아."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_dislike_DuringMovie",
+          "DialogueText": "요바시여, 저를 이 영화의 어두운 기운으로부터 지켜주세요. {Portrait:Custom:7}",
+          "AudioPath": "assets/ko-KR/Emily/473.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_dislike_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "요바시여, 저를 이 영화의 어두운 기운으로부터 지켜주세요."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_dislike_DuringMovie_2",
+          "DialogueText": "에밀리가 혼잣말을 하고 있습니다...",
+          "AudioPath": "assets/ko-KR/Emily/474.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_dislike_DuringMovie_2",
+          "PageIndex": 0,
+          "DisplayPattern": "에밀리가 혼잣말을 하고 있습니다..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_dislike_AfterMovie",
+          "DialogueText": "내 에너지가 사라진 기분이야... {Portrait:Unique}",
+          "AudioPath": "assets/ko-KR/Emily/475.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "내 에너지가 사라진 기분이야..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Emily_marriage",
+          "DialogueText": "있지, {Farmer_Name}! 난 너를 있는 그대로 사랑해... 하지만 네가 원한다면, 함께 이 상자 안에 들어와도 좋고!",
+          "AudioPath": "assets/ko-KR/Emily/476.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Emily_marriage",
+          "PageIndex": 0,
+          "DisplayPattern": "있지, ! 난 너를 있는 그대로 사랑해... 하지만 네가 원한다면, 함께 이 상자 안에 들어와도 좋고!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Emily2_marriage",
+          "DialogueText": "오늘 재밌긴 한데 너무 바빠서 집안일을 하나도 못했어. 너도 좋은 시간 보내고 있길 바라!",
+          "AudioPath": "assets/ko-KR/Emily/477.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Emily2_marriage",
+          "PageIndex": 0,
+          "DisplayPattern": "오늘 재밌긴 한데 너무 바빠서 집안일을 하나도 못했어. 너도 좋은 시간 보내고 있길 바라!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Emily3_marriage",
+          "DialogueText": "기억이 안 나... 내가 오늘 아침에 앵무새 모이 주고 나왔나?",
+          "AudioPath": "assets/ko-KR/Emily/478.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Emily3_marriage",
+          "PageIndex": 0,
+          "DisplayPattern": "기억이 안 나... 내가 오늘 아침에 앵무새 모이 주고 나왔나?"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Emily",
+          "DialogueText": "흐음... 네 패션이 내적 감정과 연결되지 못했다는 게 느껴져. 박스 안에 들어오면 바로 고쳐줄게!",
+          "AudioPath": "assets/ko-KR/Emily/479.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "흐음... 네 패션이 내적 감정과 연결되지 못했다는 게 느껴져. 박스 안에 들어오면 바로 고쳐줄게!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_AlreadyStyled",
+          "DialogueText": "너무 잘됐다! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/480.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_AlreadyStyled",
+          "PageIndex": 0,
+          "DisplayPattern": "너무 잘됐다!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_AlreadyStyled",
+          "DialogueText": "다른 날 또 와줘, 새로운 스타일을 만들어보자!",
+          "AudioPath": "assets/ko-KR/Emily/481.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_AlreadyStyled",
+          "PageIndex": 1,
+          "DisplayPattern": "다른 날 또 와줘, 새로운 스타일을 만들어보자!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_InventoryFull",
+          "DialogueText": "흠, 가방에 뭔가 많이 들어있나 보네. 옷 한 세트 들어갈 자리가 생기면 돌아와 줘!",
+          "AudioPath": "assets/ko-KR/Emily/482.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_InventoryFull",
+          "PageIndex": 0,
+          "DisplayPattern": "흠, 가방에 뭔가 많이 들어있나 보네. 옷 한 세트 들어갈 자리가 생기면 돌아와 줘!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_1",
+          "DialogueText": "좋아, 시작하기 전에 네 기운을 시각화해볼게, 너를 가장 행복하게 만들어줄 스타일을 찾아내겠어...",
+          "AudioPath": "assets/ko-KR/Emily/483.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_1",
+          "PageIndex": 0,
+          "DisplayPattern": "좋아, 시작하기 전에 네 기운을 시각화해볼게, 너를 가장 행복하게 만들어줄 스타일을 찾아내겠어..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_2",
+          "DialogueText": "응... 보인다...",
+          "AudioPath": "assets/ko-KR/Emily/484.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_2",
+          "PageIndex": 0,
+          "DisplayPattern": "응... 보인다..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Reaction1",
+          "DialogueText": "앗, 간지러울 수 있어.",
+          "AudioPath": "assets/ko-KR/Emily/485.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Reaction1",
+          "PageIndex": 0,
+          "DisplayPattern": "앗, 간지러울 수 있어."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Reaction2",
+          "DialogueText": "앗, 아팠다면 미안!",
+          "AudioPath": "assets/ko-KR/Emily/486.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Reaction2",
+          "PageIndex": 0,
+          "DisplayPattern": "앗, 아팠다면 미안!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Reaction3",
+          "DialogueText": "으악, 젤 너무 많이 발랐다...",
+          "AudioPath": "assets/ko-KR/Emily/487.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Reaction3",
+          "PageIndex": 0,
+          "DisplayPattern": "으악, 젤 너무 많이 발랐다..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Reaction4",
+          "DialogueText": "아냐... 이러면 안 돼...",
+          "AudioPath": "assets/ko-KR/Emily/488.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Reaction4",
+          "PageIndex": 0,
+          "DisplayPattern": "아냐... 이러면 안 돼..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Reaction5",
+          "DialogueText": "여기, 받아!",
+          "AudioPath": "assets/ko-KR/Emily/489.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Reaction5",
+          "PageIndex": 0,
+          "DisplayPattern": "여기, 받아!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Reaction6",
+          "DialogueText": "오, 콜리플라워 튀김이다...",
+          "AudioPath": "assets/ko-KR/Emily/490.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Reaction6",
+          "PageIndex": 0,
+          "DisplayPattern": "오, 콜리플라워 튀김이다..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Reaction7",
+          "DialogueText": "여기 이건 조금 다듬고...",
+          "AudioPath": "assets/ko-KR/Emily/491.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Reaction7",
+          "PageIndex": 0,
+          "DisplayPattern": "여기 이건 조금 다듬고..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Reaction8",
+          "DialogueText": "여기, 이건 손가락으로 살짝 번지게 하고...",
+          "AudioPath": "assets/ko-KR/Emily/492.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Reaction8",
+          "PageIndex": 0,
+          "DisplayPattern": "여기, 이건 손가락으로 살짝 번지게 하고..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Reaction9",
+          "DialogueText": "좋아, 준비해, 이건 조금 조이겠는데...",
+          "AudioPath": "assets/ko-KR/Emily/493.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Reaction9",
+          "PageIndex": 0,
+          "DisplayPattern": "좋아, 준비해, 이건 조금 조이겠는데..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_3",
+          "DialogueText": "좋아, 알겠어! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/494.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_3",
+          "PageIndex": 0,
+          "DisplayPattern": "좋아, 알겠어!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_3",
+          "DialogueText": "시작할게, 너무 놀라지 마!",
+          "AudioPath": "assets/ko-KR/Emily/495.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_3",
+          "PageIndex": 1,
+          "DisplayPattern": "시작할게, 너무 놀라지 마!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_4",
+          "DialogueText": "됐다!",
+          "AudioPath": "assets/ko-KR/Emily/496.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_4",
+          "PageIndex": 0,
+          "DisplayPattern": "됐다!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_5",
+          "DialogueText": "좋았어! 느껴져, 네 내면과 외면이 이제 완벽하게 조화를 이루고 있어! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/497.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_5",
+          "PageIndex": 0,
+          "DisplayPattern": "좋았어! 느껴져, 네 내면과 외면이 이제 완벽하게 조화를 이루고 있어!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_5",
+          "DialogueText": "네가 새로운 '너'를 만나는 게 너무 기대돼! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/498.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_5",
+          "PageIndex": 1,
+          "DisplayPattern": "네가 새로운 '너'를 만나는 게 너무 기대돼!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Done",
+          "DialogueText": "어때? 어떻게 생각해?",
+          "AudioPath": "assets/ko-KR/Emily/499.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Done",
+          "PageIndex": 0,
+          "DisplayPattern": "어때? 어떻게 생각해?"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Done",
+          "DialogueText": "가방에 입고 있던 옷을 넣어놨어, 혹시 마음 바뀌면 갈아입어! {Portrait:Happy}",
+          "AudioPath": "assets/ko-KR/Emily/500.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Done",
+          "PageIndex": 1,
+          "DisplayPattern": "가방에 입고 있던 옷을 넣어놨어, 혹시 마음 바뀌면 갈아입어!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Emily",
+          "DialogueText": "아, 그늘에 있으니 기분 좋다.",
+          "AudioPath": "assets/ko-KR/Emily/501.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "아, 그늘에 있으니 기분 좋다."
+        }
+      ]
+    }
+  ]
+}

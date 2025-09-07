@@ -48,11 +48,51 @@ namespace VoiceOverFrameworkMod
             else
                 CheckForDialogueV2();
         }
+
+
         private void CheckForDialogueV2()
         {
-            const bool ENABLE_FUZZY = true;
-            const double FUZZY_THRESHOLD = 0.90;
-            const int MIN_LEN_FOR_FUZZY = 12;
+            const bool ENABLE_PACK_FUZZY = true;          // same-language only
+            const double PACK_FUZZY_THRESHOLD = 0.80;
+            const int PACK_MIN_LEN_FOR_FUZZY = 6;
+
+            // dictionary-side fuzzy (cross-language only)
+            const int DICT_MIN_LEN = 6;
+            const double DICT_FUZZY_THRESHOLD = 0.80;
+
+            // — helpers (local) —
+            static string FixCjkSpaces(string s)
+            {
+                if (string.IsNullOrWhiteSpace(s)) return s;
+                s = Regex.Replace(s, @"\s+([，。！？；：、])", "$1");
+                s = Regex.Replace(s, @"([，。！？；：、])\s+", "$1");
+                return s;
+            }
+
+            IEnumerable<KeyValuePair<string, HashSet<(string tk, int pageIndex)>>> DictEntriesForGameLang(string character)
+            {
+                string gameLang = CanonGameLang();
+                if (!cache.TryGetValue(character, out var dict) || dict == null || dict.Count == 0)
+                    return Enumerable.Empty<KeyValuePair<string, HashSet<(string tk, int pageIndex)>>>();
+
+                if (!tkPageToDisplayKey.TryGetValue(character, out var byLang) || !byLang.TryGetValue(gameLang, out var tkMap))
+                    return Enumerable.Empty<KeyValuePair<string, HashSet<(string tk, int pageIndex)>>>();
+
+                return dict.Where(kvp =>
+                {
+                    string key = kvp.Key;
+                    var set = kvp.Value;
+                    foreach (var (tk, page) in set)
+                    {
+                        if (tkMap.TryGetValue(tk, out var pageMap) && pageMap != null)
+                        {
+                            if (pageMap.TryGetValue(page, out var k) && string.Equals(k, key, StringComparison.Ordinal)) return true;
+                            if (pageMap.TryGetValue(0, out k) && string.Equals(k, key, StringComparison.Ordinal)) return true;
+                        }
+                    }
+                    return false;
+                });
+            }
 
             if (Game1.currentLocation == null || Game1.player == null)
             {
@@ -123,6 +163,7 @@ namespace VoiceOverFrameworkMod
             if (currentSpeaker == null)
                 return;
 
+            // Build visible key
             string farmerName = Game1.player.Name;
             string potentialOriginalText = currentDisplayedString;
             if (!string.IsNullOrEmpty(farmerName) && potentialOriginalText.Contains(farmerName))
@@ -145,11 +186,112 @@ namespace VoiceOverFrameworkMod
 
             var removable = DialogueSanitizerV2.GetRemovableWords(cap).ToList();
             string strippedForMatch = DialogueSanitizerV2.StripForDialogue(currentDisplayedString, cap);
-
-
+            strippedForMatch = FixCjkSpaces(strippedForMatch);
             string patternKey = CanonDisplay(strippedForMatch);
+            if (string.IsNullOrWhiteSpace(patternKey))
+                return;
 
-            // ── 1) Exact match
+            // ─────────────────────────────────────────────────────────────
+            // Cross-language path → DictionaryV2 decides (exact → dict fuzzy over GAME language keys)
+            // ─────────────────────────────────────────────────────────────
+            if (selectedPack != null && LanguagesDiffer(selectedPack))
+            {
+                EnsureV2DictionaryLoadedFor(currentSpeaker.Name, selectedPack);
+
+                bool dictFuzzyAttempted = false;
+                bool dictFuzzyChosen = false;
+                double dictFuzzyScore = 0.0;
+                string dictChosenKey = null;
+
+                // 1) dictionary exact (game-language keyspace)
+                List<(string tk, int pageIndex)> tkPageCandidates =
+                    MultilingualV2?.GetTKPageCandidatesByKey(currentSpeaker.Name, patternKey);
+
+                // 2) dictionary fuzzy (only if exact failed) — fuzzy ONLY over game-language keys
+                if (tkPageCandidates == null || tkPageCandidates.Count == 0)
+                {
+                    dictFuzzyAttempted = true;
+
+                    var langEntries = DictEntriesForGameLang(currentSpeaker.Name).ToList();
+                    if (langEntries.Count > 0 && patternKey.Length >= DICT_MIN_LEN)
+                    {
+                        string bestKey = null;
+                        double best = 0.0;
+                        HashSet<(string tk, int pageIndex)> bestSet = null;
+
+                        foreach (var kvp in langEntries)
+                        {
+                            string k = kvp.Key;
+                            if (Math.Abs(k.Length - patternKey.Length) > 8) continue;
+
+                            double score = SimilarityRatio(patternKey, k);
+                            if (score > best)
+                            {
+                                best = score;
+                                bestKey = k;
+                                bestSet = kvp.Value;
+                            }
+                        }
+
+                        if (bestKey != null && best >= DICT_FUZZY_THRESHOLD && bestSet != null && bestSet.Count > 0)
+                        {
+                            tkPageCandidates = bestSet.ToList();
+                            dictFuzzyChosen = true;
+                            dictFuzzyScore = best;
+                            dictChosenKey = bestKey;
+                        }
+                    }
+                }
+
+                if (tkPageCandidates != null && tkPageCandidates.Count > 0)
+                {
+                    // dictionary matched → resolve pack audio via exact lookups by (TK,Page)
+                    bool played = TryToPlayVoiceByTKPages(currentSpeaker.Name, tkPageCandidates, selectedPack);
+                    if (!played && _collectV2Failures)
+                    {
+                        V2AddFailure(
+                            currentSpeaker?.Name,
+                            currentDisplayedString,
+                            removable,
+                            patternKey,
+                            dictChosenKey ?? patternKey,
+                            matched: true,
+                            missingAudio: true,
+                            fuzzyAttempted: dictFuzzyAttempted,
+                            fuzzyBestScore: dictFuzzyScore,
+                            fuzzyBestKey: dictChosenKey,
+                            fuzzyChosen: dictFuzzyChosen
+                        );
+                    }
+
+                    _lastPlayedLookupKey = finalLookupKey;
+                    return;
+                }
+
+                // dictionary failed (after fuzzy) → UNMATCHED (cross-language)
+                if (_collectV2Failures)
+                {
+                    V2AddFailure(
+                        currentSpeaker?.Name,
+                        currentDisplayedString,
+                        removable,
+                        patternKey,
+                        patternKey,
+                        matched: false,
+                        missingAudio: false,
+                        fuzzyAttempted: dictFuzzyAttempted
+                    );
+                }
+
+                _lastPlayedLookupKey = finalLookupKey;
+                return; // do NOT fall through to pack fuzzy in cross-language
+            }
+
+            // ────────────────────────────────────────────────
+            // Same-language path (pack-driven: exact → full → fuzzy)
+            // ────────────────────────────────────────────────
+
+            // 1) exact in pack
             if (selectedPack != null &&
                 selectedPack.FormatMajor >= 2 &&
                 selectedPack.Entries != null &&
@@ -180,7 +322,7 @@ namespace VoiceOverFrameworkMod
                 return;
             }
 
-            // ── 2) Full-page fallback (strip full page display with same capture context)
+            // 2) full-page fallback
             if (selectedPack != null && selectedPack.FormatMajor >= 2 && selectedPack.Entries != null)
             {
                 string rawPage = (d != null && pageZero < (d.dialogues?.Count ?? 0)) ? d.dialogues[pageZero].Text : null;
@@ -192,6 +334,7 @@ namespace VoiceOverFrameworkMod
                         string fullDisplay = segs[0].Display ?? string.Empty;
 
                         string strippedFull = DialogueSanitizerV2.StripChosenWords(fullDisplay, cap);
+                        strippedFull = FixCjkSpaces(strippedFull);
                         string patternKeyFull = CanonDisplay(strippedFull);
 
                         if (selectedPack.Entries.TryGetValue(patternKeyFull, out var relAudioFull) &&
@@ -217,22 +360,22 @@ namespace VoiceOverFrameworkMod
                             if (!missingAudio2)
                                 PlayVoiceFromFile(fullPath);
 
-                            _lastPlayedLookupKey = finalLookupKey; // debounce on the visible-line key
+                            _lastPlayedLookupKey = finalLookupKey;
                             return;
                         }
                     }
                 }
             }
 
-            // ── 3) FUZZY FALLBACK — ONLY if exact + full-page failed
-            if (ENABLE_FUZZY && selectedPack != null && selectedPack.FormatMajor >= 2 && selectedPack.Entries != null)
+            // 3) pack fuzzy (same-language only)
+            if (ENABLE_PACK_FUZZY && selectedPack != null && selectedPack.FormatMajor >= 2 && selectedPack.Entries != null)
             {
-                string liveKey = strippedForMatch; // already stripped
+                string liveKey = strippedForMatch;
                 string bestKey = null;
                 string bestRelPath = null;
                 double bestScore = 0.0;
 
-                bool attempted = (liveKey?.Length ?? 0) >= MIN_LEN_FOR_FUZZY;
+                bool attempted = (liveKey?.Length ?? 0) >= PACK_MIN_LEN_FOR_FUZZY;
                 if (attempted)
                 {
                     foreach (var kvp in selectedPack.Entries)
@@ -241,15 +384,10 @@ namespace VoiceOverFrameworkMod
                         if (string.IsNullOrWhiteSpace(packKey)) continue;
 
                         double score = SimilarityRatio(liveKey, packKey);
-                        if (score > bestScore)
-                        {
-                            bestScore = score;
-                            bestKey = packKey;
-                            bestRelPath = kvp.Value;
-                        }
+                        if (score > bestScore) { bestScore = score; bestKey = packKey; bestRelPath = kvp.Value; }
                     }
 
-                    if (!string.IsNullOrWhiteSpace(bestRelPath) && bestScore >= FUZZY_THRESHOLD)
+                    if (!string.IsNullOrWhiteSpace(bestRelPath) && bestScore >= PACK_FUZZY_THRESHOLD)
                     {
                         var fullPath = PathUtilities.NormalizePath(System.IO.Path.Combine(selectedPack.BaseAssetPath, bestRelPath));
                         bool missing = !System.IO.File.Exists(fullPath);
@@ -280,7 +418,6 @@ namespace VoiceOverFrameworkMod
                     }
                     else
                     {
-                        // ⇒ FUZZY attempted but below threshold: LOG ONCE and EXIT (no double-log)
                         if (_collectV2Failures)
                         {
                             V2AddFailure(
@@ -292,19 +429,16 @@ namespace VoiceOverFrameworkMod
                                 matched: false,
                                 missingAudio: false,
                                 fuzzyAttempted: true,
-                                fuzzyBestScore: bestScore,
-                                fuzzyBestKey: bestKey,
-                                fuzzyChosen: false
+                                fuzzyBestScore: bestScore
                             );
                         }
-                        _lastPlayedLookupKey = finalLookupKey; 
-                        return; //  do not fall through to generic unmatched → avoids double entry
+                        _lastPlayedLookupKey = finalLookupKey;
+                        return;
                     }
                 }
-                // else (not attempted): we fall through to generic unmatched once
             }
 
-            // ── 4) Generic unmatched (no fuzzy or fuzzy disabled/too short)
+            // 4) unmatched (same-language)
             if (_collectV2Failures)
             {
                 V2AddFailure(
@@ -321,7 +455,6 @@ namespace VoiceOverFrameworkMod
 
             _lastPlayedLookupKey = finalLookupKey; // debounce
         }
-
 
 
 
@@ -343,9 +476,47 @@ namespace VoiceOverFrameworkMod
 
         private void CheckForEventV2()
         {
-            const bool ENABLE_FUZZY = true;
-            const double FUZZY_THRESHOLD = 0.80; // looser than dialogue
-            const int MIN_LEN_FOR_FUZZY = 6;
+            const bool ENABLE_PACK_FUZZY = true;           // same-language only
+            const double PACK_FUZZY_THRESHOLD = 0.80;      // events looser than dialogue
+            const int PACK_MIN_LEN_FOR_FUZZY = 6;
+
+            // dictionary-side fuzzy (cross-language only)
+            const int DICT_MIN_LEN = 6;
+            const double DICT_FUZZY_THRESHOLD = 0.80;
+
+            // — helpers (local) —
+            static string FixCjkSpaces(string s)
+            {
+                if (string.IsNullOrWhiteSpace(s)) return s;
+                s = Regex.Replace(s, @"\s+([，。！？；：、])", "$1");
+                s = Regex.Replace(s, @"([，。！？；：、])\s+", "$1");
+                return s;
+            }
+
+            IEnumerable<KeyValuePair<string, HashSet<(string tk, int pageIndex)>>> DictEntriesForGameLang(string character)
+            {
+                string gameLang = CanonGameLang();
+                if (!cache.TryGetValue(character, out var dict) || dict == null || dict.Count == 0)
+                    return Enumerable.Empty<KeyValuePair<string, HashSet<(string tk, int pageIndex)>>>();
+
+                if (!tkPageToDisplayKey.TryGetValue(character, out var byLang) || !byLang.TryGetValue(gameLang, out var tkMap))
+                    return Enumerable.Empty<KeyValuePair<string, HashSet<(string tk, int pageIndex)>>>();
+
+                return dict.Where(kvp =>
+                {
+                    string key = kvp.Key;
+                    var set = kvp.Value;
+                    foreach (var (tk, page) in set)
+                    {
+                        if (tkMap.TryGetValue(tk, out var pageMap) && pageMap != null)
+                        {
+                            if (pageMap.TryGetValue(page, out var k) && string.Equals(k, key, StringComparison.Ordinal)) return true;
+                            if (pageMap.TryGetValue(0, out k) && string.Equals(k, key, StringComparison.Ordinal)) return true;
+                        }
+                    }
+                    return false;
+                });
+            }
 
             if (Game1.currentLocation == null || Game1.player == null)
             {
@@ -395,14 +566,10 @@ namespace VoiceOverFrameworkMod
             if (_sameLineStableTicks < Config.TextStabilizeTicks)
                 return;
 
-            // Option: skip non-speak (no speaker) to avoid false unmatcheds
             if (currentSpeaker == null)
-            {
-                // If you want Narrator support later, branch here instead of returning.
-                return;
-            }
+                return; // narrator can be added later
 
-            // Event-side normalization: turn the visible farmer name back into '@' BEFORE stripping
+            // normalize visible farmer name to '@' before stripping (events)
             string displayForMatch = currentDisplayedString ?? string.Empty;
             var farmerName = Utility.FilterUserName(Game1.player?.Name) ?? string.Empty;
             if (!string.IsNullOrEmpty(farmerName))
@@ -413,7 +580,6 @@ namespace VoiceOverFrameworkMod
             int pageZero = Math.Max(0, (d?.currentDialogueIndex ?? 0));
             var cap = TokenCaptureStore.Get(d, pageZero, create: true);
 
-            // Make sure farmer name is always added as a fixed token for events
             if (!string.IsNullOrEmpty(farmerName))
                 cap?.AddFixed(farmerName);
 
@@ -421,6 +587,7 @@ namespace VoiceOverFrameworkMod
 
             var removable = DialogueSanitizerV2.GetRemovableWords(cap).ToList();
             string strippedForMatch = DialogueSanitizerV2.StripForEvent(displayForMatch, cap);
+            strippedForMatch = FixCjkSpaces(strippedForMatch);
             string patternKey = CanonDisplay(strippedForMatch);
 
             if (string.IsNullOrWhiteSpace(patternKey))
@@ -428,6 +595,7 @@ namespace VoiceOverFrameworkMod
             if (string.Equals(patternKey, _lastPlayedLookupKey, StringComparison.Ordinal))
                 return;
 
+            // select pack
             VoicePack selectedPack = null;
             if (currentSpeaker != null)
             {
@@ -439,7 +607,107 @@ namespace VoiceOverFrameworkMod
                 }
             }
 
-            // 1) Exact
+            // ─────────────────────────────────────────────────────────────
+            // Cross-language path → DictionaryV2 decides (exact → dict fuzzy over GAME language keys)
+            // ─────────────────────────────────────────────────────────────
+            if (selectedPack != null && LanguagesDiffer(selectedPack))
+            {
+                EnsureV2DictionaryLoadedFor(currentSpeaker.Name, selectedPack);
+
+                bool dictFuzzyAttempted = false;
+                bool dictFuzzyChosen = false;
+                double dictFuzzyScore = 0.0;
+                string dictChosenKey = null;
+
+                // 1) dictionary exact
+                List<(string tk, int pageIndex)> tkPageCandidates =
+                    MultilingualV2?.GetTKPageCandidatesByKey(currentSpeaker.Name, patternKey);
+
+                // 2) dictionary fuzzy (only if exact failed) — fuzzy ONLY over game-language keys
+                if (tkPageCandidates == null || tkPageCandidates.Count == 0)
+                {
+                    dictFuzzyAttempted = true;
+
+                    var langEntries = DictEntriesForGameLang(currentSpeaker.Name).ToList();
+                    if (langEntries.Count > 0 && patternKey.Length >= DICT_MIN_LEN)
+                    {
+                        string bestKey = null;
+                        double best = 0.0;
+                        HashSet<(string tk, int pageIndex)> bestSet = null;
+
+                        foreach (var kvp in langEntries)
+                        {
+                            string k = kvp.Key;
+                            if (Math.Abs(k.Length - patternKey.Length) > 8) continue;
+
+                            double score = SimilarityRatio(patternKey, k);
+                            if (score > best)
+                            {
+                                best = score;
+                                bestKey = k;
+                                bestSet = kvp.Value;
+                            }
+                        }
+
+                        if (bestKey != null && best >= DICT_FUZZY_THRESHOLD && bestSet != null && bestSet.Count > 0)
+                        {
+                            tkPageCandidates = bestSet.ToList();
+                            dictFuzzyChosen = true;
+                            dictFuzzyScore = best;
+                            dictChosenKey = bestKey;
+                        }
+                    }
+                }
+
+                if (tkPageCandidates != null && tkPageCandidates.Count > 0)
+                {
+                    // dictionary matched → exact pack resolution using (TK,Page)
+                    bool played = TryToPlayVoiceByTKPages(currentSpeaker.Name, tkPageCandidates, selectedPack);
+                    if (!played && _collectV2Failures)
+                    {
+                        V2AddFailure(
+                            currentSpeaker?.Name,
+                            currentDisplayedString,
+                            removable,
+                            patternKey,
+                            dictChosenKey ?? patternKey,
+                            matched: true,
+                            missingAudio: true,
+                            fuzzyAttempted: dictFuzzyAttempted,
+                            fuzzyBestScore: dictFuzzyScore,
+                            fuzzyBestKey: dictChosenKey,
+                            fuzzyChosen: dictFuzzyChosen
+                        );
+                    }
+
+                    _lastPlayedLookupKey = patternKey;
+                    return;
+                }
+
+                // dictionary failed (after fuzzy) → UNMATCHED
+                if (_collectV2Failures)
+                {
+                    V2AddFailure(
+                        currentSpeaker?.Name,
+                        currentDisplayedString,
+                        removable,
+                        patternKey,
+                        patternKey,
+                        matched: false,
+                        missingAudio: false,
+                        fuzzyAttempted: dictFuzzyAttempted
+                    );
+                }
+
+                _lastPlayedLookupKey = patternKey;
+                return; // do NOT fall through to pack fuzzy in cross-language
+            }
+
+            // ────────────────────────────────────────────────
+            // Same-language path (pack-driven: exact → full → fuzzy)
+            // ────────────────────────────────────────────────
+
+            // 1) exact
             if (selectedPack.Entries != null &&
                 selectedPack.Entries.TryGetValue(patternKey, out var relAudioFromPattern) &&
                 !string.IsNullOrWhiteSpace(relAudioFromPattern))
@@ -452,7 +720,7 @@ namespace VoiceOverFrameworkMod
                 return;
             }
 
-            // 2) Full-page fallback (same as dialogue)
+            // 2) full-page fallback
             if (selectedPack != null && selectedPack.FormatMajor >= 2 && selectedPack.Entries != null)
             {
                 string rawPage = (d != null && pageZero < (d.dialogues?.Count ?? 0)) ? d.dialogues[pageZero].Text : null;
@@ -462,11 +730,11 @@ namespace VoiceOverFrameworkMod
                     if (segs != null && segs.Count > 0)
                     {
                         string fullDisplay = segs[0].Display ?? string.Empty;
-                        // normalize farmer name here too
                         if (!string.IsNullOrEmpty(farmerName))
                             fullDisplay = fullDisplay.Replace(farmerName, "@");
 
                         string strippedFull = DialogueSanitizerV2.StripForEvent(fullDisplay, cap);
+                        strippedFull = FixCjkSpaces(strippedFull);
                         string patternKeyFull = CanonDisplay(strippedFull);
 
                         if (selectedPack.Entries.TryGetValue(patternKeyFull, out var relAudioFull) &&
@@ -483,11 +751,11 @@ namespace VoiceOverFrameworkMod
                 }
             }
 
-            // 3) Fuzzy (looser)
-            if (ENABLE_FUZZY && selectedPack?.Entries != null)
+            // 3) pack fuzzy (same-language only)
+            if (ENABLE_PACK_FUZZY && selectedPack?.Entries != null)
             {
                 string liveKey = strippedForMatch;
-                if ((liveKey?.Length ?? 0) >= MIN_LEN_FOR_FUZZY)
+                if ((liveKey?.Length ?? 0) >= PACK_MIN_LEN_FOR_FUZZY)
                 {
                     string bestKey = null, bestRelPath = null;
                     double bestScore = 0.0;
@@ -495,15 +763,10 @@ namespace VoiceOverFrameworkMod
                     foreach (var kvp in selectedPack.Entries)
                     {
                         var score = SimilarityRatio(liveKey, kvp.Key);
-                        if (score > bestScore)
-                        {
-                            bestScore = score;
-                            bestKey = kvp.Key;
-                            bestRelPath = kvp.Value;
-                        }
+                        if (score > bestScore) { bestScore = score; bestKey = kvp.Key; bestRelPath = kvp.Value; }
                     }
 
-                    if (!string.IsNullOrWhiteSpace(bestRelPath) && bestScore >= FUZZY_THRESHOLD)
+                    if (!string.IsNullOrWhiteSpace(bestRelPath) && bestScore >= PACK_FUZZY_THRESHOLD)
                     {
                         var fullPath = PathUtilities.NormalizePath(System.IO.Path.Combine(selectedPack.BaseAssetPath, bestRelPath));
                         if (System.IO.File.Exists(fullPath))
@@ -515,7 +778,7 @@ namespace VoiceOverFrameworkMod
                 }
             }
 
-            // 4) Unmatched (events)
+            // 4) unmatched (same-language)
             if (_collectV2Failures)
             {
                 V2AddFailure(
@@ -532,6 +795,8 @@ namespace VoiceOverFrameworkMod
 
             _lastPlayedLookupKey = patternKey;
         }
+
+
 
 
         //Use aglorith for the maining unmatched cases for 90% higher match rate with more  than a certain amount of words to count as a match
@@ -578,7 +843,7 @@ namespace VoiceOverFrameworkMod
                         prev[j - 1] + cost
                     );
                 }
-     
+
                 var tmp = prev; prev = curr; curr = tmp;
             }
             return prev[m];
@@ -1072,7 +1337,7 @@ namespace VoiceOverFrameworkMod
         {
             if (string.IsNullOrWhiteSpace(displayed))
                 return string.Empty;
-            
+
             var removable = GetRemovableWords(cap).ToList();
             if (removable.Count == 0)
                 return Normalize(displayed);
@@ -1090,7 +1355,7 @@ namespace VoiceOverFrameworkMod
                                           .ToList();
 
             string s = displayed;
-            
+
             // --- SPECIAL CASE: %farm ---
             // If this page had %farm, only strip the farm name when it occurs right before " Farm".
             // This preserves legitimate uses of the same word elsewhere (e.g., "really great").
@@ -1226,7 +1491,7 @@ namespace VoiceOverFrameworkMod
             cap.HasFirstHalf |= s.IndexOf("%firstnameletter", StringComparison.OrdinalIgnoreCase) >= 0;
             cap.HasName |= s.IndexOf("%name", StringComparison.OrdinalIgnoreCase) >= 0;
 
-            
+
         }
 
         static void Postfix() => V2ParseContext.Advance();

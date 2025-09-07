@@ -1,0 +1,964 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Jas.de-DE",
+      "VoicePackName": "DictionarV2 (Jas - de-DE)",
+      "Character": "Jas",
+      "Language": "de-DE",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "... {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Jas/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Hi... {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Jas/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "Hi..."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "Wow, ein Geburtstagsgeschenk! Ich liebe es! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow, ein Geburtstagsgeschenk! Ich liebe es!"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Ich habe Angst... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich habe Angst..."
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Ich hoffe, der Regen färbt mein Kleid nicht grün... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich hoffe, der Regen färbt mein Kleid nicht grün..."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "Ein Geburtstagsgeschenk? Oh... Das gefällt mir nicht. {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "Ein Geburtstagsgeschenk? Oh... Das gefällt mir nicht."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Bist du sicher? Es riecht so gut! Ich werde nur einen Fingerhut voll pro Tag trinken. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Bist du sicher? Es riecht so gut! Ich werde nur einen Fingerhut voll pro Tag trinken."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)FairyBox",
+          "DialogueText": "Wow, es ist so hübsch! Und da ist eine Fee drin? *kicher*... Ich kann sie singen hören. Sie wird meine heimliche Freundin sein. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_(TR)FairyBox",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow, es ist so hübsch! Und da ist eine Fee drin? *kicher*... Ich kann sie singen hören. Sie wird meine heimliche Freundin sein."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)103",
+          "DialogueText": "Oh, ein kleines Püppchen! Sie ist etwas schmutzig, aber ich werde sie baden. Danke! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_(O)103",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, ein kleines Püppchen! Sie ist etwas schmutzig, aber ich werde sie baden. Danke!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Positive_doll_item",
+          "DialogueText": "Oh, ich mag ihn! Er wird gut zu meinen anderen Freunden passen. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_Positive_doll_item",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, ich mag ihn! Er wird gut zu meinen anderen Freunden passen."
+        },
+        {
+          "DialogueFrom": "AcceptGift_Negative_alcohol_item",
+          "DialogueText": "Ähm... Ich sollte das nicht trinken. Ist das nicht für Erwachsene? {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_Negative_alcohol_item",
+          "PageIndex": 0,
+          "DisplayPattern": "Ähm... Ich sollte das nicht trinken. Ist das nicht für Erwachsene?"
+        },
+        {
+          "DialogueFrom": "AcceptGift_Negative_coffee_item",
+          "DialogueText": "Oh... Tante Marnie lässt mich noch keinen Kaffee trinken... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:AcceptGift_Negative_coffee_item",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh... Tante Marnie lässt mich noch keinen Kaffee trinken..."
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "Ich sehe eine Krabbe",
+          "AudioPath": "assets/de-DE/Jas/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich sehe eine Krabbe"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "Ich habe Sand in meinem Schuh... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich habe Sand in meinem Schuh..."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Ich sammle Muscheln... Ich werde eine Halskette machen!",
+          "AudioPath": "assets/de-DE/Jas/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich sammle Muscheln... Ich werde eine Halskette machen!"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Tante Marnie sagte, ich solle mir keinen Sonnenbrand holen... Aber wenn ich schnell laufe, fühlt es sich kühl an, also denke ich, dass das passen sollte. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Tante Marnie sagte, ich solle mir keinen Sonnenbrand holen... Aber wenn ich schnell laufe, fühlt es sich kühl an, also denke ich, dass das passen sollte."
+        },
+        {
+          "DialogueFrom": "movieTheater",
+          "DialogueText": "Tante Marnie sagt, ich sei noch nicht alt genug, um alleine einen Film zu sehen... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:movieTheater",
+          "PageIndex": 0,
+          "DisplayPattern": "Tante Marnie sagt, ich sei noch nicht alt genug, um alleine einen Film zu sehen..."
+        },
+        {
+          "DialogueFrom": "reject_869",
+          "DialogueText": "Bäh, ekelhaft! {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:reject_869",
+          "PageIndex": 0,
+          "DisplayPattern": "Bäh, ekelhaft!"
+        },
+        {
+          "DialogueFrom": "married_Shane",
+          "DialogueText": "Ich hoffe, Shane wird mich trotzdem besuchen... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:married_Shane",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich hoffe, Shane wird mich trotzdem besuchen..."
+        },
+        {
+          "DialogueFrom": "married",
+          "DialogueText": "*seufz*... Ich hoffe, ich kann eines Tages heiraten. {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Jas/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:married",
+          "PageIndex": 0,
+          "DisplayPattern": "*seufz*... Ich hoffe, ich kann eines Tages heiraten."
+        },
+        {
+          "DialogueFrom": "cropMatured_595",
+          "DialogueText": "Ähm... Hast du schon mal eine Fee gesehen?",
+          "AudioPath": "assets/de-DE/Jas/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:cropMatured_595",
+          "PageIndex": 0,
+          "DisplayPattern": "Ähm... Hast du schon mal eine Fee gesehen?"
+        },
+        {
+          "DialogueFrom": "cropMatured_595",
+          "DialogueText": "Wow! Ich will auch eine sehen. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:cropMatured_595",
+          "PageIndex": 1,
+          "DisplayPattern": "Wow! Ich will auch eine sehen."
+        },
+        {
+          "DialogueFrom": "cropMatured_595",
+          "DialogueText": "...Ich auch nicht. {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:cropMatured_595",
+          "PageIndex": 2,
+          "DisplayPattern": "...Ich auch nicht."
+        },
+        {
+          "DialogueFrom": "eventSeen_3910975",
+          "DialogueText": "...wird Shane es schaffen? {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:eventSeen_3910975",
+          "PageIndex": 0,
+          "DisplayPattern": "...wird Shane es schaffen?"
+        },
+        {
+          "DialogueFrom": "eventSeen_3910975_memory_oneweek",
+          "DialogueText": "Ich hatte einen Albtraum, in dem das Haus brannte... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:eventSeen_3910975_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich hatte einen Albtraum, in dem das Haus brannte..."
+        },
+        {
+          "DialogueFrom": "eventSeen_3910974",
+          "DialogueText": "*kicher* ...guck mal, ich habe echte Hasenpantoffeln mit Juwelen! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:eventSeen_3910974",
+          "PageIndex": 0,
+          "DisplayPattern": "*kicher* ...guck mal, ich habe echte Hasenpantoffeln mit Juwelen!"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Oh... Suchst du nach Tante Marnie? {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Jas/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh... Suchst du nach Tante Marnie?"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Hi, Herr {Farmer_Name}.",
+          "AudioPath": "assets/de-DE/Jas/28_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi, Herr .",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Hi, Frau {Farmer_Name}.",
+          "AudioPath": "assets/de-DE/Jas/29_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "Hi, Frau .",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Es macht Spaß, auf einem Hof zu leben. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Mon4",
+          "PageIndex": 2,
+          "DisplayPattern": "Es macht Spaß, auf einem Hof zu leben."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Was? *kicher* {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Was? *kicher*"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "... Hi.",
+          "AudioPath": "assets/de-DE/Jas/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "... Hi."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Du kannst mit meinen Puppen spielen, wenn du willst. Bürste nur ihre Haare, wenn du fertig bist.",
+          "AudioPath": "assets/de-DE/Jas/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "Du kannst mit meinen Puppen spielen, wenn du willst. Bürste nur ihre Haare, wenn du fertig bist."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "... {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Jas/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Wed2",
+          "DialogueText": "... Hi. {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Jas/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed2",
+          "PageIndex": 0,
+          "DisplayPattern": "... Hi."
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "Tante Marnie lässt mich nach 6 Uhr nicht mehr rausgehen. Das ist nicht fair! {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "Tante Marnie lässt mich nach 6 Uhr nicht mehr rausgehen. Das ist nicht fair!"
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "Ich habe keine Angst mehr im Dunkeln!",
+          "AudioPath": "assets/de-DE/Jas/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Wed4",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich habe keine Angst mehr im Dunkeln!"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Ich soll nicht mit Fremden reden... {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Jas/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich soll nicht mit Fremden reden..."
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "Frau Penny bringt mir bei, wie man in Schreibschrift schreibt. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Thu2",
+          "PageIndex": 0,
+          "DisplayPattern": "Frau Penny bringt mir bei, wie man in Schreibschrift schreibt."
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "Sie hat so eine schöne Handschrift.",
+          "AudioPath": "assets/de-DE/Jas/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Thu2",
+          "PageIndex": 1,
+          "DisplayPattern": "Sie hat so eine schöne Handschrift."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "... Ich kenne dich nicht. {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Jas/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "... Ich kenne dich nicht."
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "Magst du meine Schleife?",
+          "AudioPath": "assets/de-DE/Jas/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Fri2",
+          "PageIndex": 0,
+          "DisplayPattern": "Magst du meine Schleife?"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "Ich mag es, auf dem Hof zu leben... Am besten ist das frische Eis aus der Milch unserer Kühe.",
+          "AudioPath": "assets/de-DE/Jas/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich mag es, auf dem Hof zu leben... Am besten ist das frische Eis aus der Milch unserer Kühe."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Du riechst nach Gras. {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Jas/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Du riechst nach Gras."
+        },
+        {
+          "DialogueFrom": "Sat2",
+          "DialogueText": "Manchmal suche ich nach Flusskrebsen. Sag Tante Marnie nichts... Aber ich habe mal einen an eine Kuh verfüttert.",
+          "AudioPath": "assets/de-DE/Jas/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat2",
+          "PageIndex": 0,
+          "DisplayPattern": "Manchmal suche ich nach Flusskrebsen. Sag Tante Marnie nichts... Aber ich habe mal einen an eine Kuh verfüttert."
+        },
+        {
+          "DialogueFrom": "Sat2",
+          "DialogueText": "Sie fand es lecker.",
+          "AudioPath": "assets/de-DE/Jas/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat2",
+          "PageIndex": 1,
+          "DisplayPattern": "Sie fand es lecker."
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Du bist immer so nett zu mir, Herr {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/47_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "Du bist immer so nett zu mir, Herr .",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Du bist immer so nett zu mir, Frau {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/48_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "Du bist immer so nett zu mir, Frau .",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Erwachsene sind normalerweise gemein und langweilig, aber du bist anders.",
+          "AudioPath": "assets/de-DE/Jas/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sat8",
+          "PageIndex": 2,
+          "DisplayPattern": "Erwachsene sind normalerweise gemein und langweilig, aber du bist anders."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Uhm... B-brauchst du etwas? {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Jas/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Uhm... B-brauchst du etwas?"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Ich soll nicht mit Fremden reden. {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Jas/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich soll nicht mit Fremden reden."
+        },
+        {
+          "DialogueFrom": "Sun2",
+          "DialogueText": "Shane ist oft nicht da und Tante Marnie ist immer beschäftigt... Also muss ich meine eigenen Spiele erfinden.",
+          "AudioPath": "assets/de-DE/Jas/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun2",
+          "PageIndex": 0,
+          "DisplayPattern": "Shane ist oft nicht da und Tante Marnie ist immer beschäftigt... Also muss ich meine eigenen Spiele erfinden."
+        },
+        {
+          "DialogueFrom": "Sun2",
+          "DialogueText": "Ich bin froh über all mein Spielzeug. {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun2",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich bin froh über all mein Spielzeug."
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "Wusstest du, dass Shane mein Patenonkel ist? Er war ein Freund meiner Eltern. {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun10",
+          "PageIndex": 0,
+          "DisplayPattern": "Wusstest du, dass Shane mein Patenonkel ist? Er war ein Freund meiner Eltern."
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "... Sie sind gestorben. *schnief* {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Jas:Sun10",
+          "PageIndex": 1,
+          "DisplayPattern": "... Sie sind gestorben. *schnief*"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s0",
+          "DialogueText": "I loved it! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/56.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I loved it!"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184643:s0",
+          "DialogueText": "Ms. Penny? The cover fell off my math book... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/57.ogg",
+          "TranslationKey": "Events/Town:6184643:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ms. Penny? The cover fell off my math book..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s0",
+          "DialogueText": "A natural resource is a material source of wealth that occurs in a natural state and has economic value. {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Jas/58.ogg",
+          "TranslationKey": "Events/Forest:181928:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "A natural resource is a material source of wealth that occurs in a natural state and has economic value."
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s1",
+          "DialogueText": "Yesss! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/59.ogg",
+          "TranslationKey": "Events/Forest:181928:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Yesss!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s0",
+          "DialogueText": "Ew... it smells. {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/60.ogg",
+          "TranslationKey": "Events/Forest:318560:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ew... it smells."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s1",
+          "DialogueText": "I think Gunther has the key.",
+          "AudioPath": "assets/de-DE/Jas/61.ogg",
+          "TranslationKey": "Events/Forest:318560:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I think Gunther has the key."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s2",
+          "DialogueText": "I saw a big rusty old key fall out of his pocket one time.",
+          "AudioPath": "assets/de-DE/Jas/62.ogg",
+          "TranslationKey": "Events/Forest:318560:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I saw a big rusty old key fall out of his pocket one time."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s3",
+          "DialogueText": "A creepy sewer door like this has just got to be a match for a big rusty old key. {Portrait:Love}",
+          "AudioPath": "assets/de-DE/Jas/63.ogg",
+          "TranslationKey": "Events/Forest:318560:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "A creepy sewer door like this has just got to be a match for a big rusty old key."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s4",
+          "DialogueText": "There's something moving around in there! {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Jas/64.ogg",
+          "TranslationKey": "Events/Forest:318560:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "There's something moving around in there!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s0",
+          "DialogueText": "They're too spicy for me! {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/65.ogg",
+          "TranslationKey": "Events/Forest:3910979:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "They're too spicy for me!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s1",
+          "DialogueText": "Um... What do you do with the bugs, Vincent?",
+          "AudioPath": "assets/de-DE/Jas/66.ogg",
+          "TranslationKey": "Events/Forest:3910979:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... What do you do with the bugs, Vincent?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s2",
+          "DialogueText": "*gasp*!",
+          "AudioPath": "assets/de-DE/Jas/67.ogg",
+          "TranslationKey": "Events/Forest:3910979:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "*gasp*!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s3",
+          "DialogueText": "That's horrible! No, no, no, no, no... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/68.ogg",
+          "TranslationKey": "Events/Forest:3910979:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "That's horrible! No, no, no, no, no..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s4|g=male",
+          "DialogueText": "Mr. {Farmer_Name}? Please... put the bugs back in the grass so they can live in peace.",
+          "AudioPath": "assets/de-DE/Jas/69_male.ogg",
+          "TranslationKey": "Events/Forest:3910979:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Mr. ? Please... put the bugs back in the grass so they can live in peace.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s5|g=female",
+          "DialogueText": "Miss {Farmer_Name}? Please... put the bugs back in the grass so they can live in peace.",
+          "AudioPath": "assets/de-DE/Jas/70_female.ogg",
+          "TranslationKey": "Events/Forest:3910979:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Miss ? Please... put the bugs back in the grass so they can live in peace.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s6",
+          "DialogueText": "You learned how to clean the spring onion... without harming any bugs.",
+          "AudioPath": "assets/de-DE/Jas/71.ogg",
+          "TranslationKey": "Events/Forest:3910979:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "You learned how to clean the spring onion... without harming any bugs."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s7",
+          "DialogueText": "Spring onions are now worth 5x the gold!",
+          "AudioPath": "assets/de-DE/Jas/72.ogg",
+          "TranslationKey": "Events/Forest:3910979:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Spring onions are now worth 5x the gold!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910674:s0",
+          "DialogueText": "...*sob*...",
+          "AudioPath": "assets/de-DE/Jas/73.ogg",
+          "TranslationKey": "Events/AnimalShop:3910674:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "...*sob*..."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s0",
+          "DialogueText": "Th... These are real bunny-jewel slippers!! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/74.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Th... These are real bunny-jewel slippers!!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s1",
+          "DialogueText": "B... But these are so expensive! {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Jas/75.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "B... But these are so expensive!"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3910974:s2",
+          "DialogueText": "How did you afford them? {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Jas/76.ogg",
+          "TranslationKey": "Events/AnimalShop:3910974:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "How did you afford them?"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s0",
+          "DialogueText": "Uncle Shane's in the barn. He said... Uh... He said to tell you he wants to show you something.",
+          "AudioPath": "assets/de-DE/Jas/77.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Uncle Shane's in the barn. He said... Uh... He said to tell you he wants to show you something."
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s1",
+          "DialogueText": "White Chicken",
+          "AudioPath": "assets/de-DE/Jas/78.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "White Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s2",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/de-DE/Jas/79.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s3",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/de-DE/Jas/80.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s4",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/de-DE/Jas/81.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Event:AnimalShop/3900074:s5",
+          "DialogueText": "Blue Chicken",
+          "AudioPath": "assets/de-DE/Jas/82.ogg",
+          "TranslationKey": "Events/AnimalShop:3900074:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Blue Chicken"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Jas",
+          "DialogueText": "Autsch! Eine Henne hat mir in den kleinen Finger gepickt! {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Jas/83.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Autsch! Eine Henne hat mir in den kleinen Finger gepickt!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Jas_y2",
+          "DialogueText": "Muh! Muuuuuh! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/84.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Muh! Muuuuuh!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Jas_y2",
+          "DialogueText": "Ich versuche, mit den Kälbern zu sprechen. {Portrait:Neutral}",
+          "AudioPath": "assets/de-DE/Jas/85.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Jas_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Ich versuche, mit den Kälbern zu sprechen."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Jas",
+          "DialogueText": "Aber Tante Marnie! Ich will in das Labyrinth! Ich habe keine Angst! {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/86.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Aber Tante Marnie! Ich will in das Labyrinth! Ich habe keine Angst!"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Jas_y2",
+          "DialogueText": "Gehen wir hier lang!%noturn {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/87.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Gehen wir hier lang!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Jas",
+          "DialogueText": "Hoffentlich kann ich ein paar Eier finden, bevor Vincent sie sich alle schnappt... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/88.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Hoffentlich kann ich ein paar Eier finden, bevor Vincent sie sich alle schnappt..."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Jas_y2",
+          "DialogueText": "Ich werde mein Bestes versuchen, dieses Jahr zu gewinnen!",
+          "AudioPath": "assets/de-DE/Jas/89.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich werde mein Bestes versuchen, dieses Jahr zu gewinnen!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Jas",
+          "DialogueText": "Eines Tages werde ich die Blumenkönigin sein!",
+          "AudioPath": "assets/de-DE/Jas/90.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Eines Tages werde ich die Blumenkönigin sein!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Jas_y2",
+          "DialogueText": "*kicher* Mache ich es richtig? {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/91.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "*kicher* Mache ich es richtig?"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Jas",
+          "DialogueText": "Vincent ist kein guter Tänzer.",
+          "AudioPath": "assets/de-DE/Jas/92.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Vincent ist kein guter Tänzer."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Jas_y2",
+          "DialogueText": "A...aber... Muss ich es essen? {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/93.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "A...aber... Muss ich es essen?"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Jas",
+          "DialogueText": "Ich hoffe, dieses Jahr gibt es Babys!",
+          "AudioPath": "assets/de-DE/Jas/94.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich hoffe, dieses Jahr gibt es Babys!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Jas_y2",
+          "DialogueText": "Woher wissen die Quallen, wohin sie schwimmen müssen, wenn sie keine Augen haben? {Portrait:Neutral}",
+          "AudioPath": "assets/de-DE/Jas/95.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Woher wissen die Quallen, wohin sie schwimmen müssen, wenn sie keine Augen haben?"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Jas",
+          "DialogueText": "Ohh! Geschenke! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/96.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Ohh! Geschenke!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Jas_y2",
+          "DialogueText": "Ist es schon Zeit, Geschenke zu öffnen? {Portrait:Neutral}",
+          "AudioPath": "assets/de-DE/Jas/97.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ist es schon Zeit, Geschenke zu öffnen?"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Jas",
+          "DialogueText": "Ich will ihm eine Karottennase verpassen! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/98.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich will ihm eine Karottennase verpassen!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Jas_y2",
+          "DialogueText": "Wird den Fischen da unten nicht kalt? {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Jas/99.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Jas_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Wird den Fischen da unten nicht kalt?"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s0",
+          "DialogueText": "*schock* Wow!! Danke dir! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/100.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "*schock* Wow!! Danke dir!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s1",
+          "DialogueText": "Ich liebe Geschenke! Danke dir!",
+          "AudioPath": "assets/de-DE/Jas/101.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich liebe Geschenke! Danke dir!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s2",
+          "DialogueText": "Ist das ein Geschenk? Oh... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/102.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ist das ein Geschenk? Oh..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s3",
+          "DialogueText": "Iiih... Das ist eklig. {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/103.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Iiih... Das ist eklig."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Jas:s4",
+          "DialogueText": "Danke!",
+          "AudioPath": "assets/de-DE/Jas/104.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Jas:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Danke!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_love_BeforeMovie",
+          "DialogueText": "Ich bin wirklich froh, einen Film zu sehen!",
+          "AudioPath": "assets/de-DE/Jas/105.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich bin wirklich froh, einen Film zu sehen!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_love_DuringMovie",
+          "DialogueText": "Jas ist ekstatisch!",
+          "AudioPath": "assets/de-DE/Jas/106.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_love_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Jas ist ekstatisch!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_love_AfterMovie",
+          "DialogueText": "Das hat so viel Spaß gemacht! Danke, dass du mich mitgenommen hast! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/107.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Das hat so viel Spaß gemacht! Danke, dass du mich mitgenommen hast!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_like_BeforeMovie",
+          "DialogueText": "Das ist ein Erwachsenenfilm, oder? Ich werd' das schaffen!",
+          "AudioPath": "assets/de-DE/Jas/108.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Das ist ein Erwachsenenfilm, oder? Ich werd' das schaffen!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_like_DuringMovie",
+          "DialogueText": "Jas nickt und schaut flüchtig zu.",
+          "AudioPath": "assets/de-DE/Jas/109.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_like_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Jas nickt und schaut flüchtig zu."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_like_AfterMovie",
+          "DialogueText": "Ich fand's gut! Ich... ehm..frage mich... wie viele Menschen bei den Dreharbeiten zu diesem Film gestorben sind hehe!",
+          "AudioPath": "assets/de-DE/Jas/110.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich fand's gut! Ich... ehm..frage mich... wie viele Menschen bei den Dreharbeiten zu diesem Film gestorben sind hehe!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_BeforeMovie",
+          "DialogueText": "I... Ich weiß nicht, ob ich das sehen darf... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/111.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "I... Ich weiß nicht, ob ich das sehen darf..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_DuringMovie",
+          "DialogueText": "Ich habe Angst... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/112.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ich habe Angst..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_DuringMovie_2",
+          "DialogueText": "Jas zittert.",
+          "AudioPath": "assets/de-DE/Jas/113.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_DuringMovie_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Jas zittert."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Jas_horror_AfterMovie",
+          "DialogueText": "*schnief*... {Portrait:Sad}",
+          "AudioPath": "assets/de-DE/Jas/114.ogg",
+          "TranslationKey": "Strings/MovieReactions:Jas_horror_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "*schnief*..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Jas",
+          "DialogueText": "Das macht Spaß, aber ich wünschte, ich hätte ein Eis...",
+          "AudioPath": "assets/de-DE/Jas/115.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Das macht Spaß, aber ich wünschte, ich hätte ein Eis..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Jas",
+          "DialogueText": "Hallo... ähm... *kicher*",
+          "AudioPath": "assets/de-DE/Jas/116.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Jas",
+          "PageIndex": 0,
+          "DisplayPattern": "Hallo... ähm... *kicher*"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Jas_IceCream",
+          "DialogueText": "Ist... Ist das für mich? {Portrait:Unique}",
+          "AudioPath": "assets/de-DE/Jas/117.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Jas_IceCream",
+          "PageIndex": 0,
+          "DisplayPattern": "Ist... Ist das für mich?"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Jas_IceCream",
+          "DialogueText": "Wow! Das ist genau das, was ich wollte... Danke! Du bist so nett! {Portrait:Happy}",
+          "AudioPath": "assets/de-DE/Jas/118.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Jas_IceCream",
+          "PageIndex": 1,
+          "DisplayPattern": "Wow! Das ist genau das, was ich wollte... Danke! Du bist so nett!"
+        }
+      ]
+    }
+  ]
+}

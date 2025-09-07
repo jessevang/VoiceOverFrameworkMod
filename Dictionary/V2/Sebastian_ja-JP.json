@@ -1,0 +1,4198 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Sebastian.ja-JP",
+      "VoicePackName": "DictionarV2 (Sebastian - ja-JP)",
+      "Character": "Sebastian",
+      "Language": "ja-JP",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "ああ。ここにきた ばかりかい？へぇ。",
+          "AudioPath": "assets/ja-JP/Sebastian/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ。ここにきた ばかりかい？へぇ。"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "他にも 町は あるのに、 どうしてペリカンタウンに したんだ？",
+          "AudioPath": "assets/ja-JP/Sebastian/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "他にも 町は あるのに、 どうしてペリカンタウンに したんだ？"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "えっ、マジ？思ってもみなかったよ。すごくいいものだな。ありがとう。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "えっ、マジ？思ってもみなかったよ。すごくいいものだな。ありがとう。"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "うわっ… 気持ちだけもらっておくよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "うわっ… 気持ちだけもらっておくよ。"
+        },
+        {
+          "DialogueFrom": "dating_Sebastian",
+          "DialogueText": "からかわないでくれよ… だれかと付き合うのは実は初めてなんだ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/5_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:dating_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "からかわないでくれよ… だれかと付き合うのは実は初めてなんだ。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "dating_Sebastian",
+          "DialogueText": "からかわないでくれよ… ガールフレンドと付き合うのは実は初めてなんだ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/6_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:dating_Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "からかわないでくれよ… ガールフレンドと付き合うのは実は初めてなんだ。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "dating_Sebastian_memory_oneday",
+          "DialogueText": "よう… 今日もイイ感じだな。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:dating_Sebastian_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "よう… 今日もイイ感じだな。"
+        },
+        {
+          "DialogueFrom": "dating_Sebastian_memory_oneday",
+          "DialogueText": "オレはこの一日おまえのことばかり考えてたよ… {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:dating_Sebastian_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "オレはこの一日おまえのことばかり考えてたよ…"
+        },
+        {
+          "DialogueFrom": "dating_Sebastian_memory_oneyear",
+          "DialogueText": "よう…オレたちが付き合い始めてからもう1年になるんだぜ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:dating_Sebastian_memory_oneyear",
+          "PageIndex": 0,
+          "DisplayPattern": "よう…オレたちが付き合い始めてからもう1年になるんだぜ。"
+        },
+        {
+          "DialogueFrom": "dating_Sebastian_memory_oneyear",
+          "DialogueText": "オレにとっては人生で最高の1年だったよ… {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:dating_Sebastian_memory_oneyear",
+          "PageIndex": 1,
+          "DisplayPattern": "オレにとっては人生で最高の1年だったよ…"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "ん、なんだって？…オーケー、やろうぜ。",
+          "AudioPath": "assets/ja-JP/Sebastian/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:FlowerDance_Accept",
+          "PageIndex": 0,
+          "DisplayPattern": "ん、なんだって？…オーケー、やろうぜ。"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "へへ… このまつりも捨てたもんじゃないな。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:FlowerDance_Accept",
+          "PageIndex": 1,
+          "DisplayPattern": "へへ… このまつりも捨てたもんじゃないな。"
+        },
+        {
+          "DialogueFrom": "married_Maru",
+          "DialogueText": "ディメトリウスは結婚式のことが気が気じゃないみたいでさ。家じゅうがピリピリしてるよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:married_Maru",
+          "PageIndex": 0,
+          "DisplayPattern": "ディメトリウスは結婚式のことが気が気じゃないみたいでさ。家じゅうがピリピリしてるよ。"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "おふくろはビクビクしてるけど、オレは楽しんでるよ。カエルたちは今ごろ大騒ぎだろうな！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "おふくろはビクビクしてるけど、オレは楽しんでるよ。カエルたちは今ごろ大騒ぎだろうな！"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "オレはおふくろのそばにいて落ち着かせてやろうと思ってるけどね。",
+          "AudioPath": "assets/ja-JP/Sebastian/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:GreenRain",
+          "PageIndex": 1,
+          "DisplayPattern": "オレはおふくろのそばにいて落ち着かせてやろうと思ってるけどね。"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "またこんな天気になってほしいと思ってたんだ。夏のありがたみってやつが少し理解できたよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "またこんな天気になってほしいと思ってたんだ。夏のありがたみってやつが少し理解できたよ。"
+        },
+        {
+          "DialogueFrom": "eventSeen_4081148",
+          "DialogueText": "ライブは成功だったよ。ステージに上がる前はちょっと緊張したけど、始まってからはゾーンに入ったって感じだったな。",
+          "AudioPath": "assets/ja-JP/Sebastian/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:eventSeen_4081148",
+          "PageIndex": 0,
+          "DisplayPattern": "ライブは成功だったよ。ステージに上がる前はちょっと緊張したけど、始まってからはゾーンに入ったって感じだったな。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)575",
+          "DialogueText": "これは、黒曜石か？ちょうどこれを探してたところだったんだ…短剣の形にできないか試してみるよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)575",
+          "PageIndex": 0,
+          "DisplayPattern": "これは、黒曜石か？ちょうどこれを探してたところだったんだ…短剣の形にできないか試してみるよ。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "ありがとよ。夕暮れが過ぎてから飲むよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "ありがとよ。夕暮れが過ぎてから飲むよ。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)Book_Defense",
+          "DialogueText": "なにが言いたいんだ？筋トレした方がいいって？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)Book_Defense",
+          "PageIndex": 0,
+          "DisplayPattern": "なにが言いたいんだ？筋トレした方がいいって？"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)Book_Defense",
+          "DialogueText": "オレはどちらかというとスピード重視なんだけど…半分くらいは読んでみるか。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)Book_Defense",
+          "PageIndex": 1,
+          "DisplayPattern": "オレはどちらかというとスピード重視なんだけど…半分くらいは読んでみるか。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)227",
+          "DialogueText": "これ好きなんだよ。どこで知ったんだ？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)227",
+          "PageIndex": 0,
+          "DisplayPattern": "これ好きなんだよ。どこで知ったんだ？"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)227",
+          "DialogueText": "うーん… 生魚は一度食べるとやみつきになるよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)227",
+          "PageIndex": 1,
+          "DisplayPattern": "うーん… 生魚は一度食べるとやみつきになるよ。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)305",
+          "DialogueText": "おお…この卵はオレになにか伝えようとしてるみたいだ…机の上に置いておくよ。ありがとな！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)305",
+          "PageIndex": 0,
+          "DisplayPattern": "おお…この卵はオレになにか伝えようとしてるみたいだ…机の上に置いておくよ。ありがとな！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)305",
+          "DialogueText": "うーん…これを枕の下に置いといたら、ふ化するかな？へへっ… やってみた方が早いよな。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)305",
+          "PageIndex": 1,
+          "DisplayPattern": "うーん…これを枕の下に置いといたら、ふ化するかな？へへっ… やってみた方が早いよな。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)236",
+          "DialogueText": "スープを持ってきてくれたのか？おまえはいいやつだな。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)236",
+          "PageIndex": 0,
+          "DisplayPattern": "スープを持ってきてくれたのか？おまえはいいやつだな。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)236",
+          "DialogueText": "これにはたくさんの思い出がつまってるんだ…",
+          "AudioPath": "assets/ja-JP/Sebastian/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(O)236",
+          "PageIndex": 1,
+          "DisplayPattern": "これにはたくさんの思い出がつまってるんだ…"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)FrogEgg",
+          "DialogueText": "カエルのタマゴじゃないか！ふ化させられるかやってみるよ。ありがとな！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:AcceptGift_(TR)FrogEgg",
+          "PageIndex": 0,
+          "DisplayPattern": "カエルのタマゴじゃないか！ふ化させられるかやってみるよ。ありがとな！"
+        },
+        {
+          "DialogueFrom": "firstVisit_Railroad",
+          "DialogueText": "線路への道がまた通じたのはありがたいよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:firstVisit_Railroad",
+          "PageIndex": 0,
+          "DisplayPattern": "線路への道がまた通じたのはありがたいよ。"
+        },
+        {
+          "DialogueFrom": "firstVisit_Railroad",
+          "DialogueText": "ひとりになりたいときにはあそこに行くんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:firstVisit_Railroad",
+          "PageIndex": 1,
+          "DisplayPattern": "ひとりになりたいときにはあそこに行くんだ。"
+        },
+        {
+          "DialogueFrom": "firstVisit_Railroad",
+          "DialogueText": "…たまにな。",
+          "AudioPath": "assets/ja-JP/Sebastian/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:firstVisit_Railroad",
+          "PageIndex": 2,
+          "DisplayPattern": "…たまにな。"
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "ボートを気に入ったよ。陸地が全く見えない場所もあったな…",
+          "AudioPath": "assets/ja-JP/Sebastian/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "ボートを気に入ったよ。陸地が全く見えない場所もあったな…"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "帰る準備はできてるよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "帰る準備はできてるよ。"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "ビーチは最高だけど、人混みは好きじゃないな。",
+          "AudioPath": "assets/ja-JP/Sebastian/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "ビーチは最高だけど、人混みは好きじゃないな。"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "ウィリーがオレにジェットスキーさせてくれないかな？",
+          "AudioPath": "assets/ja-JP/Sebastian/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "ウィリーがオレにジェットスキーさせてくれないかな？"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "…ないか。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Resort_Shore",
+          "PageIndex": 1,
+          "DisplayPattern": "…ないか。"
+        },
+        {
+          "DialogueFrom": "Resort_Wander",
+          "DialogueText": "…もしオレが南国のカエルだったとしたら、どこに隠れようかな… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Resort_Wander",
+          "PageIndex": 0,
+          "DisplayPattern": "…もしオレが南国のカエルだったとしたら、どこに隠れようかな…"
+        },
+        {
+          "DialogueFrom": "Resort_Wander_2",
+          "DialogueText": "雨が降っても、ここは最高の場所だろうな。",
+          "AudioPath": "assets/ja-JP/Sebastian/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Resort_Wander_2",
+          "PageIndex": 0,
+          "DisplayPattern": "雨が降っても、ここは最高の場所だろうな。"
+        },
+        {
+          "DialogueFrom": "Resort_Towel",
+          "DialogueText": "たまにはパソコンから離れて、現実の世界を見るのも悪くないな。オレはその素晴らしさを忘れてたよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Resort_Towel",
+          "PageIndex": 0,
+          "DisplayPattern": "たまにはパソコンから離れて、現実の世界を見るのも悪くないな。オレはその素晴らしさを忘れてたよ。"
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "普段は黒を着てるんだけど、この暑さじゃな…",
+          "AudioPath": "assets/ja-JP/Sebastian/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "普段は黒を着てるんだけど、この暑さじゃな…"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept_Spouse",
+          "DialogueText": "うーん… やらなきゃ ダメか？ わかった。",
+          "AudioPath": "assets/ja-JP/Sebastian/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:FlowerDance_Accept_Spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん… やらなきゃ ダメか？ わかった。"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Decline",
+          "DialogueText": "いいや…一緒に 踊りたい 相手は 他に いるんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:FlowerDance_Decline",
+          "PageIndex": 0,
+          "DisplayPattern": "いいや…一緒に 踊りたい 相手は 他に いるんだ。"
+        },
+        {
+          "DialogueFrom": "divorced",
+          "DialogueText": "なんでうっとうしくついてくるんだ？もう、お前のことは忘れたいんだよ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:divorced",
+          "PageIndex": 0,
+          "DisplayPattern": "なんでうっとうしくついてくるんだ？もう、お前のことは忘れたいんだよ。"
+        },
+        {
+          "DialogueFrom": "dumped_Guys",
+          "DialogueText": "しばらく その顔は 見たくないな。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Sebastian/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:dumped_Guys",
+          "PageIndex": 0,
+          "DisplayPattern": "しばらく その顔は 見たくないな。"
+        },
+        {
+          "DialogueFrom": "breakUp",
+          "DialogueText": "...大丈夫... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:breakUp",
+          "PageIndex": 0,
+          "DisplayPattern": "...大丈夫..."
+        },
+        {
+          "DialogueFrom": "breakUp",
+          "DialogueText": "周りであなたに会うつもり、そして... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:breakUp",
+          "PageIndex": 1,
+          "DisplayPattern": "周りであなたに会うつもり、そして..."
+        },
+        {
+          "DialogueFrom": "secondChance_Guys",
+          "DialogueText": "やあ…",
+          "AudioPath": "assets/ja-JP/Sebastian/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:secondChance_Guys",
+          "PageIndex": 0,
+          "DisplayPattern": "やあ…"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "こんにちは。何か 用かい？",
+          "AudioPath": "assets/ja-JP/Sebastian/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは。何か 用かい？"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "オレが 突然 いなくなっても、 問題でも あるのか？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "オレが 突然 いなくなっても、 問題でも あるのか？"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "思ったんだけどさ… 人々は 水の上を 跳ねる 石みたいなもんだって。",
+          "AudioPath": "assets/ja-JP/Sebastian/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "思ったんだけどさ… 人々は 水の上を 跳ねる 石みたいなもんだって。"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "いずれ みんな 沈むんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "いずれ みんな 沈むんだ。"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "サムは本当に明るいやつだから、一緒にいるときはほとんどアイツがしゃべるんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "サムは本当に明るいやつだから、一緒にいるときはほとんどアイツがしゃべるんだ。"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "オレはそれで全然かまわないよ!",
+          "AudioPath": "assets/ja-JP/Sebastian/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Tue6",
+          "PageIndex": 1,
+          "DisplayPattern": "オレはそれで全然かまわないよ!"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "もしサムがオレと同じくらい静かなやつだったら… 一緒にいてもずっと無言のままだろうな。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Tue6",
+          "PageIndex": 2,
+          "DisplayPattern": "もしサムがオレと同じくらい静かなやつだったら… 一緒にいてもずっと無言のままだろうな。"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "話すのが好きなやつもいれば、聞くのが好きなやつもいる。オレはどちらかというと聞き役だな。",
+          "AudioPath": "assets/ja-JP/Sebastian/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Tue6",
+          "PageIndex": 3,
+          "DisplayPattern": "話すのが好きなやつもいれば、聞くのが好きなやつもいる。オレはどちらかというと聞き役だな。"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "今日は 何を しようかな？",
+          "AudioPath": "assets/ja-JP/Sebastian/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 何を しようかな？"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "たぶん、 何も しなさそうだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "たぶん、 何も しなさそうだ。"
+        },
+        {
+          "DialogueFrom": "Wed2",
+          "DialogueText": "町にいる オレの 友達は サムだけ かもな。",
+          "AudioPath": "assets/ja-JP/Sebastian/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Wed2",
+          "PageIndex": 0,
+          "DisplayPattern": "町にいる オレの 友達は サムだけ かもな。"
+        },
+        {
+          "DialogueFrom": "Wed2",
+          "DialogueText": "アビィも いい人 だけど… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Wed2",
+          "PageIndex": 1,
+          "DisplayPattern": "アビィも いい人 だけど…"
+        },
+        {
+          "DialogueFrom": "Wed2",
+          "DialogueText": "いいや、なんでもない。",
+          "AudioPath": "assets/ja-JP/Sebastian/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Wed2",
+          "PageIndex": 2,
+          "DisplayPattern": "いいや、なんでもない。"
+        },
+        {
+          "DialogueFrom": "Wed2_inlaw_Abigail",
+          "DialogueText": "町にいる オレの 友達は もう サムだけ かもな…",
+          "AudioPath": "assets/ja-JP/Sebastian/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Wed2_inlaw_Abigail",
+          "PageIndex": 0,
+          "DisplayPattern": "町にいる オレの 友達は もう サムだけ かもな…"
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "町にいる オレの 友達は お前と サムだけ かもな。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "町にいる オレの 友達は お前と サムだけ かもな。"
+        },
+        {
+          "DialogueFrom": "Wed10",
+          "DialogueText": "お前がいなかったら、オレはどうなっていただろう… 今ごろ、どこかの道端で途方に暮れてたかもしれないな。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Wed10",
+          "PageIndex": 0,
+          "DisplayPattern": "お前がいなかったら、オレはどうなっていただろう… 今ごろ、どこかの道端で途方に暮れてたかもしれないな。"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "# {Portrait:Happy} Sebastian1",
+          "AudioPath": "assets/ja-JP/Sebastian/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "# Sebastian1"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "昨晩 洞窟へ コッソリ 行ったら、 カニに ひどい 切り傷を つけられてな。絶対誰にも 言うなよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "昨晩 洞窟へ コッソリ 行ったら、 カニに ひどい 切り傷を つけられてな。絶対誰にも 言うなよ。"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "やあ。",
+          "AudioPath": "assets/ja-JP/Sebastian/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "やあ。"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "…何か 用かい？",
+          "AudioPath": "assets/ja-JP/Sebastian/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu",
+          "PageIndex": 3,
+          "DisplayPattern": "…何か 用かい？"
+        },
+        {
+          "DialogueFrom": "Mountain_47_23",
+          "DialogueText": "静かに 安らぎたいから ここに 来たんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Mountain_47_23",
+          "PageIndex": 0,
+          "DisplayPattern": "静かに 安らぎたいから ここに 来たんだ。"
+        },
+        {
+          "DialogueFrom": "Thu4",
+          "DialogueText": "どうして みんな マルのことを 気に入るんだろうか？たしかに あいつは スマートで 人当たりは いいけど、 ただ 構って ほしいだけ だって 誰も 分からないのか？",
+          "AudioPath": "assets/ja-JP/Sebastian/69.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu4",
+          "PageIndex": 0,
+          "DisplayPattern": "どうして みんな マルのことを 気に入るんだろうか？たしかに あいつは スマートで 人当たりは いいけど、 ただ 構って ほしいだけ だって 誰も 分からないのか？"
+        },
+        {
+          "DialogueFrom": "Thu4",
+          "DialogueText": "ごめんな… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/70.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu4",
+          "PageIndex": 1,
+          "DisplayPattern": "ごめんな…"
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "オレみたいな人が 牧場で 生活する 姿を 想像 できるか？すごく バカげてる。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/71.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "オレみたいな人が 牧場で 生活する 姿を 想像 できるか？すごく バカげてる。"
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "なあ… 牧場は順調か？",
+          "AudioPath": "assets/ja-JP/Sebastian/72.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu8",
+          "PageIndex": 0,
+          "DisplayPattern": "なあ… 牧場は順調か？"
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "毎日同じことの繰り返しだろ？ ああ、オレも似たようなもんさ…",
+          "AudioPath": "assets/ja-JP/Sebastian/73.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu8",
+          "PageIndex": 1,
+          "DisplayPattern": "毎日同じことの繰り返しだろ？ ああ、オレも似たようなもんさ…"
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "オレが 牧場で 生活する 姿を 想像 できるか？",
+          "AudioPath": "assets/ja-JP/Sebastian/74.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu8",
+          "PageIndex": 2,
+          "DisplayPattern": "オレが 牧場で 生活する 姿を 想像 できるか？"
+        },
+        {
+          "DialogueFrom": "Thu8",
+          "DialogueText": "バカげてる だろうけど、 最近 そんなことを 考えて しまうんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Thu8",
+          "PageIndex": 3,
+          "DisplayPattern": "バカげてる だろうけど、 最近 そんなことを 考えて しまうんだ。"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "えっと…お前の ことは よく知らないんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "えっと…お前の ことは よく知らないんだ。"
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "はぁ… ガソリンが 高くなかったら、 今日は バイクで 都市まで 行けたのに。",
+          "AudioPath": "assets/ja-JP/Sebastian/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri2",
+          "PageIndex": 0,
+          "DisplayPattern": "はぁ… ガソリンが 高くなかったら、 今日は バイクで 都市まで 行けたのに。"
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "それで、 仕事を していない間は 何を してるんだい？",
+          "AudioPath": "assets/ja-JP/Sebastian/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri2",
+          "PageIndex": 1,
+          "DisplayPattern": "それで、 仕事を していない間は 何を してるんだい？"
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "さらに 仕事する",
+          "AudioPath": "assets/ja-JP/Sebastian/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri2",
+          "PageIndex": 2,
+          "DisplayPattern": "さらに 仕事する"
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "マンガを 読む",
+          "AudioPath": "assets/ja-JP/Sebastian/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri2",
+          "PageIndex": 3,
+          "DisplayPattern": "マンガを 読む"
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "買い物する",
+          "AudioPath": "assets/ja-JP/Sebastian/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri2",
+          "PageIndex": 4,
+          "DisplayPattern": "買い物する"
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "運動する",
+          "AudioPath": "assets/ja-JP/Sebastian/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri2",
+          "PageIndex": 5,
+          "DisplayPattern": "運動する"
+        },
+        {
+          "DialogueFrom": "Fri_old",
+          "DialogueText": "なぁ、 ヒマだったら いつでも 部屋に きて いいよ… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri_old",
+          "PageIndex": 0,
+          "DisplayPattern": "なぁ、 ヒマだったら いつでも 部屋に きて いいよ…"
+        },
+        {
+          "DialogueFrom": "Fri_old",
+          "DialogueText": "お前は 小さな 町の暮らしの ほうが 好きなんだろ？",
+          "AudioPath": "assets/ja-JP/Sebastian/84.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri_old",
+          "PageIndex": 1,
+          "DisplayPattern": "お前は 小さな 町の暮らしの ほうが 好きなんだろ？"
+        },
+        {
+          "DialogueFrom": "Fri_good",
+          "DialogueText": "あらそう？じゃあ、 新刊の ケイブサーガXは 読んだ？ネタバレは 避けるけど、 あれは… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/85.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri_good",
+          "PageIndex": 0,
+          "DisplayPattern": "あらそう？じゃあ、 新刊の ケイブサーガXは 読んだ？ネタバレは 避けるけど、 あれは…"
+        },
+        {
+          "DialogueFrom": "Fri_bad",
+          "DialogueText": "そうかい？うーん…オレは そういうの 好きじゃないけど、 みんな 趣味は 違うもんな。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Sebastian/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri_bad",
+          "PageIndex": 0,
+          "DisplayPattern": "そうかい？うーん…オレは そういうの 好きじゃないけど、 みんな 趣味は 違うもんな。"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "えっ？聞き逃しちまった…ほかのことを 考えるのに 夢中でさ。",
+          "AudioPath": "assets/ja-JP/Sebastian/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "えっ？聞き逃しちまった…ほかのことを 考えるのに 夢中でさ。"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "何の用だい？",
+          "AudioPath": "assets/ja-JP/Sebastian/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "何の用だい？"
+        },
+        {
+          "DialogueFrom": "Sat2",
+          "DialogueText": "いい加減、 オレも 何か 生産的な ことを しないと。すぐ 集中力が 切れてしまうんだ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/89.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sat2",
+          "PageIndex": 0,
+          "DisplayPattern": "いい加減、 オレも 何か 生産的な ことを しないと。すぐ 集中力が 切れてしまうんだ…"
+        },
+        {
+          "DialogueFrom": "Sat2",
+          "DialogueText": "もっと コーヒーを 飲んだほうが いいかな？",
+          "AudioPath": "assets/ja-JP/Sebastian/90.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sat2",
+          "PageIndex": 1,
+          "DisplayPattern": "もっと コーヒーを 飲んだほうが いいかな？"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "ねぇ、お前の 名前は {Farmer_Name}だったかな？",
+          "AudioPath": "assets/ja-JP/Sebastian/91.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "ねぇ、お前の 名前は だったかな？"
+        },
+        {
+          "DialogueFrom": "Sun2",
+          "DialogueText": "いい 週末を 過ごしてるかい？ …そりゃ 良かった。",
+          "AudioPath": "assets/ja-JP/Sebastian/92.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sun2",
+          "PageIndex": 0,
+          "DisplayPattern": "いい 週末を 過ごしてるかい？ …そりゃ 良かった。"
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "普段は 外へ 出ないけど、 時々 ビーチへ 行くんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/93.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sun4",
+          "PageIndex": 0,
+          "DisplayPattern": "普段は 外へ 出ないけど、 時々 ビーチへ 行くんだ。"
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "だいたい、 雨が降ってる時に 限るけどね。",
+          "AudioPath": "assets/ja-JP/Sebastian/94.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sun4",
+          "PageIndex": 1,
+          "DisplayPattern": "だいたい、 雨が降ってる時に 限るけどね。"
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "よく わからないけど、 暗い空を 見つめたく なるんだ…オレにはわからん。前に進むことに 価値が あるような そんな 気がする。",
+          "AudioPath": "assets/ja-JP/Sebastian/95.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sun4",
+          "PageIndex": 2,
+          "DisplayPattern": "よく わからないけど、 暗い空を 見つめたく なるんだ…オレにはわからん。前に進むことに 価値が あるような そんな 気がする。"
+        },
+        {
+          "DialogueFrom": "Fri8",
+          "DialogueText": "最近 どうだい？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/96.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri8",
+          "PageIndex": 0,
+          "DisplayPattern": "最近 どうだい？"
+        },
+        {
+          "DialogueFrom": "Fri8",
+          "DialogueText": "今夜は また、 ビリヤードで サムを 叩きのめすつもりさ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/97.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Fri8",
+          "PageIndex": 1,
+          "DisplayPattern": "今夜は また、 ビリヤードで サムを 叩きのめすつもりさ。"
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "さっき お前の ことを 考えてたんだ… {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/98.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Sun10",
+          "PageIndex": 0,
+          "DisplayPattern": "さっき お前の ことを 考えてたんだ…"
+        },
+        {
+          "DialogueFrom": "Event_game1",
+          "DialogueText": "ああ、それはいけそうだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/99.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Event_game1",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、それはいけそうだ。"
+        },
+        {
+          "DialogueFrom": "Event_game2",
+          "DialogueText": "いい選択だ。オレの役と合いそうだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/100.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Event_game2",
+          "PageIndex": 0,
+          "DisplayPattern": "いい選択だ。オレの役と合いそうだ。"
+        },
+        {
+          "DialogueFrom": "Event_cave1",
+          "DialogueText": "ちょっと待った！それが何か 知りたい。",
+          "AudioPath": "assets/ja-JP/Sebastian/101.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Event_cave1",
+          "PageIndex": 0,
+          "DisplayPattern": "ちょっと待った！それが何か 知りたい。"
+        },
+        {
+          "DialogueFrom": "Event_cave2",
+          "DialogueText": "ほんと？すごい 音を 立ててた じゃないか！",
+          "AudioPath": "assets/ja-JP/Sebastian/102.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Event_cave2",
+          "PageIndex": 0,
+          "DisplayPattern": "ほんと？すごい 音を 立ててた じゃないか！"
+        },
+        {
+          "DialogueFrom": "Event_cave3",
+          "DialogueText": "剣なしじゃ 危険すぎる。でも、 お前の 冒険センスは 気に入ったよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/103.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:Event_cave3",
+          "PageIndex": 0,
+          "DisplayPattern": "剣なしじゃ 危険すぎる。でも、 お前の 冒険センスは 気に入ったよ。"
+        },
+        {
+          "DialogueFrom": "event_garage1",
+          "DialogueText": "よし。 {Portrait:Custom:8}",
+          "AudioPath": "assets/ja-JP/Sebastian/104.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_garage1",
+          "PageIndex": 0,
+          "DisplayPattern": "よし。"
+        },
+        {
+          "DialogueFrom": "event_garage2",
+          "DialogueText": "わかった…じゃあ、いいや。 {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Sebastian/105.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_garage2",
+          "PageIndex": 0,
+          "DisplayPattern": "わかった…じゃあ、いいや。"
+        },
+        {
+          "DialogueFrom": "event_garage3",
+          "DialogueText": "心配するな。 危険なことを させる前に、 ちゃんと 安全な道も 見せてあげるから。 {Portrait:Custom:8}",
+          "AudioPath": "assets/ja-JP/Sebastian/106_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_garage3",
+          "PageIndex": 0,
+          "DisplayPattern": "心配するな。 危険なことを させる前に、 ちゃんと 安全な道も 見せてあげるから。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "event_garage3",
+          "DialogueText": "心配する必要はないよ…危険な目には あわせないから。 {Portrait:Custom:8}",
+          "AudioPath": "assets/ja-JP/Sebastian/107_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_garage3",
+          "PageIndex": 1,
+          "DisplayPattern": "心配する必要はないよ…危険な目には あわせないから。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "event_city1",
+          "DialogueText": "うーん…オレが思っていたのと 違うけど、 まあいいか。",
+          "AudioPath": "assets/ja-JP/Sebastian/108.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_city1",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん…オレが思っていたのと 違うけど、 まあいいか。"
+        },
+        {
+          "DialogueFrom": "event_city2",
+          "DialogueText": "そうだな…オレも 全く 同じことを 感じてたよ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/109.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_city2",
+          "PageIndex": 0,
+          "DisplayPattern": "そうだな…オレも 全く 同じことを 感じてたよ。"
+        },
+        {
+          "DialogueFrom": "event_city3",
+          "DialogueText": "ああ…どうやら、 お前には 合わない 場所の ようだね。お前は 気に入ると 思ってたのに。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/110.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_city3",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ…どうやら、 お前には 合わない 場所の ようだね。お前は 気に入ると 思ってたのに。"
+        },
+        {
+          "DialogueFrom": "event_city4",
+          "DialogueText": "うーん…母さん みたいな ことを 言うんだな。 {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Sebastian/111.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_city4",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん…母さん みたいな ことを 言うんだな。"
+        },
+        {
+          "DialogueFrom": "event_city4",
+          "DialogueText": "…はぁ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/112.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_city4",
+          "PageIndex": 1,
+          "DisplayPattern": "…はぁ。"
+        },
+        {
+          "DialogueFrom": "event_city4",
+          "DialogueText": "でも お前は 正しいよ。こんなものに はまるのは 良くない。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/113.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:event_city4",
+          "PageIndex": 2,
+          "DisplayPattern": "でも お前は 正しいよ。こんなものに はまるのは 良くない。"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "みんな 晴れの日は 幸せそうだな。オレには 理解できないよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/114.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "みんな 晴れの日は 幸せそうだな。オレには 理解できないよ。"
+        },
+        {
+          "DialogueFrom": "summer_Mon6",
+          "DialogueText": "よく 晴れた 日は みんな すごく 幸せそうだよな…",
+          "AudioPath": "assets/ja-JP/Sebastian/115.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Mon6",
+          "PageIndex": 0,
+          "DisplayPattern": "よく 晴れた 日は みんな すごく 幸せそうだよな…"
+        },
+        {
+          "DialogueFrom": "summer_Mon6",
+          "DialogueText": "人によって 好みは 違うから だろうな。",
+          "AudioPath": "assets/ja-JP/Sebastian/116.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Mon6",
+          "PageIndex": 1,
+          "DisplayPattern": "人によって 好みは 違うから だろうな。"
+        },
+        {
+          "DialogueFrom": "summer_Mon6",
+          "DialogueText": "たいていの人間は太陽が好きだろ？",
+          "AudioPath": "assets/ja-JP/Sebastian/117.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Mon6",
+          "PageIndex": 2,
+          "DisplayPattern": "たいていの人間は太陽が好きだろ？"
+        },
+        {
+          "DialogueFrom": "summer_Mon6",
+          "DialogueText": "ビタミンDは最低限の量が必要ってことだよな…",
+          "AudioPath": "assets/ja-JP/Sebastian/118.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Mon6",
+          "PageIndex": 3,
+          "DisplayPattern": "ビタミンDは最低限の量が必要ってことだよな…"
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "寒くて 湿った 季節が 待ち遠しいよ。そのほうが 落ち着くんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/119.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "寒くて 湿った 季節が 待ち遠しいよ。そのほうが 落ち着くんだ。"
+        },
+        {
+          "DialogueFrom": "summer_Tue4",
+          "DialogueText": "寒くて湿っぽい季節が待ち遠しい。オレはヒキガエルを見習った方がいいのかもな。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/120.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "寒くて湿っぽい季節が待ち遠しい。オレはヒキガエルを見習った方がいいのかもな。"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "外へ出る 意味なんて あるのか？目新しいものは ないのに。",
+          "AudioPath": "assets/ja-JP/Sebastian/121.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "外へ出る 意味なんて あるのか？目新しいものは ないのに。"
+        },
+        {
+          "DialogueFrom": "summer_Wed6",
+          "DialogueText": "落ち込んでいるときは、すべてがバカバカしく思える。逆に調子がいいときは、ちょっとしたことでも楽しく感じる。",
+          "AudioPath": "assets/ja-JP/Sebastian/122.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "落ち込んでいるときは、すべてがバカバカしく思える。逆に調子がいいときは、ちょっとしたことでも楽しく感じる。"
+        },
+        {
+          "DialogueFrom": "summer_Wed6",
+          "DialogueText": "調子のよさを保つにはどうしたらいいんだ？オレにはわからない。",
+          "AudioPath": "assets/ja-JP/Sebastian/123.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Wed6",
+          "PageIndex": 1,
+          "DisplayPattern": "調子のよさを保つにはどうしたらいいんだ？オレにはわからない。"
+        },
+        {
+          "DialogueFrom": "summer_Wed6",
+          "DialogueText": "…いつになったらわかるんだろうな。",
+          "AudioPath": "assets/ja-JP/Sebastian/124.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Wed6",
+          "PageIndex": 2,
+          "DisplayPattern": "…いつになったらわかるんだろうな。"
+        },
+        {
+          "DialogueFrom": "summer_Wed10",
+          "DialogueText": "なぜ機嫌がよさそうなのかって？最近やけにいいことが続くんだ… {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/125.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Wed10",
+          "PageIndex": 0,
+          "DisplayPattern": "なぜ機嫌がよさそうなのかって？最近やけにいいことが続くんだ…"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "もし オレを 泳ぎに 誘ってるのなら、 絶対に お断りだ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/126.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "もし オレを 泳ぎに 誘ってるのなら、 絶対に お断りだ。"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "って、 ただ あいさつを したかっただけか？ごめんね。",
+          "AudioPath": "assets/ja-JP/Sebastian/127.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "って、 ただ あいさつを したかっただけか？ごめんね。"
+        },
+        {
+          "DialogueFrom": "summer_Thu10",
+          "DialogueText": "もし お前が 本当に 泳ぐなら…僕も やるかな。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/128.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Thu10",
+          "PageIndex": 0,
+          "DisplayPattern": "もし お前が 本当に 泳ぐなら…僕も やるかな。"
+        },
+        {
+          "DialogueFrom": "summer_Mountain_58_35",
+          "DialogueText": "日が暮れるまで、 外の 気温は 本当に 不快なものさ。",
+          "AudioPath": "assets/ja-JP/Sebastian/129.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Mountain_58_35",
+          "PageIndex": 0,
+          "DisplayPattern": "日が暮れるまで、 外の 気温は 本当に 不快なものさ。"
+        },
+        {
+          "DialogueFrom": "summer_Mountain_58_35",
+          "DialogueText": "$e",
+          "AudioPath": "assets/ja-JP/Sebastian/130.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Mountain_58_35",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "summer_Mountain_58_35",
+          "DialogueText": "池の そばは 少し 涼しいかな。",
+          "AudioPath": "assets/ja-JP/Sebastian/131.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Mountain_58_35",
+          "PageIndex": 2,
+          "DisplayPattern": "池の そばは 少し 涼しいかな。"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "ふわぁ… どうも。",
+          "AudioPath": "assets/ja-JP/Sebastian/132.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "ふわぁ… どうも。"
+        },
+        {
+          "DialogueFrom": "summer_Fri6",
+          "DialogueText": "やぁ、 来てくれて うれしいよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/133.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "やぁ、 来てくれて うれしいよ。"
+        },
+        {
+          "DialogueFrom": "summer_Fri6",
+          "DialogueText": "お前は どうやって 暑さを しのいでるんだい？",
+          "AudioPath": "assets/ja-JP/Sebastian/134.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "お前は どうやって 暑さを しのいでるんだい？"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "今夜は キノコの キャセロール じゃないことを 祈ってるよ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/135.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "今夜は キノコの キャセロール じゃないことを 祈ってるよ…"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "おいおい、夜は洞窟ニンジンのタコスだって？ はあ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/136.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "おいおい、夜は洞窟ニンジンのタコスだって？ はあ…"
+        },
+        {
+          "DialogueFrom": "spring_12",
+          "DialogueText": "祭りは あんまり 好きじゃないんだ。騒がしいし、 人も 多すぎるし…僕にとっては、 楽しさより ストレスが たまるね。",
+          "AudioPath": "assets/ja-JP/Sebastian/137.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:spring_12",
+          "PageIndex": 0,
+          "DisplayPattern": "祭りは あんまり 好きじゃないんだ。騒がしいし、 人も 多すぎるし…僕にとっては、 楽しさより ストレスが たまるね。"
+        },
+        {
+          "DialogueFrom": "spring_23",
+          "DialogueText": "うーん…明日は 一番 嫌いな 祭りが 開催されるんだった。フラワーダンスの時、 オレが どれだけ バカっぽく 見えるか。",
+          "AudioPath": "assets/ja-JP/Sebastian/138.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:spring_23",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん…明日は 一番 嫌いな 祭りが 開催されるんだった。フラワーダンスの時、 オレが どれだけ バカっぽく 見えるか。"
+        },
+        {
+          "DialogueFrom": "fall_20",
+          "DialogueText": "スピリット・イブのお祭りに期待してるのかい？オレもあれは好きかな。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/139.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_20",
+          "PageIndex": 0,
+          "DisplayPattern": "スピリット・イブのお祭りに期待してるのかい？オレもあれは好きかな。"
+        },
+        {
+          "DialogueFrom": "fall_26",
+          "DialogueText": "明日はスピリット・イブのお祭りだ。今年もまたあのガイコツが展示されればいいなぁ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/140.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_26",
+          "PageIndex": 0,
+          "DisplayPattern": "明日はスピリット・イブのお祭りだ。今年もまたあのガイコツが展示されればいいなぁ。"
+        },
+        {
+          "DialogueFrom": "fall_26",
+          "DialogueText": "オレにとっては、なんだか親近感が沸くからね。",
+          "AudioPath": "assets/ja-JP/Sebastian/141.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_26",
+          "PageIndex": 1,
+          "DisplayPattern": "オレにとっては、なんだか親近感が沸くからね。"
+        },
+        {
+          "DialogueFrom": "summer_10",
+          "DialogueText": "へへ…明日の 寄せ鍋には ひどいものを いれて 反応を 楽しもうかと 思うんだ。もちろん、 無害なものをね。",
+          "AudioPath": "assets/ja-JP/Sebastian/142.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_10",
+          "PageIndex": 0,
+          "DisplayPattern": "へへ…明日の 寄せ鍋には ひどいものを いれて 反応を 楽しもうかと 思うんだ。もちろん、 無害なものをね。"
+        },
+        {
+          "DialogueFrom": "summer_10",
+          "DialogueText": "どうして 台無しに するかって？うーん…堅苦しい 社会構造や 決まりごとを ぶち壊すことで 解放された 気分に なる人も いるんだろう。ただ オレが 変なだけかも しれないけど。",
+          "AudioPath": "assets/ja-JP/Sebastian/143.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_10",
+          "PageIndex": 1,
+          "DisplayPattern": "どうして 台無しに するかって？うーん…堅苦しい 社会構造や 決まりごとを ぶち壊すことで 解放された 気分に なる人も いるんだろう。ただ オレが 変なだけかも しれないけど。"
+        },
+        {
+          "DialogueFrom": "summer_27",
+          "DialogueText": "明日は みんなで 桟橋に 集まって、 クラゲの 大移動を 見るんだ。10時ぐらいから 始まると 思う。",
+          "AudioPath": "assets/ja-JP/Sebastian/144.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_27",
+          "PageIndex": 0,
+          "DisplayPattern": "明日は みんなで 桟橋に 集まって、 クラゲの 大移動を 見るんだ。10時ぐらいから 始まると 思う。"
+        },
+        {
+          "DialogueFrom": "winter_24",
+          "DialogueText": "今日は 冬の 星 祭り だね。翌日の ごちそうの ために、 ちゃんと 腹を 空けたほうが ほうが いいよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/145.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_24",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 冬の 星 祭り だね。翌日の ごちそうの ために、 ちゃんと 腹を 空けたほうが ほうが いいよ。"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "オレは 普段、 暗くなってから 外へ 出るんだ。お前は 変だと 思うかい？",
+          "AudioPath": "assets/ja-JP/Sebastian/146.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "オレは 普段、 暗くなってから 外へ 出るんだ。お前は 変だと 思うかい？"
+        },
+        {
+          "DialogueFrom": "summer_Sun4",
+          "DialogueText": "昨晩、 コウモリの群れが 池の周りを 飛んでるのを 見たんだ",
+          "AudioPath": "assets/ja-JP/Sebastian/147.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Sun4",
+          "PageIndex": 0,
+          "DisplayPattern": "昨晩、 コウモリの群れが 池の周りを 飛んでるのを 見たんだ"
+        },
+        {
+          "DialogueFrom": "summer_Sun4",
+          "DialogueText": "たぶん、 この時期の 蚊を エサに してるんじゃないのかな。",
+          "AudioPath": "assets/ja-JP/Sebastian/148.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:summer_Sun4",
+          "PageIndex": 1,
+          "DisplayPattern": "たぶん、 この時期の 蚊を エサに してるんじゃないのかな。"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "今は… 大収穫の 季節だったかな。",
+          "AudioPath": "assets/ja-JP/Sebastian/149.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "今は… 大収穫の 季節だったかな。"
+        },
+        {
+          "DialogueFrom": "fall_Mon4",
+          "DialogueText": "たぶん、 お前の 牧場も かなり 儲かるんだろうね。",
+          "AudioPath": "assets/ja-JP/Sebastian/150.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "たぶん、 お前の 牧場も かなり 儲かるんだろうね。"
+        },
+        {
+          "DialogueFrom": "fall_Mon4",
+          "DialogueText": "オレも 早く 仕事を 探さないと… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/151.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "オレも 早く 仕事を 探さないと…"
+        },
+        {
+          "DialogueFrom": "fall_Tue",
+          "DialogueText": "あれも これも カボチャ、 カボチャ… 季節ものには うんざり してくるよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/152.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "あれも これも カボチャ、 カボチャ… 季節ものには うんざり してくるよ。"
+        },
+        {
+          "DialogueFrom": "fall_Tue6",
+          "DialogueText": "オレに 指図 ばかりして、 ディメトリウスは 何様なんだ？本物の 父親でも ないくせに。 {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Sebastian/153.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "オレに 指図 ばかりして、 ディメトリウスは 何様なんだ？本物の 父親でも ないくせに。"
+        },
+        {
+          "DialogueFrom": "fall_Tue10",
+          "DialogueText": "オレはいつも自分を負け犬のように思っていた。でもこの挑戦でオレは強くなれるんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/154.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Tue10",
+          "PageIndex": 0,
+          "DisplayPattern": "オレはいつも自分を負け犬のように思っていた。でもこの挑戦でオレは強くなれるんだ。"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "ふぁわ… いま何時だ？昨晩 寝すぎたかも しれない。",
+          "AudioPath": "assets/ja-JP/Sebastian/155.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "ふぁわ… いま何時だ？昨晩 寝すぎたかも しれない。"
+        },
+        {
+          "DialogueFrom": "fall_Wed8",
+          "DialogueText": "来てくれて よかった。すごく ヒマだったんだよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/156.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Wed8",
+          "PageIndex": 0,
+          "DisplayPattern": "来てくれて よかった。すごく ヒマだったんだよ。"
+        },
+        {
+          "DialogueFrom": "fall_Wed8",
+          "DialogueText": "お前が信じるかは わからないけど、 元気が でた感じが するよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/157.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Wed8",
+          "PageIndex": 1,
+          "DisplayPattern": "お前が信じるかは わからないけど、 元気が でた感じが するよ。"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "部屋に 窓が あったら、 もう少し 部屋も 明るくなったかな… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/158.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "部屋に 窓が あったら、 もう少し 部屋も 明るくなったかな…"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "{Farmer_Name}、読書はするのかい？",
+          "AudioPath": "assets/ja-JP/Sebastian/159.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "、読書はするのかい？"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "うん。名作を読む。",
+          "AudioPath": "assets/ja-JP/Sebastian/160.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "うん。名作を読む。"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "SFとファンタジーなら読む。",
+          "AudioPath": "assets/ja-JP/Sebastian/161.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "SFとファンタジーなら読む。"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "恋愛ものが好き。",
+          "AudioPath": "assets/ja-JP/Sebastian/162.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri",
+          "PageIndex": 3,
+          "DisplayPattern": "恋愛ものが好き。"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "本は読まない。",
+          "AudioPath": "assets/ja-JP/Sebastian/163.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri",
+          "PageIndex": 4,
+          "DisplayPattern": "本は読まない。"
+        },
+        {
+          "DialogueFrom": "fall_Fri_old",
+          "DialogueText": "それじゃ、これは 気に入らなさそうか。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/164.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri_old",
+          "PageIndex": 0,
+          "DisplayPattern": "それじゃ、これは 気に入らなさそうか。"
+        },
+        {
+          "DialogueFrom": "fall_Fri_old",
+          "DialogueText": "お前なら 気に入ると 思うよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/165.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri_old",
+          "PageIndex": 1,
+          "DisplayPattern": "お前なら 気に入ると 思うよ。"
+        },
+        {
+          "DialogueFrom": "fall_Fri_good",
+          "DialogueText": "僕も そんなところさ。想像力の 境界を 押し広げるには、 こういう フィクション作品が 一番だね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/166.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri_good",
+          "PageIndex": 0,
+          "DisplayPattern": "僕も そんなところさ。想像力の 境界を 押し広げるには、 こういう フィクション作品が 一番だね。"
+        },
+        {
+          "DialogueFrom": "fall_Fri_bad",
+          "DialogueText": "ふーん。つまらなさそう。",
+          "AudioPath": "assets/ja-JP/Sebastian/167.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri_bad",
+          "PageIndex": 0,
+          "DisplayPattern": "ふーん。つまらなさそう。"
+        },
+        {
+          "DialogueFrom": "fall_Fri6",
+          "DialogueText": "牧場に ついて 書かれた 本を 読んでるんだ。お前の ことを 思い浮かんでしまうよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/168.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "牧場に ついて 書かれた 本を 読んでるんだ。お前の ことを 思い浮かんでしまうよ。"
+        },
+        {
+          "DialogueFrom": "fall_Fri6",
+          "DialogueText": "もし 変に 聞こえたら ごめんな。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/169.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "もし 変に 聞こえたら ごめんな。"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "今日は ベッドから 出ないで 一日を 過ごしかけたよ。そのほうが 良かったけど。",
+          "AudioPath": "assets/ja-JP/Sebastian/170.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は ベッドから 出ないで 一日を 過ごしかけたよ。そのほうが 良かったけど。"
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "陽の 出てる 時間が 日増しに 減ってるね… いいことだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/171.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:fall_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "陽の 出てる 時間が 日増しに 減ってるね… いいことだ。"
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "この 暗い 天気を 楽しんでいるんだ… でも、 少し寒いかな。",
+          "AudioPath": "assets/ja-JP/Sebastian/172.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "この 暗い 天気を 楽しんでいるんだ… でも、 少し寒いかな。"
+        },
+        {
+          "DialogueFrom": "winter_Mon4",
+          "DialogueText": "もう 何に 対しても 驚かないし、 何に 対しても 笑えない。",
+          "AudioPath": "assets/ja-JP/Sebastian/173.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "もう 何に 対しても 驚かないし、 何に 対しても 笑えない。"
+        },
+        {
+          "DialogueFrom": "winter_Mon4",
+          "DialogueText": "ああ…ちょっと カッコつけてた だけさ。",
+          "AudioPath": "assets/ja-JP/Sebastian/174.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "ああ…ちょっと カッコつけてた だけさ。"
+        },
+        {
+          "DialogueFrom": "winter_Mon8",
+          "DialogueText": "昔の自分を思い出して恥ずかしくなることはないか？",
+          "AudioPath": "assets/ja-JP/Sebastian/175.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Mon8",
+          "PageIndex": 0,
+          "DisplayPattern": "昔の自分を思い出して恥ずかしくなることはないか？"
+        },
+        {
+          "DialogueFrom": "winter_Mon8",
+          "DialogueText": "それが成長ってやつなのかもな。",
+          "AudioPath": "assets/ja-JP/Sebastian/176.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Mon8",
+          "PageIndex": 1,
+          "DisplayPattern": "それが成長ってやつなのかもな。"
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "うーん…特に 何も 言うことは ないね。お前の ことは あまり 知らないから。",
+          "AudioPath": "assets/ja-JP/Sebastian/177.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん…特に 何も 言うことは ないね。お前の ことは あまり 知らないから。"
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "なぁ…",
+          "AudioPath": "assets/ja-JP/Sebastian/178.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "なぁ…"
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "新しい 話題を 考えるのは 時々難しく 思えるんだ。いくら 相手のことを 知っててもさ。",
+          "AudioPath": "assets/ja-JP/Sebastian/179.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Tue4",
+          "PageIndex": 1,
+          "DisplayPattern": "新しい 話題を 考えるのは 時々難しく 思えるんだ。いくら 相手のことを 知っててもさ。"
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "…ごめんな。",
+          "AudioPath": "assets/ja-JP/Sebastian/180.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Tue4",
+          "PageIndex": 2,
+          "DisplayPattern": "…ごめんな。"
+        },
+        {
+          "DialogueFrom": "winter_Tue6",
+          "DialogueText": "母さんが マンガの コレクションを 捨てた時、 僕は 大声を上げそうな くらい 怒ったよ…でも、 なぜか 声を 出せなかった。",
+          "AudioPath": "assets/ja-JP/Sebastian/181.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "母さんが マンガの コレクションを 捨てた時、 僕は 大声を上げそうな くらい 怒ったよ…でも、 なぜか 声を 出せなかった。"
+        },
+        {
+          "DialogueFrom": "winter_Tue6",
+          "DialogueText": "うーん… これが 年の功かな。",
+          "AudioPath": "assets/ja-JP/Sebastian/182.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Tue6",
+          "PageIndex": 1,
+          "DisplayPattern": "うーん… これが 年の功かな。"
+        },
+        {
+          "DialogueFrom": "winter_Tue10",
+          "DialogueText": "オレに 会いにきたのかい？ {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/183.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Tue10",
+          "PageIndex": 0,
+          "DisplayPattern": "オレに 会いにきたのかい？"
+        },
+        {
+          "DialogueFrom": "winter_Tue10",
+          "DialogueText": "… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/184.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Tue10",
+          "PageIndex": 1,
+          "DisplayPattern": "…"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "セバスチャンは 物思いに ふけっている…",
+          "AudioPath": "assets/ja-JP/Sebastian/185.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "セバスチャンは 物思いに ふけっている…"
+        },
+        {
+          "DialogueFrom": "winter_Wed4",
+          "DialogueText": "なぁ、 仕事の手を 止めてまで オレに 会う 必要は ないんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/186.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "なぁ、 仕事の手を 止めてまで オレに 会う 必要は ないんだ。"
+        },
+        {
+          "DialogueFrom": "winter_Wed4",
+          "DialogueText": "忙しくなかったら、 一緒でも いいけど。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/187.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Wed4",
+          "PageIndex": 1,
+          "DisplayPattern": "忙しくなかったら、 一緒でも いいけど。"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "今夜の 夕食は なんだろう… ぶつぶつ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/188.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "今夜の 夕食は なんだろう… ぶつぶつ…"
+        },
+        {
+          "DialogueFrom": "winter_Thu6",
+          "DialogueText": "料理を 覚えようかな。いずれ 役に 立ちそうだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/189.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "料理を 覚えようかな。いずれ 役に 立ちそうだ。"
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "線路の 近くに 住むのって 結構 楽しいよ。外の世界が 存在するのを 思い出させて くれるからさ。",
+          "AudioPath": "assets/ja-JP/Sebastian/190.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "線路の 近くに 住むのって 結構 楽しいよ。外の世界が 存在するのを 思い出させて くれるからさ。"
+        },
+        {
+          "DialogueFrom": "winter_Fri8",
+          "DialogueText": "昔、 列車の 来る音が 聞こえたら 線路まで 行って 見に行ったんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/191.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Fri8",
+          "PageIndex": 0,
+          "DisplayPattern": "昔、 列車の 来る音が 聞こえたら 線路まで 行って 見に行ったんだ。"
+        },
+        {
+          "DialogueFrom": "winter_Fri8",
+          "DialogueText": "あの日々は いったい どこへ いったんだろう… はぁ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/192.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Fri8",
+          "PageIndex": 1,
+          "DisplayPattern": "あの日々は いったい どこへ いったんだろう… はぁ…"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "冬は カエルにとって 厳しい 季節だな。",
+          "AudioPath": "assets/ja-JP/Sebastian/193.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "冬は カエルにとって 厳しい 季節だな。"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "かわいそうに。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/194.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "かわいそうに。"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "冬の間、カエルはどう過ごしてるんだろうな？ 寒さで凍っちまって、春になったら解凍されるのか？",
+          "AudioPath": "assets/ja-JP/Sebastian/195.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "冬の間、カエルはどう過ごしてるんだろうな？ 寒さで凍っちまって、春になったら解凍されるのか？"
+        },
+        {
+          "DialogueFrom": "winter_Sat6",
+          "DialogueText": "冬は 好きだけど、 動物が 寒がるのを みると 気の毒に 思えるんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/196.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Sat6",
+          "PageIndex": 0,
+          "DisplayPattern": "冬は 好きだけど、 動物が 寒がるのを みると 気の毒に 思えるんだ。"
+        },
+        {
+          "DialogueFrom": "winter_Sat6",
+          "DialogueText": "たぶん、 オレみたいに 慣れてるだろうけどさ…",
+          "AudioPath": "assets/ja-JP/Sebastian/197.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Sat6",
+          "PageIndex": 1,
+          "DisplayPattern": "たぶん、 オレみたいに 慣れてるだろうけどさ…"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "雪だるまを 作ったけど、 ディメトリウスに 処分 させられたんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/198.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "雪だるまを 作ったけど、 ディメトリウスに 処分 させられたんだ。"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "何が 不満なんだ？ {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Sebastian/199.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "何が 不満なんだ？"
+        },
+        {
+          "DialogueFrom": "winter_Sun6",
+          "DialogueText": "雪だるまを 作ったけど、 ディメトリウスに 処分 させられた… でも マルの 小さな 雪だるまは そのままなんだ！ {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Sebastian/200.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Sun6",
+          "PageIndex": 0,
+          "DisplayPattern": "雪だるまを 作ったけど、 ディメトリウスに 処分 させられた… でも マルの 小さな 雪だるまは そのままなんだ！"
+        },
+        {
+          "DialogueFrom": "winter_Sun6",
+          "DialogueText": "ひどすぎるよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/201.ogg",
+          "TranslationKey": "Characters/Dialogue/Sebastian:winter_Sun6",
+          "PageIndex": 1,
+          "DisplayPattern": "ひどすぎるよ。"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Sebastian0",
+          "DialogueText": "あと3日もしたら、オレは牧場で暮らしてるんだな。信じられないよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/202.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Sebastian0",
+          "PageIndex": 0,
+          "DisplayPattern": "あと3日もしたら、オレは牧場で暮らしてるんだな。信じられないよ。"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Sebastian0",
+          "DialogueText": "まあ、楽しみだけどな。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/203.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Sebastian0",
+          "PageIndex": 1,
+          "DisplayPattern": "まあ、楽しみだけどな。"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Sebastian1",
+          "DialogueText": "お前が町にやってきたときは、まさかこうやって結婚することになるとは思ってなかったよ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/204.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Sebastian1",
+          "PageIndex": 0,
+          "DisplayPattern": "お前が町にやってきたときは、まさかこうやって結婚することになるとは思ってなかったよ。"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Sebastian1",
+          "DialogueText": "人生って不思議だよな。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/205.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Sebastian1",
+          "PageIndex": 1,
+          "DisplayPattern": "人生って不思議だよな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_0",
+          "DialogueText": "… まだ 愛してくれてる？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/206.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_0",
+          "PageIndex": 0,
+          "DisplayPattern": "… まだ 愛してくれてる？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_1",
+          "DialogueText": "はぁ… たぶん、 結婚するには 早すぎた かも。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/207.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_1",
+          "PageIndex": 0,
+          "DisplayPattern": "はぁ… たぶん、 結婚するには 早すぎた かも。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_2",
+          "DialogueText": "私と 一緒で まだ 楽しめてる？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/208.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_2",
+          "PageIndex": 0,
+          "DisplayPattern": "私と 一緒で まだ 楽しめてる？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_3",
+          "DialogueText": "何か 悪いことを した？最近 様子が おかしいよ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/209.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_3",
+          "PageIndex": 0,
+          "DisplayPattern": "何か 悪いことを した？最近 様子が おかしいよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_4",
+          "DialogueText": "外の世界に 何が あるか 考えたことは ある？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/210.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_4",
+          "PageIndex": 0,
+          "DisplayPattern": "外の世界に 何が あるか 考えたことは ある？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_5",
+          "DialogueText": "なぁ、 ちょっと 一人に なりたいんだ。少しの間、 お前は 外で 自分のことを やったら どうだ？",
+          "AudioPath": "assets/ja-JP/Sebastian/211.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Bad_5",
+          "PageIndex": 0,
+          "DisplayPattern": "なぁ、 ちょっと 一人に なりたいんだ。少しの間、 お前は 外で 自分のことを やったら どうだ？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_6",
+          "DialogueText": "何の用だ？まるで 義父さん みたいなことを 言うな。あっちへ 行ってくれ。 {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Sebastian/212.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Bad_6",
+          "PageIndex": 0,
+          "DisplayPattern": "何の用だ？まるで 義父さん みたいなことを 言うな。あっちへ 行ってくれ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_7",
+          "DialogueText": "この 場所が 墓場みたいに 思えてきたよ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/213.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Bad_7",
+          "PageIndex": 0,
+          "DisplayPattern": "この 場所が 墓場みたいに 思えてきたよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_8",
+          "DialogueText": "また タバコを はじめたよ…最近 ストレスが たまってきたからな。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/214.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Bad_8",
+          "PageIndex": 0,
+          "DisplayPattern": "また タバコを はじめたよ…最近 ストレスが たまってきたからな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Bad_9",
+          "DialogueText": "もう少し あなたの ために 何か できたらなぁ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/215.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_9",
+          "PageIndex": 0,
+          "DisplayPattern": "もう少し あなたの ために 何か できたらなぁ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/fall_1",
+          "DialogueText": "一晩で バレー 全体の 雰囲気が 変わった 感じだ…秋が 来たから だろうな。",
+          "AudioPath": "assets/ja-JP/Sebastian/216.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:fall_1",
+          "PageIndex": 0,
+          "DisplayPattern": "一晩で バレー 全体の 雰囲気が 変わった 感じだ…秋が 来たから だろうな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/fall_15",
+          "DialogueText": "スターデュー バレー フェアは 人が 多すぎる 印象が あるな… でも オレは、 サムと 一緒に 遊ぶつもりさ。あいつの 近況を 知るのも 良いことだしな。",
+          "AudioPath": "assets/ja-JP/Sebastian/217.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:fall_15",
+          "PageIndex": 0,
+          "DisplayPattern": "スターデュー バレー フェアは 人が 多すぎる 印象が あるな… でも オレは、 サムと 一緒に 遊ぶつもりさ。あいつの 近況を 知るのも 良いことだしな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/fall_15",
+          "DialogueText": "お前も 屋台で 遊んだほうが いいぜ！俺のことは 気にするな。 {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/218.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:fall_15",
+          "PageIndex": 1,
+          "DisplayPattern": "お前も 屋台で 遊んだほうが いいぜ！俺のことは 気にするな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/fall_26",
+          "DialogueText": "明日の スピリットイブには 期待してるんだ。いったい どんなものが お目にかかれるか。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/219.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:fall_26",
+          "PageIndex": 0,
+          "DisplayPattern": "明日の スピリットイブには 期待してるんだ。いったい どんなものが お目にかかれるか。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/fall_8",
+          "DialogueText": "もうすぐ 冬だね。暖房を ちゃんと チェックして、 水道の 蛇口を 閉めて、 家に スキマが ないか 確認 しないと。",
+          "AudioPath": "assets/ja-JP/Sebastian/220.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 0,
+          "DisplayPattern": "もうすぐ 冬だね。暖房を ちゃんと チェックして、 水道の 蛇口を 閉めて、 家に スキマが ないか 確認 しないと。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/fall_8",
+          "DialogueText": "大丈夫、 全部 やってあげるから。",
+          "AudioPath": "assets/ja-JP/Sebastian/221.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 1,
+          "DisplayPattern": "大丈夫、 全部 やってあげるから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/fall_Sebastian",
+          "DialogueText": "母さんは いつも、 秋に おいしい カボチャの スープを 作ってくれるんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/222.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "母さんは いつも、 秋に おいしい カボチャの スープを 作ってくれるんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/funLeave_Sebastian",
+          "DialogueText": "今日は 散歩に 行く つもりさ。一人になる 時間が ほしいんだ。また 夜に 会おう。",
+          "AudioPath": "assets/ja-JP/Sebastian/223.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:funLeave_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 散歩に 行く つもりさ。一人になる 時間が ほしいんだ。また 夜に 会おう。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/funReturn_Sebastian",
+          "DialogueText": "話すことは あまり ないが、 良い 一日を 過ごせたよ。お前のは どんな 一日 だったか？",
+          "AudioPath": "assets/ja-JP/Sebastian/224.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:funReturn_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "話すことは あまり ないが、 良い 一日を 過ごせたよ。お前のは どんな 一日 だったか？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_0",
+          "DialogueText": "ねぇ、オレを 見てくれ。お前は オレの 全てだ… 愛してるって ことを 忘れないでくれ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/225.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_0",
+          "PageIndex": 0,
+          "DisplayPattern": "ねぇ、オレを 見てくれ。お前は オレの 全てだ… 愛してるって ことを 忘れないでくれ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_0",
+          "DialogueText": "さあ、 お金を 稼ぎに 行くんだ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/226.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_0",
+          "PageIndex": 1,
+          "DisplayPattern": "さあ、 お金を 稼ぎに 行くんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_1",
+          "DialogueText": "なぁ… こっちへ きてくれ。今日は イケてるな。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/227.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_1",
+          "PageIndex": 0,
+          "DisplayPattern": "なぁ… こっちへ きてくれ。今日は イケてるな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_2",
+          "DialogueText": "一日じゅう 牧場の 仕事をして 汚れても、 お前が ステキなのは 変わらないな。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/228.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_2",
+          "PageIndex": 0,
+          "DisplayPattern": "一日じゅう 牧場の 仕事をして 汚れても、 お前が ステキなのは 変わらないな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_3",
+          "DialogueText": "あんまり 表には 出さないが、 お前の 夫に なって とても 幸せだぜ。お前との 結婚は、 オレの人生で 最善の決断 だったな。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/229.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_3",
+          "PageIndex": 0,
+          "DisplayPattern": "あんまり 表には 出さないが、 お前の 夫に なって とても 幸せだぜ。お前との 結婚は、 オレの人生で 最善の決断 だったな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_4",
+          "DialogueText": "オレのことは まったく 気にしなくてもいい。一人で 時間を過ごすのが 好きだからな。",
+          "AudioPath": "assets/ja-JP/Sebastian/230.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_4",
+          "PageIndex": 0,
+          "DisplayPattern": "オレのことは まったく 気にしなくてもいい。一人で 時間を過ごすのが 好きだからな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_5",
+          "DialogueText": "時々 怒りが こみ上げて来るが… お前を 見ると いつも 落ち着くんだ。 {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/231.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_5",
+          "PageIndex": 0,
+          "DisplayPattern": "時々 怒りが こみ上げて来るが… お前を 見ると いつも 落ち着くんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_5",
+          "DialogueText": "たぶん、 年を取れば オレも 温厚になるんだろうな。",
+          "AudioPath": "assets/ja-JP/Sebastian/232.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_5",
+          "PageIndex": 1,
+          "DisplayPattern": "たぶん、 年を取れば オレも 温厚になるんだろうな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_6",
+          "DialogueText": "お前は タフだって 分かってるけど、 時々 心配に なるんだ。ライフ エリクサーや 硬い ブーツを 持たずに モンスター狩りに 出るなよ。 いいな？",
+          "AudioPath": "assets/ja-JP/Sebastian/233.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_6",
+          "PageIndex": 0,
+          "DisplayPattern": "お前は タフだって 分かってるけど、 時々 心配に なるんだ。ライフ エリクサーや 硬い ブーツを 持たずに モンスター狩りに 出るなよ。 いいな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_7",
+          "DialogueText": "{Farmer_Name}さんか。君が 家のために 尽くしてくれていることに、 本当に 感謝したいんだ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/234.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_7",
+          "PageIndex": 0,
+          "DisplayPattern": "さんか。君が 家のために 尽くしてくれていることに、 本当に 感謝したいんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_8",
+          "DialogueText": "今日は 本当に 何もしたくない 気分だ。テレビでも 見るかな。",
+          "AudioPath": "assets/ja-JP/Sebastian/235.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_8",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 本当に 何もしたくない 気分だ。テレビでも 見るかな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_9",
+          "DialogueText": "友達なんて いらない。お前さえ いれば、 それでいいんだ。変だと 思うか？",
+          "AudioPath": "assets/ja-JP/Sebastian/236.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_9",
+          "PageIndex": 0,
+          "DisplayPattern": "友達なんて いらない。お前さえ いれば、 それでいいんだ。変だと 思うか？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Good_9",
+          "DialogueText": "まあ、 オレは みんなとは 違うし。",
+          "AudioPath": "assets/ja-JP/Sebastian/237.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Good_9",
+          "PageIndex": 1,
+          "DisplayPattern": "まあ、 オレは みんなとは 違うし。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_0",
+          "DialogueText": "年を取るに つれて、 都会への 魅力が 薄れていくんだ。確かに 神秘的な 感じは あったさ。でも 実は ただの ロマンスファンタジー だった。",
+          "AudioPath": "assets/ja-JP/Sebastian/238.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "年を取るに つれて、 都会への 魅力が 薄れていくんだ。確かに 神秘的な 感じは あったさ。でも 実は ただの ロマンスファンタジー だった。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_0",
+          "DialogueText": "都会は 人で 溢れかえった 忙しい 場所で…オレには 合わない。群れるタイプじゃ ないからな。",
+          "AudioPath": "assets/ja-JP/Sebastian/239.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Day_0",
+          "PageIndex": 1,
+          "DisplayPattern": "都会は 人で 溢れかえった 忙しい 場所で…オレには 合わない。群れるタイプじゃ ないからな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_1",
+          "DialogueText": "なぁ… コーヒー 飲むか？[395] {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/240.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "なぁ… コーヒー 飲むか？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_1",
+          "DialogueText": "オレは 少し 飲みたかったんだ… 悪夢のせいで 早くに起きて、 二度寝 できなかったからな。",
+          "AudioPath": "assets/ja-JP/Sebastian/241.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Day_1",
+          "PageIndex": 1,
+          "DisplayPattern": "オレは 少し 飲みたかったんだ… 悪夢のせいで 早くに起きて、 二度寝 できなかったからな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_2",
+          "DialogueText": "昨晩は 眠れなかったから、 バイクで 少し 出かけてた。",
+          "AudioPath": "assets/ja-JP/Sebastian/242.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "昨晩は 眠れなかったから、 バイクで 少し 出かけてた。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_2",
+          "DialogueText": "結婚した 後でも、 こうやって 一人で 動きたいんだ。それが オレの あり方 だからな。でも お前のことは 愛してる。 {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/243.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Day_2",
+          "PageIndex": 1,
+          "DisplayPattern": "結婚した 後でも、 こうやって 一人で 動きたいんだ。それが オレの あり方 だからな。でも お前のことは 愛してる。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_3",
+          "DialogueText": "ねぇ、昨晩は 眠れたか？寝言が 聞こえたぞ。",
+          "AudioPath": "assets/ja-JP/Sebastian/244.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "ねぇ、昨晩は 眠れたか？寝言が 聞こえたぞ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_3",
+          "DialogueText": "何か 怖がってた ようだが、正直なところ… かわいく 見えたな。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/245.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Day_3",
+          "PageIndex": 1,
+          "DisplayPattern": "何か 怖がってた ようだが、正直なところ… かわいく 見えたな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_4",
+          "DialogueText": "お前と 一緒に 生活していると、 閉じこもるのを　少しでも やめるよう 言われてる 感じだ。オレにとっては いいこと だろうな。 {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/246.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "お前と 一緒に 生活していると、 閉じこもるのを　少しでも やめるよう 言われてる 感じだ。オレにとっては いいこと だろうな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Day_Sebastian",
+          "DialogueText": "この家、 オレが 住んでた 地下室より ずっと いい場所だな。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/247.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Day_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "この家、 オレが 住んでた 地下室より ずっと いい場所だな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_0",
+          "DialogueText": "ねぇ、今日は 家の周りを ブラブラ してたんだ。普通の 一日 だったな…",
+          "AudioPath": "assets/ja-JP/Sebastian/248.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "ねぇ、今日は 家の周りを ブラブラ してたんだ。普通の 一日 だったな…"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_0",
+          "DialogueText": "…",
+          "AudioPath": "assets/ja-JP/Sebastian/249.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Night_0",
+          "PageIndex": 1,
+          "DisplayPattern": "…"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_0",
+          "DialogueText": "家から見る 景色は 最高だな。玄関から、 日暮れ時の ペリカンタウンを 見ることが できるし。",
+          "AudioPath": "assets/ja-JP/Sebastian/250.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Night_0",
+          "PageIndex": 2,
+          "DisplayPattern": "家から見る 景色は 最高だな。玄関から、 日暮れ時の ペリカンタウンを 見ることが できるし。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_1",
+          "DialogueText": "たぶん、 コーヒーを 飲みすぎた かもな…まったく 疲れを 感じないぜ。",
+          "AudioPath": "assets/ja-JP/Sebastian/251.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "たぶん、 コーヒーを 飲みすぎた かもな…まったく 疲れを 感じないぜ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_1",
+          "DialogueText": "牧場の 生活リズムに あわせようと してるんだ。前は、 午後2時に 起きて 午前5時に 寝る 時も あったからな。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/252.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Night_1",
+          "PageIndex": 1,
+          "DisplayPattern": "牧場の 生活リズムに あわせようと してるんだ。前は、 午後2時に 起きて 午前5時に 寝る 時も あったからな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_2",
+          "DialogueText": "俺達だけの 場所を もてるのって 最高だな。誰にも 邪魔 されることなく、 やりたいことを 自由に やれる。",
+          "AudioPath": "assets/ja-JP/Sebastian/253.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "俺達だけの 場所を もてるのって 最高だな。誰にも 邪魔 されることなく、 やりたいことを 自由に やれる。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_2",
+          "DialogueText": "オレが いなくなって、 マルは 清々した だろうな。",
+          "AudioPath": "assets/ja-JP/Sebastian/254.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Night_2",
+          "PageIndex": 1,
+          "DisplayPattern": "オレが いなくなって、 マルは 清々した だろうな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_3",
+          "DialogueText": "さっき 窓から コウモリが　見えたんだ。コウモリは 結構 見えにくいが、 集中して 良くみれば、 チラッと 見えるだろう。その辺に いるはずだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/255.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "さっき 窓から コウモリが　見えたんだ。コウモリは 結構 見えにくいが、 集中して 良くみれば、 チラッと 見えるだろう。その辺に いるはずだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_4",
+          "DialogueText": "実家では よく、 受け入れられてない 気分に なったさ… でも ここは 自分の 本当の 居所 みたいに 感じる。{Farmer_Name}、オレを 受け入れてくれて ありがとうな {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/256.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Indoor_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "実家では よく、 受け入れられてない 気分に なったさ… でも ここは 自分の 本当の 居所 みたいに 感じる。、オレを 受け入れてくれて ありがとうな"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_Sebastian",
+          "DialogueText": "オレは 一匹狼 だろうけど、 お前が そばに いると うれしいんだ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/257.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "オレは 一匹狼 だろうけど、 お前が そばに いると うれしいんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_Sebastian",
+          "DialogueText": "$e",
+          "AudioPath": "assets/ja-JP/Sebastian/258.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Indoor_Night_Sebastian",
+          "DialogueText": "やぁ、{Farmer_Name}。よく 帰ってきたね。お前が そばに いると 落ち着くんだ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/259.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_Sebastian",
+          "PageIndex": 2,
+          "DisplayPattern": "やぁ、。よく 帰ってきたね。お前が そばに いると 落ち着くんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_0",
+          "DialogueText": "散歩の時、 できるだけ 人を 避けようと してるんだ。少し 話を しなきゃ ならないって 圧力が 嫌いだからな。",
+          "AudioPath": "assets/ja-JP/Sebastian/260.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Neutral_0",
+          "PageIndex": 0,
+          "DisplayPattern": "散歩の時、 できるだけ 人を 避けようと してるんだ。少し 話を しなきゃ ならないって 圧力が 嫌いだからな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_1",
+          "DialogueText": "お互いの 仕事っぷり、 君の おじいさんは 誇りに 思ってくれるかな？",
+          "AudioPath": "assets/ja-JP/Sebastian/261.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_1",
+          "PageIndex": 0,
+          "DisplayPattern": "お互いの 仕事っぷり、 君の おじいさんは 誇りに 思ってくれるかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_2",
+          "DialogueText": "今夜、 ベッドで お前の 一日に ついて 聞かせてくれないか？今は 忙しいんだ…",
+          "AudioPath": "assets/ja-JP/Sebastian/262.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Neutral_2",
+          "PageIndex": 0,
+          "DisplayPattern": "今夜、 ベッドで お前の 一日に ついて 聞かせてくれないか？今は 忙しいんだ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_3",
+          "DialogueText": "今日は 町へ いくのか？そこで 何をする つもりなんだ？",
+          "AudioPath": "assets/ja-JP/Sebastian/263.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Neutral_3",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 町へ いくのか？そこで 何をする つもりなんだ？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_4",
+          "DialogueText": "今日は 洗濯を できるはずだ…お前は 牧場の 運営で 忙しい だろうし。",
+          "AudioPath": "assets/ja-JP/Sebastian/264.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Neutral_4",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 洗濯を できるはずだ…お前は 牧場の 運営で 忙しい だろうし。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_5",
+          "DialogueText": "お金には 困ってないか？オレの ノートPCを 売るは イヤだぜ…",
+          "AudioPath": "assets/ja-JP/Sebastian/265.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Neutral_5",
+          "PageIndex": 0,
+          "DisplayPattern": "お金には 困ってないか？オレの ノートPCを 売るは イヤだぜ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_6",
+          "DialogueText": "もし 町の 友達と 会いたければ、 かまわないぜ。やっぱり オレは 一人のほうが 落ち着く からな。",
+          "AudioPath": "assets/ja-JP/Sebastian/266.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Neutral_6",
+          "PageIndex": 0,
+          "DisplayPattern": "もし 町の 友達と 会いたければ、 かまわないぜ。やっぱり オレは 一人のほうが 落ち着く からな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_7",
+          "DialogueText": "今日は 本当に 何もしたくない 気分だわ。",
+          "AudioPath": "assets/ja-JP/Sebastian/267.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_7",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 本当に 何もしたくない 気分だわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_8",
+          "DialogueText": "家の掃除は 楽しくないが、 音楽を聴きながら やると 結構 早く 終わるもんだな。",
+          "AudioPath": "assets/ja-JP/Sebastian/268.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Neutral_8",
+          "PageIndex": 0,
+          "DisplayPattern": "家の掃除は 楽しくないが、 音楽を聴きながら やると 結構 早く 終わるもんだな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Neutral_9",
+          "DialogueText": "ずっと このまま ここで 暮らせるかな？",
+          "AudioPath": "assets/ja-JP/Sebastian/269.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_9",
+          "PageIndex": 0,
+          "DisplayPattern": "ずっと このまま ここで 暮らせるかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/NoBed_0",
+          "DialogueText": "どこで寝たらいいの…？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/270.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_0",
+          "PageIndex": 0,
+          "DisplayPattern": "どこで寝たらいいの…？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/NoBed_1",
+          "DialogueText": "昨日はぜんぜん眠れなかったよ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/271.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_1",
+          "PageIndex": 0,
+          "DisplayPattern": "昨日はぜんぜん眠れなかったよ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/NoBed_2",
+          "DialogueText": "昨日は床の上で寝たよ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/272.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_2",
+          "PageIndex": 0,
+          "DisplayPattern": "昨日は床の上で寝たよ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/NoBed_3",
+          "DialogueText": "ベッドに何かしたの…？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/273.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_3",
+          "PageIndex": 0,
+          "DisplayPattern": "ベッドに何かしたの…？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/OneKid_0",
+          "DialogueText": "まだ 父親としての 生活に 慣れようと してるところさ。大丈夫、 %kid1の 面倒は 見てやるから！ただ… 新しい 経験だからな。",
+          "AudioPath": "assets/ja-JP/Sebastian/274.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:OneKid_0",
+          "PageIndex": 0,
+          "DisplayPattern": "まだ 父親としての 生活に 慣れようと してるところさ。大丈夫、 %kid1の 面倒は 見てやるから！ただ… 新しい 経験だからな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/OneKid_1",
+          "DialogueText": "kid1が もう少し 大きくなったら、 バイクに サイドカーを つけて、 みんなで ツーリングでも しようか。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/275.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:OneKid_1",
+          "PageIndex": 0,
+          "DisplayPattern": "kid1が もう少し 大きくなったら、 バイクに サイドカーを つけて、 みんなで ツーリングでも しようか。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/OneKid_2",
+          "DialogueText": "大丈夫、 %kid1の 面倒は 見るから。君は 牧場運営に 集中しても いいよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/276.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:OneKid_2",
+          "PageIndex": 0,
+          "DisplayPattern": "大丈夫、 %kid1の 面倒は 見るから。君は 牧場運営に 集中しても いいよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/OneKid_3",
+          "DialogueText": "kid1の 匂いを かいだか？そろそろ お風呂に 入れてやるか…",
+          "AudioPath": "assets/ja-JP/Sebastian/277.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:OneKid_3",
+          "PageIndex": 0,
+          "DisplayPattern": "kid1の 匂いを かいだか？そろそろ お風呂に 入れてやるか…"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_0",
+          "DialogueText": "今日は 何かを したい 気分だが… その 何かが 思いつかない。{Farmer_Name}も そんなことが あるか？",
+          "AudioPath": "assets/ja-JP/Sebastian/278.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Outdoor_0",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 何かを したい 気分だが… その 何かが 思いつかない。も そんなことが あるか？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_1",
+          "DialogueText": "うーん… 健康のために 時々 外へ 出るよう 自分に 言い聞かせなきゃな。",
+          "AudioPath": "assets/ja-JP/Sebastian/279.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Outdoor_1",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん… 健康のために 時々 外へ 出るよう 自分に 言い聞かせなきゃな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_1",
+          "DialogueText": "よく わからないけど、 屋内のほうが 好きだ。あの 暗い 地下の 部屋に 慣れすぎた だけかもな。",
+          "AudioPath": "assets/ja-JP/Sebastian/280.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Outdoor_1",
+          "PageIndex": 1,
+          "DisplayPattern": "よく わからないけど、 屋内のほうが 好きだ。あの 暗い 地下の 部屋に 慣れすぎた だけかもな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_2",
+          "DialogueText": "オレは ここから お前を 見てるぜ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/281.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Outdoor_2",
+          "PageIndex": 0,
+          "DisplayPattern": "オレは ここから お前を 見てるぜ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_2",
+          "DialogueText": "見ていて 楽しいからな。",
+          "AudioPath": "assets/ja-JP/Sebastian/282.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Outdoor_2",
+          "PageIndex": 1,
+          "DisplayPattern": "見ていて 楽しいからな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_3",
+          "DialogueText": "結婚したんだから、 この 弱い体を 何とか しなきゃな。トウガラシを もっと 食べて、 体を 動かしたほうが いいか？",
+          "AudioPath": "assets/ja-JP/Sebastian/283.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Outdoor_3",
+          "PageIndex": 0,
+          "DisplayPattern": "結婚したんだから、 この 弱い体を 何とか しなきゃな。トウガラシを もっと 食べて、 体を 動かしたほうが いいか？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_3",
+          "DialogueText": "まぁ、 そう思っただけさ… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/284.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Outdoor_3",
+          "PageIndex": 1,
+          "DisplayPattern": "まぁ、 そう思っただけさ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_4",
+          "DialogueText": "もっと スライムを 育てようぜ…大規模で 育てれば、 それなりに もうかるはずだ。それに 飼育も 簡単だからな。",
+          "AudioPath": "assets/ja-JP/Sebastian/285.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Outdoor_4",
+          "PageIndex": 0,
+          "DisplayPattern": "もっと スライムを 育てようぜ…大規模で 育てれば、 それなりに もうかるはずだ。それに 飼育も 簡単だからな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_4",
+          "DialogueText": "あと、 スライムの 色が 違うと 生産物も 異なる。よく知らないけど、 趣味としては 楽しいんじゃないかな。",
+          "AudioPath": "assets/ja-JP/Sebastian/286.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Outdoor_4",
+          "PageIndex": 1,
+          "DisplayPattern": "あと、 スライムの 色が 違うと 生産物も 異なる。よく知らないけど、 趣味としては 楽しいんじゃないかな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_Sebastian",
+          "DialogueText": "前の 暮らしとは ずいぶん 変わったけど、 好きに なってきたよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/287.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Outdoor_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "前の 暮らしとは ずいぶん 変わったけど、 好きに なってきたよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Outdoor_Sebastian",
+          "DialogueText": "本当に ここに なじんできた 感じが するんだ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/288.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Outdoor_Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "本当に ここに なじんできた 感じが するんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/patio_Sebastian",
+          "DialogueText": "バイクでちょっとそこまで出かけてくる。なにか買ってこようか？",
+          "AudioPath": "assets/ja-JP/Sebastian/289.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:patio_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "バイクでちょっとそこまで出かけてくる。なにか買ってこようか？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Day_0",
+          "DialogueText": "やっと… 大雨か。晴れの日は すぐ 飽きてくるんだよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/290.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "やっと… 大雨か。晴れの日は すぐ 飽きてくるんだよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Day_1",
+          "DialogueText": "ねぇ、前に 住んでいた 地下の 部屋の ことを 考えてたんだ。住み心地の いい場所 だったけど、 ここのほうが もっと 興味深いな。それに、 あの匂いも 恋しくないし…",
+          "AudioPath": "assets/ja-JP/Sebastian/291.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "ねぇ、前に 住んでいた 地下の 部屋の ことを 考えてたんだ。住み心地の いい場所 だったけど、 ここのほうが もっと 興味深いな。それに、 あの匂いも 恋しくないし…"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Day_1",
+          "DialogueText": "母さんの 家に 長い間 住んでいたことが 恥ずかしく 思えるよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/292.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Day_1",
+          "PageIndex": 1,
+          "DisplayPattern": "母さんの 家に 長い間 住んでいたことが 恥ずかしく 思えるよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Day_2",
+          "DialogueText": "ねぇ、昨晩 眠れなかったから、 ちょっと 洞窟まで 散歩 してたんだ。こんなものを 見つけたけど… いる？[575 769 767 84 66 78]",
+          "AudioPath": "assets/ja-JP/Sebastian/293.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "ねぇ、昨晩 眠れなかったから、 ちょっと 洞窟まで 散歩 してたんだ。こんなものを 見つけたけど… いる？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Day_2",
+          "DialogueText": "時々 眠れなくなるけど、 それは お前の せいじゃない。愛してるよ。 {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/294.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Day_2",
+          "PageIndex": 1,
+          "DisplayPattern": "時々 眠れなくなるけど、 それは お前の せいじゃない。愛してるよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Day_3",
+          "DialogueText": "今日は ただ 横になって、 本を 読むか 何かするには 良い日だと 思うけど… どうだろう？",
+          "AudioPath": "assets/ja-JP/Sebastian/295.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は ただ 横になって、 本を 読むか 何かするには 良い日だと 思うけど… どうだろう？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Day_4",
+          "DialogueText": "今日も雨か… いいな。",
+          "AudioPath": "assets/ja-JP/Sebastian/296.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "今日も雨か… いいな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Day_4",
+          "DialogueText": "寒がってるなら… こっちへ おいで。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/297.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Day_4",
+          "PageIndex": 1,
+          "DisplayPattern": "寒がってるなら… こっちへ おいで。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Day_Sebastian",
+          "DialogueText": "夜明け前に 目を 覚まして、 牧場の 近くを 散歩したんだ。本当に 穏やかな ひと時 だったよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/298.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Day_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "夜明け前に 目を 覚まして、 牧場の 近くを 散歩したんだ。本当に 穏やかな ひと時 だったよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_0",
+          "DialogueText": "結婚したから、 禁煙 しようと がんばってるんだ…お前を 残して 死なないようにな。タバコは 悪い クセだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/299.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "結婚したから、 禁煙 しようと がんばってるんだ…お前を 残して 死なないようにな。タバコは 悪い クセだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_0",
+          "DialogueText": "俺達 二人の 未来の ほうが 大事だしな。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/300.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Night_0",
+          "PageIndex": 1,
+          "DisplayPattern": "俺達 二人の 未来の ほうが 大事だしな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_1",
+          "DialogueText": "今日は ノートPCで 仕事を してたんだ。作りたいゲームの アイデアを ひらめこうと していた ところさ。",
+          "AudioPath": "assets/ja-JP/Sebastian/301.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は ノートPCで 仕事を してたんだ。作りたいゲームの アイデアを ひらめこうと していた ところさ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_1",
+          "DialogueText": "お前の 牧場の 収入の おかげで、 オレは やりたいことが 自由に できる。本当に すばらしい 生活だ。本当に ありがとう。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/302.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Night_1",
+          "PageIndex": 1,
+          "DisplayPattern": "お前の 牧場の 収入の おかげで、 オレは やりたいことが 自由に できる。本当に すばらしい 生活だ。本当に ありがとう。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_2",
+          "DialogueText": "ああ、 夕食が できてなくて すまない。冷蔵庫の ピザか 何かを 食べようか。",
+          "AudioPath": "assets/ja-JP/Sebastian/303.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、 夕食が できてなくて すまない。冷蔵庫の ピザか 何かを 食べようか。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_2",
+          "DialogueText": "まぁ、 ちょっと 他のことに 気が 行ってたんだ。家事を 忘れないように するのって 難しいな…",
+          "AudioPath": "assets/ja-JP/Sebastian/304.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Night_2",
+          "PageIndex": 1,
+          "DisplayPattern": "まぁ、 ちょっと 他のことに 気が 行ってたんだ。家事を 忘れないように するのって 難しいな…"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_3",
+          "DialogueText": "あなたの 一日は どうだった？モンスターと 戦ったか？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/305.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "あなたの 一日は どうだった？モンスターと 戦ったか？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_3",
+          "DialogueText": "時々 そうやって ストレスを 発散しに いくのも 良いだろ？",
+          "AudioPath": "assets/ja-JP/Sebastian/306.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Night_3",
+          "PageIndex": 1,
+          "DisplayPattern": "時々 そうやって ストレスを 発散しに いくのも 良いだろ？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_4",
+          "DialogueText": "今夜は 魔女が 家に 来るかな？ハッ… 人生、 そこまで 面白くも ないか…",
+          "AudioPath": "assets/ja-JP/Sebastian/307.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:Rainy_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "今夜は 魔女が 家に 来るかな？ハッ… 人生、 そこまで 面白くも ないか…"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_5",
+          "DialogueText": "家に いてくれて うれしい…家の中で 過ごすには 良い夜 だね。",
+          "AudioPath": "assets/ja-JP/Sebastian/308.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Night_5",
+          "PageIndex": 0,
+          "DisplayPattern": "家に いてくれて うれしい…家の中で 過ごすには 良い夜 だね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/Rainy_Night_Sebastian",
+          "DialogueText": "雨に 飽きることは ないだろうな… 特に こんな 田舎ではね。",
+          "AudioPath": "assets/ja-JP/Sebastian/309.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Night_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "雨に 飽きることは ないだろうな… 特に こんな 田舎ではね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/spouseRoom_Sebastian",
+          "DialogueText": "今日は 仕事するか、 ずっと マンガ読むかで 悩んでるんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/310.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 仕事するか、 ずっと マンガ読むかで 悩んでるんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/spouseRoom_Sebastian",
+          "DialogueText": "$e",
+          "AudioPath": "assets/ja-JP/Sebastian/311.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/spouseRoom_Sebastian",
+          "DialogueText": "なぁ、 冷凍庫に ピザは あったか？腹が減ったんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/312.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Sebastian",
+          "PageIndex": 2,
+          "DisplayPattern": "なぁ、 冷凍庫に ピザは あったか？腹が減ったんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/spring_1",
+          "DialogueText": "ああ…頭が痛い。新年おめでとう… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/313.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:spring_1",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ…頭が痛い。新年おめでとう…"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/spring_12",
+          "DialogueText": "明日の 祭りを 楽しみにしてるのか？また サムと 会えるのが 楽しみだな。",
+          "AudioPath": "assets/ja-JP/Sebastian/314.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:spring_12",
+          "PageIndex": 0,
+          "DisplayPattern": "明日の 祭りを 楽しみにしてるのか？また サムと 会えるのが 楽しみだな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/spring_23",
+          "DialogueText": "ああ… 明日は フラワーダンス だったか？行かなきゃ ならないのか？",
+          "AudioPath": "assets/ja-JP/Sebastian/315.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:spring_23",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ… 明日は フラワーダンス だったか？行かなきゃ ならないのか？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/spring_23",
+          "DialogueText": "あの きつくて ひどい ジャンプスーツを 着るのは イヤなんだ。なんで ルイス 市長は あんなことを させるんだ？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/316.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:spring_23",
+          "PageIndex": 1,
+          "DisplayPattern": "あの きつくて ひどい ジャンプスーツを 着るのは イヤなんだ。なんで ルイス 市長は あんなことを させるんだ？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/spring_8",
+          "DialogueText": "冬が ようやく 終わって、 これからの 天気に 期待できるように なった。",
+          "AudioPath": "assets/ja-JP/Sebastian/317.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_8",
+          "PageIndex": 0,
+          "DisplayPattern": "冬が ようやく 終わって、 これからの 天気に 期待できるように なった。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/spring_Sebastian",
+          "DialogueText": "オレの肌、 すごく 白いな…この 季節の 農作業を 手伝ったほうが いいかも知れない。",
+          "AudioPath": "assets/ja-JP/Sebastian/318.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "オレの肌、 すごく 白いな…この 季節の 農作業を 手伝ったほうが いいかも知れない。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/summer_1",
+          "DialogueText": "夏が来たか…この 色白な 肌を 維持するには、 日焼け止めを 大量に 塗らなきゃ いけないな…",
+          "AudioPath": "assets/ja-JP/Sebastian/319.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:summer_1",
+          "PageIndex": 0,
+          "DisplayPattern": "夏が来たか…この 色白な 肌を 維持するには、 日焼け止めを 大量に 塗らなきゃ いけないな…"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/summer_10",
+          "DialogueText": "今夜の ルアウスープに 何を 入れるか 考えたか？",
+          "AudioPath": "assets/ja-JP/Sebastian/320.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:summer_10",
+          "PageIndex": 0,
+          "DisplayPattern": "今夜の ルアウスープに 何を 入れるか 考えたか？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/summer_10",
+          "DialogueText": "オレは 何が いいか 分からないがな… お前が 決めてくれ！ {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/321.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:summer_10",
+          "PageIndex": 1,
+          "DisplayPattern": "オレは 何が いいか 分からないがな… お前が 決めてくれ！"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/summer_15",
+          "DialogueText": "夏… ハエが 出てくる季節ってことだね。",
+          "AudioPath": "assets/ja-JP/Sebastian/322.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 0,
+          "DisplayPattern": "夏… ハエが 出てくる季節ってことだね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/summer_15",
+          "DialogueText": "大丈夫、 退治してあげるから。",
+          "AudioPath": "assets/ja-JP/Sebastian/323.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 1,
+          "DisplayPattern": "大丈夫、 退治してあげるから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/summer_27",
+          "DialogueText": "涼しく なりはじめたな。いい感じだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/324.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:summer_27",
+          "PageIndex": 0,
+          "DisplayPattern": "涼しく なりはじめたな。いい感じだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/summer_27",
+          "DialogueText": "明日の夜は 一緒に 祭りへ 行かないか？オレは 実際のところ 祭りを 楽しめてるんだ。 {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/325.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:summer_27",
+          "PageIndex": 1,
+          "DisplayPattern": "明日の夜は 一緒に 祭りへ 行かないか？オレは 実際のところ 祭りを 楽しめてるんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/summer_8",
+          "DialogueText": "臭ったら ごめん…暑くて 汗 かきっぱなし だったからさ。",
+          "AudioPath": "assets/ja-JP/Sebastian/326.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_8",
+          "PageIndex": 0,
+          "DisplayPattern": "臭ったら ごめん…暑くて 汗 かきっぱなし だったからさ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/summer_Sebastian",
+          "DialogueText": "オレは この夏、 できるだけ 家に いるように するよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/327.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "オレは この夏、 できるだけ 家に いるように するよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/TwoKids_0",
+          "DialogueText": "ちゃんと 子供達には メシを 食べさせたぞ…%kid2 また、 オレのシャツが チョコミルクまみれに なったけどな。",
+          "AudioPath": "assets/ja-JP/Sebastian/328.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:TwoKids_0",
+          "PageIndex": 0,
+          "DisplayPattern": "ちゃんと 子供達には メシを 食べさせたぞ… また、 オレのシャツが チョコミルクまみれに なったけどな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/TwoKids_1",
+          "DialogueText": "kid1と%kid2が 仲良く してくれると いいんだがな。オレは 昔、 いつも マルと ケンカしてた。",
+          "AudioPath": "assets/ja-JP/Sebastian/329.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:TwoKids_1",
+          "PageIndex": 0,
+          "DisplayPattern": "kid1と%kid2が 仲良く してくれると いいんだがな。オレは 昔、 いつも マルと ケンカしてた。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/TwoKids_1",
+          "DialogueText": "あの頃を 思い出すと、 だいたい オレが 悪かったんだな…",
+          "AudioPath": "assets/ja-JP/Sebastian/330.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:TwoKids_1",
+          "PageIndex": 1,
+          "DisplayPattern": "あの頃を 思い出すと、 だいたい オレが 悪かったんだな…"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/TwoKids_2",
+          "DialogueText": "最近、 %kid2が シャドウシャーマンの 衣装を 着て、 かがやく カボチャの 上に 座っている 夢を 何度も 見るんだ。変な 夢だろ？",
+          "AudioPath": "assets/ja-JP/Sebastian/331.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:TwoKids_2",
+          "PageIndex": 0,
+          "DisplayPattern": "最近、 %kid2が シャドウシャーマンの 衣装を 着て、 かがやく カボチャの 上に 座っている 夢を 何度も 見るんだ。変な 夢だろ？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/TwoKids_3",
+          "DialogueText": "{Farmer_Name}、 俺達は 長い道を 歩んできたんだな。オレたちの家族を見てみろよ。正直、 オレは 自分が こんなことに なるなんて 思いもしなかった。",
+          "AudioPath": "assets/ja-JP/Sebastian/332.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:TwoKids_3",
+          "PageIndex": 0,
+          "DisplayPattern": "、 俺達は 長い道を 歩んできたんだな。オレたちの家族を見てみろよ。正直、 オレは 自分が こんなことに なるなんて 思いもしなかった。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/TwoKids_3",
+          "DialogueText": "実現した 今となっては 気に入ってるぜ… {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/333.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:TwoKids_3",
+          "PageIndex": 1,
+          "DisplayPattern": "実現した 今となっては 気に入ってるぜ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/winter_1",
+          "DialogueText": "この 冬は 何を 予定してるんだ？お前に とっては ゆっくりできる 時期だろうけど。",
+          "AudioPath": "assets/ja-JP/Sebastian/334.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:winter_1",
+          "PageIndex": 0,
+          "DisplayPattern": "この 冬は 何を 予定してるんだ？お前に とっては ゆっくりできる 時期だろうけど。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/winter_28",
+          "DialogueText": "{Farmer_Name}、 良い 一年を ありがとう。ちょっとは 祝おうか。[346] {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/335.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:winter_28",
+          "PageIndex": 0,
+          "DisplayPattern": "、 良い 一年を ありがとう。ちょっとは 祝おうか。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/winter_28",
+          "DialogueText": "来年は もっと いい年に なるはずさ。 {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/336.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:winter_28",
+          "PageIndex": 1,
+          "DisplayPattern": "来年は もっと いい年に なるはずさ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/winter_7",
+          "DialogueText": "明日の 釣りコンテストには 参加する つもりか？",
+          "AudioPath": "assets/ja-JP/Sebastian/337.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueSebastian:winter_7",
+          "PageIndex": 0,
+          "DisplayPattern": "明日の 釣りコンテストには 参加する つもりか？"
+        },
+        {
+          "DialogueFrom": "Marriage/Sebastian/winter_Sebastian",
+          "DialogueText": "サムは 今 どうしてるんだろうかな。オレは サムと すごく 仲がよかったんだ",
+          "AudioPath": "assets/ja-JP/Sebastian/338.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:winter_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "サムは 今 どうしてるんだろうかな。オレは サムと すごく 仲がよかったんだ"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "運が良かったら、 雨の日には カエルが 見れるかもな。",
+          "AudioPath": "assets/ja-JP/Sebastian/339.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "運が良かったら、 雨の日には カエルが 見れるかもな。"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s0",
+          "DialogueText": "Our little friend's doing much better, see?",
+          "AudioPath": "assets/ja-JP/Sebastian/340.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Our little friend's doing much better, see?"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s1",
+          "DialogueText": "...but I don't think he can go back into the wild... he's not fast enough to avoid predators anymore.",
+          "AudioPath": "assets/ja-JP/Sebastian/341.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "...but I don't think he can go back into the wild... he's not fast enough to avoid predators anymore."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s2",
+          "DialogueText": "...So I set up this terrarium.",
+          "AudioPath": "assets/ja-JP/Sebastian/342.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "...So I set up this terrarium."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s3",
+          "DialogueText": "He looks happy, doesn't he? {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/343.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "He looks happy, doesn't he?"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s4",
+          "DialogueText": "I wonder if he'll get lonely, though...",
+          "AudioPath": "assets/ja-JP/Sebastian/344.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I wonder if he'll get lonely, though..."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s5",
+          "DialogueText": "...a haven for frogs and toads who can't make it on their own? Not a bad idea.",
+          "AudioPath": "assets/ja-JP/Sebastian/345.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "...a haven for frogs and toads who can't make it on their own? Not a bad idea."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s6",
+          "DialogueText": "He does look pretty tough. But still, If I find another injured frog, I think he'd be better off with a friend.",
+          "AudioPath": "assets/ja-JP/Sebastian/346.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "He does look pretty tough. But still, If I find another injured frog, I think he'd be better off with a friend."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s7",
+          "DialogueText": "Hmm... Well, I like going out in the rain. So I guess I encountered a lot of frogs that way.",
+          "AudioPath": "assets/ja-JP/Sebastian/347.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmm... Well, I like going out in the rain. So I guess I encountered a lot of frogs that way."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s8",
+          "DialogueText": "I ended up feeling a common bond with the little guys.",
+          "AudioPath": "assets/ja-JP/Sebastian/348.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I ended up feeling a common bond with the little guys."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s9",
+          "DialogueText": "Well it's not up for debate. This is my corner of the house and I can do what I want with it.",
+          "AudioPath": "assets/ja-JP/Sebastian/349.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Well it's not up for debate. This is my corner of the house and I can do what I want with it."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s10",
+          "DialogueText": "Yeah, it'll be fun. I spend a lot of time on the computer, so it's nice to have some real, physical hobbies.",
+          "AudioPath": "assets/ja-JP/Sebastian/350.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Yeah, it'll be fun. I spend a lot of time on the computer, so it's nice to have some real, physical hobbies."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s11",
+          "DialogueText": "I might even try my hand at some frog breeding! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/351.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "I might even try my hand at some frog breeding!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s12",
+          "DialogueText": "Today our family grew a little larger...",
+          "AudioPath": "assets/ja-JP/Sebastian/352.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Today our family grew a little larger..."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/9333220:s13",
+          "DialogueText": "...and a lot slimier!",
+          "AudioPath": "assets/ja-JP/Sebastian/353.ogg",
+          "TranslationKey": "Events/FarmHouse:9333220:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "...and a lot slimier!"
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/44:s0",
+          "DialogueText": "...Okay.",
+          "AudioPath": "assets/ja-JP/Sebastian/354.ogg",
+          "TranslationKey": "Events/SamHouse:44:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "...Okay."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s0",
+          "DialogueText": "Well? What do you have to say for yourself? {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Sebastian/355.ogg",
+          "TranslationKey": "Events/Saloon:195013:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Well? What do you have to say for yourself?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s1",
+          "DialogueText": "I'm sorry... what I did was wrong.",
+          "AudioPath": "assets/ja-JP/Sebastian/356.ogg",
+          "TranslationKey": "Events/Saloon:195013:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm sorry... what I did was wrong."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/195013:s2",
+          "DialogueText": "Guys, calm down! I can explain...",
+          "AudioPath": "assets/ja-JP/Sebastian/357.ogg",
+          "TranslationKey": "Events/Saloon:195013:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Guys, calm down! I can explain..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/choseToExplain:s0",
+          "DialogueText": "Absolutely. {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Sebastian/358.ogg",
+          "TranslationKey": "Events/Saloon:choseToExplain:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Absolutely."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/crying:s0",
+          "DialogueText": "You need to take responsibility for what you've done... {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Sebastian/359.ogg",
+          "TranslationKey": "Events/Saloon:crying:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "You need to take responsibility for what you've done..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/crying:s1",
+          "DialogueText": "Absolutely. {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Sebastian/360.ogg",
+          "TranslationKey": "Events/Saloon:crying:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Absolutely."
+        },
+        {
+          "DialogueFrom": "Event:Beach/29:s0",
+          "DialogueText": "{Farmer_Name}?",
+          "AudioPath": "assets/ja-JP/Sebastian/361.ogg",
+          "TranslationKey": "Events/Beach:29:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/29:s1",
+          "DialogueText": "Hey. I'm surprised to find you out here in the rain.",
+          "AudioPath": "assets/ja-JP/Sebastian/362.ogg",
+          "TranslationKey": "Events/Beach:29:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey. I'm surprised to find you out here in the rain."
+        },
+        {
+          "DialogueFrom": "Event:Beach/29:s2",
+          "DialogueText": "Look at those dark clouds looming over the horizon...",
+          "AudioPath": "assets/ja-JP/Sebastian/363.ogg",
+          "TranslationKey": "Events/Beach:29:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Look at those dark clouds looming over the horizon..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/29:s3",
+          "DialogueText": "I hope they come this way.",
+          "AudioPath": "assets/ja-JP/Sebastian/364.ogg",
+          "TranslationKey": "Events/Beach:29:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I hope they come this way."
+        },
+        {
+          "DialogueFrom": "Event:Beach/29:s4",
+          "DialogueText": "I like this weather because it makes everyone disappear... you know?",
+          "AudioPath": "assets/ja-JP/Sebastian/365.ogg",
+          "TranslationKey": "Events/Beach:29:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I like this weather because it makes everyone disappear... you know?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/29:s5",
+          "DialogueText": "Being around people makes me feel anxious. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/366.ogg",
+          "TranslationKey": "Events/Beach:29:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Being around people makes me feel anxious."
+        },
+        {
+          "DialogueFrom": "Event:Beach/29:s6",
+          "DialogueText": "I don't feel that way around you, though. {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/367.ogg",
+          "TranslationKey": "Events/Beach:29:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I don't feel that way around you, though."
+        },
+        {
+          "DialogueFrom": "Event:Beach/29:s7",
+          "DialogueText": "We're getting soaked...",
+          "AudioPath": "assets/ja-JP/Sebastian/368.ogg",
+          "TranslationKey": "Events/Beach:29:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "We're getting soaked..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/29:s8",
+          "DialogueText": "Here... There's room for two. {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/369.ogg",
+          "TranslationKey": "Events/Beach:29:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Here... There's room for two."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s0",
+          "DialogueText": "Oh, hello {Farmer_Name}. {Portrait:Custom:8}",
+          "AudioPath": "assets/ja-JP/Sebastian/370.ogg",
+          "TranslationKey": "Events/Mountain:384883:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, hello ."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s1",
+          "DialogueText": "What, you haven't seen my motorcycle before? Hmmm... I guess I haven't shown it to you. {Portrait:Custom:8}",
+          "AudioPath": "assets/ja-JP/Sebastian/371.ogg",
+          "TranslationKey": "Events/Mountain:384883:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "What, you haven't seen my motorcycle before? Hmmm... I guess I haven't shown it to you."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s2",
+          "DialogueText": "Sometimes, after sundown, I make the long ride out of Stardew Valley... {Portrait:Custom:8}",
+          "AudioPath": "assets/ja-JP/Sebastian/372.ogg",
+          "TranslationKey": "Events/Mountain:384883:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Sometimes, after sundown, I make the long ride out of Stardew Valley..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s3",
+          "DialogueText": "There's nothing else like it, blazing along the empty stretch of road toward the faint city glow... {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Sebastian/373.ogg",
+          "TranslationKey": "Events/Mountain:384883:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "There's nothing else like it, blazing along the empty stretch of road toward the faint city glow..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s4",
+          "DialogueText": "Once I've saved up enough money, I'm going to head out on my own... to the city and beyond. Just me and my bike. {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Sebastian/374.ogg",
+          "TranslationKey": "Events/Mountain:384883:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Once I've saved up enough money, I'm going to head out on my own... to the city and beyond. Just me and my bike."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s5",
+          "DialogueText": "There we go, oil's changed. {Portrait:Custom:8}",
+          "AudioPath": "assets/ja-JP/Sebastian/375.ogg",
+          "TranslationKey": "Events/Mountain:384883:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "There we go, oil's changed."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s6|g=male",
+          "DialogueText": "Hey... Maybe I'll let you ride sometime, if you want. {Portrait:Custom:8}",
+          "AudioPath": "assets/ja-JP/Sebastian/376_male.ogg",
+          "TranslationKey": "Events/Mountain:384883:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey... Maybe I'll let you ride sometime, if you want.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s7|g=female",
+          "DialogueText": "Hey... maybe I'll take you for a ride some day. {Portrait:Custom:8}",
+          "AudioPath": "assets/ja-JP/Sebastian/377_female.ogg",
+          "TranslationKey": "Events/Mountain:384883:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey... maybe I'll take you for a ride some day.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s8",
+          "DialogueText": "That sounds fun.",
+          "AudioPath": "assets/ja-JP/Sebastian/378.ogg",
+          "TranslationKey": "Events/Mountain:384883:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "That sounds fun."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s9",
+          "DialogueText": "No thanks. That sounds stupid.",
+          "AudioPath": "assets/ja-JP/Sebastian/379.ogg",
+          "TranslationKey": "Events/Mountain:384883:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "No thanks. That sounds stupid."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384883:s10",
+          "DialogueText": "I'm scared of motorcycles.",
+          "AudioPath": "assets/ja-JP/Sebastian/380.ogg",
+          "TranslationKey": "Events/Mountain:384883:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm scared of motorcycles."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s0",
+          "DialogueText": "Hey {Farmer_Name}. I was just about to head out.",
+          "AudioPath": "assets/ja-JP/Sebastian/381.ogg",
+          "TranslationKey": "Events/Mountain:384882:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey . I was just about to head out."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s1",
+          "DialogueText": "Hop on...I wanna show you something.",
+          "AudioPath": "assets/ja-JP/Sebastian/382.ogg",
+          "TranslationKey": "Events/Mountain:384882:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hop on...I wanna show you something."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s2",
+          "DialogueText": "That's Zuzu City in the distance...",
+          "AudioPath": "assets/ja-JP/Sebastian/383.ogg",
+          "TranslationKey": "Events/Mountain:384882:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "That's Zuzu City in the distance..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s3",
+          "DialogueText": "I come here when I want to get away from everything and just... think.",
+          "AudioPath": "assets/ja-JP/Sebastian/384.ogg",
+          "TranslationKey": "Events/Mountain:384882:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I come here when I want to get away from everything and just... think."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s4",
+          "DialogueText": "So, what do you think?",
+          "AudioPath": "assets/ja-JP/Sebastian/385.ogg",
+          "TranslationKey": "Events/Mountain:384882:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "So, what do you think?"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s5",
+          "DialogueText": "It's beautiful.",
+          "AudioPath": "assets/ja-JP/Sebastian/386.ogg",
+          "TranslationKey": "Events/Mountain:384882:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "It's beautiful."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s6",
+          "DialogueText": "It gives me a strange, sad feeling.",
+          "AudioPath": "assets/ja-JP/Sebastian/387.ogg",
+          "TranslationKey": "Events/Mountain:384882:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "It gives me a strange, sad feeling."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s7",
+          "DialogueText": "Kind of ugly.",
+          "AudioPath": "assets/ja-JP/Sebastian/388.ogg",
+          "TranslationKey": "Events/Mountain:384882:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Kind of ugly."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s8",
+          "DialogueText": "You should quit smoking.",
+          "AudioPath": "assets/ja-JP/Sebastian/389.ogg",
+          "TranslationKey": "Events/Mountain:384882:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "You should quit smoking."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s9",
+          "DialogueText": "The city used to draw me in... but now I'm finding myself happier at home in the valley.",
+          "AudioPath": "assets/ja-JP/Sebastian/390.ogg",
+          "TranslationKey": "Events/Mountain:384882:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "The city used to draw me in... but now I'm finding myself happier at home in the valley."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s10",
+          "DialogueText": "{Farmer_Name}...? {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/391.ogg",
+          "TranslationKey": "Events/Mountain:384882:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "...?"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s11|g=male",
+          "DialogueText": "Um... I've never... felt anything like this with another guy before... But you're different. {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/392_male.ogg",
+          "TranslationKey": "Events/Mountain:384882:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... I've never... felt anything like this with another guy before... But you're different.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s12|g=female",
+          "DialogueText": "I don't usually bring girls to this place... In fact, you're the only one. {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/393_female.ogg",
+          "TranslationKey": "Events/Mountain:384882:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "I don't usually bring girls to this place... In fact, you're the only one.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/384882:s13",
+          "DialogueText": "You know what I'm trying to say, don't you? {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/394.ogg",
+          "TranslationKey": "Events/Mountain:384882:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "You know what I'm trying to say, don't you?"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s0",
+          "DialogueText": "Hey {Farmer_Name}... Glad you showed up.",
+          "AudioPath": "assets/ja-JP/Sebastian/395.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey ... Glad you showed up."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s1",
+          "DialogueText": "There's an injured frog in that bush... I gotta save him!",
+          "AudioPath": "assets/ja-JP/Sebastian/396.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "There's an injured frog in that bush... I gotta save him!"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s2",
+          "DialogueText": "I need your help. Go over to the bush and try to get him to come towards me. I'll wait over here and catch him.",
+          "AudioPath": "assets/ja-JP/Sebastian/397.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I need your help. Go over to the bush and try to get him to come towards me. I'll wait over here and catch him."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s3",
+          "DialogueText": "Okay... you ready?",
+          "AudioPath": "assets/ja-JP/Sebastian/398.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay... you ready?"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s4",
+          "DialogueText": "Now!",
+          "AudioPath": "assets/ja-JP/Sebastian/399.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Now!"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s5",
+          "DialogueText": "Got him!",
+          "AudioPath": "assets/ja-JP/Sebastian/400.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Got him!"
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s6",
+          "DialogueText": "Poor little guy... his foot's all mangled. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/401.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Poor little guy... his foot's all mangled."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s7",
+          "DialogueText": "I'm gonna take him home for now, and make him comfortable.",
+          "AudioPath": "assets/ja-JP/Sebastian/402.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm gonna take him home for now, and make him comfortable."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s8",
+          "DialogueText": "I guess I'll do some research on how to take care of frogs. Maybe Marnie knows something.",
+          "AudioPath": "assets/ja-JP/Sebastian/403.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I guess I'll do some research on how to take care of frogs. Maybe Marnie knows something."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s9",
+          "DialogueText": "Hah... Yeah, I guess so. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/404.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Hah... Yeah, I guess so."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s10",
+          "DialogueText": "He's definitely got your nose... {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/405.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "He's definitely got your nose..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s11",
+          "DialogueText": "Well, sorry if I don't take your word for it... I'm gonna give the poor guy a chance.",
+          "AudioPath": "assets/ja-JP/Sebastian/406.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, sorry if I don't take your word for it... I'm gonna give the poor guy a chance."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s12",
+          "DialogueText": "We'll do our best. But don't get too attached just yet...",
+          "AudioPath": "assets/ja-JP/Sebastian/407.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "We'll do our best. But don't get too attached just yet..."
+        },
+        {
+          "DialogueFrom": "Event:Mountain/9333219:s13",
+          "DialogueText": "Let's take him home.",
+          "AudioPath": "assets/ja-JP/Sebastian/408.ogg",
+          "TranslationKey": "Events/Mountain:9333219:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's take him home."
+        },
+        {
+          "DialogueFrom": "Event:ScienceHouse/1053978:s0",
+          "DialogueText": "Yea",
+          "AudioPath": "assets/ja-JP/Sebastian/409.ogg",
+          "TranslationKey": "Events/ScienceHouse:1053978:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Yea"
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/2794460:s0",
+          "DialogueText": "Oh, hey. Gimme one sec.",
+          "AudioPath": "assets/ja-JP/Sebastian/410.ogg",
+          "TranslationKey": "Events/SebastianRoom:2794460:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, hey. Gimme one sec."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/2794460:s1",
+          "DialogueText": "He's busy... I should leave.",
+          "AudioPath": "assets/ja-JP/Sebastian/411.ogg",
+          "TranslationKey": "Events/SebastianRoom:2794460:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "He's busy... I should leave."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/2794460:s2",
+          "DialogueText": "Stay put.",
+          "AudioPath": "assets/ja-JP/Sebastian/412.ogg",
+          "TranslationKey": "Events/SebastianRoom:2794460:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Stay put."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/2794460:s3",
+          "DialogueText": "Where are you going? {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Sebastian/413.ogg",
+          "TranslationKey": "Events/SebastianRoom:2794460:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Where are you going?"
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/2794460:s4",
+          "DialogueText": "Sorry... I had to finish this line before I lost my train of thought.",
+          "AudioPath": "assets/ja-JP/Sebastian/414.ogg",
+          "TranslationKey": "Events/SebastianRoom:2794460:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Sorry... I had to finish this line before I lost my train of thought."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/didntLeave:s0",
+          "DialogueText": "Okay. Sorry about that, I just needed to finish what I was working on.",
+          "AudioPath": "assets/ja-JP/Sebastian/415.ogg",
+          "TranslationKey": "Events/SebastianRoom:didntLeave:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay. Sorry about that, I just needed to finish what I was working on."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/sebastianRoom:s0",
+          "DialogueText": "I do freelance work as a programmer.",
+          "AudioPath": "assets/ja-JP/Sebastian/416.ogg",
+          "TranslationKey": "Events/SebastianRoom:sebastianRoom:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I do freelance work as a programmer."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/decor:s0",
+          "DialogueText": "Decorations?... Oh, yeah... thanks. I've been sticking posters on the wall for years, I guess it's kinda cluttered.",
+          "AudioPath": "assets/ja-JP/Sebastian/417.ogg",
+          "TranslationKey": "Events/SebastianRoom:decor:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Decorations?... Oh, yeah... thanks. I've been sticking posters on the wall for years, I guess it's kinda cluttered."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s0",
+          "DialogueText": "That was an instant message from Sam... I guess he wants to hang out...",
+          "AudioPath": "assets/ja-JP/Sebastian/418.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "That was an instant message from Sam... I guess he wants to hang out..."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s1",
+          "DialogueText": "Ugh, I don't really feel like going out today. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Sebastian/419.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ugh, I don't really feel like going out today."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s2",
+          "DialogueText": "Did you tell her I'm working?",
+          "AudioPath": "assets/ja-JP/Sebastian/420.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Did you tell her I'm working?"
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s3",
+          "DialogueText": "*sigh*... No one takes my job seriously. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Sebastian/421.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*... No one takes my job seriously."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s4",
+          "DialogueText": "No one ever bothers Maru when she's working at the clinic... does everyone think I'm just surfing the web all day?",
+          "AudioPath": "assets/ja-JP/Sebastian/422.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "No one ever bothers Maru when she's working at the clinic... does everyone think I'm just surfing the web all day?"
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s5",
+          "DialogueText": "Ask him about his career goals.",
+          "AudioPath": "assets/ja-JP/Sebastian/423.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Ask him about his career goals."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s6",
+          "DialogueText": "Ask him why he doesn't want to see his friends.",
+          "AudioPath": "assets/ja-JP/Sebastian/424.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Ask him why he doesn't want to see his friends."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s7",
+          "DialogueText": "Well, I'm trying to save up so I can move out of here. Probably to the city or something.",
+          "AudioPath": "assets/ja-JP/Sebastian/425.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I'm trying to save up so I can move out of here. Probably to the city or something."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s8",
+          "DialogueText": "You know, if I'd gone to college I'd probably be making six figures right now... but I just don't want to be part of that corporate rat race, you know?",
+          "AudioPath": "assets/ja-JP/Sebastian/426.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "You know, if I'd gone to college I'd probably be making six figures right now... but I just don't want to be part of that corporate rat race, you know?"
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s9",
+          "DialogueText": "Well, and I guess I just feel more comfortable hidden behind the computer than dealing with people face-to-face. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/427.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, and I guess I just feel more comfortable hidden behind the computer than dealing with people face-to-face."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/enterRobin:s10",
+          "DialogueText": "Well, I should get back to work... I need to get this module finished by tomorrow.",
+          "AudioPath": "assets/ja-JP/Sebastian/428.ogg",
+          "TranslationKey": "Events/SebastianRoom:enterRobin:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I should get back to work... I need to get this module finished by tomorrow."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/noFriends:s0",
+          "DialogueText": "*sigh*... I like having friends, I just need a lot of time alone to balance out the social stuff. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/429.ogg",
+          "TranslationKey": "Events/SebastianRoom:noFriends:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*... I like having friends, I just need a lot of time alone to balance out the social stuff."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/noFriends:s1",
+          "DialogueText": "Sam's the opposite... he goes crazy if he's alone for too long.",
+          "AudioPath": "assets/ja-JP/Sebastian/430.ogg",
+          "TranslationKey": "Events/SebastianRoom:noFriends:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Sam's the opposite... he goes crazy if he's alone for too long."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/noFriends:s2",
+          "DialogueText": "Maybe that's why I like computers so much... They're engaging, straightforward, and unselfish. Quite the opposite of a lot of people I know.",
+          "AudioPath": "assets/ja-JP/Sebastian/431.ogg",
+          "TranslationKey": "Events/SebastianRoom:noFriends:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Maybe that's why I like computers so much... They're engaging, straightforward, and unselfish. Quite the opposite of a lot of people I know."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/noFriends:s3",
+          "DialogueText": "Well, I should get back to work... I need to get this module finished by tomorrow.",
+          "AudioPath": "assets/ja-JP/Sebastian/432.ogg",
+          "TranslationKey": "Events/SebastianRoom:noFriends:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I should get back to work... I need to get this module finished by tomorrow."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/27:s0",
+          "DialogueText": "Hey, {Farmer_Name}. {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/433.ogg",
+          "TranslationKey": "Events/SebastianRoom:27:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, ."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/27:s1",
+          "DialogueText": "Sam and I were about to play 'Solarion Chronicles: The Game'... Why don't you join us? It's better with three players anyway. {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/434.ogg",
+          "TranslationKey": "Events/SebastianRoom:27:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Sam and I were about to play 'Solarion Chronicles: The Game'... Why don't you join us? It's better with three players anyway."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/27:s2",
+          "DialogueText": "Okay, here we go... Let me draw the scenario card. {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/435.ogg",
+          "TranslationKey": "Events/SebastianRoom:27:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay, here we go... Let me draw the scenario card."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/27:s3",
+          "DialogueText": "Hmm... It looks like today's quest will take us into the Necromancer's Tower... to try and reclaim the Solarion Staff from the clutches of Dreadlord Xarth.",
+          "AudioPath": "assets/ja-JP/Sebastian/436.ogg",
+          "TranslationKey": "Events/SebastianRoom:27:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Hmm... It looks like today's quest will take us into the Necromancer's Tower... to try and reclaim the Solarion Staff from the clutches of Dreadlord Xarth."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/27:s4",
+          "DialogueText": "Hey! That's what I was going to pick! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/437.ogg",
+          "TranslationKey": "Events/SebastianRoom:27:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey! That's what I was going to pick!"
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/27:s5",
+          "DialogueText": "I guess I'll be the healer then.",
+          "AudioPath": "assets/ja-JP/Sebastian/438.ogg",
+          "TranslationKey": "Events/SebastianRoom:27:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "I guess I'll be the healer then."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/warrior:s0",
+          "DialogueText": "Good choice. Warrior's probably the easiest for beginners. {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/439.ogg",
+          "TranslationKey": "Events/SebastianRoom:warrior:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Good choice. Warrior's probably the easiest for beginners."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/warrior:s1",
+          "DialogueText": "I guess I'll pick the wizard, then.",
+          "AudioPath": "assets/ja-JP/Sebastian/440.ogg",
+          "TranslationKey": "Events/SebastianRoom:warrior:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I guess I'll pick the wizard, then."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/healer:s0",
+          "DialogueText": "Healer, huh? That's a very important role. {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/441.ogg",
+          "TranslationKey": "Events/SebastianRoom:healer:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Healer, huh? That's a very important role."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/healer:s1",
+          "DialogueText": "I guess I'll pick the wizard, then.",
+          "AudioPath": "assets/ja-JP/Sebastian/442.ogg",
+          "TranslationKey": "Events/SebastianRoom:healer:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I guess I'll pick the wizard, then."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s0",
+          "DialogueText": "Let's begin...",
+          "AudioPath": "assets/ja-JP/Sebastian/443.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's begin..."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s1",
+          "DialogueText": "The King has entrusted you and your companions with recovering the Solarion Staff... a task which, if completed successfully, will ensure your place in the hall of legends as well as a sizable fortune of gold and silver.",
+          "AudioPath": "assets/ja-JP/Sebastian/444.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "The King has entrusted you and your companions with recovering the Solarion Staff... a task which, if completed successfully, will ensure your place in the hall of legends as well as a sizable fortune of gold and silver."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s2",
+          "DialogueText": "After a long month journeying across unforgiving lands, you step out onto a precipice to see your destination looming in the distance.",
+          "AudioPath": "assets/ja-JP/Sebastian/445.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "After a long month journeying across unforgiving lands, you step out onto a precipice to see your destination looming in the distance."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s3",
+          "DialogueText": "There, beyond a moonlit plain, lies the Necromancer's Tower... where Dreadlord Xarth usurps the power of the stolen Solarion Staff for his vile purposes.",
+          "AudioPath": "assets/ja-JP/Sebastian/446.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "There, beyond a moonlit plain, lies the Necromancer's Tower... where Dreadlord Xarth usurps the power of the stolen Solarion Staff for his vile purposes."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s4",
+          "DialogueText": "The tower lies before you.",
+          "AudioPath": "assets/ja-JP/Sebastian/447.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "The tower lies before you."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s5",
+          "DialogueText": "Go in the front. Fortune favors the bold.",
+          "AudioPath": "assets/ja-JP/Sebastian/448.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Go in the front. Fortune favors the bold."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s6",
+          "DialogueText": "Search for a back entrance. Let's remain hidden.",
+          "AudioPath": "assets/ja-JP/Sebastian/449.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Search for a back entrance. Let's remain hidden."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s7",
+          "DialogueText": "A skeleton guards the hallway before you. It looks dangerous.",
+          "AudioPath": "assets/ja-JP/Sebastian/450.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "A skeleton guards the hallway before you. It looks dangerous."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s8",
+          "DialogueText": "What do you do?",
+          "AudioPath": "assets/ja-JP/Sebastian/451.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "What do you do?"
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s9",
+          "DialogueText": "Fight the skeleton.",
+          "AudioPath": "assets/ja-JP/Sebastian/452.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Fight the skeleton."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s10",
+          "DialogueText": "Run away.",
+          "AudioPath": "assets/ja-JP/Sebastian/453.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Run away."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s11",
+          "DialogueText": "The skeleton lunges forward!",
+          "AudioPath": "assets/ja-JP/Sebastian/454.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "The skeleton lunges forward!"
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s12",
+          "DialogueText": "Swing your weapons.",
+          "AudioPath": "assets/ja-JP/Sebastian/455.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Swing your weapons."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s13",
+          "DialogueText": "Raise your shields.",
+          "AudioPath": "assets/ja-JP/Sebastian/456.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Raise your shields."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s14",
+          "DialogueText": "You successfully block the attack. The skeleton stumbles backward, giving you enough time to strike out and slay the foul creature.",
+          "AudioPath": "assets/ja-JP/Sebastian/457.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "You successfully block the attack. The skeleton stumbles backward, giving you enough time to strike out and slay the foul creature."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/opening:s15",
+          "DialogueText": "You continue down the hallway, taking care not to step on the skeleton's remains.",
+          "AudioPath": "assets/ja-JP/Sebastian/458.ogg",
+          "TranslationKey": "Events/SebastianRoom:opening:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "You continue down the hallway, taking care not to step on the skeleton's remains."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/Necromancer:s0",
+          "DialogueText": "Thanks, {Farmer_Name}. {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/459.ogg",
+          "TranslationKey": "Events/SebastianRoom:Necromancer:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks, ."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/healedSam:s0",
+          "DialogueText": "... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Sebastian/460.ogg",
+          "TranslationKey": "Events/SebastianRoom:healedSam:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/healedSam:s1",
+          "DialogueText": "Sam charges ahead and strikes down Xarth, freeing the Solarion Staff from his clutches and restoring peace and order to the world.",
+          "AudioPath": "assets/ja-JP/Sebastian/461.ogg",
+          "TranslationKey": "Events/SebastianRoom:healedSam:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Sam charges ahead and strikes down Xarth, freeing the Solarion Staff from his clutches and restoring peace and order to the world."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/end:s0",
+          "DialogueText": "Hey, not bad! {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/462.ogg",
+          "TranslationKey": "Events/SebastianRoom:end:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, not bad!"
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/end:s1",
+          "DialogueText": "It took me like, three or four tries to beat my first scenario. {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/463.ogg",
+          "TranslationKey": "Events/SebastianRoom:end:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "It took me like, three or four tries to beat my first scenario."
+        },
+        {
+          "DialogueFrom": "Event:SebastianRoom/end:s2",
+          "DialogueText": "Thanks for stopping by... I'll see you later. {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/464.ogg",
+          "TranslationKey": "Events/SebastianRoom:end:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks for stopping by... I'll see you later."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Sebastian",
+          "DialogueText": "きょうはさわがしくなりそうだな…しばらくはこのへんにいよう。",
+          "AudioPath": "assets/ja-JP/Sebastian/465.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "きょうはさわがしくなりそうだな…しばらくはこのへんにいよう。"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Sebastian_spouse",
+          "DialogueText": "ああ、{Farmer_Name}。おれはサムに会いに行くよ。そっちも行って楽しんでこいよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/466.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Sebastian_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、。おれはサムに会いに行くよ。そっちも行って楽しんでこいよ。"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Sebastian_y2",
+          "DialogueText": "あの女性に未来を占ってもらったんだ。オレはどう生きたらいいんだろうな… {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Sebastian/467.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Sebastian_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "あの女性に未来を占ってもらったんだ。オレはどう生きたらいいんだろうな…"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Sebastian_spouse_y2",
+          "DialogueText": "墓場にいたあの女性は、オレたちの未来を予言していた… {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Sebastian/468.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Sebastian_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "墓場にいたあの女性は、オレたちの未来を予言していた…"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Sebastian_spouse_y2",
+          "DialogueText": "オレたちは、いっしょにしあわせな人生をおくる運命にあるんだ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/469.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Sebastian_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "オレたちは、いっしょにしあわせな人生をおくる運命にあるんだ。"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Sebastian",
+          "DialogueText": "あのガイコツたち、どうやって歩いてるんだ…気味悪いな。",
+          "AudioPath": "assets/ja-JP/Sebastian/470.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "あのガイコツたち、どうやって歩いてるんだ…気味悪いな。"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Sebastian",
+          "DialogueText": "でも、めちゃくちゃイカしてる。",
+          "AudioPath": "assets/ja-JP/Sebastian/471.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "でも、めちゃくちゃイカしてる。"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Sebastian_spouse",
+          "DialogueText": "匹くらい、牧場につれて帰ったらおもしろそうだな。",
+          "AudioPath": "assets/ja-JP/Sebastian/472.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Sebastian_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "匹くらい、牧場につれて帰ったらおもしろそうだな。"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Sebastian_y2",
+          "DialogueText": "ここがオレの居場所だ。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Sebastian/473.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Sebastian_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "ここがオレの居場所だ。"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Sebastian_spouse_y2",
+          "DialogueText": "なあ… 手を貸してくれないか？へへへ… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/474.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Sebastian_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "なあ… 手を貸してくれないか？へへへ…"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Sebastian_spouse_y2",
+          "DialogueText": "この墓石は牧場にぴったりだと思わないか？ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Sebastian/475.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Sebastian_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "この墓石は牧場にぴったりだと思わないか？"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Sebastian",
+          "DialogueText": "昔はくさったタマゴを投げて遊んでたんだ…",
+          "AudioPath": "assets/ja-JP/Sebastian/476.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "昔はくさったタマゴを投げて遊んでたんだ…"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Sebastian",
+          "DialogueText": "ルイス町長にすぐやめさせられたよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/477.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "ルイス町長にすぐやめさせられたよ。"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Sebastian_spouse",
+          "DialogueText": "エッグハント、がんばれよ。応援してるから。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/478.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Sebastian_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "エッグハント、がんばれよ。応援してるから。"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Sebastian_y2",
+          "DialogueText": "あえて言うなら…冬が恋しいよ…面倒な事がなかったし。",
+          "AudioPath": "assets/ja-JP/Sebastian/479.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Sebastian_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "あえて言うなら…冬が恋しいよ…面倒な事がなかったし。"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Sebastian",
+          "DialogueText": "ハァ…",
+          "AudioPath": "assets/ja-JP/Sebastian/480.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "ハァ…"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Sebastian_y2",
+          "DialogueText": "オレは来たくて来たわけじゃない。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Sebastian/481.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Sebastian_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "オレは来たくて来たわけじゃない。"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Sebastian_spouse_y2",
+          "DialogueText": "今日はわざわざおまえのために来たんだ… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/482.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Sebastian_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "今日はわざわざおまえのために来たんだ…"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Sebastian",
+          "DialogueText": "いつだったか、サムが持ちよりスープにすごい量のアンチョビをぶちこんだんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/483.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "いつだったか、サムが持ちよりスープにすごい量のアンチョビをぶちこんだんだ。"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Sebastian",
+          "DialogueText": "サムが奉仕活動させられてるワケ、察しついただろ？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/484.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "サムが奉仕活動させられてるワケ、察しついただろ？"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Sebastian_spouse",
+          "DialogueText": "機嫌が悪くならないように、なんとかがんばってるとこさ…",
+          "AudioPath": "assets/ja-JP/Sebastian/485.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Sebastian_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "機嫌が悪くならないように、なんとかがんばってるとこさ…"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Sebastian_y2",
+          "DialogueText": "よう。あの騒ぎから逃げてきたのか？ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Sebastian/486.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Sebastian_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "よう。あの騒ぎから逃げてきたのか？"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Sebastian_spouse_y2",
+          "DialogueText": "あの雨の日、ここでオレと会ったときのことを覚えてるか？ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Sebastian/487.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Sebastian_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "あの雨の日、ここでオレと会ったときのことを覚えてるか？"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Sebastian_spouse_y2",
+          "DialogueText": "ここはオレがひとりになれる場所だったけど…来てくれて本当にうれしかったよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/488.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Sebastian_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "ここはオレがひとりになれる場所だったけど…来てくれて本当にうれしかったよ。"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Sebastian",
+          "DialogueText": "なあ、あそこでなにか動かなかったか？…なんだかデカくて、黒い…",
+          "AudioPath": "assets/ja-JP/Sebastian/489.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "なあ、あそこでなにか動かなかったか？…なんだかデカくて、黒い…"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Sebastian",
+          "DialogueText": "ウソだよ。おどかそうとしただけさ… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/490.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "ウソだよ。おどかそうとしただけさ…"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Sebastian_y2",
+          "DialogueText": "おまえが海の中を見ているときは、海の中の何かがおまえを見ているかもしれないぞ… {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Sebastian/491.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Sebastian_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "おまえが海の中を見ているときは、海の中の何かがおまえを見ているかもしれないぞ…"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Sebastian_spouse_y2",
+          "DialogueText": "おまえが初めてこのイベントに来た時のことを覚えてるよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/492.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Sebastian_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "おまえが初めてこのイベントに来た時のことを覚えてるよ。"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Sebastian_spouse_y2",
+          "DialogueText": "気づかなかっただろうけど、クラゲが来た時はおまえを見てたんだ。青い光に照らされて、とてもきれいだったよ… {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/493.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Sebastian_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "気づかなかっただろうけど、クラゲが来た時はおまえを見てたんだ。青い光に照らされて、とてもきれいだったよ…"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Sebastian",
+          "DialogueText": "家族とすごすっていうのも、たまにはうんざりするよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/494.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "家族とすごすっていうのも、たまにはうんざりするよ。"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Sebastian_spouse",
+          "DialogueText": "ああ、{Farmer_Name}。ごらんのとおり、家族の義務をはたしてるところさ…",
+          "AudioPath": "assets/ja-JP/Sebastian/495.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Sebastian_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、。ごらんのとおり、家族の義務をはたしてるところさ…"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Sebastian_y2",
+          "DialogueText": "今日だけは家族全員がそろうのがいいことに思えるよ。 {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Sebastian/496.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Sebastian_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "今日だけは家族全員がそろうのがいいことに思えるよ。"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Sebastian_spouse_y2",
+          "DialogueText": "なあ… 心配しなくていいぜ、なにも用意しなくていいんだ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/497.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Sebastian_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "なあ… 心配しなくていいぜ、なにも用意しなくていいんだ。"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Sebastian_spouse_y2",
+          "DialogueText": "オレは毎朝おまえの隣で目覚められるだけで幸せさ… 男が他になにを求めるって言うんだ？ {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Sebastian/498.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Sebastian_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "オレは毎朝おまえの隣で目覚められるだけで幸せさ… 男が他になにを求めるって言うんだ？"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Sebastian",
+          "DialogueText": "カゼをひかないかって？平気さ。一度もひいたことないね。",
+          "AudioPath": "assets/ja-JP/Sebastian/499.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "カゼをひかないかって？平気さ。一度もひいたことないね。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Sebastian_spouse",
+          "DialogueText": "おれのことは心配いらないよ。カゼは引いたことないんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/500.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Sebastian_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "おれのことは心配いらないよ。カゼは引いたことないんだ。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Sebastian_y2",
+          "DialogueText": "雪が積もるとこんなに静かになるんだな。",
+          "AudioPath": "assets/ja-JP/Sebastian/501.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Sebastian_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "雪が積もるとこんなに静かになるんだな。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Sebastian_spouse_y2",
+          "DialogueText": "今日の大会では優勝してくれよ。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Sebastian/502.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Sebastian_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "今日の大会では優勝してくれよ。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Sebastian_spouse_y2",
+          "DialogueText": "いや… 実は、マーロンとちょっとした賭けをしてるんだ… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/503.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Sebastian_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "いや… 実は、マーロンとちょっとした賭けをしてるんだ…"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Sebastian:s0",
+          "DialogueText": "これ、すごく好きなんだ。どうしてわかったんだ？",
+          "AudioPath": "assets/ja-JP/Sebastian/504.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Sebastian:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "これ、すごく好きなんだ。どうしてわかったんだ？"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Sebastian:s1",
+          "DialogueText": "ありがとう、うれしいよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/505.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Sebastian:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "ありがとう、うれしいよ。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Sebastian:s2",
+          "DialogueText": "…？",
+          "AudioPath": "assets/ja-JP/Sebastian/506.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Sebastian:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "…？"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Sebastian:s3",
+          "DialogueText": "…これ、キライなんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/507.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Sebastian:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "…これ、キライなんだ。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Sebastian:s4",
+          "DialogueText": "…ありがとな。",
+          "AudioPath": "assets/ja-JP/Sebastian/508.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Sebastian:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "…ありがとな。"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Sebastian",
+          "DialogueText": "お前と会う前は、俺は現実から目を背けて過ごしていたんだ…幸せなんて見つからないと思っていた。",
+          "AudioPath": "assets/ja-JP/Sebastian/509.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "お前と会う前は、俺は現実から目を背けて過ごしていたんだ…幸せなんて見つからないと思っていた。"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Sebastian",
+          "DialogueText": "…だけど、お前のおかげでこの世界もそれほど悪くないと思えるようになったんだ。 {Portrait:Happy}\"/faceDirection Sebastian 3/pause 500/speak Sebastian \"…それが、俺がお前を愛してる理由のひとつなんだぜ…\"",
+          "AudioPath": "assets/ja-JP/Sebastian/510.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Sebastian",
+          "PageIndex": 1,
+          "DisplayPattern": "…だけど、お前のおかげでこの世界もそれほど悪くないと思えるようになったんだ。\"/faceDirection Sebastian 3/pause 500/speak Sebastian \"…それが、俺がお前を愛してる理由のひとつなんだぜ…\""
+        },
+        {
+          "DialogueFrom": "MovieReactions/Sebastian_love_BeforeMovie",
+          "DialogueText": "こんにちは。この映画はかなり厳しいって聞いたわ...楽しみにしてる。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/511.ogg",
+          "TranslationKey": "Strings/MovieReactions:Sebastian_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは。この映画はかなり厳しいって聞いたわ...楽しみにしてる。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Sebastian_love_DuringMovie",
+          "DialogueText": "この映画の撮影は次のレベルだな。",
+          "AudioPath": "assets/ja-JP/Sebastian/512.ogg",
+          "TranslationKey": "Strings/MovieReactions:Sebastian_love_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "この映画の撮影は次のレベルだな。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Sebastian_love_DuringMovie_2",
+          "DialogueText": "セバスチャンはニヤリとしています。」",
+          "AudioPath": "assets/ja-JP/Sebastian/513.ogg",
+          "TranslationKey": "Strings/MovieReactions:Sebastian_love_DuringMovie_2",
+          "PageIndex": 0,
+          "DisplayPattern": "セバスチャンはニヤリとしています。」"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Sebastian_love_AfterMovie",
+          "DialogueText": "オレがしばらくの間見た中では最高傑作だ...どうやってこの特殊効果のいくつかを実践したんだろうか？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/514.ogg",
+          "TranslationKey": "Strings/MovieReactions:Sebastian_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "オレがしばらくの間見た中では最高傑作だ...どうやってこの特殊効果のいくつかを実践したんだろうか？"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Sebastian_like_BeforeMovie",
+          "DialogueText": "（肩をすくめる）...映画のポスターがかなりかっこいいから、中に入ったよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/515.ogg",
+          "TranslationKey": "Strings/MovieReactions:Sebastian_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "（肩をすくめる）...映画のポスターがかなりかっこいいから、中に入ったよ。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Sebastian_like_AfterMovie",
+          "DialogueText": "これまでで一番じゃなかったが、かなり良い時間を過ごしたよ...招待してくれてありがとう。",
+          "AudioPath": "assets/ja-JP/Sebastian/516.ogg",
+          "TranslationKey": "Strings/MovieReactions:Sebastian_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "これまでで一番じゃなかったが、かなり良い時間を過ごしたよ...招待してくれてありがとう。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Sebastian_dislike_BeforeMovie",
+          "DialogueText": "それが短いことを願ってる...",
+          "AudioPath": "assets/ja-JP/Sebastian/517.ogg",
+          "TranslationKey": "Strings/MovieReactions:Sebastian_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "それが短いことを願ってる..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Sebastian_dislike_AfterMovie",
+          "DialogueText": "おそらく対象読者にとって素晴らしい映画だが、オレにとってはそうではないな。",
+          "AudioPath": "assets/ja-JP/Sebastian/518.ogg",
+          "TranslationKey": "Strings/MovieReactions:Sebastian_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "おそらく対象読者にとって素晴らしい映画だが、オレにとってはそうではないな。"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Sebastian_marriage",
+          "DialogueText": "オレは日陰でくつろぐことにするよ。",
+          "AudioPath": "assets/ja-JP/Sebastian/519.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Sebastian_marriage",
+          "PageIndex": 0,
+          "DisplayPattern": "オレは日陰でくつろぐことにするよ。"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Sebastian_marriage",
+          "DialogueText": "オレの性格は知ってるだろ…太陽が当たらない場所の方が落ち着くんだ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Sebastian/520.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Sebastian_marriage",
+          "PageIndex": 1,
+          "DisplayPattern": "オレの性格は知ってるだろ…太陽が当たらない場所の方が落ち着くんだ。"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Sebastian",
+          "DialogueText": "よう。この鳥といっしょにぶらついてるんだ。なんか気に入られたみたいでさ。",
+          "AudioPath": "assets/ja-JP/Sebastian/521.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "よう。この鳥といっしょにぶらついてるんだ。なんか気に入られたみたいでさ。"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Sebastian",
+          "DialogueText": "湖のそばでいろいろ見つけたんだ。",
+          "AudioPath": "assets/ja-JP/Sebastian/522.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Sebastian",
+          "PageIndex": 0,
+          "DisplayPattern": "湖のそばでいろいろ見つけたんだ。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4030 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Emily.ja-JP",
+      "VoicePackName": "DictionarV2 (Emily - ja-JP)",
+      "Character": "Emily",
+      "Language": "ja-JP",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "あら…！その顔を見ただけでわかるわ。ペリカンタウンを 気に入る だろうって。",
+          "AudioPath": "assets/ja-JP/Emily/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "あら…！その顔を見ただけでわかるわ。ペリカンタウンを 気に入る だろうって。"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "もし夜に 何かしたくなったら、 酒場においでよ。私はそこで 働いてるから！",
+          "AudioPath": "assets/ja-JP/Emily/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "もし夜に 何かしたくなったら、 酒場においでよ。私はそこで 働いてるから！"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "誕生日を覚えててくれてたんだね！ありがとう、{Farmer_Name}！とってもうれしいよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "誕生日を覚えててくれてたんだね！ありがとう、！とってもうれしいよ。"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "誕生日を覚えててくれてたんだね！ありがとう、{Farmer_Name}！とっても… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "誕生日を覚えててくれてたんだね！ありがとう、！とっても…"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "…（クンクン）… 変なにおいがするよ？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptBirthdayGift_Negative",
+          "PageIndex": 1,
+          "DisplayPattern": "…（クンクン）… 変なにおいがするよ？"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "…これなあに…？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptBirthdayGift_Negative",
+          "PageIndex": 2,
+          "DisplayPattern": "…これなあに…？"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "ええ、{Farmer_Name}！あなたと踊りたいわ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:FlowerDance_Accept",
+          "PageIndex": 0,
+          "DisplayPattern": "ええ、！あなたと踊りたいわ！"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "ワクワクするね…きっと楽しくなるよ！",
+          "AudioPath": "assets/ja-JP/Emily/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:FlowerDance_Accept",
+          "PageIndex": 1,
+          "DisplayPattern": "ワクワクするね…きっと楽しくなるよ！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "わあ、ありがとう！寝る前に飲むと、とても鮮やかな夢が見れるそうよ。",
+          "AudioPath": "assets/ja-JP/Emily/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "わあ、ありがとう！寝る前に飲むと、とても鮮やかな夢が見れるそうよ。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)ParrotEgg",
+          "DialogueText": "よかった、まだ温かい…かわいそうに、お母さんはどこ？ ああ… 私がお母さんになってあげるから心配しないでね…おちびちゃん。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(TR)ParrotEgg",
+          "PageIndex": 0,
+          "DisplayPattern": "よかった、まだ温かい…かわいそうに、お母さんはどこ？ ああ… 私がお母さんになってあげるから心配しないでね…おちびちゃん。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)ParrotEgg",
+          "DialogueText": "{Farmer_Name}、この子を私にあずけてくれてありがとう。ちゃんと世話をするからね。",
+          "AudioPath": "assets/ja-JP/Emily/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(TR)ParrotEgg",
+          "PageIndex": 1,
+          "DisplayPattern": "、この子を私にあずけてくれてありがとう。ちゃんと世話をするからね。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)68",
+          "DialogueText": "わぁ…ありがとう！今日の気分にぴったりな色だわ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)68",
+          "PageIndex": 0,
+          "DisplayPattern": "わぁ…ありがとう！今日の気分にぴったりな色だわ。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)68",
+          "DialogueText": "この石の温かくて優しいエネルギーは、私たちの心を正しい方向に導いてくれるの。今日みたいな日と相性がいいんだよ。ありがとう！",
+          "AudioPath": "assets/ja-JP/Emily/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)68",
+          "PageIndex": 1,
+          "DisplayPattern": "この石の温かくて優しいエネルギーは、私たちの心を正しい方向に導いてくれるの。今日みたいな日と相性がいいんだよ。ありがとう！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)70",
+          "DialogueText": "すごいわ！ 今日、あなたがヒスイをくれる夢を見たの！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)70",
+          "PageIndex": 0,
+          "DisplayPattern": "すごいわ！ 今日、あなたがヒスイをくれる夢を見たの！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)70",
+          "DialogueText": "ああ、ヒスイ！金運アップのパワーストーンだから…だれかお金に困ってる人はいないかな？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)70",
+          "PageIndex": 1,
+          "DisplayPattern": "ああ、ヒスイ！金運アップのパワーストーンだから…だれかお金に困ってる人はいないかな？"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)66",
+          "DialogueText": "とってもきれいね、{Farmer_Name}！これを見つけるまでに危ない目に合わなかった？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)66",
+          "PageIndex": 0,
+          "DisplayPattern": "とってもきれいね、！これを見つけるまでに危ない目に合わなかった？"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)66",
+          "DialogueText": "ああ、アメシスト！サルーンで夜遅くまで働く私を守ってくれるのよ。",
+          "AudioPath": "assets/ja-JP/Emily/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)66",
+          "PageIndex": 1,
+          "DisplayPattern": "ああ、アメシスト！サルーンで夜遅くまで働く私を守ってくれるのよ。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)64",
+          "DialogueText": "わぁ、すてきな色！私の服にぴったりだわ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)64",
+          "PageIndex": 0,
+          "DisplayPattern": "わぁ、すてきな色！私の服にぴったりだわ。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)64",
+          "DialogueText": "うん、カンペキ…最近、少し元気がなかったんだけど…ルビーには精神を活性化する力があるんだよ！",
+          "AudioPath": "assets/ja-JP/Emily/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)64",
+          "PageIndex": 1,
+          "DisplayPattern": "うん、カンペキ…最近、少し元気がなかったんだけど…ルビーには精神を活性化する力があるんだよ！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)62",
+          "DialogueText": "とってもきれいね！これを持っていると…海にいる人魚たちのエネルギーを感じるの。ありがとう！",
+          "AudioPath": "assets/ja-JP/Emily/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)62",
+          "PageIndex": 0,
+          "DisplayPattern": "とってもきれいね！これを持っていると…海にいる人魚たちのエネルギーを感じるの。ありがとう！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)62",
+          "DialogueText": "うれしいよ！枕の下に置いたら、海の夢が見られるといいな。",
+          "AudioPath": "assets/ja-JP/Emily/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)62",
+          "PageIndex": 1,
+          "DisplayPattern": "うれしいよ！枕の下に置いたら、海の夢が見られるといいな。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)60",
+          "DialogueText": "わあ！うふふ…どうして今日あなたがこの石をくれたのか、私にはわかるわ。とても不思議だけど…",
+          "AudioPath": "assets/ja-JP/Emily/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)60",
+          "PageIndex": 0,
+          "DisplayPattern": "わあ！うふふ…どうして今日あなたがこの石をくれたのか、私にはわかるわ。とても不思議だけど…"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)60",
+          "DialogueText": "ああ、なんてきれいなの！森が持っているスピリチュアルなパワーを感じるわ…あなたも木のエネルギーを感じない？",
+          "AudioPath": "assets/ja-JP/Emily/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:AcceptGift_(O)60",
+          "PageIndex": 1,
+          "DisplayPattern": "ああ、なんてきれいなの！森が持っているスピリチュアルなパワーを感じるわ…あなたも木のエネルギーを感じない？"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "これにはなにか意味があると思うんだ…自然が私たちに何か伝えようとしてるんだよ。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "これにはなにか意味があると思うんだ…自然が私たちに何か伝えようとしてるんだよ。"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "でも、いったいなにを？私には…わからない…でも力強い何かを感じるの… {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:GreenRain",
+          "PageIndex": 1,
+          "DisplayPattern": "でも、いったいなにを？私には…わからない…でも力強い何かを感じるの…"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "あなたは感じる？森が歌っているわ！木々が楽しそうに踊っているの！",
+          "AudioPath": "assets/ja-JP/Emily/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "あなたは感じる？森が歌っているわ！木々が楽しそうに踊っているの！"
+        },
+        {
+          "DialogueFrom": "married_Haley",
+          "DialogueText": "すてきな結婚式だったね…あなたとヘイリーがしあわせそうで、私もうれしいわ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:married_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "すてきな結婚式だったね…あなたとヘイリーがしあわせそうで、私もうれしいわ！"
+        },
+        {
+          "DialogueFrom": "divorced_Haley",
+          "DialogueText": "ヘイリーはプライドが高いから、離婚しても動揺しないけど…そう見せているだけかも。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:divorced_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "ヘイリーはプライドが高いから、離婚しても動揺しないけど…そう見せているだけかも。"
+        },
+        {
+          "DialogueFrom": "eventSeen_471942",
+          "DialogueText": "こんにちは、{Farmer_Name}。今日はきみに会えるような気がしてたんだ。",
+          "AudioPath": "assets/ja-JP/Emily/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:eventSeen_471942",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、。今日はきみに会えるような気がしてたんだ。"
+        },
+        {
+          "DialogueFrom": "eventSeen_463391",
+          "DialogueText": "ケガをした動物を見ると悲しくなるよね… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:eventSeen_463391",
+          "PageIndex": 0,
+          "DisplayPattern": "ケガをした動物を見ると悲しくなるよね…"
+        },
+        {
+          "DialogueFrom": "purchasedAnimal_Sheep",
+          "DialogueText": "羊を飼ったのなら、布がつくれるようになるね！服の仕立てを始めたら、新しい楽しみが増えると思うよ！楽しみにしててね！",
+          "AudioPath": "assets/ja-JP/Emily/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:purchasedAnimal_Sheep",
+          "PageIndex": 0,
+          "DisplayPattern": "羊を飼ったのなら、布がつくれるようになるね！服の仕立てを始めたら、新しい楽しみが増えると思うよ！楽しみにしててね！"
+        },
+        {
+          "DialogueFrom": "eventSeen_11_memory_oneweek",
+          "DialogueText": "レシピなしで料理したことはある？なんだか自由を感じるんだ。",
+          "AudioPath": "assets/ja-JP/Emily/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:eventSeen_11_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "レシピなしで料理したことはある？なんだか自由を感じるんだ。"
+        },
+        {
+          "DialogueFrom": "eventSeen_11_memory_oneweek",
+          "DialogueText": "それに… なにかすごい発見があるかもしれないよ！",
+          "AudioPath": "assets/ja-JP/Emily/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:eventSeen_11_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "それに… なにかすごい発見があるかもしれないよ！"
+        },
+        {
+          "DialogueFrom": "eventSeen_101_memory_oneweek",
+          "DialogueText": "クリントとのお出かけはすごく楽しかったよ！",
+          "AudioPath": "assets/ja-JP/Emily/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:eventSeen_101_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "クリントとのお出かけはすごく楽しかったよ！"
+        },
+        {
+          "DialogueFrom": "eventSeen_101_memory_oneweek",
+          "DialogueText": "でも、クリントったら着いてすぐにルートビアをこぼしちゃって、それからはあまりしゃべってくれなかったんだ。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:eventSeen_101_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "でも、クリントったら着いてすぐにルートビアをこぼしちゃって、それからはあまりしゃべってくれなかったんだ。"
+        },
+        {
+          "DialogueFrom": "eventSeen_4081148",
+          "DialogueText": "ねえ、きみもサムのライブに行ったんでしょ？楽しかったね！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:eventSeen_4081148",
+          "PageIndex": 0,
+          "DisplayPattern": "ねえ、きみもサムのライブに行ったんでしょ？楽しかったね！"
+        },
+        {
+          "DialogueFrom": "eventSeen_4081148",
+          "DialogueText": "でも、あの街はあまり好きになれないな。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:eventSeen_4081148",
+          "PageIndex": 1,
+          "DisplayPattern": "でも、あの街はあまり好きになれないな。"
+        },
+        {
+          "DialogueFrom": "eventSeen_2123343_memory_oneday",
+          "DialogueText": "あのキャンプのことはしばらく忘れられないよ… {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Emily/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:eventSeen_2123343_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "あのキャンプのことはしばらく忘れられないよ…"
+        },
+        {
+          "DialogueFrom": "dating_Emily",
+          "DialogueText": "エミリーは満面の笑みを浮かべている。",
+          "AudioPath": "assets/ja-JP/Emily/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:dating_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "エミリーは満面の笑みを浮かべている。"
+        },
+        {
+          "DialogueFrom": "dating_Emily_memory_oneday",
+          "DialogueText": "これからもずっと、楽しい時間をいっしょに過ごそうね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:dating_Emily_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "これからもずっと、楽しい時間をいっしょに過ごそうね。"
+        },
+        {
+          "DialogueFrom": "married_Shane",
+          "DialogueText": "結婚したんだから、シェーンはもうサルーンに来なくてよくなるね！",
+          "AudioPath": "assets/ja-JP/Emily/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:married_Shane",
+          "PageIndex": 0,
+          "DisplayPattern": "結婚したんだから、シェーンはもうサルーンに来なくてよくなるね！"
+        },
+        {
+          "DialogueFrom": "married_Shane",
+          "DialogueText": "いいことだけど、常連さんがいなくなるのはちょっとさびしいな… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:married_Shane",
+          "PageIndex": 1,
+          "DisplayPattern": "いいことだけど、常連さんがいなくなるのはちょっとさびしいな…"
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "ああ、この場所を気に入ったわ！オウムがいっぱい！",
+          "AudioPath": "assets/ja-JP/Emily/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、この場所を気に入ったわ！オウムがいっぱい！"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "ああ…澄んだ空気は最高だったわ。",
+          "AudioPath": "assets/ja-JP/Emily/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ…澄んだ空気は最高だったわ。"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "感じる？海には癒しのエネルギーがあるの。",
+          "AudioPath": "assets/ja-JP/Emily/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "感じる？海には癒しのエネルギーがあるの。"
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "楽しんでる、{Farmer_Name}？たまには休憩も忘れずにね！",
+          "AudioPath": "assets/ja-JP/Emily/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "楽しんでる、？たまには休憩も忘れずにね！"
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "一度でいいからバーのこっち側に来たかったの！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "一度でいいからバーのこっち側に来たかったの！"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "太陽に心を開くと、自分の中の愛のエネルギーを感じることができるのよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "太陽に心を開くと、自分の中の愛のエネルギーを感じることができるのよ。"
+        },
+        {
+          "DialogueFrom": "Resort_Dance",
+          "DialogueText": "エミリーは音楽に夢中になっている。",
+          "AudioPath": "assets/ja-JP/Emily/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Resort_Dance",
+          "PageIndex": 0,
+          "DisplayPattern": "エミリーは音楽に夢中になっている。"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept_Spouse",
+          "DialogueText": "いいよ、踊ろう。前からずっと楽しみにしてたんだ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:FlowerDance_Accept_Spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "いいよ、踊ろう。前からずっと楽しみにしてたんだ！"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Decline",
+          "DialogueText": "ごめんね…ダンスの相手、もう決まってるんだ。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:FlowerDance_Decline",
+          "PageIndex": 0,
+          "DisplayPattern": "ごめんね…ダンスの相手、もう決まってるんだ。"
+        },
+        {
+          "DialogueFrom": "divorced",
+          "DialogueText": "{Farmer_Name}…きみのせいで、胸がはりさけそう…話すなんて、もうできないよ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:divorced",
+          "PageIndex": 0,
+          "DisplayPattern": "…きみのせいで、胸がはりさけそう…話すなんて、もうできないよ。"
+        },
+        {
+          "DialogueFrom": "divorced",
+          "DialogueText": "おねがい、ひとりにして。心を癒したいの… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:divorced",
+          "PageIndex": 1,
+          "DisplayPattern": "おねがい、ひとりにして。心を癒したいの…"
+        },
+        {
+          "DialogueFrom": "dumped_Girls",
+          "DialogueText": "... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:dumped_Girls",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "breakUp",
+          "DialogueText": "で...でも、私たちは特別な絆を持っていると思ってた...（クンクン） {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:breakUp",
+          "PageIndex": 0,
+          "DisplayPattern": "で...でも、私たちは特別な絆を持っていると思ってた...（クンクン）"
+        },
+        {
+          "DialogueFrom": "reject_866",
+          "DialogueText": "ああ、綺麗だわ…あれが大好きな友達がいるの！でも、彼女はここから遠いところに住んでいるの…",
+          "AudioPath": "assets/ja-JP/Emily/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:reject_866",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、綺麗だわ…あれが大好きな友達がいるの！でも、彼女はここから遠いところに住んでいるの…"
+        },
+        {
+          "DialogueFrom": "secondChance_Girls",
+          "DialogueText": "{Farmer_Name}... あなたに もう一度 チャンスを あげるわ。まだ 信じてるから、あなたは 優しい心の 持ち主だって。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:secondChance_Girls",
+          "PageIndex": 0,
+          "DisplayPattern": "... あなたに もう一度 チャンスを あげるわ。まだ 信じてるから、あなたは 優しい心の 持ち主だって。"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "私とヘイリーは 姉妹だって 話したっけ？おかしいなぁ。",
+          "AudioPath": "assets/ja-JP/Emily/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "私とヘイリーは 姉妹だって 話したっけ？おかしいなぁ。"
+        },
+        {
+          "DialogueFrom": "Mon2",
+          "DialogueText": "わたし、ヒミツの趣味があるの。どんな趣味かはないしょ。",
+          "AudioPath": "assets/ja-JP/Emily/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon2",
+          "PageIndex": 0,
+          "DisplayPattern": "わたし、ヒミツの趣味があるの。どんな趣味かはないしょ。"
+        },
+        {
+          "DialogueFrom": "Mon2",
+          "DialogueText": "仲よくなったら教えてあげるかもね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon2",
+          "PageIndex": 1,
+          "DisplayPattern": "仲よくなったら教えてあげるかもね。"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "この世界には、精霊や魔法のチカラがいっぱい満ちてるんだ…信じない人もいるけど、でもホントなんだよ。",
+          "AudioPath": "assets/ja-JP/Emily/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "この世界には、精霊や魔法のチカラがいっぱい満ちてるんだ…信じない人もいるけど、でもホントなんだよ。"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "目を見ればわかるよ…きみも、目に見えない世界を信じてるんでしょ。わたしみたいにね。",
+          "AudioPath": "assets/ja-JP/Emily/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "目を見ればわかるよ…きみも、目に見えない世界を信じてるんでしょ。わたしみたいにね。"
+        },
+        {
+          "DialogueFrom": "Mon6",
+          "DialogueText": "ヘイリーが 仕事につくか、 料理か掃除の お手伝いを してくれればなぁ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon6",
+          "PageIndex": 0,
+          "DisplayPattern": "ヘイリーが 仕事につくか、 料理か掃除の お手伝いを してくれればなぁ。"
+        },
+        {
+          "DialogueFrom": "Mon6",
+          "DialogueText": "たぶん、 玉の輿に のろうと してるんじゃないかな。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon6",
+          "PageIndex": 1,
+          "DisplayPattern": "たぶん、 玉の輿に のろうと してるんじゃないかな。"
+        },
+        {
+          "DialogueFrom": "Mon6_inlaw_Haley",
+          "DialogueText": "ヘイリーが いなくなってから、 いろんな物事が ずっと簡単に 済むように なったのよ。",
+          "AudioPath": "assets/ja-JP/Emily/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon6_inlaw_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "ヘイリーが いなくなってから、 いろんな物事が ずっと簡単に 済むように なったのよ。"
+        },
+        {
+          "DialogueFrom": "Mon8",
+          "DialogueText": "いい人なのに幸せをつかめない、この町にはそんな人もいるの。なんだかかなしいよね。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon8",
+          "PageIndex": 0,
+          "DisplayPattern": "いい人なのに幸せをつかめない、この町にはそんな人もいるの。なんだかかなしいよね。"
+        },
+        {
+          "DialogueFrom": "Mon8",
+          "DialogueText": "ほら、酒場ではたらいてると、みんなの悩み事が耳に入ってくるから。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Mon8",
+          "PageIndex": 1,
+          "DisplayPattern": "ほら、酒場ではたらいてると、みんなの悩み事が耳に入ってくるから。"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "ガスの酒場で パートをしてるの。お給料は まずまずね。",
+          "AudioPath": "assets/ja-JP/Emily/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "ガスの酒場で パートをしてるの。お給料は まずまずね。"
+        },
+        {
+          "DialogueFrom": "Tue4",
+          "DialogueText": "生活のために ガスのところで 働いてるんだけど… 私は 仕立てが したいの。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/69.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "生活のために ガスのところで 働いてるんだけど… 私は 仕立てが したいの。"
+        },
+        {
+          "DialogueFrom": "Tue4",
+          "DialogueText": "この服も 私の 手作りなのよ。",
+          "AudioPath": "assets/ja-JP/Emily/70.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Tue4",
+          "PageIndex": 1,
+          "DisplayPattern": "この服も 私の 手作りなのよ。"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "わあ、こんにちは…たずねてきてくれるなんてうれしいな。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/71.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "わあ、こんにちは…たずねてきてくれるなんてうれしいな。"
+        },
+        {
+          "DialogueFrom": "Tue8",
+          "DialogueText": "ねえ、{Farmer_Name}…わたしたちの未来は、きっと輝いてるよ。",
+          "AudioPath": "assets/ja-JP/Emily/72.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Tue8",
+          "PageIndex": 0,
+          "DisplayPattern": "ねえ、…わたしたちの未来は、きっと輝いてるよ。"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "過去の 失われた 文明が 作った、魔力を持った 珍しい指輪の ウワサを 聞いたことがあるわ。でも 本当か どうかは 分からないかな。",
+          "AudioPath": "assets/ja-JP/Emily/73.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "過去の 失われた 文明が 作った、魔力を持った 珍しい指輪の ウワサを 聞いたことがあるわ。でも 本当か どうかは 分からないかな。"
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "魚を釣るの？おねがい、かわいそうなお魚にやさしくしてあげてね。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/74.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "魚を釣るの？おねがい、かわいそうなお魚にやさしくしてあげてね。"
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "どんな動物にも、きちんと敬意をはらわないと。それがぬめぬめした生き物でもね。",
+          "AudioPath": "assets/ja-JP/Emily/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Wed4",
+          "PageIndex": 1,
+          "DisplayPattern": "どんな動物にも、きちんと敬意をはらわないと。それがぬめぬめした生き物でもね。"
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "信じるの…あたえられた運命の道を、自分は毎日一歩ずつ進んでいるんだって。",
+          "AudioPath": "assets/ja-JP/Emily/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "信じるの…あたえられた運命の道を、自分は毎日一歩ずつ進んでいるんだって。"
+        },
+        {
+          "DialogueFrom": "Wed8",
+          "DialogueText": "ねえ、{Farmer_Name}.",
+          "AudioPath": "assets/ja-JP/Emily/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Wed8",
+          "PageIndex": 0,
+          "DisplayPattern": "ねえ、."
+        },
+        {
+          "DialogueFrom": "Wed8",
+          "DialogueText": "私たちは仲良くなれるって、はじめからわかってたんだ。だって、星がそう教えてくれたんだもの！",
+          "AudioPath": "assets/ja-JP/Emily/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Wed8",
+          "PageIndex": 1,
+          "DisplayPattern": "私たちは仲良くなれるって、はじめからわかってたんだ。だって、星がそう教えてくれたんだもの！"
+        },
+        {
+          "DialogueFrom": "Wed8",
+          "DialogueText": "こんにちは、{Farmer_Name}。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Wed8",
+          "PageIndex": 2,
+          "DisplayPattern": "こんにちは、。"
+        },
+        {
+          "DialogueFrom": "Wed8",
+          "DialogueText": "こんなに仲良くなれるって、わたし、さいしょからわかってたよ…",
+          "AudioPath": "assets/ja-JP/Emily/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Wed8",
+          "PageIndex": 3,
+          "DisplayPattern": "こんなに仲良くなれるって、わたし、さいしょからわかってたよ…"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "あまり無茶な 農業を していないわよね。この谷の 生態系は 微細だから。",
+          "AudioPath": "assets/ja-JP/Emily/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "あまり無茶な 農業を していないわよね。この谷の 生態系は 微細だから。"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "なんで 分かるかって？持ち前の カンの 鋭さかしらね！",
+          "AudioPath": "assets/ja-JP/Emily/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "なんで 分かるかって？持ち前の カンの 鋭さかしらね！"
+        },
+        {
+          "DialogueFrom": "Thu4",
+          "DialogueText": "ときどき、花が私に話しかけてくれるの…ひとりひとり、みんな違うお話を聞かせてくれるんだ！",
+          "AudioPath": "assets/ja-JP/Emily/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Thu4",
+          "PageIndex": 0,
+          "DisplayPattern": "ときどき、花が私に話しかけてくれるの…ひとりひとり、みんな違うお話を聞かせてくれるんだ！"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "ああ、春ね。パステルカラーの 季節。色合いは パステルより 宝石のほうが 好きだけど。",
+          "AudioPath": "assets/ja-JP/Emily/84.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、春ね。パステルカラーの 季節。色合いは パステルより 宝石のほうが 好きだけど。"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "あら、ごめん！またファッションのことで 独り言 してた？",
+          "AudioPath": "assets/ja-JP/Emily/85.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "あら、ごめん！またファッションのことで 独り言 してた？"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "自分の服を 作るのは 好きだけど、 生地を 手に入れるのが 難しいのよね。",
+          "AudioPath": "assets/ja-JP/Emily/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "自分の服を 作るのは 好きだけど、 生地を 手に入れるのが 難しいのよね。"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "町まで 遠出しなきゃ いけないし。",
+          "AudioPath": "assets/ja-JP/Emily/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "町まで 遠出しなきゃ いけないし。"
+        },
+        {
+          "DialogueFrom": "Sat6",
+          "DialogueText": "布の手ざわりについて考えたことある、{Farmer_Name}？ひとつひとつの手ざわりごとに、ぜんぜんちがった個性があるの…わたしのドレス、さわってみて…ほらね？",
+          "AudioPath": "assets/ja-JP/Emily/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Sat6",
+          "PageIndex": 0,
+          "DisplayPattern": "布の手ざわりについて考えたことある、？ひとつひとつの手ざわりごとに、ぜんぜんちがった個性があるの…わたしのドレス、さわってみて…ほらね？"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "こんにちは、{Farmer_Name}さん！",
+          "AudioPath": "assets/ja-JP/Emily/89.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、さん！"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "きみは 羊を 育ててるかしら？羊毛を 美しい 生地に することができるわよ！",
+          "AudioPath": "assets/ja-JP/Emily/90.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "きみは 羊を 育ててるかしら？羊毛を 美しい 生地に することができるわよ！"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "機織り機が 必要だけどね。作り方さえ 知っていれば、 それも 作ることが できるはず。",
+          "AudioPath": "assets/ja-JP/Emily/91.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Sun",
+          "PageIndex": 2,
+          "DisplayPattern": "機織り機が 必要だけどね。作り方さえ 知っていれば、 それも 作ることが できるはず。"
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "この家はね、 両親が 残してくれたものなの。その両親は 2年前から 世界中を 旅してるんだ。",
+          "AudioPath": "assets/ja-JP/Emily/92.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Sun4",
+          "PageIndex": 0,
+          "DisplayPattern": "この家はね、 両親が 残してくれたものなの。その両親は 2年前から 世界中を 旅してるんだ。"
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "いつ 戻ってくるかは 分からないの。",
+          "AudioPath": "assets/ja-JP/Emily/93.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Sun4",
+          "PageIndex": 1,
+          "DisplayPattern": "いつ 戻ってくるかは 分からないの。"
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "ここでの生活は 楽しいけどね。景観も、 町の住み心地も良いから。",
+          "AudioPath": "assets/ja-JP/Emily/94.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:Sun4",
+          "PageIndex": 2,
+          "DisplayPattern": "ここでの生活は 楽しいけどね。景観も、 町の住み心地も良いから。"
+        },
+        {
+          "DialogueFrom": "event_dance1",
+          "DialogueText": "ありがとう！",
+          "AudioPath": "assets/ja-JP/Emily/95.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:event_dance1",
+          "PageIndex": 0,
+          "DisplayPattern": "ありがとう！"
+        },
+        {
+          "DialogueFrom": "event_dance2",
+          "DialogueText": "あー…わかった。気に入らなくて ごめんね。3ヶ月も かけて練習したのが 無駄に なっちゃった なんて… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/96.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:event_dance2",
+          "PageIndex": 0,
+          "DisplayPattern": "あー…わかった。気に入らなくて ごめんね。3ヶ月も かけて練習したのが 無駄に なっちゃった なんて…"
+        },
+        {
+          "DialogueFrom": "event_dance3",
+          "DialogueText": "本当に そう思う？期待通りでよかった！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/97.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:event_dance3",
+          "PageIndex": 0,
+          "DisplayPattern": "本当に そう思う？期待通りでよかった！"
+        },
+        {
+          "DialogueFrom": "event_dance3",
+          "DialogueText": "気に入ってくれて嬉しいわ。",
+          "AudioPath": "assets/ja-JP/Emily/98.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:event_dance3",
+          "PageIndex": 1,
+          "DisplayPattern": "気に入ってくれて嬉しいわ。"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "ヘイリーは 好き嫌いが 激しいのよ。だから 料理が 大変なの。",
+          "AudioPath": "assets/ja-JP/Emily/99.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "ヘイリーは 好き嫌いが 激しいのよ。だから 料理が 大変なの。"
+        },
+        {
+          "DialogueFrom": "summer_Mon4",
+          "DialogueText": "わたしは長生きして、いろんなことにチャレンジしたいの。だから健康にいい食事をたいせつにしてるんだ。",
+          "AudioPath": "assets/ja-JP/Emily/100.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "わたしは長生きして、いろんなことにチャレンジしたいの。だから健康にいい食事をたいせつにしてるんだ。"
+        },
+        {
+          "DialogueFrom": "summer_Mon_inlaw_Haley",
+          "DialogueText": "ヘイリーが 家から 出て以来、 彼女との関係が ずっと 良くなったのよ。また 家に 来てくれないかな！",
+          "AudioPath": "assets/ja-JP/Emily/101.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Mon_inlaw_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "ヘイリーが 家から 出て以来、 彼女との関係が ずっと 良くなったのよ。また 家に 来てくれないかな！"
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "こんにちは、{Farmer_Name}。",
+          "AudioPath": "assets/ja-JP/Emily/102.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、。"
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "今日は あんまり やる気が無いの。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/103.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "今日は あんまり やる気が無いの。"
+        },
+        {
+          "DialogueFrom": "summer_Tue6",
+          "DialogueText": "ライナスを見てると気の毒になるの。みんなわるく言うけど、あの人はただ、わたしたちとちがうやり方で暮らしてるだけ。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/104.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "ライナスを見てると気の毒になるの。みんなわるく言うけど、あの人はただ、わたしたちとちがうやり方で暮らしてるだけ。"
+        },
+        {
+          "DialogueFrom": "summer_Tue6",
+          "DialogueText": "みんながみんな、自分とちがう人でも認められるようになればいいのにね。",
+          "AudioPath": "assets/ja-JP/Emily/105.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Tue6",
+          "PageIndex": 1,
+          "DisplayPattern": "みんながみんな、自分とちがう人でも認められるようになればいいのにね。"
+        },
+        {
+          "DialogueFrom": "summer_Sun6",
+          "DialogueText": "あら、{Farmer_Name}！私達、 かなり仲良くなったと 思わない？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/106.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Sun6",
+          "PageIndex": 0,
+          "DisplayPattern": "あら、！私達、 かなり仲良くなったと 思わない？"
+        },
+        {
+          "DialogueFrom": "summer_Sun6",
+          "DialogueText": "私はそう思ってる。きみって、いい人だからね。",
+          "AudioPath": "assets/ja-JP/Emily/107_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Sun6",
+          "PageIndex": 1,
+          "DisplayPattern": "私はそう思ってる。きみって、いい人だからね。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "summer_Sun6",
+          "DialogueText": "とっても嬉しいな。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/108_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Sun6",
+          "PageIndex": 2,
+          "DisplayPattern": "とっても嬉しいな。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "summer_Sun8",
+          "DialogueText": "あ、{Farmer_Name}！わたしたち、 もうすっかり友だちだよね。でしょ？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/109.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Sun8",
+          "PageIndex": 0,
+          "DisplayPattern": "あ、！わたしたち、 もうすっかり友だちだよね。でしょ？"
+        },
+        {
+          "DialogueFrom": "summer_Sun8",
+          "DialogueText": "ヘンな言いかたに聞こえるよね。でも、わたしはいつもこうやって確認することにしてるんだ。",
+          "AudioPath": "assets/ja-JP/Emily/110.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Sun8",
+          "PageIndex": 1,
+          "DisplayPattern": "ヘンな言いかたに聞こえるよね。でも、わたしはいつもこうやって確認することにしてるんだ。"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "夏は あんまり 雨が 降らないのよね。",
+          "AudioPath": "assets/ja-JP/Emily/111.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "夏は あんまり 雨が 降らないのよね。"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "あなたにとっては 水やりの 頻度が 増えるのかな？",
+          "AudioPath": "assets/ja-JP/Emily/112.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "あなたにとっては 水やりの 頻度が 増えるのかな？"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "それとも、 夏の 気候は 好きだったりする？",
+          "AudioPath": "assets/ja-JP/Emily/113.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "それとも、 夏の 気候は 好きだったりする？"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "ハチとチョウは、 私にとっては 特別なお友達なのよ！",
+          "AudioPath": "assets/ja-JP/Emily/114.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "ハチとチョウは、 私にとっては 特別なお友達なのよ！"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "私の手が 空いてたら、 きみの お手伝いを したいな！",
+          "AudioPath": "assets/ja-JP/Emily/115.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "私の手が 空いてたら、 きみの お手伝いを したいな！"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "でも、 副業なんてしたら ガスが怒りそう… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/116.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "でも、 副業なんてしたら ガスが怒りそう…"
+        },
+        {
+          "DialogueFrom": "summer_Fri6",
+          "DialogueText": "いつかわたしが酒場の仕事をやめたいって言ったら、ガスはきっとわかってくれると思うんだ。",
+          "AudioPath": "assets/ja-JP/Emily/117.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "いつかわたしが酒場の仕事をやめたいって言ったら、ガスはきっとわかってくれると思うんだ。"
+        },
+        {
+          "DialogueFrom": "summer_Fri6",
+          "DialogueText": "世界はもっと広いんだもの。わたしも、いつまでもウエイトレスではいられないよ。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/118.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "世界はもっと広いんだもの。わたしも、いつまでもウエイトレスではいられないよ。"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "あまり働きすぎると、 ハーヴィーの 病院に 担ぎ込まれちゃうわよ！",
+          "AudioPath": "assets/ja-JP/Emily/119.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "あまり働きすぎると、 ハーヴィーの 病院に 担ぎ込まれちゃうわよ！"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "あら、{Farmer_Name}！",
+          "AudioPath": "assets/ja-JP/Emily/120.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "あら、！"
+        },
+        {
+          "DialogueFrom": "summer_Sun4",
+          "DialogueText": "毎年この時期になると、遠くからわたしの友だちがたずねてきてくれるの…あ、オウムくんのことなんだけどね！",
+          "AudioPath": "assets/ja-JP/Emily/121.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:summer_Sun4",
+          "PageIndex": 0,
+          "DisplayPattern": "毎年この時期になると、遠くからわたしの友だちがたずねてきてくれるの…あ、オウムくんのことなんだけどね！"
+        },
+        {
+          "DialogueFrom": "fall_1",
+          "DialogueText": "秋が来たわね。そろそろ 新しい 作物を 植える時期かしら。",
+          "AudioPath": "assets/ja-JP/Emily/122.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_1",
+          "PageIndex": 0,
+          "DisplayPattern": "秋が来たわね。そろそろ 新しい 作物を 植える時期かしら。"
+        },
+        {
+          "DialogueFrom": "fall_15",
+          "DialogueText": "今日はサンディに会いに行くんだ。私たち親友なの！",
+          "AudioPath": "assets/ja-JP/Emily/123.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_15",
+          "PageIndex": 0,
+          "DisplayPattern": "今日はサンディに会いに行くんだ。私たち親友なの！"
+        },
+        {
+          "DialogueFrom": "fall_15",
+          "DialogueText": "バスが修理されて本当に良かったわ。",
+          "AudioPath": "assets/ja-JP/Emily/124.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_15",
+          "PageIndex": 1,
+          "DisplayPattern": "バスが修理されて本当に良かったわ。"
+        },
+        {
+          "DialogueFrom": "fall_15",
+          "DialogueText": "（ハァ）…あの古いバスが修理されてたら、サンディに会いに行けたのにな… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/125.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_15",
+          "PageIndex": 2,
+          "DisplayPattern": "（ハァ）…あの古いバスが修理されてたら、サンディに会いに行けたのにな…"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "今日は ピクニックに うってつけの 天気ね。",
+          "AudioPath": "assets/ja-JP/Emily/126.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は ピクニックに うってつけの 天気ね。"
+        },
+        {
+          "DialogueFrom": "fall_Mon8",
+          "DialogueText": "仕事の 予定が 無かったら、 一緒に ピクニックしようって 誘ってたかも！",
+          "AudioPath": "assets/ja-JP/Emily/127.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Mon8",
+          "PageIndex": 0,
+          "DisplayPattern": "仕事の 予定が 無かったら、 一緒に ピクニックしようって 誘ってたかも！"
+        },
+        {
+          "DialogueFrom": "fall_Tue",
+          "DialogueText": "こんにちは。いい夏をすごせたかしら？",
+          "AudioPath": "assets/ja-JP/Emily/128.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは。いい夏をすごせたかしら？"
+        },
+        {
+          "DialogueFrom": "fall_Tue4",
+          "DialogueText": "あら、{Farmer_Name}！今年の夏は、 牧場で大きな 成果を 上げられたかしら？",
+          "AudioPath": "assets/ja-JP/Emily/129.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "あら、！今年の夏は、 牧場で大きな 成果を 上げられたかしら？"
+        },
+        {
+          "DialogueFrom": "fall_Tue4",
+          "DialogueText": "だって、 きみは 農作業の プロだからね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/130.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Tue4",
+          "PageIndex": 1,
+          "DisplayPattern": "だって、 きみは 農作業の プロだからね。"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "私の友達が、 砂漠で店を 開いてるの。行くことになったら、 よろしく言っといてね。",
+          "AudioPath": "assets/ja-JP/Emily/131.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "私の友達が、 砂漠で店を 開いてるの。行くことになったら、 よろしく言っといてね。"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "そこでは 珍品が 並んでるかも 知れないわよ。",
+          "AudioPath": "assets/ja-JP/Emily/132.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "そこでは 珍品が 並んでるかも 知れないわよ。"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "クリントとは 友達なの？彼のことを よく知ると いい人だって 分かるわ。",
+          "AudioPath": "assets/ja-JP/Emily/133.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "クリントとは 友達なの？彼のことを よく知ると いい人だって 分かるわ。"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "彼は毎日 一人で 店で働いてるの。でも 内気だから 新しい 友達が なかなかできなくてね。",
+          "AudioPath": "assets/ja-JP/Emily/134.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "彼は毎日 一人で 店で働いてるの。でも 内気だから 新しい 友達が なかなかできなくてね。"
+        },
+        {
+          "DialogueFrom": "fall_Thu8",
+          "DialogueText": "わたし、クリントを怒らせたみたい。彼、ぜんぜんわたしのほうを見てくれなくなったの… {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/135.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Thu8",
+          "PageIndex": 0,
+          "DisplayPattern": "わたし、クリントを怒らせたみたい。彼、ぜんぜんわたしのほうを見てくれなくなったの…"
+        },
+        {
+          "DialogueFrom": "fall_Thu8",
+          "DialogueText": "ずっと友だちだと思ってたのにな。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/136.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Thu8",
+          "PageIndex": 1,
+          "DisplayPattern": "ずっと友だちだと思ってたのにな。"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "いつもながら 美しい 秋の日ね。",
+          "AudioPath": "assets/ja-JP/Emily/137.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "いつもながら 美しい 秋の日ね。"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "すぐに 過ぎるのが 残念だわ。",
+          "AudioPath": "assets/ja-JP/Emily/138.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "すぐに 過ぎるのが 残念だわ。"
+        },
+        {
+          "DialogueFrom": "fall_Fri6",
+          "DialogueText": "きょうも空気がきれい！こういうの、ほんとにステキだよね。",
+          "AudioPath": "assets/ja-JP/Emily/139.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "きょうも空気がきれい！こういうの、ほんとにステキだよね。"
+        },
+        {
+          "DialogueFrom": "fall_Fri6",
+          "DialogueText": "でもJoja社のせいで、このきれいな空気が汚れちゃったらって思うとこわいんだ。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/140.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "でもJoja社のせいで、このきれいな空気が汚れちゃったらって思うとこわいんだ。"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "広い心を 持っていれば、 興味深いものが きみの中に 根付くかもね。",
+          "AudioPath": "assets/ja-JP/Emily/141.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "広い心を 持っていれば、 興味深いものが きみの中に 根付くかもね。"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "さて、 今日の 調子はどう？",
+          "AudioPath": "assets/ja-JP/Emily/142.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "さて、 今日の 調子はどう？"
+        },
+        {
+          "DialogueFrom": "fall_Sat6",
+          "DialogueText": "私は特に 大きな 計画を 持っていないわ。未来について あんまり 悩みたくないからね。",
+          "AudioPath": "assets/ja-JP/Emily/143.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Sat6",
+          "PageIndex": 0,
+          "DisplayPattern": "私は特に 大きな 計画を 持っていないわ。未来について あんまり 悩みたくないからね。"
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "天気のいい 日曜日は 心が弾むよね！",
+          "AudioPath": "assets/ja-JP/Emily/144.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "天気のいい 日曜日は 心が弾むよね！"
+        },
+        {
+          "DialogueFrom": "fall_Sun6",
+          "DialogueText": "いろんなバリアが、わたしたちを自由にさせまいってジャマしてる。どうしてみんな、バリアから自由になろうとしないんだろう？",
+          "AudioPath": "assets/ja-JP/Emily/145.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Sun6",
+          "PageIndex": 0,
+          "DisplayPattern": "いろんなバリアが、わたしたちを自由にさせまいってジャマしてる。どうしてみんな、バリアから自由になろうとしないんだろう？"
+        },
+        {
+          "DialogueFrom": "fall_Sun6",
+          "DialogueText": "わたし？ふふ、昔から言うでしょ…“野生のジュニモは囲えない”ってね。",
+          "AudioPath": "assets/ja-JP/Emily/146.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Sun6",
+          "PageIndex": 1,
+          "DisplayPattern": "わたし？ふふ、昔から言うでしょ…“野生のジュニモは囲えない”ってね。"
+        },
+        {
+          "DialogueFrom": "fall_Sun10",
+          "DialogueText": "{Farmer_Name}ったら、本当に いい人なのね！お友達になってくれて ありがとう。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/147.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:fall_Sun10",
+          "PageIndex": 0,
+          "DisplayPattern": "ったら、本当に いい人なのね！お友達になってくれて ありがとう。"
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "ツララが 頭の上に 落ちないよう 気をつけてね！",
+          "AudioPath": "assets/ja-JP/Emily/148.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "ツララが 頭の上に 落ちないよう 気をつけてね！"
+        },
+        {
+          "DialogueFrom": "winter_Mon10",
+          "DialogueText": "ツララが 頭の上に 落ちないよう 気をつけてね！だって大切な お友達が 傷つくのは イヤだから！",
+          "AudioPath": "assets/ja-JP/Emily/149.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Mon10",
+          "PageIndex": 0,
+          "DisplayPattern": "ツララが 頭の上に 落ちないよう 気をつけてね！だって大切な お友達が 傷つくのは イヤだから！"
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "こんにちは、{Farmer_Name}！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/150.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、！"
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "農作業の 腕前、 かなり 上がったんじゃない？",
+          "AudioPath": "assets/ja-JP/Emily/151.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "農作業の 腕前、 かなり 上がったんじゃない？"
+        },
+        {
+          "DialogueFrom": "winter_Tue2",
+          "DialogueText": "りっぱな牧場主にはなれた？ふふ、きみならきっと大丈夫！",
+          "AudioPath": "assets/ja-JP/Emily/152.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Tue2",
+          "PageIndex": 0,
+          "DisplayPattern": "りっぱな牧場主にはなれた？ふふ、きみならきっと大丈夫！"
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "髪の毛が凍っちゃったみたい… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/153.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "髪の毛が凍っちゃったみたい…"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "ヘイリーと 私は 大きい家に住むの 苦手なのよ。掃除するのが大変だからね。",
+          "AudioPath": "assets/ja-JP/Emily/154.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "ヘイリーと 私は 大きい家に住むの 苦手なのよ。掃除するのが大変だからね。"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "でもまあ、文句なんて 言ってられないかな。",
+          "AudioPath": "assets/ja-JP/Emily/155.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "でもまあ、文句なんて 言ってられないかな。"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "きみの家は 居心地が 良さそうね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/156.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Wed",
+          "PageIndex": 2,
+          "DisplayPattern": "きみの家は 居心地が 良さそうね。"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "お魚さん、 すごく 寒がっていそう。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/157.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "お魚さん、 すごく 寒がっていそう。"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "冬眠する 魚って いるの かしら？ディメトリウスに 聞いてみようかな。",
+          "AudioPath": "assets/ja-JP/Emily/158.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "冬眠する 魚って いるの かしら？ディメトリウスに 聞いてみようかな。"
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "私の手が 空いていたら、 湖にある あの洞窟へ 一緒に 行けたのになぁ。",
+          "AudioPath": "assets/ja-JP/Emily/159.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "私の手が 空いていたら、 湖にある あの洞窟へ 一緒に 行けたのになぁ。"
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "洞窟の 中には キレイな 結晶が あるはず。",
+          "AudioPath": "assets/ja-JP/Emily/160.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "洞窟の 中には キレイな 結晶が あるはず。"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "「豆のホットポット」の 作り方を 知ってる？",
+          "AudioPath": "assets/ja-JP/Emily/161.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "「豆のホットポット」の 作り方を 知ってる？"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "私の 好物なのよ。 {Portrait:Happy}%revealtaste:Emily:207",
+          "AudioPath": "assets/ja-JP/Emily/162.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "私の 好物なのよ。%revealtaste:Emily:207"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "でも冬だと 新鮮な食材が 手に入りにくいんだよね。",
+          "AudioPath": "assets/ja-JP/Emily/163.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "でも冬だと 新鮮な食材が 手に入りにくいんだよね。"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "こんにちは！",
+          "AudioPath": "assets/ja-JP/Emily/164.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは！"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "…ん？",
+          "AudioPath": "assets/ja-JP/Emily/165.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "…ん？"
+        },
+        {
+          "DialogueFrom": "winter_Sun6",
+          "DialogueText": "時々　妹とは ケンカするんだけど、 いなくなったら さびしくなっちゃうかも。",
+          "AudioPath": "assets/ja-JP/Emily/166.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Sun6",
+          "PageIndex": 0,
+          "DisplayPattern": "時々　妹とは ケンカするんだけど、 いなくなったら さびしくなっちゃうかも。"
+        },
+        {
+          "DialogueFrom": "winter_Sun6",
+          "DialogueText": "いつか、 あの子は とってもステキな レディになると思うの…今言ったことは 内緒よ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/167.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Sun6",
+          "PageIndex": 1,
+          "DisplayPattern": "いつか、 あの子は とってもステキな レディになると思うの…今言ったことは 内緒よ。"
+        },
+        {
+          "DialogueFrom": "winter_Sun6",
+          "DialogueText": "それで、 何か聞きたいことは ある？",
+          "AudioPath": "assets/ja-JP/Emily/168.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Sun6",
+          "PageIndex": 2,
+          "DisplayPattern": "それで、 何か聞きたいことは ある？"
+        },
+        {
+          "DialogueFrom": "winter_Sun6_inlaw_Haley",
+          "DialogueText": "妹に よろしく言っておいてね！それと、 明日会うよう伝えてほしいな。",
+          "AudioPath": "assets/ja-JP/Emily/169.ogg",
+          "TranslationKey": "Characters/Dialogue/Emily:winter_Sun6_inlaw_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "妹に よろしく言っておいてね！それと、 明日会うよう伝えてほしいな。"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Emily0",
+          "DialogueText": "ねえ、信じられる？わたしたち、いっしょに暮らすんだよ。家族以外の人と暮らすなんて、これがはじめて。",
+          "AudioPath": "assets/ja-JP/Emily/170.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Emily0",
+          "PageIndex": 0,
+          "DisplayPattern": "ねえ、信じられる？わたしたち、いっしょに暮らすんだよ。家族以外の人と暮らすなんて、これがはじめて。"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Emily0",
+          "DialogueText": "なんだか…ワクワクするな。",
+          "AudioPath": "assets/ja-JP/Emily/171.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Emily0",
+          "PageIndex": 1,
+          "DisplayPattern": "なんだか…ワクワクするな。"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Emily1",
+          "DialogueText": "ずっと感じてたんだ、わたしたちのあいだには、なにか特別なことが起きるはずだって…まさか、こんなことが起きるなんて思わなかったけどね！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/172.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Emily1",
+          "PageIndex": 0,
+          "DisplayPattern": "ずっと感じてたんだ、わたしたちのあいだには、なにか特別なことが起きるはずだって…まさか、こんなことが起きるなんて思わなかったけどね！"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Emily1",
+          "DialogueText": "ほら、オウムくんもワクワクしてるよ。",
+          "AudioPath": "assets/ja-JP/Emily/173.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Emily1",
+          "PageIndex": 1,
+          "DisplayPattern": "ほら、オウムくんもワクワクしてるよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_0",
+          "DialogueText": "… まだ 愛してくれてる？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/174.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_0",
+          "PageIndex": 0,
+          "DisplayPattern": "… まだ 愛してくれてる？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_1",
+          "DialogueText": "はぁ… たぶん、 結婚するには 早すぎた かも。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/175.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_1",
+          "PageIndex": 0,
+          "DisplayPattern": "はぁ… たぶん、 結婚するには 早すぎた かも。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_2",
+          "DialogueText": "私と 一緒で まだ 楽しめてる？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/176.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_2",
+          "PageIndex": 0,
+          "DisplayPattern": "私と 一緒で まだ 楽しめてる？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_3",
+          "DialogueText": "何か 悪いことを した？最近 様子が おかしいよ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/177.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_3",
+          "PageIndex": 0,
+          "DisplayPattern": "何か 悪いことを した？最近 様子が おかしいよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_4",
+          "DialogueText": "外の世界に 何が あるか 考えたことは ある？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/178.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_4",
+          "PageIndex": 0,
+          "DisplayPattern": "外の世界に 何が あるか 考えたことは ある？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_5",
+          "DialogueText": "前は もっと ロマンチックだったのに… どうしたの？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/179.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_5",
+          "PageIndex": 0,
+          "DisplayPattern": "前は もっと ロマンチックだったのに… どうしたの？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_5",
+          "DialogueText": "今の自分は あの時ほど 若くないけど… そのために結婚したのかな？ {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Emily/180.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_5",
+          "PageIndex": 1,
+          "DisplayPattern": "今の自分は あの時ほど 若くないけど… そのために結婚したのかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_6",
+          "DialogueText": "人生は 短いし 一回きりだけど… このままで 本当に いいの？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/181.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_6",
+          "PageIndex": 0,
+          "DisplayPattern": "人生は 短いし 一回きりだけど… このままで 本当に いいの？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_7",
+          "DialogueText": "以前は やさしかったけど… 今は 私が暖かい 夕食を 作ってる時だけ 我慢 してるように 見える。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/182.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_7",
+          "PageIndex": 0,
+          "DisplayPattern": "以前は やさしかったけど… 今は 私が暖かい 夕食を 作ってる時だけ 我慢 してるように 見える。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_8",
+          "DialogueText": "最近、 私に対して 冷たくない？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/183.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_8",
+          "PageIndex": 0,
+          "DisplayPattern": "最近、 私に対して 冷たくない？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Bad_9",
+          "DialogueText": "もう少し あなたの ために 何か できたらなぁ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/184.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_9",
+          "PageIndex": 0,
+          "DisplayPattern": "もう少し あなたの ために 何か できたらなぁ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/fall_1",
+          "DialogueText": "もう1年も半分すぎちゃったんだね。信じられる？",
+          "AudioPath": "assets/ja-JP/Emily/185.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:fall_1",
+          "PageIndex": 0,
+          "DisplayPattern": "もう1年も半分すぎちゃったんだね。信じられる？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/fall_15",
+          "DialogueText": "明日は どんなものを 出品するか、 君は 決めてあるかな？",
+          "AudioPath": "assets/ja-JP/Emily/186.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_15",
+          "PageIndex": 0,
+          "DisplayPattern": "明日は どんなものを 出品するか、 君は 決めてあるかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/fall_25",
+          "DialogueText": "わたしたちのからだは、季節に合わせて変化するんだよ。秋の太陽の色と光をあびると、厳しい冬にむけて準備をはじめるの。",
+          "AudioPath": "assets/ja-JP/Emily/187.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:fall_25",
+          "PageIndex": 0,
+          "DisplayPattern": "わたしたちのからだは、季節に合わせて変化するんだよ。秋の太陽の色と光をあびると、厳しい冬にむけて準備をはじめるの。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/fall_25",
+          "DialogueText": "わたしたちの遠い祖先にとって、この感覚はとっても重要だったんだ。現代の私たちにとっては、暮らしのなかでかすかに感じるノイズにすぎないけどね。",
+          "AudioPath": "assets/ja-JP/Emily/188.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:fall_25",
+          "PageIndex": 1,
+          "DisplayPattern": "わたしたちの遠い祖先にとって、この感覚はとっても重要だったんだ。現代の私たちにとっては、暮らしのなかでかすかに感じるノイズにすぎないけどね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/fall_26",
+          "DialogueText": "明日の夜、 スピリットイブへ 一緒に 行かない？",
+          "AudioPath": "assets/ja-JP/Emily/189.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_26",
+          "PageIndex": 0,
+          "DisplayPattern": "明日の夜、 スピリットイブへ 一緒に 行かない？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/fall_8",
+          "DialogueText": "もうすぐ 冬だね。暖房を ちゃんと チェックして、 水道の 蛇口を 閉めて、 家に スキマが ないか 確認 しないと。",
+          "AudioPath": "assets/ja-JP/Emily/190.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 0,
+          "DisplayPattern": "もうすぐ 冬だね。暖房を ちゃんと チェックして、 水道の 蛇口を 閉めて、 家に スキマが ないか 確認 しないと。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/fall_8",
+          "DialogueText": "大丈夫、 全部 やってあげるから。",
+          "AudioPath": "assets/ja-JP/Emily/191.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 1,
+          "DisplayPattern": "大丈夫、 全部 やってあげるから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/fall_Emily",
+          "DialogueText": "今朝は特製スーパースムージーを飲んだから、すーっごくエナジーが満ちてる感じがする！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/192.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:fall_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "今朝は特製スーパースムージーを飲んだから、すーっごくエナジーが満ちてる感じがする！"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/funLeave_Emily",
+          "DialogueText": "きょうは町に行って、そのあとは酒場を手伝いに行くよ。いい1日になるといいね。",
+          "AudioPath": "assets/ja-JP/Emily/193.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:funLeave_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "きょうは町に行って、そのあとは酒場を手伝いに行くよ。いい1日になるといいね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/funReturn_Emily",
+          "DialogueText": "きょうはいい1日だったよ。ときどきは出かけるのもいいね。",
+          "AudioPath": "assets/ja-JP/Emily/194.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:funReturn_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "きょうはいい1日だったよ。ときどきは出かけるのもいいね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_0",
+          "DialogueText": "結婚できたなんて いまだに 信じられない… {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Emily/195.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_0",
+          "PageIndex": 0,
+          "DisplayPattern": "結婚できたなんて いまだに 信じられない…"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_1",
+          "DialogueText": "いっしょに暮らすのって楽しいね！わたし、一生独身なんじゃないかと思ってたのに。",
+          "AudioPath": "assets/ja-JP/Emily/196.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Good_1",
+          "PageIndex": 0,
+          "DisplayPattern": "いっしょに暮らすのって楽しいね！わたし、一生独身なんじゃないかと思ってたのに。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_2",
+          "DialogueText": "わたし、心の底から信じてるんだ…いっしょになるのが、わたしたちの運命だったんだって！",
+          "AudioPath": "assets/ja-JP/Emily/197.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Good_2",
+          "PageIndex": 0,
+          "DisplayPattern": "わたし、心の底から信じてるんだ…いっしょになるのが、わたしたちの運命だったんだって！"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_3",
+          "DialogueText": "あなたの家に住ませてくれてありがとう。新しい暮らし、すごく気に入ってるよ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Emily/198.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Good_3",
+          "PageIndex": 0,
+          "DisplayPattern": "あなたの家に住ませてくれてありがとう。新しい暮らし、すごく気に入ってるよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_4",
+          "DialogueText": "わたしたちの振動エネルギー、波長ピッタリなんだよ。ねえ、感じる？",
+          "AudioPath": "assets/ja-JP/Emily/199.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Good_4",
+          "PageIndex": 0,
+          "DisplayPattern": "わたしたちの振動エネルギー、波長ピッタリなんだよ。ねえ、感じる？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_5",
+          "DialogueText": "結婚のときもらったペンダントに見とれてたんだ…すごくきれいな貝がらだよね！ピュアな青いエナジーの波動が出てるのが見えるよ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Emily/200.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Good_5",
+          "PageIndex": 0,
+          "DisplayPattern": "結婚のときもらったペンダントに見とれてたんだ…すごくきれいな貝がらだよね！ピュアな青いエナジーの波動が出てるのが見えるよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_6",
+          "DialogueText": "きのうの夜、また夢を見たんだ。2人でクリスタルの木のてっぺんに登って、青々とした草地を見下ろしてるの。最近はずっと同じ夢。",
+          "AudioPath": "assets/ja-JP/Emily/201.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Good_6",
+          "PageIndex": 0,
+          "DisplayPattern": "きのうの夜、また夢を見たんだ。2人でクリスタルの木のてっぺんに登って、青々とした草地を見下ろしてるの。最近はずっと同じ夢。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_6",
+          "DialogueText": "意味はわからないけど、でも、いいきざしを感じるんだ。",
+          "AudioPath": "assets/ja-JP/Emily/202.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Good_6",
+          "PageIndex": 1,
+          "DisplayPattern": "意味はわからないけど、でも、いいきざしを感じるんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_7",
+          "DialogueText": "{Farmer_Name}さんか。君が 家のために 尽くしてくれていることに、 本当に 感謝したいんだ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/203.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_7",
+          "PageIndex": 0,
+          "DisplayPattern": "さんか。君が 家のために 尽くしてくれていることに、 本当に 感謝したいんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_8",
+          "DialogueText": "自分のことは 心配しないで…あなたは 家の外で いろんな 責任を 負ってるから。だから こっちは 大丈夫さ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Emily/204.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_8",
+          "PageIndex": 0,
+          "DisplayPattern": "自分のことは 心配しないで…あなたは 家の外で いろんな 責任を 負ってるから。だから こっちは 大丈夫さ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_9",
+          "DialogueText": "全く 飽きてもいないよ…ここにある もので 十分 楽しめてる。",
+          "AudioPath": "assets/ja-JP/Emily/205.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_9",
+          "PageIndex": 0,
+          "DisplayPattern": "全く 飽きてもいないよ…ここにある もので 十分 楽しめてる。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Good_9",
+          "DialogueText": "シンプルな 生活だけど 好きだよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/206.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_9",
+          "PageIndex": 1,
+          "DisplayPattern": "シンプルな 生活だけど 好きだよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Day_0",
+          "DialogueText": "farm 牧場は調子いいみたいだね…きょうはきっと、いいことが起きるんじゃないかな！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/207.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "farm 牧場は調子いいみたいだね…きょうはきっと、いいことが起きるんじゃないかな！"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Day_1",
+          "DialogueText": "これ、あげるね。どうぞ。[428 440 444 338 207 395 749]",
+          "AudioPath": "assets/ja-JP/Emily/208.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "これ、あげるね。どうぞ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Day_2",
+          "DialogueText": "あれ、だれかさんはきのう、ぐっすり眠れたみたいだね…今朝はしゃっきりして見えるよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/209.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "あれ、だれかさんはきのう、ぐっすり眠れたみたいだね…今朝はしゃっきりして見えるよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Day_3",
+          "DialogueText": "きょうの星座占いはあんまりよくなかったんだ…でも、いつもどおりベストをつくすつもりだよ。さ、行動開始！",
+          "AudioPath": "assets/ja-JP/Emily/210.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "きょうの星座占いはあんまりよくなかったんだ…でも、いつもどおりベストをつくすつもりだよ。さ、行動開始！"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Day_4",
+          "DialogueText": "うーん…（ゴロゴロ）…朝ごはんにブランマフィンを食べすぎちゃった。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/211.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん…（ゴロゴロ）…朝ごはんにブランマフィンを食べすぎちゃった。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Day_Emily",
+          "DialogueText": "新鮮で健康にいい品物を提供するのって、地域に対してすっごく貢献してるよね！",
+          "AudioPath": "assets/ja-JP/Emily/212.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Day_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "新鮮で健康にいい品物を提供するのって、地域に対してすっごく貢献してるよね！"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Night_0",
+          "DialogueText": "あれ、シャツに穴が開いてない？わたしが縫ってあげようか？遠慮しなくていいよ。",
+          "AudioPath": "assets/ja-JP/Emily/213.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "あれ、シャツに穴が開いてない？わたしが縫ってあげようか？遠慮しなくていいよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Night_1",
+          "DialogueText": "いらっしゃい、{Farmer_Name}。きみの1日がすてきになりますように。",
+          "AudioPath": "assets/ja-JP/Emily/214.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "いらっしゃい、。きみの1日がすてきになりますように。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Night_2",
+          "DialogueText": "そろそろ寝る時間かな？きょうも1日がすぎていったね。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/215.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "そろそろ寝る時間かな？きょうも1日がすぎていったね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Night_3",
+          "DialogueText": "ああ、この香り！だれかと思ったら、やっぱりきみだね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/216.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、この香り！だれかと思ったら、やっぱりきみだね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Night_3",
+          "DialogueText": "きみからはいい香りがするんだ。",
+          "AudioPath": "assets/ja-JP/Emily/217.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Night_3",
+          "PageIndex": 1,
+          "DisplayPattern": "きみからはいい香りがするんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Night_4",
+          "DialogueText": "家じゅうをそうじして、窓をふいてゴミを出して、冷蔵庫をきれいにしてたんだ。有意義な1日だったよ！",
+          "AudioPath": "assets/ja-JP/Emily/218.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Indoor_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "家じゅうをそうじして、窓をふいてゴミを出して、冷蔵庫をきれいにしてたんだ。有意義な1日だったよ！"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Indoor_Night_Emily",
+          "DialogueText": "ほんと、居心地のいいおうち…すてきだね。",
+          "AudioPath": "assets/ja-JP/Emily/219.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "ほんと、居心地のいいおうち…すてきだね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_0",
+          "DialogueText": "わたしが年をとって、髪の毛が色あせて鉄の色になっても、きみはわたしのこと好きでいてくれるよね。",
+          "AudioPath": "assets/ja-JP/Emily/220.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Neutral_0",
+          "PageIndex": 0,
+          "DisplayPattern": "わたしが年をとって、髪の毛が色あせて鉄の色になっても、きみはわたしのこと好きでいてくれるよね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_1",
+          "DialogueText": "お互いの 仕事っぷり、 君の おじいさんは 誇りに 思ってくれるかな？",
+          "AudioPath": "assets/ja-JP/Emily/221.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_1",
+          "PageIndex": 0,
+          "DisplayPattern": "お互いの 仕事っぷり、 君の おじいさんは 誇りに 思ってくれるかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_2",
+          "DialogueText": "休憩中？牧場主って 思ったより 楽なんだね…",
+          "AudioPath": "assets/ja-JP/Emily/222.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_2",
+          "PageIndex": 0,
+          "DisplayPattern": "休憩中？牧場主って 思ったより 楽なんだね…"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_3",
+          "DialogueText": "もし 町へ 行ったら、 私の 代わりに みんなと あいさつ してくれるかな。",
+          "AudioPath": "assets/ja-JP/Emily/223.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_3",
+          "PageIndex": 0,
+          "DisplayPattern": "もし 町へ 行ったら、 私の 代わりに みんなと あいさつ してくれるかな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_4",
+          "DialogueText": "明日、 あなたが 起きる前に 洗濯を するわね… そうすれば 効率が いいから。",
+          "AudioPath": "assets/ja-JP/Emily/224.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_4",
+          "PageIndex": 0,
+          "DisplayPattern": "明日、 あなたが 起きる前に 洗濯を するわね… そうすれば 効率が いいから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_5",
+          "DialogueText": "{Farmer_Name}、お金には 困ってない？",
+          "AudioPath": "assets/ja-JP/Emily/225.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_5",
+          "PageIndex": 0,
+          "DisplayPattern": "、お金には 困ってない？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_6",
+          "DialogueText": "町の みんなは 今日 何を してるのかな。",
+          "AudioPath": "assets/ja-JP/Emily/226.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_6",
+          "PageIndex": 0,
+          "DisplayPattern": "町の みんなは 今日 何を してるのかな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_7",
+          "DialogueText": "今日は 本当に 何もしたくない 気分だわ。",
+          "AudioPath": "assets/ja-JP/Emily/227.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_7",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 本当に 何もしたくない 気分だわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_8",
+          "DialogueText": "きょうはなんだかピンとこないなあ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/228.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Neutral_8",
+          "PageIndex": 0,
+          "DisplayPattern": "きょうはなんだかピンとこないなあ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Neutral_9",
+          "DialogueText": "ずっと このまま ここで 暮らせるかな？",
+          "AudioPath": "assets/ja-JP/Emily/229.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_9",
+          "PageIndex": 0,
+          "DisplayPattern": "ずっと このまま ここで 暮らせるかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/NoBed_0",
+          "DialogueText": "どこで寝たらいいの…？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/230.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_0",
+          "PageIndex": 0,
+          "DisplayPattern": "どこで寝たらいいの…？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/NoBed_1",
+          "DialogueText": "昨日はぜんぜん眠れなかったよ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/231.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_1",
+          "PageIndex": 0,
+          "DisplayPattern": "昨日はぜんぜん眠れなかったよ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/NoBed_2",
+          "DialogueText": "昨日は床の上で寝たよ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/232.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_2",
+          "PageIndex": 0,
+          "DisplayPattern": "昨日は床の上で寝たよ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/NoBed_3",
+          "DialogueText": "ベッドに何かしたの…？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/233.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_3",
+          "PageIndex": 0,
+          "DisplayPattern": "ベッドに何かしたの…？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/OneKid_0",
+          "DialogueText": "kid1 のこと、やさしくて思いやりある子に育てられたらいいね。学校の成績でAを取るより、そっちのほうが大事だよ。",
+          "AudioPath": "assets/ja-JP/Emily/234.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:OneKid_0",
+          "PageIndex": 0,
+          "DisplayPattern": "kid1 のこと、やさしくて思いやりある子に育てられたらいいね。学校の成績でAを取るより、そっちのほうが大事だよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/OneKid_1",
+          "DialogueText": "子どもは1人でじゅうぶんかな、それとももう1人育てようか？",
+          "AudioPath": "assets/ja-JP/Emily/235.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:OneKid_1",
+          "PageIndex": 0,
+          "DisplayPattern": "子どもは1人でじゅうぶんかな、それとももう1人育てようか？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/OneKid_1",
+          "DialogueText": "どうするかは、運命の導きにまかせてみたらいいんじゃないかな。",
+          "AudioPath": "assets/ja-JP/Emily/236.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:OneKid_1",
+          "PageIndex": 1,
+          "DisplayPattern": "どうするかは、運命の導きにまかせてみたらいいんじゃないかな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/OneKid_2",
+          "DialogueText": "大丈夫、 %kid1の 面倒は 見るから。君は 牧場運営に 集中しても いいよ。",
+          "AudioPath": "assets/ja-JP/Emily/237.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:OneKid_2",
+          "PageIndex": 0,
+          "DisplayPattern": "大丈夫、 %kid1の 面倒は 見るから。君は 牧場運営に 集中しても いいよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/OneKid_3",
+          "DialogueText": "うすみどりのキャンドルを灯して、ベビーミントの小枝を%kid1の上で振ってきたの。こうすると、危険な精霊を追い払えるんだよ。",
+          "AudioPath": "assets/ja-JP/Emily/238.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:OneKid_3",
+          "PageIndex": 0,
+          "DisplayPattern": "うすみどりのキャンドルを灯して、ベビーミントの小枝を%kid1の上で振ってきたの。こうすると、危険な精霊を追い払えるんだよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Outdoor_0",
+          "DialogueText": "わたし、はやく起きるのが大好きなんだ。空気はフレッシュだし、動物たちが活発に動いてるのが見られるから。",
+          "AudioPath": "assets/ja-JP/Emily/239.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Outdoor_0",
+          "PageIndex": 0,
+          "DisplayPattern": "わたし、はやく起きるのが大好きなんだ。空気はフレッシュだし、動物たちが活発に動いてるのが見られるから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Outdoor_1",
+          "DialogueText": "ねえ、きょうはどんなことをする予定なの？",
+          "AudioPath": "assets/ja-JP/Emily/240.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Outdoor_1",
+          "PageIndex": 0,
+          "DisplayPattern": "ねえ、きょうはどんなことをする予定なの？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Outdoor_2",
+          "DialogueText": "あっ！あーっ！もう1匹見つけた！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/241.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Outdoor_2",
+          "PageIndex": 0,
+          "DisplayPattern": "あっ！あーっ！もう1匹見つけた！"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Outdoor_2",
+          "DialogueText": "見つけたリスの数を数えてるんだ。",
+          "AudioPath": "assets/ja-JP/Emily/242.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Outdoor_2",
+          "PageIndex": 1,
+          "DisplayPattern": "見つけたリスの数を数えてるんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Outdoor_3",
+          "DialogueText": "日光をあびるのはからだにいいんだよ。でも、日焼けには気をつけてね。",
+          "AudioPath": "assets/ja-JP/Emily/243.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Outdoor_3",
+          "PageIndex": 0,
+          "DisplayPattern": "日光をあびるのはからだにいいんだよ。でも、日焼けには気をつけてね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Outdoor_4",
+          "DialogueText": "おはよう！きょうはお目覚めが遅かったんじゃない？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/244.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Outdoor_4",
+          "PageIndex": 0,
+          "DisplayPattern": "おはよう！きょうはお目覚めが遅かったんじゃない？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Outdoor_4",
+          "DialogueText": "いいんだよ、{Farmer_Name}…夜を楽しんでね。",
+          "AudioPath": "assets/ja-JP/Emily/245.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Outdoor_4",
+          "PageIndex": 1,
+          "DisplayPattern": "いいんだよ、…夜を楽しんでね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Outdoor_Emily",
+          "DialogueText": "ステキなはたらきぶりだね、{Farmer_Name}。その調子でがんばって。",
+          "AudioPath": "assets/ja-JP/Emily/246.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Outdoor_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "ステキなはたらきぶりだね、。その調子でがんばって。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/patio_Emily",
+          "DialogueText": "ここで朝の瞑想をするのが好きなんだ。",
+          "AudioPath": "assets/ja-JP/Emily/247.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:patio_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "ここで朝の瞑想をするのが好きなんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/patio_Emily",
+          "DialogueText": "ここのクリスタルのエネルギーが、わたしのからだを通っていくところを思い描くんだよ。",
+          "AudioPath": "assets/ja-JP/Emily/248.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:patio_Emily",
+          "PageIndex": 1,
+          "DisplayPattern": "ここのクリスタルのエネルギーが、わたしのからだを通っていくところを思い描くんだよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Day_0",
+          "DialogueText": "飛べる虫たちって、雨の日はどこにいるんだろう？雨粒に打たれたりしてないよね？",
+          "AudioPath": "assets/ja-JP/Emily/249.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "飛べる虫たちって、雨の日はどこにいるんだろう？雨粒に打たれたりしてないよね？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Day_1",
+          "DialogueText": "こういう天気って、母なる自然からの恵みだよね。",
+          "AudioPath": "assets/ja-JP/Emily/250.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "こういう天気って、母なる自然からの恵みだよね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Day_2",
+          "DialogueText": "おはよう…きょうはきみにプレゼントを持ってきたの。だいじょうぶ、もうセージのお香で清めてあるよ。[428 440 444 338 207]",
+          "AudioPath": "assets/ja-JP/Emily/251.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "おはよう…きょうはきみにプレゼントを持ってきたの。だいじょうぶ、もうセージのお香で清めてあるよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Day_3",
+          "DialogueText": "オウムくんは放してあげたかったの。でも、あの子のつばさはもう治らないから。いまの暮らしに満足してるみたいだけど、たくさん愛を注いであげなきゃ。",
+          "AudioPath": "assets/ja-JP/Emily/252.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "オウムくんは放してあげたかったの。でも、あの子のつばさはもう治らないから。いまの暮らしに満足してるみたいだけど、たくさん愛を注いであげなきゃ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Day_3",
+          "DialogueText": "あの子、ここで暮らせてしあわせだよって言ってくれるんだ。",
+          "AudioPath": "assets/ja-JP/Emily/253.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Day_3",
+          "PageIndex": 1,
+          "DisplayPattern": "あの子、ここで暮らせてしあわせだよって言ってくれるんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Day_4",
+          "DialogueText": "実はね…きみがここに引っこしてきたとき、きみの夢を見たんだ。だから知ってたの。わたしたちの出会いは、運命に織り込まれてるんだって。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Emily/254.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "実はね…きみがここに引っこしてきたとき、きみの夢を見たんだ。だから知ってたの。わたしたちの出会いは、運命に織り込まれてるんだって。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Day_Emily",
+          "DialogueText": "きみが仕事をだいじにしてるのは知ってるけど、きょうみたいな日ははたらきすぎないようにね。わかった、ハニー？ {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/255.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Day_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "きみが仕事をだいじにしてるのは知ってるけど、きょうみたいな日ははたらきすぎないようにね。わかった、ハニー？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Night_0",
+          "DialogueText": "気づいてる？この一瞬一瞬、すべてがみんな特別で、大切でうつくしいんだよ。ときどき忘れちゃいがちだけどね。",
+          "AudioPath": "assets/ja-JP/Emily/256.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "気づいてる？この一瞬一瞬、すべてがみんな特別で、大切でうつくしいんだよ。ときどき忘れちゃいがちだけどね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Night_1",
+          "DialogueText": "わたしには、植物たちが話してるのが聞こえるんだ…雨が降ったから、みんなとてもうれしそう！",
+          "AudioPath": "assets/ja-JP/Emily/257.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "わたしには、植物たちが話してるのが聞こえるんだ…雨が降ったから、みんなとてもうれしそう！"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Night_2",
+          "DialogueText": "きょうはどうだった、{Farmer_Name}？ちょっとぬれてるみたいだけど。",
+          "AudioPath": "assets/ja-JP/Emily/258.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "きょうはどうだった、？ちょっとぬれてるみたいだけど。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Night_3",
+          "DialogueText": "きょうはとってもおだやかな1日だったよ。きみはどうだった？",
+          "AudioPath": "assets/ja-JP/Emily/259.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "きょうはとってもおだやかな1日だったよ。きみはどうだった？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Night_4",
+          "DialogueText": "デザート食べる？わたし特製、グルテンフリーの生デザートだよ。サボテンシロップだけで甘みをつけてあるんだ。[232 234 223 220] {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/260.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "デザート食べる？わたし特製、グルテンフリーの生デザートだよ。サボテンシロップだけで甘みをつけてあるんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Night_5",
+          "DialogueText": "雨の音を聞いてると、すごく集中できたりしない？",
+          "AudioPath": "assets/ja-JP/Emily/261.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:Rainy_Night_5",
+          "PageIndex": 0,
+          "DisplayPattern": "雨の音を聞いてると、すごく集中できたりしない？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/Rainy_Night_Emily",
+          "DialogueText": "雨の日にしかあらわれない精霊もいるんだよ。もしかしたら、彼らの泣き声が聞こえるかもね。",
+          "AudioPath": "assets/ja-JP/Emily/262.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Rainy_Night_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "雨の日にしかあらわれない精霊もいるんだよ。もしかしたら、彼らの泣き声が聞こえるかもね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/spouseRoom_Emily",
+          "DialogueText": "きょうはオウムくんといっしょにすごすつもりなんだ。あの子がもう飛べないんだって思うと、心が痛いよ… {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/263.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:spouseRoom_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "きょうはオウムくんといっしょにすごすつもりなんだ。あの子がもう飛べないんだって思うと、心が痛いよ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/spring_1",
+          "DialogueText": "新年あけましておめでとう、ハニー。今年もスペシャルな1年にしようね。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Emily/264.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:spring_1",
+          "PageIndex": 0,
+          "DisplayPattern": "新年あけましておめでとう、ハニー。今年もスペシャルな1年にしようね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/spring_2",
+          "DialogueText": "植物たちが息を吹きかえしたね。友達とまた会えてうれしいな。",
+          "AudioPath": "assets/ja-JP/Emily/265.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:spring_2",
+          "PageIndex": 0,
+          "DisplayPattern": "植物たちが息を吹きかえしたね。友達とまた会えてうれしいな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/spring_22",
+          "DialogueText": "うーん…考えてたんだけど、きょうの夕飯は摘んできた野草のサラダにしない？",
+          "AudioPath": "assets/ja-JP/Emily/266.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:spring_22",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん…考えてたんだけど、きょうの夕飯は摘んできた野草のサラダにしない？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/spring_23",
+          "DialogueText": "ダンスの 練習は ちゃんと してくれたかな… 明日は フラワーダンスだからね！",
+          "AudioPath": "assets/ja-JP/Emily/267.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_23",
+          "PageIndex": 0,
+          "DisplayPattern": "ダンスの 練習は ちゃんと してくれたかな… 明日は フラワーダンスだからね！"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/spring_8",
+          "DialogueText": "冬が ようやく 終わって、 これからの 天気に 期待できるように なった。",
+          "AudioPath": "assets/ja-JP/Emily/268.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_8",
+          "PageIndex": 0,
+          "DisplayPattern": "冬が ようやく 終わって、 これからの 天気に 期待できるように なった。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/spring_Emily",
+          "DialogueText": "牧場ですごす新しい1年がきたんだと思うとわくわくするね、{Farmer_Name}！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/269.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:spring_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "牧場ですごす新しい1年がきたんだと思うとわくわくするね、！"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/summer_1",
+          "DialogueText": "熱中症には 気をつけるんだよ。",
+          "AudioPath": "assets/ja-JP/Emily/270.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_1",
+          "PageIndex": 0,
+          "DisplayPattern": "熱中症には 気をつけるんだよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/summer_1",
+          "DialogueText": "水分を ちゃんと 取って、 仕事 しすぎないようにね。",
+          "AudioPath": "assets/ja-JP/Emily/271.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_1",
+          "PageIndex": 1,
+          "DisplayPattern": "水分を ちゃんと 取って、 仕事 しすぎないようにね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/summer_15",
+          "DialogueText": "夏… ハエが 出てくる季節ってことだね。",
+          "AudioPath": "assets/ja-JP/Emily/272.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 0,
+          "DisplayPattern": "夏… ハエが 出てくる季節ってことだね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/summer_15",
+          "DialogueText": "大丈夫、 退治してあげるから。",
+          "AudioPath": "assets/ja-JP/Emily/273.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_15",
+          "PageIndex": 1,
+          "DisplayPattern": "大丈夫、 退治してあげるから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/summer_2",
+          "DialogueText": "いい天気だね。ヨバさまが祝福してくれてるのかも。 {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Emily/274.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:summer_2",
+          "PageIndex": 0,
+          "DisplayPattern": "いい天気だね。ヨバさまが祝福してくれてるのかも。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/summer_20",
+          "DialogueText": "わたしたちのからだに宿るエナジーは、季節といっしょに変動するんだ。内なる調和は、自分のエナジーのリズムを知ることからはじまるんだよ。",
+          "AudioPath": "assets/ja-JP/Emily/275.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:summer_20",
+          "PageIndex": 0,
+          "DisplayPattern": "わたしたちのからだに宿るエナジーは、季節といっしょに変動するんだ。内なる調和は、自分のエナジーのリズムを知ることからはじまるんだよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/summer_8",
+          "DialogueText": "臭ったら ごめん…暑くて 汗 かきっぱなし だったからさ。",
+          "AudioPath": "assets/ja-JP/Emily/276.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_8",
+          "PageIndex": 0,
+          "DisplayPattern": "臭ったら ごめん…暑くて 汗 かきっぱなし だったからさ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/summer_Emily",
+          "DialogueText": "ふうっ！きょうは暑いけど、でもきもちいいね！",
+          "AudioPath": "assets/ja-JP/Emily/277.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:summer_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "ふうっ！きょうは暑いけど、でもきもちいいね！"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/summer_Emily",
+          "DialogueText": "もしかしたら、きょうは野生のオウムが見られるかもね。",
+          "AudioPath": "assets/ja-JP/Emily/278.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:summer_Emily",
+          "PageIndex": 1,
+          "DisplayPattern": "もしかしたら、きょうは野生のオウムが見られるかもね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/TwoKids_0",
+          "DialogueText": "kid1と%kid2には もう 朝ごはんを 食べさせたよ。おなか すいてたからね！",
+          "AudioPath": "assets/ja-JP/Emily/279.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:TwoKids_0",
+          "PageIndex": 0,
+          "DisplayPattern": "kid1と%kid2には もう 朝ごはんを 食べさせたよ。おなか すいてたからね！"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/TwoKids_1",
+          "DialogueText": "大きな家、2人の子どもとオウムくん1羽…わあ、いそがしい！",
+          "AudioPath": "assets/ja-JP/Emily/280.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:TwoKids_1",
+          "PageIndex": 0,
+          "DisplayPattern": "大きな家、2人の子どもとオウムくん1羽…わあ、いそがしい！"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/TwoKids_2",
+          "DialogueText": "ねえ見て、%kid2 の髪の毛、あなたにそっくり… {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/281.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:TwoKids_2",
+          "PageIndex": 0,
+          "DisplayPattern": "ねえ見て、 の髪の毛、あなたにそっくり…"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/TwoKids_3",
+          "DialogueText": "あ、子供たちにはキノアパフにヤギのミルクを入れて食べさせておいたよ。これで、きみは牧場の仕事に集中できるね！",
+          "AudioPath": "assets/ja-JP/Emily/282.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:TwoKids_3",
+          "PageIndex": 0,
+          "DisplayPattern": "あ、子供たちにはキノアパフにヤギのミルクを入れて食べさせておいたよ。これで、きみは牧場の仕事に集中できるね！"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/winter_1",
+          "DialogueText": "ブルブル…寒いね。冬の 到来かな。",
+          "AudioPath": "assets/ja-JP/Emily/283.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:winter_1",
+          "PageIndex": 0,
+          "DisplayPattern": "ブルブル…寒いね。冬の 到来かな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/winter_15",
+          "DialogueText": "こんな日にはスパイスが欲しくなるなあ。シナモンにナツメグ、クローブやカルダモンとかね。",
+          "AudioPath": "assets/ja-JP/Emily/284.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:winter_15",
+          "PageIndex": 0,
+          "DisplayPattern": "こんな日にはスパイスが欲しくなるなあ。シナモンにナツメグ、クローブやカルダモンとかね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/winter_2",
+          "DialogueText": "どうしても考えちゃうんだ…この寒さのなかで、いままさに凍えてるかわいそうなリスたちのことを、さ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/285.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:winter_2",
+          "PageIndex": 0,
+          "DisplayPattern": "どうしても考えちゃうんだ…この寒さのなかで、いままさに凍えてるかわいそうなリスたちのことを、さ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/winter_28",
+          "DialogueText": "{Farmer_Name}、 良い 一年を ありがとう。来年も また 一緒に がんばろう。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Emily/286.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:winter_28",
+          "PageIndex": 0,
+          "DisplayPattern": "、 良い 一年を ありがとう。来年も また 一緒に がんばろう。"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/winter_5",
+          "DialogueText": "はあ…どうして、この世には戦争や憎しみがあるんだろう？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/287.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:winter_5",
+          "PageIndex": 0,
+          "DisplayPattern": "はあ…どうして、この世には戦争や憎しみがあるんだろう？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/winter_7",
+          "DialogueText": "明日の 釣りコンテストには 参加する つもりか？",
+          "AudioPath": "assets/ja-JP/Emily/288.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:winter_7",
+          "PageIndex": 0,
+          "DisplayPattern": "明日の 釣りコンテストには 参加する つもりか？"
+        },
+        {
+          "DialogueFrom": "Marriage/Emily/winter_Emily",
+          "DialogueText": "あらら、また髪の毛がこおっちゃった。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/289.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueEmily:winter_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "あらら、また髪の毛がこおっちゃった。"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "カリコ砂漠では 雨は 振らないの…友達の サンディは そこに 住んでるの。",
+          "AudioPath": "assets/ja-JP/Emily/290.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "カリコ砂漠では 雨は 振らないの…友達の サンディは そこに 住んでるの。"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "今日は 彼女に 会いに いけたらなぁ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/291.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Emily",
+          "PageIndex": 1,
+          "DisplayPattern": "今日は 彼女に 会いに いけたらなぁ。"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917600:s0",
+          "DialogueText": "Hey, honey... before you get to work today, do you have a moment?",
+          "AudioPath": "assets/ja-JP/Emily/292.ogg",
+          "TranslationKey": "Events/Farm:3917600:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, honey... before you get to work today, do you have a moment?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917600:s1",
+          "DialogueText": "I've been working on something special for you... but I need a little help finishing it.",
+          "AudioPath": "assets/ja-JP/Emily/293.ogg",
+          "TranslationKey": "Events/Farm:3917600:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been working on something special for you... but I need a little help finishing it."
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917600:s2",
+          "DialogueText": "It's a secret, so I can't tell you what it is... but could you bring me 200 pieces of fiber?",
+          "AudioPath": "assets/ja-JP/Emily/294.ogg",
+          "TranslationKey": "Events/Farm:3917600:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a secret, so I can't tell you what it is... but could you bring me 200 pieces of fiber?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917600:s3",
+          "DialogueText": "That's all I need! Just bring the 200 fiber by when you have a chance... no rush!",
+          "AudioPath": "assets/ja-JP/Emily/295.ogg",
+          "TranslationKey": "Events/Farm:3917600:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "That's all I need! Just bring the 200 fiber by when you have a chance... no rush!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/3917600:s4",
+          "DialogueText": "No peeking! You'll see the end result soon.",
+          "AudioPath": "assets/ja-JP/Emily/296.ogg",
+          "TranslationKey": "Events/Farm:3917600:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "No peeking! You'll see the end result soon."
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s0",
+          "DialogueText": "Hi {Farmer_Name}! Good morning!",
+          "AudioPath": "assets/ja-JP/Emily/297.ogg",
+          "TranslationKey": "Events/Farm:992559:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi ! Good morning!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s1",
+          "DialogueText": "You seem to be doing well... the farm looks great! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/298.ogg",
+          "TranslationKey": "Events/Farm:992559:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "You seem to be doing well... the farm looks great!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s2",
+          "DialogueText": "So... you've been here a while, and I'm sure you've acquired some 'cloth' by now... right?",
+          "AudioPath": "assets/ja-JP/Emily/299.ogg",
+          "TranslationKey": "Events/Farm:992559:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "So... you've been here a while, and I'm sure you've acquired some 'cloth' by now... right?"
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s3",
+          "DialogueText": "Well, did you know that you can use cloth to tailor all kinds of clothes? All you need is access to a sewing machine...",
+          "AudioPath": "assets/ja-JP/Emily/300.ogg",
+          "TranslationKey": "Events/Farm:992559:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, did you know that you can use cloth to tailor all kinds of clothes? All you need is access to a sewing machine..."
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s4",
+          "DialogueText": "And I happen to have one at home! Feel free to swing by and use it any time. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/301.ogg",
+          "TranslationKey": "Events/Farm:992559:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "And I happen to have one at home! Feel free to swing by and use it any time."
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s5",
+          "DialogueText": "You can now access Emily's sewing machine!",
+          "AudioPath": "assets/ja-JP/Emily/302.ogg",
+          "TranslationKey": "Events/Farm:992559:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "You can now access Emily's sewing machine!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s6",
+          "DialogueText": "To start tailoring, you'll need a piece of cloth and a secondary item. Experiment and see what unique styles are out there!",
+          "AudioPath": "assets/ja-JP/Emily/303.ogg",
+          "TranslationKey": "Events/Farm:992559:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "To start tailoring, you'll need a piece of cloth and a secondary item. Experiment and see what unique styles are out there!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s0",
+          "DialogueText": "Good morning, {Farmer_Name}. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/304.ogg",
+          "TranslationKey": "Events/Farm:992559:s0",
+          "PageIndex": 1,
+          "DisplayPattern": "Good morning, ."
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s1",
+          "DialogueText": "I just remembered... I have a sewing machine at my old place!",
+          "AudioPath": "assets/ja-JP/Emily/305.ogg",
+          "TranslationKey": "Events/Farm:992559:s1",
+          "PageIndex": 1,
+          "DisplayPattern": "I just remembered... I have a sewing machine at my old place!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s2",
+          "DialogueText": "If you ever feel like making clothes, you should swing by and check it out. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/306.ogg",
+          "TranslationKey": "Events/Farm:992559:s2",
+          "PageIndex": 1,
+          "DisplayPattern": "If you ever feel like making clothes, you should swing by and check it out."
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s3",
+          "DialogueText": "You can now access Emily's sewing machine!",
+          "AudioPath": "assets/ja-JP/Emily/307.ogg",
+          "TranslationKey": "Events/Farm:992559:s3",
+          "PageIndex": 1,
+          "DisplayPattern": "You can now access Emily's sewing machine!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s4",
+          "DialogueText": "To start tailoring, you'll need a piece of cloth and a secondary item. Experiment and see what unique styles are out there!",
+          "AudioPath": "assets/ja-JP/Emily/308.ogg",
+          "TranslationKey": "Events/Farm:992559:s4",
+          "PageIndex": 1,
+          "DisplayPattern": "To start tailoring, you'll need a piece of cloth and a secondary item. Experiment and see what unique styles are out there!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/992559:s5",
+          "DialogueText": "I'm going to have a lot of fun seeing you in all kinds of different outfits! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/309.ogg",
+          "TranslationKey": "Events/Farm:992559:s5",
+          "PageIndex": 1,
+          "DisplayPattern": "I'm going to have a lot of fun seeing you in all kinds of different outfits!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917601:s0",
+          "DialogueText": "Welcome home, {Farmer_Name}. I hope you had a nice day.",
+          "AudioPath": "assets/ja-JP/Emily/310.ogg",
+          "TranslationKey": "Events/FarmHouse:3917601:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Welcome home, . I hope you had a nice day."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917601:s1",
+          "DialogueText": "So... I finished that secret project I was working on.",
+          "AudioPath": "assets/ja-JP/Emily/311.ogg",
+          "TranslationKey": "Events/FarmHouse:3917601:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "So... I finished that secret project I was working on."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917601:s2",
+          "DialogueText": "It's a brand new hand-made outfit for you! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/312.ogg",
+          "TranslationKey": "Events/FarmHouse:3917601:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a brand new hand-made outfit for you!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917601:s3",
+          "DialogueText": "Received Emily's Magic Hat, Emily's Magic Boots, Emily's Magic Shirt, and a matching set of pants!",
+          "AudioPath": "assets/ja-JP/Emily/313.ogg",
+          "TranslationKey": "Events/FarmHouse:3917601:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Received Emily's Magic Hat, Emily's Magic Boots, Emily's Magic Shirt, and a matching set of pants!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917601:s4",
+          "DialogueText": "I've always loved sewing and making crafts... So I thought it'd be nice to make you something by hand. I had a lot of fun!",
+          "AudioPath": "assets/ja-JP/Emily/314.ogg",
+          "TranslationKey": "Events/FarmHouse:3917601:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I've always loved sewing and making crafts... So I thought it'd be nice to make you something by hand. I had a lot of fun!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917601:s5",
+          "DialogueText": "I hope it fits right... and that the fiber isn't too itchy.",
+          "AudioPath": "assets/ja-JP/Emily/315.ogg",
+          "TranslationKey": "Events/FarmHouse:3917601:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "I hope it fits right... and that the fiber isn't too itchy."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917601:s6",
+          "DialogueText": "There's boots, a hat, a shirt, and pants! It's a complete outfit.",
+          "AudioPath": "assets/ja-JP/Emily/316.ogg",
+          "TranslationKey": "Events/FarmHouse:3917601:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "There's boots, a hat, a shirt, and pants! It's a complete outfit."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917601:s7",
+          "DialogueText": "Now, when you wear those clothes, you'll think of me... and you'll know I'm here waiting for you to come home safe... okay? {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Emily/317.ogg",
+          "TranslationKey": "Events/FarmHouse:3917601:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Now, when you wear those clothes, you'll think of me... and you'll know I'm here waiting for you to come home safe... okay?"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3917601:s8",
+          "DialogueText": "Time for bed.",
+          "AudioPath": "assets/ja-JP/Emily/318.ogg",
+          "TranslationKey": "Events/FarmHouse:3917601:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Time for bed."
+        },
+        {
+          "DialogueFrom": "Event:Town/831125:s0",
+          "DialogueText": "Yes!",
+          "AudioPath": "assets/ja-JP/Emily/319.ogg",
+          "TranslationKey": "Events/Town:831125:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Yes!"
+        },
+        {
+          "DialogueFrom": "Event:Town/831125:s1",
+          "DialogueText": "I thought we had something special... I guess I was wrong. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/320.ogg",
+          "TranslationKey": "Events/Town:831125:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I thought we had something special... I guess I was wrong."
+        },
+        {
+          "DialogueFrom": "Event:Town/831125:s2",
+          "DialogueText": "I thought we had something special... You said you wouldn't leave me for anything. I guess that was a lie. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/321.ogg",
+          "TranslationKey": "Events/Town:831125:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I thought we had something special... You said you wouldn't leave me for anything. I guess that was a lie."
+        },
+        {
+          "DialogueFrom": "Event:Town/831125:s3",
+          "DialogueText": "But... But... Isn't soda unhealthy? You promised me... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/322.ogg",
+          "TranslationKey": "Events/Town:831125:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "But... But... Isn't soda unhealthy? You promised me..."
+        },
+        {
+          "DialogueFrom": "Event:Town/831125:s4",
+          "DialogueText": "...Clint? {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/323.ogg",
+          "TranslationKey": "Events/Town:831125:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "...Clint?"
+        },
+        {
+          "DialogueFrom": "Event:Town/831125:s5",
+          "DialogueText": "What a productive day... I got some great footage.",
+          "AudioPath": "assets/ja-JP/Emily/324.ogg",
+          "TranslationKey": "Events/Town:831125:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "What a productive day... I got some great footage."
+        },
+        {
+          "DialogueFrom": "Event:Town/101:s0",
+          "DialogueText": "Sorry, Caroline. Could you excuse me for a minute?",
+          "AudioPath": "assets/ja-JP/Emily/325.ogg",
+          "TranslationKey": "Events/Town:101:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Sorry, Caroline. Could you excuse me for a minute?"
+        },
+        {
+          "DialogueFrom": "Event:Town/101:s1",
+          "DialogueText": "Yes, Clint?",
+          "AudioPath": "assets/ja-JP/Emily/326.ogg",
+          "TranslationKey": "Events/Town:101:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Yes, Clint?"
+        },
+        {
+          "DialogueFrom": "Event:Town/101:s2",
+          "DialogueText": "Sure, Clint! That sounds fun! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/327.ogg",
+          "TranslationKey": "Events/Town:101:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Sure, Clint! That sounds fun!"
+        },
+        {
+          "DialogueFrom": "Event:Town/101:s3",
+          "DialogueText": "Okay! See you tomorrow!",
+          "AudioPath": "assets/ja-JP/Emily/328.ogg",
+          "TranslationKey": "Events/Town:101:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay! See you tomorrow!"
+        },
+        {
+          "DialogueFrom": "Event:Town/191393:s0",
+          "DialogueText": "It... It was a lot of fun... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/329.ogg",
+          "TranslationKey": "Events/Town:191393:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "It... It was a lot of fun..."
+        },
+        {
+          "DialogueFrom": "Event:Town/463391:s0",
+          "DialogueText": "Ah... Another beautiful day in Pelican Town.",
+          "AudioPath": "assets/ja-JP/Emily/330.ogg",
+          "TranslationKey": "Events/Town:463391:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah... Another beautiful day in Pelican Town."
+        },
+        {
+          "DialogueFrom": "Event:Town/463391:s1",
+          "DialogueText": "My friends!",
+          "AudioPath": "assets/ja-JP/Emily/331.ogg",
+          "TranslationKey": "Events/Town:463391:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "My friends!"
+        },
+        {
+          "DialogueFrom": "Event:Town/463391:s2",
+          "DialogueText": "Oh no! You poor thing! {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/332.ogg",
+          "TranslationKey": "Events/Town:463391:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh no! You poor thing!"
+        },
+        {
+          "DialogueFrom": "Event:Town/463391:s3",
+          "DialogueText": "Your wing's broken. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/333.ogg",
+          "TranslationKey": "Events/Town:463391:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Your wing's broken."
+        },
+        {
+          "DialogueFrom": "Event:Town/463391:s4",
+          "DialogueText": "Oh, you're a bit different than the others, aren't you? Just like me... {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/334.ogg",
+          "TranslationKey": "Events/Town:463391:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, you're a bit different than the others, aren't you? Just like me..."
+        },
+        {
+          "DialogueFrom": "Event:Town/463391:s5",
+          "DialogueText": "Don't worry. I'll nurse you back to health, little one. Everything will be alright. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/335.ogg",
+          "TranslationKey": "Events/Town:463391:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Don't worry. I'll nurse you back to health, little one. Everything will be alright."
+        },
+        {
+          "DialogueFrom": "Event:Town/463391:s6",
+          "DialogueText": "Emily took the injured parrot into her home and bandaged the wing.",
+          "AudioPath": "assets/ja-JP/Emily/336.ogg",
+          "TranslationKey": "Events/Town:463391:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Emily took the injured parrot into her home and bandaged the wing."
+        },
+        {
+          "DialogueFrom": "Event:Town/463391:s7",
+          "DialogueText": "He's all set up in her room. But as a token of respect, she didn't give the bird a name.",
+          "AudioPath": "assets/ja-JP/Emily/337.ogg",
+          "TranslationKey": "Events/Town:463391:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "He's all set up in her room. But as a token of respect, she didn't give the bird a name."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s0",
+          "DialogueText": "I am!",
+          "AudioPath": "assets/ja-JP/Emily/338.ogg",
+          "TranslationKey": "Events/Town:6184644:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I am!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/11:s0",
+          "DialogueText": "You're being childish, Haley. I do the vast majority of work in this house, and you know it. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/339.ogg",
+          "TranslationKey": "Events/HaleyHouse:11:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "You're being childish, Haley. I do the vast majority of work in this house, and you know it."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/11:s1|g=male",
+          "DialogueText": "He has a name, you know. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/340_male.ogg",
+          "TranslationKey": "Events/HaleyHouse:11:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "He has a name, you know.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/11:s2|g=female",
+          "DialogueText": "She has a name, you know. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/341_female.ogg",
+          "TranslationKey": "Events/HaleyHouse:11:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "She has a name, you know.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/11:s3",
+          "DialogueText": "*sigh*... I'm really sorry to involve you in this, {Farmer_Name}. Haley is complaining because I asked her to clean under the cushions. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/342.ogg",
+          "TranslationKey": "Events/HaleyHouse:11:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*... I'm really sorry to involve you in this, . Haley is complaining because I asked her to clean under the cushions."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/11:s4",
+          "DialogueText": "Thanks, {Farmer_Name}. That was a great solution. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/343.ogg",
+          "TranslationKey": "Events/HaleyHouse:11:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks, . That was a great solution."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/haleyWontDoIt:s0",
+          "DialogueText": "*sigh*... I guess I'll just do it, then... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/344.ogg",
+          "TranslationKey": "Events/HaleyHouse:haleyWontDoIt:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "*sigh*... I guess I'll just do it, then..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s0",
+          "DialogueText": "Come in, {Farmer_Name}! I want to show you something. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/345.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Come in, ! I want to show you something."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s1",
+          "DialogueText": "It's my secret hobby... I've been practicing for months.",
+          "AudioPath": "assets/ja-JP/Emily/346.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "It's my secret hobby... I've been practicing for months."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s2",
+          "DialogueText": "Now, sit back, relax, and allow yourself to be carried away to a better place... okay?",
+          "AudioPath": "assets/ja-JP/Emily/347.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Now, sit back, relax, and allow yourself to be carried away to a better place... okay?"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s3",
+          "DialogueText": "So... *gasp*... what did you think? {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/348.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "So... *gasp*... what did you think?"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s4",
+          "DialogueText": "That was amazing!",
+          "AudioPath": "assets/ja-JP/Emily/349.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "That was amazing!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s5",
+          "DialogueText": "That was embarrassing...",
+          "AudioPath": "assets/ja-JP/Emily/350.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "That was embarrassing..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s6",
+          "DialogueText": "(Say nothing and do a slow clap)",
+          "AudioPath": "assets/ja-JP/Emily/351.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "(Say nothing and do a slow clap)"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s7",
+          "DialogueText": "Phew... that was quite a workout... {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/352.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Phew... that was quite a workout..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s8",
+          "DialogueText": "I haven't been this sweaty since I ordered the pepper platter at Abigail's graduation fiesta! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/353.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I haven't been this sweaty since I ordered the pepper platter at Abigail's graduation fiesta!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s9",
+          "DialogueText": "...Well, I'd better take a shower. Thanks for watching.",
+          "AudioPath": "assets/ja-JP/Emily/354.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "...Well, I'd better take a shower. Thanks for watching."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/917409:s10",
+          "DialogueText": "Don't tell anyone about the dance. That was for your eyes only.",
+          "AudioPath": "assets/ja-JP/Emily/355.ogg",
+          "TranslationKey": "Events/HaleyHouse:917409:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Don't tell anyone about the dance. That was for your eyes only."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/471942:s0",
+          "DialogueText": "Mui-wah",
+          "AudioPath": "assets/ja-JP/Emily/356.ogg",
+          "TranslationKey": "Events/HaleyHouse:471942:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Mui-wah"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/471942:s1",
+          "DialogueText": "Muuui-wah",
+          "AudioPath": "assets/ja-JP/Emily/357.ogg",
+          "TranslationKey": "Events/HaleyHouse:471942:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Muuui-wah"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/471942:s2",
+          "DialogueText": "Why are you here? {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/358.ogg",
+          "TranslationKey": "Events/HaleyHouse:471942:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Why are you here?"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/471942:s3",
+          "DialogueText": "... {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/359.ogg",
+          "TranslationKey": "Events/HaleyHouse:471942:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/471942:s4",
+          "DialogueText": "That reminded me of something. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/360.ogg",
+          "TranslationKey": "Events/HaleyHouse:471942:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "That reminded me of something."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/471942:s5",
+          "DialogueText": "Even the tiniest, blandest, simplest light holds a wonderful secret.",
+          "AudioPath": "assets/ja-JP/Emily/361.ogg",
+          "TranslationKey": "Events/HaleyHouse:471942:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Even the tiniest, blandest, simplest light holds a wonderful secret."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/471942:s6",
+          "DialogueText": "Nowwwwww I know why you're here. It's a sign. Hahaha! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/362.ogg",
+          "TranslationKey": "Events/HaleyHouse:471942:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Nowwwwww I know why you're here. It's a sign. Hahaha!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/471942:s7",
+          "DialogueText": "{Farmer_Name}... There's something special about {Farmer_Name}... {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/363.ogg",
+          "TranslationKey": "Events/HaleyHouse:471942:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "... There's something special about ..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/471942:s8",
+          "DialogueText": "Our destinies will intersect... {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/364.ogg",
+          "TranslationKey": "Events/HaleyHouse:471942:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Our destinies will intersect..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195012:s0",
+          "DialogueText": "Th... That night in the tent... you whispered such sweet things to me in the dark... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/365.ogg",
+          "TranslationKey": "Events/HaleyHouse:195012:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Th... That night in the tent... you whispered such sweet things to me in the dark..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195012:s1",
+          "DialogueText": "Now I have to face each day knowing it was all a lie. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/366.ogg",
+          "TranslationKey": "Events/HaleyHouse:195012:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Now I have to face each day knowing it was all a lie."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/choseToExplain:s0",
+          "DialogueText": "Do you really expect us to believe that? You're just digging yourself into a deeper hole... {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Emily/367.ogg",
+          "TranslationKey": "Events/HaleyHouse:choseToExplain:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Do you really expect us to believe that? You're just digging yourself into a deeper hole..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/150938:s0",
+          "DialogueText": "Great... everyone has their stone.",
+          "AudioPath": "assets/ja-JP/Emily/368.ogg",
+          "TranslationKey": "Events/HaleyHouse:150938:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Great... everyone has their stone."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/150938:s1",
+          "DialogueText": "Now, close your eyes, and take slow, deep breaths. Focus on your lungs.",
+          "AudioPath": "assets/ja-JP/Emily/369.ogg",
+          "TranslationKey": "Events/HaleyHouse:150938:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Now, close your eyes, and take slow, deep breaths. Focus on your lungs."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/150938:s2",
+          "DialogueText": "Visualize the pure energy flowing into your body with every breath.",
+          "AudioPath": "assets/ja-JP/Emily/370.ogg",
+          "TranslationKey": "Events/HaleyHouse:150938:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Visualize the pure energy flowing into your body with every breath."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/150938:s3",
+          "DialogueText": "And when you exhale, feel all the tension and negative energy flowing out, leaving you more and more relaxed with every breath.",
+          "AudioPath": "assets/ja-JP/Emily/371.ogg",
+          "TranslationKey": "Events/HaleyHouse:150938:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "And when you exhale, feel all the tension and negative energy flowing out, leaving you more and more relaxed with every breath."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/150938:s4",
+          "DialogueText": "Now, open your heart to the vibrational frequency of your stone. Do you feel anything?",
+          "AudioPath": "assets/ja-JP/Emily/372.ogg",
+          "TranslationKey": "Events/HaleyHouse:150938:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Now, open your heart to the vibrational frequency of your stone. Do you feel anything?"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s0",
+          "DialogueText": "Welcome to clothing therapy!",
+          "AudioPath": "assets/ja-JP/Emily/373.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Welcome to clothing therapy!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s1",
+          "DialogueText": "You're probably wondering... what is clothing therapy?",
+          "AudioPath": "assets/ja-JP/Emily/374.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "You're probably wondering... what is clothing therapy?"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s2",
+          "DialogueText": "I'll try to explain.",
+          "AudioPath": "assets/ja-JP/Emily/375.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll try to explain."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s3",
+          "DialogueText": "So many of us are struggling with personal issues... things holding us back from living how we want. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/376.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "So many of us are struggling with personal issues... things holding us back from living how we want."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s4",
+          "DialogueText": "It's important to me that everyone has a free and happy life... so I came up with a new kind of therapy to help people achieve that. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/377.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "It's important to me that everyone has a free and happy life... so I came up with a new kind of therapy to help people achieve that."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s5",
+          "DialogueText": "It's based on the amazing power of self-expression. Self-expression is a wonderful healing tool, did you know that?",
+          "AudioPath": "assets/ja-JP/Emily/378.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "It's based on the amazing power of self-expression. Self-expression is a wonderful healing tool, did you know that?"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s6",
+          "DialogueText": "Behind this curtain, you'll find racks and racks of clothes. There's endless options to choose from.",
+          "AudioPath": "assets/ja-JP/Emily/379.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Behind this curtain, you'll find racks and racks of clothes. There's endless options to choose from."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s7",
+          "DialogueText": "Your job is simple: find the outfit that truly speaks to you, and put it on.",
+          "AudioPath": "assets/ja-JP/Emily/380.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Your job is simple: find the outfit that truly speaks to you, and put it on."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s8",
+          "DialogueText": "Feel confident in yourself and your choice. You all have a unique style to share with the world!",
+          "AudioPath": "assets/ja-JP/Emily/381.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Feel confident in yourself and your choice. You all have a unique style to share with the world!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s9",
+          "DialogueText": "Shane, you're up first! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/382.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Shane, you're up first!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s10",
+          "DialogueText": "Ah, {Farmer_Name}. You're just in time. Just observe and keep an open mind... okay?",
+          "AudioPath": "assets/ja-JP/Emily/383.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah, . You're just in time. Just observe and keep an open mind... okay?"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s11",
+          "DialogueText": "Shane, it's a new side of you we've never known about. That's great!",
+          "AudioPath": "assets/ja-JP/Emily/384.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Shane, it's a new side of you we've never known about. That's great!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s12",
+          "DialogueText": "Now, go outside with confidence and show the world!",
+          "AudioPath": "assets/ja-JP/Emily/385.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Now, go outside with confidence and show the world!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s13",
+          "DialogueText": "Okay, everyone gets a turn!",
+          "AudioPath": "assets/ja-JP/Emily/386.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay, everyone gets a turn!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s14",
+          "DialogueText": "Beautiful!",
+          "AudioPath": "assets/ja-JP/Emily/387.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "Beautiful!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s15",
+          "DialogueText": "Lookin' sharp!",
+          "AudioPath": "assets/ja-JP/Emily/388.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "Lookin' sharp!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s16",
+          "DialogueText": "Very nice!",
+          "AudioPath": "assets/ja-JP/Emily/389.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "Very nice!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s17",
+          "DialogueText": "Clint? You're up!",
+          "AudioPath": "assets/ja-JP/Emily/390.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "Clint? You're up!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s18",
+          "DialogueText": "Awww, cute!",
+          "AudioPath": "assets/ja-JP/Emily/391.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s18",
+          "PageIndex": 0,
+          "DisplayPattern": "Awww, cute!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s19",
+          "DialogueText": "Well, that went very well!",
+          "AudioPath": "assets/ja-JP/Emily/392.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s19",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, that went very well!"
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s20",
+          "DialogueText": "I just hope this experience helps everyone break out of their shells a bit.",
+          "AudioPath": "assets/ja-JP/Emily/393.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s20",
+          "PageIndex": 0,
+          "DisplayPattern": "I just hope this experience helps everyone break out of their shells a bit."
+        },
+        {
+          "DialogueFrom": "Event:ManorHouse/2123243:s21",
+          "DialogueText": "{Farmer_Name}... um... {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Emily/394.ogg",
+          "TranslationKey": "Events/ManorHouse:2123243:s21",
+          "PageIndex": 0,
+          "DisplayPattern": "... um..."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/97:s0",
+          "DialogueText": "Hi Clint, what can I get for you tonight? {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/395.ogg",
+          "TranslationKey": "Events/Saloon:97:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi Clint, what can I get for you tonight?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/97:s1",
+          "DialogueText": "Hi {Farmer_Name}.",
+          "AudioPath": "assets/ja-JP/Emily/396.ogg",
+          "TranslationKey": "Events/Saloon:97:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi ."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/97:s2",
+          "DialogueText": "Yes, Clint? {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/397.ogg",
+          "TranslationKey": "Events/Saloon:97:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Yes, Clint?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/97:s3",
+          "DialogueText": "Hi, Shane! Here's your beverage. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/398.ogg",
+          "TranslationKey": "Events/Saloon:97:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi, Shane! Here's your beverage."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/97:s4",
+          "DialogueText": "It's fine! Thanks for asking, Shane! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/399.ogg",
+          "TranslationKey": "Events/Saloon:97:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "It's fine! Thanks for asking, Shane!"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/97:s5",
+          "DialogueText": "Do you have any new chicken stories for me?",
+          "AudioPath": "assets/ja-JP/Emily/400.ogg",
+          "TranslationKey": "Events/Saloon:97:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Do you have any new chicken stories for me?"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s0|g=male",
+          "DialogueText": "I've got a linguini with mushroom cream sauce for Mr. {Farmer_Name}.",
+          "AudioPath": "assets/ja-JP/Emily/401_male.ogg",
+          "TranslationKey": "Events/Saloon:911526:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I've got a linguini with mushroom cream sauce for Mr. .",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s1|g=female",
+          "DialogueText": "I've got a kale and walnut salad for the lady.",
+          "AudioPath": "assets/ja-JP/Emily/402_female.ogg",
+          "TranslationKey": "Events/Saloon:911526:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I've got a kale and walnut salad for the lady.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s2|g=male",
+          "DialogueText": "...and a grilled steak for Alex.",
+          "AudioPath": "assets/ja-JP/Emily/403_male.ogg",
+          "TranslationKey": "Events/Saloon:911526:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "...and a grilled steak for Alex.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Saloon/911526:s3|g=female",
+          "DialogueText": "And a grilled steak for the gentleman.",
+          "AudioPath": "assets/ja-JP/Emily/404_female.ogg",
+          "TranslationKey": "Events/Saloon:911526:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "And a grilled steak for the gentleman.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:ArchaeologyHouse/1848481:s0",
+          "DialogueText": "Hi!",
+          "AudioPath": "assets/ja-JP/Emily/405.ogg",
+          "TranslationKey": "Events/ArchaeologyHouse:1848481:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi!"
+        },
+        {
+          "DialogueFrom": "Event:Woods/2123343:s0",
+          "DialogueText": "Well, this is fun, isn't it?",
+          "AudioPath": "assets/ja-JP/Emily/406.ogg",
+          "TranslationKey": "Events/Woods:2123343:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, this is fun, isn't it?"
+        },
+        {
+          "DialogueFrom": "Event:Woods/2123343:s1",
+          "DialogueText": "Kind of spooky, actually... {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/407.ogg",
+          "TranslationKey": "Events/Woods:2123343:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Kind of spooky, actually..."
+        },
+        {
+          "DialogueFrom": "Event:Woods/2123343:s2",
+          "DialogueText": "Heh... it's chilly out here... {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Emily/408.ogg",
+          "TranslationKey": "Events/Woods:2123343:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Heh... it's chilly out here..."
+        },
+        {
+          "DialogueFrom": "Event:Woods/2123343:s3",
+          "DialogueText": "A bear! I hope he's not hungry... {Portrait:Custom:6}",
+          "AudioPath": "assets/ja-JP/Emily/409.ogg",
+          "TranslationKey": "Events/Woods:2123343:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "A bear! I hope he's not hungry..."
+        },
+        {
+          "DialogueFrom": "Event:Woods/2123343:s4",
+          "DialogueText": "Oh... the other sleeping bag is still outside... {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/410.ogg",
+          "TranslationKey": "Events/Woods:2123343:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh... the other sleeping bag is still outside..."
+        },
+        {
+          "DialogueFrom": "Event:Woods/2123343:s5",
+          "DialogueText": "No way am I going back out there! {Portrait:Custom:6}",
+          "AudioPath": "assets/ja-JP/Emily/411.ogg",
+          "TranslationKey": "Events/Woods:2123343:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "No way am I going back out there!"
+        },
+        {
+          "DialogueFrom": "Event:Woods/2123343:s6",
+          "DialogueText": "Um.. {Farmer_Name}? You don't mind sharing a sleeping bag with me, do you? {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Emily/412.ogg",
+          "TranslationKey": "Events/Woods:2123343:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Um.. ? You don't mind sharing a sleeping bag with me, do you?"
+        },
+        {
+          "DialogueFrom": "Event:Temp/poppy:s0",
+          "DialogueText": "Wow! Those electronic sounds were far out! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/413.ogg",
+          "TranslationKey": "Events/Temp:poppy:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow! Those electronic sounds were far out!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/poppy:s1",
+          "DialogueText": "Woooh! That was great! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/414.ogg",
+          "TranslationKey": "Events/Temp:poppy:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Woooh! That was great!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/heavy:s0",
+          "DialogueText": "Wow! Those electronic sounds were far out! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/415.ogg",
+          "TranslationKey": "Events/Temp:heavy:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow! Those electronic sounds were far out!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/heavy:s1",
+          "DialogueText": "Woooh! That was great! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/416.ogg",
+          "TranslationKey": "Events/Temp:heavy:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Woooh! That was great!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/techno:s0",
+          "DialogueText": "Wow! Those electronic sounds were far out! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/417.ogg",
+          "TranslationKey": "Events/Temp:techno:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow! Those electronic sounds were far out!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/techno:s1",
+          "DialogueText": "Woooh! That was great! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/418.ogg",
+          "TranslationKey": "Events/Temp:techno:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Woooh! That was great!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/honkytonk:s0",
+          "DialogueText": "Wow! Those electronic sounds were far out! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/419.ogg",
+          "TranslationKey": "Events/Temp:honkytonk:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow! Those electronic sounds were far out!"
+        },
+        {
+          "DialogueFrom": "Event:Temp/honkytonk:s1",
+          "DialogueText": "Woooh! That was great! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/420.ogg",
+          "TranslationKey": "Events/Temp:honkytonk:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Woooh! That was great!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Emily",
+          "DialogueText": "ホントはわたしがピエロをやりたかったの。でも、期をのがしちゃって。",
+          "AudioPath": "assets/ja-JP/Emily/421.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "ホントはわたしがピエロをやりたかったの。でも、期をのがしちゃって。"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Emily_y2",
+          "DialogueText": "サンディと私が小さかった頃、2人で家出してサーカスに入ろうって言ってたの。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Emily/422.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Emily_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "サンディと私が小さかった頃、2人で家出してサーカスに入ろうって言ってたの。"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Emily_y2",
+          "DialogueText": "そんなこと出来るわけないけど、あれこれ想像するのが楽しかったわ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/423.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Emily_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "そんなこと出来るわけないけど、あれこれ想像するのが楽しかったわ。"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Emily_spouse_y2",
+          "DialogueText": "サンディは今日のためにカリコ砂漠から来てくれたのよ。",
+          "AudioPath": "assets/ja-JP/Emily/424.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Emily_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "サンディは今日のためにカリコ砂漠から来てくれたのよ。"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Emily_spouse_y2",
+          "DialogueText": "彼女に会えるのはとってもうれしいわ！",
+          "AudioPath": "assets/ja-JP/Emily/425.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Emily_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "彼女に会えるのはとってもうれしいわ！"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Emily",
+          "DialogueText": "ジャックオーランタンは気に入った？ここにあるやつ、わたしが彫ったんだ。",
+          "AudioPath": "assets/ja-JP/Emily/426.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "ジャックオーランタンは気に入った？ここにあるやつ、わたしが彫ったんだ。"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Emily_y2",
+          "DialogueText": "まあ！あなたも秘密の入り口を見つけたのね！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/427.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Emily_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "まあ！あなたも秘密の入り口を見つけたのね！"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Emily_spouse_y2",
+          "DialogueText": "ふふっ… ここまで来れると思ってたよ。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Emily/428.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Emily_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "ふふっ… ここまで来れると思ってたよ。"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Emily",
+          "DialogueText": "夜明けから、ずーっとタマゴの色ぬりをしてたわ…わたしにはずっと、これがこの季節のお気に入りなんだ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/429.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "夜明けから、ずーっとタマゴの色ぬりをしてたわ…わたしにはずっと、これがこの季節のお気に入りなんだ"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Emily_y2",
+          "DialogueText": "今年はタマゴに小さなズボンと帽子をかぶせたの。とってもかわいいのよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/430.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Emily_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "今年はタマゴに小さなズボンと帽子をかぶせたの。とってもかわいいのよ！"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Emily",
+          "DialogueText": "ふぅ…おなかいっぱい。ねえ、赤いゼリーは食べてみた？",
+          "AudioPath": "assets/ja-JP/Emily/431.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "ふぅ…おなかいっぱい。ねえ、赤いゼリーは食べてみた？"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Emily_y2",
+          "DialogueText": "ねえ！今年はフラワークイーンの座をかけてヘイリーと勝負するつもりよ！ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Emily/432.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Emily_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "ねえ！今年はフラワークイーンの座をかけてヘイリーと勝負するつもりよ！"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Emily_y2",
+          "DialogueText": "今、振付を練習してるところなの！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/433.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Emily_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "今、振付を練習してるところなの！"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Emily_spouse_y2",
+          "DialogueText": "あなたが何をしているのかなって思ってたところよ！ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Emily/434.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Emily_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "あなたが何をしているのかなって思ってたところよ！"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Emily",
+          "DialogueText": "彼女は踊るのに夢中だ。",
+          "AudioPath": "assets/ja-JP/Emily/435.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "彼女は踊るのに夢中だ。"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Emily_y2",
+          "DialogueText": "はぁはぁ… もっと腰を使わないと！ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Emily/436.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Emily_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "はぁはぁ… もっと腰を使わないと！"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Emily_y2",
+          "DialogueText": "そろそろ休もうかな。汗をかいてきちゃった！ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Emily/437.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Emily_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "そろそろ休もうかな。汗をかいてきちゃった！"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Emily_spouse_y2",
+          "DialogueText": "はぁはぁ… そろそろ休んだ方がいいかも。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Emily/438.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Emily_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "はぁはぁ… そろそろ休んだ方がいいかも。"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Emily_spouse_y2",
+          "DialogueText": "あとで一緒に踊ろうね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/439.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Emily_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "あとで一緒に踊ろうね。"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Emily",
+          "DialogueText": "この限りない海を見て。深い水の底で、ありとあらゆるカタチの命が闇のなかをうごめいているのね。",
+          "AudioPath": "assets/ja-JP/Emily/440.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "この限りない海を見て。深い水の底で、ありとあらゆるカタチの命が闇のなかをうごめいているのね。"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Emily",
+          "DialogueText": "そう思うと、なんだかぞっとしない？",
+          "AudioPath": "assets/ja-JP/Emily/441.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Emily",
+          "PageIndex": 1,
+          "DisplayPattern": "そう思うと、なんだかぞっとしない？"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Emily_y2",
+          "DialogueText": "ゲッコウクラゲは深く青い神秘的なオーラを持っているの… {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Emily/442.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Emily_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "ゲッコウクラゲは深く青い神秘的なオーラを持っているの…"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Emily_y2",
+          "DialogueText": "不思議なのは見た目だけじゃないんだよ。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Emily/443.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Emily_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "不思議なのは見た目だけじゃないんだよ。"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Emily_spouse_y2",
+          "DialogueText": "ああ、ここにいたのね！ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Emily/444.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Emily_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、ここにいたのね！"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Emily_spouse_y2",
+          "DialogueText": "海にはたくさんの秘密や不思議があるのよ。本当におどろかされることばかりだわ。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Emily/445.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Emily_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "海にはたくさんの秘密や不思議があるのよ。本当におどろかされることばかりだわ。"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Emily",
+          "DialogueText": "{Farmer_Name}！あなたはどんなプレゼントがほしいの？",
+          "AudioPath": "assets/ja-JP/Emily/446.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "！あなたはどんなプレゼントがほしいの？"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Emily",
+          "DialogueText": "仕事ばかりでお休みはなし？楽しくなさそう。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/447.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Emily",
+          "PageIndex": 1,
+          "DisplayPattern": "仕事ばかりでお休みはなし？楽しくなさそう。"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Emily",
+          "DialogueText": "わあお…それ、すっごくいいね。もしそれだったらひと口ちょうだい。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/448.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Emily",
+          "PageIndex": 2,
+          "DisplayPattern": "わあお…それ、すっごくいいね。もしそれだったらひと口ちょうだい。"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Emily",
+          "DialogueText": "わかる。それって最高のプレゼントだよね！",
+          "AudioPath": "assets/ja-JP/Emily/449.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Emily",
+          "PageIndex": 3,
+          "DisplayPattern": "わかる。それって最高のプレゼントだよね！"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Emily_y2",
+          "DialogueText": "見て！あれが「冬星」よ！%noturn {Portrait:Custom:6}",
+          "AudioPath": "assets/ja-JP/Emily/450.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Emily_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "見て！あれが「冬星」よ！"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Emily_y2",
+          "DialogueText": "あっ、違ったみたい。ただの飾りだったわ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/451.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Emily_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "あっ、違ったみたい。ただの飾りだったわ！"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Emily_spouse_y2",
+          "DialogueText": "子供の頃、ヘイリーと私はこのおまつりでクッキーのデコレーションをしていたのよ！",
+          "AudioPath": "assets/ja-JP/Emily/452.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Emily_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "子供の頃、ヘイリーと私はこのおまつりでクッキーのデコレーションをしていたのよ！"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Emily_spouse_y2",
+          "DialogueText": "またいっしょにやりたいな！いい伝統にはずっと残っていてほしいんだ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/453.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Emily_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "またいっしょにやりたいな！いい伝統にはずっと残っていてほしいんだ。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Emily",
+          "DialogueText": "わあ、この雪だるま、作り直したほうがよさそう。いったい誰が作ったの？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Emily/454.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "わあ、この雪だるま、作り直したほうがよさそう。いったい誰が作ったの？"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Emily_y2",
+          "DialogueText": "雪だるまは定番のスタイルが一番よ！帽子とマフラーがおしゃれでしょ？",
+          "AudioPath": "assets/ja-JP/Emily/455.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Emily_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "雪だるまは定番のスタイルが一番よ！帽子とマフラーがおしゃれでしょ？"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Emily_spouse_y2",
+          "DialogueText": "じゃじゃーん！あなたを作ったの！",
+          "AudioPath": "assets/ja-JP/Emily/456.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Emily_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "じゃじゃーん！あなたを作ったの！"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Emily_spouse_y2",
+          "DialogueText": "えっ？似てないって？ そうかな…カンペキよ！",
+          "AudioPath": "assets/ja-JP/Emily/457.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Emily_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "えっ？似てないって？ そうかな…カンペキよ！"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Emily:s0",
+          "DialogueText": "こんなプレゼント、うっとりしちゃうよ！ほんとにありがとう！",
+          "AudioPath": "assets/ja-JP/Emily/458.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Emily:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "こんなプレゼント、うっとりしちゃうよ！ほんとにありがとう！"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Emily:s1",
+          "DialogueText": "ありがとう！このプレゼントからは、ポジティブなエネルギーを感じるよ。",
+          "AudioPath": "assets/ja-JP/Emily/459.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Emily:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "ありがとう！このプレゼントからは、ポジティブなエネルギーを感じるよ。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Emily:s2",
+          "DialogueText": "ごめん、{Farmer_Name}。これ、あんまり好きじゃないや。",
+          "AudioPath": "assets/ja-JP/Emily/460.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Emily:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "ごめん、。これ、あんまり好きじゃないや。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Emily:s3",
+          "DialogueText": "このプレゼント、強いネガティブなエネルギーを持ってる。ひどすぎて耐えられないよ。",
+          "AudioPath": "assets/ja-JP/Emily/461.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Emily:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "このプレゼント、強いネガティブなエネルギーを持ってる。ひどすぎて耐えられないよ。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Emily:s4",
+          "DialogueText": "ありがとう！",
+          "AudioPath": "assets/ja-JP/Emily/462.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Emily:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "ありがとう！"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Emily",
+          "DialogueText": "これは特別な瞬間なの…",
+          "AudioPath": "assets/ja-JP/Emily/463.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "これは特別な瞬間なの…"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Emily",
+          "DialogueText": "あなたと一緒にここに立てるって、私にはずっと分かってたよ。いつも心の中でそう感じていたの。",
+          "AudioPath": "assets/ja-JP/Emily/464.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Emily",
+          "PageIndex": 1,
+          "DisplayPattern": "あなたと一緒にここに立てるって、私にはずっと分かってたよ。いつも心の中でそう感じていたの。"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Emily",
+          "DialogueText": "それがやっと実現したんだね。\"/pause 500/speak Emily \"世界って神秘的で素敵なところね… {Portrait:Love}\"",
+          "AudioPath": "assets/ja-JP/Emily/465.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Emily",
+          "PageIndex": 2,
+          "DisplayPattern": "それがやっと実現したんだね。\"/pause 500/speak Emily \"世界って神秘的で素敵なところね…\""
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_spring_movie_1_BeforeMovie",
+          "DialogueText": "この映画の準備のために一握りのナッツを食べた...頭に良い食べ物！",
+          "AudioPath": "assets/ja-JP/Emily/466.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_spring_movie_1_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "この映画の準備のために一握りのナッツを食べた...頭に良い食べ物！"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_spring_movie_1_AfterMovie",
+          "DialogueText": "オレは昔より少し賢くなったと思うが...そうだよな？",
+          "AudioPath": "assets/ja-JP/Emily/467.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_spring_movie_1_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "オレは昔より少し賢くなったと思うが...そうだよな？"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_love_BeforeMovie",
+          "DialogueText": "この映画のポスターを見たとき、頭の中にすごくポジティブな感覚を感じたんだ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/468.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "この映画のポスターを見たとき、頭の中にすごくポジティブな感覚を感じたんだ。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_love_AfterMovie",
+          "DialogueText": "あの映画はある意味とてもスピリチュアルだった...同意しないか？オレはそれが大好きだったよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/469.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "あの映画はある意味とてもスピリチュアルだった...同意しないか？オレはそれが大好きだったよ！"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_like_BeforeMovie",
+          "DialogueText": "君と一緒に映画が見れてうれしいよ！スクリーンの中で完全に迷子になる傾向があるんだ。",
+          "AudioPath": "assets/ja-JP/Emily/470.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "君と一緒に映画が見れてうれしいよ！スクリーンの中で完全に迷子になる傾向があるんだ。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_like_AfterMovie",
+          "DialogueText": "それ以来ポジティブに感じるよ...それがいい映画だったってことだな！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/471.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "それ以来ポジティブに感じるよ...それがいい映画だったってことだな！"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_dislike_BeforeMovie",
+          "DialogueText": "ふつうはもっとポジティブな映画を見に行くから、これは面白いだろう。",
+          "AudioPath": "assets/ja-JP/Emily/472.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "ふつうはもっとポジティブな映画を見に行くから、これは面白いだろう。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_dislike_DuringMovie",
+          "DialogueText": "ヨーバ、この映画の暗いエネルギーから私を守って。 {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Emily/473.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_dislike_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "ヨーバ、この映画の暗いエネルギーから私を守って。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_dislike_DuringMovie_2",
+          "DialogueText": "エミリーは自分にささやいています...」",
+          "AudioPath": "assets/ja-JP/Emily/474.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_dislike_DuringMovie_2",
+          "PageIndex": 0,
+          "DisplayPattern": "エミリーは自分にささやいています...」"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Emily_dislike_AfterMovie",
+          "DialogueText": "私のエネルギーレベルはそれから低いの... {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Emily/475.ogg",
+          "TranslationKey": "Strings/MovieReactions:Emily_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "私のエネルギーレベルはそれから低いの..."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Emily_marriage",
+          "DialogueText": "ねえ、{Farmer_Name}。私はありのままのあなたを愛してるわ… でも、もし望むなら、あなたも箱の中に入っていいのよ！",
+          "AudioPath": "assets/ja-JP/Emily/476.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Emily_marriage",
+          "PageIndex": 0,
+          "DisplayPattern": "ねえ、。私はありのままのあなたを愛してるわ… でも、もし望むなら、あなたも箱の中に入っていいのよ！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Emily2_marriage",
+          "DialogueText": "とても楽しいけど、いそがしすぎて家のことがなにもできないよ。あなたの方はどう？",
+          "AudioPath": "assets/ja-JP/Emily/477.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Emily2_marriage",
+          "PageIndex": 0,
+          "DisplayPattern": "とても楽しいけど、いそがしすぎて家のことがなにもできないよ。あなたの方はどう？"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Emily3_marriage",
+          "DialogueText": "思い出せない… 私、今朝オウムにごはんをあげたっけ？",
+          "AudioPath": "assets/ja-JP/Emily/478.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Emily3_marriage",
+          "PageIndex": 0,
+          "DisplayPattern": "思い出せない… 私、今朝オウムにごはんをあげたっけ？"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Emily",
+          "DialogueText": "うーん…あなたのファッションって、あなたの内面の感情と一致していない気がするの。箱の中に入ってくれたら、ばっちり仕上げてみせるわ！",
+          "AudioPath": "assets/ja-JP/Emily/479.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん…あなたのファッションって、あなたの内面の感情と一致していない気がするの。箱の中に入ってくれたら、ばっちり仕上げてみせるわ！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_AlreadyStyled",
+          "DialogueText": "とってもいい感じだよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/480.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_AlreadyStyled",
+          "PageIndex": 0,
+          "DisplayPattern": "とってもいい感じだよ！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_AlreadyStyled",
+          "DialogueText": "また今度来てくれたら新しいコーディネートを考えるからね！",
+          "AudioPath": "assets/ja-JP/Emily/481.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_AlreadyStyled",
+          "PageIndex": 1,
+          "DisplayPattern": "また今度来てくれたら新しいコーディネートを考えるからね！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_InventoryFull",
+          "DialogueText": "うーん、荷物がいっぱいみたいだね。着替えが全部入るようにしてからまた来てね！",
+          "AudioPath": "assets/ja-JP/Emily/482.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_InventoryFull",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん、荷物がいっぱいみたいだね。着替えが全部入るようにしてからまた来てね！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_1",
+          "DialogueText": "じゃあ、まずはあなたのオーラを視覚化して、どんなスタイルがあなたを一番しあわせにするかを見てみるね…",
+          "AudioPath": "assets/ja-JP/Emily/483.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_1",
+          "PageIndex": 0,
+          "DisplayPattern": "じゃあ、まずはあなたのオーラを視覚化して、どんなスタイルがあなたを一番しあわせにするかを見てみるね…"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_2",
+          "DialogueText": "うんうん…なるほど…",
+          "AudioPath": "assets/ja-JP/Emily/484.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_2",
+          "PageIndex": 0,
+          "DisplayPattern": "うんうん…なるほど…"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Reaction1",
+          "DialogueText": "あっ、くすぐったかったらゴメンね。",
+          "AudioPath": "assets/ja-JP/Emily/485.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Reaction1",
+          "PageIndex": 0,
+          "DisplayPattern": "あっ、くすぐったかったらゴメンね。"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Reaction2",
+          "DialogueText": "あっ、痛かったらゴメン！",
+          "AudioPath": "assets/ja-JP/Emily/486.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Reaction2",
+          "PageIndex": 0,
+          "DisplayPattern": "あっ、痛かったらゴメン！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Reaction3",
+          "DialogueText": "おっと、ヘアジェルが多すぎたわ…",
+          "AudioPath": "assets/ja-JP/Emily/487.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Reaction3",
+          "PageIndex": 0,
+          "DisplayPattern": "おっと、ヘアジェルが多すぎたわ…"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Reaction4",
+          "DialogueText": "だめ… こうじゃないわ…",
+          "AudioPath": "assets/ja-JP/Emily/488.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Reaction4",
+          "PageIndex": 0,
+          "DisplayPattern": "だめ… こうじゃないわ…"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Reaction5",
+          "DialogueText": "これよ！",
+          "AudioPath": "assets/ja-JP/Emily/489.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Reaction5",
+          "PageIndex": 0,
+          "DisplayPattern": "これよ！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Reaction6",
+          "DialogueText": "あれっ、こんなところにカリフラワーのフリッターが…",
+          "AudioPath": "assets/ja-JP/Emily/490.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Reaction6",
+          "PageIndex": 0,
+          "DisplayPattern": "あれっ、こんなところにカリフラワーのフリッターが…"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Reaction7",
+          "DialogueText": "ここをもうちょっと切り詰めて、と…",
+          "AudioPath": "assets/ja-JP/Emily/491.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Reaction7",
+          "PageIndex": 0,
+          "DisplayPattern": "ここをもうちょっと切り詰めて、と…"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Reaction8",
+          "DialogueText": "ここは指でちょっとにじませて…",
+          "AudioPath": "assets/ja-JP/Emily/492.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Reaction8",
+          "PageIndex": 0,
+          "DisplayPattern": "ここは指でちょっとにじませて…"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Reaction9",
+          "DialogueText": "気をつけて、これはちょっとキツいかもしれないわ…",
+          "AudioPath": "assets/ja-JP/Emily/493.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Reaction9",
+          "PageIndex": 0,
+          "DisplayPattern": "気をつけて、これはちょっとキツいかもしれないわ…"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_3",
+          "DialogueText": "オーケー、わかったよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/494.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_3",
+          "PageIndex": 0,
+          "DisplayPattern": "オーケー、わかったよ！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_3",
+          "DialogueText": "今から入るけど、心配しないで！",
+          "AudioPath": "assets/ja-JP/Emily/495.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_3",
+          "PageIndex": 1,
+          "DisplayPattern": "今から入るけど、心配しないで！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_4",
+          "DialogueText": "それっ！",
+          "AudioPath": "assets/ja-JP/Emily/496.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_4",
+          "PageIndex": 0,
+          "DisplayPattern": "それっ！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_5",
+          "DialogueText": "よし！感じるわ。あなたの内面と外面の自我は、今完全に一致してる！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/497.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_5",
+          "PageIndex": 0,
+          "DisplayPattern": "よし！感じるわ。あなたの内面と外面の自我は、今完全に一致してる！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_5",
+          "DialogueText": "新しい「あなた」を見るのが楽しみだわ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/498.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_5",
+          "PageIndex": 1,
+          "DisplayPattern": "新しい「あなた」を見るのが楽しみだわ！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Done",
+          "DialogueText": "ねえ？あなたはどう思う？",
+          "AudioPath": "assets/ja-JP/Emily/499.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Done",
+          "PageIndex": 0,
+          "DisplayPattern": "ねえ？あなたはどう思う？"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:MakeOver_Emily_Done",
+          "DialogueText": "気が変わったときのために、古い服はバックパックに入れておいたよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Emily/500.ogg",
+          "TranslationKey": "Strings/1_6_Strings:MakeOver_Emily_Done",
+          "PageIndex": 1,
+          "DisplayPattern": "気が変わったときのために、古い服はバックパックに入れておいたよ！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Emily",
+          "DialogueText": "ああ、日陰は気持ちいいね。",
+          "AudioPath": "assets/ja-JP/Emily/501.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、日陰は気持ちいいね。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,896 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Kent.ru-RU",
+      "VoicePackName": "DictionarV2 (Kent - ru-RU)",
+      "Character": "Kent",
+      "Language": "ru-RU",
+      "Entries": [
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Привет, фермер.",
+          "AudioPath": "assets/ru-RU/Kent/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет, фермер."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Меня так долго здесь не было... Чувствую себя чужим.",
+          "AudioPath": "assets/ru-RU/Kent/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "Меня так долго здесь не было... Чувствую себя чужим."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Это мне? Неожиданно... Но не откажусь. Спасибо!",
+          "AudioPath": "assets/ru-RU/Kent/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Это мне? Неожиданно... Но не откажусь. Спасибо!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)Book_Bombs",
+          "DialogueText": "Ну, на дварфийском я не читаю, но для коллекции прекрасно пойдет. Спасибо.",
+          "AudioPath": "assets/ru-RU/Kent/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:AcceptGift_(O)Book_Bombs",
+          "PageIndex": 0,
+          "DisplayPattern": "Ну, на дварфийском я не читаю, но для коллекции прекрасно пойдет. Спасибо."
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Хе-хе... Это благодатный дождь. Напоминание о том, что есть силы намного сильнее, чем все, что сделал человек.",
+          "AudioPath": "assets/ru-RU/Kent/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Хе-хе... Это благодатный дождь. Напоминание о том, что есть силы намного сильнее, чем все, что сделал человек."
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Думать об этом как-то приятно, {Farmer_Name}.",
+          "AudioPath": "assets/ru-RU/Kent/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:GreenRain_2",
+          "PageIndex": 1,
+          "DisplayPattern": "Думать об этом как-то приятно, ."
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "Привет, {Farmer_Name}. Рад, что ты здесь.",
+          "AudioPath": "assets/ru-RU/Kent/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет, . Рад, что ты здесь."
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "Пора возвращаться домой.",
+          "AudioPath": "assets/ru-RU/Kent/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "Пора возвращаться домой."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Вот стою я на этом пляже... И на душе так спокойно, как никогда раньше. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Kent/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "Вот стою я на этом пляже... И на душе так спокойно, как никогда раньше."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Да, океан — это поистине что-то особенное.",
+          "AudioPath": "assets/ru-RU/Kent/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Resort_Shore",
+          "PageIndex": 1,
+          "DisplayPattern": "Да, океан — это поистине что-то особенное."
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "Прекрасное место, чтобы побыть с семьей. Большое спасибо за починку!",
+          "AudioPath": "assets/ru-RU/Kent/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "Прекрасное место, чтобы побыть с семьей. Большое спасибо за починку!"
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "Мне просто нужно немного воды.",
+          "AudioPath": "assets/ru-RU/Kent/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "Мне просто нужно немного воды."
+        },
+        {
+          "DialogueFrom": "married_Sam",
+          "DialogueText": "Это гордость для отца — видеть, как его сын становится мужчиной. Благословляю тебя от всей души. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Kent/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:married_Sam",
+          "PageIndex": 0,
+          "DisplayPattern": "Это гордость для отца — видеть, как его сын становится мужчиной. Благословляю тебя от всей души."
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Кататься на лодке было весело. Мне даже пригодились мои навигационные навыки, чтобы помочь в ее управлении. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Kent/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Кататься на лодке было весело. Мне даже пригодились мои навигационные навыки, чтобы помочь в ее управлении."
+        },
+        {
+          "DialogueFrom": "eventSeen_100_memory_oneday",
+          "DialogueText": "Извини за тот раз.",
+          "AudioPath": "assets/ru-RU/Kent/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:eventSeen_100_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "Извини за тот раз."
+        },
+        {
+          "DialogueFrom": "eventSeen_100_memory_oneday",
+          "DialogueText": "Я не желаю к себе особого отношения. Просто хочу быть как все.",
+          "AudioPath": "assets/ru-RU/Kent/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:eventSeen_100_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "Я не желаю к себе особого отношения. Просто хочу быть как все."
+        },
+        {
+          "DialogueFrom": "MovieInvitation",
+          "DialogueText": "Эм... Ладно. Спасибо. Встретимся на месте. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Kent/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:MovieInvitation",
+          "PageIndex": 0,
+          "DisplayPattern": "Эм... Ладно. Спасибо. Встретимся на месте."
+        },
+        {
+          "DialogueFrom": "accept_864",
+          "DialogueText": "...! {Portrait:Love}",
+          "AudioPath": "assets/ru-RU/Kent/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:accept_864",
+          "PageIndex": 0,
+          "DisplayPattern": "...!"
+        },
+        {
+          "DialogueFrom": "accept_864",
+          "DialogueText": "...Откуда это у тебя? {Portrait:Love}",
+          "AudioPath": "assets/ru-RU/Kent/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:accept_864",
+          "PageIndex": 1,
+          "DisplayPattern": "...Откуда это у тебя?"
+        },
+        {
+          "DialogueFrom": "accept_864",
+          "DialogueText": "... {Portrait:Angry}",
+          "AudioPath": "assets/ru-RU/Kent/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:accept_864",
+          "PageIndex": 2,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "accept_864",
+          "DialogueText": "Этот человек... Мы вместе войну прошли, {Farmer_Name}. Он был мне как брат.",
+          "AudioPath": "assets/ru-RU/Kent/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:accept_864",
+          "PageIndex": 3,
+          "DisplayPattern": "Этот человек... Мы вместе войну прошли, . Он был мне как брат."
+        },
+        {
+          "DialogueFrom": "accept_864",
+          "DialogueText": "Но... только мне удалось вернуться. {Portrait:Angry}",
+          "AudioPath": "assets/ru-RU/Kent/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:accept_864",
+          "PageIndex": 4,
+          "DisplayPattern": "Но... только мне удалось вернуться."
+        },
+        {
+          "DialogueFrom": "accept_864",
+          "DialogueText": "Но он не сдавался до последнего. Даже глядя смерти в глаза. Настоящий герой... Я его никогда не забуду.",
+          "AudioPath": "assets/ru-RU/Kent/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:accept_864",
+          "PageIndex": 5,
+          "DisplayPattern": "Но он не сдавался до последнего. Даже глядя смерти в глаза. Настоящий герой... Я его никогда не забуду."
+        },
+        {
+          "DialogueFrom": "accept_864",
+          "DialogueText": "Спасибо за эту вещь... Она очень много для меня значит.",
+          "AudioPath": "assets/ru-RU/Kent/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:accept_864",
+          "PageIndex": 6,
+          "DisplayPattern": "Спасибо за эту вещь... Она очень много для меня значит."
+        },
+        {
+          "DialogueFrom": "accept_864",
+          "DialogueText": "Вот, возьми. Эта штука лежала в нашем кухонном шкафу много лет: так никому и не пригодилась.",
+          "AudioPath": "assets/ru-RU/Kent/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:accept_864",
+          "PageIndex": 7,
+          "DisplayPattern": "Вот, возьми. Эта штука лежала в нашем кухонном шкафу много лет: так никому и не пригодилась."
+        },
+        {
+          "DialogueFrom": "reject_865",
+          "DialogueText": "Да... Закрыто было крепко, так что вкус должен быть до сих пор очень яркий.",
+          "AudioPath": "assets/ru-RU/Kent/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:reject_865",
+          "PageIndex": 0,
+          "DisplayPattern": "Да... Закрыто было крепко, так что вкус должен быть до сих пор очень яркий."
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Не знаю, привыкну ли я снова к домашней жизни.",
+          "AudioPath": "assets/ru-RU/Kent/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "Не знаю, привыкну ли я снова к домашней жизни."
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Покой этого городка — будто маска. Это, наверное, только мои заморочки.",
+          "AudioPath": "assets/ru-RU/Kent/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "Покой этого городка — будто маска. Это, наверное, только мои заморочки."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Тут все не слишком изменилось с моего отъезда.",
+          "AudioPath": "assets/ru-RU/Kent/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "Тут все не слишком изменилось с моего отъезда."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Ну, разве что ты теперь здесь.",
+          "AudioPath": "assets/ru-RU/Kent/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Ну, разве что ты теперь здесь."
+        },
+        {
+          "DialogueFrom": "Tue2",
+          "DialogueText": "Тут все не слишком изменилось с моего отъезда.",
+          "AudioPath": "assets/ru-RU/Kent/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Tue2",
+          "PageIndex": 0,
+          "DisplayPattern": "Тут все не слишком изменилось с моего отъезда."
+        },
+        {
+          "DialogueFrom": "Tue2",
+          "DialogueText": "Разве что теперь в городе есть новый фермер. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Kent/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Tue2",
+          "PageIndex": 1,
+          "DisplayPattern": "Разве что теперь в городе есть новый фермер."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Мне кажется, я довольно неплохо обживаюсь. Друг в городе очень помогает. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Kent/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "Мне кажется, я довольно неплохо обживаюсь. Друг в городе очень помогает."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "... Я потерял многих друзей на поле боя. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Kent/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "... Я потерял многих друзей на поле боя."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "Что самое грустное — я даже не помню их лиц.",
+          "AudioPath": "assets/ru-RU/Kent/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Wed6",
+          "PageIndex": 1,
+          "DisplayPattern": "Что самое грустное — я даже не помню их лиц."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "...",
+          "AudioPath": "assets/ru-RU/Kent/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Wed6",
+          "PageIndex": 2,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Ты здесь уже давно, да? Твоя ферма, должно быть, процветает.",
+          "AudioPath": "assets/ru-RU/Kent/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Ты здесь уже давно, да? Твоя ферма, должно быть, процветает."
+        },
+        {
+          "DialogueFrom": "Wed10",
+          "DialogueText": "Жизнь — особый дар, и она может закончиться в мгновение ока... так что смотри, не проморгай.",
+          "AudioPath": "assets/ru-RU/Kent/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Wed10",
+          "PageIndex": 0,
+          "DisplayPattern": "Жизнь — особый дар, и она может закончиться в мгновение ока... так что смотри, не проморгай."
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "# {Portrait:Happy} Kent1",
+          "AudioPath": "assets/ru-RU/Kent/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "# Kent1"
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "Я проснулся в 4 утра... Мне бывает интересно, смогу ли я вообще вернуться к обычному распорядку дня.$k",
+          "AudioPath": "assets/ru-RU/Kent/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Thu6",
+          "PageIndex": 1,
+          "DisplayPattern": "Я проснулся в 4 утра... Мне бывает интересно, смогу ли я вообще вернуться к обычному распорядку дня."
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "Сэм так вырос в мое отсутствие. Он теперь мужчина.",
+          "AudioPath": "assets/ru-RU/Kent/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Thu6",
+          "PageIndex": 2,
+          "DisplayPattern": "Сэм так вырос в мое отсутствие. Он теперь мужчина."
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "Хотел бы я быть с ним рядом все то время, что он рос. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Kent/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Thu6",
+          "PageIndex": 3,
+          "DisplayPattern": "Хотел бы я быть с ним рядом все то время, что он рос."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Ты дружишь с моим сыном?",
+          "AudioPath": "assets/ru-RU/Kent/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Ты дружишь с моим сыном?"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Наверное, ты знаешь его лучше, чем я... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Kent/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Наверное, ты знаешь его лучше, чем я..."
+        },
+        {
+          "DialogueFrom": "Thu_inlaw_Sam",
+          "DialogueText": "Привет, {Farmer_Name}. Тебе нравится брачная жизнь?",
+          "AudioPath": "assets/ru-RU/Kent/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Thu_inlaw_Sam",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет, . Тебе нравится брачная жизнь?"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Неплохой сегодня денек для рыбалки, правда?",
+          "AudioPath": "assets/ru-RU/Kent/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Неплохой сегодня денек для рыбалки, правда?"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "Надо бы заняться рыбалкой. Так хотя бы руки будут чем-то заняты.",
+          "AudioPath": "assets/ru-RU/Kent/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "Надо бы заняться рыбалкой. Так хотя бы руки будут чем-то заняты."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Джоди мне сказала, что ты теперь часть нашего сообщества. Рад слышать.",
+          "AudioPath": "assets/ru-RU/Kent/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Джоди мне сказала, что ты теперь часть нашего сообщества. Рад слышать."
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Я плохо сплю, так что прости, если я выгляжу усталым.",
+          "AudioPath": "assets/ru-RU/Kent/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "Я плохо сплю, так что прости, если я выгляжу усталым."
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Уверен, ты можешь меня понять.",
+          "AudioPath": "assets/ru-RU/Kent/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "Уверен, ты можешь меня понять."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Вот я вернулся и не знаю теперь, куда себя деть.",
+          "AudioPath": "assets/ru-RU/Kent/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Вот я вернулся и не знаю теперь, куда себя деть."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Я привык, чтобы день был организованным.",
+          "AudioPath": "assets/ru-RU/Kent/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Я привык, чтобы день был организованным."
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "У тебя есть чем себя занять, да? Это хорошо.",
+          "AudioPath": "assets/ru-RU/Kent/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Sun4",
+          "PageIndex": 0,
+          "DisplayPattern": "У тебя есть чем себя занять, да? Это хорошо."
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "Слишком много свободы может навалиться так, что не продохнешь. В нашей жизни главное — иметь четкий план.",
+          "AudioPath": "assets/ru-RU/Kent/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Sun4",
+          "PageIndex": 1,
+          "DisplayPattern": "Слишком много свободы может навалиться так, что не продохнешь. В нашей жизни главное — иметь четкий план."
+        },
+        {
+          "DialogueFrom": "event_popcorn1",
+          "DialogueText": "Молчать! Не пытайся стравить меня с женой. {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Kent/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:event_popcorn1",
+          "PageIndex": 0,
+          "DisplayPattern": "Молчать! Не пытайся стравить меня с женой."
+        },
+        {
+          "DialogueFrom": "event_popcorn2",
+          "DialogueText": "... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Kent/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:event_popcorn2",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "event_popcorn2",
+          "DialogueText": "Твоя правда, {Farmer_Name}. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Kent/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:event_popcorn2",
+          "PageIndex": 1,
+          "DisplayPattern": "Твоя правда, ."
+        },
+        {
+          "DialogueFrom": "event_popcorn3",
+          "DialogueText": "Не ври мне! Больше всего я ненавижу ложь! {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Kent/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:event_popcorn3",
+          "PageIndex": 0,
+          "DisplayPattern": "Не ври мне! Больше всего я ненавижу ложь!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/63:s0",
+          "DialogueText": "Um, hello there. My name's Kent. I just got back last night... from overseas. My wife told me that a new farmer had moved in while I was gone.",
+          "AudioPath": "assets/ru-RU/Kent/59.ogg",
+          "TranslationKey": "Events/Farm:63:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Um, hello there. My name's Kent. I just got back last night... from overseas. My wife told me that a new farmer had moved in while I was gone."
+        },
+        {
+          "DialogueFrom": "Event:Farm/63:s1",
+          "DialogueText": "Well, I just wanted to introduce myself... I'll see you around.",
+          "AudioPath": "assets/ru-RU/Kent/60.ogg",
+          "TranslationKey": "Events/Farm:63:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I just wanted to introduce myself... I'll see you around."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/95:s0",
+          "DialogueText": "Hi {Farmer_Name}. Please, come in.",
+          "AudioPath": "assets/ru-RU/Kent/61.ogg",
+          "TranslationKey": "Events/SamHouse:95:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi . Please, come in."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/95:s1",
+          "DialogueText": "Heh heh. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Kent/62.ogg",
+          "TranslationKey": "Events/SamHouse:95:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Heh heh."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/95:s2",
+          "DialogueText": "Mmm... that crispy bass was delicious! The breading was to die for...",
+          "AudioPath": "assets/ru-RU/Kent/63.ogg",
+          "TranslationKey": "Events/SamHouse:95:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Mmm... that crispy bass was delicious! The breading was to die for..."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/95:s3",
+          "DialogueText": "I almost feel like part of the family, now.",
+          "AudioPath": "assets/ru-RU/Kent/64.ogg",
+          "TranslationKey": "Events/SamHouse:95:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I almost feel like part of the family, now."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s0",
+          "DialogueText": "AAAAAHHHHHHH!!! {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Kent/65.ogg",
+          "TranslationKey": "Events/SamHouse:100:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "AAAAAHHHHHHH!!!"
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s1",
+          "DialogueText": "That sound... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Kent/66.ogg",
+          "TranslationKey": "Events/SamHouse:100:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "That sound..."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s2",
+          "DialogueText": "You should've known that sound would remind me of the war! {Portrait:Unique}",
+          "AudioPath": "assets/ru-RU/Kent/67.ogg",
+          "TranslationKey": "Events/SamHouse:100:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "You should've known that sound would remind me of the war!"
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s3",
+          "DialogueText": "...I lost a lot of good friends in those bloody trenches. {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Kent/68.ogg",
+          "TranslationKey": "Events/SamHouse:100:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "...I lost a lot of good friends in those bloody trenches."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s4",
+          "DialogueText": "...Things have changed.",
+          "AudioPath": "assets/ru-RU/Kent/69.ogg",
+          "TranslationKey": "Events/SamHouse:100:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "...Things have changed."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s5",
+          "DialogueText": "(Say something to Kent) {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Kent/70.ogg",
+          "TranslationKey": "Events/SamHouse:100:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "(Say something to Kent)"
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s6",
+          "DialogueText": "Jodi's to blame... she should've known better!",
+          "AudioPath": "assets/ru-RU/Kent/71.ogg",
+          "TranslationKey": "Events/SamHouse:100:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Jodi's to blame... she should've known better!"
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s7",
+          "DialogueText": "I know you're hurting... but don't blame your wife.",
+          "AudioPath": "assets/ru-RU/Kent/72.ogg",
+          "TranslationKey": "Events/SamHouse:100:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I know you're hurting... but don't blame your wife."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s8",
+          "DialogueText": "(Lie) Blame me... I asked for popcorn",
+          "AudioPath": "assets/ru-RU/Kent/73.ogg",
+          "TranslationKey": "Events/SamHouse:100:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "(Lie) Blame me... I asked for popcorn"
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s9",
+          "DialogueText": "... {Portrait:Sad}",
+          "AudioPath": "assets/ru-RU/Kent/74.ogg",
+          "TranslationKey": "Events/SamHouse:100:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s10",
+          "DialogueText": "I'm sorry, honey. You couldn't have known the sound of popcorn would make me upset.",
+          "AudioPath": "assets/ru-RU/Kent/75.ogg",
+          "TranslationKey": "Events/SamHouse:100:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm sorry, honey. You couldn't have known the sound of popcorn would make me upset."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s0",
+          "DialogueText": "I'm happy for an excuse to get out of the house, and take my mind off things.",
+          "AudioPath": "assets/ru-RU/Kent/76.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm happy for an excuse to get out of the house, and take my mind off things."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Kent",
+          "DialogueText": "Я все жду, пока клоун сделает что-нибудь смешное.",
+          "AudioPath": "assets/ru-RU/Kent/77.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "Я все жду, пока клоун сделает что-нибудь смешное."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Kent",
+          "DialogueText": "Сплошное разочарование.",
+          "AudioPath": "assets/ru-RU/Kent/78.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Kent",
+          "PageIndex": 1,
+          "DisplayPattern": "Сплошное разочарование."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Kent_y2",
+          "DialogueText": "*хихикает* Мой сын так метко стреляет. Уж не в меня ли он пошел? {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Kent/79.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Kent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "*хихикает* Мой сын так метко стреляет. Уж не в меня ли он пошел?"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Kent",
+          "DialogueText": "Привет, {Farmer_Name}. Приятный вечер, правда?",
+          "AudioPath": "assets/ru-RU/Kent/80.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "Привет, . Приятный вечер, правда?"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Kent_y2",
+          "DialogueText": "Не такие уж они и грозные. {Portrait:Neutral}",
+          "AudioPath": "assets/ru-RU/Kent/81.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Kent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Не такие уж они и грозные."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Kent",
+          "DialogueText": "По правде говоря, я не очень люблю яйца.",
+          "AudioPath": "assets/ru-RU/Kent/82.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "По правде говоря, я не очень люблю яйца."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Kent",
+          "DialogueText": "Это открытое поле... нервирует меня.",
+          "AudioPath": "assets/ru-RU/Kent/83.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "Это открытое поле... нервирует меня."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Kent",
+          "DialogueText": "*шепотом* Думай о хорошем, Кент. Думай. О. Хорошем.",
+          "AudioPath": "assets/ru-RU/Kent/84.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Kent",
+          "PageIndex": 1,
+          "DisplayPattern": "*шепотом* Думай о хорошем, Кент. Думай. О. Хорошем."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Kent_y2",
+          "DialogueText": "Как думаешь... почему людям нравятся цветы?",
+          "AudioPath": "assets/ru-RU/Kent/85.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Kent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Как думаешь... почему людям нравятся цветы?"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Kent_y2",
+          "DialogueText": "Если у нас с Джоди когда-нибудь родится дочь, мы назовем ее в честь цветка. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Kent/86.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Kent_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Если у нас с Джоди когда-нибудь родится дочь, мы назовем ее в честь цветка."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Kent",
+          "DialogueText": "О, рад тебя видеть.",
+          "AudioPath": "assets/ru-RU/Kent/87.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "О, рад тебя видеть."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Kent_y2",
+          "DialogueText": "*нюх* ...Пахнет так вкусно, что навевает воспоминания... {Portrait:Neutral}",
+          "AudioPath": "assets/ru-RU/Kent/88.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Kent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "*нюх* ...Пахнет так вкусно, что навевает воспоминания..."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Kent_y2",
+          "DialogueText": "Непонятно только, хорошие или плохие...",
+          "AudioPath": "assets/ru-RU/Kent/89.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Kent_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Непонятно только, хорошие или плохие..."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Kent",
+          "DialogueText": "Добрый вечер, {Farmer_Name}. Надеюсь, ты найдешь время расслабиться перед сезоном сбора урожая.",
+          "AudioPath": "assets/ru-RU/Kent/90.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "Добрый вечер, . Надеюсь, ты найдешь время расслабиться перед сезоном сбора урожая."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Kent_y2",
+          "DialogueText": "Эй. Большие планы на осень?",
+          "AudioPath": "assets/ru-RU/Kent/91.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Kent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Эй. Большие планы на осень?"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Kent",
+          "DialogueText": "Добрый день, {Farmer_Name}. Счастливого Пиршества.",
+          "AudioPath": "assets/ru-RU/Kent/92.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "Добрый день, . Счастливого Пиршества."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Kent_y2",
+          "DialogueText": "Я благодарен за то, что мой мальчик счастлив и здоров. {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Kent/93.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Kent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Я благодарен за то, что мой мальчик счастлив и здоров."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Kent",
+          "DialogueText": "Люблю зиму. Вокруг так спокойно.",
+          "AudioPath": "assets/ru-RU/Kent/94.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "Люблю зиму. Вокруг так спокойно."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Kent_y2",
+          "DialogueText": "Ну что, пора начинать соревнование? Мы все думаем, что ты победишь.",
+          "AudioPath": "assets/ru-RU/Kent/95.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Kent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ну что, пора начинать соревнование? Мы все думаем, что ты победишь."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Kent:s0",
+          "DialogueText": "Ох!.. Мне мама такое в детстве давала. Сразу возвращаются чудесные воспоминания. Спасибо.",
+          "AudioPath": "assets/ru-RU/Kent/96.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Kent:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ох!.. Мне мама такое в детстве давала. Сразу возвращаются чудесные воспоминания. Спасибо."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Kent:s1",
+          "DialogueText": "О, а вот это отличный подарок. Спасибо.",
+          "AudioPath": "assets/ru-RU/Kent/97.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Kent:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "О, а вот это отличный подарок. Спасибо."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Kent:s2",
+          "DialogueText": "Ага... Это... Что это такое вообще? Хм-м...",
+          "AudioPath": "assets/ru-RU/Kent/98.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Kent:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ага... Это... Что это такое вообще? Хм-м..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Kent:s3",
+          "DialogueText": "Это же... Нам такое давали в лагере военнопленных в Готоро. Я пытался об этом забыть. *Вздрагивает*",
+          "AudioPath": "assets/ru-RU/Kent/99.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Kent:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Это же... Нам такое давали в лагере военнопленных в Готоро. Я пытался об этом забыть. *Вздрагивает*"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Kent:s4",
+          "DialogueText": "Очень мило с твоей стороны. Семье понравится.",
+          "AudioPath": "assets/ru-RU/Kent/100.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Kent:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Очень мило с твоей стороны. Семье понравится."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Kent_like_BeforeMovie",
+          "DialogueText": "Спасибо за приглашение в кино, {Farmer_Name}. Возвращаться к мирной жизни не очень-то легко, но ты мне очень в этом помогаешь.",
+          "AudioPath": "assets/ru-RU/Kent/101.ogg",
+          "TranslationKey": "Strings/MovieReactions:Kent_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Спасибо за приглашение в кино, . Возвращаться к мирной жизни не очень-то легко, но ты мне очень в этом помогаешь."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Kent_like_DuringMovie",
+          "DialogueText": "Прекрасно... Напоминает мне о беззаботных временах... {Portrait:Happy}",
+          "AudioPath": "assets/ru-RU/Kent/102.ogg",
+          "TranslationKey": "Strings/MovieReactions:Kent_like_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Прекрасно... Напоминает мне о беззаботных временах..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Kent_like_DuringMovie_2",
+          "DialogueText": "Кент едва заметно улыбается.",
+          "AudioPath": "assets/ru-RU/Kent/103.ogg",
+          "TranslationKey": "Strings/MovieReactions:Kent_like_DuringMovie_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Кент едва заметно улыбается."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Kent_like_AfterMovie",
+          "DialogueText": "Было весело. Когда ты увлечен фильмом, все проблемы и невзгоды забываются.",
+          "AudioPath": "assets/ru-RU/Kent/104.ogg",
+          "TranslationKey": "Strings/MovieReactions:Kent_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Было весело. Когда ты увлечен фильмом, все проблемы и невзгоды забываются."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Kent_dislike_BeforeMovie",
+          "DialogueText": "Я не очень-то уверен насчет этого фильма...",
+          "AudioPath": "assets/ru-RU/Kent/105.ogg",
+          "TranslationKey": "Strings/MovieReactions:Kent_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Я не очень-то уверен насчет этого фильма..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Kent_dislike_DuringMovie",
+          "DialogueText": "Кент покрывается холодным потом...",
+          "AudioPath": "assets/ru-RU/Kent/106.ogg",
+          "TranslationKey": "Strings/MovieReactions:Kent_dislike_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Кент покрывается холодным потом..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Kent_dislike_AfterMovie",
+          "DialogueText": "Это далось мне не просто. Но в любом случае — спасибо, что пригласил.",
+          "AudioPath": "assets/ru-RU/Kent/107_male.ogg",
+          "TranslationKey": "Strings/MovieReactions:Kent_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Это далось мне не просто. Но в любом случае — спасибо, что пригласил.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Kent_dislike_AfterMovie",
+          "DialogueText": "Это далось мне не просто. Но в любом случае — спасибо, что пригласила.",
+          "AudioPath": "assets/ru-RU/Kent/108_female.ogg",
+          "TranslationKey": "Strings/MovieReactions:Kent_dislike_AfterMovie",
+          "PageIndex": 1,
+          "DisplayPattern": "Это далось мне не просто. Но в любом случае — спасибо, что пригласила.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Kent",
+          "DialogueText": "Эй, {Farmer_Name}. Наслаждаешься жарой?",
+          "AudioPath": "assets/ru-RU/Kent/109.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "Эй, . Наслаждаешься жарой?"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Kent",
+          "DialogueText": "Эй, у меня тут пара вещей на продажу. Дай знать, если захочешь что-нибудь купить.",
+          "AudioPath": "assets/ru-RU/Kent/110.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "Эй, у меня тут пара вещей на продажу. Дай знать, если захочешь что-нибудь купить."
+        }
+      ]
+    }
+  ]
+}

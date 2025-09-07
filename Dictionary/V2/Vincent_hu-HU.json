@@ -1,0 +1,840 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Vincent.hu-HU",
+      "VoicePackName": "DictionarV2 (Vincent - hu-HU)",
+      "Character": "Vincent",
+      "Language": "hu-HU",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Ó, egy idegen! A nevem Vincent.",
+          "AudioPath": "assets/hu-HU/Vincent/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "Ó, egy idegen! A nevem Vincent."
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "Anyukám azt mondta, hogy ne álljak szóba idegenekkel... De te jónak tűnsz.",
+          "AudioPath": "assets/hu-HU/Vincent/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "Anyukám azt mondta, hogy ne álljak szóba idegenekkel... De te jónak tűnsz."
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "Az egy szülinapi ajándék? Kinyithatom?",
+          "AudioPath": "assets/hu-HU/Vincent/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptBirthdayGift_Positive",
+          "PageIndex": 0,
+          "DisplayPattern": "Az egy szülinapi ajándék? Kinyithatom?"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Positive",
+          "DialogueText": "Ó, váó! Pont erre vágytam! Yayayaya! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Vincent/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptBirthdayGift_Positive",
+          "PageIndex": 1,
+          "DisplayPattern": "Ó, váó! Pont erre vágytam! Yayayaya!"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "Egy szülinapi ajándék? Ó... ez nem olyan vicces. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "Egy szülinapi ajándék? Ó... ez nem olyan vicces."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Váó! Annyira édes! Mmmmm....",
+          "AudioPath": "assets/hu-HU/Vincent/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Váó! Annyira édes! Mmmmm...."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(TR)FrogEgg",
+          "DialogueText": "*Placcs* *placcs* ... Fúúúj! Megkaphatom? Megkaphatom? Hurrááá! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Vincent/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptGift_(TR)FrogEgg",
+          "PageIndex": 0,
+          "DisplayPattern": "*Placcs* *placcs* ... Fúúúj! Megkaphatom? Megkaphatom? Hurrááá!"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "Anya! Ki akarok menni játszani!%noturn",
+          "AudioPath": "assets/hu-HU/Vincent/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "Anya! Ki akarok menni játszani!"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Vincentet teljesen beborította a moha.",
+          "AudioPath": "assets/hu-HU/Vincent/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Vincentet teljesen beborította a moha."
+        },
+        {
+          "DialogueFrom": "AcceptGift_Negative_alcohol_item",
+          "DialogueText": "*szimat*... ez meg micsoda? Borzasztó a szaga... Anyaaaaaa!!! {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:AcceptGift_Negative_alcohol_item",
+          "PageIndex": 0,
+          "DisplayPattern": "*szimat*... ez meg micsoda? Borzasztó a szaga... Anyaaaaaa!!!"
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "Ez jó móka volt! Egy napon én is hajóskapitány akarok lenni!",
+          "AudioPath": "assets/hu-HU/Vincent/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez jó móka volt! Egy napon én is hajóskapitány akarok lenni!"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "Hamarosan vissza akarok térni!",
+          "AudioPath": "assets/hu-HU/Vincent/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "Hamarosan vissza akarok térni!"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Akarok látni egy cápát! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Vincent/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "Akarok látni egy cápát!"
+        },
+        {
+          "DialogueFrom": "married_Sam",
+          "DialogueText": "Ne vidd el az én Sammymet! {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:married_Sam",
+          "PageIndex": 0,
+          "DisplayPattern": "Ne vidd el az én Sammymet!"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Ha jól megfigyeled, láthatod, ahogy kis bogarak ugranak ki a homokból. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Vincent/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Ha jól megfigyeled, láthatod, ahogy kis bogarak ugranak ki a homokból."
+        },
+        {
+          "DialogueFrom": "reject_869",
+          "DialogueText": "Óóó! Remek lelet!",
+          "AudioPath": "assets/hu-HU/Vincent/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:reject_869",
+          "PageIndex": 0,
+          "DisplayPattern": "Óóó! Remek lelet!"
+        },
+        {
+          "DialogueFrom": "reject_869",
+          "DialogueText": "Bár anya nem hagyná, hogy megtartsam... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:reject_869",
+          "PageIndex": 1,
+          "DisplayPattern": "Bár anya nem hagyná, hogy megtartsam..."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Ha felnövök, olyan akarok lenni, mint a bátyám! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Vincent/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Ha felnövök, olyan akarok lenni, mint a bátyám!"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Oké! Szia!",
+          "AudioPath": "assets/hu-HU/Vincent/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "Oké! Szia!"
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Örülök, hogy apu visszatért... de más, mint amilyenre emlékszem... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "Örülök, hogy apu visszatért... de más, mint amilyenre emlékszem..."
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Apu nincs olyan sokat itt... Hiányzik a vele való játszás. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "Apu nincs olyan sokat itt... Hiányzik a vele való játszás."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "*sóhaj*... Anyu nem hagyja, hogy ma több gumicukrot egyek. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "*sóhaj*... Anyu nem hagyja, hogy ma több gumicukrot egyek."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Bácsi, tudsz titkot tartani?",
+          "AudioPath": "assets/hu-HU/Vincent/23_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "Bácsi, tudsz titkot tartani?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Néni, tudsz titkot tartani? {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Vincent/24_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 1,
+          "DisplayPattern": "Néni, tudsz titkot tartani?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Feleségül akarom venni Penny nénit, ha felnövök.",
+          "AudioPath": "assets/hu-HU/Vincent/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 2,
+          "DisplayPattern": "Feleségül akarom venni Penny nénit, ha felnövök."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "De ezt senkinek se mondd el, oké? {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Vincent/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Tue6",
+          "PageIndex": 3,
+          "DisplayPattern": "De ezt senkinek se mondd el, oké?"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Bogarakat akarok keresni, de anyu mérges lesz rám, ha piszkos leszek. {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Vincent/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Bogarakat akarok keresni, de anyu mérges lesz rám, ha piszkos leszek."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Nehéz választás.",
+          "AudioPath": "assets/hu-HU/Vincent/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "Nehéz választás."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Éhes vagyok... hol van anyu? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Éhes vagyok... hol van anyu?"
+        },
+        {
+          "DialogueFrom": "Thu2",
+          "DialogueText": "Te nem vagy olyan uncsi, mint a többi felnőtt!",
+          "AudioPath": "assets/hu-HU/Vincent/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Thu2",
+          "PageIndex": 0,
+          "DisplayPattern": "Te nem vagy olyan uncsi, mint a többi felnőtt!"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Fúj, már megint főtt cékla van... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Fúj, már megint főtt cékla van..."
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "$e",
+          "AudioPath": "assets/hu-HU/Vincent/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Jaj ne... anyu estére lencselevest készít. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Fri",
+          "PageIndex": 2,
+          "DisplayPattern": "Jaj ne... anyu estére lencselevest készít."
+        },
+        {
+          "DialogueFrom": "Sat_1",
+          "DialogueText": "Apu hamarosan hazatér!",
+          "AudioPath": "assets/hu-HU/Vincent/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat_1",
+          "PageIndex": 0,
+          "DisplayPattern": "Apu hamarosan hazatér!"
+        },
+        {
+          "DialogueFrom": "Sat_1",
+          "DialogueText": "Remélem hoz nekem valamilyen játékot. {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Vincent/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat_1",
+          "PageIndex": 1,
+          "DisplayPattern": "Remélem hoz nekem valamilyen játékot."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Penny néni minden héten új könyvet olvastat velem. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Penny néni minden héten új könyvet olvastat velem."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Legalább néha hagyja, hogy én válasszak!",
+          "AudioPath": "assets/hu-HU/Vincent/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "Legalább néha hagyja, hogy én válasszak!"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Apu elég fura, mióta hazatért. Vajon mi történhetett vele? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "Apu elég fura, mióta hazatért. Vajon mi történhetett vele?"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Többé már nem játszik velem. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "Többé már nem játszik velem."
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Vajon apu haza fog jönni valaha... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sat8",
+          "PageIndex": 2,
+          "DisplayPattern": "Vajon apu haza fog jönni valaha..."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Szia bácsi!",
+          "AudioPath": "assets/hu-HU/Vincent/41_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Szia bácsi!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Szia néni!",
+          "AudioPath": "assets/hu-HU/Vincent/42_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Szia néni!",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "Üdv {Farmer_Name} bácsi!",
+          "AudioPath": "assets/hu-HU/Vincent/43_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun10",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdv bácsi!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "Üdv {Farmer_Name} néni!",
+          "AudioPath": "assets/hu-HU/Vincent/44_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun10",
+          "PageIndex": 1,
+          "DisplayPattern": "Üdv néni!",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Sun10",
+          "DialogueText": "Ne mondd el anyunak... de te vagy a kedvenc felnőttem. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Vincent/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Vincent:Sun10",
+          "PageIndex": 2,
+          "DisplayPattern": "Ne mondd el anyunak... de te vagy a kedvenc felnőttem."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s0",
+          "DialogueText": "I'm really excited, Sam!",
+          "AudioPath": "assets/hu-HU/Vincent/46.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm really excited, Sam!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s1",
+          "DialogueText": "OK!",
+          "AudioPath": "assets/hu-HU/Vincent/47.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "OK!"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/3918603:s2",
+          "DialogueText": "Me too!",
+          "AudioPath": "assets/hu-HU/Vincent/48.ogg",
+          "TranslationKey": "Events/FarmHouse:3918603:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Me too!"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184643:s0",
+          "DialogueText": "Does this mean I don't have to do my homework? {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Vincent/49.ogg",
+          "TranslationKey": "Events/Town:6184643:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Does this mean I don't have to do my homework?"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184643:s1",
+          "DialogueText": "I've been thinking about cake a lot lately...",
+          "AudioPath": "assets/hu-HU/Vincent/50.ogg",
+          "TranslationKey": "Events/Town:6184643:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been thinking about cake a lot lately..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s0",
+          "DialogueText": "Sam...? {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Vincent/51.ogg",
+          "TranslationKey": "Events/Beach:733330:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Sam...?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s1",
+          "DialogueText": "Is Dad ever going to come home? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/52.ogg",
+          "TranslationKey": "Events/Beach:733330:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Is Dad ever going to come home?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s2",
+          "DialogueText": "But I heard some grown-ups saying that... that all of our troops are getting shot to pieces. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/53.ogg",
+          "TranslationKey": "Events/Beach:733330:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "But I heard some grown-ups saying that... that all of our troops are getting shot to pieces."
+        },
+        {
+          "DialogueFrom": "Event:Beach/733330:s3",
+          "DialogueText": "Okay!",
+          "AudioPath": "assets/hu-HU/Vincent/54.ogg",
+          "TranslationKey": "Events/Beach:733330:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s0|g=male",
+          "DialogueText": "Mr. {Farmer_Name}, are you going to marry Miss Penny? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/55_male.ogg",
+          "TranslationKey": "Events/Forest:181928:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Mr. , are you going to marry Miss Penny?",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Forest/181928:s1|g=female",
+          "DialogueText": "Ms. {Farmer_Name}... Um, do you have a boyfriend?",
+          "AudioPath": "assets/hu-HU/Vincent/56_female.ogg",
+          "TranslationKey": "Events/Forest:181928:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ms. ... Um, do you have a boyfriend?",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseFarming:s0",
+          "DialogueText": "Um, Farmer {Farmer_Name}? If I eat your veggies will I grow up strong like my big brother Sam?",
+          "AudioPath": "assets/hu-HU/Vincent/57.ogg",
+          "TranslationKey": "Events/Forest:choseFarming:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Um, Farmer ? If I eat your veggies will I grow up strong like my big brother Sam?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseFarming:s1",
+          "DialogueText": "He's so strong, I saw him lift Miss Penny clear off the ground last night when they were climbing into a tree. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Vincent/58.ogg",
+          "TranslationKey": "Events/Forest:choseFarming:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "He's so strong, I saw him lift Miss Penny clear off the ground last night when they were climbing into a tree."
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseAnimals:s0",
+          "DialogueText": "Farmer {Farmer_Name}? Can I put a saddle on one of your cows and ride it into town? I wanna be a real cowboy!",
+          "AudioPath": "assets/hu-HU/Vincent/59.ogg",
+          "TranslationKey": "Events/Forest:choseAnimals:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Farmer ? Can I put a saddle on one of your cows and ride it into town? I wanna be a real cowboy!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/choseMinerals:s0",
+          "DialogueText": "Farmer {Farmer_Name}? Is it true that goblins live deep in the caves... and that they like to kidnap little girls for their dinner?",
+          "AudioPath": "assets/hu-HU/Vincent/60.ogg",
+          "TranslationKey": "Events/Forest:choseMinerals:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Farmer ? Is it true that goblins live deep in the caves... and that they like to kidnap little girls for their dinner?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s0",
+          "DialogueText": "... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/61.ogg",
+          "TranslationKey": "Events/Forest:318560:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s1",
+          "DialogueText": "Why is it locked? I wanna explore the sewers! {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/62.ogg",
+          "TranslationKey": "Events/Forest:318560:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Why is it locked? I wanna explore the sewers!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/318560:s2",
+          "DialogueText": "Professor Gunther? The man who runs the museum? Why do you think he has it? {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Vincent/63.ogg",
+          "TranslationKey": "Events/Forest:318560:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Professor Gunther? The man who runs the museum? Why do you think he has it?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s0|g=male",
+          "DialogueText": "Hiya, mister {Farmer_Name}!",
+          "AudioPath": "assets/hu-HU/Vincent/64_male.ogg",
+          "TranslationKey": "Events/Forest:3910979:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hiya, mister !",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s1|g=female",
+          "DialogueText": "Hiya, miss {Farmer_Name}!",
+          "AudioPath": "assets/hu-HU/Vincent/65_female.ogg",
+          "TranslationKey": "Events/Forest:3910979:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hiya, miss !",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s2",
+          "DialogueText": "Sp..spwing onion. Mom sends me out to pick these sometimes...",
+          "AudioPath": "assets/hu-HU/Vincent/66.ogg",
+          "TranslationKey": "Events/Forest:3910979:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Sp..spwing onion. Mom sends me out to pick these sometimes..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s3",
+          "DialogueText": "You're really nice for a grown-up... so I'm going to show you a secret. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Vincent/67.ogg",
+          "TranslationKey": "Events/Forest:3910979:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "You're really nice for a grown-up... so I'm going to show you a secret."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s4",
+          "DialogueText": "When you see it like this, it looks good, right?",
+          "AudioPath": "assets/hu-HU/Vincent/68.ogg",
+          "TranslationKey": "Events/Forest:3910979:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "When you see it like this, it looks good, right?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s5",
+          "DialogueText": "But if you peel it a little bit...",
+          "AudioPath": "assets/hu-HU/Vincent/69.ogg",
+          "TranslationKey": "Events/Forest:3910979:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "But if you peel it a little bit..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s6",
+          "DialogueText": "...It's full of bugs! {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/70.ogg",
+          "TranslationKey": "Events/Forest:3910979:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "...It's full of bugs!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s7",
+          "DialogueText": "Cool, huh? {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Vincent/71.ogg",
+          "TranslationKey": "Events/Forest:3910979:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Cool, huh?"
+        },
+        {
+          "DialogueFrom": "Event:Forest/3910979:s8",
+          "DialogueText": "Usually I just squash 'em!",
+          "AudioPath": "assets/hu-HU/Vincent/72.ogg",
+          "TranslationKey": "Events/Forest:3910979:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Usually I just squash 'em!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Vincent",
+          "DialogueText": "Múúúú!",
+          "AudioPath": "assets/hu-HU/Vincent/73.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Múúúú!"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Vincent_y2",
+          "DialogueText": "Játszhatok megint a csúzlis játékkal apa!? Kérlek? {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Vincent/74.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Játszhatok megint a csúzlis játékkal apa!? Kérlek?"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Vincent",
+          "DialogueText": "Anya nem enged be engem az útvesztőbe. *sír* {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/75.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Anya nem enged be engem az útvesztőbe. *sír*"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Vincent_y2",
+          "DialogueText": "Legyőztük az útvesztőt? Hol van a jutalmam? {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Vincent/76.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Legyőztük az útvesztőt? Hol van a jutalmam?"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Vincent",
+          "DialogueText": "Mikor kezdődik már a tojásvadászat?! Annyira izgatott vagyok!! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Vincent/77.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Mikor kezdődik már a tojásvadászat?! Annyira izgatott vagyok!!"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Vincent_y2",
+          "DialogueText": "Egy nagy tojásban akarok lakni!",
+          "AudioPath": "assets/hu-HU/Vincent/78.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Egy nagy tojásban akarok lakni!"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Vincent",
+          "DialogueText": "Ez nem igazságos... Én miért nem lehetek virágkirálynő?",
+          "AudioPath": "assets/hu-HU/Vincent/79.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez nem igazságos... Én miért nem lehetek virágkirálynő?"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Vincent_y2",
+          "DialogueText": "Ha van virágkirálynő... akkor biztos van virágkirály is! {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Vincent/80.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ha van virágkirálynő... akkor biztos van virágkirály is!"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Vincent",
+          "DialogueText": "Unatkozom...",
+          "AudioPath": "assets/hu-HU/Vincent/81.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Unatkozom..."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Vincent_y2",
+          "DialogueText": "Miért nem játszhatok a tócsák mellett? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/82.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Miért nem játszhatok a tócsák mellett?"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Vincent",
+          "DialogueText": "Látni akarom a ritka zöld medúzát!",
+          "AudioPath": "assets/hu-HU/Vincent/83.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Látni akarom a ritka zöld medúzát!"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Vincent_y2",
+          "DialogueText": "Egyszer megérintettem egy medúzát és megcsípte a kezemet. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/84.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Egyszer megérintettem egy medúzát és megcsípte a kezemet."
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Vincent",
+          "DialogueText": "Most már kinyithatjuk az ajándékokat?!",
+          "AudioPath": "assets/hu-HU/Vincent/85.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Most már kinyithatjuk az ajándékokat?!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Vincent_y2",
+          "DialogueText": "Megkaptam azt a dinoszaurusz figurámat amire vágytam! Látod!? {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Vincent/86.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Megkaptam azt a dinoszaurusz figurámat amire vágytam! Látod!?"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Vincent_y2",
+          "DialogueText": "Ez egy öhm... egy szte- ...sztego-... sztegoszonaurusz! ...Azt hiszem. {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Vincent/87.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Vincent_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Ez egy öhm... egy szte- ...sztego-... sztegoszonaurusz! ...Azt hiszem."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Vincent",
+          "DialogueText": "Láttam egy nagy halat odalent!",
+          "AudioPath": "assets/hu-HU/Vincent/88.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Láttam egy nagy halat odalent!"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Vincent_y2",
+          "DialogueText": "A bátyám segít nekem hóembert építeni! {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Vincent/89.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Vincent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "A bátyám segít nekem hóembert építeni!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s0",
+          "DialogueText": "Váó, nagyon szépen köszönöm! Ez óriási!",
+          "AudioPath": "assets/hu-HU/Vincent/90.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Váó, nagyon szépen köszönöm! Ez óriási!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s1",
+          "DialogueText": "Ez az enyém? Váó, köszönöm!",
+          "AudioPath": "assets/hu-HU/Vincent/91.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez az enyém? Váó, köszönöm!"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s2",
+          "DialogueText": "Ez nem volt vicces... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/92.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez nem volt vicces..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s3",
+          "DialogueText": "Fúj, ez meg micsoda? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/93.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Fúj, ez meg micsoda?"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Vincent:s4",
+          "DialogueText": "Köszönöm!",
+          "AudioPath": "assets/hu-HU/Vincent/94.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Vincent:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Köszönöm!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_love_BeforeMovie",
+          "DialogueText": "Annyira izgatott vagyok! Anyukám azt mondta, hogy cukorkát is kaphatok! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Vincent/95.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_love_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Annyira izgatott vagyok! Anyukám azt mondta, hogy cukorkát is kaphatok!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_love_DuringMovie",
+          "DialogueText": "Vincent remekül szórakozik!",
+          "AudioPath": "assets/hu-HU/Vincent/96.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_love_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Vincent remekül szórakozik!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_love_AfterMovie",
+          "DialogueText": "Ez olyan jó móka volt! Újra meg akarom nézni! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Vincent/97.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_love_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez olyan jó móka volt! Újra meg akarom nézni!"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_dislike_BeforeMovie",
+          "DialogueText": "D... De... Ez a film felnőtteknek való, nem? {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/98.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "D... De... Ez a film felnőtteknek való, nem?"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_dislike_DuringMovie",
+          "DialogueText": "Vincent fészkelődik a székében.",
+          "AudioPath": "assets/hu-HU/Vincent/99.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_dislike_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Vincent fészkelődik a székében."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Vincent_dislike_AfterMovie",
+          "DialogueText": "Ez unalmas volt... Semmit se értettem belőle. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Vincent/100.ogg",
+          "TranslationKey": "Strings/MovieReactions:Vincent_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez unalmas volt... Semmit se értettem belőle."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Vincent",
+          "DialogueText": "Anya, unatkozom!",
+          "AudioPath": "assets/hu-HU/Vincent/101.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Anya, unatkozom!"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Vincent",
+          "DialogueText": "Szia! Öhm... találtam pár dolgot. Meg akarod venni!?",
+          "AudioPath": "assets/hu-HU/Vincent/102.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Vincent",
+          "PageIndex": 0,
+          "DisplayPattern": "Szia! Öhm... találtam pár dolgot. Meg akarod venni!?"
+        }
+      ]
+    }
+  ]
+}

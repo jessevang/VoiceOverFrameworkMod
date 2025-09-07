@@ -1,0 +1,4430 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Haley.ja-JP",
+      "VoicePackName": "DictionarV2 (Haley - ja-JP)",
+      "Character": "Haley",
+      "Language": "ja-JP",
+      "Entries": [
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "あら…あなたが新しく牧場に来た男の人？",
+          "AudioPath": "assets/ja-JP/Haley/1_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Introduction",
+          "PageIndex": 0,
+          "DisplayPattern": "あら…あなたが新しく牧場に来た男の人？",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "あら…あら…あなたが新しく牧場に来た女の子、だったかしら？",
+          "AudioPath": "assets/ja-JP/Haley/2_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Introduction",
+          "PageIndex": 1,
+          "DisplayPattern": "あら…あら…あなたが新しく牧場に来た女の子、だったかしら？",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "えっ？ああ…私はヘイリーよ。",
+          "AudioPath": "assets/ja-JP/Haley/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Introduction",
+          "PageIndex": 2,
+          "DisplayPattern": "えっ？ああ…私はヘイリーよ。"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "ふーん…あなた、 服はとっても ダサいけど 顔は結構 いいわね。",
+          "AudioPath": "assets/ja-JP/Haley/4_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Introduction",
+          "PageIndex": 3,
+          "DisplayPattern": "ふーん…あなた、 服はとっても ダサいけど 顔は結構 いいわね。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Introduction",
+          "DialogueText": "ふーん…あなた、 服はとっても ダサいけど 顔は結構 かわいいのね…まぁ、 気にしないで。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/5_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Introduction",
+          "PageIndex": 4,
+          "DisplayPattern": "ふーん…あなた、 服はとっても ダサいけど 顔は結構 かわいいのね…まぁ、 気にしないで。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "あら… 「私」とダンスを踊りたいの？ {Portrait:Custom:13}",
+          "AudioPath": "assets/ja-JP/Haley/6_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:FlowerDance_Accept",
+          "PageIndex": 0,
+          "DisplayPattern": "あら… 「私」とダンスを踊りたいの？",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "ホントに？いいわ！いっしょに踊りましょう！",
+          "AudioPath": "assets/ja-JP/Haley/7_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:FlowerDance_Accept",
+          "PageIndex": 1,
+          "DisplayPattern": "ホントに？いいわ！いっしょに踊りましょう！",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "フフフ… もちろんじゃない。あなたとパートナーになりたかったの。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/8_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:FlowerDance_Accept",
+          "PageIndex": 2,
+          "DisplayPattern": "フフフ… もちろんじゃない。あなたとパートナーになりたかったの。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "素敵な時間を過ごしましょう！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/9_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:FlowerDance_Accept",
+          "PageIndex": 3,
+          "DisplayPattern": "素敵な時間を過ごしましょう！",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "ふーん…あなたは自信家なのね。みんな恥ずかしがって私をさそわないの。",
+          "AudioPath": "assets/ja-JP/Haley/10_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:FlowerDance_Accept",
+          "PageIndex": 4,
+          "DisplayPattern": "ふーん…あなたは自信家なのね。みんな恥ずかしがって私をさそわないの。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept",
+          "DialogueText": "今日のあなたはとても魅力的よ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/11_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:FlowerDance_Accept",
+          "PageIndex": 5,
+          "DisplayPattern": "今日のあなたはとても魅力的よ！",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Loved",
+          "DialogueText": "えっ…これを私に？わあ、{Farmer_Name}。これは最高の誕生日プレゼントよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:AcceptBirthdayGift_Loved",
+          "PageIndex": 0,
+          "DisplayPattern": "えっ…これを私に？わあ、。これは最高の誕生日プレゼントよ！"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Liked",
+          "DialogueText": "えっ、私に誕生日プレゼントを？とてもいいものね！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:AcceptBirthdayGift_Liked",
+          "PageIndex": 0,
+          "DisplayPattern": "えっ、私に誕生日プレゼントを？とてもいいものね！"
+        },
+        {
+          "DialogueFrom": "AcceptBirthdayGift_Negative",
+          "DialogueText": "うえっ！これを私の誕生日に？あなた、頭でも打ったの！？ {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Haley/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:AcceptBirthdayGift_Negative",
+          "PageIndex": 0,
+          "DisplayPattern": "うえっ！これを私の誕生日に？あなた、頭でも打ったの！？"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "私に？わあ…飲んだ方がいいのかしら、それともシャンプーにしようかな…",
+          "AudioPath": "assets/ja-JP/Haley/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "私に？わあ…飲んだ方がいいのかしら、それともシャンプーにしようかな…"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)88",
+          "DialogueText": "これって… ココナッツ？ 私、これが大好きなの！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:AcceptGift_(O)88",
+          "PageIndex": 0,
+          "DisplayPattern": "これって… ココナッツ？ 私、これが大好きなの！"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)88",
+          "DialogueText": "うーん… ココナッツを持っていると、ビーチでの暖かく晴れた日を思い出すわ。まるでその場にいるような気分になるの… たとえ雨の日でもね。",
+          "AudioPath": "assets/ja-JP/Haley/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:AcceptGift_(O)88",
+          "PageIndex": 1,
+          "DisplayPattern": "うーん… ココナッツを持っていると、ビーチでの暖かく晴れた日を思い出すわ。まるでその場にいるような気分になるの… たとえ雨の日でもね。"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)421",
+          "DialogueText": "まあ、きれいね！これは私の超お気に入りなの！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:AcceptGift_(O)421",
+          "PageIndex": 0,
+          "DisplayPattern": "まあ、きれいね！これは私の超お気に入りなの！"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "今まで、ここには来たことはないと思う。でも居心地がいいわね！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:GreenRain",
+          "PageIndex": 0,
+          "DisplayPattern": "今まで、ここには来たことはないと思う。でも居心地がいいわね！"
+        },
+        {
+          "DialogueFrom": "GreenRain",
+          "DialogueText": "私は雨のことは何も心配してないの。きっとすぐにあがるわ。",
+          "AudioPath": "assets/ja-JP/Haley/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:GreenRain",
+          "PageIndex": 1,
+          "DisplayPattern": "私は雨のことは何も心配してないの。きっとすぐにあがるわ。"
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "ピンク色の雨が降ったら起こして…ピンクケーキの雨だったらもっとステキよね！",
+          "AudioPath": "assets/ja-JP/Haley/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "ピンク色の雨が降ったら起こして…ピンクケーキの雨だったらもっとステキよね！"
+        },
+        {
+          "DialogueFrom": "eventSeen_14",
+          "DialogueText": "写真を撮るのは楽しかったけど、髪の毛の泥を落とすのに2時間もシャワーを浴びてたのよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:eventSeen_14",
+          "PageIndex": 0,
+          "DisplayPattern": "写真を撮るのは楽しかったけど、髪の毛の泥を落とすのに2時間もシャワーを浴びてたのよ！"
+        },
+        {
+          "DialogueFrom": "eventSeen_13_memory_oneweek",
+          "DialogueText": "ヘイリーが笑顔であいさつしてくれた。腕につけているのは、ひいおばあさんのプレスレットだ。",
+          "AudioPath": "assets/ja-JP/Haley/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:eventSeen_13_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "ヘイリーが笑顔であいさつしてくれた。腕につけているのは、ひいおばあさんのプレスレットだ。"
+        },
+        {
+          "DialogueFrom": "eventSeen_12_memory_oneweek",
+          "DialogueText": "わーお、「スーパーファッションガール」の最新号を誰かが読んだみたいね… 泥だらけのブーツが今大流行なのよ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:eventSeen_12_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "わーお、「スーパーファッションガール」の最新号を誰かが読んだみたいね… 泥だらけのブーツが今大流行なのよ！"
+        },
+        {
+          "DialogueFrom": "eventSeen_12_memory_twoweeks",
+          "DialogueText": "パパとママがまた手紙を送ってきたの…今はジェム海岸辺りをクルーズしてるんでしょうね。",
+          "AudioPath": "assets/ja-JP/Haley/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:eventSeen_12_memory_twoweeks",
+          "PageIndex": 0,
+          "DisplayPattern": "パパとママがまた手紙を送ってきたの…今はジェム海岸辺りをクルーズしてるんでしょうね。"
+        },
+        {
+          "DialogueFrom": "eventSeen_12_memory_twoweeks",
+          "DialogueText": "ヘイリーとエミリーもいつでもおいでって書いてあるけど、正直言って、自分の両親とバカンスに行きたいなんて誰が思うの？",
+          "AudioPath": "assets/ja-JP/Haley/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:eventSeen_12_memory_twoweeks",
+          "PageIndex": 1,
+          "DisplayPattern": "ヘイリーとエミリーもいつでもおいでって書いてあるけど、正直言って、自分の両親とバカンスに行きたいなんて誰が思うの？"
+        },
+        {
+          "DialogueFrom": "eventSeen_11_memory_oneweek",
+          "DialogueText": "このあいだ、姉さんが「リスのミートローフ」っていうのを作ってくれたのよ… {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Haley/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:eventSeen_11_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "このあいだ、姉さんが「リスのミートローフ」っていうのを作ってくれたのよ…"
+        },
+        {
+          "DialogueFrom": "eventSeen_11_memory_oneweek",
+          "DialogueText": "味はどうだったかって？うーん… そうね、もう少し尻尾がふさふさしていたら気に入ったでしょうね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:eventSeen_11_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "味はどうだったかって？うーん… そうね、もう少し尻尾がふさふさしていたら気に入ったでしょうね。"
+        },
+        {
+          "DialogueFrom": "eventSeen_11_memory_twoweeks",
+          "DialogueText": "昨晩の「涙」の最終回見た？ （グスン）…カイルとエイミーが別れたなんて信じられない… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:eventSeen_11_memory_twoweeks",
+          "PageIndex": 0,
+          "DisplayPattern": "昨晩の「涙」の最終回見た？ （グスン）…カイルとエイミーが別れたなんて信じられない…"
+        },
+        {
+          "DialogueFrom": "cropMatured_421",
+          "DialogueText": "私の名前には「干し草畑」という意味があるんだけど、私はヒマワリでいっぱいの草原を想像してるわ…",
+          "AudioPath": "assets/ja-JP/Haley/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:cropMatured_421",
+          "PageIndex": 0,
+          "DisplayPattern": "私の名前には「干し草畑」という意味があるんだけど、私はヒマワリでいっぱいの草原を想像してるわ…"
+        },
+        {
+          "DialogueFrom": "dating_Haley",
+          "DialogueText": "その言葉をずっと待ってたの。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:dating_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "その言葉をずっと待ってたの。"
+        },
+        {
+          "DialogueFrom": "dating_Haley_memory_oneday",
+          "DialogueText": "今日はとってもハンサムよ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/32_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:dating_Haley_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "今日はとってもハンサムよ。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "dating_Haley_memory_oneday",
+          "DialogueText": "今日はとってもカワイイわ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/33_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:dating_Haley_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "今日はとってもカワイイわ。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "married_Emily",
+          "DialogueText": "これであなたは私の「義理のお兄さん」になるのよね？そう考えるとおもしろいわね。",
+          "AudioPath": "assets/ja-JP/Haley/34_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:married_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "これであなたは私の「義理のお兄さん」になるのよね？そう考えるとおもしろいわね。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "married_Emily",
+          "DialogueText": "ねえ、これで私たちは姉妹同然よね！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/35_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:married_Emily",
+          "PageIndex": 1,
+          "DisplayPattern": "ねえ、これで私たちは姉妹同然よね！",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "divorced_Emily",
+          "DialogueText": "エミリーとうまくいかなかったんですって？えっと…そういうこともあるわよ。",
+          "AudioPath": "assets/ja-JP/Haley/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:divorced_Emily",
+          "PageIndex": 0,
+          "DisplayPattern": "エミリーとうまくいかなかったんですって？えっと…そういうこともあるわよ。"
+        },
+        {
+          "DialogueFrom": "divorced_Emily",
+          "DialogueText": "人がまだこの小さな町に住んでいるのは、ちょっと気まずいけどね。",
+          "AudioPath": "assets/ja-JP/Haley/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:divorced_Emily",
+          "PageIndex": 1,
+          "DisplayPattern": "人がまだこの小さな町に住んでいるのは、ちょっと気まずいけどね。"
+        },
+        {
+          "DialogueFrom": "dating_Haley_memory_oneyear",
+          "DialogueText": "これからのことを考えてるの… 私はずっとあなたの「ガールフレンド」なのかしら…？ {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Haley/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:dating_Haley_memory_oneyear",
+          "PageIndex": 0,
+          "DisplayPattern": "これからのことを考えてるの… 私はずっとあなたの「ガールフレンド」なのかしら…？"
+        },
+        {
+          "DialogueFrom": "married_Emily_memory_oneweek",
+          "DialogueText": "姉さんは牧場での生活に慣れてきた？",
+          "AudioPath": "assets/ja-JP/Haley/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:married_Emily_memory_oneweek",
+          "PageIndex": 0,
+          "DisplayPattern": "姉さんは牧場での生活に慣れてきた？"
+        },
+        {
+          "DialogueFrom": "married_Emily_memory_oneweek",
+          "DialogueText": "私、姉さんは結婚しないのかもしれないと思い始めてたんだ…",
+          "AudioPath": "assets/ja-JP/Haley/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:married_Emily_memory_oneweek",
+          "PageIndex": 1,
+          "DisplayPattern": "私、姉さんは結婚しないのかもしれないと思い始めてたんだ…"
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "来る途中にイルカを見たわ！",
+          "AudioPath": "assets/ja-JP/Haley/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "来る途中にイルカを見たわ！"
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "心地よさを感じさせてくれる、そんな力が太陽にはあるわね。",
+          "AudioPath": "assets/ja-JP/Haley/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "心地よさを感じさせてくれる、そんな力が太陽にはあるわね。"
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "不思議ね、人生の巡り合わせで色んな場所に行ける…この向こうにはどんな世界があるのかしら？",
+          "AudioPath": "assets/ja-JP/Haley/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "不思議ね、人生の巡り合わせで色んな場所に行ける…この向こうにはどんな世界があるのかしら？"
+        },
+        {
+          "DialogueFrom": "Resort_Shore_2",
+          "DialogueText": "わあ、見て、太陽で水面がキラキラ輝いてるわ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Resort_Shore_2",
+          "PageIndex": 0,
+          "DisplayPattern": "わあ、見て、太陽で水面がキラキラ輝いてるわ！"
+        },
+        {
+          "DialogueFrom": "Resort_Shore_2",
+          "DialogueText": "この夕日を撮影したら素晴らしい写真になるでしょうね。",
+          "AudioPath": "assets/ja-JP/Haley/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Resort_Shore_2",
+          "PageIndex": 1,
+          "DisplayPattern": "この夕日を撮影したら素晴らしい写真になるでしょうね。"
+        },
+        {
+          "DialogueFrom": "Resort_Shore_2",
+          "DialogueText": "次に来る時は、絶対にカメラを持ってこなくっちゃ。",
+          "AudioPath": "assets/ja-JP/Haley/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Resort_Shore_2",
+          "PageIndex": 2,
+          "DisplayPattern": "次に来る時は、絶対にカメラを持ってこなくっちゃ。"
+        },
+        {
+          "DialogueFrom": "Resort_Towel",
+          "DialogueText": "完璧に日焼けするのは面倒ね…",
+          "AudioPath": "assets/ja-JP/Haley/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Resort_Towel",
+          "PageIndex": 0,
+          "DisplayPattern": "完璧に日焼けするのは面倒ね…"
+        },
+        {
+          "DialogueFrom": "Resort_Towel",
+          "DialogueText": "マシュマロをこんがり焼くように…うまく体を回転させないと。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Resort_Towel",
+          "PageIndex": 1,
+          "DisplayPattern": "マシュマロをこんがり焼くように…うまく体を回転させないと。"
+        },
+        {
+          "DialogueFrom": "Resort_Towel_2",
+          "DialogueText": "南国のビーチに寝そべっていると。",
+          "AudioPath": "assets/ja-JP/Haley/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Resort_Towel_2",
+          "PageIndex": 0,
+          "DisplayPattern": "南国のビーチに寝そべっていると。"
+        },
+        {
+          "DialogueFrom": "Resort_Towel_2",
+          "DialogueText": "（ハァ）この世界でやっと自分の居場所を見つけたって気持ちになるの。",
+          "AudioPath": "assets/ja-JP/Haley/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Resort_Towel_2",
+          "PageIndex": 1,
+          "DisplayPattern": "（ハァ）この世界でやっと自分の居場所を見つけたって気持ちになるの。"
+        },
+        {
+          "DialogueFrom": "Resort_Towel_2",
+          "DialogueText": "でも、スターデューバレーもそんなに悪くはないと思うわ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Resort_Towel_2",
+          "PageIndex": 2,
+          "DisplayPattern": "でも、スターデューバレーもそんなに悪くはないと思うわ！"
+        },
+        {
+          "DialogueFrom": "Resort_Towel_3",
+          "DialogueText": "エミリーの友達がわざわざズズシティから送ってくれた水着なの。",
+          "AudioPath": "assets/ja-JP/Haley/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Resort_Towel_3",
+          "PageIndex": 0,
+          "DisplayPattern": "エミリーの友達がわざわざズズシティから送ってくれた水着なの。"
+        },
+        {
+          "DialogueFrom": "Resort_Towel_3",
+          "DialogueText": "街の流行ってすごくレベルが高いと思わない？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Resort_Towel_3",
+          "PageIndex": 1,
+          "DisplayPattern": "街の流行ってすごくレベルが高いと思わない？"
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "海に合わせて足の爪を青く塗ってみたの。どうかしら？（くねくね）（くねくね） {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "海に合わせて足の爪を青く塗ってみたの。どうかしら？（くねくね）（くねくね）"
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "ガスが私のために、キュートでフルーティーな飲み物を作ってくれたの！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "ガスが私のために、キュートでフルーティーな飲み物を作ってくれたの！"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "なんて素敵なビーチなのかしら。できることなら、ずっとここにいたいわ！",
+          "AudioPath": "assets/ja-JP/Haley/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "なんて素敵なビーチなのかしら。できることなら、ずっとここにいたいわ！"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept_Spouse",
+          "DialogueText": "はぁ… フラワーダンスの 女王の 日々は 終わったから… 私にとっては ほろ苦い ダンスになるのね。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:FlowerDance_Accept_Spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "はぁ… フラワーダンスの 女王の 日々は 終わったから… 私にとっては ほろ苦い ダンスになるのね。"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Accept_Spouse",
+          "DialogueText": "でも いいわよ…",
+          "AudioPath": "assets/ja-JP/Haley/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:FlowerDance_Accept_Spouse",
+          "PageIndex": 1,
+          "DisplayPattern": "でも いいわよ…"
+        },
+        {
+          "DialogueFrom": "FlowerDance_Decline",
+          "DialogueText": "えー…イヤよ。",
+          "AudioPath": "assets/ja-JP/Haley/59.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:FlowerDance_Decline",
+          "PageIndex": 0,
+          "DisplayPattern": "えー…イヤよ。"
+        },
+        {
+          "DialogueFrom": "divorced",
+          "DialogueText": "わたしは、もう大丈夫… {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Haley/60.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:divorced",
+          "PageIndex": 0,
+          "DisplayPattern": "わたしは、もう大丈夫…"
+        },
+        {
+          "DialogueFrom": "divorced",
+          "DialogueText": "すてきな思い出をありがとね。 {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Haley/61.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:divorced",
+          "PageIndex": 1,
+          "DisplayPattern": "すてきな思い出をありがとね。"
+        },
+        {
+          "DialogueFrom": "divorced",
+          "DialogueText": "もう、わたしにまとわりつくのはやめたら？あなたはあなたの道を行きなよ。 {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Haley/62.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:divorced",
+          "PageIndex": 2,
+          "DisplayPattern": "もう、わたしにまとわりつくのはやめたら？あなたはあなたの道を行きなよ。"
+        },
+        {
+          "DialogueFrom": "breakUp",
+          "DialogueText": "アガッ！ {Portrait:Custom:8}",
+          "AudioPath": "assets/ja-JP/Haley/63.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:breakUp",
+          "PageIndex": 0,
+          "DisplayPattern": "アガッ！"
+        },
+        {
+          "DialogueFrom": "breakUp",
+          "DialogueText": "オー...うーん。先を越されたよ、ハァッ？大丈夫...",
+          "AudioPath": "assets/ja-JP/Haley/64.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:breakUp",
+          "PageIndex": 1,
+          "DisplayPattern": "オー...うーん。先を越されたよ、ハァッ？大丈夫..."
+        },
+        {
+          "DialogueFrom": "dumped_Girls",
+          "DialogueText": "あなたと 話すことは 何もないわ！ {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Haley/65.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:dumped_Girls",
+          "PageIndex": 0,
+          "DisplayPattern": "あなたと 話すことは 何もないわ！"
+        },
+        {
+          "DialogueFrom": "secondChance_Girls",
+          "DialogueText": "そう、そうね…もう 冷たい 態度を 取るのは ヤメにするわ。約束して、 もう二度と 私にウソを つかないって。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/66.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:secondChance_Girls",
+          "PageIndex": 0,
+          "DisplayPattern": "そう、そうね…もう 冷たい 態度を 取るのは ヤメにするわ。約束して、 もう二度と 私にウソを つかないって。"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "この町は 小さすぎるわ。ほんと イヤになっちゃう。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Haley/67.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "この町は 小さすぎるわ。ほんと イヤになっちゃう。"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "いい服を 買おうにも 車で 遠くまで 出なきゃ ならないし。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/68.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "いい服を 買おうにも 車で 遠くまで 出なきゃ ならないし。"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "だから、 普段は 通販に 頼ってるのよ。",
+          "AudioPath": "assets/ja-JP/Haley/69.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Mon",
+          "PageIndex": 2,
+          "DisplayPattern": "だから、 普段は 通販に 頼ってるのよ。"
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "何かしら？",
+          "AudioPath": "assets/ja-JP/Haley/70.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Mon",
+          "PageIndex": 3,
+          "DisplayPattern": "何かしら？"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "いい靴ね。",
+          "AudioPath": "assets/ja-JP/Haley/71_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "いい靴ね。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "いいメイクじゃない。",
+          "AudioPath": "assets/ja-JP/Haley/72_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "いいメイクじゃない。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "プラスチック製の 靴かしら？",
+          "AudioPath": "assets/ja-JP/Haley/73_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Tue",
+          "PageIndex": 2,
+          "DisplayPattern": "プラスチック製の 靴かしら？",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "いや…それで すっぴんなの？",
+          "AudioPath": "assets/ja-JP/Haley/74_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Tue",
+          "PageIndex": 3,
+          "DisplayPattern": "いや…それで すっぴんなの？",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "退屈だわ。",
+          "AudioPath": "assets/ja-JP/Haley/75.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Tue",
+          "PageIndex": 4,
+          "DisplayPattern": "退屈だわ。"
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "この町で 好きなところは ビーチ だけだわ。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Haley/76.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "この町で 好きなところは ビーチ だけだわ。"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "# {Portrait:Happy} HaleyClothes",
+          "AudioPath": "assets/ja-JP/Haley/77.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "# HaleyClothes"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "今日は 服の整理を しようと 思ってるの。流行の終わった 服を 全て 捨てて、 新しい服を 入れられるように しなきゃ！",
+          "AudioPath": "assets/ja-JP/Haley/78.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "今日は 服の整理を しようと 思ってるの。流行の終わった 服を 全て 捨てて、 新しい服を 入れられるように しなきゃ！"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "はぁ… カップケーキが すごく食べたいわ。",
+          "AudioPath": "assets/ja-JP/Haley/79.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Thu",
+          "PageIndex": 2,
+          "DisplayPattern": "はぁ… カップケーキが すごく食べたいわ。"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "私に何か 用かしら？",
+          "AudioPath": "assets/ja-JP/Haley/80.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Thu",
+          "PageIndex": 3,
+          "DisplayPattern": "私に何か 用かしら？"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "ヘイリーに 無視されている。",
+          "AudioPath": "assets/ja-JP/Haley/81.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "ヘイリーに 無視されている。"
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "牧場で 走り回ったり、 汗水たらして 働くのって 疲れたりしない？",
+          "AudioPath": "assets/ja-JP/Haley/82.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Fri2",
+          "PageIndex": 0,
+          "DisplayPattern": "牧場で 走り回ったり、 汗水たらして 働くのって 疲れたりしない？"
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "体じゅう 土まみれになるなんて 私は ゴメンだわ。",
+          "AudioPath": "assets/ja-JP/Haley/83.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Fri2",
+          "PageIndex": 1,
+          "DisplayPattern": "体じゅう 土まみれになるなんて 私は ゴメンだわ。"
+        },
+        {
+          "DialogueFrom": "Fri2",
+          "DialogueText": "でも、 いい感じに 日焼けしてるじゃない。",
+          "AudioPath": "assets/ja-JP/Haley/84.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Fri2",
+          "PageIndex": 2,
+          "DisplayPattern": "でも、 いい感じに 日焼けしてるじゃない。"
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "すごく ショッピングに 行きたいわぁ。あー！この町に モールがあったら いいのに。",
+          "AudioPath": "assets/ja-JP/Haley/85.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "すごく ショッピングに 行きたいわぁ。あー！この町に モールがあったら いいのに。"
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "姉さんは かなり 変わってる。時々、 本当に 血が つながってるのか 気になるくらいよ。 {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Haley/86.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "姉さんは かなり 変わってる。時々、 本当に 血が つながってるのか 気になるくらいよ。"
+        },
+        {
+          "DialogueFrom": "Wed8",
+          "DialogueText": "この町で 好きなところは 2つ あるのよ。",
+          "AudioPath": "assets/ja-JP/Haley/87.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Wed8",
+          "PageIndex": 0,
+          "DisplayPattern": "この町で 好きなところは 2つ あるのよ。"
+        },
+        {
+          "DialogueFrom": "Wed8",
+          "DialogueText": "そのうちの 1つは ビーチ。",
+          "AudioPath": "assets/ja-JP/Haley/88.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Wed8",
+          "PageIndex": 1,
+          "DisplayPattern": "そのうちの 1つは ビーチ。"
+        },
+        {
+          "DialogueFrom": "Wed8",
+          "DialogueText": "もうひとつは… 内緒よ！ フフッ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/89.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Wed8",
+          "PageIndex": 2,
+          "DisplayPattern": "もうひとつは… 内緒よ！ フフッ。"
+        },
+        {
+          "DialogueFrom": "Tue2",
+          "DialogueText": "今朝は、 美しい 貝殻が 浜辺に 打ち上げられていないかしら？",
+          "AudioPath": "assets/ja-JP/Haley/90.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Tue2",
+          "PageIndex": 0,
+          "DisplayPattern": "今朝は、 美しい 貝殻が 浜辺に 打ち上げられていないかしら？"
+        },
+        {
+          "DialogueFrom": "Tue2",
+          "DialogueText": "今の時期では あんまり 期待できないけど。",
+          "AudioPath": "assets/ja-JP/Haley/91.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Tue2",
+          "PageIndex": 1,
+          "DisplayPattern": "今の時期では あんまり 期待できないけど。"
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "花が 咲き始めると うれしくなるのよね。",
+          "AudioPath": "assets/ja-JP/Haley/92.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "花が 咲き始めると うれしくなるのよね。"
+        },
+        {
+          "DialogueFrom": "Wed4",
+          "DialogueText": "あのピンクの花、 いい香りしてるわ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/93.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Wed4",
+          "PageIndex": 1,
+          "DisplayPattern": "あのピンクの花、 いい香りしてるわ。"
+        },
+        {
+          "DialogueFrom": "Fri6",
+          "DialogueText": "ショッピング以外の 趣味を 見つけなきゃ。",
+          "AudioPath": "assets/ja-JP/Haley/94.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Fri6",
+          "PageIndex": 0,
+          "DisplayPattern": "ショッピング以外の 趣味を 見つけなきゃ。"
+        },
+        {
+          "DialogueFrom": "Fri6",
+          "DialogueText": "もっと広い 視野を 持とうって 決めたのよ。",
+          "AudioPath": "assets/ja-JP/Haley/95.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Fri6",
+          "PageIndex": 1,
+          "DisplayPattern": "もっと広い 視野を 持とうって 決めたのよ。"
+        },
+        {
+          "DialogueFrom": "Fri6",
+          "DialogueText": "ミニハープでも 学ぼうかしら？",
+          "AudioPath": "assets/ja-JP/Haley/96.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Fri6",
+          "PageIndex": 2,
+          "DisplayPattern": "ミニハープでも 学ぼうかしら？"
+        },
+        {
+          "DialogueFrom": "Mon6",
+          "DialogueText": "最初は この町の 小ささに 文句を言ってたけど、 今は 好きに なってきたかな。",
+          "AudioPath": "assets/ja-JP/Haley/97.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Mon6",
+          "PageIndex": 0,
+          "DisplayPattern": "最初は この町の 小ささに 文句を言ってたけど、 今は 好きに なってきたかな。"
+        },
+        {
+          "DialogueFrom": "Mon6",
+          "DialogueText": "大きな町じゃ 親しみが もてなさそうだからね。",
+          "AudioPath": "assets/ja-JP/Haley/98.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Mon6",
+          "PageIndex": 1,
+          "DisplayPattern": "大きな町じゃ 親しみが もてなさそうだからね。"
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "昨晩は 私が 夕食を 作ったの。案外 うまく行ったわ！",
+          "AudioPath": "assets/ja-JP/Haley/99.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "昨晩は 私が 夕食を 作ったの。案外 うまく行ったわ！"
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "キッチンは メチャクチャに なったけどね…",
+          "AudioPath": "assets/ja-JP/Haley/100.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Thu6",
+          "PageIndex": 1,
+          "DisplayPattern": "キッチンは メチャクチャに なったけどね…"
+        },
+        {
+          "DialogueFrom": "Sun6",
+          "DialogueText": "服を 数着 寄付しようかなって 考えてるの…靴が 沢山 必要に なりそうね。",
+          "AudioPath": "assets/ja-JP/Haley/101.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Sun6",
+          "PageIndex": 0,
+          "DisplayPattern": "服を 数着 寄付しようかなって 考えてるの…靴が 沢山 必要に なりそうね。"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "# {Portrait:Happy} haleySeagull",
+          "AudioPath": "assets/ja-JP/Haley/102.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "# haleySeagull"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "昨日、 網に 翼を 絡みとられた カモメを 見かけたわ。もちろん、 自由にしてあげた。助けがほしいように 見えたし、 かわいそうだったからね。$k {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/103.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "昨日、 網に 翼を 絡みとられた カモメを 見かけたわ。もちろん、 自由にしてあげた。助けがほしいように 見えたし、 かわいそうだったからね。"
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "もう少し 運動しようって 思ってるの… 若さって 永遠に 続くものじゃないし。",
+          "AudioPath": "assets/ja-JP/Haley/104.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Sat8",
+          "PageIndex": 2,
+          "DisplayPattern": "もう少し 運動しようって 思ってるの… 若さって 永遠に 続くものじゃないし。"
+        },
+        {
+          "DialogueFrom": "Fri10",
+          "DialogueText": "{Farmer_Name}、いつか 私と 旅行に 行かない？",
+          "AudioPath": "assets/ja-JP/Haley/105.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Fri10",
+          "PageIndex": 0,
+          "DisplayPattern": "、いつか 私と 旅行に 行かない？"
+        },
+        {
+          "DialogueFrom": "Fri10",
+          "DialogueText": "今まで 行った中では ズズシティが 一番 エキゾチックだったわ。",
+          "AudioPath": "assets/ja-JP/Haley/106.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Fri10",
+          "PageIndex": 1,
+          "DisplayPattern": "今まで 行った中では ズズシティが 一番 エキゾチックだったわ。"
+        },
+        {
+          "DialogueFrom": "Event_clean1",
+          "DialogueText": "はぁ… {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Haley/107.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_clean1",
+          "PageIndex": 0,
+          "DisplayPattern": "はぁ…"
+        },
+        {
+          "DialogueFrom": "Event_clean2",
+          "DialogueText": "イヤよ！絶対にやりたくないわ！ {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Haley/108.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_clean2",
+          "PageIndex": 0,
+          "DisplayPattern": "イヤよ！絶対にやりたくないわ！"
+        },
+        {
+          "DialogueFrom": "Event_clean2",
+          "DialogueText": "二人とも バカね！ {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Haley/109.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_clean2",
+          "PageIndex": 1,
+          "DisplayPattern": "二人とも バカね！"
+        },
+        {
+          "DialogueFrom": "Event_clean3",
+          "DialogueText": "「大人の対応」？それってどういう意味なの？ {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Haley/110.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_clean3",
+          "PageIndex": 0,
+          "DisplayPattern": "「大人の対応」？それってどういう意味なの？"
+        },
+        {
+          "DialogueFrom": "Event_clean3",
+          "DialogueText": "私が 赤ん坊みたい だって 思ってるんでしょ？ {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Haley/111.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_clean3",
+          "PageIndex": 1,
+          "DisplayPattern": "私が 赤ん坊みたい だって 思ってるんでしょ？"
+        },
+        {
+          "DialogueFrom": "Event_jar1",
+          "DialogueText": "良かった。あなたなら、 このビンのフタを 開けるのは 楽勝よね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/112.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_jar1",
+          "PageIndex": 0,
+          "DisplayPattern": "良かった。あなたなら、 このビンのフタを 開けるのは 楽勝よね。"
+        },
+        {
+          "DialogueFrom": "Event_jar2",
+          "DialogueText": "あら…違うの？うーん… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/113.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_jar2",
+          "PageIndex": 0,
+          "DisplayPattern": "あら…違うの？うーん…"
+        },
+        {
+          "DialogueFrom": "Event_jar2",
+          "DialogueText": "まあ、ビンのフタを 開けられるか 試してみてよ。",
+          "AudioPath": "assets/ja-JP/Haley/114.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_jar2",
+          "PageIndex": 1,
+          "DisplayPattern": "まあ、ビンのフタを 開けられるか 試してみてよ。"
+        },
+        {
+          "DialogueFrom": "Event_darkroom1",
+          "DialogueText": "あら、ありがとう！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/115.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_darkroom1",
+          "PageIndex": 0,
+          "DisplayPattern": "あら、ありがとう！"
+        },
+        {
+          "DialogueFrom": "Event_darkroom2",
+          "DialogueText": "あっ！知らなかったの？",
+          "AudioPath": "assets/ja-JP/Haley/116.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_darkroom2",
+          "PageIndex": 0,
+          "DisplayPattern": "あっ！知らなかったの？"
+        },
+        {
+          "DialogueFrom": "Event_darkroom2",
+          "DialogueText": "この部屋は 写真の現像に 使うのよ。",
+          "AudioPath": "assets/ja-JP/Haley/117.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_darkroom2",
+          "PageIndex": 1,
+          "DisplayPattern": "この部屋は 写真の現像に 使うのよ。"
+        },
+        {
+          "DialogueFrom": "Event_darkroom3",
+          "DialogueText": "そうなの…？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/118.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_darkroom3",
+          "PageIndex": 0,
+          "DisplayPattern": "そうなの…？"
+        },
+        {
+          "DialogueFrom": "Event_darkroom4",
+          "DialogueText": "あら、ありがとう！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/119.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_darkroom4",
+          "PageIndex": 0,
+          "DisplayPattern": "あら、ありがとう！"
+        },
+        {
+          "DialogueFrom": "Event_darkroom5",
+          "DialogueText": "あっ！知らなかったの？",
+          "AudioPath": "assets/ja-JP/Haley/120.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_darkroom5",
+          "PageIndex": 0,
+          "DisplayPattern": "あっ！知らなかったの？"
+        },
+        {
+          "DialogueFrom": "Event_darkroom5",
+          "DialogueText": "この部屋は 写真の現像に 使うのよ。",
+          "AudioPath": "assets/ja-JP/Haley/121.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_darkroom5",
+          "PageIndex": 1,
+          "DisplayPattern": "この部屋は 写真の現像に 使うのよ。"
+        },
+        {
+          "DialogueFrom": "Event_darkroom6",
+          "DialogueText": "そうなの…？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/122.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_darkroom6",
+          "PageIndex": 0,
+          "DisplayPattern": "そうなの…？"
+        },
+        {
+          "DialogueFrom": "Event_beach1",
+          "DialogueText": "絶対にダメよ！このブレスレットは、 ひいおばあちゃんから 受け継いだものなの！ {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Haley/123.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_beach1",
+          "PageIndex": 0,
+          "DisplayPattern": "絶対にダメよ！このブレスレットは、 ひいおばあちゃんから 受け継いだものなの！"
+        },
+        {
+          "DialogueFrom": "Event_beach2",
+          "DialogueText": "はぁ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/124.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_beach2",
+          "PageIndex": 0,
+          "DisplayPattern": "はぁ…"
+        },
+        {
+          "DialogueFrom": "Event_beach2",
+          "DialogueText": "たぶん、 よその 海岸に 押し流されたのかも。あれが 海の底に 沈むなんて 思えないから。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/125.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_beach2",
+          "PageIndex": 1,
+          "DisplayPattern": "たぶん、 よその 海岸に 押し流されたのかも。あれが 海の底に 沈むなんて 思えないから。"
+        },
+        {
+          "DialogueFrom": "Event_room1",
+          "DialogueText": "えっ？違うわ！",
+          "AudioPath": "assets/ja-JP/Haley/126.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_room1",
+          "PageIndex": 0,
+          "DisplayPattern": "えっ？違うわ！"
+        },
+        {
+          "DialogueFrom": "Event_room1",
+          "DialogueText": "…まぁ、 アレックスのことは 好きだったけど、もう そんなことはないわ！彼、 子どもっぽいから。",
+          "AudioPath": "assets/ja-JP/Haley/127.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_room1",
+          "PageIndex": 1,
+          "DisplayPattern": "…まぁ、 アレックスのことは 好きだったけど、もう そんなことはないわ！彼、 子どもっぽいから。"
+        },
+        {
+          "DialogueFrom": "Event_room2",
+          "DialogueText": "えっ？それは 楽しそうだけど、 今はスターデューバレーから 離れたくないわ…",
+          "AudioPath": "assets/ja-JP/Haley/128.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_room2",
+          "PageIndex": 0,
+          "DisplayPattern": "えっ？それは 楽しそうだけど、 今はスターデューバレーから 離れたくないわ…"
+        },
+        {
+          "DialogueFrom": "Event_room3",
+          "DialogueText": "えっ？アンドロイドって何？",
+          "AudioPath": "assets/ja-JP/Haley/129.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:Event_room3",
+          "PageIndex": 0,
+          "DisplayPattern": "えっ？アンドロイドって何？"
+        },
+        {
+          "DialogueFrom": "summer_Mon",
+          "DialogueText": "今年の夏は、 いい感じに日焼けするわよ。",
+          "AudioPath": "assets/ja-JP/Haley/130.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "今年の夏は、 いい感じに日焼けするわよ。"
+        },
+        {
+          "DialogueFrom": "summer_Tue",
+          "DialogueText": "あなた、 泥まみれじゃないの。",
+          "AudioPath": "assets/ja-JP/Haley/131.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "あなた、 泥まみれじゃないの。"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "あー…えっ？",
+          "AudioPath": "assets/ja-JP/Haley/132.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "あー…えっ？"
+        },
+        {
+          "DialogueFrom": "summer_Wed",
+          "DialogueText": "ごめん、 他のことを 考えてて 聞き逃しちゃったわ。",
+          "AudioPath": "assets/ja-JP/Haley/133.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "ごめん、 他のことを 考えてて 聞き逃しちゃったわ。"
+        },
+        {
+          "DialogueFrom": "summer_10",
+          "DialogueText": "牧場で ウサギを 飼ってる かしら？すっごく かわいいわよ！",
+          "AudioPath": "assets/ja-JP/Haley/134.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_10",
+          "PageIndex": 0,
+          "DisplayPattern": "牧場で ウサギを 飼ってる かしら？すっごく かわいいわよ！"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "日光に 沢山 当たってると 髪色が 明るくなるんだって。",
+          "AudioPath": "assets/ja-JP/Haley/135.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "日光に 沢山 当たってると 髪色が 明るくなるんだって。"
+        },
+        {
+          "DialogueFrom": "summer_Thu",
+          "DialogueText": "良いことを 知ったでしょ！",
+          "AudioPath": "assets/ja-JP/Haley/136.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "良いことを 知ったでしょ！"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "アレックス、 今日は 何を してるのかしら…",
+          "AudioPath": "assets/ja-JP/Haley/137.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "アレックス、 今日は 何を してるのかしら…"
+        },
+        {
+          "DialogueFrom": "summer_Fri",
+          "DialogueText": "あら？いつの間に そこに いたの。",
+          "AudioPath": "assets/ja-JP/Haley/138.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "あら？いつの間に そこに いたの。"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "毎日、 いったい何を してるの？",
+          "AudioPath": "assets/ja-JP/Haley/139.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "毎日、 いったい何を してるの？"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "作物の世話",
+          "AudioPath": "assets/ja-JP/Haley/140.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "作物の世話"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "洞窟の探検",
+          "AudioPath": "assets/ja-JP/Haley/141.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "洞窟の探検"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "君の部屋の 周りを うろつく",
+          "AudioPath": "assets/ja-JP/Haley/142.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Sat",
+          "PageIndex": 3,
+          "DisplayPattern": "君の部屋の 周りを うろつく"
+        },
+        {
+          "DialogueFrom": "summer_Sat",
+          "DialogueText": "宝探し",
+          "AudioPath": "assets/ja-JP/Haley/143.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Sat",
+          "PageIndex": 4,
+          "DisplayPattern": "宝探し"
+        },
+        {
+          "DialogueFrom": "summer_Sat_old",
+          "DialogueText": "ちょっと、 私の部屋の 周りを うろつくのは もうよしなさいよ！ {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Haley/144.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Sat_old",
+          "PageIndex": 0,
+          "DisplayPattern": "ちょっと、 私の部屋の 周りを うろつくのは もうよしなさいよ！"
+        },
+        {
+          "DialogueFrom": "summer_Sat_old",
+          "DialogueText": "でも、 どうりで 元気なわけね。",
+          "AudioPath": "assets/ja-JP/Haley/145.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Sat_old",
+          "PageIndex": 1,
+          "DisplayPattern": "でも、 どうりで 元気なわけね。"
+        },
+        {
+          "DialogueFrom": "summer_Sat_12",
+          "DialogueText": "ふーん… 結構 めんどくさそうね。",
+          "AudioPath": "assets/ja-JP/Haley/146.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Sat_12",
+          "PageIndex": 0,
+          "DisplayPattern": "ふーん… 結構 めんどくさそうね。"
+        },
+        {
+          "DialogueFrom": "summer_Sat_13",
+          "DialogueText": "えっ？そんなこと するのは やめてよ！ {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Haley/147.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Sat_13",
+          "PageIndex": 0,
+          "DisplayPattern": "えっ？そんなこと するのは やめてよ！"
+        },
+        {
+          "DialogueFrom": "summer_Sun",
+          "DialogueText": "普段は エミリーが 夕食を 作るんだけど…キヌアみたいな 変なものが 出てくるのよ。",
+          "AudioPath": "assets/ja-JP/Haley/148.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "普段は エミリーが 夕食を 作るんだけど…キヌアみたいな 変なものが 出てくるのよ。"
+        },
+        {
+          "DialogueFrom": "summer_Tue2",
+          "DialogueText": "あなた、 毎日 その服を 着てるの？",
+          "AudioPath": "assets/ja-JP/Haley/149.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Tue2",
+          "PageIndex": 0,
+          "DisplayPattern": "あなた、 毎日 その服を 着てるの？"
+        },
+        {
+          "DialogueFrom": "summer_Tue4",
+          "DialogueText": "ねぇ、 ビンのフタを開ける 道具を 見つけたのよ。あなたの 力を 借りる 必要は なくなったわね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/150.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "ねぇ、 ビンのフタを開ける 道具を 見つけたのよ。あなたの 力を 借りる 必要は なくなったわね。"
+        },
+        {
+          "DialogueFrom": "summer_Tue4",
+          "DialogueText": "今日は 雲ひとつ無い いい天気ね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/151.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Tue4",
+          "PageIndex": 1,
+          "DisplayPattern": "今日は 雲ひとつ無い いい天気ね。"
+        },
+        {
+          "DialogueFrom": "summer_Wed4",
+          "DialogueText": "今日は すごく 暑いわね！",
+          "AudioPath": "assets/ja-JP/Haley/152.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は すごく 暑いわね！"
+        },
+        {
+          "DialogueFrom": "summer_Wed4",
+          "DialogueText": "アイスクリームが 食べたいわ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/153.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Wed4",
+          "PageIndex": 1,
+          "DisplayPattern": "アイスクリームが 食べたいわ。"
+        },
+        {
+          "DialogueFrom": "summer_Fri4",
+          "DialogueText": "今日は 3時間も サインを書く 練習をしてたの。",
+          "AudioPath": "assets/ja-JP/Haley/154.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 3時間も サインを書く 練習をしてたの。"
+        },
+        {
+          "DialogueFrom": "summer_Fri4",
+          "DialogueText": "バカなことだと 思わない？",
+          "AudioPath": "assets/ja-JP/Haley/155.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Fri4",
+          "PageIndex": 1,
+          "DisplayPattern": "バカなことだと 思わない？"
+        },
+        {
+          "DialogueFrom": "summer_Thu6",
+          "DialogueText": "日光に 沢山 当たってると 髪色が 明るくなるんだって…でも、 日焼けするのは イヤなんでしょ。",
+          "AudioPath": "assets/ja-JP/Haley/156.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "日光に 沢山 当たってると 髪色が 明るくなるんだって…でも、 日焼けするのは イヤなんでしょ。"
+        },
+        {
+          "DialogueFrom": "summer_Thu6",
+          "DialogueText": "健康にいいぐらいの 日差しが 一番よね。何事も ほどほどに、 ってとこかしら。",
+          "AudioPath": "assets/ja-JP/Haley/157.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Thu6",
+          "PageIndex": 1,
+          "DisplayPattern": "健康にいいぐらいの 日差しが 一番よね。何事も ほどほどに、 ってとこかしら。"
+        },
+        {
+          "DialogueFrom": "summer_Mon6",
+          "DialogueText": "雑誌の 代わりに 本を 読むことに しようかしら。",
+          "AudioPath": "assets/ja-JP/Haley/158.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Mon6",
+          "PageIndex": 0,
+          "DisplayPattern": "雑誌の 代わりに 本を 読むことに しようかしら。"
+        },
+        {
+          "DialogueFrom": "summer_Mon6",
+          "DialogueText": "物事を 学ぶのって いいことでしょ？",
+          "AudioPath": "assets/ja-JP/Haley/159.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Mon6",
+          "PageIndex": 1,
+          "DisplayPattern": "物事を 学ぶのって いいことでしょ？"
+        },
+        {
+          "DialogueFrom": "summer_Mon6",
+          "DialogueText": "今まで 文字は ロクに 読まなかったからね。",
+          "AudioPath": "assets/ja-JP/Haley/160.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Mon6",
+          "PageIndex": 2,
+          "DisplayPattern": "今まで 文字は ロクに 読まなかったからね。"
+        },
+        {
+          "DialogueFrom": "summer_Sun6",
+          "DialogueText": "# {Portrait:Happy} HaleySister",
+          "AudioPath": "assets/ja-JP/Haley/161.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Sun6",
+          "PageIndex": 0,
+          "DisplayPattern": "# HaleySister"
+        },
+        {
+          "DialogueFrom": "summer_Sun6",
+          "DialogueText": "昨晩、 姉さんと 色々 話をしてたわ。とっても 楽しかった。",
+          "AudioPath": "assets/ja-JP/Haley/162.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Sun6",
+          "PageIndex": 1,
+          "DisplayPattern": "昨晩、 姉さんと 色々 話をしてたわ。とっても 楽しかった。"
+        },
+        {
+          "DialogueFrom": "summer_Sun6",
+          "DialogueText": "エミリーって、 思ったほど 変な子じゃないのね。私が思う以上に、 共通してるところが あるみたい。",
+          "AudioPath": "assets/ja-JP/Haley/163.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Sun6",
+          "PageIndex": 2,
+          "DisplayPattern": "エミリーって、 思ったほど 変な子じゃないのね。私が思う以上に、 共通してるところが あるみたい。"
+        },
+        {
+          "DialogueFrom": "summer_Sun6",
+          "DialogueText": "姉さんには 内緒よ。",
+          "AudioPath": "assets/ja-JP/Haley/164.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Sun6",
+          "PageIndex": 3,
+          "DisplayPattern": "姉さんには 内緒よ。"
+        },
+        {
+          "DialogueFrom": "summer_Sat6",
+          "DialogueText": "今日は 泳ぐには うってつけの 日ね。",
+          "AudioPath": "assets/ja-JP/Haley/165.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Sat6",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 泳ぐには うってつけの 日ね。"
+        },
+        {
+          "DialogueFrom": "summer_Tue8",
+          "DialogueText": "田舎暮らしも そう悪くないかも。",
+          "AudioPath": "assets/ja-JP/Haley/166.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Tue8",
+          "PageIndex": 0,
+          "DisplayPattern": "田舎暮らしも そう悪くないかも。"
+        },
+        {
+          "DialogueFrom": "summer_Tue8",
+          "DialogueText": "都会に住んでたら、 自然が 恋しくなっちゃいそう。",
+          "AudioPath": "assets/ja-JP/Haley/167.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Tue8",
+          "PageIndex": 1,
+          "DisplayPattern": "都会に住んでたら、 自然が 恋しくなっちゃいそう。"
+        },
+        {
+          "DialogueFrom": "summer_Tue8",
+          "DialogueText": "{Farmer_Name}、 あなたと 一緒にいる時が 増えたから そう 感じるだけかな。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/168.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Tue8",
+          "PageIndex": 2,
+          "DisplayPattern": "、 あなたと 一緒にいる時が 増えたから そう 感じるだけかな。"
+        },
+        {
+          "DialogueFrom": "summer_Fri10",
+          "DialogueText": "こんにちは、{Farmer_Name}！",
+          "AudioPath": "assets/ja-JP/Haley/169.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Fri10",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、！"
+        },
+        {
+          "DialogueFrom": "summer_Fri10",
+          "DialogueText": "子どもは好き？ {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/170.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:summer_Fri10",
+          "PageIndex": 1,
+          "DisplayPattern": "子どもは好き？"
+        },
+        {
+          "DialogueFrom": "fall_1",
+          "DialogueText": "もう 秋なの？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/171.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_1",
+          "PageIndex": 0,
+          "DisplayPattern": "もう 秋なの？"
+        },
+        {
+          "DialogueFrom": "fall_Mon",
+          "DialogueText": "あの落ち葉が 泥まみれになると サイアクなのよね。",
+          "AudioPath": "assets/ja-JP/Haley/172.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "あの落ち葉が 泥まみれになると サイアクなのよね。"
+        },
+        {
+          "DialogueFrom": "fall_Tue",
+          "DialogueText": "うーん…変な臭いがするわね…",
+          "AudioPath": "assets/ja-JP/Haley/173.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん…変な臭いがするわね…"
+        },
+        {
+          "DialogueFrom": "fall_Tue",
+          "DialogueText": "牧場で 働いていたの？",
+          "AudioPath": "assets/ja-JP/Haley/174.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "牧場で 働いていたの？"
+        },
+        {
+          "DialogueFrom": "fall_Wed",
+          "DialogueText": "あら、 こんにちは。何か用かしら？",
+          "AudioPath": "assets/ja-JP/Haley/175.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "あら、 こんにちは。何か用かしら？"
+        },
+        {
+          "DialogueFrom": "fall_Thu",
+          "DialogueText": "すごく ショッピングに 行きたいな。はぁ…",
+          "AudioPath": "assets/ja-JP/Haley/176.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "すごく ショッピングに 行きたいな。はぁ…"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "膝に ついてるのは 草の跡？",
+          "AudioPath": "assets/ja-JP/Haley/177.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "膝に ついてるのは 草の跡？"
+        },
+        {
+          "DialogueFrom": "fall_Fri",
+          "DialogueText": "ごめんなさい、 雑草は 苦手なの。",
+          "AudioPath": "assets/ja-JP/Haley/178.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "ごめんなさい、 雑草は 苦手なの。"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "はぁ… 今日は 何を したほうが いいしら？",
+          "AudioPath": "assets/ja-JP/Haley/179.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "はぁ… 今日は 何を したほうが いいしら？"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "水彩画を 描こう",
+          "AudioPath": "assets/ja-JP/Haley/180.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "水彩画を 描こう"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "雑誌でも 読んで リラックス",
+          "AudioPath": "assets/ja-JP/Haley/181.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Sat",
+          "PageIndex": 2,
+          "DisplayPattern": "雑誌でも 読んで リラックス"
+        },
+        {
+          "DialogueFrom": "fall_Sat",
+          "DialogueText": "自己中心的な 泣き言を やめる",
+          "AudioPath": "assets/ja-JP/Haley/182.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Sat",
+          "PageIndex": 3,
+          "DisplayPattern": "自己中心的な 泣き言を やめる"
+        },
+        {
+          "DialogueFrom": "fall_Sat_old",
+          "DialogueText": "後で 昼寝でも しようかしら。",
+          "AudioPath": "assets/ja-JP/Haley/183.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Sat_old",
+          "PageIndex": 0,
+          "DisplayPattern": "後で 昼寝でも しようかしら。"
+        },
+        {
+          "DialogueFrom": "fall_Sat_12",
+          "DialogueText": "うーん…なかなか 悪くない アイデアね。",
+          "AudioPath": "assets/ja-JP/Haley/184.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Sat_12",
+          "PageIndex": 0,
+          "DisplayPattern": "うーん…なかなか 悪くない アイデアね。"
+        },
+        {
+          "DialogueFrom": "fall_Sat_13",
+          "DialogueText": "私に近づかないで、 このバカ。 {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Haley/185.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Sat_13",
+          "PageIndex": 0,
+          "DisplayPattern": "私に近づかないで、 このバカ。"
+        },
+        {
+          "DialogueFrom": "fall_Sun",
+          "DialogueText": "森には 行ったことが ないのよ。服は 汚れるし、 足に マメが できちゃうわ。",
+          "AudioPath": "assets/ja-JP/Haley/186.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "森には 行ったことが ないのよ。服は 汚れるし、 足に マメが できちゃうわ。"
+        },
+        {
+          "DialogueFrom": "fall_Tue2",
+          "DialogueText": "何か 土の 匂いが するわ…",
+          "AudioPath": "assets/ja-JP/Haley/187.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Tue2",
+          "PageIndex": 0,
+          "DisplayPattern": "何か 土の 匂いが するわ…"
+        },
+        {
+          "DialogueFrom": "fall_Tue2",
+          "DialogueText": "ああ、そうだった。あなた、牧場で 働いてるのよね。",
+          "AudioPath": "assets/ja-JP/Haley/188.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Tue2",
+          "PageIndex": 1,
+          "DisplayPattern": "ああ、そうだった。あなた、牧場で 働いてるのよね。"
+        },
+        {
+          "DialogueFrom": "fall_Fri4",
+          "DialogueText": "すごい量の 仕事を してるのね。",
+          "AudioPath": "assets/ja-JP/Haley/189.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "すごい量の 仕事を してるのね。"
+        },
+        {
+          "DialogueFrom": "fall_Fri4",
+          "DialogueText": "今日は これぐらいにして 休んだら？",
+          "AudioPath": "assets/ja-JP/Haley/190.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Fri4",
+          "PageIndex": 1,
+          "DisplayPattern": "今日は これぐらいにして 休んだら？"
+        },
+        {
+          "DialogueFrom": "fall_Wed4",
+          "DialogueText": "もし 退屈だったら、 会いに来て。",
+          "AudioPath": "assets/ja-JP/Haley/191.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Wed4",
+          "PageIndex": 0,
+          "DisplayPattern": "もし 退屈だったら、 会いに来て。"
+        },
+        {
+          "DialogueFrom": "fall_Thu6",
+          "DialogueText": "今までと比べて ショッピングが なんか 楽しくなくなってきた。",
+          "AudioPath": "assets/ja-JP/Haley/192.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "今までと比べて ショッピングが なんか 楽しくなくなってきた。"
+        },
+        {
+          "DialogueFrom": "fall_Thu6",
+          "DialogueText": "どうしたの かな？",
+          "AudioPath": "assets/ja-JP/Haley/193.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Thu6",
+          "PageIndex": 1,
+          "DisplayPattern": "どうしたの かな？"
+        },
+        {
+          "DialogueFrom": "fall_Thu6",
+          "DialogueText": "うーん…",
+          "AudioPath": "assets/ja-JP/Haley/194.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Thu6",
+          "PageIndex": 2,
+          "DisplayPattern": "うーん…"
+        },
+        {
+          "DialogueFrom": "fall_Mon6",
+          "DialogueText": "ひいおばあちゃんの ブレスレットの もう片方、 屋根裏で 見つかったって 話はもうしたかしら？",
+          "AudioPath": "assets/ja-JP/Haley/195.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Mon6",
+          "PageIndex": 0,
+          "DisplayPattern": "ひいおばあちゃんの ブレスレットの もう片方、 屋根裏で 見つかったって 話はもうしたかしら？"
+        },
+        {
+          "DialogueFrom": "fall_Mon6",
+          "DialogueText": "この ブレスレットを 見てよ。ひいおばあちゃんの ものだったのよ。",
+          "AudioPath": "assets/ja-JP/Haley/196.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Mon6",
+          "PageIndex": 1,
+          "DisplayPattern": "この ブレスレットを 見てよ。ひいおばあちゃんの ものだったのよ。"
+        },
+        {
+          "DialogueFrom": "fall_Mon6",
+          "DialogueText": "あの人は 本当に 面白い人だったわ。",
+          "AudioPath": "assets/ja-JP/Haley/197.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Mon6",
+          "PageIndex": 2,
+          "DisplayPattern": "あの人は 本当に 面白い人だったわ。"
+        },
+        {
+          "DialogueFrom": "fall_Sun6",
+          "DialogueText": "森には 行ったことが ないの。",
+          "AudioPath": "assets/ja-JP/Haley/198.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Sun6",
+          "PageIndex": 0,
+          "DisplayPattern": "森には 行ったことが ないの。"
+        },
+        {
+          "DialogueFrom": "fall_Sun6",
+          "DialogueText": "でも、 いつか 探検しにいくのも 面白そうね。",
+          "AudioPath": "assets/ja-JP/Haley/199.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Sun6",
+          "PageIndex": 1,
+          "DisplayPattern": "でも、 いつか 探検しにいくのも 面白そうね。"
+        },
+        {
+          "DialogueFrom": "fall_Tue8",
+          "DialogueText": "土の匂いが 好きになってきたの。変だと思わない？",
+          "AudioPath": "assets/ja-JP/Haley/200.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Tue8",
+          "PageIndex": 0,
+          "DisplayPattern": "土の匂いが 好きになってきたの。変だと思わない？"
+        },
+        {
+          "DialogueFrom": "fall_Tue8",
+          "DialogueText": "たぶん、 あなたに 影響されたの かもしれないわね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/201.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Tue8",
+          "PageIndex": 1,
+          "DisplayPattern": "たぶん、 あなたに 影響されたの かもしれないわね。"
+        },
+        {
+          "DialogueFrom": "fall_Mon10",
+          "DialogueText": "{Farmer_Name}、会えて うれしいわ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/202.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:fall_Mon10",
+          "PageIndex": 0,
+          "DisplayPattern": "、会えて うれしいわ。"
+        },
+        {
+          "DialogueFrom": "winter_Mon",
+          "DialogueText": "どこか 暖かいところへ 行きたいわ。",
+          "AudioPath": "assets/ja-JP/Haley/203.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "どこか 暖かいところへ 行きたいわ。"
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "よお。何か 用でも あるのかしら？",
+          "AudioPath": "assets/ja-JP/Haley/204.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "よお。何か 用でも あるのかしら？"
+        },
+        {
+          "DialogueFrom": "winter_Tue",
+          "DialogueText": "…",
+          "AudioPath": "assets/ja-JP/Haley/205.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "…"
+        },
+        {
+          "DialogueFrom": "winter_9",
+          "DialogueText": "ふーん。その上着の ブランドは 何なの？",
+          "AudioPath": "assets/ja-JP/Haley/206.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_9",
+          "PageIndex": 0,
+          "DisplayPattern": "ふーん。その上着の ブランドは 何なの？"
+        },
+        {
+          "DialogueFrom": "winter_9",
+          "DialogueText": "へぇ。ううん、 なんでもない。",
+          "AudioPath": "assets/ja-JP/Haley/207.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_9",
+          "PageIndex": 1,
+          "DisplayPattern": "へぇ。ううん、 なんでもない。"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "誰か ペッパーミント コーヒーを 持ってきてくれないかな。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/208.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "誰か ペッパーミント コーヒーを 持ってきてくれないかな。"
+        },
+        {
+          "DialogueFrom": "winter_Wed",
+          "DialogueText": "あなたには 作れるわけ なさそうだから 気にしなくても いいけど。",
+          "AudioPath": "assets/ja-JP/Haley/209.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Wed",
+          "PageIndex": 1,
+          "DisplayPattern": "あなたには 作れるわけ なさそうだから 気にしなくても いいけど。"
+        },
+        {
+          "DialogueFrom": "winter_Thu",
+          "DialogueText": "これから、 次の春に いる 服の リストでも 書こうかしら。",
+          "AudioPath": "assets/ja-JP/Haley/210.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "これから、 次の春に いる 服の リストでも 書こうかしら。"
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "牧場で 子馬を 飼ってる？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/211.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "牧場で 子馬を 飼ってる？"
+        },
+        {
+          "DialogueFrom": "winter_Fri",
+          "DialogueText": "あら。それは残念… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/212.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Fri",
+          "PageIndex": 1,
+          "DisplayPattern": "あら。それは残念…"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "冬の 良いところって、 多く 睡眠を 取れること だけね。",
+          "AudioPath": "assets/ja-JP/Haley/213.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "冬の 良いところって、 多く 睡眠を 取れること だけね。"
+        },
+        {
+          "DialogueFrom": "winter_Sat",
+          "DialogueText": "少なくとも 一日に 10時間ぐらいは 寝たいわ。",
+          "AudioPath": "assets/ja-JP/Haley/214.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Sat",
+          "PageIndex": 1,
+          "DisplayPattern": "少なくとも 一日に 10時間ぐらいは 寝たいわ。"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "アレックスに よろしく言ってくれる？",
+          "AudioPath": "assets/ja-JP/Haley/215.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "アレックスに よろしく言ってくれる？"
+        },
+        {
+          "DialogueFrom": "winter_Sun",
+          "DialogueText": "頼んだわよ。",
+          "AudioPath": "assets/ja-JP/Haley/216.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "頼んだわよ。"
+        },
+        {
+          "DialogueFrom": "winter_Tue2",
+          "DialogueText": "あなたの名前、 {Farmer_Name} だよね？",
+          "AudioPath": "assets/ja-JP/Haley/217.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Tue2",
+          "PageIndex": 0,
+          "DisplayPattern": "あなたの名前、 だよね？"
+        },
+        {
+          "DialogueFrom": "winter_Tue2",
+          "DialogueText": "時々 忘れちゃうの。",
+          "AudioPath": "assets/ja-JP/Haley/218.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Tue2",
+          "PageIndex": 1,
+          "DisplayPattern": "時々 忘れちゃうの。"
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "こんにちは、{Farmer_Name}。",
+          "AudioPath": "assets/ja-JP/Haley/219.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Tue4",
+          "PageIndex": 0,
+          "DisplayPattern": "こんにちは、。"
+        },
+        {
+          "DialogueFrom": "winter_Tue4",
+          "DialogueText": "牧場で 何か 面白いこと あった？",
+          "AudioPath": "assets/ja-JP/Haley/220.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Tue4",
+          "PageIndex": 1,
+          "DisplayPattern": "牧場で 何か 面白いこと あった？"
+        },
+        {
+          "DialogueFrom": "winter_Wed6",
+          "DialogueText": "服装は そこまで 重要じゃないって やっと 分かってきた 感じがしたの。そうよね？",
+          "AudioPath": "assets/ja-JP/Haley/221.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "服装は そこまで 重要じゃないって やっと 分かってきた 感じがしたの。そうよね？"
+        },
+        {
+          "DialogueFrom": "winter_Wed6",
+          "DialogueText": "でも、 好きなことには 変わりないわ。なんていうか、 少しぐらい 自分を 表現して 何が悪いの？",
+          "AudioPath": "assets/ja-JP/Haley/222.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Wed6",
+          "PageIndex": 1,
+          "DisplayPattern": "でも、 好きなことには 変わりないわ。なんていうか、 少しぐらい 自分を 表現して 何が悪いの？"
+        },
+        {
+          "DialogueFrom": "winter_Thu6",
+          "DialogueText": "この春に、 スカートを数点 チャリティに 出そうかなって 思ってるの。",
+          "AudioPath": "assets/ja-JP/Haley/223.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "この春に、 スカートを数点 チャリティに 出そうかなって 思ってるの。"
+        },
+        {
+          "DialogueFrom": "winter_Thu6",
+          "DialogueText": "枚以上 持ってるからね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/224.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Thu6",
+          "PageIndex": 1,
+          "DisplayPattern": "枚以上 持ってるからね。"
+        },
+        {
+          "DialogueFrom": "winter_Thu6",
+          "DialogueText": "…なによ？",
+          "AudioPath": "assets/ja-JP/Haley/225.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Thu6",
+          "PageIndex": 2,
+          "DisplayPattern": "…なによ？"
+        },
+        {
+          "DialogueFrom": "winter_Sun6",
+          "DialogueText": "えっと、 アレックスを見たら 今日は忙しいって 言ってくれない？",
+          "AudioPath": "assets/ja-JP/Haley/226.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Sun6",
+          "PageIndex": 0,
+          "DisplayPattern": "えっと、 アレックスを見たら 今日は忙しいって 言ってくれない？"
+        },
+        {
+          "DialogueFrom": "winter_Sun6",
+          "DialogueText": "頼むわよ。",
+          "AudioPath": "assets/ja-JP/Haley/227.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Sun6",
+          "PageIndex": 1,
+          "DisplayPattern": "頼むわよ。"
+        },
+        {
+          "DialogueFrom": "winter_Mon8",
+          "DialogueText": "スターデューバレーがもっと 暖かかったらなぁ。",
+          "AudioPath": "assets/ja-JP/Haley/228.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Mon8",
+          "PageIndex": 0,
+          "DisplayPattern": "スターデューバレーがもっと 暖かかったらなぁ。"
+        },
+        {
+          "DialogueFrom": "winter_Mon8",
+          "DialogueText": "他のところへ 引っ越したいけど…",
+          "AudioPath": "assets/ja-JP/Haley/229.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Mon8",
+          "PageIndex": 1,
+          "DisplayPattern": "他のところへ 引っ越したいけど…"
+        },
+        {
+          "DialogueFrom": "winter_Fri8",
+          "DialogueText": "牧場で 子馬を 飼う 予定は あるのかしら？",
+          "AudioPath": "assets/ja-JP/Haley/230.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Fri8",
+          "PageIndex": 0,
+          "DisplayPattern": "牧場で 子馬を 飼う 予定は あるのかしら？"
+        },
+        {
+          "DialogueFrom": "winter_Sat8",
+          "DialogueText": "冬は あなたの 仕事が 少なくなるから 良いわね。",
+          "AudioPath": "assets/ja-JP/Haley/231.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "冬は あなたの 仕事が 少なくなるから 良いわね。"
+        },
+        {
+          "DialogueFrom": "winter_Sat8",
+          "DialogueText": "休みを 取れて うれしいんでしょ？",
+          "AudioPath": "assets/ja-JP/Haley/232.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "休みを 取れて うれしいんでしょ？"
+        },
+        {
+          "DialogueFrom": "winter_Sun10",
+          "DialogueText": "{Farmer_Name}、今日は たくましく見えるわね。そういうの好きよ。",
+          "AudioPath": "assets/ja-JP/Haley/233_male.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Sun10",
+          "PageIndex": 0,
+          "DisplayPattern": "、今日は たくましく見えるわね。そういうの好きよ。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "winter_Sun10",
+          "DialogueText": "{Farmer_Name}、今日は かわいく見えるわね。",
+          "AudioPath": "assets/ja-JP/Haley/234_female.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Sun10",
+          "PageIndex": 1,
+          "DisplayPattern": "、今日は かわいく見えるわね。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "winter_Sun10",
+          "DialogueText": "… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/235.ogg",
+          "TranslationKey": "Characters/Dialogue/Haley:winter_Sun10",
+          "PageIndex": 2,
+          "DisplayPattern": "…"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Haley0",
+          "DialogueText": "やったあ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/236.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Haley0",
+          "PageIndex": 0,
+          "DisplayPattern": "やったあ！"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Haley0",
+          "DialogueText": "ほんと、夢みたい。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/237.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Haley0",
+          "PageIndex": 1,
+          "DisplayPattern": "ほんと、夢みたい。"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Haley1",
+          "DialogueText": "ハネムーンにはいけないだろうけど、だいじょうぶ。気にしないよ。だって、牧場のめんどうを見なきゃいけないもんね。",
+          "AudioPath": "assets/ja-JP/Haley/238.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Haley1",
+          "PageIndex": 0,
+          "DisplayPattern": "ハネムーンにはいけないだろうけど、だいじょうぶ。気にしないよ。だって、牧場のめんどうを見なきゃいけないもんね。"
+        },
+        {
+          "DialogueFrom": "EngagementDialogue/Haley1",
+          "DialogueText": "わたしも牧場に住むんだもの、手伝うよ！",
+          "AudioPath": "assets/ja-JP/Haley/239.ogg",
+          "TranslationKey": "Data/EngagementDialogue:Haley1",
+          "PageIndex": 1,
+          "DisplayPattern": "わたしも牧場に住むんだもの、手伝うよ！"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Bad_0",
+          "DialogueText": "… まだ 愛してくれてる？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/240.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_0",
+          "PageIndex": 0,
+          "DisplayPattern": "… まだ 愛してくれてる？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Bad_1",
+          "DialogueText": "はぁ… たぶん、 結婚するには 早すぎた かも。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/241.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_1",
+          "PageIndex": 0,
+          "DisplayPattern": "はぁ… たぶん、 結婚するには 早すぎた かも。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Bad_2",
+          "DialogueText": "私と 一緒で まだ 楽しめてる？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/242.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_2",
+          "PageIndex": 0,
+          "DisplayPattern": "私と 一緒で まだ 楽しめてる？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Bad_3",
+          "DialogueText": "何か 悪いことを した？最近 様子が おかしいよ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/243.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_3",
+          "PageIndex": 0,
+          "DisplayPattern": "何か 悪いことを した？最近 様子が おかしいよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Bad_4",
+          "DialogueText": "外の世界に 何が あるか 考えたことは ある？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/244.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_4",
+          "PageIndex": 0,
+          "DisplayPattern": "外の世界に 何が あるか 考えたことは ある？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Bad_5",
+          "DialogueText": "前は もっと ロマンチックだったのに… どうしたの？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/245.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_5",
+          "PageIndex": 0,
+          "DisplayPattern": "前は もっと ロマンチックだったのに… どうしたの？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Bad_5",
+          "DialogueText": "今の自分は あの時ほど 若くないけど… そのために結婚したのかな？ {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Haley/246.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_5",
+          "PageIndex": 1,
+          "DisplayPattern": "今の自分は あの時ほど 若くないけど… そのために結婚したのかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Bad_6",
+          "DialogueText": "人生は 短いし 一回きりだけど… このままで 本当に いいの？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/247.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_6",
+          "PageIndex": 0,
+          "DisplayPattern": "人生は 短いし 一回きりだけど… このままで 本当に いいの？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Bad_7",
+          "DialogueText": "以前は やさしかったけど… 今は 私が暖かい 夕食を 作ってる時だけ 我慢 してるように 見える。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/248.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_7",
+          "PageIndex": 0,
+          "DisplayPattern": "以前は やさしかったけど… 今は 私が暖かい 夕食を 作ってる時だけ 我慢 してるように 見える。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Bad_8",
+          "DialogueText": "最近、 私に対して 冷たくない？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/249.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_8",
+          "PageIndex": 0,
+          "DisplayPattern": "最近、 私に対して 冷たくない？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Bad_9",
+          "DialogueText": "もう少し あなたの ために 何か できたらなぁ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/250.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Bad_9",
+          "PageIndex": 0,
+          "DisplayPattern": "もう少し あなたの ために 何か できたらなぁ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/fall_1",
+          "DialogueText": "秋は 何もかも 死んでいく、 悲しい 季節だと 思うの。 {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Haley/251.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:fall_1",
+          "PageIndex": 0,
+          "DisplayPattern": "秋は 何もかも 死んでいく、 悲しい 季節だと 思うの。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/fall_15",
+          "DialogueText": "明日は どんなものを 出品するか、 君は 決めてあるかな？",
+          "AudioPath": "assets/ja-JP/Haley/252.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_15",
+          "PageIndex": 0,
+          "DisplayPattern": "明日は どんなものを 出品するか、 君は 決めてあるかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/fall_2",
+          "DialogueText": "すでに 夏が 恋しいわ…",
+          "AudioPath": "assets/ja-JP/Haley/253.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:fall_2",
+          "PageIndex": 0,
+          "DisplayPattern": "すでに 夏が 恋しいわ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/fall_26",
+          "DialogueText": "明日の夜、 スピリットイブへ 一緒に 行かない？",
+          "AudioPath": "assets/ja-JP/Haley/254.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_26",
+          "PageIndex": 0,
+          "DisplayPattern": "明日の夜、 スピリットイブへ 一緒に 行かない？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/fall_8",
+          "DialogueText": "もうすぐ 冬だね。暖房を ちゃんと チェックして、 水道の 蛇口を 閉めて、 家に スキマが ないか 確認 しないと。",
+          "AudioPath": "assets/ja-JP/Haley/255.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 0,
+          "DisplayPattern": "もうすぐ 冬だね。暖房を ちゃんと チェックして、 水道の 蛇口を 閉めて、 家に スキマが ないか 確認 しないと。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/fall_8",
+          "DialogueText": "大丈夫、 全部 やってあげるから。",
+          "AudioPath": "assets/ja-JP/Haley/256.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:fall_8",
+          "PageIndex": 1,
+          "DisplayPattern": "大丈夫、 全部 やってあげるから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/fall_Haley",
+          "DialogueText": "夏のほうが 好きだけど、 秋は 写真を撮るには 一番の 季節かも。あの 長くて 低い 影をね…",
+          "AudioPath": "assets/ja-JP/Haley/257.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:fall_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "夏のほうが 好きだけど、 秋は 写真を撮るには 一番の 季節かも。あの 長くて 低い 影をね…"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/funLeave_Haley",
+          "DialogueText": "今日は 町で みんなと 触れ合おうかしら。",
+          "AudioPath": "assets/ja-JP/Haley/258.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:funLeave_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 町で みんなと 触れ合おうかしら。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/funReturn_Haley",
+          "DialogueText": "町の みんなと あえて よかったわ。あなたは いい一日を 過ごせた かしら？",
+          "AudioPath": "assets/ja-JP/Haley/259.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:funReturn_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "町の みんなと あえて よかったわ。あなたは いい一日を 過ごせた かしら？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Good_0",
+          "DialogueText": "結婚できたなんて いまだに 信じられない… {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/260.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_0",
+          "PageIndex": 0,
+          "DisplayPattern": "結婚できたなんて いまだに 信じられない…"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Good_1",
+          "DialogueText": "いつか 君と 結婚するんじゃないかって 前から 思ってたんだ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/261.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_1",
+          "PageIndex": 0,
+          "DisplayPattern": "いつか 君と 結婚するんじゃないかって 前から 思ってたんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Good_2",
+          "DialogueText": "{Farmer_Name}、結婚生活は 楽しめてる。",
+          "AudioPath": "assets/ja-JP/Haley/262.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_2",
+          "PageIndex": 0,
+          "DisplayPattern": "、結婚生活は 楽しめてる。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Good_2",
+          "DialogueText": "自分は 楽しんでるよ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/263.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_2",
+          "PageIndex": 1,
+          "DisplayPattern": "自分は 楽しんでるよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Good_3",
+          "DialogueText": "今日は とても ハンサムに 見えるわ！ {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/264_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_3",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は とても ハンサムに 見えるわ！",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Good_3",
+          "DialogueText": "今日は とても 美しいね。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/265_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_3",
+          "PageIndex": 1,
+          "DisplayPattern": "今日は とても 美しいね。",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Good_4",
+          "DialogueText": "ここが 自分の 家…すごく うれしいな。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/266.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_4",
+          "PageIndex": 0,
+          "DisplayPattern": "ここが 自分の 家…すごく うれしいな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Good_5",
+          "DialogueText": "結婚式に もらった 首飾りが 美しいね…特に この 貝殻は カンペキ。すごく お金を かけてくれたんだね！ {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/267.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_5",
+          "PageIndex": 0,
+          "DisplayPattern": "結婚式に もらった 首飾りが 美しいね…特に この 貝殻は カンペキ。すごく お金を かけてくれたんだね！"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Good_6",
+          "DialogueText": "外では 気をつけるんだよ！時々、 鉱山で ケガしないかと 心配に なるんだ。",
+          "AudioPath": "assets/ja-JP/Haley/268.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_6",
+          "PageIndex": 0,
+          "DisplayPattern": "外では 気をつけるんだよ！時々、 鉱山で ケガしないかと 心配に なるんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Good_7",
+          "DialogueText": "{Farmer_Name}さんか。君が 家のために 尽くしてくれていることに、 本当に 感謝したいんだ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/269.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_7",
+          "PageIndex": 0,
+          "DisplayPattern": "さんか。君が 家のために 尽くしてくれていることに、 本当に 感謝したいんだ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Good_8",
+          "DialogueText": "自分のことは 心配しないで…あなたは 家の外で いろんな 責任を 負ってるから。だから こっちは 大丈夫さ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/270.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_8",
+          "PageIndex": 0,
+          "DisplayPattern": "自分のことは 心配しないで…あなたは 家の外で いろんな 責任を 負ってるから。だから こっちは 大丈夫さ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Good_9",
+          "DialogueText": "全く 飽きてもいないよ…ここにある もので 十分 楽しめてる。",
+          "AudioPath": "assets/ja-JP/Haley/271.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_9",
+          "PageIndex": 0,
+          "DisplayPattern": "全く 飽きてもいないよ…ここにある もので 十分 楽しめてる。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Good_9",
+          "DialogueText": "シンプルな 生活だけど 好きだよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/272.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Good_9",
+          "PageIndex": 1,
+          "DisplayPattern": "シンプルな 生活だけど 好きだよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Day_0",
+          "DialogueText": "おはよう！昨晩は よく 眠れた？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/273.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Indoor_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "おはよう！昨晩は よく 眠れた？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Day_0",
+          "DialogueText": "今日は 明るい 良い日だから、 古い カメラを 引っ張り出そうかなって思ってるの。",
+          "AudioPath": "assets/ja-JP/Haley/274.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Indoor_Day_0",
+          "PageIndex": 1,
+          "DisplayPattern": "今日は 明るい 良い日だから、 古い カメラを 引っ張り出そうかなって思ってるの。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Day_1",
+          "DialogueText": "おはよう、 あなた！いい 匂いでしょ？朝ごはんを 作ったのよ！[194 195 210 211 216]",
+          "AudioPath": "assets/ja-JP/Haley/275.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Indoor_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "おはよう、 あなた！いい 匂いでしょ？朝ごはんを 作ったのよ！"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Day_1",
+          "DialogueText": "仕事で 忙しいのは 分かってる。できる限りの ことで あなたを 支えてあげるわ！",
+          "AudioPath": "assets/ja-JP/Haley/276.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Indoor_Day_1",
+          "PageIndex": 1,
+          "DisplayPattern": "仕事で 忙しいのは 分かってる。できる限りの ことで あなたを 支えてあげるわ！"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Day_2",
+          "DialogueText": "ちゃんと 眠れた？少し いびきを かいてたわよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/277.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Indoor_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "ちゃんと 眠れた？少し いびきを かいてたわよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Day_2",
+          "DialogueText": "これから 少し やることが あるの。よい 一日を。",
+          "AudioPath": "assets/ja-JP/Haley/278.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Indoor_Day_2",
+          "PageIndex": 1,
+          "DisplayPattern": "これから 少し やることが あるの。よい 一日を。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Day_3",
+          "DialogueText": "掃除が こんなに 楽しいとは 思わなかったわ！この家は すぐ 汚れちゃうから。 {Portrait:Custom:10}",
+          "AudioPath": "assets/ja-JP/Haley/279.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Indoor_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "掃除が こんなに 楽しいとは 思わなかったわ！この家は すぐ 汚れちゃうから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Day_3",
+          "DialogueText": "何もかも ピカピカに なるまで掃除するのって 満足いくよね。",
+          "AudioPath": "assets/ja-JP/Haley/280.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Indoor_Day_3",
+          "PageIndex": 1,
+          "DisplayPattern": "何もかも ピカピカに なるまで掃除するのって 満足いくよね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Day_3",
+          "DialogueText": "お出かけの キス、 いいかな？ {Portrait:Custom:11}",
+          "AudioPath": "assets/ja-JP/Haley/281.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Indoor_Day_3",
+          "PageIndex": 2,
+          "DisplayPattern": "お出かけの キス、 いいかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Day_4",
+          "DialogueText": "おはよう。今日も また 牧場で お仕事？",
+          "AudioPath": "assets/ja-JP/Haley/282.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Indoor_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "おはよう。今日も また 牧場で お仕事？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Day_4",
+          "DialogueText": "私は あなたの こと、 想ってるわよ。 ♡ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/283.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Indoor_Day_4",
+          "PageIndex": 1,
+          "DisplayPattern": "私は あなたの こと、 想ってるわよ。 ♡"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Day_Haley",
+          "DialogueText": "あなたに 会うまで、 人生の 目標って ものが ない感じ だったわ。でも 今は 将来の夢が あるの。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/284.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Indoor_Day_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "あなたに 会うまで、 人生の 目標って ものが ない感じ だったわ。でも 今は 将来の夢が あるの。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Night_0",
+          "DialogueText": "今日も おつかれさま、{Farmer_Name}。",
+          "AudioPath": "assets/ja-JP/Haley/285.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "今日も おつかれさま、。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Night_0",
+          "DialogueText": "こっちは 家事を やって… 今じゃ へとへとさ。",
+          "AudioPath": "assets/ja-JP/Haley/286.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_0",
+          "PageIndex": 1,
+          "DisplayPattern": "こっちは 家事を やって… 今じゃ へとへとさ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Night_0",
+          "DialogueText": "いつでも、 ベッドに入る 準備は できてるよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/287.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_0",
+          "PageIndex": 2,
+          "DisplayPattern": "いつでも、 ベッドに入る 準備は できてるよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Night_1",
+          "DialogueText": "今日は 色々な ことを やったみたいだね。",
+          "AudioPath": "assets/ja-JP/Haley/288.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 色々な ことを やったみたいだね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Night_1",
+          "DialogueText": "今夜は リラックス して、 疲れを 取ろうか。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/289.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_1",
+          "PageIndex": 1,
+          "DisplayPattern": "今夜は リラックス して、 疲れを 取ろうか。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Night_2",
+          "DialogueText": "おかえりなさい。",
+          "AudioPath": "assets/ja-JP/Haley/290.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "おかえりなさい。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Night_2",
+          "DialogueText": "夜に 一人きりってのは 心細かったよ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/291_male.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_2",
+          "PageIndex": 1,
+          "DisplayPattern": "夜に 一人きりってのは 心細かったよ。",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Night_2",
+          "DialogueText": "夜になると さびしくてね… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/292_female.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_2",
+          "PageIndex": 2,
+          "DisplayPattern": "夜になると さびしくてね…",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Night_2",
+          "DialogueText": "… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/293.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_2",
+          "PageIndex": 3,
+          "DisplayPattern": "…"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Night_3",
+          "DialogueText": "今日の お仕事は 終わり？楽しむ 準備は できてるよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/294.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "今日の お仕事は 終わり？楽しむ 準備は できてるよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Night_3",
+          "DialogueText": "でも、 君は お疲れみたいだね。",
+          "AudioPath": "assets/ja-JP/Haley/295.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_3",
+          "PageIndex": 1,
+          "DisplayPattern": "でも、 君は お疲れみたいだね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Night_4",
+          "DialogueText": "ふぅ！ちょうど今 家事が 終わったよ。やっと 二人で一緒に 過ごせるね。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/296.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "ふぅ！ちょうど今 家事が 終わったよ。やっと 二人で一緒に 過ごせるね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Night_4",
+          "DialogueText": "今日は どんな日 だったかな。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/297.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_4",
+          "PageIndex": 1,
+          "DisplayPattern": "今日は どんな日 だったかな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Night_4",
+          "DialogueText": "… {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/298.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Indoor_Night_4",
+          "PageIndex": 2,
+          "DisplayPattern": "…"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Indoor_Night_Haley",
+          "DialogueText": "仕事で 疲れている ように 見えるわ。癒してあげるわよ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/299.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Indoor_Night_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "仕事で 疲れている ように 見えるわ。癒してあげるわよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Neutral_0",
+          "DialogueText": "君が年を取っても、 ずっと 好きで いてくれるよね。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/300.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_0",
+          "PageIndex": 0,
+          "DisplayPattern": "君が年を取っても、 ずっと 好きで いてくれるよね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Neutral_1",
+          "DialogueText": "お互いの 仕事っぷり、 君の おじいさんは 誇りに 思ってくれるかな？",
+          "AudioPath": "assets/ja-JP/Haley/301.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_1",
+          "PageIndex": 0,
+          "DisplayPattern": "お互いの 仕事っぷり、 君の おじいさんは 誇りに 思ってくれるかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Neutral_2",
+          "DialogueText": "休憩中？牧場主って 思ったより 楽なんだね…",
+          "AudioPath": "assets/ja-JP/Haley/302.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_2",
+          "PageIndex": 0,
+          "DisplayPattern": "休憩中？牧場主って 思ったより 楽なんだね…"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Neutral_3",
+          "DialogueText": "もし 町へ 行ったら、 私の 代わりに みんなと あいさつ してくれるかな。",
+          "AudioPath": "assets/ja-JP/Haley/303.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_3",
+          "PageIndex": 0,
+          "DisplayPattern": "もし 町へ 行ったら、 私の 代わりに みんなと あいさつ してくれるかな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Neutral_4",
+          "DialogueText": "明日、 あなたが 起きる前に 洗濯を するわね… そうすれば 効率が いいから。",
+          "AudioPath": "assets/ja-JP/Haley/304.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_4",
+          "PageIndex": 0,
+          "DisplayPattern": "明日、 あなたが 起きる前に 洗濯を するわね… そうすれば 効率が いいから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Neutral_5",
+          "DialogueText": "{Farmer_Name}、お金には 困ってない？",
+          "AudioPath": "assets/ja-JP/Haley/305.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_5",
+          "PageIndex": 0,
+          "DisplayPattern": "、お金には 困ってない？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Neutral_6",
+          "DialogueText": "町の みんなは 今日 何を してるのかな。",
+          "AudioPath": "assets/ja-JP/Haley/306.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_6",
+          "PageIndex": 0,
+          "DisplayPattern": "町の みんなは 今日 何を してるのかな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Neutral_7",
+          "DialogueText": "今日は 本当に 何もしたくない 気分だわ。",
+          "AudioPath": "assets/ja-JP/Haley/307.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_7",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 本当に 何もしたくない 気分だわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Neutral_8",
+          "DialogueText": "どれだけ がんばって キレイにしても、 家が すぐに 汚れちゃう。",
+          "AudioPath": "assets/ja-JP/Haley/308.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_8",
+          "PageIndex": 0,
+          "DisplayPattern": "どれだけ がんばって キレイにしても、 家が すぐに 汚れちゃう。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Neutral_8",
+          "DialogueText": "牧場って そういうものかな。",
+          "AudioPath": "assets/ja-JP/Haley/309.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_8",
+          "PageIndex": 1,
+          "DisplayPattern": "牧場って そういうものかな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Neutral_9",
+          "DialogueText": "ずっと このまま ここで 暮らせるかな？",
+          "AudioPath": "assets/ja-JP/Haley/310.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:Neutral_9",
+          "PageIndex": 0,
+          "DisplayPattern": "ずっと このまま ここで 暮らせるかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/NoBed_0",
+          "DialogueText": "どこで寝たらいいの…？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/311.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_0",
+          "PageIndex": 0,
+          "DisplayPattern": "どこで寝たらいいの…？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/NoBed_1",
+          "DialogueText": "昨日はぜんぜん眠れなかったよ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/312.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_1",
+          "PageIndex": 0,
+          "DisplayPattern": "昨日はぜんぜん眠れなかったよ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/NoBed_2",
+          "DialogueText": "昨日は床の上で寝たよ… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/313.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_2",
+          "PageIndex": 0,
+          "DisplayPattern": "昨日は床の上で寝たよ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/NoBed_3",
+          "DialogueText": "ベッドに何かしたの…？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/314.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:NoBed_3",
+          "PageIndex": 0,
+          "DisplayPattern": "ベッドに何かしたの…？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/OneKid_0",
+          "DialogueText": "今日は %kid1と 一緒に いられた？",
+          "AudioPath": "assets/ja-JP/Haley/315.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:OneKid_0",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は %kid1と 一緒に いられた？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/OneKid_1",
+          "DialogueText": "kid1は 成長したら、 あなた みたいな 大人に なるのかな？",
+          "AudioPath": "assets/ja-JP/Haley/316.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:OneKid_1",
+          "PageIndex": 0,
+          "DisplayPattern": "kid1は 成長したら、 あなた みたいな 大人に なるのかな？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/OneKid_2",
+          "DialogueText": "大丈夫、 %kid1の 面倒は 見るから。君は 牧場運営に 集中しても いいよ。",
+          "AudioPath": "assets/ja-JP/Haley/317.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:OneKid_2",
+          "PageIndex": 0,
+          "DisplayPattern": "大丈夫、 %kid1の 面倒は 見るから。君は 牧場運営に 集中しても いいよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/OneKid_3",
+          "DialogueText": "変な 感じだと 思わない？母親に なるなんて 初めてよ。",
+          "AudioPath": "assets/ja-JP/Haley/318.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:OneKid_3",
+          "PageIndex": 0,
+          "DisplayPattern": "変な 感じだと 思わない？母親に なるなんて 初めてよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Outdoor_0",
+          "DialogueText": "外で 新鮮な 空気を すうと いい 気分に なれるわ。",
+          "AudioPath": "assets/ja-JP/Haley/319.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Outdoor_0",
+          "PageIndex": 0,
+          "DisplayPattern": "外で 新鮮な 空気を すうと いい 気分に なれるわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Outdoor_0",
+          "DialogueText": "あなたの おじいさんの コテージだって なかなか いい所よ！でも この 美しい 土地は 最高ね。",
+          "AudioPath": "assets/ja-JP/Haley/320.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Outdoor_0",
+          "PageIndex": 1,
+          "DisplayPattern": "あなたの おじいさんの コテージだって なかなか いい所よ！でも この 美しい 土地は 最高ね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Outdoor_1",
+          "DialogueText": "牧場を かわいい 感じに しなきゃ！それって 重要なことだと想うの… そうでしょ、あなた？",
+          "AudioPath": "assets/ja-JP/Haley/321.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Outdoor_1",
+          "PageIndex": 0,
+          "DisplayPattern": "牧場を かわいい 感じに しなきゃ！それって 重要なことだと想うの… そうでしょ、あなた？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Outdoor_2",
+          "DialogueText": "やぁ、ハニー。オレが もっと 農業のことを 知ってたら、 お前を 手伝えたんだが。ごめんよ。",
+          "AudioPath": "assets/ja-JP/Haley/322.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Outdoor_2",
+          "PageIndex": 0,
+          "DisplayPattern": "やぁ、ハニー。オレが もっと 農業のことを 知ってたら、 お前を 手伝えたんだが。ごめんよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Outdoor_2",
+          "DialogueText": "君のことを 考えてるから。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/323.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Outdoor_2",
+          "PageIndex": 1,
+          "DisplayPattern": "君のことを 考えてるから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Outdoor_3",
+          "DialogueText": "ちょうど この辺を 掃除しようと してたんだ。君が 助かるだろうと 思ってね。",
+          "AudioPath": "assets/ja-JP/Haley/324.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Outdoor_3",
+          "PageIndex": 0,
+          "DisplayPattern": "ちょうど この辺を 掃除しようと してたんだ。君が 助かるだろうと 思ってね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Outdoor_3",
+          "DialogueText": "ふぅ… 外は 暑いな。",
+          "AudioPath": "assets/ja-JP/Haley/325.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Outdoor_3",
+          "PageIndex": 1,
+          "DisplayPattern": "ふぅ… 外は 暑いな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Outdoor_4",
+          "DialogueText": "あまり 働きすぎないでね。",
+          "AudioPath": "assets/ja-JP/Haley/326.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Outdoor_4",
+          "PageIndex": 0,
+          "DisplayPattern": "あまり 働きすぎないでね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Outdoor_4",
+          "DialogueText": "ちゃんと、 定期的な 休息や 食事を 取るように するんだよ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/327.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Outdoor_4",
+          "PageIndex": 1,
+          "DisplayPattern": "ちゃんと、 定期的な 休息や 食事を 取るように するんだよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Outdoor_Haley",
+          "DialogueText": "日焼けするには いい 日ね。 あなたは そう思わないかしら？",
+          "AudioPath": "assets/ja-JP/Haley/328.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Outdoor_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "日焼けするには いい 日ね。 あなたは そう思わないかしら？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/patio_Haley",
+          "DialogueText": "はいっ、“ヤギのチーズ”！",
+          "AudioPath": "assets/ja-JP/Haley/329.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:patio_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "はいっ、“ヤギのチーズ”！"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Rainy_Day_0",
+          "DialogueText": "物の見方は 結構 変わったけど、 雨より 晴れの ほうが まだ好きだわ。",
+          "AudioPath": "assets/ja-JP/Haley/330.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Rainy_Day_0",
+          "PageIndex": 0,
+          "DisplayPattern": "物の見方は 結構 変わったけど、 雨より 晴れの ほうが まだ好きだわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Rainy_Day_1",
+          "DialogueText": "時々、 引退後の 生活ってのを 考えるの… フェーン諸島の ビーチで くつろいでる 姿をね！",
+          "AudioPath": "assets/ja-JP/Haley/331.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Rainy_Day_1",
+          "PageIndex": 0,
+          "DisplayPattern": "時々、 引退後の 生活ってのを 考えるの… フェーン諸島の ビーチで くつろいでる 姿をね！"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Rainy_Day_1",
+          "DialogueText": "{Farmer_Name}は 未来のことを 考えたことは ある？",
+          "AudioPath": "assets/ja-JP/Haley/332.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Rainy_Day_1",
+          "PageIndex": 1,
+          "DisplayPattern": "は 未来のことを 考えたことは ある？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Rainy_Day_2",
+          "DialogueText": "おはよう！早くに 起きて、 お菓子を 焼いてあげた わよ！[223 234 211 651 731]",
+          "AudioPath": "assets/ja-JP/Haley/333.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Rainy_Day_2",
+          "PageIndex": 0,
+          "DisplayPattern": "おはよう！早くに 起きて、 お菓子を 焼いてあげた わよ！"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Rainy_Day_2",
+          "DialogueText": "あなたは 強い人だって 分かってるけど、 ちゃんと 食べなきゃ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/334.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Rainy_Day_2",
+          "PageIndex": 1,
+          "DisplayPattern": "あなたは 強い人だって 分かってるけど、 ちゃんと 食べなきゃ！"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Rainy_Day_3",
+          "DialogueText": "今日は 外へ 出られないわ… 髪が 乱れちゃうもの。ごめんね。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/335.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Rainy_Day_3",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は 外へ 出られないわ… 髪が 乱れちゃうもの。ごめんね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Rainy_Day_3",
+          "DialogueText": "あなたには キレイな姿のままで いたいから。",
+          "AudioPath": "assets/ja-JP/Haley/336.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Rainy_Day_3",
+          "PageIndex": 1,
+          "DisplayPattern": "あなたには キレイな姿のままで いたいから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Rainy_Day_4",
+          "DialogueText": "こんな 天気なのに 外へ 出るの？家に 上がるときは ちゃんと 濡れた 靴を 拭くのよ。",
+          "AudioPath": "assets/ja-JP/Haley/337.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Rainy_Day_4",
+          "PageIndex": 0,
+          "DisplayPattern": "こんな 天気なのに 外へ 出るの？家に 上がるときは ちゃんと 濡れた 靴を 拭くのよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Rainy_Day_4",
+          "DialogueText": "私は 外へ 出ないで 家事を やるわ。",
+          "AudioPath": "assets/ja-JP/Haley/338.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Rainy_Day_4",
+          "PageIndex": 1,
+          "DisplayPattern": "私は 外へ 出ないで 家事を やるわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Rainy_Day_Haley",
+          "DialogueText": "ああ…こんな天気が 続いたら やってられないわ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/339.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Rainy_Day_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ…こんな天気が 続いたら やってられないわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Rainy_Night_0",
+          "DialogueText": "おかえりなさい、あなた。一人じゃ とても 寒かったの…明かりを 切る 準備は できたかしら？",
+          "AudioPath": "assets/ja-JP/Haley/340.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Rainy_Night_0",
+          "PageIndex": 0,
+          "DisplayPattern": "おかえりなさい、あなた。一人じゃ とても 寒かったの…明かりを 切る 準備は できたかしら？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Rainy_Night_1",
+          "DialogueText": "明日は いい 晴れの日に なってくれるといいな。雨ばっかりだと 気分が 落ち込んじゃう。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/341.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Rainy_Night_1",
+          "PageIndex": 0,
+          "DisplayPattern": "明日は いい 晴れの日に なってくれるといいな。雨ばっかりだと 気分が 落ち込んじゃう。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Rainy_Night_2",
+          "DialogueText": "エミリーが 一人きりで さびしくないかしら。近いうちに 会いに 行こうかな。 {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Haley/342.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Rainy_Night_2",
+          "PageIndex": 0,
+          "DisplayPattern": "エミリーが 一人きりで さびしくないかしら。近いうちに 会いに 行こうかな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Rainy_Night_3",
+          "DialogueText": "雨は 写真家に とっては つらい 日よね。照明は サイアクだし、 外へ 出たら 機器が びしょぬれに なっちゃうから！ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/343.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Rainy_Night_3",
+          "PageIndex": 0,
+          "DisplayPattern": "雨は 写真家に とっては つらい 日よね。照明は サイアクだし、 外へ 出たら 機器が びしょぬれに なっちゃうから！"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Rainy_Night_4",
+          "DialogueText": "暖かい ご飯を 作ったわよ。あなた 好みに なるよう、 味付けを したわ。どうぞ 召し上がれ！[727 231 207 199] {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/344.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Rainy_Night_4",
+          "PageIndex": 0,
+          "DisplayPattern": "暖かい ご飯を 作ったわよ。あなた 好みに なるよう、 味付けを したわ。どうぞ 召し上がれ！"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Rainy_Night_5",
+          "DialogueText": "田舎暮らしが こんなに 私に 似合うなんて、 今まで 想像も できなかったわ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/345.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Rainy_Night_5",
+          "PageIndex": 0,
+          "DisplayPattern": "田舎暮らしが こんなに 私に 似合うなんて、 今まで 想像も できなかったわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/Rainy_Night_Haley",
+          "DialogueText": "あら。おかえりなさい。さびしいって 思い始めた ところだったのよ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/346.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:Rainy_Night_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "あら。おかえりなさい。さびしいって 思い始めた ところだったのよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/spouseRoom_Haley",
+          "DialogueText": "先に でかけて 楽しんでらっしゃい。私は メイク してるから。",
+          "AudioPath": "assets/ja-JP/Haley/347.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "先に でかけて 楽しんでらっしゃい。私は メイク してるから。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/spouseRoom_Haley",
+          "DialogueText": "$e",
+          "AudioPath": "assets/ja-JP/Haley/348.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Haley",
+          "PageIndex": 1,
+          "DisplayPattern": "$e"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/spouseRoom_Haley",
+          "DialogueText": "今日は どんな 予定かしら？",
+          "AudioPath": "assets/ja-JP/Haley/349.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spouseRoom_Haley",
+          "PageIndex": 2,
+          "DisplayPattern": "今日は どんな 予定かしら？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/spring_1",
+          "DialogueText": "冬が ようやく 終わって、 これから 晴れの日が 増えてくるわね。ワクワク してきたわ。",
+          "AudioPath": "assets/ja-JP/Haley/350.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:spring_1",
+          "PageIndex": 0,
+          "DisplayPattern": "冬が ようやく 終わって、 これから 晴れの日が 増えてくるわね。ワクワク してきたわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/spring_2",
+          "DialogueText": "この 季節は 何を 植えるの？",
+          "AudioPath": "assets/ja-JP/Haley/351.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:spring_2",
+          "PageIndex": 0,
+          "DisplayPattern": "この 季節は 何を 植えるの？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/spring_23",
+          "DialogueText": "ダンスの 練習は ちゃんと してくれたかな… 明日は フラワーダンスだからね！",
+          "AudioPath": "assets/ja-JP/Haley/352.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_23",
+          "PageIndex": 0,
+          "DisplayPattern": "ダンスの 練習は ちゃんと してくれたかな… 明日は フラワーダンスだからね！"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/spring_8",
+          "DialogueText": "冬が ようやく 終わって、 これからの 天気に 期待できるように なった。",
+          "AudioPath": "assets/ja-JP/Haley/353.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:spring_8",
+          "PageIndex": 0,
+          "DisplayPattern": "冬が ようやく 終わって、 これからの 天気に 期待できるように なった。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/spring_Haley",
+          "DialogueText": "やっと 冬が 終わって うれしいんでしょ？これからの時期、 色々と 期待できそうね。",
+          "AudioPath": "assets/ja-JP/Haley/354.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:spring_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "やっと 冬が 終わって うれしいんでしょ？これからの時期、 色々と 期待できそうね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/summer_1",
+          "DialogueText": "熱中症には 気をつけるんだよ。",
+          "AudioPath": "assets/ja-JP/Haley/355.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_1",
+          "PageIndex": 0,
+          "DisplayPattern": "熱中症には 気をつけるんだよ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/summer_1",
+          "DialogueText": "水分を ちゃんと 取って、 仕事 しすぎないようにね。",
+          "AudioPath": "assets/ja-JP/Haley/356.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_1",
+          "PageIndex": 1,
+          "DisplayPattern": "水分を ちゃんと 取って、 仕事 しすぎないようにね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/summer_15",
+          "DialogueText": "夏… ハエや アリが 出てくる季節ってことね… イヤだわ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/357.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:summer_15",
+          "PageIndex": 0,
+          "DisplayPattern": "夏… ハエや アリが 出てくる季節ってことね… イヤだわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/summer_3",
+          "DialogueText": "私の 見栄えが あんまり よくなかったら ごめんね… 湿度の せいで 髪が いい感じに まとまらないの。",
+          "AudioPath": "assets/ja-JP/Haley/358.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:summer_3",
+          "PageIndex": 0,
+          "DisplayPattern": "私の 見栄えが あんまり よくなかったら ごめんね… 湿度の せいで 髪が いい感じに まとまらないの。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/summer_8",
+          "DialogueText": "臭ったら ごめん…暑くて 汗 かきっぱなし だったからさ。",
+          "AudioPath": "assets/ja-JP/Haley/359.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:summer_8",
+          "PageIndex": 0,
+          "DisplayPattern": "臭ったら ごめん…暑くて 汗 かきっぱなし だったからさ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/summer_Haley",
+          "DialogueText": "暑い 夏の 夜は ホタルを 観察するのが 好きなのよ。星々が すぐそばに あるように 見えるからね。",
+          "AudioPath": "assets/ja-JP/Haley/360.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:summer_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "暑い 夏の 夜は ホタルを 観察するのが 好きなのよ。星々が すぐそばに あるように 見えるからね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/TwoKids_0",
+          "DialogueText": "kid1と%kid2には もう 朝ごはんを 食べさせたよ。おなか すいてたからね！",
+          "AudioPath": "assets/ja-JP/Haley/361.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:TwoKids_0",
+          "PageIndex": 0,
+          "DisplayPattern": "kid1と%kid2には もう 朝ごはんを 食べさせたよ。おなか すいてたからね！"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/TwoKids_1",
+          "DialogueText": "二人目の子ができたから、 %kid2だけでなく %kid1にも ちゃんと かまってあげよう。子ども達の 間で 嫉妬が 起こらない ようにね。",
+          "AudioPath": "assets/ja-JP/Haley/362.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:TwoKids_1",
+          "PageIndex": 0,
+          "DisplayPattern": "二人目の子ができたから、 %kid2だけでなく %kid1にも ちゃんと かまってあげよう。子ども達の 間で 嫉妬が 起こらない ようにね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/TwoKids_2",
+          "DialogueText": "kid2って、 とっても かわいくないかしら？",
+          "AudioPath": "assets/ja-JP/Haley/363.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:TwoKids_2",
+          "PageIndex": 0,
+          "DisplayPattern": "kid2って、 とっても かわいくないかしら？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/TwoKids_3",
+          "DialogueText": "住みやすい家、 ステキな二人の 子ども、すばらしい 土地。これ以上 何を 望めば いいのかしらね。",
+          "AudioPath": "assets/ja-JP/Haley/364.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:TwoKids_3",
+          "PageIndex": 0,
+          "DisplayPattern": "住みやすい家、 ステキな二人の 子ども、すばらしい 土地。これ以上 何を 望めば いいのかしらね。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/winter_1",
+          "DialogueText": "ブルブル…寒いね。冬の 到来かな。",
+          "AudioPath": "assets/ja-JP/Haley/365.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:winter_1",
+          "PageIndex": 0,
+          "DisplayPattern": "ブルブル…寒いね。冬の 到来かな。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/winter_14",
+          "DialogueText": "この 天気じゃ 肌が すごく 乾燥 しちゃうわ。",
+          "AudioPath": "assets/ja-JP/Haley/366.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:winter_14",
+          "PageIndex": 0,
+          "DisplayPattern": "この 天気じゃ 肌が すごく 乾燥 しちゃうわ。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/winter_2",
+          "DialogueText": "よくわからないけど、 雪を 見ると ピンクケーキが 食べたくなるわ…",
+          "AudioPath": "assets/ja-JP/Haley/367.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:winter_2",
+          "PageIndex": 0,
+          "DisplayPattern": "よくわからないけど、 雪を 見ると ピンクケーキが 食べたくなるわ…"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/winter_28",
+          "DialogueText": "{Farmer_Name}、 良い 一年を ありがとう。来年も また 一緒に がんばろう。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/368.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:winter_28",
+          "PageIndex": 0,
+          "DisplayPattern": "、 良い 一年を ありがとう。来年も また 一緒に がんばろう。"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/winter_7",
+          "DialogueText": "明日の 釣りコンテストには 参加する つもりか？",
+          "AudioPath": "assets/ja-JP/Haley/369.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogue:winter_7",
+          "PageIndex": 0,
+          "DisplayPattern": "明日の 釣りコンテストには 参加する つもりか？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/winter_Haley",
+          "DialogueText": "あなたが ピクルスのビンを 開けてくれた時の ことを 思い出してたの。覚えてる？ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/370.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:winter_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "あなたが ピクルスのビンを 開けてくれた時の ことを 思い出してたの。覚えてる？"
+        },
+        {
+          "DialogueFrom": "Marriage/Haley/winter_Haley",
+          "DialogueText": "私達、 あの時から 始まったのよね。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/371.ogg",
+          "TranslationKey": "Characters/Dialogue/MarriageDialogueHaley:winter_Haley",
+          "PageIndex": 1,
+          "DisplayPattern": "私達、 あの時から 始まったのよね。"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "朝は ずっと 髪のセットを してたけど… 雨じゃ 台無しに なっちゃうわ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/372.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "朝は ずっと 髪のセットを してたけど… 雨じゃ 台無しに なっちゃうわ。"
+        },
+        {
+          "DialogueFrom": "rainy",
+          "DialogueText": "はぁ…人生って つらい時が あるのね。",
+          "AudioPath": "assets/ja-JP/Haley/373.ogg",
+          "TranslationKey": "Characters/Dialogue/rainy:Haley",
+          "PageIndex": 1,
+          "DisplayPattern": "はぁ…人生って つらい時が あるのね。"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/8675611:s0",
+          "DialogueText": "Hi, honey.",
+          "AudioPath": "assets/ja-JP/Haley/374.ogg",
+          "TranslationKey": "Events/FarmHouse:8675611:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi, honey."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/8675611:s1",
+          "DialogueText": "Hey... I have an idea... I want to get everyone together for a charity cake-walk.",
+          "AudioPath": "assets/ja-JP/Haley/375.ogg",
+          "TranslationKey": "Events/FarmHouse:8675611:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey... I have an idea... I want to get everyone together for a charity cake-walk."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/8675611:s2",
+          "DialogueText": "Uh... It's kind of like musical chairs, but everyone wins and gets cake! You'll see... {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/376.ogg",
+          "TranslationKey": "Events/FarmHouse:8675611:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Uh... It's kind of like musical chairs, but everyone wins and gets cake! You'll see..."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/8675611:s3",
+          "DialogueText": "It'll be on the next sunny day in the town square.",
+          "AudioPath": "assets/ja-JP/Haley/377.ogg",
+          "TranslationKey": "Events/FarmHouse:8675611:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "It'll be on the next sunny day in the town square."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/8675611:s4",
+          "DialogueText": "Um... would you mind bringing a chocolate cake?",
+          "AudioPath": "assets/ja-JP/Haley/378.ogg",
+          "TranslationKey": "Events/FarmHouse:8675611:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... would you mind bringing a chocolate cake?"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/8675611:s5",
+          "DialogueText": "Great! I'll meet you in the town square tomorrow, weather permitting. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/379.ogg",
+          "TranslationKey": "Events/FarmHouse:8675611:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Great! I'll meet you in the town square tomorrow, weather permitting."
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/8675611:s6",
+          "DialogueText": "What's up with the snarky attitude? {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Haley/380.ogg",
+          "TranslationKey": "Events/FarmHouse:8675611:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "What's up with the snarky attitude?"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/8675611:s7",
+          "DialogueText": "Fine. You're going to show up tomorrow with a chocolate cake, or else you're in the dog house. You like that better? {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Haley/381.ogg",
+          "TranslationKey": "Events/FarmHouse:8675611:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Fine. You're going to show up tomorrow with a chocolate cake, or else you're in the dog house. You like that better?"
+        },
+        {
+          "DialogueFrom": "Event:FarmHouse/8675611:s8",
+          "DialogueText": "I'm bringing a pink cake.",
+          "AudioPath": "assets/ja-JP/Haley/382.ogg",
+          "TranslationKey": "Events/FarmHouse:8675611:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm bringing a pink cake."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s0",
+          "DialogueText": "Hey! Oh, good, you brought the cake!...",
+          "AudioPath": "assets/ja-JP/Haley/383.ogg",
+          "TranslationKey": "Events/Town:6184644:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey! Oh, good, you brought the cake!..."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s1",
+          "DialogueText": "Seems really moist. Thanks, {Farmer_Name}.",
+          "AudioPath": "assets/ja-JP/Haley/384.ogg",
+          "TranslationKey": "Events/Town:6184644:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Seems really moist. Thanks, ."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s2",
+          "DialogueText": "It's a pretty good turnout, huh?",
+          "AudioPath": "assets/ja-JP/Haley/385.ogg",
+          "TranslationKey": "Events/Town:6184644:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "It's a pretty good turnout, huh?"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s3",
+          "DialogueText": "Whoops! Forgot to blow the whistle. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/386.ogg",
+          "TranslationKey": "Events/Town:6184644:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Whoops! Forgot to blow the whistle."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s4",
+          "DialogueText": "Alright! Everyone should be standing on a numbered square.",
+          "AudioPath": "assets/ja-JP/Haley/387.ogg",
+          "TranslationKey": "Events/Town:6184644:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Alright! Everyone should be standing on a numbered square."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s5",
+          "DialogueText": "Your number determines which cake you win!",
+          "AudioPath": "assets/ja-JP/Haley/388.ogg",
+          "TranslationKey": "Events/Town:6184644:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Your number determines which cake you win!"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s6",
+          "DialogueText": "Okay, let's see who gets what...",
+          "AudioPath": "assets/ja-JP/Haley/389.ogg",
+          "TranslationKey": "Events/Town:6184644:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay, let's see who gets what..."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s7",
+          "DialogueText": "Okay, Let's see here...",
+          "AudioPath": "assets/ja-JP/Haley/390.ogg",
+          "TranslationKey": "Events/Town:6184644:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Okay, Let's see here..."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s8",
+          "DialogueText": "Caroline, what number are you? Okay... you've won...",
+          "AudioPath": "assets/ja-JP/Haley/391.ogg",
+          "TranslationKey": "Events/Town:6184644:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Caroline, what number are you? Okay... you've won..."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s9",
+          "DialogueText": "Mayor Lewis' cave carrot loaf... with extra fiber!",
+          "AudioPath": "assets/ja-JP/Haley/392.ogg",
+          "TranslationKey": "Events/Town:6184644:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Mayor Lewis' cave carrot loaf... with extra fiber!"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s10",
+          "DialogueText": "Emily, you've got...",
+          "AudioPath": "assets/ja-JP/Haley/393.ogg",
+          "TranslationKey": "Events/Town:6184644:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Emily, you've got..."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s11",
+          "DialogueText": "Pam's chocolate stout cupcakes, with aged bourbon buttercream.",
+          "AudioPath": "assets/ja-JP/Haley/394.ogg",
+          "TranslationKey": "Events/Town:6184644:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Pam's chocolate stout cupcakes, with aged bourbon buttercream."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s12",
+          "DialogueText": "Next... Jas, you've got...",
+          "AudioPath": "assets/ja-JP/Haley/395.ogg",
+          "TranslationKey": "Events/Town:6184644:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "Next... Jas, you've got..."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s13",
+          "DialogueText": "Clint's wild horseradish cobbler.",
+          "AudioPath": "assets/ja-JP/Haley/396.ogg",
+          "TranslationKey": "Events/Town:6184644:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Clint's wild horseradish cobbler."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s14",
+          "DialogueText": "Uh, Okay... Next up is Vincent. We've got...",
+          "AudioPath": "assets/ja-JP/Haley/397.ogg",
+          "TranslationKey": "Events/Town:6184644:s14",
+          "PageIndex": 0,
+          "DisplayPattern": "Uh, Okay... Next up is Vincent. We've got..."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s15",
+          "DialogueText": "Robin's Triple syrup n' cream strawberry sugar log!",
+          "AudioPath": "assets/ja-JP/Haley/398.ogg",
+          "TranslationKey": "Events/Town:6184644:s15",
+          "PageIndex": 0,
+          "DisplayPattern": "Robin's Triple syrup n' cream strawberry sugar log!"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s16",
+          "DialogueText": "Next up, Jodi. You're gonna take home...",
+          "AudioPath": "assets/ja-JP/Haley/399.ogg",
+          "TranslationKey": "Events/Town:6184644:s16",
+          "PageIndex": 0,
+          "DisplayPattern": "Next up, Jodi. You're gonna take home..."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s17",
+          "DialogueText": "Emily's organic red velvet cake... colored with beets!",
+          "AudioPath": "assets/ja-JP/Haley/400.ogg",
+          "TranslationKey": "Events/Town:6184644:s17",
+          "PageIndex": 0,
+          "DisplayPattern": "Emily's organic red velvet cake... colored with beets!"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s18|g=male",
+          "DialogueText": "...and last, but not least: Pam! You're the lucky winner of my husband's deluxe chocolate cake.",
+          "AudioPath": "assets/ja-JP/Haley/401_male.ogg",
+          "TranslationKey": "Events/Town:6184644:s18",
+          "PageIndex": 0,
+          "DisplayPattern": "...and last, but not least: Pam! You're the lucky winner of my husband's deluxe chocolate cake.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s19|g=female",
+          "DialogueText": "...and last, but not least: Pam! You're the lucky winner of my wife's deluxe chocolate cake.",
+          "AudioPath": "assets/ja-JP/Haley/402_female.ogg",
+          "TranslationKey": "Events/Town:6184644:s19",
+          "PageIndex": 0,
+          "DisplayPattern": "...and last, but not least: Pam! You're the lucky winner of my wife's deluxe chocolate cake.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s20",
+          "DialogueText": "Thanks everyone for joining in. We raised over 5,000g!",
+          "AudioPath": "assets/ja-JP/Haley/403.ogg",
+          "TranslationKey": "Events/Town:6184644:s20",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks everyone for joining in. We raised over 5,000g!"
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s21",
+          "DialogueText": "Actually... it's for Penny.",
+          "AudioPath": "assets/ja-JP/Haley/404.ogg",
+          "TranslationKey": "Events/Town:6184644:s21",
+          "PageIndex": 0,
+          "DisplayPattern": "Actually... it's for Penny."
+        },
+        {
+          "DialogueFrom": "Event:Town/6184644:s22",
+          "DialogueText": "Penny, the other day I overheard you talking with Jas and Vincent about their school books. It sounded like you could use some help...",
+          "AudioPath": "assets/ja-JP/Haley/405.ogg",
+          "TranslationKey": "Events/Town:6184644:s22",
+          "PageIndex": 0,
+          "DisplayPattern": "Penny, the other day I overheard you talking with Jas and Vincent about their school books. It sounded like you could use some help..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/11:s0",
+          "DialogueText": "Urgghh! I always clean under the cushions! It's YOUR turn this week! {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Haley/406.ogg",
+          "TranslationKey": "Events/HaleyHouse:11:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Urgghh! I always clean under the cushions! It's YOUR turn this week!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/11:s1|g=male",
+          "DialogueText": "Oh, it's that new farm boy. {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Haley/407_male.ogg",
+          "TranslationKey": "Events/HaleyHouse:11:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, it's that new farm boy.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/11:s2|g=female",
+          "DialogueText": "Oh, it's that new girl from the farm. {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Haley/408_female.ogg",
+          "TranslationKey": "Events/HaleyHouse:11:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, it's that new girl from the farm.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/11:s3",
+          "DialogueText": "Hey, I bet you'll understand my point of view here.",
+          "AudioPath": "assets/ja-JP/Haley/409.ogg",
+          "TranslationKey": "Events/HaleyHouse:11:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, I bet you'll understand my point of view here."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/11:s4",
+          "DialogueText": "It's only because I cleaned them last week! {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Haley/410.ogg",
+          "TranslationKey": "Events/HaleyHouse:11:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "It's only because I cleaned them last week!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/11:s5",
+          "DialogueText": "Stop whining and just clean it!",
+          "AudioPath": "assets/ja-JP/Haley/411.ogg",
+          "TranslationKey": "Events/HaleyHouse:11:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Stop whining and just clean it!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/11:s6",
+          "DialogueText": "Haley, why not have this be your one weekly job?",
+          "AudioPath": "assets/ja-JP/Haley/412.ogg",
+          "TranslationKey": "Events/HaleyHouse:11:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Haley, why not have this be your one weekly job?"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/11:s7",
+          "DialogueText": "Emily, take the high road and do it this time.",
+          "AudioPath": "assets/ja-JP/Haley/413.ogg",
+          "TranslationKey": "Events/HaleyHouse:11:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Emily, take the high road and do it this time."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/11:s8",
+          "DialogueText": "Alright, you win. I guess this can be my job every week. Then there won't be any reason to argue over it. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Haley/414.ogg",
+          "TranslationKey": "Events/HaleyHouse:11:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Alright, you win. I guess this can be my job every week. Then there won't be any reason to argue over it."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/12:s0",
+          "DialogueText": "Nnnnnghhh... I just can't get this jar open! {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Haley/415.ogg",
+          "TranslationKey": "Events/HaleyHouse:12:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Nnnnnghhh... I just can't get this jar open!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/12:s1",
+          "DialogueText": "... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/416.ogg",
+          "TranslationKey": "Events/HaleyHouse:12:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/12:s2",
+          "DialogueText": "Oh! It's you...{Farmer_Name}, right?",
+          "AudioPath": "assets/ja-JP/Haley/417.ogg",
+          "TranslationKey": "Events/HaleyHouse:12:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! It's you..., right?"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/12:s3",
+          "DialogueText": "Say... you're pretty strong, aren't you?",
+          "AudioPath": "assets/ja-JP/Haley/418.ogg",
+          "TranslationKey": "Events/HaleyHouse:12:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Say... you're pretty strong, aren't you?"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/12:s4",
+          "DialogueText": "Yes",
+          "AudioPath": "assets/ja-JP/Haley/419.ogg",
+          "TranslationKey": "Events/HaleyHouse:12:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Yes"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/12:s5",
+          "DialogueText": "No",
+          "AudioPath": "assets/ja-JP/Haley/420.ogg",
+          "TranslationKey": "Events/HaleyHouse:12:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "No"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/12:s6",
+          "DialogueText": "Hey, you did it! You're stronger than you look! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/421.ogg",
+          "TranslationKey": "Events/HaleyHouse:12:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, you did it! You're stronger than you look!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/12:s7",
+          "DialogueText": "Thanks! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/422.ogg",
+          "TranslationKey": "Events/HaleyHouse:12:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Thanks!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/15:s0",
+          "DialogueText": "Come in! Just make sure to close the door quickly behind you!",
+          "AudioPath": "assets/ja-JP/Haley/423.ogg",
+          "TranslationKey": "Events/HaleyHouse:15:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Come in! Just make sure to close the door quickly behind you!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/15:s1",
+          "DialogueText": "{Farmer_Name}, you're here!",
+          "AudioPath": "assets/ja-JP/Haley/424.ogg",
+          "TranslationKey": "Events/HaleyHouse:15:s1",
+          "PageIndex": 0,
+          "DisplayPattern": ", you're here!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/15:s2",
+          "DialogueText": "Welcome to my brand new dark room! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/425.ogg",
+          "TranslationKey": "Events/HaleyHouse:15:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Welcome to my brand new dark room!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/15:s3",
+          "DialogueText": "So... what do you think?",
+          "AudioPath": "assets/ja-JP/Haley/426.ogg",
+          "TranslationKey": "Events/HaleyHouse:15:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "So... what do you think?"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/15:s4",
+          "DialogueText": "It looks great!",
+          "AudioPath": "assets/ja-JP/Haley/427.ogg",
+          "TranslationKey": "Events/HaleyHouse:15:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "It looks great!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/15:s5",
+          "DialogueText": "What does it do?",
+          "AudioPath": "assets/ja-JP/Haley/428.ogg",
+          "TranslationKey": "Events/HaleyHouse:15:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "What does it do?"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/15:s6",
+          "DialogueText": "I've seen better.",
+          "AudioPath": "assets/ja-JP/Haley/429.ogg",
+          "TranslationKey": "Events/HaleyHouse:15:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "I've seen better."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/15:s7",
+          "DialogueText": "Um... so, anyway... what do you want to do? {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/430.ogg",
+          "TranslationKey": "Events/HaleyHouse:15:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Um... so, anyway... what do you want to do?"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/15:s8",
+          "DialogueText": "Offer to help decorate the dark room.",
+          "AudioPath": "assets/ja-JP/Haley/431.ogg",
+          "TranslationKey": "Events/HaleyHouse:15:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Offer to help decorate the dark room."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/15:s9",
+          "DialogueText": "Make an excuse and leave.",
+          "AudioPath": "assets/ja-JP/Haley/432.ogg",
+          "TranslationKey": "Events/HaleyHouse:15:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "Make an excuse and leave."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/15:s10",
+          "DialogueText": "Try to kiss her.",
+          "AudioPath": "assets/ja-JP/Haley/433.ogg",
+          "TranslationKey": "Events/HaleyHouse:15:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Try to kiss her."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/15:s11",
+          "DialogueText": "Oh, {Farmer_Name}... I've been waiting so long for you to do that. {Portrait:Custom:11}",
+          "AudioPath": "assets/ja-JP/Haley/434.ogg",
+          "TranslationKey": "Events/HaleyHouse:15:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, ... I've been waiting so long for you to do that."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/15:s12",
+          "DialogueText": "One moment... {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/435.ogg",
+          "TranslationKey": "Events/HaleyHouse:15:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "One moment..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/15:s13",
+          "DialogueText": "That was nice... {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/436.ogg",
+          "TranslationKey": "Events/HaleyHouse:15:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "That was nice..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195019:s0",
+          "DialogueText": "Hi!",
+          "AudioPath": "assets/ja-JP/Haley/437.ogg",
+          "TranslationKey": "Events/HaleyHouse:195019:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195019:s1",
+          "DialogueText": "Hah! Were you born yesterday? {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/438.ogg",
+          "TranslationKey": "Events/HaleyHouse:195019:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hah! Were you born yesterday?"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195019:s2",
+          "DialogueText": "You spent a short while with the group.",
+          "AudioPath": "assets/ja-JP/Haley/439.ogg",
+          "TranslationKey": "Events/HaleyHouse:195019:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "You spent a short while with the group."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195019:s3",
+          "DialogueText": "It was an uneventful gathering!",
+          "AudioPath": "assets/ja-JP/Haley/440.ogg",
+          "TranslationKey": "Events/HaleyHouse:195019:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "It was an uneventful gathering!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195012:s0",
+          "DialogueText": "Not so fast!",
+          "AudioPath": "assets/ja-JP/Haley/441.ogg",
+          "TranslationKey": "Events/HaleyHouse:195012:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Not so fast!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195012:s1|g=male",
+          "DialogueText": "Well, us women stick together! And we're not going to put up with this! {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Haley/442_male.ogg",
+          "TranslationKey": "Events/HaleyHouse:195012:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, us women stick together! And we're not going to put up with this!",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195012:s2|g=female",
+          "DialogueText": "Well, we're not going to put up with your abuse any longer! {Portrait:Angry}",
+          "AudioPath": "assets/ja-JP/Haley/443_female.ogg",
+          "TranslationKey": "Events/HaleyHouse:195012:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, we're not going to put up with your abuse any longer!",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/195012:s3",
+          "DialogueText": "...so we've come to a decision... isn't that right, girls? {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Haley/444.ogg",
+          "TranslationKey": "Events/HaleyHouse:195012:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "...so we've come to a decision... isn't that right, girls?"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/choseToExplain:s0",
+          "DialogueText": "I doubt it...",
+          "AudioPath": "assets/ja-JP/Haley/445.ogg",
+          "TranslationKey": "Events/HaleyHouse:choseToExplain:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I doubt it..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/choseToExplain:s1",
+          "DialogueText": "I thought we were just friends! I didn't know it was so serious!",
+          "AudioPath": "assets/ja-JP/Haley/446.ogg",
+          "TranslationKey": "Events/HaleyHouse:choseToExplain:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "I thought we were just friends! I didn't know it was so serious!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/choseToExplain:s2",
+          "DialogueText": "Pierre pressured me! He wanted to sell more bouquets!",
+          "AudioPath": "assets/ja-JP/Haley/447.ogg",
+          "TranslationKey": "Events/HaleyHouse:choseToExplain:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Pierre pressured me! He wanted to sell more bouquets!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/choseToExplain:s3",
+          "DialogueText": "Ladies, this is completely normal! It's just a lifestyle choice...",
+          "AudioPath": "assets/ja-JP/Haley/448.ogg",
+          "TranslationKey": "Events/HaleyHouse:choseToExplain:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Ladies, this is completely normal! It's just a lifestyle choice..."
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/choseToExplain:s4",
+          "DialogueText": "Liar!",
+          "AudioPath": "assets/ja-JP/Haley/449.ogg",
+          "TranslationKey": "Events/HaleyHouse:choseToExplain:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Liar!"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/choseToExplain:s5",
+          "DialogueText": "...I think we've come to a decision... isn't that right, girls? {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Haley/450.ogg",
+          "TranslationKey": "Events/HaleyHouse:choseToExplain:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "...I think we've come to a decision... isn't that right, girls?"
+        },
+        {
+          "DialogueFrom": "Event:HaleyHouse/lifestyleChoice:s0",
+          "DialogueText": "...I think we've come to a decision... isn't that right, girls? {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Haley/451.ogg",
+          "TranslationKey": "Events/HaleyHouse:lifestyleChoice:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "...I think we've come to a decision... isn't that right, girls?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/13:s0",
+          "DialogueText": "{Farmer_Name}! Come here, quick! {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/452.ogg",
+          "TranslationKey": "Events/Beach:13:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "! Come here, quick!"
+        },
+        {
+          "DialogueFrom": "Event:Beach/13:s1",
+          "DialogueText": "My bracelet is gone! I know I had it on when I got here... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/453.ogg",
+          "TranslationKey": "Events/Beach:13:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "My bracelet is gone! I know I had it on when I got here..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/13:s2",
+          "DialogueText": "But now it's gone and I can't find it anywhere... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/454.ogg",
+          "TranslationKey": "Events/Beach:13:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "But now it's gone and I can't find it anywhere..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/13:s3",
+          "DialogueText": "I'll never find another one like it... {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/455.ogg",
+          "TranslationKey": "Events/Beach:13:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll never find another one like it..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/13:s4",
+          "DialogueText": "Relax, I'll just buy you a new one!",
+          "AudioPath": "assets/ja-JP/Haley/456.ogg",
+          "TranslationKey": "Events/Beach:13:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Relax, I'll just buy you a new one!"
+        },
+        {
+          "DialogueFrom": "Event:Beach/13:s5",
+          "DialogueText": "I'm really sorry...",
+          "AudioPath": "assets/ja-JP/Haley/457.ogg",
+          "TranslationKey": "Events/Beach:13:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm really sorry..."
+        },
+        {
+          "DialogueFrom": "Event:Beach/13:s6",
+          "DialogueText": "Sorry, Great-Grandma. I lost your precious bracelet. Please forgive me. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/458.ogg",
+          "TranslationKey": "Events/Beach:13:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Sorry, Great-Grandma. I lost your precious bracelet. Please forgive me."
+        },
+        {
+          "DialogueFrom": "Event:Beach/13:s7",
+          "DialogueText": "Could she have dropped it nearby?",
+          "AudioPath": "assets/ja-JP/Haley/459.ogg",
+          "TranslationKey": "Events/Beach:13:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Could she have dropped it nearby?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/13:s8",
+          "DialogueText": "Is that...? {Portrait:Custom:8}",
+          "AudioPath": "assets/ja-JP/Haley/460.ogg",
+          "TranslationKey": "Events/Beach:13:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "Is that...?"
+        },
+        {
+          "DialogueFrom": "Event:Beach/13:s9",
+          "DialogueText": "You found it! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/461.ogg",
+          "TranslationKey": "Events/Beach:13:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "You found it!"
+        },
+        {
+          "DialogueFrom": "Event:Beach/13:s10",
+          "DialogueText": "Thank you so much, {Farmer_Name}. You're a lifesaver.",
+          "AudioPath": "assets/ja-JP/Haley/462.ogg",
+          "TranslationKey": "Events/Beach:13:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "Thank you so much, . You're a lifesaver."
+        },
+        {
+          "DialogueFrom": "Event:Beach/13:s11",
+          "DialogueText": "I won't forget what you did for me here. {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/463.ogg",
+          "TranslationKey": "Events/Beach:13:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "I won't forget what you did for me here."
+        },
+        {
+          "DialogueFrom": "Event:Beach/13:s12",
+          "DialogueText": "I really owe you one, {Farmer_Name}.",
+          "AudioPath": "assets/ja-JP/Haley/464.ogg",
+          "TranslationKey": "Events/Beach:13:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "I really owe you one, ."
+        },
+        {
+          "DialogueFrom": "Event:Forest/14:s0",
+          "DialogueText": "Oh! {Farmer_Name}. {Portrait:Custom:8}",
+          "AudioPath": "assets/ja-JP/Haley/465.ogg",
+          "TranslationKey": "Events/Forest:14:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh! ."
+        },
+        {
+          "DialogueFrom": "Event:Forest/14:s1",
+          "DialogueText": "The lighting is so nice right now... I had to come out and take some nature shots.",
+          "AudioPath": "assets/ja-JP/Haley/466.ogg",
+          "TranslationKey": "Events/Forest:14:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "The lighting is so nice right now... I had to come out and take some nature shots."
+        },
+        {
+          "DialogueFrom": "Event:Forest/14:s2",
+          "DialogueText": "I've been trying to connect with the outdoors a little more...",
+          "AudioPath": "assets/ja-JP/Haley/467.ogg",
+          "TranslationKey": "Events/Forest:14:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "I've been trying to connect with the outdoors a little more..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/14:s3",
+          "DialogueText": "I wanna know what it's like, being a farmer. It's a way of life I've never really thought about.",
+          "AudioPath": "assets/ja-JP/Haley/468.ogg",
+          "TranslationKey": "Events/Forest:14:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I wanna know what it's like, being a farmer. It's a way of life I've never really thought about."
+        },
+        {
+          "DialogueFrom": "Event:Forest/14:s4",
+          "DialogueText": "Well, until now... {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/469.ogg",
+          "TranslationKey": "Events/Forest:14:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, until now..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/14:s5",
+          "DialogueText": "Heh, these cows are so cute...",
+          "AudioPath": "assets/ja-JP/Haley/470.ogg",
+          "TranslationKey": "Events/Forest:14:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "Heh, these cows are so cute..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/14:s6",
+          "DialogueText": "Hey, I have an idea! {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/471.ogg",
+          "TranslationKey": "Events/Forest:14:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Hey, I have an idea!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/14:s7",
+          "DialogueText": "Let's take some pictures with these cows! You can show me how to approach one. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/472.ogg",
+          "TranslationKey": "Events/Forest:14:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "Let's take some pictures with these cows! You can show me how to approach one."
+        },
+        {
+          "DialogueFrom": "Event:Forest/14:s8",
+          "DialogueText": "I'll just set it to shoot on a timer.",
+          "AudioPath": "assets/ja-JP/Haley/473.ogg",
+          "TranslationKey": "Events/Forest:14:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "I'll just set it to shoot on a timer."
+        },
+        {
+          "DialogueFrom": "Event:Forest/14:s9",
+          "DialogueText": "...geh... {Portrait:Custom:9}",
+          "AudioPath": "assets/ja-JP/Haley/474.ogg",
+          "TranslationKey": "Events/Forest:14:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "...geh..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/14:s10",
+          "DialogueText": "*giggle* {Portrait:Custom:10}",
+          "AudioPath": "assets/ja-JP/Haley/475.ogg",
+          "TranslationKey": "Events/Forest:14:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "*giggle*"
+        },
+        {
+          "DialogueFrom": "Event:Forest/14:s11",
+          "DialogueText": "That was fun, {Farmer_Name}! ...And these photos are hilarious! {Portrait:Custom:10}",
+          "AudioPath": "assets/ja-JP/Haley/476.ogg",
+          "TranslationKey": "Events/Forest:14:s11",
+          "PageIndex": 0,
+          "DisplayPattern": "That was fun, ! ...And these photos are hilarious!"
+        },
+        {
+          "DialogueFrom": "Event:Forest/14:s12",
+          "DialogueText": "I'm gonna go home and take a shower now... {Portrait:Custom:10}",
+          "AudioPath": "assets/ja-JP/Haley/477.ogg",
+          "TranslationKey": "Events/Forest:14:s12",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm gonna go home and take a shower now..."
+        },
+        {
+          "DialogueFrom": "Event:Forest/14:s13",
+          "DialogueText": "Well, that was the dirtiest I've ever been. {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/478.ogg",
+          "TranslationKey": "Events/Forest:14:s13",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, that was the dirtiest I've ever been."
+        },
+        {
+          "DialogueFrom": "Event:Temp/decorate:s0",
+          "DialogueText": "Decorate? {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/479.ogg",
+          "TranslationKey": "Events/Temp:decorate:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Decorate?"
+        },
+        {
+          "DialogueFrom": "Event:Temp/decorate:s1",
+          "DialogueText": "Um, okay. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Haley/480.ogg",
+          "TranslationKey": "Events/Temp:decorate:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Um, okay."
+        },
+        {
+          "DialogueFrom": "Event:Temp/decorate:s2",
+          "DialogueText": "So that's the best thing you can think of doing right now? Here... in this small, dark room with me? {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Haley/481.ogg",
+          "TranslationKey": "Events/Temp:decorate:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "So that's the best thing you can think of doing right now? Here... in this small, dark room with me?"
+        },
+        {
+          "DialogueFrom": "Event:Temp/decorate:s3",
+          "DialogueText": "Interesting. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Haley/482.ogg",
+          "TranslationKey": "Events/Temp:decorate:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Interesting."
+        },
+        {
+          "DialogueFrom": "Event:Temp/decorate:s4",
+          "DialogueText": "Well, the dark room looks great now... Thanks, {Farmer_Name}. {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Haley/483.ogg",
+          "TranslationKey": "Events/Temp:decorate:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, the dark room looks great now... Thanks, ."
+        },
+        {
+          "DialogueFrom": "Event:Temp/leave:s0",
+          "DialogueText": "Oh, you have to leave already? {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/484.ogg",
+          "TranslationKey": "Events/Temp:leave:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Oh, you have to leave already?"
+        },
+        {
+          "DialogueFrom": "Event:Temp/leave:s1",
+          "DialogueText": "Well... alright. Bye. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/485.ogg",
+          "TranslationKey": "Events/Temp:leave:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Well... alright. Bye."
+        },
+        {
+          "DialogueFrom": "Event:Temp/leave:s2|g=male",
+          "DialogueText": "Wow... I didn't think he was that dense. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/486_male.ogg",
+          "TranslationKey": "Events/Temp:leave:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow... I didn't think he was that dense.",
+          "GenderVariant": "male"
+        },
+        {
+          "DialogueFrom": "Event:Temp/leave:s3|g=female",
+          "DialogueText": "Wow... I didn't think she was that dense. {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/487_female.ogg",
+          "TranslationKey": "Events/Temp:leave:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Wow... I didn't think she was that dense.",
+          "GenderVariant": "female"
+        },
+        {
+          "DialogueFrom": "Event:Temp/leave:s4",
+          "DialogueText": "I thought you had something important to do... {Portrait:Unique}",
+          "AudioPath": "assets/ja-JP/Haley/488.ogg",
+          "TranslationKey": "Events/Temp:leave:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "I thought you had something important to do..."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Haley",
+          "DialogueText": "占いの館にはもう行った？テントなら墓地に建ってるよ。",
+          "AudioPath": "assets/ja-JP/Haley/489.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "占いの館にはもう行った？テントなら墓地に建ってるよ。"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Haley",
+          "DialogueText": "わたしはもう行ったけど…すごく…おもしろかった。（ブルッ） {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/490.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Haley",
+          "PageIndex": 1,
+          "DisplayPattern": "わたしはもう行ったけど…すごく…おもしろかった。（ブルッ）"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Haley_spouse",
+          "DialogueText": "品評会に展示するとっておき、忘れずにもってきた？今年はわたしたちで勝ちたいね。",
+          "AudioPath": "assets/ja-JP/Haley/491.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Haley_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "品評会に展示するとっておき、忘れずにもってきた？今年はわたしたちで勝ちたいね。"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Haley_y2",
+          "DialogueText": "今年の秋はダイエットしようと思ってるのに… このジューシーなハンバーガーには負けそうだわ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/492.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Haley_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "今年の秋はダイエットしようと思ってるのに… このジューシーなハンバーガーには負けそうだわ！"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Haley_spouse_y2",
+          "DialogueText": "アレックスが口いっぱい食べてるのはちょっとおもしろいわね。すごく元気そうだわ。",
+          "AudioPath": "assets/ja-JP/Haley/493.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Haley_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "アレックスが口いっぱい食べてるのはちょっとおもしろいわね。すごく元気そうだわ。"
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Haley_spouse_y2",
+          "DialogueText": "品評会では私たちが優勝できるといいわね！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/494.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Haley_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "品評会では私たちが優勝できるといいわね！"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Haley",
+          "DialogueText": "うえっ！ダメ、こわすぎ。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/495.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "うえっ！ダメ、こわすぎ。"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Haley_spouse",
+          "DialogueText": "わたし、こわがりなの…そういうわけで、今夜はここにいるつもりだから。 {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/496.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Haley_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "わたし、こわがりなの…そういうわけで、今夜はここにいるつもりだから。"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Haley_y2",
+          "DialogueText": "姉さんを見なかった？ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/497.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Haley_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "姉さんを見なかった？"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Haley_y2",
+          "DialogueText": "エミリー！いったいどこにいるの！ {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/498.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Haley_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "エミリー！いったいどこにいるの！"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Haley_spouse_y2",
+          "DialogueText": "ふふっ！どれも本物じゃないわ。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/499.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Haley_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "ふふっ！どれも本物じゃないわ。"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Haley_spouse_y2",
+          "DialogueText": "…{Farmer_Name}、そうよね？本物じゃない… よね？ {Portrait:Custom:12}",
+          "AudioPath": "assets/ja-JP/Haley/500.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Haley_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "…、そうよね？本物じゃない… よね？"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Haley",
+          "DialogueText": "このお祭りもいいけど…でもわたし、今度やるフラワーダンスのほうがずっと楽しみなの。",
+          "AudioPath": "assets/ja-JP/Haley/501.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "このお祭りもいいけど…でもわたし、今度やるフラワーダンスのほうがずっと楽しみなの。"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Haley_spouse",
+          "DialogueText": "タマゴ料理を食べようとしたんだけど、わたし、春のダイエット中だったって思い出したの。",
+          "AudioPath": "assets/ja-JP/Haley/502.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Haley_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "タマゴ料理を食べようとしたんだけど、わたし、春のダイエット中だったって思い出したの。"
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Haley_y2",
+          "DialogueText": "ああ！やっぱりバニースタンドで写真を撮ってもらわないといけないわね。私の髪型、おかしくないかしら？",
+          "AudioPath": "assets/ja-JP/Haley/503.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Haley_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ！やっぱりバニースタンドで写真を撮ってもらわないといけないわね。私の髪型、おかしくないかしら？"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Haley",
+          "DialogueText": "ダンスのふりつけを練習してるの…カンペキじゃなくちゃ。",
+          "AudioPath": "assets/ja-JP/Haley/504.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "ダンスのふりつけを練習してるの…カンペキじゃなくちゃ。"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Haley",
+          "DialogueText": "わたしはここ5年連続でフラワークイーンになってるの。だれかにゆずる気なんて、まだまだないから！",
+          "AudioPath": "assets/ja-JP/Haley/505.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Haley",
+          "PageIndex": 1,
+          "DisplayPattern": "わたしはここ5年連続でフラワークイーンになってるの。だれかにゆずる気なんて、まだまだないから！"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Haley_y2",
+          "DialogueText": "ワンツースリー… ワンツースリー…ごめんね。今はちょっと忙しくて。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Haley/506.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Haley_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "ワンツースリー… ワンツースリー…ごめんね。今はちょっと忙しくて。"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Haley_spouse_y2",
+          "DialogueText": "今日は大切な日よ！私たちがダンスの主役になるんだから！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/507.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Haley_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "今日は大切な日よ！私たちがダンスの主役になるんだから！"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Haley",
+          "DialogueText": "ダンスしたいけど、汗はかきたくないのよね。",
+          "AudioPath": "assets/ja-JP/Haley/508.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "ダンスしたいけど、汗はかきたくないのよね。"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Haley_spouse",
+          "DialogueText": "ふう…あんまり動きたくないな。汗かいちゃうから。",
+          "AudioPath": "assets/ja-JP/Haley/509.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Haley_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "ふう…あんまり動きたくないな。汗かいちゃうから。"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Haley_y2",
+          "DialogueText": "日差しをさえぎらないで！日焼けあとが残らないように、ちょうどいい場所にいるの。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Haley/510.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Haley_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "日差しをさえぎらないで！日焼けあとが残らないように、ちょうどいい場所にいるの。"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Haley_spouse_y2",
+          "DialogueText": "家に帰ってビキニを持ってこようかしら。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Haley/511.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Haley_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "家に帰ってビキニを持ってこようかしら。"
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Haley_spouse_y2",
+          "DialogueText": "海の温度もちょうどよさそうだし…つま先だけ入ってみたの！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/512.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Haley_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "海の温度もちょうどよさそうだし…つま先だけ入ってみたの！"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Haley",
+          "DialogueText": "クラゲたちが来たら、写真を撮るつもりなの。",
+          "AudioPath": "assets/ja-JP/Haley/513.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "クラゲたちが来たら、写真を撮るつもりなの。"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Haley_y2",
+          "DialogueText": "お化粧する時間がなかったけど…暗いから誰も気づかないかな？",
+          "AudioPath": "assets/ja-JP/Haley/514.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Haley_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "お化粧する時間がなかったけど…暗いから誰も気づかないかな？"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Haley_spouse_y2",
+          "DialogueText": "ああ…キャンドルがこんなにたくさん… ロマンチックだわ。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/515.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Haley_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ…キャンドルがこんなにたくさん… ロマンチックだわ。"
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Haley_spouse_y2",
+          "DialogueText": "これで夏も終わりなのね… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/516.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Haley_spouse_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "これで夏も終わりなのね…"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Haley",
+          "DialogueText": "スピリットツリーの下、今年はカメラがおいてあるといいな！",
+          "AudioPath": "assets/ja-JP/Haley/517.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "スピリットツリーの下、今年はカメラがおいてあるといいな！"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Haley_spouse",
+          "DialogueText": "なにに感謝するのって？えっと、わたしは…ねえ、今夜家に帰ってから言うのはどう？ {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/518.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Haley_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "なにに感謝するのって？えっと、わたしは…ねえ、今夜家に帰ってから言うのはどう？"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Haley_y2",
+          "DialogueText": "本当にすてきね…この町がいつもこんな感じだったらいいのに。 {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Haley/519.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Haley_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "本当にすてきね…この町がいつもこんな感じだったらいいのに。"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Haley_spouse_y2",
+          "DialogueText": "私の人生でよかったことを思い出していると、冬星の祝福を受けていたんだなって気持ちになるの。",
+          "AudioPath": "assets/ja-JP/Haley/520.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Haley_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "私の人生でよかったことを思い出していると、冬星の祝福を受けていたんだなって気持ちになるの。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Haley",
+          "DialogueText": "冬もそんなに悪くないかも…雪あそびって、けっこう楽しいね！",
+          "AudioPath": "assets/ja-JP/Haley/521.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "冬もそんなに悪くないかも…雪あそびって、けっこう楽しいね！"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Haley_spouse",
+          "DialogueText": "ウウゥ、雪だるまを作ってたら手がこごえてきちゃった。 {Portrait:Love}",
+          "AudioPath": "assets/ja-JP/Haley/522.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Haley_spouse",
+          "PageIndex": 0,
+          "DisplayPattern": "ウウゥ、雪だるまを作ってたら手がこごえてきちゃった。"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Haley_y2",
+          "DialogueText": "耳あてをしてきてよかったわ！ {Portrait:Neutral}",
+          "AudioPath": "assets/ja-JP/Haley/523.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Haley_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "耳あてをしてきてよかったわ！"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Haley_y2",
+          "DialogueText": "今年はカメラも持ってきたのよ。今日は冬景色を撮るにはうってつけの天気だわ！",
+          "AudioPath": "assets/ja-JP/Haley/524.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Haley_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "今年はカメラも持ってきたのよ。今日は冬景色を撮るにはうってつけの天気だわ！"
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Haley_spouse_y2",
+          "DialogueText": "こっちに来て、髪を直してあげるわ…大会でがんばっているあなたを写真にとるつもりなの！",
+          "AudioPath": "assets/ja-JP/Haley/525.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Haley_spouse_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "こっちに来て、髪を直してあげるわ…大会でがんばっているあなたを写真にとるつもりなの！"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Haley:s0",
+          "DialogueText": "うそ、いいの？これほんと大好きなの！！",
+          "AudioPath": "assets/ja-JP/Haley/526.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Haley:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "うそ、いいの？これほんと大好きなの！！"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Haley:s1",
+          "DialogueText": "わあ…これ、わたしに？ありがと！",
+          "AudioPath": "assets/ja-JP/Haley/527.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Haley:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "わあ…これ、わたしに？ありがと！"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Haley:s2",
+          "DialogueText": "うわっ…なに、このプレゼント。つまんない。",
+          "AudioPath": "assets/ja-JP/Haley/528.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Haley:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "うわっ…なに、このプレゼント。つまんない。"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Haley:s3",
+          "DialogueText": "うわ、キモっ！",
+          "AudioPath": "assets/ja-JP/Haley/529.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Haley:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "うわ、キモっ！"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Haley:s4",
+          "DialogueText": "ありがと。プレゼントっていいよね。",
+          "AudioPath": "assets/ja-JP/Haley/530.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Haley:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "ありがと。プレゼントっていいよね。"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Haley",
+          "DialogueText": "エミリーがきのうの夜、{1}{2}を夕食に出してくれたんだけど…食べられなくて、見られてないスキに捨てちゃった。",
+          "AudioPath": "assets/ja-JP/Haley/531.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "エミリーがきのうの夜、{1}{2}を夕食に出してくれたんだけど…食べられなくて、見られてないスキに捨てちゃった。"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/PurchasedItem_Haley",
+          "DialogueText": "健康的な食事って好きじゃないのよね… {Portrait:Sad}",
+          "AudioPath": "assets/ja-JP/Haley/532.ogg",
+          "TranslationKey": "Data/ExtraDialogue:PurchasedItem_Haley",
+          "PageIndex": 1,
+          "DisplayPattern": "健康的な食事って好きじゃないのよね…"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Haley",
+          "DialogueText": "（クスクス） {Portrait:Happy}\"/faceDirection farmer 1 true/emote farmer 8/pause 1000/speak Haley \"あのね…",
+          "AudioPath": "assets/ja-JP/Haley/533.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "（クスクス）\"/faceDirection farmer 1 true/emote farmer 8/pause 1000/speak Haley \"あのね…"
+        },
+        {
+          "DialogueFrom": "ExtraDialogue/SummitEvent_Dialogue3_Haley",
+          "DialogueText": "子供の頃からずっと夢見ていたの。いつか愛する人と一緒に頂上に登ってキスができますようにって。 {Portrait:Love}\"",
+          "AudioPath": "assets/ja-JP/Haley/534.ogg",
+          "TranslationKey": "Data/ExtraDialogue:SummitEvent_Dialogue3_Haley",
+          "PageIndex": 1,
+          "DisplayPattern": "子供の頃からずっと夢見ていたの。いつか愛する人と一緒に頂上に登ってキスができますようにって。\""
+        },
+        {
+          "DialogueFrom": "MovieReactions/Haley_winter_movie_1_BeforeMovie",
+          "DialogueText": "むーん...ここは暖かくて良いわね。冬は映画を見に行くことが私のお気に入りの時期なの。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/535.ogg",
+          "TranslationKey": "Strings/MovieReactions:Haley_winter_movie_1_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "むーん...ここは暖かくて良いわね。冬は映画を見に行くことが私のお気に入りの時期なの。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Haley_winter_movie_1_AfterMovie",
+          "DialogueText": "とてもロマンチックだった。",
+          "AudioPath": "assets/ja-JP/Haley/536.ogg",
+          "TranslationKey": "Strings/MovieReactions:Haley_winter_movie_1_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "とてもロマンチックだった。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Haley_winter_movie_0_BeforeMovie",
+          "DialogueText": "むむむ...ここは暖かくて良いわね。冬は映画を見に行くことが私のお気に入りの時期なの。 {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/537.ogg",
+          "TranslationKey": "Strings/MovieReactions:Haley_winter_movie_0_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "むむむ...ここは暖かくて良いわね。冬は映画を見に行くことが私のお気に入りの時期なの。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Haley_winter_movie_0_AfterMovie",
+          "DialogueText": "良い結末だったことがうれしい！",
+          "AudioPath": "assets/ja-JP/Haley/538.ogg",
+          "TranslationKey": "Strings/MovieReactions:Haley_winter_movie_0_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "良い結末だったことがうれしい！"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Haley_dislike_BeforeMovie",
+          "DialogueText": "ああ、これは「ファンタジー」映画の1つね？ {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Haley/539.ogg",
+          "TranslationKey": "Strings/MovieReactions:Haley_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "ああ、これは「ファンタジー」映画の1つね？"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Haley_dislike_AfterMovie",
+          "DialogueText": "（は～ぁ）...何？ああ…その映画はまた何についてなの？ {Portrait:Custom:7}",
+          "AudioPath": "assets/ja-JP/Haley/540.ogg",
+          "TranslationKey": "Strings/MovieReactions:Haley_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "（は～ぁ）...何？ああ…その映画はまた何についてなの？"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Haley_like_BeforeMovie",
+          "DialogueText": "みんなこの映画について話しているから、私はそれを見たいの。",
+          "AudioPath": "assets/ja-JP/Haley/541.ogg",
+          "TranslationKey": "Strings/MovieReactions:Haley_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "みんなこの映画について話しているから、私はそれを見たいの。"
+        },
+        {
+          "DialogueFrom": "MovieReactions/Haley_like_AfterMovie",
+          "DialogueText": "その最後のシーン...どういう意味？",
+          "AudioPath": "assets/ja-JP/Haley/542.ogg",
+          "TranslationKey": "Strings/MovieReactions:Haley_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "その最後のシーン...どういう意味？"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Haley_marriage",
+          "DialogueText": "誰かさんはいい感じに日焼けしてるみたいね… （ギュッ）！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/543.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Haley_marriage",
+          "PageIndex": 0,
+          "DisplayPattern": "誰かさんはいい感じに日焼けしてるみたいね… （ギュッ）！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Haley2_marriage",
+          "DialogueText": "妻は昼寝をしている。",
+          "AudioPath": "assets/ja-JP/Haley/544.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Haley2_marriage",
+          "PageIndex": 0,
+          "DisplayPattern": "妻は昼寝をしている。"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Haley",
+          "DialogueText": "何かいい香りがすると思ったら、さっき塗ったココナッツオイルだったの。",
+          "AudioPath": "assets/ja-JP/Haley/545.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "何かいい香りがすると思ったら、さっき塗ったココナッツオイルだったの。"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Haley",
+          "DialogueText": "もうすっかり砂漠をまんきつしてるわ！ {Portrait:Happy}",
+          "AudioPath": "assets/ja-JP/Haley/546.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Haley",
+          "PageIndex": 1,
+          "DisplayPattern": "もうすっかり砂漠をまんきつしてるわ！"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Haley2",
+          "DialogueText": "ヘイリーは太陽の光を浴びて輝いている。",
+          "AudioPath": "assets/ja-JP/Haley/547.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Haley2",
+          "PageIndex": 0,
+          "DisplayPattern": "ヘイリーは太陽の光を浴びて輝いている。"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Haley",
+          "DialogueText": "もっとタマゴをみつけて私のをぜんぶ買っていって！",
+          "AudioPath": "assets/ja-JP/Haley/548.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Haley",
+          "PageIndex": 0,
+          "DisplayPattern": "もっとタマゴをみつけて私のをぜんぶ買っていって！"
+        }
+      ]
+    }
+  ]
+}

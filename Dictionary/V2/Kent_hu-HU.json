@@ -1,0 +1,886 @@
+{
+  "Format": "2.0.0",
+  "VoicePacks": [
+    {
+      "Format": "2.0.0",
+      "VoicePackId": "DictionaryV2.Kent.hu-HU",
+      "VoicePackName": "DictionarV2 (Kent - hu-HU)",
+      "Character": "Kent",
+      "Language": "hu-HU",
+      "Entries": [
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Üdv, gazda.",
+          "AudioPath": "assets/hu-HU/Kent/1.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Mon",
+          "PageIndex": 0,
+          "DisplayPattern": "Üdv, gazda."
+        },
+        {
+          "DialogueFrom": "Mon",
+          "DialogueText": "Oly sokáig voltam távol... Idegennek érzem magam.",
+          "AudioPath": "assets/hu-HU/Kent/2.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Mon",
+          "PageIndex": 1,
+          "DisplayPattern": "Oly sokáig voltam távol... Idegennek érzem magam."
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)StardropTea",
+          "DialogueText": "Ez az enyém? Nos, erre nem számítottam... De nem utasítom el. Köszönöm!",
+          "AudioPath": "assets/hu-HU/Kent/3.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:AcceptGift_(O)StardropTea",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez az enyém? Nos, erre nem számítottam... De nem utasítom el. Köszönöm!"
+        },
+        {
+          "DialogueFrom": "AcceptGift_(O)Book_Bombs",
+          "DialogueText": "Nos, én nem tudok Törpéül olvasni, de attól még értékes gyűjtemény lehet. Köszönöm.",
+          "AudioPath": "assets/hu-HU/Kent/4.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:AcceptGift_(O)Book_Bombs",
+          "PageIndex": 0,
+          "DisplayPattern": "Nos, én nem tudok Törpéül olvasni, de attól még értékes gyűjtemény lehet. Köszönöm."
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Heh... Az eső egy áldás. Emlékeztet arra, hogy mindig is lesznek hatalmasabb erők annál, mint amit bármilyen ember is készíthet.",
+          "AudioPath": "assets/hu-HU/Kent/5.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:GreenRain_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Heh... Az eső egy áldás. Emlékeztet arra, hogy mindig is lesznek hatalmasabb erők annál, mint amit bármilyen ember is készíthet."
+        },
+        {
+          "DialogueFrom": "GreenRain_2",
+          "DialogueText": "Ez valójában megnyugtató, {Farmer_Name}.",
+          "AudioPath": "assets/hu-HU/Kent/6.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:GreenRain_2",
+          "PageIndex": 1,
+          "DisplayPattern": "Ez valójában megnyugtató, ."
+        },
+        {
+          "DialogueFrom": "Resort_Entering",
+          "DialogueText": "Hé, {Farmer_Name}. Örülök, hogy látlak.",
+          "AudioPath": "assets/hu-HU/Kent/7.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Resort_Entering",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, . Örülök, hogy látlak."
+        },
+        {
+          "DialogueFrom": "Resort_Leaving",
+          "DialogueText": "Ideje hazamenni.",
+          "AudioPath": "assets/hu-HU/Kent/8.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Resort_Leaving",
+          "PageIndex": 0,
+          "DisplayPattern": "Ideje hazamenni."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Ezen a strandon álldogálva... ritka békés érzéssel tölt el. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Kent/9.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Resort_Shore",
+          "PageIndex": 0,
+          "DisplayPattern": "Ezen a strandon álldogálva... ritka békés érzéssel tölt el."
+        },
+        {
+          "DialogueFrom": "Resort_Shore",
+          "DialogueText": "Az óceán egy nagyon különös dolog.",
+          "AudioPath": "assets/hu-HU/Kent/10.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Resort_Shore",
+          "PageIndex": 1,
+          "DisplayPattern": "Az óceán egy nagyon különös dolog."
+        },
+        {
+          "DialogueFrom": "Resort_Chair",
+          "DialogueText": "Ez remek hely ahhoz, hogy összejöjjek a családdal. Nagyra értékelem, hogy feljavítottad.",
+          "AudioPath": "assets/hu-HU/Kent/11.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Resort_Chair",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez remek hely ahhoz, hogy összejöjjek a családdal. Nagyra értékelem, hogy feljavítottad."
+        },
+        {
+          "DialogueFrom": "Resort_Bar",
+          "DialogueText": "Csak szerzek egy kis vizet.",
+          "AudioPath": "assets/hu-HU/Kent/12.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Resort_Bar",
+          "PageIndex": 0,
+          "DisplayPattern": "Csak szerzek egy kis vizet."
+        },
+        {
+          "DialogueFrom": "married_Sam",
+          "DialogueText": "Egy apát büszkévé teszi, ha azt látja, hogy a fiából férfi lett. Szívből jövő áldásomat adom rátok! {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Kent/13.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:married_Sam",
+          "PageIndex": 0,
+          "DisplayPattern": "Egy apát büszkévé teszi, ha azt látja, hogy a fiából férfi lett. Szívből jövő áldásomat adom rátok!"
+        },
+        {
+          "DialogueFrom": "Resort",
+          "DialogueText": "Jó móka volt a hajóút. Még a tengerészeti kiképzésemet is fel tudtam használni, hogy segítsek a navigálásban. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Kent/14.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Resort",
+          "PageIndex": 0,
+          "DisplayPattern": "Jó móka volt a hajóút. Még a tengerészeti kiképzésemet is fel tudtam használni, hogy segítsek a navigálásban."
+        },
+        {
+          "DialogueFrom": "eventSeen_100_memory_oneday",
+          "DialogueText": "Elnézést kérek a tegnapi miatt.",
+          "AudioPath": "assets/hu-HU/Kent/15.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:eventSeen_100_memory_oneday",
+          "PageIndex": 0,
+          "DisplayPattern": "Elnézést kérek a tegnapi miatt."
+        },
+        {
+          "DialogueFrom": "eventSeen_100_memory_oneday",
+          "DialogueText": "Nincs szükségem különleges bánásmódra. Csak normális ember szeretnék lenni, mint bárki más.",
+          "AudioPath": "assets/hu-HU/Kent/16.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:eventSeen_100_memory_oneday",
+          "PageIndex": 1,
+          "DisplayPattern": "Nincs szükségem különleges bánásmódra. Csak normális ember szeretnék lenni, mint bárki más."
+        },
+        {
+          "DialogueFrom": "MovieInvitation",
+          "DialogueText": "Öhm... oké. Köszönöm. Ott találkozunk. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Kent/17.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:MovieInvitation",
+          "PageIndex": 0,
+          "DisplayPattern": "Öhm... oké. Köszönöm. Ott találkozunk."
+        },
+        {
+          "DialogueFrom": "accept_864",
+          "DialogueText": "...! {Portrait:Love}",
+          "AudioPath": "assets/hu-HU/Kent/18.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:accept_864",
+          "PageIndex": 0,
+          "DisplayPattern": "...!"
+        },
+        {
+          "DialogueFrom": "accept_864",
+          "DialogueText": "...Ezt mégis hol találtad? {Portrait:Love}",
+          "AudioPath": "assets/hu-HU/Kent/19.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:accept_864",
+          "PageIndex": 1,
+          "DisplayPattern": "...Ezt mégis hol találtad?"
+        },
+        {
+          "DialogueFrom": "accept_864",
+          "DialogueText": "... {Portrait:Angry}",
+          "AudioPath": "assets/hu-HU/Kent/20.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:accept_864",
+          "PageIndex": 2,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "accept_864",
+          "DialogueText": "Ez a férfi... Együtt harcoltunk a háborúban, {Farmer_Name}. Mintha csak a testvérem lett volna.",
+          "AudioPath": "assets/hu-HU/Kent/21.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:accept_864",
+          "PageIndex": 3,
+          "DisplayPattern": "Ez a férfi... Együtt harcoltunk a háborúban, . Mintha csak a testvérem lett volna."
+        },
+        {
+          "DialogueFrom": "accept_864",
+          "DialogueText": "De... csak az egyikünk jutott vissza. {Portrait:Angry}",
+          "AudioPath": "assets/hu-HU/Kent/22.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:accept_864",
+          "PageIndex": 4,
+          "DisplayPattern": "De... csak az egyikünk jutott vissza."
+        },
+        {
+          "DialogueFrom": "accept_864",
+          "DialogueText": "Soha nem vesztette el a bátorságát. Még a halál torkában sem. Egy igazi hős... sose fogom elfelejteni őt.",
+          "AudioPath": "assets/hu-HU/Kent/23.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:accept_864",
+          "PageIndex": 5,
+          "DisplayPattern": "Soha nem vesztette el a bátorságát. Még a halál torkában sem. Egy igazi hős... sose fogom elfelejteni őt."
+        },
+        {
+          "DialogueFrom": "accept_864",
+          "DialogueText": "Köszönöm, hogy ezt elhoztad nekem... Sokat jelent számomra.",
+          "AudioPath": "assets/hu-HU/Kent/24.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:accept_864",
+          "PageIndex": 6,
+          "DisplayPattern": "Köszönöm, hogy ezt elhoztad nekem... Sokat jelent számomra."
+        },
+        {
+          "DialogueFrom": "accept_864",
+          "DialogueText": "Tessék, ez a tiéd. Évek óta az egyik fiókunk legmélyén őriztük, de sose használtuk.",
+          "AudioPath": "assets/hu-HU/Kent/25.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:accept_864",
+          "PageIndex": 7,
+          "DisplayPattern": "Tessék, ez a tiéd. Évek óta az egyik fiókunk legmélyén őriztük, de sose használtuk."
+        },
+        {
+          "DialogueFrom": "reject_865",
+          "DialogueText": "Igen... Alaposan le van zárva, így még erős lehet az íze.",
+          "AudioPath": "assets/hu-HU/Kent/26.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:reject_865",
+          "PageIndex": 0,
+          "DisplayPattern": "Igen... Alaposan le van zárva, így még erős lehet az íze."
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "Nem tudom, hogy valaha is meg fogom szokni azt, hogy hazatértem.",
+          "AudioPath": "assets/hu-HU/Kent/27.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Mon4",
+          "PageIndex": 0,
+          "DisplayPattern": "Nem tudom, hogy valaha is meg fogom szokni azt, hogy hazatértem."
+        },
+        {
+          "DialogueFrom": "Mon4",
+          "DialogueText": "A város békessége maszknak tűnik. Aztán lehet, hogy csak én gondolom így.",
+          "AudioPath": "assets/hu-HU/Kent/28.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Mon4",
+          "PageIndex": 1,
+          "DisplayPattern": "A város békessége maszknak tűnik. Aztán lehet, hogy csak én gondolom így."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "A dolgok nem változtak túl sokat, amíg távol voltam.",
+          "AudioPath": "assets/hu-HU/Kent/29.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Tue",
+          "PageIndex": 0,
+          "DisplayPattern": "A dolgok nem változtak túl sokat, amíg távol voltam."
+        },
+        {
+          "DialogueFrom": "Tue",
+          "DialogueText": "Nos, kivéve azt, hogy te itt vagy.",
+          "AudioPath": "assets/hu-HU/Kent/30.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Tue",
+          "PageIndex": 1,
+          "DisplayPattern": "Nos, kivéve azt, hogy te itt vagy."
+        },
+        {
+          "DialogueFrom": "Tue2",
+          "DialogueText": "A dolgok nem változtak túl sokat, amíg távol voltam.",
+          "AudioPath": "assets/hu-HU/Kent/31.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Tue2",
+          "PageIndex": 0,
+          "DisplayPattern": "A dolgok nem változtak túl sokat, amíg távol voltam."
+        },
+        {
+          "DialogueFrom": "Tue2",
+          "DialogueText": "Kivéve azt, hogy egy új gazda van a városban. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Kent/32.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Tue2",
+          "PageIndex": 1,
+          "DisplayPattern": "Kivéve azt, hogy egy új gazda van a városban."
+        },
+        {
+          "DialogueFrom": "Tue6",
+          "DialogueText": "Úgy érzem, hogy egész jól visszarázódom. Jó, hogy van egy barát a városban. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Kent/33.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Tue6",
+          "PageIndex": 0,
+          "DisplayPattern": "Úgy érzem, hogy egész jól visszarázódom. Jó, hogy van egy barát a városban."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "...Rengeteg barátomat vesztettem el harc közben. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Kent/34.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Wed6",
+          "PageIndex": 0,
+          "DisplayPattern": "...Rengeteg barátomat vesztettem el harc közben."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "A legszomorúbb az, hogy nem emlékszek az arcukra.",
+          "AudioPath": "assets/hu-HU/Kent/35.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Wed6",
+          "PageIndex": 1,
+          "DisplayPattern": "A legszomorúbb az, hogy nem emlékszek az arcukra."
+        },
+        {
+          "DialogueFrom": "Wed6",
+          "DialogueText": "...",
+          "AudioPath": "assets/hu-HU/Kent/36.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Wed6",
+          "PageIndex": 2,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Wed",
+          "DialogueText": "Egy ideje már itt vagy, ugye? A farmod biztosan jól fejlődik.",
+          "AudioPath": "assets/hu-HU/Kent/37.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Wed",
+          "PageIndex": 0,
+          "DisplayPattern": "Egy ideje már itt vagy, ugye? A farmod biztosan jól fejlődik."
+        },
+        {
+          "DialogueFrom": "Wed10",
+          "DialogueText": "Az, hogy életben vagyunk egy egészen különleges ajándék, ami szempillantás alatt jön-megy... ezt soha ne téveszd szem elől.",
+          "AudioPath": "assets/hu-HU/Kent/38.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Wed10",
+          "PageIndex": 0,
+          "DisplayPattern": "Az, hogy életben vagyunk egy egészen különleges ajándék, ami szempillantás alatt jön-megy... ezt soha ne téveszd szem elől."
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "# {Portrait:Happy} Kent1",
+          "AudioPath": "assets/hu-HU/Kent/39.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Thu6",
+          "PageIndex": 0,
+          "DisplayPattern": "# Kent1"
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "Hajnal 4 óta ébren vagyok... néha azon tűnődöm, hogy vajon vissza fogok térni valaha a normális rutinhoz.$k",
+          "AudioPath": "assets/hu-HU/Kent/40.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Thu6",
+          "PageIndex": 1,
+          "DisplayPattern": "Hajnal 4 óta ébren vagyok... néha azon tűnődöm, hogy vajon vissza fogok térni valaha a normális rutinhoz."
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "Sam tényleg nagyot nőtt, mióta elmentem. Most már igazi férfi.",
+          "AudioPath": "assets/hu-HU/Kent/41.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Thu6",
+          "PageIndex": 2,
+          "DisplayPattern": "Sam tényleg nagyot nőtt, mióta elmentem. Most már igazi férfi."
+        },
+        {
+          "DialogueFrom": "Thu6",
+          "DialogueText": "Bárcsak itt lehettem volna neki. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Kent/42.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Thu6",
+          "PageIndex": 3,
+          "DisplayPattern": "Bárcsak itt lehettem volna neki."
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Te a fiam barátja vagy?",
+          "AudioPath": "assets/hu-HU/Kent/43.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Thu",
+          "PageIndex": 0,
+          "DisplayPattern": "Te a fiam barátja vagy?"
+        },
+        {
+          "DialogueFrom": "Thu",
+          "DialogueText": "Te talán jobban ismered őt, mint én... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Kent/44.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Thu",
+          "PageIndex": 1,
+          "DisplayPattern": "Te talán jobban ismered őt, mint én..."
+        },
+        {
+          "DialogueFrom": "Thu_inlaw_Sam",
+          "DialogueText": "Hé, {Farmer_Name}. Élvezed a házaséletet?",
+          "AudioPath": "assets/hu-HU/Kent/45.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Thu_inlaw_Sam",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, . Élvezed a házaséletet?"
+        },
+        {
+          "DialogueFrom": "Fri",
+          "DialogueText": "Úgy tűnik ma remek napunk van a horgászatra, nemde?",
+          "AudioPath": "assets/hu-HU/Kent/46.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Fri",
+          "PageIndex": 0,
+          "DisplayPattern": "Úgy tűnik ma remek napunk van a horgászatra, nemde?"
+        },
+        {
+          "DialogueFrom": "Fri4",
+          "DialogueText": "Elkezdhetnék horgászni. Úgy lenne mit csinálnom és lefoglalhatnám magamat.",
+          "AudioPath": "assets/hu-HU/Kent/47.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Fri4",
+          "PageIndex": 0,
+          "DisplayPattern": "Elkezdhetnék horgászni. Úgy lenne mit csinálnom és lefoglalhatnám magamat."
+        },
+        {
+          "DialogueFrom": "Sat",
+          "DialogueText": "Jodi mondta, hogy valóban a közösség részévé váltál. Ezt örömmel hallom.",
+          "AudioPath": "assets/hu-HU/Kent/48.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Sat",
+          "PageIndex": 0,
+          "DisplayPattern": "Jodi mondta, hogy valóban a közösség részévé váltál. Ezt örömmel hallom."
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Manapság nem megy olyan jól az alvás, szóval elnézést, ha fáradtnak tűnnék.",
+          "AudioPath": "assets/hu-HU/Kent/49.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Sat8",
+          "PageIndex": 0,
+          "DisplayPattern": "Manapság nem megy olyan jól az alvás, szóval elnézést, ha fáradtnak tűnnék."
+        },
+        {
+          "DialogueFrom": "Sat8",
+          "DialogueText": "Biztos vagyok benne, hogy megérted.",
+          "AudioPath": "assets/hu-HU/Kent/50.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Sat8",
+          "PageIndex": 1,
+          "DisplayPattern": "Biztos vagyok benne, hogy megérted."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Nem tudok mihez kezdeni magammal most, hogy hazatértem.",
+          "AudioPath": "assets/hu-HU/Kent/51.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Sun",
+          "PageIndex": 0,
+          "DisplayPattern": "Nem tudok mihez kezdeni magammal most, hogy hazatértem."
+        },
+        {
+          "DialogueFrom": "Sun",
+          "DialogueText": "Megszoktam, hogy egy napirendhez vagyok kötve.",
+          "AudioPath": "assets/hu-HU/Kent/52.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Sun",
+          "PageIndex": 1,
+          "DisplayPattern": "Megszoktam, hogy egy napirendhez vagyok kötve."
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "Neked van egy rutinod, amivel lefoglalhatod magadat, ugye? Az jó dolog.",
+          "AudioPath": "assets/hu-HU/Kent/53.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Sun4",
+          "PageIndex": 0,
+          "DisplayPattern": "Neked van egy rutinod, amivel lefoglalhatod magadat, ugye? Az jó dolog."
+        },
+        {
+          "DialogueFrom": "Sun4",
+          "DialogueText": "A túl sok szabadság fullasztó lehet. Mindenkinek hasznos, ha az életének van némi felépítése.",
+          "AudioPath": "assets/hu-HU/Kent/54.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:Sun4",
+          "PageIndex": 1,
+          "DisplayPattern": "A túl sok szabadság fullasztó lehet. Mindenkinek hasznos, ha az életének van némi felépítése."
+        },
+        {
+          "DialogueFrom": "event_popcorn1",
+          "DialogueText": "Te maradj csöndben! Ne akarj a feleségem ellen fordítani engem. {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Kent/55.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:event_popcorn1",
+          "PageIndex": 0,
+          "DisplayPattern": "Te maradj csöndben! Ne akarj a feleségem ellen fordítani engem."
+        },
+        {
+          "DialogueFrom": "event_popcorn2",
+          "DialogueText": "... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Kent/56.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:event_popcorn2",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "event_popcorn2",
+          "DialogueText": "Teljesen igazad van, {Farmer_Name}. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Kent/57.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:event_popcorn2",
+          "PageIndex": 1,
+          "DisplayPattern": "Teljesen igazad van, ."
+        },
+        {
+          "DialogueFrom": "event_popcorn3",
+          "DialogueText": "Ne hazudj nekem! A hazugságokat mindennél jobban utálom! {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Kent/58.ogg",
+          "TranslationKey": "Characters/Dialogue/Kent:event_popcorn3",
+          "PageIndex": 0,
+          "DisplayPattern": "Ne hazudj nekem! A hazugságokat mindennél jobban utálom!"
+        },
+        {
+          "DialogueFrom": "Event:Farm/63:s0",
+          "DialogueText": "Um, hello there. My name's Kent. I just got back last night... from overseas. My wife told me that a new farmer had moved in while I was gone.",
+          "AudioPath": "assets/hu-HU/Kent/59.ogg",
+          "TranslationKey": "Events/Farm:63:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Um, hello there. My name's Kent. I just got back last night... from overseas. My wife told me that a new farmer had moved in while I was gone."
+        },
+        {
+          "DialogueFrom": "Event:Farm/63:s1",
+          "DialogueText": "Well, I just wanted to introduce myself... I'll see you around.",
+          "AudioPath": "assets/hu-HU/Kent/60.ogg",
+          "TranslationKey": "Events/Farm:63:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Well, I just wanted to introduce myself... I'll see you around."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/95:s0",
+          "DialogueText": "Hi {Farmer_Name}. Please, come in.",
+          "AudioPath": "assets/hu-HU/Kent/61.ogg",
+          "TranslationKey": "Events/SamHouse:95:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Hi . Please, come in."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/95:s1",
+          "DialogueText": "Heh heh. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Kent/62.ogg",
+          "TranslationKey": "Events/SamHouse:95:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Heh heh."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/95:s2",
+          "DialogueText": "Mmm... that crispy bass was delicious! The breading was to die for...",
+          "AudioPath": "assets/hu-HU/Kent/63.ogg",
+          "TranslationKey": "Events/SamHouse:95:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Mmm... that crispy bass was delicious! The breading was to die for..."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/95:s3",
+          "DialogueText": "I almost feel like part of the family, now.",
+          "AudioPath": "assets/hu-HU/Kent/64.ogg",
+          "TranslationKey": "Events/SamHouse:95:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "I almost feel like part of the family, now."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s0",
+          "DialogueText": "AAAAAHHHHHHH!!! {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Kent/65.ogg",
+          "TranslationKey": "Events/SamHouse:100:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "AAAAAHHHHHHH!!!"
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s1",
+          "DialogueText": "That sound... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Kent/66.ogg",
+          "TranslationKey": "Events/SamHouse:100:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "That sound..."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s2",
+          "DialogueText": "You should've known that sound would remind me of the war! {Portrait:Unique}",
+          "AudioPath": "assets/hu-HU/Kent/67.ogg",
+          "TranslationKey": "Events/SamHouse:100:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "You should've known that sound would remind me of the war!"
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s3",
+          "DialogueText": "...I lost a lot of good friends in those bloody trenches. {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Kent/68.ogg",
+          "TranslationKey": "Events/SamHouse:100:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "...I lost a lot of good friends in those bloody trenches."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s4",
+          "DialogueText": "...Things have changed.",
+          "AudioPath": "assets/hu-HU/Kent/69.ogg",
+          "TranslationKey": "Events/SamHouse:100:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "...Things have changed."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s5",
+          "DialogueText": "(Say something to Kent) {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Kent/70.ogg",
+          "TranslationKey": "Events/SamHouse:100:s5",
+          "PageIndex": 0,
+          "DisplayPattern": "(Say something to Kent)"
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s6",
+          "DialogueText": "Jodi's to blame... she should've known better!",
+          "AudioPath": "assets/hu-HU/Kent/71.ogg",
+          "TranslationKey": "Events/SamHouse:100:s6",
+          "PageIndex": 0,
+          "DisplayPattern": "Jodi's to blame... she should've known better!"
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s7",
+          "DialogueText": "I know you're hurting... but don't blame your wife.",
+          "AudioPath": "assets/hu-HU/Kent/72.ogg",
+          "TranslationKey": "Events/SamHouse:100:s7",
+          "PageIndex": 0,
+          "DisplayPattern": "I know you're hurting... but don't blame your wife."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s8",
+          "DialogueText": "(Lie) Blame me... I asked for popcorn",
+          "AudioPath": "assets/hu-HU/Kent/73.ogg",
+          "TranslationKey": "Events/SamHouse:100:s8",
+          "PageIndex": 0,
+          "DisplayPattern": "(Lie) Blame me... I asked for popcorn"
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s9",
+          "DialogueText": "... {Portrait:Sad}",
+          "AudioPath": "assets/hu-HU/Kent/74.ogg",
+          "TranslationKey": "Events/SamHouse:100:s9",
+          "PageIndex": 0,
+          "DisplayPattern": "..."
+        },
+        {
+          "DialogueFrom": "Event:SamHouse/100:s10",
+          "DialogueText": "I'm sorry, honey. You couldn't have known the sound of popcorn would make me upset.",
+          "AudioPath": "assets/hu-HU/Kent/75.ogg",
+          "TranslationKey": "Events/SamHouse:100:s10",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm sorry, honey. You couldn't have known the sound of popcorn would make me upset."
+        },
+        {
+          "DialogueFrom": "Event:Saloon/3917590:s0",
+          "DialogueText": "I'm happy for an excuse to get out of the house, and take my mind off things.",
+          "AudioPath": "assets/hu-HU/Kent/76.ogg",
+          "TranslationKey": "Events/Saloon:3917590:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "I'm happy for an excuse to get out of the house, and take my mind off things."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Kent",
+          "DialogueText": "Arra várok, hogy ez a bohóc valami vicceset is csináljon.",
+          "AudioPath": "assets/hu-HU/Kent/77.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "Arra várok, hogy ez a bohóc valami vicceset is csináljon."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Kent",
+          "DialogueText": "Eléggé kiábrándító.",
+          "AudioPath": "assets/hu-HU/Kent/78.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Kent",
+          "PageIndex": 1,
+          "DisplayPattern": "Eléggé kiábrándító."
+        },
+        {
+          "DialogueFrom": "Festival/fall16/Kent_y2",
+          "DialogueText": "*kacag* A fiam egész pontos tud lenni. Lehet, hogy tőlem örökölte. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Kent/79.ogg",
+          "TranslationKey": "Data/Festivals/fall16:Kent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "*kacag* A fiam egész pontos tud lenni. Lehet, hogy tőlem örökölte."
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Kent",
+          "DialogueText": "Hé {Farmer_Name}. Szép esténk van, nemde?",
+          "AudioPath": "assets/hu-HU/Kent/80.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé . Szép esténk van, nemde?"
+        },
+        {
+          "DialogueFrom": "Festival/fall27/Kent_y2",
+          "DialogueText": "Ezek a valamik nem tűnnek túl keménynek. {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Kent/81.ogg",
+          "TranslationKey": "Data/Festivals/fall27:Kent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ezek a valamik nem tűnnek túl keménynek."
+        },
+        {
+          "DialogueFrom": "Festival/spring13/Kent",
+          "DialogueText": "Az igazat megvallva nem nagyon rajongom a tojásokért.",
+          "AudioPath": "assets/hu-HU/Kent/82.ogg",
+          "TranslationKey": "Data/Festivals/spring13:Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "Az igazat megvallva nem nagyon rajongom a tojásokért."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Kent",
+          "DialogueText": "Ez a nyílt terep... nyugtalanná tesz.",
+          "AudioPath": "assets/hu-HU/Kent/83.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez a nyílt terep... nyugtalanná tesz."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Kent",
+          "DialogueText": "*suttogva* Boldog gondolatok, Kent. Boldog gondolatok.",
+          "AudioPath": "assets/hu-HU/Kent/84.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Kent",
+          "PageIndex": 1,
+          "DisplayPattern": "*suttogva* Boldog gondolatok, Kent. Boldog gondolatok."
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Kent_y2",
+          "DialogueText": "Elgondolkoztál már azon... hogy miért találjuk a virágokat gyönyörűnek?",
+          "AudioPath": "assets/hu-HU/Kent/85.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Kent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Elgondolkoztál már azon... hogy miért találjuk a virágokat gyönyörűnek?"
+        },
+        {
+          "DialogueFrom": "Festival/spring24/Kent_y2",
+          "DialogueText": "Ha Jodinak és nekem valaha lányunk születne, akkor talán egy virág után neveznénk el őt. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Kent/86.ogg",
+          "TranslationKey": "Data/Festivals/spring24:Kent_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Ha Jodinak és nekem valaha lányunk születne, akkor talán egy virág után neveznénk el őt."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Kent",
+          "DialogueText": "Hé, jó látni téged.",
+          "AudioPath": "assets/hu-HU/Kent/87.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, jó látni téged."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Kent_y2",
+          "DialogueText": "*szimat* ...az illatok nagyon hatékonyan hozzák vissza az emlékeket... {Portrait:Neutral}",
+          "AudioPath": "assets/hu-HU/Kent/88.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Kent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "*szimat* ...az illatok nagyon hatékonyan hozzák vissza az emlékeket..."
+        },
+        {
+          "DialogueFrom": "Festival/summer11/Kent_y2",
+          "DialogueText": "Ez lehet jó és rossz is...",
+          "AudioPath": "assets/hu-HU/Kent/89.ogg",
+          "TranslationKey": "Data/Festivals/summer11:Kent_y2",
+          "PageIndex": 1,
+          "DisplayPattern": "Ez lehet jó és rossz is..."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Kent",
+          "DialogueText": "Jó estét, {Farmer_Name}. Remélem ki tudsz majd kapcsolódni a nagy aratási szezon előtt.",
+          "AudioPath": "assets/hu-HU/Kent/90.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "Jó estét, . Remélem ki tudsz majd kapcsolódni a nagy aratási szezon előtt."
+        },
+        {
+          "DialogueFrom": "Festival/summer28/Kent_y2",
+          "DialogueText": "Hé. Nagy terveid vannak az őszre?",
+          "AudioPath": "assets/hu-HU/Kent/91.ogg",
+          "TranslationKey": "Data/Festivals/summer28:Kent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé. Nagy terveid vannak az őszre?"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Kent",
+          "DialogueText": "Jó estét, {Farmer_Name}. Kellemes ünnepeket!",
+          "AudioPath": "assets/hu-HU/Kent/92.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "Jó estét, . Kellemes ünnepeket!"
+        },
+        {
+          "DialogueFrom": "Festival/winter25/Kent_y2",
+          "DialogueText": "Én azért vagyok hálás, mert a kicsi fiam boldog és egészséges. {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Kent/93.ogg",
+          "TranslationKey": "Data/Festivals/winter25:Kent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Én azért vagyok hálás, mert a kicsi fiam boldog és egészséges."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Kent",
+          "DialogueText": "Szeretem a telet. Olyan békés.",
+          "AudioPath": "assets/hu-HU/Kent/94.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "Szeretem a telet. Olyan békés."
+        },
+        {
+          "DialogueFrom": "Festival/winter8/Kent_y2",
+          "DialogueText": "Készen állsz a versenyre? Mind úgy véljük, hogy te fogsz győzni.",
+          "AudioPath": "assets/hu-HU/Kent/95.ogg",
+          "TranslationKey": "Data/Festivals/winter8:Kent_y2",
+          "PageIndex": 0,
+          "DisplayPattern": "Készen állsz a versenyre? Mind úgy véljük, hogy te fogsz győzni."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Kent:s0",
+          "DialogueText": "Ó...! Az anyám fiatal koromban mindig ilyet adott nekem. Régi szép emlékeket idéz fel. Köszönöm.",
+          "AudioPath": "assets/hu-HU/Kent/96.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Kent:s0",
+          "PageIndex": 0,
+          "DisplayPattern": "Ó...! Az anyám fiatal koromban mindig ilyet adott nekem. Régi szép emlékeket idéz fel. Köszönöm."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Kent:s1",
+          "DialogueText": "Hé, na ez aztán a jó ajándék. Köszönöm.",
+          "AudioPath": "assets/hu-HU/Kent/97.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Kent:s1",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, na ez aztán a jó ajándék. Köszönöm."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Kent:s2",
+          "DialogueText": "Ah... Ez egy... mi is ez tulajdonképpen? Hmm...",
+          "AudioPath": "assets/hu-HU/Kent/98.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Kent:s2",
+          "PageIndex": 0,
+          "DisplayPattern": "Ah... Ez egy... mi is ez tulajdonképpen? Hmm..."
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Kent:s3",
+          "DialogueText": "Ez... Ilyet adtak nekem a Gotoroi börtöntáborban. Azóta is próbálom elfelejteni. *reszket*",
+          "AudioPath": "assets/hu-HU/Kent/99.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Kent:s3",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez... Ilyet adtak nekem a Gotoroi börtöntáborban. Azóta is próbálom elfelejteni. *reszket*"
+        },
+        {
+          "DialogueFrom": "NPCGiftTastes/Kent:s4",
+          "DialogueText": "Ez kedves tőled. A családnak is tetszeni fog.",
+          "AudioPath": "assets/hu-HU/Kent/100.ogg",
+          "TranslationKey": "Data/NPCGiftTastes:Kent:s4",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez kedves tőled. A családnak is tetszeni fog."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Kent_like_BeforeMovie",
+          "DialogueText": "Köszönöm, hogy moziba hívtál, {Farmer_Name}. Nem könnyű visszaszoknom a civil életstílusba, de te sokat segítettél nekem ebben.",
+          "AudioPath": "assets/hu-HU/Kent/101.ogg",
+          "TranslationKey": "Strings/MovieReactions:Kent_like_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Köszönöm, hogy moziba hívtál, . Nem könnyű visszaszoknom a civil életstílusba, de te sokat segítettél nekem ebben."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Kent_like_DuringMovie",
+          "DialogueText": "Ez nagyszerű... egyszerűbb időkre emlékeztet... {Portrait:Happy}",
+          "AudioPath": "assets/hu-HU/Kent/102.ogg",
+          "TranslationKey": "Strings/MovieReactions:Kent_like_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez nagyszerű... egyszerűbb időkre emlékeztet..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Kent_like_DuringMovie_2",
+          "DialogueText": "Kentnek ritka mosoly látható az arcán.",
+          "AudioPath": "assets/hu-HU/Kent/103.ogg",
+          "TranslationKey": "Strings/MovieReactions:Kent_like_DuringMovie_2",
+          "PageIndex": 0,
+          "DisplayPattern": "Kentnek ritka mosoly látható az arcán."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Kent_like_AfterMovie",
+          "DialogueText": "Ez jó móka volt. Mikor leköt egy film, akkor minden bajod és bánatod eltűnik.",
+          "AudioPath": "assets/hu-HU/Kent/104.ogg",
+          "TranslationKey": "Strings/MovieReactions:Kent_like_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez jó móka volt. Mikor leköt egy film, akkor minden bajod és bánatod eltűnik."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Kent_dislike_BeforeMovie",
+          "DialogueText": "Nem tudok hozzászólni ehhez a filmhez...",
+          "AudioPath": "assets/hu-HU/Kent/105.ogg",
+          "TranslationKey": "Strings/MovieReactions:Kent_dislike_BeforeMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Nem tudok hozzászólni ehhez a filmhez..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Kent_dislike_DuringMovie",
+          "DialogueText": "Kentet kirázza a hideg...",
+          "AudioPath": "assets/hu-HU/Kent/106.ogg",
+          "TranslationKey": "Strings/MovieReactions:Kent_dislike_DuringMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Kentet kirázza a hideg..."
+        },
+        {
+          "DialogueFrom": "MovieReactions/Kent_dislike_AfterMovie",
+          "DialogueText": "Ez kihívás volt számomra. Mégis értékelem, hogy elhívtál erre.",
+          "AudioPath": "assets/hu-HU/Kent/107.ogg",
+          "TranslationKey": "Strings/MovieReactions:Kent_dislike_AfterMovie",
+          "PageIndex": 0,
+          "DisplayPattern": "Ez kihívás volt számomra. Mégis értékelem, hogy elhívtál erre."
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:DesertFestival_Kent",
+          "DialogueText": "Hé {Farmer_Name}. Élvezed a hőséget?",
+          "AudioPath": "assets/hu-HU/Kent/108.ogg",
+          "TranslationKey": "Strings/1_6_Strings:DesertFestival_Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé . Élvezed a hőséget?"
+        },
+        {
+          "DialogueFrom": "Strings/1_6_Strings:Shop_Kent",
+          "DialogueText": "Hé, van pár eladó dolgom. Szólj, ha valami megtetszik közülük.",
+          "AudioPath": "assets/hu-HU/Kent/109.ogg",
+          "TranslationKey": "Strings/1_6_Strings:Shop_Kent",
+          "PageIndex": 0,
+          "DisplayPattern": "Hé, van pár eladó dolgom. Szólj, ha valami megtetszik közülük."
+        }
+      ]
+    }
+  ]
+}
