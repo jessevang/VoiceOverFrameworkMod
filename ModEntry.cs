@@ -13,11 +13,15 @@ namespace VoiceOverFrameworkMod
 {
     // Main entry point for the mod. Responsibilities split into partial classes:
     // - ModEntry.Loading.cs: Handles loading voice pack data.
-    // - ModEntry.Dialogue.cs: Handles detecting and processing dialogue events.
+    // - ModEntry.Dialogue.cs: Handles detecting and processing dialogue events
+    //    -
     // - ModEntry.Playback.cs: Handles finding and playing audio files.
     // - ModEntry.Commands.cs: Handles console command registration and execution.
     // - ModEntry.Utilities.cs: Contains helper methods for sanitization, validation, etc.
     // - Models.cs: Contains data structure definitions (ModConfig, VoicePack, etc.).
+    // - Class/DialogueParse: Mainly used to rework data parsing from dialogues for Version 2
+    // - DialogueTest : All testing commands and code to test dialogue / events / speech bubbles.
+    // - Dictionary: Data used for subbing/dubbing.
 
 
     public partial class ModEntry : Mod

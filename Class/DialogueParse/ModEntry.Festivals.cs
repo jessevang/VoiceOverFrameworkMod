@@ -12,6 +12,8 @@ namespace VoiceOverFrameworkMod
     {
         /// <summary>
         /// Build entries from Data/Festivals/* using DialogueUtil for consistent sanitation/splitting.
+        /// Emits VoiceEntryTemplate rows for both keyed lines and embedded event-ish speak/bubble captures
+        /// produced by GetFestivalDialogueForCharacter.
         /// </summary>
         private IEnumerable<VoiceEntryTemplate> BuildFromFestivals(
             string characterName,
@@ -35,7 +37,7 @@ namespace VoiceOverFrameworkMod
                 if (string.IsNullOrWhiteSpace(raw))
                     continue;
 
-                // Split & sanitize using the shared rules (portraits kept in Actor; removed in Display)
+                // Split & sanitize using shared rules (portraits kept in Actor; removed in Display)
                 var segs = DialogueUtil.SplitAndSanitize(raw);
                 if (segs == null || segs.Count == 0)
                     continue;
@@ -52,11 +54,11 @@ namespace VoiceOverFrameworkMod
                     outList.Add(new VoiceEntryTemplate
                     {
                         DialogueFrom = processingKey,
-                        DialogueText = seg.Actor,     // includes {Portrait:...}
+                        DialogueText = seg.Actor,     // includes {Portrait:*}
                         AudioPath = path,
                         TranslationKey = tkBase,
                         PageIndex = seg.PageIndex,
-                        DisplayPattern = seg.Display,   // portraits removed
+                        DisplayPattern = seg.Display,   // portraits/tokens removed for display matching
                         GenderVariant = seg.Gender
                     });
 
@@ -76,6 +78,7 @@ namespace VoiceOverFrameworkMod
         ///   Data/Festivals/{festId}:{Character}[_spouse][_y2][_spouse_y2]
         /// Also scans embedded script lines like:
         ///   speak {Character} "..."
+        ///   textAboveHead {Character} "..."
         /// and assigns a synthetic TranslationKey:
         ///   Festivals/{festId}:{Character}:s{index}
         /// Returns: InnerId -> (RawText, SourceInfo, TranslationKey)
@@ -124,8 +127,16 @@ namespace VoiceOverFrameworkMod
 
             // 2) For each festival sheet, harvest dialogue
             string[] suffixes = new[] { "", "_spouse", "_y2", "_spouse_y2" };
-            var speakRegex = new Regex($@"\bspeak\s+{Regex.Escape(characterName)}\s+""([^""]+)""",
-                                       RegexOptions.CultureInvariant | RegexOptions.IgnoreCase);
+
+            // NOTE: allow escaped quotes within the string payloads: \" inside the quotes.
+            // The second capture group grabs the inner content (without quotes).
+            var speakRegex = new Regex(
+                $@"\bspeak\s+{Regex.Escape(characterName)}\s+""((?:[^""\\]|\\.)*)""",
+                RegexOptions.CultureInvariant | RegexOptions.IgnoreCase);
+
+            var textAboveHeadRegex = new Regex(
+                $@"\btextAboveHead\s+{Regex.Escape(characterName)}\s+""((?:[^""\\]|\\.)*)""",
+                RegexOptions.CultureInvariant | RegexOptions.IgnoreCase);
 
             foreach (var festId in festivalIds.OrderBy(s => s))
             {
@@ -164,37 +175,48 @@ namespace VoiceOverFrameworkMod
                     string source = $"Festival/{festId}/{fullKey}";
                     string tk = $"Data/Festivals/{festId}:{fullKey}";
 
-                    results[innerId] = (raw, source, tk); // keep raw; sanitation happens in BuildFromFestivals
+                    results[innerId] = (raw, source, tk); // keep raw; sanitation happens later
                 }
 
-                // 2b) Embedded 'speak Character "..."' lines inside any festival field (e.g., setup scripts)
+                // 2b) Embedded lines in event scripts (any field). Capture:
+                //     - speak <Character> "..."
+                //     - textAboveHead <Character> "..."
                 int speakIndex = 0;
                 foreach (var kvp in dict)
                 {
+                    // We intentionally scan *all* keys, including "set-up", "mainEvent", etc.
                     var value = kvp.Value ?? "";
                     if (value.Length == 0) continue;
 
-                    foreach (Match m in speakRegex.Matches(value))
+                    void addCaptured(string kind, string captured)
                     {
-                        string raw = m.Groups[1].Value;
-                        if (string.IsNullOrWhiteSpace(raw))
-                            continue;
+                        if (string.IsNullOrWhiteSpace(captured)) return;
+                        // Unescape \" -> "   and   \\ -> \
+                        string rawCaptured = Regex.Unescape(captured);
 
-                        string innerId = $"{festId}:{characterName}:speak:{speakIndex}";
-                        string source = $"Festival/{festId}/{characterName}:speak:{speakIndex}";
-                        // Synthetic key (stable & searchable; not a vanilla sheet key)
-                        string tk = $"Festivals/{festId}:{characterName}:s{speakIndex}";
+                        string innerId = $"{festId}:{characterName}:{kind}:{speakIndex}";
+                        string source = $"Festival/{festId}/{characterName}:{kind}:{speakIndex}";
+                        string tk = $"Festivals/{festId}:{characterName}:s{speakIndex}"; // synthetic, stable
 
-                        results[innerId] = (raw, source, tk);
+                        results[innerId] = (rawCaptured, source, tk);
                         speakIndex++;
                     }
+
+                    foreach (Match m in speakRegex.Matches(value))
+                        addCaptured("speak", m.Groups[1].Value);
+
+                    foreach (Match m in textAboveHeadRegex.Matches(value))
+                        addCaptured("textAboveHead", m.Groups[1].Value);
                 }
 
                 if (this.Config?.developerModeOn == true)
                 {
                     int realCount = suffixes.Count(s => dict.ContainsKey(characterName + s));
                     int speakCount = dict.Values.Sum(v => speakRegex.Matches(v).Count);
-                    this.Monitor.Log($"[Festival] {characterName}: '{festId}' -> {realCount} keyed + {speakCount} speak lines.", LogLevel.Trace);
+                    int tahCount = dict.Values.Sum(v => textAboveHeadRegex.Matches(v).Count);
+                    this.Monitor.Log(
+                        $"[Festival] {characterName}: '{festId}' -> {realCount} keyed + {speakCount} speak + {tahCount} textAboveHead.",
+                        LogLevel.Trace);
                 }
             }
 

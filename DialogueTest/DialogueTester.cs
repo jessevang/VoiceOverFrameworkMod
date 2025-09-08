@@ -34,6 +34,13 @@ namespace VoiceOverFrameworkMod
         };
 
         private const string InlineDialogueKey = "Strings\\Characters:VOFInline";
+        // A canonical set of vanilla festivals; modded festivals still work if present.
+        private static readonly string[] DefaultFestivalIds = new[]
+        {
+            "spring13","spring24","summer11","summer28","fall16","fall27","winter8","winter25"
+        };
+
+
 
         // A curated list of standard event location asset names (Data/Events/<Name>)
         private static readonly string[] DefaultEventLocations = new[]
@@ -46,6 +53,43 @@ namespace VoiceOverFrameworkMod
             "SamHouse","SandyHouse","ScienceHouse","SebastianRoom","SeedShop","Sewer","Sunroom",
             "Temp","Tent","Town","Trailer","Trailer_Big","WizardHouse","Woods"
         };
+
+        // Return keyed, non-event festival dialogue for an NPC as a "sheet" (key → raw).
+        // Keys are stable "festId:FullKey" (e.g., "summer11:Abigail_y2").
+        private Dictionary<string, string> LoadFestivalNonEventForNpc(string npcName)
+        {
+            var results = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+            if (string.IsNullOrWhiteSpace(npcName)) return results;
+
+            // Common vanilla suffixes. (Keep small; you can expand later.)
+            var suffixes = new[] { "", "_spouse", "_y2", "_spouse_y2" };
+
+            foreach (var festId in DefaultFestivalIds)
+            {
+                Dictionary<string, string> dict = null;
+                try
+                {
+                    dict = this.Helper.GameContent.Load<Dictionary<string, string>>($"Data/Festivals/{festId}");
+                }
+                catch { /* ignore missing */ }
+
+                if (dict == null || dict.Count == 0)
+                    continue;
+
+                foreach (var sfx in suffixes)
+                {
+                    var fullKey = sfx.Length == 0 ? npcName : npcName + sfx;
+                    if (!dict.TryGetValue(fullKey, out var raw) || string.IsNullOrWhiteSpace(raw))
+                        continue;
+
+                    // Stable, unique within all festivals
+                    results[$"{festId}:{fullKey}"] = raw;
+                }
+            }
+
+            return results;
+        }
+
 
         // ============== Command Registration ==============
         private void DialogueTester(ICommandHelper commands)
@@ -559,6 +603,10 @@ namespace VoiceOverFrameworkMod
             this.Monitor.Log("Finished.", LogLevel.Info);
         }
 
+
+     
+
+
         // Run all NPCs that have dialogue sheets (base or marriage), one after another.
         private async Task TestDialogueAll(int delay, string filter, bool includeChoices)
         {
@@ -829,6 +877,21 @@ namespace VoiceOverFrameworkMod
                     return;
                 }
 
+                if (string.Equals(sheetLabel, "FestivalNonEvent", StringComparison.OrdinalIgnoreCase))
+                {
+                    // Key format is "festId:FullKey" (e.g., "summer11:Abigail_y2")
+                    string raw = TryGetFestivalNonEventRaw(key);
+                    if (!string.IsNullOrWhiteSpace(raw))
+                    {
+                        EmitPortraitDialogue(npc, raw);
+                        return;
+                    }
+                    Game1.addHUDMessage(new HUDMessage($"Missing key: (FestivalNonEvent:{key})", 3));
+                    this.Monitor.Log($"Missing FestivalNonEvent key '{key}'.", LogLevel.Warn);
+                    return;
+                }
+
+
                 // default: Characters/Dialogue/<sheetLabel>:<key>
                 string keyPath = $"Characters\\Dialogue\\{sheetLabel}:{key}";
                 var dlg = new Dialogue(npc, keyPath);
@@ -842,6 +905,86 @@ namespace VoiceOverFrameworkMod
             }
         }
 
+        private string TryGetFestivalNonEventRaw(string compoundKey)
+        {
+            // compoundKey: "festId:FullKey"
+            if (string.IsNullOrWhiteSpace(compoundKey)) return null;
+            var idx = compoundKey.IndexOf(':');
+            if (idx <= 0 || idx >= compoundKey.Length - 1) return null;
+
+            string festId = compoundKey.Substring(0, idx);
+            string innerKey = compoundKey.Substring(idx + 1);
+
+            try
+            {
+                var dict = this.Helper.GameContent.Load<Dictionary<string, string>>($"Data/Festivals/{festId}");
+                if (dict != null && dict.TryGetValue(innerKey, out var raw))
+                    return raw;
+            }
+            catch { }
+            return null;
+        }
+
+        private List<EventLine> ParseFestivalSheet(string festId, string filter)
+        {
+            var results = new List<EventLine>();
+            if (string.IsNullOrWhiteSpace(festId)) return results;
+
+            try
+            {
+                var dict = this.Helper.GameContent.Load<Dictionary<string, string>>($"Data/Festivals/{festId}");
+                if (dict == null || dict.Count == 0) return results;
+
+
+                var rxSpeak = new Regex(@"\bspeak\s+([A-Za-z_]+)\s+""((?:[^""\\]|\\.)*)""", RegexOptions.IgnoreCase);
+                var rxBubble = new Regex(@"\b(?:showTextAboveHead|textAboveHead)\s+([A-Za-z_]+)\s+""((?:[^""\\]|\\.)*)""", RegexOptions.IgnoreCase);
+
+
+                foreach (var kv in dict)
+                {
+                    var script = kv.Value ?? "";
+
+                    foreach (Match m in rxSpeak.Matches(script))
+                    {
+                        var name = m.Groups[1].Value;
+                        var text = m.Groups[2].Value;
+                        if (!string.IsNullOrWhiteSpace(filter) &&
+                            text.IndexOf(filter, StringComparison.OrdinalIgnoreCase) < 0 &&
+                            name.IndexOf(filter, StringComparison.OrdinalIgnoreCase) < 0)
+                            continue;
+
+                        results.Add(new EventLine { SpeakerName = name, Text = text, IsBubble = false });
+                    }
+
+                    foreach (Match m in rxBubble.Matches(script))
+                    {
+                        var name = m.Groups[1].Value;
+                        var text = m.Groups[2].Value;
+                        if (!string.IsNullOrWhiteSpace(filter) &&
+                            text.IndexOf(filter, StringComparison.OrdinalIgnoreCase) < 0 &&
+                            name.IndexOf(filter, StringComparison.OrdinalIgnoreCase) < 0)
+                            continue;
+
+                        results.Add(new EventLine { SpeakerName = name, Text = text, IsBubble = true });
+                    }
+                }
+
+                int i = 0;
+                foreach (var r in results) r.Index = i++;
+            }
+            catch (Exception ex)
+            {
+                this.Monitor.Log($"Failed to parse Data/Festivals/{festId}: {ex.Message}", LogLevel.Trace);
+            }
+            try
+            {
+                int speakCount = results.Count(r => !r.IsBubble);
+                int bubbleCount = results.Count(r => r.IsBubble);
+                this.Monitor.Log($"[FestivalParse] {festId}: speak={speakCount}, bubble={bubbleCount} (after filter='{filter ?? "none"}')", LogLevel.Trace);
+            }
+            catch { }
+            return results;
+        }
 
 
         private async Task PlayKeyListRange(NPC npc, List<DialogueRef> list, int startIndex, int delayMs)
@@ -920,6 +1063,16 @@ namespace VoiceOverFrameworkMod
               
             }
             catch { }
+
+            // Festival non-event (keyed) dialogue as a synthetic sheet
+            try
+            {
+                var festNonEvent = LoadFestivalNonEventForNpc(npcName);
+                if (festNonEvent != null && festNonEvent.Count > 0)
+                    results.Add(("FestivalNonEvent", festNonEvent));
+            }
+            catch { }
+
 
             return results;
         }
@@ -1161,6 +1314,7 @@ namespace VoiceOverFrameworkMod
                 }
             }
 
+            // comment this section out to hide Missing Audio testing unmatch dialogues
             var missingList = _v2Fails.Where(f => f.Matched && f.MissingAudio).ToList();
             if (missingList.Count > 0)
             {
@@ -1177,36 +1331,52 @@ namespace VoiceOverFrameworkMod
                         Monitor.Log($"      AudioPath : {f.AudioPath}", LogLevel.Info);
                 }
             }
+            
 
             _v2Fails.Clear();
         }
+            
 
 
 
 
         // ===================== EVENTS: list / play / test =====================
+        private static bool IsFestivalId(string token) => DefaultFestivalIds.Any(f => f.Equals(token, StringComparison.OrdinalIgnoreCase));
 
         private void ListEvents(string cmd, string[] args)
         {
             if (args.Length == 0)
             {
-                this.Monitor.Log("Usage: list_events <locationAssetName> [filter]   e.g., list_events Town", LogLevel.Info);
+                this.Monitor.Log("Usage: list_events <locationAssetName|festivalId> [filter]   e.g., list_events Town  |  list_events summer11", LogLevel.Info);
                 return;
             }
 
-            string location = args[0];
+            string target = args[0];
             string filter = args.Length > 1 ? args[1] : null;
 
-            var lines = ParseEventLocation(location, filter);
+            List<EventLine> lines;
+            string cacheKey;
+
+            if (IsFestivalId(target))
+            {
+                lines = ParseFestivalSheet(target, filter);
+                cacheKey = $"fest:{target}";
+            }
+            else
+            {
+                lines = ParseEventLocation(target, filter);
+                cacheKey = target;
+            }
+
             if (lines.Count == 0)
             {
-                this.Monitor.Log($"No speak/bubble lines found in Data/Events/{location} (filter='{filter ?? "(none)"}').", LogLevel.Info);
+                this.Monitor.Log($"No lines found in {(IsFestivalId(target) ? $"Data/Festivals/{target}" : $"Data/Events/{target}")} (filter='{filter ?? "(none)"}').", LogLevel.Info);
                 return;
             }
 
-            _lastEventLinesByLocation[location] = lines;
+            _lastEventLinesByLocation[cacheKey] = lines;
 
-            this.Monitor.Log($"--- Event lines for {location} (total {lines.Count}) ---", LogLevel.Info);
+            this.Monitor.Log($"--- {(IsFestivalId(target) ? $"Festival '{target}'" : $"Events '{target}'")} lines (total {lines.Count}) ---", LogLevel.Info);
             for (int i = 0; i < lines.Count; i++)
             {
                 var l = lines[i];
@@ -1215,11 +1385,41 @@ namespace VoiceOverFrameworkMod
             }
         }
 
+        // Normalize & alias speaker tokens from event scripts.
+        private static readonly Dictionary<string, string> SpeakerAliases =
+            new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["mrqi"] = "qi",
+                ["qi"] = "qi",
+                ["abby"] = "abigail",
+                ["elliot"] = "elliott",
+                // add more if you find them in scripts:
+                // ["krobus??"] = "krobus",
+            };
+
+        // keep only letters for loose matching (e.g., "Mr_Qi" -> "mrqi")
+        private static string NormalizeSpeakerToken(string s)
+        {
+            if (string.IsNullOrWhiteSpace(s)) return "";
+            var chars = s.Where(char.IsLetter).ToArray();
+            var t = new string(chars);
+            if (t.Length == 0) return "";
+            // apply aliases first
+            if (SpeakerAliases.TryGetValue(t, out var aliased))
+                return aliased.ToLowerInvariant();
+            return t.ToLowerInvariant();
+        }
+
+        private static bool NamesMatch(string a, string b)
+        {
+            return NormalizeSpeakerToken(a) == NormalizeSpeakerToken(b);
+        }
+
         private async void TestEvents(string cmd, string[] args)
         {
             if (args.Length == 0)
             {
-                this.Monitor.Log("Usage: test_events <locationAssetName|all|characterName> [delayMs] [filter]", LogLevel.Info);
+                this.Monitor.Log("Usage: test_events <locationAssetName|festivalId|all|all_festivals|characterName> [delayMs] [filter]", LogLevel.Info);
                 return;
             }
 
@@ -1237,7 +1437,6 @@ namespace VoiceOverFrameworkMod
                     {
                         var lines = ParseEventLocation(loc, filter);
                         if (lines.Count == 0) continue;
-
                         _lastEventLinesByLocation[loc] = lines;
                         this.Monitor.Log($"[EVENT] {loc}: {lines.Count} lines…", LogLevel.Info);
 
@@ -1245,88 +1444,117 @@ namespace VoiceOverFrameworkMod
                         {
                             var npc = Game1.getCharacterFromName(line.SpeakerName);
                             if (npc == null) continue;
-
-                            if (line.IsBubble)
-                                EmitBubbleWithVOF(npc, line.Text);
-                            else
-                                EmitPortraitDialogue(npc, line.Text);
-
-                            await Task.Delay(delay);
-                            Game1.exitActiveMenu();
-                            total++;
+                            if (line.IsBubble) EmitBubbleWithVOF(npc, line.Text); else EmitPortraitDialogue(npc, line.Text);
+                            await Task.Delay(delay); Game1.exitActiveMenu(); total++;
                         }
                     }
                     this.Monitor.Log($"[EVENT] Completed. Total lines: {total}.", LogLevel.Info);
+                    return;
                 }
-                else
-                {
-                    // If target matches a location asset, test that location; otherwise assume it's a character filter over all locations.
-                    bool isLocation = DefaultEventLocations.Any(n => n.Equals(target, StringComparison.OrdinalIgnoreCase));
-                    if (isLocation)
-                    {
-                        string loc = target;
-                        var lines = ParseEventLocation(loc, filter);
-                        if (lines.Count == 0)
-                        {
-                            this.Monitor.Log($"No lines found in Data/Events/{loc} (filter='{filter ?? "(none)"}').", LogLevel.Info);
-                            return;
-                        }
 
-                        _lastEventLinesByLocation[loc] = lines;
-                        this.Monitor.Log($"[EVENT] {loc}: {lines.Count} lines…", LogLevel.Info);
+                if (target.Equals("all_festivals", StringComparison.OrdinalIgnoreCase))
+                {
+                    int total = 0;
+                    foreach (var fest in DefaultFestivalIds)
+                    {
+                        var lines = ParseFestivalSheet(fest, filter);
+
+                        // Always log, even when zero
+                        this.Monitor.Log($"[EVENT] {fest}: {lines.Count} lines…", LogLevel.Info);
+
+                        if (lines.Count == 0) continue;
+
+                        var cacheKey = $"fest:{fest}";
+                        _lastEventLinesByLocation[cacheKey] = lines;
 
                         foreach (var line in lines)
                         {
                             var npc = Game1.getCharacterFromName(line.SpeakerName);
                             if (npc == null) continue;
-
-                            if (line.IsBubble)
-                                EmitBubbleWithVOF(npc, line.Text);
-                            else
-                                EmitPortraitDialogue(npc, line.Text);
-
-                            await Task.Delay(delay);
-                            Game1.exitActiveMenu();
+                            if (line.IsBubble) EmitBubbleWithVOF(npc, line.Text); else EmitPortraitDialogue(npc, line.Text);
+                            await Task.Delay(delay); Game1.exitActiveMenu(); total++;
                         }
                     }
-                    else
+                    this.Monitor.Log($"[EVENT] Completed all festivals. Total lines: {total}.", LogLevel.Info);
+                    return;
+                }
+
+
+                if (IsFestivalId(target))
+                {
+                    var lines = ParseFestivalSheet(target, filter);
+                    if (lines.Count == 0)
                     {
-                        // treat as character name across ALL locations
-                        string speakerFilter = target;
-                        int total = 0;
-
-                        foreach (var loc in DefaultEventLocations)
-                        {
-                            var lines = ParseEventLocation(loc, filter);
-                            if (lines.Count == 0) continue;
-
-                            var bySpeaker = lines.Where(l => l.SpeakerName.Equals(speakerFilter, StringComparison.OrdinalIgnoreCase)).ToList();
-                            if (bySpeaker.Count == 0) continue;
-
-                            _lastEventLinesByLocation[loc] = bySpeaker;
-                            this.Monitor.Log($"[EVENT] {loc} (speaker={speakerFilter}): {bySpeaker.Count} lines…", LogLevel.Info);
-
-                            var npc = Game1.getCharacterFromName(speakerFilter, true) ?? DefaultSpeaker();
-                            foreach (var line in bySpeaker)
-                            {
-                                if (npc == null) break;
-
-                                if (line.IsBubble)
-                                    EmitBubbleWithVOF(npc, line.Text);
-                                else
-                                    EmitPortraitDialogue(npc, line.Text);
-
-                                await Task.Delay(delay);
-                                Game1.exitActiveMenu();
-                                total++;
-                            }
-                        }
-
-                        if (total == 0)
-                            this.Monitor.Log($"[EVENT] No lines found for speaker '{speakerFilter}' across default event locations.", LogLevel.Info);
-                        else
-                            this.Monitor.Log($"[EVENT] Completed for speaker '{speakerFilter}'. Total lines: {total}.", LogLevel.Info);
+                        this.Monitor.Log($"No lines found in Data/Festivals/{target} (filter='{filter ?? "(none)"}').", LogLevel.Info);
+                        return;
                     }
+
+                    var cacheKey = $"fest:{target}";
+                    _lastEventLinesByLocation[cacheKey] = lines;
+                    this.Monitor.Log($"[EVENT] {target}: {lines.Count} lines…", LogLevel.Info);
+
+                    foreach (var line in lines)
+                    {
+                        var npc = Game1.getCharacterFromName(line.SpeakerName);
+                        if (npc == null) continue;
+                        if (line.IsBubble) EmitBubbleWithVOF(npc, line.Text); else EmitPortraitDialogue(npc, line.Text);
+                        await Task.Delay(delay); Game1.exitActiveMenu();
+                    }
+                    return;
+                }
+
+                // Otherwise: treat target as a SPEAKER filter across BOTH locations and festivals
+                {
+                    string speaker = target;
+                    int total = 0;
+
+                    // Standard locations
+                    foreach (var loc in DefaultEventLocations)
+                    {
+                        var lines = ParseEventLocation(loc, filter)
+                            .Where(l => NamesMatch(l.SpeakerName, speaker)).ToList(); ;
+                        if (lines.Count == 0) continue;
+
+                        _lastEventLinesByLocation[$"{loc}:speaker:{speaker}"] = lines;
+                        this.Monitor.Log($"[EVENT] {loc} (speaker={speaker}): {lines.Count} lines…", LogLevel.Info);
+
+                        var npc = Game1.getCharacterFromName(speaker, true) ?? DefaultSpeaker();
+                        foreach (var line in lines)
+                        {
+                            if (npc == null) break;
+                            if (line.IsBubble) EmitBubbleWithVOF(npc, line.Text); else EmitPortraitDialogue(npc, line.Text);
+                            await Task.Delay(delay); Game1.exitActiveMenu(); total++;
+                        }
+                    }
+
+                    // Festivals
+                    // Festivals
+                    foreach (var fest in DefaultFestivalIds)
+                    {
+                        var allLines = ParseFestivalSheet(fest, filter);
+                        var lines = allLines.Where(l => NamesMatch(l.SpeakerName, speaker)).ToList();
+
+                        // Always log, even when zero
+                        this.Monitor.Log($"[EVENT] {fest} (speaker={speaker}): {lines.Count} lines…", LogLevel.Info);
+
+                        if (lines.Count == 0)
+                            continue;
+
+                        _lastEventLinesByLocation[$"fest:{fest}:speaker:{speaker}"] = lines;
+
+                        var npc = Game1.getCharacterFromName(speaker, true) ?? DefaultSpeaker();
+                        foreach (var line in lines)
+                        {
+                            if (npc == null) break;
+                            if (line.IsBubble) EmitBubbleWithVOF(npc, line.Text); else EmitPortraitDialogue(npc, line.Text);
+                            await Task.Delay(delay); Game1.exitActiveMenu(); total++;
+                        }
+                    }
+
+                    if (total == 0)
+                        this.Monitor.Log($"[EVENT] No lines found for speaker '{speaker}' across locations + festivals.", LogLevel.Info);
+                    else
+                        this.Monitor.Log($"[EVENT] Completed for speaker '{speaker}'. Total lines: {total}.", LogLevel.Info);
                 }
             }
             finally
@@ -1335,6 +1563,8 @@ namespace VoiceOverFrameworkMod
                 _collectV2Failures = false;
             }
         }
+
+
 
         private void PlayEventLineByIndex(string cmd, string[] args)
         {
@@ -1619,11 +1849,23 @@ namespace VoiceOverFrameworkMod
         private NPC ResolveNpcForSpeaker(string speakerName)
         {
             if (string.IsNullOrWhiteSpace(speakerName)) return null;
-            var name = speakerName.Trim();
-            if (name.Equals("MrQi", StringComparison.OrdinalIgnoreCase) || name.Equals("Qi", StringComparison.OrdinalIgnoreCase))
-                name = "Qi";
-            try { return Game1.getCharacterFromName(name, true); } catch { return null; }
+            // normalize + alias
+            string norm = NormalizeSpeakerToken(speakerName);
+            if (string.IsNullOrEmpty(norm)) return null;
+
+            // Try the exact canonical name (first-letter upper for vanilla)
+            string canonical = char.ToUpper(norm[0]) + norm.Substring(1);
+            try
+            {
+                var npc = Game1.getCharacterFromName(canonical, true);
+                if (npc != null) return npc;
+
+                // Fallbacks: some NPC internal names are title-cased already
+                return Game1.getCharacterFromName(speakerName, true);
+            }
+            catch { return null; }
         }
+
 
 
 
