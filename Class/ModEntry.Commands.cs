@@ -33,7 +33,8 @@ namespace VoiceOverFrameworkMod
                                "  - [Optional] AudioFormat: 'wav' or 'ogg' (defaults to 'wav' if not specified).\n\n" +
                                "Examples:\n" +
                                "  create_template Abigail en MyName.AbigailVoice AbigailVoice 1\n" +
-                               "  create_template all en MyName.AllVanillaVoices AllVanillaVoices 1\n" +
+                               "  create_template Vanilla en MyName.AllVanillaVoices AllVanillaVoices 1 ogg\n\n" +
+                               "  create_template all en MyName.AllVoices AllVoices 1\n" +
                                "  create_template *moddedContentName* en My.ModdedContentPack ModdedVoices 1 ogg\n\n" +
                                "Output files will be in 'Mods/VoiceOverFrameworkMod/YourPackName_Templates'.",
                 callback: this.GenerateTemplateCommand
@@ -48,7 +49,13 @@ namespace VoiceOverFrameworkMod
                 callback: Cmd_PortAuto
             );
 
-
+            commands.Add(
+                "update_template",
+                "update_template <FolderPath> <StartNumber> [ogg|wav]\n" +
+                "Adds only missing lines to existing template JSONs in <FolderPath>,\n" +
+                "assigning new AudioPaths starting at <StartNumber>.",
+                UpdateTemplateCommand
+            );
 
 
 
@@ -86,108 +93,91 @@ namespace VoiceOverFrameworkMod
         }
 
 
-        
-        private void FixDuplicateDialogueFromCommand(string command, string[] args)
+
+       
+        private static bool TryParseStartNumber(string raw, out int value, out string extFromArg)
         {
-            if (args.Length < 1)
-            {
-                Monitor.Log("Usage: fix_duplicate_dialoguefrom <FolderName>", StardewModdingAPI.LogLevel.Info);
-                return;
-            }
+            value = 0;
+            extFromArg = null;
+            if (string.IsNullOrWhiteSpace(raw))
+                return false;
 
-            string folderName = args[0];
-            string folderPath = Path.Combine(Helper.DirectoryPath, folderName);
-            if (!Directory.Exists(folderPath))
-            {
-                Monitor.Log($"Folder not found: {folderPath}", StardewModdingAPI.LogLevel.Error);
-                return;
-            }
+            // sniff extension inside arg (e.g., "12.wav" or "start_12.ogg")
+            var mext = Regex.Match(raw, @"\.(wav|ogg)\b", RegexOptions.IgnoreCase);
+            if (mext.Success)
+                extFromArg = mext.Groups[1].Value.ToLowerInvariant();
 
-            var jsonFiles = Directory.GetFiles(folderPath, "*.json", SearchOption.AllDirectories);
-            foreach (var file in jsonFiles)
-            {
-                try
-                {
-                    string json = File.ReadAllText(file);
-                    var packFile = JsonConvert.DeserializeObject<VoicePackFile>(json);
-                    bool changed = false;
+            // take the last integer found in the string
+            var m = Regex.Match(raw, @"(\d+)(?!.*\d)");
+            if (!m.Success)
+                return false;
 
-                    foreach (var pack in packFile?.VoicePacks ?? new List<VoicePackManifestTemplate>())
-                    {
-                        var seen = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
-                        for (int i = 0; i < pack.Entries.Count; i++)
-                        {
-                            var entry = pack.Entries[i];
-                            if (string.IsNullOrWhiteSpace(entry.DialogueFrom))
-                                continue;
-
-                            string baseKey = entry.DialogueFrom;
-                            if (!seen.ContainsKey(baseKey))
-                            {
-                                seen[baseKey] = 0;
-                            }
-                            else
-                            {
-                                seen[baseKey]++;
-                                entry.DialogueFrom = $"{baseKey}_{seen[baseKey]}";
-                                changed = true;
-                            }
-                        }
-                    }
-
-                    if (changed)
-                    {
-                        string updatedJson = JsonConvert.SerializeObject(packFile, Formatting.Indented);
-                        File.WriteAllText(file, updatedJson);
-                        Monitor.Log($"Updated: {file}", StardewModdingAPI.LogLevel.Info);
-                    }
-                    else
-                    {
-                        Monitor.Log($"No duplicates found in: {file}", StardewModdingAPI.LogLevel.Trace);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Monitor.Log($"Failed to process {file}: {ex.Message}", StardewModdingAPI.LogLevel.Warn);
-                }
-            }
-
-            Monitor.Log("Duplicate DialogueFrom fix completed.", StardewModdingAPI.LogLevel.Info);
+            return int.TryParse(m.Groups[1].Value, out value);
         }
-        
+
 
 
         private void GenerateTemplateCommand(string command, string[] args)
         {
-            if (args.Length < 5)
+            // args: <Character|all|vanilla|modded|*match|!*exclude> <Language|all> <YourPackID> <YourPackName> <StartNumber[.wav|.ogg]> [wav|ogg]
+            if (args == null || args.Length < 5)
             {
                 this.Monitor.Log("Invalid arguments. Use 'help create_template' for details.", LogLevel.Error);
-                this.Monitor.Log("Usage: create_template <CharacterName|all|*match|!*exclude> <LanguageCode|all> <YourPackID> <YourPackName> <AudioPathNumber.Wav-StartsAtThisNumber>", LogLevel.Info);
+                this.Monitor.Log("Usage: create_template <CharacterName|all|vanilla|modded|*match|!*exclude> <LanguageCode|all> <YourPackID> <YourPackName> <StartNumber[.wav|.ogg]> [wav|ogg]", LogLevel.Info);
+                this.Monitor.Log("Examples:", LogLevel.Info);
+                this.Monitor.Log("  create_template Marlon en My.PackID \"My Pack\" 1", LogLevel.Info);
+                this.Monitor.Log("  create_template Marlon en My.PackID \"My Pack\" 1.wav", LogLevel.Info);
+                this.Monitor.Log("  create_template * en My.PackID \"My Pack\" 42 ogg", LogLevel.Info);
                 return;
             }
 
-            if ((args[0].Equals("all", StringComparison.OrdinalIgnoreCase) || args[0].Contains("*")) && !Context.IsWorldReady)
+            // For options that enumerate across the roster, require a loaded save so content is fully patched.
+            if ((args[0].Equals("all", StringComparison.OrdinalIgnoreCase)
+                || args[0].Equals("vanilla", StringComparison.OrdinalIgnoreCase)
+                || args[0].Contains("*"))
+                && !Context.IsWorldReady)
             {
-                this.Monitor.Log("Please load a save file before using wildcard or 'all' to access game data.", LogLevel.Warn);
+                this.Monitor.Log("Please load a save file before using wildcard, 'all', or 'vanilla' to access game data.", LogLevel.Warn);
                 return;
             }
 
             string targetCharacterArg = args[0];
             string targetLanguageArg = args[1];
-            string baseUniqueModID = args[2].Trim();
-            string baseVoicePackName = args[3].Trim();
-            int startsAtThisNumber = Convert.ToInt32(args[4]);
-            string desiredExtension = "ogg"; 
+            string baseUniqueModID = (args[2] ?? "").Trim();
+            string baseVoicePackName = (args[3] ?? "").Trim();
 
-            if (args.Length >= 6)
+            // --- parse start number & optional extension from arg[4] ---
+            int startsAtThisNumber;
+            string extFromArg4;
+            if (!TryParseStartNumber(args[4], out startsAtThisNumber, out extFromArg4))
             {
-                string extArg = args[5].Trim().ToLower();
-                if (extArg == "ogg" || extArg == "wav")
-                    desiredExtension = extArg;
-                else
-                    this.Monitor.Log($"[create_template] Unknown extension '{extArg}', defaulting to wav.", LogLevel.Warn);
+                this.Monitor.Log($"[create_template] Could not parse start number from '{args[4]}'. Defaulting to 1.", LogLevel.Warn);
+                startsAtThisNumber = 1;
+            }
+            if (startsAtThisNumber < 1)
+            {
+                this.Monitor.Log($"[create_template] Start number '{startsAtThisNumber}' is less than 1. Coercing to 1.", LogLevel.Warn);
+                startsAtThisNumber = 1;
             }
 
+            // desired extension: default ogg, overridden by arg[5], else by extension embedded in arg[4]
+            string desiredExtension = "ogg";
+            if (args.Length >= 6)
+            {
+                string extArg = (args[5] ?? "").Trim().ToLowerInvariant();
+                if (extArg == "ogg" || extArg == "wav")
+                {
+                    desiredExtension = extArg;
+                }
+                else if (!string.IsNullOrWhiteSpace(extArg))
+                {
+                    this.Monitor.Log($"[create_template] Unknown extension '{extArg}', defaulting to ogg.", LogLevel.Warn);
+                }
+            }
+            else if (!string.IsNullOrEmpty(extFromArg4))
+            {
+                desiredExtension = extFromArg4; // respect inline ext if no explicit 6th arg
+            }
 
             if (string.IsNullOrWhiteSpace(baseUniqueModID) || string.IsNullOrWhiteSpace(baseVoicePackName))
             {
@@ -230,31 +220,28 @@ namespace VoiceOverFrameworkMod
                 {
                     charactersToProcess = allCharacters;
                 }
+                else if (targetCharacterArg.Equals("vanilla", StringComparison.OrdinalIgnoreCase))
+                {
+                    charactersToProcess = allCharacters.Where(IsKnownVanillaVillager).ToList();
+                }
                 else if (targetCharacterArg.Equals("modded", StringComparison.OrdinalIgnoreCase))
                 {
-                    charactersToProcess = allCharacters
-                        .Where(name => !IsKnownVanillaVillager(name))
-                        .ToList();
+                    charactersToProcess = allCharacters.Where(n => !IsKnownVanillaVillager(n)).ToList();
                 }
                 else if (targetCharacterArg.StartsWith("!*"))
                 {
                     string exclude = targetCharacterArg.Substring(2);
-                    charactersToProcess = allCharacters
-                        .Where(name => !name.Contains(exclude, StringComparison.OrdinalIgnoreCase))
-                        .ToList();
+                    charactersToProcess = allCharacters.Where(n => !n.Contains(exclude, StringComparison.OrdinalIgnoreCase)).ToList();
                 }
                 else if (targetCharacterArg.StartsWith("*"))
                 {
                     string include = targetCharacterArg.Substring(1);
-                    charactersToProcess = allCharacters
-                        .Where(name => name.Contains(include, StringComparison.OrdinalIgnoreCase))
-                        .ToList();
+                    charactersToProcess = allCharacters.Where(n => n.Contains(include, StringComparison.OrdinalIgnoreCase)).ToList();
                 }
                 else
                 {
                     charactersToProcess = new List<string> { targetCharacterArg };
                 }
-
 
                 if (Config.developerModeOn)
                     this.Monitor.Log($"[create_template] Found {charactersToProcess.Count} character(s) after filtering.", LogLevel.Info);
@@ -266,8 +253,10 @@ namespace VoiceOverFrameworkMod
                 return;
             }
 
-           
-            charactersToProcess = charactersToProcess.Where(n => !ShouldSkipCharacterForTemplates(n)).Distinct(StringComparer.OrdinalIgnoreCase).ToList();
+            charactersToProcess = charactersToProcess
+                .Where(n => !ShouldSkipCharacterForTemplates(n))
+                .Distinct(StringComparer.OrdinalIgnoreCase)
+                .ToList();
 
             if (!charactersToProcess.Any() || charactersToProcess.Any(string.IsNullOrWhiteSpace))
             {
@@ -275,13 +264,9 @@ namespace VoiceOverFrameworkMod
                 return;
             }
 
-
-            //Determines if modded character has language set to game language due modded dialoge using i18n
+            // Language mismatch warning (modded i18n note)
             string currentGameLang = LocalizedContentManager.CurrentLanguageCode.ToString();
-            bool includesModdedCharacters = charactersToProcess
-                .Any(name => !IsKnownVanillaVillager(name));
-
-            // Compare each target language against current game language
+            bool includesModdedCharacters = charactersToProcess.Any(name => !IsKnownVanillaVillager(name));
             foreach (string lang in languagesToProcess)
             {
                 if (!lang.Equals(currentGameLang, StringComparison.OrdinalIgnoreCase) && includesModdedCharacters)
@@ -290,10 +275,9 @@ namespace VoiceOverFrameworkMod
                     this.Monitor.Log($"    Game Language: {currentGameLang} | Target Language: {lang}", LogLevel.Warn);
                     this.Monitor.Log("    Some modded dialogue may rely on i18n tokens and resolve using the *current game language*.", LogLevel.Warn);
                     this.Monitor.Log("    To ensure correct results, please switch your game language to match your target language before generating templates.", LogLevel.Warn);
-                    break; 
+                    break;
                 }
             }
-
 
             // --- Output Directory ---
             string sanitizedPackName = SanitizeKeyForFileName(baseVoicePackName);
@@ -340,6 +324,8 @@ namespace VoiceOverFrameworkMod
                 this.Monitor.Log($"Total Failed/Skipped: {totalFailCount}", LogLevel.Warn);
             this.Monitor.Log($"Output location: {outputBaseDir}", LogLevel.Info);
         }
+
+
 
 
 
@@ -526,6 +512,224 @@ namespace VoiceOverFrameworkMod
             }
 
             
+        }
+
+
+
+
+        private void UpdateTemplateCommand(string command, string[] args)
+        {
+            if (args.Length < 2)
+            {
+                this.Monitor.Log("Usage: update_template <FolderPath> <StartNumber> [ogg|wav]", LogLevel.Error);
+                return;
+            }
+
+            string folder = args[0];
+            if (!Directory.Exists(folder))
+            {
+                this.Monitor.Log($"Folder not found: {folder}", LogLevel.Error);
+                return;
+            }
+
+            if (!int.TryParse(args[1], out int startNumber) || startNumber < 1)
+            {
+                this.Monitor.Log($"Invalid StartNumber: {args[1]}", LogLevel.Error);
+                return;
+            }
+
+            string ext = "ogg";
+            if (args.Length >= 3)
+            {
+                var e = (args[2] ?? "").Trim().ToLowerInvariant();
+                if (e == "ogg" || e == "wav") ext = e;
+                else this.Monitor.Log($"Unknown extension '{args[2]}', defaulting to {ext}.", LogLevel.Warn);
+            }
+
+            string[] files;
+            try
+            {
+                files = Directory.GetFiles(folder, "*.json", SearchOption.TopDirectoryOnly);
+            }
+            catch (Exception ex)
+            {
+                this.Monitor.Log($"Failed to enumerate JSON files in '{folder}': {ex.Message}", LogLevel.Error);
+                return;
+            }
+
+            if (files.Length == 0)
+            {
+                this.Monitor.Log($"No template JSON files found in: {folder}", LogLevel.Warn);
+                return;
+            }
+
+            int totalFilesUpdated = 0;
+            int totalNewEntries = 0;
+
+            foreach (var path in files.OrderBy(p => p, StringComparer.OrdinalIgnoreCase))
+            {
+                try
+                {
+                    var json = File.ReadAllText(path);
+                    var file = JsonConvert.DeserializeObject<VoicePackFile>(json);
+                    if (file?.VoicePacks == null || file.VoicePacks.Count == 0)
+                    {
+                        if (this.Config.developerModeOn)
+                            this.Monitor.Log($"[update_template] Skipped (no voice packs): {Path.GetFileName(path)}", LogLevel.Trace);
+                        continue;
+                    }
+
+                    bool fileChanged = false;
+
+                    foreach (var vp in file.VoicePacks)
+                    {
+
+                        if (vp == null || string.IsNullOrWhiteSpace(vp.Character) || string.IsNullOrWhiteSpace(vp.Language))
+                            continue;
+
+                        var entries = vp.Entries ??= new List<VoiceEntryTemplate>();
+
+
+                        var existingDisplays = new HashSet<string>(StringComparer.Ordinal);
+                        foreach (var e in entries)
+                        {
+                            var disp = NormalizeDisplay(e?.DisplayPattern ?? e?.DialogueText ?? "");
+                            if (!string.IsNullOrEmpty(disp))
+                                existingDisplays.Add(disp);
+                        }
+
+
+                        var candidates = GenerateAllEntriesFor(
+                            vp.Character,
+                            vp.Language,
+                            ext
+                        ).ToList();
+
+                        if (candidates.Count == 0)
+                        {
+                            if (this.Config.developerModeOn)
+                                this.Monitor.Log($"[update_template] No candidates for {vp.Character} ({vp.Language}) in {Path.GetFileName(path)}.", LogLevel.Trace);
+                            continue;
+                        }
+
+
+                        int addedForThisPack = 0;
+                        int nextNum = startNumber;
+
+
+                        var sessionDisplays = new HashSet<string>(StringComparer.Ordinal);
+
+
+                        var assetsDir = Path.Combine(Path.GetDirectoryName(path) ?? folder, "assets", vp.Language, vp.Character);
+                        Directory.CreateDirectory(assetsDir);
+
+
+                        foreach (var cand in candidates
+                            .OrderBy(c => NormalizeDisplay(c?.DisplayPattern ?? c?.DialogueText ?? ""))
+                            .ThenBy(c => c.TranslationKey ?? "")
+                            .ThenBy(c => c.PageIndex)
+                            .ThenBy(c => c.GenderVariant ?? ""))
+                        {
+                            var disp = NormalizeDisplay(cand?.DisplayPattern ?? cand?.DialogueText ?? "");
+                            if (string.IsNullOrEmpty(disp))
+                                continue;
+
+
+                            if (existingDisplays.Contains(disp) || sessionDisplays.Contains(disp))
+                                continue;
+
+
+                            string genderTail = string.IsNullOrEmpty(cand.GenderVariant) ? "" : $"_{cand.GenderVariant}";
+                            string fileName = $"{nextNum}{genderTail}.{ext}";
+                            cand.AudioPath = Path.Combine("assets", vp.Language, vp.Character, fileName).Replace('\\', '/');
+
+                            entries.Add(cand);
+                            existingDisplays.Add(disp);
+                            sessionDisplays.Add(disp);
+                            addedForThisPack++;
+                            nextNum++;
+                        }
+
+                        if (addedForThisPack > 0)
+                        {
+                            fileChanged = true;
+                            totalNewEntries += addedForThisPack;
+                            this.Monitor.Log($"[update_template] {vp.Character} ({vp.Language}): +{addedForThisPack} new entries in {Path.GetFileName(path)}.", LogLevel.Info);
+                        }
+                        else if (this.Config.developerModeOn)
+                        {
+                            this.Monitor.Log($"[update_template] {vp.Character} ({vp.Language}): no new entries.", LogLevel.Trace);
+                        }
+                    }
+
+                    if (fileChanged)
+                    {
+                      
+                        var output = JsonConvert.SerializeObject(file, Formatting.Indented,
+                            new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+
+                        File.WriteAllText(path, output);
+                        totalFilesUpdated++;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    this.Monitor.Log($"[update_template] Failed processing '{path}': {ex.Message}", LogLevel.Error);
+                    this.Monitor.Log(ex.ToString(), LogLevel.Trace);
+                }
+            }
+
+            this.Monitor.Log($"[update_template] Done. Files updated: {totalFilesUpdated}, new entries added: {totalNewEntries}.", LogLevel.Info);
+        }
+
+
+        // Build identity for “same line” detection. Keep it stable across runs.
+        private static string MakeEntryIdentity(VoiceEntryTemplate e)
+        {
+            string tlk = e?.TranslationKey ?? "";
+            string page = e?.PageIndex.ToString() ?? "0";
+            string gen = e?.GenderVariant ?? "";
+            // TranslationKey + PageIndex + Gender is stable; avoid comparing text that may be re-sanitized.
+            return $"{tlk}|p{page}|g{gen}";
+        }
+
+     
+        // using the same pipeline as create_template — but we don’t care about AudioPath here.
+        private IEnumerable<VoiceEntryTemplate> GenerateAllEntriesFor(string characterName, string languageCode, string ext)
+        {
+            var all = new List<VoiceEntryTemplate>();
+            int dummy = 1; // numbering inside candidates will be ignored
+
+            // Core dialogue
+            all.AddRange(BuildFromCharacterDialogue(characterName, languageCode, this.Helper.GameContent, ref dummy, ext));
+
+            if (IsMarriableCharacter(characterName))
+            {
+                all.AddRange(BuildFromEngagement(characterName, languageCode, this.Helper.GameContent, ref dummy, ext));
+                all.AddRange(BuildFromMarriageDialogue(characterName, languageCode, this.Helper.GameContent, ref dummy, ext));
+            }
+
+            all.AddRange(BuildFromRainyDialogueForCharacter(characterName, languageCode, this.Helper.GameContent, ref dummy, ext));
+            all.AddRange(BuildFromEvents(characterName, languageCode, this.Helper.GameContent, ref dummy, ext));
+            all.AddRange(BuildFromFestivals(characterName, languageCode, this.Helper.GameContent, ref dummy, ext));
+            all.AddRange(BuildFromGiftTastes(characterName, languageCode, this.Helper.GameContent, ref dummy, ext));
+            all.AddRange(BuildFromExtraDialogue(characterName, languageCode, this.Helper.GameContent, ref dummy, ext));
+            all.AddRange(BuildFromMovieReactions(characterName, languageCode, this.Helper.GameContent, ref dummy, ext));
+            all.AddRange(BuildFromOneSixStrings(characterName, languageCode, this.Helper.GameContent, ref dummy, ext));
+            all.AddRange(BuildSpeechBubbleEntries(characterName, languageCode, this.Helper.GameContent, ref dummy, ext));
+
+            // We must NOT renumber PageIndex; these come from the sanitizers.
+            // Also, we ignore AudioPath here; caller will assign new paths for appended items.
+            return all;
+        }
+
+
+        private static string NormalizeDisplay(string s)
+        {
+            if (string.IsNullOrWhiteSpace(s)) return "";
+            // Trim + collapse internal whitespace; keep case and punctuation as-is
+            s = Regex.Replace(s, @"\s+", " ").Trim();
+            return s;
         }
 
 

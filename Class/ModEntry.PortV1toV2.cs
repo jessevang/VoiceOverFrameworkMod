@@ -27,26 +27,82 @@ namespace VoiceOverFrameworkMod
         // ------------------------------------------------------------------------------------
         // Public command: vof_port <V1 folder>
         // (Add in SetupConsoleCommands: commands.Add("vof_port", "Auto-port a V1 voicepack folder to V2.", Cmd_PortAuto);)
+        // -----------
+        //
+        // -------------------------------------------------------------------------
+
+        private enum PortRosterFilter { All, Vanilla, Modded }
+        private static bool TryParseRosterFilter(string s, out PortRosterFilter filter)
+        {
+            filter = PortRosterFilter.All;
+            if (string.IsNullOrWhiteSpace(s)) return false;
+            switch (s.Trim().ToLowerInvariant())
+            {
+                case "vanilla": filter = PortRosterFilter.Vanilla; return true;
+                case "modded": filter = PortRosterFilter.Modded; return true;
+                case "all": filter = PortRosterFilter.All; return true;
+                default: return false;
+            }
+        }
+
+        private static bool TryParseAudioFormat(string s, out string fmt)
+        {
+            fmt = null;
+            if (string.IsNullOrWhiteSpace(s)) return false;
+            var t = s.Trim().ToLowerInvariant();
+            if (t == "wav" || t == "ogg") { fmt = t; return true; }
+            return false;
+        }
+
+        private bool MatchesRosterFilter(string character, PortRosterFilter filter)
+        {
+            switch (filter)
+            {
+                case PortRosterFilter.Vanilla: return IsKnownVanillaVillager(character);
+                case PortRosterFilter.Modded: return !IsKnownVanillaVillager(character);
+                case PortRosterFilter.All:
+                default: return true;
+            }
+        }
+
+        // ------------------------------------------------------------------------------------
+        // Public command: vof_port <V1 folder> [vanilla|modded|all] [wav|ogg]
         // ------------------------------------------------------------------------------------
         private void Cmd_PortAuto(string cmd, string[] args)
         {
             if (args.Length < 1)
             {
-                Monitor.Log("Usage: vof_port <V1 folder under Mods or absolute path> [wav|ogg]", LogLevel.Info);
-                Monitor.Log("Example: vof_port \"[VOFM] DM_Voicepack_En\" ogg", LogLevel.Info);
+                Monitor.Log("Usage: vof_port <V1 folder under Mods or absolute path> [vanilla|modded|all] [wav|ogg]", LogLevel.Info);
+                Monitor.Log("Examples:", LogLevel.Info);
+                Monitor.Log("  vof_port \"[VOFM] DM_Voicepack_En\"", LogLevel.Info);
+                Monitor.Log("  vof_port \"[VOFM] DM_Voicepack_En\" vanilla ogg", LogLevel.Info);
+                Monitor.Log("  vof_port \"[VOFM] DM_Voicepack_En\" modded", LogLevel.Info);
                 return;
             }
 
-            string audioFormat = "ogg"; // default
-            if (args.Length >= 2)
-            {
-                string fmt = args[1].Trim().ToLower();
-                if (fmt == "wav" || fmt == "ogg")
-                    audioFormat = fmt;
-            }
-
+            // Required
             string modsDir = Path.Combine(Constants.GamePath, "Mods");
             string v1Folder = V1V2_ResolvePathUnderMods(args[0], modsDir);
+
+            // Optional (order-independent): roster filter + audio format
+            PortRosterFilter rosterFilter = PortRosterFilter.All;
+            string audioFormat = "ogg"; // default
+
+            if (args.Length >= 2)
+            {
+                // args[1] may be filter or format
+                if (TryParseRosterFilter(args[1], out var rf)) rosterFilter = rf;
+                else if (TryParseAudioFormat(args[1], out var fmt1)) audioFormat = fmt1;
+                else Monitor.Log($"Unknown option '{args[1]}'. Ignoring.", LogLevel.Warn);
+            }
+            if (args.Length >= 3)
+            {
+                // args[2] should be the remaining one (format or filter)
+                if (TryParseRosterFilter(args[2], out var rf)) rosterFilter = rf;
+                else if (TryParseAudioFormat(args[2], out var fmt2)) audioFormat = fmt2;
+                else Monitor.Log($"Unknown option '{args[2]}'. Ignoring.", LogLevel.Warn);
+            }
+
             string outFolder = V1V2_DefaultOutputFolder(v1Folder);
             string baselineFolder = Path.Combine(outFolder, "_baseline");
 
@@ -54,8 +110,9 @@ namespace VoiceOverFrameworkMod
             Monitor.Log(" V1 → V2 port: starting…", LogLevel.Info);
             Monitor.Log($"  V1 input      : {v1Folder}", LogLevel.Info);
             Monitor.Log($"  Output        : {outFolder}", LogLevel.Info);
-            Monitor.Log($"  Baseline (V2) : {baselineFolder} (auto-generated now)", LogLevel.Info);
+            Monitor.Log($"  Baseline (V2) : {baselineFolder}", LogLevel.Info);
             Monitor.Log($"  Audio Format  : {audioFormat}", LogLevel.Info);
+            Monitor.Log($"  Roster Filter : {rosterFilter}", LogLevel.Info);
             Monitor.Log("===========================================", LogLevel.Info);
 
             var sw = Stopwatch.StartNew();
@@ -66,9 +123,8 @@ namespace VoiceOverFrameworkMod
                 return;
             }
 
-            //copies Manifesto file over
+            // Copy manifest.json if present
             Directory.CreateDirectory(outFolder);
-
             {
                 string v1Manifest = Path.Combine(v1Folder, "manifest.json");
                 if (File.Exists(v1Manifest))
@@ -90,9 +146,6 @@ namespace VoiceOverFrameworkMod
                 }
             }
 
-            // DO NOT bulk-copy assets; only copy mapped audio we know about.
-            // V1V2_CopyAssetsIfPresent(v1Folder, outFolder);
-
             var v1Files = Directory
                 .EnumerateFiles(v1Folder, "*.json", SearchOption.TopDirectoryOnly)
                 .Where(p => !Path.GetFileName(p).Equals("manifest.json", StringComparison.OrdinalIgnoreCase))
@@ -105,7 +158,7 @@ namespace VoiceOverFrameworkMod
             }
             Monitor.Log($"Discovered {v1Files.Count} V1 JSON file(s).", LogLevel.Info);
 
-            // Collect (Character, Language) pairs from V1 to generate a minimal baseline
+            // Collect (Character, Language) pairs from V1, honoring roster filter
             var targets = new HashSet<(string Char, string Lang)>(new CharLangIgnoreCaseComparer());
             foreach (var fp in v1Files)
             {
@@ -116,17 +169,24 @@ namespace VoiceOverFrameworkMod
                     {
                         string c = vp.Character ?? "";
                         string l = vp.Language ?? "en";
-                        if (!string.IsNullOrWhiteSpace(c))
+                        if (!string.IsNullOrWhiteSpace(c) && MatchesRosterFilter(c, rosterFilter))
                             targets.Add((c, l));
                     }
                 }
                 catch
                 {
-                    // skip bad file
+                    // ignore malformed
                 }
             }
 
-            // Generate baseline templates
+            // If nothing matches after filtering, bail early
+            if (targets.Count == 0)
+            {
+                Monitor.Log($"No character-language pairs matched the '{rosterFilter}' filter. Nothing to port.", LogLevel.Warn);
+                return;
+            }
+
+            // Generate baseline templates (filtered)
             Directory.CreateDirectory(baselineFolder);
             Monitor.Log($"Generating baseline templates for {targets.Count} character-language pairs…", LogLevel.Info);
             foreach (var pair in targets)
@@ -151,7 +211,7 @@ namespace VoiceOverFrameworkMod
             int filesWritten = 0;
             int grandAudioCopied = 0;
 
-            // Now port: For each V1 file, load corresponding baseline file(s) and map V1 entries onto it
+            // Port each V1 file
             for (int i = 0; i < v1Files.Count; i++)
             {
                 string v1Path = v1Files[i];
@@ -169,7 +229,6 @@ namespace VoiceOverFrameworkMod
 
                     var outPacks = new List<VoicePackManifestTemplate>();
                     var perPackReports = new Dictionary<string, V1V2_PackReport>(StringComparer.OrdinalIgnoreCase);
-                    int copiedForThisFile = 0;
 
                     foreach (var v1pack in vf.VoicePacks)
                     {
@@ -178,7 +237,11 @@ namespace VoiceOverFrameworkMod
                         if (string.IsNullOrWhiteSpace(character))
                             continue;
 
-                        // Locate the baseline file for this char/lang (same filename pattern as templates)
+                        // Skip packs that do not match roster filter
+                        if (!MatchesRosterFilter(character, rosterFilter))
+                            continue;
+
+                        // Baseline path for this char/lang
                         string baselineFileName = $"{SanitizeKeyForFileName(character) ?? character}_{language}.json";
                         string baselinePath = Path.Combine(baselineFolder, baselineFileName);
                         if (!File.Exists(baselinePath))
@@ -200,24 +263,13 @@ namespace VoiceOverFrameworkMod
                                 !string.Equals(basePack.Language, language, StringComparison.OrdinalIgnoreCase))
                                 continue;
 
-                            // Start with a copy of the baseline entries, but preserve V1 Id/Name if present
                             var outPack = new VoicePackManifestTemplate
                             {
                                 Format = "2.0.0",
-
-                                // Prefer V1 values; fall back to baseline if V1 is missing them
-                                VoicePackId = string.IsNullOrWhiteSpace(v1pack.VoicePackId)
-                                              ? basePack.VoicePackId
-                                              : v1pack.VoicePackId,
-
-                                VoicePackName = string.IsNullOrWhiteSpace(v1pack.VoicePackName)
-                                                ? basePack.VoicePackName
-                                                : v1pack.VoicePackName,
-
-                                // Character/Language must match the baseline we’re mapping onto
+                                VoicePackId = string.IsNullOrWhiteSpace(v1pack.VoicePackId) ? basePack.VoicePackId : v1pack.VoicePackId,
+                                VoicePackName = string.IsNullOrWhiteSpace(v1pack.VoicePackName) ? basePack.VoicePackName : v1pack.VoicePackName,
                                 Character = basePack.Character,
                                 Language = basePack.Language,
-
                                 Entries = basePack.Entries.Select(e => new VoiceEntryTemplate
                                 {
                                     DialogueFrom = e.DialogueFrom,
@@ -232,7 +284,7 @@ namespace VoiceOverFrameworkMod
                                 }).ToList()
                             };
 
-                            // --- Build DP -> list of indices map for this outPack (baseline) ---
+                            // Build DP → indices
                             var dpToIndices = new Dictionary<string, List<int>>(StringComparer.OrdinalIgnoreCase);
                             for (int idx = 0; idx < outPack.Entries.Count; idx++)
                             {
@@ -242,14 +294,9 @@ namespace VoiceOverFrameworkMod
                                 list.Add(idx);
                             }
                             var claimed = new HashSet<int>();
-
-                            // Per-pack report bucket
                             var pr = V1V2_GetOrCreatePackReport(perPackReports, character, language, v1Path);
-
-                            // Track V1 filename → DPs (to flag suspicious reuse)
                             var v1FileToDps = new Dictionary<string, HashSet<string>>(StringComparer.OrdinalIgnoreCase);
 
-                            // Try to map each V1 entry to a baseline DP
                             foreach (var v1e in v1pack.Entries ?? Enumerable.Empty<VoiceEntryTemplate>())
                             {
                                 string v1Text = v1e?.DialogueText ?? "";
@@ -259,10 +306,7 @@ namespace VoiceOverFrameworkMod
 
                                 pr.Summary.EntriesV1++;
 
-                                // Build V1 display pattern using the same canonicalizer used by runtime
                                 string v1DP = V1V2_BuildDisplayPatternFromV1(v1Text);
-
-                                // record filename reuse (by stem)
                                 string v1FileStem = Path.GetFileNameWithoutExtension(v1Audio) ?? v1Audio;
                                 if (!v1FileToDps.TryGetValue(v1FileStem, out var set))
                                     v1FileToDps[v1FileStem] = set = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
@@ -271,7 +315,6 @@ namespace VoiceOverFrameworkMod
 
                                 if (string.IsNullOrWhiteSpace(v1DP) || !dpToIndices.TryGetValue(v1DP, out var indices) || indices.Count == 0)
                                 {
-                                    // NOT MAPPED → NeedsReview (V1-only information)
                                     pr.Summary.NeedsReview++;
                                     pr.NeedsReview.Add(new V1V2_NeedsReviewRow
                                     {
@@ -286,17 +329,12 @@ namespace VoiceOverFrameworkMod
                                     continue;
                                 }
 
-                                // pick first unclaimed baseline entry index for this DP
                                 int chosen = -1;
-                                foreach (var idx in indices)
-                                {
-                                    if (!claimed.Contains(idx)) { chosen = idx; break; }
-                                }
-                                if (chosen < 0) chosen = indices[0]; // all claimed → reuse first
+                                foreach (var idx in indices) { if (!claimed.Contains(idx)) { chosen = idx; break; } }
+                                if (chosen < 0) chosen = indices[0];
 
                                 var target = outPack.Entries[chosen];
 
-                                // --- SAFETY: verify target.DisplayPattern equals v1DP before mapping audio ---
                                 if (!string.Equals(target.DisplayPattern ?? "", v1DP ?? "", StringComparison.OrdinalIgnoreCase))
                                 {
                                     pr.Summary.NeedsReview++;
@@ -310,22 +348,20 @@ namespace VoiceOverFrameworkMod
                                         AudioPathV1 = v1Audio,
                                         Error = $"DP mismatch: baseline=\"{target.DisplayPattern ?? ""}\" vs v1=\"{v1DP}\""
                                     });
-                                    continue; // don’t attach audio to the wrong line
+                                    continue;
                                 }
 
-                                // OK: copy the audio NOW and set the final path
                                 string copiedRel = CopyOneMappedAudioNow(v1Folder, outFolder, language, character, v1Audio);
                                 if (!string.IsNullOrWhiteSpace(copiedRel))
                                 {
-                                    target.AudioPath = copiedRel;                 // final V2-relative path (assets/...)
-                                    target.DialogueTextPortedFromV1 = v1Text;     // useful for QA
+                                    target.AudioPath = copiedRel;
+                                    target.DialogueTextPortedFromV1 = v1Text;
                                     claimed.Add(chosen);
                                     pr.Summary.Mapped++;
-                                    copiedForThisFile++;                           // keep your per-file count if you like
+                                    grandAudioCopied++;
                                 }
                                 else
                                 {
-                                    // Source missing; flag for review rather than attaching a stale path
                                     pr.Summary.NeedsReview++;
                                     pr.NeedsReview.Add(new V1V2_NeedsReviewRow
                                     {
@@ -340,7 +376,6 @@ namespace VoiceOverFrameworkMod
                                 }
                             }
 
-                            // Flag suspicious reuse: same V1 filename used for different DPs
                             foreach (var kvp in v1FileToDps.Where(k => k.Value.Count > 1))
                             {
                                 pr.Summary.NeedsReview++;
@@ -361,20 +396,17 @@ namespace VoiceOverFrameworkMod
                         }
                     }
 
-                    // Write out V2 file (same filename) into the output folder (after we copy/rename)
+                    // Write filtered V2 file (if any packs remain)
                     string outPath = Path.Combine(outFolder, Path.GetFileName(v1Path));
                     var outObj = new VoicePackFile { Format = "2.0.0", VoicePacks = outPacks };
 
-  
-
-                    // Now serialize the JSON (paths updated)
                     string jsonOut = JsonConvert.SerializeObject(outObj, Formatting.Indented,
                         new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
                     Directory.CreateDirectory(Path.GetDirectoryName(outPath)!);
                     File.WriteAllText(outPath, jsonOut);
                     filesWritten++;
 
-                    // Write per-character reports only if there is something to review/skip
+                    // Per-pack reports
                     foreach (var kv in perPackReports)
                     {
                         var pr = kv.Value;
@@ -402,6 +434,9 @@ namespace VoiceOverFrameworkMod
             Monitor.Log($"  Elapsed       : {sw.Elapsed:mm\\:ss}", LogLevel.Info);
             Monitor.Log("===========================================", LogLevel.Info);
         }
+
+
+
 
         // ------------------------------------------------------------------------------------
         // Helpers (unique names to avoid collisions)
